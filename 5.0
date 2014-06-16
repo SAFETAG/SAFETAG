@@ -1,0 +1,16 @@
+Title
+
+5.0 Physical access assessment
+Introduction
+
+For many commercial enterprises, threats that depend on physical access to devices are considered the least probable (albeit the most potentially severe) digital security risks. So much so, that many security specialists concede, with a shrug, that there is no proper defense against an attacker with physical access to sensitive hardware. While there is some truth to this, it is not particularly useful advice for journalists, activists and other human rights defenders. The corporate chief security officer’s canonical image of a “physical access threat” might involve some cloak-and-dagger operation—industrial espionage on an overseas trip to China or a bribed hotel maid—but many human rights defenders face the ever present threat of an office raid, device confiscation or a checkpoint shakedown. These risks remain high severity, despite their equally high probability.
+
+The physical access assessment methodology includes a number of threats, but data encryption turns up as a key mitigation step for nearly all of them. One exception relates to the leakage of potentially sensitive information through wireless networking hardware. At present, this framework addresses only one such example: the tendency of Apple devices to broadcast the names of the WiFi networks to which they have previously connected.
+
+Physical access threats include, among others:
+
+    access to a computer or smartphone with a weak or non-existent login password;
+    removal of a hard drive containing sensitive information (and insertion of that drive into another computer);
+    rebooting a computer from a “live” USB stick, CD-ROM disk or DVD;
+    exploiting direct memory access (DMA) vulnerabilities in Firewire ports and hardware expansion slots to obtain data on an encrypted device that has not been shutdown; and
+    sniffing the unencrypted wireless traffic of a nearby Apple smartphone or laptop in order to learn the names of the WiFi networks (which often include the names of organizations, hotels, airports and individuals) to which it has connected previously.

@@ -1,0 +1,14 @@
+Title
+
+2.0 Remote assessment
+Introduction
+
+The remote assessment methodology focuses on direct observation and probing of the organization’s IT infrastructure, from outside that infrastructure, in order to identify, explain and propose solutions for digital security vulnerabilities that might be exploited by an attacker on the Internet. This scoping is more ambiguous than it sounds, so it is worth clarifying a few points. The SAFETAG framework defines “remote” as follows:
+
+    To include evaluation of external attacks on Internet-accessible infrastructure within an office’s local area network (LAN) or staff devices on external networks. (It is worth noting, here, that this definition is distinct from the actual Scope of any particular assessment, which will frequently exclude otherwise relevant targets within home networks, Internet cafes, etc.)
+
+    To include all remotely-hosted services. So, not only services administered by the organization itself (such as a Microsoft Exchange email server at a data center, an HTTP proxy on a virtual private server (VPS) or a colocated Web server), but also “cloud services” used by members or partners of the organization but not administrated by its IT staff, such as a hosted Wordpress blog, a Yahoo! email account, or a Crowdmap Ushahidi deployment. (However, you should consider that the organization might not be in a position to give you meaningful “permission” to carry out an aggressive remote assessment of a service in the latter category.)
+
+    To include evaluation of potential attacks by Internet service providers (ISPs), hosting companies, intelligence services, and governments with influence over such groups. Adversaries such as these might have privileged access to some remote services—access that you could, perhaps, evaluate more effectively through a local or physical access assessment—but pursuing one is probably unrealistic.
+
+    To include evaluation of specific attacks that “originate” from within the organization’s LAN, if sufficient access can be obtained to initiate such an attack remotely. Put another way, if you manage to gain a foothold within an office network, from the Internet, by exploiting a weakness in the network’s perimeter, you should probably use the remote assessment findings to describe how that foothold can be abused. This will help highlight the severity of the breach. (That said, you will need a fairly permissive “engagement agreement” with the organization even to attempt something like this, as such vulnerabilities often require aggressive exploitation of some internal machine. This can be difficult to achieve without risking some level of long-term damage to the system, service interruption or data loss.)
