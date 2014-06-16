@@ -1,0 +1,46 @@
+
+Title
+1.1.2 MX Record Assessment
+Priority
+
+Info
+Summary
+
+MX, or Mail Exchange, records are required to be public for any domain you wish to receive email through. These records can still reveal sensitive information about your hosting set-up.
+
+Description
+
+MX Records can reveal vulnerable mail servers or information about other services hosted internally. The research phase records all the non-invasive information about the record and where it points, for later analysis in 2.1 / Email assessment.
+MitigationTitle
+
+No Specific Mitigation Needed
+MitigationDescription
+
+Unless the research or 2.1 reveals specific vulnerabilities, there is no action to take. Unless you have sufficient in-house expertise, it is often recommended to not host email servers. While self-hosted email provides more control and potentially security, managing the security of the server is a complex job. Other mail services, such as MailControl or Postini, also can provide some level of protection by being a first-pass check for spam and viruses, and (slightly) reducing the visibility of your organizational mail server.
+Assets affected by this issue
+
+    1.1 DNS assessment (1 instance)
+
+Evidence for 1.1 DNS assessment
+Title
+
+1.1.2 [sample evidence] MX record
+Summary
+
+MX Record reveals sensitive information
+Description
+
+MX Record research reveals self-hosted email server at SampleOrg’s offices:
+
+mail.sample.org has address 256.0.0.3
+
+Determine the authoritative name server(s) for the organization’s primary domain:
+
+root@bt:~# host -t mx sample.org
+sample.org mail is handled by 21 mail.sample.org
+
+Determine the IP address of the mail server:
+
+root@bt:~# host mail.sample.org
+mail.sample.org has address 256.0.0.3
+
