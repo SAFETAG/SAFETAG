@@ -27,22 +27,22 @@ Prerequisites for building nodejs from source (Unix only):
     * GNU Make 3.81 or newer
     * libexecinfo (FreeBSD and OpenBSD only)
 
-  * [Download the source for nodejs](http://nodejs.org/download/)
+  * [Download the source-code (not binaries) for nodejs](http://nodejs.org/download/)
   * Go to your downloads directory.
   ```bash
   cd ~/Downloads
   ```
-  * Compile the source
-  ```bash
-  cd node-v*
-  ./compile
-  make
-  sudo make install
   ```
   * Unpack the source file
   ```bash
   tar -zxvf node*
   ```
+  * Compile the source
+  ```bash
+  cd node-v*
+  ./configure
+  make
+  sudo make install
   * Clean up the unneeded files
   **If you are on windows the binary is named node.exe and so node-v* will not be able to remove it. Also, rm is not the delete command on windows.**
   ```bash
