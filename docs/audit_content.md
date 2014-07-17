@@ -47,11 +47,11 @@ Identify software run on computers and the current version of that software. Che
 Identifying user and local firewall rule-sets. 
       * Data Storage (audit)
 Individual Device Encryption.
-        * Phishing, Malware, & Social Engineering
-This component focuses on assessing and educating organizational staff on how to prevent, identify, and respond to social engineering attempts. 
-          * Admin Rights (Audit)
-Are used using admin on their computers, or are they using another user and have to type in a password to get admin rights.
-          * Personal information you should not give out (Handout)
+      * Privilege Separation (Audit)
+Are users using admin on their computers, or are they using another user and have to type in a password to get admin rights.
+      * Social Engineering
+This component focuses on assessing and educating organizational staff on how to prevent, identify, and respond to social engineering attempts (Phishing, information gathering, cons) that lead to Malware and handing over authentication tokens/information.
+        * Personal information you should not give out (Handout)
 The personal information that organizational employees should keep private. (Handout & short activity)
     * Physical Assessment
 The physical assessment methodology is focused on how to mitigate against threats that occur because of the arrangement of digital assets in the physical world.
@@ -61,9 +61,10 @@ How to make sure that old data does not put the org, or others, at risk.
 How to make sure you can't do your work if local data is lost." is the backup drive for the whole organization laying unencrypted and unplugged on the desk of the executive director and/or sysadmin?"
       * Beacons & other wireless emissions
 Auditing / Training on how devices beacon, if association and tracking in in the threat model.
-      * Server Access
+      * Access
+	    * Server Access
 Where are the servers that host the organizations assets. Is the location locked, if so, who has the key, etc.
-      * Device Storage
+        * Device Access
 How are daily devices used and stored? Where are they when employees go home? 
       * Active Network Jacks
 Are there active network jacks that are unused? Are they within easy access to the public? Are they in places where people would not notice if there was somthing plugged into them?
