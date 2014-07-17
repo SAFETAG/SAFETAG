@@ -44,6 +44,10 @@ Target population focused. Focused on behavior change.
 
 ### Engagement ###
 
+#### Vulnerability Analysis ####
+
+This section goes over the process of evaluating services and devices being used by an organization with a variety of online and offline resources to identify if known vulnerabilities exist. It also covers how to add these vulnerabilities into a report.
+
 #### Audit Preperation ####
 
 #### Remote Assessment ####
@@ -51,8 +55,6 @@ Target population focused. Focused on behavior change.
 #### External Probing and Enumeration ####
 
 #### Internal Probing and Enumeration ####
-
-#### Vulnerability Analysis ####
 
 #### Physical Assessment ####
 
@@ -235,6 +237,7 @@ A good training habit is to always summarize the session. Talk about what happen
 ** What is SAFETAG?
 ** Why is SAFETAG different
 Target population focused. Focused on behavior change.
+
 * Trainer Resources
 ** The Training Plan
 ** The ADIDS Approach
@@ -244,6 +247,7 @@ Target population focused. Focused on behavior change.
 *** Questionarre for trainees
 *** Questionarre for organizers
 *** Contract between trainees/ers and host
+
 ** Training Tips
 *** Managing Expectations
 *** Planning the training
@@ -251,6 +255,7 @@ Target population focused. Focused on behavior change.
 *** Participant security
 *** Creating a contract
 *** Schedule
+
 ** Best Practices
 *** Committment to learning
 *** Using open source software 
@@ -259,12 +264,15 @@ Target population focused. Focused on behavior change.
 *** Make it participatory
 *** Preparing Presentations
 *** Value of hands on learning
+
 * Getting Started
 ** The goals of a SAFETAG audit
 ** The role and duties of an assessor
 ** Working with vulnerable populations
 ** What an org gets out of it
+
 * The SAFETAG audit
+
 ** Pre-Engagement Interactions
 *** Operational Security Concerns
 Each phase has an operational security section
@@ -275,6 +283,7 @@ Each phase has an operational security section
 **** Pre-audit interview questionarre
 *** Assessment Plan Development
 *** Negotiation of Assessment Plan
+
 ** Engagement
 *** Operational Security
 Each phase has an operational security section
@@ -287,7 +296,8 @@ Each phase has an operational security section
 ****  Physical
 **** Human
 *** Training
-Not a full training as-hoc brief up-skilling focused targeted event to raise awareness and interests 
+Not a full training as-hoc brief up-skilling focused targeted event to raise awareness and interests
+
 ** Post Engagement
 *** Operational Security
 Each phase has an operational security section

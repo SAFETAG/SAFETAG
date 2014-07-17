@@ -1,35 +1,3 @@
-
-Title
-
-3.1.1 Weak WiFi key (WPA)
-Priority
-
-High
-Summary
-
-The organization’s wireless Local Area Network (WLAN) protects the network and its users with WPA encryption. This is an important security measure, and a WPA-protected wireless network is much safer than an unencrypted “open” network or a WEP-protected network. (WEP is fundamentally flawed, and extremely simple attacks have been widely known for over a decade.) However, the ease with an attacker could guess the WPA key, or “WiFi password,” is a serious issue, particularly considering its importance as an essential perimeter control. An attacker who gains access to the wireless LAN immediately bypasses many protections that network administrators, and other users of the office network, often take for granted. Put another way, anyone able to guess the WPA key is immediately “inside the firewall.”
-
-Using a laptop and a wireless card with a standard, internal antenna (or using a customized smartphone), an attacker could easily position himself close enough to the office to carry out the first phase of this attack, which would only take a few minutes. The second phase, which is supposed to be the difficult part, would take even less time. From the privacy of his own home or office, the attacker could use a minimally customized password dictionary to guess SampleOrg’s WPA key in less than five seconds.
-Description
-<description>
-MitigationTitle
-
-Choose a strong WPA key for the wireless LAN
-MitigationDescription
-
-The WPA key should be long enough and complex enough to prevent both standard dictionary attacks and “brute-force attacks” in which clusters of powerful computers work in parallel to test every possible character combination. (We recommend 12 or more completely random characters or a passphrase that contains four or five—or more—relatively uncommon words.) The key should not contain common “phrases,” including number sequences, especially if they are related to the organization, its employees or its work. Choosing a strong WPA key is one of the most important steps toward defending an organization’s network perimeter from an adversary with the ability to spend some time in the vicinity of the offices. By extension, mitigating this vulnerability is critical to the protection of employees and partners (and confidential data) from the sort of persistent exposure that eventually brings down even the most well-secured information systems.
-
-Because shared keys inevitably end up being written on whiteboards, given to office visitors and emailed to partners, the WPA key should also be changed periodically. This does not have to happen frequently, but anything less than three or four times per year may be unsafe.
-Assets affected by this issue
-
-    3.1 WiFi assessment (1 instance)
-
-Evidence for 3.1 WiFi assessment
-Title
-
-3.1.1 [sample evidence] Weak WiFi key (WPA)
-Description
-
 An attacker can crack the SampleOrg office’s WPA key in approximately <time> with a short and minimally customized password dictionary containing approximately <number> entries.
 
 Step 1: The attacker customizes his WiFi password dictionary, adding phrases related to the subject: organization name, street address, phone number, email domain, wireless network name, etc. Common password fragments are included, as well: qwerty, 12345, asdf and all four-digit dates back to the year 2001, for example, among others. He may then add hundreds or thousands of words (in English and/or other relevant languages). He may then “fold” his dictionary, so that it includes an entry for each pair of these strings:
