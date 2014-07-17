@@ -1,0 +1,7 @@
+#This repo should only ever contain non-sensitive information related to SAFETAG framework development.
+
+# Audit content should not ever be committed
+/audit/
+
+#Don't commit any auto-saves
+\#*\#
