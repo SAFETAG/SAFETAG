@@ -85,35 +85,45 @@ content/
 ├── audit
 │   ├── engagement
 │   │   ├── external
-│   │   │   ├── mail
-│   │   │   │   └── unencrypted
-│   │   │   ├── vpn
-│   │   │   ├── vuln_research
-│   │   │   ├── web
-│   │   │   │   ├── cms_version
-│   │   │   │   │   ├── approach.md
-│   │   │   │   │   ├── description.md
-│   │   │   │   │   ├── recommendation.md
-│   │   │   │   │   └── summary.md
-│   │   │   │   └── insecure_login
-│   │   │   │       ├── approach.md
-│   │   │   │       ├── description.md
-│   │   │   │       ├── recommendation.md
-│   │   │   │       └── summary.md
-│   │   │   └── wifi
-│   │   │       ├── wep
-│   │   │       │   ├── reccomendation.md
-│   │   │       │   └── summary.md
-│   │   │       ├── wpa_key
-│   │   │       │   ├── description.md
-│   │   │       │   ├── instructions.md
-│   │   │       │   ├── reccomendation.md
-│   │   │       │   └── summary.md
-│   │   │       └── wps_pin
-│   │   │           └── summary.md
+│   │   │   ├── access
+│   │   │   │   ├── ADIDS
+│   │   │   │   │   └── context
+│   │   │   │   ├── vpn
+│   │   │   │   └── wifi
+│   │   │   │       ├── wep
+│   │   │   │       │   ├── reccomendation.md
+│   │   │   │       │   └── summary.md
+│   │   │   │       ├── wpa_key
+│   │   │   │       │   ├── description.md
+│   │   │   │       │   ├── instructions.md
+│   │   │   │       │   ├── reccomendation.md
+│   │   │   │       │   └── summary.md
+│   │   │   │       └── wps_pin
+│   │   │   │           └── summary.md
+│   │   │   ├── services
+│   │   │   │   ├── ADIDS
+│   │   │   │   │   └── context
+│   │   │   │   │       └── why_it_matters.md
+│   │   │   │   ├── mail
+│   │   │   │   │   └── unencrypted
+│   │   │   │   └── web
+│   │   │   │       ├── cms_version
+│   │   │   │       │   ├── approach.md
+│   │   │   │       │   ├── description.md
+│   │   │   │       │   ├── recommendation.md
+│   │   │   │       │   └── summary.md
+│   │   │   │       └── insecure_login
+│   │   │   │           ├── approach.md
+│   │   │   │           ├── description.md
+│   │   │   │           ├── recommendation.md
+│   │   │   │           └── summary.md
+│   │   │   └── vuln_research
 │   │   ├── internal
-│   │   │   ├── data_storage
+│   │   │   ├── ADIDS
 │   │   │   ├── firewall
+│   │   │   │   └── ADIDS
+│   │   │   │       └── context
+│   │   │   ├── index.adids.md
 │   │   │   ├── privilege_separation
 │   │   │   ├── social_engineer
 │   │   │   │   └── personal_info
@@ -121,6 +131,9 @@ content/
 │   │   │   │   └── example
 │   │   │   │       └── browser_java_plugin.md
 │   │   │   └── traffic
+│   │   │       ├── ADIDS
+│   │   │       │   └── context
+│   │   │       │       └── why_it_matters.md
 │   │   │       └── example
 │   │   │           └── unsigned_ntml_auth.md
 │   │   ├── physical
@@ -129,8 +142,13 @@ content/
 │   │   │   │   ├── servers
 │   │   │   │   └── user_devices
 │   │   │   ├── beacons
+│   │   │   │   └── index.adids.md
 │   │   │   ├── data_backup
-│   │   │   └── data_retention
+│   │   │   ├── data_retention
+│   │   │   ├── data_storage
+│   │   │   │   └── index.adids.md
+│   │   │   ├── index.adids.md
+│   │   │   └── passwords
 │   │   ├── remote
 │   │   │   ├── individuals
 │   │   │   ├── services
