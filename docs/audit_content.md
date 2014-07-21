@@ -18,15 +18,17 @@ The external assessment methodology focuses on the identification of vulnerabili
       * Service Vulnerability Assessment (audit)
 Identifying publicly identified vulnerabilities that can be used against services to gain greater access than should be allowed. This section contains a general vulnerability research section and targeted sections for commonly identified vulnerabilities.
         * Vulnerability Research
-Using public research on vulnerability and exploit databases, vendor advisories, and virtualized replica testing 
-        * Communication
-Common concerns for services used for communication.
+This section goes over the process of evaluating services and devices being used by an organization with a variety of online and offline resources (vulnerability and exploit databases, vendor advisories, and virtualized replica testing) to identify if known vulnerabilities exist. It also covers how to add these add these vulnerabilities into a report.
+        * Services
+Common concerns for services provided by/used by the organization.
           * Mail (audit)
 Identifying common mail configuration vulnerabilities.
           * Chat/Video Conferece Service Assessment (audit/activity)
 Identifying common chat and video communication vulnerabilities.
-        * Web (Audit)
+          * Web (Audit)
 Common concerns for externally facing web services.
+      * Access
+	  Common concerns for ways of securing user access into the internal network.
         * VPN (Audit)
 VPN fingerprinting for analysis of security of VPN solutions.
         * Wifi Access Assessment
@@ -44,7 +46,7 @@ Identifying vulnerable services and practices being used over the local network 
       * Software Version Assessment (Handout/Activity)
 Identify software run on computers and the current version of that software. Check this against (handout) "software current version" to identify attacks that the office is vulnerable to. This is used to develop a report component exposing how un-updated software can lead to large vulnerabilities.
       * Firewalls (Audit)
-Identifying user and local firewall rule-sets. 
+Identifying user and local firewall rule-sets.
       * Data Storage (audit)
 Individual Device Encryption.
       * Privilege Separation (Audit)
@@ -84,7 +86,8 @@ Each audit section should contain the following content. This content is used to
 
 *Audit Content*
   * baseline skill set - The minimum skills required to safely carry out a threat modeling activity.
-  * instructions - tool-specific step-by-step instructions on how to identify the vulnerability.
+  * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
+  * exploit - tool-specific step-by-step instructions on how the vulnerability is exploited. (optional)
 
 *ADIDS Content*
   * Data Collection - What data to collect for reporting and how to present that data for the clearest understanding.
