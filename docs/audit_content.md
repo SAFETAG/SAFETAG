@@ -27,7 +27,7 @@ Identifying common mail configuration vulnerabilities.
 Identifying common chat and video communication vulnerabilities.
           * Web (Audit)
 Common concerns for externally facing web services.
-      * Access
+    * Access
 	  Common concerns for ways of securing user access into the internal network.
         * VPN (Audit)
 VPN fingerprinting for analysis of security of VPN solutions.
@@ -47,8 +47,6 @@ Identifying vulnerable services and practices being used over the local network 
 Identify software run on computers and the current version of that software. Check this against (handout) "software current version" to identify attacks that the office is vulnerable to. This is used to develop a report component exposing how un-updated software can lead to large vulnerabilities.
       * Firewalls (Audit)
 Identifying user and local firewall rule-sets.
-      * Data Storage (audit)
-Individual Device Encryption.
       * Privilege Separation (Audit)
 Are users using admin on their computers, or are they using another user and have to type in a password to get admin rights.
       * Social Engineering
@@ -61,6 +59,10 @@ The physical assessment methodology is focused on how to mitigate against threat
 How to make sure that old data does not put the org, or others, at risk.
       * Data Backup
 How to make sure you can't do your work if local data is lost." is the backup drive for the whole organization laying unencrypted and unplugged on the desk of the executive director and/or sysadmin?"
+      * Data Storage (audit)
+Individual Device Encryption.
+      * Passwords (audit)
+The strength of passwords being used by storage or in-use devices.
       * Beacons & other wireless emissions
 Auditing / Training on how devices beacon, if association and tracking in in the threat model.
       * Access
