@@ -1,35 +1,9 @@
-
-Title
-
-2.1.4 Webmail messages are sent and received unencrypted (non-HTTPS)
-Priority
-
-High
-Summary
-
-An attacker with access to the same local network as a staff member, when that staff member sends or receives email using the organization’s Webmail service, can easily and invisibly read, record or modify all messages in-transit to and from the Webmail server. This attacker could be someone, such as a patron of the Internet cafe where a staff member is working, who just happens to be using the same local network to connect to the Internet. Or, she could work for an organization with privileged access to the relevant network, such as SampleOrg’s Internet Service Provider (ISP) or a state surveillance agency.
-
-Even an informed staff member, who attempts to enter the secure (“https://”;) alternative webmail address when logging in, will be unable to do so, because the Webmail application does not support it.
-Description
-<description>
-MitigationTitle
-
-Mandatory (SSL, TLS or HTTPS) encryption on all authenticated services (especially email)
-MitigationDescription
-
-For Webmail, this means installing a valid, signed SSL certificate and disabling access through the insecure (“http://”) Web address. Attempts to access the insecure address should be redirected to the secure (“https://”;) URL.
-Assets affected by this issue
-
-    2.1 Email assessment (1 instance)
-
-Evidence for 2.1 Email assessment
-Title
-
-2.1.4 [sample evidence] Webmail messages are sent and received unencrypted (non-HTTPS)
-Summary
+---
+type: ADIDS
+id: audit-external-services-mail-unencrypted-reccomendation-web
+...
 
 If the attacker wishes to observe the victim’s email traffic (most likely because she failed to capture an unencrypted password, which would have allowed her to log in as the victim himself and read his email directly), she may need to carry out a second, slightly more complex attack.
-Description
 
 To capture outgoing Webmail messages, the attack is nearly identical to the password attack described above.
 
@@ -69,3 +43,4 @@ At this point, the contents of the sslstrip.log file contains a copy of incoming
 Figure 2: Attacker viewing an incoming email message intended for the victim
 
 Again, this same technique, with minor modifications, would work to monitor incoming email messages downloaded through POP3 or IMAP by Microsoft Outlook or some other email client.
+

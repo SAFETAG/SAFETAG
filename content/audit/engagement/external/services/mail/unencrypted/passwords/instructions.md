@@ -1,34 +1,7 @@
-
-Title
-
-2.1.1 Email passwords are sent (SMTP) and received (IMAP, POP3) unencrypted
-Priority
-
-High
-Summary
-
-An attacker with access to the same local network as a staff member, when that staff member sends or receives email using Microsoft Outlook (or any other email client), can easily and invisibly obtain that staff member’s email password. This attacker could be someone, such as a patron of the Internet cafe where a staff member is working, who just happens to be using the same local network to connect to the Internet. Or, she could work for an organization with privileged access to the relevant network, such as SampleOrg’s Internet Service Provider (ISP) or a state surveillance agency.
-
-Even an informed staff member who attempts to configure his email client to require SSL or TLS encryption will be unable to do so because the mail server does not support it.
-
-Description
-<description>
-
-MitigationTitle
-
-Mandatory (SSL, TLS or HTTPS) encryption on all authenticated services (especially email)
-MitigationDescription
-
-Those who use Outlook, or some other email client, should only be allowed to connect to the organization’s mail server using SSL or TLS encryption. Attempts to connected without encryption should fail. All staff mail clients should be reconfigured accordingly.
-Assets affected by this issue
-
-    2.1 Email assessment (1 instance)
-
-Evidence for 2.1 Email assessment
-Title
-
-2.1.1 [sample evidence] Email passwords are sent (SMTP) and received (IMAP, POP3) unencrypted
-Summary
+---
+type: ADIDS
+id: audit-external-services-mail-unencrypted-password-instructions-web
+...
 
 The attack log below demonstrates the ease with which <SafetagSubject> staff members’ passwords can be stolen as they sign in to the IMAP or POP3 servers. If the attacker is within the local network, she can target all email users in one go. If not, she can only attack users who are connecting to email from outside the office, and she must have access to the same network as the victim in order to do so. This could be at the victim’s home, an Internet cafe, an airport, etc.
 

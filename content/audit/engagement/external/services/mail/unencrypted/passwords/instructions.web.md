@@ -1,32 +1,7 @@
-
-Title
-
-2.1.3 Webmail passwords are sent and received unencrypted (non-HTTPS)
-Priority
-
-High
-Summary
-
-An attacker with access to the same local network as a staff member, when that staff member sends or receives email using the organization’s Webmail service, can easily and invisibly obtain that staff member’s email password. This attacker could be someone, such as a patron of the Internet cafe where a staff member is working, who just happens to be using the same local network to connect to the Internet. Or, she could work for an organization with privileged access to the relevant network, such as SampleOrg’s Internet Service Provider (ISP) or a state surveillance agency.
-
-Even an informed staff member, who attempts to enter the secure (“https://”;) alternative webmail address when logging in, will be unable to do so, because the Webmail application does not support it.
-Description
-<description>
-MitigationTitle
-
-Mandatory (SSL, TLS or HTTPS) encryption on all authenticated services (especially email)
-MitigationDescription
-
-For Webmail, this means installing a valid, signed SSL certificate and disabling access through the insecure (“http://”) Web address. Attempts to access the insecure address should be redirected to the secure (“https://”;) URL.
-Assets affected by this issue
-
-    2.1 Email assessment (1 instance)
-
-Evidence for 2.1 Email assessment
-Title
-
-2.1.3 [sample evidence] Webmail passwords are sent and received unencrypted (non-HTTPS)
-Description
+---
+type: ADIDS
+id: audit-external-services-mail-unencrypted-password-instructions-web
+...
 
 The attack log below demonstrates the ease with which SampleOrg staff members’ passwords can be stolen as they sign in to Webmail. If the attacker is within the local network, she can target all Webmail users in one go. If not, she can only attack users who are connecting to Webmail from outside the office, and she must have access to the same network as the victim in order to do so. This could be at the victim’s home, an Internet cafe, an airport, etc.
 
