@@ -1,34 +1,28 @@
 
-Title
+## summary
 
-5.1.1 Firewire ports and expansion slots can be abused to obtain data that are thought to be encrypted
-Priority
-
-Medium
-Summary
+Firewire ports and expansion slots can be abused to obtain data that are thought to be encrypted
 
 Any attacker who obtains a running (including sleeping and hibernating!) Windows, Mac, or even Linux laptop with a Firewire port, an ExpressCard expansion slot, or a Thunderbolt port will be able to read, record or modify any sensitive information on the device, even if the screen is “locked” and the information is stored on an encrypted volume or in an encrypted folder. This applies to threats involving loss, theft and confiscation, but also to “checkpoint” scenarios in which the attacker may only have access for a few minutes.
-Description
+
+## description
 
 This attack requires physical control of a machine that is not powered off. Full details of the scope of the attack are available at http://www.breaknenter.org/projects/inception/ .
 
-MitigationTitle
+## recommendation
 
 Remove FireWire Drivers, completely turn off computer when at risk
-MitigationDescription
+
 
 The easiest protection against this is to completely shut down your computer any time there is a chance of confiscation.
 
 If possible, the best protection against this is to remove or disable the SBP-2 and the FireWire drivers (Windows: http://support.microsoft.com/kb/2516445 , Linux: http://www.hermann-uwe.de/blog/physical-memory-attacks-via-firewire-dma-part-1-overview-and-mitigation) . For Mac, upgrading to the most recent operating system (but at least 10.7.2/Lion!)
 Assets affected by this issue
 
-    5.1 Secure data storage assessment (1 instance)
 
-Evidence for 5.1 Secure data storage assessment
-Title
+## instructions
 
-5.1.1 [sample evidence] Firewire ports and expansion slots can be abused to obtain data that are thought to be encrypted
-Description
+Firewire ports and expansion slots can be abused to obtain data that are thought to be encrypted
 
 The threat describe in this section is more complex than it needs to be. In fact, unencrypted data are vulnerable to any number of simple attacks, the two most straightforward being: 1) rebooting the computer from a USB stick CD-ROM or DVD containing an alternate operating system, then copying all of the data; or 2) removing the hard drive, inserting it into a different machine, then copying all of the data. These techniques, which work on nearly any computer, even if a strong login password has been set, are effective and widely used, but they require extended physical access to the device. A slightly different attack is described below, one that only requires physical access for a few minutes. It, too, works regardless of login/screen-lock passwords, though only devices with Firewire ports or expansion slots (ExpressCard, CardBus, PCMCIA, etc.) are vulnerable.
 
@@ -39,6 +33,7 @@ Step 1: First, the attacker would connect her computer to the victim’s using a
 
 Step 2: Once connected, the attacker simply runs the Inception tool, selects the operating system of the target machine and waits a minute or two for the attack to complete (depending on the amount of RAM present):
 
+```
 $ incept
 
  _|  _|      _|    _|_|_|  _|_|_|_|  _|_|_|    _|_|_|  _|    _|_|    _|      _|
@@ -73,6 +68,7 @@ Download: http://breaknenter.org/projects/inception | Twitter: @breaknenter
 [*] Signature found at 0x8b50c321 (in page # 570636)
 [*] Write-back verified; patching successful
 [*] BRRRRRRRAAAAAWWWWRWRRRMRMRMMRMRMMMMM!!!
+```
 
 In the case of the SampleOrg’s laptops tested, Inception took approximately two minutes to reach the final, somewhat self-congratulatory line shown above. At that point, we were able to login using any password. (Entering “asdf” worked just fine, and gave us full access to all data on the computer.) Inception works by temporarily replacing authentication code using the Firewire’s protocol’s direct memory access (DMA). After a reboot, everything is restored to its original state.
 

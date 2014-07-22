@@ -55,10 +55,6 @@ This component focuses on assessing and educating organizational staff on how to
 The personal information that organizational employees should keep private. (Handout & short activity)
     * Physical Assessment
 The physical assessment methodology is focused on how to mitigate against threats that occur because of the arrangement of digital assets in the physical world.
-      * Data Retention
-How to make sure that old data does not put the org, or others, at risk.
-      * Data Backup
-How to make sure you can't do your work if local data is lost." is the backup drive for the whole organization laying unencrypted and unplugged on the desk of the executive director and/or sysadmin?"
       * Data Storage (audit)
 Individual Device Encryption.
       * Passwords (audit)
@@ -72,6 +68,8 @@ Where are the servers that host the organizations assets. Is the location locked
 How are daily devices used and stored? Where are they when employees go home? 
       * Active Network Jacks
 Are there active network jacks that are unused? Are they within easy access to the public? Are they in places where people would not notice if there was somthing plugged into them?
+      * Data Access
+How to make sure you can't do your work if local data is lost." is the backup drive for the whole organization laying unencrypted and unplugged on the desk of the executive director and/or sysadmin?" How to make sure that old data does not put the org, or others, at risk.
 
 ## Content to be created for each audit section
 
@@ -83,7 +81,7 @@ Each audit section should contain the following content. This content is used to
   * approach - Step-by-step explanation of how the vulnerability is tested that is tool agnostic.
   * threats - The threats that are associated with this specific vulnerability.
   * recommendation - The recommended fix to address this problem. 
-  * resources - Guidance on how to seek out support to address this issue. 
+  * resources - Guidance on how to seek out support to address this issue.
   * skills - The skills needed to address the problem identified. This can include the skills needed to address a technical problem by a technologist or the digital security skill training needed.
 
 *Audit Content*
