@@ -40,3 +40,32 @@ id: training-for-the-better-times-with-candy
 id: 6a06e93e-09bf-41ab-8064-f7ad789f7ee4
 ```
 
+
+
+## Using meta-data inline
+
+We are using a [Pandoc filter](https://github.com/jgm/pandocfilters/blob/master/examples/metavars.py) to allow interpolation of metadata fields into a document. %{fields} will be replaced by the field's value.
+
+Example:
+
+With the following YAML meta-data;
+
+```
+---
+organization: My Place
+...
+```
+
+The string;
+
+```
+The organization - %{organization} - is an organization.
+
+```
+
+Will become;
+
+```
+ The organization - My Place - is an organization.
+``
+	
