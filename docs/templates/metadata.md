@@ -40,6 +40,13 @@ id: training-for-the-better-times-with-candy
 id: 6a06e93e-09bf-41ab-8064-f7ad789f7ee4
 ```
 
+align: (optional)
+	The alignment of the content. Only supported option is sidebar.
+
+```
+align: sidebar
+```
+
 
 
 ## Using meta-data inline
@@ -68,4 +75,5 @@ Will become;
 ```
  The organization - My Place - is an organization.
 ``
-	
+
+
