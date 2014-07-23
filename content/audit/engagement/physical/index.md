@@ -1,6 +1,6 @@
 ---
-type: ADIDS
-id: audit-physical-adids-index
+type: guide
+id: audit-physical-index
 ...
 
 # The Local Assessment
@@ -15,9 +15,10 @@ Physical access threats covered in this section include, among others:
   * access to computers, smartphones, servers, or backup hardrives of the organization;
   * sniffing the unencrypted wireless traffic of smartphones or laptops;
 
-## Data Storage
+## Data Loss
 
-!INCLUDE "./data_storage/index.adids.md"
+!INCLUDE "./data_backup/index.adids.md"
+!INCLUDE "./data_retention/index.adids.md"
 
 ## Data Access
 
