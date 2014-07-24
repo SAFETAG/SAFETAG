@@ -7,8 +7,9 @@ all: packages
 packages: pandoc modules/markdown-pp/markdown-pp.py
 
 modules/markdown-pp/markdown-pp.py: submodules
-	echo "Building markdown-pp"
-	cd modules/markdown-pp && sudo python setup.py install
+	@echo "Building markdown-pp"
+	@echo "This will require root access to this machine... sorry"
+	@cd modules/markdown-pp && sudo python setup.py install
 
 submodules:
 	git submodule update --init
