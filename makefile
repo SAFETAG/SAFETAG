@@ -1,13 +1,48 @@
-PHONY: all
+PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids
 
-all: pandoc markdown-pp
+export PATH := $(PATH):~/.cabal/bin
 
-submodules:
-	git submodules update --init
+all: packages
 
-markdown-pp: submodules
+packages: pandoc modules/markdown-pp/markdown-pp.py
+
+modules/markdown-pp/markdown-pp.py: submodules
 	echo "Building markdown-pp"
 	cd modules/markdown-pp && sudo python setup.py install
 
-pandoc:
-	echo "Installing pandoc"
+submodules:
+	git submodule update --init
+
+PANDOC_INST := $(shell which pandoc)
+pandoc: dependencies
+	@echo "Checking if Pandoc is installed"
+ifeq ($(PANDOC_INST),)
+	@echo "Pandoc needs to be installed"
+	@echo "This will require a network connection"
+	@echo "Updating package database"
+	cabal update
+	@echo "Installing pandoc and its dependencies"
+	cabal install pandoc
+else
+	@echo "Pandoc is already installed."
+endif
+
+report: packages
+
+#============ Dependencies ==============
+
+dependencies: ghc cabal
+
+HASKELL_ERROR = $(error "ERROR: Please install the [haskell-platform]. This will give you [GHC] and the [cabal-install] build tool.")
+
+GHC_INST := $(shell which ghc)
+ghc:
+ifeq ($(GHC_INST),)
+	$(HASKELL_ERROR)
+endif
+
+CABAL_INST := $(shell which cabal)
+cabal:
+ifeq ($(CABAL_INST),)
+	$(HASKELL_ERROR)
+endif
