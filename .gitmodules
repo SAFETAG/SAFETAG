@@ -1,0 +1,6 @@
+[submodule "modules/markdown-pp"]
+	path = modules/markdown-pp
+	url = https://github.com/OpenInternet/markdown-pp
+[submodule "modules/pandoc"]
+	path = modules/pandoc
+	url = https://github.com/jgm/pandoc.git
