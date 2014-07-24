@@ -15,11 +15,9 @@ This repository contains the publishing tools and templates to build customized 
 
 
 ## Requirements:
+*All requirements exposed when runing makefile*
 
-  * [nodejs](http://nodejs.org/download/)
-    * Python 2.6 or 2.7 is required to build from source tarballs.
-  * [GitBook](https://www.gitbook.io/)
-    * [GitBook Source Code Repository](https://github.com/GitbookIO/gitbook)
+  * [haskell-platform](https://www.haskell.org/platform/)
 
 ## License
 
