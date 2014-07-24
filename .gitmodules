@@ -4,3 +4,4 @@
 [submodule "modules/pandoc"]
 	path = modules/pandoc
 	url = https://github.com/jgm/pandoc.git
+	branch = 1.12.4.2
