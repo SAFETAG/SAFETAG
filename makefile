@@ -1,8 +1,12 @@
-PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids
+PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install
 
 export PATH := $(PATH):~/.cabal/bin
 
-all: packages
+all: install audit
+
+#============ Installation ==============
+
+install: packages
 
 packages: | pandoc modules/markdown-pp/markdown-pp.py
 
@@ -28,6 +32,8 @@ else
 	@echo "Pandoc is already installed."
 endif
 
+#============ Audit Folder Setup ==============
+
 DATE_DIR := $(shell date +%Y_%m_%d_%H_%M_%S)
 audit: date_dir | packages
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
@@ -38,7 +44,7 @@ date_dir:
 
 #============ Dependencies ==============
 
-dependencies: | ghc cabal
+dependencies: | ghc cabal tex
 
 HASKELL_ERROR = $(error "ERROR: Please install the [haskell-platform]. This will give you [GHC] and the [cabal-install] build tool.")
 
@@ -53,3 +59,11 @@ cabal:
 ifeq ($(CABAL_INST),)
 	$(HASKELL_ERROR)
 endif
+
+TEX_INST := $(shell which latex)
+tex:
+ifeq ($(TEX_INST),)
+	$(error "ERROR: For PDF output, you’ll need LaTeX. We recommend installing TeX Live via your package manager. (On Debian/Ubuntu, apt-get install texlive.).")
+endif
+
+
