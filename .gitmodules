@@ -1,0 +1,3 @@
+[submodule "modules/markdown-pp"]
+	path = modules/markdown-pp
+	url = https://github.com/OpenInternet/markdown-pp
