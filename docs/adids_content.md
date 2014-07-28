@@ -66,13 +66,13 @@ The host organization who is allowing active auditing to be done on their networ
 	* Threat Modeling Activities
       * Asset Analysis
       * Process Analysis
-  6. Audit Preparation
+  6. Remote / OS-INT
+    * Service Identification
+    * Staff or Partner Identification
+  7. Audit Preparation
     - The things that an auditor should prepare before starting an audit.
     * Introduction to data collection
 	* What to bring (checklist)
-  7. Remote / OS-INT
-    * Service Identification
-    * Staff or Partner Identification
   * External
     8. Vulnerability Research
       * Services
