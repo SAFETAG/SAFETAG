@@ -24,9 +24,30 @@ id: adids-vulnerability-research-index
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
+  * Vulnerability Assessment
+    * Service Identification
+	* Comparing the services, applications, and operating systems of identified hosts against vulnerability databases.
+	* Identifying common pitfalls and best practices on the services identifies and assessing if they are following those practices through conversations with the organization or through basic scanning or traffic analysis.
+	* Identifying issue tracker and project lists of any obscure projects being used to see if they are active and addressing bugs identified.
+    * Identifying all odd/obscure/one-off CMS's being used and dissuade.
+
 ## Deepening {.deepening}
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
+
+  * Examples with Common Services
+    * Mail
+	  * Revealing internal services or vulnerable mail servers using MX record assessment.
+	  * HTTPS EVERYWHERE!
+    * Web
+	  * Identifying versions of CMS's and Server software.
+	  * Identifying internal web-services
+	    * Anonymous DNS transfer
+	  * Identifying security of logins
+	* Basic security assessment of web services used.
+	  * Transparency reports
+	  * Server locations
+	  * Response to government requests
 
 ## Synthesis {.synthesis}
 

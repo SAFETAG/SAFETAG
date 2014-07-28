@@ -78,7 +78,7 @@ The host organization who is allowing active auditing to be done on their networ
       * Services
         * Mail
         * Web
-    9. Traffic Assessment
+    9. Network Access & Traffic Assessment
       *  Access
         * Wifi Access Assessment
           * WEP

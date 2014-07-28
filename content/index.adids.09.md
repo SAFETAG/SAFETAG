@@ -3,7 +3,7 @@ type: ADIDS
 id: adids-traffic-assessment-index
 ...
 
-# 9. Traffic Assessment
+# 9. Network Access & Traffic Assessment
 
 ## [STUB]
 
@@ -12,25 +12,61 @@ id: adids-traffic-assessment-index
       * WEP
       * WPA
       * WPS
-    * VPN
-  * Web
+    * VPN  (possibly save for next round. It will require a good ammount of work to get properly built.)
+    * Web
+  * Internal
+  	* Network Traffic Assessment
+	* Firewalls
 
 ## Activity {.activity}
 
-<?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
-
+Auditor provides scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.
+  * Organization with mostly in-field staff who use an internal mail service nad VPN.
+  * Organization with a large in-office staff using the wifi which gives them access to internal services.
+  * Organization that uses mostly google docs with documents either shared ad-hoc between indiviudals personal or work gmail accounts, or under a organizational account that shares everything with staff.
+    * This opens up conversations about using e-mail logins for google docs and calendar services that is different from external e-mail, or not. 
 
 ## Discussion {.discussion}
 
-<?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
+  * How do the various types of internal privlage sepearation change what "access" means?
 
 ## Input {.input}
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
+Overview of common concerns for ways of securing user access into the internal network. And introduction to the tools for this section.
+
+    * Wifi Access Assessment
+      * WEP
+	    * WEP cracking tools
+      * WPA
+	    * Password Cracking
+		  * Building password dictionaries
+      * WPS
+	    * PIN choice, etc
+    * VPN (possibly save for next round)
+	  * VPN fingerprinting
+	  * User Enumeration
+	  * Offline password Cracking
+	  * Man in the Middle Attacks
+	  * Abusing lack of Account Lockouts
+	  * Abusing Default Configurations
+  * Web
+    * Identifying usage of web-services to identify actual access risks
+
+
 ## Deepening {.deepening}
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
+
+  * Sniffing, filtering, and analizing traffic
+    * Sniffing WiFi traffic
+    * Sniffing VPN traffic for VPN Fingerprinting
+    * Sniffing traffic to external services on internal network to identify services that are insecure.
+  * WEP Cracking
+  * WPA / Password Cracking
+  * WPS Pin Cracking
+
 
 ## Synthesis {.synthesis}
 
