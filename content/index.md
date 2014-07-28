@@ -1,11 +1,13 @@
 ---
 type: guide
-id: index
+id: audit-index
 ...
 
-!INCLUDE "content/audit/getting_started/index.md"
+!INCLUDE "./pre_engagement/index.md"
 
-!INCLUDE "content/audit/index.md"
+!INCLUDE "./engagement/index.md"
+
+!INCLUDE "./post_engagement/index.md"
 
 
 

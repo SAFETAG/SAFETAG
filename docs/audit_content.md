@@ -27,7 +27,7 @@ Identifying common mail configuration vulnerabilities.
 Identifying common chat and video communication vulnerabilities.
           * Web (Audit)
 Common concerns for externally facing web services.
-    * Access
+      * Access
 	  Common concerns for ways of securing user access into the internal network.
         * VPN (Audit)
 VPN fingerprinting for analysis of security of VPN solutions.
@@ -97,3 +97,6 @@ Each audit section should contain the following content. This content is used to
   * Training Activities - SHORT training activities that supplement sections that could otherwise be detrimental to achieving organizational agency (see: social engineering)
   * Handouts - Handouts to give to to the organization staff to support training or post-audit learning
   * Operational Security - Auditor guidelines for managing the audits operational security when running the audit.
+
+
+

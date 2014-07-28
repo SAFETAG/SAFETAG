@@ -52,27 +52,27 @@ The host organization who is allowing active auditing to be done on their networ
 	* Accessable Security & Security Alienation
     * Securing Data in Motion
 	* Securing Data at Rest
-  4. Scope & Assessment Plan Development
+  4. Assessment Plan Development Part I: Initial Assessment
     - The process of building an initial assessment plan
-    * Pre-Audit interviews
 	* initial scope development
+	* Pre-Audit interviews
 	* Assessment Plan/agreement development
 	* Assessment Plan/agreement Negotiation
 	* Incident Response Planning
-  5. Audit Preparation
-    - The things that an auditor should prepare before starting an audit.
-    * Introduction to data collection
-	* What to bring (checklist)
-  6. Remote / OS-INT
-    * Service Identification
-    * Staff or Partner Identification
-  7. Threat Modeling
+  5. Assessment Plan Development Part II:  Threat Modeling
     - Security Awareness skill development and 
 	* Security Awareness
+	* Reevaluating the Assessment plan based upon identified threats
 	* Threat Modeling Activities
       * Asset Analysis
       * Process Analysis
-    * Reevaluating the Assessment plan based upon identified threats
+  6. Audit Preparation
+    - The things that an auditor should prepare before starting an audit.
+    * Introduction to data collection
+	* What to bring (checklist)
+  7. Remote / OS-INT
+    * Service Identification
+    * Staff or Partner Identification
   * External
     8. Vulnerability Research
       * Services
