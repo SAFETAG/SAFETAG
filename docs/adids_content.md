@@ -32,6 +32,86 @@ The host organization who is allowing active auditing to be done on their networ
     * Pretraining expectation setting with trainees
     * Pretraining Questionarre for trainees
 
+## SAFETAG modules ##
+
+  1. SAFETAG in context
+    - What is safetag, how to communicate its benefits to others, etc.
+    - Core concepts and practices for SAFETAG audits
+	* Goals of a Safetag Audit
+	* Who should be an auditor
+	* Who should NOT be an auditor
+    * Who should have a safetag audit
+	* Who should NOT have a safetag audit
+  2. Outcome and Organizational Committment
+    * Building agency
+	* How to make an audit have a positive impact on security posture
+    * tandem audit
+	  * Reaching out to, and working with IT staff.
+  3. Operational Security
+    * Operational Security Basics
+	* Accessable Security & Security Alienation
+    * Securing Data in Motion
+	* Securing Data at Rest
+  4. Scope & Assessment Plan Development
+    - The process of building an initial assessment plan
+    * Pre-Audit interviews
+	* initial scope development
+	* Assessment Plan/agreement development
+	* Assessment Plan/agreement Negotiation
+	* Incident Response Planning
+  5. Audit Preparation
+    - The things that an auditor should prepare before starting an audit.
+    * Introduction to data collection
+	* What to bring (checklist)
+  6. Remote / OS-INT
+    * Service Identification
+    * Staff or Partner Identification
+  7. Threat Modeling
+    - Security Awareness skill development and 
+	* Security Awareness
+	* Threat Modeling Activities
+      * Asset Analysis
+      * Process Analysis
+    * Reevaluating the Assessment plan based upon identified threats
+  * External
+    8. Vulnerability Research
+      * Services
+        * Mail
+        * Web
+    9. Traffic Assessment
+      *  Access
+        * Wifi Access Assessment
+          * WEP
+          * WPA
+          * WPS
+	    * VPN
+  * Internal
+  	  * Network Traffic Assessment
+	  * Firewalls
+    10. Staff Activities
+      * Social Engineering
+        * Personal information you should not give out
+      * Privilege Separation
+      * Software Version Assessment
+      * Staff firewall assessments
+  * Physical Assessment
+    * Staff Assessments Continued
+      * Data Storage
+      * Passwords
+      * Beacons
+  11. Physical Access
+    * Server Access
+    * Device Access
+    * Active Network Jacks
+    * Data Access
+  11. Reporting and Follow Up
+    * The Final Report
+	  * Connecting Vulnerabilities to Threats
+	  * Road Mapping Mitigation
+	  * Reccomending Support
+    * Follow Up
+
+
 ## Content contained in each SAFETAG Module ##
 
   * Context
