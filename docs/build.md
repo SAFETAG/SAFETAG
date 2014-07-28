@@ -10,8 +10,11 @@ To create a PDF from an index.md or index.adids.md file use the following comman
 modules/markdown-pp/markdown-pp.py content/index.md audit/folder/full.md
 ```
 
-To create a PDF from a markdown file type the following command.
+To create a PDF from a markdown file you need to add pandoc to your path and then run pandoc on the file.
+
+You can type the following commands.
 
 ```
+PATH=$PATH:~/.cabal/bin/
 pandoc audit/folder/full.md -o audit/folder/full.pdf
 ```
