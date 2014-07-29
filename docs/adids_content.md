@@ -113,7 +113,6 @@ The host organization who is allowing active auditing to be done on their networ
 
 
 ## Content contained in each SAFETAG Module ##
-
   * Context
 
 Content for the trainer of auditors.
@@ -204,7 +203,7 @@ For audit sections we will do the actual tool training and  conduct mini-follow 
 - Practices for results cature
 - Practices for displaying results
 - Incident response for this audit type
-- connecting results to the threats dientified
+- connecting results to the threats identified
 - Translating results to various audiences
 
   * Deepening
