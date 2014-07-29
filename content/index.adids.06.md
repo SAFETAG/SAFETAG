@@ -1,13 +1,15 @@
 ---
 type: ADIDS
-id: adids-remote-audit-index
+id: adids-audit-prep-index
 ...
 
-#   6. Remote / OS-INT
+# 6. Audit Preparation
 
 ## [STUB]
-  * Service Identification
-  * Staff or Partner Identification ( this section is just a glimmer of what could be done with social media intel work. But we don't have time in the sessions to do it)
+
+  - The things that an auditor should prepare before starting an audit.
+  * Introduction to data collection
+  * What to bring (checklist)
 
 ## Activity {.activity}
 
@@ -29,4 +31,3 @@ id: adids-remote-audit-index
 ## Synthesis {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>
-

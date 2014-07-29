@@ -1,62 +1,68 @@
 ---
-title:
-- type: main
-  text: SAFETAG
-- type: subtitle
-  text: Resources for training digital security experts to support at-risk groups
+documentclass: scrartcl
+title: SAFETAG
+subtitle: Resources for training digital security experts to support at-risk groups
 type: ADIDS
 id: audit-adids-index
 cover-image: images/adids_cover.jpg
 ...
 
+\newpage
 <!--  SAFETAG front matter -->
 
 !INCLUDE "content/ADIDS/front_matter.md"
 
-<!--  1. SAFETAG in context -->
+\newpage
+<!--  1. Outcome and Organizational Committment -->
 
 !INCLUDE "content/index.adids.01.md"
 
-<!--  2. Outcome and Organizational Committment -->
+\newpage
+<!--  2. Operational Security -->
 
 !INCLUDE "content/index.adids.02.md"
 
-<!--  3. Operational Security -->
+\newpage
+<!-- 3. Scope & Assessment Plan Development -->
 
 !INCLUDE "content/index.adids.03.md"
 
-<!-- 4. Scope & Assessment Plan Development -->
+\newpage
+<!-- 4. Threat Modeling -->
 
 !INCLUDE "content/index.adids.04.md"
 
-<!-- 5. Audit Preparation -->
+\newpage
+<!-- 5. Remote / OS-INT -->
 
 !INCLUDE "content/index.adids.05.md"
 
-<!-- 6. Remote / OS-INT -->
+\newpage
+<!-- 6. Audit Preparation -->
 
 !INCLUDE "content/index.adids.06.md"
 
-<!-- 7. Threat Modeling -->
+\newpage
+<!-- 7. Vulnerability Research -->
 
 !INCLUDE "content/index.adids.07.md"
 
-<!-- 8. Vulnerability Research -->
+\newpage
+<!-- 8. Traffic Assessment -->
 
 !INCLUDE "content/index.adids.08.md"
 
-<!-- 9. Traffic Assessment -->
+\newpage
+<!-- 9. Staff Activities -->
 
 !INCLUDE "content/index.adids.09.md"
 
-<!-- 10. Staff Activities -->
+\newpage
+<!-- 10. Physical Access -->
 
 !INCLUDE "content/index.adids.10.md"
 
-<!-- 11. Physical Access -->
+\newpage
+<!-- 11. Reporting and Follow Up -->
 
 !INCLUDE "content/index.adids.11.md"
-
-<!-- 12. Reporting and Follow Up -->
-
-!INCLUDE "content/index.adids.12.md"

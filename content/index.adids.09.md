@@ -1,73 +1,104 @@
 ---
 type: ADIDS
-id: adids-traffic-assessment-index
+id: adids-staff-activities-index
 ...
 
-# 9. Network Access & Traffic Assessment
+# 9. Staff Activities [stub]
 
-## [STUB]
+  * cont.
+    * Social Engineering
+      * Personal information you should not give out
+    * Privilege Separation
+    * Software Version Assessment
+    * Staff firewall assessments
+  * Physical Assessment
+    * Staff Assessments Continued
+    * Data Storage
+    * Passwords
 
-  *  Access
-    * Wifi Access Assessment
-      * WEP
-      * WPA
-      * WPS
-    * VPN  (possibly save for next round. It will require a good ammount of work to get properly built.)
-    * Web
-  * Internal
-  	* Network Traffic Assessment
-	* Firewalls
+!INCLUDE "images/staff_activities.png"
 
-## Activity {.activity}
+!INCLUDE "ADIDS/staff_activities/context/summary.md"
 
-Auditor provides scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.
-  * Organization with mostly in-field staff who use an internal mail service nad VPN.
-  * Organization with a large in-office staff using the wifi which gives them access to internal services.
-  * Organization that uses mostly google docs with documents either shared ad-hoc between indiviudals personal or work gmail accounts, or under a organizational account that shares everything with staff.
-    * This opens up conversations about using e-mail logins for google docs and calendar services that is different from external e-mail, or not. 
+### Why The Topic Matters [stub]
 
-## Discussion {.discussion}
+!INCLUDE "ADIDS/staff_activities/context/why_it_matters.md"
 
-  * How do the various types of internal privlage sepearation change what "access" means?
+### What Participants Will Learn [stub]
 
-## Input {.input}
+!INCLUDE "ADIDS/staff_activities/context/what_participants_will_learn.md"
+
+### Objectives [stub] {.sidebar}
+
+!INCLUDE "ADIDS/staff_activities/context/objectives.md"
+
+### Baseline Skills [stub]
+
+!INCLUDE "ADIDS/staff_activities/context/baseline_skills.md"
+
+### Before you Start [stub]
+
+<?trainer resources?>
+!INCLUDE "ADIDS/staff_activities/context/before_you_start.md"
+
+### Materials Needed [stub]
+
+!INCLUDE "ADIDS/staff_activities/context/materials_needed.md"
+
+
+## Activity [stub] {.activity}
+
+<?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
+
+  * Sec-shaming activity.
+    * This activity is focused on easing the trainees into thinking about how some methods of audits of indiviudal level behavior can alienate staff.
+	* This activity should also offer the oppourtunity for the auditors to start to think how vital staff investment is the success of the post-auddit behavior. Staff who spend their time curcumventing the security put in place because it "gets in their way" are the result of overly imposing solutions and an auditors failure to help build investment through the audit for the post-audit security implementation.
+
+
+## Discussion [stub] {.discussion}
+
+<?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
+
+  * As an auditor your job is to expose the need of security practices and tools to the staff and organization. How does the way you expose the need impact how solutions will be implemented and followed?
+
+## Input [stub] {.input}
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
-Overview of common concerns for ways of securing user access into the internal network. And introduction to the tools for this section.
+  * Exploring various activities & handouts
+    * Social Engineering
+      * Personal information you should not give out (handout)
+    * Software Version
+    * Staff firewall assessments
+  * Physical Assessment
+    * Staff Assessments Continued
+    * Data Storage
+    * Passwords
 
-    * Wifi Access Assessment
-      * WEP
-	    * WEP cracking tools
-      * WPA
-	    * Password Cracking
-		  * Building password dictionaries
-      * WPS
-	    * PIN choice, etc
-    * VPN (possibly save for next round)
-	  * VPN fingerprinting
-	  * User Enumeration
-	  * Offline password Cracking
-	  * Man in the Middle Attacks
-	  * Abusing lack of Account Lockouts
-	  * Abusing Default Configurations
-  * Web
-    * Identifying usage of web-services to identify actual access risks
-
-
-## Deepening {.deepening}
+## Deepening [stub] {.deepening}
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
 
-  * Sniffing, filtering, and analizing traffic
-    * Sniffing WiFi traffic
-    * Sniffing VPN traffic for VPN Fingerprinting
-    * Sniffing traffic to external services on internal network to identify services that are insecure.
-  * WEP Cracking
-  * WPA / Password Cracking
-  * WPS Pin Cracking
+  * The Assessments
+  Using Computers provided by the auditors or the host organization the auditees will do a hands on assessment of some computers.
+    * Software Version Assessment
+	  * How to quickly get, or have staff get the current versions of software.
+	  * Identifying real threat scenerios based on actual un-updated software in office.
+    * Staff firewall assessments
+	  * Network enumeration
+	  * Checking for firewalls on staff computers.
+    * Privlage Seperation
+	  * Checking for Admin user separation on Staff Computers (various types)
+    * Data Storage
+	  * Checking if devices are encrypted
+	  * Accessing sensitive data without login
+	    * Firewire
+		* Live USB image
+  * "The trainings"
+    * Social Engineering & What information you should not give out.
+	* Passwords
 
 
-## Synthesis {.synthesis}
+## Synthesis [stub] {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>

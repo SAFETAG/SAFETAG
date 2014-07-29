@@ -1,54 +1,99 @@
 ---
 type: ADIDS
-id: adids-vulnerability-research-index
+id: adids-traffic-assessment-index
 ...
 
-#   8. Vulnerability Research
+# 8. Network Access & Traffic Assessment [stub]
 
-## [STUB]
-
-  * Services
-    * Mail
+  *  Access
+    * Wifi Access Assessment
+      * WEP
+      * WPA
+      * WPS
+    * VPN  (possibly save for next round. It will require a good ammount of work to get properly built.)
     * Web
+  * Internal
+  	* Network Traffic Assessment
+	* Firewalls
 
-## Activity {.activity}
+!INCLUDE "images/network_access.png"
 
-<?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
+!INCLUDE "ADIDS/network_access_traffic/context/summary.md"
 
+### Why The Topic Matters [stub]
 
-## Discussion {.discussion}
+!INCLUDE "ADIDS/network_access_traffic/context/why_it_matters.md"
 
-<?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
+### What Participants Will Learn [stub]
 
-## Input {.input}
+!INCLUDE "ADIDS/network_access_traffic/context/what_participants_will_learn.md"
+
+### Objectives [stub] {.sidebar}
+
+!INCLUDE "ADIDS/network_access_traffic/context/objectives.md"
+
+### Baseline Skills [stub]
+
+!INCLUDE "ADIDS/network_access_traffic/context/baseline_skills.md"
+
+### Before you Start [stub]
+
+<?trainer resources?>
+!INCLUDE "ADIDS/network_access_traffic/context/before_you_start.md"
+
+### Materials Needed [stub]
+
+!INCLUDE "ADIDS/network_access_traffic/context/materials_needed.md"
+
+## Activity [stub] {.activity}
+
+Auditor provides scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.
+  * Organization with mostly in-field staff who use an internal mail service nad VPN.
+  * Organization with a large in-office staff using the wifi which gives them access to internal services.
+  * Organization that uses mostly google docs with documents either shared ad-hoc between indiviudals personal or work gmail accounts, or under a organizational account that shares everything with staff.
+    * This opens up conversations about using e-mail logins for google docs and calendar services that is different from external e-mail, or not. 
+
+## Discussion [stub] {.discussion}
+
+  * How do the various types of internal privlage sepearation change what "access" means?
+
+## Input [stub] {.input}
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
-  * Vulnerability Assessment
-    * Service Identification
-	* Comparing the services, applications, and operating systems of identified hosts against vulnerability databases.
-	* Identifying common pitfalls and best practices on the services identifies and assessing if they are following those practices through conversations with the organization or through basic scanning or traffic analysis.
-	* Identifying issue tracker and project lists of any obscure projects being used to see if they are active and addressing bugs identified.
-    * Identifying all odd/obscure/one-off CMS's being used and dissuade.
+Overview of common concerns for ways of securing user access into the internal network. And introduction to the tools for this section.
 
-## Deepening {.deepening}
+    * Wifi Access Assessment
+      * WEP
+	    * WEP cracking tools
+      * WPA
+	    * Password Cracking
+		  * Building password dictionaries
+      * WPS
+	    * PIN choice, etc
+    * VPN (possibly save for next round)
+	  * VPN fingerprinting
+	  * User Enumeration
+	  * Offline password Cracking
+	  * Man in the Middle Attacks
+	  * Abusing lack of Account Lockouts
+	  * Abusing Default Configurations
+  * Web
+    * Identifying usage of web-services to identify actual access risks
+
+## Deepening [stub] {.deepening}
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
 
-  * Examples with Common Services
-    * Mail
-	  * Revealing internal services or vulnerable mail servers using MX record assessment.
-	  * HTTPS EVERYWHERE!
-    * Web
-	  * Identifying versions of CMS's and Server software.
-	  * Identifying internal web-services
-	    * Anonymous DNS transfer
-	  * Identifying security of logins
-	* Basic security assessment of web services used.
-	  * Transparency reports
-	  * Server locations
-	  * Response to government requests
+  * Sniffing, filtering, and analizing traffic
+    * Sniffing WiFi traffic
+    * Sniffing VPN traffic for VPN Fingerprinting
+    * Sniffing traffic to external services on internal network to identify services that are insecure.
+  * WEP Cracking
+  * WPA / Password Cracking
+  * WPS Pin Cracking
 
-## Synthesis {.synthesis}
+
+## Synthesis [stub] {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>

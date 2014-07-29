@@ -1,16 +1,18 @@
 ---
 type: ADIDS
-id: adids-operational-security-index
+id: adids-assessment-plan-dev-index
 ...
 
-# 3. Operational Security
+# 3. Scope & Assessment Plan Development
 
 ## [STUB]
 
-    * Operational Security Basics
-	* Accessable Security & Security Alienation
-    * Securing Data in Motion
-	* Securing Data at Rest
+    - The process of building an initial assessment plan
+    * Pre-Audit interviews
+	* initial scope development
+	* Assessment Plan/agreement development
+	* Assessment Plan/agreement Negotiation
+	* Incident Response Planning
 
 ## Activity {.activity}
 
@@ -21,46 +23,13 @@ id: adids-operational-security-index
 
 <?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
 
-  * Provide the trainees with a pre-build asset and process model along with a threat. The trainees will then work through pre-audit, audit, and post-audit to brainstorm how to best protect the data and people.
-  * One of the trainees will be given a card where even knowing them is something that they have to address in their operational security plan.
-
-
 ## Input {.input}
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
-  * Accessable Security
-  If the process is too difficult members of the organization will "circumvent" it. You need to do a basic assessment of their capabilities and then base the level of operational security on that.
-  * Security Alienation
-
 ## Deepening {.deepening}
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
-
-|-|-|
-|data at rest|data in motion|
-|-|-|
-|protect data|protect data|
-|obscure data|protect auditor|
-||protect organization|
-||protect connection|
-|-|-|
-
-  * Data In motion
-    * Basic Usable Tools
-      * CryptoCat
-	    * How to teach installation.
-    * Advanced tools
-    (If they are already using them, or there is time for a training)
-      * GPG
-  * Data At Rest
-    * Basic Usable Tools
-      * MiniLock
-        * How to teach installation.
-        * How to quickly get them to use a good initial password.
-    * Advanced tools
-    (If they are already using them, or there is time for a training)
-	  * Truecrypt
 
 ## Synthesis {.synthesis}
 
