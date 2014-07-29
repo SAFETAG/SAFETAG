@@ -16,5 +16,5 @@ You can type the following commands.
 
 ```
 PATH=$PATH:~/.cabal/bin/
-pandoc audit/folder/full.md -o audit/folder/full.pdf
+pandoc --table-of-contents --toc-depth=1 audit/folder/full.md -o audit/folder/full.pdf
 ```
