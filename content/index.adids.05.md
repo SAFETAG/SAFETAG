@@ -83,7 +83,7 @@ For audit sections we will do the actual tool training and  conduct mini-follow 
 
 *TOPICS*
 
-  * Spiderfoot
+  * Spiderfoot 2.2 Branch of GitHub
     * API Keys
 	  * SHODAN
 	  * VirusTotal
