@@ -66,3 +66,8 @@ cover-image: images/adids_cover.jpg
 <!-- 11. Reporting and Follow Up -->
 
 !INCLUDE "content/index.adids.11.md"
+
+\newpage
+<!-- 12. Putting it all Together -->
+
+!INCLUDE "content/index.adids.12.md"

@@ -13,7 +13,7 @@ id: adids-context-index
 
 !INCLUDE "./practical_uses.md"
 
-!INCLUDE "./prerequisite_skills.md"
+!INCLUDE "./baseline_skills.md"
 
 !INCLUDE "./before_you_start.md"
 

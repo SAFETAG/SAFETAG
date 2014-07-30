@@ -3,9 +3,7 @@ type: ADIDS
 id: adids-outcomes-index
 ...
 
-# 1. Outcomes and Organizational Committment
-
-## [STUB]
+# 1. Outcomes and Organizational Committment [STUB]
 
   * Building agency
   * How to make an audit have a positive impact on security posture

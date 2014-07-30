@@ -93,6 +93,28 @@ Overview of common concerns for ways of securing user access into the internal n
   * WPA / Password Cracking
   * WPS Pin Cracking
 
+#### Hands on Training
+
+<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
+
+##### What you will need
+
+##### Setting up [tool]
+
+##### Configuring [tool]
+
+##### [Using Tool Subsections]
+
+#### Live Practice
+<?A timed practice session on a live target?>
+
+##### Capturing Data
+
+##### Writing up Findings
+
+##### Connecting to Assets and Process'
+
+
 
 ## Synthesis [stub] {.synthesis}
 

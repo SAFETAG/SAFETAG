@@ -63,16 +63,31 @@ The pysical access componet of SAFETAG is a VERY limited physical security compo
   * Contingency and Disaster Recover planning
     * Offsite backups
 	* Actually use your backups every once and a while.
-  * Documenting and Presenting physical security concerns
-    * Photos, video's, maps, etc.
-
+  * The "Walk Through Assessment"
+    * Setting it up
+	  * Don't let everyone know when you are doing the tours, or even that you will do an after hour tour.
+    * Preparing for the walkthrough
+    * Documenting the physical security concerns
+      * Photos, video's
+    * Presenting physical security concerns
+	  * maps, etc.
+	  
 ## Deepening [stub] {.deepening}
 
-<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
+#### Live Practice
+
+<?A timed practice session on a live target?>
 
 Trainees are taken on a tour of the host organizations building and asked to conduct a "walk through assessment" of the organization.
 
 NOTE: This would be far more valuable if supplimented by an after-hours tour by one of the hosts of the organization so that the auditors can identify the physical security practices of the organization.
+
+##### Capturing Data
+
+##### Writing up Findings
+
+##### Connecting to Assets and Process'
+
 
 ## Synthesis [stub] {.synthesis}
 

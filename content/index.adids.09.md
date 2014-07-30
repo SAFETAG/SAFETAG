@@ -50,7 +50,9 @@ id: adids-staff-activities-index
 
 <?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
 
-  * Sec-shaming activity.
+  * Mini-fail fair
+    * How you have been hacked
+    * Sec-shaming activity.
     * This activity is focused on easing the trainees into thinking about how some methods of audits of indiviudal level behavior can alienate staff.
 	* This activity should also offer the oppourtunity for the auditors to start to think how vital staff investment is the success of the post-auddit behavior. Staff who spend their time curcumventing the security put in place because it "gets in their way" are the result of overly imposing solutions and an auditors failure to help build investment through the audit for the post-audit security implementation.
 
@@ -79,25 +81,83 @@ id: adids-staff-activities-index
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
 
-  * The Assessments
-  Using Computers provided by the auditors or the host organization the auditees will do a hands on assessment of some computers.
-    * Software Version Assessment
-	  * How to quickly get, or have staff get the current versions of software.
-	  * Identifying real threat scenerios based on actual un-updated software in office.
-    * Staff firewall assessments
-	  * Network enumeration
-	  * Checking for firewalls on staff computers.
-    * Privlage Seperation
-	  * Checking for Admin user separation on Staff Computers (various types)
-    * Data Storage
-	  * Checking if devices are encrypted
-	  * Accessing sensitive data without login
-	    * Firewire
-		* Live USB image
+<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
+
+Insecurity Demo's
+
+Using Computers provided by the auditors or the host organization the auditees will do a hands on assessment of some computers.
+
+#### The Basics of Social Engineering 
+
   * "The trainings"
     * Social Engineering & What information you should not give out.
-	* Passwords
 
+#### The Basics of Passwords
+
+  * Passwords
+
+#### Checking for current versions of software
+
+  * Software Version Assessment
+	  * How to quickly get, or have staff get the current versions of software.
+	  * Identifying real threat scenerios based on actual un-updated software in office.
+
+##### Exposing real threats from currently un-updated software #####
+
+###### Identification
+
+###### Research
+
+###### Presentation
+
+#### Conducting a firewall assessment ####
+
+  * Staff firewall assessments
+    * Checking for firewalls on staff computers.
+	* Showing why firewalls are so important.
+	  * project honeypot?
+
+###### Setting up [tool] ######
+
+###### Configuring [tool] ######
+
+###### [Using Tool Subsections] ######
+
+##### Accessing Sensitive Data Without Login #####
+
+###### Setting up [tool] ######
+
+###### Configuring [tool] ######
+
+###### [Using Tool Subsections] ######
+
+#### Checking for Permissions on devices ####
+
+  * Privlage Seperation
+    * Checking for Admin user separation on Staff Computers (various types)
+	* Showing why using a non-admin user is so important
+
+###### Setting up [tool] ######
+
+###### Configuring [tool] ######
+
+###### [Using Tool Subsections] ######
+
+#### Checking for encryption ####
+
+  * Data Storage
+    * Checking if devices are encrypted
+    * Accessing sensitive data without login
+	  * Firewire
+	  * Live USB image
+
+##### Accessing Sensitive Data Without Login #####
+
+###### Setting up [tool] ######
+
+###### Configuring [tool] ######
+
+###### [Using Tool Subsections] ######
 
 ## Synthesis [stub] {.synthesis}
 
