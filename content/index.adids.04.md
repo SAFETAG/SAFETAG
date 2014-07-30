@@ -88,6 +88,15 @@ TODO NEEDS a TOT style event to train the auditors on how to run the threat mode
     * Process Analysis
   * Reevaluating the Assessment plan based upon identified threats
 
+#### [INSERT A MINI ADIDS SECTION HERE]
+
+##### Capturing Output
+
+##### Writing up Output
+
+##### Creating an Assets and Process' document you can work from while running the audit
+
+
 ## Synthesis [stub] {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>

@@ -3,9 +3,7 @@ type: ADIDS
 id: adids-assessment-plan-dev-index
 ...
 
-# 3. Scope & Assessment Plan Development
-
-## [STUB]
+# 3. Scope & Assessment Plan Development [STUB]
 
     - The process of building an initial assessment plan
     * Pre-Audit interviews
@@ -18,7 +16,6 @@ id: adids-assessment-plan-dev-index
 
 <?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
 
-
 ## Discussion {.discussion}
 
 <?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
@@ -29,7 +26,27 @@ id: adids-assessment-plan-dev-index
 
 ## Deepening {.deepening}
 
-<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
+#### Hands on Training
+
+<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
+
+##### What you will need
+
+##### Conducting a mock interview
+
+A trainee will conduct a mock interview of a trainer to allow the group to see and discuss an interview while it is in action. 
+
+##### Conducting an initial interview
+
+Get individuals from the hosting organization for the trainee's to interview. Each trainee will interview a different person, if possible.
+
+##### Building an initial assessment plan
+
+Each trainee will be given a copy fo the interviews. Using the interviews the trainee's will build an initial assessment plan. 
+
+##### Presenting & Negotiating the assessment plan
+
+The trainees will have a mock presentation and negotiation of their assessment plans with the trainer/s.
 
 ## Synthesis {.synthesis}
 

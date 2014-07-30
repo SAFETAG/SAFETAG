@@ -63,9 +63,9 @@ id: adids-remote-audit-index
 
 !INCLUDE "path/to/spiderfoot/summary.md"
 
-!INCLUDE "path/to/spiderfoot/"
+!INCLUDE "path/to/spiderfoot/why_spiderfoot.md"
 
-### Advanced Concepts  [stub] 
+### Advanced Concepts  [stub]
 
 For audit sections we will do the actual tool training and  conduct mini-follow up on the larger safetag audit themes in relationship to that audit.
 
@@ -80,16 +80,27 @@ For audit sections we will do the actual tool training and  conduct mini-follow 
 
 <?This is the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, un-parsed data, and an opportunity to capture live data from a static target and the housing training organization using the tool.?>	
 
+#### Hands on Training
 
-*TOPICS*
+<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
+
+##### What you will need
+
+##### Setting up Spiderfoot
 
   * Spiderfoot 2.2 Branch of GitHub
-    * API Keys
-	  * SHODAN
-	  * VirusTotal
-	  * projecthoneypot.org
+
+##### Configuring Spiderfot
+
+  * API Keys
+    * SHODAN
+    * VirusTotal
+    * projecthoneypot.org
   * Using a SOCKS proxy
 
+##### Using Spiderfoot
+
+**OUTPUT OVERVIEW**
 ```
 Affiliate - Domain
 Affiliate - Hostname
@@ -129,7 +140,19 @@ Web Server
 ```
 
 
+#### Live Practice
+<?A timed practice session on a live target?>
+
+##### Capturing Data
+
+##### Writing up Findings
+
+##### Connecting to Assets and Process'
+
+
 ## Synthesis  [stub]  {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>
 
+- Sharing Results from Deepening
+- Discussion about why auditors took different approaches

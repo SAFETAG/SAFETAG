@@ -38,7 +38,6 @@ id: adids-vulnerability-research-index
 
 !INCLUDE "audit/engagement/external/vuln_research/materials_needed.md"
 
-
 ## Activity [stub] {.activity}
 
 <?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
@@ -78,6 +77,29 @@ id: adids-vulnerability-research-index
 	  * Transparency reports
 	  * Server locations
 	  * Response to government requests
+
+
+#### Hands on Training
+
+<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
+
+##### What you will need
+
+##### Setting up [tool]
+
+##### Configuring [tool]
+
+##### [Using Tool Subsections]
+
+#### Live Practice
+<?A timed practice session on a live target?>
+
+##### Capturing Data
+
+##### Writing up Findings
+
+##### Connecting to Assets and Process'
+
 
 ## Synthesis [stub] {.synthesis}
 
