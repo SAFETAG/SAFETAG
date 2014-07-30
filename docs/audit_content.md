@@ -75,23 +75,34 @@ How to make sure you can't do your work if local data is lost." is the backup dr
 
 Each audit section should contain the following content. This content is used to populate various sections.
 
-*Reporting Content*
+*Methodology*
+  * summary - A short - two to three sentence - basic overview of the methodology.
+  * description - An longer in-depth - two to three paragraph - overview of the methodology.
+  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
+  * threats - The threats that are explored with a methodology.
+  * purpose - The purpose for the methodology used.
+  * scope - An overview of the full scope of this type of methodology.
+  * baseline skill set - The minimum skills required to safely carry out this methodology.
+
+*Vulnerability*
   * summary - A short - two to three sentence - basic overview of the vulnerability.
   * description - An longer in-depth - two to three paragraph - overview of the vulnerability.
-  * approach - Step-by-step explanation of how the vulnerability is tested that is tool agnostic.
+  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
   * threats - The threats that are associated with this specific vulnerability.
-  * recommendation - The recommended fix to address this problem. 
+  * recommendation - The recommended fix to address this problem.
   * resources - Guidance on how to seek out support to address this issue.
-  * skills - The skills needed to address the problem identified. This can include the skills needed to address a technical problem by a technologist or the digital security skill training needed.
-
-*Audit Content*
-  * baseline skill set - The minimum skills required to safely carry out a threat modeling activity.
-  * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
+  * skills - The skills needed to address the problem identified.
   * exploit - tool-specific step-by-step instructions on how the vulnerability is exploited. (optional)
 
-*ADIDS Content*
-  * Data Collection - What data to collect for reporting and how to present that data for the clearest understanding.
+*Tool*
+  * summary - A short - two to three sentence - basic overview of the methodology.
+  * description - An longer in-depth - two to three paragraph - overview of the methodology.
+  * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
+  * threats - The threats that are explored with a methodology.
+  * purpose - The purpose for the methodology used.
+  * data collection - What data to collect for reporting and how to present that data for the clearest understanding.
   * example - a folder with sample example content and example images from a false audit.
+  * why [tool] - a short overview of why we chose this tool.
 
 *Optional Content*
   * Training Activities - SHORT training activities that supplement sections that could otherwise be detrimental to achieving organizational agency (see: social engineering)

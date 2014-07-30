@@ -1,7 +1,9 @@
+# Special Formatting
+
 ```
 # Assessing Risks
 large "section" header
-dark blue
+dark blue #404965
 all caps
 ```
 
@@ -112,3 +114,24 @@ for sidebars
 
 ##### Additional Material {.orange_sidebar}
 
+
+
+# Color Scheme
+
+## Primary Colors
+
+|Name|CMYK|RGB|HEX|
+|Dark Blue|94,74,11,35| 0, 46, 98|#404965|
+|Blue|72,51,0,0|13,92,171|#4F63B8|
+|Blue Grey|NA|178,188,224| #005CAB|
+
+## Secondary Colors
+
+|Name|CMYK|RGB|HEX|
+|Orange|1,80,87,2|241,92,34|#DE5D5A|
+|Yellow|0,29,84,0|252,177,52|#FF9F3C|
+|Green|54,0,92,2|111,180,63|#60A144|
+|Grey Green| 42,0,75,0|NA|#8FD268|
+|Warm Gray 11U|52,48,52,9|NA|#78716e|
+|Warm Gray 6U|11,15,18,32|NA|#989791|
+|Warm Gray 3U|8,9,11,21|NA|#C3BCB4|
