@@ -1,4 +1,4 @@
-PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install
+PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install texpackages
 
 export PATH := $(PATH):~/.cabal/bin
 
@@ -66,4 +66,15 @@ ifeq ($(TEX_INST),)
 	$(error "ERROR: For PDF output, you’ll need LaTeX. We recommend installing TeX Live via your package manager. (On Debian/Ubuntu, apt-get install texlive.).")
 endif
 
+# =============== For Future Integration of a smaller latex install =================
 
+modules/install-tl-unx.tar.gz:
+	wget --directory-prefix=modules/  http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+
+modules/texlive: | modules/install-tl-unx.tar.gz
+	mkdir modules/texlive
+	tar -zxf modules/install-tl-unx.tar.gz -C modules/texlive --strip-components 1
+	cd modules/texlive/ && ./install-tl  -v -v -no-gui -profile=../latex.profile
+
+texpackages:
+	tlmgr install titlesec
