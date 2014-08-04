@@ -5,7 +5,7 @@ id: adids-remote-audit-index
 
 # 5. Remote [stub]
 
-!INCLUDE "images/remote.png"
+<!-- ![](content/images/remote.png "") -->
 
 !INCLUDE "audit/engagement/remote/summary.md"
 

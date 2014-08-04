@@ -5,14 +5,14 @@ id: adids-report-and-follow-up-index
 
 # 11. Reporting and Follow Up  [stub]
 
+<!-- ![](content/images/reporting.png "") -->
+
   * The Final Report
     * Connecting Vulnerabilities to Threats
     * Road Mapping Mitigation
     * Reccomending Support
   * Follow Up
 
-
-!INCLUDE "images/reporting.png"
 
 !INCLUDE "audit/post_engagement/summary.md"
 

@@ -5,6 +5,9 @@ id: adids-operational-security-index
 
 # 2. Operational Security [STUB]
 
+<!-- ![](content/images/operational_security.png "") -->
+
+
     * Operational Security Basics
 	* Accessable Security & Security Alienation
     * Securing Data in Motion

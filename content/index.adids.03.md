@@ -5,6 +5,8 @@ id: adids-assessment-plan-dev-index
 
 # 3. Scope & Assessment Plan Development [STUB]
 
+<!-- ![](content/images/assessment_plan_dev.png "") -->
+
     - The process of building an initial assessment plan
     * Pre-Audit interviews
 	* initial scope development
@@ -51,3 +53,8 @@ The trainees will have a mock presentation and negotiation of their assessment p
 ## Synthesis {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>
+
+
+## Resources
+
+  * http://www.microsoft.com/security/sir/threat/default.aspx

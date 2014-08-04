@@ -5,6 +5,8 @@ id: adids-staff-activities-index
 
 # 9. Staff Activities [stub]
 
+<!-- ![](content/images/staff_activities.png "") -->
+
   * cont.
     * Social Engineering
       * Personal information you should not give out
@@ -15,8 +17,6 @@ id: adids-staff-activities-index
     * Staff Assessments Continued
     * Data Storage
     * Passwords
-
-!INCLUDE "images/staff_activities.png"
 
 !INCLUDE "ADIDS/staff_activities/context/summary.md"
 

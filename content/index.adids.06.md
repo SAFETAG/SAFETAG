@@ -5,7 +5,7 @@ id: adids-audit-prep-index
 
 # 6. Audit Preparation
 
-## [STUB]
+<!-- ![](content/images/preparation.png "") -->
 
   - The things that an auditor should prepare before starting an audit.
   * Introduction to data collection
