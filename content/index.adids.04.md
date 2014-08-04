@@ -3,17 +3,19 @@ type: ADIDS
 id: adids-threat-modeling-index
 ...
 
-# 4. Threat Modeling & Building Security Awareness  [stub]
+# 4. Needs Assessment & Building Security Awareness  [stub]
+
+<!-- ![](content/images/threat_modeling.png "") -->
 
 Security Awareness skill development
 
   * Security Awareness
-  * Threat Modeling Activities
+  * Risk Identification Activities
     * Asset Analysis
     * Process Analysis
-  * Reevaluating the Assessment plan based upon identified threats
+	* Determining Severity
+  * Reevaluating the Assessment plan
 
-!INCLUDE "images/threat_modeling.png"
 
 !INCLUDE "audit/engagement/threat_modeling/summary.md"
 
@@ -48,9 +50,10 @@ Security Awareness skill development
 
 Auditors are provided basic information about an organizaiton and a basic assessment plan for that organization for an audit.  After a short time looking it over they will each be given a persona to become as "employees" for that organization. The trainer will then run a threat modeling activity (both asset and process analysis) with the "staff."
 
-  * Threat Modeling Activities
-    * Asset Analysis
-    * Process Analysis
+  * Value Driven Risk Identification Activities
+    * Process Mapping
+    * Asset Identification
+	* Determining Severity
 
 ## Discussion  [stub] {.discussion}
 
@@ -73,28 +76,33 @@ Auditors are provided basic information about an organizaiton and a basic assess
 Topics
 
   * Holistic Security
-  * Threat Modeling Activities
-    * Asset Analysis
-    * Process Analysis
+  * Risk Identification Activities
+    * Facilitation Tips
+      * Make sure the right people are in the room.
+	  * Room setup
+    * Process Mapping
+	  * Determine the boundries
+	  * 
+    * Asset Identification
+    * Determining Severity
+
 
 ## Deepening  [stub] {.deepening}
 
-<?This is the the hands-on segment of a session.?>
+<?This is the hands-on segment of a session.?>
 
-TODO NEEDS a TOT style event to train the auditors on how to run the threat modeling activities with a group.
-
-  * Threat Modeling Activities
-    * Asset Analysis
-    * Process Analysis
-  * Reevaluating the Assessment plan based upon identified threats
-
-#### [INSERT A MINI ADIDS SECTION HERE]
-
-##### Capturing Output
-
-##### Writing up Output
-
-##### Creating an Assets and Process' document you can work from while running the audit
+  * Risk Identification Activities
+    * Process Mapping
+    * Asset Identification
+	  * Physical
+	  * Human
+    * Determining Severity
+	  * Determining Impact
+	    * Disclosure of Assets (Confidentiality)
+		* Loss of Assets (Integrity)
+		* Loss of Availability (Availability)
+		* 
+  * Reevaluating the Assessment plan based activities
 
 
 ## Synthesis [stub] {.synthesis}
