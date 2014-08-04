@@ -5,6 +5,8 @@ id: adids-traffic-assessment-index
 
 # 8. Network Access & Traffic Assessment [stub]
 
+<!-- ![](content/images/network_access.png "") -->
+
   *  Access
     * Wifi Access Assessment
       * WEP
@@ -15,8 +17,6 @@ id: adids-traffic-assessment-index
   * Internal
   	* Network Traffic Assessment
 	* Firewalls
-
-!INCLUDE "images/network_access.png"
 
 !INCLUDE "ADIDS/network_access_traffic/context/summary.md"
 

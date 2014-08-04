@@ -5,9 +5,9 @@ id: adids-putting-it-together-index
 
 # 12. Putting it all Together
 
-This concluding section goes over the actual flow of a SAFETAG audit. It looks at the time it took each auditor to complete each individual section.
+<!-- ![](content/images/putting_it_together.png "") -->
 
-!INCLUDE "images/putting_it_together.png"
+This concluding section goes over the actual flow of a SAFETAG audit. It looks at the time it took each auditor to complete each individual section.
 
 !INCLUDE "ADIDS/putting_it_together/summary.md"
 

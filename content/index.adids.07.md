@@ -5,11 +5,11 @@ id: adids-vulnerability-research-index
 
 # 7. Vulnerability Research [stub]
 
+<!-- ![](content/images/vuln_research.png "") -->
+
   * Services
     * Mail
     * Web
-
-!INCLUDE "images/vuln_research.png"
 
 !INCLUDE "audit/engagement/external/vuln_research/summary.md"
 
