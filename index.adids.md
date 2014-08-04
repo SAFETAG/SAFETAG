@@ -71,3 +71,6 @@ cover-image: images/adids_cover.jpg
 <!-- 12. Putting it all Together -->
 
 !INCLUDE "content/index.adids.12.md"
+
+<!-- Load Default Images -->
+!INCLUDE "theme/image_defaults.md"
