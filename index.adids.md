@@ -28,7 +28,7 @@ cover-image: images/adids_cover.jpg
 !INCLUDE "content/index.adids.03.md"
 
 \newpage
-<!-- 4. Threat Modeling -->
+<!-- 4. Needs Assessment -->
 
 !INCLUDE "content/index.adids.04.md"
 
