@@ -63,6 +63,15 @@ Auditor provides scenerios that allow a trainee to explore ways they would use/f
 
 Overview of common concerns for ways of securing user access into the internal network. And introduction to the tools for this section.
 
+  * Sniffing, filtering, and analizing traffic
+	* Identifying Operating Systems on a network
+	  * p0f 3.0
+	  * OpenVAS
+	    * Vulnerability assessment tools are to make your research easier, not replace it.
+	  * 
+    * Sniffing VPN traffic for VPN Fingerprinting
+    * Sniffing traffic to external services on internal network to identify services that are insecure.
+  * Introduction to aircrack-ng  
     * Wifi Access Assessment
       * WEP
 	    * WEP cracking tools
@@ -86,12 +95,25 @@ Overview of common concerns for ways of securing user access into the internal n
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
 
   * Sniffing, filtering, and analizing traffic
-    * Sniffing WiFi traffic
+	* Identifying Operating Systems on a network
+	  * p0f 3.0
+	  * OpenVAS
+	  * 
     * Sniffing VPN traffic for VPN Fingerprinting
     * Sniffing traffic to external services on internal network to identify services that are insecure.
-  * WEP Cracking
-  * WPA / Password Cracking
+  * Sniffing WiFi traffic - aircrack-ng
+    * Cracking Wifi: Flowchart - http://www.aircrack-ng.org/doku.php?id=flowchart
+    * Exploring Packet Captures - http://www.aircrack-ng.org/doku.php?id=wpa_capture
+	  * - http://www.willhackforsushi.com/books/377_eth_2e_06.pdf
+	  * - http://wiki.wireshark.org/Wi-Fi
+	  * - https://www.wireshark.org/docs/dfref/
+  * Wireless Driver Compatability
+    * Injection Test http://www.aircrack-ng.org/doku.php?id=injection_test
+  * WEP Cracking - http://www.aircrack-ng.org/doku.php?id=simple_wep_crack
+  * WPA / Password Cracking - http://www.aircrack-ng.org/doku.php?id=cracking_wpa
   * WPS Pin Cracking
+    * http://null-byte.wonderhowto.com/how-to/hack-wpa-wifi-passwords-by-cracking-wps-pin-0132542/
+	* http://www.kalitutorials.net/2014/04/hack-wpawpa2-wps-reaver-kali-linux.html
 
 #### Hands on Training
 
@@ -113,7 +135,6 @@ Overview of common concerns for ways of securing user access into the internal n
 ##### Writing up Findings
 
 ##### Connecting to Assets and Process'
-
 
 
 ## Synthesis [stub] {.synthesis}
