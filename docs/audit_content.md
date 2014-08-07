@@ -1,7 +1,7 @@
 ## Audit Sections
 
   * Engagement
-    * Threat Modeling
+    * Needs Assessment
 A set of activities that are undertaken on the first or second day that the auditor runs with the staff to identify the "critical infrastructure" of the organization to guide the audit and theme of the reporting.
       * Asset Analysis
 Identifying the range of assets an organization holds as valuable (staff, partners, plans, financial info, media content, customer/employee data)  and the impact of their potential loss/leakage. (Activity)
@@ -60,7 +60,7 @@ Individual Device Encryption.
       * Passwords (audit)
 The strength of passwords being used by storage or in-use devices.
       * Beacons & other wireless emissions
-Auditing / Training on how devices beacon, if association and tracking in in the threat model.
+Auditing / Training on how devices beacon, if association and tracking in in the needs assessment.
       * Access
 	    * Server Access
 Where are the servers that host the organizations assets. Is the location locked, if so, who has the key, etc.
@@ -79,7 +79,7 @@ Each audit section should contain the following content. This content is used to
   * summary - A short - two to three sentence - basic overview of the methodology.
   * description - An longer in-depth - two to three paragraph - overview of the methodology.
   * approach - Step-by-step explanation of the methodology used that is tool agnostic.
-  * threats - The threats that are explored with a methodology.
+  * risks - The risks that are associated with a methodology.
   * purpose - The purpose for the methodology used.
   * scope - An overview of the full scope of this type of methodology.
   * baseline skill set - The minimum skills required to safely carry out this methodology.
@@ -88,7 +88,7 @@ Each audit section should contain the following content. This content is used to
   * summary - A short - two to three sentence - basic overview of the vulnerability.
   * description - An longer in-depth - two to three paragraph - overview of the vulnerability.
   * approach - Step-by-step explanation of the methodology used that is tool agnostic.
-  * threats - The threats that are associated with this specific vulnerability.
+  * risks - The risks that are associated with this specific vulnerability.
   * recommendation - The recommended fix to address this problem.
   * resources - Guidance on how to seek out support to address this issue.
   * skills - The skills needed to address the problem identified.
@@ -98,7 +98,7 @@ Each audit section should contain the following content. This content is used to
   * summary - A short - two to three sentence - basic overview of the methodology.
   * description - An longer in-depth - two to three paragraph - overview of the methodology.
   * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
-  * threats - The threats that are explored with a methodology.
+  * risks - The risks that are exposed by a tools.
   * purpose - The purpose for the methodology used.
   * data collection - What data to collect for reporting and how to present that data for the clearest understanding.
   * example - a folder with sample example content and example images from a false audit.

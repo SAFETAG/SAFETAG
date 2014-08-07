@@ -59,13 +59,12 @@ The host organization who is allowing active auditing to be done on their networ
 	* Assessment Plan/agreement development
 	* Assessment Plan/agreement Negotiation
 	* Incident Response Planning
-  5. Assessment Plan Development Part II:  Threat Modeling
-    - Security Awareness skill development and 
-	* Security Awareness
-	* Reevaluating the Assessment plan based upon identified threats
-	* Threat Modeling Activities
+  5. Assessment Plan Development Part II:  Needs Assessment
+	* Needs Assessment Activities
       * Asset Analysis
       * Process Analysis
+	  * Risk Modeling
+	* Reevaluating the Assessment plan based upon identified needs
   6. Remote / OS-INT
     * Service Identification
     * Staff or Partner Identification
@@ -106,7 +105,7 @@ The host organization who is allowing active auditing to be done on their networ
     * Data Access
   11. Reporting and Follow Up
     * The Final Report
-	  * Connecting Vulnerabilities to Threats
+	  * Connecting Vulnerabilities to Needs
 	  * Road Mapping Mitigation
 	  * Reccomending Support
     * Follow Up
@@ -142,7 +141,7 @@ Content for the trainer of auditors.
 
 The session begins with an activity that is connected to the topic of the session. This is meant to introduce the topic to the participants using interactive exercises. Trainers / facilitators design this beforehand to illustrate some of the issues that they want the participants to start thinking about.
 
-The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in ming.
+The activities focus on introducing the user to the scope of this vulnerability or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in ming.
 
     * Video (if any)
 
@@ -203,7 +202,7 @@ For audit sections we will do the actual tool training and  conduct mini-follow 
 - Practices for results cature
 - Practices for displaying results
 - Incident response for this audit type
-- connecting results to the threats identified
+- connecting results to the needs identified
 - Translating results to various audiences
 
   * Deepening
