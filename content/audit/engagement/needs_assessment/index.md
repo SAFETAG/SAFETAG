@@ -8,3 +8,5 @@ A set of activities that are undertaken on the first or second day that the audi
 !INCLUDE "./assets/index.md"
 
 !INCLUDE "./process/index.md"
+
+!INCLUDE "./severity/index.adids.md"
