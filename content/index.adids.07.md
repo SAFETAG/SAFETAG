@@ -7,10 +7,6 @@ id: adids-vulnerability-research-index
 
 <!-- ![](content/images/vuln_research.png "") -->
 
-  * Services
-    * Mail
-    * Web
-
 !INCLUDE "audit/engagement/external/vuln_research/summary.md"
 
 ### Why The Topic Matters [stub]
@@ -40,13 +36,20 @@ id: adids-vulnerability-research-index
 
 ## Activity [stub] {.activity}
 
-Escilation of privlage game:
+Elevation of Privilege: The Threat Modeling Game
+
+Elevation of Privilege (EoP) is based on Microsoft's STRIDE (Spoofing, Tampering, Repudiation, Information disclosure, Denial of Service and Elevation of Privilege) threat framework.
+
+"You start with such a diagram (ideally, one focused on data flows) and deal the cards to 3-6 players."
+
+The trainer will also act as a note taker during the game.
+
 
 http://www.microsoft.com/en-us/download/details.aspx?id=20303&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True
 
 ## Discussion [stub] {.discussion}
 
-<?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
+!INCLUDE "ADIDS/vuln_research/discussion.md"
 
 ## Input [stub] {.input}
 
