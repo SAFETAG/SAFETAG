@@ -40,7 +40,9 @@ id: adids-vulnerability-research-index
 
 ## Activity [stub] {.activity}
 
-<?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
+Escilation of privlage game:
+
+http://www.microsoft.com/en-us/download/details.aspx?id=20303&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True
 
 ## Discussion [stub] {.discussion}
 
@@ -77,7 +79,8 @@ id: adids-vulnerability-research-index
 	  * Transparency reports
 	  * Server locations
 	  * Response to government requests
-
+    * How to tie ease of identification of exploit to likelyhood for report
+	  * 
 
 #### Hands on Training
 
@@ -99,7 +102,6 @@ id: adids-vulnerability-research-index
 ##### Writing up Findings
 
 ##### Connecting to Assets and Process'
-
 
 ## Synthesis [stub] {.synthesis}
 
