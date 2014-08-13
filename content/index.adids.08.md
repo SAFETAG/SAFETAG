@@ -22,13 +22,27 @@ id: adids-traffic-assessment-index
 
 ### Why The Topic Matters [stub]
 
+Wireless networks are often trusted as equivalent to the hardwired office networks they have largely replaced, but they have important differences. Wireless networks are often "visible" from outside the walls of the office - from common spaces or even the street, and even a few minutes of network "sniffing" by an adversary can enable them to work offline to reveal the network password.  Knowing this password would let someone then access the entire internal network, files shared internally, and even change network settings to enable remote access.  While in an ideal setup, this would give no further access to sensitive documents, it's not uncommon to find shared file folders, or to gain access to the firewall or network routers (often set to the default password, because they're only accessible from inside the network...).
+
+By walking organizations through the vulnerabilities of wireless networks, you have the opportunity to discuss password strength, and the power that having "offline" access to a password means in terms of brute forcing it, as well as the importance of defense in depth even within their trusted work network - reducing the services computers and servers are sharing, setting up local firewalls on computers, and requiring authentication to access files.
+
 !INCLUDE "ADIDS/network_access_traffic/context/why_it_matters.md"
 
 ### What Participants Will Learn [stub]
 
+Participants will learn the basics of listening to wireless network traffic to identify an organization's network, acquiring the information needed to break in to the network, suggested approaches for password recovery, and guidance on things to look for once you're inside the network.
+
 !INCLUDE "ADIDS/network_access_traffic/context/what_participants_will_learn.md"
 
 ### Objectives [stub] {.sidebar}
+
+Identify an organization's network
+Determine its security type
+Acquire the data necessary for password discovery
+Use password recovery tools to find passwords
+Access the network
+Scan the network for devices (computers, servers, network hardware)
+Observe network traffic for further investigation
 
 !INCLUDE "ADIDS/network_access_traffic/context/objectives.md"
 
@@ -43,35 +57,45 @@ id: adids-traffic-assessment-index
 
 ### Materials Needed [stub]
 
+Computer running Kali Linux
+Wireless card than can be set to monitor mode
+Wireless network(s) with permission to try and break into (may be provided by the trainer)
+
+Whiteboard or poster notes and markers
+
 !INCLUDE "ADIDS/network_access_traffic/context/materials_needed.md"
 
 ## Activity [stub] {.activity}
 
-Auditor provides scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.
-  * Organization with mostly in-field staff who use an internal mail service nad VPN.
+Auditor provides scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.  While going through these scenarios, build a "generic" network map with the organization's laptops, mail server, router, wifi hotspot, and cloud services. Identify potentially unencrypted or unauthenticated network traffic (file shares, website logins).  While the firewall is a great front-line defense against attacks coming across the Internet, a snoopy neighrbor or actual adversary can use the wireless network to jump straight past it with very little effort.
+
+Sample scenarios:
+  * Organization with mostly in-field staff who use an internal mail service and VPN.
   * Organization with a large in-office staff using the wifi which gives them access to internal services.
   * Organization that uses mostly google docs with documents either shared ad-hoc between indiviudals personal or work gmail accounts, or under a organizational account that shares everything with staff.
     * This opens up conversations about using e-mail logins for google docs and calendar services that is different from external e-mail, or not. 
 
 ## Discussion [stub] {.discussion}
 
-  * How do the various types of internal privlage sepearation change what "access" means?
+  * How do the various types of internal privlage separation change what "access" means?
+  * Where do hosted services help?  Where do they hurt?
+
 
 ## Input [stub] {.input}
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
-Overview of common concerns for ways of securing user access into the internal network. And introduction to the tools for this section.
+Accessing a Wireless Network
 
-  * Sniffing, filtering, and analizing traffic
-	* Identifying Operating Systems on a network
-	  * p0f 3.0
-	  * OpenVAS
-	    * Vulnerability assessment tools are to make your research easier, not replace it.
-	  * 
-    * Sniffing VPN traffic for VPN Fingerprinting
-    * Sniffing traffic to external services on internal network to identify services that are insecure.
-  * Introduction to aircrack-ng  
+Organizations approach their wireless setup in a myriad of different ways based on how and where they work.  However, with wireless networks in almost every case being treated as trusted internal networks, so we need to ensure that they provide a reasonable level of equivalent security as well as using the failings of wireless networks to have further discussions with organizations over defense in depth concepts.
+
+The ideal first step is to be able to go in prepared, and with zero knowledge of their network, connect to it.  This comes with quite a few gotchas to having it work right, and won't always work, but certainly can underline the importance of password security if it does.
+
+If an office had an open or MAC-address-filtering network, you should skip straight to the network sniffing stage.  While outside the scope of SAFETAG audits, if you have spare time, you might help them implement WPA encryption, combined with an Internet-access-only guest network.
+
+The SAFETAG team has yet to encounter a WEP network in the field, but we presume there are still some out there, and while WPA is a significant improvement over WEP's security, weak passwords are extremely common, and even the simplest dictionary attacks can open a network in minutes.  We use the aircrack suite of tools for most of our wireless investigation, and will dig in shortly.
+
+  * Introduction to aircrack-ng
     * Wifi Access Assessment
       * WEP
 	    * WEP cracking tools
@@ -80,6 +104,26 @@ Overview of common concerns for ways of securing user access into the internal n
 		  * Building password dictionaries
       * WPS
 	    * PIN choice, etc
+
+Sniffing Network Traffic
+
+
+
+  * Sniffing, filtering, and analyzing traffic
+	  * p0f 3.0
+	* Identifying Operating Systems on a network
+	  * OpenVAS
+	    * Vulnerability assessment tools are to make your research easier, not replace it.
+	  * 
+    * Sniffing VPN traffic for VPN Fingerprinting
+    * Sniffing traffic to external services on internal network to identify services that are insecure.
+    * Web
+        * Identifying usage of web-services to identify actual access risks
+
+
+
+VPNs (stub)
+
     * VPN (possibly save for next round)
 	  * VPN fingerprinting
 	  * User Enumeration
@@ -87,8 +131,6 @@ Overview of common concerns for ways of securing user access into the internal n
 	  * Man in the Middle Attacks
 	  * Abusing lack of Account Lockouts
 	  * Abusing Default Configurations
-  * Web
-    * Identifying usage of web-services to identify actual access risks
 
 ## Deepening [stub] {.deepening}
 
