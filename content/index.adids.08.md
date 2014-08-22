@@ -12,11 +12,9 @@ id: adids-traffic-assessment-index
       * WEP
       * WPA
       * WPS
-    * VPN  (possibly save for next round. It will require a good ammount of work to get properly built.)
-    * Web
   * Internal
-  	* Network Traffic Assessment
-	* Firewalls
+  	* Exploring a Network
+	* Routers and Firewalls
 
 !INCLUDE "ADIDS/network_access_traffic/context/summary.md"
 
@@ -92,6 +90,7 @@ Sample scenarios:
 
   * Introduction to aircrack-ng
     * Wifi Access Assessment
+    * airodump-ng
       * Open and MAC-filtered networks
       * WEP
 	    * WEP cracking tools
@@ -104,6 +103,15 @@ Sample scenarios:
 Organizations approach their wireless setup in a myriad of different ways based on how and where they work.  However, with wireless networks in almost every case being treated as trusted internal networks, so we need to ensure that they provide a reasonable level of equivalent security as well as using the failings of wireless networks to have further discussions with organizations over defense in depth concepts.
 
 The ideal first step is to be able to go in prepared, and with zero knowledge of their network, connect to it.  This comes with quite a few gotchas to having it work right, and won't always work, but certainly can underline the importance of password security if it does.
+
+
+First steps
+
+Scan for networks
+determine/guess the office network - some are obfuscated
+confirm the office network before proceeding
+airodump logging (handshakes, beacons, macs)
+
 
 #### Open or MAC-address-filtered network ####
 
@@ -132,7 +140,7 @@ WPA provides the best option for securing a wireless network, but it is suscepti
 
 ##### WPS Attacks #####
 
-Let's first cover WPS.  It was built as an addition to WPA to make it easier to add devices without typing in secure passwords, but this ease of use means that a malicious actor can pose as a device and effectively reduce the potentially very difficult passwords WPA allows down to a simple numeric-only 8 character PIN.  Further, the WPS system allows an attacker to work on this PIN in two parallel chunks, further reducing its security.  This, like WEP, is a "live" attack - you have to stay connected to the network - but also like WEP, it is a guaranteed attack; your brute forcing of the WPS system will eventually allow you network access.
+Let's first cover WPS.  It was built as an addition to WPA to make it easier to add devices without typing in secure passwords, but this ease of use means that a malicious actor can pose as a device and effectively reduce the potentially very difficult passwords WPA allows down to a simple numeric-only 8 character PIN.  Further, the WPS system allows an attacker to work on this PIN in two parallel chunks, further reducing its security.  This, like WEP, is a "live" attack - you have to stay connected to the network - but also like WEP, it is a guaranteed attack; your brute forcing of the WPS system will eventually (2-10 hours) allow you network access.
 
 Step 1....
 
@@ -150,68 +158,23 @@ The beauty of breaking in to a WPA protected network is that it is an offline at
 
 ### Mapping the Network ###
 
-ZenMap
+Once you have access to the network, you need to first document how you managed that and share it with the hosts.  This is a great moment to discuss passwords in many cases.  If you didn't manage to break through the password it's not worth the precious audit time to brute force it - simply ask for the password and move on.  If it's a WPA network, you can work on cracking the password after hours, if only to demonstrate the amount of time their current password would "protect" them for against a dedicated attacker.
 
-Identifying auditor MAC addresses
+MACs and beacons
 
-Mapping the network
+After documenting and discussing access, you can turn your attention to mapping out the network.  Your airodump logs should already have a wealth of devices listed by MAC address, their beacons, and the APs they're connected to.  This is a great first step in identifying the users of various devices.  In addition, you should note down the MAC addresses of any network devices the auditor(s) are using, so as to be able to easily filter those out of later analysis.
 
-Tracking beacons
+Mapping the network: nmap/ZenMap
 
-Identifying user:device connections
+The next step is to use a network scanning tool, such as ZenMap (a graphical frontend to nmap) to match MAC addresses with IPs and computer details.  This paints a more complete picture of the office's network setup. Using beacon information, in combination with the computer hostnames, you can often map most devices to their owners.
 
+Identifying servers and network hardware, Upstream hardware (traceroute)
 
-
-
-
-<! --
-DROPPING MOST OF THIS, PRESUMING IT GOES MORE INTO SECTION 7 NOW:
-  * Sniffing, filtering, and analyzing traffic
-	  * p0f 3.0
-	* Identifying Operating Systems on a network
-	  * OpenVAS
-	    * Vulnerability assessment tools are to make your research easier, not replace it.
-	  * 
-    * Sniffing VPN traffic for VPN Fingerprinting
-    * Sniffing traffic to external services on internal network to identify services that are insecure.
-    * Web
-        * Identifying usage of web-services to identify actual access risks
-
-
-
-VPNs (stub)
-
-    * VPN (possibly save for next round)
-	  * VPN fingerprinting
-	  * User Enumeration
-	  * Offline password Cracking
-	  * Man in the Middle Attacks
-	  * Abusing lack of Account Lockouts
-	  * Abusing Default Configurations
--->
+It is also useful to note down network hardware - what is at 192.168.0.1, 10.0.0.1, and so on.  Determining the wireless router, and what it connects to (often it is behind a cablemodem or DSL modem itself).  Checking in to see if these are still set up with the default passwords strays into the work of vulnerability mapping, but also provides a great chance to discuss the value of multiple lines of defense, and not just relying on the fact that someone "has to be on the network already" before they can access the router. http://www.defaultpassword.com/ and http://www.routerpasswords.com/ are your friends here.
 
 ## Deepening [stub] {.deepening}
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
-
-TRANSFER VULN TO JIRA;
-KEEP NMAP for scanning/mnetwork mapping
-
-  * Sniffing, filtering, and analizing traffic
-	* Identifying Operating Systems on a network
-	  * p0f 3.0
-	  * OpenVAS
-	  * 
-    * Sniffing VPN traffic for VPN Fingerprinting
-    * Sniffing traffic to external services on internal network to identify services that are insecure.
-  * Sniffing WiFi traffic - aircrack-ng
-    * Cracking Wifi: Flowchart - http://www.aircrack-ng.org/doku.php?id=flowchart
-    * Exploring Packet Captures - http://www.aircrack-ng.org/doku.php?id=wpa_capture
-	  * - http://www.willhackforsushi.com/books/377_eth_2e_06.pdf
-	  * - http://wiki.wireshark.org/Wi-Fi
-	  * - https://www.wireshark.org/docs/dfref/
-  * Wireless Driver Compatability
-    * Injection Test http://www.aircrack-ng.org/doku.php?id=injection_test
 
 
 #### Hands on Training
@@ -220,22 +183,51 @@ KEEP NMAP for scanning/mnetwork mapping
 
 ##### What you will need
 
+Computer running Kali Linux
+Wireless card than can be set to monitor mode
+Network to target (with permission)
+
 ##### Setting up [tool]
+
+  * Wireless Driver Compatability
+    * Injection Test http://www.aircrack-ng.org/doku.php?id=injection_test
 
 ##### Configuring [tool]
 
+(drop? should be pre-configured in Kali?)
+
 ##### [Using Tool Subsections]
+
+WEP: http://www.aircrack-ng.org/doku.php?id=simple_wep_crack
+
+WPA: See $SAFETAG/content/audit/engagement/external/access/wifi/wpa_key/instructions.md
+
+WPS: 
+http://nathanheafner.com/home/2013/01/11/hacking-my-own-router-with-reaver-guide-to-brute-forcing-wifi-protected-setup/
+http://uwnthesis.wordpress.com/2013/07/11/wps-how-to-install-and-use-reaver-to-detect-the-wps-on-your-home-router/
+
 
 #### Live Practice
 <?A timed practice session on a live target?>
 
-##### Capturing Data
+<!-- MORE HERE AFTER EXPLORING TRAINING AP CAPABILITIES  -->
+
+Pre-configure a wireless access point to serve WEP and WPA networks, and enable WPS for WPA.  The WPA password should be quickly crackable based on the password attacks above.  The WEP network should be configured to use 64 bit encryption to speed the practice. 
+
+If no WEP network is available, you can use this file http://download.aircrack-ng.org/wiki-files/other/test.ivs
+
+If no WPA network is available, you can use this file: http://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=wpa-Induction.pcap
+
 
 ##### Writing up Findings
 
-##### Connecting to Assets and Process'
+##### Connecting to Assets and Processes
 
 
 ## Synthesis [stub] {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>
+
+* Limits of wireless cracking in the field (and when to give up)
+* Password security
+* Defense in depth
