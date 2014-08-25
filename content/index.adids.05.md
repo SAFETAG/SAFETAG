@@ -38,6 +38,10 @@ id: adids-remote-audit-index
 
 <?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
 
+Hide and Seek:
+
+
+
 ## Discussion [stub] {.discussion}
 
 <?SAFETAG specific: For Audit discussions the auditor will provide scenarios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>

@@ -26,6 +26,9 @@ id: adids-assessment-plan-dev-index
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
+<!--Only temporarily included as a guide for developing input section overview. -->
+!INCLUDE "audit/pre_engagement/interviews/index.guide.md"
+
 ## Deepening {.deepening}
 
 #### Hands on Training
@@ -38,7 +41,7 @@ id: adids-assessment-plan-dev-index
 
 A trainee will conduct a mock interview of a trainer to allow the group to see and discuss an interview while it is in action. 
 
-##### Conducting an initial interview
+##### Conducting initial interviews
 
 Get individuals from the hosting organization for the trainee's to interview. Each trainee will interview a different person, if possible.
 
@@ -53,7 +56,6 @@ The trainees will have a mock presentation and negotiation of their assessment p
 ## Synthesis {.synthesis}
 
 <?A good training habit is to always summarize the session. Talk about what happened in the session, some of the results of the discussion, what issues were discussed, what solutions were made, and give some more time for participants to ask more questions before the session is closed.?>
-
 
 ## Resources
 
