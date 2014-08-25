@@ -107,8 +107,6 @@ The SAFETAG team has yet to encounter a WEP network in the field, but we presume
 
 Sniffing Network Traffic
 
-
-
   * Sniffing, filtering, and analyzing traffic
 	  * p0f 3.0
 	* Identifying Operating Systems on a network

@@ -7,10 +7,6 @@ id: adids-vulnerability-research-index
 
 <!-- ![](content/images/vuln_research.png "") -->
 
-  * Services
-    * Mail
-    * Web
-
 !INCLUDE "audit/engagement/external/vuln_research/summary.md"
 
 ### Why The Topic Matters [stub]
@@ -38,31 +34,21 @@ id: adids-vulnerability-research-index
 
 !INCLUDE "audit/engagement/external/vuln_research/materials_needed.md"
 
-## Activity [stub] {.activity}
+<!-- ## Activity [stub] {.activity} -->
 
-<?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
+!INCLUDE "ADIDS/vuln_research/activity/index.md"
 
-## Discussion [stub] {.discussion}
+<!-- ## Discussion [stub] {.discussion} -->
 
-<?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
+!INCLUDE "ADIDS/vuln_research/discussion/discussion.md"
 
-## Input [stub] {.input}
+<!-- ## Input -->
 
-<?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
-
-  * Vulnerability Assessment
-    * Service Identification
-	* Mapping Versions
-	* Identifying patch levels
-	* Comparing the services, applications, and operating systems of identified hosts against vulnerability databases.
-	* Identify weak ports or services
-	* Identify Lockout Threshhold
-	* Identifying common pitfalls and best practices on the services identifies and assessing if they are following those practices through conversations with the organization or through basic scanning or traffic analysis.
-    * Identifying all odd/obscure/one-off CMS's being used and dissuade.
+!INCLUDE "ADIDS/vuln_research/input/index.md"
 
 ## Deepening [stub] {.deepening}
 
-<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
+<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an opportunity to capture live data from a static target and the housing training organization using the tool.?>
 
   * Examples with Common Services
     * Mail
@@ -77,7 +63,8 @@ id: adids-vulnerability-research-index
 	  * Transparency reports
 	  * Server locations
 	  * Response to government requests
-
+    * How to tie ease of identification of exploit to likelyhood for report
+	  * 
 
 #### Hands on Training
 
@@ -99,7 +86,6 @@ id: adids-vulnerability-research-index
 ##### Writing up Findings
 
 ##### Connecting to Assets and Process'
-
 
 ## Synthesis [stub] {.synthesis}
 

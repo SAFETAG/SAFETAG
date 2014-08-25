@@ -13,7 +13,6 @@ id: adids-report-and-follow-up-index
     * Reccomending Support
   * Follow Up
 
-
 !INCLUDE "audit/post_engagement/summary.md"
 
 ### Why The Topic Matters [stub]
@@ -43,11 +42,11 @@ id: adids-report-and-follow-up-index
 
 ## Activity [stub] {.activity}
 
-<?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
+The auditor will provide a needs assessment and organization profile and a set of identified vulnerabilities trainees will then organize the vulnerabilities themselves. 
+
 
 ## Discussion [stub] {.discussion}
 
-<?SAFETAG specific: For Audit discussions the auditor will provide scenerios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
 
 ## Input [stub] {.input}
 

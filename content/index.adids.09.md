@@ -71,6 +71,7 @@ id: adids-staff-activities-index
     * Social Engineering
       * Personal information you should not give out (handout)
     * Software Version
+	  * https://www.mozilla.org/security/known-vulnerabilities/
     * Staff firewall assessments
   * Physical Assessment
     * Staff Assessments Continued
