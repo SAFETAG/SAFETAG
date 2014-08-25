@@ -5,13 +5,15 @@ id: adids-input-part-one
 
 #### A. Identification
 
-*Introduction:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+*Introduction:* 
 
   * Service Identification
     * nmap
 	  * http://nmap.org/book/vscan.html
       * Using Scripts
 	    * http://nmap.org/nsedoc/index.html
+    * Identifying all odd/obscure/one-off Services
+      * Don't forget to submit a signature to nmap :)  
     * zenmap
 	  * Creating scans
 	  * Creating Profiles and Using Scripts
@@ -19,10 +21,9 @@ id: adids-input-part-one
     * System based
 	  * OpenVAS
 	    * GreenBone Assistant
-	* Web Based
+	* Web Based (TODO)
 	  * 
   * Identifying Patch Levels
-  * Identifying all odd/obscure/one-off Services
 
 ##### Interaction with the Participants:
 
