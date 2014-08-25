@@ -42,23 +42,13 @@ id: adids-vulnerability-research-index
 
 !INCLUDE "ADIDS/vuln_research/discussion/discussion.md"
 
-## Input [stub] {.input}
+<!-- ## Input -->
 
-<?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
-
-  * Vulnerability Assessment
-    * Service Identification
-	* Mapping Versions
-	* Identifying patch levels
-	* Comparing the services, applications, and operating systems of identified hosts against vulnerability databases.
-	* Identify weak ports or services
-	* Identify Lockout Threshhold
-	* Identifying common pitfalls and best practices on the services identifies and assessing if they are following those practices through conversations with the organization or through basic scanning or traffic analysis.
-    * Identifying all odd/obscure/one-off CMS's being used and dissuade.
+!INCLUDE "ADIDS/vuln_research/input/index.md"
 
 ## Deepening [stub] {.deepening}
 
-<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
+<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an opportunity to capture live data from a static target and the housing training organization using the tool.?>
 
   * Examples with Common Services
     * Mail
