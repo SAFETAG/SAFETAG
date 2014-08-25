@@ -8,13 +8,19 @@ id: adids-audit-prep-index
 <!-- ![](content/images/preparation.png "") -->
 
   - The things that an auditor should prepare before starting an audit.
+  * Before you go
+    * Update vulnerability databases
+	  * OpenVAS
+	  * ExploitDB
   * Introduction to data collection
   * What to bring (checklist)
+  * Audit troubleshooting
+    * watch out for our and your teams MAC address
+	
 
 ## Activity {.activity}
 
 <?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
-
 
 ## Discussion {.discussion}
 
