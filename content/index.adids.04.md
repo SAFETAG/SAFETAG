@@ -59,6 +59,16 @@ Auditors are provided basic information about an organization and a basic assess
 
 !INCLUDE "./ADIDS/needs_assessment/input/index.md"
 
+  * (Guide) [Security for Journalists, Part Two: Threat Modeling](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/) (Jonathan Stray)
+
+  * [WORKBOOK ON SECURITY: PRACTICAL STEPS FOR HUMAN RIGHTS DEFENDERS AT RISK](http://frontlinedefenders.org/files/workbook_eng.pdf)
+  * [Protection Manual for Human Rights Defenders](http://frontlinedefenders.org/manuals/protection)
+    * english, portuguese, french, spanish, arabic, indonesian, russian, & farsi
+  * [Front Line Protection Handbook](http://frontlinedefenders.org/files/en/Front%20Line%20Protection%20Handbook.pdf)
+  * [Digital Security and Privacy for Human Rights Defenders ](http://www.frontlinedefenders.org/esecman/)
+    * English, Spanish, Vietnamese
+  
+
 ## Deepening  [stub] {.deepening}
 
 !INCLUDE "./ADIDS/needs_assessment/deepening/index.md"

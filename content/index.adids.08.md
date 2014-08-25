@@ -68,10 +68,9 @@ Overview of common concerns for ways of securing user access into the internal n
 	  * p0f 3.0
 	  * OpenVAS
 	    * Vulnerability assessment tools are to make your research easier, not replace it.
-	  * 
     * Sniffing VPN traffic for VPN Fingerprinting
     * Sniffing traffic to external services on internal network to identify services that are insecure.
-  * Introduction to aircrack-ng  
+  * Introduction to aircrack-ng
     * Wifi Access Assessment
       * WEP
 	    * WEP cracking tools
@@ -89,6 +88,7 @@ Overview of common concerns for ways of securing user access into the internal n
 	  * Abusing Default Configurations
   * Web
     * Identifying usage of web-services to identify actual access risks
+  * nmap
 
 ## Deepening [stub] {.deepening}
 
