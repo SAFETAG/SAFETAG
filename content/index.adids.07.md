@@ -38,7 +38,7 @@ id: adids-vulnerability-research-index
 
 !INCLUDE "ADIDS/vuln_research/activity/index.md"
 
-<!-- ## Discussion [stub] {.discussion} -->
+## Discussion [stub] {.discussion}
 
 !INCLUDE "ADIDS/vuln_research/discussion/discussion.md"
 
@@ -46,7 +46,9 @@ id: adids-vulnerability-research-index
 
 !INCLUDE "ADIDS/vuln_research/input/index.md"
 
-## Deepening [stub] {.deepening}
+<!-- ## Deepening [stub] {.deepening} -->
+
+!INCLUDE "ADIDS/vuln_research/deepening/index.md"
 
 <?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an opportunity to capture live data from a static target and the housing training organization using the tool.?>
 
@@ -64,7 +66,6 @@ id: adids-vulnerability-research-index
 	  * Server locations
 	  * Response to government requests
     * How to tie ease of identification of exploit to likelyhood for report
-	  * 
 
 #### Hands on Training
 
