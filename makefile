@@ -66,6 +66,32 @@ ifeq ($(TEX_INST),)
 	$(error "ERROR: For PDF output, you’ll need LaTeX. We recommend installing TeX Live via your package manager. (On Debian/Ubuntu, apt-get install texlive.).")
 endif
 
+
+# =============== Report Generation =================
+
+# Setting SHELL and adding cabal to PATH so that we can just make pandoc work on debian without mucking with the ~/.bash_profile
+SHELL:=/bin/bash
+PATH:=$(PATH):~/.cabal/bin/
+
+adids:
+	echo $(PATH)
+	-mkdir -p audit/build
+	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
+	pandoc --table-of-contents --toc-depth=1 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
+
+report:
+	-mkdir -p audit/build
+	modules/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
+	pandoc --table-of-contents --toc-depth=1 audit/build/report.md -o audit/build/report.pdf
+
+guide:
+	-mkdir -p audit/build
+	modules/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
+	pandoc --table-of-contents --toc-depth=1 audit/build/guide.md -o audit/build/guide.pdf
+
+all_docs: adids guide report
+
+
 # =============== For Future Integration of a smaller latex install =================
 
 modules/install-tl-unx.tar.gz:
@@ -78,3 +104,6 @@ modules/texlive: | modules/install-tl-unx.tar.gz
 
 texpackages:
 	tlmgr install titlesec
+
+
+

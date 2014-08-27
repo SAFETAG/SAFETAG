@@ -2,19 +2,19 @@
 
 ## Handbook
 
-Currently SAFETAG can only be built by dirctly calling the command line tools. This should be fixed soon.
+Use the existing makefile system to build reports from the core index's in the main directory. These commands will place the full markdown and pdf's in the ./audit/build directory.
 
-To create a PDF from an index.md or index.adids.md file use the following command.
-
+To make the SAFETAG ADIDS Curriculum.
+```bash
+make adids
 ```
-modules/markdown-pp/markdown-pp.py content/index.md audit/folder/full.md
+
+To make the SAFETAG guidebook
+```bash
+make guide
 ```
 
-To create a PDF from a markdown file you need to add pandoc to your path and then run pandoc on the file.
-
-You can type the following commands.
-
-```
-PATH=$PATH:~/.cabal/bin/
-pandoc --table-of-contents --toc-depth=1 audit/folder/full.md -o audit/folder/full.pdf
+To make an empty sample report.
+```bash
+make report
 ```
