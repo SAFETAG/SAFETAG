@@ -148,11 +148,9 @@ Step 1....
 
 The beauty of breaking in to a WPA protected network is that it is an offline attack.  Once you collect a WPA handshake from the network, you no longer need to be in the network's vicinity.  The challenge is that a sufficiently secure password can prevent you from accessing the network.  The reality is that most passwords are not very secure against "offline" password cracking programs.
 
-
   * WPA / Password Cracking - http://www.aircrack-ng.org/doku.php?id=cracking_wpa
 
 (Bring in John and Crunch details from safetag section)
-
 
 
 ### Mapping the Network ###
@@ -171,57 +169,9 @@ Identifying servers and network hardware, Upstream hardware (traceroute)
 
 It is also useful to note down network hardware - what is at 192.168.0.1, 10.0.0.1, and so on.  Determining the wireless router, and what it connects to (often it is behind a cablemodem or DSL modem itself).  Checking in to see if these are still set up with the default passwords strays into the work of vulnerability mapping, but also provides a great chance to discuss the value of multiple lines of defense, and not just relying on the fact that someone "has to be on the network already" before they can access the router. http://www.defaultpassword.com/ and http://www.routerpasswords.com/ are your friends here.
 
-## Deepening [stub] {.deepening}
+<!-- ## Deepening [stub] {.deepening} -->
 
-<?This is the the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, unparsed data, and an oppourtunity to capture live data from a static target and the housing training organization using the tool.?>
-
-
-#### Hands on Training
-
-<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
-
-##### What you will need
-
-Computer running Kali Linux
-Wireless card than can be set to monitor mode
-Network to target (with permission)
-
-##### Setting up [tool]
-
-  * Wireless Driver Compatability
-    * Injection Test http://www.aircrack-ng.org/doku.php?id=injection_test
-
-##### Configuring [tool]
-
-(drop? should be pre-configured in Kali?)
-
-##### [Using Tool Subsections]
-
-WEP: http://www.aircrack-ng.org/doku.php?id=simple_wep_crack
-
-WPA: See $SAFETAG/content/audit/engagement/external/access/wifi/wpa_key/instructions.md
-
-WPS: 
-http://nathanheafner.com/home/2013/01/11/hacking-my-own-router-with-reaver-guide-to-brute-forcing-wifi-protected-setup/
-http://uwnthesis.wordpress.com/2013/07/11/wps-how-to-install-and-use-reaver-to-detect-the-wps-on-your-home-router/
-
-
-#### Live Practice
-<?A timed practice session on a live target?>
-
-<!-- MORE HERE AFTER EXPLORING TRAINING AP CAPABILITIES  -->
-
-Pre-configure a wireless access point to serve WEP and WPA networks, and enable WPS for WPA.  The WPA password should be quickly crackable based on the password attacks above.  The WEP network should be configured to use 64 bit encryption to speed the practice. 
-
-If no WEP network is available, you can use this file http://download.aircrack-ng.org/wiki-files/other/test.ivs
-
-If no WPA network is available, you can use this file: http://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=wpa-Induction.pcap
-
-
-##### Writing up Findings
-
-##### Connecting to Assets and Processes
-
+!INCLUDE "ADIDS/network_access_traffic/deepening/index.md"
 
 ## Synthesis [stub] {.synthesis}
 
