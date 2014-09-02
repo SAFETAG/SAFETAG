@@ -167,8 +167,6 @@ After documenting and discussing access, you can turn your attention to mapping 
     * Identifying applicable clients
 	  * Ones attached to the organizations wifi-router
     * Documenting Finding
-  * Client fingerprinting with p0f
-    * Documenting Finding
   * Connecting to Assets and Processes
   
 ##### Material that may be Useful:
@@ -182,29 +180,21 @@ The next step is to use the nmap network scanning tool to discover other hosts o
 *NOTE:*{.note} Because we are going to be using the graphical front end we will not be discussing how to collect command line output.
 
 
-  * Identify what services are up and running
+  * Identify what hosts are responding to pings
 	
 	```bash
 	nmap -v -sP x.x.x.0/24
 	```
 
-*NOTE:* If no machines respond to ping the LAN may filter ICMP requests locally or the machines themselves may be set to not respond. You can use the "no ping" flag (-Pn) in your further scans to allow them to continue without a ping request. This will increase the time of these scans significantly.	
-  
-  * Run OS detection against the local network
+*NOTE:* If no machines respond to ping the LAN may filter ICMP requests locally or the machines themselves may be set to not respond. You can use the "no ping" flag (-Pn) in your further scans to allow them to continue without a ping request. This will increase the time of these scans significantly.
 
-Use a "TCP SYN + UDP" scan against the local network to identify hosts.
-  
-    ```bash
-	nmap -v -O --osscan-guess -sSU x.x.x.0/24
-	```
-	
   * Interpreting Results
 	* Don't forget that your device is on the network.
-    * Using beacon information gathered earlier, in combination with the computer hostnames identify what devices belong to which individual.
   * Documenting Finding
   * Capturing Results
     * Customizing and outputting topology for further use and documentation
   * Connecting to Assets and Processes
+
 
 ##### Material that may be Useful:
 
@@ -212,6 +202,51 @@ Use a "TCP SYN + UDP" scan against the local network to identify hosts.
   * *Guide:* [“Surfing the Network Topology”](http://nmap.org/book/zenmap-topology.html) (Zenmap GUI Users' Guide)
   * *Overview:* [“The Purpose of a Graphical Frontend for Nmap”](http://nmap.org/book/zenmap.html#zenmap-purpose) (Zenmap GUI Users' Guide)
   * *Guide:* [“Host Detection”](http://nmap.org/book/man-host-discovery.html) (nmap Reference Guide)
+
+#### OS Detection
+
+
+  * Run an OS detection scan against the network.
+  
+    ```bash
+	nmap -v -O --osscan-guess -sSU x.x.x.0/24
+	```
+	
+  * Interpreting Results
+    * Using beacon information gathered earlier, in combination with the computer hostnames identify what devices belong to which individual.
+  * Documenting Finding
+  * Capturing Results
+  * Connecting to Assets and Processes
+
+##### Material that may be Useful:
+
+  * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
   * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
 
+#### Passive OS Detection ( FOR THE NEXT VERSION )
 
+  * Arpspoof the gateway
+    *NOTE:* Do not do this on a heavily congested network or one providing services as it can slow the network severely. This is best run where you have wired access.
+  * tcpdump traffic into a log
+  * Explore tcpdump logs with p0f to Fingerprint devices on the network.
+    * Documenting Finding
+  * Connecting to Assets and Processes
+
+##### Material that may be Useful:
+
+  * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
+  * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
+
+#### Identifying servers and network hardware
+
+  * Identifying up-stream devices with traceroute
+    * No, were serious were going to cover traceroute. But, just as a reminder to use it. *sigh
+  * Enumerating the techniques used earlier in this section up the network chain
+    *NOTE:*{.note} ONLY do this within the LAN. If a device might be outside of the LAN you do not want to get caught up in mistakenly hacking a local ISP.
+  * Documenting Finding
+  * Connecting to Assets and Processes
+
+##### Material that may be Useful:
+
+  * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
+  * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
