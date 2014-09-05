@@ -58,4 +58,5 @@ Needs Assessment Activities
 	      * This is used to create the risk assessment matrix in the report.
       * Identify what they are already doing to protect those assets/process' from those risks
 	      * This can be technological as well as operational, procedural, etc.
-		  
+        * FAIR (Factor Analysis of Information Risk) approach
+		  * See: http://riskmanagementinsight.com/media/documents/FAIR_Introduction.pdf
