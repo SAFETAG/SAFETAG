@@ -227,20 +227,6 @@ The next step is to use the nmap network scanning tool to discover other hosts o
   * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
   * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
 
-#### Passive OS Detection ( FOR THE NEXT VERSION ) [STUB]
-
-  * Arpspoof the gateway
-    *NOTE:* Do not do this on a heavily congested network or one providing services as it can slow the network severely. This is best run where you have wired access.
-  * tcpdump traffic into a log
-  * Explore tcpdump logs with p0f to Fingerprint devices on the network.
-    * Documenting Finding
-  * Connecting to Assets and Processes
-
-##### Material that may be Useful:
-
-  * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
-  * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
-
 #### Identifying servers and network hardware [STUB]
 
   * Identifying up-stream devices with traceroute
