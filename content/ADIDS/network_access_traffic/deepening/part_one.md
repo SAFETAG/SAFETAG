@@ -36,7 +36,7 @@ aireplay-ng -9 wlan0
   * *Guide:* [“Tutorial: How To Patch Drivers”](http://www.aircrack-ng.org/doku.php?id=patching) (Aircrack-ng Wiki)
 
 
-#### Reconnaissance
+#### Reconnaissance [STUB]
 
 The purpose of this exercise is to walk participants through the identification of a network.
 
@@ -80,8 +80,8 @@ macchanger -m [MAC ADDRESS IDENTIFIED] mon0
 ifconfig mon0 up
 ```
 
-  * Documenting Finding
-  * Connecting to Assets and Processes mapping
+  * Documenting Finding [STUB]
+  * Connecting to Assets and Processes mapping [STUB]
 
 ##### Material that may be Useful:
 
@@ -92,13 +92,15 @@ ifconfig mon0 up
 
 The purpose of this exercise is to walk participants through attaining access to a WEP protected access point by cracking the WEP key.
 
+*NOTE:* [ TODO NEED SEPARATE INSTRUCTIONS ] If no WEP network is available, you can use [this](http://download.aircrack-ng.org/wiki-files/other/test.ivs) pre-build airodump-ng capture file and skip the airodump-ng and aireplay-ng packet injection steps.
+
   * Start the wireless interface in monitor mode on the specific AP channel
   * Use aireplay-ng to do a fake authentication with the access point
   * Start airodump-ng on AP channel with a bssid filter to collect the new unique IVs
   * Start aireplay-ng in ARP request replay mode to inject packets
   * Run aircrack-ng to crack key using the IVs collected
-  * Documenting Finding
-  * Connecting to Assets and Processes mapping
+  * Documenting Finding [STUB]
+  * Connecting to Assets and Processes mapping [STUB]
 
 ##### Material that may be Useful:
 
@@ -110,13 +112,16 @@ The purpose of this exercise is to walk participants through attaining access to
 
 #### WPA Networks
 
+*NOTE:* [ TODO NEED SEPARATE INSTRUCTIONS ] If no WPA network is available, you can use [this](http://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=wpa-Induction.pcap) file:
+
+
   * Start the wireless interface in monitor mode on the specific AP channel
   * Start airodump-ng on AP channel with filter for bssid to collect authentication handshake
   * Use aireplay-ng to deauthenticate the wireless client
   * Run aircrack-ng to crack the pre-shared key using the authentication handshake
     * Use your earlier generated (See: 6. Audit Preparation) "John the Ripper" password dictionary
-  * Documenting Finding
-  * Connecting to Assets and Processes
+  * Documenting Finding [STUB]
+  * Connecting to Assets and Processes [STUB]
 
 ##### Material that may be Useful:
 
@@ -131,9 +136,9 @@ The purpose of this exercise is to walk participants through attaining access to
   * Use Wash to find WPS Routers
   * Start Reaver
     * Estimated Time: Between 2 and 10 hours
-  * Documenting Finding
+  * Documenting Finding [STUB]
     * Provide Example data they can use to document findings if needed.
-  * Connecting to Assets and Processes
+  * Connecting to Assets and Processes [STUB]
 
 ##### Material that may be Useful:
 
@@ -148,8 +153,8 @@ The purpose of this exercise is to walk participants through attaining access to
   * Un-patched Vulnerabilities and Backdoors
   * What to grab while you are on the router
     * Currently connected clients
-  * Documenting Finding
-  * Connecting to Assets and Processes
+  * Documenting Finding [STUB]
+  * Connecting to Assets and Processes [STUB]
 
 ##### Material that may be Useful:
 
@@ -166,14 +171,14 @@ After documenting and discussing access, you can turn your attention to mapping 
   * airodump logging (handshakes, beacons, macs)
     * Identifying applicable clients
 	  * Ones attached to the organizations wifi-router
-    * Documenting Finding
-  * Connecting to Assets and Processes
-  
+    * Documenting Finding [STUB]
+  * Connecting to Assets and Processes [STUB]
+   
 ##### Material that may be Useful:
 
   * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
 
-#### Host Discovery
+#### Host Discovery [STUB]
 
 The next step is to use the nmap network scanning tool to discover other hosts on the network. We will mostly use ZenMap (a graphical frontend to nmap) because it makes documentation easier.
 
@@ -205,7 +210,6 @@ The next step is to use the nmap network scanning tool to discover other hosts o
 
 #### OS Detection
 
-
   * Run an OS detection scan against the network.
   
     ```bash
@@ -214,16 +218,16 @@ The next step is to use the nmap network scanning tool to discover other hosts o
 	
   * Interpreting Results
     * Using beacon information gathered earlier, in combination with the computer hostnames identify what devices belong to which individual.
-  * Documenting Finding
-  * Capturing Results
-  * Connecting to Assets and Processes
+  * Capturing Results [STUB]
+  * Documenting Finding [STUB]
+  * Connecting to Assets and Processes [STUB]
 
 ##### Material that may be Useful:
 
   * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
   * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
 
-#### Passive OS Detection ( FOR THE NEXT VERSION )
+#### Passive OS Detection ( FOR THE NEXT VERSION ) [STUB]
 
   * Arpspoof the gateway
     *NOTE:* Do not do this on a heavily congested network or one providing services as it can slow the network severely. This is best run where you have wired access.
@@ -237,10 +241,10 @@ The next step is to use the nmap network scanning tool to discover other hosts o
   * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
   * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
 
-#### Identifying servers and network hardware
+#### Identifying servers and network hardware [STUB]
 
   * Identifying up-stream devices with traceroute
-    * No, were serious were going to cover traceroute. But, just as a reminder to use it. *sigh
+    * No, we are serious were going to cover traceroute. Just as a reminder to use it.
   * Enumerating the techniques used earlier in this section up the network chain
     *NOTE:*{.note} ONLY do this within the LAN. If a device might be outside of the LAN you do not want to get caught up in mistakenly hacking a local ISP.
   * Documenting Finding
