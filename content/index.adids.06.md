@@ -12,6 +12,9 @@ id: adids-audit-prep-index
     * Update vulnerability databases
 	  * OpenVAS
 	  * ExploitDB
+    * Create Password Dictionaries
+	  * John the Ripper
+	    * See: "content/audit/external/access/wifi/introduction"
   * Introduction to data collection
   * What to bring (checklist)
   * Audit troubleshooting
@@ -29,6 +32,15 @@ id: adids-audit-prep-index
 ## Input {.input}
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
+
+##### WPA Attacks #####
+
+The beauty of breaking in to a WPA protected network is that it is an offline attack.  Once you collect a WPA handshake from the network, you no longer need to be in the network's vicinity.  The challenge is that a sufficiently secure password can prevent you from accessing the network.  The reality is that most passwords are not very secure against "offline" password cracking programs.
+
+  * WPA / Password Cracking - http://www.aircrack-ng.org/doku.php?id=cracking_wpa
+
+(Bring in John and Crunch details from safetag section)
+
 
 ## Deepening {.deepening}
 
