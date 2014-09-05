@@ -20,42 +20,15 @@ The goal of this exercise is for the trainee to lead the host participants in "b
   * step 3
   * step etc.
 
-#### Determine critical process'
+### Part II: Determine Critical Process'
 
 The goal of this exercise is for the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
 
 #### Map out critical process'
 
 In this exercises the trainee does free-hand mapping for each process guided by the host participants. The trainee needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
 
-  * "We will be charting the sequence of events of this process. We want to represent the process, as it actually happens - NOT what you might prefer it to be!" 
-  * step 2
-  * step 3
-  * step etc.
-
-### Part II: Asset Identification
-
-#### Identify assets process' rely on
-
-The goal of this exercise is to deconstruct the process maps that were created into the assets within those activities.
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
-
-#### Identify technology used
-
-The goal of this exercise is for the trainee to guide the participants through identifying the technology connected to their assets. This activity will identify additional assets to add to the asset map. 
-
-*NOTE: {.note}* This activity is as much about an auditor identifying the technological scope of the organization as it is about educating the staff about the infrastructure they rely on to prepare them to understand the scope of the final report.
-
-  * step 1
+  * "We will be charting the sequence of events of this process. We want to represent the process, as it actually happens - NOT what you might prefer it to be!"
   * step 2
   * step 3
   * step etc.
@@ -65,6 +38,20 @@ The goal of this exercise is for the trainee to guide the participants through i
 #### Explaining the types of risks
 
 This short exercise is not as interactive for the host organizations participants as many in this section, and as such can be more difficult for a trainee who is less comfortable lecturing to groups.
+
+  * step 1
+  * step 2
+  * step 3
+  * step etc.
+  * Identify Current Approaches to addressing risks
+    * Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
+	* *NOTE:* We do this so that we can anchor proposed action in existing practices in the report. - (Shostack: Threat Modeling pg. 298)
+
+#### The Pre-Mortum
+
+The trainer has the participants imagine that it is months in the future and the process has been carried out. And it has failed. The participants have to explain why it failed.
+
+*NOTE:* The participants can optionally be split into groups for this process. The trainer should do one process with the group as a whole before the participants are split into groups. If split into groups, each group will need a note-taker so that the trainer can walk between the groups and assist them if they get stuck.
 
   * step 1
   * step 2
@@ -91,8 +78,20 @@ The goal of this exercise is to have the trainee lead the host organization in c
   * step 3
   * step etc.
 
+### Part IV: Asset Enumeration
 
-### Part IV: Post Needs Assessment
+#### Identify technology used
+
+The goal of this exercise is for the trainee to guide the participants through a rapid identification of the technology used in the process' they outlined. This activity will identify the core services that the auditor will use to flesh out an asset map. 
+
+*NOTE: {.note}* This activity is about an auditor identifying the technological scope of the organization. The auditor will have a chance to explore the actual infrastructure during the remainder of the audit. This activity should be fun and quick.
+
+  * step 1
+  * step 2
+  * step 3
+  * step etc.
+
+### Part V: Post Needs Assessment
 
 #### Documenting a Needs Assessment
 

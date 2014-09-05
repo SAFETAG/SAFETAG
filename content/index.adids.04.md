@@ -68,7 +68,6 @@ Auditors are provided basic information about an organization and a basic assess
   * [Digital Security and Privacy for Human Rights Defenders ](http://www.frontlinedefenders.org/esecman/)
     * English, Spanish, Vietnamese
   
-
 ## Deepening  [stub] {.deepening}
 
 !INCLUDE "./ADIDS/needs_assessment/deepening/index.md"
