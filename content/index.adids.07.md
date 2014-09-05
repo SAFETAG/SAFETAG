@@ -7,32 +7,31 @@ id: adids-vulnerability-research-index
 
 <!-- ![](content/images/vuln_research.png "") -->
 
-!INCLUDE "audit/engagement/external/vuln_research/summary.md"
+!INCLUDE "ADIDS/vuln_research/context/summary.md"
 
 ### Why The Topic Matters [stub]
 
-!INCLUDE "audit/engagement/external/vuln_research/why_it_matters.md"
+!INCLUDE "ADIDS/vuln_research/context/why_it_matters.md"
 
 ### What Participants Will Learn [stub]
 
-!INCLUDE "audit/engagement/external/vuln_research/what_participants_will_learn.md"
+!INCLUDE "ADIDS/vuln_research/context/what_participants_will_learn.md"
 
 ### Objectives [stub] {.sidebar}
 
-!INCLUDE "audit/engagement/external/vuln_research/objectives.md"
+!INCLUDE "ADIDS/vuln_research/context/objectives.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "audit/engagement/external/vuln_research/baseline_skills.md"
+!INCLUDE "ADIDS/vuln_research/context/baseline_skills.md"
 
 ### Before you Start [stub]
 
-<?trainer resources?>
-!INCLUDE "audit/engagement/external/vuln_research/before_you_start.md"
+!INCLUDE "ADIDS/vuln_research/context/before_you_start.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "audit/engagement/external/vuln_research/materials_needed.md"
+!INCLUDE "ADIDS/vuln_research/context/materials_needed.md"
 
 <!-- ## Activity [stub] {.activity} -->
 
@@ -40,7 +39,7 @@ id: adids-vulnerability-research-index
 
 ## Discussion [stub] {.discussion}
 
-!INCLUDE "ADIDS/vuln_research/discussion/discussion.md"
+!INCLUDE "ADIDS/vuln_research/discussion/index.md"
 
 <!-- ## Input -->
 
