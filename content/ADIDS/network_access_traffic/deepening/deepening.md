@@ -15,9 +15,7 @@ This section is divided into a section on accessing a wireless network and one o
 ##### What you will need
 
   * Pre-configure a wireless access point to serve WEP and WPA networks, and enable WPS for WPA. The WPA password should be quickly crackable based on the password attacks above. The WEP network should be configured to use 64 bit encryption to speed the practice.
-  * If no WEP network is available, you can use this pre-build airodump-ng capture file and skip the airodump-ng capture.
-    * http://download.aircrack-ng.org/wiki-files/other/test.ivs
-  * If no WPA network is available, you can use this file:
-    *  http://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=wpa-Induction.pcap
+  * If no WEP network is available, you can use [this pre-build airodump-ng capture file](http://download.aircrack-ng.org/wiki-files/other/test.ivs) and skip the airodump-ng capture.
+  * If no WPA network is available, you can use [this file](http://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=wpa-Induction.pcap).
   * Network to target (with permission)
   * It may be helpful to print out copies of the guides tied to each section before hand if there will be limited internet access at the training site.
