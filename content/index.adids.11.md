@@ -9,9 +9,28 @@ id: adids-report-and-follow-up-index
 
   * The Final Report
     * Connecting Vulnerabilities to Threats
+	  * Risks should be NEAT ( Necesary, explanitory, actionable, and tested) -> But, we are not testing all risks, so how do we best go about this?
     * Road Mapping Mitigation
+	  * Mitigation also includes warning users that things are/might be insecure! eg. Acceptance of risks
     * Reccomending Support
+	  * Identifying resources
+		* in-region
+		* out of region
+	  * Sorting resources
+	  * Identifying DIY resources
   * Follow Up
+    * Identifying the right approach to prioritizing addressing threats
+	  * Easy First
+	  * Critical First
+	  * Capacity Driven Roadmaping
+
+Per: Threat Modeling: Adam Shostack the Strategies for risk management (pg. 168) follow the structure
+"	* What is the level of risk?
+	* What do you want to do to address that risk?
+	* How are you going to acheive it?"
+
+The report should also follow this structure when addressing issues. Possibly, it should even use these questions in the report, or in the plain text overview of the report.
+
 
 !INCLUDE "audit/post_engagement/summary.md"
 
