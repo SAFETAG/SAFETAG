@@ -14,6 +14,33 @@ id: adids-assessment-plan-dev-index
 	* Assessment Plan/agreement Negotiation
 	* Incident Response Planning
 
+!INCLUDE "ADIDS/putting_it_together/summary.md"
+
+### Why The Topic Matters [stub]
+
+!INCLUDE "ADIDS/putting_it_together/why_it_matters.md"
+
+### What Participants Will Learn [stub]
+
+!INCLUDE "ADIDS/putting_it_together/what_participants_will_learn.md"
+
+### Objectives [stub] {.sidebar}
+
+!INCLUDE "ADIDS/putting_it_together/objectives.md"
+
+### Baseline Skills [stub]
+
+!INCLUDE "ADIDS/putting_it_together/baseline_skills.md"
+
+### Before you Start [stub]
+
+<?trainer resources?>
+!INCLUDE "ADIDS/putting_it_together/before_you_start.md"
+
+### Materials Needed [stub]
+
+!INCLUDE "ADIDS/putting_it_together/materials_needed.md"
+
 ## Activity {.activity}
 
 <?The activities focus on introducing the user to the scope of this threat or section using an activity that lets them explore the concept without the tool so that they can start tool usage with an existing set of use cases in mind.?>
