@@ -115,10 +115,21 @@ In this exercises the trainee does free-hand mapping for each process guided by 
   * step 2
   * step 3
   * step etc.
+  *" Of the business processes listed in Step #1, which are the most critical to the continual operation of the business or agency? In determining criticality, consider the following:
+    * Does this business function affect the safety of employees or the general public?
+    * How important is this business function to the mission of the agency/business?
+    * How important is this function to the continuity of business operations?
+    * How would a loss or disruption affect the “bottom line?”
+
+The following definitions may be used as a general guide and should be modified to meet the requirements of each specific process or function:
+Critical – necessary and/or vital. May pose a life-safety risk to employees and/or general public.
+Essential – important but not critical. Disruption would cause difficulties.
+Non-Essential – disruption is merely inconvenient."
 
 ##### Compiled from:
 
-  * *Article*: ["How things happen with stuff."](https://things.stuff.edu) (Things International)
+  * *Journal Article*: ["Anatomy of a process mapping
+workshop"](https://noppa.lut.fi/noppa/opintojakso/a350a0000/lisatty/r_1999_f_lscher_anatomy_of_a_process_mapping_workshop.pdf) (Jan Fulscher)
 
 ##### Interaction with the Participants:
 Sonet mediocrem et sea, vix at inani falli disputationi.
@@ -196,18 +207,19 @@ With the case study concluded, the trainer now directs participants to their Cla
     * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
 	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
 
-#### C. Ranking consequences from harmless to severe
+#### C. Creating a Risk Assessment Matrix
 
 The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
 
-  * step 1
+  * Ranking the consequences from harmless to severe
+  * TODO READ "Tool for Identifying Critical Positions and Risk Assessment" in OI3 Notes.
   * step 2
   * step 3
   * step etc.
 
 ##### Compiled from:
 
-  * *Article*: ["How things happen with stuff."](https://things.stuff.edu) (Things International)
+  * *Article*: ["Risk Assessment Matrix (RAM) Process"](http://www.cip.msu.edu/ComFacRAM-HowtoUse.pdf) (Michigan State University School of Criminal Justice)
 
 ##### Interaction with the Participants:
 Sonet mediocrem et sea, vix at inani falli disputationi.
@@ -223,7 +235,7 @@ With the case study concluded, the trainer now directs participants to their Cla
 	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
 
 
-Ranking consequences from harmless to severe
+A. Ranking consequences from harmless to severe
 
 The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
 
@@ -231,6 +243,16 @@ The goal of this exercise is to have the trainee lead the host organization in c
   * step 2
   * step 3
   * step etc.
+
+B. Ranking likely hood of the consequences occurring on a time scale.
+
+The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
+
+  * step 1
+  * step 2
+  * step 3
+  * step etc.
+
 
 ### Asset Enumeration
 
@@ -242,14 +264,16 @@ The goal of this exercise is for the trainee to guide the participants through a
 
 *NOTE: {.note}* This activity is about an auditor identifying the technological scope of the organization. The auditor will have a chance to explore the actual infrastructure during the remainder of the audit. This activity should be fun and quick.
 
-  * step 1
-  * step 2
+  * Identify process' that are universal and process' that are individual. For individual process' the auditor will go around and work individually with staff to identify assets. The universal process' will be mapped out as a group in this process. 
+  * Use failure points from post-mortum to identify the assets that are important to explore. 
   * step 3
   * step etc.
+  * How to use Swim Lanes to explore "ceremonies"
+  
 
 ##### Compiled from:
 
-  * *Article*: ["How things happen with stuff."](https://things.stuff.edu) (Things International)
+  * *Research Paper*: ["Ceremony Design and Analysis"](https://eprint.iacr.org/2007/399.pdf) (Carl M. Ellison)
 
 ##### Interaction with the Participants:
 Sonet mediocrem et sea, vix at inani falli disputationi.
@@ -263,3 +287,41 @@ With the case study concluded, the trainer now directs participants to their Cla
 1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
     * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
 	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+
+
+### Post Needs Assessment
+
+*Introduction:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+
+#### A. Documenting a Needs Assessment
+
+The goal of this exercise is for the trainee to guide the participants through a rapid identification of the technology used in the process' they outlined. This activity will identify the core services that the auditor will use to flesh out an asset map. 
+
+*NOTE: {.note}* This activity is about an auditor identifying the technological scope of the organization. The auditor will have a chance to explore the actual infrastructure during the remainder of the audit. This activity should be fun and quick.
+
+  * Identify process' that are universal and process' that are individual. For individual process' the auditor will go around and work individually with staff to identify assets. The universal process' will be mapped out as a group in this process. 
+  * Use failure points from post-mortum to identify the assets that are important to explore. 
+  * step 3
+  * step etc.
+  * How to use Swim Lanes to explore "ceremonies"
+  
+
+##### Compiled from:
+
+  * *Working Paper*: ["Envisioning Risk: A Systematic Framework for Risk Visualization in Risk Management and Communication"](http://www.knowledge-communication.org/pdf/envisioning-risk.pdf) (Martin J. Eppler)
+
+##### Interaction with the Participants:
+Sonet mediocrem et sea, vix at inani falli disputationi.
+
+  * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
+
+##### Talking points for the trainer (basic/advanced)
+
+With the case study concluded, the trainer now directs participants to their Class Notes.
+
+1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
+    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
+	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+
+
+

@@ -1,4 +1,4 @@
-### Part I: Process Mapping
+### Part I: Process Identification
 
 The goal of this activity is to give the trainee's an opportunity to lead an opportunity to lead a process mapping with the host organization.
 
@@ -20,7 +20,16 @@ The goal of this exercise is for the trainee to lead the host participants in "b
   * step 3
   * step etc.
 
-### Part II: Determine Critical Process'
+#### Identify critical process'
+
+In this exercises the trainee does free-hand mapping for each process guided by the host participants. The trainee needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
+
+  * "We will be charting the sequence of events of this process. We want to represent the process, as it actually happens - NOT what you might prefer it to be!"
+  * step 2
+  * step 3
+  * step etc.
+
+### Part II: Critical Process Mapping
 
 The goal of this exercise is for the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
 
@@ -32,6 +41,7 @@ In this exercises the trainee does free-hand mapping for each process guided by 
   * step 2
   * step 3
   * step etc.
+  * Identify any processes that this critical process relies on and work with group to decide if it should be added to the list of critical process' to map out.
 
 ### Part III: Risk Modeling
 
