@@ -40,8 +40,6 @@ id: adids-remote-audit-index
 
 Hide and Seek:
 
-
-
 ## Discussion [stub] {.discussion}
 
 <?SAFETAG specific: For Audit discussions the auditor will provide scenarios that allow a trainee to explore ways they would use/focus a auditing technique with the identified risks in the case study provided.?>
@@ -58,11 +56,24 @@ Hide and Seek:
 
 !INCLUDE "audit/engagement/remote/purpose.md"
 
-#### Information Gathering Methodology  [stub] 
+#### Information Gathering Methodology  [stub]
 
 <?step-by-step explanation that is tool agnostic of the audit / approach?>
 !INCLUDE "audit/engagement/remote/approach.md"
 
+### Introduction to Contextual Sources
+
+Gathering contextual information to inform your audit. The remote section is not simply enumerating risks, but identifying the local 
+
+- Contextual  information  about  country  in  which  the  organization  in.
+  - https://www.theengineroom.org/wp-content/uploads/TSQuestionset3-1_2606121.pdf (Section 0B2_1)
+  - Civil Society Index Reports:
+    - http://civicus.org/index.php/en/media-centre-129/reports-and-publications/csi-reports
+	- http://csi.civicus.org/
+  - Corruption Perception Index
+    - http://cpi.transparency.org/cpi2011/results/
+  - ETC. -> See TechScape Section 0B2_1 When ready to continue this section.
+  
 ### Introduction to SpiderFoot [stub]
 
 !INCLUDE "path/to/spiderfoot/summary.md"
@@ -142,7 +153,6 @@ User-Supplied Target
 Web Content
 Web Server
 ```
-
 
 #### Live Practice
 <?A timed practice session on a live target?>
