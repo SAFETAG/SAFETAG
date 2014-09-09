@@ -29,9 +29,9 @@ audit_no: AUDIT_NUMBER
 !INCLUDE "audit/%{audit_no}/process_map.md"
 
 \newpage
-<!-- Needs Mapping -->
+<!-- Impact = Needs Mapping -->
 
-!INCLUDE "audit/%{audit_no}/needs_map.md"
+!INCLUDE "audit/%{audit_no}/impact.md"
 
 \newpage
 <!-- Risk Modeling -->
