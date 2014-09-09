@@ -9,6 +9,16 @@ id: adids-assessment-plan-dev-index
 
     - The process of building an initial assessment plan
     * Pre-Audit interviews
+	 * TechScape
+	   * https://www.theengineroom.org/wp-content/uploads/TSQuestionset3-1_2606121.pdf
+	   * Capacity Interviews:
+		 * Director or Manager (pg. 9)
+		   * Questions from D
+	     * Communications Officer or Technologist (42)
+		   * Questions from TC
+	   * Self Assessments
+	     * Modified 3.5 section of TechScape to focus on security
+		 
 	* initial scope development
 	* Assessment Plan/agreement development
 	* Assessment Plan/agreement Negotiation
