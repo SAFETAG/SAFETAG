@@ -220,6 +220,9 @@ The goal of this exercise is to have the trainee lead the host organization in c
 ##### Compiled from:
 
   * *Article*: ["Risk Assessment Matrix (RAM) Process"](http://www.cip.msu.edu/ComFacRAM-HowtoUse.pdf) (Michigan State University School of Criminal Justice)
+  * *Article*: ["A Perspective on Threats in the Risk Analysis
+Process"](https://www.sans.org/reading-room/whitepapers/auditing/perspective-threats-risk-analysis-process-63) (SANS Institute InfoSec Reading Room)
+  * *Article*: ["Facilitated Risk Analysis Process (FRAP)"](http://www.ittoday.info/AIMS/DSM/85-01-21.pdf) (Thomas R. Peltier)
 
 ##### Interaction with the Participants:
 Sonet mediocrem et sea, vix at inani falli disputationi.
