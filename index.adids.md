@@ -13,11 +13,6 @@ cover-image: images/adids_cover.jpg
 !INCLUDE "content/ADIDS/front_matter.md"
 
 \newpage
-<!--  1. Outcome and Organizational Committment -->
-
-!INCLUDE "content/index.adids.01.md"
-
-\newpage
 <!--  2. Operational Security -->
 
 !INCLUDE "content/index.adids.02.md"
