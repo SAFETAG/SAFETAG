@@ -5,12 +5,7 @@ id: adids-deepening-part-one
 
 ### PART I: Service Fingerprinting & Vulnerability Identification
 
-Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
-*Overview:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
-*Note:*{.note} Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
+This portion of the module covers port scanning techniques that will allow participants to identify services and 
 
 #### nmap
 
@@ -24,7 +19,7 @@ Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudianda
 
 #### Zenmap
 
-Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+The next step is to use a network scanning tool, such as ZenMap (a graphical frontend to nmap) to match MAC addresses with IPs and computer details.
 
   * Basic Scanning
     * Default profiles
@@ -106,6 +101,7 @@ Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudianda
 	* Documenting Findings
   * Search for recent vendor advisories for software
     * http://oss-security.openwall.org/wiki/vendors
+	* https://protect.iu.edu/cybersecurity/indepth
 	* Just google search for "[SOFTWARE] advisory"
 	* Documenting Findings
 
