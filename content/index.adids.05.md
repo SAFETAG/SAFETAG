@@ -61,7 +61,7 @@ Hide and Seek:
 <?step-by-step explanation that is tool agnostic of the audit / approach?>
 !INCLUDE "audit/engagement/remote/approach.md"
 
-### Introduction to Contextual Sources
+### Regional Context Research
 
 Gathering contextual information to inform your audit. The remote section is not simply enumerating risks, but identifying the local 
 
@@ -73,14 +73,15 @@ Gathering contextual information to inform your audit. The remote section is not
   - Corruption Perception Index
     - http://cpi.transparency.org/cpi2011/results/
   - ETC. -> See TechScape Section 0B2_1 When ready to continue this section.
-  
-### Introduction to SpiderFoot [stub]
+
+### Technical Context Research
+#### Introduction to SpiderFoot [stub]
 
 !INCLUDE "path/to/spiderfoot/summary.md"
 
 !INCLUDE "path/to/spiderfoot/why_spiderfoot.md"
 
-### Advanced Concepts  [stub]
+#### Advanced Concepts  [stub]
 
 For audit sections we will do the actual tool training and  conduct mini-follow up on the larger safetag audit themes in relationship to that audit.
 
