@@ -7,12 +7,6 @@ id: adids-operational-security-index
 
 <!-- ![](content/images/operational_security.png "") -->
 
-
-    * Operational Security Basics
-	* Accessable Security & Security Alienation
-    * Securing Data in Motion
-	* Securing Data at Rest
-
 !INCLUDE "ADIDS/putting_it_together/summary.md"
 
 ### Why The Topic Matters [stub]
@@ -55,18 +49,21 @@ id: adids-operational-security-index
 
 <?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session.?>
 
-  * Accessable Security
+  * Operational Security Basics
+  * Secure Communications Process
+    * Training participants in Secure Communications
+    * Accessable Security
   If the process is too difficult members of the organization will "circumvent" it. You need to do a basic assessment of their capabilities and then base the level of operational security on that.
-  * Security Alienation
-
-  * Data In motion
+    * Security Alienation
+	
+  * Securing Data In motion
     * Basic Usable Tools
       * CryptoCat
 	    * How to teach installation.
     * Advanced tools
     (If they are already using them, or there is time for a training)
       * GPG
-  * Data At Rest
+  * Securing Data At Rest
     * Basic Usable Tools
       * MiniLock
         * How to teach installation.
@@ -75,13 +72,10 @@ id: adids-operational-security-index
     (If they are already using them, or there is time for a training)
 	  * Truecrypt
 
-|-|-|
-|**data at rest**|**data in motion**|
-||
-|protect data|protect data|
-|obscure data|protect auditor|
-||protect organization|
-||protect connection|
+  * Evidence Handling
+  * Incident Response
+    * Emergency Contact
+    * What consitutes an incident
 
 ## Deepening {.deepening}
 
