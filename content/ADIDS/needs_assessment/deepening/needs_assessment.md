@@ -24,7 +24,7 @@ The goal of this exercise is for the trainee to lead the host participants in "b
 
 The goal of this exercise is for the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
 
-#### A. The Pre-Mortum
+#### A. Threat Brainstorming: The Pre-Mortum
 
 The goal of this exercise is for the trainee to lead the attendees through each process identified earlier and one after another have the participants imagine that it is months in the future and the current process has been carried out. And it has failed. The participants have to explain why it failed and what the outcome of that failure would mean while the trainee documents them.
 
@@ -97,8 +97,8 @@ The goal of this exercise is to have the trainee lead the host organization in c
   * As consequences are placed on the wall, the trainee can use other already ranked consequences to help participants identify the right place. "Is another news organization publishing a story before us more or less severe than losing a long-term insider source?"
   * Take photos of the severity scale to record it for later.
 
-#### C. Estimating Likelyhood of Risk
-
+#### D. Estimating Likelyhood of Risk
+	
 The goal of this exercise is to have the trainee lead the host organization in estimating the likelyhood of the risk occurring on various time-scales.
 
   * Place two end points on the wall. On one side "certain" attacks that the participants know will happen. For example, knowing that robberies will happen because the organization has been robbed multiple times in the past few years. On the other side "limited" events that the participants believe are less likely to occur than to not occur. For example, an earthquake in an area where one has never historically occurred.
