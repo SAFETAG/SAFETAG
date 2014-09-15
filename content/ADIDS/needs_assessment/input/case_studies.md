@@ -3,9 +3,9 @@ type: ADIDS
 id: adids-input-case_studies
 ...
 
-### Process Mapping
+### Process Identification
 
-*Introduction:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+*Introduction:* 
 
 #### A. Determine the boundaries
 
@@ -51,16 +51,17 @@ With the case study concluded, the trainer now directs participants to their Cla
 	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
 
 
-### Determine Critical Process'
+### Critical Process Mapping
 
-*Introduction:* With the process' that conmpose the core work of the organization identified, the next step is to identify the subset of activities that are critical to their work. The processes identified here will be what the auditor uses as a frame for the rest of their audit and reporting.
+*Introduction:* With the process' that compose the core work of the organization identified, the next step is to identify the subset of activities that are critical to their work. The processes identified here will be what the auditor uses as a frame for the rest of their audit and reporting.
 
-#### A. The Pre-Mortum
+#### A. Threat Brainstorming: The Pre-Mortum
 
 The Pre-Mortum is an exercise used to simplify the complex mapping tasks that the participants have just taken part in. With the process maps created the participants are to come up with the reasons that these process' could be disrupted and the consequences of those disruptions.
 
 "[This] Excercise is to ask planner to imagine that it is months into the future and that their plan has been carried out. And it has failed. That is all they know; they have to explain why they think it has failed. they have to look for the causes that would make them say, "Of course, it wasn't going to work, because..." The idea is that they are breaking the emotional attachment to the plan's success by taking on the challenge of showing their creativity and competence by identifying likely sources of breakdown." - Klein
 
+*NOTE:* There are other threat brainstorming activities besides pre-mortum that an auditor can use. We chose the pre-mortum activity as the basic activity taught for SAFETAG because it assumes that the participants have a realistic understanding of the threats that they face. In the future we will include activities for groups who feel un-realisticly safe (Action Movie - Shostack ) or un-realisticly at risk.
 
 ##### Compiled from:
 
@@ -68,26 +69,18 @@ The Pre-Mortum is an exercise used to simplify the complex mapping tasks that th
   * *Book*: ["Threat Modeling: Designing for Security"](http://threatmodelingbook.com/) (Adam Shostack)
 
 ##### Interaction with the Participants:
-Sonet mediocrem et sea, vix at inani falli disputationi.
 
-  * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
+  * 
 
 ##### Talking points for the trainer (basic/advanced)
 
-With the case study concluded, the trainer now directs participants to their Class Notes.
-
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+1. The narrative nature of this brainstorm often provides a lot of information that is not relevant to the current activity, but that the facilitator will want for future activities. There are many ways of capturing this data
+    * The facilitator can assign participants to be responsible for specific topics (assets, threat actors, risks, consequences.)
+	* The facilitator can have separate lists on the wall that they write assets and threat actors on so that they can quickly jot them down.
 
 #### B. Determine critical process'
 
 The goal of this exercise is for the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
 
 ##### Compiled from:
 
@@ -100,31 +93,10 @@ Sonet mediocrem et sea, vix at inani falli disputationi.
 
 ##### Talking points for the trainer (basic/advanced)
 
-With the case study concluded, the trainer now directs participants to their Class Notes.
-
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
 
 #### C. Map out critical process'
 
-In this exercises the trainee does free-hand mapping for each process guided by the host participants. The trainee needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
-
-  * "We will be charting the sequence of events of this process. We want to represent the process, as it actually happens - NOT what you might prefer it to be!" 
-  * step 2
-  * step 3
-  * step etc.
-  *" Of the business processes listed in Step #1, which are the most critical to the continual operation of the business or agency? In determining criticality, consider the following:
-    * Does this business function affect the safety of employees or the general public?
-    * How important is this business function to the mission of the agency/business?
-    * How important is this function to the continuity of business operations?
-    * How would a loss or disruption affect the “bottom line?”
-
-The following definitions may be used as a general guide and should be modified to meet the requirements of each specific process or function:
-Critical – necessary and/or vital. May pose a life-safety risk to employees and/or general public.
-Essential – important but not critical. Disruption would cause difficulties.
-Non-Essential – disruption is merely inconvenient."
+Process mapping in SAFETAG is done as a highly simplified version of data-flow diagramming. The auditor has the participants describe the process step-by-step. As they describe the process the auditor uses labeled circles to represent any individuals, services, or organizations that are a part of a critical process and connects them with directional arrows to represent any communication or exchange of goods.  When finished these diagram should be clear and easily understood by staff who did not participate.
 
 ##### Compiled from:
 
@@ -132,90 +104,93 @@ Non-Essential – disruption is merely inconvenient."
 workshop"](https://noppa.lut.fi/noppa/opintojakso/a350a0000/lisatty/r_1999_f_lscher_anatomy_of_a_process_mapping_workshop.pdf) (Jan Fulscher)
 
 ##### Interaction with the Participants:
-Sonet mediocrem et sea, vix at inani falli disputationi.
 
   * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
 
 ##### Talking points for the trainer (basic/advanced)
 
-With the case study concluded, the trainer now directs participants to their Class Notes.
+1. This can be a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
+    * If attendees get distracted by enumerating the technology used for data-flows or identifying new threats let them know they will have a chance to explore those topics in more depth later and ask them to re-focus on identifying the organization of the critical process'.
 
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+2. These maps will be used throughout the audit as a guide of what assets to explore.
+
+3. These maps will be used in the report to tie vulnerabilities and recommendations directly to the organizational process' that they impact.
 
 
-### Risk Modeling
 
-*Introduction:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+### Risk Modeling: Creating a Risk Assessment Matrix
+
+*Introduction:* 
 
 #### A. Explaining the types of risks
 
-This short exercise is not as interactive for the host organizations participants as many in this section, and as such can be more difficult for a trainee who is less comfortable lecturing to groups.
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
-  * Identify Current Approaches to addressing risks
-    * Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
-	* *NOTE:* We do this so that we can anchor proposed action in existing practices in the report. - (Shostack: Threat Modeling pg. 298)
+  * If unauthorized individuals find out an asset/process.
+    * Confidentiality is keeping assets or knowledge about assets away from unauthorized parties.
+  * If an asset/process can be accessed by unauthorized individuals.
+    * Control is the regulation of access to assets.
+  * If an asset/process is changed without permission.
+    * Integrity is keeping assets undamaged and unaltered.
+  * If an asset/process becomes unavailable.
+    * Availability is the assurance that assets are available to parties authorized to use them.
+  * If an asset/process becomes unreliable.
+    * Consistency is when assets behave and work as expected, all the time.
 
 ##### Compiled from:
 
-  * *Article*: ["How things happen with stuff."](https://things.stuff.edu) (Things International)
-
+  * *Book*: ["Threat Modeling: Designing for Security"](http://threatmodelingbook.com/) (Adam Shostack)
+  * *Guide*: ["Surveillance Self Defense"](https://ssd.eff.org/risk/threats) (Electronic Frontier Foundation)
+  
 ##### Interaction with the Participants:
-Sonet mediocrem et sea, vix at inani falli disputationi.
 
   * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
 
 ##### Talking points for the trainer (basic/advanced)
 
-With the case study concluded, the trainer now directs participants to their Class Notes.
-
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
+1. This short exercise is not as interactive for the host organizations participants as many in this section, and as such can be more difficult for a trainee who is less comfortable lecturing to groups.
 
 #### B. Identifying the consequence of risks on identified process/action
 
-This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain risks occur to the process' and actions identified earlier.
 
-*NOTE {.note}* It can be easy for a group to get distracted arguing over the likelihood of certain risks over others. The trainer may need to assist the trainee in re-focusing the group. If this happens, the trainer should make a note of it and go over techniques for managing these kinds of brainstorms with a large group.
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
+This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain risks occur to the process' and actions identified earlier. Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
 
 ##### Compiled from:
 
-  * *Article*: ["How things happen with stuff."](https://things.stuff.edu) (Things International)
+  * *Book*: ["Threat Modeling: Designing for Security"](http://threatmodelingbook.com/) (Adam Shostack)
+  * *Guide*: ["Surveillance Self Defense"](https://ssd.eff.org/risk/threats) (Electronic Frontier Foundation)
 
 ##### Interaction with the Participants:
-Sonet mediocrem et sea, vix at inani falli disputationi.
-
-  * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
-
 ##### Talking points for the trainer (basic/advanced)
 
-With the case study concluded, the trainer now directs participants to their Class Notes.
+1. Current approaches to addressing these risks are used to anchor the recommendations in the final report within existing organizational practices.
+  * This helps to remove the barrier of starting from zero for activities that the organization has already implemented technical or non-technical approaches for.
+  * (Shostack: Threat Modeling pg. 298)
 
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+2. It can be easy for a group to get distracted arguing over the likelihood of certain risks over others.
+  * [ TODO techniques for managing these kinds of brainstorms with a large group]
 
-#### C. Creating a Risk Assessment Matrix
+#### C. Ranking the severity of consequences
 
-The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
+The goal of this exercise is to have the trainee lead the participants in classifying the severity of the possible consequences from the risks they have just explored. On one side of the scale are "Inconvenient" consequences that disrupt the organization in a very small way. On the other side are "critical" consequences that may pose life-safety risks to employee's, partners, or the general public.
 
-  * Ranking the consequences from harmless to severe
-  * TODO READ "Tool for Identifying Critical Positions and Risk Assessment" in OI3 Notes.
-  * step 2
-  * step 3
-  * step etc.
+##### Compiled from:
+
+  * *Article*: ["Risk Assessment Matrix (RAM) Process"](http://www.cip.msu.edu/ComFacRAM-HowtoUse.pdf) (Michigan State University School of Criminal Justice)
+  * *Article*: ["A Perspective on Threats in the Risk Analysis
+Process"](https://www.sans.org/reading-room/whitepapers/auditing/perspective-threats-risk-analysis-process-63) (SANS Institute InfoSec Reading Room)
+  * *Article*: ["Facilitated Risk Analysis Process (FRAP)"](http://www.ittoday.info/AIMS/DSM/85-01-21.pdf) (Thomas R. Peltier)
+
+##### Interaction with the Participants:
+##### Talking points for the trainer (basic/advanced)
+
+1. As consequences are placed on the wall, the trainee can use other already ranked consequences to help participants identify the right place.
+  * "Is another news organization publishing a story before us more or less severe than losing a long-term insider source?"
+
+2. Take photos of the severity scale to record it for later.
+
+#### D. Estimating Likelyhood of Risks
+
+
+The goal of this exercise is to have the trainee lead the host organization in estimating the likelyhood of the risk occurring. The auditor has the participants prioritize the risks on a scale of their likelyhood.  On one side "certain" attacks that the participants know will happen. On the other side "limited" events that the participants believe are less likely to occur than to not occur.
 
 ##### Compiled from:
 
@@ -233,98 +208,51 @@ Sonet mediocrem et sea, vix at inani falli disputationi.
 
 With the case study concluded, the trainer now directs participants to their Class Notes.
 
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+1. As risks are placed on the wall, the trainee can use other already ranked risks to help participants identify the right place.
+  * "Is a robbery more or less likely than a fire?"
 
-
-A. Ranking consequences from harmless to severe
-
-The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
-
-B. Ranking likely hood of the consequences occurring on a time scale.
-
-The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
+2. Take photos of the likelyhood scale to record it for later.
 
 
 ### Asset Enumeration
 
-*Introduction:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+*Introduction:* 
 
 #### A. Identify technology used
 
 The goal of this exercise is for the trainee to guide the participants through a rapid identification of the technology used in the process' they outlined. This activity will identify the core services that the auditor will use to flesh out an asset map. 
 
-*NOTE: {.note}* This activity is about an auditor identifying the technological scope of the organization. The auditor will have a chance to explore the actual infrastructure during the remainder of the audit. This activity should be fun and quick.
-
-  * Identify process' that are universal and process' that are individual. For individual process' the auditor will go around and work individually with staff to identify assets. The universal process' will be mapped out as a group in this process. 
-  * Use failure points from post-mortum to identify the assets that are important to explore. 
-  * step 3
-  * step etc.
-  * How to use Swim Lanes to explore "ceremonies"
-  
 
 ##### Compiled from:
 
   * *Research Paper*: ["Ceremony Design and Analysis"](https://eprint.iacr.org/2007/399.pdf) (Carl M. Ellison)
 
 ##### Interaction with the Participants:
-Sonet mediocrem et sea, vix at inani falli disputationi.
 
-  * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
-
+  * Use failure points from post-mortum to identify the assets that are important to explore.
+  
 ##### Talking points for the trainer (basic/advanced)
 
 With the case study concluded, the trainer now directs participants to their Class Notes.
 
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
+1. This activity is about an auditor identifying the technological scope of the organization.
+  * The auditor will have a chance to explore the actual infrastructure during the remainder of the audit.
+  * This activity should be fun and quick.
+2. It may be difficult for participants to enumerate technology they do not understand.
+  * [TODO: How to use Swim Lanes to explore "ceremonies"]
+3. You should only enumerate process' that the entire group of participants are involved in.
+  * For individual process' that only a sub-set of the participants are a part of the auditor should go around and work individually or in small groups of staff to identify assets to respect the short time that staff will have for these activities.
 
 ### Post Needs Assessment
 
-*Introduction:* Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse. Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id. Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
+*Introduction:* 
 
-#### A. Documenting a Needs Assessment
-
-The goal of this exercise is for the trainee to guide the participants through a rapid identification of the technology used in the process' they outlined. This activity will identify the core services that the auditor will use to flesh out an asset map. 
-
-*NOTE: {.note}* This activity is about an auditor identifying the technological scope of the organization. The auditor will have a chance to explore the actual infrastructure during the remainder of the audit. This activity should be fun and quick.
-
-  * Identify process' that are universal and process' that are individual. For individual process' the auditor will go around and work individually with staff to identify assets. The universal process' will be mapped out as a group in this process. 
-  * Use failure points from post-mortum to identify the assets that are important to explore. 
-  * step 3
-  * step etc.
-  * How to use Swim Lanes to explore "ceremonies"
-  
+#### A. Documenting a Needs Assessment  
 
 ##### Compiled from:
 
   * *Working Paper*: ["Envisioning Risk: A Systematic Framework for Risk Visualization in Risk Management and Communication"](http://www.knowledge-communication.org/pdf/envisioning-risk.pdf) (Martin J. Eppler)
 
 ##### Interaction with the Participants:
-Sonet mediocrem et sea, vix at inani falli disputationi.
-
-  * Ad usu latine voluptatibus, vim elit homero at, sit prima eruditi legimus id.
-
+	
 ##### Talking points for the trainer (basic/advanced)
-
-With the case study concluded, the trainer now directs participants to their Class Notes.
-
-1. Pro solum postea cetero at, volutpat dissentiunt sed eu. Ad has illud repudiandae, nec labore alienum liberavisse ea, at per ponderum tincidunt deseruisse.
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	* Consul instructior his an, vel dico epicurei ea, cu vis saepe dicant qualisque. Quod ancillae salutandi cu vim, feugait postulant eu nec.
-
-
-
