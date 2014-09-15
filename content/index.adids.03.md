@@ -3,26 +3,67 @@ type: ADIDS
 id: adids-assessment-plan-dev-index
 ...
 
-# 3. Scope & Assessment Plan Development [STUB]
+# 3. Scope & Assessment Plan Development
 
 <!-- ![](content/images/assessment_plan_dev.png "") -->
 
-    - The process of building an initial assessment plan
-    * Pre-Audit interviews
+## Assessment Plan
+SEE: [NIST SP 800-115, Technical Guide to Information Security Testing and Assessment - SP800-115](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+### Overview
+#### What is the scope of the assessment? 
+#### Who is authorized to conduct the assessment? 
+#### What are the assessment’s logistics? 
+#### How should sensitive data be handled?
+#### What should occur in the event of an incident?
+
+## Assessment Plan Development
+### Working with the organization
+#### Building Agency
+#### Reaching out to and working with management
+#### Reaching out to, and working with IT staff.
+### Dealing with Third Parties
+#### Cloud Services
+#### ISP's
+#### MSSPs
+
+### Scoping Meeting
+#### Timeline
+##### Start and End Dates
+#### Staff Participation
+##### On-Site Dates and Staffing
+Make sure that there is appropriate staff for the on-site assessment.
+#### Locations
+#### Secure Communications Process
+##### Establishing Secure Communications (Training)
+#### Evidence Handling
+#### Incident Response
+##### Emergency Contact
+##### What consitutes an incident
+#### Status Meeting Frequency
+##### What level of communication you should have during the audit as findings are uncovered.
+#### Legal Considerations
+#### Payment Terms
+Not covered in SAFETAG, and therefore you are on your own.
+
+## Capcity Assessment
+### Technical Interviews
+	 * TechScape
+	   * https://www.theengineroom.org/wp-content/uploads/TSQuestionset3-1_2606121.pdf
+	   * Capacity Interviews:
+	     * Communications Officer or Technologist (42)
+		   * Questions from TC
+	   * Self Assessments
+	     * Modified 3.5 section of TechScape to focus on security
+### Mangerial Interviews
 	 * TechScape
 	   * https://www.theengineroom.org/wp-content/uploads/TSQuestionset3-1_2606121.pdf
 	   * Capacity Interviews:
 		 * Director or Manager (pg. 9)
 		   * Questions from D
-	     * Communications Officer or Technologist (42)
-		   * Questions from TC
 	   * Self Assessments
 	     * Modified 3.5 section of TechScape to focus on security
-		 
-	* initial scope development
-	* Assessment Plan/agreement development
-	* Assessment Plan/agreement Negotiation
-	* Incident Response Planning
+
+### Capacity Assessment Development
 
 !INCLUDE "ADIDS/putting_it_together/summary.md"
 
