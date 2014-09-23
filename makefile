@@ -8,12 +8,12 @@ all: install audit
 
 install: packages
 
-packages: | pandoc modules/markdown-pp/markdown-pp.py
+packages: | pandoc scripts/markdown-pp/markdown-pp.py
 
-modules/markdown-pp/markdown-pp.py: | submodules
+scripts/markdown-pp/markdown-pp.py: | submodules
 	@echo "Building markdown-pp"
 	@echo "This will require root access to this machine... sorry"
-	@cd modules/markdown-pp && sudo python setup.py install
+	@cd scripts/markdown-pp && sudo python setup.py install
 
 submodules:
 	git submodule update --init
@@ -37,7 +37,7 @@ endif
 DATE_DIR := $(shell date +%Y_%m_%d_%H_%M_%S)
 audit: date_dir | packages
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
-	@python modules/audit_setup.py --directory audit/$(DATE_DIR)
+	@python scripts/audit_setup.py --directory audit/$(DATE_DIR)
 
 date_dir:
 	-mkdir -p audit/$(DATE_DIR)
@@ -76,17 +76,17 @@ PATH:=$(PATH):~/.cabal/bin/
 adids:
 	echo $(PATH)
 	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
+	scripts/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
 	pandoc --table-of-contents --toc-depth=1 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
 
 report:
 	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
+	scripts/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
 	pandoc --table-of-contents --toc-depth=1 audit/build/report.md -o audit/build/report.pdf
 
 guide:
 	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
+	scripts/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
 	pandoc --table-of-contents --toc-depth=1 audit/build/guide.md -o audit/build/guide.pdf
 
 all_docs: adids guide report
@@ -94,13 +94,13 @@ all_docs: adids guide report
 
 # =============== For Future Integration of a smaller latex install =================
 
-modules/install-tl-unx.tar.gz:
-	wget --directory-prefix=modules/  http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+scripts/install-tl-unx.tar.gz:
+	wget --directory-prefix=scripts/  http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
-modules/texlive: | modules/install-tl-unx.tar.gz
-	mkdir modules/texlive
-	tar -zxf modules/install-tl-unx.tar.gz -C modules/texlive --strip-components 1
-	cd modules/texlive/ && ./install-tl  -v -v -no-gui -profile=../latex.profile
+scripts/texlive: | scripts/install-tl-unx.tar.gz
+	mkdir scripts/texlive
+	tar -zxf scripts/install-tl-unx.tar.gz -C scripts/texlive --strip-components 1
+	cd scripts/texlive/ && ./install-tl  -v -v -no-gui -profile=../latex.profile
 
 texpackages:
 	tlmgr install titlesec

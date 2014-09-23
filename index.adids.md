@@ -15,57 +15,57 @@ cover-image: images/adids_cover.jpg
 \newpage
 <!--  2. Operational Security -->
 
-!INCLUDE "content/index.adids.02.md"
+!INCLUDE "content/operational_security.adids.md"
 
 \newpage
 <!-- 3. Scope & Assessment Plan Development -->
 
-!INCLUDE "content/index.adids.03.md"
+!INCLUDE "content/assessment_plan.adids.md"
 
 \newpage
-<!-- 4. Needs Assessment -->
+<!-- 4. Risk Modeling -->
 
-!INCLUDE "content/index.adids.04.md"
+!INCLUDE "content/risk_modeling.adids.md"
 
 \newpage
 <!-- 5. Remote / OS-INT -->
 
-!INCLUDE "content/index.adids.05.md"
+!INCLUDE "content/remote_assessment.adids.md"
 
 \newpage
 <!-- 6. Audit Preparation -->
 
-!INCLUDE "content/index.adids.06.md"
+!INCLUDE "content/preparation.adids.md"
 
 \newpage
 <!-- 7. Vulnerability Research -->
 
-!INCLUDE "content/index.adids.07.md"
+!INCLUDE "content/vulnerability_analysis.adids.md"
 
 \newpage
-<!-- 8. Traffic Assessment -->
+<!-- 8. Network Analysis -->
 
-!INCLUDE "content/index.adids.08.md"
+!INCLUDE "content/network_analysis.adids.md"
 
 \newpage
 <!-- 9. Staff Activities -->
 
-!INCLUDE "content/index.adids.09.md"
+!INCLUDE "content/staff_activities.adids.md"
 
 \newpage
 <!-- 10. Physical Access -->
 
-!INCLUDE "content/index.adids.10.md"
+!INCLUDE "content/physical_assessment.adids.md"
 
 \newpage
 <!-- 11. Reporting and Follow Up -->
 
-!INCLUDE "content/index.adids.11.md"
+!INCLUDE "content/reporting_follow_up.adids.md"
 
 \newpage
 <!-- 12. Putting it all Together -->
 
-!INCLUDE "content/index.adids.12.md"
+!INCLUDE "content/putting_it_all_together.adids.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
