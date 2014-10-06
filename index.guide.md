@@ -1,58 +1,122 @@
 ---
 type: guide
-id: index
 audit_no: AUDIT_NUMBER
 ...
 
 \newpage
-<!-- 1. Pre-Audit -->
+<!-- Interviews -->
 
-!INCLUDE "audit/%{audit_no}/Pre-Audit.md"
-
-\newpage
-<!-- 2. Assessment Plan -->
-
-!INCLUDE "audit/%{audit_no}/assessment_plan.md"
+!INCLUDE "content/interviews.guide.md"
 
 \newpage
-<!-- 3. Remote / OS-INT -->
+<!-- Capacity Assessment -->
 
-!INCLUDE "content/index.adids.05.md"
-
-\newpage
-<!-- 4. Audit Preparation -->
-
-!INCLUDE "content/audit/pre_engagement/audit_prep/index.guide.md"
+!INCLUDE "content/capacity_assessment.guide.md"
 
 \newpage
-<!-- 5. Needs Mapping -->
+<!-- Contextual Research -->
 
-<!-- Guide for running needs mapping -->
-
-!INCLUDE "content/audit/engagement/needs_mapping/index.guide.md"
-
-<!--  Completed Needs Maps -->
-
-!INCLUDE "audit/%{audit_no}/needs/assets.md"
-
-!INCLUDE "audit/%{audit_no}/needs/process.md"
+!INCLUDE "content/context_research.guide.md"
 
 \newpage
-<!-- 6. External Assessment -->
+<!-- Assessment Plan Development -->
 
-!INCLUDE "content/audit/engagement/external/index.guide.md"
-
-!INCLUDE "audit/%{audit_no}/audit/external/vulns.md"
+!INCLUDE "content/assessment_plan.guide.md"
 
 \newpage
-<!-- 7. Internal Assessment -->
+<!-- Remote Assessment -->
 
-!INCLUDE "content/audit/engagement/internal/index.guide.md"
+!INCLUDE "content/remote_assessment.guide.md"
 
 \newpage
-<!-- 7. Physical Assessment -->
+<!-- Audit Preparation -->
 
-!INCLUDE "content/audit/engagement/physical/index.guide.md"
+!INCLUDE "content/preparation.guide.md"
+
+\newpage
+<!-- Risk Modeling -->
+
+!INCLUDE "content/risk_modeling.guide.md"
+
+\newpage
+<!-- Network Discovery -->
+
+!INCLUDE "content/network_discovery.guide.md"
+
+\newpage
+<!-- Network Access -->
+
+!INCLUDE "content/network_access.guide.md"
+
+\newpage
+<!-- Network Mapping -->
+
+!INCLUDE "content/network_mapping.guide.md"
+
+\newpage
+<!-- Physical Assessment -->
+
+!INCLUDE "content/physical_assessment.guide.md"
+
+\newpage
+<!-- Data Storage Assessment -->
+
+!INCLUDE "content/data_storage_assessment.guide.md"
+
+\newpage
+<!-- Device Assessment -->
+
+!INCLUDE "content/device_assessment.guide.md"
+
+\newpage
+<!-- Password Assessment -->
+
+!INCLUDE "content/password_assessment.guide.md"
+
+\newpage
+<!-- Personal Device Assessment -->
+
+!INCLUDE "content/personal_device_assessment.guide.md"
+
+\newpage
+<!-- Social Engineering Exercise -->
+
+!INCLUDE "content/social_engineering_exercise.guide.md"
+
+\newpage
+<!-- Vulnerability Analysis -->
+
+!INCLUDE "content/vulnerability_analysis.guide.md"
+
+\newpage
+<!-- Vulnerability Prioritization -->
+
+!INCLUDE "content/vulnerability_prioritization.guide.md"
+
+\newpage
+<!-- Recommendation Development -->
+
+!INCLUDE "content/recommendation_development.guide.md"
+
+\newpage
+<!-- Resource Identification -->
+
+!INCLUDE "content/resource_identification.guide.md"
+
+\newpage
+<!-- Roadmap Development -->
+
+!INCLUDE "content/roadmap_development.guide.md"
+
+\newpage
+<!-- Report Creation -->
+
+!INCLUDE "content/report_creation.guide.md"
+
+\newpage
+<!-- Follow Up -->
+
+!INCLUDE "content/follow_up.guide.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
