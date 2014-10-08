@@ -1,0 +1,1 @@
+This component allows the auditor to identify potentially flawed physical access security controls. This component consists of a staff led tour of the hosts offices during the day, and after the staff have gone home. 

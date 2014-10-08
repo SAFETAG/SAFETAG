@@ -1,0 +1,1 @@
+This component allows an auditor to identify general password security practices of organizational staff. This component consists of a survey that triangulates password strength and usage without forcing users to expose their passwords.
