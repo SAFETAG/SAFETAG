@@ -1,6 +1,2 @@
----
-type: ADIDS
-id: audit-remote-services-summary
-...
+This component consists of passive reconnaissance of publicly available data sources and active footprinting of the hosts networks and systems. 
 
-This section explores how to remotely identify services used by an organization and probe them for more information (e.g current versions of those services.)
