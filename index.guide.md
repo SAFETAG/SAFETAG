@@ -64,9 +64,9 @@ audit_no: AUDIT_NUMBER
 !INCLUDE "content/data_storage_assessment.guide.md"
 
 \newpage
-<!-- Device Assessment -->
+<!-- Information Security Assessment -->
 
-!INCLUDE "content/device_assessment.guide.md"
+!INCLUDE "content/information_security_assessment.guide.md"
 
 \newpage
 <!-- Password Assessment -->
