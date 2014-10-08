@@ -1,0 +1,1 @@
+Mapping an organization's network exposes the multitude of devices connected to it - including mostly forgotten servers, and provides the baseline for later work on device assessment.  In combination with beacon research from the network discovery process, many devices can be associated with users.
