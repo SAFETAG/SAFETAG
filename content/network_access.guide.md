@@ -2,44 +2,46 @@
 type: guide
 ...
 
-# ______________________
+
+
+# Network Access
 
 <!-- ![](content/images/_______________.png "") -->
 
 <!-- SUMMARY -->
 
-!INCLUDE "content/______________/summary.md"
+!INCLUDE "content/guides/network_access/summary.md"
 
 ### Purpose [stub]
 
-!INCLUDE "content/______________/purpose.md"
+!INCLUDE "content/guides/network_access/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/______________/baseline_skills.md"
+!INCLUDE "content/guides/network_access/baseline_skills.md"
 
 ### Preparation [stub]
 
 <?trainer resources?>
 
-!INCLUDE "content/______________/preparation.md"
+!INCLUDE "content/guides/network_access/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/______________/materials_needed.md"
+!INCLUDE "content/guides/network_access/materials_needed.md"
 
 ### Approach [stub]
 
-!INCLUDE "content/______________/approach.md"
+!INCLUDE "content/guides/network_access/approach.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/______________/reporting.md"
+!INCLUDE "content/guides/network_access/reporting.md"
 
 ### Resources: [stub]
 
-!INCLUDE "content/______________/resources.md"
+!INCLUDE "content/guides/network_access/resources.md"
 
 ### Operational Security Concerns: [stub]
 
-!INCLUDE "content/______________/operational_security.md"
+!INCLUDE "content/guides/network_access/operational_security.md"
