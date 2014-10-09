@@ -1,0 +1,1 @@
+This component consists of an auditor comparing the lists of vulnerabilities, recommendations, and possible resources against the organizational capacity assessment in order to create a concise and actionable roadmap for the host organization. 

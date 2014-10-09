@@ -1,0 +1,1 @@
+In this component the auditor identifies resources that the host may be able to leverage to address the vulnerabilities identified during the audit. This component consists of desk research and outreach by the auditor.

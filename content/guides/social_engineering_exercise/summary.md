@@ -1,0 +1,1 @@
+This component allows the auditor to gauge staffs digital security awareness. This component consists of the auditor sending the host staff a set of "phishing campaign" style emails. The staff then take part in activities to explore what phishing looks like and to the consiquences of having their device compromised.
