@@ -8,9 +8,7 @@ type: report
 
 !INCLUDE "path/to/approach.md"
 
-!INCLUDE "path/to/impact.assets.md"
-
-!INCLUDE "path/to/impact.process.md"
+!INCLUDE "path/to/impact.md"
 
 !INCLUDE "path/to/risk.md"
 

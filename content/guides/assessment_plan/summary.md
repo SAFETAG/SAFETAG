@@ -1,0 +1,1 @@
+This component allows an auditor to come to an understanding of the rules and boundaries of the assessment as well as the processes' that will be adhered to in case of an incident. This component consists of a process where the auditor collaboratively creates an assessment plan with key members of the organization.

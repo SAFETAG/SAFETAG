@@ -14,9 +14,7 @@ type: report
 
 <!-- What does this risk impact? -->
 
-!INCLUDE "path/to/impact.assets.md"
-
-!INCLUDE "path/to/impact.process.md"
+!INCLUDE "path/to/impact.md"
 
 <!-- What is the level of risk? -->
 
