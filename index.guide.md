@@ -1,6 +1,7 @@
 ---
 type: guide
 audit_no: AUDIT_NUMBER
+header-includes: \usepackage{wrapfig}
 ...
 
 \newpage
