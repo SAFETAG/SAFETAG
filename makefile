@@ -77,17 +77,26 @@ adids:
 	echo $(PATH)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
-	pandoc --table-of-contents --toc-depth=1 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
+	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/ADIDS.md -o audit/build/ADIDS.tex
+	pandoc --table-of-contents --toc-depth=2 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
 
 report:
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
-	pandoc --table-of-contents --toc-depth=1 audit/build/report.md -o audit/build/report.pdf
+	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/report.md -o audit/build/report.tex
+	pandoc --table-of-contents --toc-depth=2 audit/build/report.md -o audit/build/report.pdf
 
 guide:
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
-	pandoc --table-of-contents --toc-depth=1 audit/build/guide.md -o audit/build/guide.pdf
+	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.md -o audit/build/guide.tex
+	pandoc --table-of-contents --toc-depth=2 audit/build/guide.md -o audit/build/guide.pdf
+
+mini_guide:
+	-mkdir -p audit/build
+	modules/markdown-pp/markdown-pp.py index.mini.guide.md audit/build/guide.mini.md
+	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.mini.md -o audit/build/mini_guide.tex
+	pandoc --table-of-contents --toc-depth=2 audit/build/guide.mini.md -o audit/build/mini_guide.pdf
 
 all_docs: adids guide report
 
