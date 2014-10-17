@@ -8,3 +8,6 @@ A combination of the following
 
 
 <Flow Chart Here>
+
+A GREAT EXAMPLE OF WRITING A SIMPLE WORKSHOP OVERVIEW: http://integratedsecuritymanual.org/workshop-basics
+
