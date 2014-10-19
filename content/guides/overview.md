@@ -1,0 +1,4 @@
+
+SAFETAG uses a customized combination of selected assessment techniques derived from standards in the security auditing world and best-practices for working with small scale at-risk organizations to provide organization driven risk assessment and mitigation consultation.
+
+The SAFETAG process, as shown below, requires both technical and facilitation expertise. As such, while the process is built to allow a single auditor, the process can easily be split between a facilitator/trainer and a technical auditor. In fact, if an auditor does not have both the required technical expertise and experience facilitating structured activities with at-risk groups, we **highly recommend** working with a specialist who can fill the missing role. *Inexperienced or untrained auditors can possibly hinder the mission of the host organization or put them at risk.*
