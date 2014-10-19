@@ -71,9 +71,8 @@ endif
 SVG_IMAGES = $(wildcard content/images/*.svg)
 PNG_IMAGES = $(SVG_IMAGES:.svg=.png)
 
-content/images/%.png: %.svg
+%.png: %.svg
 	inkscape -e $*.png $<
-
 
 # =============== Report Generation =================
 
@@ -81,34 +80,32 @@ content/images/%.png: %.svg
 SHELL:=/bin/bash
 PATH:=$(PATH):~/.cabal/bin/
 
-adids: content/images/$(PNG_IMAGES)
+adids: $(PNG_IMAGES)
 	echo $(PATH)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/ADIDS.md -o audit/build/ADIDS.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
 
-report: content/images/$(PNG_IMAGES)
+report: $(PNG_IMAGES)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/report.md -o audit/build/report.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/report.md -o audit/build/report.pdf
 
-guide: content/images/$(PNG_IMAGES)
+guide: $(PNG_IMAGES)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.md -o audit/build/guide.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/guide.md -o audit/build/guide.pdf
 
-mini_guide: content/images/$(PNG_IMAGES)
+mini_guide: $(PNG_IMAGES)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.mini.guide.md audit/build/guide.mini.md
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.mini.md -o audit/build/mini_guide.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/guide.mini.md -o audit/build/mini_guide.pdf
 
 all_docs: adids guide report
-
-
 
 # =============== For Future Integration of a smaller latex install =================
 
