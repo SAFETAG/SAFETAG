@@ -1,45 +1,39 @@
----
-type: guide
-...
+# Network Discovery
 
-# ______________________
+!INCLUDE "guides/network_discovery/quote.md"
 
-<!-- ![](content/images/_______________.png "") -->
+### Summary
 
-<!-- SUMMARY -->
-
-!INCLUDE "content/______________/summary.md"
+!INCLUDE "guides/network_discovery/summary.md"
 
 ### Purpose [stub]
 
-!INCLUDE "content/______________/purpose.md"
+!INCLUDE "guides/network_discovery/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/______________/baseline_skills.md"
+!INCLUDE "guides/network_discovery/baseline_skills.md"
 
 ### Preparation [stub]
 
-<?trainer resources?>
-
-!INCLUDE "content/______________/preparation.md"
+!INCLUDE "guides/network_discovery/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/______________/materials_needed.md"
+!INCLUDE "guides/network_discovery/materials_needed.md"
 
 ### Approach [stub]
 
-!INCLUDE "content/______________/approach.md"
+!INCLUDE "guides/network_discovery/approach.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/______________/reporting.md"
+!INCLUDE "guides/network_discovery/reporting.md"
 
 ### Resources: [stub]
 
-!INCLUDE "content/______________/resources.md"
+!INCLUDE "guides/network_discovery/resources.md"
 
 ### Operational Security Concerns: [stub]
 
-!INCLUDE "content/______________/operational_security.md"
+!INCLUDE "guides/network_discovery/operational_security.md"

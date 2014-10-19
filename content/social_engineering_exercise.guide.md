@@ -1,45 +1,39 @@
----
-type: guide
-...
+# Social Engineering Exercise
 
-# ______________________
+!INCLUDE "guides/social_engineering_exercise/quote.md"
 
-<!-- ![](content/images/_______________.png "") -->
+### Summary
 
-<!-- SUMMARY -->
-
-!INCLUDE "content/______________/summary.md"
+!INCLUDE "guides/social_engineering_exercise/summary.md"
 
 ### Purpose [stub]
 
-!INCLUDE "content/______________/purpose.md"
+!INCLUDE "guides/social_engineering_exercise/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/______________/baseline_skills.md"
+!INCLUDE "guides/social_engineering_exercise/baseline_skills.md"
 
 ### Preparation [stub]
 
-<?trainer resources?>
-
-!INCLUDE "content/______________/preparation.md"
+!INCLUDE "guides/social_engineering_exercise/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/______________/materials_needed.md"
+!INCLUDE "guides/social_engineering_exercise/materials_needed.md"
 
 ### Approach [stub]
 
-!INCLUDE "content/______________/approach.md"
+!INCLUDE "guides/social_engineering_exercise/approach.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/______________/reporting.md"
+!INCLUDE "guides/social_engineering_exercise/reporting.md"
 
 ### Resources: [stub]
 
-!INCLUDE "content/______________/resources.md"
+!INCLUDE "guides/social_engineering_exercise/resources.md"
 
 ### Operational Security Concerns: [stub]
 
-!INCLUDE "content/______________/operational_security.md"
+!INCLUDE "guides/social_engineering_exercise/operational_security.md"

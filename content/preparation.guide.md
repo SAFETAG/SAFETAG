@@ -1,45 +1,39 @@
----
-type: guide
-...
+# Preparation
 
-# ______________________
+!INCLUDE "guides/preparation/quote.md"
 
-<!-- ![](content/images/_______________.png "") -->
+### Summary
 
-<!-- SUMMARY -->
-
-!INCLUDE "content/______________/summary.md"
+!INCLUDE "guides/preparation/summary.md"
 
 ### Purpose [stub]
 
-!INCLUDE "content/______________/purpose.md"
+!INCLUDE "guides/preparation/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/______________/baseline_skills.md"
+!INCLUDE "guides/preparation/baseline_skills.md"
 
 ### Preparation [stub]
 
-<?trainer resources?>
-
-!INCLUDE "content/______________/preparation.md"
+!INCLUDE "guides/preparation/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/______________/materials_needed.md"
+!INCLUDE "guides/preparation/materials_needed.md"
 
 ### Approach [stub]
 
-!INCLUDE "content/______________/approach.md"
+!INCLUDE "guides/preparation/approach.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/______________/reporting.md"
+!INCLUDE "guides/preparation/reporting.md"
 
 ### Resources: [stub]
 
-!INCLUDE "content/______________/resources.md"
+!INCLUDE "guides/preparation/resources.md"
 
 ### Operational Security Concerns: [stub]
 
-!INCLUDE "content/______________/operational_security.md"
+!INCLUDE "guides/preparation/operational_security.md"
