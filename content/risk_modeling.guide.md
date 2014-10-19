@@ -1,45 +1,39 @@
----
-type: guide
-...
+# Risk Modeling
 
-# ______________________
+!INCLUDE "guides/risk_modeling/quote.md"
 
-<!-- ![](content/images/_______________.png "") -->
+### Summary
 
-<!-- SUMMARY -->
-
-!INCLUDE "content/______________/summary.md"
+!INCLUDE "guides/risk_modeling/summary.md"
 
 ### Purpose [stub]
 
-!INCLUDE "content/______________/purpose.md"
+!INCLUDE "guides/risk_modeling/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/______________/baseline_skills.md"
+!INCLUDE "guides/risk_modeling/baseline_skills.md"
 
 ### Preparation [stub]
 
-<?trainer resources?>
-
-!INCLUDE "content/______________/preparation.md"
+!INCLUDE "guides/risk_modeling/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/______________/materials_needed.md"
+!INCLUDE "guides/risk_modeling/materials_needed.md"
 
 ### Approach [stub]
 
-!INCLUDE "content/______________/approach.md"
+!INCLUDE "guides/risk_modeling/approach.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/______________/reporting.md"
+!INCLUDE "guides/risk_modeling/reporting.md"
 
 ### Resources: [stub]
 
-!INCLUDE "content/______________/resources.md"
+!INCLUDE "guides/risk_modeling/resources.md"
 
 ### Operational Security Concerns: [stub]
 
-!INCLUDE "content/______________/operational_security.md"
+!INCLUDE "guides/risk_modeling/operational_security.md"

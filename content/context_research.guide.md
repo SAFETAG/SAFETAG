@@ -1,45 +1,39 @@
----
-type: guide
-...
+# Context Research
 
-# ______________________
+!INCLUDE "guides/context_research/quote.md"
 
-<!-- ![](content/images/_______________.png "") -->
+### Summary
 
-<!-- SUMMARY -->
-
-!INCLUDE "content/______________/summary.md"
+!INCLUDE "guides/context_research/summary.md"
 
 ### Purpose [stub]
 
-!INCLUDE "content/______________/purpose.md"
+!INCLUDE "guides/context_research/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/______________/baseline_skills.md"
+!INCLUDE "guides/context_research/baseline_skills.md"
 
 ### Preparation [stub]
 
-<?trainer resources?>
-
-!INCLUDE "content/______________/preparation.md"
+!INCLUDE "guides/context_research/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/______________/materials_needed.md"
+!INCLUDE "guides/context_research/materials_needed.md"
 
 ### Approach [stub]
 
-!INCLUDE "content/______________/approach.md"
+!INCLUDE "guides/context_research/approach.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/______________/reporting.md"
+!INCLUDE "guides/context_research/reporting.md"
 
 ### Resources: [stub]
 
-!INCLUDE "content/______________/resources.md"
+!INCLUDE "guides/context_research/resources.md"
 
 ### Operational Security Concerns: [stub]
 
-!INCLUDE "content/______________/operational_security.md"
+!INCLUDE "guides/context_research/operational_security.md"
