@@ -1,4 +1,4 @@
-PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install texpackages
+PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install texpackages clean_art
 
 export PATH := $(PATH):~/.cabal/bin
 
@@ -71,8 +71,13 @@ endif
 SVG_IMAGES = $(wildcard content/images/*.svg)
 PNG_IMAGES = $(SVG_IMAGES:.svg=.png)
 
+# Create png's from svg
+# 72 DPI is pandoc's default DPI, so set them to this.
 %.png: %.svg
-	inkscape -e $*.png $<
+	inkscape -d 72 -e $*.png $<
+
+clean_art:
+	rm -f content/images/*.png
 
 # =============== Report Generation =================
 

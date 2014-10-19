@@ -5,9 +5,18 @@ header-includes:
 	- \usepackage{wrapfig}
 ...
 
+
+\newpage
+
+# Introduction
+
+![The Safetag Audit Process](content/images/expertiese_vertical.png)\
+
 \newpage
 
 # PART ONE: Agreement and Information Gathering
+
+![The Pre-Audit](content/images/pre_audit_expertiese.png)\
 
 \newpage
 <!-- Interviews -->
@@ -32,6 +41,8 @@ header-includes:
 \newpage
 
 # PART TWO: The Audit
+
+![Pre-Audit](content/images/audit_expertiese.png)\
 
 \newpage
 <!-- Remote Assessment -->
@@ -91,6 +102,8 @@ header-includes:
 \newpage
 
 # PART THREE: Analysis and Reporting
+
+![The Post-Audit](content/images/post_audit_expertiese.png)\
 
 \newpage
 <!-- Vulnerability Analysis -->
