@@ -12,3 +12,6 @@
 #Ignore Latex Modules
 modules/install-tl*
 modules/texlive
+
+#Ignore all png images as they are created by SVG's in the makefile
+*.png
