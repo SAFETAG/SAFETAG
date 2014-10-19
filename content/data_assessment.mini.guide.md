@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/data_assessment/approach.md"
 
+### Output: [stub]
+
+!INCLUDE "guides/context_research/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/data_assessment/resources.md"
+!INCLUDE "references/data_assessment.md"

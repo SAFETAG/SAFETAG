@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/capacity_assessment/approach.md"
 
+### Approach [stub]
+
+!INCLUDE "guides/capacity_assessment/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/capacity_assessment/resources.md"
+!INCLUDE "references/capacity_assessment.md"

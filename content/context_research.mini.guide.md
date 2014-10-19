@@ -20,5 +20,12 @@
 
 ### Resources:
 
-!INCLUDE "guides/context_research/resources.md"
+!INCLUDE "references/context_research.md"
 
+!INCLUDE "references/threat_by_topic.md"
+
+!INCLUDE "references/threat_by_actor.md"
+
+!INCLUDE "references/threat_by_method.md"
+
+!INCLUDE "references/comm_infrastructure_research.md"

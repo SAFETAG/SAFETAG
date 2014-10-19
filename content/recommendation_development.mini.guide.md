@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/recommendation_development/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/recommendation_development/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/recommendation_development/resources.md"
+!INCLUDE "references/recommendation_development.md"

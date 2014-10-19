@@ -14,6 +14,12 @@
 
 !INCLUDE "guides/report_creation/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/report_creation/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/report_creation/resources.md"
+!INCLUDE "reference/report_supporting_references.md"
+
+!INCLUDE "reference/financial_barriers.md"
