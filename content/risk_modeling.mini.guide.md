@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/risk_modeling/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/risk_modeling/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/risk_modeling/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/risk_modeling/output.md"
 
