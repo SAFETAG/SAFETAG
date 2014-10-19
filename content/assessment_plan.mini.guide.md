@@ -14,6 +14,16 @@
 
 !INCLUDE "guides/assessment_plan/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/assessment_plan/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/assessment_plan/resources.md"
+!INCLUDE "references/pre_engagement.md"
+
+!INCLUDE "references/incident_handling.md"
+
+!INCLUDE "references/legal_considerations.md"
+
+!INCLUDE "references/data_security_standards.md"

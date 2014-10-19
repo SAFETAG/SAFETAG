@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/roadmap_development/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/roadmap_development/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/roadmap_development/resources.md"
+!INCLUDE "references/roadmap_development.md"

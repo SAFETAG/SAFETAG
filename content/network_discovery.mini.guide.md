@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/network_discovery/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/network_discovery/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/network_discovery/resources.md"
+!INCLUDE "references/network_discovery_methods.md"

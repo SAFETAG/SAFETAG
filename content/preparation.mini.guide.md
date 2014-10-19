@@ -14,6 +14,13 @@
 
 !INCLUDE "guides/preparation/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/preparation/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/preparation/resources.md"
+!INCLUDE "references/updating_tools.md"
+
+!INCLUDE "references/password_dictionaries.md"
+

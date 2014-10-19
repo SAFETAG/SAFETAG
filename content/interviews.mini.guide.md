@@ -20,4 +20,4 @@
 
 ### Resources: [stub]
 
-!INCLUDE "guides/interviews/resources.md"
+!INCLUDE "references/background_interviews.md"

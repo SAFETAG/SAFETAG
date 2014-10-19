@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/debrief/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/debrief/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/debrief/resources.md"
+!INCLUDE "references/digital_security_training.md"

@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/social_engineering_exercise/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/social_engineering_exercise/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/social_engineering_exercise/resources.md"
+!INCLUDE "references/social_engineering_toolkit.md"

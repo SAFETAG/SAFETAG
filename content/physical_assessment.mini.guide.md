@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/physical_assessment/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/physical_assessment/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/physical_assessment/resources.md"
+!INCLUDE "references/physical_assessment.md"

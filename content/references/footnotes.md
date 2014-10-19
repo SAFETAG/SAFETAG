@@ -1,0 +1,213 @@
+
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+
+[^NIST_SP_800-115]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+
+[^NIST_SP_800-115-Section_7.1]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment. Section 7.1 Coordination](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+
+[^NIST_SP_800-115-travel_prep]:["Traveling teams should maintain a flyaway kit that includes systems, images, additional tools, cables, projectors, and other equipment that a team may need when performing testing at other locations." NIST SP 800-115](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+
+
+[^pets_pre-engagement_location]:[Determining Audit Location - The Penetration Testing Execution Standard: Pre-Engagement Guidelines](http://www.pentest-standard.org/index.php/Pre-engagement#Locations)
+
+[^pets_emergency_contact_info]:[Emergency Contact and Incidents - The Penetration Testing Execution Standard: Pre-Engagement Guidelines](http://www.pentest-standard.org/index.php/Pre-engagement#Emergency_Contact_Information)
+
+[^interaction_security_risk_management]:[Security Risk Management: NGO Approach - InterAction Security Unit](http://www.eisf.eu/resources/library/SRM.pdf)
+
+[^workbook_on_security]:[Workbook on Security: Practical Steps for Human Rights Defenders at Risk](http://frontlinedefenders.org/files/workbook_eng.pdf)
+
+
+<!-- Censorship Measurement -->
+
+[^herdict_explore]:[Herdict "At-A-Glance" web-blockage dashboard](http://herdict.org/explore/indephth)
+<!-- ONI -->
+
+[^ONI_country]:[Open Network Initiative - Country Reports](https://opennet.net/research/profiles)
+
+[^ONI_regional]:[Open Network Inititiative - Regional Overviews](https://opennet.net/research/regions)
+
+[^alkasir]:[A Cyber-Censorship Map automatically plotted based on the data collected from the database that is updated through usage patterns of alkasir software.](https://alkasir.com/map)
+
+[^transparency]:[Who publishes Transparency Reports?](http://jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an)
+
+[^alexa]:[The top 500 sites in each country or territory.](http://www.alexa.com/topsites/countries)
+
+<!-- Country Infrastructure info -->
+
+[^cia_factbook]:[CIA fact-book](https://www.cia.gov/library/publications/the-world-factbook/)
+
+[^cia_factbook_internet-users]:[CIA fact-book country comparison of number of users within a country that access the Internet](https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html)
+
+[^cia_factbook_broadcast-media]:[CIA fact-book country comparison of the approximate number of public and private TV and radio stations in a country](https://www.cia.gov/library/publications/the-world-factbook/fields/2213.html)
+
+[^cia_factbook_telephone-system]:[CIA fact-book country comparison of the telephone system with details on the domestic and international components.](https://www.cia.gov/library/publications/the-world-factbook/fields/2124.html)
+
+[^WTICT_indicators]:[World Telecommunication/ICT Indicators database 2014](http://www.itu.int/en/ITU-D/Statistics/Pages/publications/wtid.aspx)
+
+
+<!-- Media / Speech Freedom Threats -->
+
+[^threatened_voices]:[Threatened Voices: Tracking suppression of online free speech.](http://threatened.globalvoicesonline.org/)
+
+[^media_sustainability_index]:[IREX’s Media Sustainability Index (MSI) provides in-depth analyses of the conditions for independent media in 80 countries across the world.](http://www.irex.org/project/media-sustainability-index-msi)
+
+[^freedom_on_the_net]:[Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](http://www.freedomhouse.org/report-types/freedom-net)
+
+[^freedom_of_the_press]:[Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
+
+[^article_19_by_country]:[ARTICLE 19 freedom of expression and freedom of information news by region.](http://www.article19.org/pages/en/where-we-work.html)
+
+[^OSF_digital_media]:[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
+
+[^press_freedom_index]:[Press Freedom Index (RSF)](https://en.rsf.org/press-freedom-index.html)
+
+[^press_freedom_index_methodology]:[Press Freedom Index Methodology (RSF)](http://rsf.org/index2014/data/2014_wpfi_methodology.pdf)
+
+
+<!-- Human Rights and Governance-->
+
+[^freedom_in_the_world]:[Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
+
+[^corruptions_perception_index]:[Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
+
+
+<!-- Surveillance and Censorship -->
+
+[^pi_country_reports]:[Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports)
+
+[^surveillance_whos_who]:[Surveillance Who's Who exposes the government agencies that attended ISS World surveillance trade shows between 2006 and 2011.](https://www.privacyinternational.org/resources/surveillance-whos-who)
+
+[^ISC_country_reports]:[The ISC Project completes evaluations of information security threats in a broad range of countries. The resulting comprehensive written assessments describe each country’s digital security situation through consideration of four main categories: online surveillance, online attacks, online censorship, and user profile/access.](https://iscproject.org/country-assessments/)
+
+
+<!-- Security Risks -->
+[^EISF_Alerts]:[EISF distributes frequent analysis and summaries of issues relevant to humanitarian security risk management.](http://www.eisf.eu/alerts/)
+
+<!-- Malware and Threat reports --> 
+
+[^symantec_annual_threat_report]:[The Internet Annual Security Threat Report provides an overview and analysis of the year in global threat activity.](http://www.symantec.com/security_response/publications/threatreport.jsp)
+
+[^symantec_monthly_threat_report]:[The monthly intelligence report, provides the latest analysis of cyber security threats, trends, and insights from the Symantec intelligence team concerning malware, spam, and other potentially harmful business risks.](http://www.symantec.com/security_response/publications/monthlythreatreport.jsp)
+
+[^mandiant_threat_report]:[Mandiant’s annual threat report, reveals key insights, statistics and case studies illustrating how the tools and tactics of advanced persistent threat (APT) actors have evolved over the last year. (REQUIRES EMAIL ADDRESS)](https://www.mandiant.com/resources/mandiant-reports/)
+
+[^mcafee_threat_center]:[McAfee Labs Threat Center includes their Quarterly Threats Report, Blog, and Threat Library.](http://www.mcafee.com/us/threat-center.aspx)
+
+[^fireeye_reports]:[FireEye provides complimentary report's on threats and trends in cyber security. (REQUIRES EMAIL ADDRESS)](http://www.fireeye.com/info-center/)
+
+[^verizon_data_breach_report]:[Verizon Data Breach Investigative Report (REQUIRES EMAIL ADDRESS)](http://www.verizonenterprise.com/DBIR/)
+
+[^internet_storm_center]:[SANS: Internet Storm Center](https://isc.sans.edu//)
+
+[^mcafee_threat_trends]:[McAfee Threat Trends Papers](www.mcafee.com/us/security-awareness/threat-trends.aspx)
+
+[^us-cert_current_activity]:[US-CERT Current Activity web page is a regularly updated summary of the most frequent, high-impact types of security incidents currently being reported](https://www.us-cert.gov/ncas/current-activity/)
+
+[^us-cert_bulletins]:[US-CERT Bulletins provide weekly summaries of new vulnerabilities.](https://www.us-cert.gov/ncas/bulletins/)
+
+
+
+<!-- Guides -->
+
+[^toolsmith_recon_ng]:[toolsmith guide to Recon-ng](http://holisticinfosec.blogspot.com/2013/05/toolsmith-recon-ng.html)
+
+[^tektip_recon-ng]:[Tektip ep26 - Information gathering with Recon-ng Video Tutorial](http://www.tekdefense.com/news/2013/3/24/tektip-ep26-information-gathering-with-recon-ng.html)
+
+[^infosec_institute_recon-ng_guide]:[The Recon-ng Framework : Automated Information Gathering](http://resources.infosecinstitute.com/the-recon-ng-framework-automated-information-gathering/)
+[^secure_ideas_recon-ng]:[Professionally Evil Toolkit - Recon-ng](http://blog.secureideas.com/2013/11/professionally-evil-toolkit-recon-ng.html)
+
+
+<!-- Technical Training & Guides -->
+
+[^security_tube]:["Comprehensive, Hands-on, Practical and Affordable infosec training."](http://www.securitytube.net)
+
+
+
+<!-- Sections -->
+
+[^social_engineering_toolkit_resources]:[Social Engineering Toolkit guides & resources](#social-engineering-toolkit)
+
+[^password_dictionary_resources]:[Password Dictionary Creation](#password-dictionary-creation)
+
+[^social_engineering_section]:[Social Engineering Toolkit guides & resources](#social-engineering-toolkit)
+
+[^latest_version_of_tools]:[Links to get the latest versions of SAFETAG tools](#getting-the-latest-version-of-tools)
+
+
+
+[^password-security]:[Password Security](#password-security)
+
+[^privilege-separation-across-os]:[Privilege Separation Across OS](#privilege-separation-across-os)
+
+[^examining-firewalls-across-os]:[Examining Firewalls Across OS](#examining-firewalls-across-os)
+
+[^identifying-software-versions]:[Identifying Software Versions](#identifying-software-versions)
+
+[^anti-virus-updates]:[Anti-Virus Updates](#anti-virus-updates)
+
+[^automated-vulnerability-assessment-tools]:[Automated Vulnerability Assessment Tools](#automated-vulnerability-assessment-tools)
+
+[^identifying-lockout-thresholds]:[Identifying Lockout Thresholds](#identifying-lockout-thresholds)
+
+[^identifying-oddone-off-services]:[Identifying Odd/One-Off Services](#identifying-oddone-off-services)
+
+[^device_encryption_by_os]:[Device Encryption By OS Type](#device-encryption-by-os)
+
+
+
+<!-- Appendix's -->
+
+[^travel_kit_appendix]:[APPENDIX A - Auditor travel kit checklist](#appendix-a)
+
+[^personal_information_to_keep_private]:[APPENDIX B - Personal Information to Keep Private](#appendix-b)
+
+[^password_survey]:[APPENDIX C - Password Survey](#appendix-c)
+
+[^auditor_consent_template]:[APPENDIX D - Auditor Consent Template.](#appendix-d)
+
+
+
+
+
+
+????????
+Hacking and security documentation: slides, papers, video and audio recordings. All in high-quality, daily updated, avoiding security crap documents. Spreading hacking knowledge, for free, enjoy
+http://www.secdocs.org/docs/wardriving-from-your-pocket-video/
+
+
+????
+No money, no problem: Building a security awareness program on a shoestring budget
+http://www.csoonline.com/article/2454634/security-leadership/no-money-no-problem-security-awareness-program-on-a-shoestring-budget.html
+
+The Social-Engineer Toolkit (SET) repository from TrustedSec - All new versions of SET will be deployed here.
+https://github.com/trustedsec/social-engineer-toolkit
+
+Pivoting and Port Forwarding using Metasploit
+http://sathisharthars.wordpress.com/2014/07/14/pivoting-and-port-forwarding-using-metasploit/
+
+
+
+????????????
+NGO Safety and Security Training Project: How to Create Effective Security Training for NGOs
+The NGO Safety and Security Training Report provides a narrative of the research findings, an updated curriculum, and guidance tools for training
+http://www.eisf.eu/resources/item/?d=7926
+
+
+??????????????
+Security Audits
+Security Audits provides a simple guide which can be used to examine the security management system of an organisation.
+http://www.eisf.eu/resources/item/?d=7696
+
+
+
+????????????????
+The Information Management Challenge: a Briefing on Information Security for Humanitarian NGOs in the Field
+http://www.eisf.eu/resources/item/?d=2127
+This EISF Report describes the "information management challenge" - that of ensuring the security of sensitive information in the difficult conditions that may exist in many field offices, and where the risk of surveillance is present - and posits potential solutions through strengthening a process that will ensure the consistent observance of fundamental information security procedures, and regular audits guaranteeing that security procedures are commensurate to the risk context.  It also outlines the dimensions of an information management policy, and highlights the potential risks - and means of mitigating those - that it should address.
+
+
+??????????????????????
+Humanitarian Risk Initiatives: Index Report
+http://www.eisf.eu/resources/item/?d=1771
+EISF has commissioned an index of various initiatives related to safety and security of aid agencies and their staff. It informs readers of the projects themselves, who is responsible or participating, and how people and initiatives relate to each other. The report covers ongoing projects commencing since the year 2000.
+

@@ -14,6 +14,24 @@
 
 !INCLUDE "guides/remote_assessment/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/remote_assessment/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/remote_assessment/resources.md"
+!INCLUDE "references/open_source_intel.md"
+
+!INCLUDE "references/advanced_searching.md"
+
+!INCLUDE "references/pastebin_searching.md"
+
+!INCLUDE "references/org_info_gathering.md"
+
+!INCLUDE "references/metadata.md"
+
+!INCLUDE "references/recon-ng.md"
+
+!INCLUDE "references/web_vuln_scanning.md"
+
+!INCLUDE "references/nmap_scanning.md"

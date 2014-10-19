@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/network_access/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/network_access/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/network_access/resources.md"
+!INCLUDE "references/network_access.md"

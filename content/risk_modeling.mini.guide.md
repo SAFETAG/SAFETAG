@@ -14,6 +14,18 @@
 
 !INCLUDE "guides/risk_modeling/approach.md"
 
+### Output [stub]
+
+!INCLUDE "guides/risk_modeling/output.md"
+
 ### Resources: [stub]
 
-!INCLUDE "guides/risk_modeling/resources.md"
+!INCLUDE "references/threat_assessment.md"
+
+!INCLUDE "references/risk_activities.md"
+
+!INCLUDE "references/threat_activities.md"
+
+!INCLUDE "references/risk_matrix_activities.md"
+
+!INCLUDE "references/alternative_risk_assessment_activities.md"
