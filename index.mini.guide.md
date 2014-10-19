@@ -1,18 +1,28 @@
 ---
 type: guide
-audit_no: AUDIT_NUMBER
+fontfamily: utopia
 header-includes:
 	- \usepackage{wrapfig}
 ...
 
-
 \newpage
+
+<!-- Introduction -->
 
 # Introduction
 
-![The Safetag Audit Process](content/images/expertiese_vertical.png)\
+!INCLUDE "content/guides/introduction.md"
 
 \newpage
+
+<!-- Overview -->
+
+## The SAFETAG Process
+
+!INCLUDE "content/guides/overview.md"
+
+![The Safetag Audit Process](content/images/expertiese_vertical.png)\
+
 
 # PART ONE: Agreement and Information Gathering
 
