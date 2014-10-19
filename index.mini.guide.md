@@ -69,24 +69,14 @@ header-includes:
 !INCLUDE "content/physical_assessment.mini.guide.md"
 
 \newpage
-<!-- Data Storage Assessment -->
+<!-- Data Assessment -->
 
-!INCLUDE "content/data_storage_assessment.mini.guide.md"
-
-\newpage
-<!-- Information Security Assessment -->
-
-!INCLUDE "content/information_security_assessment.mini.guide.md"
+!INCLUDE "content/data_assessment.mini.guide.md"
 
 \newpage
-<!-- Password Assessment -->
+<!-- Device Assessment -->
 
-!INCLUDE "content/password_assessment.mini.guide.md"
-
-\newpage
-<!-- Personal Device Assessment -->
-
-!INCLUDE "content/personal_device_assessment.mini.guide.md"
+!INCLUDE "content/device_assessment.mini.guide.md"
 
 \newpage
 <!-- Social Engineering Exercise -->
@@ -137,8 +127,39 @@ header-includes:
 
 !INCLUDE "content/follow_up.mini.guide.md"
 
+\newpage
+<!-- APPENDIX A - Auditor travel Kit Checklist-->
+
+# APPENDIX A
+
+!INCLUDE "content/guides/preparation/examples/travel_kit_checklist.md"
+
+# APPENDIX B
+
+!INCLUDE "content/guides/data_assessment/examples/personal_info_to_keep_private.md"
+
+# APPENDIX C
+
+!INCLUDE "content/guides/device_assessment/examples/password_survey.md"
+
+# APPENDIX D
+
+!INCLUDE "templates/audit/auditor_consent_template.md"
+
+
+
+
+
+
+
+
+
+
+
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
 
 <!-- Load Footnotes -->
-!INCLUDE "content/footnotes.md"
+!INCLUDE "content/references/footnotes.md"
+
+
