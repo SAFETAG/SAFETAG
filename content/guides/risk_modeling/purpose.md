@@ -1,0 +1,2 @@
+
+Having the host organization central to the risk assessment process allows the auditor to put their threats and recommendations into the host own narrative. Staff who can see the impact of the threats the auditor identifies on process' that they have identified as critical to their work will be more motivated to take action. Recommendations that are correctly placed within the organizations existing and historic security practices are less likely to meet resistance.
