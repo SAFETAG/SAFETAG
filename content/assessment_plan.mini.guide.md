@@ -10,11 +10,11 @@
 
 !INCLUDE "guides/assessment_plan/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/assessment_plan/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/assessment_plan/output.md"
 

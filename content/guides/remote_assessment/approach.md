@@ -1,30 +1,15 @@
----
-type: ADIDS
-id: audit-external-services-approach
-...
 
-To include evaluation of specific attacks that “originate” from within the organization’s LAN, if sufficient access can be obtained to initiate such an attack remotely. Put another way, if you manage to gain a foothold within an office network, from the Internet, by exploiting a weakness in the network’s perimeter, you should probably use the remote assessment findings to describe how that foothold can be abused. This will help highlight the severity of the breach. (That said, you will need a fairly permissive “engagement agreement” with the organization even to attempt something like this, as such vulnerabilities often require aggressive exploitation of some internal machine. This can be difficult to achieve without risking some level of long-term damage to the system, service interruption or data loss.)
+The remote assessment methodology focuses on direct observation of an organization and their infrstructure. This methodology uses "Open Source Intelligence" to gather as much information as the auditor can about an organization. This information is used to inform many of the following sections and can be done remotely. 
 
-The remote assessment methodology focuses on direct observation of an organization and their infrstructure. This methodology uses "Open Source Inteligence" to gather as much information as the auditor can about an organization. This information is used to inform many of the following sections and can be done remotely. 
+  * Re-route your traffic to avoid being blocked when doing automated recon
+    * VPN's, Tor, etc.
+  * Identify availability of staff, partner, beneficiary, and current project information online. [^PETS_logical_intel]
+  * Examine metadata on files the organization has posted online.
+  * Search "paste-bin" sites for leaked internal information or existing exploitation of their infrastructure.
+  * Create API keys for Recon-ng services to be used. [^recon-ng_API_keys]
+  * Use recon-ng to do automated web-based open source reconnaissance. [^recon-ng_data_flow]
+  * Identify services being hosted or used by an organization and information about those services (e.g current versions of those services.)
+  * Run vulnerability scans against websites hosted by the organization.
+  * Run vulnerability scans against servers run by the organization.
 
-  * API key creation
-  * Using Tor
-  * metadata analysis
-  * Internal IT infrastructure Info
-    * stack exchange seaches
-	* code snippets posted
-	  * github
-	  * pastebin
-    * configurations posted
-  * Business Info
-    * Partners
-	* Beneficiaries
-	* New Projects
-  * Also Active scanning
-    * nmap
-	* research on e-mails found
-	* website vulnerability scanning
-  
 
-  * Identifying staff, partners, and beneficiaries.
-  * Identifying services being hosted or used by an organization and information about those services (e.g current versions of those services.)

@@ -6,18 +6,18 @@
 
 !INCLUDE "guides/roadmap_development/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/roadmap_development/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/roadmap_development/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/roadmap_development/output.md"
 
 ### Resources: [stub]
 
-!INCLUDE "references/roadmap_development.md"
+!INCLUDE "references/determine_urgency.md"

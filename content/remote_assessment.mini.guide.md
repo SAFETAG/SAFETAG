@@ -10,11 +10,11 @@
 
 !INCLUDE "guides/remote_assessment/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/remote_assessment/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/remote_assessment/output.md"
 
@@ -22,16 +22,20 @@
 
 !INCLUDE "references/open_source_intel.md"
 
-!INCLUDE "references/advanced_searching.md"
+!INCLUDE "references/vpn_proxy_tor.md"
 
-!INCLUDE "references/pastebin_searching.md"
+!INCLUDE "references/advanced_searching.md"
 
 !INCLUDE "references/org_info_gathering.md"
 
 !INCLUDE "references/metadata.md"
 
+!INCLUDE "references/pastebin_searching.md"
+
 !INCLUDE "references/recon-ng.md"
+
+!INCLUDE "references/nmap_scanning.md"
 
 !INCLUDE "references/web_vuln_scanning.md"
 
-!INCLUDE "references/nmap_scanning.md"
+!INCLUDE "references/service_vuln_scanning.md"

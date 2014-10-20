@@ -21,3 +21,5 @@
 ### Resources: [stub]
 
 !INCLUDE "references/recommendation_development.md"
+
+!INCLUDE "references/identifying_recommendations.md"
