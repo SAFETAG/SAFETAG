@@ -1,10 +1,8 @@
 
- - (point of contact) guided tour when staff are there
- - (point of contact) guided tour after hours without their knowledge
-   - leave, get dinner with boss, and come back to check the organization after hours
- - enumerate list of staff who have access to the building (cleaning, etc.)
-
---> Add this to host responsibilities
+   * (point of contact) guided tour when staff are there
+   * (point of contact) guided tour after hours without their knowledge
+     * leave, get dinner with boss, and come back to check the organization after hours
+   * enumerate list of staff who have access to the building (cleaning, etc.)
 
 The physical assessment methodology is focused on how to mitigate against threats that occur because of the arrangement of digital assets in the physical world.
 
