@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/preparation/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/preparation/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/preparation/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/preparation/output.md"
 

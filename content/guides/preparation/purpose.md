@@ -1,0 +1,1 @@
+A SAFETAG audit has a short time frame. Preparation is vital to ensure that time on the ground is not wasted updating systems, searching for missing hardware, or building resources needed for on the ground activities.

@@ -10,4 +10,4 @@
 
   * Identify access to communications infrastructure.
   * Explore latest cyber security trends.
-  * Explore security landscape of hardware and software identified in interviews
+  * Explore security landscape of hardware and software identified in interviews. [^staying_abreast_of_tech_and_threats]
