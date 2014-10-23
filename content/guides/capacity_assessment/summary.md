@@ -1,0 +1,1 @@
+In this component the auditor analyzes the surveys to identify the organizations’ strengths and weakness (expertise, finance, willingness to learn, staff time, etc.) to adopting new digital and physical security practices. The auditor uses this information to modify their audit and recommendations accordingly.
