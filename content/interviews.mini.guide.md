@@ -2,19 +2,19 @@
 
 !INCLUDE "guides/interviews/quote.md"
 
-### Summary [stub]
+### Summary
 
 !INCLUDE "guides/interviews/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/interviews/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/interviews/approach.md"
 
-### Output: [stub]
+### Output:
 
 !INCLUDE "guides/interviews/output.md"
 

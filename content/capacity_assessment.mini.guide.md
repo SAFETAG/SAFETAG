@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/capacity_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/capacity_assessment/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/capacity_assessment/approach.md"
 
-### Approach [stub]
+### Output
 
 !INCLUDE "guides/capacity_assessment/output.md"
 

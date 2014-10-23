@@ -78,6 +78,9 @@
 
 [^corruptions_perception_index]:[Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
 
+[^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/news/regional)
+
+[^HRW_regional_work]:[Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
 
 <!-- Surveillance and Censorship -->
 
@@ -92,7 +95,7 @@
 
 [^EISF_Alerts]:[EISF distributes frequent analysis and summaries of issues relevant to humanitarian security risk management.](http://www.eisf.eu/alerts/)
 
-[^PETS_legal_considerations]:["Some activities common in penetration tests may violate local laws. For this reason, it is advised to check the legality of common pentest tasks in the location where the work is to be performed."](http://www.pentest-standard.org/index.php/Pre-engagement#Legal_Considerations)
+[^PETS_legal_considerations]:[" Some activities common in penetration tests may violate local laws. For this reason, it is advised to check the legality of common pentest tasks in the location where the work is to be performed."](http://www.pentest-standard.org/index.php/Pre-engagement#Legal_Considerations)
 
 [^PETS_third_parties]:[Dealing with third parties - The Penetration Testing Execution Standard](http://www.pentest-standard.org/index.php/Pre-engagement#Dealing_with_Third_Parties)
 
@@ -152,6 +155,12 @@
 
 [^recon-ng_API_keys]:[Acquiring API Keys](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!acquiring-api-keys)
 
+
+<!-- Tech adoption and usability --> 
+
+[^email_adoption_for_paranoid]:["Everyone except computer support staff said
+encrypting all e-mail messages was unnecessary. In fact, several mentioned encrypting all messages was for paranoid people rather than pragmatic ones."](https://cups.cs.cmu.edu/soups/2005/2005posters/10-gaw.pdf)
+
 <!-- Sections -->
 
 [^social_engineering_toolkit_resources]:[Social Engineering Toolkit guides & resources](#social-engineering-toolkit)
@@ -162,7 +171,9 @@
 
 [^latest_version_of_tools]:[Links to get the latest versions of SAFETAG tools](#getting-the-latest-version-of-tools)
 
+[^vulnerability_analysis]:[See: Vulnerability Analysis](#vulnerability-analysis)
 
+[^roadmap_development]:[See: Roadmap Development](#roadmap-development)
 
 [^password-security]:[Password Security](#password-security)
 

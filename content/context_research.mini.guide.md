@@ -14,7 +14,7 @@
 
 !INCLUDE "guides/context_research/approach.md"
 
-### Output: [stub]
+### Output:
 
 !INCLUDE "guides/context_research/output.md"
 

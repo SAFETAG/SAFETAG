@@ -1,7 +1,7 @@
 
 #### Threat research by topic
 
-  * Human  Rights [^freedom_in_the_world]
+  * Human  Rights [^freedom_in_the_world]^,^[^Amnesty_regional_news]^,^[^HRW_regional_work]
   * Transparency [^corruptions_perception_index]
   * Public  Service  Delivery
   * Health
