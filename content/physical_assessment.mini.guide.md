@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/physical_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/physical_assessment/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/physical_assessment/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/physical_assessment/output.md"
 
