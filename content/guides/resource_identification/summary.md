@@ -1,4 +1,4 @@
-In this component the auditor identifies resources that the host may be 
+In this component the auditor researches and documents resources that the host may be 
 able to leverage to address the technical, regulatory, organizational, or 
 behavioral vulnerabilities identified during the audit.
 
