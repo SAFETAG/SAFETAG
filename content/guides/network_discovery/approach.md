@@ -1,9 +1,6 @@
   
-  * Scan for wireless networks near the organization
-  * Determine/guess the office network - some are obfuscated
-  * Identify range of wireless network outside of office space
-  * Confirm the office network before proceeding
-  * Traffic monitoring and capture (handshakes, beacons, macs)
-  * Basic network traffic analysis of external passive actor
-  
-  
+  * Scan for wireless networks near the organization.
+  * Determine/guess the office network.
+  * Confirm identified wireless network is the office network.
+  * Identify range of wireless network outside of office space.
+  * Monitor traffic of that network and capture wireless handshakes, beacons, and MAC address'.

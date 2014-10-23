@@ -10,11 +10,11 @@
 
 !INCLUDE "guides/network_mapping/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/network_mapping/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/network_mapping/output.md"
 
