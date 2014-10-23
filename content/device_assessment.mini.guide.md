@@ -32,8 +32,4 @@
 
 !INCLUDE "references/anti_virus.md"
 
-!INCLUDE "references/auto_vuln_assessment.md"
-
-!INCLUDE "references/lockout_threshold.md"
-
 !INCLUDE "references/one_off_services.md"
