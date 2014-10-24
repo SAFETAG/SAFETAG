@@ -20,3 +20,7 @@ http://mirror-de.cryptoparty.is/handbook/
 
 'Bypassing Internet Censorship', provides an introduction to the topic and explains some of the software and methods most often used for circumventing censorship. There is some information on avoiding surveillance and other means of detection while bypassing censorship, however [they] have only addressed it where it coincides directly with issues of circumvention.
 http://en.flossmanuals.net/bypassing-censorship/
+
+Tips, Tools and How-tos For Safer Online Communications
+https://ssd.eff.org/en/index
+Modern technology has given the powerful new abilities to eavesdrop and collect data on innocent people. Surveillance Self-Defense is EFF's guide to defending yourself and your friends from surveillance by using secure technology and developing careful practices.

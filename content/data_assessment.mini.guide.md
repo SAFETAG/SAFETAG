@@ -2,21 +2,21 @@
 
 !INCLUDE "guides/data_assessment/quote.md"
 
-### Summary
+### Summary:
 
 !INCLUDE "guides/data_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose:
 
 !INCLUDE "guides/data_assessment/purpose.md"
 
-### Approach [stub]
+### Approach:
 
 !INCLUDE "guides/data_assessment/approach.md"
 
-### Output: [stub]
+### Output:
 
-!INCLUDE "guides/context_research/output.md"
+!INCLUDE "guides/data_assessment/output.md"
 
 ### Resources: [stub]
 

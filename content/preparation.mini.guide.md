@@ -20,6 +20,8 @@
 
 ### Resources: [stub]
 
+!INCLUDE "references/facilitation_prep.md"
+
 !INCLUDE "references/updating_tools.md"
 
 !INCLUDE "references/password_dictionaries.md"

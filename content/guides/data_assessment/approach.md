@@ -1,5 +1,4 @@
 
-  * Analyze sniffed network traffic to identify any un-identified services running on the LAN.
   * Gather staff for activity.
   * Provide staff "personal information to keep private" handout. [^personal_information_to_keep_private]
   * Staff list private data within the organization.

@@ -9,7 +9,7 @@
 
 [^NIST_SP_800-115-Section_7.1]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment. Section 7.1 Coordination](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
-[^NIST_SP_800-115-travel_prep]:["Traveling teams should maintain a flyaway kit that includes systems, images, additional tools, cables, projectors, and other equipment that a team may need when performing testing at other locations." NIST SP 800-115](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+[^NIST_SP_800-115-travel_prep]:["Traveling teams should maintain a flyaway kit that includes systems, images, additional tools, cables, projectors, and other equipment that a team may need when performing testing at other locations."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
 [^pets_pre-engagement_location]:[Determining Audit Location - The Penetration Testing Execution Standard: Pre-Engagement Guidelines](http://www.pentest-standard.org/index.php/Pre-engagement#Locations)
 
@@ -20,10 +20,17 @@
 [^workbook_on_security]:[Workbook on Security: Practical Steps for Human Rights Defenders at Risk](http://frontlinedefenders.org/files/workbook_eng.pdf)
 
 [^OSSTMM_wireless_security_testing]:[Open Source Security Testing Methodology Manual (OSSTMM)](http://www.isecom.org/mirror/OSSTMM.3.pdf#page=140)
+
 <!-- Threat Modeling -->
 
 [^shostack_anchoring]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 298. 
 
+[^NIST_SP_800_115_soc_eng_hostile]:["Individual targeting can lead to embarrassment for those individuals if testers successfully elicit information or gain access. It is important that the results of social engineering testing are used to improve the security of the organization and not to single out individuals."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+
+
+<!-- Facilitation -->
+
+[^integratedsecurity_prep_tips]:[Integrated Security Facilitator Preparation Tips](http://integratedsecuritymanual.org/sites/default/files/integratedsecurity_themanual_1.pdf#page=25)
 
 <!-- Censorship Measurement -->
 
@@ -159,6 +166,9 @@
 
 [^recon-ng_API_keys]:[Acquiring API Keys](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!acquiring-api-keys)
 
+[^security_in_a_box_physical]:[How to protect your information from physical threats - Security in-a-box](http://www.tasharuk.net/en/resources/index.php?id=20#/Security%20In%20A%20Box:%20Tools%20and%20Tactics%20for%20Your%20Digital%20Security)
+
+[^speak_safe_keeping_data_safe]:[Keeping Your Data Safe - Surveillance Self-Defense](https://ssd.eff.org/en/module/keeping-your-data-safe)
 
 <!-- Tech adoption and usability --> 
 
