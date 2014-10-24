@@ -8,6 +8,7 @@
 
 #Don't commit any auto-saves
 \#*\#
+*~
 
 #Ignore Latex Modules
 modules/install-tl*
