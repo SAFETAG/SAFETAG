@@ -104,7 +104,13 @@
 
 [^PETS_legal_considerations]:[" Some activities common in penetration tests may violate local laws. For this reason, it is advised to check the legality of common pentest tasks in the location where the work is to be performed."](http://www.pentest-standard.org/index.php/Pre-engagement#Legal_Considerations)
 
+[^PTES_testing]:[Vulnerability Analysis - The Penetration Testing Execution Standard](http://www.pentest-standard.org/index.php/Vulnerability_Analysis)
+
 [^NIST_800_14_user_issues]:[NIST SP 800-14, Generally Accepted Principles and Practices for Securing Information Technology Systems](http://csrc.nist.gov/publications/nistpubs/800-14/800-14.pdf#page=30)
+
+[^NIST_exploit_confirm]:["While vulnerability scanners check only for the possible existence of a vulnerability, the attack phase of a penetration test exploits the vulne rability to confirm its existence."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=38)
+
+[^NIST_pen_test_danger]:["Penetration testing also poses a high risk to the organization’s networks and systems because it uses real exploits and attacks against production systems and data. Because of its high cost and potential impact, penetration testing of an organization’s network and systems on an annual basis may be sufficient. Also, penetration testing can be designed to stop when the tester reaches a point when an additional action will cause damage."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=40)
 
 [^PETS_third_parties]:[Dealing with third parties - The Penetration Testing Execution Standard](http://www.pentest-standard.org/index.php/Pre-engagement#Dealing_with_Third_Parties)
 
@@ -177,6 +183,8 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 <!-- Sections -->
 
+
+
 [^social_engineering_toolkit_resources]:[Social Engineering Toolkit guides & resources](#social-engineering-toolkit)
 
 [^password_dictionary_resources]:[Password Dictionary Creation](#password-dictionary-creation)
@@ -190,6 +198,8 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 [^roadmap_development]:[See: Roadmap Development](#roadmap-development)
 
 [^password-security]:[Password Security](#password-security)
+
+[^network-access]:[Network Access](#network-access)
 
 [^privilege-separation-across-os]:[Privilege Separation Across OS](#privilege-separation-across-os)
 
