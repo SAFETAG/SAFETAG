@@ -1,7 +1,8 @@
-  * Immediate Action Needed
+
+  * Provide assistance for any immediate action needed.
     * Spot Training
 	* Tool Fixes
-	* Advising on upcoming projects
-  * Psyco-social Care (pressure relieving activities)
+	* Security consult on upcoming projects
   * Discuss next steps for the host.
-  * Initiate follow-up with host (organizational and individual)
+  * Provide psyco-social care and re-framing as needed.
+  * Initiate follow-up with host (organizational and individual).
