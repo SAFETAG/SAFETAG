@@ -1,13 +1,9 @@
-
-#### Regional Context Research
-
-  * Identify possible additional threats not identified in interviews including government authorities, non-state actors (organized crime. corporations, etc), and police or security forces.
-  * Research capacity of potential threats.
-  * Identify willingness of potential threats to act against similar organizations.
-  * Identify any legal risks associated with conducting your work (Secure communications and storage, network forensics, device exploitation, digital security training.) [^PETS_legal_considerations]
-
-#### Technical Context Research
-
-  * Identify access to communications infrastructure.
-  * Explore latest cyber security trends.
-  * Explore security landscape of hardware and software identified in interviews. [^staying_abreast_of_tech_and_threats]
+  * Regional Context Research
+    * Identify additional threats not identified in interviews including: government authorities, non-state actors (organized crime. corporations, etc), and police or security forces.
+    * Research capacity and liklihood of identified threats.
+    * Identify willingness of potential threats to act against similar organizations.
+    * Identify any legal risks associated with conducting your work (Secure communications and storage, network forensics, device exploitation, digital security training.) [^PETS_legal_considerations]
+  * Technical Context Research
+    * Identify access to communications infrastructure.
+    * Explore latest cyber security trends.
+    * Explore security landscape of hardware and software identified in interviews. [^staying_abreast_of_tech_and_threats]
