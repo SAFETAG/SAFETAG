@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/debrief/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/debrief/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/debrief/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/debrief/output.md"
 
