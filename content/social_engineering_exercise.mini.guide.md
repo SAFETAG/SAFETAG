@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/social_engineering_exercise/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/social_engineering_exercise/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/social_engineering_exercise/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/social_engineering_exercise/output.md"
 

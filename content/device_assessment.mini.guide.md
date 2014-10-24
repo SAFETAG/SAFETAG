@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/device_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/device_assessment/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/device_assessment/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/device_assessment/output.md"
 

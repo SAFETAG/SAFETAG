@@ -1,2 +1,2 @@
 
-  This agency building intervention is one of the ways that we are attempting to account for the lack of actual social engineering attacks against the organization.
+The educational activities within this section are provided as an alternative to actual social engineering attacks against the organization. Audits of individual level behavior have a high chance of embarrassing the targeted staff. The result of this embarrassment can range from increased enthusiasm for the process to disengaging entirely. Supporting post-audit investment in the process is a core component of many activities. The possibility of derailing the investment the auditor has built during the audit makes "social engineering attacks" too large of a risk.

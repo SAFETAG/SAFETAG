@@ -1,6 +1,8 @@
 
-  * staff informed about phishing emails to come
-  * are asked to spot problems in the e-mails
-  * emails sent out to staff
-  * exercise with staff to explore the critical data (identified in an earlier activity) that would be compromised if certain devices were compromised
-
+  * Inform staff you are sending out phishing emails for them to inspect.
+    * Ask them to spot anything suspicious the e-mails.
+  * Send emails to staff.
+  * Bring staff together for an activity.
+    * Have staff announce what they thought was suspicious.
+    * Identify anything they missed.
+  * Lead staff in an activity identifying what critical data (as identified in during the data assessment) would be available to a hacker if malware were to get access to different participants devices.
