@@ -1,8 +1,9 @@
 
-  * compiling evidence
-  * preparing summaries
-  * creating visuals
-  * compiling content
-  * sending report to client
-  * preparing Internews milestone summary
- 
+  * Create charts and visuals for roadmap, risk-matrix, implementation matrix, and critical processes.
+  * Compile approaches, impact, risk, recommendations and resources for each vulnerability.
+  * Prepare narrative components.
+  * Collect agreements & scope.
+  * Document tools used for testing.
+  * Update glossary.
+  * Compile full report contents.
+  * Send the report to client. [^secure_reporting]

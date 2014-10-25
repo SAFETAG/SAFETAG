@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/recommendation_development/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/recommendation_development/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/recommendation_development/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/recommendation_development/output.md"
 

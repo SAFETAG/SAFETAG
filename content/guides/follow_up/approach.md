@@ -1,5 +1,7 @@
-  * setting up follow up meeting
-  * final meeting to go over report
-  * connecting with resources
-  * check up to see if more support needed
-  * connecting them with future resources as they appear
+
+  * Have a follow up call to discuss report.
+  * Make introduction between host and known resources as needed.
+  * Follow up with host after a few months:
+    * Check on progress.
+	* Get long-term feedback.
+	* Connect with any new resources.

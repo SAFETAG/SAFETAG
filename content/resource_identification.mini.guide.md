@@ -6,15 +6,15 @@
 
 !INCLUDE "guides/resource_identification/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/resource_identification/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/resource_identification/approach.md"
 
-### Output [stub]
+### Output
 
 !INCLUDE "guides/resource_identification/output.md"
 
