@@ -1,3 +1,1 @@
-This component allows an auditor to lead the host's staff to identify and prioritize the process' that are critical for the organization to carry out its work and the consequences if those process' were interrupted.
-
-In this component the auditor leads a series of activities that allow them to create a risk matrix which is used as the foundation of the auditors recommendations.
+This component allows an auditor to lead the host organization's staff in a series of activities to identify and prioritize the processes that are critical for the organization to carry out its work.  These activities will also reveal the consequences if those critical processes were interrupted or exposed to a malicious actor.  This results in the staff creating a risk matrix which is used as the foundation of the auditor's recommendations.

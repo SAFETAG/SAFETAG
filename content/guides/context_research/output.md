@@ -1,6 +1,6 @@
 
   * A summary of the most likely threats that the host and auditor may face:
-      * Possible adversaries capacity and willingness to act against the host,
-      * Latest general cyber-security threats,
-      * Recent threats against identified host hardware and software,
-      * Legal risks to host and auditor conducting a SAFETAG audit.
+    * Possible adversaries and their capacity and willingness to act against the host,
+    * Latest general cyber-security threats,
+    * Legal risks to host and auditor conducting a SAFETAG audit.
+  * Modifications to the audit plan as necessary.
