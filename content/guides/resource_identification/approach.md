@@ -1,5 +1,3 @@
 
 
-  * identifies resources that can help
-    * desk research
-    * outreach by the auditor.
+  * Identify resources that the organization can leverage to accomplish the identified recommendations.

@@ -10,13 +10,9 @@
 
 !INCLUDE "guides/follow_up/purpose.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/follow_up/approach.md"
-
-### Output [stub]
-
-!INCLUDE "guides/debrief/output.md"
 
 ### Resources: [stub]
 

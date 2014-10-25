@@ -1,0 +1,2 @@
+
+The host needs to be able to take action after an audit. The recommendations that an auditor provides to address vulnerabilities must cover a range that allows an organization to address them in both the short-term and more comprehensively in the long-term. Based on conversations with the host it is also important to identify any vulnerabilities or adversaries that were identified that the auditor cannot identify any reasonable recommendation to protect against.
