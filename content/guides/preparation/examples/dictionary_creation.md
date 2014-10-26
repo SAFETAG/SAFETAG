@@ -16,8 +16,6 @@ $ for foo in `cat pwdlist.txt`; do for bar in `cat pwdlist.txt`; do printf $foo$
 $ cat pwdlist.txt >> pwdpairs.txt
 
 
-
-
 ### Using a pre-compilex wordlist called pwdpairs.txt ###
 
 A good wordlist with a few tweaks tends to break most passwords.  Using a collection of all english words, all words from the language of the organization being audited, plus a combination of all these words, plus relevant keywords, addresses, and years tends to crack most wifi passwords.
@@ -28,7 +26,7 @@ $ aircrack-ng -w pwdpairs.txt -b 1A:2B:3C:4D:5E:6F sampleorg_airodump*.cap
 
 JtR is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o").  You can add custom "rules" to aid in these substitutions - a base set is included with JtR, but a much more powerful set is added by KoreLogic (http://contest-2010.korelogic.com/rules.html).
 
-KoreLogic also provides a custon character set "chr file" that takes password frequency data from large collections of real-world passwords to speed up JtR's brute force mode (http://www.korelogic.com/tools.html) . This PDF presentation has a good walkthrough of how John and Kore's rules work: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Fwww.owasp.org%2Fimages%2Fa%2Faf%2F2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+KoreLogic also provides a custon character set "chr file" that takes password frequency data from large collections of real-world passwords to speed up JtR's brute force mode (http://www.korelogic.com/tools.html) . This PDF presentation has a good walkthrough of how John and Kore's rules work: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
 
 ### Brute force, using crunch ###
 
