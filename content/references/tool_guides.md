@@ -1,6 +1,5 @@
 
-
-## Always Uses
+## Auditor Trainee Tech Tool Resource List
 
 <!-- Recon-ng -->
 
@@ -12,6 +11,8 @@
 
 <!-- Google Power Search -->
 
+!INCLUDE "advanced_searching.md"
+
 <!-- Social Engineering Toolkit -->
 
 !INCLUDE "social_engineering_toolkit.md"
@@ -20,18 +21,8 @@
 
 !INCLUDE "nmap_scanning.md"
 
-## Case Specific (Training)
-
-<!-- aircrack-ng -->
+<!-- aircrack-ng & other wireless tools-->
 
 !INCLUDE "setup_aircrack-ng.md"
 
 !INCLUDE "wireless_access_guides.md"
-
-<!-- macchanger -->
-
-## Case Specific (Not in Training)
-
-<!-- wash -->
-
-<!-- reaver -->
