@@ -1,4 +1,4 @@
 
   * The name of wireless access points used by the host.
-  * airodump logs for wireless traffic on each access point.
-  * A map of the range of each wireless access point.
+  * airodump logs with key handshakes for wireless traffic on each relevant access point.
+  * A map or photos indicating the range of each relevant wireless access point.

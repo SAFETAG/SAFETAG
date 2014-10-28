@@ -1,5 +1,5 @@
 
-  * A rough overview of critical organizational data:
+  * A map of the staff's understanding of critical organizational data:
       * what that data is,
       * where it is stored, 
       * who has access, 
