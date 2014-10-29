@@ -74,7 +74,7 @@ PNG_IMAGES = $(SVG_IMAGES:.svg=.png)
 # Create png's from svg
 # 72 DPI is pandoc's default DPI, so set them to this.
 %.png: %.svg
-	inkscape -d 72 -e $*.png $<
+	inkscape -d 92 -e $*.png $<
 
 clean_art:
 	rm -f content/images/*.png
@@ -110,7 +110,13 @@ mini_guide: $(PNG_IMAGES)
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.mini.md -o audit/build/mini_guide.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/guide.mini.md -o audit/build/mini_guide.pdf
 
-all_docs: adids guide report
+overview: $(PNG_IMAGES)
+	-mkdir -p audit/build
+	modules/markdown-pp/markdown-pp.py index.overview.md audit/build/overview.md
+	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/overview.md -o audit/build/overview.tex
+	pandoc --table-of-contents --toc-depth=2 audit/build/overview.md -o audit/build/overview.pdf
+
+all_docs: adids guide report mini_guide overview
 
 # =============== For Future Integration of a smaller latex install =================
 
