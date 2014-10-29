@@ -1,6 +1,9 @@
 
 #### Network Discovery Methods
 
+
+  * *Guide:* ["10 Techniques for Blindly Mapping Internal Networks"](https://www.netspi.com/blog/entryid/135/10-techniques-for-blindly-mapping-internal-networks)
+
 Testing for opened ports with firewalk technique
 There is an interesting way of knowing what kind of filters are placed in the gateway of a specific host. It is called firewalk and it is based on IP TTL expiration. The algorithm goes as follows:
 https://isc.sans.edu/diary/Testing+for+opened+ports+with+firewalk+technique/18761

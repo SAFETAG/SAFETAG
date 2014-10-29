@@ -1,11 +1,15 @@
 
 <!-- Notes -->
 
-[^external_funding_and_reporting]:[Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.]
+[^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.
 
 <!-- Penetration/Security/Risk Testing Standards / Guides -->
 
 [^NIST_SP_800-115]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+
+[^pen_testing_systematic]:["Penetration Testing - A Systematic Approach"](http://www.infosecwriters.com/text_resources/pdf/PenTest_MSaindane.pdf)
+
+[^NIST_SP_800-115_assessment_plan]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=51)
 
 [^NIST_SP_800-115-Section_7.1]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment. Section 7.1 Coordination](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
@@ -15,7 +19,7 @@
 
 [^pets_emergency_contact_info]:[Emergency Contact and Incidents - The Penetration Testing Execution Standard: Pre-Engagement Guidelines](http://www.pentest-standard.org/index.php/Pre-engagement#Emergency_Contact_Information)
 
-[^interaction_security_risk_management]:[Security Risk Management: NGO Approach - InterAction Security Unit](http://www.eisf.eu/resources/library/SRM.pdf)
+[^interaction_security_risk_management]:[Security Risk Management: NGO Approach - InterAction Security Unit](https://www.scribd.com/doc/156488867/Srm)
 
 [^workbook_on_security]:[Workbook on Security: Practical Steps for Human Rights Defenders at Risk](http://frontlinedefenders.org/files/workbook_eng.pdf)
 
@@ -249,7 +253,7 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 
 
-
+<!-- COMMENT OUT TO-READ / QUESTIONABLE RESORUCES
 
 ????????
 Hacking and security documentation: slides, papers, video and audio recordings. All in high-quality, daily updated, avoiding security crap documents. Spreading hacking knowledge, for free, enjoy
@@ -292,3 +296,4 @@ Humanitarian Risk Initiatives: Index Report
 http://www.eisf.eu/resources/item/?d=1771
 EISF has commissioned an index of various initiatives related to safety and security of aid agencies and their staff. It informs readers of the projects themselves, who is responsible or participating, and how people and initiatives relate to each other. The report covers ongoing projects commencing since the year 2000.
 
+-->

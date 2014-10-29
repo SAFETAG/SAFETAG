@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/network_access/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/network_access/resources.md"
 

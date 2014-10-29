@@ -14,10 +14,10 @@
 
 !INCLUDE "guides/interviews/approach.md"
 
-### Output:
+### Output
 
 !INCLUDE "guides/interviews/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/background_interviews.md"

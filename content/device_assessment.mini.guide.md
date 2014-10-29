@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/device_assessment/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/password_security.md"
 

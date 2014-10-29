@@ -37,7 +37,6 @@ The goal of this exercise is for the trainee to lead the attendees through each 
   * Trainee leads participants in whole group pre-mortum
   * Trainee splits up participants into groups by number of trainee's and participant involvement in process' for that group
   * Trainee captures why a process failed, what the consequence would be, and any external threat actors that are identified for later in the needs assessment.
-  * 
 
 #### B. Identify critical process'
 

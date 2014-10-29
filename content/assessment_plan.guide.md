@@ -32,7 +32,7 @@
 
 !INCLUDE "guides/assessment_plan/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/assessment_plan/resources.md"
 

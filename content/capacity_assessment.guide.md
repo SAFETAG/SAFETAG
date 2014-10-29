@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/capacity_assessment/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/capacity_assessment/resources.md"
 

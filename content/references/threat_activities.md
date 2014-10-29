@@ -1,7 +1,7 @@
 
 #### Threat Assessment Activities
 
-* *Guide:* ["Threat Assessment: Chapter 2.5 - Operational Security Management in Violent Environments (Revised Edition)"](http://www.odihpn.org/index.php?option=com_k2&view=item&layout=item&id=3159#page=38) (HPN - Humanitarian Practice Network)
+* *Guide:* ["Threat Assessment: Chapter 2.5 p. 38"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38) (Operational Security Management in Violent Environments (Revised Edition))
 
 [Example text for introducing threats - Integrated Security](http://integratedsecuritymanual.org/exercise/example-text-for-introducing-threats)
 

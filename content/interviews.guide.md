@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/interviews/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/interviews/resources.md"
 

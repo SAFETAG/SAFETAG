@@ -59,22 +59,11 @@ Hide and Seek:
 #### Information Gathering Methodology  [stub]
 
 <?step-by-step explanation that is tool agnostic of the audit / approach?>
+
 !INCLUDE "audit/engagement/remote/approach.md"
 
-### Regional Context Research
-
-Gathering contextual information to inform your audit. The remote section is not simply enumerating risks, but identifying the local 
-
-- Contextual  information  about  country  in  which  the  organization  in.
-  - https://www.theengineroom.org/wp-content/uploads/TSQuestionset3-1_2606121.pdf (Section 0B2_1)
-  - Civil Society Index Reports:
-    - http://civicus.org/index.php/en/media-centre-129/reports-and-publications/csi-reports
-	- http://csi.civicus.org/
-  - Corruption Perception Index
-    - http://cpi.transparency.org/cpi2011/results/
-  - ETC. -> See TechScape Section 0B2_1 When ready to continue this section.
-
 ### Technical Context Research
+
 #### Introduction to SpiderFoot [stub]
 
 !INCLUDE "path/to/spiderfoot/summary.md"
@@ -116,44 +105,6 @@ For audit sections we will do the actual tool training and  conduct mini-follow 
 
 ##### Using Spiderfoot
 
-**OUTPUT OVERVIEW**
-```
-Affiliate - Domain
-Affiliate - Hostname
-Affiliate - IP Address
-Co-Hosted Site
-Email Gateway (DNS 'MX' Records)
-HTTP Headers
-HTTP Status Code
-Human Name
-IP Address
-IP Address - Subnet
-Internet Service Provider
-Linked URL - External
-Linked URL - Internal
-Malicious Affiliate IP Address
-Malicious IP on Same Subnet
-Name Server (DNS 'NS' Records)
-Open TCP Port
-Open TCP Port Banner
-Physical Location
-Raw DNS Records
-Raw Data from RIRs
-SSL Certificate - Issued by
-SSL Certificate - Issued to
-SSL Certificate - Raw Data
-SSL Certificate Host Mismatch
-Search Engine's Web Content
-Similar Domain
-Social Media Presence
-Sub-domain/Hostname
-URL (Purely Static)
-URL (Uses Javascript)
-URL (Uses a Web Framework)
-User-Supplied Target
-Web Content
-Web Server
-```
 
 #### Live Practice
 <?A timed practice session on a live target?>

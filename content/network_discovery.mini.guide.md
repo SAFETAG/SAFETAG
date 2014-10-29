@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/network_discovery/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/network_discovery_methods.md"

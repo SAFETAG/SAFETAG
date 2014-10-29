@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/report_creation/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/report_creation/resources.md"
 

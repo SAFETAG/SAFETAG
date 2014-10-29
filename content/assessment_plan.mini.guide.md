@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/assessment_plan/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/pre_engagement.md"
 

@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/preparation/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/facilitation_prep.md"
 

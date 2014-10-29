@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/data_assessment/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/data_assessment/resources.md"
 

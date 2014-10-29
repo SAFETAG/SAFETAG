@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/device_assessment/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/device_assessment/resources.md"
 
