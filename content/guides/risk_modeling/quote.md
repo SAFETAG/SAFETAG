@@ -10,4 +10,4 @@
   8. *Direct and immediate feedback*
   9. *Balance between ability level and challenge...*
 
-"*Flow is the most important test of an approach, methodology, or even task for threat modeling. Knowing who will find flow in an approach is a key to architecting for success. If your audience can't find flow, their ability to find threats will be dramatically inhibited. Without flow, threat modeling is a chore...*" - _Threat Modeling: Designing for Security_ [^shostack_flow]
+*Flow is the most important test of an approach, methodology, or even task for threat modeling. Knowing who will find flow in an approach is a key to architecting for success. If your audience can't find flow, their ability to find threats will be dramatically inhibited. Without flow, threat modeling is a chore...*" - _Threat Modeling: Designing for Security_ [^shostack_flow]
