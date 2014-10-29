@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/network_mapping/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/network_mapping_methods.md"

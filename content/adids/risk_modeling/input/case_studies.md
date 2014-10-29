@@ -116,13 +116,11 @@ workshop"](https://noppa.lut.fi/noppa/opintojakso/a350a0000/lisatty/r_1999_f_lsc
 
 3. These maps will be used in the report to tie vulnerabilities and recommendations directly to the organizational process' that they impact.
 
-
-
 ### Risk Modeling: Creating a Risk Assessment Matrix
 
 *Introduction:* 
 
-#### A. Explaining the types of risks
+#### A. Explaining the types of threats
 
   * If unauthorized individuals find out an asset/process.
     * Confidentiality is keeping assets or knowledge about assets away from unauthorized parties.
@@ -148,10 +146,9 @@ workshop"](https://noppa.lut.fi/noppa/opintojakso/a350a0000/lisatty/r_1999_f_lsc
 
 1. This short exercise is not as interactive for the host organizations participants as many in this section, and as such can be more difficult for a trainee who is less comfortable lecturing to groups.
 
-#### B. Identifying the consequence of risks on identified process/action
+#### B. Identifying the consequence of threat on identified process/action
 
-
-This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain risks occur to the process' and actions identified earlier. Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
+This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain threats occur to the process' and actions identified earlier. Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
 
 ##### Compiled from:
 
@@ -188,7 +185,6 @@ Process"](https://www.sans.org/reading-room/whitepapers/auditing/perspective-thr
 2. Take photos of the severity scale to record it for later.
 
 #### D. Estimating Likelyhood of Risks
-
 
 The goal of this exercise is to have the trainee lead the host organization in estimating the likelyhood of the risk occurring. The auditor has the participants prioritize the risks on a scale of their likelyhood.  On one side "certain" attacks that the participants know will happen. On the other side "limited" events that the participants believe are less likely to occur than to not occur.
 

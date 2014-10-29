@@ -1,9 +1,7 @@
 
 #### Supporting References for Reports
 
-(For lifting the vulnerability definitions from)
-OWASP links to definition of vulnerabilities
-https://www.owasp.org/index.php/Category:Vulnerability
+  * *Vulnerability Descriptions:* ["Vulnerability"](https://www.owasp.org/index.php/Category:Vulnerability) (OWASP Wiki)
 
 
 (For helping organization understand their digital footprint)

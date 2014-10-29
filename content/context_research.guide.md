@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/context_research/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/context_research/resources.md"
 

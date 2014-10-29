@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/report_creation/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "reference/report_writing.md"
 

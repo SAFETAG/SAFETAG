@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/debrief/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/digital_security_training.md"

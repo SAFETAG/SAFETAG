@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/roadmap_development/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/roadmap_development/resources.md"
 

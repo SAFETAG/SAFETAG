@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/debrief/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/debrief/resources.md"
 

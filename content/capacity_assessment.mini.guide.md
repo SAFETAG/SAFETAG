@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/capacity_assessment/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/capacity_assessment.md"

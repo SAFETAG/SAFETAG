@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/physical_assessment/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/physical_assessment.md"

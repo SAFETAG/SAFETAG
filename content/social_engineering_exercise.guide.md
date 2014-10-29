@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/social_engineering_exercise/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/social_engineering_exercise/resources.md"
 

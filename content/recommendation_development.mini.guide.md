@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/recommendation_development/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/recommendation_development.md"
 

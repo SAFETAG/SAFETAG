@@ -14,11 +14,11 @@
 
 !INCLUDE "guides/context_research/approach.md"
 
-### Output:
+### Output
 
 !INCLUDE "guides/context_research/output.md"
 
-### Resources:
+### Resources
 
 !INCLUDE "references/context_research.md"
 

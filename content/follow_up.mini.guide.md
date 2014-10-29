@@ -14,6 +14,6 @@
 
 !INCLUDE "guides/follow_up/approach.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/follow_up.md"

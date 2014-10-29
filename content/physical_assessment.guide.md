@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/physical_assessment/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/physical_assessment/resources.md"
 

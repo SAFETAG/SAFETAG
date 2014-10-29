@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/risk_modeling/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/risk_modeling/resources.md"
 

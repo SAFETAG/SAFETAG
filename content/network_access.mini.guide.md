@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/network_access/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/network_access.md"

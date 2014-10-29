@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/resource_identification/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/digital_security_guides.md"
 

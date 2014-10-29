@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/risk_modeling/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/threat_assessment.md"
 

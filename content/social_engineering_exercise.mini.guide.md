@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/social_engineering_exercise/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/social_engineering_toolkit.md"

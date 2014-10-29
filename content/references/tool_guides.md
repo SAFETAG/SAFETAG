@@ -1,5 +1,5 @@
 
-## Auditor Trainee Tech Tool Resource List
+# Auditor Trainee Tool Resource List
 
 <!-- Recon-ng -->
 
@@ -16,6 +16,14 @@
 <!-- Social Engineering Toolkit -->
 
 !INCLUDE "social_engineering_toolkit.md"
+
+<!-- Website Vulnerability Scanning -->
+
+!INCLUDE "web_vuln_scanning.md"
+
+<!-- Device Vulnerability Scanning -->
+
+!INCLUDE "device_vuln_scanning.md"
 
 <!-- nmap & zenmap-->
 

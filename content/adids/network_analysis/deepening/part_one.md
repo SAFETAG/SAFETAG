@@ -178,6 +178,14 @@ After documenting and discussing access, you can turn your attention to mapping 
 
   * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
 
+#### Setting up Exploitation VM [STUB]
+
+TODO TODO TODO 
+
+##### Material that may be Useful:
+
+  * *Guide:* [“********”](********) (******)
+
 #### Host Discovery [STUB]
 
 The next step is to use the nmap network scanning tool to discover other hosts on the network. We will mostly use ZenMap (a graphical frontend to nmap) because it makes documentation easier.
@@ -210,6 +218,7 @@ The next step is to use the nmap network scanning tool to discover other hosts o
 
 #### OS Detection
 
+  * Turn on virtual environments
   * Run an OS detection scan against the network.
   
     ```bash
@@ -229,6 +238,7 @@ The next step is to use the nmap network scanning tool to discover other hosts o
 
 #### Identifying servers and network hardware [STUB]
 
+  * Turn on virtual environments
   * Identifying up-stream devices with traceroute
     * No, we are serious were going to cover traceroute. Just as a reminder to use it.
   * Enumerating the techniques used earlier in this section up the network chain

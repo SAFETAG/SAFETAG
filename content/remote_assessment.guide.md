@@ -30,7 +30,7 @@
 
 !INCLUDE "guides/remote_assessment/reporting.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "guides/remote_assessment/resources.md"
 

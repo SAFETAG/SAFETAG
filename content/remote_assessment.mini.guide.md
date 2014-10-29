@@ -18,7 +18,7 @@
 
 !INCLUDE "guides/remote_assessment/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/open_source_intel.md"
 

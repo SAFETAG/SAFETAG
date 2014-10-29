@@ -18,6 +18,6 @@
 
 !INCLUDE "guides/roadmap_development/output.md"
 
-### Resources: [stub]
+### Resources [stub]
 
 !INCLUDE "references/determine_urgency.md"
