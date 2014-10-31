@@ -53,7 +53,7 @@ Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field ex
 (Optional) Use CeWL (http://digi.ninja/projects/cewl.php), to spider the organization's web properties to generate additional phrases.  This list will need review, as some of the generated content is not very useful, but may be useful if the site is not in a language the auditor reads fluently.
 
 
-// For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  https://github.com/iphelix/PACK "PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules.
+// For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  https://github.com/iphelix/PACK "PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules. Both password cracking tools listed here are powerful, and have slightly different abilities.  The auditor should choose the one they prefer and/or the one which has the features they desire for this job.
 
 
 #### Password List Mutations ####
@@ -67,50 +67,43 @@ You can do a 1-way version of this list simply, such as:
 
 Hashcat can do this in a live attack under its "combinator" mode, and hashcat-utils (hiding in /usr/share/hashcat-utils/combinator.bin) provides this as a standalone tool.  This provides a true combination of the list, so it exponentially increases the list size - use with caution, or use with one larger dictionary and one smaller dictionary.
 
- - for example, use it on your custom dictionary (combining it with itself, creating combinations from the above list such as example92, journorights, exampleorgrights).
+For example, use these combination approach on your custom dictionary (combining it with itself, creating combinations from the above list such as example92, journorights, exampleorgrights).
 
-An incremental path is often the most rewarding.
+An incremental path is often the most rewarding.  However, after an hour or two of password hacking, the in-office time on other activities is more valuable, so admit defeat and move on.  You can work on passwords offline and overnight for report completeness.
+
+Here is a suggested path to take:
 
 Begin with a simple combination of organizationally relevant keywords (simple scripting or hashcat's combinator attack)
-Add in numbers or years (simple scripting, 
-Then do a simple english dictionary attack plus the keywords
-Add in numbers or years again (scripted or via John)
+Add in numbers/years (simple scripting, JtR)
+Then do a simple language dictionary attack plus the keywords
+Add in numbers or years again (scripted or via JtR)
 Add in other mutators (John)
+(Admit defeat)
 John's incremental modes
 Crunch's raw brute-force attack
 
-
 #### John the Ripper (JtR) ####
 
-JtR (https://github.com/magnumripper/JohnTheRipper/commits/bleeding-jumbo) is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o").
-
-A great guide is here: http://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
+JtR (https://github.com/magnumripper/JohnTheRipper/commits/bleeding-jumbo) is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o"). JtR can be used to generate a static list of passwords for other programs, or it can be used directly against a password database. JtR is a bit weak combining words within a wordlist, so you should apply your customizations and any folding before moving on to JtR.
 
 You can add custom "rules" to aid in these substitutions - a base set is included with JtR, but a much more powerful set is added by KoreLogic (http://contest-2010.korelogic.com/rules.html). KoreLogic also provides a custom character set "chr file" that takes password frequency data from large collections of real-world passwords to speed up JtR's brute force mode (http://www.korelogic.com/tools.html) . This PDF presentation has a good walkthrough of how John and Kore's rules work: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
 
+
+Additional guides:
+http://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
 http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/
 
+JtR's "incremental" mode is essentially an optimized brute force attack, so will take a very long time for anything but the shortest passwords, or passwords where you can limit the search space to a character set: "As of version 1.8.0, pre-defined incremental modes are "ASCII" (all 95 printable ASCII characters), "LM_ASCII" (for use on LM hashes), "Alnum" (all 62 alphanumeric characters), "Alpha" (all 52 letters), "LowerNum" (lowercase letters plus digits, for 36 total), "UpperNum" (uppercase letters plus digits, for 36 total), "LowerSpace" (lowercase letters plus space, for 27 total), "Lower" (lowercase letters), "Upper" (uppercase letters), and "Digits" (digits only). The supplied .chr files include data for lengths up to 13 for all of these modes except for "LM_ASCII" (where password portions input to the LM hash halves are assumed to be truncated at length 7) and "Digits" (where the supplied .chr file and pre-defined incremental mode work for lengths up to 20). Some of the many .chr files needed by these pre-defined incremental modes might not be bundled with every version of John the Ripper, being available as a separate download." (http://www.openwall.com/john/doc/MODES.shtml)
 
-
-JtR can be used to generate a static list of passwords for other programs, or it can be used directly against a password database.
-
-It is a bit weak combining words within a wordlist, so you should apply your customizations and any folding before moving on to JtR.
-
-
-The best attacks are when you can use a wordlist and some rules to attack a password. The "incremental" mode is essentially an optimized brute force attack, so will take a very long time for anything but the shortest passwords, or passwords where you can limit the search space to a character set: "As of version 1.8.0, pre-defined incremental modes are "ASCII" (all 95 printable ASCII characters), "LM_ASCII" (for use on LM hashes), "Alnum" (all 62 alphanumeric characters), "Alpha" (all 52 letters), "LowerNum" (lowercase letters plus digits, for 36 total), "UpperNum" (uppercase letters plus digits, for 36 total), "LowerSpace" (lowercase letters plus space, for 27 total), "Lower" (lowercase letters), "Upper" (uppercase letters), and "Digits" (digits only). The supplied .chr files include data for lengths up to 13 for all of these modes except for "LM_ASCII" (where password portions input to the LM hash halves are assumed to be truncated at length 7) and "Digits" (where the supplied .chr file and pre-defined incremental mode work for lengths up to 20). Some of the many .chr files needed by these pre-defined incremental modes might not be bundled with every version of John the Ripper, being available as a separate download."
-
-More details here: http://www.win.tue.nl/~aeb/linux/john/john.html , http://www.openwall.com/john/doc/MODES.shtml
-
-
-
-For WPA captures, John can either feed in to an aircrack process or attach a capture directly.  For captures, you first have to convert the .cap file (from wireshark, wifite, airodump, etc.) to a format that John likes.  The Jumbo version (https://github.com/magnumripper/JohnTheRipper/commits/bleeding-jumbo) has conversion tools for this available: 
+For WPA captures, John can either feed in to an aircrack process or attach a capture directly.  For captures, you first have to convert the .cap file (from wireshark, wifite, airodump, etc.) to a format that John likes.  The Jumbo version we use has conversion tools for this available: 
 
   $wpapcap2john wpa.cap > crackme
-
   $./john -w:password.lst -fo=wpapsk-cuda crackme 
 
 
 ### Hashcat ###
+
+Hashcat is extremely powerful when you have desktop computer systems to use, but has a few wordlist manipulation tools that are useful regardless.
 
 http://hashcat.net/oclhashcat/ (http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2 , http://www.darkmoreops.com/2014/08/18/cracking-wpa2-wpa-with-hashcat-kali-linux/ )
 
