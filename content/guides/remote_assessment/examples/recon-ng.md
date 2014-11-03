@@ -1,7 +1,7 @@
 
 #### Installing Recon-ng
 
-  * Follow the [Recon-ng Getting Started Instructions]9https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started)
+  * Follow the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started)
 
 #### Creating API Keys
 
