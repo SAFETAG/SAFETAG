@@ -88,7 +88,7 @@
 
   * Read the short [Recon-ng Usage Guide](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide)
 
-NOTE: This guide is based upon the beta flow documentation from the [Recon-ng website](https://bitbucket.org/LaNMaSteR53/recon-ng/overview) 
+NOTE: This guide is based upon the data flow documentation from the [Recon-ng website](https://bitbucket.org/LaNMaSteR53/recon-ng/overview) 
 
   * Interface Basics
 
@@ -255,7 +255,7 @@ netblock (TEXT): 96.127.170.121
 
 ```
 
-Here it is in the betabase.
+Here it is in the database.
 
 ```
 [recon-ng][websitename][shodan_net] > show netblocks
@@ -306,15 +306,15 @@ An empty command line can be daunting. If you are ever stuck on what current com
 
 Commands (type [help|?] <topic>):
 ---------------------------------
-add             Adds records to the betabase
+add             Adds records to the database
 back            Exits the current context
-del             Deletes records from the betabase
+del             Deletes records from the database
 exit            Exits the framework
 help            Displays this menu
 keys            Manages framework API keys
 load            Loads selected module
 pdb             Starts a Python Debugger session
-query           Queries the betabase
+query           Queries the database
 record          Records commands to a resource file
 resource        Executes commands from a resource file
 run             Runs the module
@@ -350,7 +350,7 @@ Source Options:
   default        SELECT DISTINCT netblock FROM netblocks WHERE netblock IS NOT NULL ORDER BY netblock
   <string>       string representing a single input
   <path>         path to a file containing a list of inputs
-  query <sql>    betabase query returning one column of inputs
+  query <sql>    database query returning one column of inputs
 
 [recon-ng][websitename][shodan_net] > 
 ```
@@ -738,12 +738,12 @@ WEBSITENAME.ORG
 
   * Run host gathering modules.
 
-NOTE: Many host gathering modules use other hosts as a starting place. It is important to sanitize the hosts betabase between modules to make sure that you do start enumerating based upon incorrectly added hosts.
+NOTE: Many host gathering modules use other hosts as a starting place. It is important to sanitize the hosts database between modules to make sure that you do start enumerating based upon incorrectly added hosts.
 
   * Resolve IP addresses.
   * Run vhost enumeration modules.
-  * Run port scan beta harvesting modules.
-  * Use JOIN queries for beta analysis.
+  * Run port scan data harvesting modules.
+  * Use JOIN queries for data analysis.
 
 
 TODO WHY?
@@ -817,7 +817,7 @@ TODO WHY?
 
   * Run credential harvesting modules.
 
-  * Export beta for analysis.
+  * Export data for analysis.
 
 
 ```
