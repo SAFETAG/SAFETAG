@@ -394,7 +394,8 @@ It pulls directly from the netblocks source that I set up so now I only need to 
 -------
 SUMMARY
 -------
-[*] 17 total (2 new) items found.```
+[*] 17 total (2 new) items found.
+```
 
 Since it promised me hosts, I am going to see what hosts it uncovered.
 
