@@ -103,25 +103,21 @@ You can add custom "rules" to aid in these substitutions - a base set is include
 
 Additional guides:
  * http://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
- * http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/ (great "blah" example)
 
-The bleeding-edge jumbo version combines both the built-in rules and an optimized version of the KoreLogic rules (see https://github.com/kost/jtr-stuff/tree/master/rules, and http://openwall.info/wiki/john/rules for a description of the optimizations).  http://contest-2010.korelogic.com/rules.html provides nice descriptions of what the KoreLogic rules do.  In bleeding-jumbo, you can remove "KoreLogicRules". Some particularly useful ones are:
 
-AppendYears (appends years, from 1900 to 2019) and AppendCurrentYearSpecial (appends 2000-2019 with punctuation)
+The bleeding-edge jumbo version combines both the built-in rules and an optimized version of the KoreLogic rules (see https://github.com/kost/jtr-stuff/tree/master/rules, and http://openwall.info/wiki/john/rules for a description of the optimizations).  http://contest-2010.korelogic.com/rules.html provides nice descriptions of what the KoreLogic rules do.  In bleeding-jumbo, you can remove "KoreLogicRules".  http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/ provides a great example of rules usage.
 
-AddJustNumbers (adds 1-4 digits to the end of everything)
+Some particularly useful ones individual rulesets are:
+* AppendYears (appends years, from 1900 to 2019) and AppendCurrentYearSpecial (appends 2000-2019 with punctuation)
+* AddJustNumbers (adds 1-4 digits to the end of everything)
+* l33t (leet-speek combinations)
 
-l33t (leet-speek combinations)
+Create a dictionary with just "blah" and run various rules against it to understand how each ruleset or combination works. Note specifically that each rule multiplies the size of the dictionary by the number of permutations it introduces. Running the KoreLogic ruleset combination against a **one word** dictionary creates a list of 6,327,540 permutations on just that word.
 
-Create a dictionary with just "blah" and run various rules against it to understand how each ruleset or combination works.
-
-There are some build-in combinations of rulesets - for example, --rules:KoreLogic runs a collection of the KoreLogic rules in a thoughtful order.
-
+There are some build-in combinations of rulesets - for example, just --rules runs john's internal collection of default rules, and --rules:KoreLogic runs a collection of the KoreLogic rules in a thoughtful order.
 
 e.g. :
   $ john -w:dictionary.txt --rules:AppendYears --stdout
-
-
 
 Building custom rules: http://www.openwall.com/john/doc/RULES.shtml
 
