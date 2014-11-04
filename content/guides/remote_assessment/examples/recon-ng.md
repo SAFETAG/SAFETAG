@@ -1,7 +1,12 @@
 
 #### Installing Recon-ng
 
-  * Follow the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started)
+  * Install recon-ng from the git source: git clone https://LaNMaSteR53@bitbucket.org/LaNMaSteR53/recon-ng.git
+  * cd recon-ng
+  * Install pip (sudo apt-get install python-pip) and dependencies: pip install -r REQUIREMENTS
+  * Launch Recon-ng: ./recon-ng
+
+For full instructions, see the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started) 
 
 #### Creating API Keys
 
