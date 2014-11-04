@@ -36,8 +36,9 @@ contacts         domains          leaks            netblocks        pushpins    
 
 Using recon modules
 
-The recon modules are named in a very specific fashion to help the user understand the flow of data inside the tool. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.   The inputs are the first part of each module, and the second is the outputs.  The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.)
+The recon modules are named in a very specific fashion to help the user understand the flow of data inside the tool. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.   The inputs are the first part of each module, and the second is the outputs.  The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.).  If you already know the name of the specific module, recon-ng will figure it out (though tab completion doesn't help) -- for example, ``` use  breachalarm``` works just as well as ```use recon/contacts-creds/breachalarm```
 
+You can also search modules by their inputs or outputs. ```search domains-``` will show all modules that take domain names as their input, and ```search -contacts``` will show all modules that output contact information.
 
 ##### Preparing
 
