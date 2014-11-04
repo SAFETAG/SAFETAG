@@ -6,30 +6,26 @@
 #### Creating API Keys
 
   * Bing API Key (bing_api) - 
-      * Sign up for the free subscription to the Bing Search API here. 
-      * Sign in to the Windows Azure Marketplace and go to the "My Account" tab.
-	  * Go to the [Bing Search API](https://datamarket.azure.com/dataset/bing/search) page and sign up for a free account.
-      *  
+      * Sign up for the free subscription to the Bing Search API here: https://datamarket.azure.com/dataset/bing/search
       * The API key will be available under the "Account Keys" page.
 
   * BuiltWith API Key (builtwith_api) - 
-      * Sign up for a free account here. 
+      * Sign up for a free account here: https://api.builtwith.com/
       * Sign in to the application. 
       * The API key will be available in the upper right hand portion of the screen. 
            
   * Google API Key (google_api) - 
-      * Create an API Project here. 
+      * Create an API Project here: https://console.developers.google.com/project/
       * The API key will be available in the project management console
           * Click on the "APIs & auth" Menu
           * Click on the "Credentials" sub-menu
-          * Click the "Create new Key" button
+          * Click the "Create new Key" button under "Public API Access"
           * Click "Server Key"
           * Type your current ip-address into the text box.
           * Make sure you delete it after use.
 
   * Google Custom Search Engine (CSE) ID (google_cse) - 
-    * Create a CSE here.
-      * https://www.google.com/cse/create/fromkwsetname
+    * Create a CSE here: https://www.google.com/cse/create/fromkwsetname
       * Type in a name
       * Click the "Proceed" button
       * Click "Setup" in the side bar.
@@ -42,12 +38,13 @@
 
   * IPInfoDB API Key (ipinfodb_api) -
     * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER 
-    * Create a free account here. 
+    * REQUIRES A CUSTOM DOMAIN EMAIL (it rejects "free" accounts like gmail)
+    * Create a free account here: http://www.ipinfodb.com/register.php
     * Log in to the application here. 
     * The API key will be available on the "Account" tab. 
 
   * Shodan API Key (shodan_api) - 
-      * Create an account or sign in to Shodan using one of the many options available here. 
+      * Create an account or sign in to Shodan using one of the many options available here: https://developer.shodan.io/
       * On the right side of the screen under "API Key" Click "Click here to create an API key."
       * The API key will be replace that text.  
       * An upgraded account is required to access advanced search features. 
@@ -70,6 +67,11 @@
   
   * Flickr API Key (flickr_api) - TBD
 
+  * API's we won't be using
+    * Jigsaw API Key: Costs $1,500/year
+    * PwnedList: Costs Money
+
+
   * LinkedIn API Key (linkedin_api) - 
       * Log in to the developer portal with an existing LinkedIn account 
       * Add a new application. 
@@ -79,10 +81,6 @@
   * As of November 4th, 2017, the People Search API (required for all LinkedIn related modules) has been added to the Vetted API Access program. As a result, a Vetted API Access request must be submitted and approved for the application in order for the associated API key to function properly with the LinkedIn modules. 
 
   * LinkedIn Secret (linkedin_secret) - The Secret key will be available underneath the "OAuth Keys" heading for the application created above. 
-
-  * API's we won't be using
-    * Jigsaw API Key: Costs $1,500/year
-    * PwnedList: Costs Money
 
 #### Using Recon-ng
 
