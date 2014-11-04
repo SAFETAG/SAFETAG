@@ -8,83 +8,6 @@
 
 For full instructions, see the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started) 
 
-#### Creating API Keys
-
-  * Bing API Key (bing_api) - 
-      * Sign up for the free subscription to the Bing Search API here: https://datamarket.azure.com/dataset/bing/search
-      * The API key will be available under the "Account Keys" page.
-
-  * BuiltWith API Key (builtwith_api) - 
-      * Sign up for a free account here: https://api.builtwith.com/
-      * Sign in to the application. 
-      * The API key will be available in the upper right hand portion of the screen. 
-           
-  * Google API Key (google_api) - 
-      * Create an API Project here: https://console.developers.google.com/project/
-      * The API key will be available in the project management console
-          * Click on the "APIs & auth" Menu
-          * Click on the "Credentials" sub-menu
-          * Click the "Create new Key" button under "Public API Access"
-          * Click "Server Key"
-          * Type your current ip-address into the text box.
-          * Make sure you delete it after use.
-
-  * Google Custom Search Engine (CSE) ID (google_cse) - 
-    * Create a CSE here: https://www.google.com/cse/create/fromkwsetname
-      * Type in a name
-      * Click the "Proceed" button
-      * Click "Setup" in the side bar.
-      * Change the "Sites to search" drop-down from "Search only included sites" to "Search the entire web bit emphasize included sites"
-      * Read here for guidance on configuring the CSE to search the entire web. Otherwise, the CSE will be restricted to only searching domains specified within the CSE management console. This will drastically effect the results of any module which leverages the CSE.
-    * The CSE ID will be available in the CSE management console.
-      * Click "Setup" in the side bar.
-	  * Click the "Search engine ID" button in the "Details" section.
-
-
-  * IPInfoDB API Key (ipinfodb_api) -
-    * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER 
-    * REQUIRES A CUSTOM DOMAIN EMAIL (it rejects "free" accounts like gmail)
-    * Create a free account here: http://www.ipinfodb.com/register.php
-    * Log in to the application here. 
-    * The API key will be available on the "Account" tab. 
-
-  * Shodan API Key (shodan_api) - 
-      * Create an account or sign in to Shodan using one of the many options available here: https://developer.shodan.io/
-      * On the right side of the screen under "API Key" Click "Click here to create an API key."
-      * The API key will be replace that text.  
-      * An upgraded account is required to access advanced search features. 
-
-  * Twitter App API key (twitter_api) and  (twitter_secret) -  
-      * Create an application here: https://apps.twitter.com/
-      * The Consumer key will be available on the application management page. 
-      * The Consumer secret  (twitter_secret) will be available on the application management page for the application created above. 
-
-  * VirusTotal API Key (virustotal_api) 
-    * Create a free account by clicking the "Join our community" button here: https://www.virustotal.com/en/documentation/private-api/#
-    * Log in to the application and select "My API key" from the user menu. 
-    * The API key will be visible towards the top of the page. 
-
-  * Facebook API Key (facebook_api) - TBD
-  
-  * Facebook Secret (facebook_secret) - TBD
-  
-  * Flickr API Key (flickr_api) - TBD
-
-  * API's we won't be using
-    * Jigsaw API Key: Costs $1,500/year
-    * PwnedList: Costs Money
-
-
-  * LinkedIn API Key (linkedin_api) - 
-      * Log in to the developer portal with an existing LinkedIn account 
-      * Add a new application. 
-      * Click on the application name. 
-      * Add http://127.0.0.1:11777 to the list of "OAuth 2.0 Redirect URLs". 
-      * The API key will be available underneath the "OAuth Keys" heading.
-  * As of November 4th, 2017, the People Search API (required for all LinkedIn related modules) has been added to the Vetted API Access program. As a result, a Vetted API Access request must be submitted and approved for the application in order for the associated API key to function properly with the LinkedIn modules. 
-
-  * LinkedIn Secret (linkedin_secret) - The Secret key will be available underneath the "OAuth Keys" heading for the application created above. 
-
 #### Using Recon-ng
 
   * Read the short [Recon-ng Usage Guide](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide)
@@ -111,28 +34,17 @@ companies        dashboard        keys             modules          ports       
 contacts         domains          leaks            netblocks        pushpins         workspaces
 ```
 
+Using recon modules
 
-I am going to set verboseness on during the guide so that you can see everything that happens.
+The recon modules are named in a very specific fashion to help the user understand the flow of data inside the tool. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.   The inputs are the first part of each module, and the second is the outputs.  The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.)
 
-```
-[recon-ng][websitename] > set VERBOSE True
-```
 
-  * Create a workspace for your recon.
+##### Preparing
 
-```
-
-[recon-ng][default] > workspaces add websitename
-[recon-ng][websitename] > 
-```
-
-  * You can also switch workspaces during the recon.
+Set verboseness on during the guide so that you can see everything that happens. (recommended to begin with)
 
 ```
-[recon-ng][websitename] > workspaces select default
-[recon-ng][default] >
-[recon-ng][default] > workspaces select websitename
-[recon-ng][websitename] > 
+[recon-ng][default] > set VERBOSE True
 ```
 
   * Add API Keys
@@ -187,7 +99,33 @@ You can list keys by using the command ```keys list```
   | virustotal_api    | edecc7250f0717b2f7065a2cabbc47bf                                 |
   +--------------------------------------------------------------------------------------+
 ```
-NOTE: Keys may be different sizes than the randomly generated numbers in this example.
+
+Reference the Creating API Keys Section below for quick links to setting up popular APIs.
+
+NOTE: Sample Keys - working keys may be different sizes than the randomly generated numbers in this example.
+
+
+##### First steps
+
+NOTE: This walkthrough is using sample data. Results will vary widely depending on the organization you are working with. 
+
+  * Create a workspace for your recon.
+
+```
+
+[recon-ng][default] > workspaces add websitename
+[recon-ng][websitename] > 
+```
+
+  * Note that you can also switch workspaces during the recon.
+
+```
+[recon-ng][websitename] > workspaces select default
+[recon-ng][default] >
+[recon-ng][default] > workspaces select websitename
+[recon-ng][websitename] > 
+```
+
 
   * Add known seed information (domains, netblocks, company names, locations, etc.)
 
@@ -269,11 +207,9 @@ Here it is in the database.
   +---------------------------------+
 ```
 
-NOTE: I have changed the identifying information on the organization I was doing recon on. You will not get the same results if you follow this guide with the provided organization.
+##### Reconnaisance phase (netblocks example)
 
-  * Run modules that leverage known netblocks. This exposes other domains and hosts from which domains can be harvested.
-
-Since I only have a single ip address instead of the full netblock that would be given by a host normally, this might be less than impressive. But, here we go.
+  * Run modules that leverage known netblocks. This exposes other domains and hosts from which domains can be harvested. 
 
 First I search for any modules that use netblocks as an input.
 
@@ -288,7 +224,6 @@ recon-ng][websitename] > search netblocks-
     recon/netblocks-ports/census_2012
 ```
 
-Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.
 
 In the case of ```recon/netblocks-hosts/shodan_net``` we can see that the "shodan_net" module is a reconnaissance module that takes in netblocks and produces hosts.
 
@@ -808,6 +743,8 @@ TODO WHY?
   +----------------------------------------------------------------------+
 ```
 
+##### Reconnaisance: Next Steps
+
   * Run vulnerability harvesting modules.
   
   * Run contact harvesting modules.
@@ -818,8 +755,9 @@ TODO WHY?
 
   * Run credential harvesting modules.
 
-  * Export data for analysis.
+##### Reporting
 
+  * Export data for analysis.
 
 ```
 [recon-ng][websitename] > use reporting/csv
@@ -831,3 +769,81 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
 [recon-ng][websitename][csv] > run
 [*] 5 records added to '/home/computer/.recon-ng/workspaces/websitename/Domains.csv'.
 ```
+
+#### Creating API Keys
+
+  * Bing API Key (bing_api) - 
+      * Sign up for the free subscription to the Bing Search API here: https://datamarket.azure.com/dataset/bing/search
+      * The API key will be available under the "Account Keys" page.
+
+  * BuiltWith API Key (builtwith_api) - 
+      * Sign up for a free account here: https://api.builtwith.com/
+      * Sign in to the application. 
+      * The API key will be available in the upper right hand portion of the screen. 
+           
+  * Google API Key (google_api) - 
+      * Create an API Project here: https://console.developers.google.com/project/
+      * The API key will be available in the project management console
+          * Click on the "APIs & auth" Menu
+          * Click on the "Credentials" sub-menu
+          * Click the "Create new Key" button under "Public API Access"
+          * Click "Server Key"
+          * Type your current ip-address into the text box.
+          * Make sure you delete it after use.
+
+  * Google Custom Search Engine (CSE) ID (google_cse) - 
+    * Create a CSE here: https://www.google.com/cse/create/fromkwsetname
+      * Type in a name
+      * Click the "Proceed" button
+      * Click "Setup" in the side bar.
+      * Change the "Sites to search" drop-down from "Search only included sites" to "Search the entire web bit emphasize included sites"
+      * Read here for guidance on configuring the CSE to search the entire web. Otherwise, the CSE will be restricted to only searching domains specified within the CSE management console. This will drastically effect the results of any module which leverages the CSE.
+    * The CSE ID will be available in the CSE management console.
+      * Click "Setup" in the side bar.
+	  * Click the "Search engine ID" button in the "Details" section.
+
+
+  * IPInfoDB API Key (ipinfodb_api) -
+    * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER 
+    * REQUIRES A CUSTOM DOMAIN EMAIL (it rejects "free" accounts like gmail)
+    * Create a free account here: http://www.ipinfodb.com/register.php
+    * Log in to the application here. 
+    * The API key will be available on the "Account" tab. 
+
+  * Shodan API Key (shodan_api) - 
+      * Create an account or sign in to Shodan using one of the many options available here: https://developer.shodan.io/
+      * On the right side of the screen under "API Key" Click "Click here to create an API key."
+      * The API key will be replace that text.  
+      * An upgraded account is required to access advanced search features. 
+
+  * Twitter App API key (twitter_api) and  (twitter_secret) -  
+      * Create an application here: https://apps.twitter.com/
+      * The Consumer key will be available on the application management page. 
+      * The Consumer secret  (twitter_secret) will be available on the application management page for the application created above. 
+
+  * VirusTotal API Key (virustotal_api) 
+    * Create a free account by clicking the "Join our community" button here: https://www.virustotal.com/en/documentation/private-api/#
+    * Log in to the application and select "My API key" from the user menu. 
+    * The API key will be visible towards the top of the page. 
+
+  * Facebook API Key (facebook_api) - TBD
+  
+  * Facebook Secret (facebook_secret) - TBD
+  
+  * Flickr API Key (flickr_api) - TBD
+
+  * API's we won't be using
+    * Jigsaw API Key: Costs $1,500/year
+    * PwnedList: Costs Money
+
+
+  * LinkedIn API Key (linkedin_api) - 
+      * Log in to the developer portal with an existing LinkedIn account 
+      * Add a new application. 
+      * Click on the application name. 
+      * Add http://127.0.0.1:11777 to the list of "OAuth 2.0 Redirect URLs". 
+      * The API key will be available underneath the "OAuth Keys" heading.
+  * As of November 4th, 2017, the People Search API (required for all LinkedIn related modules) has been added to the Vetted API Access program. As a result, a Vetted API Access request must be submitted and approved for the application in order for the associated API key to function properly with the LinkedIn modules. 
+
+  * LinkedIn Secret (linkedin_secret) - The Secret key will be available underneath the "OAuth Keys" heading for the application created above. 
+
