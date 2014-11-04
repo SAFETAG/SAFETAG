@@ -49,12 +49,10 @@
       * The API key will be replace that text.  
       * An upgraded account is required to access advanced search features. 
 
-  * Twitter Consumer Key (twitter_api) - 
+  * Twitter App API key (twitter_api) and  (twitter_secret) -  
       * Create an application here: https://apps.twitter.com/
       * The Consumer key will be available on the application management page. 
-
-  * Twitter Consumer Secret (twitter_secret)
-    * The Consumer secret will be available on the application management page for the application created above. 
+      * The Consumer secret  (twitter_secret) will be available on the application management page for the application created above. 
 
   * VirusTotal API Key (virustotal_api) 
     * Create a free account by clicking the "Join our community" button here: https://www.virustotal.com/en/documentation/private-api/#
