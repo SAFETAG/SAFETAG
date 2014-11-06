@@ -1,11 +1,10 @@
 An attacker can crack the SampleOrg office’s WPA key in approximately <time> with a short and minimally customized password dictionary containing approximately <number> entries.
 
-Step 1: The attacker customizes his WiFi password dictionary, adding phrases related to the subject: organization name, street address, phone number, email domain, wireless network name, etc. Common password fragments are included, as well: qwerty, 12345, asdf and all four-digit dates back to the year 2001, for example, among others. He may then add hundreds or thousands of words (in English and/or other relevant languages). He may then “fold” his dictionary, so that it includes an entry for each pair of these strings:
+**Step 1:** The attacker customizes his WiFi password dictionary, adding phrases related to the subject: organization name, street address, phone number, email domain, wireless network name, etc. Common password fragments are included, as well: qwerty, 12345, asdf and all four-digit dates back to the year 2001, for example, among others. He may then add hundreds or thousands of words (in English and/or other relevant languages).
 
-$ for foo in `cat pwdlist.txt`; do for bar in `cat pwdlist.txt`; do printf $foo$bar\n; done; done > pwdpairs.txt
-$ cat pwdlist.txt >> pwdpairs.txt
+See the Dictionary Creation example under Preparation for details on password dictionary buidling.
 
-Step 2: The attacker would then begin recording all (encrypted) wireless traffic associated with the organization’s access point:
+**Step 2:** The attacker would then begin recording all (encrypted) wireless traffic associated with the organization’s access point:
 
 $ sudo airodump-ng -c 1 --bssid 1A:2B:3C:4D:5E:6F -w sampleorg_airodump mon0
 
@@ -18,16 +17,22 @@ $ sudo airodump-ng -c 1 --bssid 1A:2B:3C:4D:5E:6F -w sampleorg_airodump mon0
  1A:2B:3C:4D:5E:6F  AA:BB:CC:DD:EE:FF  -76    0e- 1      0     1122
  1A:2B:3C:4D:5E:6F  A1:B2:C3:D4:E5:F6  -80    0e- 1      0     4321
 
-Step 3: Next, he would force a wireless client, possibly chosen at random, to disconnect and reconnect (an operation that is nearly always invisible to the user). In the example below, AB:CD:EF:AB:CD:EF is the MAC address of a laptop that was briefly disconnected in this way.
+wifite is also useful for this step, and claims to automatically de-auth (step 3).
+
+**Step 3:** Next, the auditor forces a wireless client, possibly chosen at random, to disconnect and reconnect (an operation that is nearly always invisible to the user). 
+
+In the example below, AB:CD:EF:AB:CD:EF is the MAC address of a laptop that was briefly disconnected in this way.
 
 $ aireplay-ng -0 1 -a 1A:2B:3C:4D:5E:6F -c AB:CD:EF:AB:CD:EF mon0 
 
  15:54:48  Waiting for beacon frame (BSSID: 1A:2B:3C:4D:5E:6F) on channel -1
  15:54:49  Sending 64 directed DeAuth. STMAC: [AB:CD:EF:AB:CD:EF] [ 5| 3 ACKs]
 
-Step 4: The goal of this above step is to capture the cryptographic handshake that occurs when the targeted client reconnects. Try using different clients if the first one doesn't work, or try moving around. 
+The goal of this step is to capture the cryptographic handshake that occurs when the targeted client reconnects. Try using different clients if the first one doesn't work, or try (physically) moving around. 
 
 This handshake does not contain the WPA key itself, but once the the complete handshake process has been seen, the auditor (or a potential attacker) can leave the vicinity and run various password cracking tools to try and discover the password. While a complete password cracking tutorial is out of scope for SAFETAG documentation, below are three strategies:
+
+**Step 4:** The auditor attempts to discover the WPA password.
 
 ### Using a pre-compilex wordlist called pwdpairs.txt ###
 
@@ -35,22 +40,23 @@ A good wordlist with a few tweaks tends to break most passwords.  Using a collec
 
 $ aircrack-ng -w pwdpairs.txt -b 1A:2B:3C:4D:5E:6F sampleorg_airodump*.cap
 
+
 ### Using a combination of brute forcing, wordlists and roles with John the Ripper (JtR) ###
 
-JtR is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o").  You can add custom "rules" to aid in these substitutions - a base set is included with JtR, but a much more powerful set is added by KoreLogic (http://contest-2010.korelogic.com/rules.html).  KoreLogic also provides a custon character set "chr file" that takes password frequency data from large collections of real-world passwords to speed up JtR's brute force mode (http://www.korelogic.com/tools.html) . This PDF presentation has a good walkthrough of how John and Kore's rules work: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Fwww.owasp.org%2Fimages%2Fa%2Faf%2F2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+
+For WPA captures, John can either feed in to an aircrack process or attach a capture directly.  For captures, you first have to convert the .cap file (from wireshark, wifite, airodump, etc.) to a format that John likes.  The Jumbo version we use has conversion tools for this available: 
+
+  $wpapcap2john wpa.cap > crackme
+  $./john -w:password.lst -fo=wpapsk-cuda crackme 
+
 
 ### Brute force, using crunch ###
 
 As a last resort, you can try a direct brute force attack overnight or post-audit to fill in details on key strength.
 
-Crunch is a very simple but thorough approach. Given enough time it will break a password, but it's not particularly fast, even at simple passwords. 
 
-$ /path/to/crunch 8 16 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 | aircrack-ng -a 2 path/to/capture.pcap -b 00:11:22:33:44:55 -w -
 
-This says to try every possible alpha-numeric combination from 8 to 16 characters. This will take a very long time. WPA passwords are a minimum of 8 characters, and can also contain punctuation. 
-
-You can reduce the scope of this attack (and speed it up) if you have a reason to believe the password is all lower-case, all-numeric, or so on.  Some wifi routers will accept punctuation marks as well, but these are generally less used outside of periods and exclamation marks.
-
+### Sample Practice ###
 
 For practice on any of these methods, you can use the wpa-Induction.pcap file from http://wiki.wireshark.org/SampleCaptures .
 
