@@ -8,4 +8,5 @@ The audit framework and checklist is intended as reference and the authors take 
 
 ### Attribution for content from other Licenses
 
-  * The Interview and Capacity Assesment components borrows heavily from [the engine room's](https://www.theengineroom.org) [TechScape](https://www.theengineroom.org/projects/techscape/) project. They have [released](https://www.theengineroom.org/attribution-policy/) that content under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/3.0/us/).
+  * The Interview and Capacity Assesment components borrows heavily from [the engine room's](https://www.theengineroom.org) [TechScape](https://www.theengineroom.org/projects/techscape/) project. They have [made their content available](https://www.theengineroom.org/attribution-policy/) under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/3.0/us/).
+  * The Data Assessment Activity was taken from the [Level Up Project](https://level-up.cc) is available under a [Creative Commons Attribution-Share Alike Unported 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/) by multiple authors.
