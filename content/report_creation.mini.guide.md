@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/report_creation/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/report_creation/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "reference/report_writing.md"

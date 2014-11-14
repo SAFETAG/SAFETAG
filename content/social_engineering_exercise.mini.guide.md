@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/social_engineering_exercise/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/social_engineering_exercise/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/social_engineering_toolkit.md"

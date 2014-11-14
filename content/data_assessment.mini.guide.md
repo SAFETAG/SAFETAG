@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/data_assessment/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/data_assessment/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/data_assessment.md"

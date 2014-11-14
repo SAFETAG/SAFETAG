@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/interviews/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/interviews/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/background_interviews.md"

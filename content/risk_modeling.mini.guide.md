@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/risk_modeling/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/risk_modeling/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/threat_assessment.md"

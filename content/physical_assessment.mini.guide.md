@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/physical_assessment/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/physical_assessment/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/physical_assessment.md"

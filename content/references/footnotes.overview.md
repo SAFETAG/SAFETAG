@@ -38,6 +38,8 @@
 
 [^psych_sec_training]:[The Psychological Underpinnings of Security Training - Craig Higson-Smith](https://www.level-up.cc/resources-for-trainers/holistic/psychological-underpinnings-security-training)
 
+[^event_planning_input]:[Event Planning Inputs - Level-Up](https://www.level-up.cc/leading-trainings/event-planning)
+
 [^integratedsecurity_prep_tips]:[Integrated Security Facilitator Preparation Tips](http://integratedsecuritymanual.org/sites/default/files/integratedsecurity_themanual_1.pdf#page=25)
 [^integrated_security_manual]:[Integrated security: The Manual](http://integratedsecuritymanual.org/download-this-manual)
 
@@ -283,8 +285,20 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^auditor_consent_template]:The auditor consent template can be found in the SAFETAG "full guide."
 
+[^pre-mortum]:["Pre-Mortum Strategy" - Sources of Power: How People Make Decisions - p.71](http://books.google.com/books?id=nn1kGwL4hRgC&lpg=PP1&pg=PA71#v=onepage&q&f=false)
 
 
+<!-- Interview -->
+
+[^scope_questions]:["Questionnaires - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questionnaires)
+
+[^HCD_toolkit]["IDEO Human-Centered Design Toolkit"](http://www.ideo.com/work/human-centered-design-toolkit)
+
+[^Techscape_indicators]["TechScape Indicators - the engine room"](https://www.theengineroom.org/projects/techscape/tsindicators/)
+
+[^BUM_questions]:["Questions for Business Unit Managers - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questions_for_Business_Unit_Managers)
+
+[^SA_Questions]:["Questions for Systems Administrators"](http://www.pentest-standard.org/index.php/Pre-engagement#Questions_for_Systems_Administrators)
 
 <!-- COMMENT OUT TO-READ / QUESTIONABLE RESORUCES
 

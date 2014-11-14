@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/assessment_plan/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/assessment_plan/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/pre_engagement.md"

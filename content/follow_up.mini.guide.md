@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/follow_up/approach.md"
 
+### Operational Security
+
+!INCLUDE "guides/follow_up/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/follow_up.md"

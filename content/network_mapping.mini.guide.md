@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/network_mapping/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/network_mapping/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/network_mapping_methods.md"
