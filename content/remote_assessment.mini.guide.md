@@ -24,6 +24,8 @@
 
 ### Resources [stub]
 
+!INCLUDE "references/remote_assessment.overview.md"
+
 !INCLUDE "references/open_source_intel.md"
 
 !INCLUDE "references/advanced_searching.md"

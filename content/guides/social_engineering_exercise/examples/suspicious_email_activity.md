@@ -1,5 +1,5 @@
 
-## Social Engineering Suspicious email Activity
+### Social Engineering Suspicious email Activity
 
 This activity is taken from the [Level Up Project](https://level-up.cc) and written by  Pablo, Daniel O’Clunaigh, Ali Ravi, and Samir Nassar. The activity is called [Analyzing a Potentially Harmful Email](https://www.level-up.cc/leading-trainings/training-curriculum/activity/analyzing-email). T
  
@@ -7,7 +7,7 @@ This activity is taken from the [Level Up Project](https://level-up.cc) and writ
 
 60 minutes
 
-###Summary: 
+### Summary: 
 
 In this exercise participants will examine an email for clues about its authenticity.
 
@@ -21,7 +21,7 @@ In this exercise participants will examine an email for clues about its authenti
   * Flipchart or whiteboard with markers (flipcharts are often preferred so you can keep the notes from the session to refer to later as needed)
   * Projector 
 
-#### Creating the "malicious" example email
+### Creating the "malicious" example email
 
   * Send an e-mail to yourself and export it as a .EML file (Mail message file) so that you can edit the source code. You can use Notepad or any other text editor to do so.
     * To export to EML in Outlook, simply select your message and click “Save As”. Then select “Outlook Message Format - Unicode” as your file type.
@@ -56,7 +56,7 @@ Remember to visit <a href=’http://www.harmfulsite.com’>http://www.example.co
     * Choose your sender and reciever emails wisely, along with any cc'd emails. These can be used to illustrate how emails can seem trustworthy or valid at first glance and should be examined more closely, as well as the common tactic of cc'ing contacts the recipient may know or are familiar with. Other examples can be addresses that may be secondary accounts for legitimate contacts (e.g., "anna.hrw@gmail.com" as a misleading Human Rights Watch staffer emailing about regional human rights issues if your participants work with HRW).
     * Anything else you can think of, especially any contemporary tactics or tactics that are being employed to target high-risk actors similar to your participants.
 
-#### (Optional) Create your own phishing website
+### (Optional) Create your own phishing website
 
 You can also create a website as an example of phishing. This is recommended for trainers with some previous knowledge of HTML editing, Apache server configuration, and name to IP-translation using the HOSTS file.
 
@@ -71,8 +71,8 @@ You can also create a website as an example of phishing. This is recommended for
     * If you want, you may connect immediately or delay the mirror. Click Next to start the download.
     * Wait until the mirror is finished. Then click Finish.
   * Create a web server in your computer using XAMPP
-    * Install XAMPP on your computer. If you extract XAMPP in a top level folder like "C:\" or "D:\", you can start most servers like Apache or MySQL directly.
-    * Copy your mirrored website (usually under “C:\My Websites\projectname”) to your htdocs folder (usually “C:\xampp\htdocs”) making sure the htdocs folder is now the root directory of the index.htm for your mirrored website.
+    * Install XAMPP on your computer. If you extract XAMPP in a top level folder like ```"C:\"``` or ```"D:\"```, you can start most servers like Apache or MySQL directly.
+    * Copy your mirrored website (usually under ```“C:\My Websites\projectname”```) to your htdocs folder (usually ```“C:\xampp\htdocs”```) making sure the htdocs folder is now the root directory of the index.htm for your mirrored website.
     * Test if your mirrored website is working. Start Apache under the XAMPP control panel and point your web browser to http://127.0.0.1. You should be able to see a copy of the mirrored website.
     * Edit some elements of the website (directly from opening the index.htm file in your htdocs folder with your favorite HTML editor, or a text editor like Notepad) to alert users that they are visiting a fake website.
     * (Optional) On the HTML source of your mirrored website, you can include a Javascript routine to alert the user that he or she was “infected” by a virus, like this:
@@ -82,7 +82,7 @@ You can also create a website as an example of phishing. This is recommended for
 ```
 
   * Point your website to a fake, yet clever URL (Note: this will only work in your computer).
-    * Open your hosts file with your favorite text editor (such as Notepad). Hosts files are documents that aide the network name resolution. When your computer tries to connect to a website, it will first check the hosts file to see if there is any reference to it before using your DNS server to resolve the URL. The location of your hosts file varies according to your operating system. Windows users can find their hosts file under their “C:\windows\system32\drivers\etc\hosts, while MacOS and Linux users will find their hosts file under “/etc/hosts”. Follow these steps to edit your hosts file based on your operating system.
+    * Open your hosts file with your favorite text editor (such as Notepad). Hosts files are documents that aide the network name resolution. When your computer tries to connect to a website, it will first check the hosts file to see if there is any reference to it before using your DNS server to resolve the URL. The location of your hosts file varies according to your operating system. Windows users can find their hosts file under their ```“C:\windows\system32\drivers\etc\hosts"```, while MacOS and Linux users will find their hosts file under “/etc/hosts”. Follow these steps to edit your hosts file based on your operating system.
     * Each line of your hosts file translates a certain name to a specified IP address. The typical syntax consists of three parts, each separated by a space. The first part will be the location to redirect the address to, the second part will be the address that you will want to redirect, and the third part (optional) is for comments. If, for example, you would your fake website (currently hosted in 127.0.0.1) to link to the domain “tvviter.com” then you will need to include the following in your hosts file:
 
 ```

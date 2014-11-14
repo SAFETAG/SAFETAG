@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/capacity_assessment/output.md"
-
-### Resources
-
-!INCLUDE "references/capacity_assessment.overview.md"

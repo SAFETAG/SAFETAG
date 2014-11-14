@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/data_assessment/output.md"
-
-### Resources
-
-!INCLUDE "references/data_assessment.overview.md"

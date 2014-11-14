@@ -15,3 +15,8 @@ A Collaborative Knowledge Base for Netizens
 Search, add, collect, share, and rate resources on using social
 technologies for stronger societies
 
+Microsoft nonprofit discount eligibility guidelines per country
+http://www.microsoftvolumelicensing.com/userights/DocumentSearch.aspx?Mode=3&DocumentTypeId=19
+
+TechSoup
+http://www.techsoup.org/

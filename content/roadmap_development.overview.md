@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/roadmap_development/output.md"
-
-### Resources
-
-!INCLUDE "references/roadmap_development.overview.md"

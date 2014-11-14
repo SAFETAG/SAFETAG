@@ -11,3 +11,5 @@
 http://csrc.nist.gov/publications/nistpubs/800-39/SP800-39-final.pdf
 
 http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf
+
+["Threat Model Activity"](http://www.compjournalism.com/?p=109) (Tow Center )

@@ -1,4 +1,4 @@
-# Interviews
+## Interviews
 
 !INCLUDE "guides/interviews/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/interviews/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/interviews/purpose.md"
 
@@ -22,18 +22,29 @@
 
 !INCLUDE "guides/interviews/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/interviews/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/interviews/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/interviews/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/interviews/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/interviews/resources.md"
+!INCLUDE "references/interviews.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/background_interviews.md"
 
-!INCLUDE "guides/interviews/operational_security.md"
+\newpage
+
+### Example
+!INCLUDE "guides/interviews/examples/interview_questions.md"

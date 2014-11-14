@@ -1,4 +1,4 @@
-# Preparation
+## Preparation
 
 !INCLUDE "guides/preparation/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/preparation/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/preparation/purpose.md"
 
@@ -22,18 +22,38 @@
 
 !INCLUDE "guides/preparation/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/preparation/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/preparation/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/preparation/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/preparation/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/preparation/resources.md"
+!INCLUDE "references/preparation.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/facilitation_prep.md"
 
-!INCLUDE "guides/preparation/operational_security.md"
+!INCLUDE "references/password_dictionaries.md"
+
+\newpage
+
+### Example
+
+!INCLUDE "guides/preparation/examples/travel_kit_checklist.md"
+
+\newpage
+
+### Example
+
+!INCLUDE "guides/preparation/examples/dictionary_creation.md"

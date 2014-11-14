@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/device_assessment/output.md"
-
-### Resources
-
-!INCLUDE "references/device_assessment.overview.md"

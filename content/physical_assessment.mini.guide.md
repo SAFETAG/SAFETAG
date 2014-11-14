@@ -24,4 +24,6 @@
 
 ### Resources [stub]
 
+!INCLUDE "references/physical_assessment.overview.md"
+
 !INCLUDE "references/physical_assessment.md"

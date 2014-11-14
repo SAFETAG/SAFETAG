@@ -1,12 +1,12 @@
-## Data Assessment Activity
+### Data Assessment Activity
 
 This activity is taken from the [Level Up Project](https://level-up.cc). The activity is called [Backup Matrix: Creating an Information Map](https://www.level-up.cc/leading-trainings/training-curriculum/activity/backup-matrix). 
 
-### Duration: 
+### Duration:
 
 40 minutes
 
-### Summary: 
+### Summary:
 
 In this exercise, participants will think about the information/data they keep and where they keep it.
 
@@ -73,7 +73,7 @@ In this exercise, participants will think about the information/data they keep a
     * So what can we do to avoid this? We should put more copies into different locations. This is called backing up!
 
 
-#### Optional Teaching Moment: 
+### Optional Teaching Moment:
 
 **Sensitive data in the wrong hands:** The "sensitive / non-sensitive" distinction in the matrix is optional and should only be done with enough time to deal with a discussion about the relative sensitivity of information. It can also be presented as a scale rather than a dichotomy.
   * Take the example of a second team's data if possible, and/or another column on the matrix.
@@ -83,11 +83,11 @@ In this exercise, participants will think about the information/data they keep a
 
 ### Discussion
 
-#### Duration: 
+### Duration:
 
 10 minutes
 
-#### Some questions to lead a quick discussion on the issue:
+### Some questions to lead a quick discussion on the issue:
 
   * How would it feel to lose all this information?
   * Has anything similar happened before, are there any personal examples we can learn from?

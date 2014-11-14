@@ -1,4 +1,4 @@
-# Follow Up
+## Follow Up
 
 !INCLUDE "guides/follow_up/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/follow_up/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/follow_up/purpose.md"
 
@@ -22,18 +22,18 @@
 
 !INCLUDE "guides/follow_up/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/follow_up/approach.md"
 
-### Reporting Considerations: [stub]
+### Operational Security
+
+!INCLUDE "guides/follow_up/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/follow_up/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/follow_up/resources.md"
-
-### Operational Security Concerns: [stub]
-
-!INCLUDE "guides/follow_up/operational_security.md"
+!INCLUDE "references/follow_up.md"

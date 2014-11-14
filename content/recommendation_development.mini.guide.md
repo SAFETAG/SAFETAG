@@ -22,8 +22,8 @@
 
 !INCLUDE "guides/recommendation_development/operational_security.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "references/recommendation_development.md"
+!INCLUDE "references/recommendation_development.overview.md"
 
 !INCLUDE "references/identifying_recommendations.md"

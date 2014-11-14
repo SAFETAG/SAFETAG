@@ -1,8 +1,44 @@
 ---
 type: guide
-audit_no: AUDIT_NUMBER
-header-includes: \usepackage{wrapfig}
+fontfamily: utopia
+include-before: \includegraphics{content/images/cover-page-mini-guide.png}
+geometry: margin=1in
+header-includes:
+	- \usepackage{wrapfig}
 ...
+
+<!-- License -->
+
+!INCLUDE "content/license.md"
+
+\newpage
+
+<!-- Introduction -->
+
+# Introduction
+
+!INCLUDE "content/guides/introduction.md"
+
+\newpage
+
+<!-- Overview -->
+
+## The SAFETAG Process
+
+!INCLUDE "content/guides/overview.md"
+
+![The Safetag Audit Process](content/images/expertiese_vertical.png)\
+
+\newpage
+
+# PART ONE: Agreement and Information Gathering
+
+![The Pre-Audit](content/images/pre_audit_expertiese.png)\
+
+\newpage
+<!-- Operational Security -->
+
+!INCLUDE "content/operational_security.guide.md"
 
 \newpage
 <!-- Interviews -->
@@ -23,6 +59,12 @@ header-includes: \usepackage{wrapfig}
 <!-- Assessment Plan Development -->
 
 !INCLUDE "content/assessment_plan.guide.md"
+
+\newpage
+
+# PART TWO: The Audit
+
+![Pre-Audit](content/images/audit_expertiese.png)\
 
 \newpage
 <!-- Remote Assessment -->
@@ -60,29 +102,30 @@ header-includes: \usepackage{wrapfig}
 !INCLUDE "content/physical_assessment.guide.md"
 
 \newpage
-<!-- Data Storage Assessment -->
+<!-- Data Assessment -->
 
-!INCLUDE "content/data_storage_assessment.guide.md"
-
-\newpage
-<!-- Information Security Assessment -->
-
-!INCLUDE "content/information_security_assessment.guide.md"
+!INCLUDE "content/data_assessment.guide.md"
 
 \newpage
-<!-- Password Assessment -->
+<!-- Device Assessment -->
 
-!INCLUDE "content/password_assessment.guide.md"
-
-\newpage
-<!-- Personal Device Assessment -->
-
-!INCLUDE "content/personal_device_assessment.guide.md"
+!INCLUDE "content/device_assessment.guide.md"
 
 \newpage
 <!-- Social Engineering Exercise -->
 
 !INCLUDE "content/social_engineering_exercise.guide.md"
+
+\newpage
+<!-- Debrief -->
+
+!INCLUDE "content/debrief.guide.md"
+
+\newpage
+
+# PART THREE: Analysis and Reporting
+
+![The Post-Audit](content/images/post_audit_expertiese.png)\
 
 \newpage
 <!-- Vulnerability Analysis -->
@@ -119,5 +162,29 @@ header-includes: \usepackage{wrapfig}
 
 !INCLUDE "content/follow_up.guide.md"
 
+\newpage
+<!-- APPENDIX A - Auditor travel Kit Checklist-->
+
+# APPENDIX A
+
+!INCLUDE "content/guides/preparation/examples/travel_kit_checklist.md"
+
+# APPENDIX B
+
+!INCLUDE "content/guides/data_assessment/examples/personal_info_to_keep_private.md"
+
+# APPENDIX C
+
+!INCLUDE "content/guides/device_assessment/examples/password_survey.md"
+
+# APPENDIX D
+
+!INCLUDE "templates/audit/auditor_consent_template.md"
+
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
+
+<!-- Load Footnotes -->
+!INCLUDE "content/references/footnotes.md"
+
+

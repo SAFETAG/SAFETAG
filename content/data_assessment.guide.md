@@ -1,4 +1,4 @@
-# Data Assessment
+## Data Assessment
 
 !INCLUDE "guides/data_assessment/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/data_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/data_assessment/purpose.md"
 
@@ -22,18 +22,28 @@
 
 !INCLUDE "guides/data_assessment/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/data_assessment/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/data_assessment/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/data_assessment/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/data_assessment/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/data_assessment/resources.md"
+!INCLUDE "references/data_assessment.overview.md"
 
-### Operational Security Concerns: [stub]
+\newpage
 
-!INCLUDE "guides/data_assessment/operational_security.md"
+### Example
+
+!INCLUDE "guides/data_assessment/examples/sensitive_data_activity.md"

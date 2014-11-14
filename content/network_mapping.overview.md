@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/network_mapping/output.md"
-
-### Resources
-
-!INCLUDE "references/network_mapping.overview.md"

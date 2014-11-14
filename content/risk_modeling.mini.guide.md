@@ -24,6 +24,8 @@
 
 ### Resources [stub]
 
+!INCLUDE "references/risk_modeling.overview.md"
+
 !INCLUDE "references/threat_assessment.md"
 
 !INCLUDE "references/risk_activities.md"

@@ -1,4 +1,4 @@
-# Report Creation
+## Report Creation
 
 !INCLUDE "guides/report_creation/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/report_creation/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/report_creation/purpose.md"
 
@@ -22,18 +22,28 @@
 
 !INCLUDE "guides/report_creation/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/report_creation/approach.md"
 
-### Reporting Considerations: [stub]
+### Reporting [stub]
 
 !INCLUDE "guides/report_creation/reporting.md"
 
-### Resources [stub]
+### Output
 
-!INCLUDE "guides/report_creation/resources.md"
+!INCLUDE "guides/report_creation/output.md"
 
-### Operational Security Concerns: [stub]
+### Operational Security
 
 !INCLUDE "guides/report_creation/operational_security.md"
+
+### Resources
+
+!INCLUDE "references/report_creation.overview.md"
+
+!INCLUDE "reference/report_writing.md"
+
+!INCLUDE "reference/report_supporting_references.md"
+
+!INCLUDE "reference/financial_barriers.md"

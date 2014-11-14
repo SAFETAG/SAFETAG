@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/report_creation/output.md"
-
-### Resources
-
-!INCLUDE "references/report_creation.overview.md"

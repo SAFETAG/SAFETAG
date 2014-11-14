@@ -1,4 +1,4 @@
-# Resource Identification
+## Resource Identification
 
 !INCLUDE "guides/resource_identification/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/resource_identification/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/resource_identification/purpose.md"
 
@@ -22,18 +22,34 @@
 
 !INCLUDE "guides/resource_identification/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/resource_identification/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/resource_identification/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/resource_identification/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/resource_identification/reporting.md"
 
 ### Resources [stub]
 
-!INCLUDE "guides/resource_identification/resources.md"
+!INCLUDE "references/resource_identification.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/digital_security_guides.md"
 
-!INCLUDE "guides/resource_identification/operational_security.md"
+!INCLUDE "references/digi_sec_tech_reference_guides.md"
+
+!INCLUDE "references/financial_resources.md"
+
+!INCLUDE "references/training_resources.md"
+
+!INCLUDE "references/emergency_resources.md"
+
+!INCLUDE "references/resource_lists.md"

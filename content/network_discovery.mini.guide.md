@@ -22,6 +22,6 @@
 
 !INCLUDE "guides/network_discovery/operational_security.md"
 
-### Resources [stub]
+### Resources
 
 !INCLUDE "references/network_discovery_methods.md"
