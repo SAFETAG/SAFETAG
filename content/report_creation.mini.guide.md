@@ -22,11 +22,12 @@
 
 !INCLUDE "guides/report_creation/operational_security.md"
 
-### Resources [stub]
+### Resources
+
+!INCLUDE "references/report_creation.overview.md"
 
 !INCLUDE "reference/report_writing.md"
 
 !INCLUDE "reference/report_supporting_references.md"
 
 !INCLUDE "reference/financial_barriers.md"
-

@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/social_engineering_exercise/output.md"
-
-### Resources
-
-!INCLUDE "references/social_engineering_exercise.overview.md"

@@ -1,4 +1,4 @@
-# Roadmap Development
+## Roadmap Development
 
 !INCLUDE "guides/roadmap_development/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/roadmap_development/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/roadmap_development/purpose.md"
 
@@ -22,18 +22,24 @@
 
 !INCLUDE "guides/roadmap_development/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/roadmap_development/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/roadmap_development/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/roadmap_development/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/roadmap_development/reporting.md"
 
 ### Resources [stub]
 
-!INCLUDE "guides/roadmap_development/resources.md"
+!INCLUDE "references/roadmap_development.overview.md"
 
-### Operational Security Concerns: [stub]
-
-!INCLUDE "guides/roadmap_development/operational_security.md"
+!INCLUDE "references/determine_urgency.md"

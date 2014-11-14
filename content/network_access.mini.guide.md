@@ -22,6 +22,6 @@
 
 !INCLUDE "guides/network_access/operational_security.md"
 
-### Resources [stub]
+### Resources
 
 !INCLUDE "references/network_access.md"

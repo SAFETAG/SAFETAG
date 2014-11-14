@@ -18,7 +18,3 @@
 
 !INCLUDE "guides/preparation/output.md"
 
-### Resources
-
-!INCLUDE "references/preparation.overview.md"
-

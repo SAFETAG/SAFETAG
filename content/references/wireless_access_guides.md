@@ -22,3 +22,11 @@
   * *Tutorial:* [“Resetting WPS Lockouts”](https://forums.kali.org/showthread.php?19498-MDK3-Secret-Destruction-Mode) (Kali Linux Forums)
 
   * *References:* ["Links, References and Other Learning Materials"](http://www.aircrack-ng.org/doku.php?id=links) (Aircrack-ng Wiki)
+
+  * *Project Site:* ["wifite: automated wireless auditor"](https://code.google.com/p/wifite/) (Google code)
+
+  * *Source Code:* ["wifite"](https://github.com/derv82/wifite) (GitHub)
+
+  * *Guide:* ["Cracking WPA2 WPA with Hashcat in Kali Linux"](http://www.darkmoreops.com/2014/08/18/cracking-wpa2-wpa-with-hashcat-kali-linux/?PageSpeed=noscript) (darkmoreops.com)
+
+  * *Guide:* ["Cracking WPA/WPA2 with oclHashcat"](http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2) (Hashcat wiki)

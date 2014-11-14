@@ -1,4 +1,4 @@
-# Context Research
+## Context Research
 
 !INCLUDE "guides/context_research/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/context_research/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/context_research/purpose.md"
 
@@ -22,18 +22,40 @@
 
 !INCLUDE "guides/context_research/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/context_research/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/context_research/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/context_research/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/context_research/reporting.md"
 
-### Resources [stub]
+### Resources
 
 !INCLUDE "guides/context_research/resources.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/context_research.md"
 
-!INCLUDE "guides/context_research/operational_security.md"
+!INCLUDE "references/threat_by_focus_area.md"
+
+!INCLUDE "references/threat_by_region.md"
+
+!INCLUDE "references/threat_by_method.md"
+
+!INCLUDE "references/comm_infrastructure_research.md"
+
+!INCLUDE "references/cyber_security_trends.md"
+
+\newpage
+
+### Example
+
+!INCLUDE "guides/context_research/examples/process.md"

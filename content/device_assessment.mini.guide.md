@@ -24,6 +24,8 @@
 
 ### Resources [stub]
 
+!INCLUDE "references/device_assessment.overview.md"
+
 !INCLUDE "references/password_security.md"
 
 !INCLUDE "references/privilege_separation.md"

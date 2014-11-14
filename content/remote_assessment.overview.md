@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/remote_assessment/output.md"
-
-### Resources
-
-!INCLUDE "references/remote_assessment.overview.md"

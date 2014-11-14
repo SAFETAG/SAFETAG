@@ -1,18 +1,14 @@
-# Assessment Plan
+## Assessment Plan
 
-!INCLUDE "guides/context_research/quote.md"
+!INCLUDE "guides/assessment_plan/quote.md"
 
 ### Summary
 
 !INCLUDE "guides/assessment_plan/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/assessment_plan/purpose.md"
-
-### Baseline Skills [stub]
-
-!INCLUDE "guides/assessment_plan/baseline_skills.md"
 
 ### Preparation [stub]
 
@@ -24,19 +20,31 @@
 
 !INCLUDE "guides/assessment_plan/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/assessment_plan/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/assessment_plan/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/assessment_plan/operational_security.md"
+
+### Reporting  [stub]
 
 !INCLUDE "guides/assessment_plan/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/assessment_plan/resources.md"
+!INCLUDE "references/assessment_plan.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/pre_engagement.md"
 
-!INCLUDE "guides/assessment_plan/operational_security.md"
+!INCLUDE "references/incident_handling.md"
+
+!INCLUDE "references/legal_considerations.md"
+
+!INCLUDE "references/data_security_standards.md"
 

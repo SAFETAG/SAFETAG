@@ -9,6 +9,6 @@
 
   * *Vulnerability Databases* [^OSVDB]^,^[^cve_search]^,^[^threat_explorer]^,^[^exploit_database]^,^[^security_focus]
 
-  * *Security Advisories* [^Microsoft Security Bulletin]^,^[^ind_univ_external_advisories]^,^[^OSS_Security_advisories]^,^[^CERT_CC_Advisories]^,^[^security_tracker]^,^[^mozilla_vulns]
+  * *Security Advisories* [^Microsoft_Security_Bulletin]^,^[^ind_univ_external_advisories]^,^[^OSS_Security_advisories]^,^[^CERT_CC_Advisories]^,^[^security_tracker]^,^[^mozilla_vulns]
 
 

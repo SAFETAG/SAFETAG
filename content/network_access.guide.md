@@ -1,4 +1,4 @@
-# Network Access
+## Network Access
 
 !INCLUDE "guides/network_access/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/network_access/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/network_access/purpose.md"
 
@@ -22,18 +22,28 @@
 
 !INCLUDE "guides/network_access/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/network_access/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/network_access/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/network_access/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/network_access/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/network_access/resources.md"
+!INCLUDE "references/network_access.md"
 
-### Operational Security Concerns: [stub]
+\newpage
 
-!INCLUDE "guides/network_access/operational_security.md"
+### Example
+
+!INCLUDE "guides/network_access/examples/wpa_key/index.md"

@@ -22,6 +22,10 @@
 
 !INCLUDE "guides/debrief/operational_security.md"
 
-### Resources [stub]
+### Resources
+
+!INCLUDE "references/debrief.overview.md"
+
+!INCLUDE "references/facilitation_prep.md"
 
 !INCLUDE "references/digital_security_training.md"

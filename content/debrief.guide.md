@@ -1,4 +1,4 @@
-# Debrief
+## Debrief
 
 !INCLUDE "guides/debrief/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/debrief/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/debrief/purpose.md"
 
@@ -22,18 +22,26 @@
 
 !INCLUDE "guides/debrief/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/debrief/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/debrief/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/debrief/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/debrief/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/debrief/resources.md"
+!INCLUDE "references/debrief.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/facilitation_prep.md"
 
-!INCLUDE "guides/debrief/operational_security.md"
+!INCLUDE "references/digital_security_training.md"

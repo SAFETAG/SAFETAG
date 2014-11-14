@@ -1,5 +1,5 @@
 
-## Introduction
+### Introduction
 
 For this interview, I will mostly ask you about how your organization relates to tech tools in a general sense. I will also ask specific questions about how your organization works with digital security issues.
 
@@ -14,7 +14,8 @@ Please feel free to stop me or ask if a question is unclear, or if you would lik
 The interview starts with some questions about you and the organization. Again, this will all be kept strictly confidential.
 
 
-## Open Up
+### Open Up
+
 "Warm up the participant with questions they are comfortable with." [^HCD_toolkit]
 
   @. What is your name?
@@ -66,9 +67,12 @@ The interview starts with some questions about you and the organization. Again, 
     * Receive trainings
     * Fundraising
 
-## Go Broad
+### Go Broad
+
 "Prompt bigger, even aspirational, thinking that they may not be accustomed to on a daily basis." [^HCD_toolkit]
-## Go Specific
+
+### Go Specific
+
 "Dig deeper on the challenge at hand & prompt with ‘what if’ scenarios." [^HCD_toolkit]
 
   @motivation. What is the most important reason for your organization to exist? (Provide an example if needed - Examples below)
@@ -280,7 +284,7 @@ The interview starts with some questions about you and the organization. Again, 
   @techprotect. Are there any devices in place that may impact the results of audit scans such as a firewall, intrusion detection/prevention system, web application firewall, or load balancer? 
 
 
-## Categories
+### Categories
 
 Below are the categories each question fits within. Use this to help you reduce the information you obtained from the interview into manageable themes, insights, and implications.
 
@@ -370,7 +374,7 @@ Scope questions explore what the client is looking to gain out of the audit, why
 @mainmemother
 
 
-#### Network Audit Questions
+### Network Audit Questions
 
 
 @totalip,
@@ -392,14 +396,14 @@ Scope questions explore what the client is looking to gain out of the audit, why
 @othersoftware
 
 
-#### Web Application Audit Questions
+### Web Application Audit Questions
 
 @domainbrand,
 @websites,
 @urls,
 @hosted
 
-#### Wireless Audit Questions
+### Wireless Audit Questions
 
 @wifinets,
 @wifiguest,
@@ -407,12 +411,12 @@ Scope questions explore what the client is looking to gain out of the audit, why
 @wifienc,
 @wifiusers
 
-#### Device Audit
+### Device Audit
 
 @sftcompacces,
 @stfnoaccess,
 @stftravel
 
-#### Data Audit
+### Data Audit
 
 @critdata

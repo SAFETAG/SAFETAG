@@ -1,4 +1,4 @@
-# Risk Modeling
+## Risk Modeling
 
 !INCLUDE "guides/risk_modeling/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/risk_modeling/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/risk_modeling/purpose.md"
 
@@ -22,18 +22,39 @@
 
 !INCLUDE "guides/risk_modeling/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/risk_modeling/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/risk_modeling/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/risk_modeling/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/risk_modeling/reporting.md"
 
 ### Resources [stub]
 
-!INCLUDE "guides/risk_modeling/resources.md"
+!INCLUDE "references/risk_modeling.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/threat_assessment.md"
 
-!INCLUDE "guides/risk_modeling/operational_security.md"
+!INCLUDE "references/risk_activities.md"
+
+!INCLUDE "references/threat_activities.md"
+
+!INCLUDE "references/risk_matrix_activities.md"
+
+!INCLUDE "references/alternative_risk_assessment_activities.md"
+
+
+\newpage
+
+### Example
+
+!INCLUDE "guides/risk_modeling/examples/pre-mortum_sample_process.md"

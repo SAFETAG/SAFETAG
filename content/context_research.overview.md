@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/context_research/output.md"
-
-### Resources
-
-!INCLUDE "references/context_research.overview.md"

@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/resource_identification/output.md"
-
-### Resources
-
-!INCLUDE "references/resource_identification.overview.md"

@@ -13,7 +13,3 @@
 ### General Guidelines
 
 !INCLUDE "guides/operational_security/approach.md"
-
-### Resources
-
-!INCLUDE "references/operational_security.overview.md"

@@ -1,4 +1,4 @@
-# Social Engineering Exercise
+## Social Engineering Exercise
 
 !INCLUDE "guides/social_engineering_exercise/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/social_engineering_exercise/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/social_engineering_exercise/purpose.md"
 
@@ -22,18 +22,30 @@
 
 !INCLUDE "guides/social_engineering_exercise/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/social_engineering_exercise/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/social_engineering_exercise/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/social_engineering_exercise/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/social_engineering_exercise/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/social_engineering_exercise/resources.md"
+!INCLUDE "references/social_engineering_exercise.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/social_engineering_toolkit.md"
 
-!INCLUDE "guides/social_engineering_exercise/operational_security.md"
+\newpage
+
+### Example
+
+!INCLUDE "guides/social_engineering_exercise/examples/suspicious_email_activity.md"

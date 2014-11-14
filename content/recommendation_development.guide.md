@@ -1,4 +1,4 @@
-# Recommendation Development
+## Recommendation Development
 
 !INCLUDE "guides/recommendation_development/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/recommendation_development/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/recommendation_development/purpose.md"
 
@@ -22,18 +22,24 @@
 
 !INCLUDE "guides/recommendation_development/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/recommendation_development/approach.md"
+
+### Output
+
+!INCLUDE "guides/recommendation_development/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/recommendation_development/operational_security.md"
 
 ### Reporting Considerations: [stub]
 
 !INCLUDE "guides/recommendation_development/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/recommendation_development/resources.md"
+!INCLUDE "references/recommendation_development.overview.md"
 
-### Operational Security Concerns: [stub]
-
-!INCLUDE "guides/recommendation_development/operational_security.md"
+!INCLUDE "references/identifying_recommendations.md"

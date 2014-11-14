@@ -1,4 +1,4 @@
-# Network Mapping
+## Network Mapping
 
 !INCLUDE "guides/network_mapping/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/network_mapping/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/network_mapping/purpose.md"
 
@@ -22,18 +22,24 @@
 
 !INCLUDE "guides/network_mapping/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/network_mapping/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/network_mapping/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/network_mapping/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/network_mapping/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/network_mapping/resources.md"
+!INCLUDE "references/network_mapping.overview.md"
 
-### Operational Security Concerns: [stub]
-
-!INCLUDE "guides/network_mapping/operational_security.md"
+!INCLUDE "references/network_mapping_methods.md"

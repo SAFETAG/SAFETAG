@@ -1,5 +1,5 @@
 
-#### Network Discovery Methods
+#### Network Mapping Methods [stub]
 
 
   * *Guide:* ["10 Techniques for Blindly Mapping Internal Networks"](https://www.netspi.com/blog/entryid/135/10-techniques-for-blindly-mapping-internal-networks)

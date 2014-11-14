@@ -23,15 +23,15 @@
 
 #### Conducting the Activity
 
-**Pre-Mortum Strategy: (20 Minutes)** The pre-mortum strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum]
+**Pre-Mortum Strategy: (30 Minutes)** The pre-mortum strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum]
 
   * Explain the pre-mortum activity. The participants are to imagine that it is months into the future and they have continued doing their work as normal. And something happened that left them entirely unable to function or functioning at a very poor level. "That is all they know; they have to explain what has happened." [^pre-mortum]
   * Create a broad list of possible explanations for what has happened.
-  * Identify the most likely causes.
+  * Identify the most likely explanations.
   * List the process' that would have to fail for those causes to take effect.
-  * Identify process' that are central to the failures and write them on a list of *critical process'.*
+  * Identify two to three process' that are central to the failures and write them on a list of *critical process'.*
 
-**Process Mapping (Interaction):** Explanation
+**Process/Interaction Mapping (30 minutes per process):** 
 
   * Pick a process from the list of *critical process'* identified above.
   * Clearly identify the process name on the whiteboard or flipchart.
@@ -50,16 +50,16 @@
     * Take quick notes to remind yourself of any key points not clearly marked on the map before they move on to the next activity. 
     * After completing all the key events take a photo of the whiteboard / store the chart-paper for later documentation.
 
-**Threat Identification:** 
+**Threat Identification: (30 minutes per process)** 
 
   * Explain the types of threats.
-    * Confidentiality: If unauthorized individuals find out an asset/process.
+    * Confidentiality: If unauthorized individuals find out an asset/process exists.
     * Control: If an asset/process can be accessed by unauthorized individuals.
     * Integrity: If an asset/process is changed without permission.
     * Availability: If an asset/process becomes unavailable.
     * Consistency: If an asset/process becomes unreliable.
 	* Audit: If you cannot verify that an asset/process is secure.
-  * Give participants a "cheat sheet" of risks.
+  * Give participants a "cheat sheet" of threats.
   * Identify a "interaction line" from the process map to start with.
   * Generate a list of threats that would cause that interaction to fail.
   * Mark the back of the post it with the interaction name or number.
@@ -73,20 +73,22 @@
     * If any of the impacts identified in the pre-mortum are not covered ask participants where they would go.
     * Take photos of the threats once you have finished enumerating them.
     * Write risks on one set of post-its and impacts on another color of post it's to make it easy to keep track.
+	* Look at the["CVSS V2 Base Metrics"](https://ics-cert.us-cert.gov/sites/default/files/documents/Cyber_Security_Assessments_of_Industrial_Control_Systems.pdf#page=31) for an example of the severity of different threats.
 
-**Impact Identification:** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
+**Impact Identification: (30 minutes per process)** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
 
   * Give participants a pen and three sticky note pads.
   * Explain the topic and the categories. [^GPR_8_impacts]
     * Staff/People - (which includes families, friends, and beneficiaries): temporary or permanent
 physical injury, temporary or longer-term psychological damage, death, legal costs, cost of medical treatment, loss of morale or trust in management.
-    * Organization - loss of or damage to assets, operational inefficiency, loss of programme quality or outright suspension; loss of reputation; loss of funding.
+    * Organization - loss of or damage to assets, operational inefficiency, loss of program quality or outright suspension; loss of reputation; loss of funding.
     * Program - reduced program quality, temporary suspension of the program, forced termination of the program.
-  * Instruct each person to generate impacts based upon the exiting threat clustering from **Threat Identification.**
+  * Instruct each person to generate DIRECT impacts based upon the exiting threat clustering from **Threat Identification.**
   * Include only one impact per sticky note.
   * Have one participant quickly describe then place an impact on the board writing along side it the threat that causes it.
   * Invite others to place similar/the same impacts in proximity and quickly describe how it can occurs.
   * Repeat the process until all impacts are included.
+  * Have participants add stickies for any secondary/cascading impacts
   * Discuss and rearrange impacts as groupings emerge.
   * Label impact clusters that appear.
   
@@ -98,24 +100,18 @@ physical injury, temporary or longer-term psychological damage, death, legal cos
 
 **Adversary Exploration (Likelyhood):** 
 
-  * Give participants a pen and three sticky note pads.
   * Explain the topic and the categories. [^GPR_8_Likelihood]
     * "History – a past incidence or pattern of attacks on similar organizations."
     * "Intent – specific threats, a demonstrated intention or mindset to attack."
     * "Capability – the wherewithal to carry out an attack."
-  * Instruct each person to generate adversaries who have demonstrated likelihood to impact their work or one of the process'.
-  * Include only one adversary per sticky note.
-  * Have one participant quickly describe then place an adversary on the board.
-  * Invite others to place similar/the same adversaries in proximity and quickly describe their demonstrated likelihood if a different category or reason.
-  * Repeat the process until all adversaries are included.
-  * Discuss and rearrange adversaries as groupings emerge.
-  * Label adversary clusters that appear.
+  * Brainstorm adversaries who have demonstrated likelihood to impact their work or one of the process'.
+  * Pick an adversary and write their name on the board.
+  * Write specific instances of advesary history, intent, and capacity announced by the participants.
+  * Repeat the process until all adversaries are completed.
   
   * **NOTES:**
-    * Tell participants to write multiple adversaries per color.
-	* Tell participants to only write the adversaries name, not the explanation.
 	* Limit the time frame for discussion.
-    * Take photos of the adversary clusters once you have finished enumerating them.
+    * Take photos of the adversary lists.
 
 **Impact Ranking:** The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible impacts from the threats they have just explored. 
 

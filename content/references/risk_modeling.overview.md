@@ -7,3 +7,5 @@
   * *Guide:* ["Threat Assessment: Chapter 2.5 p. 38"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38) (Operational Security Management in Violent Environments (Revised Edition))
 
   * *Guide:* ["Defining The Threshold Of Acceptable Risk"](http://integratedsecuritymanual.org/exercise/defining-the-threshold-of-acceptable-risk) (Integrated Security)
+
+  * *Guide:* ["Guide for Conducting Risk Assessments"](http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf) (NIST 800-30)

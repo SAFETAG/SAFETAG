@@ -24,6 +24,8 @@
 
 ### Resources [stub]
 
+!INCLUDE "references/resource_identification.overview.md"
+
 !INCLUDE "references/digital_security_guides.md"
 
 !INCLUDE "references/digi_sec_tech_reference_guides.md"
