@@ -22,6 +22,11 @@ header-includes:
 
 \newpage
 
+!INCLUDE "content/guides/disclaimer.md"
+
+\newpage
+
+
 <!-- Overview -->
 
 ## The SAFETAG Process
