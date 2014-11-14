@@ -1,4 +1,4 @@
-# Capacity Assessment
+## Capacity Assessment
 
 !INCLUDE "guides/capacity_assessment/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/capacity_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/capacity_assessment/purpose.md"
 
@@ -22,18 +22,20 @@
 
 !INCLUDE "guides/capacity_assessment/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/capacity_assessment/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/capacity_assessment/output.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/capacity_assessment/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/capacity_assessment/resources.md"
+!INCLUDE "references/capacity_assessment.overview.md"
 
-### Operational Security Concerns: [stub]
-
-!INCLUDE "guides/capacity_assessment/operational_security.md"
+!INCLUDE "references/capacity_assessment.md"

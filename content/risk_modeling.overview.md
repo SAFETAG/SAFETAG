@@ -18,6 +18,3 @@
 
 !INCLUDE "guides/risk_modeling/output.md"
 
-### Resources
-
-!INCLUDE "references/risk_modeling.overview.md"

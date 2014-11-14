@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/assessment_plan/output.md"
-
-### Resources
-
-!INCLUDE "references/assessment_plan.overview.md"

@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/network_access/output.md"
-
-### Resources
-
-!INCLUDE "references/network_access.overview.md"

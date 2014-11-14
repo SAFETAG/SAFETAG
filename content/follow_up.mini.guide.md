@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/follow_up/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/follow_up/purpose.md"
 
@@ -14,6 +14,10 @@
 
 !INCLUDE "guides/follow_up/approach.md"
 
-### Resources [stub]
+### Operational Security
+
+!INCLUDE "guides/follow_up/operational_security.md"
+
+### Resources
 
 !INCLUDE "references/follow_up.md"

@@ -1,4 +1,4 @@
-# Network Discovery
+## Network Discovery
 
 !INCLUDE "guides/network_discovery/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/network_discovery/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/network_discovery/purpose.md"
 
@@ -22,18 +22,22 @@
 
 !INCLUDE "guides/network_discovery/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/network_discovery/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/network_discovery/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/network_discovery/operational_security.md"
+
+### Reporting  [stub]
 
 !INCLUDE "guides/network_discovery/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/network_discovery/resources.md"
-
-### Operational Security Concerns: [stub]
-
-!INCLUDE "guides/network_discovery/operational_security.md"
+!INCLUDE "references/network_discovery_methods.md"

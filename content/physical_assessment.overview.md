@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/physical_assessment/output.md"
-
-### Resources
-
-!INCLUDE "references/physical_assessment.overview.md"

@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/interviews/output.md"
-
-### Resources
-
-!INCLUDE "references/interviews.overview.md"

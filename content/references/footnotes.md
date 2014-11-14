@@ -7,13 +7,17 @@
 
 [^NIST_SP_800-115]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
-[^pen_testing_systematic]:["Penetration Testing - A Systematic Approach"](http://www.infosecwriters.com/text_resources/pdf/PenTest_MSaindane.pdf)
+[^pen_testing_systematic]:[Penetration Testing - A Systematic Approach](http://www.infosecwriters.com/text_resources/pdf/PenTest_MSaindane.pdf)
+
+[^NIST_SP_800-115_planning]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment - Planning Methodology](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=13)
 
 [^NIST_SP_800-115_assessment_plan]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=51)
 
-[^NIST_SP_800-115-Section_7.1]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment. Section 7.1 Coordination](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+[^NIST_SP_800-115-Section_7.1]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment. Section 7.1 Coordination](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=55)
 
-[^NIST_SP_800-115-travel_prep]:["Traveling teams should maintain a flyaway kit that includes systems, images, additional tools, cables, projectors, and other equipment that a team may need when performing testing at other locations."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+[^NIST_SP_800-115_targeting]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=40)
+
+[^NIST_SP_800-115-travel_prep]:["Traveling teams should maintain a flyaway kit that includes systems, images, additional tools, cables, projectors, and other equipment that a team may need when performing testing at other locations."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=50)
 
 [^pets_pre-engagement_location]:[Determining Audit Location - The Penetration Testing Execution Standard: Pre-Engagement Guidelines](http://www.pentest-standard.org/index.php/Pre-engagement#Locations)
 
@@ -23,7 +27,7 @@
 
 [^workbook_on_security]:[Workbook on Security: Practical Steps for Human Rights Defenders at Risk](http://frontlinedefenders.org/files/workbook_eng.pdf)
 
-[^OSSTMM_wireless_security_testing]:[Open Source Security Testing Methodology Manual (OSSTMM)](http://www.isecom.org/mirror/OSSTMM.3.pdf#page=140)
+[^OSSTMM_wireless_security_testing]:[Open Source Security Testing Methodology Manual (OSSTMM) p. 140.](http://www.isecom.org/research/osstmm.html)
 
 <!-- Threat Modeling -->
 
@@ -31,17 +35,24 @@
 
 [^NIST_SP_800_115_soc_eng_hostile]:["Individual targeting can lead to embarrassment for those individuals if testers successfully elicit information or gain access. It is important that the results of social engineering testing are used to improve the security of the organization and not to single out individuals."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
+[^GPR_8_Likelihood]:["Likelihood: Chapter 2.7 p. 47 - Operational Security Management in Violent Environments"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38)
+
+[^GPR_8_impacts]:["Impacts: Chapter 2.7 p. 46 - Operational Security Management in Violent Environments"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38)
 
 <!-- Facilitation -->
 
 [^psych_sec_training]:[The Psychological Underpinnings of Security Training - Craig Higson-Smith](https://www.level-up.cc/resources-for-trainers/holistic/psychological-underpinnings-security-training)
 
+[^event_planning_input]:[Event Planning Inputs - Level-Up](https://www.level-up.cc/leading-trainings/event-planning)
+
 [^integratedsecurity_prep_tips]:[Integrated Security Facilitator Preparation Tips](http://integratedsecuritymanual.org/sites/default/files/integratedsecurity_themanual_1.pdf#page=25)
+
 [^integrated_security_manual]:[Integrated security: The Manual](http://integratedsecuritymanual.org/download-this-manual)
 
 <!-- Censorship Measurement -->
 
 [^herdict_explore]:[Herdict "At-A-Glance" web-blockage dashboard](http://herdict.org/explore/indephth)
+
 <!-- ONI -->
 
 [^ONI_country]:[Open Network Initiative - Country Reports](https://opennet.net/research/profiles)
@@ -123,9 +134,9 @@
 
 [^shostack]: "Threat Modeling: Designing for Security" by Adam Shostack
 
-[^shostack_flow]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 408
+[^shostack_flow]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 408.
 
-[^shostack_reports]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 401
+[^shostack_reports]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 401.
 
 [^secure_reporting]:"When a pilot lands an airliner, their job isn’t over. They still have to navigate the myriad of taxiways and park at the gate safely. The same is true of you and your pen test reports, just because its finished doesn't mean you can switch off entirely. You still have to get the report out to the client, and you have to do so securely. Electronic distribution using public key cryptography is probably the best option, but not always possible. If symmetric encryption is to be used, a strong key should be used and must be transmitted out of band. Under no circumstances should a report be transmitted unencrypted. It all sounds like common sense, but all too often people fall down at the final hurdle." - [The Art of Writing Penetration Test Reports](http://resources.infosecinstitute.com/writing-penetration-testing-reports/)
 
@@ -148,6 +159,10 @@
 [^PETS_permission_to_test]:["One of the most important documents which need to be obtained for a penetration test is the Permission to Test document."](http://www.pentest-standard.org/index.php/Pre-engagement#Permission_to_Test)
 
 [^PETS_evidence_handling]:["When handling evidence of a test and the differing stages of the report it is incredibly important to take extreme care with the data. Always use encryption and sanitize your test machine between tests."](http://www.pentest-standard.org/index.php/Pre-engagement#Evidence_Handling)
+
+[^org_vuln_analysis]:["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-content/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf)
+
+[^cryptolaw]:["A survey of existing and proposed laws and regulations on cryptography - systems used for protecting information against unauthorized access."](http://www.cryptolaw.org/) (The Crypto Law Survey)
 
 <!-- Malware and Threat reports --> 
 
@@ -174,6 +189,37 @@
 [^us-cert_bulletins]:[US-CERT Bulletins provide weekly summaries of new vulnerabilities.](https://www.us-cert.gov/ncas/bulletins/)
 
 
+[^secuna_country_reports]:["Secunia Country Reports"](https://secunia.com/resources/countryreports/)
+
+<!-- Security Advisories -->
+
+[^Microsoft_Security_Bulletin]:[Microsoft Security Bulletin](https://technet.microsoft.com/en-us/security/bulletin)
+
+[^ind_univ_external_advisories]:["In-Depth Reading, Vendor Information, & External Advisories"](https://protect.iu.edu/cybersecurity/indepth)
+
+[^OSS_Security_advisories]:["Security-Related Vendor Information"](http://oss-security.openwall.org/wiki/vendors)
+
+[^CERT_CC_Advisories]:["CERT/CC Advisories"](https://www.cert.org/historical/advisories/)
+
+[^CERT_vuln_notes]:["Vulnerability Notes Database"](http://www.kb.cert.org/vuls)
+
+[^security_tracker]:["Security Tracker"](http://securitytracker.com/topics/topics.html)
+
+[^mozilla_vulns]:["Known Vulnerabilities in Mozilla Products"](https://www.mozilla.org/security/known-vulnerabilities/)
+
+[^packetstorm_news]:["Packet Storm News"](http://packetstormsecurity.com/files/)
+
+<!-- Vulnerability Databases -->
+
+[^OSVDB]:["Open Sourced Vulnerability Database"](http://osvdb.org/)
+
+[^cve_search]:[Search CVE and CCE Vulnerability Database](https://web.nvd.nist.gov/view/vuln/search-advanced)
+
+[^threat_explorer]:["Threat Explorer"](http://us.norton.com/security_response/threatexplorer/vulnerabilities.jsp)
+
+[^exploit_database]:["The Exploit Database"](http://www.exploit-db.com/)
+
+[^security_focus]:["Security Focus Vulnerability Search"](http://www.securityfocus.com/)
 
 <!-- Guides -->
 
@@ -182,18 +228,16 @@
 [^tektip_recon-ng]:[Tektip ep26 - Information gathering with Recon-ng Video Tutorial](http://www.tekdefense.com/news/2013/3/24/tektip-ep26-information-gathering-with-recon-ng.html)
 
 [^infosec_institute_recon-ng_guide]:[The Recon-ng Framework : Automated Information Gathering](http://resources.infosecinstitute.com/the-recon-ng-framework-automated-information-gathering/)
+
 [^secure_ideas_recon-ng]:[Professionally Evil Toolkit - Recon-ng](http://blog.secureideas.com/2013/11/professionally-evil-toolkit-recon-ng.html)
-
-
 <!-- Technical Training & Guides -->
 
 [^security_tube]:["Comprehensive, Hands-on, Practical and Affordable infosec training."](http://www.securitytube.net)
 
-[^recon-ng_data_flow]:[The flow of information through the Recon-ng  framework.](www.lanmaster53.com/2014/05/recon-ng-update/)
+[^recon-ng_data_flow]:[The flow of information through the Recon-ng  framework. (See: "Data Flow" section)](http://www.lanmaster53.com/2014/05/recon-ng-update)
 
 [^recon-ng_API_keys]:[Acquiring API Keys](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!acquiring-api-keys)
-
-[^security_in_a_box_physical]:[How to protect your information from physical threats - Security in-a-box](http://www.tasharuk.net/en/resources/index.php?id=20#/Security%20In%20A%20Box:%20Tools%20and%20Tactics%20for%20Your%20Digital%20Security)
+[^security_in_a_box_physical]:[How to protect your information from physical threats - Security in-a-box](https://securityinabox.org/chapter-2)
 
 [^speak_safe_keeping_data_safe]:[Keeping Your Data Safe - Surveillance Self-Defense](https://ssd.eff.org/en/module/keeping-your-data-safe)
 
@@ -204,15 +248,15 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 <!-- Sections -->
 
+[^auditor_trainee_tool_resource_list]:[See the auditor trainee resource list](#auditor-trainee-tool-resource-list)
 
+[^social_engineering_toolkit_resources]:[Auditor Tool Resource List - Social Engineering](#social-engineering-toolkit)
 
-[^social_engineering_toolkit_resources]:[Social Engineering Toolkit guides & resources](#social-engineering-toolkit)
+[^password_dictionary_resources]:[Auditor Tool Resource List - Password Dictionary Creation](#password-dictionary-creation)
 
-[^password_dictionary_resources]:[Password Dictionary Creation](#password-dictionary-creation)
+[^social_engineering_section]:[Auditor Tool Resource List - Social Engineering](#social-engineering-toolkit)
 
-[^social_engineering_section]:[Social Engineering Toolkit guides & resources](#social-engineering-toolkit)
-
-[^latest_version_of_tools]:[Links to get the latest versions of SAFETAG tools](#getting-the-latest-version-of-tools)
+[^latest_version_of_tools]:[See the auditor trainee resource list](#auditor-trainee-tool-resource-list)
 
 [^vulnerability_analysis]:[See: Vulnerability Analysis](#vulnerability-analysis)
 
@@ -238,8 +282,6 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^device_encryption_by_os]:[Device Encryption By OS Type](#device-encryption-by-os)
 
-
-
 <!-- Appendix's -->
 
 [^travel_kit_appendix]:[APPENDIX A - Auditor travel kit checklist](#appendix-a)
@@ -250,6 +292,18 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^auditor_consent_template]:[APPENDIX D - Auditor Consent Template.](#appendix-d)
 
+[^pre-mortum]:["Pre-Mortum Strategy" - Sources of Power: How People Make Decisions - p.71](http://books.google.com/books?id=nn1kGwL4hRgC&lpg=PP1&pg=PA71#v=onepage&q&f=false)
+<!-- Interview -->
+
+[^scope_questions]:["Questionnaires - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questionnaires)
+
+[^HCD_toolkit]["IDEO Human-Centered Design Toolkit"](http://www.ideo.com/work/human-centered-design-toolkit)
+
+[^Techscape_indicators]["TechScape Indicators - the engine room"](https://www.theengineroom.org/projects/techscape/tsindicators/)
+
+[^BUM_questions]:["Questions for Business Unit Managers - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questions_for_Business_Unit_Managers)
+
+[^SA_Questions]:["Questions for Systems Administrators"](http://www.pentest-standard.org/index.php/Pre-engagement#Questions_for_Systems_Administrators)
 
 
 

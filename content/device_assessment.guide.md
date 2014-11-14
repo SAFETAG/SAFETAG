@@ -1,4 +1,4 @@
-# Device Assessment
+## Device Assessment
 
 !INCLUDE "guides/device_assessment/quote.md"
 
@@ -6,7 +6,7 @@
 
 !INCLUDE "guides/device_assessment/summary.md"
 
-### Purpose [stub]
+### Purpose
 
 !INCLUDE "guides/device_assessment/purpose.md"
 
@@ -22,18 +22,36 @@
 
 !INCLUDE "guides/device_assessment/materials_needed.md"
 
-### Approach [stub]
+### Approach
 
 !INCLUDE "guides/device_assessment/approach.md"
 
-### Reporting Considerations: [stub]
+### Output
+
+!INCLUDE "guides/device_assessment/output.md"
+
+### Operational Security
+
+!INCLUDE "guides/device_assessment/operational_security.md"
+
+### Reporting [stub]
 
 !INCLUDE "guides/device_assessment/reporting.md"
 
-### Resources [stub]
+### Resources
 
-!INCLUDE "guides/device_assessment/resources.md"
+!INCLUDE "references/device_assessment.overview.md"
 
-### Operational Security Concerns: [stub]
+!INCLUDE "references/password_security.md"
 
-!INCLUDE "guides/device_assessment/operational_security.md"
+!INCLUDE "references/privilege_separation.md"
+
+!INCLUDE "references/examining_firewalls.md"
+
+!INCLUDE "references/software_versions.md"
+
+!INCLUDE "references/device_encryption.md"
+
+!INCLUDE "references/anti_virus.md"
+
+!INCLUDE "references/one_off_services.md"

@@ -18,7 +18,13 @@
 
 !INCLUDE "guides/resource_identification/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/resource_identification/operational_security.md"
+
 ### Resources [stub]
+
+!INCLUDE "references/resource_identification.overview.md"
 
 !INCLUDE "references/digital_security_guides.md"
 

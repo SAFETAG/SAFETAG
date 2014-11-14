@@ -18,6 +18,12 @@
 
 !INCLUDE "guides/roadmap_development/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/roadmap_development/operational_security.md"
+
 ### Resources [stub]
+
+!INCLUDE "references/roadmap_development.overview.md"
 
 !INCLUDE "references/determine_urgency.md"

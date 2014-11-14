@@ -1,9 +1,15 @@
 ---
 type: guide
 fontfamily: utopia
+include-before: \includegraphics{content/images/cover-page-mini-guide.png}
+geometry: margin=1in
 header-includes:
 	- \usepackage{wrapfig}
 ...
+
+<!-- License -->
+
+!INCLUDE "content/license.md"
 
 \newpage
 
@@ -23,10 +29,16 @@ header-includes:
 
 ![The Safetag Audit Process](content/images/expertiese_vertical.png)\
 
+\newpage
 
 # PART ONE: Agreement and Information Gathering
 
 ![The Pre-Audit](content/images/pre_audit_expertiese.png)\
+
+\newpage
+<!-- Operational Security -->
+
+!INCLUDE "content/operational_security.mini.guide.md"
 
 \newpage
 <!-- Interviews -->
@@ -168,16 +180,6 @@ header-includes:
 # APPENDIX D
 
 !INCLUDE "templates/audit/auditor_consent_template.md"
-
-
-
-
-
-
-
-
-
-
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"

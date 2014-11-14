@@ -37,6 +37,11 @@ header-includes:
 ![The Pre-Audit Process](content/images/pre_audit_expertiese.png)
 
 \newpage
+<!-- Operational Security -->
+
+!INCLUDE "content/operational_security.overview.md"
+
+\newpage
 <!-- Interviews -->
 
 !INCLUDE "content/interviews.overview.md"
@@ -160,19 +165,17 @@ header-includes:
 
 \newpage
 
-<!-- Follow Up -->
+<!-- Tool Guides -->
 
 !INCLUDE "content/references/tool_guides.md"
 
 \newpage
 
-
-
-
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
 
 <!-- Load Footnotes -->
+!INCLUDE "content/references/footnotes.md"
+
+<!-- Update Footnotes for overview -->
 !INCLUDE "content/references/footnotes.overview.md"
-
-

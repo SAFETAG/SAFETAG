@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/network_discovery/output.md"
-
-### Resources
-
-!INCLUDE "references/network_discovery.overview.md"

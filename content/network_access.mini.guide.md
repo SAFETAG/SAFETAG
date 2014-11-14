@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/network_access/output.md"
 
-### Resources [stub]
+### Operational Security
+
+!INCLUDE "guides/network_access/operational_security.md"
+
+### Resources
 
 !INCLUDE "references/network_access.md"

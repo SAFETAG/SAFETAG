@@ -17,7 +17,3 @@
 ### Output
 
 !INCLUDE "guides/debrief/output.md"
-
-### Resources
-
-!INCLUDE "references/debrief.overview.md"
