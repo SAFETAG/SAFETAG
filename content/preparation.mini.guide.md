@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/preparation/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/preparation/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/facilitation_prep.md"

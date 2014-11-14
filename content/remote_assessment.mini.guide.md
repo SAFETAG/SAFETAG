@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/remote_assessment/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/remote_assessment/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/open_source_intel.md"

@@ -39,6 +39,11 @@ header-includes:
 \newpage
 <!-- Interviews -->
 
+!INCLUDE "content/operational_security.overview.md"
+
+\newpage
+<!-- Interviews -->
+
 !INCLUDE "content/interviews.overview.md"
 
 \newpage

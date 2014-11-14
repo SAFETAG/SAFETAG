@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/network_discovery/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/network_discovery/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/network_discovery_methods.md"

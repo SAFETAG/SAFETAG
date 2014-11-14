@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/device_assessment/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/device_assessment/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/password_security.md"

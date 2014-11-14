@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/context_research/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/context_research/operational_security.md"
+
 ### Resources
 
 !INCLUDE "references/context_research.md"

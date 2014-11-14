@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/recommendation_development/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/recommendation_development/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/recommendation_development.md"

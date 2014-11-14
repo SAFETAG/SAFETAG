@@ -18,6 +18,10 @@
 
 !INCLUDE "guides/debrief/output.md"
 
+### Operational Security
+
+!INCLUDE "guides/debrief/operational_security.md"
+
 ### Resources [stub]
 
 !INCLUDE "references/digital_security_training.md"
