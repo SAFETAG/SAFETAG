@@ -119,7 +119,7 @@ overview: $(PNG_IMAGES)
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/overview.md -o audit/build/overview.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/overview.md -o audit/build/overview.pdf
 
-all_docs: adids guide report mini_guide overview
+all_docs: adids guide mini_guide overview
 
 # =============== For Future Integration of a smaller latex install =================
 
