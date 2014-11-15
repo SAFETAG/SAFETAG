@@ -73,6 +73,20 @@ ifeq ($(PY_SETUP_INST),)
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
+TEX_FONT_INST := $(shell dpkg --get-selections \
+			| grep -v deinstall \
+			| grep texlive-fonts-recommended > /dev/null 2>&1)
+pysetup:
+ifeq ($(TEX_FONT_INST),)
+	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
+endif
+
+INKSCP_INST := $(shell which inkscape)
+inkscape:
+ifeq ($(INKSCP_INST),)
+	$(error "ERROR: Please install [inkscape]. It is required to convert the git repository friendly SVG images into multi-format friendly png's. (On Debian/Ubuntu, apt-get install inkscape.).")
+endif
+
 # =============== Convert vectors into pixel based images for publising=========
 
 SVG_IMAGES = $(wildcard content/images/*.svg)
@@ -89,7 +103,6 @@ clean_art:
 # =============== Report Generation =================
 
 adids: $(PNG_IMAGES)
-	echo $(PATH)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/ADIDS.md -o audit/build/ADIDS.tex

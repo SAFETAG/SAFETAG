@@ -12,4 +12,4 @@
 
 ### General Guidelines
 
-!INCLUDE "guides/operational_security/approach.md"
+!INCLUDE "guides/operational_security/guidelines.md"
