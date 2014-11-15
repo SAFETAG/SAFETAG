@@ -13,16 +13,19 @@ This repository contains the publishing tools and templates to build customized 
   * An extensable audit framework for assessing security threats based upon an organizations needs and capacity.
   * A customizable publishing workflow to make localization, translation, and other customization and extension easy for trainers, auditors, and security experts.
 
+## Installation
+
+
 
 ## Requirements:
-*All requirements exposed when runing makefile*
+
+  * All requirements will be exposed when running the makefile. They will also provide instructions for installation on a Debian style systems. Run ```make all``` in the main directory and do what it says. If the instructions are confusing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues)
 
   * [haskell-platform](https://www.haskell.org/platform/)
+  * [python-setuptools](https://pypi.python.org/pypi/setuptools)
+  * [Tex Live](https://www.tug.org/texlive/)
+  * [Tex Live recommended fonts](https://www.tug.org/fonts/fontinstall.html)
 
 ## License
 
-SAFETAG resources are available under a Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) License
-
-The audit framework and checklist may be used and shared for educational, non-commercial, not-for-profit purposes, with attribution to Internews. Users are free to modify and distribute content under conditions listed in the license.
-
-The audit framework and checklist is intended as reference and the authors take no responsibility for the safety and security of persons using them in a personal or professional capacity. 
+Please see ```installation/content/license.md``` for current licenses relating to SAFETAG as well as the various projects that we borrowed from. If you have further questions related to licensing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues) We are excited to discuss how we can best support those who wish to use SAFETAG and best attribute those whose content we adapted or redistributed through SAFETAG.

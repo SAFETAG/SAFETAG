@@ -1,7 +1,7 @@
 ---
 type: guide
 fontfamily: utopia
-include-before: \includegraphics{content/images/cover-page-mini-guide.png}
+include-before: \includegraphics{content/images/cover-page-guide.png}
 geometry: margin=1in
 header-includes:
 	- \usepackage{wrapfig}
