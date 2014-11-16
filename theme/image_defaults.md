@@ -1,4 +1,4 @@
 
 <!-- Checkboxes -->
-[_]: content/images/unchecked.png
-[x]: content/images/checked.png
+[_]: content/images/checkbox_unchecked.png
+[x]: content/images/checkbox_checked.png
