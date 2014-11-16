@@ -1,8 +1,10 @@
 PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install texpackages clean_art
 
-export PATH := $(PATH):~/.cabal/bin
-
 all: install audit
+
+# Setting SHELL and adding cabal to PATH so that we can just make pandoc work on debian without mucking with the ~/.bash_profile
+SHELL:=/bin/bash
+PATH:=$(PATH):~/.cabal/bin/
 
 #============ Installation ==============
 
@@ -18,19 +20,16 @@ modules/markdown-pp/markdown-pp.py: | submodules
 submodules:
 	git submodule update --init
 
-PANDOC_INST := $(shell which pandoc)
 pandoc: | dependencies
-	@echo "Checking if Pandoc is installed"
-ifeq ($(PANDOC_INST),)
-	@echo "Pandoc needs to be installed"
-	@echo "This will require a network connection"
-	@echo "Updating package database"
-	cabal update
-	@echo "Installing pandoc and its dependencies"
-	cabal install pandoc
-else
-	@echo "Pandoc is already installed."
-endif
+	@echo "Checking if Pandoc is installed..."
+	@pandoc -v > /dev/null 2>&1 \
+	|| (echo "Pandoc needs to be installed" \
+	&& echo "This will require a network connection" \
+	&& echo "Updating package database" \
+	&& cabal update \
+	&& echo "Installing pandoc and its dependencies" \
+	&& cabal install pandoc)
+	@echo "Pandoc is installed"
 
 #============ Audit Folder Setup ==============
 
@@ -66,6 +65,28 @@ ifeq ($(TEX_INST),)
 	$(error "ERROR: For PDF output, you’ll need LaTeX. We recommend installing TeX Live via your package manager. (On Debian/Ubuntu, apt-get install texlive.).")
 endif
 
+PY_SETUP_INST := $(shell dpkg --get-selections \
+			| grep -v deinstall \
+			| grep python-setuptools > /dev/null 2>&1)
+pysetup:
+ifeq ($(PY_SETUP_INST),)
+	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
+endif
+
+TEX_FONT_INST := $(shell dpkg --get-selections \
+			| grep -v deinstall \
+			| grep texlive-fonts-recommended > /dev/null 2>&1)
+pysetup:
+ifeq ($(TEX_FONT_INST),)
+	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
+endif
+
+INKSCP_INST := $(shell which inkscape)
+inkscape:
+ifeq ($(INKSCP_INST),)
+	$(error "ERROR: Please install [inkscape]. It is required to convert the git repository friendly SVG images into multi-format friendly png's. (On Debian/Ubuntu, apt-get install inkscape.).")
+endif
+
 # =============== Convert vectors into pixel based images for publising=========
 
 SVG_IMAGES = $(wildcard content/images/*.svg)
@@ -81,12 +102,7 @@ clean_art:
 
 # =============== Report Generation =================
 
-# Setting SHELL and adding cabal to PATH so that we can just make pandoc work on debian without mucking with the ~/.bash_profile
-SHELL:=/bin/bash
-PATH:=$(PATH):~/.cabal/bin/
-
 adids: $(PNG_IMAGES)
-	echo $(PATH)
 	-mkdir -p audit/build
 	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/ADIDS.md -o audit/build/ADIDS.tex
@@ -116,7 +132,7 @@ overview: $(PNG_IMAGES)
 	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/overview.md -o audit/build/overview.tex
 	pandoc --table-of-contents --toc-depth=2 audit/build/overview.md -o audit/build/overview.pdf
 
-all_docs: adids guide report mini_guide overview
+all_docs: adids guide mini_guide overview
 
 # =============== For Future Integration of a smaller latex install =================
 
