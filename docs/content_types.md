@@ -13,20 +13,32 @@ The "Guide" is a comprehensive overview of the SAFETAG process.
 
   * summary - A short - two to three sentence - basic overview of the methodology.
   * purpose - The justification for why this methodology is used.
-  * baseline_skills - The minimum skills required to safely carry out this methodology.
-  * materials_needed - The software or hardware required to carry out this activity.
+  * baseline_skills - The minimum skills required to safely carry out this methodology. (only if new skills)
+  * materials_needed - The software or hardware required to carry out this activity. (only if extra materials beyond the norm)
   * operational_security - Notes on safely carrying out an activity and protecting the data collected.
   * approach - Step-by-step explanation of the methodology used that is tool agnostic.
   * preparation - The data or tool configuration needed before this activity can be conducted.
   * reporting - Notes on what data is captured and how to capture it to support reporting.
   * resources - Links to resources that can be used to deepen an auditors understanding or guide them through the activity.
 
-### Examples
+## Extended Guide
 
-  * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
-  * exploit - tool-specific step-by-step instructions on how the vulnerability is exploited. (optional)
-  * example - sample content from a false audit.
-  * operational_security - Tool specific operational security notes.
+The "Guide" is a comprehensive overview of the SAFETAG process.
+
+  * summary - A short - two to three sentence - basic overview of the methodology.
+  * purpose - The justification for why this methodology is used.
+  * baseline_skills - The minimum skills required to safely carry out this methodology. (only if new skills)
+  * materials_needed - The software or hardware required to carry out this activity. (only if extra materials beyond the norm)
+  * operational_security - Notes on safely carrying out an activity and protecting the data collected.
+  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
+  * preparation - The data or tool configuration needed before this activity can be conducted.
+  * reporting - Notes on what data is captured and how to capture it to support reporting.
+  * resources - Links to resources that can be used to deepen an auditors understanding or guide them through the activity.
+  *  Examples
+    * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
+    * exploit - tool-specific step-by-step instructions on how the vulnerability is exploited. (optional)
+    * example - sample content from a false audit.
+    * operational_security - Tool specific operational security notes.
   
 ## ADIDS Manual
 
