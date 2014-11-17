@@ -26,7 +26,7 @@ The interview starts with some questions about you and the organization. Again, 
     * Human Rights
     * Transparency
     * Public Service Delivery
-    * Healht
+    * Health
     * Free Media and Information
     * Climate Issues
     * Gender Issues
