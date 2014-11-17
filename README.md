@@ -13,10 +13,6 @@ This repository contains the publishing tools and templates to build customized 
   * An extensable audit framework for assessing security threats based upon an organizations needs and capacity.
   * A customizable publishing workflow to make localization, translation, and other customization and extension easy for trainers, auditors, and security experts.
 
-## Installation
-
-
-
 ## Requirements:
 
   * All requirements will be exposed when running the makefile. They will also provide instructions for installation on a Debian style systems. Run ```make all``` in the main directory and do what it says. If the instructions are confusing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues)
