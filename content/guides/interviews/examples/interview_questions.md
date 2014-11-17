@@ -40,7 +40,7 @@ The interview starts with some questions about you and the organization. Again, 
     * Disaster Relief
     * Other
     * No Specific Mandate
-  @workloc. Where does your organization have acitvities?
+  @workloc. Where does your organization have activities?
   @workmultiloc. Does the organization have activities in more than one (city/provence/country/region)
   @funding. What kind of funding does you organization receive?
   @secfund. Could you tell me, approximately, which percentage of the organization’s currently annual budget is dedicated to supporting the use of digital or mobile technology?
