@@ -1,22 +1,6 @@
----
-type: ADIDS
-id: adids-input-case_studies
-...
+### INPUT
 
-### Accessing a Wireless Network
-
-*Introduction:* Organizations approach their wireless setup in a myriad of different ways based on how and where they work.  However, with wireless networks in almost every case being treated as trusted internal networks, so we need to ensure that they provide a reasonable level of equivalent security as well as using the failings of wireless networks to have further discussions with organizations over defense in depth concepts.
-
-The ideal first step is to be able to go in prepared, and with zero knowledge of their network, connect to it.  This comes with quite a few gotchas to having it work right, and won't always work, but certainly can underline the importance of password security if it does.
-
-*First steps:*
-
-  * Scan for networks
-  * determine/guess the office network - some are obfuscated
-  * confirm the office network before proceeding
-  * airodump logging (handshakes, beacons, macs)
-
-#### A. Open or MAC-address-filtered network
+This section includes reccomended case studies, key messages and some materials to get the point across.
 
 ### Mapping the Network
 
