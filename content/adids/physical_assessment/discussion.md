@@ -1,3 +1,6 @@
+
+### Discussion
+
 Frequently, the Risk Hunting activity (above) leads to an extended discussion on its own when teams take turns presenting their findings. However, if time remains, trainers may wish to have participants sit in a circle or semicircle, so they can address one another. The following questions may help start the discussion.
 
 As always, trainers should encourage each person to speak up. It is likely that some have thought carefully about the issues; others may not have thought too much. This exercise will likely reveal some interesting practices, which makes for a rich discussion.
