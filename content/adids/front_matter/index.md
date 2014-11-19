@@ -34,3 +34,12 @@ The host organization who is allowing active auditing to be done on their networ
     * Pretraining contract between trainees and organizers
     * Pretraining expectation setting with trainees
     * Pretraining Questionarre for trainees
+
+
+  * Introduction
+    * Acknowledgements
+    * Terms
+    * Contributing to Safetag
+    * What is SAFETAG?
+    * Why is SAFETAG different
+      * Target population focused. Focused on behavior change.
