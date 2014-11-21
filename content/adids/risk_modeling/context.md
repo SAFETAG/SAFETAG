@@ -5,7 +5,6 @@ id: adids-context-why-it-matters
 
 ## Why The Topic Matters
 
-  * Identifies BYOD & un-spoken assets that otherwise might not have been included in the audit.
   * Gives staff an understanding of the critical process' in their organization and the technology that those process' rely on.
   * Provides a space where staff can freely explore the threats that they think they may face and the possible consequences of those threats.
   * Reveals possible threat actors, and likely attack vectors for inclusion in the audit.

@@ -1,53 +1,24 @@
-### Part I: Process Identification
+### Deepening
 
 The goal of this activity is to give the trainee's an opportunity to lead an opportunity to lead a process mapping with the host organization.
 
-#### A. Determine the boundaries
+##### What trainees will need
 
-The goal of this exercise is to have the trainee lead a conversation about the boundaries of the needs assessment. This exercises acts as an introduction between the auditor and the host participants and is used to build a rapport with the participants. This also allows the auditor to set the organizational focus for the rest of the needs assessment and work towards a realistic scope of the threats that participants should be thinking about during the assessment.
 
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
+##### What you will need
 
-#### B. List all organizational process'
+
+#### Identify and map critical organizational processes.
 
 The goal of this exercise is for the trainee to lead the host participants in "brain-storming" a list of all the processes that are critical for their work.
 
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
-
-### Part II: Critical Process Mapping
-
-The goal of this exercise is for the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
-
-#### A. Threat Brainstorming: The Pre-Mortum
+Once complete the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
 
 The goal of this exercise is for the trainee to lead the attendees through each process identified earlier and one after another have the participants imagine that it is months in the future and the current process has been carried out. And it has failed. The participants have to explain why it failed and what the outcome of that failure would mean while the trainee documents them.
 
 *NOTE:* The participants can optionally be split into groups for this process. The trainee should do one process with the group as a whole before the participants are split into groups. If split into groups, each group will need a note-taker, who ideally will be other trainee's, so that the trainer can walk between the groups and assist the trainee's or participants if they get stuck.
 
-  * Trainer Led mock pre-mortum with trainee's
-  * Bring in participants
-  * Trainee Describes pre-mortum
-  * Trainee gives an example pre-mortum
-  * Trainee leads participants in whole group pre-mortum
-  * Trainee splits up participants into groups by number of trainee's and participant involvement in process' for that group
-  * Trainee captures why a process failed, what the consequence would be, and any external threat actors that are identified for later in the needs assessment.
-
-#### B. Identify critical process'
-
 In this exercises the trainee leads the participants in an overview of the consequences of the identified during the activity and then a **rapid** ranking of the importance of process' based upon the consequences if they fail. 
-
-  * 
-  * step 2
-  * step 3
-  * step etc.
-  
-#### C. Map out critical process'
 
 In this exercises the trainee does free-hand mapping for each process guided by the host participants. The trainee needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
 
@@ -57,21 +28,30 @@ In this exercises the trainee does free-hand mapping for each process guided by 
   * step etc.
   * Identify any processes that this critical process relies on and work with group to decide if it should be added to the list of critical process' to map out.
 
-### Part III: Risk Modeling
 
-#### A. Explaining the types of risks
+    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
+	
+##### Material that may be Useful:
+
+  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
+
+
+#### Identify threats to those processes.
+
 
 This short exercise is not as interactive for the host organizations participants as many in this section, and as such can be more difficult for a trainee who is less comfortable lecturing to groups.
 
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
   * Identify Current Approaches to addressing risks
     * Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
 	* *NOTE:* We do this so that we can anchor proposed action in existing practices in the report. - (Shostack: Threat Modeling pg. 298)
 
-#### B. Enumerate risks on identified process/action
+
+##### Material that may be Useful:
+
+  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
+
+
+#### Identify the impact to the organization if those threats occur.
 
 This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain risks occur to the process' and actions identified earlier.
 
@@ -86,8 +66,7 @@ This exercise has the trainee lead the participants on a brainstorming of hypoth
   * Continue doing this for all the data flows in the critical process'.
   * If any of the risks or consequences identified in the pre-mortum are not covered ask participants where they would go. 
   * Take photos of the risks and consequences once you have finished enumerating them.
-  
-#### C. Ranking the severity of consequences
+
 
 The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible consequences from the risks they have just explored. 
 
@@ -96,8 +75,14 @@ The goal of this exercise is to have the trainee lead the host organization in c
   * As consequences are placed on the wall, the trainee can use other already ranked consequences to help participants identify the right place. "Is another news organization publishing a story before us more or less severe than losing a long-term insider source?"
   * Take photos of the severity scale to record it for later.
 
-#### D. Estimating Likelyhood of Risk
+    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
 	
+##### Material that may be Useful:
+
+  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
+
+#### Identify adversaries (people or groups) who may attempt to carry out threats and their capabilities
+
 The goal of this exercise is to have the trainee lead the host organization in estimating the likelyhood of the risk occurring on various time-scales.
 
   * Place two end points on the wall. On one side "certain" attacks that the participants know will happen. For example, knowing that robberies will happen because the organization has been robbed multiple times in the past few years. On the other side "limited" events that the participants believe are less likely to occur than to not occur. For example, an earthquake in an area where one has never historically occurred.
@@ -105,35 +90,19 @@ The goal of this exercise is to have the trainee lead the host organization in e
   * As risks are placed on the wall, the trainee can use other already ranked risks to help participants identify the right place. "Is a robbery more or less likely than a fire?"
   * Take photos of the likelyhood scale to record it for later.
 
-### Part IV: Asset Enumeration
+    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
+	
+##### Material that may be Useful:
 
-#### A. Identify technology used
+  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
 
-The goal of this exercise is for the trainee to guide the participants through a rapid identification of the technology used in the process' they outlined. This activity will identify the core services that the auditor will use to flesh out an asset map. 
 
-*NOTE: {.note}* This activity is about an auditor identifying the boundaries of the technological scope of the organization. The auditor will have a chance to explore specific about the actual infrastructure during the remainder of the audit. This activity should be fun and quick.
+#### Create a risk matrix placing impacts against a range of likelihood
 
-  * enumerate how communication happens
-  * swim lanes (IF NEEDED)
-  * step 3
-  * step etc.
+SOME LONG TEXT HERE.
 
-### Part V: Post Needs Assessment
+    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
+	
+##### Material that may be Useful:
 
-#### A. Documenting a Needs Assessment
-
-The goal of this exercise is to have the trainees document the needs assessment that they just ran. This needs assessment documentation will be what the trainee's use for the remainder of the host hands-on audit training.
-
-  * process and asset map
-  * risk matrix
-  * step 3
-  * step etc.
-
-#### B. Reevaluating the Assessment plan based activities
-
-The goal of this exercise is for the trainees to have the opportunity to re-evaluate the initial assessment plan based upon the needs assessment. This will give them an opportunity to see how other trainees would start to tie audit priorities to the needs assessment. 
-
-  * step 1
-  * step 2
-  * step 3
-  * step etc.
+  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
