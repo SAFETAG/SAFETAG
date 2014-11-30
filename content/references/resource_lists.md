@@ -7,16 +7,8 @@
 
   * *Guide:* ["Additional Resources: p. 298"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=298) (Operational Security Management in Violent Environments (Revised Edition))
 
+  * *Database:* ["A Collaborative Knowledge Base for Netizens"](http://www.tasharuk.net/en/home/) (Tasharuk)
 
-Tasharuk:
-http://www.tasharuk.net/en/home/
-A Collaborative Knowledge Base for Netizens
+  * *Guidelines:* ["Microsoft nonprofit discount eligibility guidelines per country"](http://www.microsoftvolumelicensing.com/userights/DocumentSearch.aspx?Mode=3&DocumentTypeId=19) (Microsoft)
 
-Search, add, collect, share, and rate resources on using social
-technologies for stronger societies
-
-Microsoft nonprofit discount eligibility guidelines per country
-http://www.microsoftvolumelicensing.com/userights/DocumentSearch.aspx?Mode=3&DocumentTypeId=19
-
-TechSoup
-http://www.techsoup.org/
+  * *Organization:* ["TechSoup, nonprofits and libraries can access donated and discounted products and services from partners like Microsoft, Adobe, Cisco, Intuit, and Symantec."](http://www.techsoup.org/) (TechSoup)
