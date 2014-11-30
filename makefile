@@ -1,6 +1,6 @@
 PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install texpackages clean_art
 
-all: install audit
+all: install output
 
 # Setting SHELL and adding cabal to PATH so that we can just make pandoc work on debian without mucking with the ~/.bash_profile
 SHELL:=/bin/bash
@@ -30,6 +30,23 @@ pandoc: | dependencies
 	&& echo "Installing pandoc and its dependencies" \
 	&& cabal install pandoc)
 	@echo "Pandoc is installed"
+
+#============ Output Folder Setup ==============
+
+#path to folder for documentation created by pandoc
+DOC_DIR := build/docs
+
+#path to folder for the source files for documentation created by pandoc to allow hand editing
+SRC_DIR := build/src
+
+#path to folder for any resources that are auto-grabbed
+RES_DIR := build/resource
+
+output:
+	@echo "Creating folders for document output."
+	mkdir -p $(DOC_DIR)
+	mkdir -p $(SRC_DIR)
+	mkdir -p $(RES_DIR)
 
 #============ Audit Folder Setup ==============
 
@@ -102,37 +119,43 @@ clean_art:
 
 # =============== Report Generation =================
 
-adids: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/ADIDS.md -o audit/build/ADIDS.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
+adids: $(PNG_IMAGES) | output
+	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/ADIDS.md
+	pandoc --table-of-contents --toc-depth=2 -t latex $(SRC_DIR)/ADIDS.md -o $(SRC_DIR)/ADIDS.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/ADIDS.md -o $(DOC_DIR)/ADIDS.pdf
 
-report: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/report.md -o audit/build/report.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/report.md -o audit/build/report.pdf
+report: $(PNG_IMAGES) | output
+	modules/markdown-pp/markdown-pp.py index.report.md $(SRC_DIR)/report.md
+	pandoc --table-of-contents --toc-depth=2 -t latex $(SRC_DIR)/report.md -o $(SRC_DIR)/report.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/report.md -o $(DOC_DIR)/report.pdf
 
-guide: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.md -o audit/build/guide.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/guide.md -o audit/build/guide.pdf
+guide: $(PNG_IMAGES) | output
+	modules/markdown-pp/markdown-pp.py index.guide.md $(SRC_DIR)/guide.md
+	pandoc --table-of-contents --toc-depth=2 -t latex $(SRC_DIR)/guide.md -o $(SRC_DIR)/guide.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/guide.md -o $(DOC_DIR)/guide.pdf
 
-mini_guide: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.mini.guide.md audit/build/guide.mini.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.mini.md -o audit/build/mini_guide.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/guide.mini.md -o audit/build/mini_guide.pdf
+mini_guide: $(PNG_IMAGES) | output
+	modules/markdown-pp/markdown-pp.py index.mini.guide.md $(SRC_DIR)/guide.mini.md
+	pandoc --table-of-contents --toc-depth=2 -t latex $(SRC_DIR)/guide.mini.md -o $(SRC_DIR)/guide.mini.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/guide.mini.md -o $(DOC_DIR)/guide.mini.pdf
 
-overview: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.overview.md audit/build/overview.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/overview.md -o audit/build/overview.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/overview.md -o audit/build/overview.pdf
+overview: $(PNG_IMAGES) | output
+	modules/markdown-pp/markdown-pp.py index.overview.md $(SRC_DIR)/overview.md
+	pandoc --table-of-contents --toc-depth=2 -t latex $(SRC_DIR)/overview.md -o $(SRC_DIR)/overview.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/overview.md -o $(DOC_DIR)/overview.pdf
 
 all_docs: adids guide mini_guide overview
+
+#Get list of all docs and document sources
+ALL_DOCS := $(wildcard $(DOC_DIR)/*.pdf)
+ALL_DOC_MARKDOWN := $(wildcard $(SRC_DIR)/*.md)
+ALL_DOC_TEX := $(wildcard $(SRC_DIR)/*.tex)
+
+clean_docs:
+	@echo "Removing all existing documentation, markdown, and latex files created."
+	@rm -v $(ALL_DOCS) 2>/dev/null || echo "No docs to remove"
+	@rm -v $(ALL_DOC_MARKDOWN) 2>/dev/null || echo "No markdown files to remove"
+	@rm -v $(ALL_DOC_TEX) 2>/dev/null || echo "No tex files to remove"
 
 # =============== For Future Integration of a smaller latex install =================
 
