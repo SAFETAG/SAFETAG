@@ -1,7 +1,3 @@
-Use Secunia (portable?)
-
-
-
 ### OSX ###
  * OS Security Updates
 
@@ -94,6 +90,10 @@ In Windows 7, (GUI) Control Panel → All Control Panel Items → Action Center 
  * Services Running
   * (CLI) ps -ef
   * (CLI) top
+
+
+## Notes ## 
+Investivate Secunia usage
 
 
 
