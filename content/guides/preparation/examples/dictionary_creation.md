@@ -78,10 +78,11 @@ journalism
 
 Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
 
-(Optional) Use CeWL (http://digi.ninja/projects/cewl.php), to spider the organization's web properties to generate additional phrases.  This list will need review, as some of the generated content is not very useful, but may be useful if the site is not in a language the auditor reads fluently.
+#### Optional Further steps
 
-// For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  https://github.com/iphelix/PACK "PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules. Both password cracking tools listed here are powerful, and have slightly different abilities.  The auditor should choose the one they prefer and/or the one which has the features they desire for this job.
+Use CeWL (http://digi.ninja/projects/cewl.php), to spider the organization's web properties to generate additional phrases.  This list will need review, as some of the generated content is not very useful, but may be useful if the site is not in a language the auditor reads fluently.
 
+For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  https://github.com/iphelix/PACK "PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules. Both password cracking tools listed here are powerful, and have slightly different abilities.  The auditor should choose the one they prefer and/or the one which has the features they desire for this job.
 
 ### Combinator Attack with scripting and Hashcat
 
@@ -150,8 +151,8 @@ The WPA key should be long enough and complex enough to prevent both standard di
 
 Because shared keys inevitably end up being written on whiteboards, given to office visitors and emailed to partners, the WPA key should also be changed periodically. This does not have to happen frequently, but anything less than three or four times per year may be unsafe.
 
-Assets affected by this issue
 
+### Resources 
 https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html
 
 http://zed0.co.uk/crossword/
@@ -170,15 +171,7 @@ http://www.dailymail.co.uk/sciencetech/article-2331984/Think-strong-password-Hac
 
 https://www.grc.com/haystack.htm
 
-// TODO: Update Lockdown's charts with modern rates!
-
-
-### Resources
-
-Tools
-
-Cewl http://digi.ninja/projects/cewl.php
-
-References
-
 https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+
+http://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?_r=1
+
