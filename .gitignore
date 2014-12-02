@@ -4,7 +4,7 @@
 /audit/*
 
 #Report or ADIDS content should never be committed.
-/output/*
+/build/*
 
 #Don't commit any auto-saves
 \#*\#

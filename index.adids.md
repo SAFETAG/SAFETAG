@@ -7,65 +7,170 @@ id: audit-adids-index
 cover-image: images/adids_cover.jpg
 ...
 
-\newpage
-<!--  SAFETAG front matter -->
-
-!INCLUDE "content/ADIDS/front_matter.md"
 
 \newpage
-<!--  2. Operational Security -->
+
+<!-- License -->
+
+!INCLUDE "content/license.md"
+
+\newpage
+
+<!-- Introduction -->
+
+# Introduction
+
+!INCLUDE "content/guides/introduction.md"
+
+\newpage
+
+<!-- Overview -->
+
+## The SAFETAG Process
+
+!INCLUDE "content/guides/overview.md"
+
+![The Safetag Audit Process](content/images/expertiese_vertical.png)\
+
+\newpage
+
+# PART ONE: Agreement and Information Gathering
+
+![The Pre-Audit](content/images/pre_audit_expertiese.png)\
+
+\newpage
+<!-- Operational Security -->
 
 !INCLUDE "content/operational_security.adids.md"
 
 \newpage
-<!-- 3. Scope & Assessment Plan Development -->
+<!-- Interviews -->
+
+!INCLUDE "content/interviews.adids.md"
+
+\newpage
+<!-- Capacity Assessment -->
+
+!INCLUDE "content/capacity_assessment.adids.md"
+
+\newpage
+<!-- Contextual Research -->
+
+!INCLUDE "content/context_research.adids.md"
+
+\newpage
+<!-- Assessment Plan Development -->
 
 !INCLUDE "content/assessment_plan.adids.md"
 
 \newpage
-<!-- 4. Risk Modeling -->
 
-!INCLUDE "content/risk_modeling.adids.md"
+# PART TWO: The Audit
+
+![Pre-Audit](content/images/audit_expertiese.png)\
 
 \newpage
-<!-- 5. Remote / OS-INT -->
+<!-- Remote Assessment -->
 
 !INCLUDE "content/remote_assessment.adids.md"
 
 \newpage
-<!-- 6. Audit Preparation -->
+<!-- Audit Preparation -->
 
 !INCLUDE "content/preparation.adids.md"
 
 \newpage
-<!-- 7. Vulnerability Research -->
+<!-- Risk Modeling -->
 
-!INCLUDE "content/vulnerability_analysis.adids.md"
-
-\newpage
-<!-- 8. Network Analysis -->
-
-!INCLUDE "content/network_analysis.adids.md"
+!INCLUDE "content/risk_modeling.adids.md"
 
 \newpage
-<!-- 9. Staff Activities -->
+<!-- Network Discovery -->
 
-!INCLUDE "content/staff_activities.adids.md"
+!INCLUDE "content/network_discovery.adids.md"
 
 \newpage
-<!-- 10. Physical Access -->
+<!-- Network Access -->
+
+!INCLUDE "content/network_access.adids.md"
+
+\newpage
+<!-- Network Mapping -->
+
+!INCLUDE "content/network_mapping.adids.md"
+
+\newpage
+<!-- Physical Assessment -->
 
 !INCLUDE "content/physical_assessment.adids.md"
 
 \newpage
-<!-- 11. Reporting and Follow Up -->
+<!-- Data Assessment -->
 
-!INCLUDE "content/reporting_follow_up.adids.md"
+!INCLUDE "content/data_assessment.adids.md"
 
 \newpage
-<!-- 12. Putting it all Together -->
+<!-- Device Assessment -->
 
-!INCLUDE "content/putting_it_all_together.adids.md"
+!INCLUDE "content/device_assessment.adids.md"
+
+\newpage
+<!-- Social Engineering Exercise -->
+
+!INCLUDE "content/social_engineering_exercise.adids.md"
+
+\newpage
+<!-- Debrief -->
+
+!INCLUDE "content/debrief.adids.md"
+
+\newpage
+
+# PART THREE: Analysis and Reporting
+
+![The Post-Audit](content/images/post_audit_expertiese.png)\
+
+\newpage
+<!-- Vulnerability Analysis -->
+
+!INCLUDE "content/vulnerability_analysis.adids.md"
+
+\newpage
+<!-- Vulnerability Prioritization -->
+
+!INCLUDE "content/vulnerability_prioritization.adids.md"
+
+\newpage
+<!-- Recommendation Development -->
+
+!INCLUDE "content/recommendation_development.adids.md"
+
+\newpage
+<!-- Resource Identification -->
+
+!INCLUDE "content/resource_identification.adids.md"
+
+\newpage
+<!-- Roadmap Development -->
+
+!INCLUDE "content/roadmap_development.adids.md"
+
+\newpage
+<!-- Report Creation -->
+
+!INCLUDE "content/report_creation.adids.md"
+
+\newpage
+<!-- Follow Up -->
+
+!INCLUDE "content/follow_up.adids.md"
+
+\newpage
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
+
+<!-- Load Footnotes -->
+!INCLUDE "content/references/footnotes.md"
+
+

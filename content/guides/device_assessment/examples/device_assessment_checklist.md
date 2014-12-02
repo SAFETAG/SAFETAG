@@ -15,21 +15,17 @@
  * Services Running
    * (Command line) ```sudo launchctl list```
    * (Command line) ```ps -ef```
-   * (GUI) The "Activity Monitor" application is located in /Applications/Utilities provides a similar interface to "top"
+   * (GUI) The "Actdfivity Monitor" application is located in /Applications/Utilities provides a similar interface to "top"
 
 ### Windows ###
-If Windows is not your primary OS, you can download 
-
-https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf
-
-
-https://www.modern.ie/en-us/virtualization-tools#downloads (see also http://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/ ) 
+If Windows is not your primary OS, you can download sample Virtual Machines (with time limitations) from Microsoft through their project to improve IE support via https://www.modern.ie/en-us/virtualization-tools#downloads (see also http://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/ and https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf) 
 
 **Windows 8**
  * OS Security Updates
 
  * Firewall
-   *  (GUI) Start → Control Panel → Windows Firewall
+   *  (GUI) Start (or Down Arrow, PC Settings) → Control Panel → Windows Firewall
+
  (more detail: http://windows.microsoft.com/en-us/windows-8/windows-firewall-from-start-to-finish)
  * Anti-Virus Version
    * 
@@ -37,12 +33,9 @@ https://www.modern.ie/en-us/virtualization-tools#downloads (see also http://www.
    * 
  * Drive Encryption
    * 
-   * 
-+https://diskcryptor.net/wiki/Main_Page
-
+   * https://diskcryptor.net/wiki/Main_Page
  * Services Running
    * 
-
 
 **Windows 7**
 In Windows 7, (GUI) Control Panel → All Control Panel Items → Action Center (Security tab) provides a quick run-down of most security features installed and their update status. It does not show drive encryption or specific versions.
@@ -97,6 +90,10 @@ In Windows 7, (GUI) Control Panel → All Control Panel Items → Action Center 
  * Services Running
   * (CLI) ps -ef
   * (CLI) top
+
+
+## Notes ## 
+Investivate Secunia usage
 
 
 

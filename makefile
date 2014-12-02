@@ -1,8 +1,17 @@
-PHONY: all dependencies pandoc ghc cabal HASKELL_DEPENDS packages report adids install texpackages clean_art
+.PHONY:	all \
+	install packages submodules pandoc \ #Installation Rules
+	build_dirs \ #Setup Rules
+	ghc cabal cabal_package_update tex pysetup tex_fonts inkscape \ #Dependency Rules
+	all_docs adids report guide mini_guide overview clean_docs \ #Document Rules
+	clean_art \ #Image Rules
+	texpackages \ #compile pandoc from src (TODO)
 
-all: install audit
+
+#runs installation, post-installation preperation, and builds all core documents
+all: install build_dirs all_docs
 
 # Setting SHELL and adding cabal to PATH so that we can just make pandoc work on debian without mucking with the ~/.bash_profile
+# This allows cabal, and therefore also pandoc to be used in this makefile without altering the users global path settings.
 SHELL:=/bin/bash
 PATH:=$(PATH):~/.cabal/bin/
 
@@ -12,75 +21,144 @@ install: packages
 
 packages: | pandoc modules/markdown-pp/markdown-pp.py
 
-modules/markdown-pp/markdown-pp.py: | submodules
+modules/markdown-pp/markdown-pp.py: | pysetup submodules
 	@echo "Building markdown-pp"
 	@echo "This will require root access to this machine... sorry"
 	@cd modules/markdown-pp && sudo python setup.py install
 
 submodules:
+	@echo "Downloading SAFETAG submodules."
 	git submodule update --init
 
-pandoc: | dependencies
+pandoc: | inkscape ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
 	@echo "Checking if Pandoc is installed..."
-	@pandoc -v > /dev/null 2>&1 \
+	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
 	&& echo "This will require a network connection" \
-	&& echo "Updating package database" \
-	&& cabal update \
 	&& echo "Installing pandoc and its dependencies" \
 	&& cabal install pandoc)
 	@echo "Pandoc is installed"
 
+#============ Output Folder Setup ==============
+
+#Build all output directories
+build_dirs: | $(DOC_DIR) $(SRC_DIR) $(RES_DIR)
+
+build:
+	@echo "Creating build directory."
+	mkdir build
+
+#path to folder for documentation created by pandoc
+DOC_DIR := build/docs
+
+$(DOC_DIR): | build
+	@echo "Creating folders for document output."
+	mkdir --parents $(DOC_DIR)
+
+#path to folder for the source files for documentation created by pandoc to allow hand editing
+SRC_DIR := build/src
+
+$(SRC_DIR): | build
+	@echo "Creating folders for document output."
+	mkdir --parents $(SRC_DIR)
+
+#path to folder for any resources that are auto-grabbed
+RES_DIR := build/resource
+
+$(RES_DIR): | build
+	@echo "Creating folders for downloaded resources."
+	mkdir --parents $(RES_DIR)
+
 #============ Audit Folder Setup ==============
 
+#Get the current date seperated by underscores.
 DATE_DIR := $(shell date +%Y_%m_%d_%H_%M_%S)
-audit: date_dir | packages
+
+audit: $(DATE_DIR) | packages
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
 	@python modules/audit_setup.py --directory audit/$(DATE_DIR)
 
-date_dir:
-	-mkdir -p audit/$(DATE_DIR)
+$(DATE_DIR):
+	@echo "Creating a new audit folder named $(DATE_DIR)"
+	mkdir --parents audit/$(DATE_DIR)
 
 #============ Dependencies ==============
 
-dependencies: | ghc cabal tex
-
+#Haskell error variable which is used in multiple places.
+#Recursively expanded (= instead of :=). The moment it is defined 'make' will call the error and exit.
 HASKELL_ERROR = $(error "ERROR: Please install the [haskell-platform]. This will give you [GHC] and the [cabal-install] build tool.")
 
+#Check if ghc is installed (any output from 'which ghc') and raise an error if it is not.
 GHC_INST := $(shell which ghc)
 ghc:
 ifeq ($(GHC_INST),)
 	$(HASKELL_ERROR)
 endif
 
+#Check if cabal is installed (any output from 'which cabal') and raise an error if it is not.
 CABAL_INST := $(shell which cabal)
 cabal:
 ifeq ($(CABAL_INST),)
 	$(HASKELL_ERROR)
 endif
 
+#Check if cabal needs to be updated to include pandoc and update if needed
+CABAL_UPDATE := $(shell cabal info pandoc)
+cabal_package_update:
+ifeq ($(CABAL_UPDATE),)
+	@echo "Pandoc not found in cabal package database"
+	@echo "Updating package database"
+	@echo "This will require a network connection"
+	cabal update
+endif
+
+#Install all the pandoc dependencies
+pandoc_deps:
+	cabal install --only-dependencies pandoc
+
+
+#Get installed versions of HTTP-Client and HTTP-Client-tls
+#Get current HTTP-client/(-tls) versions
+HTTP_CLIENT_VER = $(shell cabal info http-client | grep -oP "(?<=Versions installed: ).*")
+HTTP_CLIENT_TLS_VER = $(shell cabal info http-client-tls | grep -oP "(?<=Versions installed: ).*")
+#Strip point release number
+HTTP_CLIENT_POINT_REL = $(shell echo $(HTTP_CLIENT_VER) | cut -f2 -d.)
+#Check if point release is too high
+HTTP_NEED_DOWNGRADE := $(shell echo $(HTTP_CLIENT_POINT_REL)\<4 |bc)
+
+#Cabal routinely installs a bad version of the http-client. This fixes that problem
+http_client:
+ifeq ($(HTTP_NEED_DOWNGRADE),0)
+	@echo Pre-fixing http-client by installing the correct version.
+	cabal install --reinstall --force-reinstalls 'http-client < 0.4'
+	ghc-pkg unregister http-client-tls-$(HTTP_CLIENT_TLS_VER)
+	ghc-pkg unregister http-client-$(HTTP_CLIENT_VER)
+endif
+
+#Check if texlive is installed (any output from 'which latex') and raise an error if it is not.
 TEX_INST := $(shell which latex)
 tex:
 ifeq ($(TEX_INST),)
 	$(error "ERROR: For PDF output, you’ll need LaTeX. We recommend installing TeX Live via your package manager. (On Debian/Ubuntu, apt-get install texlive.).")
 endif
 
-PY_SETUP_INST := $(shell dpkg --get-selections \
-			| grep -v deinstall \
-			| grep python-setuptools > /dev/null 2>&1)
+#Check if pysetup is installed using dpkg because it does not supply command line arguments.
+PY_SETUP_NOT_INST = $(shell dpkg --status python-setuptools 2>&1 | grep -o "not installed")
+
 pysetup:
-ifeq ($(PY_SETUP_INST),)
+ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
-TEX_FONT_INST := $(shell dpkg --get-selections \
-			| grep -v deinstall \
-			| grep texlive-fonts-recommended > /dev/null 2>&1)
-pysetup:
-ifeq ($(TEX_FONT_INST),)
+#Check if the texlive fonts library is installed using dpkg because it does not supply command line arguments.
+TEX_FONT_NOT_INST = $(shell dpkg --status texlive-fonts-recommended 2>&1 grep -o "not installed")
+
+tex_fonts:
+ifeq ("$(TEX_FONT_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
 endif
 
+#Check if inkscape is installed (any output from 'which inkscape') and raise an error if it is not.
 INKSCP_INST := $(shell which inkscape)
 inkscape:
 ifeq ($(INKSCP_INST),)
@@ -89,50 +167,69 @@ endif
 
 # =============== Convert vectors into pixel based images for publising=========
 
+#Create list of PNG image names from the names of all SVG images.
+#This is used as a dependency for report generation that specifies all the possible png's to be created.
 SVG_IMAGES = $(wildcard content/images/*.svg)
 PNG_IMAGES = $(SVG_IMAGES:.svg=.png)
 
-# Create png's from svg
-# 72 DPI is pandoc's default DPI, so set them to this.
+# Create a requested png by exporting the corresponding svg to png format.
+# Only re-creates a png when the svg has been updated.
+# 72 DPI is pandoc's default DPI, but 92 fills up the page better when we have slim margins, so set the DPI to 92.
+# See the following links to learn more about the syntax here.
+# https://www.gnu.org/software/make/manual/make.html#Static-Usage
+# https://www.gnu.org/software/make/manual/make.html#Automatic-Variables
 %.png: %.svg
-	inkscape -d 92 -e $*.png $<
+	inkscape --export-dpi=92 --export-png=$*.png $<
 
 clean_art:
-	rm -f content/images/*.png
+	rm --force content/images/*.png
 
 # =============== Report Generation =================
 
-adids: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.adids.md audit/build/ADIDS.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/ADIDS.md -o audit/build/ADIDS.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/ADIDS.md -o audit/build/ADIDS.pdf
+#Create the ADIDS auditor trainer guide
+adids: $(PNG_IMAGES) | $(SRC_DIR) $(DOC_DIR)
+	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/ADIDS.md
+	pandoc --table-of-contents --toc-depth=2 --to=latex $(SRC_DIR)/ADIDS.md --output=$(SRC_DIR)/ADIDS.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/ADIDS.md --output=$(DOC_DIR)/ADIDS.pdf
 
-report: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.report.md audit/build/report.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/report.md -o audit/build/report.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/report.md -o audit/build/report.pdf
+#Create an audit report
+report: $(PNG_IMAGES) | $(SRC_DIR) $(DOC_DIR)
+	modules/markdown-pp/markdown-pp.py index.report.md $(SRC_DIR)/report.md
+	pandoc --table-of-contents --toc-depth=2 --to=latex $(SRC_DIR)/report.md --output=$(SRC_DIR)/report.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/report.md --output=$(DOC_DIR)/report.pdf
 
-guide: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.guide.md audit/build/guide.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.md -o audit/build/guide.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/guide.md -o audit/build/guide.pdf
+#Create the auditor full guide
+guide: $(PNG_IMAGES) | $(SRC_DIR) $(DOC_DIR)
+	modules/markdown-pp/markdown-pp.py index.guide.md $(SRC_DIR)/guide.md
+	pandoc --table-of-contents --toc-depth=2 --to=latex $(SRC_DIR)/guide.md --output=$(SRC_DIR)/guide.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/guide.md --output=$(DOC_DIR)/guide.pdf
 
-mini_guide: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.mini.guide.md audit/build/guide.mini.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/guide.mini.md -o audit/build/mini_guide.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/guide.mini.md -o audit/build/mini_guide.pdf
+#Create the auditor mini guide
+mini_guide: $(PNG_IMAGES) | $(SRC_DIR) $(DOC_DIR)
+	modules/markdown-pp/markdown-pp.py index.mini.guide.md $(SRC_DIR)/guide.mini.md
+	pandoc --table-of-contents --toc-depth=2 --to=latex $(SRC_DIR)/guide.mini.md --output=$(SRC_DIR)/guide.mini.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/guide.mini.md --output=$(DOC_DIR)/guide.mini.pdf
 
-overview: $(PNG_IMAGES)
-	-mkdir -p audit/build
-	modules/markdown-pp/markdown-pp.py index.overview.md audit/build/overview.md
-	pandoc --table-of-contents --toc-depth=2 -t latex audit/build/overview.md -o audit/build/overview.tex
-	pandoc --table-of-contents --toc-depth=2 audit/build/overview.md -o audit/build/overview.pdf
+#Create the auditor overview document
+overview: $(PNG_IMAGES) | $(SRC_DIR) $(DOC_DIR)
+	modules/markdown-pp/markdown-pp.py index.overview.md $(SRC_DIR)/overview.md
+	pandoc --table-of-contents --toc-depth=2 --to=latex $(SRC_DIR)/overview.md --output=$(SRC_DIR)/overview.tex
+	pandoc --table-of-contents --toc-depth=2 $(SRC_DIR)/overview.md --output=$(DOC_DIR)/overview.pdf
 
+#Create the all SAFETAG documents
 all_docs: adids guide mini_guide overview
+
+#Get list of all docs and document sources
+ALL_DOCS := $(wildcard $(DOC_DIR)/*.pdf)
+ALL_DOC_MARKDOWN := $(wildcard $(SRC_DIR)/*.md)
+ALL_DOC_TEX := $(wildcard $(SRC_DIR)/*.tex)
+
+#Remove all created documents
+clean_docs:
+	@echo "Removing all existing documentation, markdown, and latex files created."
+	@rm --verbose $(ALL_DOCS) 2>/dev/null || echo "No docs to remove"
+	@rm --verbose $(ALL_DOC_MARKDOWN) 2>/dev/null || echo "No markdown files to remove"
+	@rm --verbose $(ALL_DOC_TEX) 2>/dev/null || echo "No tex files to remove"
 
 # =============== For Future Integration of a smaller latex install =================
 
