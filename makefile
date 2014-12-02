@@ -143,18 +143,18 @@ ifeq ($(TEX_INST),)
 endif
 
 #Check if pysetup is installed using dpkg because it does not supply command line arguments.
-PY_SETUP_NOT_INST := $(shell dpkg --status python\\-setuptools 2>&1 \
-		  | grep "not installed")
+PY_SETUP_NOT_INST := $(shell dpkg --status python-setuptools 2>&1 | grep -o "not installed")
+
 pysetup:
-ifneq ($(PY_SETUP_NOT_INST),)
+ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
 #Check if the texlive fonts library is installed using dpkg because it does not supply command line arguments.
-TEX_FONT_NOT_INST := $(shell dpkg --status texlive\\-fonts\\-recommended 2>&1 \
-		  | grep "not installed")
+TEX_FONT_NOT_INST := $(shell dpkg --status texlive-fonts-recommended 2>&1 grep -o "not installed")
+
 tex_fonts:
-ifneq ($(TEX_FONT_NOT_INST),) #Check if uninstalled == false... sorry for the double negative
+ifeq ("$(TEX_FONT_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
 endif
 
