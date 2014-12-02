@@ -1,7 +1,7 @@
 .PHONY:	all \
 	install packages submodules pandoc \ #Installation Rules
 	build_dirs \ #Setup Rules
-	dependencies ghc cabal tex pysetup tex_fonts inkscape \ #Dependency Rules
+	ghc cabal cabal_package_update tex pysetup tex_fonts inkscape \ #Dependency Rules
 	all_docs adids report guide mini_guide overview clean_docs \ #Document Rules
 	clean_art \ #Image Rules
 	texpackages \ #compile pandoc from src (TODO)
@@ -30,13 +30,11 @@ submodules:
 	@echo "Downloading SAFETAG submodules."
 	git submodule update --init
 
-pandoc: | dependencies
+pandoc: | pysetup ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
 	@echo "Checking if Pandoc is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
 	&& echo "This will require a network connection" \
-	&& echo "Updating package database" \
-	&& cabal update \
 	&& echo "Installing pandoc and its dependencies" \
 	&& cabal install pandoc)
 	@echo "Pandoc is installed"
@@ -86,8 +84,6 @@ $(DATE_DIR):
 
 #============ Dependencies ==============
 
-dependencies: | ghc cabal tex pysetup tex_fonts
-
 #Haskell error variable which is used in multiple places.
 #Recursively expanded (= instead of :=). The moment it is defined 'make' will call the error and exit.
 HASKELL_ERROR = $(error "ERROR: Please install the [haskell-platform]. This will give you [GHC] and the [cabal-install] build tool.")
@@ -106,6 +102,31 @@ ifeq ($(CABAL_INST),)
 	$(HASKELL_ERROR)
 endif
 
+#Check if cabal needs to be updated to include pandoc and update if needed
+CABAL_UPDATE := $(shell cabal info pandoc)
+cabal_package_update:
+ifeq ($(CABAL_UPDATE),)
+	@echo "Pandoc not found in cabal package database"
+	@echo "Updating package database"
+	@echo "This will require a network connection"
+	cabal update
+endif
+
+#Install all the pandoc dependencies
+pandoc_deps:
+	cabal install --only-dependencies pandoc
+
+
+#Get installed versions of HTTP-Client and HTTP-Client-tls
+HTTP_CLIENT_VER = $(shell cabal info http-client | grep -oP "(?<=Versions installed: ).*")
+HTTP_CLIENT_TLS_VER = $(shell cabal info http-client-tls | grep -oP "(?<=Versions installed: ).*")
+#Cabal routinely installs a bad version of the http-client. This fixes that problem
+http_client:
+	@echo Pre-fixing http-client by installing the correct version.
+	cabal install --reinstall --force-reinstalls 'http-client < 0.4'
+	ghc-pkg unregister http-client-tls-$(HTTP_CLIENT_TLS_VER)
+	ghc-pkg unregister http-client-$(HTTP_CLIENT_VER)
+
 #Check if texlive is installed (any output from 'which latex') and raise an error if it is not.
 TEX_INST := $(shell which latex)
 tex:
@@ -116,7 +137,6 @@ endif
 #Check if pysetup is installed using dpkg because it does not supply command line arguments.
 PY_SETUP_INST := $(shell dpkg --get-selections python\\-setuptools 2>/dev/null \
 			| grep --invert-match deinstall ) # Don't show if the package is installed but selected for deinstallation.
-
 
 pysetup:
 ifeq ($(PY_SETUP_INST),)
