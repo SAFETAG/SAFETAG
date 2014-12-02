@@ -146,7 +146,7 @@ endif
 PY_SETUP_NOT_INST := $(shell dpkg --status python\\-setuptools 2>&1 \
 		  | grep "not installed")
 pysetup:
-ifeq ($(PY_SETUP_NOT_INST),)
+ifneq ($(PY_SETUP_NOT_INST),)
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
