@@ -1,7 +1,7 @@
 .PHONY:	all \
 	install packages submodules pandoc \ #Installation Rules
 	build_dirs \ #Setup Rules
-	dependencies ghc cabal tex pysetup tex_fonts inkscape \ #Dependency Rules
+	ghc cabal cabal_package_update tex pysetup tex_fonts inkscape \ #Dependency Rules
 	all_docs adids report guide mini_guide overview clean_docs \ #Document Rules
 	clean_art \ #Image Rules
 	texpackages \ #compile pandoc from src (TODO)
@@ -21,7 +21,7 @@ install: packages
 
 packages: | pandoc modules/markdown-pp/markdown-pp.py
 
-modules/markdown-pp/markdown-pp.py: | submodules
+modules/markdown-pp/markdown-pp.py: | pysetup submodules
 	@echo "Building markdown-pp"
 	@echo "This will require root access to this machine... sorry"
 	@cd modules/markdown-pp && sudo python setup.py install
@@ -30,13 +30,11 @@ submodules:
 	@echo "Downloading SAFETAG submodules."
 	git submodule update --init
 
-pandoc: | dependencies
+pandoc: | inkscape ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
 	@echo "Checking if Pandoc is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
 	&& echo "This will require a network connection" \
-	&& echo "Updating package database" \
-	&& cabal update \
 	&& echo "Installing pandoc and its dependencies" \
 	&& cabal install pandoc)
 	@echo "Pandoc is installed"
@@ -86,8 +84,6 @@ $(DATE_DIR):
 
 #============ Dependencies ==============
 
-dependencies: | ghc cabal tex pysetup tex_fonts
-
 #Haskell error variable which is used in multiple places.
 #Recursively expanded (= instead of :=). The moment it is defined 'make' will call the error and exit.
 HASKELL_ERROR = $(error "ERROR: Please install the [haskell-platform]. This will give you [GHC] and the [cabal-install] build tool.")
@@ -106,6 +102,39 @@ ifeq ($(CABAL_INST),)
 	$(HASKELL_ERROR)
 endif
 
+#Check if cabal needs to be updated to include pandoc and update if needed
+CABAL_UPDATE := $(shell cabal info pandoc)
+cabal_package_update:
+ifeq ($(CABAL_UPDATE),)
+	@echo "Pandoc not found in cabal package database"
+	@echo "Updating package database"
+	@echo "This will require a network connection"
+	cabal update
+endif
+
+#Install all the pandoc dependencies
+pandoc_deps:
+	cabal install --only-dependencies pandoc
+
+
+#Get installed versions of HTTP-Client and HTTP-Client-tls
+#Get current HTTP-client/(-tls) versions
+HTTP_CLIENT_VER = $(shell cabal info http-client | grep -oP "(?<=Versions installed: ).*")
+HTTP_CLIENT_TLS_VER = $(shell cabal info http-client-tls | grep -oP "(?<=Versions installed: ).*")
+#Strip point release number
+HTTP_CLIENT_POINT_REL = $(shell echo $(HTTP_CLIENT_VER) | cut -f2 -d.)
+#Check if point release is too high
+HTTP_NEED_DOWNGRADE := $(shell echo $(HTTP_CLIENT_POINT_REL)\<4 |bc)
+
+#Cabal routinely installs a bad version of the http-client. This fixes that problem
+http_client:
+ifeq ($(HTTP_NEED_DOWNGRADE),0)
+	@echo Pre-fixing http-client by installing the correct version.
+	cabal install --reinstall --force-reinstalls 'http-client < 0.4'
+	ghc-pkg unregister http-client-tls-$(HTTP_CLIENT_TLS_VER)
+	ghc-pkg unregister http-client-$(HTTP_CLIENT_VER)
+endif
+
 #Check if texlive is installed (any output from 'which latex') and raise an error if it is not.
 TEX_INST := $(shell which latex)
 tex:
@@ -114,20 +143,18 @@ ifeq ($(TEX_INST),)
 endif
 
 #Check if pysetup is installed using dpkg because it does not supply command line arguments.
-PY_SETUP_INST := $(shell dpkg --get-selections python\\-setuptools 2>/dev/null \
-			| grep --invert-match deinstall ) # Don't show if the package is installed but selected for deinstallation.
-
+PY_SETUP_NOT_INST = $(shell dpkg --status python-setuptools 2>&1 | grep -o "not installed")
 
 pysetup:
-ifeq ($(PY_SETUP_INST),)
+ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
 #Check if the texlive fonts library is installed using dpkg because it does not supply command line arguments.
-TEX_FONT_INST := $(shell dpkg --get-selections texlive\\-fonts\\-recommended 2>/dev/null \
-		  | grep --invert-match deinstall) # Don't show if the package is installed but selected for deinstallation.
+TEX_FONT_NOT_INST = $(shell dpkg --status texlive-fonts-recommended 2>&1 grep -o "not installed")
+
 tex_fonts:
-ifeq ($(TEX_FONT_INST),)
+ifeq ("$(TEX_FONT_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
 endif
 
