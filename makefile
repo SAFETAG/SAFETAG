@@ -143,7 +143,7 @@ ifeq ($(TEX_INST),)
 endif
 
 #Check if pysetup is installed using dpkg because it does not supply command line arguments.
-PY_SETUP_NOT_INST := $(shell dpkg --status python-setuptools 2>&1 | grep -o "not installed")
+PY_SETUP_NOT_INST = $(shell dpkg --status python-setuptools 2>&1 | grep -o "not installed")
 
 pysetup:
 ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
@@ -151,7 +151,7 @@ ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
 endif
 
 #Check if the texlive fonts library is installed using dpkg because it does not supply command line arguments.
-TEX_FONT_NOT_INST := $(shell dpkg --status texlive-fonts-recommended 2>&1 grep -o "not installed")
+TEX_FONT_NOT_INST = $(shell dpkg --status texlive-fonts-recommended 2>&1 grep -o "not installed")
 
 tex_fonts:
 ifeq ("$(TEX_FONT_NOT_INST)", "not installed")
