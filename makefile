@@ -30,7 +30,7 @@ submodules:
 	@echo "Downloading SAFETAG submodules."
 	git submodule update --init
 
-pandoc: | ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts inkscape
+pandoc: | inkscape ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
 	@echo "Checking if Pandoc is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
@@ -91,21 +91,21 @@ HASKELL_ERROR = $(error "ERROR: Please install the [haskell-platform]. This will
 #Check if ghc is installed (any output from 'which ghc') and raise an error if it is not.
 GHC_INST := $(shell which ghc)
 ghc:
-ifndef $(GHC_INST)
+ifeq ($(GHC_INST),)
 	$(HASKELL_ERROR)
 endif
 
 #Check if cabal is installed (any output from 'which cabal') and raise an error if it is not.
 CABAL_INST := $(shell which cabal)
 cabal:
-ifndef $(CABAL_INST)
+ifeq ($(CABAL_INST),)
 	$(HASKELL_ERROR)
 endif
 
 #Check if cabal needs to be updated to include pandoc and update if needed
 CABAL_UPDATE := $(shell cabal info pandoc)
 cabal_package_update:
-ifndef $(CABAL_UPDATE)
+ifeq ($(CABAL_UPDATE),)
 	@echo "Pandoc not found in cabal package database"
 	@echo "Updating package database"
 	@echo "This will require a network connection"
@@ -138,7 +138,7 @@ endif
 #Check if texlive is installed (any output from 'which latex') and raise an error if it is not.
 TEX_INST := $(shell which latex)
 tex:
-ifndef $(TEX_INST)
+ifeq ($(TEX_INST),)
 	$(error "ERROR: For PDF output, you’ll need LaTeX. We recommend installing TeX Live via your package manager. (On Debian/Ubuntu, apt-get install texlive.).")
 endif
 
@@ -146,7 +146,7 @@ endif
 PY_SETUP_NOT_INST := $(shell dpkg --status python\\-setuptools 2>&1 \
 		  | grep "not installed")
 pysetup:
-ifdef $(PY_SETUP_NOT_INST)
+ifneq ($(PY_SETUP_NOT_INST),)
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
@@ -154,14 +154,14 @@ endif
 TEX_FONT_NOT_INST := $(shell dpkg --status texlive\\-fonts\\-recommended 2>&1 \
 		  | grep "not installed")
 tex_fonts:
-ifdef $(TEX_FONT_NOT_INST)
+ifneq ($(TEX_FONT_NOT_INST),) #Check if uninstalled == false... sorry for the double negative
 	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
 endif
 
 #Check if inkscape is installed (any output from 'which inkscape') and raise an error if it is not.
 INKSCP_INST := $(shell which inkscape)
 inkscape:
-ifndef $(INKSCP_INST)
+ifeq ($(INKSCP_INST),)
 	$(error "ERROR: Please install [inkscape]. It is required to convert the git repository friendly SVG images into multi-format friendly png's. (On Debian/Ubuntu, apt-get install inkscape.).")
 endif
 
