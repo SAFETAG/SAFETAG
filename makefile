@@ -21,7 +21,7 @@ install: packages
 
 packages: | pandoc modules/markdown-pp/markdown-pp.py
 
-modules/markdown-pp/markdown-pp.py: | submodules
+modules/markdown-pp/markdown-pp.py: | pysetup submodules
 	@echo "Building markdown-pp"
 	@echo "This will require root access to this machine... sorry"
 	@cd modules/markdown-pp && sudo python setup.py install
@@ -30,7 +30,7 @@ submodules:
 	@echo "Downloading SAFETAG submodules."
 	git submodule update --init
 
-pandoc: | pysetup ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
+pandoc: |  ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
 	@echo "Checking if Pandoc is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
@@ -118,6 +118,7 @@ pandoc_deps:
 
 
 #Get installed versions of HTTP-Client and HTTP-Client-tls
+#Get current HTTP-client/(-tls) versions
 HTTP_CLIENT_VER = $(shell cabal info http-client | grep -oP "(?<=Versions installed: ).*")
 HTTP_CLIENT_TLS_VER = $(shell cabal info http-client-tls | grep -oP "(?<=Versions installed: ).*")
 #Strip point release number
@@ -142,19 +143,18 @@ ifeq ($(TEX_INST),)
 endif
 
 #Check if pysetup is installed using dpkg because it does not supply command line arguments.
-PY_SETUP_INST := $(shell dpkg --get-selections python\\-setuptools 2>/dev/null \
-			| grep --invert-match deinstall ) # Don't show if the package is installed but selected for deinstallation.
-
+PY_SETUP_NOT_INST := $(shell dpkg --status python\\-setuptools 2>&1 \
+		  | grep "not installed")
 pysetup:
-ifeq ($(PY_SETUP_INST),)
+ifeq ($(PY_SETUP_NOT_INST),)
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
 #Check if the texlive fonts library is installed using dpkg because it does not supply command line arguments.
-TEX_FONT_INST := $(shell dpkg --get-selections texlive\\-fonts\\-recommended 2>/dev/null \
-		  | grep --invert-match deinstall) # Don't show if the package is installed but selected for deinstallation.
+TEX_FONT_NOT_INST := $(shell dpkg --status texlive\\-fonts\\-recommended 2>&1 \
+		  | grep "not installed")
 tex_fonts:
-ifeq ($(TEX_FONT_INST),)
+ifneq ($(TEX_FONT_NOT_INST),) #Check if uninstalled == false... sorry for the double negative
 	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
 endif
 
