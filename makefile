@@ -120,12 +120,19 @@ pandoc_deps:
 #Get installed versions of HTTP-Client and HTTP-Client-tls
 HTTP_CLIENT_VER = $(shell cabal info http-client | grep -oP "(?<=Versions installed: ).*")
 HTTP_CLIENT_TLS_VER = $(shell cabal info http-client-tls | grep -oP "(?<=Versions installed: ).*")
+#Strip point release number
+HTTP_CLIENT_POINT_REL = $(shell echo $(HTTP_CLIENT_VER) | cut -f2 -d.)
+#Check if point release is too high
+HTTP_NEED_DOWNGRADE := $(shell echo $(HTTP_CLIENT_POINT_REL)\<4 |bc)
+
 #Cabal routinely installs a bad version of the http-client. This fixes that problem
 http_client:
+ifeq ($(HTTP_NEED_DOWNGRADE),0)
 	@echo Pre-fixing http-client by installing the correct version.
 	cabal install --reinstall --force-reinstalls 'http-client < 0.4'
 	ghc-pkg unregister http-client-tls-$(HTTP_CLIENT_TLS_VER)
 	ghc-pkg unregister http-client-$(HTTP_CLIENT_VER)
+endif
 
 #Check if texlive is installed (any output from 'which latex') and raise an error if it is not.
 TEX_INST := $(shell which latex)
