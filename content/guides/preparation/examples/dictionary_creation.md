@@ -6,7 +6,7 @@ This component provides resources and recommendations on cracking passwords - bo
 
 Weak passwords are prevalent - even after hundreds of well-publicized global password breaches, "password" and "12345" remain the most popular passwords. This exercise supports the auditor in building an effective dictionary and using it to attack non-personal and non-disruptive parts of an organization's infrastructure. Weak wifi passwords are specifically a challenge, as wifi signals often are accessible outside of an office's physical limits, but provide full access to the private network.
 
-This skillset, plus demonstration against non-invasive accounts, provides an opening for a discussion with staff on password security. See https://www.level-up.cc/leading-trainings/training-curriculum/secure-passwords for further activities and exercises around passwords.
+This skillset, plus demonstration against non-invasive accounts, provides an opening for a discussion with staff on password security. See [Level Up](https://www.level-up.cc/leading-trainings/training-curriculum/secure-passwords) for further activities and exercises around passwords.
 
 ### Approach
 
@@ -19,7 +19,7 @@ This skillset, plus demonstration against non-invasive accounts, provides an ope
 
 ### Instructions
 
-Primarily for use in the Network Access component, building a password dictionary, understanding the ways to automatically mutate it, and running it against passwords is a useful skill to have, and to use to explain why simple passwords are insecure. This article (http://arstechnica.com/security/2013/10/how-the-bible-and-youtube-are-fueling-the-next-frontier-of-password-cracking/) provides a good insight into the path to tackle iterative password cracking using a variety of tools to meet different goals.
+Primarily for use in the Network Access component, building a password dictionary, understanding the ways to automatically mutate it, and running it against passwords is a useful skill to have, and to use to explain why simple passwords are insecure. This [Ars Technica article](http://arstechnica.com/security/2013/10/how-the-bible-and-youtube-are-fueling-the-next-frontier-of-password-cracking/) provides a good insight into the path to tackle iterative password cracking using a variety of tools to meet different goals.
 
 These instructions use a small set of password cracking tools, but many are possible. If there are tools you are more familiar or comfortable with using, these by no means are required. The only constraints are to be respectful and responsible, as well as keeping focused on the overall goals and not getting bogged down.
 
@@ -49,9 +49,9 @@ Here is a suggested path to take with suggested tools to help. You might try the
 
 **Before you arrive on-site** it is important to have your password cracking tools downloaded and relevant dictionaries ready to go, as your main demonstration and use of these tools is to gain access to the organization's network. The effectiveness of this demonstration is drastically reduced if you already have had to ask for the password to connect to the Internet and update your dictionaries, tools, or so on. Some of these  files (especially larger password dictionaries) can be quite large, so downloading them in-country is not recommended.
 
-Many password dictionary sites, such as https://wiki.skullsecurity.org/Passwords , maintain core dictionaries in multiple languages.  If your target language is not available, some quick regular expression work can turn spell-check dictionaries (such as those used by LibreOffice: http://extensions.libreoffice.org/extension-center?getCategories=Dictionary) into useful word lists.  It is generally useful to always test with English in addition to the target language.
+Many password dictionary sites, such as [SkullSecurity](https://wiki.skullsecurity.org/Passwords) , maintain core dictionaries in multiple languages.  If your target language is not available, some quick regular expression work can turn spell-check dictionaries (such as those used by [LibreOffice](http://extensions.libreoffice.org/extension-center?getCategories=Dictionary) into useful word lists.  It is generally useful to always test with English in addition to the target language.
 
-https://www.cloudcracker.com/dictionaries.html and http://www.openwall.com/wordlists/ have (for a fee) well-tested password dictionaries.
+[CloudCracker(]https://www.cloudcracker.com/dictionaries.html) and [OpenWall](http://www.openwall.com/wordlists/) have, for a fee, well-tested password dictionaries.
 
 ### Keyword generation
 
@@ -80,9 +80,9 @@ Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field ex
 
 #### Optional Further steps
 
-Use CeWL (http://digi.ninja/projects/cewl.php), to spider the organization's web properties to generate additional phrases.  This list will need review, as some of the generated content is not very useful, but may be useful if the site is not in a language the auditor reads fluently.
+Use [CeWL](http://digi.ninja/projects/cewl.php), to spider the organization's web properties to generate additional phrases.  This list will need review, as some of the generated content is not very useful, but may be useful if the site is not in a language the auditor reads fluently.
 
-For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  https://github.com/iphelix/PACK "PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules. Both password cracking tools listed here are powerful, and have slightly different abilities.  The auditor should choose the one they prefer and/or the one which has the features they desire for this job.
+For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  [PACK, or Password Analysis and Cracking Toolkit](https://github.com/iphelix/PACK) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules. Both password cracking tools listed here are powerful, and have slightly different abilities.  The auditor should choose the one they prefer and/or the one which has the features they desire for this job.
 
 ### Combinator Attack with scripting and Hashcat
 
@@ -95,14 +95,19 @@ You can do a 1-way version of this list simply, such as:
  $ cat pwdlist.txt >> pwdpairs.txt
 ```
 
-Hashcat can do this in a live attack under its "combinator" mode, and hashcat-utils (hiding in /usr/share/hashcat-utils/combinator.bin) provides this as a standalone tool.  This provides a true combination of the list, so it exponentially increases the list size - use with caution, or use with one larger dictionary and one smaller dictionary.
+[Hashcat](http://hashcat.net/oclhashcat/) can do this in a live attack under its "combinator" mode, and hashcat-utils (hiding in /usr/share/hashcat-utils/combinator.bin) provides this as a standalone tool.  This provides a true combination of the list, so it exponentially increases the list size - use with caution, or use with one larger dictionary and one smaller dictionary.
 
 For example, use these combination approach on your custom dictionary (combining it with itself, creating combinations from the above list such as example92, journorights, exampleorgrights).
 
 
-Hashcat is extremely powerful when you have desktop computer systems to use, but has a few wordlist manipulation tools that are useful regardless.
+```
+$  /usr/share/hashcat-utils/combinator.bin dict.txt dict.txt
 
-http://hashcat.net/oclhashcat/ (http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2 , http://www.darkmoreops.com/2014/08/18/cracking-wpa2-wpa-with-hashcat-kali-linux/ )
+```
+
+Hashcat is extremely powerful when you have desktop computer systems to use, but has a few wordlist manipulation tools that are useful regardless. 
+
+More References: (http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2 , http://www.darkmoreops.com/2014/08/18/cracking-wpa2-wpa-with-hashcat-kali-linux/ )
 
 
 ### Word mutation with John the Ripper (JtR)
@@ -121,8 +126,6 @@ Some particularly useful ones individual rulesets are:
   * AddJustNumbers (adds 1-4 digits to the end of everything)
   * l33t (leet-speek combinations)
 
-Create a dictionary with just "blah" and run various rules against it to understand how each ruleset or combination works. Note specifically that each rule multiplies the size of the dictionary by the number of permutations it introduces. Running the KoreLogic ruleset combination against a **one word** dictionary creates a list of 6,327,540 permutations on just that word.
-
 There are some build-in combinations of rulesets - for example, just --rules runs john's internal collection of default rules, and --rules:KoreLogic runs a collection of the KoreLogic rules in a thoughtful order.
 
 e.g. :
@@ -131,6 +134,9 @@ e.g. :
 ```
 
 Building custom rules: http://www.openwall.com/john/doc/RULES.shtml
+
+
+**PROTIP** Create a dictionary with just "blah" and run various rules against it to understand how each ruleset or combination works. Note specifically that each rule multiplies the size of the dictionary by the number of permutations it introduces. Running the KoreLogic ruleset combination against a **one word** dictionary creates a list of 6,327,540 permutations on just that word.
 
 
 ### Brute force, using John and crunch
