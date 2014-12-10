@@ -112,28 +112,43 @@ More References: (http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2 , http://
 
 ### Word mutation with John the Ripper (JtR)
 
-JtR (https://github.com/magnumripper/JohnTheRipper/commits/bleeding-jumbo) is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o"). JtR can be used to generate a static list of passwords for other programs, or it can be used directly against a password database. JtR is a bit weak combining words within a wordlist, so you should apply your customizations and any folding before moving on to JtR.
+[JtR](https://github.com/magnumripper/JohnTheRipper/commits/bleeding-jumbo) is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o"). JtR can be used to generate a static list of passwords for other programs, or it can be used directly against a password database. JtR is a bit weak combining words within a wordlist, so you should apply your customizations and any folding before moving on to JtR.
 
-You can add custom "rules" to aid in these substitutions - a base set is included with JtR, but a much more powerful set is added by KoreLogic (http://contest-2010.korelogic.com/rules.html). KoreLogic also provides a custom character set "chr file" that takes password frequency data from large collections of real-world passwords to speed up JtR's brute force mode (http://www.korelogic.com/tools.html) . This PDF presentation has a good walkthrough of how John and Kore's rules work: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+You can add custom "rules" to aid in these substitutions - a base set is 
+included with JtR, but a much more powerful set is added by [KoreLogic]
+(http://contest-2010.korelogic.com/rules.html). KoreLogic also provides 
+a custom character set "chr file" that takes password frequency data 
+from large collections of [real-world passwords to speed up JtR's brute 
+force mode](http://www.korelogic.com/tools.html) . This PDF presentation 
+has a good [walkthrough of how John and Kore's rules work](https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf)
 
 Additional guides:
-  * http://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
+  * (http://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux)
 
-The bleeding-edge jumbo version combines both the built-in rules and an optimized version of the KoreLogic rules (see https://github.com/kost/jtr-stuff/tree/master/rules, and http://openwall.info/wiki/john/rules for a description of the optimizations).  http://contest-2010.korelogic.com/rules.html provides nice descriptions of what the KoreLogic rules do.  In bleeding-jumbo, you can remove "KoreLogicRules".  http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/ provides a great example of rules usage.
+The bleeding-edge jumbo version combines both the built-in rules and an 
+optimized version of the [KoreLogic 
+rules](https://github.com/kost/jtr-stuff/tree/master/rules, and 
+http://openwall.info/wiki/john/rules for a description of the 
+optimizations).  [This list of KoreLogic 
+Rules](http://contest-2010.korelogic.com/rules.html) provides nice 
+descriptions of what the KoreLogic rules do.  In bleeding-jumbo, you can 
+remove "KoreLogicRules".  [BackReference](http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/) 
+provides a great example of rules usage.
 
 Some particularly useful ones individual rulesets are:
   * AppendYears (appends years, from 1900 to 2019) and AppendCurrentYearSpecial (appends 2000-2019 with punctuation)
   * AddJustNumbers (adds 1-4 digits to the end of everything)
   * l33t (leet-speek combinations)
 
-There are some build-in combinations of rulesets - for example, just --rules runs john's internal collection of default rules, and --rules:KoreLogic runs a collection of the KoreLogic rules in a thoughtful order.
+There are some build-in combinations of rulesets - for example, just --rules runs john's internal collection of default rules, and --rules:KoreLogic runs a 
+collection of the KoreLogic rules in a thoughtful order, and --rules:all is useful if you hate life.
 
 e.g. :
 ```
   $ john -w:dictionary.txt --rules:AppendYears --stdout
 ```
 
-Building custom rules: http://www.openwall.com/john/doc/RULES.shtml
+[Building custom rules](http://www.openwall.com/john/doc/RULES.shtml)
 
 
 **PROTIP** Create a dictionary with just "blah" and run various rules against it to understand how each ruleset or combination works. Note specifically that each rule multiplies the size of the dictionary by the number of permutations it introduces. Running the KoreLogic ruleset combination against a **one word** dictionary creates a list of 6,327,540 permutations on just that word.
