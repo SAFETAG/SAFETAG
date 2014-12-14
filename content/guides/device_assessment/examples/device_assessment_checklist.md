@@ -42,7 +42,7 @@ If Windows is not your primary OS, you can download sample Virtual Machines (wit
    * Right-Click on bottom taskbar, select "Task Manager"
 
 Installed updates
-Contreol Panel Programs and features installed updates
+Control Panel Programs and features installed updates
 CLI:
 http://www.techsupportalert.com/content/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
 
@@ -109,6 +109,27 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
   * (CLI) 
 ```top```
 
+
+### Phone Usage ###
+ * Work Email
+ * Work Calls
+ * Chat Apps with partners/work related
+
+### User Software and Tools ###
+
+ * Email
+ * Webmail
+ * Calendars
+ * Shared Files inside the office
+ * Other shared file systems
+ * Chat
+ * Voice calls
+ * Program tracking software
+   * Financial
+   * Progress
+   * Databases 
+   * intranet
+   * extranet / other sites?
 
 #### Notes ####
 Investivate Secunia usage
