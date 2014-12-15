@@ -55,3 +55,8 @@
 !INCLUDE "references/anti_virus.md"
 
 !INCLUDE "references/one_off_services.md"
+
+### Example
+
+!INCLUDE "guides/device_assessment/examples/device_assessment_checklist.md"
+
