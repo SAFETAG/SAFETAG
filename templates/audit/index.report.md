@@ -1,82 +1,80 @@
 ---
 type: report
-audit_no: AUDIT_NUMBER
 ...
 
 \newpage
 <!-- Cover Page -->
 
-!INCLUDE "audit/%{audit_no}/cover_page.md"
+!INCLUDE "report/front_matter/cover_page.md"
 
 \newpage
 <!-- Confidentiality Statement -->
 
-!INCLUDE "audit/%{audit_no}/confidentiality_statement.md"
+!INCLUDE "report/front_matter/confidentiality_statement.md"
+
+\newpage
+<!-- Table of Contents -->
+
+!TOC
+
+\newpage
+<!-- How to Read This Report -->
+
+!INCLUDE "report/front_matter/how_to_read_this_report.md"
 
 \newpage
 <!-- Executive Summary -->
 
-!INCLUDE "audit/%{audit_no}/exec_summary.md"
+!INCLUDE "report/exec_summary.md"
 
 \newpage
 <!-- Scope of Audit -->
 
-!INCLUDE "audit/%{audit_no}/scope.md"
+!INCLUDE "report/scope/audit_process.md"
 
-\newpage
-<!-- Process Mapping -->
+!INCLUDE "report/scope/constraints.md"
 
-!INCLUDE "audit/%{audit_no}/process_map.md"
+!INCLUDE "report/scope/in_scope_hosts.md"
 
-\newpage
-<!-- Impact = Needs Mapping -->
-
-!INCLUDE "audit/%{audit_no}/impact.md"
+!INCLUDE "report/scope/in_scope_websites.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "audit/%{audit_no}/risk_model.md"
+!INCLUDE "report/risk_model/risk_determination.md"
 
-\newpage
-<!-- Audit Process -->
+!INCLUDE "report/risk_model/assumptions.md"
 
-!INCLUDE "audit/%{audit_no}/audit_process.md"
+!INCLUDE "report/risk_model/critical_activities.md"
 
-\newpage
-<!-- How to Read Findings -->
+!INCLUDE "report/risk_model/adversaries.md"
 
-!INCLUDE "audit/%{audit_no}/how_to_read.md"
+!INCLUDE "report/risk_model/impacts.md"
 
 \newpage
 <!-- Summary Of Findings  -->
 
-!INCLUDE "audit/%{audit_no}/findings.summary.md"
+!INCLUDE "report/findings/index.summary.md"
+
+\newpage
+<!-- Roadmap -->
+
+!INCLUDE "report/roadmap.md"
 
 \newpage
 <!-- Detailed Findings -->
 
-!INCLUDE "audit/%{audit_no}/findings.detailed.md"
-
-\newpage
-<!-- Roadmap  -->
-
-!INCLUDE "audit/%{audit_no}/roadmap.md"
-
-\newpage
-<!-- Resources -->
-
-!INCLUDE "audit/%{audit_no}/resources.md"
+!INCLUDE "report/findings/index.detailed.md"
 
 \newpage
 <!-- Appendices -->
 
-!INCLUDE "audit/%{audit_no}/appendix.md"
+!INCLUDE "report/appendix/index.md"
 
 \newpage
 <!-- Glossary -->
 
-!INCLUDE "audit/%{audit_no}/glossary.md"
+!INCLUDE "report/appendix/glossary.md"
 
 <!-- Load Default Images -->
-!INCLUDE "theme/image_defaults.md"
+!INCLUDE "report/images/image_defaults.md"
