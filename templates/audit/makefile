@@ -9,4 +9,4 @@ build/report.html: build/report.md
 
 build/report.pdf: build/report.html
 	@echo "Building pdf from html report.""
-	wkhtmltopdf --user-style-sheet ../build/core.css build/report.html build/report.pdf
+	wkhtmltopdf --user-style-sheet build/core.css build/report.html build/report.pdf

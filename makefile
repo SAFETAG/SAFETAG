@@ -81,7 +81,7 @@ audit: $(DATE_DIR)
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
 	#@python modules/audit_setup.py --directory audit/$(DATE_DIR)
 	cp -fr templates/audit/. audit/$(DATE_DIR)/
-	cp theme/core.css audit/assets/core.css
+	cp theme/core.css audit/$(DATE_DIR)/core.css
 
 $(DATE_DIR):
 	@echo "Creating a new audit folder named $(DATE_DIR)"
