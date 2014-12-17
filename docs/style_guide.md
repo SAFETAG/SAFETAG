@@ -115,6 +115,18 @@ for sidebars
 ##### Additional Material {.orange_sidebar}
 
 
+```
+<span class=confidential>
+red dashed outline surrounds this text.
+This is for any confidential information in a report that an organization should not share.
+</span>
+```
+
+<span class=confidential>
+ANY TEXT
+</span>
+
+
 
 # Color Scheme
 

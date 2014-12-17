@@ -1,0 +1,71 @@
+
+/* Colors */
+
+h1,
+h2, 
+h3 {
+    text-transform: uppercase;
+    color: #404965;
+}
+
+h4 {
+    color: #60A144;
+}
+
+.h5 {
+    color: #000000;
+}
+
+.orange_sub {
+    color: #DE5D5A;
+}
+
+
+.confidential {
+    border-style: dashed;
+    border-color: red;
+    border-width: 3px;
+}
+
+/* 
+   line above and below
+   running people icon to the left
+   float right of the icon
+*/
+.activity {}
+
+/* 
+   line above and below
+   speech bubbles icon to the left
+   float right of the icon
+*/
+.discussion {}
+
+/* 
+   line above and below
+   person icon to the left
+   float right of the icon
+*/
+.input {}
+
+/* 
+   line above and below
+   magnefying glass icon to the left
+   float right of the icon
+*/
+.deepening {}
+
+/* 
+   line above and below
+   puzzle icon to the left
+   float right of the icon
+*/
+.synthesis {}
+
+/* 
+   line above and below
+   pencil icon to the left
+   float right of the icon
+*/
+.handout {}
+
