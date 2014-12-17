@@ -21,10 +21,13 @@ install: packages
 
 packages: | pandoc modules/markdown-pp/markdown-pp.py
 
-modules/markdown-pp/markdown-pp.py: | pysetup submodules
+modules/markdown-pp/markdown-pp.py: | pysetup submodules wkhtmltopdf
 	@echo "Building markdown-pp"
 	@echo "This will require root access to this machine... sorry"
 	@cd modules/markdown-pp && sudo python setup.py install
+
+wkhtmltopdf:
+	sudo apt-get install wkhtmltopdf
 
 submodules:
 	@echo "Downloading SAFETAG submodules."
@@ -74,13 +77,19 @@ $(RES_DIR): | build
 #Get the current date seperated by underscores.
 DATE_DIR := $(shell date +%Y_%m_%d_%H_%M_%S)
 
-audit: $(DATE_DIR) | packages
+audit: $(DATE_DIR)
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
-	@python modules/audit_setup.py --directory audit/$(DATE_DIR)
+	#@python modules/audit_setup.py --directory audit/$(DATE_DIR)
+	cp -fr templates/audit/. audit/$(DATE_DIR)/
+	cp theme/core.css audit/assets/core.css
 
 $(DATE_DIR):
 	@echo "Creating a new audit folder named $(DATE_DIR)"
-	mkdir --parents audit/$(DATE_DIR)
+	mkdir --parents audit/$(DATE_DIR)/build
+
+mkreport:
+	wkhtmltopdf --user-style-sheet audit/build/core.css audit/build/report.html audit/build/report.pdf
+
 
 #============ Dependencies ==============
 
