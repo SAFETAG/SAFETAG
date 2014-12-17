@@ -1,11 +1,59 @@
+/* base */
+
+body {
+	background: white; 
+	font-size: 12pt; 
+	font-family: serif;
+}
+
+/* fonts */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: -.06em;
+    margin-bottom: 0px;
+}
+
+h2, 
+h3 {	
+    text-transform: uppercase;
+}
+
+.note {
+    text-transform: uppercase;
+}
+
+.sidebar {
+    text-transform: uppercase;
+    color: #00467f;
+}
+
+.orange_sidebar {
+    text-transform: uppercase;
+    color: #c85c19;
+}
+
+.confidential {
+    border-style: dashed;
+    border-color: red;
+    border-width: 3px;
+}
+
+/* TODO: Eventually use custom bullet's to get those big chunky light blue squres that we want. */
+ul {
+    list-style: square;
+}
 
 /* Colors */
 
 h1,
 h2, 
 h3 {
-    text-transform: uppercase;
-    color: #404965;
+    color: #00467f;
 }
 
 h4 {
@@ -17,14 +65,42 @@ h4 {
 }
 
 .orange_sub {
-    color: #DE5D5A;
+    color: #c85c19;
 }
 
+.note {
+    color: #c85c19;
+}
 
-.confidential {
-    border-style: dashed;
-    border-color: red;
-    border-width: 3px;
+/* Print Formatting */
+
+h1 {
+    font-size: 40pt;
+}
+h2 {
+    font-size: 32pt;
+}
+h3 {
+    font-size: 18pt;
+}
+h4 {
+    font-size: 12pt;
+}
+
+h1,
+h2 {
+    page-break-before: always;
+}
+
+h2,
+h3,
+h4 {
+    page-break-after: avoid;
+}
+
+p {
+    orphans: 3;
+    widows: 3;
 }
 
 /* 

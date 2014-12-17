@@ -1,6 +1,3 @@
----
-type: report
-...
 
 \newpage
 <!-- Cover Page -->

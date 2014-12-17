@@ -1,6 +1,3 @@
----
-type: report
-...
 
 !INCLUDE "./background.md"
 

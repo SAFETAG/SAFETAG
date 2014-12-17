@@ -8,5 +8,5 @@ build/report.html: build/report.md
 	pandoc build/report.md --to=html --output=build/report.html
 
 build/report.pdf: build/report.html
-	@echo "Building pdf from html report.""
+	@echo "Building pdf from html report."
 	wkhtmltopdf --user-style-sheet build/core.css build/report.html build/report.pdf
