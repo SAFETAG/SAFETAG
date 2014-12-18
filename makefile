@@ -1,7 +1,7 @@
 .PHONY:	all \
 	install packages submodules pandoc \ #Installation Rules
 	build_dirs \ #Setup Rules
-	ghc cabal cabal_package_update tex pysetup tex_fonts inkscape \ #Dependency Rules
+	ghc cabal cabal_package_update tex pysetup tex_fonts inkscape tex_extra \ #Dependency Rules
 	all_docs adids report guide mini_guide overview clean_docs \ #Document Rules
 	clean_art \ #Image Rules
 	texpackages \ #compile pandoc from src (TODO)
@@ -30,7 +30,7 @@ submodules:
 	@echo "Downloading SAFETAG submodules."
 	git submodule update --init
 
-pandoc: | inkscape ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts
+pandoc: | inkscape ghc cabal cabal_package_update pandoc_deps http_client tex tex_fonts tex_extra
 	@echo "Checking if Pandoc is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
@@ -129,6 +129,7 @@ HTTP_NEED_DOWNGRADE := $(shell echo $(HTTP_CLIENT_POINT_REL)\<4 |bc)
 #Cabal routinely installs a bad version of the http-client. This fixes that problem
 http_client:
 ifeq ($(HTTP_NEED_DOWNGRADE),0)
+	@echo $(HTTP_NEED_DOWNGRADE)
 	@echo Pre-fixing http-client by installing the correct version.
 	cabal install --reinstall --force-reinstalls 'http-client < 0.4'
 	ghc-pkg unregister http-client-tls-$(HTTP_CLIENT_TLS_VER)
@@ -156,6 +157,14 @@ TEX_FONT_NOT_INST = $(shell dpkg --status texlive-fonts-recommended 2>&1 grep -o
 tex_fonts:
 ifeq ("$(TEX_FONT_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [texlive-fonts-recommended]. It is required for the pretty pretty fonts used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-fonts-recommended.).")
+endif
+
+#Check if the texlive fonts library is installed using dpkg because it does not supply command line arguments.
+TEX_LATEX_NOT_INST = $(shell dpkg --status texlive-latex-extra 2>&1 grep -o "not installed")
+
+tex_extra:
+ifeq ("$(TEX_LATEX_NOT_INST)", "not installed")
+	$(error "ERROR: Please install [texlive-latex-extra]. It is required for the pretty pretty configurations used in SAFETAG. (On Debian/Ubuntu, apt-get install texlive-latex-extra.).")
 endif
 
 #Check if inkscape is installed (any output from 'which inkscape') and raise an error if it is not.
