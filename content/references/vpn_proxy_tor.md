@@ -1,6 +1,6 @@
 
 
-#### VPN's Proxy's and Tor 
+#### VPNs, Proxys, and Tor 
 
 Links grabbed from http://pastebin.com/yeaqDvFW 
  
