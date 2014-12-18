@@ -1,10 +1,5 @@
 ---
-documentclass: scrartcl
-title: SAFETAG
-subtitle: Resources for training digital security experts to support at-risk groups
-type: ADIDS
-id: audit-adids-index
-cover-image: images/adids_cover.jpg
+title: ADIDS Curricula
 ...
 
 
@@ -30,13 +25,13 @@ cover-image: images/adids_cover.jpg
 
 !INCLUDE "content/guides/overview.md"
 
-![The Safetag Audit Process](content/images/expertiese_vertical.png)\
+![The Safetag Audit Process](../../content/images/expertiese_vertical.svg)\
 
 \newpage
 
 # PART ONE: Agreement and Information Gathering
 
-![The Pre-Audit](content/images/pre_audit_expertiese.png)\
+![The Pre-Audit](../../content/images/pre_audit_expertiese.svg)\
 
 \newpage
 <!-- Operational Security -->
@@ -67,7 +62,7 @@ cover-image: images/adids_cover.jpg
 
 # PART TWO: The Audit
 
-![Pre-Audit](content/images/audit_expertiese.png)\
+![Pre-Audit](../../content/images/audit_expertiese.svg)\
 
 \newpage
 <!-- Remote Assessment -->
@@ -128,7 +123,7 @@ cover-image: images/adids_cover.jpg
 
 # PART THREE: Analysis and Reporting
 
-![The Post-Audit](content/images/post_audit_expertiese.png)\
+![The Post-Audit](../../content/images/post_audit_expertiese.svg)\
 
 \newpage
 <!-- Vulnerability Analysis -->

@@ -1,26 +1,70 @@
-/* base */
+/* fonts */
 
-body {
-	background: white; 
-	font-size: 12pt; 
-	font-family: serif;
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
 }
 
-/* fonts */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xONSK5BxN3NFS4EJkViHIqo.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(https://fonts.gstatic.com/s/slabo27px/v2/PuwvqkdbcqU-fCZ9Ed-b7RsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Slabo 13px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 13px'), local('Slabo13px-Regular'), url(https://fonts.gstatic.com/s/slabo13px/v2/fScGOqovO8xyProgHURSRxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+html,
+body {
+	background: white;
+	font-size: 13pt;
+	font-family: 'Slabo 13px';
+}
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: sans-serif;
+    font-family: "Open Sans Condensed";
     font-weight: bold;
-    letter-spacing: -.06em;
     margin-bottom: 0px;
 }
 
 h2, 
 h3 {	
     text-transform: uppercase;
+}
+
+h1 {
+    font-size: 30pt;
+    line-height: auto;
+}
+h2 {
+    font-size: 23pt;
+    line-height: auto;
+}
+h3 {
+    font-size: 18pt;
+}
+h4 {
+    font-size: 13pt;
+}
+h1.bigtitle {
+    font-size: 40pt;
 }
 
 .note {
@@ -53,11 +97,11 @@ ul {
 h1,
 h2, 
 h3 {
-    color: #00467f;
+    color: #004580;
 }
 
 h4 {
-    color: #60A144;
+    color: #6b8a21;
 }
 
 .h5 {
@@ -74,34 +118,96 @@ h4 {
 
 /* Print Formatting */
 
-h1 {
-    font-size: 40pt;
-}
-h2 {
-    font-size: 32pt;
-}
-h3 {
-    font-size: 18pt;
-}
-h4 {
-    font-size: 12pt;
-}
-
 h1,
 h2 {
     page-break-before: always;
 }
 
+html,
+body {
+    width: 100%;
+    margin: 0mm;
+    padding-top: 10mm;
+    float: none;
+}
 h2,
 h3,
 h4 {
     page-break-after: avoid;
 }
 
+h1.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    page-break-before: avoid;
+}
+h2.title {
+    page-break-before: avoid;
+}
+
+h1.bigtitle {
+    page-break-before: avoid;
+}
+
+.pagebreak {
+    page-break-after: always;
+}
+
 p {
     orphans: 3;
     widows: 3;
 }
+
+img.inlogo {
+    text-align:left;
+}
+
+/* prevent images from bleeding over the edge of the printed page: */
+img {
+    max-width: 100% !important;
+}
+
+/* Section Specific Formatting */
+
+.coverpage {
+    page-break-after: always;
+}
+
+/* Table of Contents */
+nav {
+    page-break-after: always;
+}
+
+nav li a:visited,
+nav li a:link,
+nav li a:hover,
+nav li a:active {
+    font-size: 13pt;
+    color: black;
+    text-decoration: none;
+}
+
+nav.toc ul ul li {
+    font-size: 12pt;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+.covertop {
+    margin-bottom: 10mm;
+    text-align: center;
+}
+
+.covermiddle {
+    margin-top: 20mm;
+    margin-bottom: 60mm;
+    text-align: center;
+}
+
 
 /* 
    line above and below
@@ -145,3 +251,11 @@ p {
 */
 .handout {}
 
+
+
+/* Eventually use columns to add a sidebar
+div.titlepage+div.indexnote+div.index {
+    column-count: 2;
+    column-gap: 12pt;
+}
+*/
