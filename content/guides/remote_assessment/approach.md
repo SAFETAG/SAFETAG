@@ -5,7 +5,8 @@
     * Use recon-ng to do automated web-based open source reconnaissance. [^recon-ng_data_flow]
   * Active Footprinting
     * Identify services being hosted or used by an organization
-    * Tesearch information about identified services (e.g current versions of those services.)
+    * Research information about identified services (e.g current versions of those services.)
+    * Assess websites hosted by the organization for DDoS protection and other baseline data
     * Run vulnerability scans against websites hosted by the organization.
     * Run vulnerability scans against servers run by the organization.
 
