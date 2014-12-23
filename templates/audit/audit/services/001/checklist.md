@@ -1,9 +1,8 @@
 ---
 type: template
-id: index
 ...
 
-#### %{service}
+#### [SERVICE NAME]
 
   - ![_] Identify Host
   - ![_] Identify Physical Location

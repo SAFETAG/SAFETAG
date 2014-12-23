@@ -61,12 +61,12 @@ The "Audit Report" is a comprehensive set of documents the shows the current sta
 
   * summary - A short - two to three sentence - basic overview of the vulnerability.
   * description - An longer in-depth - two to three paragraph - overview of the vulnerability.
-  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
+  * approach.summary - Step-by-step explanation of the methodology used that is tool agnostic.
   * impact - What process this vulnerability impacts?
   * risks - The vulnerabilities ranking on the risk matrix.
   * recommendation - The recommended fix to address this problem.
   * resources - Guidance on how to seek out support to address this issue.
   * skills - The skills needed to address the problem identified. (In Appendix)
-  * exploit - tool-specific step-by-step instructions on how the vulnerability is exploited. (In Appendix)
+  * approach.detailed - tool-specific step-by-step instructions on how the vulnerability was identified with data attached. (In Appendix)
 
 
