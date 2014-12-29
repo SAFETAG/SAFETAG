@@ -92,7 +92,7 @@ linkto:SITE.TLD -site:SITE.TLD
   - Identify any previously compromised contacts
 
 Active Footprinting
-- [ ] Identify externally facing devices used by the organization.
-- [ ] Identify services being hosted or used by an organization.
-- [ ] Run vulnerability scans against websites hosted by the organization.
-- [ ] Run vulnerability scans against externally facing devices run by the organization.
+- Identify externally facing devices used by the organization.
+- Identify services being hosted or used by an organization.
+- Run vulnerability scans against websites hosted by the organization.
+- Run vulnerability scans against externally facing devices run by the organization.
