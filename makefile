@@ -21,7 +21,7 @@ wkhtmltopdf:
 	@echo "Checking if wkhtmltopdf is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "wkhtmltopdf needs to be installed" \
-	&& echo "Go to http://wkhtmltopdf.org/downloads.html to download."
+	&& echo "Go to http://wkhtmltopdf.org/downloads.html to download.")
 
 submodules:
 	@echo "Downloading SAFETAG submodules."
@@ -31,7 +31,7 @@ pandoc:
 	@echo "Checking if Pandoc is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
-	&& echo "Please run (sudo apt-get install pandoc)"
+	&& echo "Please run (sudo apt-get install pandoc)")
 
 #============ Output Folder Setup ==============
 
