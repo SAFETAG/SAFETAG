@@ -14,7 +14,7 @@
 
   * *List:* ["Who publishes Transparency Reports? - a list of transparency reports from Google, Facebook, and other popular websites. Cross-check with Alexa for locally popular services"](http://jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an) (James Losey)
 
-  * *Website:* ["This website contains information on regulations, policies, and local organizations working on issues related to digital rights in Latin America. The information is organized by country"](https://redlatam.org/es/country/venezuela) (RedLatAm)
+  * *Website:* ["This website contains information on regulations, policies, and local organizations working on issues related to digital rights in Latin America. The information is organized by country"](https://redlatam.org/) (RedLatAm)
 
   * *Article:* ["Legal Issues in Penetration Testing"](http://www.securitycurrent.com/en/analysis/ac_analysis/legal-issues-in-penetration-testing) (Security Current)
 
