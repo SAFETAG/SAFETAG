@@ -1,10 +1,10 @@
+## What makes a SAFETAG Auditor?
 
 SAFETAG Auditors combine many different skillsets, bridging deep technical knowledge, a rich understanding of digital security, and the ability to clearly communicate these often byzantine and complex concepts to non-technical colleagues.
 
 On top of this, for a successful SAFETAG audit, the auditors must be absolutely trusted by the organizations they are supporting, which often requires tight networks of trust and referral among regional and local communities of practice.  The auditor should understand the threat landscape the organization is facing.
 
-
-
+### Team Audits
 
 Ideally, every SAFETAG audit would be done by two auditors in tandem.  This accelerates the audit process, and allows one auditor to focus more on the technical side, and one providing more of the facilitation skills, working with the organization on process mapping.
 

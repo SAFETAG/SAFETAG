@@ -42,6 +42,12 @@ title: ADIDS Curricula
 
 \newpage
 
+<!-- SAFETAG Auditor Profile -->
+
+!INCLUDE "content/adids/introduction/auditor_profile.md"
+
+\newpage
+
 <!-- Preparation and Responsibility -->
 
 !INCLUDE "content/preparation.adids.md"
@@ -54,8 +60,9 @@ title: ADIDS Curricula
 
 \newpage
 
-## The SAFETAG Repository
+<!-- The SAFETAG Repository -->
 
+!INCLUDE "content/safetag_repo.adids.md"
 
 \newpage
 
