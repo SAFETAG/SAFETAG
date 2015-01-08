@@ -13,7 +13,7 @@ title: ADIDS Curricula
 
 <!-- Introduction -->
 
-# Introduction
+# About SAFETAG and this Curricula
 
 !INCLUDE "content/guides/introduction.md"
 
@@ -26,6 +26,17 @@ title: ADIDS Curricula
 !INCLUDE "content/guides/overview.md"
 
 ![The Safetag Audit Process](../../content/images/expertiese_vertical.svg)\
+
+\newpage
+
+## The ADIDS Process
+!INCLUDE "content/guides/overview.adids.md"
+
+\newpage
+
+# INTRODUCTION To SAFETAG
+
+!INCLUDE "content/introduction.adids.md"
 
 \newpage
 
