@@ -97,11 +97,6 @@ header-includes:
 !INCLUDE "content/network_mapping.mini.guide.md"
 
 \newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.mini.guide.md"
-
-\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.mini.guide.md"
