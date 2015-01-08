@@ -9,6 +9,15 @@ Intro to SAFETAG
     * Digital Security Training
     * Hands-on fixing (why?)
 
+Risk Assessments, vulnerability assessments, and pentesting: an overview
+
+  * The core of the audit (risk modeling)
+  * Traditional Vulnerability Assessments
+  * Traditional Risk assessments
+  * Using pentesting
+    * The perils of pen testing
+    * The possibilities of pen testing
+
 Overview of Framework and process
 
   * The Scope of a SAFETAG Audit

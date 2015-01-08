@@ -1,5 +1,5 @@
 
-##  Preparation
+##  Responsibilities
 
 <!-- ![](content/images/preparation.png "") -->
 

@@ -36,18 +36,34 @@ title: ADIDS Curricula
 
 # INTRODUCTION To SAFETAG
 
+<!-- Overview -->
+
 !INCLUDE "content/introduction.adids.md"
 
 \newpage
+
+<!-- Preparation and Responsibility -->
+
+!INCLUDE "content/preparation.adids.md"
+
+\newpage
+
+<!-- Operational Security -->
+
+!INCLUDE "content/operational_security.adids.md"
+
+\newpage
+
+## The SAFETAG Repository
+
+
+\newpage
+
 
 # PART ONE: Agreement and Information Gathering
 
 ![The Pre-Audit](../../content/images/pre_audit_expertiese.svg)\
 
-\newpage
-<!-- Operational Security -->
-
-!INCLUDE "content/operational_security.adids.md"
 
 \newpage
 <!-- Interviews -->
