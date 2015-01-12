@@ -202,4 +202,13 @@ title: ADIDS Curricula
 <!-- Load Footnotes -->
 !INCLUDE "content/references/footnotes.md"
 
+\newpage
+<!-- APPENDIX A - Sample Org-->
 
+# APPENDIX A : Interview Resources
+
+!INCLUDE "content/adids/sample_org/safetag-sample-org.md"
+
+!INCLUDE "content/guides/interviews/examples/outputs_needed.md"
+
+!INCLUDE "content/guides/interviews/examples/interview_questions.md"
