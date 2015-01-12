@@ -90,7 +90,7 @@ endif
 
 # =============== Report Generation =================
 
-#Create the auditor mini guide
+#Create the auditor adids guide
 adids: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/adids.md
 	pandoc --toc --toc-depth=2 -s \
@@ -106,7 +106,7 @@ adids: | $(SRC_DIR) $(DOC_DIR)
 		--outline-depth 2 \
 		$(SRC_DIR)/adids.html $(DOC_DIR)/adids.pdf
 
-#Create the auditor mini guide
+#Create the auditor guide
 guide: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.guide.md $(SRC_DIR)/guide.md
 	pandoc --toc --toc-depth=2 -s \
@@ -138,7 +138,7 @@ mini_guide: | $(SRC_DIR) $(DOC_DIR)
 		--outline-depth 2 \
 		$(SRC_DIR)/guide.mini.html $(DOC_DIR)/guide.mini.pdf
 
-#Create the auditor mini guide
+#Create the auditor overview
 overview: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.overview.md $(SRC_DIR)/overview.md
 	pandoc --toc --toc-depth=2 -s \
