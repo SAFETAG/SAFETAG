@@ -5,11 +5,6 @@ type: template
 #### [SERVICE NAME]
 
   - ![_] Identify Host
-  - ![_] Identify Physical Location
-    - ![_] Identify Host Maintainer
-	  - ![_] What is their relationship to the organization?
-	- ![_] Identify Host Owner
-	  - ![_] What is their relationship to the organization?
   - ![_] Identify Service Maintainer
     - ![_] What is their relationship to the organization?
   - ![_] Identify Version
@@ -24,11 +19,10 @@ type: template
     - ![_] Advisories
     - ![_] Exploits
     - ![_] Search
-    - ![_] Common/Default user/pass	
-  - ![_] Validation / Testing
-    - ![_] Gathered Proof
-  <!-- TODO: We might take out this real world exploitation bit. It might be excessive. -->
+    - ![_] Common/Default user/pass
   - ![_] Indentified Real World Exploitation
+  - ![_] Get Configuration Files
+    - ![_] Check against Hardening Guides
   - ![_] Write Up
     - ![_] Summary
     - ![_] Description
@@ -37,7 +31,7 @@ type: template
 	  - ![_] Assets Impacted
  	  - ![_] Process' Impacted
  	  - ![_] Severity of Risk
-    - ![_] Reccomendation
+    - ![_] Recommendation
     - ![_] Resources
     - ![_] Skills
   - ![_] Add to Roadmap

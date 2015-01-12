@@ -49,10 +49,5 @@ audit_no: AUDIT_NUMBER
 
 !INCLUDE "content/audit/engagement/internal/index.guide.md"
 
-\newpage
-<!-- 7. Physical Assessment -->
-
-!INCLUDE "content/audit/engagement/physical/index.guide.md"
-
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
