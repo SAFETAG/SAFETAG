@@ -97,11 +97,6 @@ title: Audit Overview
 !INCLUDE "content/network_mapping.overview.md"
 
 \newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.overview.md"
-
-\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.overview.md"

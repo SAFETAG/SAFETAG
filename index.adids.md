@@ -95,11 +95,6 @@ title: ADIDS Curricula
 !INCLUDE "content/network_mapping.adids.md"
 
 \newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.adids.md"
-
-\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.adids.md"
