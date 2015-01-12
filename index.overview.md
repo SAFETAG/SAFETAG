@@ -1,12 +1,3 @@
----
-type: guide
-fontfamily: utopia
-include-before: \includegraphics{content/images/cover-page-overview.png}
-geometry: margin=1in
-header-includes:
-	- \usepackage{wrapfig}
-...
-
 
 <!-- License -->
 
@@ -33,13 +24,13 @@ header-includes:
 
 !INCLUDE "content/guides/overview.md"
 
-![The Safetag Audit Process](content/images/expertiese_vert.png)
+![The Safetag Audit Process](../../content/images/expertiese_vert.svg)
 
 \newpage
 
 # PART ONE: Agreement and Information Gathering
 
-![The Pre-Audit Process](content/images/pre_audit_expertiese.png)
+![The Pre-Audit Process](../../content/images/pre_audit_expertiese.svg)
 
 \newpage
 <!-- Operational Security -->
@@ -70,7 +61,7 @@ header-includes:
 
 # PART TWO: The Audit
 
-![The On-Site Audit Process](content/images/audit_expertiese.png)
+![The On-Site Audit Process](../../content/images/audit_expertiese.svg)
 
 \newpage
 <!-- Remote Assessment -->
@@ -103,11 +94,6 @@ header-includes:
 !INCLUDE "content/network_mapping.overview.md"
 
 \newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.overview.md"
-
-\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.overview.md"
@@ -131,7 +117,7 @@ header-includes:
 
 # PART THREE: Analysis and Reporting
 
-![The Post-Audit Process](content/images/post_audit_expertiese.png)
+![The Post-Audit Process](../../content/images/post_audit_expertiese.svg)
 
 \newpage
 <!-- Vulnerability Analysis -->

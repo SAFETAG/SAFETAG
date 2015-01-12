@@ -1,5 +1,4 @@
 
 #### Organizational Information Gathering
 
-Save time and energy - find the email address formats in use at thousands of companies.
-http://www.email-format.com/
+  * *Database:* ["find the email address formats in use at thousands of companies."](http://www.email-format.com/) (Email Format)

@@ -1,40 +1,124 @@
 # Installation Instructions
 
-SAFETAG's curricula and reporting rely on the pandoc markdown publishing tool and the markdown-pp module.
+Currently we have instructions for installing on the Ubuntu, Debian, and Kali-Linux operating-systems.
 
-## Linux instructions
+### Installation Ubuntu
 
-Currently we only have instructions for installing on Linux systems.
 
-### Installation
-
-  * Install the haskell-platform on your system.
-```
-sudo apt-get install haskell-platform inkscape texlive texlive-fonts-recommended
-```
-  * In the main SAFETAG directory run 'make install'
-```
-make install
-```
-
-  * If you receive the following error...
+  * Install git
 
 ```
-Configuring pandoc-1.13.1...
-setup: At least the following dependencies are missing:
-http-client >=0.3.2 && <0.4 && ==0.4.2.2
-World file is already up to date.
-cabal: Error: some packages failed to install:
-pandoc-1.13.1 failed during the configure step. The exception was:
-ExitFailure 1
-make: *** [pandoc] Error 1
+sudo apt-get install git
 ```
 
-Cabal installed a too recent version of the http-client. Run the following.
+  * Download SAFETAG
 
 ```
-cabal install --reinstall --force-reinstalls 'http-client < 0.4'
-ghc-pkg unregister http-client-tls-0.2.2
-ghc-pkg unregister http-client-0.4.2.2
-cabal install pandoc
+git clone --recursive https://github.com/openinternet/safetag.git
+```
+
+  * Download the binary [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html) application for your system.
+
+  * Install wkhtmltopdf
+
+```
+sudo dpkg --install wkhtmltox-[VERSION]_[PLATFORM]-[CPU].deb
+```
+
+  * Install wkhtmltopdf's dependencies [xfonts-75dpi]. *dpkg does not automatically pull in dependencies so we use apt-get to install them.*
+
+```
+sudo apt-get -f install
+```
+
+  * Install pandoc
+
+```
+sudo apt-get install pandoc
+```
+
+  * Install python-setuptools
+
+```
+sudo apt-get install python-setuptools
+```
+
+
+### Installation Debian
+
+  * **NOTE** Debian users do not have "sudo privileges" by default. If you are using Debian you must be using the root user or a user with sudo privileges.
+
+  * Install git
+
+```
+sudo apt-get install git
+```
+
+  * Download SAFETAG
+
+```
+git clone --recursive https://github.com/openinternet/safetag.git
+```
+
+  * Download the binary [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html) application for your system.
+
+  * Install wkhtmltopdf
+
+```
+sudo dpkg --install wkhtmltox-[VERSION]_[PLATFORM]-[CPU].deb
+```
+
+  * Install pandoc
+
+```
+sudo apt-get install pandoc
+```
+
+  * Install python-setuptools
+
+```
+sudo apt-get install python-setuptools
+```
+
+
+### Installation Kali-Linux
+
+  * *NOTE:** SAFETAG is currently incompatable with *metasploit* and its graphical user interface *armitage.* Installing SAFETAG requires that you remove these applications from Kali-Linux.
+ 
+  * Download SAFETAG
+
+```
+git clone --recursive https://github.com/openinternet/safetag.git
+```
+
+  * Uninstall the default version of wkhtmltopdf installed on Kali-Linux. *This also removes metasploit, armitage, and the package that makes sure you are running the full set of packages for "kali-linux".*
+
+```
+apt-get remove wkhtmltopdf
+```
+
+  * Download the binary [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html) application for your system.
+
+  * Install wkhtmltopdf
+
+```
+sudo dpkg --install wkhtmltox-[VERSION]_[PLATFORM]-[CPU].deb
+```
+
+  * Install wkhtmltopdf's dependencies [xfonts-75dpi]. *dpkg does not automatically pull in dependencies so we use apt-get to install them.*
+
+```
+sudo apt-get -f install
+```
+
+  * Install pandoc
+
+```
+sudo apt-get install pandoc
+```
+
+  * Install python-setuptools
+
+```
+sudo apt-get install python-setuptools
 ```

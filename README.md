@@ -15,12 +15,14 @@ This repository contains the publishing tools and templates to build customized 
 
 ## Requirements:
 
-  * All requirements will be exposed when running the makefile. They will also provide instructions for installation on a Debian style systems. Run ```make all``` in the main directory and do what it says. If the instructions are confusing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues)
-
-  * [haskell-platform](https://www.haskell.org/platform/)
+  * See the [installation documentation](./docs/INSTALL.md). If the instructions are confusing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues)
+  * [pandoc](http://johnmacfarlane.net/pandoc/)
+  * [wkhtmltopdf](http://wkhtmltopdf.org)
   * [python-setuptools](https://pypi.python.org/pypi/setuptools)
-  * [Tex Live](https://www.tug.org/texlive/)
-  * [Tex Live recommended fonts](https://www.tug.org/fonts/fontinstall.html)
+
+## Installation
+
+See the [installation documentation](./docs/INSTALL.md).
 
 ## License
 

@@ -40,19 +40,7 @@
 
 ### Resources
 
-!INCLUDE "guides/context_research/resources.md"
-
 !INCLUDE "references/context_research.md"
-
-!INCLUDE "references/threat_by_focus_area.md"
-
-!INCLUDE "references/threat_by_region.md"
-
-!INCLUDE "references/threat_by_method.md"
-
-!INCLUDE "references/comm_infrastructure_research.md"
-
-!INCLUDE "references/cyber_security_trends.md"
 
 \newpage
 
