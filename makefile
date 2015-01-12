@@ -93,7 +93,7 @@ endif
 #Create the auditor adids guide
 adids: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/adids.md
-	pandoc --toc --toc-depth=2 -s \
+	pandoc -s --variable=title:"ADIDS Guide" \
 		--template=theme/html5.template \
 		--to=html5 $(SRC_DIR)/adids.md \
 		--output=$(SRC_DIR)/adids.html 
@@ -109,7 +109,7 @@ adids: | $(SRC_DIR) $(DOC_DIR)
 #Create the auditor guide
 guide: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.guide.md $(SRC_DIR)/guide.md
-	pandoc --toc --toc-depth=2 -s \
+	pandoc -s --variable=title:"Full Guide" \
 		--template=theme/html5.template \
 		--to=html5 $(SRC_DIR)/guide.md \
 		--output=$(SRC_DIR)/guide.html
@@ -125,7 +125,7 @@ guide: | $(SRC_DIR) $(DOC_DIR)
 #Create the auditor mini guide
 mini_guide: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.mini.guide.md $(SRC_DIR)/guide.mini.md
-	pandoc --toc --toc-depth=2 -s \
+	pandoc -s --variable=title:"Mini-Guide" \
 		--template=theme/html5.template \
 		--to=html5 $(SRC_DIR)/guide.mini.md \
 		--output=$(SRC_DIR)/guide.mini.html 
@@ -141,7 +141,7 @@ mini_guide: | $(SRC_DIR) $(DOC_DIR)
 #Create the auditor overview
 overview: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.overview.md $(SRC_DIR)/overview.md
-	pandoc --toc --toc-depth=2 -s \
+	pandoc -s --variable=title:"Overview" \
 		--template=theme/html5.template \
 		--to=html5 $(SRC_DIR)/overview.md \
 		--output=$(SRC_DIR)/overview.html
