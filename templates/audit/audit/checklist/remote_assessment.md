@@ -14,19 +14,19 @@ Passive Reconnaissance
   
 ```bash
 # EXAMPLE PROCESS
-# STEP 01 get all links from the main page
+# get all links from the main page
 lynx --listonly --dump http://http://HOST.SITE.TLD |grep -o "htt.*" >> links
-# STEP 02 Go through file and pull out any links that are obvious malware, advertisements, etc.
-# STEP 03 get all links from the pages found
+# BY HAND: Go through file and pull out any links that are obvious malware, advertisements, etc.
+# BY HAND: move all useful external links to a separate file keeping only the sites links in the document.
+# get all links from the pages found
 cat links | xargs -n 1 -I % lynx --listonly --dump % |grep -o "htt.*" >> links
-# STEP 04 Go through file and pull out any links that are obvious malware, advertisements, etc.
-# STEP 05 create a list of only the unique links
+# Remove all duplicate links
 cat links |sort |uniq >> uniq_links
-# STEP 06 Go through file and pull out any links that are obvious malware, advertisements, etc.
-# STEP 07 create a final list of links three levels deep (this will take a very long time usually)
+# BY HAND: Go through file and pull out any links that are obvious malware, advertisements, etc.
+# BY HAND: move all useful external links to a separate file keeping only the sites links in the document.
+# BY HAND: get all links from the pages found
 cat uniq_links | xargs -n 1 -I % lynx --listonly --dump % |grep -o "htt.*" >> final_links
 ```
-
 
   - user-name formats
   - meta-data scraping
