@@ -1,8 +1,4 @@
----
-type: guide
-id: index
-audit_no: AUDIT_NUMBER
-...
+
 
 \newpage
 <!-- 1. Pre-Audit -->

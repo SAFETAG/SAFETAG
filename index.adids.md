@@ -1,7 +1,3 @@
----
-title: ADIDS Curricula
-...
-
 
 \newpage
 

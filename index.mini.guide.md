@@ -1,7 +1,3 @@
----
-type: guide
-title: Audit Mini-Guide
-...
 
 <!-- License -->
 

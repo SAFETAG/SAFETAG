@@ -1,6 +1,3 @@
----
-title: Audit Guide
-...
 
 <!-- License -->
 
