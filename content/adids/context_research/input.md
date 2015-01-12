@@ -1,5 +1,7 @@
 ### Input
 
+See the Curricula Appendix A or the Reference section the full SAFETAG Guide for Context Research Sources
+
 **Regional context research**
 
  * Identify additional adversaries not identified in interviews
@@ -28,18 +30,3 @@
 
 Please submit new resources to SAFETAG so the resource list grows!
 
-#### Resources ####
-
-!INCLUDE "../../guides/context_research/resources.md"
-
-!INCLUDE "../../references/context_research.md"
-
-!INCLUDE "../../references/threat_by_focus_area.md"
-
-!INCLUDE "../../references/threat_by_region.md"
-
-!INCLUDE "../../references/threat_by_method.md"
-
-!INCLUDE "../../references/comm_infrastructure_research.md"
-
-!INCLUDE "../../references/cyber_security_trends.md"

@@ -201,10 +201,35 @@ title: ADIDS Curricula
 \newpage
 <!-- APPENDIX A - Sample Org-->
 
-# APPENDIX A : Interview Resources
+# APPENDIX A : Agreement and Information Gathering Resources
+
+## Interview Resources
 
 !INCLUDE "content/adids/sample_org/safetag-sample-org.md"
 
 !INCLUDE "content/guides/interviews/examples/outputs_needed.md"
 
 !INCLUDE "content/guides/interviews/examples/interview_questions.md"
+
+## Context Research Sources
+
+!INCLUDE "content/guides/context_research/resources.md"
+
+!INCLUDE "content/references/context_research.md"
+
+!INCLUDE "content/references/threat_by_focus_area.md"
+
+!INCLUDE "content/references/threat_by_region.md"
+
+!INCLUDE "content/references/threat_by_method.md"
+
+!INCLUDE "content/references/comm_infrastructure_research.md"
+
+!INCLUDE "content/references/cyber_security_trends.md"
+
+
+## Agreement Template
+
+!INCLUDE "content/guides/assessment_plan/draft_engagement_agreement.md"
+
+\newpage
