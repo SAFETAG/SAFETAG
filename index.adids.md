@@ -74,13 +74,9 @@ title: ADIDS Curricula
 
 \newpage
 <!-- Interviews -->
-
-!INCLUDE "content/interviews.adids.md"
-
-\newpage
 <!-- Capacity Assessment -->
 
-!INCLUDE "content/capacity_assessment.adids.md"
+!INCLUDE "content/interviews.adids.md"
 
 \newpage
 <!-- Contextual Research -->
