@@ -1,58 +1,51 @@
 
+#### VPN's Proxy's and Tor 
+ 
+  * *Article:* ["VPN: What they do, how they work and why you should use one"](http://gizmodo.com/5990192/vpns-what-they-do-how-they-work-and-why-youre-dumb-for-not-using-one) (Gizmodo) 
+ 
+  * *Guide:*["Need a seriously secure VPN?"](http://torrentfreak.com/which-vpn-services-take-your-anonymity-seriously-2014-edition-140315/) (TorrentFreak)
+ 
+  * *VPN Provider:*["One VPN service that is not on that list is Cryptostorm"](https://cryptostorm.is/) (Cryptostorm)
+ 
+  * *Guide:* [Think having VPN is enough? Securing your VPN"](http://torrentfreak.com/how-to-make-vpns-even-more-secure-120419/) (TorrentFreak) 
+ 
+  * *Guide:* ["Tips for using VPN"](http://www.greycoder.com/tips-for-using-vpns/) (Grey Coder)
+ 
+  * *Article:* [Tor vs. VPN's from a VPN providers perspective"](https://cryptostorm.org/viewtopic.php?f=8&t=2894) (Cryptostorm)
+ 
+  * *Article:*["Why Do I need a Personal VPN?"](https://goldenfrog.com/vyprvpn/why-vpn) (VyprVPN)
+ 
+  * *Article:* ["Proxies vs. VPN – What’s the difference?"](https://www.bestvpn.com/blog/4085/proxies-vs-vpn-whats-the-difference/) (Best VPN)
+ 
+  * *Article:* ["Why use Tor with a VPN service?"](https://www.ivpn.net/blog/privacy-guides/why-use-tor-with-a-vpn-service) (IVPN Privacy Guides)
+ 
+  * *Guide:* ["How to Chain VPNs"](http://null-byte.wonderhowto.com/how-to/chain-vpns-for-complete-anonymity-0131368/) (Wonder How-To)
+ 
+  *  *Article:* ["VPN can leak DNS personal data"](https://www.grc.com/dns/dns.htm) (Gibson Research Corporation)
 
-#### VPNs, Proxys, and Tor 
+  * *Service:*["Check if your VPN is leaking data"](www.dnsleaktest.com/) (dnsleaktest)
+ 
+  * *Guide:*["VPN & DNS Leakage"](https://www.cyberguerrilla.org/a/2012/?p=6857) (Cyber Guerrilla)
+ 
+  * *Guide:*["How can I fix a DNS leak?"](https://www.dnsleaktest.com/how-to-fix-a-dns-leak.html) (DNS Leak Test)
+   
+  * *Guide:* ["DNS logging and how to avoid it"](http://www.infoworld.com/t/internet-privacy/another-privacy-threat-dns-logging-and-how-avoid-it-242879) (InfoWorld)
 
-Links grabbed from http://pastebin.com/yeaqDvFW 
+  * *Article:* ["DNScrypt boosts your internet security?"](http://lifehacker.com/how-to-boost-your-internet-security-with-dnscrypt-510386189) (Lifehacker)
  
-VPN: What they do, how they work and why you should use one > http://gizmodo.com/5990192/vpns-what-they-do-how-they-work-and-why-youre-dumb-for-not-using-one
+  * *Article:* ["DNSCrypt - What is it and why you need it"](http://www.opendns.com/technology/dnscrypt) (Open DNS)
  
+  * *Article:* ["Got TOR? It, Vidalia and The TOR Browser Bundle explained"](https://www.torproject.org/projects/vidalia.html.en) (Tor)
  
-Need a seriously secure VPN?  > http://torrentfreak.com/which-vpn-services-take-your-anonymity-seriously-2014-edition-140315/  AND  https://cryptostorm.is/
+  * *Guide:* ["Want Tor to really work?"](https://www.torproject.org/download/download-easy.html#warning) (Tor)
  
-One VPN service that is not on that list is Cryptostorm (@cryptostorm_is ) My absolute favorite! Uber secure.
+  * *Article:* ["Really Private Browsing: An Unofficial User’s Guide to Tor"](http://www.makeuseof.com/pages/really-private-browsing-an-unofficial-users-guide-to-tor) (MakeUseOf)
  
-Think having VPN is enough? Think again! -> http://torrentfreak.com/how-to-make-vpns-even-more-secure-120419/  
+  * *Article:* ["Layering VPN's and Tor"](https://www.ivpn.net/blog/privacy-guides/why-use-tor-with-a-vpn-service)
+
+  * *Database:* ["If you don't have VPN to hide your IP check out these lists of proxies."](http://spys.ru/en/) (spys.ru)
  
-Tips for using VPN  http://www.greycoder.com/tips-for-using-vpns/
- 
-Learn about #VPN and #TOR right here --> https://cryptostorm.org/viewtopic.php?f=8&t=2894
- 
-Lean about #VPN and why you should use it ---> goldenfrog.com/vyprvpn/why-vpn Info courtesy of @VyprVPN
- 
-I advocate VPN over proxy and this explains well why --> https://www.bestvpn.com/blog/4085/proxies-vs-vpn-whats-the-difference/
- 
-You hear about #Tor and #VPN - considering layering your security and using both --> https://www.ivpn.net/blog/privacy-guides/why-use-tor-with-a-vpn-service
- 
-How to Chain VPNs for More Anonymity. -->> http://null-byte.wonderhowto.com/how-to/chain-vpns-for-complete-anonymity-0131368/  
- 
-The point of getting VPN despite #NSA surveilance  --> http://schoolofprivacy.eu/post/53826146860/is-there-a-point-in-getting-vpns-and-stuff-if-agencies  
- 
-ssh -p <server port> -D <dynamic port ex: 20000> user@server
- 
- 
-VPN can leak DNS personal data - be sure to check  -> https://www.grc.com/dns/dns.htm  AND  -->  www.dnsleaktest.com/
- 
-Learn about VPN & DNS Leakage and how to fix it here.-> https://www.cyberguerrilla.org/a/2012/?p=6857  
- 
-If you find you have a DNS leak use this ----> https://www.dnsleaktest.com/how-to-fix-a-dns-leak.php OR https://www.cyberguerrilla.org/a/2012/?p=6857
- 
-Another privacy threat: DNS logging and how to avoid it http://www.infoworld.com/t/internet-privacy/another-privacy-threat-dns-logging-and-how-avoid-it-242879
-  
-If you don't have VPN to hide your IP check out these lists of proxies > http://spys.ru/en/
- 
-Can't afford to buy VPN but need to hide your IP address?  http://www.softpedia.com/get/Security/Security-Related/X-Proxy.shtml 
- 
-Thinking about boosting your internet security? DNScrypt is one such way > http://lifehacker.com/how-to-boost-your-internet-security-with-dnscrypt-510386189  
- 
-DNSCrypt - What is it and why you need it > http://www.opendns.com/technology/dnscrypt 
- 
-Got TOR? It, Vidalia and The TOR Browser Bundle explained > https://www.torproject.org/projects/vidalia.html.en
- 
-Want #Tor to REALLY work for you? Better follow this - esp "d" > https://www.torproject.org/download/download-easy.html#warning
- 
-Need to know more about #TOR? Unofficial Guide -->http://www.makeuseof.com/pages/really-private-browsing-an-unofficial-users-guide-to-tor
- 
-You hear about #Tor and #VPN - considering layering your security and using both > https://www.ivpn.net/blog/privacy-guides/why-use-tor-with-a-vpn-service
- 
-Learn about #VPN and #TOR right here > https://cryptostorm.org/viewtopic.php?f=8&t=2894
-  
+  * *Article:* ["Can't afford to buy VPN but need to hide your IP address?"](http://www.softpedia.com/get/Security/Security-Related/X-Proxy.shtml) (Softpedia)
+
+**Most of this content is pulled from a [pastebin](http://pastebin.com/yeaqDvFW) paste.**
+

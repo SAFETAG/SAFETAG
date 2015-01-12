@@ -1,24 +1,8 @@
 
-#### Network Mapping Methods [stub]
-
+#### Network Mapping Methods
 
   * *Guide:* ["10 Techniques for Blindly Mapping Internal Networks"](https://www.netspi.com/blog/entryid/135/10-techniques-for-blindly-mapping-internal-networks)
 
-Testing for opened ports with firewalk technique
-There is an interesting way of knowing what kind of filters are placed in the gateway of a specific host. It is called firewalk and it is based on IP TTL expiration. The algorithm goes as follows:
-https://isc.sans.edu/diary/Testing+for+opened+ports+with+firewalk+technique/18761
+  * *Directory:* ["Network Forensics Packages and Appliances"](http://www.forensicswiki.org/wiki/Tools:Network_Forensics) (Forensics Wiki)
 
-
-How to Find The IP Address Of A DHCP server
-http://www.unixmen.com/find-ip-address-dhcp-servre
-
-http://www.forensicswiki.org/wiki/Tools:Network_Forensics
-
-Very usefull Wireshark addons & tools for packet analysis & forensics
-http://t.co/NQ48dRYEK2
-
-vulnhub.com
-
-??????????
-The series highlights free security tools that Microsoft provides to help make IT professionals’ and developers’ lives easier. 
-http://blogs.microsoft.com/cybertrust/2012/10/04/microsofts-free-security-tools-summary/
+  * *Directory:* ["Scripts and tools related to Wireshark"](http://wiki.wireshark.org/Tools) (Wireshark Wiki)

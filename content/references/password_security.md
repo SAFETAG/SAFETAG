@@ -1,12 +1,12 @@
 
 #### Password Security
 
+  * *Guide:* ["How to Teach Humans to Remember Really Complex Passwords"](http://www.wired.com/2014/07/how-to-teach-humans-to-remember-really-complex-passwords/) (Wired)
 
-How to Teach Humans to Remember Really Complex Passwords
-http://www.wired.com/2014/07/how-to-teach-humans-to-remember-really-complex-passwords/
+  * *Guide:* ["Security on Passwords and User Awareness"](https://www.hashtagsecurity.com/security-on-passwords-and-user-awareness) (HashTag Security)
 
-Security on Passwords and User Awareness
-https://www.hashtagsecurity.com/security-on-passwords-and-user-awareness/
+  * *Video:* ["What’s wrong with your pa$$w0rd?"](http://www.ted.com/talks/lorrie_faith_cranor_what_s_wrong_with_your_pa_w0rd?language=en) (TED)
 
-Why horse battery staple is not correct
-https://diogomonica.com/posts/password-security-why-the-horse-battery-staple-is-not-correct/
+  * *Article:* ["Password Security: Why the horse battery staple is not correct"](https://diogomonica.com/posts/password-security-why-the-horse-battery-staple-is-not-correct/) (Diogo Mónica)
+
+  * *Organization:* ["Passwords Research"](http://cups.cs.cmu.edu/passwords.html) (The CyLab Usable Privacy and Security Laboratory (CUPS))
