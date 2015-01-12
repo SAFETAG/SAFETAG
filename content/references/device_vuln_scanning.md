@@ -1,9 +1,12 @@
 
 #### System Vulnerability Scanning
 
+
   * *Project Site:* ["OpenVAS Project Site"](http://www.openvas.org/index.html) (OpenVAS)
 
   * *Manual:* ["OpenVAS Compendium"](http://www.openvas.org/compendium/openvas-compendium.html) (OpenVAS)
+
+  * *Guide:* ["Creating OpenVAS "Only Safe Checks" Policy"](http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines#Appendix_A_-_Creating_OpenVAS_.22Only_Safe_Checks.22_Policy)
 
   * *Guide:* ["How To Use OpenVAS to Audit the Security of Remote Systems on Ubuntu 12.04"](https://www.digitalocean.com/community/tutorials/how-to-use-openvas-to-audit-the-security-of-remote-systems-on-ubuntu-12-04) (Digital Ocean)
 
