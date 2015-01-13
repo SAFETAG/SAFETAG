@@ -73,7 +73,7 @@ http://www.internetsociety.org/your-digital-footprint
 
 Risk Management Expense Portfolio Tool
 http://www.eisf.eu/resources/item/?d=7485
-It is presented as the culmination of input from the EISF members to design a tool that clarifies the estimation and recording of a programme's safety and/or security costs. The outputs can then be clearly presented to donors to demonstrate a clear evidence-base for risk line items within budgets.
+It is presented as the culmination of input from the EISF members to design a tool that clarifies the estimation and recording of a program's safety and/or security costs. The outputs can then be clearly presented to donors to demonstrate a clear evidence-base for risk line items within budgets.
 
 
 The Cost of Security Risk Management for NGOs

@@ -57,7 +57,7 @@ Set up a wireless access point with an appropriate AP name and connect some devi
     * By name / identifiers
     * Watching Client probes and what they connect to (The waiting game)
   * Documenting Finding
-    * Nearby AP's (show them whats around and how easy it was to find them)
+    * Nearby APs (show them whats around and how easy it was to find them)
     * Clients Connected
   * Confirm the office network before proceeding
   * Identify range of wireless network outside of office space.
