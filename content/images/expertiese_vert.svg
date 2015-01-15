@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.56562815"
-     inkscape:cx="296.98793"
-     inkscape:cy="413.76758"
+     inkscape:zoom="1.3112289"
+     inkscape:cx="202.42981"
+     inkscape:cy="289.94314"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -161,7 +161,7 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path6927-3-9-6-2-6-4-33-2"
-       d="m 127.34226,739.49711 0,65.90568"
+       d="m 127.34226,738.15052 0,65.90568"
        style="fill:none;stroke:#0d5cab;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -170,16 +170,16 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path6927-3-9-6-2-6-73-2"
-       d="m 132.24787,739.49711 0,65.90568"
+       d="m 132.24787,738.15052 0,65.90568"
        style="fill:none;stroke:#79b84c;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="ccc"
+       sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path6927-8-80-9-8-7-9"
-       d="m 45.27163,829.85282 0,-57.75633 80.28231,0"
+       d="m 45.27163,829.85282 0,-57.75633 40.572269,0 0,-43.05819 39.710001,0"
        style="fill:none;stroke:#0d5cab;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -233,7 +233,7 @@
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
        id="path6927-2-0-4-2-8"
-       d="m 134.18148,821.52431 0,38.30645 -43.76297,0 0,38.98822"
+       d="m 132.65619,736.8709 0,122.95986 -42.23768,0 0,38.98822"
        style="fill:none;stroke:#76b748;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -314,17 +314,8 @@
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
        id="path6927-2-0-0-0"
-       d="m 129.27589,816.6187 0,38.30658 -43.762989,0 0,38.98822"
+       d="m 127.7506,731.96529 0,122.95999 -42.237699,0 0,38.98822"
        style="fill:none;stroke:#125fad;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.98039216;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-0-1-1"
-       d="m 130.57674,651.45202 0,65.90582"
-       style="fill:none;stroke:#f15c22;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
@@ -350,7 +341,7 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path6927-85-1-4-5"
-       d="m 130.93244,564.28191 0,74.97515"
+       d="m 130.93244,564.28191 0,168.01764"
        style="fill:none;stroke:#f15c22;stroke-width:3.14151597;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -527,43 +518,9 @@
     </a>
     <a
        style="display:inline"
-       id="a42792"
-       xlink:href="#physical_assessment"
-       transform="matrix(0,1.4358831,-1.4358831,0,573.66315,99.610519)">
-      <g
-         id="g28243">
-        <path
-           transform="matrix(0.05573072,0.05573072,0.05573072,-0.05573072,395.50555,410.14233)"
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:1;stroke:#f15c22;stroke-width:48.12016296;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path4254-3-8-5-0-9-9-0-1-9"
-           sodipodi:cx="-1077.1831"
-           sodipodi:cy="738.2251"
-           sodipodi:rx="159.54597"
-           sodipodi:ry="159.54597"
-           d="m -917.63713,738.2251 c 0,88.11481 -71.43117,159.54597 -159.54597,159.54597 -88.1148,0 -159.546,-71.43116 -159.546,-159.54597 0,-88.11481 71.4312,-159.54598 159.546,-159.54598 88.1148,0 159.54597,71.43117 159.54597,159.54598 z"
-           inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-           inkscape:export-xdpi="300"
-           inkscape:export-ydpi="300" />
-        <rect
-           style="fill:#70b441;fill-opacity:0.96078641;stroke:none"
-           id="rect4554-3-0-2-36-36-5-0-9"
-           width="16.280338"
-           height="15.797441"
-           x="476.58566"
-           y="39.931812"
-           ry="7.8987207"
-           transform="matrix(0.70710678,0.70710678,0.70710678,-0.70710678,0,0)"
-           inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-           inkscape:export-xdpi="300"
-           inkscape:export-ydpi="300" />
-      </g>
-    </a>
-    <a
-       style="display:inline"
        id="a64392"
        xlink:href="#data_assessment"
-       transform="matrix(0,1.4358831,-1.4358831,0,573.66315,99.610519)">
+       transform="matrix(0,1.4358831,-1.4358831,0,573.66315,98.263931)">
       <g
          id="g62714">
         <g
@@ -1080,39 +1037,19 @@
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:linespacing="100%"
-       id="text6735-3-7-2-2-3-77-3-5-87-5-6"
-       y="638.6015"
-       x="154.73874"
-       style="font-size:8.97575951px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
-       xml:space="preserve"><tspan
-         id="tspan12280-7-3-2"
-         style="font-size:9.87333488px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-         y="638.6015"
-         x="154.73874"
-         sodipodi:role="line">Physical</tspan><tspan
-         id="tspan12345-2-7"
-         style="font-size:9.87333488px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-         y="648.47485"
-         x="154.73874"
-         sodipodi:role="line">Assessment</tspan></text>
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:linespacing="100%"
        id="text6735-3-7-2-2-3-77-3-5-4-3-2"
-       y="727.35254"
+       y="726.00598"
        x="157.23607"
        style="font-size:8.97575951px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
        xml:space="preserve"><tspan
          id="tspan12360-7-0"
          style="font-size:9.87333488px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-         y="727.35254"
+         y="726.00598"
          x="157.23607"
          sodipodi:role="line">Data</tspan><tspan
          id="tspan12362-9-1"
          style="font-size:9.87333488px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-         y="737.22589"
+         y="735.87933"
          x="157.23607"
          sodipodi:role="line">Assessment</tspan></text>
     <text
@@ -1405,7 +1342,7 @@
        style="display:inline"
        xlink:href="#user_device_assessment"
        id="a44147"
-       transform="matrix(0,1.4358831,-1.4358831,0,573.66315,99.610519)">
+       transform="matrix(0,1.4358831,-1.4358831,0,573.66315,98.263931)">
       <g
          id="g28225">
         <path
@@ -1441,17 +1378,17 @@
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:linespacing="100%"
        id="text6735-3-7-2-2-3-77-3-5-87-7-6-4"
-       y="815.20154"
+       y="813.85498"
        x="157.59644"
        style="font-size:8.97575951px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
        xml:space="preserve"><tspan
          id="tspan12345-5-5-0"
          style="font-size:9.87333488px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-         y="815.20154"
+         y="813.85498"
          x="157.59644"
          sodipodi:role="line">User Device</tspan><tspan
          style="font-size:9.87333488px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-         y="825.07489"
+         y="823.72833"
          x="157.59644"
          sodipodi:role="line"
          id="tspan4620-9-5">Assessment</tspan></text>

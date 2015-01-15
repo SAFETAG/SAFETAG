@@ -1,6 +1,3 @@
----
-title: Audit Overview
-...
 
 <!-- License -->
 
@@ -95,11 +92,6 @@ title: Audit Overview
 <!-- Network Mapping -->
 
 !INCLUDE "content/network_mapping.overview.md"
-
-\newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.overview.md"
 
 \newpage
 <!-- Data Assessment -->

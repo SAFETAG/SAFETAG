@@ -1,7 +1,3 @@
----
-type: guide
-title: Audit Mini-Guide
-...
 
 <!-- License -->
 
@@ -91,11 +87,6 @@ title: Audit Mini-Guide
 <!-- Network Mapping -->
 
 !INCLUDE "content/network_mapping.mini.guide.md"
-
-\newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.mini.guide.md"
 
 \newpage
 <!-- Data Assessment -->

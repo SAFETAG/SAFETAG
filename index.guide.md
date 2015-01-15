@@ -1,6 +1,3 @@
----
-title: Audit Guide
-...
 
 <!-- License -->
 
@@ -90,11 +87,6 @@ title: Audit Guide
 <!-- Network Mapping -->
 
 !INCLUDE "content/network_mapping.guide.md"
-
-\newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.guide.md"
 
 \newpage
 <!-- Data Assessment -->

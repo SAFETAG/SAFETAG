@@ -1,8 +1,4 @@
----
-type: guide
-id: index
-audit_no: AUDIT_NUMBER
-...
+
 
 \newpage
 <!-- 1. Pre-Audit -->
@@ -48,11 +44,6 @@ audit_no: AUDIT_NUMBER
 <!-- 7. Internal Assessment -->
 
 !INCLUDE "content/audit/engagement/internal/index.guide.md"
-
-\newpage
-<!-- 7. Physical Assessment -->
-
-!INCLUDE "content/audit/engagement/physical/index.guide.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"

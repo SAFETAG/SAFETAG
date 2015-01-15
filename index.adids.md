@@ -1,7 +1,3 @@
----
-title: ADIDS Curricula
-...
-
 
 \newpage
 
@@ -125,11 +121,6 @@ title: ADIDS Curricula
 <!-- Network Mapping -->
 
 !INCLUDE "content/network_mapping.adids.md"
-
-\newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/physical_assessment.adids.md"
 
 \newpage
 <!-- Data Assessment -->

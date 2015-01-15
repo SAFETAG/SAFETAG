@@ -93,16 +93,6 @@ The host organization who is allowing active auditing to be done on their networ
       * Privilege Separation
       * Software Version Assessment
       * Staff firewall assessments
-  * Physical Assessment
-    * Staff Assessments Continued
-      * Data Storage
-      * Passwords
-      * Beacons
-  11. Physical Access
-    * Server Access
-    * Device Access
-    * Active Network Jacks
-    * Data Access
   11. Reporting and Follow Up
     * The Final Report
 	  * Connecting Vulnerabilities to Needs
