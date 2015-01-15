@@ -38,6 +38,8 @@ title: ADIDS Curricula
 
 <!-- Overview -->
 
+!INCLUDE "content/before_the_training.adids.md"
+
 !INCLUDE "content/introduction.adids.md"
 
 \newpage
