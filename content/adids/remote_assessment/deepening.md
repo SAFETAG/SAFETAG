@@ -1,14 +1,20 @@
-### Deepening  [stub] 
+### Deepening : OSINT
 
-<?This is the hands-on segment of a session. The deepening will consist of a live experiment with a tool using existing data that has been already parsed, un-parsed data, and an opportunity to capture live data from a static target and the housing training organization using the tool.?>	
+Built-with site
 
-#### Hands on Training
+pastebin search
 
-<?Hands-on training on various components of the tool. This will be a moderately collaborative segment where the trainees will have documentation and be encouraged to explore the tool.?>
+Social Engineering research and staff enumeration
+compass (S2e)??
 
-##### What you will need
+facebook graph, (Jon)
 
-##### Setting up Spiderfoot
+Google Dorking
+
+### Deepening : Recon-ng
+
+
+### Deepening: Spiderfoot (stub)
 
   * Spiderfoot 2.2 Branch of GitHub
 
@@ -22,12 +28,8 @@
 
 ##### Using Spiderfoot
 
-
-#### Live Practice
-<?A timed practice session on a live target?>
-
 ##### Capturing Data
 
 ##### Writing up Findings
 
-##### Connecting to Assets and Process'
+##### Connecting to Assets and Processes
