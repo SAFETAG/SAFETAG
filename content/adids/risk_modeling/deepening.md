@@ -28,8 +28,6 @@ In this exercises the trainee does free-hand mapping for each process guided by 
   * step etc.
   * Identify any processes that this critical process relies on and work with group to decide if it should be added to the list of critical process' to map out.
 
-
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
 	
 ##### Material that may be Useful:
 
@@ -75,11 +73,6 @@ The goal of this exercise is to have the trainee lead the host organization in c
   * As consequences are placed on the wall, the trainee can use other already ranked consequences to help participants identify the right place. "Is another news organization publishing a story before us more or less severe than losing a long-term insider source?"
   * Take photos of the severity scale to record it for later.
 
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	
-##### Material that may be Useful:
-
-  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
 
 #### Identify adversaries (people or groups) who may attempt to carry out threats and their capabilities
 
@@ -90,19 +83,6 @@ The goal of this exercise is to have the trainee lead the host organization in e
   * As risks are placed on the wall, the trainee can use other already ranked risks to help participants identify the right place. "Is a robbery more or less likely than a fire?"
   * Take photos of the likelyhood scale to record it for later.
 
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	
-##### Material that may be Useful:
-
-  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
-
 
 #### Create a risk matrix placing impacts against a range of likelihood
 
-SOME LONG TEXT HERE.
-
-    * Sonet mediocrem et sea, vix at inani falli disputationi. Eos efficiantur necessitatibus id.
-	
-##### Material that may be Useful:
-
-  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)

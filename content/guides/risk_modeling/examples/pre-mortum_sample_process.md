@@ -1,12 +1,4 @@
-
-## Lesson Plan
-
-
-## ACTIVITY (XX MINUTES)
-
-
 ### Risk Modeling Using the Pre-Mortum Strategy
-
 
 #### Preparation
 
