@@ -1,29 +1,9 @@
 ### Input
 
-Responsibilities to the Organization
+**A Travel Checklist sample is available in the Preparation section of the full guide.**
 
-  * outcomes
-  * report
-  * on-going conversation
-  * connection to resources
-  * Creating the ability to run their own risk assessments style activities when thinking of new activities
-able to ask the right questions
+One of the worst things to happen in an audit is to show up ready to really dig in to a Microsoft network, only to find a handful of Macs, or to forget a power cord, or an ethernet cord, or find that your wireless drivers aren't working. 
 
+Audits are difficult enough to avoid falling in to rabbit holes without your own technology adding to it.
 
-Responsibilities of Internews for auditors
-
-  * won’t share org risk data with funder
-  * support for you when you are doing audits (financial and communication)
-
-
-Responsibilitiies to SAFETAG
-
-  * SAFETAG: provide feedback to community about process (for project and funder)
-  * See talking-points
-
-Responsibility to the process
-  * Customizing to fit an organization’s needs and your skills
-  * Currently represents the complete path, not the only path.
-  * Things can be dropped or customized, in fact they should
-  * Select the right tools for the job
-
+Building a password dictionary -- or at least making sure you have the core components for one - is also key to avoid burning time on this on the first day of an audit.  The training curricula covers the password dictionary in conjuction with Network Access.
