@@ -1,5 +1,5 @@
 !INCLUDE "summary.md"
 
-!INCLUDE "recomendation.md"
+!INCLUDE "recommendations.md"
 
 !INCLUDE "instructions.md"

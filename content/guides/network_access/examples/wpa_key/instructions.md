@@ -1,6 +1,8 @@
-An attacker can crack the SampleOrg office’s WPA key in approximately <time> with a short and minimally customized password dictionary containing approximately <number> entries.
+#### Walkthrough
 
-**Step 1:** The attacker customizes his WiFi password dictionary, adding phrases related to the subject: organization name, street address, phone number, email domain, wireless network name, etc. Common password fragments are included, as well: qwerty, 12345, asdf and all four-digit dates back to the year 2001, for example, among others. He may then add hundreds or thousands of words (in English and/or other relevant languages).
+An attacker can crack the office’s WPA key in approximately with a short and minimally customized password dictionary based on open information about the organization and basic word collections.
+
+**Step 1:** The attacker customizes their WiFi password dictionary, adding phrases related to the subject: organization name, street address, phone number, email domain, wireless network name, etc. Common password fragments are included, as well: qwerty, 12345, asdf and all four-digit dates back to the year 2001, for example, among others. He may then add hundreds or thousands of words (in English and/or other relevant languages).
 
 See the Dictionary Creation example under Preparation for details on password dictionary buidling.
 
@@ -38,33 +40,20 @@ This handshake does not contain the WPA key itself, but once the the complete ha
 
 **Step 4:** The auditor attempts to discover the WPA password.
 
-### Using a pre-compilex wordlist called pwdpairs.txt ###
-
-A good wordlist with a few tweaks tends to break most passwords.  Using a collection of all english words, all words from the language of the organization being audited, plus a combination of all these words, plus relevant keywords, addresses, and years tends to crack most wifi passwords.
+A good wordlist with a few tweaks tends to break an unforunate number of passwords.  Using a collection of all english words, all words from the language of the organization being audited, plus a combination of all these words, plus relevant keywords, addresses, and years tends to crack most wifi passwords.
 
 ```bash
     $ aircrack-ng -w pwdpairs.txt -b 1A:2B:3C:4D:5E:6F sampleorg_airodump*.cap
 ```
 
-### Using a combination of brute forcing, wordlists and roles with John the Ripper (JtR) ###
-
-
-For WPA captures, John can either feed in to an aircrack process or attach a capture directly.  For captures, you first have to convert the .cap file (from wireshark, wifite, airodump, etc.) to a format that John likes.  The Jumbo version we use has conversion tools for this available: 
+For WPA captures, John can either feed in to an aircrack process or attack a capture directly.  For captures, you first have to convert the .cap file (from wireshark, wifite, airodump, etc.) to a format that John likes.  The Jumbo version we use has conversion tools for this available: 
 
 ```bash
   $wpapcap2john wpa.cap > crackme
   $./john -w:password.lst -fo=wpapsk-cuda crackme 
 ```
 
-### Brute force, using crunch ###
-
-As a last resort, you can try a direct brute force attack overnight or post-audit to fill in details on key strength.
-
-
-### Sample Practice ###
-
-For practice on any of these methods, you can use the wpa-Induction.pcap file from [Wireshark](http://wiki.wireshark.org/SampleCaptures).
-
+##### Results
 Successful password cracking via piping these into aircrack-ng:
 
 ```
@@ -89,12 +78,20 @@ The fourth line of the above output provides some useful information about the e
 
 It is worth noting that an attacker with the resources and the expertise could increase this rate by a factor of a hundred. Using a computer with powerful graphical processing units (GPUs) or a cloud computing service like Amazon’s EC2, it is possible to test 250,000 or more keys per second. A setup like this would still take several lifetimes to guess a strong password, however.
 
-Regardless, the success of this attack against SampleOrg’s wireless network would allow an attacker to bypass all perimeter controls, including the network firewall. Without access to the office LAN, a non-ISP, non-government attacker would have to position himself on the same network as an external staff member in order to exploit any flaws in the organization’s email or file-sharing services. With access to the local network, however, that attacker could begin carrying out Local attacks quite quickly, and from a distance.
+Regardless, the success of this attack against a wireless network would allow an attacker to bypass all perimeter controls, including the network firewall. Without access to the office LAN, a non-ISP, non-government attacker would have to position himself on the same network as an external staff member in order to exploit any flaws in the organization’s email or file-sharing services. With access to the local network, however, that attacker could begin carrying out Local attacks quite quickly, and from a distance.
 
-With regard to the distance from which an attacker could maintain such access, SampleOrg’s office WiFi network appears to have a relatively strong signal, which extends to the street out front:
+With regard to the distance from which an attacker could maintain such access, the office WiFi network appears to have a relatively strong signal, which extends to the street out front:
 
-<photograph of location>   
+{photograph of location>}
 
-<screenshot of WiFi strength>
+{screenshot of WiFi strength}
 
 Figure 1: WiFi signal strength from a nearby location
+
+
+##### Material that may be Useful:
+
+  * *Tutorial:* [“How to Crack WPA/WPA2”](http://www.aircrack-ng.org/doku.php?id=cracking_wpa) (Aircrack-ng Wiki)
+[“Aircrack-ng”](http://www.aircrack-ng.org/doku.php?id=aircrack-ng) (Aircrack-ng Wiki)
+  * *Documentation:* [“Aireplay-ng”](http://www.aircrack-ng.org/doku.php?id=aireplay-ng) (Aircrack-ng Wiki)
+  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
