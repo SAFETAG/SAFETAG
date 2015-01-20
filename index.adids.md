@@ -46,12 +46,6 @@
 
 \newpage
 
-<!-- Preparation and Responsibility -->
-
-!INCLUDE "content/preparation.adids.md"
-
-\newpage
-
 <!-- Operational Security -->
 
 !INCLUDE "content/operational_security.adids.md"
@@ -98,7 +92,7 @@
 !INCLUDE "content/remote_assessment.adids.md"
 
 \newpage
-<!-- Audit Preparation -->
+<!-- Audit Preparation  -->
 
 !INCLUDE "content/preparation.adids.md"
 

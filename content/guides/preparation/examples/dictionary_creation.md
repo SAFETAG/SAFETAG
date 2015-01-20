@@ -1,14 +1,16 @@
-### Summary
+### Password Dictionary Creation
+
+#### Summary
 
 This component provides resources and recommendations on cracking passwords - both the creation of dictionaries and rules to modify those dictionaries, as well as some basic implementation as well. This is a dangerous (and in many cases, illegal) skill to use, and should be more of a guide to auditors on what password security myths do not work against modern password cracking software, and to use only with permission and only in very specific situations as a demonstration of the power of even a common laptop against weak passwords.
 
-### Description
+#### Description
 
 Weak passwords are prevalent - even after hundreds of well-publicized global password breaches, "password" and "12345" remain the most popular passwords. This exercise supports the auditor in building an effective dictionary and using it to attack non-personal and non-disruptive parts of an organization's infrastructure. Weak wifi passwords are specifically a challenge, as wifi signals often are accessible outside of an office's physical limits, but provide full access to the private network.
 
 This skillset, plus demonstration against non-invasive accounts, provides an opening for a discussion with staff on password security. See [Level Up](https://www.level-up.cc/leading-trainings/training-curriculum/secure-passwords) for further activities and exercises around passwords.
 
-### Approach
+#### Approach
 
  * Download basic word lists
  * Research dictionary needs
@@ -17,7 +19,7 @@ This skillset, plus demonstration against non-invasive accounts, provides an ope
  * Attack a password hash using increasingly more time-consuming methods
 
 
-### Instructions
+#### Instructions
 
 Primarily for use in the Network Access component, building a password dictionary, understanding the ways to automatically mutate it, and running it against passwords is a useful skill to have, and to use to explain why simple passwords are insecure. This [Ars Technica article](http://arstechnica.com/security/2013/10/how-the-bible-and-youtube-are-fueling-the-next-frontier-of-password-cracking/) provides a good insight into the path to tackle iterative password cracking using a variety of tools to meet different goals.
 
@@ -44,8 +46,7 @@ Here is a suggested path to take with suggested tools to help. You might try the
    * John's incremental modes, limited by types
    * Crunch's raw brute-force attack (very, very time intensive - a complete waste of time without GPUs)
 
-
-### Dictionary Research and Creation 
+#### Dictionary Research and Creation 
 
 **Before you arrive on-site** it is important to have your password cracking tools downloaded and relevant dictionaries ready to go, as your main demonstration and use of these tools is to gain access to the organization's network. The effectiveness of this demonstration is drastically reduced if you already have had to ask for the password to connect to the Internet and update your dictionaries, tools, or so on. Some of these  files (especially larger password dictionaries) can be quite large, so downloading them in-country is not recommended.
 
@@ -78,13 +79,13 @@ journalism
 
 Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
 
-#### Optional Further steps
+##### Optional Further steps
 
 Use [CeWL](http://digi.ninja/projects/cewl.php), to spider the organization's web properties to generate additional phrases.  This list will need review, as some of the generated content is not very useful, but may be useful if the site is not in a language the auditor reads fluently.
 
 For passwords other than WPA, specific policies or patterns may help to focus your password dictionary further.  [PACK, or Password Analysis and Cracking Toolkit](https://github.com/iphelix/PACK) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers."  PACK is most useful for large sets of passwords, where it can detect patterns in already-broken passwords to help build new rules. Both password cracking tools listed here are powerful, and have slightly different abilities.  The auditor should choose the one they prefer and/or the one which has the features they desire for this job.
 
-### Combinator Attack with scripting and Hashcat
+#### Combinator Attack with scripting and Hashcat
 
 One quick way to build a more complex password list is to simply double the list up (a "combinator" attack), so that it includes an entry for each pair of these strings:
 
@@ -110,7 +111,7 @@ Hashcat is extremely powerful when you have desktop computer systems to use, but
 More References: (http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2 , http://www.darkmoreops.com/2014/08/18/cracking-wpa2-wpa-with-hashcat-kali-linux/ )
 
 
-### Word mutation with John the Ripper (JtR)
+#### Word mutation with John the Ripper (JtR)
 
 [JtR](https://github.com/magnumripper/JohnTheRipper/commits/bleeding-jumbo) is a powerful tool you can use in combination of existing wordlists, but it also can add in common substitutions (people using zero for the letter "o"). JtR can be used to generate a static list of passwords for other programs, or it can be used directly against a password database. JtR is a bit weak combining words within a wordlist, so you should apply your customizations and any folding before moving on to JtR.
 
@@ -154,7 +155,7 @@ e.g. :
 **PROTIP** Create a dictionary with just "blah" and run various rules against it to understand how each ruleset or combination works. Note specifically that each rule multiplies the size of the dictionary by the number of permutations it introduces. Running the KoreLogic ruleset combination against a **one word** dictionary creates a list of 6,327,540 permutations on just that word.
 
 
-### Brute force, using John and crunch
+#### Brute force, using John and crunch
 
 JtR's "incremental" mode is essentially an optimized brute force attack, so will take a very long time for anything but the shortest passwords, or passwords where you can limit the search space to a character set: "As of version 1.8.0, pre-defined incremental modes are "ASCII" (all 95 printable ASCII characters), "LM_ASCII" (for use on LM hashes), "Alnum" (all 62 alphanumeric characters), "Alpha" (all 52 letters), "LowerNum" (lowercase letters plus digits, for 36 total), "UpperNum" (uppercase letters plus digits, for 36 total), "LowerSpace" (lowercase letters plus space, for 27 total), "Lower" (lowercase letters), "Upper" (uppercase letters), and "Digits" (digits only). The supplied .chr files include data for lengths up to 13 for all of these modes except for "LM_ASCII" (where password portions input to the LM hash halves are assumed to be truncated at length 7) and "Digits" (where the supplied .chr file and pre-defined incremental mode work for lengths up to 20). Some of the many .chr files needed by these pre-defined incremental modes might not be bundled with every version of John the Ripper, being available as a separate download." (http://www.openwall.com/john/doc/MODES.shtml)
 
@@ -166,14 +167,21 @@ $ /path/to/crunch 8 16 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345
 
 This says to try every possible alpha-numeric combination from 8 to 16 characters. This will take a very, very, very long time. 
 
-### Recommendations
+#### Recommendations
 
-The WPA key should be long enough and complex enough to prevent both standard dictionary attacks and “brute-force attacks” in which clusters of powerful computers work in parallel to test every possible character combination. (We recommend 12 or more completely random characters or a passphrase that contains four or five—or more—relatively uncommon words.) The key should not contain common “phrases,” including number sequences, especially if they are related to the organization, its employees or its work. Choosing a strong WPA key is one of the most important steps toward defending an organization’s network perimeter from an adversary with the ability to spend some time in the vicinity of the offices. By extension, mitigating this vulnerability is critical to the protection of employees and partners (and confidential data) from the sort of persistent exposure that eventually brings down even the most well-secured information systems.
+Any important password should be long enough and complex enough to prevent both standard dictionary attacks and “brute-force attacks” in which clusters of powerful computers work in parallel to test every possible character combination. (We recommend 12 or more completely random characters or a passphrase that contains five or more relatively uncommon words.) The key should not contain common “phrases,” expecially from well known literature like Shakespeare or religious texts, but also should not include number sequences or phrases, especially if they are related to the organization, its employees or its work. 
+
+Specifically for wireless passwords, choosing a strong WPA key is one of the most ild not mportant steps toward defending an organization’s network perimeter from an adversary with the ability to spend some time in the vicinity of the offices. By extension, mitigating this vulnerability is critical to the protection of employees and partners (and confidential data) from the sort of persistent exposure that eventually brings down even the most well-secured information systems.
 
 Because shared keys inevitably end up being written on whiteboards, given to office visitors and emailed to partners, the WPA key should also be changed periodically. This does not have to happen frequently, but anything less than three or four times per year may be unsafe.
 
 
-### Resources 
+#### Sample Practice
+
+For practice on any of these methods, you can use the wpa-Induction.pcap file from [Wireshark](http://wiki.wireshark.org/SampleCaptures).
+
+
+##### Resources 
 https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html
 
 http://zed0.co.uk/crossword/
