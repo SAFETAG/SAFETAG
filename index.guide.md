@@ -89,6 +89,14 @@
 !INCLUDE "content/network_mapping.guide.md"
 
 \newpage
+<!-- Vulnerability Scanning !INCLUDE "content/vulnerability_scanning.md" -->
+
+\newpage
+<!-- Physical Aspects of Digital Security -->
+
+!INCLUDE "content/vulnerability_scanning.guide.md"
+
+\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.guide.md"
@@ -97,6 +105,11 @@
 <!-- Device Assessment -->
 
 !INCLUDE "content/device_assessment.guide.md"
+
+\newpage
+<!-- Physical Aspects of Digital Security -->
+
+!INCLUDE "content/physical_assessment.guide.md"
 
 \newpage
 <!-- Social Engineering Exercise -->

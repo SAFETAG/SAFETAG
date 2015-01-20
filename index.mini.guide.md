@@ -99,6 +99,11 @@
 !INCLUDE "content/device_assessment.mini.guide.md"
 
 \newpage
+<!-- Physical Aspects of Digital Security -->
+
+!INCLUDE "content/physical_assessment.mini.guide.md"
+
+\newpage
 <!-- Social Engineering Exercise -->
 
 !INCLUDE "content/social_engineering_exercise.mini.guide.md"
