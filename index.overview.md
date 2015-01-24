@@ -21,7 +21,6 @@
 
 \newpage
 
-
 <!-- Overview -->
 
 !INCLUDE "content/guides/overview.md"
@@ -30,10 +29,15 @@
 
 # The SAFETAG Process
 
+The SAFETAG audit consists of information gathering and audit activities. The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through conversations, training, and group activities is actively building the organizations agency and addressing time-sensitive or critical threats that are possible within the time frame. This iterative process eventually leads to a point where the auditor is confident they have identified the critical and low hanging fruit, and is confident the organization is capable of moving forward with their recommendations. 
+
+![SAFETAG Activities](../../content/images/activities.svg)
+
+
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "content/risk_assessment.overview.md"
+!INCLUDE "content/guides/risk_assessment.overview.md"
 
 \newpage
 <!-- Operational Security -->
