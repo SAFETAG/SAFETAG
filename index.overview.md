@@ -17,6 +17,11 @@
 
 \newpage
 
+!INCLUDE "content/guides/how_to_read_this_guide.overview.md"
+
+\newpage
+
+
 <!-- Overview -->
 
 !INCLUDE "content/guides/overview.md"
@@ -102,6 +107,11 @@
 !INCLUDE "content/follow_up.overview.md"
 
 # Reporting Activities
+
+\newpage
+<!-- Risk Assessment -->
+
+!INCLUDE "content/risk_assessment.overview.md"
 
 \newpage
 <!-- Capacity Assessment -->
