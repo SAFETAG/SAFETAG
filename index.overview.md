@@ -17,40 +17,25 @@
 
 \newpage
 
-
 <!-- Overview -->
-
-## The SAFETAG Process
 
 !INCLUDE "content/guides/overview.md"
 
-![The Safetag Audit Process](../../content/images/expertiese_vert.svg)
-
 \newpage
 
-# PART ONE: Agreement and Information Gathering
+# The SAFETAG Process
 
-![The Pre-Audit Process](../../content/images/pre_audit_expertiese.svg)
+\newpage
+<!-- Risk Modeling -->
+
+!INCLUDE "content/risk_assessment.overview.md"
 
 \newpage
 <!-- Operational Security -->
 
 !INCLUDE "content/operational_security.overview.md"
 
-\newpage
-<!-- Interviews -->
-
-!INCLUDE "content/interviews.overview.md"
-
-\newpage
-<!-- Capacity Assessment -->
-
-!INCLUDE "content/capacity_assessment.overview.md"
-
-\newpage
-<!-- Contextual Research -->
-
-!INCLUDE "content/context_research.overview.md"
+# Pre-Audit Activities
 
 \newpage
 <!-- Assessment Plan Development -->
@@ -58,20 +43,16 @@
 !INCLUDE "content/assessment_plan.overview.md"
 
 \newpage
-
-# PART TWO: The Audit
-
-![The On-Site Audit Process](../../content/images/audit_expertiese.svg)
-
-\newpage
-<!-- Remote Assessment -->
-
-!INCLUDE "content/remote_assessment.overview.md"
-
-\newpage
 <!-- Audit Preparation -->
 
 !INCLUDE "content/preparation.overview.md"
+
+# Audit Activities
+
+\newpage
+<!-- Interviews -->
+
+!INCLUDE "content/interviews.overview.md"
 
 \newpage
 <!-- Risk Modeling -->
@@ -79,19 +60,19 @@
 !INCLUDE "content/risk_modeling.overview.md"
 
 \newpage
-<!-- Network Discovery -->
+<!-- Contextual Research -->
 
-!INCLUDE "content/network_discovery.overview.md"
-
-\newpage
-<!-- Network Access -->
-
-!INCLUDE "content/network_access.overview.md"
+!INCLUDE "content/context_research.overview.md"
 
 \newpage
-<!-- Network Mapping -->
+<!-- Remote Assessment -->
 
-!INCLUDE "content/network_mapping.overview.md"
+!INCLUDE "content/remote_assessment.overview.md"
+
+\newpage
+<!-- Network Assessment -->
+
+!INCLUDE "content/network_assessment.overview.md"
 
 \newpage
 <!-- Data Assessment -->
@@ -103,10 +84,12 @@
 
 !INCLUDE "content/device_assessment.overview.md"
 
-\newpage
-<!-- Social Engineering Exercise -->
+# Support Activities
 
-!INCLUDE "content/social_engineering_exercise.overview.md"
+\newpage
+<!-- Targeted Training -->
+
+!INCLUDE "content/training.overview.md"
 
 \newpage
 <!-- Debrief -->
@@ -114,20 +97,16 @@
 !INCLUDE "content/debrief.overview.md"
 
 \newpage
+<!-- Follow Up -->
 
-# PART THREE: Analysis and Reporting
+!INCLUDE "content/follow_up.overview.md"
 
-![The Post-Audit Process](../../content/images/post_audit_expertiese.svg)
-
-\newpage
-<!-- Vulnerability Analysis -->
-
-!INCLUDE "content/vulnerability_analysis.overview.md"
+# Reporting Activities
 
 \newpage
-<!-- Vulnerability Prioritization -->
+<!-- Capacity Assessment -->
 
-!INCLUDE "content/vulnerability_prioritization.overview.md"
+!INCLUDE "content/capacity_assessment.overview.md"
 
 \newpage
 <!-- Recommendation Development -->
@@ -135,12 +114,7 @@
 !INCLUDE "content/recommendation_development.overview.md"
 
 \newpage
-<!-- Resource Identification -->
-
-!INCLUDE "content/resource_identification.overview.md"
-
-\newpage
-<!-- Roadmap Development -->
+<!-- Prioritization & Roadmap Development -->
 
 !INCLUDE "content/roadmap_development.overview.md"
 
@@ -148,17 +122,6 @@
 <!-- Report Creation -->
 
 !INCLUDE "content/report_creation.overview.md"
-
-\newpage
-<!-- Follow Up -->
-
-!INCLUDE "content/follow_up.overview.md"
-
-\newpage
-
-<!-- Tool Guides -->
-
-!INCLUDE "content/references/tool_guides.md"
 
 \newpage
 

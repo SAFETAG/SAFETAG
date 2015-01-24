@@ -1,19 +1,14 @@
 ## Device Assessment
 
-!INCLUDE "guides/device_assessment/quote.md"
-
 ### Summary
 
 !INCLUDE "guides/device_assessment/summary.md"
 
-### Purpose
+### The Flow Of Information
 
-!INCLUDE "guides/device_assessment/purpose.md"
+![Device Assessment Information Flow](../../content/images/info_flows/device_assessment.svg)
 
-### Approach
+### Approaches
 
 !INCLUDE "guides/device_assessment/approach.md"
 
-### Output
-
-!INCLUDE "guides/device_assessment/output.md"

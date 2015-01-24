@@ -100,11 +100,13 @@ adids: | $(SRC_DIR) $(DOC_DIR)
 	wkhtmltopdf --user-style-sheet theme/core.css \
 		--title "SAFETAG ADIDS Curricula" \
 		--disable-smart-shrinking  \
+		--load-error-handling skip \
+		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
 		--header-left [doctitle] \
 		--outline \
 		--outline-depth 2 \
-		$(SRC_DIR)/adids.html $(DOC_DIR)/adids.pdf
+		$(SRC_DIR)/adids.html $(DOC_DIR)/adids.pdf || true
 
 #Create the auditor guide
 guide: | $(SRC_DIR) $(DOC_DIR)
@@ -116,6 +118,8 @@ guide: | $(SRC_DIR) $(DOC_DIR)
 	wkhtmltopdf --user-style-sheet theme/core.css \
 		--title "SAFETAG Guide" \
 		--disable-smart-shrinking  \
+		--load-error-handling skip \
+		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
 		--header-left [doctitle] \
 		--outline \
@@ -132,6 +136,8 @@ mini_guide: | $(SRC_DIR) $(DOC_DIR)
 	wkhtmltopdf --user-style-sheet theme/core.css \
 		--title "SAFETAG Mini Guide" \
 		--disable-smart-shrinking  \
+		--load-error-handling skip \
+		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
 		--header-left [doctitle] \
 		--outline \
@@ -148,11 +154,13 @@ overview: | $(SRC_DIR) $(DOC_DIR)
 	wkhtmltopdf --user-style-sheet theme/core.css \
 		--title "SAFETAG Overview" \
 		--disable-smart-shrinking  \
+		--load-error-handling skip \
+		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
 		--header-left [doctitle] \
 		--outline \
 		--outline-depth 2 \
-		$(SRC_DIR)/overview.html $(DOC_DIR)/overview.pdf
+		$(SRC_DIR)/overview.html $(DOC_DIR)/overview.pdf || true
 
 #Create the all SAFETAG documents
 all_docs: adids guide mini_guide overview

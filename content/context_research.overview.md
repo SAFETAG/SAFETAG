@@ -1,19 +1,13 @@
 ## Context Research
 
-!INCLUDE "guides/context_research/quote.md"
-
 ### Summary
 
 !INCLUDE "guides/context_research/summary.md"
 
-### Purpose
+### The Flow Of Information
 
-!INCLUDE "guides/context_research/purpose.md"
+![Context Research Information Flow](../../content/images/info_flows/context_research.svg)
 
 ### Approach
 
-!INCLUDE "guides/context_research/approach.md"
-
-### Output
-
-!INCLUDE "guides/context_research/output.md"
+* RESEARCH: Search for background information that will help you better understand potential threats to the organization and to the audit process.

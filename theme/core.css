@@ -1,5 +1,6 @@
 /* fonts */
 
+
 @font-face {
   font-family: 'Open Sans Condensed';
   font-style: normal;
@@ -28,18 +29,19 @@
   src: local('Slabo 13px'), local('Slabo13px-Regular'), url(https://fonts.gstatic.com/s/slabo13px/v2/fScGOqovO8xyProgHURSRxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
 
+
 html,
 body {
 	background: white;
-	font-size: 13pt;
-	font-family: 'Slabo 13px';
+	font-size: 10pt;
+	font-family: 'Slabo 13px', sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: "Open Sans Condensed";
+    font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -50,18 +52,18 @@ h3 {
 }
 
 h1 {
-    font-size: 30pt;
-    line-height: auto;
-}
-h2 {
     font-size: 23pt;
     line-height: auto;
 }
-h3 {
+h2 {
     font-size: 18pt;
+    line-height: auto;
+}
+h3 {
+    font-size: 10pt;
 }
 h4 {
-    font-size: 13pt;
+    font-size: 10pt;
 }
 h1.bigtitle {
     font-size: 40pt;
@@ -160,6 +162,23 @@ p {
     widows: 3;
 }
 
+/* Images in their own paragraph should be centered.*/
+/*figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: venter;
+    font-size: 8pt;
+}
+
 img.inlogo {
     text-align:left;
 }
@@ -184,13 +203,13 @@ nav li a:visited,
 nav li a:link,
 nav li a:hover,
 nav li a:active {
-    font-size: 13pt;
+    font-size: 10pt;
     color: black;
     text-decoration: none;
 }
 
 nav.toc ul ul li {
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 nav h1 {

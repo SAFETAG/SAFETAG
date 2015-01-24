@@ -1,19 +1,13 @@
 ## Data Assessment
 
-!INCLUDE "guides/data_assessment/quote.md"
-
 ### Summary
 
 !INCLUDE "guides/data_assessment/summary.md"
 
-### Purpose
+### The Flow Of Information
 
-!INCLUDE "guides/data_assessment/purpose.md"
+![Data Assessment Information Flow](../../content/images/info_flows/data_assessment.svg)
 
 ### Approach
 
 !INCLUDE "guides/data_assessment/approach.md"
-
-### Output
-
-!INCLUDE "guides/data_assessment/output.md"
