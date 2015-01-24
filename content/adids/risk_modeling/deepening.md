@@ -1,52 +1,14 @@
 ### Deepening
 
-The goal of this activity is to give the trainee's an opportunity to lead an opportunity to lead a process mapping with the host organization.
+The goal of this activity is to give the trainees an opportunity to lead an opportunity to build upon the process mapping activity and build out a full risk assessment.
 
-##### What trainees will need
-
-
-##### What you will need
-
-
-#### Identify and map critical organizational processes.
-
-The goal of this exercise is for the trainee to lead the host participants in "brain-storming" a list of all the processes that are critical for their work.
-
-Once complete the trainee to lead the attendees in identifying the subset of activities that are critical to their work. Helping the organization triage these processes is at the core of how an auditor continues their assessment. An auditor uses this subset to guide their audit. If an auditor is not mindful of making sure that there are processes among the critical processes identified that speak to the full range of participants their recommendations are more likely to meet resistance.
-
-The goal of this exercise is for the trainee to lead the attendees through each process identified earlier and one after another have the participants imagine that it is months in the future and the current process has been carried out. And it has failed. The participants have to explain why it failed and what the outcome of that failure would mean while the trainee documents them.
-
-*NOTE:* The participants can optionally be split into groups for this process. The trainee should do one process with the group as a whole before the participants are split into groups. If split into groups, each group will need a note-taker, who ideally will be other trainee's, so that the trainer can walk between the groups and assist the trainee's or participants if they get stuck.
-
-In this exercises the trainee leads the participants in an overview of the consequences of the identified during the activity and then a **rapid** ranking of the importance of process' based upon the consequences if they fail. 
-
-In this exercises the trainee does free-hand mapping for each process guided by the host participants. The trainee needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
-
-  * "We will be charting the sequence of events of this process. We want to represent the process, as it actually happens - NOT what you might prefer it to be!"
-  * step 2
-  * step 3
-  * step etc.
-  * Identify any processes that this critical process relies on and work with group to decide if it should be added to the list of critical process' to map out.
-
-	
-##### Material that may be Useful:
-
-  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
-
-
-#### Identify threats to those processes.
-
+#### Identify threats to processes.
 
 This short exercise is not as interactive for the host organizations participants as many in this section, and as such can be more difficult for a trainee who is less comfortable lecturing to groups.
 
   * Identify Current Approaches to addressing risks
     * Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
 	* *NOTE:* We do this so that we can anchor proposed action in existing practices in the report. - (Shostack: Threat Modeling pg. 298)
-
-
-##### Material that may be Useful:
-
-  * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
 
 
 #### Identify the impact to the organization if those threats occur.

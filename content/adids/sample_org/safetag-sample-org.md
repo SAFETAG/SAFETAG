@@ -99,6 +99,7 @@ Interior Rooms:
 ### Office Network and Devices ###
 
 Exec Dir and Comms Dir both have Mac laptops at OSX 10.8 (Mountain Lion). They did not upgrade because they heard Mavericks didn't work well.
+
 Program manager has a Windows laptop running a legitimate version of Windows 7 with an expired commercial AV
 Rest of staff uses older desktops running legitimate Windows XP.
 
