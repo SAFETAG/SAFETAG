@@ -44,6 +44,18 @@
 
 \newpage
 
-### Example
+### Examples
 
 !INCLUDE "guides/network_access/examples/wpa_key/index.md"
+
+\newpage
+
+!INCLUDE "guides/network_access/examples/wps_pin/index.md"
+
+\newpage
+
+!INCLUDE "guides/network_access/examples/wep/index.md"
+
+\newpage
+
+!INCLUDE "guides/network_access/examples/mac_filtering/index.md"

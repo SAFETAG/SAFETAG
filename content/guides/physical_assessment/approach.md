@@ -1,4 +1,6 @@
-   * With your point of contact, walk around the office to meet staff and take note of device usage and storage.
-   * With your point of contact, repeat the guided tour without staff present 
-   * Through interviews, enumerate the list of everyone who has access to the office space.
+
+### Approach
+
+   * Note physical locations of key hardware (routers, servers)
+   * Note office access policies
 

@@ -1,6 +1,5 @@
----
-type: guide
-id: audit-physical-beacons-index
-...
+!INCLUDE "summary.md"
 
-Auditing / Training on how devices beacon, if association and tracking in in the threat model.
+!INCLUDE "recomendation.md"
+
+!INCLUDE "instructions.md"

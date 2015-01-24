@@ -46,12 +46,6 @@
 
 \newpage
 
-<!-- Preparation and Responsibility -->
-
-!INCLUDE "content/preparation.adids.md"
-
-\newpage
-
 <!-- Operational Security -->
 
 !INCLUDE "content/operational_security.adids.md"
@@ -98,7 +92,7 @@
 !INCLUDE "content/remote_assessment.adids.md"
 
 \newpage
-<!-- Audit Preparation -->
+<!-- Audit Preparation  -->
 
 !INCLUDE "content/preparation.adids.md"
 
@@ -163,10 +157,7 @@
 
 !INCLUDE "content/recommendation_development.adids.md"
 
-\newpage
-<!-- Resource Identification -->
-
-!INCLUDE "content/resource_identification.adids.md"
+<!-- \newpage Resource Identification (included in recommendations for ADIDS)  !INCLUDE "content/resource_identification.adids.md" -->
 
 \newpage
 <!-- Roadmap Development -->
@@ -178,19 +169,17 @@
 
 !INCLUDE "content/report_creation.adids.md"
 
-\newpage
-<!-- Follow Up -->
-
-!INCLUDE "content/follow_up.adids.md"
-
-\newpage
+<!-- \newpage Follow Up (Included in reporting for ADIDS) !INCLUDE "content/follow_up.adids.md" \newpage -->
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
 
-<!-- Load Footnotes -->
-!INCLUDE "content/references/footnotes.md"
 
+<!-- Load Footnotes 
+Footnotes
+
+!INCLUDE "content/references/footnotes.md"
+-->
 \newpage
 <!-- APPENDIX A - Sample Org-->
 

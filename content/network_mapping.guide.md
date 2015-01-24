@@ -43,3 +43,7 @@
 !INCLUDE "references/network_mapping.overview.md"
 
 !INCLUDE "references/network_mapping_methods.md"
+
+### Examples
+
+!INCLUDE "guides/vulnerability_scanning/examples/openvas/index.md"

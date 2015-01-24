@@ -1,20 +1,48 @@
 ### Input [stub]
 
-<?This is usually the lecture part of the session. The trainer presents on issues, sub-topics and more advanced concepts related to focus of the session. An effective input session is one in which the participants are engages with a range of materials including case studies and there is a give and take in knowledge sharing among trainers and participants.?>
 
-#### Purpose of the Remote Audit [stub]
+Remote / OSINT
 
-!INCLUDE "audit/engagement/remote/purpose.md"
+DNS and mail records
+Built-with site
+pastebin search
+google dorking
+
+Social Engineering research and staff enumeration
+compass (S2e)??
+facebook graph, (Jon)
+Other tools
+
+
+
 
 #### Information Gathering Methodology  [stub]
 
 <?step-by-step explanation that is tool agnostic of the audit / approach?>
 
-!INCLUDE "audit/engagement/remote/approach.md"
+!INCLUDE "../../guides/remote_assessment/approach.md"
 
 ### Technical Context Research
 
-#### Introduction to recon-nd
+#### Introduction to recon-ng
+
+intro to tool
+running on a server is ideal; fire up your vpns?
+https://layer8.org/linux-vpn-instructions ? 
+
+recon-ng tutorial overview
+
+Putting context research to work
+
+Adding all domains found
+Adding all hosts found
+Finding netblocks
+whois
+ping
+Adding e-mails found
+Adding staff found
+repeat and explore!
+
 
 #### Advanced Concepts  [stub]
 

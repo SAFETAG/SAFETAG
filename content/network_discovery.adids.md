@@ -6,7 +6,7 @@
 !INCLUDE "adids/network_discovery/summary.md"
 
 <!-- Why The Topic Matters -->
-!INCLUDE "adids/network_discovery/context.md"
+<!--!INCLUDE "adids/network_discovery/context.md"-->
 
 !INCLUDE "adids/network_discovery/why_it_matters.md"
 
@@ -48,3 +48,4 @@
 
 <!--Synthesis [stub] {.synthesis} -->
 
+!INCLUDE "adids/network_discovery/synthesis.md"

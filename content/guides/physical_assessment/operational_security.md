@@ -1,2 +1,4 @@
 
-  * Make sure that you and/or your point of contact have clear organization permission or a liability waiver in case the after hours assessment attracts the attention of security guards,  police, or other authorities.
+### Operational Security
+
+* Any physical notes taken on physical security should be destroyed. Digital notes should be kept in line with overall SAFETAG standards.
