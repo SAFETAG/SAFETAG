@@ -28,3 +28,12 @@ Resource identification
  * Community resources: Rapid response network, LevelUp community, TTC, FLD, ...
  * Remembering resources that the org mentioned they already have
  * Auditor being a resource to help them id resources in the future
+
+  * Resources
+	* Identifying resources
+	  * training resources, digital security rapid & long-term response resources, technology hubs, funding sources for supporting these types of organizations, etc. 
+	  * in-region
+	  * out of region
+	* Sorting resources
+	* Identifying DIY resources
+* Road Map
