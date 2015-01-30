@@ -1,66 +1,108 @@
 ### Deepening
 
-This portion of the module covers mapping a network as well as running deeper scans on selected targets once you have gained access. This exercise covers both using nmap and common command-line network utilities as well as using OpenVAS for vulnerability detection.
+This portion of the module covers mapping a network as well as running deeper scans on selected targets once you have gained access. This exercise covers both using nmap and common command-line network utilities as well as using OpenVAS for vulnerability detection.  This section is split into the same sub-divisions as the Input section:
 
-#### Mapping the network
 
-  * airodump logging (handshakes, beacons, macs)
-    * Identifying applicable clients
-	  * Ones attached to the organizations wifi-router
- 
+  * Network Mapping and Service Discovery
+    * Basic Network Mapping
+    * Identifying Network Hardware
+  * Network Traffic Analysis
+  * Vulnerability Scanning
+    * Using OpenVAS
+    * Other tools
+  * Vulnerability Research
+    * Service Identification
+    * Vulnerability Databases
+    * Default Configurations
 
-##### Mapping the Network
+**Note** {.note} Don't forget that other participants will show up on the network.
 
-*NOTE:*{.note} Because we are going to be using the graphical front end we will not be discussing how to collect command line output.
+#### Network Mapping and Service Discovery
 
-  * Identify hosts that are responding to pings
-	```bash
-	nmap -v -sP x.x.x.0/24
-	```
-  * Have the participants use the "no ping" flag (-Pn) to allow them to continue without a ping request. This will increase the time of these scans significantly so guide the participants in how to do this quickly.
-  * Have the participants edit the scan profile to begin adding additional features such as basic OS and Version detection
-  * Have the participants begin adding script functions, such as banners and smb-os-discovery - note where scripts alert the user to their safety levels.
+Continuing from the *zenmap* Activity, we will now dive deeper into network scanning; first by more advanced and precise *nmap* scannning.
 
+##### Basic Network Mapping
+
+  * Basic Scanning
+    * Default profiles
+  * Saving Scans & Results
+  * Creating Profiles
+    * Un-targeted Scans for easier re-use
+  * Saving Profiles for later
+  * Searching & Comparing Scans
   * Interpreting Results
-	* Don't forget that other participants might show up on the network.
   * Capturing Results
     * Customizing and outputting topology for further use and documentation
     * Remember that client IP addresses will likely change over time!
- 
 
-##### Identifying servers and network hardware [STUB]
+  * Have the participants use the "no ping" flag (-Pn) to allow them to continue without a ping request. This will increase the time of these scans significantly so guide the participants in how to do this quickly.
+  * Have the participants edit the scan profile to begin adding additional features such as basic OS and Version detection
+  * Encourage targeted deep scans against the VMs to save time.
+  * Have the participants begin adding script functions, such as banners and smb-os-discovery - note where scripts alert the user to their safety levels
+  * While zenmap has useful SMB information, also discuss  *smbtree* and *nmlookup* as useful network-mapping/exploration tools
 
- * smbtree and nmlookup
+##### Identifying Network Hardware
 
   * Identifying up-stream devices with traceroute
     * No, we are serious, we are going to cover traceroute. Just as a reminder to use it, and to use ICMP (-I) and TCP (-T / tcptraceroute)
     * route, mtr (-rwc 10) are also useful
   * Enumerating the mapping techniques used earlier in this section up the network chain
     *NOTE:*{.note} ONLY do this with approval and within the LAN that are owned by the organization.)
+  * Identifying the network's public IP (via whatismyipaddress, skype resolvers, discuss other methods)
+  * With permission, run an nmap scan (via a VPN) against this external-facing IP. 
 
 
-##### Material that may be Useful:
-  * *Guide:* ["Diagnosing Network Issues with mtr"](https://www.linode.com/docs/networking/diagnosing-network-issues-with-mtr) (Linode)
-  * *Guide:* [“Zenmap GUI Users' Guide”](http://nmap.org/book/zenmap.html) (Zenmap GUI Users' Guide)
-  * *Guide:* [“Surfing the Network Topology”](http://nmap.org/book/zenmap-topology.html) (Zenmap GUI Users' Guide)
-  * *Overview:* [“The Purpose of a Graphical Frontend for Nmap”](http://nmap.org/book/zenmap.html#zenmap-purpose) (Zenmap GUI Users' Guide)
-  * *Guide:* [“Host Detection”](http://nmap.org/book/man-host-discovery.html) (nmap Reference Guide)
-  * *Guide:* [“OS Detection”](http://nmap.org/book/man-os-detection.html) (nmap Reference Guide)
-
-#### Listening to the Network [STUB]
+#### Network Traffic Analysis: Listening to the Network
 
  * Wireshark
- * Filters
- * Privacy
+ * Working with Filters
  
-#### Vulnerability Scanning [STUB]
+#### Server Vulnerability Scanning
 
-  * Get OpenVAS running (see example docs)
+##### Using OpenVas
+  * Setting up OpenVAS running (see example docs)
+  * Running a scan using the Greenbone Security Assistant
+  * Creating a custom scan
   * Scanning with OpenVAS
   	* Scan settings , Only-Safe Checks
   	* Caveats - blocking, crashing, breaking things
   * Target one of the VMs on the network (TODO: add one with fail2ban??)
+  * Documenting Scans and Results
+
+##### Other Tools
+
+ * Light-touch Website tools: Builtwith, (DrupalVersionCheck site?)
+ * SkipFish,  OwaspZAP, ProxyStrike 
 
 
-  	##### Material that may be Useful:
-  * *Guide:* ["Creating OpenVAS "Only Safe Checks" Policy"](http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines#Appendix_A_-_Creating_OpenVAS_.22Only_Safe_Checks.22_Policy) (PTES Technical Guide)
+#### Vulnerability Research
+
+Database Exploration
+
+* Vulnerability Databases
+  * [NVD / National Vulnerability Database](https://web.nvd.nist.gov/view/vuln/search-advanced)
+  * Search [OVAL Database by platform and software](http://oval.mitre.org/repository/data/search/)
+    * CVE - Use platform, software, CVE# or OVAL#
+  * CCE is transitioning the information currently located at the [CCE MITRE site](http://cce.mitre.org/) to the [NIST CCE index](https://nvd.nist.gov/cce/index.cfm). In the meantime the existing MITRE site still serves as a source of information about CCE.
+    * CVSS and connecting vulns to risks
+    * CPE
+      * Refining searches by platform.
+* [OSVDB](http://osvdb.org/)
+* [Exploit DB](http://www.exploit-db.com/search)
+* [Security Tracker](http://securitytracker.com/topics/topics.html)
+* [CERT CC Advisories](https://www.cert.org/historical/advisories/)
+* Vendor Info
+  * (http://oss-security.openwall.org/wiki/vendors)
+  * (https://protect.iu.edu/cybersecurity/indepth)
+  * [Microsoft](https://technet.microsoft.com/en-us/security/bulletin)
+  * Search for recent vendor advisories for software (http://oss-security.openwall.org/wiki/vendors)
+  * (https://protect.iu.edu/cybersecurity/indepth)
+  * Just google search for "[SOFTWARE] advisory" or "vulnerability"
+
+##### Default Configurations
+
+  * Find Default Passwords
+    * [DefaultPassword](http://www.defaultpassword.com/)
+  * Identify Hardening Guides
+  * Find Common Mis-Configurations
+  * Verify Vulnerabilities

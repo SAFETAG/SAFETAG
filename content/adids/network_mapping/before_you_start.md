@@ -1,10 +1,21 @@
 ### Before You Start
 
-This lesson is best thought of as two separate lessons, combined for logical flow - first is the mapping segment where participants discover the layout of the network and what else is on it, and the second is a deeper dive into specific servers to scan for vulnerabilities.
+While in the audit flow itself, these activities are closely linked together and part of the flow of the audit, training on this is likely to take multiple sessions:
 
-#### Setting up Exploitation VM
+  * Network Mapping and Service Discovery
+    * Basic Network Mapping
+    * Identifying Network Hardware
+  * Network Traffic Analysis
+  * Vulnerability Scanning
+    * Using OpenVAS
+    * Other tools
+  * Vulnerability Research
+    * Service Identification
+    * Vulnerability Databases
+    * Default Configurations
 
-Before you start the mapping exercises you will need to set up a laptop with multiple vulnerable virtual machines.
+#### Preparing a Test Network
 
-  * Set up exploitable virtual machines and connect them to the router.
-  * Have one or two of the virtual machines not respond to ping's or other ICMP traffic. [TODO]
+This session exposes the network being used to a variety of increasingly invasive scans. It is absolutely important to have a private network to run these scans on so as to not disrupt an actual network and in many cases cross potential legal lines.
+
+In addition, it is very valuable to have "target" machines for the most invasive scans. Before you start the mapping exercises you will need to set up a laptop with multiple vulnerable virtual machines.  See the Materials Needed section for suggested VMs to use.

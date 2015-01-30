@@ -143,11 +143,6 @@
 ![The Post-Audit](../../content/images/post_audit_expertiese.svg)\
 
 \newpage
-<!-- Vulnerability Analysis -->
-
-!INCLUDE "content/vulnerability_analysis.adids.md"
-
-\newpage
 <!-- Vulnerability Prioritization -->
 
 !INCLUDE "content/vulnerability_prioritization.adids.md"
