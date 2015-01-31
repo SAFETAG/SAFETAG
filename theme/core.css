@@ -75,6 +75,12 @@ h1.bigtitle {
     text-transform: uppercase;
 }
 
+.example {
+	border: 1px dashed darkblue;
+	background: lightblue;
+	padding: 1em;
+}
+
 .sidebar {
     text-transform: uppercase;
     color: #00467f;

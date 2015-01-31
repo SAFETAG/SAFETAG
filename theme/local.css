@@ -77,6 +77,12 @@ h1.bigtitle {
     color: #00467f;
 }
 
+.example {
+	border: 1px dashed darkblue;
+	background: lightblue;
+	padding: 1em;
+}
+
 .orange_sidebar {
     text-transform: uppercase;
     color: #c85c19;
