@@ -117,6 +117,11 @@
 !INCLUDE "content/network_mapping.adids.md"
 
 \newpage
+<!-- Physical -->
+
+!INCLUDE "content/physical_assessment.adids.md"
+
+\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.adids.md"

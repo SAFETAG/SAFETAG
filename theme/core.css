@@ -35,6 +35,10 @@ body {
 	font-family: 'Slabo 13px';
 }
 
+code {
+	font-size: .5em;
+}
+
 h1,
 h2,
 h3,
