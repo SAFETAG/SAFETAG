@@ -31,6 +31,11 @@ body {
 	font-family: 'Slabo 13px';
 }
 
+code {
+	font-size: 8pt;
+	line-height: 9pt; 
+}
+
 h1,
 h2,
 h3,
@@ -70,6 +75,12 @@ h1.bigtitle {
 .sidebar {
     text-transform: uppercase;
     color: #00467f;
+}
+
+.example {
+	border: 1px dashed darkblue;
+	background: lightblue;
+	padding: 1em;
 }
 
 .orange_sidebar {

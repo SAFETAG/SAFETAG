@@ -58,5 +58,5 @@
 
 ### Example
 
-!INCLUDE "guides/device_assessment/examples/device_assessment_checklist.md"
+!INCLUDE "guides/device_assessment/examples/device_checklist/index.md"
 

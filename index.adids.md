@@ -117,6 +117,11 @@
 !INCLUDE "content/network_mapping.adids.md"
 
 \newpage
+<!-- Physical -->
+
+!INCLUDE "content/physical_assessment.adids.md"
+
+\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.adids.md"
@@ -141,11 +146,6 @@
 # PART THREE: Analysis and Reporting
 
 ![The Post-Audit](../../content/images/post_audit_expertiese.svg)\
-
-\newpage
-<!-- Vulnerability Analysis -->
-
-!INCLUDE "content/vulnerability_analysis.adids.md"
 
 \newpage
 <!-- Vulnerability Prioritization -->

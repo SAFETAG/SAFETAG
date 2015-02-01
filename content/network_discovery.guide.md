@@ -44,6 +44,6 @@
 
 !INCLUDE "references/network_discovery_methods.md"
 
-### Vulnerabilities
+### Example
 
-!INCLUDE "guides/network_discovery/beacons/index.md"
+!INCLUDE "guides/network_discovery/examples/beacons/index.md"

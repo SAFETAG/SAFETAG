@@ -1,13 +1,16 @@
-### OSX ###
+
+#### Device Assessment Checklist
+
+##### OSX
  * OS Security Updates
 
  * Firewall
-   * See http://support.apple.com/en-us/HT1810 for cross-version guidance
-   * (GUI) Choose System Preferences from the Apple menu, Security (10.5 and before) or Security & Privacy (10.6 and later), then the Firewall tab.
+    * See http://support.apple.com/en-us/HT1810 for cross-version guidance
+    * (GUI) Choose System Preferences from the Apple menu, Security (10.5 and before) or Security & Privacy (10.6 and later), then the Firewall tab.
  * Anti-Virus Version
-   * 
+    * 
  * User privilege
-   * 
+    * 
  * Drive Encryption
    * (CLI) 
 ```sudo fdesetup status```
@@ -20,7 +23,7 @@
 ```ps -ef```
    * (GUI) The "Activity Monitor" application is located in /Applications/Utilities provides a similar interface to "top"
 
-### Windows ###
+##### Windows
 If Windows is not your primary OS, you can download sample Virtual Machines (with time limitations) from Microsoft through their project to improve IE support via https://www.modern.ie/en-us/virtualization-tools#downloads (see also http://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/ and https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf) 
 
 **Windows 8**
@@ -84,7 +87,7 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
  ```tasklist``` 
    * (GUI) Right-click on task bar, select "Start Task Manager"
 
-### Linux ###
+##### Linux
  * Firewall
    * (CLI) 
 ```sudo iptables -L -n```
@@ -110,12 +113,12 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
 ```top```
 
 
-### Phone Usage ###
+##### Phone Usage
  * Work Email
  * Work Calls
  * Chat Apps with partners/work related
 
-### User Software and Tools ###
+##### User Software and Tools
 
  * Email
  * Webmail
@@ -131,8 +134,5 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
    * intranet
    * extranet / other sites?
 
-#### Notes ####
+##### Notes ####
 Investivate Secunia usage
-
-
-

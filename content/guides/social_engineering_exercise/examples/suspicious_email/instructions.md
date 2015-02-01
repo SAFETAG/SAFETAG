@@ -1,17 +1,9 @@
 
-### Social Engineering Suspicious email Activity
-
-This activity is taken from the [Level Up Project](https://level-up.cc) and written by  Pablo, Daniel O’Clunaigh, Ali Ravi, and Samir Nassar. The activity is called [Analyzing a Potentially Harmful Email](https://www.level-up.cc/leading-trainings/training-curriculum/activity/analyzing-email). T
+#### Instructions Social Engineering Suspicious email Activity
  
-### Duration: 
-
-60 minutes
-
-### Summary: 
-
 In this exercise participants will examine an email for clues about its authenticity.
 
-### Materials to Prepare
+##### Materials to Prepare
 
   * A “malicious” example e-mail. Details below on how to create your own (which will take an hour or so to prepare, though once it is prepared you don't need to do so again).
     * You can identify examples "in the wild" or from news stories to use, although creating your own can provide more utility and practice for training participants throughout a malware training session, since you can ensure it illustrates everything you want to cover.
@@ -21,7 +13,7 @@ In this exercise participants will examine an email for clues about its authenti
   * Flipchart or whiteboard with markers (flipcharts are often preferred so you can keep the notes from the session to refer to later as needed)
   * Projector 
 
-### Creating the "malicious" example email
+###### Creating the "malicious" example email
 
   * Send an e-mail to yourself and export it as a .EML file (Mail message file) so that you can edit the source code. You can use Notepad or any other text editor to do so.
     * To export to EML in Outlook, simply select your message and click “Save As”. Then select “Outlook Message Format - Unicode” as your file type.
@@ -56,7 +48,7 @@ Remember to visit <a href=’http://www.harmfulsite.com’>http://www.example.co
     * Choose your sender and reciever emails wisely, along with any cc'd emails. These can be used to illustrate how emails can seem trustworthy or valid at first glance and should be examined more closely, as well as the common tactic of cc'ing contacts the recipient may know or are familiar with. Other examples can be addresses that may be secondary accounts for legitimate contacts (e.g., "anna.hrw@gmail.com" as a misleading Human Rights Watch staffer emailing about regional human rights issues if your participants work with HRW).
     * Anything else you can think of, especially any contemporary tactics or tactics that are being employed to target high-risk actors similar to your participants.
 
-### (Optional) Create your own phishing website
+###### (Optional) Create your own phishing website
 
 You can also create a website as an example of phishing. This is recommended for trainers with some previous knowledge of HTML editing, Apache server configuration, and name to IP-translation using the HOSTS file.
 
@@ -99,15 +91,15 @@ You can also create a website as an example of phishing. This is recommended for
     * Save the changes to your host file. Open your browser and go to tvvitter.com. You should be able to see your mirrored page.
 
 
-### Running the Activity
+##### Running the Activity
 
 This activity directly blends into the discussion that follows, so the division below is somewhat false. You can run this as group activity or with the entire group of particpants.  Or you can display the e-mail in your projector and having people comment on any inconsistencies. Sending particpants the email allows it to be more interactive. 
  
-Option One: Sharing the e-mail you've prepared with all participants. Ask them to open it using a mail client and see what happens when they click the links or open the attachment. (Note: Since the EICAR file is a known, albeit innocuous test file for malware, it may be directed into spam folders by some of the major email providers, such as Gmail. Because of this, we suggest sharing it with participants via USB.) (This approach also serves as a way to check whether or not they have functioning anti-virus programs that provide real-time protection.) You will also want to have the email available on the projector for the subsequent discussion.
+**Option One:** Sharing the e-mail you've prepared with all participants. Ask them to open it using a mail client and see what happens when they click the links or open the attachment. (Note: Since the EICAR file is a known, albeit innocuous test file for malware, it may be directed into spam folders by some of the major email providers, such as Gmail. Because of this, we suggest sharing it with participants via USB.) (This approach also serves as a way to check whether or not they have functioning anti-virus programs that provide real-time protection.) You will also want to have the email available on the projector for the subsequent discussion.
  
-Option Two: Display the email via projector and engage the participants as a group as you analyze the email and its contents.
+**Option Two:** Display the email via projector and engage the participants as a group as you analyze the email and its contents.  *See also the Phishing Quiz example in this section.*
 
-### Discussion
+##### Discussion
 
 Once the email is shared, you can lead a discussion as participants explore its content and components. Items to cover as you have participants explore the email:
 
@@ -120,6 +112,3 @@ Once the email is shared, you can lead a discussion as participants explore its 
   * If you mirrored a website, now is a good time to show participants what a phishing website looks like. Note the subtle URL variances between the original website and the “fake” one.
   * Facilitate further discussion among participants: Do they have their own techniques for identifying phishing attacks and avoiding infections through email and websites?
   * What would they do if they spotted an email they suspected as a phishing email? [1. delete/mark as spam; 2. tell co-workers/colleagues/friends if relevant.]
-
-
- 
