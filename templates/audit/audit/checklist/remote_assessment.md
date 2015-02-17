@@ -1,98 +1,95 @@
+# Passive Reconnaissance
 
-Passive Reconnaissance
+## Identify availability of staff, partner, beneficiary, and current project information online.
 
-- Main site search
-  - key terms
-	- org-name
-	- address
-	- phone numbers 
-	- org-emails
-  - Staff Names	  
-    - Staff E-Mail format
-  - Link Scraping
-    - lynx
-  
-```bash
-# EXAMPLE PROCESS
-# get all links from the main page
-lynx --listonly --dump http://http://HOST.SITE.TLD |grep -o "htt.*" >> links
-# BY HAND: Go through file and pull out any links that are obvious malware, advertisements, etc.
-# BY HAND: move all useful external links to a separate file keeping only the sites links in the document.
-# get all links from the pages found
-cat links | xargs -n 1 -I % lynx --listonly --dump % |grep -o "htt.*" >> links
-# Remove all duplicate links
-cat links |sort |uniq >> uniq_links
-# BY HAND: Go through file and pull out any links that are obvious malware, advertisements, etc.
-# BY HAND: move all useful external links to a separate file keeping only the sites links in the document.
-# BY HAND: get all links from the pages found
-cat uniq_links | xargs -n 1 -I % lynx --listonly --dump % |grep -o "htt.*" >> final_links
-```
+### Main Site Search
 
-  - user-name formats
-  - meta-data scraping
-  - partners
-  - beneficiaries
-  - funders
-  - current projects
-  - Partners listed
-  - Location of activities
-- Google Recon
-  - Sites that link to it.
+#### Key Information to Collect
 
-```bash
-linkto:SITE.TLD -site:SITE.TLD
-```
+##### Org Name:
+Does the organization go by any other names? Does the organization use any other languages when publishing its name? How does the organization spell its name in other languages?
 
-  - Search for its logo's and its logo as found on other
-  - Identify partner sites & project sites
-  - Examine Project sites
-- Project site search
-  - key terms
-    - project name
-	- address (different from main organization?)
-	- phone numbers  (different from main organization?)
-	- project-emails
-  - Staff Names
-  - Staff E-Mail format
+##### Address
+If the location of the organization, or identity of staff is sensitive does the organization list its address online?
 
+##### phone number
+If the organization uses telephones to carry out any of its work are the numbers listed? What impact would a denial of service attack (calling over and over) have on the organization?
 
-  different from main organization?
-  Other organizations taking part?
-  New domains revealed?
-  Host format revealed?
+#### Emails
 
+https://github.com/niravkdesai/ehs
 
-  - Link Scraping
-	- lynx
-  - Partners listed
-  - user-name formats
-  - meta-data scraping
-  - partners listed
-  - beneficiaries listed 
-  - funders listed
-  - location of activities
-- Social Media Searches
-  - Organization Accounts
-  - Project accounts
-  - Facebook graph search for staff & beneficiaries
-  - Identify online services used by staff
-	- user name
-	- work & personal e-mails
-	- sites have transparency reports
-- Search paste-bin sites
-  - leaked internal information
-    - hosts
-    - domains
-    - emails
-- Recon-ng
-  - Add data gathered from other steps
-  - Discover new hosts, domains, contacts, etc.
-  - Identify what each site is "BuiltWith"
-  - Create e-mail list for all contacts identified
-  - Identify any previously compromised contacts
+##### Main email
 
-Active Footprinting
-- Identify externally facing devices used by the organization.
-- Identify services being hosted or used by an organization.
-- Run vulnerability scans against websites hosted by the organization.
-- Run vulnerability scans against externally facing devices run by the organization.
+Does the organization use any general purpose e-mails? Who has access to those e-mails? If e-mails to those addresses have attachements, are they opened? What devices are used to view those e-mails? What is the sensitivity of the topics these address' are used for?
+
+##### Staff emails
+What staff e-mails are listed. Are staff names the basis for the organizations e-mail address format?
+
+#### e-mail address formats
+
+##### format
+What is the format used for staff e-mail address'
+
+#### Staff Names
+Are staff names available on the website? Can you identify other staff names based upon their e-mail address formats?
+
+#### Interesting Links Found
+
+#### user-name formats
+#### meta-data
+#### Partners
+#### Beneficiaries
+#### Funders
+#### Current projects
+#### Built-with
+### TODO  Google Site Search
+#### TODO linkto:internews.ua -site:internews.ua
+#### TODO Search by logo
+
+### TODO Project site searches
+#### Staff Names
+#### e-mail address formats
+#### user-name formats
+#### meta-data
+#### Partners
+#### Beneficiaries
+#### Funders
+#### Current projects
+#### Built-with
+
+### TODO Social Media Searches
+#### Services used
+#### usernames
+#### emails
+## TODO Search "paste-bin" sites for leaked internal information or existing exploitation of their infrastructure.
+
+## TODO do automated web-based open source reconnaissance.
+
+### Recon-ng
+
+#### Add all domains known 
+
+#### Searched for hosts from those domains
+
+#### Used hosts to find more hosts
+
+#### Migrated new hosts to domains & Delete generic ones
+
+### import emails
+
+### gather more contacts
+
+### Look for breaches
+
+### Look for vulnerabilities
+
+# Active Footprinting
+
+## Identify services being hosted or used by an organization
+
+## TODO Research information about identified services (e.g current versions of those services.)
+
+## TODO Run vulnerability scans against websites hosted by the organization.
+
+## TODO Run vulnerability scans against servers run by the organization.
