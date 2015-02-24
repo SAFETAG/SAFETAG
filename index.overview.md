@@ -88,6 +88,9 @@ The SAFETAG audit consists of information gathering and audit activities. The au
 !INCLUDE "content/network_assessment.overview.md"
 
 \newpage
+<!-- Vulnerability Scanning !INCLUDE "content/vulnerability_scanning.md" -->
+
+\newpage
 <!-- Data Assessment -->
 
 !INCLUDE "content/data_assessment.overview.md"
@@ -101,8 +104,10 @@ The SAFETAG audit consists of information gathering and audit activities. The au
 
 \newpage
 <!-- Targeted Training -->
-
 !INCLUDE "content/training.overview.md"
+
+<!-- Physical Aspects of Digital Security -->
+!INCLUDE "content/physical_assessment.overview.md"
 
 \newpage
 <!-- Debrief -->

@@ -1,2 +1,2 @@
 
-  * Treat device assessment data with the utmost security
+  * Treat device assessment data as well as any additional service information learned with the utmost security

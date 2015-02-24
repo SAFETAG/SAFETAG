@@ -47,3 +47,4 @@
 
 <!--Synthesis [stub] {.synthesis} -->
 
+!INCLUDE "adids/context_research/synthesis.md"

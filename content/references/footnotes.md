@@ -176,7 +176,7 @@
 
 [^mcafee_threat_center]:[McAfee Labs Threat Center includes their Quarterly Threats Report, Blog, and Threat Library.](http://www.mcafee.com/us/threat-center.aspx)
 
-[^fireeye_reports]:[FireEye provides complimentary report's on threats and trends in cyber security. (REQUIRES EMAIL ADDRESS)](http://www.fireeye.com/info-center/)
+[^fireeye_reports]:[FireEye provides complimentary reports on threats and trends in cyber security. (REQUIRES EMAIL ADDRESS)](http://www.fireeye.com/info-center/)
 
 [^verizon_data_breach_report]:[Verizon Data Breach Investigative Report (REQUIRES EMAIL ADDRESS)](http://www.verizonenterprise.com/DBIR/)
 
@@ -287,7 +287,7 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^device_encryption_by_os]:[Device Encryption By OS Type](#device-encryption-by-os)
 
-<!-- Appendix's -->
+<!-- Appendices -->
 
 [^travel_kit_appendix]:[APPENDIX A - Auditor travel kit checklist](#appendix-a)
 

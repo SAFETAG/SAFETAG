@@ -46,6 +46,8 @@
 
 \newpage
 
-### Example
+### Examples
 
-!INCLUDE "guides/social_engineering_exercise/examples/suspicious_email_activity.md"
+!INCLUDE "guides/social_engineering_exercise/examples/suspicious_email/index.md"
+
+!INCLUDE "guides/social_engineering_exercise/examples/phishing_quiz/index.md"

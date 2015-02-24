@@ -1,3 +1,6 @@
-  * Notes on day and night time device storage and security.
-  * A list of everyone who has access to the office space.
 
+### Output
+
+ * Notes on specific unsecured servers and external hard drives
+ * Notes on workstation security (especially laptops)
+ 

@@ -37,6 +37,10 @@ body {
 	font-family: 'Slabo 13px', sans-serif;
 }
 
+code {
+	font-size: .5em;
+}
+
 h1,
 h2,
 h3,
@@ -71,6 +75,12 @@ h1.bigtitle {
 
 .note {
     text-transform: uppercase;
+}
+
+.example {
+	border: 1px dashed darkblue;
+	background: lightblue;
+	padding: 1em;
 }
 
 .sidebar {
