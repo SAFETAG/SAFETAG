@@ -18,6 +18,7 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 # Document Contents
 
 ## Intro Contents
+
 |Section|ADIDS|Hand Book|Guide|Overview|
 |Introduction|-|+|+|+|
 |Overview|||||
@@ -28,6 +29,7 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 |Operational Security|-|+|+|-|
 
 ## Objective Contents
+
 |Section|ADIDS|Hand Book|Guide|Overview|
 |Quote|-|-|+|-|
 |Summary|-|+|+|+|
@@ -47,6 +49,7 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 |Materials Needed|+|-|+|-|
 
 ## Front & Back Matter
+
 |Section|ADIDS|Hand Book|Guide|Overview|
 |Title Page|+|+|+|+|
 |License|+|+|+|+|
@@ -55,10 +58,12 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 |How to Read This Guide|+|+|+|+|
 
 ## ADIDS Content
+
 |Section|ADIDS|Hand Book|Guide|Overview|
 ||||||
 
 ## Templates
+
 |Section|ADIDS|Hand Book|Guide|Overview|
 ||||||
 
