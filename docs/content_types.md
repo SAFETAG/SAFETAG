@@ -1,3 +1,90 @@
+
+#Content Structure
+
+## Intro
+
+* Introduction
+* Overview
+* The Audit Life-cycle
+* "Metro" Map
+* Risk Assessment
+* Agency Building
+* Operational Security
+
+## Objectives
+
+* Quote
+* Summary
+* Information Flow
+* Guiding Questions
+* Base Line Skills
+* Output
+* Preparation
+* Purpose
+* Approaches
+  * Approach
+  * Activity
+    * Summary
+    * Instructions
+    * Recommendations
+* Reporting
+* Materials Needed
+
+## Front & Back Matter
+
+* Title Page
+* License
+* Glossary
+* Disclaimers
+* How to Read This Guide
+
+## ADIDS Content
+
+## Templates
+
+
+# Content Definitions
+
+## Intro
+Introduction
+Overview
+The Audit Life-cycle
+"Metro" Map
+Risk Assessment
+Agency Building
+Operational Security
+
+## Objectives
+Quote
+Summary
+Information Flow
+Guiding Questions
+Base Line Skills
+Output
+Preparation
+Purpose
+Activities
+Approaches
+Example
+Summary
+Instructions
+Recommendations
+Reporting
+Materials Needed
+
+## Front & Back Matter
+Title Page
+License
+Glossary
+Disclaimers
+How to Read This Guide
+
+## ADIDS Content
+
+## Templates
+
+
+
 ## Mini Guide
 
 The "mini guide" is short overview of the SAFETAG process.

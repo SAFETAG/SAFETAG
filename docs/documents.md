@@ -41,9 +41,9 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 |Output|-|+|+|-|
 |Preparation|-|+|+|-|
 |Purpose|-|+|+|+|
-|Activities|-|+|+|+|
-|-> Approaches|-|+|+|-|
-|-> Example|||||
+|Approaches|-|+|+|+|
+|-> Approach|-|+|+|-|
+|-> Activity|||||
 |--> Summary|-|-|+|-|
 |--> Instructions|-|+|-|-|
 |--> Recommendations|-|-|-|-|
