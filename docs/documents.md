@@ -20,6 +20,7 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 ## Intro Contents
 
 |Section|ADIDS|Hand Book|Guide|Overview|
+|-|-|-|-|-|
 |Introduction|-|+|+|+|
 |Overview|||||
 |The Audit Life-cycle|+|+|+|+|
@@ -31,6 +32,7 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 ## Objective Contents
 
 |Section|ADIDS|Hand Book|Guide|Overview|
+|-|-|-|-|-|
 |Quote|-|-|+|-|
 |Summary|-|+|+|+|
 |Information Flow|-|+|+|+|
@@ -51,6 +53,7 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 ## Front & Back Matter
 
 |Section|ADIDS|Hand Book|Guide|Overview|
+|-|-|-|-|-|
 |Title Page|+|+|+|+|
 |License|+|+|+|+|
 |Glossary|-|+|+|-|
@@ -60,11 +63,13 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 ## ADIDS Content
 
 |Section|ADIDS|Hand Book|Guide|Overview|
+|-|-|-|-|-|
 ||||||
 
 ## Templates
 
 |Section|ADIDS|Hand Book|Guide|Overview|
+|-|-|-|-|-|
 ||||||
 
 
