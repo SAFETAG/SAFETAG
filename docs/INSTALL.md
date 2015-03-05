@@ -125,7 +125,7 @@ sudo apt-get install python-setuptools
 
 ### Installation OSX
 
-**These instructions are considered Beta as they weren't tested on a pristine system, please submit an [issue]("https://github.com/mishari/SAFETAG/issues") if you run into any problems**
+**These instructions are considered Beta as they weren't tested on a pristine system, please submit an [issue](https://github.com/mishari/SAFETAG/issues) if you run into any problems**
 
  * Install xcode and run it to accept license agreement.
  * Install homebrew "The missing package manager for OS X"
