@@ -1,4 +1,6 @@
 
+  * Clarify timing and seek permission with staff - some activities can tax the network or cause disruptions.
   * Confirm that all devices you are accessing/scanning belong to the organization.
-  * Study outputs for any embarrassing (e.g. personal emails) or identifying information (e.g. personal device names) before sharing or putting raw data in a report.
+  * Delete all devices from your scan that do not belong to the organization.
+  * Study outputs for any obviously embarrassing personal information (especially network beacon records) before sharing.
   * Treat captured network traffic with the utmost security and empathetic responsibility. They may contain very personal data, passwords, and more. These should not be shared except in specific, intentional samples with anyone, including the organization itself.
