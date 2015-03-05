@@ -1,6 +1,6 @@
 # Installation Instructions
 
-Currently we have instructions for installing on the Ubuntu, Debian, and Kali-Linux operating-systems.
+Currently we have instructions for installing on the Ubuntu, Debian, Kali-Linux and OSX operating-systems.
 
 ### Installation Ubuntu
 
@@ -121,4 +121,40 @@ sudo apt-get install pandoc
 
 ```
 sudo apt-get install python-setuptools
+```
+
+### Installation OSX
+
+**These instructions are considered Beta as they weren't tested on a pristine system, please submit an [issue]("https://github.com/mishari/SAFETAG/issues") if you run into any problems**
+
+ * Install xcode and run it to accept license agreement.
+ * Install homebrew "The missing package manager for OS X"
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+ * Install git
+
+```
+brew install git
+```
+
+ * Install python
+
+```
+brew install python
+```
+
+ * Install wkhtmltopdf
+
+```
+brew install caskroom/cask/brew-cask
+brew cask install wkhtmltopdf
+```
+
+ * Install pandoc
+
+```
+brew install pandoc
 ```
