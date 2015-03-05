@@ -47,21 +47,21 @@ DOC_DIR := build/docs
 
 $(DOC_DIR): | build
 	@echo "Creating folders for document output."
-	mkdir --parents $(DOC_DIR)
+	mkdir -p $(DOC_DIR)
 
 #path to folder for the source files for documentation created by pandoc to allow hand editing
 SRC_DIR := build/src
 
 $(SRC_DIR): | build
 	@echo "Creating folders for document output."
-	mkdir --parents $(SRC_DIR)
+	mkdir -p $(SRC_DIR)
 
 #path to folder for any resources that are auto-grabbed
 RES_DIR := build/resource
 
 $(RES_DIR): | build
 	@echo "Creating folders for downloaded resources."
-	mkdir --parents $(RES_DIR)
+	mkdir -p $(RES_DIR)
 
 #============ Audit Folder Setup ==============
 
@@ -76,7 +76,7 @@ audit: $(DATE_DIR)
 
 $(DATE_DIR):
 	@echo "Creating a new audit folder named $(DATE_DIR)"
-	mkdir --parents audit/$(DATE_DIR)/build
+	mkdir -p audit/$(DATE_DIR)/build
 
 #============ Dependencies ==============
 
