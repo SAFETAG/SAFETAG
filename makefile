@@ -90,6 +90,8 @@ endif
 
 # =============== Report Generation =================
 
+CURRENT_DIR = $(shell pwd)
+
 #Create the auditor adids guide
 adids: | $(SRC_DIR) $(DOC_DIR)
 	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/adids.md
@@ -146,12 +148,12 @@ mini_guide: | $(SRC_DIR) $(DOC_DIR)
 
 #Create the auditor overview
 overview: | $(SRC_DIR) $(DOC_DIR)
-	modules/markdown-pp/markdown-pp.py index.overview.md $(SRC_DIR)/overview.md
+	modules/markdown-pp/markdown-pp.py content/index/index.overview.md $(SRC_DIR)/overview.md
 	pandoc -s --variable=title:"Overview" \
-		--template=theme/html5.template \
+		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/overview.md \
 		--output=$(SRC_DIR)/overview.html
-	wkhtmltopdf --user-style-sheet theme/core.css \
+	wkhtmltopdf --user-style-sheet styles/core.css \
 		--title "SAFETAG Overview" \
 		--disable-smart-shrinking  \
 		--load-error-handling skip \
