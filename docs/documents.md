@@ -37,18 +37,41 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 |Summary|-|+|+|+|
 |Information Flow|-|+|+|+|
 |Guiding Questions|+|+|+|+|
-|Base Line Skills|+|-|-|-|
 |Output|-|+|+|-|
 |Preparation|-|+|+|-|
 |Purpose|-|+|+|+|
-|Approaches|-|+|+|+|
-|-> Approach|-|+|+|-|
+|Resources|-|+|+|-|
+|Approaches|-|+|+|+||
+-> Approach|-|+|+|-|
 |-> Activity|||||
 |--> Summary|-|-|+|-|
 |--> Instructions|-|+|-|-|
 |--> Recommendations|-|-|-|-|
+|--> Base Line Skills|+|-|+|-|
+|--> Operational Security|-|+|+|-|
 |Reporting|-|-|+|-|
 |Materials Needed|+|-|+|-|
+
+## Reporting Contents
+
+|Section|ADIDS|Hand Book|Guide|Overview|
+|---|---|---|---|---|
+|Quote|-|-|+|-|
+|Summary|-|+|+|+|
+|Guiding Questions|+|+|+|+|
+|Output|-|+|+|-|
+|Preparation|-|+|+|-|
+|Purpose|-|+|+|+|
+|Resources|-|+|+|-|
+|Approaches|-|+|+|+||
+-> Approach|-|+|+|-|
+|-> Activity|||||
+|--> Summary|-|-|+|-|
+|--> Instructions|-|+|-|-|
+|--> Recommendations|-|-|-|-|
+|--> Base Line Skills|+|-|+|-|
+|--> Operational Security|-|+|+|-|
+
 
 ## Front & Back Matter
 
@@ -86,8 +109,10 @@ Risk Assessment
 Agency Building
 Operational Security
 
+## Process
+
 ## Objectives
-Scope Development
+Audit Preparation
 Threat Assessment
 Reconnaissance
 Network Mapping
@@ -96,10 +121,7 @@ Data Assessment (assets)
 User Device Assessment
 Responsive Support
 Physical Assessment
-
-## Logistic Activities
-Preparation
-Debrief
+Follow Up
 
 ## Reporting
 Recommendation Development
