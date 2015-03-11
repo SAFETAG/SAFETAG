@@ -1,19 +1,24 @@
-## Network Mapping
+Network Mapping
+network_mapping
 
-!INCLUDE "guides/network_mapping/quote.md"
+## Network Mapping
 
 ### Summary
 
-!INCLUDE "guides/network_mapping/summary.md"
+!INCLUDE "../objectives/network_mapping/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/network_mapping/purpose.md"
+!INCLUDE "../objectives/network_mapping/purpose.md"
 
-### Approach
+### The Flow Of Information
 
-!INCLUDE "guides/network_mapping/approach.md"
+![Network Mapping Information Flow](content/images/info_flows/network_mapping.svg)
 
-### Output
+### Guiding Questions
 
-!INCLUDE "guides/network_mapping/output.md"
+!INCLUDE "../objectives/network_mapping/guiding_questions.md"
+
+### Approaches
+
+!INCLUDE "../objectives/network_mapping/approaches.md"

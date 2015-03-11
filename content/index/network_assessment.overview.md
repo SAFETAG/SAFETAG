@@ -6,7 +6,7 @@
 
 ### The Flow Of Information
 
-![Network Assessment Information Flow](../../content/images/info_flows/network_assessment.svg)
+![Network Assessment Information Flow](content/images/info_flows/network_assessment.svg)
 
 ### Guiding Questions
 

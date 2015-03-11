@@ -6,7 +6,7 @@
 
 ### The Flow Of Information
 
-![Context Research Information Flow](../../content/images/info_flows/context_research.svg)
+![Context Research Information Flow](content/images/info_flows/context_research.svg)
 
 ### Guiding Questions
 

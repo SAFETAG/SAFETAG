@@ -6,7 +6,7 @@
 
 ### The Flow Of Information
 
-![Risk Modeling Information Flow](../../content/images/info_flows/risk_modeling.svg)
+![Risk Modeling Information Flow](content/images/info_flows/risk_modeling.svg)
 
 ### Guiding Questions
 

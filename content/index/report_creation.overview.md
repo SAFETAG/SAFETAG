@@ -2,8 +2,16 @@
 
 ### Summary
 
-!INCLUDE "guides/report_creation/summary.md"
+!INCLUDE "../objectives/report_creation/summary.md"
 
-### Approach
+### Purpose
 
-!INCLUDE "guides/report_creation/approach.md"
+!INCLUDE "../objectives/report_creation/purpose.md"
+
+### Guiding Questions
+
+!INCLUDE "../objectives/report_creation/guiding_questions.md"
+
+### Approaches
+
+!INCLUDE "../objectives/report_creation/approaches.md"

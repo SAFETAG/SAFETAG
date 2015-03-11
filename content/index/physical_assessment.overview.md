@@ -1,19 +1,21 @@
 ## Physical Assessment
 
-!INCLUDE "guides/physical_assessment/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/physical_assessment/summary.md"
+!INCLUDE "../objectives/physical_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/physical_assessment/purpose.md"
+!INCLUDE "../objectives/physical_assessment/purpose.md"
 
-### Approach
+### The Flow Of Information
 
-!INCLUDE "guides/physical_assessment/approach.md"
+![Physical Assessment Information Flow](content/images/info_flows/physical_assessment.svg)
 
-### Output
+### Guiding Questions
 
-!INCLUDE "guides/physical_assessment/output.md"
+!INCLUDE "../objectives/physical_assessment/guiding_questions.md"
+
+### Approaches
+
+!INCLUDE "../objectives/physical_assessment/approaches.md"

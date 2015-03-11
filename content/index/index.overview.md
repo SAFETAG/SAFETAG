@@ -1,7 +1,7 @@
 
 <!-- License -->
 
-!INCLUDE "content/license.md"
+!INCLUDE "content/document_matter/license.md"
 
 \newpage
 
@@ -9,150 +9,114 @@
 
 # Introduction
 
-!INCLUDE "content/guides/introduction.md"
+!INCLUDE "content/document_matter/introduction.md"
 
 \newpage
 
-!INCLUDE "content/guides/disclaimer.md"
-
-\newpage
-
-!INCLUDE "content/guides/how_to_read_this_guide.overview.md"
+!INCLUDE "content/document_matter/how_to_read_this_guide.overview.md"
 
 \newpage
 
 <!-- Overview -->
 
-!INCLUDE "content/guides/overview.md"
+!INCLUDE "content/document_matter/overview.md"
 
 \newpage
 
-# The Life-cycle of an Audit
+<!-- Audit Lifecyce -->
 
-The SAFETAG audit consists of information gathering and audit activities. The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through conversations, training, and group activities is actively building the organizations agency and addressing time-sensitive or critical threats that are possible within the time frame. This iterative process eventually leads to a point where the auditor is confident they have identified the critical and low hanging fruit, and is confident the organization is capable of moving forward with their recommendations. 
+!INCLUDE "content/document_matter/audit_lifecycle.md"
 
-![SAFETAG Activities](../../content/images/activities_flow.svg)
+![SAFETAG Activities](content/images/activities_flow.svg)
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "content/guides/risk_assessment.overview.md"
+!INCLUDE "content/document_matter/risk_assessment.overview.md"
 
 \newpage
 <!-- Agency Building -->
 
-!INCLUDE "content/guides/agency_building.overview.md"
+!INCLUDE "content/document_matter/agency_building.overview.md"
+
+# Objectives
 
 \newpage
-<!-- Operational Security -->
+<!-- Audit Preparation-->
 
-!INCLUDE "content/operational_security.overview.md"
-
-# Pre-Audit Activities
+!INCLUDE "content/index/audit_preparation.overview.md"
 
 \newpage
-<!-- Assessment Plan Development -->
+<!-- Threat Assessment -->
 
-!INCLUDE "content/assessment_plan.overview.md"
-
-\newpage
-<!-- Audit Preparation -->
-
-!INCLUDE "content/preparation.overview.md"
-
-# Audit Activities
+!INCLUDE "content/index/threat_assessment.overview.md"
 
 \newpage
-<!-- Interviews -->
+<!-- Reconnaissance -->
 
-!INCLUDE "content/interviews.overview.md"
-
-\newpage
-<!-- Risk Modeling -->
-
-!INCLUDE "content/risk_modeling.overview.md"
+!INCLUDE "content/index/reconnaissance.overview.md"
 
 \newpage
-<!-- Contextual Research -->
+<!-- Network Mapping -->
 
-!INCLUDE "content/context_research.overview.md"
-
-\newpage
-<!-- Remote Assessment -->
-
-!INCLUDE "content/remote_assessment.overview.md"
+!INCLUDE "content/index/network_mapping.overview.md"
 
 \newpage
-<!-- Network Assessment -->
+<!-- Vulnerability Analysis -->
 
-!INCLUDE "content/network_assessment.overview.md"
-
-\newpage
-<!-- Vulnerability Scanning !INCLUDE "content/vulnerability_scanning.md" -->
+!INCLUDE "content/index/vulnerability_analysis.overview.md"
 
 \newpage
-<!-- Data Assessment -->
+<!-- Data Assessment (assets) -->
 
-!INCLUDE "content/data_assessment.overview.md"
-
-\newpage
-<!-- Device Assessment -->
-
-!INCLUDE "content/device_assessment.overview.md"
-
-# Support Activities
+!INCLUDE "content/index/data_assessment.overview.md"
 
 \newpage
-<!-- Targeted Training -->
-!INCLUDE "content/training.overview.md"
+<!-- User Device Assessment -->
 
-<!-- Physical Aspects of Digital Security -->
-!INCLUDE "content/physical_assessment.overview.md"
+!INCLUDE "content/index/user_device_assessment.overview.md"
 
 \newpage
-<!-- Debrief -->
+<!-- Responsive Support -->
 
-!INCLUDE "content/debrief.overview.md"
+!INCLUDE "content/index/responsive_support.overview.md"
+
+\newpage
+<!-- Physical Assessment -->
+
+!INCLUDE "content/index/physical_assessment.overview.md"
 
 \newpage
 <!-- Follow Up -->
 
-!INCLUDE "content/follow_up.overview.md"
+!INCLUDE "content/index/follow_up.overview.md"
 
 # Reporting Activities
 
 \newpage
-<!-- Risk Assessment -->
-
-!INCLUDE "content/risk_assessment.overview.md"
-
-\newpage
-<!-- Capacity Assessment -->
-
-!INCLUDE "content/capacity_assessment.overview.md"
-
-\newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "content/recommendation_development.overview.md"
+!INCLUDE "content/index/recommendation_development.overview.md"
 
 \newpage
-<!-- Prioritization & Roadmap Development -->
+<!-- Roadmap Development -->
 
-!INCLUDE "content/roadmap_development.overview.md"
-
-\newpage
-<!-- Report Creation -->
-
-!INCLUDE "content/report_creation.overview.md"
+!INCLUDE "content/index/roadmap_development.overview.md"
 
 \newpage
+<!-- Reporting Creation -->
 
+!INCLUDE "content/index/reporting_creation.overview.md"
+
+\newpage
 <!-- Load Default Images -->
+
 !INCLUDE "theme/image_defaults.md"
 
 <!-- Load Footnotes -->
+
 !INCLUDE "content/references/footnotes.md"
 
 <!-- Update Footnotes for overview -->
+
 !INCLUDE "content/references/footnotes.overview.md"

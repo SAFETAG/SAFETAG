@@ -2,8 +2,16 @@
 
 ### Summary
 
-!INCLUDE "guides/roadmap_development/summary.md"
+!INCLUDE "../objectives/roadmap_development/summary.md"
 
-### Approach
+### Purpose
 
-!INCLUDE "guides/roadmap_development/approach.md"
+!INCLUDE "../objectives/roadmap_development/purpose.md"
+
+### Guiding Questions
+
+!INCLUDE "../objectives/roadmap_development/guiding_questions.md"
+
+### Approaches
+
+!INCLUDE "../objectives/roadmap_development/approaches.md"

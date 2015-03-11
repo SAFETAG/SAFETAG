@@ -1,10 +1,18 @@
-## Follow Up 
+## Follow Up
 
 ### Summary
 
-!INCLUDE "guides/follow_up/summary.md"
+!INCLUDE "../objectives/follow_up/summary.md"
 
-### Approach
+### Purpose
 
-!INCLUDE "guides/follow_up/approach.md"
+!INCLUDE "../objectives/follow_up/purpose.md"
+
+### Guiding Questions
+
+!INCLUDE "../objectives/follow_up/guiding_questions.md"
+
+### Approaches
+
+!INCLUDE "../objectives/follow_up/approaches.md"
 
