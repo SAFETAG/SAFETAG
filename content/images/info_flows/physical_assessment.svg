@@ -11,12 +11,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="369.15625"
    height="229.1463"
-   id="svg6241"
+   id="svg6500"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 34">
+   sodipodi:docname="vulnerability_analysis.svg">
   <defs
-     id="defs6243" />
+     id="defs6502" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="152.96413"
-     inkscape:cy="109.80441"
+     inkscape:zoom="2.8"
+     inkscape:cx="228.76227"
+     inkscape:cy="115.9396"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,13 +34,13 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="501"
-     inkscape:window-height="434"
-     inkscape:window-x="86"
-     inkscape:window-y="113"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata6246">
+     id="metadata6505">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -55,119 +55,249 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-186.84375,-457.7912)">
+     transform="translate(-326.84375,-317.7912)">
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-6-8-1-5-61"
-       d="m 483.08239,676.55636 -45.07654,0 0,-70.63307 -35.65939,0"
-       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.38919,685.43318 81.99054,0 0,-17.94818 -81.99054,0 z"
-       id="rect3001-01-0-3-7-8-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.59192"
-       y="680.03333"
-       id="text2993-6-16-1-3-6-3"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995-6-41-3-7-2-63"
-         x="513.59192"
-         y="680.03333">Assets</tspan></text>
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-6-8-12-3"
-       d="m 483.08239,494.80005 -45.07654,0 0,70.63308 -35.65939,0"
+       id="path6927-3-9-6-2-6-2-0-2-6-8-1-5-9"
+       d="m 623.08239,536.55635 -45.07654,0 0,-70.63307 -35.65939,0"
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.38919,485.92324 81.99054,0 0,17.94818 -81.99054,0 z"
-       id="rect3001-01-0-3-5-3"
+       d="m 612.38919,545.43317 81.99054,0 0,-17.94818 -81.99054,0 z"
+       id="rect3001-01-0-3-7-8-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.59192"
-       y="498.47156"
-       id="text2993-6-16-1-1-5"
+       x="653.59192"
+       y="540.03333"
+       id="text2993-6-16-1-3-6-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-3-0-8"
-         x="513.59192"
-         y="498.47156">Actors</tspan></text>
+         id="tspan2995-6-41-3-7-2-9"
+         x="653.59192"
+         y="540.03333">Assets</tspan></text>
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-6-8-1-8"
-       d="m 259.6438,676.55631 45.07654,0 0,-70.63307 35.65939,0"
+       id="path6927-3-9-6-2-6-2-0-2-6-8-12-0"
+       d="m 623.08239,354.80005 -45.07654,0 0,70.63307 -35.65939,0"
+       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <path
+       style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 612.38919,345.92323 81.99054,0 0,17.94818 -81.99054,0 z"
+       id="rect3001-01-0-3-5-13"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
+       x="653.59192"
+       y="358.47156"
+       id="text2993-6-16-1-1-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-6-41-3-0-7"
+         x="653.59192"
+         y="358.47156">Actors</tspan></text>
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6927-3-9-6-2-6-2-0-2-6-8-1-7"
+       d="m 399.6438,536.5563 45.07654,0 0,-70.63307 35.65939,0"
        style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,685.43313 -81.99054,0 0,-17.94818 81.99054,0 z"
-       id="rect3001-01-0-3-7-0"
+       d="m 410.337,545.43312 -81.99054,0 0,-17.94818 81.99054,0 z"
+       id="rect3001-01-0-3-7-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.54922"
-       y="680.03326"
-       id="text2993-6-16-1-3-61"
+       x="369.54922"
+       y="540.03326"
+       id="text2993-6-16-1-3-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-3-7-6"
-         x="229.54922"
-         y="680.03326">Assets</tspan></text>
+         id="tspan2995-6-41-3-7-0"
+         x="369.54922"
+         y="540.03326">Assets</tspan></text>
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-6-8-6"
-       d="m 259.6438,494.8 45.07654,0 0,70.63308 35.65939,0"
+       id="path6927-3-9-6-2-6-2-0-2-6-8-2"
+       d="m 399.6438,354.8 45.07654,0 0,70.63307 35.65939,0"
        style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,485.92319 -81.99054,0 0,17.94818 81.99054,0 z"
-       id="rect3001-01-0-3-3"
+       d="m 410.337,345.92318 -81.99054,0 0,17.94818 81.99054,0 z"
+       id="rect3001-01-0-3-52"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.54922"
-       y="498.4715"
-       id="text2993-6-16-1-2"
+       x="369.54922"
+       y="358.4715"
+       id="text2993-6-16-1-39"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-3-9"
-         x="229.54922"
-         y="498.4715">Actors</tspan></text>
+         id="tspan2995-6-41-3-2"
+         x="369.54922"
+         y="358.4715">Actors</tspan></text>
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-9-7-46"
-       d="m 259.6438,644.81224 34.06288,0 0,-47.78993 32.804,0"
+       id="path6927-3-9-6-2-6-2-0-2-9-7-48"
+       d="m 399.6438,504.81223 34.06288,0 0,-47.78993 32.804,0"
+       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6927-3-9-6-2-6-2-0-2-5-4-8-8"
+       d="m 399.6438,475.01008 22.06288,0 0,-23.98776 44.804,0"
+       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6927-3-9-6-2-6-2-0-2-6-5"
+       d="m 399.6438,384.8 34.06288,0 0,47.78993 32.804,0"
+       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6927-3-9-6-2-6-2-0-2-7-4-7"
+       d="m 399.6438,444.81223 66.86688,0"
+       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6927-3-9-6-2-6-2-0-2-5-2-2"
+       d="m 399.6438,414.60215 22.06288,0 0,23.98776 44.804,0"
+       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <path
+       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 410.337,465.92319 -81.99054,0 0,17.94817 81.99054,0 z"
+       id="rect3001-38-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.54929"
+       y="477.65607"
+       id="text2993-1-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-41-0"
+         x="369.54929"
+         y="477.65607">Vulnerabilities</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 410.337,435.92319 -81.99054,0 0,17.94818 81.99054,0 z"
+       id="rect3001-0-8-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.09763"
+       y="447.65607"
+       id="text2993-3-6-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-3-2-35"
+         x="369.09763"
+         y="447.65607">Activities</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 410.337,495.92319 -81.99054,0 0,17.94817 81.99054,0 z"
+       id="rect3001-05-1-21"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.09763"
+       y="507.65607"
+       id="text2993-8-6-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-4-96-4"
+         x="369.09763"
+         y="507.65607">Barriers</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 410.337,405.92318 -81.99054,0 0,17.94818 81.99054,0 z"
+       id="rect3001-3-8-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.20993"
+       y="417.65607"
+       id="text2993-32-2-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-0-6-1"
+         x="369.20993"
+         y="417.65607">Capacity</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 410.337,375.92318 -81.99054,0 0,17.94818 81.99054,0 z"
+       id="rect3001-01-0-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.60306"
+       y="387.65607"
+       id="text2993-6-16-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-6-41-32"
+         x="369.60306"
+         y="387.65607">Threats</tspan></text>
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6927-3-9-6-2-6-2-0-2-9-1"
+       d="m 623.21334,504.81223 -34.06288,0 0,-47.78993 -32.804,0"
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -175,17 +305,17 @@
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-5-4-8-34"
-       d="m 259.6438,615.01009 22.06288,0 0,-23.98776 44.804,0"
-       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+       id="path6927-3-9-6-2-6-2-0-2-5-4-7"
+       d="m 623.21334,475.01008 -22.06288,0 0,-23.98776 -44.804,0"
+       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
        inkscape:export-xdpi="300"
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-6-2"
-       d="m 259.6438,524.8 34.06288,0 0,47.78994 32.804,0"
+       id="path6927-3-9-6-2-6-2-0-2-75"
+       d="m 623.21334,384.8 -34.06288,0 0,47.78993 -32.804,0"
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -193,8 +323,8 @@
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-7-4-9"
-       d="m 259.6438,584.81224 66.86688,0"
+       id="path6927-3-9-6-2-6-2-0-2-7-0"
+       d="m 623.21334,444.81223 -66.86688,0"
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
        inkscape:export-ydpi="300"
@@ -202,278 +332,156 @@
        inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-5-2-1"
-       d="m 259.6438,554.60215 22.06288,0 0,23.98777 44.804,0"
+       id="path6927-3-9-6-2-6-2-0-2-5-87"
+       d="m 623.21334,414.60215 -22.06288,0 0,23.98776 -44.804,0"
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
     <path
-       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,605.9232 -81.99054,0 0,17.94817 81.99054,0 z"
-       id="rect3001-38-48"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.54929"
-       y="617.65607"
-       id="text2993-1-14"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995-41-8"
-         x="229.54929"
-         y="617.65607">Vulnerabilities</tspan></text>
-    <path
        style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,575.9232 -81.99054,0 0,17.94818 81.99054,0 z"
-       id="rect3001-0-8-9"
+       d="m 612.52014,465.92319 81.99054,0 0,17.94817 -81.99054,0 z"
+       id="rect3001-77"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.09763"
-       y="587.65607"
-       id="text2993-3-6-7"
+       x="653.7229"
+       y="477.65607"
+       id="text2993-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-3-2-5"
-         x="229.09763"
-         y="587.65607">Activities</tspan></text>
+         id="tspan2995-46"
+         x="653.7229"
+         y="477.65607">Vulnerabilities</tspan></text>
     <path
        style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,635.9232 -81.99054,0 0,17.94817 81.99054,0 z"
-       id="rect3001-05-1-2"
+       d="m 612.52014,435.92319 81.99054,0 0,17.94818 -81.99054,0 z"
+       id="rect3001-0-99"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.09763"
-       y="647.65607"
-       id="text2993-8-6-48"
+       x="653.27124"
+       y="447.65607"
+       id="text2993-3-32"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-4-96-7"
-         x="229.09763"
-         y="647.65607">Barriers</tspan></text>
+         id="tspan2995-3-25"
+         x="653.27124"
+         y="447.65607">Activities</tspan></text>
     <path
        style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,545.92318 -81.99054,0 0,17.94819 81.99054,0 z"
-       id="rect3001-3-8-9"
+       d="m 612.52014,495.92319 81.99054,0 0,17.94817 -81.99054,0 z"
+       id="rect3001-05-79"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.20993"
-       y="557.65607"
-       id="text2993-32-2-4"
+       x="653.27124"
+       y="507.65607"
+       id="text2993-8-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-0-6-6"
-         x="229.20993"
-         y="557.65607">Capacity</tspan></text>
+         id="tspan2995-4-17"
+         x="653.27124"
+         y="507.65607">Barriers</tspan></text>
     <path
        style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 270.337,515.92319 -81.99054,0 0,17.94818 81.99054,0 z"
-       id="rect3001-01-0-86"
+       d="m 612.52014,405.92319 81.99054,0 0,17.94817 -81.99054,0 z"
+       id="rect3001-3-66"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
-       x="229.60306"
-       y="527.65607"
-       id="text2993-6-16-2"
+       x="653.38354"
+       y="417.65607"
+       id="text2993-32-97"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-9"
-         x="229.60306"
-         y="527.65607">Threats</tspan></text>
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-9-28"
-       d="m 483.21334,644.81224 -34.06288,0 0,-47.78993 -32.804,0"
-       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-5-4-2"
-       d="m 483.21334,615.01009 -22.06288,0 0,-23.98776 -44.804,0"
-       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-59"
-       d="m 483.21334,524.8 -34.06288,0 0,47.78994 -32.804,0"
-       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-7-81"
-       d="m 483.21334,584.81224 -66.86688,0"
-       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="/home/s2e/work/projects/OI3/SAFETAG/Art/SAFETAG_expertiese_map.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path6927-3-9-6-2-6-2-0-2-5-24"
-       d="m 483.21334,554.60215 -22.06288,0 0,23.98777 -44.804,0"
-       style="fill:none;stroke:#79b84c;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-    <path
-       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.52014,605.9232 81.99054,0 0,17.94817 -81.99054,0 z"
-       id="rect3001-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.7229"
-       y="617.65607"
-       id="text2993-36"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995-01"
-         x="513.7229"
-         y="617.65607">Vulnerabilities</tspan></text>
-    <path
-       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.52014,575.9232 81.99054,0 0,17.94818 -81.99054,0 z"
-       id="rect3001-0-9"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.27124"
-       y="587.65607"
-       id="text2993-3-60"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995-3-9"
-         x="513.27124"
-         y="587.65607">Activities</tspan></text>
-    <path
-       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.52014,635.9232 81.99054,0 0,17.94817 -81.99054,0 z"
-       id="rect3001-05-3"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.27124"
-       y="647.65607"
-       id="text2993-8-7"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995-4-19"
-         x="513.27124"
-         y="647.65607">Barriers</tspan></text>
-    <path
-       style="fill:#ffffff;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.52014,545.92319 81.99054,0 0,17.94818 -81.99054,0 z"
-       id="rect3001-3-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.38354"
-       y="557.65607"
-       id="text2993-32-9"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995-0-9"
-         x="513.38354"
-         y="557.65607">Capacity</tspan></text>
+         id="tspan2995-0-89"
+         x="653.38354"
+         y="417.65607">Capacity</tspan></text>
     <path
        style="fill:#ffffff;stroke:#999999;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 472.52014,515.92319 81.99054,0 0,17.94818 -81.99054,0 z"
-       id="rect3001-01-2"
+       d="m 612.52014,375.92319 81.99054,0 0,17.94818 -81.99054,0 z"
+       id="rect3001-01-30"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
-       x="513.77661"
-       y="527.65607"
-       id="text2993-6-7"
+       x="653.77661"
+       y="387.65607"
+       id="text2993-6-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-7"
-         x="513.77661"
-         y="527.65607">Threats</tspan></text>
+         id="tspan2995-6-2"
+         x="653.77661"
+         y="387.65607">Threats</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#0d5cab;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect5221-8"
+       id="rect5221-08"
        width="101.16419"
        height="52.261951"
-       x="320.77469"
-       y="559.58209" />
+       x="460.77469"
+       y="419.58209" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="371.43979"
-       y="583.1911"
-       id="text5223-1"
+       x="511.82553"
+       y="448.47186"
+       id="text5223-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan5225-61"
-         x="371.43979"
-         y="583.1911">Device</tspan><tspan
-         sodipodi:role="line"
-         x="371.43979"
-         y="595.6911"
-         id="tspan3444">Assessment</tspan></text>
+         x="511.82553"
+         y="448.47186"
+         id="tspan3638">Training</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:15px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-       x="228.64413"
-       y="469.18765"
-       id="text2993-6-16-1-6"
+       x="368.64413"
+       y="329.18762"
+       id="text2993-6-16-1-6-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-3-6"
-         x="228.64413"
-         y="469.18765">Input</tspan></text>
+         id="tspan2995-6-41-3-6-6"
+         x="368.64413"
+         y="329.18762">Input</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:15px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-       x="371.13766"
-       y="469.18768"
-       id="text2993-6-16-1-6-3"
+       x="511.13766"
+       y="329.18768"
+       id="text2993-6-16-1-6-3-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-3-6-7"
-         x="371.13766"
-         y="469.18768">Activity</tspan></text>
+         id="tspan2995-6-41-3-6-7-91"
+         x="511.13766"
+         y="329.18768">Activity</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:15px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-       x="513.0213"
-       y="469.18768"
-       id="text2993-6-16-1-6-3-1"
+       x="653.0213"
+       y="329.18768"
+       id="text2993-6-16-1-6-3-1-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2995-6-41-3-6-7-9"
-         x="513.0213"
-         y="469.18768">Outcomes</tspan></text>
+         id="tspan2995-6-41-3-6-7-9-9"
+         x="653.0213"
+         y="329.18768">Outcomes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:97.40905761999998447px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="381.44635"
+       y="581.9093"
+       id="text3047"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3049"
+         x="381.44635"
+         y="581.9093">NULL</tspan></text>
   </g>
 </svg>
