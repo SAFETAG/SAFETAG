@@ -1,2 +1,0 @@
-A SAFETAG auditor has an opportunity to act as a trusted conduit between civil society organizations in need and organizations providing digital security training, technological support, legal assistance, and incident response. As SAFETAG auditors develop deep knowledge of regional and global resources available the organizations they audit will have a greater chance of identifying resources that they can use. As auditors share resources they have identified back to the SAFETAG network, each auditor's possible impact can be increased.
-

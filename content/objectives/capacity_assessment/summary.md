@@ -1,1 +1,0 @@
-In this component the auditor reviews the interviews to identify the organization's strengths and weakness (expertise, finance, willingness to learn, staff time, etc.) to adopting new digital and physical security practices. The auditor uses this information to modify the audit scope, and recommendations accordingly.

@@ -1,1 +1,0 @@
-This component consists of an auditor compiling their audit notes and recommendations into a comprehensive set of documents the shows the current state of security, the process by which the auditor came to that assessment, and recommendations that will guide the hosts progression to meet their security goals.
