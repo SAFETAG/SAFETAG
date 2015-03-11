@@ -106,7 +106,7 @@
 \newpage
 <!-- Reporting Creation -->
 
-!INCLUDE "content/index/reporting_creation.overview.md"
+!INCLUDE "content/index/report_creation.overview.md"
 
 \newpage
 <!-- Load Default Images -->
