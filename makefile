@@ -1,7 +1,7 @@
 .PHONY:	all \
 	install submodules pandoc wkhtmltopdf \ #Installation Rules
 	build_dirs \ #Setup Rules
-	pysetup  \ #Dependency Rules
+	pysetup fonts \ #Dependency Rules
 	all_docs adids report guide mini_guide overview clean_docs \ #Document Rules
 
 
@@ -17,7 +17,7 @@ modules/markdown-pp/markdown-pp.py: | pysetup submodules
 	@echo "This will require root access to this machine... sorry"
 	@cd modules/markdown-pp && sudo python setup.py install
 
-wkhtmltopdf:
+wkhtmltopdf: fonts
 	@echo "Checking if wkhtmltopdf is installed..."
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "wkhtmltopdf needs to be installed" \
@@ -32,6 +32,13 @@ pandoc:
 	@pandoc --version > /dev/null 2>&1 \
 	|| (echo "Pandoc needs to be installed" \
 	&& echo "Please run (sudo apt-get install pandoc)")
+
+fonts:
+	@unzip --version  2>&1 \
+	|| (echo "unzip needs to be installed" \
+	&& echo "run 'sudo apt-get install unzip'.")
+	wget www.google.com/get/noto/pkgs/NotoSans-hinted.zip
+	unzip  NotoSans-hinted.zip -d styles/fonts
 
 #============ Output Folder Setup ==============
 

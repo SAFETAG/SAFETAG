@@ -2,39 +2,28 @@
 
 
 @font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
+    font-family: 'Noto Sans Regular';
+    src: url('../styles/fonts/NotoSans-Regular.ttf')  format("truetype")
 }
 
 @font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xONSK5BxN3NFS4EJkViHIqo.woff) format('woff');
+    font-family: 'Noto Sans Bold';
+    src: local('../styles/fonts/NotoSans-Bold.ttf')  format("truetype");
 }
-
 @font-face {
-  font-family: 'Slabo 27px';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(https://fonts.gstatic.com/s/slabo27px/v2/PuwvqkdbcqU-fCZ9Ed-b7RsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+    font-family: 'Noto Sans Italic';
+    src: local('../styles/fonts/NotoSans-Italic.ttf')  format("truetype");
 }
-
 @font-face {
-  font-family: 'Slabo 13px';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Slabo 13px'), local('Slabo13px-Regular'), url(https://fonts.gstatic.com/s/slabo13px/v2/fScGOqovO8xyProgHURSRxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+    font-family: 'Noto Sans Bold Italic';
+    src: local('../styles/fonts/NotoSans-BoldItalic.ttf')  format("truetype");
 }
-
 
 html,
 body {
 	background: white;
 	font-size: 10pt;
-	font-family: 'Slabo 13px', sans-serif;
+	font-family: 'Noto Sans Regular', sans-serif;
 }
 
 code {
@@ -45,8 +34,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: bold;
+    font-family: "Noto Sans Regular", sans-serif;
+    font-style: bold;
     margin-bottom: 0px;
 }
 
@@ -184,8 +173,9 @@ figure {
 }
 
 figcaption {
+    font-family: "Noto Sans Regular", sans-serif;
     font-style: italic;
-    text-align: venter;
+    text-align: center;
     font-size: 8pt;
 }
 
