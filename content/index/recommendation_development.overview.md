@@ -2,16 +2,16 @@
 
 ### Summary
 
-!INCLUDE "../objectives/recommendation_development/summary.md"
+!INCLUDE "../reporting/recommendation_development/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/recommendation_development/purpose.md"
+!INCLUDE "../reporting/recommendation_development/purpose.md"
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/recommendation_development/guiding_questions.md"
+!INCLUDE "../reporting/recommendation_development/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/recommendation_development/approaches.md"
+!INCLUDE "../reporting/recommendation_development/approaches.md"

@@ -1,6 +1,3 @@
-Network Mapping
-network_mapping
-
 ## Network Mapping
 
 ### Summary

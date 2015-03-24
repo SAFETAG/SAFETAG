@@ -109,9 +109,12 @@
 !INCLUDE "content/index/report_creation.overview.md"
 
 \newpage
+
 <!-- Load Default Images -->
 
 !INCLUDE "theme/image_defaults.md"
+
+# Footnotes
 
 <!-- Load Footnotes -->
 
