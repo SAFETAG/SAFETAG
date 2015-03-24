@@ -1,6 +1,2 @@
 
-### Summary
-
-This component allows the auditor to flag potential risks related to physical access to digital assets and suggest new policies and practices. 
-
-It should be noted that SAFETAG is focused only on the digital impacts of physical security.  This guide does not provide a full physical security assessment.
+During this component an  auditor flags potential risks related to physical access, storage, backups, and encryption of digital assets and suggests new policies and practices. While the SAFETAG framework is focused on the security of data, the physicality of devices, backup drives, servers, and even hard-wired networks cannot be overlooked. 
