@@ -16,3 +16,6 @@ modules/texlive
 
 #Ignore all png images as they are created by SVG's in the makefile
 *.png
+
+#Ignore all fonts that are downloaded
+styles/fonts
