@@ -95,12 +95,16 @@ ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
+build/src/content:
+	@echo Creating content link for pdf creation
+	ln -s ../../content/ build/src/content
+
 # =============== Report Generation =================
 
 CURRENT_DIR = $(shell pwd)
 
 #Create the auditor adids guide
-adids: | $(SRC_DIR) $(DOC_DIR)
+adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
 	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/adids.md
 	pandoc -s --variable=title:"ADIDS Guide" \
 		--template=theme/html5.template \
@@ -118,7 +122,7 @@ adids: | $(SRC_DIR) $(DOC_DIR)
 		$(SRC_DIR)/adids.html $(DOC_DIR)/adids.pdf || true
 
 #Create the auditor guide
-guide: | $(SRC_DIR) $(DOC_DIR)
+guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
 	modules/markdown-pp/markdown-pp.py index.guide.md $(SRC_DIR)/guide.md
 	pandoc -s --variable=title:"Full Guide" \
 		--template=theme/html5.template \
@@ -136,7 +140,7 @@ guide: | $(SRC_DIR) $(DOC_DIR)
 		$(SRC_DIR)/guide.html $(DOC_DIR)/guide.pdf
 
 #Create the auditor mini guide
-mini_guide: | $(SRC_DIR) $(DOC_DIR)
+mini_guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
 	modules/markdown-pp/markdown-pp.py index.mini.guide.md $(SRC_DIR)/guide.mini.md
 	pandoc -s --variable=title:"Mini-Guide" \
 		--template=theme/html5.template \
@@ -154,7 +158,7 @@ mini_guide: | $(SRC_DIR) $(DOC_DIR)
 		$(SRC_DIR)/guide.mini.html $(DOC_DIR)/guide.mini.pdf
 
 #Create the auditor overview
-overview: | $(SRC_DIR) $(DOC_DIR)
+overview: | $(SRC_DIR) $(DOC_DIR) build/src/content
 	modules/markdown-pp/markdown-pp.py content/index/index.overview.md $(SRC_DIR)/overview.md
 	pandoc -s --variable=title:"Overview" \
 		--template=styles/html5.template \
