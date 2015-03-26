@@ -32,12 +32,12 @@
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "content/document_matter/risk_assessment.overview.md"
+!INCLUDE "content/document_matter/risk_assessment.md"
 
 \newpage
 <!-- Agency Building -->
 
-!INCLUDE "content/document_matter/agency_building.overview.md"
+!INCLUDE "content/document_matter/agency_building.md"
 
 # Objectives
 
@@ -91,7 +91,7 @@
 
 !INCLUDE "content/index/follow_up.overview.md"
 
-# Reporting Activities
+# Reporting
 
 \newpage
 <!-- Recommendation Development -->

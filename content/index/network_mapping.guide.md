@@ -1,49 +1,33 @@
 ## Network Mapping
 
-!INCLUDE "guides/network_mapping/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/network_mapping/summary.md"
+!INCLUDE "../objectives/network_mapping/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/network_mapping/purpose.md"
+!INCLUDE "../objectives/network_mapping/purpose.md"
 
-### Baseline Skills [stub]
+### The Flow Of Information
 
-!INCLUDE "guides/network_mapping/baseline_skills.md"
+![Network Mapping Information Flow](content/images/info_flows/network_mapping.svg)
 
-### Preparation [stub]
+### Guiding Questions
 
-!INCLUDE "guides/network_mapping/preparation.md"
+!INCLUDE "../objectives/network_mapping/guiding_questions.md"
 
-### Materials Needed [stub]
+### Approaches
 
-!INCLUDE "guides/network_mapping/materials_needed.md"
+!INCLUDE "../objectives/network_mapping/approaches.md"
 
-### Approach
-
-!INCLUDE "guides/network_mapping/approach.md"
-
-### Output
-
-!INCLUDE "guides/network_mapping/output.md"
-
-### Operational Security
-
-!INCLUDE "guides/network_mapping/operational_security.md"
-
-### Reporting [stub]
-
-!INCLUDE "guides/network_mapping/reporting.md"
+!INCLUDE "../objectives/audit_mapping/activities.md"
 
 ### Resources
+
+!INCLUDE "references/network_discovery_methods.md"
+
+!INCLUDE "references/network_access.md"
 
 !INCLUDE "references/network_mapping.overview.md"
 
 !INCLUDE "references/network_mapping_methods.md"
-
-### Examples
-
-!INCLUDE "guides/vulnerability_scanning/examples/openvas/index.md"
