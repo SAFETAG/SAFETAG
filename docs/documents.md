@@ -41,16 +41,19 @@ Concise Overview of what SAFETAG is, how it is done, and why it is done this way
 |Preparation|-|+|+|-|
 |Purpose|-|+|+|+|
 |Resources|-|+|+|-|
-|Approaches|-|+|+|+||
--> Approach|-|+|+|-|
+|Approaches|-|+|+|+|
+|-> Approach|-|+|+|-|
 |-> Activity|||||
 |--> Summary|-|-|+|-|
-|--> Instructions|-|+|-|-|
-|--> Recommendations|-|-|-|-|
 |--> Base Line Skills|+|-|+|-|
+|--> Instructions|-|+|-|-|
 |--> Operational Security|-|+|+|-|
-|Reporting|-|-|+|-|
-|Materials Needed|+|-|+|-|
+|--> Materials Needed|-|+|+|-|
+|--> Considerations|-|+|+|-|
+|--> Output|-|-|+|-|
+|--> Reporting|-|+|-|-|
+|--> Resources|-|+|+|-|
+|--> Recommendations|-|-|-|-|
 
 ## Reporting Contents
 
