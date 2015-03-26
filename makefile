@@ -123,12 +123,12 @@ adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
 
 #Create the auditor guide
 guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py index.guide.md $(SRC_DIR)/guide.md
+	modules/markdown-pp/markdown-pp.py content/index/index.guide.md $(SRC_DIR)/guide.md
 	pandoc -s --variable=title:"Full Guide" \
-		--template=theme/html5.template \
+		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/guide.md \
 		--output=$(SRC_DIR)/guide.html
-	wkhtmltopdf --user-style-sheet theme/core.css \
+	wkhtmltopdf --user-style-sheet styles/core.css \
 		--title "SAFETAG Guide" \
 		--disable-smart-shrinking  \
 		--load-error-handling skip \
@@ -138,24 +138,6 @@ guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		--outline \
 		--outline-depth 2 \
 		$(SRC_DIR)/guide.html $(DOC_DIR)/guide.pdf
-
-#Create the auditor mini guide
-mini_guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py index.mini.guide.md $(SRC_DIR)/guide.mini.md
-	pandoc -s --variable=title:"Mini-Guide" \
-		--template=theme/html5.template \
-		--to=html5 $(SRC_DIR)/guide.mini.md \
-		--output=$(SRC_DIR)/guide.mini.html 
-	wkhtmltopdf --user-style-sheet theme/core.css \
-		--title "SAFETAG Mini Guide" \
-		--disable-smart-shrinking  \
-		--load-error-handling skip \
-		--load-media-error-handling skip \
-		--footer-center "Page [page] of [toPage]" \
-		--header-left [doctitle] \
-		--outline \
-		--outline-depth 2 \
-		$(SRC_DIR)/guide.mini.html $(DOC_DIR)/guide.mini.pdf
 
 #Create the auditor overview
 overview: | $(SRC_DIR) $(DOC_DIR) build/src/content
