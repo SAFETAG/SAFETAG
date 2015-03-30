@@ -105,9 +105,9 @@ CURRENT_DIR = $(shell pwd)
 
 #Create the auditor adids guide
 adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/adids.md
+	modules/markdown-pp/markdown-pp.py content/index/index.adids.md $(SRC_DIR)/adids.md
 	pandoc -s --variable=title:"ADIDS Guide" \
-		--template=theme/html5.template \
+		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/adids.md \
 		--output=$(SRC_DIR)/adids.html 
 	wkhtmltopdf --user-style-sheet theme/core.css \
