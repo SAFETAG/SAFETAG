@@ -1,0 +1,1 @@
+Have staff identify where that data is currently (what devices/physical locations), who has access (physical access, login access, and permissions), and who needs to have access to get the organizations work completed.

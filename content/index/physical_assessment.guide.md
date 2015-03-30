@@ -1,38 +1,29 @@
 ## Physical Assessment
 
-!INCLUDE "guides/physical_assessment/quote.md"
+### Summary
 
-!INCLUDE "guides/physical_assessment/summary.md"
+!INCLUDE "../objectives/physical_assessment/summary.md"
 
-!INCLUDE "guides/physical_assessment/purpose.md"
+### Purpose
 
-!INCLUDE "guides/physical_assessment/baseline_skills.md"
+!INCLUDE "../objectives/physicala_assessment/purpose.md"
 
-!INCLUDE "guides/physical_assessment/preparation.md"
+### The Flow Of Information
 
-!INCLUDE "guides/physical_assessment/materials_needed.md"
+![Data Assessment Information Flow](content/images/info_flows/physical_assessment.svg)
 
-!INCLUDE "guides/physical_assessment/approach.md"
+### Guiding Questions
 
-!INCLUDE "guides/physical_assessment/output.md"
+!INCLUDE "../objectives/physical_assessment/guiding_questions.md"
 
-!INCLUDE "guides/physical_assessment/operational_security.md"
+### Approaches
 
-!INCLUDE "guides/physical_assessment/reporting.md"
+!INCLUDE "../objectives/physical_assessment/approaches.md"
+
+!INCLUDE "../objectives/physical_assessment/activities.md"
 
 ### Resources
 
 !INCLUDE "references/physical_assessment.overview.md"
 
 !INCLUDE "references/physical_assessment.md"
-
-\newpage
-
-### Example
-
-!INCLUDE "guides/physical_assessment/examples/physically_insecure_devices/index.md"
-
-<!--
-Guided Tour Activity
-!INCLUDE "guides/physical_assessment/examples/instructions.md"
--->

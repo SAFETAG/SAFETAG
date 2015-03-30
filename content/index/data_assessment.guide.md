@@ -1,49 +1,28 @@
 ## Data Assessment
 
-!INCLUDE "guides/data_assessment/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/data_assessment/summary.md"
+!INCLUDE "../objectives/data_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/data_assessment/purpose.md"
+!INCLUDE "../objectives/data_assessment/purpose.md"
 
-### Baseline Skills [stub]
+### The Flow Of Information
 
-!INCLUDE "guides/data_assessment/baseline_skills.md"
+![Data Assessment Information Flow](content/images/info_flows/data_assessment.svg)
 
-### Preparation [stub]
+### Guiding Questions
 
-!INCLUDE "guides/data_assessment/preparation.md"
+!INCLUDE "../objectives/data_assessment/guiding_questions.md"
 
-### Materials Needed [stub]
+### Approaches
 
-!INCLUDE "guides/data_assessment/materials_needed.md"
+!INCLUDE "../objectives/data_assessment/approaches.md"
 
-### Approach
-
-!INCLUDE "guides/data_assessment/approach.md"
-
-### Output
-
-!INCLUDE "guides/data_assessment/output.md"
-
-### Operational Security
-
-!INCLUDE "guides/data_assessment/operational_security.md"
-
-### Reporting [stub]
-
-!INCLUDE "guides/data_assessment/reporting.md"
+!INCLUDE "../objectives/data_assessment/activities.md"
 
 ### Resources
 
 !INCLUDE "references/data_assessment.overview.md"
 
-\newpage
-
-### Example
-
-!INCLUDE "guides/data_assessment/examples/sensitive_data_activity.md"

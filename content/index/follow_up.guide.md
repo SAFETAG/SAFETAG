@@ -1,38 +1,22 @@
 ## Follow Up
 
-!INCLUDE "guides/follow_up/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/follow_up/summary.md"
+!INCLUDE "../objectives/follow_up/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/follow_up/purpose.md"
+!INCLUDE "../objectives/follow_up/purpose.md"
 
-### Baseline Skills [stub]
+### Guiding Questions
 
-!INCLUDE "guides/follow_up/baseline_skills.md"
+!INCLUDE "../objectives/follow_up/guiding_questions.md"
 
-### Preparation [stub]
+### Approaches
 
-!INCLUDE "guides/follow_up/preparation.md"
+!INCLUDE "../objectives/follow_up/approaches.md"
 
-### Materials Needed [stub]
-
-!INCLUDE "guides/follow_up/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/follow_up/approach.md"
-
-### Operational Security
-
-!INCLUDE "guides/follow_up/operational_security.md"
-
-### Reporting [stub]
-
-!INCLUDE "guides/follow_up/reporting.md"
+!INCLUDE "../objectives/follow_up/activities.md"
 
 ### Resources
 

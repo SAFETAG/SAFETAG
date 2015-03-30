@@ -1,42 +1,22 @@
 ## Recommendation Development
 
-!INCLUDE "guides/recommendation_development/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/recommendation_development/summary.md"
+!INCLUDE "../reporting/recommendation_development/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/recommendation_development/purpose.md"
+!INCLUDE "../reporting/recommendation_development/purpose.md"
 
-### Baseline Skills [stub]
+### Guiding Questions
 
-!INCLUDE "guides/recommendation_development/baseline_skills.md"
+!INCLUDE "../reporting/recommendation_development/guiding_questions.md"
 
-### Preparation [stub]
+### Approaches
 
-!INCLUDE "guides/recommendation_development/preparation.md"
+!INCLUDE "../reporting/recommendation_development/approaches.md"
 
-### Materials Needed [stub]
-
-!INCLUDE "guides/recommendation_development/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/recommendation_development/approach.md"
-
-### Output
-
-!INCLUDE "guides/recommendation_development/output.md"
-
-### Operational Security
-
-!INCLUDE "guides/recommendation_development/operational_security.md"
-
-### Reporting Considerations: [stub]
-
-!INCLUDE "guides/recommendation_development/reporting.md"
+!INCLUDE "../reporting/recommendation_development/activities.md"
 
 ### Resources
 
