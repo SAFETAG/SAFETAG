@@ -36,9 +36,9 @@ contacts         domains          leaks            netblocks        pushpins    
 
 Using recon modules
 
-The recon modules are named in a very specific fashion to help the user understand the flow of data inside the tool. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.   The inputs are the first part of each module, and the second is the outputs.  The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.).  If you already know the name of the specific module, recon-ng will figure it out (though tab completion doesn't help) -- for example, ``` use  breachalarm``` works just as well as ```use recon/contacts-creds/breachalarm```
+The recon modules are named in a very specific fashion to help the user understand the flow of data inside the tool. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.   The inputs are the first part of each module, and the outputs are the second part.  The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.).  If you provide the name of the specific module, recon-ng can figure it out (though tab completion doesn't help) -- for example, ``` use  breachalarm``` works just as well as ```use recon/contacts-creds/breachalarm```
 
-You can also search modules by their inputs or outputs. ```search domains-``` will show all modules that take domain names as their input, and ```search -contacts``` will show all modules that output contact information.
+You can also search modules by their inputs or outputs. ```search domains-``` displays all modules that take domain names as their input, and ```search -contacts``` displays all modules that outputs contact information.
 
 ##### Preparing
 
@@ -103,7 +103,7 @@ You can list keys by using the command ```keys list```
 
 Reference the Creating API Keys Section below for quick links to setting up popular APIs.
 
-NOTE: Sample Keys - working keys may be different sizes than the randomly generated numbers in this example.
+NOTE: Sample Keys - working keys may have different lengths than the randomly generated numbers in this example.
 
 
 ##### First steps
@@ -130,7 +130,7 @@ NOTE: This walkthrough is using sample data. Results will vary widely depending 
 
   * Add known seed information (domains, netblocks, company names, locations, etc.)
 
-See the possible seed information by using auto-completion.
+Display possible seed information by using auto-completion.
 
 ```
 [recon-ng][default] > add 
@@ -138,9 +138,9 @@ companies        credentials      hosts            locations        ports       
 contacts         domains          leaks            netblocks        pushpins         
 ```
 
-I am only going to use the organizations name, one domain, two netblock (that I got by searching for other domains and ping-ing them), and two e-mails of the company I am looking for so I will add those.
+We will only use the organizations name, one domain, two netblock (that we got by searching for other domains and ping-ing them), and two e-mails of the company we are looking for so we will add those.
 
-First, I will add the company name.
+First, add the company name.
 
 ```
 [recon-ng][websitename] > add companies
@@ -148,7 +148,7 @@ company (TEXT): Websitename
 description (TEXT): 
 ```
 
-Next I will add the domain.
+Next, add the domain.
 
 ```
 [recon-ng][default] > add domains websitename.org
@@ -163,7 +163,7 @@ Next I will add the domain.
 [*] 1 rows returned
 ```
 
-Next, I will add my contacts. I don't know much. But, I will add what I know.
+Next, add my contacts. we don't know much. But, we will add what we know.
 
 ```
 [recon-ng][websitename] > add contacts
@@ -185,7 +185,7 @@ country (TEXT): USA
 [recon-ng][websitename] > 
 ```
 
-Finally I will add the ip address of their website.
+Finally we will add the ip address of their website.
 
 ```
 [recon-ng][websitename] > add netblocks 
@@ -212,7 +212,7 @@ Here it is in the database.
 
   * Run modules that leverage known netblocks. This exposes other domains and hosts from which domains can be harvested. 
 
-First I search for any modules that use netblocks as an input.
+First, search for any modules that use netblocks as an input.
 
 ```
 recon-ng][websitename] > search netblocks-
@@ -264,7 +264,7 @@ unset           Unsets module options
 use             Loads selected module
 ```
 
-First I am going to use the ```show info``` command to learn about the module and see what options I have available.
+Use the ```show info``` command to learn about the module and see what options are available.
 
 ```
 [recon-ng][websitename][shodan_net] > show info
@@ -292,9 +292,7 @@ Source Options:
 [recon-ng][websitename][shodan_net] > 
 ```
 
-It pulls directly from the netblocks source that I set up so now I only need to run the module.
-
-```run``` is the command that I want to use.
+It pulls directly from the netblocks source that we set up. Now, use ```run``` to run the module .
 
 ```
 [recon-ng][websitename] > use recon/netblocks-hosts/shodan_net
@@ -334,7 +332,7 @@ SUMMARY
 [*] 17 total (2 new) items found.
 ```
 
-Since it promised me hosts, I am going to see what hosts it uncovered.
+Since it promised me hosts, we will see what hosts it uncovered.
 
 ```
 [recon-ng][websitename][shodan_net] > show hosts
@@ -350,17 +348,17 @@ Since it promised me hosts, I am going to see what hosts it uncovered.
 [*] 3 rows returned
 ```
 
-I went to leillc.net and the website is obviously not associated with the company I am doing recon on.
-Since this module did what I wanted I will leave it using the ```back``` command.
+It seems the website leillc.net is obviously not associated with the company I am doing recon on.
+Since this module has finished, we will leave it using the ```back``` command.
 
 ```
 [recon-ng][websitename][shodan_net] > back
 [recon-ng][websitename] > 
 ```
 
-Now I will use the other two ```netblock-``` modules. I will show one more and then skip the second.
+Now we will use the other two ```netblock-``` modules. We will show one more and then skip the second.
 
-First I am going to find all the possible modules using tab completion.
+First we find all the possible modules using tab completion.
 
 ```
 [recon-ng][websitename] > use recon/netblocks-
@@ -368,13 +366,13 @@ recon/netblocks-hosts/reverse_resolve  recon/netblocks-hosts/shodan_net       re
 [recon-ng][websitename] > use recon/netblocks-
 ```
 
-I am going to use reverse-resolve first.
+We are going to use reverse-resolve.
 
 ```
 [recon-ng][websitename][census_2012] > use recon/netblocks-hosts/reverse_resolve
 ```
 
-But, when I run it I get an error!
+But, when we run it we get an error!
 ```
 [recon-ng][websitename][reverse_resolve] > run
 
@@ -384,9 +382,9 @@ But, when I run it I get an error!
 [!] Need more than 1 value to unpack.
 ```
 
-I figured out what was going on by going ```back``` and then ```set DEBUG True``` to see the underlying error. I won't make you do that though. The debug error message let me know that I needed to use full netmask syntax for netblocks. So, I will have to add new netblocks in the correct format and then delete the old ones.
+OPTIONAL: To figure out what was going on, go ```back``` and then ```set DEBUG True``` to see the underlying error. The debug error message lets us know that we need to use full netmask syntax for netblocks. We will now add new netblocks in the correct format and then delete the old ones.
 
-First I will add them correctly.
+First we will add them correctly.
 
 ```
 [recon-ng][websitename][reverse_resolve] > add netblocks
@@ -395,7 +393,7 @@ netblock (TEXT): 177.154.167.69/72
 netblock (TEXT): 96.127.170.121/72
 ```
 
-Now I have double of the same netblocks
+Now we have double of the same netblocks
 
 ```
 [recon-ng][websitename][reverse_resolve] > show netblocks
@@ -412,7 +410,7 @@ Now I have double of the same netblocks
 [*] 4 rows returned
 ```
 
-So now that I know their rowid numbers, I can delete them.
+Now that we know their rowid numbers, I can delete them.
 ```
 [recon-ng][websitename][reverse_resolve] > del netblocks
 rowid(s) (INT): 2
@@ -420,7 +418,7 @@ rowid(s) (INT): 2
 rowid(s) (INT): 3
 ```
 
-And, re-running the module will now work.
+And, re-running the module now works.
 
 ```
 [recon-ng][websitename][reverse_resolve] > run
@@ -441,7 +439,7 @@ SUMMARY
 [*] 2 total (1 new) items found.
 ```
 
-Now, exploring these hosts I relized quickly that most the new hosts on other domains are not associated with my company. So, I am going to remove them.
+Now, exploring these hosts we realize quickly that most the new hosts on other domains are not associated with the company. Hence, we will remove them.
 
 ```
 [recon-ng][websitename] > show hosts
@@ -462,15 +460,15 @@ rowid(s) (INT): 4
 rowid(s) (INT): 7
 ```
 
-I am going to skip the last module ```recon/netblocks-ports/census_2012``` since I think you get the idea.
+We skip the last module ```recon/netblocks-ports/census_2012``` since you already get the idea.
 
   * Add new domains gleaned from the results if they have not automatically been added.
 
-Sadly, none of the new domains were actually useful for us.
+Sadly, none of the new domains were actually useful.
 
   * Run modules that conduct DNS brute forcing of TLDs and SLDs against current domains.
 
-Now let's find new domains using brute forcing. First we should look for what is available.
+Let's find new domains using brute forcing. First we should look for what is available.
 
 ```
 [recon-ng][websitename] > search domains-domains
@@ -519,7 +517,7 @@ WEBSITENAME.ORG
 ...
 ```
 
-This returned quite a few domains. I have removed the middle section
+This returned quite a few domains. We have removed the middle section
 
 ```
 [recon-ng][websitename][brute_suffix] > show domains
@@ -544,7 +542,7 @@ This returned quite a few domains. I have removed the middle section
   * Have list of domains validated by the client.
   * Remove out-of-scope domains with the "del" command or generate a query which only selects the scoped domains as input.
 
-I had to remove a lot of out of scope domains. But luckily you can specify ranges when you delete.
+Many out of scope domains had to be removed, but luckily you can specify ranges when you delete.
 
 ```
 [recon-ng][websitename][brute_suffix] > del domains
