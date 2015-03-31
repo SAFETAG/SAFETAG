@@ -182,25 +182,25 @@ For practice on any of these methods, you can use the wpa-Induction.pcap file fr
 
 
 ##### Resources 
-https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html
+[https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html](https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html)
 
-http://zed0.co.uk/crossword/
+[http://zed0.co.uk/crossword/](http://zed0.co.uk/crossword/)
 
-http://www.instantcheckmate.com/crimewire/is-your-password-really-protecting-you/#lightbox/0/
+[http://www.instantcheckmate.com/crimewire/is-your-password-really-protecting-you/#lightbox/0/](http://www.instantcheckmate.com/crimewire/is-your-password-really-protecting-you/#lightbox/0/)
 
-Note that password cracking systems are rated on the number of password guesses they make per second.  Stock laptop computers without high-end graphics cards or any other optimizations can guess 2500 passwords/second. More powerful desktop computers can test over a hundred million each second, and with graphics cards (GPUs) that rises to billions of passwords per second. (https://en.wikipedia.org/wiki/Password_cracking).
+Note that password cracking systems are rated on the number of password guesses they make per second.  Stock laptop computers without high-end graphics cards or any other optimizations can guess 2500 passwords/second. More powerful desktop computers can test over a hundred million each second, and with graphics cards (GPUs) that rises to billions of passwords per second. ([https://en.wikipedia.org/wiki/Password_cracking](https://en.wikipedia.org/wiki/Password_cracking)).
 
-This website has a good explanation about how improving the complexity of a password affects how easy it is to break: http://www.lockdown.co.uk/?pg=combi , but is using very out of date numbers - consider a basic laptop able to produce "Class E" attacks, and a desktop, "Class F"
+This website has a good explanation about how improving the complexity of a password affects how easy it is to break: [http://www.lockdown.co.uk/?pg=combi](http://www.lockdown.co.uk/?pg=combi), but is using very out of date numbers - consider a basic laptop able to produce "Class E" attacks, and a desktop, "Class F"
 
-http://rumkin.com/tools/password/passchk.php
+[http://rumkin.com/tools/password/passchk.php](http://rumkin.com/tools/password/passchk.php)
 
-http://cyber-defense.sans.org/blog/downloads/ has a calculator buried in the zip file "scripts.zip"
+[http://cyber-defense.sans.org/blog/downloads/](http://cyber-defense.sans.org/blog/downloads/) has a calculator buried in the zip file "scripts.zip"
 
-http://www.dailymail.co.uk/sciencetech/article-2331984/Think-strong-password-Hackers-crack-16-character-passwords-hour.html
+[http://www.dailymail.co.uk/sciencetech/article-2331984/Think-strong-password-Hackers-crack-16-character-passwords-hour.html](http://www.dailymail.co.uk/sciencetech/article-2331984/Think-strong-password-Hackers-crack-16-character-passwords-hour.html)
 
-https://www.grc.com/haystack.htm
+[https://www.grc.com/haystack.htm](https://www.grc.com/haystack.htm)
 
-https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+[https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf](https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf)
 
-http://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?_r=1
+[http://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?_r=1](http://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?_r=1)
 
