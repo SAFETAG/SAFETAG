@@ -52,7 +52,7 @@ Here is a suggested path to take with suggested tools to help. You might try the
 
 Many password dictionary sites, such as [SkullSecurity](https://wiki.skullsecurity.org/Passwords) , maintain core dictionaries in multiple languages.  If your target language is not available, some quick regular expression work can turn spell-check dictionaries (such as those used by [LibreOffice](http://extensions.libreoffice.org/extension-center?getCategories=Dictionary) into useful word lists.  It is generally useful to always test with English in addition to the target language.
 
-[CloudCracker(]https://www.cloudcracker.com/dictionaries.html) and [OpenWall](http://www.openwall.com/wordlists/) have, for a fee, well-tested password dictionaries.
+[CloudCracker](https://www.cloudcracker.com/dictionaries.html) and [OpenWall](http://www.openwall.com/wordlists/) have, for a fee, well-tested password dictionaries.
 
 ### Keyword generation
 
@@ -77,7 +77,7 @@ journalism
 92
 ```
 
-Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: [https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf](https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf)
 
 ##### Optional Further steps
 
