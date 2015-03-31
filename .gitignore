@@ -19,3 +19,4 @@ modules/texlive
 
 #Ignore all fonts that are downloaded
 styles/fonts
+NotoSans-hinted.zip

@@ -1,6 +1,7 @@
 
 ##  Preparation
 
+
 <!-- ![](content/images/preparation.png "") -->
 
 !INCLUDE "adids/preparation/summary.md"

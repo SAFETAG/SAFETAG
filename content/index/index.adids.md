@@ -3,7 +3,7 @@
 
 <!-- License -->
 
-!INCLUDE "content/license.md"
+!INCLUDE "content/document_matter/license.md"
 
 \newpage
 
@@ -11,7 +11,7 @@
 
 # About SAFETAG and this Curricula
 
-!INCLUDE "content/guides/introduction.md"
+!INCLUDE "content/document_matter/introduction.md"
 
 \newpage
 
@@ -19,14 +19,14 @@
 
 ## The SAFETAG Process
 
-!INCLUDE "content/guides/overview.md"
+!INCLUDE "content/document_matter/overview.md"
 
 ![The Safetag Audit Process](../../content/images/expertiese_vertical.svg)\
 
 \newpage
 
 ## The ADIDS Process
-!INCLUDE "content/guides/overview.adids.md"
+!INCLUDE "content/document_matter/overview.adids.md"
 
 \newpage
 
@@ -34,9 +34,9 @@
 
 <!-- Overview -->
 
-!INCLUDE "content/before_the_training.adids.md"
+!INCLUDE "content/index/before_the_training.adids.md"
 
-!INCLUDE "content/introduction.adids.md"
+!INCLUDE "content/index/introduction.adids.md"
 
 \newpage
 
@@ -48,13 +48,13 @@
 
 <!-- Operational Security -->
 
-!INCLUDE "content/operational_security.adids.md"
+!INCLUDE "content/index/operational_security.adids.md"
 
 \newpage
 
 <!-- The SAFETAG Repository -->
 
-!INCLUDE "content/safetag_repo.adids.md"
+!INCLUDE "content/index/safetag_repo.adids.md"
 
 \newpage
 
@@ -68,12 +68,12 @@
 <!-- Interviews -->
 <!-- Capacity Assessment -->
 
-!INCLUDE "content/interviews.adids.md"
+!INCLUDE "content/index/interviews.adids.md"
 
 \newpage
 <!-- Contextual Research -->
 
-!INCLUDE "content/context_research.adids.md"
+!INCLUDE "content/index/context_research.adids.md"
 
 \newpage
 <!-- Assessment Plan Development -->
@@ -89,47 +89,47 @@
 \newpage
 <!-- Remote Assessment -->
 
-!INCLUDE "content/remote_assessment.adids.md"
+!INCLUDE "content/index/remote_assessment.adids.md"
 
 \newpage
 <!-- Audit Preparation  -->
 
-!INCLUDE "content/preparation.adids.md"
+!INCLUDE "content/index/preparation.adids.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "content/risk_modeling.adids.md"
+!INCLUDE "content/index/risk_modeling.adids.md"
 
 \newpage
 <!-- Network Discovery -->
 
-!INCLUDE "content/network_discovery.adids.md"
+!INCLUDE "content/index/network_discovery.adids.md"
 
 \newpage
 <!-- Network Access -->
 
-!INCLUDE "content/network_access.adids.md"
+!INCLUDE "content/index/network_access.adids.md"
 
 \newpage
 <!-- Network Mapping -->
 
-!INCLUDE "content/network_mapping.adids.md"
+!INCLUDE "content/index/network_mapping.adids.md"
 
 \newpage
 <!-- Physical -->
 
-!INCLUDE "content/physical_assessment.adids.md"
+!INCLUDE "content/index/physical_assessment.adids.md"
 
 \newpage
 <!-- Data Assessment -->
 
-!INCLUDE "content/data_assessment.adids.md"
+!INCLUDE "content/index/data_assessment.adids.md"
 
 \newpage
 <!-- Device Assessment -->
 
-!INCLUDE "content/device_assessment.adids.md"
+!INCLUDE "content/index/device_assessment.adids.md"
 
 \newpage
 <!-- Social Engineering Exercise -->
@@ -139,7 +139,7 @@
 \newpage
 <!-- Debrief -->
 
-!INCLUDE "content/debrief.adids.md"
+!INCLUDE "content/index/debrief.adids.md"
 
 \newpage
 
@@ -150,29 +150,29 @@
 \newpage
 <!-- Vulnerability Prioritization -->
 
-!INCLUDE "content/vulnerability_prioritization.adids.md"
+!INCLUDE "content/index/vulnerability_prioritization.adids.md"
 
 \newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "content/recommendation_development.adids.md"
+!INCLUDE "content/index/recommendation_development.adids.md"
 
 <!-- \newpage Resource Identification (included in recommendations for ADIDS)  !INCLUDE "content/resource_identification.adids.md" -->
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "content/roadmap_development.adids.md"
+!INCLUDE "content/index/roadmap_development.adids.md"
 
 \newpage
 <!-- Report Creation -->
 
-!INCLUDE "content/report_creation.adids.md"
+!INCLUDE "content/index/report_creation.adids.md"
 
 <!-- \newpage Follow Up (Included in reporting for ADIDS) !INCLUDE "content/follow_up.adids.md" \newpage -->
 
 <!-- Load Default Images -->
-!INCLUDE "theme/image_defaults.md"
+!INCLUDE "styles/image_defaults.md"
 
 
 <!-- Load Footnotes 
@@ -189,9 +189,9 @@ Footnotes
 
 !INCLUDE "content/adids/sample_org/safetag-sample-org.md"
 
-!INCLUDE "content/guides/interviews/examples/outputs_needed.md"
+!INCLUDE "content/activities/interviews/examples/outputs_needed.md"
 
-!INCLUDE "content/guides/interviews/examples/interview_questions.md"
+!INCLUDE "content/activities/interviews/examples/interview_questions.md"
 
 ## Context Research Sources
 
@@ -212,6 +212,6 @@ Footnotes
 
 ## Agreement Template
 
-!INCLUDE "content/guides/assessment_plan/draft_engagement_agreement.md"
+!INCLUDE "content/activities/create_an_assessment_plan/draft_engagement_agreement.md"
 
 \newpage

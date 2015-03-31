@@ -79,7 +79,7 @@ audit: $(DATE_DIR)
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
 	#@python modules/audit_setup.py --directory audit/$(DATE_DIR)
 	cp -fr templates/audit/. audit/$(DATE_DIR)/
-	cp theme/core.css audit/$(DATE_DIR)/build/core.css
+	cp styles/core.css audit/$(DATE_DIR)/build/core.css
 
 $(DATE_DIR):
 	@echo "Creating a new audit folder named $(DATE_DIR)"
@@ -105,12 +105,12 @@ CURRENT_DIR = $(shell pwd)
 
 #Create the auditor adids guide
 adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py index.adids.md $(SRC_DIR)/adids.md
+	modules/markdown-pp/markdown-pp.py content/index/index.adids.md $(SRC_DIR)/adids.md
 	pandoc -s --variable=title:"ADIDS Guide" \
-		--template=theme/html5.template \
+		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/adids.md \
 		--output=$(SRC_DIR)/adids.html 
-	wkhtmltopdf --user-style-sheet theme/core.css \
+	wkhtmltopdf --user-style-sheet styles/core.css \
 		--title "SAFETAG ADIDS Curricula" \
 		--disable-smart-shrinking  \
 		--load-error-handling skip \

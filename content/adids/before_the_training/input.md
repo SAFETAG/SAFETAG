@@ -13,8 +13,28 @@
 
 Below is a sample training schedule that has evolved out of the experience thus far with training on SAFETAG.  There is a lot of content to cover, but that has to be regulated by not having a training that is simply too long.
 
-(TODO: insert a training schedule)
- 
+| Time 	| Day 1 	| Day 2 	| Day 3 	| Day 4 	|  	|
+|-----	|------------------------------------------------------------	|-----------------------------------------	|--------------------------------	|-----------------------------------------------------------------	|---	|
+|  	| Intro, Preparation, and Research  	| Recon and Risk Modeling 	| Networks, Devices and Data 	| Vulnerabilties and Reporting 	|  	|
+| 9a 	|  	|  	|  	|  	|  	|
+| :30 	| Gathering 	| Gathering 	| Gathering 	| Gathering 	|  	|
+| 10a 	| Welcome / icebreakers & ground rules for the training 	| recon-ng 	| Network Discovery 	| Network Mapping and Vuln Scanning, cont'd 	|  	|
+| :30 	| Intro to SAFETAG process; scope; responsibilities 	| recon exercise and exploration 	| beacon exploration 	|  	|  	|
+| 11a 	| Operational Security, Communications and Audit Prep 	| (:15 break) 	| (:15 break) 	| (:15 break) 	|  	|
+| :30 	| Tools of the trade (kali, git, encrypted containers, vpns) 	| Social Engineering Activities Overview 	| Network Access 	| Vulnerability Scanning 	|  	|
+| 12p 	| Intro to the SAFETAG repo 	|  	| Password cracking exercise 	|  	|  	|
+| :30 	|  	| Physical aspects 	|  	| Vulnerability Prioritization; EOP Activity? 	|  	|
+| 1p 	| Lunch break 	| Lunch break 	| Lunch break 	| Lunch break 	|  	|
+| :30 	|  	|  	|  	|  	|  	|
+| 2p 	| Capacity Assessment and Interviews 	| Facilitated Risk Modeling 	| Data assessment Overview 	| Debriefing and Spot Training 	|  	|
+| :30 	| Assessment Plan Negotiation 	|  	|  Critical Data Activity 	|  	|  	|
+| 3p 	| (:15 break) 	| (:15 break) 	|  	| Recomendations, Resources, Roadmaps 	|  	|
+| :30 	| Context Research 	| Process Mapping and pre-mortem exercise 	| (:15 break) 	| (:15 break) 	|  	|
+| 4p 	| Context Exercise 	|  	| Device assessment (volunteer?) 	| Report Compilation 	|  	|
+| :30 	| OSINT Intro (google dorking, pastebin, socmedia tools) 	|  	| Network Mapping 	| Follow-up 	|  	|
+| 5p 	| Exercise: OSINT/Google yourself! 	|  	|  	|  	|  	|
+|  	|  	| Password Dictionary development 	|  	| Next steps: Working with Orgs; Scheduling Shadow/Indept. Audits 	|  	|
+| 6p 	| close 	| close 	| close 	| close 	|  	| 
 #### Trainees,  and Pre-tests and homework ####
 
 Pre-tests are ways to try and make sure your trainees have a base skill level to be able to not only absorb, but responsibly use the SAFETAG material.  This is an area of active discussion and development in the SAFETAG community, but currently, having trainees who use Linux as their daily operating system or who are extremely familiar with it, and who are comfortable and accustomed to using PGP for communications seems to be a good start.
