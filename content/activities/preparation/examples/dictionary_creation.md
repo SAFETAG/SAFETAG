@@ -77,7 +77,7 @@ journalism
 92
 ```
 
-Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: [https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf](https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf)
+Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's also useful to see what calendar system is in use at your organization's location as some cultures [don't use Gregorian years](https://en.wikipedia.org/wiki/Calendar#Calendars_in_use). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: [https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf](https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf)
 
 ##### Optional Further steps
 
