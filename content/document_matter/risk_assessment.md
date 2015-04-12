@@ -2,9 +2,9 @@
 
 Functionally, SAFETAG is a digital risk assessment framework. Risk assessment a systematic approach to identifying and assessing risks associated with hazards and human activities. SAFETAG focus' this approach on digital security risks. A SAFETAG audit will work to collect the following types of information in order to assess the risks an organization faces.
 
-### Risk
+Risk is the current assessment of the possibility of harmful events occurring. Risk is assessed by comparing the threats an actor faces with their vulnerabilities, and their capacity to respond to or mitigate emergent threats.
 
-Risk is the current assessment of the possibility of harmful events occurring. Risk is assessed by comparing the threats an actor faces with their vulnerabilities, and their capacity to respond to emergent threats. The SAFETAG evaluation revolves around collecting enough information to identify, and assess the various risks and an organization and its related actors face so that they can take action strategically.
+The SAFETAG evaluation revolves around collecting enough information to identify and assess the various risks and an organization and its related actors face so that they can take action strategically.
 
 ![The Risk Equation](content/images/risk_equation.svg)
 

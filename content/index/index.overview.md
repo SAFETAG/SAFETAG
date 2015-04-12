@@ -1,4 +1,4 @@
-
+	
 <!-- License -->
 
 !INCLUDE "content/document_matter/license.md"
@@ -27,8 +27,6 @@
 
 !INCLUDE "content/document_matter/audit_lifecycle.md"
 
-![SAFETAG Activities](content/images/activities_flow.svg)
-
 \newpage
 <!-- Risk Modeling -->
 
@@ -45,6 +43,11 @@
 <!-- Audit Preparation-->
 
 !INCLUDE "content/index/audit_preparation.overview.md"
+
+\newpage
+<!-- Audit Scoping-->
+
+!INCLUDE "content/index/audit_scoping.overview.md"
 
 \newpage
 <!-- Threat Assessment -->

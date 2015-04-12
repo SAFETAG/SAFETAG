@@ -3,25 +3,25 @@
 
 !INCLUDE "summary.md"
 
-##### Base Line Skills
+##### Purpose
 
-!INCLUDE "base_line_skills.md"
+!INCLUDE "purpose.md"
 
-##### Operational Security
+##### Approach
 
-!INCLUDE "operational_security.md"
-
-##### Materials Needed
-
-!INCLUDE "materials_needed.md"
+!INCLUDE "approach.md"
 
 ##### Considerations
 
-!INCLUDE "considerations.md"
+!INCLUDE "operational_security.md"
 
 ##### Output
 
 !INCLUDE "output.md"
+
+##### Example: Draft Engagement Plan
+
+!INCLUDE "draft_engagement_agreement.md"
 
 ##### Resources
 

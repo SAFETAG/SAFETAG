@@ -55,6 +55,11 @@
 !INCLUDE "content/index/audit_preparation.guide.md"
 
 \newpage
+<!-- Audit Scoping-->
+
+!INCLUDE "content/index/audit_scoping.guide.md"
+
+\newpage
 <!-- Threat Assessment -->
 
 !INCLUDE "content/index/threat_assessment.guide.md"
