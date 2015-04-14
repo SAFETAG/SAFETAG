@@ -37,32 +37,59 @@
 
 !INCLUDE "content/document_matter/agency_building.md"
 
+\newpage
+<!-- Operational Security -->
+
+!INCLUDE "content/document_matter/operational_security.md"
+
+
 # Objectives
 
-\newpage
-<!-- Audit Preparation-->
-
-!INCLUDE "content/index/audit_preparation.overview.md"
+!INCLUDE "content/objectives/intro.md"
 
 \newpage
 <!-- Audit Scoping-->
 
-!INCLUDE "content/index/audit_scoping.overview.md"
+!INCLUDE "content/index/context_research.overview.md"
 
 \newpage
-<!-- Threat Assessment -->
 
-!INCLUDE "content/index/threat_assessment.overview.md"
+!INCLUDE "content/index/capacity_assessment.overview.md"
 
 \newpage
-<!-- Reconnaissance -->
+<!-- Engagement Planning-->
+
+!INCLUDE "content/index/engagement_planning.overview.md"
+
+\newpage
+<!-- Recon-->
 
 !INCLUDE "content/index/reconnaissance.overview.md"
+
+\newpage
+<!-- Network Discovery-->
+
+!INCLUDE "content/index/network_discovery.overview.md"
+
+\newpage
+<!-- Network Access -->
+
+!INCLUDE "content/index/network_access.overview.md"
 
 \newpage
 <!-- Network Mapping -->
 
 !INCLUDE "content/index/network_mapping.overview.md"
+
+\newpage
+<!-- Physical Assessment -->
+
+!INCLUDE "content/index/physical_assessment.overview.md"
+
+\newpage
+<!-- User Device Assessment -->
+
+!INCLUDE "content/index/user_device_assessment.overview.md"
 
 \newpage
 <!-- Vulnerability Analysis -->
@@ -75,9 +102,14 @@
 !INCLUDE "content/index/data_assessment.overview.md"
 
 \newpage
-<!-- User Device Assessment -->
+<!-- Risk Modeling -->
 
-!INCLUDE "content/index/user_device_assessment.overview.md"
+!INCLUDE "content/index/risk_modeling.overview.md"
+
+\newpage
+<!-- Threat Assessment -->
+
+!INCLUDE "content/index/threat_assessment.overview.md"
 
 \newpage
 <!-- Responsive Support -->
@@ -85,9 +117,10 @@
 !INCLUDE "content/index/responsive_support.overview.md"
 
 \newpage
-<!-- Physical Assessment -->
+<!-- Debrief -->
 
-!INCLUDE "content/index/physical_assessment.overview.md"
+!INCLUDE "content/index/debrief.overview.md"
+
 
 \newpage
 <!-- Follow Up -->
@@ -113,16 +146,19 @@
 
 \newpage
 
-<!-- Load Default Images -->
+# APPENDIX A: Preparing for an Audit
 
-!INCLUDE "theme/image_defaults.md"
+<!-- Audit Prep-->
+!INCLUDE "content/index/preparation.overview.md"
 
 # Footnotes
 
 <!-- Load Footnotes -->
-
 !INCLUDE "content/references/footnotes.md"
 
 <!-- Update Footnotes for overview -->
-
 !INCLUDE "content/references/footnotes.overview.md"
+
+<!-- Load Default Images -->
+!INCLUDE "theme/image_defaults.md"
+

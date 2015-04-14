@@ -1,22 +1,22 @@
-## Audit Preparation
+## Engagement Planning
 
 ### Summary
 
-!INCLUDE "../objectives/audit_preparation/summary.md"
+!INCLUDE "../objectives/engagement_planning/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/audit_preparation/purpose.md"
+!INCLUDE "../objectives/engagement_planning/purpose.md"
 
 ### The Flow Of Information
 
-![Audit Preparation Information Flow](content/images/info_flows/audit_preparation.svg)
+![Engagement Planning Information Flow](content/images/info_flows/engagement_planning.svg)
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/audit_preparation/guiding_questions.md"
+!INCLUDE "../objectives/engagement_planning/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/audit_preparation/approaches.md"
+!INCLUDE "../objectives/engagement_planning/approaches.md"
 

@@ -20,3 +20,18 @@
 
 !INCLUDE "../objectives/reconnaissance/approaches.md"
 
+!INCLUDE "../objectives/reconnaissance/activities.md"
+
+### Resources
+
+!INCLUDE "../references/remote_assessment.overview.md"
+
+!INCLUDE "../references/open_source_intel.md"
+
+!INCLUDE "../references/advanced_searching.md"
+
+!INCLUDE "../references/org_info_gathering.md"
+
+!INCLUDE "../references/pastebin_searching.md"
+
+!INCLUDE "../references/recon-ng.md"

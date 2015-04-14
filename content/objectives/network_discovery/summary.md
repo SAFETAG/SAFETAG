@@ -1,0 +1,1 @@
+This component allows the auditor to show the "visibility" of an organization's wireless network and identify devices using that network. This component consists of wireless scanning, device identification, and wireless signal mapping.

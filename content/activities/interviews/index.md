@@ -1,33 +1,18 @@
 
-##### Summary
+### Interviews
 
+#### Summary
 !INCLUDE "summary.md"
 
-##### Purpose
-
-!INCLUDE "purpose.md"
-
-##### Approach
-
+#### Overview
 !INCLUDE "approach.md"
 
-##### Considerations
-
+#### Considerations
 !INCLUDE "operational_security.md"
 
-##### Output
+#### Walkthrough
 
-!INCLUDE "output.md"
+See Appendix B for a sample set of interview questions
 
-##### Example: Interview Outputs "Cheat Sheet"
 
-!INCLUDE "examples/outputs_needed.md"
-
-##### Example: Sample Interview Questions
-
-!INCLUDE "examples/interview_questions.md"
-
-##### Resources
-
-!INCLUDE "resources.md"
 

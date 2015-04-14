@@ -44,35 +44,53 @@
 
 !INCLUDE "content/document_matter/operational_security.md"
 
-\newpage
-
-
 # Objectives
 
-\newpage
-<!-- Audit Preparation-->
-
-!INCLUDE "content/index/audit_preparation.guide.md"
+!INCLUDE "content/objectives/intro.md"
 
 \newpage
 <!-- Audit Scoping-->
 
-!INCLUDE "content/index/audit_scoping.guide.md"
+!INCLUDE "content/index/context_research.guide.md"
 
 \newpage
-<!-- Threat Assessment -->
 
-!INCLUDE "content/index/threat_assessment.guide.md"
+!INCLUDE "content/index/capacity_assessment.guide.md"
 
 \newpage
-<!-- Reconnaissance -->
+<!-- Engagement Planning-->
+
+!INCLUDE "content/index/engagement_planning.guide.md"
+
+\newpage
+<!-- Recon-->
 
 !INCLUDE "content/index/reconnaissance.guide.md"
+
+\newpage
+<!-- Network Discovery-->
+
+!INCLUDE "content/index/network_discovery.guide.md"
+
+\newpage
+<!-- Network Access -->
+
+!INCLUDE "content/index/network_access.guide.md"
 
 \newpage
 <!-- Network Mapping -->
 
 !INCLUDE "content/index/network_mapping.guide.md"
+
+\newpage
+<!-- User Device Assessment -->
+
+!INCLUDE "content/index/user_device_assessment.guide.md"
+
+\newpage
+<!-- Physical Assessment -->
+
+!INCLUDE "content/index/physical_assessment.guide.md"
 
 \newpage
 <!-- Vulnerability Analysis -->
@@ -85,9 +103,13 @@
 !INCLUDE "content/index/data_assessment.guide.md"
 
 \newpage
-<!-- User Device Assessment -->
+<!-- Risk Modeling -->
 
-!INCLUDE "content/index/user_device_assessment.guide.md"
+!INCLUDE "content/index/risk_modeling.guide.md"
+
+<!-- Threat Assessment -->
+
+!INCLUDE "content/index/threat_assessment.guide.md"
 
 \newpage
 <!-- Responsive Support -->
@@ -95,16 +117,17 @@
 !INCLUDE "content/index/responsive_support.guide.md"
 
 \newpage
-<!-- Physical Assessment -->
+<!-- Debrief -->
 
-!INCLUDE "content/index/physical_assessment.guide.md"
+!INCLUDE "content/index/debrief.guide.md"
+
 
 \newpage
 <!-- Follow Up -->
 
 !INCLUDE "content/index/follow_up.guide.md"
 
-# Reporting Activities
+# Reporting
 
 \newpage
 <!-- Recommendation Development -->
@@ -122,29 +145,17 @@
 !INCLUDE "content/index/report_creation.guide.md"
 
 \newpage
-
-<!-- Load Default Images -->
-
-!INCLUDE "theme/image_defaults.md"
-
-\newpage
 <!-- APPENDIX A - Auditor travel Kit Checklist-->
 
-# APPENDIX A
+# APPENDIX A: Preparing for an Audit
 
-!INCLUDE "content/guides/preparation/examples/travel_kit_checklist.md"
+<!-- Audit Prep-->
 
-# APPENDIX B
+!INCLUDE "content/index/preparation.guide.md"
 
-!INCLUDE "content/guides/data_assessment/examples/personal_info_to_keep_private.md"
+# APPENDIX B: Sample Capacity Interview Questions
 
-# APPENDIX C
-
-!INCLUDE "content/guides/device_assessment/examples/password_survey.md"
-
-# APPENDIX D
-
-!INCLUDE "templates/audit/auditor_consent_template.md"
+!INCLUDE "content/activities/interviews/interview_questions.md"
 
 # Footnotes
 

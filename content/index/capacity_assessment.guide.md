@@ -1,41 +1,31 @@
 ## Capacity Assessment
 
-!INCLUDE "guides/capacity_assessment/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/capacity_assessment/summary.md"
+!INCLUDE "content/objectives/capacity_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/capacity_assessment/purpose.md"
+!INCLUDE "content/objectives/capacity_assessment/purpose.md"
 
-### Baseline Skills [stub]
+### The Flow Of Information
 
-!INCLUDE "guides/capacity_assessment/baseline_skills.md"
+![Audit Preparation Information Flow](content/images/info_flows/capacity_assessment.svg)
 
-### Preparation [stub]
+### Guiding Questions
 
-!INCLUDE "guides/capacity_assessment/preparation.md"
+!INCLUDE "content/objectives/capacity_assessment/guiding_questions.md"
 
-### Materials Needed [stub]
+### Approaches
 
-!INCLUDE "guides/capacity_assessment/materials_needed.md"
+!INCLUDE "content/objectives/capacity_assessment/approaches.md"
 
-### Approach
+### Activities
 
-!INCLUDE "guides/capacity_assessment/approach.md"
-
-### Output
-
-!INCLUDE "guides/capacity_assessment/output.md"
-
-### Reporting [stub]
-
-!INCLUDE "guides/capacity_assessment/reporting.md"
+!INCLUDE "content/objectives/capacity_assessment/activities.md"
 
 ### Resources
 
-!INCLUDE "references/capacity_assessment.overview.md"
+!INCLUDE "content/references/capacity_assessment.md"
 
-!INCLUDE "references/capacity_assessment.md"
+!INCLUDE "content/references/interviews.overview.md"

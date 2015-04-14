@@ -1,5 +1,5 @@
 
-#### VPN's Proxy's and Tor 
+#### VPNs, Proxies, and Tor 
  
   * *Article:* ["VPN: What they do, how they work and why you should use one"](http://gizmodo.com/5990192/vpns-what-they-do-how-they-work-and-why-youre-dumb-for-not-using-one) (Gizmodo) 
  

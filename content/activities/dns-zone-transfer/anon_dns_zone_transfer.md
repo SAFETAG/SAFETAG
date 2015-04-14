@@ -11,7 +11,7 @@ An overly permissive domain name service (DNS) provider allows an attacker to en
 
 While any user should be able to use a name server to look up a hostname and convert it to the corresponding IP address, most well-administered name servers allow full “zone transfer” requests only from a specific list of authorized locations (often themselves subsidiary name servers). 
 
-## reccomendation
+## recomendation
 
 Eliminate or limit zone transfer permissions
 
