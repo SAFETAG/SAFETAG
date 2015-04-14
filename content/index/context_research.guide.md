@@ -8,9 +8,16 @@
 
 !INCLUDE "content/objectives/context_research/purpose.md"
 
-### Approach
+### The Flow of Information
+![ Information Flow](content/images/info_flows/ .svg)
 
-!INCLUDE "content/objectives/context_research/approach.md"
+### Guiding Questions
+
+!INCLUDE "content/objectives/context_research/guiding_questions.md"
+
+### Approaches
+
+!INCLUDE "content/objectives/context_research/approaches.md"
 
 ### Output
 
