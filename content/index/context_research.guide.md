@@ -9,7 +9,7 @@
 !INCLUDE "content/objectives/context_research/purpose.md"
 
 ### The Flow of Information
-![ Information Flow](content/images/info_flows/ .svg)
+![ Information Flow](content/images/info_flows/context_research.svg)
 
 ### Guiding Questions
 
@@ -27,15 +27,9 @@
 
 !INCLUDE "content/objectives/context_research/operational_security.md"
 
-### Reporting [stub]
-
-!INCLUDE "content/objectives/context_research/reporting.md"
+### Activities
+!INCLUDE "content/objectives/context_research/activities.md"
 
 ### Resources
 
 !INCLUDE "content/references/context_research.md"
-
-\newpage
-
-
-!INCLUDE "content/objectives/context_research/activities.md"

@@ -88,6 +88,30 @@ h1.bigtitle {
     border-width: 3px;
 }
 
+
+.boxtext {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #005CAB;
+	background: #e6f3ff;
+	margin-top: 5px;
+	padding: 0px 4px;
+}
+
+.boxtext h3 {
+	text-transform: uppercase;
+	font-size: 14pt;
+	text-align: right;
+	color: #78716e;
+	margin: 0px;
+}
+
+.boxtext h4 {
+	text-transform: title;
+	font-size: 12pt;
+	color: #404965;
+}
+
 /* TODO: Eventually use custom bullet's to get those big chunky light blue squres that we want. */
 ul {
     list-style: square;
