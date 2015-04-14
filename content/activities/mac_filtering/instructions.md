@@ -1,4 +1,3 @@
-### Walkthrough
 
 The auditor can easily gain access to an open or MAC address filtered access point.
 

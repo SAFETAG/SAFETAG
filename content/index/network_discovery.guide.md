@@ -1,49 +1,31 @@
 ## Network Discovery
 
-!INCLUDE "guides/network_discovery/quote.md"
-
 ### Summary
-
-!INCLUDE "guides/network_discovery/summary.md"
+!INCLUDE "content/objectives/network_discovery/summary.md"
 
 ### Purpose
+!INCLUDE "content/objectives/network_discovery/purpose.md"
 
-!INCLUDE "guides/network_discovery/purpose.md"
+### The Flow of Information
+![ Information Flow](content/images/info_flows/network_discovery.svg)
 
-<!--
-### Baseline Skills [stub]
-
-!INCLUDE "guides/network_discovery/baseline_skills.md"
-
-### Preparation [stub]
-
-!INCLUDE "guides/network_discovery/preparation.md"
-
-### Materials Needed [stub]
-
-!INCLUDE "guides/network_discovery/materials_needed.md"
--->
-
-### Approach
-
-!INCLUDE "guides/network_discovery/approach.md"
+### Guiding Questions
+!INCLUDE "content/objectives/network_discovery/guiding_questions.md"
 
 ### Output
-
-!INCLUDE "guides/network_discovery/output.md"
+!INCLUDE "content/objectives/network_discovery/output.md"
 
 ### Operational Security
+!INCLUDE "content/objectives/network_discovery/operational_security.md"
 
-!INCLUDE "guides/network_discovery/operational_security.md"
+### Approaches
+!INCLUDE "content/objectives/network_discovery/approaches.md"
 
-### Reporting
+### Preparation
+!INCLUDE "content/objectives/network_discovery/preparation.md"
 
-!INCLUDE "guides/network_discovery/reporting.md"
+### Activities
+!INCLUDE "content/objectives/network_discovery/activities.md"
 
 ### Resources
-
-!INCLUDE "references/network_discovery_methods.md"
-
-### Example
-
-!INCLUDE "guides/network_discovery/examples/beacons/index.md"
+!INCLUDE "content/references/network_discovery_methods.md"

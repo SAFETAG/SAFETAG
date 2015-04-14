@@ -1,16 +1,25 @@
 
-#### Wireless Range Mapping
 
-!INCLUDE "../../activities/wireless_range_mapping/index.md"
+<div style="boxtext">
+### Wireless Range Mapping
 
-#### Monitor Open Wireless Traffic
+Covered fully in Network Discovery
 
-!INCLUDE "../../activities/monitor_open_wireless_traffic/index.md"
+!INCLUDE "../../activities/wireless_range_mapping/summary.md"
+</div>
 
-#### Network Mapping
+<div style="boxtext">
+### Monitor Open Wireless Traffic
 
+Covered fully in Network Discovery
+
+!INCLUDE "../../activities/monitor_open_wireless_traffic/summary.md"
+</div>
+
+<div style="boxtext">
 !INCLUDE "../../activities/network_mapping/index.md"
+</div>
 
-#### Traffic Analysis
-
+<div style="boxtext">
 !INCLUDE "../../activities/traffic_analysis/index.md"
+</div>

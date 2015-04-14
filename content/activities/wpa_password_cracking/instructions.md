@@ -1,4 +1,4 @@
-#### Walkthrough
+
 
 An attacker can crack the office’s WPA key in approximately with a short and minimally customized password dictionary based on open information about the organization and basic word collections.
 
@@ -82,11 +82,11 @@ Regardless, the success of this attack against a wireless network would allow an
 
 With regard to the distance from which an attacker could maintain such access, the office WiFi network appears to have a relatively strong signal, which extends to the street out front:
 
-{photograph of location>}
-
-{screenshot of WiFi strength}
+{photograph of location}
 
 Figure 1: WiFi signal strength from a nearby location
+
+{screenshot of WiFi strength}
 
 
 ##### Material that may be Useful:

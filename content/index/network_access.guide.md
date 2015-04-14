@@ -1,61 +1,34 @@
 ## Network Access
 
-!INCLUDE "guides/network_access/quote.md"
-
 ### Summary
-
-!INCLUDE "guides/network_access/summary.md"
+!INCLUDE "content/objectives/network_access/summary.md"
 
 ### Purpose
+!INCLUDE "content/objectives/network_access/purpose.md"
 
-!INCLUDE "guides/network_access/purpose.md"
+### The Flow of Information
+![ Information Flow](content/images/info_flows/network_access.svg)
 
-### Baseline Skills [stub]
-
-!INCLUDE "guides/network_access/baseline_skills.md"
-
-### Preparation [stub]
-
-!INCLUDE "guides/network_access/preparation.md"
-
-### Materials Needed [stub]
-
-!INCLUDE "guides/network_access/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/network_access/approach.md"
+### Guiding Questions
+!INCLUDE "content/objectives/network_access/guiding_questions.md"
 
 ### Output
-
-!INCLUDE "guides/network_access/output.md"
+!INCLUDE "content/objectives/network_access/output.md"
 
 ### Operational Security
+!INCLUDE "content/objectives/network_access/operational_security.md"
 
-!INCLUDE "guides/network_access/operational_security.md"
+### Approach
+!INCLUDE "content/objectives/network_access/approach.md"
 
-### Reporting [stub]
+### Preparation
+!INCLUDE "content/objectives/network_access/preparation.md"
 
-!INCLUDE "guides/network_access/reporting.md"
+### Activities
+!INCLUDE "content/objectives/network_access/activities.md"
 
 ### Resources
 
-!INCLUDE "references/network_access.md"
-
-\newpage
-
-### Examples
-
-!INCLUDE "guides/network_access/examples/wpa_key/index.md"
-
-\newpage
-
-!INCLUDE "guides/network_access/examples/wps_pin/index.md"
-
-\newpage
-
-!INCLUDE "guides/network_access/examples/wep/index.md"
-
-\newpage
-
-!INCLUDE "guides/network_access/examples/mac_filtering/index.md"
+<div class="greybox">
+!INCLUDE "content/references/network_access.md"
+</div>

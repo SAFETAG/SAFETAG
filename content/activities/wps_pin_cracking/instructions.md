@@ -1,6 +1,4 @@
 
-#### Walkthrough
-
   * Find the BSSID of the target routerr
   * Use Wash to find WPS Routers
   * Start Reaver : estimated time: Between 2 and 10 hours

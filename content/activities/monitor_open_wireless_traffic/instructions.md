@@ -1,6 +1,6 @@
-### Walkthtrough
 
-#### Step 1: Monitor Mode ####
+
+##### Step 1: Monitor Mode #####
 
 You should disconnect from any wifi network you may be connected to to capture the widest amount of data.
 
@@ -19,7 +19,7 @@ to list anything that is causing problems, and
 to try and stop them automatically, and running stop network-manager && stop avahi-daemon may keep them from re-starting automatically.
 
 
-#### Step 2: Listen for wifi probes. ####
+##### Step 2: Listen for wifi probes. #####
 
 Run airodump-ng on the monitor mode interface (usually mon0). This listens to wifi beacons and you can begin analyzing who is on what network, and see historical networks.
 
@@ -32,7 +32,7 @@ This scans all networks and channels, collecting broadcast network information. 
 ```airodump-ng -c 1 --bssid 00:11:22:33:44:55 -w filename mon0``` 
 
 
-#### Step 3: de-auth ####
+##### Step 3: de-auth #####
 
 Send de-authentication packets to force clients to reconnect and send out additional probes. Take note that by its very nature, de-authentication causes annoying interruptions to wifi traffic. This breaks connections, drops skype calls, and can make the wireless network temporarily unusable.  Make sure to check with staff before going through this (to make sure no one is doing a live webcast or on an important VOIP call, and to expect some network instability).
 
@@ -47,7 +47,7 @@ This command de-authenticates one targeted user with one attempted deauth packet
 
 There are scripts, like wifijammer, which use this same approach to jam *all* wifi connections in range of the attacking computer, so check against the documentation at http://www.aircrack-ng.org and act responsibly to protect yourself and the organization.
 
-#### Step 4: Ongoing Monitoring ####
+##### Step 4: Ongoing Monitoring #####
 
 Watch what probes the various devices are sending out (especially when they are deauthenticated, as above). You will see each computer on the network, as identified by their mac addresses, broadcast information about previous networks to which they have connected.
 

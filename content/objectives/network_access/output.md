@@ -1,5 +1,3 @@
 
-  * Wireless access point (WAP) client password/key.
-  * Wireless access point (WAP) administrator password/key.
-  * Administrator access to the WAP.
+  * Un-authorized access to the Wireless access point (WAP)
   * List of unused ethernet jacks with network connectivity.

@@ -20,6 +20,9 @@
 
 !INCLUDE "../objectives/reconnaissance/approaches.md"
 
+### Preparation
+!INCLUDE "content/objectives/reconnaisance/preparation.md"
+
 ### Activities
 
 !INCLUDE "../objectives/reconnaissance/activities.md"

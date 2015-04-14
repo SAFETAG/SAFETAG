@@ -1,5 +1,16 @@
+### Accessing a MAC-filtered Network
+
+#### Summary
 !INCLUDE "summary.md"
 
-!INCLUDE "recommendations.md"
+#### Overview
+!INCLUDE "approach.md"
 
+#### Considerations
+!INCLUDE "operational_security.md"
+
+#### Walkthrough
 !INCLUDE "instructions.md"
+
+#### Recommendation
+!INCLUDE "recommendations.md"

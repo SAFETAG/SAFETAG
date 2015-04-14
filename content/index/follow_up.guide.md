@@ -19,5 +19,6 @@
 !INCLUDE "../objectives/follow_up/activities.md"
 
 ### Resources
-
+<div class="greybox">
 !INCLUDE "references/follow_up.md"
+</div>

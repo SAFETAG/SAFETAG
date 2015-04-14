@@ -1,5 +1,4 @@
 
-#### Walkthrough
 
 The auditor can be guaranteed to access a WEP network with sufficient time by cracking the WEP key.
 

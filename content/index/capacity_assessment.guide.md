@@ -20,12 +20,18 @@
 
 !INCLUDE "content/objectives/capacity_assessment/approaches.md"
 
+### Preparation
+!INCLUDE "content/objectives/capacity_assessment/preparation.md"
+
+
 ### Activities
 
 !INCLUDE "content/objectives/capacity_assessment/activities.md"
 
 ### Resources
 
+<div class="greybox">
 !INCLUDE "content/references/capacity_assessment.md"
 
 !INCLUDE "content/references/interviews.overview.md"
+</div>
