@@ -1,19 +1,20 @@
 ## Network Access
 
-!INCLUDE "guides/network_access/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/network_access/summary.md"
+!INCLUDE "content/objectives/network_access/summary.md"
 
 ### Purpose 
 
-!INCLUDE "guides/network_access/purpose.md"
+!INCLUDE "content/objectives/network_access/purpose.md"
+
+### The Flow of Information
+![ Information Flow](content/images/info_flows/network_discovery.svg)
 
 ### Approach
 
-!INCLUDE "guides/network_access/approach.md"
+!INCLUDE "content/objectives/network_access/approaches.md"
 
 ### Output
 
-!INCLUDE "guides/network_access/output.md"
+!INCLUDE "content/objectives/network_access/output.md"

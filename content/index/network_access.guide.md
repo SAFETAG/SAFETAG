@@ -19,7 +19,7 @@
 !INCLUDE "content/objectives/network_access/operational_security.md"
 
 ### Approach
-!INCLUDE "content/objectives/network_access/approach.md"
+!INCLUDE "content/objectives/network_access/approaches.md"
 
 ### Preparation
 !INCLUDE "content/objectives/network_access/preparation.md"

@@ -1,19 +1,20 @@
 ## Network Discovery
 
-!INCLUDE "guides/network_discovery/quote.md"
-
 ### Summary
 
-!INCLUDE "guides/network_discovery/summary.md"
+!INCLUDE "content/objectives/network_discovery/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/network_discovery/purpose.md"
+!INCLUDE "content/objectives/network_discovery/purpose.md"
+
+### The Flow of Information
+![ Information Flow](content/images/info_flows/network_discovery.svg)
 
 ### Approach
 
-!INCLUDE "guides/network_discovery/approach.md"
+!INCLUDE "content/objectives/network_discovery/approaches.md"
 
 ### Output
 
-!INCLUDE "guides/network_discovery/output.md"
+!INCLUDE "content/objectives/network_discovery/output.md"
