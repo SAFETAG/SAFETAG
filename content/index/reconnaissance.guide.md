@@ -20,10 +20,12 @@
 
 !INCLUDE "../objectives/reconnaissance/approaches.md"
 
+### Activities
+
 !INCLUDE "../objectives/reconnaissance/activities.md"
 
 ### Resources
-
+<div class="greybox">
 !INCLUDE "../references/remote_assessment.overview.md"
 
 !INCLUDE "../references/open_source_intel.md"
@@ -35,3 +37,4 @@
 !INCLUDE "../references/pastebin_searching.md"
 
 !INCLUDE "../references/recon-ng.md"
+</div>

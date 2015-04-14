@@ -1,4 +1,14 @@
 
-#### 
+<div class="boxtext">
+"Remote Assessment"
 
-!INCLUDE "../../activities/
+recon-ng
+
+Google dorking and other searches
+
+zone transfer?
+
+mx record 
+
+...!INCLUDE "../../activities/...
+</div>

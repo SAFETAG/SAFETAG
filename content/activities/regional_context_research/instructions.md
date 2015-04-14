@@ -1,6 +1,4 @@
 
-### Regional Context Research
-
 Cross-check reports on [regional threats](#Threat-research-by-region) facing organizations with their [focus area](#Threat-research-by-topic).
 
   * Targeted Threats
