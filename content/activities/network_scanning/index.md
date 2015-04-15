@@ -1,4 +1,5 @@
-### Router Based Attacks
+
+### Network Scanning
 
 #### Summary
 !INCLUDE "summary.md"
@@ -9,7 +10,7 @@
 #### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+#### Walkthrough [stub]
 !INCLUDE "instructions.md"
 
 #### Recommendation

@@ -1,33 +1,36 @@
 ## Network Mapping
 
 ### Summary
-
-!INCLUDE "../objectives/network_mapping/summary.md"
+!INCLUDE "content/objectives/network_mapping/summary.md"
 
 ### Purpose
-
-!INCLUDE "../objectives/network_mapping/purpose.md"
+!INCLUDE "content/objectives/network_mapping/purpose.md"
 
 ### The Flow Of Information
-
 ![Network Mapping Information Flow](content/images/info_flows/network_mapping.svg)
 
 ### Guiding Questions
+!INCLUDE "content/objectives/network_mapping/guiding_questions.md"
 
-!INCLUDE "../objectives/network_mapping/guiding_questions.md"
+### Outputs
+!INCLUDE "content/objectives/network_mapping/output.md"
+
+### Operational Security
+!INCLUDE "content/objectives/network_mapping/operational_security.md"
 
 ### Approaches
+!INCLUDE "content/objectives/network_mapping/approaches.md"
 
-!INCLUDE "../objectives/network_mapping/approaches.md"
+### Preparation
+!INCLUDE "content/objectives/network_mapping/preparation.md"
 
-!INCLUDE "../objectives/audit_mapping/activities.md"
+### Activities
+
+!INCLUDE "content/objectives/network_mapping/activities.md"
 
 ### Resources
+<div class="greybox">
+!INCLUDE "content/references/network_mapping.overview.md"
 
-!INCLUDE "references/network_discovery_methods.md"
-
-!INCLUDE "references/network_access.md"
-
-!INCLUDE "references/network_mapping.overview.md"
-
-!INCLUDE "references/network_mapping_methods.md"
+!INCLUDE "content/references/network_mapping_methods.md"
+</div>

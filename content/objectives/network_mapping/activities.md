@@ -1,25 +1,28 @@
 
+<div class="boxtext">
+!INCLUDE "../../activities/network_scanning/index.md"
+</div>
 
-<div style="boxtext">
+<div class="boxtext">
+!INCLUDE "../../activities/traffic_analysis/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "../../activities/router_attacks/index.md"
+</div>
+
+<div class="boxtext">
 ### Wireless Range Mapping
 
-Covered fully in Network Discovery
+Covered in full in Network Discovery
 
-!INCLUDE "../../activities/wireless_range_mapping/summary.md"
+!INCLUDE "../../activities/wireless_range_mapping/approach.md"
 </div>
 
-<div style="boxtext">
+<div class="boxtext">
 ### Monitor Open Wireless Traffic
 
-Covered fully in Network Discovery
+Covered in full in Network Discovery
 
-!INCLUDE "../../activities/monitor_open_wireless_traffic/summary.md"
-</div>
-
-<div style="boxtext">
-!INCLUDE "../../activities/network_mapping/index.md"
-</div>
-
-<div style="boxtext">
-!INCLUDE "../../activities/traffic_analysis/index.md"
+!INCLUDE "../../activities/monitor_open_wireless_traffic/approach.md"
 </div>

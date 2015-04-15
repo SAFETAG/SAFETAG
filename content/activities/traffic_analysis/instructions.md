@@ -26,6 +26,6 @@ EtterCap provides a powerful frontend to managing this process with multiple pot
 
 <Ettercap Screenshot>
 
-**Step 2:** At this point, if the attacker is looking for unencrypted traffic, all she needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins.
+**Step 2:** At this point, if the attacker is looking for unencrypted traffic, all she needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins, as well as traffic revealing shadow infrastructure usage, such as Dropbox.
 
 <Wireshark screenshot>

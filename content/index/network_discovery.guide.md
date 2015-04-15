@@ -28,4 +28,6 @@
 !INCLUDE "content/objectives/network_discovery/activities.md"
 
 ### Resources
+<div class="greybox">
 !INCLUDE "content/references/network_discovery_methods.md"
+</div>
