@@ -12,14 +12,14 @@
 ### Guiding Questions
 !INCLUDE "content/objectives/network_mapping/guiding_questions.md"
 
+### Approaches
+!INCLUDE "content/objectives/network_mapping/approaches.md"
+
 ### Outputs
 !INCLUDE "content/objectives/network_mapping/output.md"
 
 ### Operational Security
 !INCLUDE "content/objectives/network_mapping/operational_security.md"
-
-### Approaches
-!INCLUDE "content/objectives/network_mapping/approaches.md"
 
 ### Preparation
 !INCLUDE "content/objectives/network_mapping/preparation.md"

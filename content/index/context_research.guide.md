@@ -12,14 +12,14 @@
 ### Guiding Questions
 !INCLUDE "content/objectives/context_research/guiding_questions.md"
 
+### Approaches
+!INCLUDE "content/objectives/context_research/approaches.md"
+
 ### Outputs
 !INCLUDE "content/objectives/context_research/output.md"
 
 ### Operational Security
 !INCLUDE "content/objectives/context_research/operational_security.md"
-
-### Approaches
-!INCLUDE "content/objectives/context_research/approaches.md"
 
 ### Preparation
 !INCLUDE "content/objectives/context_research/preparation.md"

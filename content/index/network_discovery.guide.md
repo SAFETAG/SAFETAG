@@ -12,14 +12,14 @@
 ### Guiding Questions
 !INCLUDE "content/objectives/network_discovery/guiding_questions.md"
 
+### Approaches
+!INCLUDE "content/objectives/network_discovery/approaches.md"
+
 ### Output
 !INCLUDE "content/objectives/network_discovery/output.md"
 
 ### Operational Security
 !INCLUDE "content/objectives/network_discovery/operational_security.md"
-
-### Approaches
-!INCLUDE "content/objectives/network_discovery/approaches.md"
 
 ### Preparation
 !INCLUDE "content/objectives/network_discovery/preparation.md"

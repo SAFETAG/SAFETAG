@@ -12,14 +12,14 @@
 ### Guiding Questions
 !INCLUDE "content/objectives/network_access/guiding_questions.md"
 
+### Approach
+!INCLUDE "content/objectives/network_access/approaches.md"
+
 ### Output
 !INCLUDE "content/objectives/network_access/output.md"
 
 ### Operational Security
 !INCLUDE "content/objectives/network_access/operational_security.md"
-
-### Approach
-!INCLUDE "content/objectives/network_access/approaches.md"
 
 ### Preparation
 !INCLUDE "content/objectives/network_access/preparation.md"
