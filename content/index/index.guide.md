@@ -88,11 +88,6 @@
 !INCLUDE "content/index/user_device_assessment.guide.md"
 
 \newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/index/physical_assessment.guide.md"
-
-\newpage
 <!-- Vulnerability Analysis -->
 
 !INCLUDE "content/index/vulnerability_analysis.guide.md"
@@ -101,6 +96,11 @@
 <!-- Data Assessment (assets) -->
 
 !INCLUDE "content/index/data_assessment.guide.md"
+
+\newpage
+<!-- Physical Assessment -->
+
+!INCLUDE "content/index/physical_assessment.guide.md"
 
 \newpage
 <!-- Risk Modeling -->

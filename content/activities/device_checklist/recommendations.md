@@ -1,6 +1,4 @@
 
-#### Recommendation: 
-
 ##### Upgrade Operating Systems
 
 Popular operating systems like Windows XP are, sadly, no longer receiving security updates.

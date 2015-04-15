@@ -1,5 +1,5 @@
 
-### Guided Tour
+### A Day in the Life
 
 #### Summary
 !INCLUDE "summary.md"
@@ -14,4 +14,4 @@
 !INCLUDE "instructions.md"
 
 #### Recommendation
-!INCLUDE "recommendations.md"
+!INCLUDE "../traffic_analysis/recommendations.md"

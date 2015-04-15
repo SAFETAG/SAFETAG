@@ -82,11 +82,6 @@
 !INCLUDE "content/index/network_mapping.overview.md"
 
 \newpage
-<!-- Physical Assessment -->
-
-!INCLUDE "content/index/physical_assessment.overview.md"
-
-\newpage
 <!-- User Device Assessment -->
 
 !INCLUDE "content/index/user_device_assessment.overview.md"
@@ -100,6 +95,11 @@
 <!-- Data Assessment (assets) -->
 
 !INCLUDE "content/index/data_assessment.overview.md"
+
+\newpage
+<!-- Physical Assessment -->
+
+!INCLUDE "content/index/physical_assessment.overview.md"
 
 \newpage
 <!-- Risk Modeling -->

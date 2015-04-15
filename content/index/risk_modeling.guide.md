@@ -1,44 +1,39 @@
 ## Risk Modeling
 
-!INCLUDE "guides/risk_modeling/quote.md"
-
 ### Summary
-
-!INCLUDE "guides/risk_modeling/summary.md"
+!INCLUDE "content/objectives/risk_modeling/summary.md"
 
 ### Purpose
+!INCLUDE "content/objectives/risk_modeling/purpose.md"
 
-!INCLUDE "guides/risk_modeling/purpose.md"
+### The Flow of Information
+![Risk Modeling Information Flow](content/images/info_flows/risk_modeling.svg)
 
-### Baseline Skills [stub]
+### Guiding Questions
+!INCLUDE "content/objectives/risk_modeling/guiding_questions.md"
 
-!INCLUDE "guides/risk_modeling/baseline_skills.md"
+### Approaches
+approach.md:
+!INCLUDE "content/objectives/risk_modeling/approach.md"
 
-### Preparation [stub]
-
-!INCLUDE "guides/risk_modeling/preparation.md"
-
-### Materials Needed [stub]
-
-!INCLUDE "guides/risk_modeling/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/risk_modeling/approach.md"
-
-### Output
-
-!INCLUDE "guides/risk_modeling/output.md"
+### Outputs
+!INCLUDE "content/objectives/risk_modeling/output.md"
 
 ### Operational Security
+!INCLUDE "content/objectives/risk_modeling/operational_security.md"
 
-!INCLUDE "guides/risk_modeling/operational_security.md"
+### Preparation
+!INCLUDE "content/objectives/risk_modeling/preparation.md"
 
-### Reporting [stub]
+### Activities
+!INCLUDE "content/objectives/risk_modeling/activities.md"
 
-!INCLUDE "guides/risk_modeling/reporting.md"
+premortum:
+!INCLUDE "content/activities/pre-mortum_sample_process.md"
 
-### Resources [stub]
+
+### Resources
+<div class="greybox">
 
 !INCLUDE "references/risk_modeling.overview.md"
 
@@ -52,9 +47,5 @@
 
 !INCLUDE "references/alternative_risk_assessment_activities.md"
 
+</div>
 
-\newpage
-
-### Example
-
-!INCLUDE "guides/risk_modeling/examples/pre-mortum_sample_process.md"

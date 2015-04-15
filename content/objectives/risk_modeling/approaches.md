@@ -1,4 +1,7 @@
 
+* FACILITATED: One on One interviews with staff to supplement other group activities.
+* FACILITATED: A classic group [Risk Assessment Activity](http://frontlinedefenders.org/files/workbook_eng.pdf#page=9).
+
 Carry out activities that allow you to do the following:
 
   * Identify and map critical organizational *processes*.

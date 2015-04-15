@@ -1,5 +1,4 @@
 
-* Who has physical access to what?
-* How could adversaries gain physical access? (breaking and entry, social engineering, seizure)
-* When are devices not monitored by trusted/responsible staff?
-* Are there procedures or technical controls in place to mitigate if devices are lost or found by adversaries?
+* Who has physical access to what? When are devices not monitored by trusted staff?
+* How could adversaries gain access? (forced entry, theft, social engineering, seizure)
+* Are there mitigation procedures if devices are lost or taken by adversaries?

@@ -1,47 +1,38 @@
 ## Debrief
 
-!INCLUDE "guides/debrief/quote.md"
 
 ### Summary
-
-!INCLUDE "guides/debrief/summary.md"
+!INCLUDE "content/objectives/debrief/summary.md"
 
 ### Purpose
+!INCLUDE "content/objectives/debrief/purpose.md"
 
-!INCLUDE "guides/debrief/purpose.md"
+### The Flow of Information
+![Debrief Information Flow](content/images/info_flows/data_flow_debrief.svg)
 
-### Baseline Skills [stub]
+### Guiding Questions
+!INCLUDE "content/objectives/debrief/guiding_questions.md"
 
-!INCLUDE "guides/debrief/baseline_skills.md"
+### Approaches
+!INCLUDE "content/objectives/debrief/approaches.md"
 
-### Preparation [stub]
-
-!INCLUDE "guides/debrief/preparation.md"
-
-### Materials Needed [stub]
-
-!INCLUDE "guides/debrief/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/debrief/approach.md"
-
-### Output
-
-!INCLUDE "guides/debrief/output.md"
+### Outputs
+!INCLUDE "content/objectives/debrief/output.md"
 
 ### Operational Security
+!INCLUDE "content/objectives/debrief/operational_security.md"
 
-!INCLUDE "guides/debrief/operational_security.md"
+### Preparation
+!INCLUDE "content/objectives/debrief/preparation.md"
 
-### Reporting [stub]
-
-!INCLUDE "guides/debrief/reporting.md"
+### Activities
+!INCLUDE "content/objectives/debrief/activities.md"
 
 ### Resources
-
+<div class="greybox">
 !INCLUDE "references/debrief.overview.md"
 
 !INCLUDE "references/facilitation_prep.md"
 
 !INCLUDE "references/digital_security_training.md"
+</div>

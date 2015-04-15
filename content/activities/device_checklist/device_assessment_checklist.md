@@ -45,11 +45,13 @@ If Windows is not your primary OS, you can download sample Virtual Machines (wit
    * Right-Click on bottom taskbar, select "Task Manager"
 
 Installed updates
+
 Control Panel Programs and features installed updates
 CLI:
 http://www.techsupportalert.com/content/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
 
 **Windows 7**
+
 In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (Security tab) provides a quick run-down of most security features installed and their update status. It does not show drive encryption or specific versions.
 
  * OS Security Updates
@@ -72,6 +74,7 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
    * (Advanced) Use TechNet/SysInternal's Process Explorer: http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx 
 
 **Windows XP**
+
  * OS Security Updates
    * Start -- Control Panel -- Security Center
  * Firewall
@@ -112,27 +115,3 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
   * (CLI) 
 ```top```
 
-
-##### Phone Usage
- * Work Email
- * Work Calls
- * Chat Apps with partners/work related
-
-##### User Software and Tools
-
- * Email
- * Webmail
- * Calendars
- * Shared Files inside the office
- * Other shared file systems
- * Chat
- * Voice calls
- * Program tracking software
-   * Financial
-   * Progress
-   * Databases 
-   * intranet
-   * extranet / other sites?
-
-##### Notes ####
-Investivate Secunia usage
