@@ -13,8 +13,7 @@
 !INCLUDE "content/objectives/risk_modeling/guiding_questions.md"
 
 ### Approaches
-approach.md:
-!INCLUDE "content/objectives/risk_modeling/approach.md"
+!INCLUDE "content/objectives/risk_modeling/approaches.md"
 
 ### Outputs
 !INCLUDE "content/objectives/risk_modeling/output.md"
@@ -28,24 +27,20 @@ approach.md:
 ### Activities
 !INCLUDE "content/objectives/risk_modeling/activities.md"
 
-premortum:
-!INCLUDE "content/activities/pre-mortum_sample_process.md"
-
-
 ### Resources
 <div class="greybox">
 
-!INCLUDE "references/risk_modeling.overview.md"
+!INCLUDE "content/references/risk_modeling.overview.md"
 
-!INCLUDE "references/threat_assessment.md"
+!INCLUDE "content/references/threat_assessment.md"
 
-!INCLUDE "references/risk_activities.md"
+!INCLUDE "content/references/risk_activities.md"
 
-!INCLUDE "references/threat_activities.md"
+!INCLUDE "content/references/threat_activities.md"
 
-!INCLUDE "references/risk_matrix_activities.md"
+!INCLUDE "content/references/risk_matrix_activities.md"
 
-!INCLUDE "references/alternative_risk_assessment_activities.md"
+!INCLUDE "content/references/alternative_risk_assessment_activities.md"
 
 </div>
 

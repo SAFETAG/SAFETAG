@@ -1,8 +1,4 @@
 
-#### Walkthrough
-
-### Instructions
-
 Firewire ports and expansion slots can be abused to obtain data that are thought to be encrypted
 
 The threat describe in this section is more complex than it needs to be. In fact, unencrypted data are vulnerable to any number of simple attacks, the two most straightforward being: 1) rebooting the computer from a USB stick CD-ROM or DVD containing an alternate operating system, then copying all of the data; or 2) removing the hard drive, inserting it into a different machine, then copying all of the data. These techniques, which work on nearly any computer, even if a strong login password has been set, are effective and widely used, but they require extended physical access to the device. A slightly different attack is described below, one that only requires physical access for a few minutes. It, too, works regardless of login/screen-lock passwords, though only devices with Firewire ports or expansion slots (ExpressCard, CardBus, PCMCIA, etc.) are vulnerable.

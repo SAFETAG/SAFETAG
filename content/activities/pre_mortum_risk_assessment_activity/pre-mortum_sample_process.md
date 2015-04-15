@@ -1,11 +1,9 @@
-### Risk Modeling Using the Pre-Mortum Strategy
 
-#### Preparation
 
 ##### Additional Material
 
-  * Chart Paper \ whiteboard.
-  * Marker pens \ whiteboard markers.
+  * Chart Paper / whiteboard.
+  * Marker pens / whiteboard markers.
   * Multiple colors of post-its.
   * Camera for documenting the process.
   
@@ -25,7 +23,7 @@
 
 **Process/Interaction Mapping (30 minutes per process):** 
 
-  * Pick a process from the list of *critical process'* identified above.
+  * Pick a process from the list of *critical processes* identified above.
   * Clearly identify the process name on the whiteboard or flipchart.
   * Create a list of individuals who take part in the process.
   * Draw a symbol of the person.
@@ -33,10 +31,10 @@
   * Draw lines with arrows connecting individuals who interact with each other in this process.
   * Label the lines with words describing the interaction.
   * Write numbers on the interactions to show the order they occur in.
-  * Continue this activitiy with the next *critical process.*
+  * Continue this activity with the next *critical process.*
 
   * **NOTES:**
-    * You can add follow-on processes' to examine if they are identified as critical by the participants during this activity.
+    * You can add follow-on processes to examine if they are identified as critical by the participants during this activity.
 	* Put people on post-its to make them moveable.
     * Verbally walk the participants through the completed process so you ensure you didn't miss anything.
     * Take quick notes to remind yourself of any key points not clearly marked on the map before they move on to the next activity. 

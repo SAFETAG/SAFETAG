@@ -1,5 +1,3 @@
-### Vulnerability: Access to Encrypted/Locked computers
-
 
 Firewire ports and expansion slots can be abused to obtain data that are thought to be encrypted
 

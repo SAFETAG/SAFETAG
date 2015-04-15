@@ -1,5 +1,5 @@
 
-#### Recommendation: Remove FireWire Drivers, completely turn off computer when at risk
+**Remove FireWire Drivers, completely turn off computer when at risk**
 
 The easiest protection against this is to completely shut down your computer any time there is a chance of confiscation, and to make this a regular practice at night and when traveling.
 

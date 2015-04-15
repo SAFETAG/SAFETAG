@@ -1,5 +1,4 @@
-
-### Firewire Access to Encrypted/Locked computers
+### Risk Modeling Using the Pre-Mortum Strategy
 
 #### Summary
 !INCLUDE "summary.md"
