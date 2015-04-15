@@ -94,8 +94,9 @@ h1.bigtitle {
 	border-width: 1px;
 	border-color: #005CAB;
 	background: #e6f3ff;
-	margin-top: 5px;
+	margin-top: 50px;
 	padding: 0px 4px;
+	clear: all;
 }
 
 .boxtext h3 {
@@ -104,6 +105,25 @@ h1.bigtitle {
 	text-align: right;
 	color: #78716e;
 	margin: 0px;
+}
+
+.boxtext h3:first-child {
+	text-transform: uppercase;
+	font-size: 14pt;
+	text-align: right;
+	color: #78716e;
+	margin: 0px;
+	padding: 1pt;
+
+	display:inline-block;
+	float: right;
+	position: relative;
+	margin-top: -20pt; 
+	border-style: solid;
+	border-width: 1px;
+	border-color: #005CAB;
+	background-color: #e6f3ff;
+	border-bottom-style: none;
 }
 
 .boxtext h4 {
