@@ -116,7 +116,7 @@ adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		--load-error-handling skip \
 		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
-		--header-left [doctitle] \
+		--header-right [doctitle] \
 		--outline \
 		--outline-depth 2 \
 		$(SRC_DIR)/adids.html $(DOC_DIR)/adids.pdf || true
@@ -134,7 +134,7 @@ guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		--load-error-handling skip \
 		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
-		--header-left [doctitle] \
+		--header-right [doctitle] \
 		--outline \
 		--outline-depth 2 \
 		$(SRC_DIR)/guide.html $(DOC_DIR)/guide.pdf
@@ -152,7 +152,7 @@ overview: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		--load-error-handling skip \
 		--load-media-error-handling skip \
 		--footer-center "Page [page] of [toPage]" \
-		--header-left [doctitle] \
+		--header-right [doctitle] \
 		--outline \
 		--outline-depth 2 \
 		$(SRC_DIR)/overview.html $(DOC_DIR)/overview.pdf || true
