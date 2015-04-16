@@ -8,7 +8,7 @@
 !INCLUDE "content/objectives/debrief/purpose.md"
 
 ### The Flow of Information
-![Debrief Information Flow](content/images/info_flows/data_flow_debrief.svg)
+![Debrief Information Flow](content/images/info_flows/debrief.svg)
 
 ### Guiding Questions
 !INCLUDE "content/objectives/debrief/guiding_questions.md"

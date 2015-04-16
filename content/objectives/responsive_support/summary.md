@@ -1,5 +1,2 @@
 
-In  this objective the auditor provides in-audit activities and training.
-
-  * Provide assistance for any immediate action needed (Spot Training, Tool Fixes, Security consult on upcoming projects)
-    * If you determine a spot-training may be necessary, consult [Level Up](https://www.level-up.cc/) for sample curricula and exercises.
+The auditor provides assistance for any immediate action needed (spot training, tool fixes, consulting on upcoming projects) -- this may also involve addressing vulnerabilities that triggered an incident response.

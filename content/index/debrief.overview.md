@@ -1,9 +1,17 @@
 ## Debrief
 
 ### Summary
+!INCLUDE "content/objectives/debrief/summary.md"
 
-!INCLUDE "guides/debrief/summary.md"
+### Purpose
+!INCLUDE "content/objectives/debrief/purpose.md"
 
-### Approach
+### The Flow of Information
+![ Information Flow](content/images/info_flows/debrief.svg)
 
-!INCLUDE "guides/debrief/approach.md"
+### Guiding Questions
+!INCLUDE "content/objectives/debrief/guiding_questions.md"
+
+### Approaches
+!INCLUDE "content/objectives/debrief/approaches.md"
+
