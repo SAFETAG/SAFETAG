@@ -117,6 +117,13 @@
 !INCLUDE "content/index/network_mapping.adids.md"
 
 \newpage
+
+<!-- Vulnerability Scanning -->
+
+!INCLUDE "content/index/vulnerability_scanning.adids.md"
+
+\newpage
+
 <!-- Physical -->
 
 !INCLUDE "content/index/physical_assessment.adids.md"

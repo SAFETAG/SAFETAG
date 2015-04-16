@@ -1,5 +1,6 @@
 
-### Vulnerability Research
+### Automated Reconnaisance
+
 
 #### Summary
 !INCLUDE "summary.md"
@@ -15,3 +16,4 @@
 
 #### Recommendation
 !INCLUDE "recommendations.md"
+

@@ -1,14 +1,16 @@
 
 <div class="boxtext">
-"Remote Assessment"
-
-recon-ng
-
 Google dorking and other searches
+</div>
 
-zone transfer?
+<div class="boxtext">
+!INCLUDE "../../activities/automated_recon/index.md"
+</div>
 
-mx record 
+<div class="boxtext">
+!INCLUDE "../../activities/mx-record-search/index.md"
+</div>
 
-...!INCLUDE "../../activities/...
+<div class="boxtext">
+!INCLUDE "../../activities/dns-zone-transfer/index.md"
 </div>

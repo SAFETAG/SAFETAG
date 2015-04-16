@@ -90,7 +90,7 @@
 \newpage
 <!-- Vulnerability Analysis -->
 
-!INCLUDE "content/index/vulnerability_analysis.guide.md"
+!INCLUDE "content/index/vulnerability_scanning.guide.md"
 
 \newpage
 <!-- Data Assessment (assets) -->
@@ -166,6 +166,10 @@
 # APPENDIX B: Sample Capacity Interview Questions
 
 !INCLUDE "content/activities/interviews/interview_questions.md"
+
+# APPENDIX C: Recon-ng walkthrough
+
+!INCLUDE "content/activities/automated_recon/recon-ng.md"
 
 # Footnotes
 

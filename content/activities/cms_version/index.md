@@ -1,5 +1,5 @@
 
-### Vulnerability Research
+### Check for common website vulnerabilities
 
 #### Summary
 !INCLUDE "summary.md"

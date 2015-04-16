@@ -89,7 +89,7 @@
 \newpage
 <!-- Vulnerability Analysis -->
 
-!INCLUDE "content/index/vulnerability_analysis.overview.md"
+!INCLUDE "content/index/vulnerability_scanning.overview.md"
 
 \newpage
 <!-- Data Assessment (assets) -->

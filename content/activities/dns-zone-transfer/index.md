@@ -1,5 +1,5 @@
 
-### Vulnerability Research
+### Anonymous DNS Zone Transfer
 
 #### Summary
 !INCLUDE "summary.md"
