@@ -62,6 +62,24 @@ h1.bigtitle {
     font-size: 40pt;
 }
 
+table th {
+    font-weight: bold;
+    text-align: left;
+    padding: 4px;
+    background-color: #005CAB;
+    color: #ffffff;
+}
+
+table tr.odd td {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+table tr.even td {
+    color: #000000;
+    background-color: #f3f2f2;
+}
+
 .note {
     text-transform: uppercase;
 }
@@ -95,9 +113,9 @@ h1.bigtitle {
 	border-color: #005CAB;
 	background: #e6f3ff;
 	margin-top: 50px;
-	padding: 0px 4px;
-	clear: all;
+	padding: 0px;
 }
+
 
 .boxtext h3 {
 	text-transform: uppercase;
@@ -105,31 +123,38 @@ h1.bigtitle {
 	text-align: right;
 	color: #78716e;
 	margin: 0px;
+	padding: 2px
 }
 
 .boxtext h3:first-child {
 	text-transform: uppercase;
 	font-size: 14pt;
 	text-align: right;
-	color: #78716e;
-	margin: 0px;
-	padding: 1pt;
-
+	color: #ffffff;
+	padding-right: 5px;
+	background-color: #005CAB;
+/*
 	display:inline-block;
 	float: right;
 	position: relative;
-	margin-top: -20pt; 
+	margin-top: -28px; 
 	border-style: solid;
 	border-width: 1px;
 	border-color: #005CAB;
 	background-color: #e6f3ff;
 	border-bottom-style: none;
+*/
 }
 
 .boxtext h4 {
 	text-transform: title;
 	font-size: 12pt;
 	color: #404965;
+	padding: 2px
+}
+
+.boxtext p {
+	padding: 5px;
 }
 
 .greybox {
