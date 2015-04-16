@@ -1,18 +1,17 @@
 ## Follow Up
 
 ### Summary
-
-!INCLUDE "../objectives/follow_up/summary.md"
+!INCLUDE "content/objectives/follow_up/summary.md"
 
 ### Purpose
+!INCLUDE "content/objectives/follow_up/purpose.md"
 
-!INCLUDE "../objectives/follow_up/purpose.md"
+### The Flow of Information
+![ Information Flow](content/images/info_flows/follow_up.svg)
 
 ### Guiding Questions
-
-!INCLUDE "../objectives/follow_up/guiding_questions.md"
+!INCLUDE "content/objectives/follow_up/guiding_questions.md"
 
 ### Approaches
-
-!INCLUDE "../objectives/follow_up/approaches.md"
+!INCLUDE "content/objectives/follow_up/approaches.md"
 

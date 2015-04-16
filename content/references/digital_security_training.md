@@ -1,10 +1,9 @@
 
 #### Digital Security Trainings
 
-  * *Website:* ["Level-Up"](https://www.level-up.cc/) (Level-Up)
 
+  * *Curricula:* [Level-Up: Resources for the global digital safety training community.](https://www.level-up.cc/)
+  * *Curricula:* [eQualit.ie's Trainer's Curricula](https://learn.equalit.ie/wiki/Curricula) (also in Russian)
+  * *Training Manual:* [Workbook on Security: Practical Steps for Human Rights Defenders at Risk](https://www.frontlinedefenders.org/security-training)
   * *Trainer Handbook:* ["SaferJourno"](https://internews.org/research-publications/saferjourno-digital-security-resources-media-trainers) (Internews)
 
-  * *Curricula:* ["Training Curricula"](https://learn.equalit.ie/wiki/Curricula) (equalit.ie)
-
-  * *Guidelines:* ["Facilitator Guidelines"](http://facilitation.aspirationtech.org/index.php?title=Facilitation:Facilitator_Guidelines) (Aspiration Tech)

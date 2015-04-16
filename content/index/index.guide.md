@@ -130,6 +130,16 @@
 # Reporting
 
 \newpage
+<!-- Resource Identification -->
+
+!INCLUDE "content/index/resource_identification.guide.md"
+
+\newpage
+<!-- Vulnerability Prioritization -->
+
+!INCLUDE "content/index/vulnerability_prioritization.guide.md"
+
+\newpage
 <!-- Recommendation Development -->
 
 !INCLUDE "content/index/recommendation_development.guide.md"

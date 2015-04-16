@@ -34,5 +34,4 @@
 
 !INCLUDE "content/references/facilitation_prep.md"
 
-!INCLUDE "content/references/digital_security_training.md"
 </div>

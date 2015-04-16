@@ -29,5 +29,13 @@
 
 ### Resources
 <div class="greybox">
+
+!INCLUDE "content/references/facilitation_prep.md"
+
+!INCLUDE "content/references/digital_security_training.md"
+
+!INCLUDE "content/references/digital_security_guides.md"
+
 !INCLUDE "content/references/training_resources.md"
+
 </div>
