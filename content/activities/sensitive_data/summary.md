@@ -1,4 +1,3 @@
-### Example: 
 
 Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or projects use cloud services like Dropbox or Google Drive for some activities, a shared server for others, and a mix of work and personal devices (laptops, phones, tablets...).  
 

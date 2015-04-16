@@ -1,25 +1,29 @@
 
-#### Sensitive Data Activity
+<div class="boxtext">
+!INCLUDE "../../activities/sensitive_data/index.md"
+</div>
 
-!INCLUDE "content/activties/sensitive_data/index.md"
-
-#### Data Mapping Activity
-
-!INCLUDE "../../activities/data_mapping/index.md"
-
-#### Risks of Data Lost and Found Activity
-
+<div class="boxtext">
 !INCLUDE "../../activities/data_lost_and_found/index.md"
+</div>
 
-#### Impact of a Lost Device
+<div class="boxtext">
+### Impact of a Lost Device
 
-!INCLUDE "../../activities/impact_lost_device/index.md"
+Covered in full under Physical Assessment:
 
-#### Impact of a Found Device
+!INCLUDE "../../activities/impact_lost_device/approach.md"
+</div>
 
-!INCLUDE "../../activities/impact_found_device/index.md"
+<div class="boxtext">
+### Impact of a Found Device
 
-#### Private Data Activity
+Covered in full under Physical Assessment:
 
+!INCLUDE "../../activities/impact_found_device/approach.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "../../activities/private_data/index.md"
+</div>
 

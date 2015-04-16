@@ -1,6 +1,18 @@
 
+### Sensitive Data
+
+#### Summary
 !INCLUDE "summary.md"
 
+#### Overview
+!INCLUDE "approach.md"
+
+#### Considerations
+!INCLUDE "operational_security.md"
+
+#### Walkthrough
 !INCLUDE "instructions.md"
 
-!INCLUDE "recommendation.md"
+#### Recommendation
+!INCLUDE "recommendations.md"
+

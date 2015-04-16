@@ -1,19 +1,19 @@
 ## Physical Assessment
 
 ### Summary
-!INCLUDE "../objectives/physical_assessment/summary.md"
+!INCLUDE "content/objectives/physical_assessment/summary.md"
 
 ### Purpose
-!INCLUDE "../objectives/physical_assessment/purpose.md"
+!INCLUDE "content/objectives/physical_assessment/purpose.md"
 
 ### The Flow Of Information
 ![Data Assessment Information Flow](content/images/info_flows/physical_assessment.svg)
 
 ### Guiding Questions
-!INCLUDE "../objectives/physical_assessment/guiding_questions.md"
+!INCLUDE "content/objectives/physical_assessment/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "../objectives/physical_assessment/approaches.md"
+!INCLUDE "content/objectives/physical_assessment/approaches.md"
 
 ### Outputs
 !INCLUDE "content/objectives/physical_assessment/output.md"
@@ -25,12 +25,12 @@
 !INCLUDE "content/objectives/physical_assessment/preparation.md"
 
 ### Activities
-!INCLUDE "../objectives/physical_assessment/activities.md"
+!INCLUDE "content/objectives/physical_assessment/activities.md"
 
 ### Resources
 
 <div class="greybox">
-!INCLUDE "references/physical_assessment.overview.md"
+!INCLUDE "content/references/physical_assessment.overview.md"
 
-!INCLUDE "references/physical_assessment.md"
+!INCLUDE "content/references/physical_assessment.md"
 </div>

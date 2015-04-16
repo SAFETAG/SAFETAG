@@ -12,14 +12,14 @@
 ### Guiding Questions
 !INCLUDE "content/objectives/data_assessment/guiding_questions.md"
 
+### Approaches
+!INCLUDE "content/objectives/data_assessment/approaches.md"
+
 ### Outputs
 !INCLUDE "content/objectives/data_assessment/output.md"
 
 ### Operational Security
 !INCLUDE "content/objectives/data_assessment/operational_security.md"
-
-### Approaches
-!INCLUDE "content/objectives/data_assessment/approaches.md"
 
 ### Preparation
 !INCLUDE "content/objectives/data_assessment/preparation.md"
@@ -29,5 +29,5 @@
 
 ### Resources
 <div class="greybox">
-!INCLUDE "references/data_assessment.overview.md"
+!INCLUDE "content/references/data_assessment.overview.md"
 </div>

@@ -1,50 +1,50 @@
 ## Assessment Plan
 
-!INCLUDE "guides/assessment_plan/quote.md"
+!INCLUDE "content/objectives/assessment_plan/quote.md"
 
 ### Summary
 
-!INCLUDE "guides/assessment_plan/summary.md"
+!INCLUDE "content/objectives/assessment_plan/summary.md"
 
 ### Purpose
 
-!INCLUDE "guides/assessment_plan/purpose.md"
+!INCLUDE "content/objectives/assessment_plan/purpose.md"
 
 ### Preparation [stub]
 
 <?trainer resources?>
 
-!INCLUDE "guides/assessment_plan/preparation.md"
+!INCLUDE "content/objectives/assessment_plan/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "guides/assessment_plan/materials_needed.md"
+!INCLUDE "content/objectives/assessment_plan/materials_needed.md"
 
 ### Approach
 
-!INCLUDE "guides/assessment_plan/approach.md"
+!INCLUDE "content/objectives/assessment_plan/approach.md"
 
 ### Output
 
-!INCLUDE "guides/assessment_plan/output.md"
+!INCLUDE "content/objectives/assessment_plan/output.md"
 
 ### Operational Security
 
-!INCLUDE "guides/assessment_plan/operational_security.md"
+!INCLUDE "content/objectives/assessment_plan/operational_security.md"
 
 ### Reporting  [stub]
 
-!INCLUDE "guides/assessment_plan/reporting.md"
+!INCLUDE "content/objectives/assessment_plan/reporting.md"
 
 ### Resources
+<div class="greybox">
+!INCLUDE "content/references/assessment_plan.overview.md"
 
-!INCLUDE "references/assessment_plan.overview.md"
+!INCLUDE "content/references/pre_engagement.md"
 
-!INCLUDE "references/pre_engagement.md"
+!INCLUDE "content/references/incident_handling.md"
 
-!INCLUDE "references/incident_handling.md"
+!INCLUDE "content/references/legal_considerations.md"
 
-!INCLUDE "references/legal_considerations.md"
-
-!INCLUDE "references/data_security_standards.md"
-
+!INCLUDE "content/references/data_security_standards.md"
+</div>

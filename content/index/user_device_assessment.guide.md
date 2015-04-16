@@ -29,5 +29,20 @@
 
 ### Resources
 <div class="greybox">
-<!-- (direct includes to content/references/) -->
+!INCLUDE "content/references/device_assessment.overview.md"
+
+!INCLUDE "content/references/password_security.md"
+
+!INCLUDE "content/references/privilege_separation.md"
+
+!INCLUDE "content/references/examining_firewalls.md"
+
+!INCLUDE "content/references/software_versions.md"
+
+!INCLUDE "content/references/device_encryption.md"
+
+!INCLUDE "content/references/anti_virus.md"
+
+!INCLUDE "content/references/one_off_services.md"
+
 </div>

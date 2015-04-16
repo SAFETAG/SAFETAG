@@ -8,6 +8,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../activities/risk_matrix/index.md"
+</div>
+
+<div class="boxtext">
 ### Critical Data Activity
 
 Covered in full in Data Assessment

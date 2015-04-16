@@ -1,4 +1,4 @@
-### Network Traffic Scanning
+### Network Traffic Analysis
 
 #### Summary
 !INCLUDE "summary.md"

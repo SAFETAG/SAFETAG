@@ -30,9 +30,9 @@
 
 ### Resources
 <div class="greybox">
-!INCLUDE "references/debrief.overview.md"
+!INCLUDE "content/references/debrief.overview.md"
 
-!INCLUDE "references/facilitation_prep.md"
+!INCLUDE "content/references/facilitation_prep.md"
 
-!INCLUDE "references/digital_security_training.md"
+!INCLUDE "content/references/digital_security_training.md"
 </div>

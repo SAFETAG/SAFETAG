@@ -1,6 +1,6 @@
-#### Data Assessment Activity
+**Sensitive Data Assessment Activity**
 
-**Duration: 45 minutes**
+**_Duration: 45 minutes_	**
 
 *This exercise is adapted from the LevelUp Activity, [Backup Matrix](https://www.level-up.cc/leading-trainings/training-curriculum/activity/backup-matrix), part of the curricula for [Data Retrention and Backup](https://www.level-up.cc/leading-trainings/training-curriculum/data-retention-and-backup) by Daniel O'Clunaigh, Ali Ravi, Samir Nassar, and Carol.*
 
@@ -11,12 +11,11 @@
   * Flipchart paper
   * One larger sheet of paper taped to wall in landscape orientation, with or without prepared titles. (For an example with prepared headings, see the matrix below.) The Sensitivity axis is optional in the original exercise, but critical for this one. It can be added after the initial round of brainstorming however to streamline the flow.
 
-|Relative Sensitivity|Computer Hard Drive|USB / External Drive|Cloud Storage|Another (e.g. Smartphone, Print, etc. depending on group)|
-|--------------------|-------------------|----------------------------------|---------------------------------------------------------|
-|High||||
-|Moderate||||
-|Low||||
-
+|Relative Sensitivity|Computer|USB / External Drive|Cloud Storage|Phones, Print, etc.|
+|--------------------|--------|--------------------|-------------|-------------------|
+|High|||||
+|Moderate|||||
+|Low|||||
 
 Explain to participants that we're going to conduct an information mapping activity to get a sense of where our important information actually is.
 
@@ -61,7 +60,7 @@ For a small group, this can be done as a "live" brainstorm.  For larger groups t
 
 An example may look something like this:
 
-![Level Up Backup Matric Example](../../content/adids/data_assessment/backup-matrix-example.png)\
+![Level Up Backup Matrix Example](content/adids/data_assessment/backup-matrix-example.png)
 
 Explain that this gives us an idea of where our data is. Elicit whether or not this is all the data we generate? Of course it isn't: It's only a small percentage.
 

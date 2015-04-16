@@ -16,4 +16,4 @@
 
 ### Resources
 
-!INCLUDE "references/operational_security.overview.md"
+!INCLUDE "content/references/operational_security.overview.md"

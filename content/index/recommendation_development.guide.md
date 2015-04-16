@@ -2,24 +2,25 @@
 
 ### Summary
 
-!INCLUDE "../reporting/recommendation_development/summary.md"
+!INCLUDE "content/reporting/recommendation_development/summary.md"
 
 ### Purpose
 
-!INCLUDE "../reporting/recommendation_development/purpose.md"
+!INCLUDE "content/reporting/recommendation_development/purpose.md"
 
 ### Guiding Questions
 
-!INCLUDE "../reporting/recommendation_development/guiding_questions.md"
+!INCLUDE "content/reporting/recommendation_development/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../reporting/recommendation_development/approaches.md"
+!INCLUDE "content/reporting/recommendation_development/approaches.md"
 
-!INCLUDE "../reporting/recommendation_development/activities.md"
+!INCLUDE "content/reporting/recommendation_development/activities.md"
 
 ### Resources
+<div class="greybox">
+!INCLUDE "content/references/recommendation_development.overview.md"
 
-!INCLUDE "references/recommendation_development.overview.md"
-
-!INCLUDE "references/identifying_recommendations.md"
+!INCLUDE "content/references/identifying_recommendations.md"
+</div>
