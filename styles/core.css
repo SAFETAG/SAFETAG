@@ -173,8 +173,15 @@ ul {
 
 /* Colors */
 
-h1,
-h2, 
+h1 {
+    color: #6b8a21;
+    border-bottom: 2px solid #6b8a21;
+}
+
+h2 {
+    color: #004580;
+    border-bottom: 1px dotted #004580;
+}
 h3 {
     color: #004580;
 }
