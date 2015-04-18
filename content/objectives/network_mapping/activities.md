@@ -8,7 +8,11 @@
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../activities/router_attacks/index.md"
+### Router Attacks
+
+Covered in full in  Vulnerability Scanning and Analysis
+
+!INCLUDE "../../activities/router_attacks/approach.md"
 </div>
 
 <div class="boxtext">

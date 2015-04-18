@@ -10,3 +10,6 @@
     * The data security standards for evidence handling and communication. [^PETS_evidence_handling]
   * A liability waiver signed by the host organization. [^PETS_permission_to_test]
   * Approval from any third parties. [^PETS_third_parties]
+
+
+See the Appendix for a DRAFT combined engagement and confidentiality agreement.

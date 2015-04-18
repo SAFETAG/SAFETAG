@@ -1,42 +1,42 @@
 ## Report Creation
 
-!INCLUDE "content/objectives/report_creation/quote.md"
+!INCLUDE "content/reporting/report_creation/quote.md"
 
 ### Summary
 
-!INCLUDE "content/objectives/report_creation/summary.md"
+!INCLUDE "content/reporting/report_creation/summary.md"
 
 ### Purpose
 
-!INCLUDE "content/objectives/report_creation/purpose.md"
+!INCLUDE "content/reporting/report_creation/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/objectives/report_creation/baseline_skills.md"
+!INCLUDE "content/reporting/report_creation/baseline_skills.md"
 
 ### Preparation [stub]
 
-!INCLUDE "content/objectives/report_creation/preparation.md"
+!INCLUDE "content/reporting/report_creation/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/objectives/report_creation/materials_needed.md"
+!INCLUDE "content/reporting/report_creation/materials_needed.md"
 
 ### Approach
 
-!INCLUDE "content/objectives/report_creation/approach.md"
+!INCLUDE "content/reporting/report_creation/approach.md"
 
 ### Reporting [stub]
 
-!INCLUDE "content/objectives/report_creation/reporting.md"
+!INCLUDE "content/reporting/report_creation/reporting.md"
 
 ### Output
 
-!INCLUDE "content/objectives/report_creation/output.md"
+!INCLUDE "content/reporting/report_creation/output.md"
 
 ### Operational Security
 
-!INCLUDE "content/objectives/report_creation/operational_security.md"
+!INCLUDE "content/reporting/report_creation/operational_security.md"
 
 ### Resources
 <div class="greybox">

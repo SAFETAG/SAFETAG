@@ -1,38 +1,38 @@
 ## Roadmap Development
 
-!INCLUDE "content/objectives/roadmap_development/quote.md"
+!INCLUDE "content/reporting/roadmap_development/quote.md"
 
 ### Summary
 
-!INCLUDE "content/objectives/roadmap_development/summary.md"
+!INCLUDE "content/reporting/roadmap_development/summary.md"
 
 ### Purpose
 
-!INCLUDE "content/objectives/roadmap_development/purpose.md"
+!INCLUDE "content/reporting/roadmap_development/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/objectives/roadmap_development/baseline_skills.md"
+!INCLUDE "content/reporting/roadmap_development/baseline_skills.md"
 
 ### Preparation [stub]
 
-!INCLUDE "content/objectives/roadmap_development/preparation.md"
+!INCLUDE "content/reporting/roadmap_development/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/objectives/roadmap_development/materials_needed.md"
+!INCLUDE "content/reporting/roadmap_development/materials_needed.md"
 
 ### Approach
 
-!INCLUDE "content/objectives/roadmap_development/approach.md"
+!INCLUDE "content/reporting/roadmap_development/approach.md"
 
 ### Output
 
-!INCLUDE "content/objectives/roadmap_development/output.md"
+!INCLUDE "content/reporting/roadmap_development/output.md"
 
 ### Operational Security
 
-!INCLUDE "content/objectives/roadmap_development/operational_security.md"
+!INCLUDE "content/reporting/roadmap_development/operational_security.md"
 
 ### Resources
 

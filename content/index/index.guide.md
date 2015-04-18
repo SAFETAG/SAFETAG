@@ -44,6 +44,11 @@
 
 !INCLUDE "content/document_matter/operational_security.md"
 
+\newpage
+<!-- Audit Prep-->
+
+!INCLUDE "content/index/preparation.guide.md"
+
 # Objectives
 
 !INCLUDE "content/objectives/intro.md"
@@ -130,11 +135,6 @@
 # Reporting
 
 \newpage
-<!-- Resource Identification -->
-
-!INCLUDE "content/index/resource_identification.guide.md"
-
-\newpage
 <!-- Vulnerability Prioritization -->
 
 !INCLUDE "content/index/vulnerability_prioritization.guide.md"
@@ -157,19 +157,29 @@
 \newpage
 <!-- APPENDIX A - Auditor travel Kit Checklist-->
 
-# APPENDIX A: Preparing for an Audit
+# APPENDIX: Draft Engagement and Confidentiality Agreement
 
-<!-- Audit Prep-->
+!INCLUDE "content/activities/confidentiality_agreement/draft_engagement_agreement.md"
 
-!INCLUDE "content/index/preparation.guide.md"
+# APPENDIX: Travel Kit and Checklist
 
-# APPENDIX B: Sample Capacity Interview Questions
+!INCLUDE "content/activities/travel_kit/index.md"
+
+# APPENDIX: Sample Capacity Interview Questions
 
 !INCLUDE "content/activities/interviews/interview_questions.md"
 
-# APPENDIX C: Recon-ng walkthrough
+# APPENDIX: Password Dictionaries
+
+!INCLUDE "content/activities/password_security/index.md"
+
+# APPENDIX: Recon-ng walkthrough
 
 !INCLUDE "content/activities/automated_recon/recon-ng.md"
+
+# APPENDIX: Device Assessment Checklist
+
+!INCLUDE "content/activities/device_checklist/device_assessment_checklist.md"
 
 # Footnotes
 

@@ -15,11 +15,11 @@
 </div>
 
 <div class="boxtext">
-### Physically Insecure Devices
+### Physical Security Guided Tour
 
 Covered in full in Physical Assessment:
 
-!INCLUDE "../../activities/physically_insecure_devices/approach.md"
+!INCLUDE "../../activities/guided_tour/approach.md"
 </div>
 
 <div class="boxtext">

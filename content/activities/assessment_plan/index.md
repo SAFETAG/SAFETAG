@@ -1,29 +1,17 @@
 
-##### Summary
+### Assessment Plan
 
+#### Summary
 !INCLUDE "summary.md"
 
-##### Purpose
-
-!INCLUDE "purpose.md"
-
-##### Approach
-
+#### Overview
 !INCLUDE "approach.md"
 
-##### Considerations
-
+#### Considerations
 !INCLUDE "operational_security.md"
 
-##### Output
+#### Walkthrough
+!INCLUDE "instructions.md"
 
-!INCLUDE "output.md"
-
-##### Example: Draft Engagement Plan
-
-!INCLUDE "draft_engagement_agreement.md"
-
-##### Resources
-
-!INCLUDE "resources.md"
-
+#### Recommendation
+!INCLUDE "recommendations.md"

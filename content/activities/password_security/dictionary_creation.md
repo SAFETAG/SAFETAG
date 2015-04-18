@@ -133,8 +133,7 @@ http://openwall.info/wiki/john/rules for a description of the
 optimizations).  [This list of KoreLogic 
 Rules](http://contest-2010.korelogic.com/rules.html) provides nice 
 descriptions of what the KoreLogic rules do.  In bleeding-jumbo, you can 
-remove "KoreLogicRules".  [BackReference](http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/) 
-provides a great example of rules usage.
+remove "KoreLogicRules".  [BackReference](http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/) provides a great example of rules usage.
 
 Some particularly useful ones individual rulesets are:
   * AppendYears (appends years, from 1900 to 2019) and AppendCurrentYearSpecial (appends 2000-2019 with punctuation)

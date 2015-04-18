@@ -1,17 +1,16 @@
 
-#### Report Follow Up Meeting
-
+<div class="boxtext">
 !INCLUDE "../../activities/follow_up_meeting/index.md"
+</div>
 
-#### Making Introductions
-
+<div class="boxtext">
 !INCLUDE "../../activities/making_introductions/index.md"
+</div>
 
-#### Long-Term Follow Up
-
+<div class="boxtext">
 !INCLUDE "../../activities/long_term_follow_up/index.md"
+</div>
 
-#### Staff Feedback Survey
-
+<div class="boxtext">
 !INCLUDE "../../activities/staff_feedback_survey/index.md"
-
+</div>

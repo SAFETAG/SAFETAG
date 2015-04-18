@@ -1,42 +1,42 @@
 ## Resource Identification
 
-!INCLUDE "content/objectives/resource_identification/quote.md"
+!INCLUDE "content/reporting/resource_identification/quote.md"
 
 ### Summary
 
-!INCLUDE "content/objectives/resource_identification/summary.md"
+!INCLUDE "content/reporting/resource_identification/summary.md"
 
 ### Purpose
 
-!INCLUDE "content/objectives/resource_identification/purpose.md"
+!INCLUDE "content/reporting/resource_identification/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/objectives/resource_identification/baseline_skills.md"
+!INCLUDE "content/reporting/resource_identification/baseline_skills.md"
 
 ### Preparation [stub]
 
-!INCLUDE "content/objectives/resource_identification/preparation.md"
+!INCLUDE "content/reporting/resource_identification/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/objectives/resource_identification/materials_needed.md"
+!INCLUDE "content/reporting/resource_identification/materials_needed.md"
 
 ### Approach
 
-!INCLUDE "content/objectives/resource_identification/approach.md"
+!INCLUDE "content/reporting/resource_identification/approach.md"
 
 ### Output
 
-!INCLUDE "content/objectives/resource_identification/output.md"
+!INCLUDE "content/reporting/resource_identification/output.md"
 
 ### Operational Security
 
-!INCLUDE "content/objectives/resource_identification/operational_security.md"
+!INCLUDE "content/reporting/resource_identification/operational_security.md"
 
 ### Reporting [stub]
 
-!INCLUDE "content/objectives/resource_identification/reporting.md"
+!INCLUDE "content/reporting/resource_identification/reporting.md"
 
 ### Resources [stub]
 

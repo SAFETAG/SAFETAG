@@ -1,29 +1,16 @@
+### Identify Recommendations
 
-##### Summary
-
+#### Summary
 !INCLUDE "summary.md"
 
-##### Base Line Skills
+#### Overview
+!INCLUDE "approach.md"
 
-!INCLUDE "base_line_skills.md"
-
-##### Operational Security
-
+#### Considerations
 !INCLUDE "operational_security.md"
 
-##### Materials Needed
+#### Walkthrough
+!INCLUDE "instructions.md"
 
-!INCLUDE "materials_needed.md"
-
-##### Considerations
-
-!INCLUDE "considerations.md"
-
-##### Output
-
-!INCLUDE "output.md"
-
-##### Resources
-
-!INCLUDE "resources.md"
-
+#### Recommendation
+!INCLUDE "recommendations.md"

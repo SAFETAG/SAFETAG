@@ -1,25 +1,15 @@
 
-##### Summary
+### Incident Response and Emergency Contact
 
+#### Summary
 !INCLUDE "summary.md"
 
-##### Purpose
-
-!INCLUDE "purpose.md"
-
-##### Approach
-
+#### Overview
 !INCLUDE "approach.md"
 
-##### Considerations
-
+#### Considerations
 !INCLUDE "operational_security.md"
 
-##### Output
-
-!INCLUDE "output.md"
-
-##### Resources
-
-!INCLUDE "resources.md"
+#### Walkthrough
+!INCLUDE "instructions.md"
 

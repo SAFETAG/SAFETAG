@@ -42,6 +42,9 @@
 
 !INCLUDE "content/document_matter/operational_security.md"
 
+\newpage
+<!-- Audit Prep-->
+!INCLUDE "content/index/preparation.overview.md"
 
 # Objectives
 
@@ -56,10 +59,6 @@
 
 !INCLUDE "content/index/capacity_assessment.overview.md"
 
-\newpage
-<!-- Engagement Planning-->
-
-!INCLUDE "content/index/engagement_planning.overview.md"
 
 \newpage
 <!-- Recon-->
@@ -146,10 +145,6 @@
 
 \newpage
 
-# APPENDIX A: Preparing for an Audit
-
-<!-- Audit Prep-->
-!INCLUDE "content/index/preparation.overview.md"
 
 # Footnotes
 
