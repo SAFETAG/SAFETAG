@@ -2,13 +2,12 @@
 
 This provides a detailed snapshot of an organization that can be used as a focal point during SAFETAG training for examples, program concepts, personalities, and office setup. Trainers can adopt personalities from this for mock interviews and to answer questions from the  risk assessment or critical data exercises.
 
-### Organization ###
+### Organization: Local Media Rights (LMR)
+(http://LocalMediaRights.org)
 
-**Local Media Rights**
-LocalMediaRights.org
+**Mission**: "Advancing the next generation of local and independent media"
 
-Mission: ""
-Slogan: "Media is a Right"
+**Slogan**: "Media is a Right"
 
 LMR works with local journalists and activists supporting freedom of expression and human rights through multiple programs, including training, incubation, and outreach.
 
@@ -22,6 +21,7 @@ LMNext provides a series of training events in different tracks on advocacy, jou
 Components:
 
  * Outreach to trainees via email, partners, journalist networks, schools
+ * Training events
  * MOOC?
  * email lists?
 
@@ -32,7 +32,8 @@ MediaRights is a policy/political blog on the current laws and implications on h
 As part of the incubation, the external writers are provided with small stipends for their posts, LMR paid for the site set-up and hosting, and has the Program Assistant do copy-editing, formatting and also posts the stories on the blog in most cases.
 
 Components:
- * Hosted Wordpress blog w/shared login
+
+ * Self-Hosted Wordpress blog w/shared admin login (no SSL)
  * Emailed drafts
  * Google doc drafts
 
@@ -76,6 +77,7 @@ Other sites/subs:
 #### Social Media ####
 Twitter
 Facebook
+Youtube Channel
 ...?
 
 ### Office Layout ###
@@ -85,6 +87,8 @@ Facebook
  * Building
  * Locks / Guards
  * Nearby?
+
+ TODO: Add SVG of layout
 
 Interior Rooms:
 
