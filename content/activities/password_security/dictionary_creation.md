@@ -56,14 +56,27 @@ Many password dictionary sites, such as [SkullSecurity](https://wiki.skullsecuri
 
 ### Keyword generation
 
-In addition, create a customized dictionary with words related to the subject as revealed in the Remote Assessment research: organization name, street address, phone number, email domain, wireless network name, etc. For the organization "ExampleOrg , which has its offices at 123 Central St., Federal District, Countryzstan , which does human rights and journalism work and was founded in 1992, some context-based dictionary additions would be:
+
+In addition, create a customized dictionary with words related to the subject as revealed in the Remote Assessment research -- including, but not limited to:
+
+* Organization name (complete and broken down into syllables)
+* Organizational acronyms
+* Organizational registration numbers (business/tax ID)
+* street address / city / state / country
+* phone number
+* email/web domain
+* wireless network name or BSSID
+* Founders
+* Keywords from program themes, mission, vision
+* Founding date of the organization (note the local date system)
+
+For the organization "ExampleOrg , which has its offices at 123 Central St., Federal District, Countryzstan , which does human rights and journalism work and was founded in 1992, some context-based dictionary additions would be:
 
 ```
 exampleorg
 example
-exa
-mple
 org
+EO
 123
 central
 federal
@@ -77,7 +90,7 @@ journalism
 92
 ```
 
-Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back to the year 2001 (plus adding in the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
+Also add common password fragments: qwerty, 1234/5/6/7/8, and, based on field experience, four-digit dates back for ~20 years in both the Gregorian (Western) and (if relevant) local calendar, plus the founding year of the organization). It's quite amazing how often a recent year will be part of a wifi password -- this presentation discusses many common patterns in passwords: https://www.owasp.org/images/a/af/2011-Supercharged-Slides-Redman-OWASP-Feb.pdf
 
 ##### Optional Further steps
 

@@ -12,7 +12,7 @@
 
 #### Walkthrough
 
-See Appendix B for a sample set of interview questions
+See the Appendix for a sample set of interview questions
 
 
 
