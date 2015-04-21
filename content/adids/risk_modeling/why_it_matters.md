@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/risk_modeling/purpose.md"
+!INCLUDE "../../content/objectives/risk_modeling/purpose.md"

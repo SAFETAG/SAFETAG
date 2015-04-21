@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/physical_assessment/purpose.md"
+!INCLUDE "../../content/objectives/physical_assessment/purpose.md"

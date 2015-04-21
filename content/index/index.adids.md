@@ -202,7 +202,7 @@ Footnotes
 
 ## Context Research Sources
 
-!INCLUDE "content/guides/context_research/resources.md"
+!INCLUDE "content/objectives/context_research/resources.md"
 
 !INCLUDE "content/references/context_research.md"
 
