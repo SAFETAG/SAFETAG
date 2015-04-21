@@ -3,47 +3,47 @@
 
 <!-- ![](content/images/data_assessment.png "") -->
 
-!INCLUDE "adids/data_assessment/summary.md"
+!INCLUDE "content/adids/data_assessment/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "adids/data_assessment/why_it_matters.md"
+!INCLUDE "content/adids/data_assessment/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "adids/data_assessment/what_participants_will_learn.md"
+!INCLUDE "content/adids/data_assessment/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "adids/data_assessment/objectives.md"
+!INCLUDE "content/adids/data_assessment/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "adids/data_assessment/baseline_skills.md"
+!INCLUDE "content/adids/data_assessment/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "adids/data_assessment/before_you_start.md"
+!INCLUDE "content/adids/data_assessment/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "adids/data_assessment/materials_needed.md"
+!INCLUDE "content/adids/data_assessment/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "adids/data_assessment/activity.md"
+!INCLUDE "content/adids/data_assessment/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "adids/data_assessment/discussion.md"
+!INCLUDE "content/adids/data_assessment/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "adids/data_assessment/input.md"
+!INCLUDE "content/adids/data_assessment/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "adids/data_assessment/deepening.md"
+!INCLUDE "content/adids/data_assessment/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 

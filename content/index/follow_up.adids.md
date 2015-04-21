@@ -3,48 +3,48 @@
 
 <!-- ![](content/images/capacity_assessment.png "") -->
 
-!INCLUDE "adids/follow_up/summary.md"
+!INCLUDE "content/adids/follow_up/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "adids/follow_up/why_it_matters.md"
+!INCLUDE "content/adids/follow_up/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "adids/follow_up/what_participants_will_learn.md"
+!INCLUDE "content/adids/follow_up/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "adids/follow_up/objectives.md"
+!INCLUDE "content/adids/follow_up/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "adids/follow_up/baseline_skills.md"
+!INCLUDE "content/adids/follow_up/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "adids/follow_up/before_you_start.md"
+!INCLUDE "content/adids/follow_up/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "adids/follow_up/materials_needed.md"
+!INCLUDE "content/adids/follow_up/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "adids/follow_up/activity.md"
+!INCLUDE "content/adids/follow_up/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "adids/follow_up/discussion.md"
+!INCLUDE "content/adids/follow_up/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "adids/follow_up/input.md"
+!INCLUDE "content/adids/follow_up/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "adids/follow_up/deepening.md"
+!INCLUDE "content/adids/follow_up/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 
-!INCLUDE "adids/follow_up/synthesis.md"
+!INCLUDE "content/adids/follow_up/synthesis.md"

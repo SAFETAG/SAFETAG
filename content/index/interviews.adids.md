@@ -4,48 +4,48 @@
 
 <!-- ![](content/images/interviews.png "") -->
 
-!INCLUDE "adids/interviews/summary.md"
+!INCLUDE "content/adids/interviews/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "adids/interviews/why_it_matters.md"
+!INCLUDE "content/adids/interviews/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "adids/interviews/what_participants_will_learn.md"
+!INCLUDE "content/adids/interviews/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "adids/interviews/objectives.md"
+!INCLUDE "content/adids/interviews/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "adids/interviews/baseline_skills.md"
+!INCLUDE "content/adids/interviews/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "adids/interviews/before_you_start.md"
+!INCLUDE "content/adids/interviews/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "adids/interviews/materials_needed.md"
+!INCLUDE "content/adids/interviews/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "adids/interviews/activity.md"
+!INCLUDE "content/adids/interviews/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "adids/interviews/discussion.md"
+!INCLUDE "content/adids/interviews/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "adids/interviews/input.md"
+!INCLUDE "content/adids/interviews/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "adids/interviews/deepening.md"
+!INCLUDE "content/adids/interviews/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 
-!INCLUDE "adids/interviews/synthesis.md"
+!INCLUDE "content/adids/interviews/synthesis.md"

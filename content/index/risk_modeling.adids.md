@@ -3,48 +3,48 @@
 
 <!-- ![](content/images/capacity_assessment.png "") -->
 
-!INCLUDE "adids/risk_modeling/summary.md"
+!INCLUDE "content/adids/risk_modeling/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "adids/risk_modeling/why_it_matters.md"
+!INCLUDE "content/adids/risk_modeling/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "adids/risk_modeling/what_participants_will_learn.md"
+!INCLUDE "content/adids/risk_modeling/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "adids/risk_modeling/objectives.md"
+!INCLUDE "content/adids/risk_modeling/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "adids/risk_modeling/baseline_skills.md"
+!INCLUDE "content/adids/risk_modeling/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "adids/risk_modeling/before_you_start.md"
+!INCLUDE "content/adids/risk_modeling/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "adids/risk_modeling/materials_needed.md"
+!INCLUDE "content/adids/risk_modeling/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "adids/risk_modeling/activity.md"
+!INCLUDE "content/adids/risk_modeling/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "adids/risk_modeling/discussion.md"
+!INCLUDE "content/adids/risk_modeling/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "adids/risk_modeling/input.md"
+!INCLUDE "content/adids/risk_modeling/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "adids/risk_modeling/deepening.md"
+!INCLUDE "content/adids/risk_modeling/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 
-!INCLUDE "adids/risk_modeling/synthesis.md"
+!INCLUDE "content/adids/risk_modeling/synthesis.md"

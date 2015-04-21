@@ -3,49 +3,49 @@
 
 <!-- ![](content/images/recommendation_development.png "") -->
 
-!INCLUDE "adids/recommendation_development/summary.md"
+!INCLUDE "content/adids/recommendation_development/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "adids/recommendation_development/why_it_matters.md"
+!INCLUDE "content/adids/recommendation_development/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "adids/recommendation_development/what_participants_will_learn.md"
+!INCLUDE "content/adids/recommendation_development/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "adids/recommendation_development/objectives.md"
+!INCLUDE "content/adids/recommendation_development/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "adids/recommendation_development/baseline_skills.md"
+!INCLUDE "content/adids/recommendation_development/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "adids/recommendation_development/before_you_start.md"
+!INCLUDE "content/adids/recommendation_development/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "adids/recommendation_development/materials_needed.md"
+!INCLUDE "content/adids/recommendation_development/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "adids/recommendation_development/activity.md"
+!INCLUDE "content/adids/recommendation_development/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "adids/recommendation_development/discussion.md"
+!INCLUDE "content/adids/recommendation_development/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "adids/recommendation_development/input.md"
+!INCLUDE "content/adids/recommendation_development/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "adids/recommendation_development/deepening.md"
+!INCLUDE "content/adids/recommendation_development/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 
-!INCLUDE "adids/recommendation_development/synthesis.md"
+!INCLUDE "content/adids/recommendation_development/synthesis.md"
 
