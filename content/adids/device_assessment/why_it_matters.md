@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../content/objectives/device_assessment/purpose.md"
+!INCLUDE "../../objectives/user_device_assessment/purpose.md"

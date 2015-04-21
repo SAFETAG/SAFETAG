@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../content/objectives/debrief/purpose.md"
+!INCLUDE "../../objectives/debrief/purpose.md"

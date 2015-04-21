@@ -2,4 +2,4 @@
 
 Ask the participants to role play as if they are an organization.  If any of the participants has run the Backup Matrix activity, encourage them to "run" this so that you can be an active participant.
 
-!INCLUDE "../../content/activities/sensitive_data/instructions.md"
+!INCLUDE "../../activities/sensitive_data/instructions.md"

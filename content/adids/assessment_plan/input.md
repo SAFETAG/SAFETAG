@@ -37,6 +37,6 @@ Why a written form?
 
 Outputs:
 
-!INCLUDE "../../content/activities/assessment_plan/output.md"
+!INCLUDE "../../activities/assessment_plan/output.md"
 
 

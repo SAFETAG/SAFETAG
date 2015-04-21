@@ -15,7 +15,7 @@
 
 Through the process of the interviews, you should be able to determine the answers to these questions
 
-!INCLUDE "../../content/objectives/capacity_assessment/guiding_questions.md"
+!INCLUDE "../../objectives/capacity_assessment/guiding_questions.md"
 
 **Specific outputs needed for audit**
 

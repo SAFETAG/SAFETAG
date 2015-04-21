@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../content/objectives/ /purpose.md"
+!INCLUDE "../../objectives/ /purpose.md"

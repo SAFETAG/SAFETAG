@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/reconnaissance/purpose.md"
+!INCLUDE "../../objectives/reconnaissance/purpose.md"

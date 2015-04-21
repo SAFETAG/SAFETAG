@@ -6,7 +6,7 @@
 
 ### The Flow Of Information
 
-![Interview Information Flow](../../content/images/info_flows/interviews.svg)
+![Interview Information Flow](../../images/info_flows/interviews.svg)
 
 ### Guiding Questions
 
