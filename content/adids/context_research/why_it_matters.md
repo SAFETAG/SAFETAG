@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/context_research/purpose.md"
+!INCLUDE "../../content/objectives/context_research/purpose.md"
