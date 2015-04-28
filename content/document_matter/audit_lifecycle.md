@@ -1,6 +1,6 @@
 # The SAFETAG Audit Framework
 
-The SAFETAG audit consists of multiple information gathering and confirmations steps as well as research and capacity-building exercises with staff organized in a collection of objectives, each of which supports the core goals of SAFETAG, creating a risk assessment and building the capacity of the organization.
+The SAFETAG audit consists of multiple information gathering and confirmations steps as well as research and capacity-building exercises with staff organized in a collection of objectives, each of which supports the core goals of SAFETAG, creating a risk assessment while also building the capacity of the organization.
 
 ![SAFETAG Activities](content/images/activities_flow.svg)
 
@@ -10,7 +10,7 @@ The audit process in very cyclical. Newly identified threats, vulnerabilities, c
 
 Each objective requires a certain base of information, and outputs more information into this cyclical process.  Each objective has a "map" of the data flow that it and its specific activities provide based on this map:
 
-![SAFETAG Data Flow](content/images/data_flow_all.svg)
+![SAFETAG Data Flow](content/images/info_flows/data_flow_all.svg)
 
 While more completely defined below in the Risk Assessment and Agency Building sections, a brief overview of the data flow components:
 
@@ -20,6 +20,6 @@ While more completely defined below in the Risk Assessment and Agency Building s
 * **Barriers** Barriers are specific challenges an organization faces that might limit or block its capacity.
 * **Assets** Assets are most easily conceptualized as computer systems - laptops and servers, but also include both the data stored on them and can also be services like remote file storage, hosted websites, webmail, and more.  Offline drives, USB sticks, and even paper printouts of relevant or sensitive information can also be included
 * **Vulnerabilities** Vulnerabilities are specific flaws or attributes of an asset susceptible to attack.
-* **Threats** A Threat is a specific, possible attack or occurence that could harm the organization.  If a bucket of oily rags is a vulnerability, a fire is the threat - and mitigations would be rules against leaving oily rags around as well as fire extinguishers, smoke detectors, remote backup policies, and evacuation planning.
+* **Threats** A Threat is a specific, possible attack or occurrence that could harm the organization.  If a bucket of oily rags is a vulnerability, a fire is the threat - and mitigations would be rules against leaving oily rags around as well as fire extinguishers, smoke detectors, remote backup policies, and evacuation planning.
 
 To make SAFETAG approachable, a core evaluation template which links together a series of specific objectives, each with a variety of linked activities, that contribute towards the goals and their required information needs is represented here.  Experienced Auditors will likely come up with their own approaches, and the SAFETAG project welcomes such contributions.

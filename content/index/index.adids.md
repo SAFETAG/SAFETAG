@@ -192,13 +192,17 @@ Footnotes
 
 # APPENDIX A : Agreement and Information Gathering Resources
 
-## Interview Resources
+## Sample Organization
 
 !INCLUDE "content/adids/sample_org/safetag-sample-org.md"
 
-!INCLUDE "content/activities/interviews/examples/outputs_needed.md"
+## Interview Cheatsheet
 
-!INCLUDE "content/activities/interviews/examples/interview_questions.md"
+!INCLUDE "content/activities/capacity_assessment_cheatsheet/instructions.md"
+
+## Interview Questions
+
+!INCLUDE "content/activities/interviews/interview_questions.md"
 
 ## Context Research Sources
 
@@ -219,6 +223,6 @@ Footnotes
 
 ## Agreement Template
 
-!INCLUDE "content/activities/create_an_assessment_plan/draft_engagement_agreement.md"
+!INCLUDE "content/activities/confidentiality_agreement/draft_engagement_agreement.md"
 
 \newpage
