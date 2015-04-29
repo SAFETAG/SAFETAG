@@ -3,49 +3,49 @@
 
 <!-- ![](content/images/capacity_assessment.png "") -->
 
-!INCLUDE "adids/social_engineering_excercise/summary.md"
+!INCLUDE "adids/social_engineering_exercise/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "adids/social_engineering_excercise/why_it_matters.md"
+!INCLUDE "adids/social_engineering_exercise/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "adids/social_engineering_excercise/what_participants_will_learn.md"
+!INCLUDE "adids/social_engineering_exercise/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "adids/social_engineering_excercise/objectives.md"
+!INCLUDE "adids/social_engineering_exercise/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "adids/social_engineering_excercise/baseline_skills.md"
+!INCLUDE "adids/social_engineering_exercise/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "adids/social_engineering_excercise/before_you_start.md"
+!INCLUDE "adids/social_engineering_exercise/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "adids/social_engineering_excercise/materials_needed.md"
+!INCLUDE "adids/social_engineering_exercise/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "adids/social_engineering_excercise/activity.md"
+!INCLUDE "adids/social_engineering_exercise/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "adids/social_engineering_excercise/discussion.md"
+!INCLUDE "adids/social_engineering_exercise/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "adids/social_engineering_excercise/input.md"
+!INCLUDE "adids/social_engineering_exercise/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "adids/social_engineering_excercise/deepening.md"
+!INCLUDE "adids/social_engineering_exercise/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 
-!INCLUDE "adids/social_engineering_excercise/synthesis.md"
+!INCLUDE "adids/social_engineering_exercise/synthesis.md"
 

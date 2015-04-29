@@ -3,4 +3,4 @@
 
   * *Overview:* ["How Is Risk Managed?"](https://www.sans.org/reading-room/whitepapers/auditing/introduction-information-system-risk-management-1204#page=12) (An Introduction to Information System Risk Management)
 
-  * *Book:* "Digging Deeper into Mitigation's - p. 130" (Threat Modeling - Adam Shostack)[^shostack]
+  * *Book:* "Digging Deeper into Mitigations - p. 130" (Threat Modeling - Adam Shostack)[^shostack]

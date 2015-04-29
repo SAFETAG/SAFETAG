@@ -1,12 +1,4 @@
-
-## Lesson Plan
-
-
-## ACTIVITY (XX MINUTES)
-
-
 ### Risk Modeling Using the Pre-Mortum Strategy
-
 
 #### Preparation
 
@@ -14,7 +6,7 @@
 
   * Chart Paper \ whiteboard.
   * Marker pens \ whiteboard markers.
-  * Multiple colors of post its.
+  * Multiple colors of post-its.
   * Camera for documenting the process.
   
 #### Getting Started
@@ -72,7 +64,7 @@
   * **NOTES:**
     * If any of the impacts identified in the pre-mortum are not covered ask participants where they would go.
     * Take photos of the threats once you have finished enumerating them.
-    * Write risks on one set of post-its and impacts on another color of post it's to make it easy to keep track.
+    * Write risks on one set of post-its and impacts on another color of post-its to make it easy to keep track.
 	* Look at the["CVSS V2 Base Metrics"](https://ics-cert.us-cert.gov/sites/default/files/documents/Cyber_Security_Assessments_of_Industrial_Control_Systems.pdf#page=31) for an example of the severity of different threats.
 
 **Impact Identification: (30 minutes per process)** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
@@ -116,7 +108,7 @@ physical injury, temporary or longer-term psychological damage, death, legal cos
 **Impact Ranking:** The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible impacts from the threats they have just explored. 
 
   * Create a post it for each impact.
-  * Place two points on the wall. On one side are "Inconvenient" impacts that disrupt the organization in a very small way. On the other side are "critical" impacts that may pose life-safety risks to employee's, partners, or the general public.
+  * Place two points on the wall. On one side are "Inconvenient" impacts that disrupt the organization in a very small way. On the other side are "critical" impacts that may pose life-safety risks to employees, partners, or the general public.
   * The low end of the scale may include  a fire alarm may cause the staff to lose a half an hour of work time, but does not impact any short or long-term activities.
   * The high end of the scale would include events such as a fire that destroys the organizations headquarters and endangers staffs lives or legal issues that cause termination of the program.
   * Place each item along the severity line from least to most severe impact.

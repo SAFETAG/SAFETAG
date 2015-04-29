@@ -12,11 +12,11 @@ A trainee will conduct a mock interview of a trainer to allow the group to see a
 
 ##### Conducting initial interviews
 
-Get individuals from the hosting organization for the trainee's to interview. Each trainee will interview a different person, if possible.
+Get individuals from the hosting organization for the trainees to interview. Each trainee will interview a different person, if possible.
 
 ##### Building an initial assessment plan
 
-Each trainee will be given a copy fo the interviews. Using the interviews the trainee's will build an initial assessment plan. 
+Each trainee will be given a copy fo the interviews. Using the interviews, trainees will build an initial assessment plan. 
 
 ##### Presenting & Negotiating the assessment plan
 

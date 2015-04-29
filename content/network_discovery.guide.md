@@ -10,6 +10,7 @@
 
 !INCLUDE "guides/network_discovery/purpose.md"
 
+<!--
 ### Baseline Skills [stub]
 
 !INCLUDE "guides/network_discovery/baseline_skills.md"
@@ -21,6 +22,7 @@
 ### Materials Needed [stub]
 
 !INCLUDE "guides/network_discovery/materials_needed.md"
+-->
 
 ### Approach
 
@@ -34,10 +36,14 @@
 
 !INCLUDE "guides/network_discovery/operational_security.md"
 
-### Reporting  [stub]
+### Reporting
 
 !INCLUDE "guides/network_discovery/reporting.md"
 
 ### Resources
 
 !INCLUDE "references/network_discovery_methods.md"
+
+### Example
+
+!INCLUDE "guides/network_discovery/examples/beacons/index.md"

@@ -1,39 +1,42 @@
 ### Deepening
 
-This section covers discovering wireless networks. We tried to tie each exercises to an existing guide or tutorial so that we could support existing translation efforts for the tools used.
+The purpose of this exercise is to walk participants through the identification of a network.
 
-##### What trainees will need
+#### Scanning for networks
 
-  * Computer running Kali Linux
-  * Wireless card that can be set to monitor mode
+Instructions are in the Beacon example of the Network Access section of the full guide
 
-##### What you will need
-
-  * Pre-configure a wireless access point to serve WEP and WPA networks, and enable WPS for WPA. The WPA password should be quickly crackable based on the password attacks above. The WEP network should be configured to use 64 bit encryption to speed the practice.
-  * If no WEP network is available, you can use [this pre-build airodump-ng capture file](http://download.aircrack-ng.org/wiki-files/other/test.ivs) and skip the airodump-ng capture.
-  * If no WPA network is available, you can use [this file](http://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=wpa-Induction.pcap).
-  * Network to target (with permission)
-  * It may be helpful to print out copies of the guides tied to each section before hand if there will be limited internet access at the training site.
-
-#### Setting up Aircrack-ng
+  * Booted into Kali, identify all nearby wireless using wifite
+  * airodump logging (handshakes, beacons, macs)
+  * Identify possible wireless AP of "organization" (the training router), confirm before proceeding
+    * By name / identifiers
+    * Watching Client probes and what they connect to (The waiting game)
+    * Using de-auth packets (see the Beacons vulnerability in the full guide)
+    * EXERCISE: Guess who is who based on beacon probes
 
 We also recommend that the links for this section are sent out to participants beforehand to check their devices and inform the trainer if they do not work. This will allow a trainer to bring any required external wireless devices or extra laptops. If the trainees will be provided computers tests and fixes should carried about before the training to avoid delays for this training.
 
 Packet injection is used in order to speed up the process of cracking a WEP and WPA-PSK keys. Not all wireless cards have drivers that support packet injection. This short injection test is used to ensure the trainee's machines are capable of injecting packets.
 
-  * Start airmon-ng on the computers wireless interface.
-  
-```bash
-airmon-ng start wlan0
-```
+#### Documenting Finding (Synthesis step)
 
-  * Broadcast probe requests using aireplay-ng. 
-  
-```
-aireplay-ng -9 wlan0
-```
+Review nearby APs, notinghow easy it was to find them.  Discuss the clients connected to the training router and the network histories and their stories
 
-  * Give the "Intalling Drivers" link to any trainees whose install failed so that they can install the appropriate drivers over a break, or in the evening. If possible give those trainees another device to use until they have had a chance to update their drivers outside of class.
+#### Walkabout (Activity)
+You can first see if you can access the office's network from a public space nearby (a street, a park, or even a shared hallway in a building).  MAC address filtering seems like a good idea, but these can be spoofed quite easily (and new Apple devices use fake MAC addresses when looking for networks to reduce beacon privacy problems).
+
+After gathering some screenshots/photos of accessing the network from outside the office if possible, you should skip straight to the network sniffing stage.
+
+
+  * Identify range of wireless network outside of office space.
+    * Wifi-Stregth (if you have a phone and wifi analyzer)
+    * Documenting findings
+	  * Google maps
+	  * Photos of locations that are unassuming
+  * Connecting to Assets and Processes mapping
+
+
+
 
 ##### Material that may be Useful:
 
@@ -43,30 +46,4 @@ aireplay-ng -9 wlan0
   * *Guide:* [“Compatibility, Drivers, Which Card to Purchase”](http://www.aircrack-ng.org/doku.php?id=compatibility_drivers) (Aircrack-ng Wiki)
   * *Guide:* [“Installing Drivers”](http://www.aircrack-ng.org/doku.php?id=install_drivers) (Aircrack-ng Wiki)
   * *Guide:* [“Tutorial: How To Patch Drivers”](http://www.aircrack-ng.org/doku.php?id=patching) (Aircrack-ng Wiki)
-
-#### Reconnaissance
-
-The purpose of this exercise is to walk participants through the identification of a network.
-
-Set up a wireless access point with an appropriate AP name and connect some devices to it before beginning this activity.
-
-  * Scanning for networks
-    * Start the wireless interface in monitor mode
-	* Identify all nearby wireless
-  * Identify possible wireless AP of organization
-    * By name / identifiers
-    * Watching Client probes and what they connect to (The waiting game)
-  * Documenting Finding
-    * Nearby AP's (show them whats around and how easy it was to find them)
-    * Clients Connected
-  * Confirm the office network before proceeding
-  * Identify range of wireless network outside of office space.
-    * Wifi-Stregth (if you have a phone and wifi analyzer)
-    * Documenting findings
-	  * Google maps
-	  * Photos of locations that are unassuming
-  * Connecting to Assets and Processes mapping
-
-##### Material that may be Useful:
-
   * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)

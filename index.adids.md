@@ -9,7 +9,7 @@
 
 <!-- Introduction -->
 
-# Introduction
+# About SAFETAG and this Curricula
 
 !INCLUDE "content/guides/introduction.md"
 
@@ -25,24 +25,50 @@
 
 \newpage
 
-# PART ONE: Agreement and Information Gathering
-
-![The Pre-Audit](../../content/images/pre_audit_expertiese.svg)\
+## The ADIDS Process
+!INCLUDE "content/guides/overview.adids.md"
 
 \newpage
+
+# INTRODUCTION To SAFETAG
+
+<!-- Overview -->
+
+!INCLUDE "content/before_the_training.adids.md"
+
+!INCLUDE "content/introduction.adids.md"
+
+\newpage
+
+<!-- SAFETAG Auditor Profile -->
+
+!INCLUDE "content/adids/introduction/auditor_profile.md"
+
+\newpage
+
 <!-- Operational Security -->
 
 !INCLUDE "content/operational_security.adids.md"
 
 \newpage
-<!-- Interviews -->
 
-!INCLUDE "content/interviews.adids.md"
+<!-- The SAFETAG Repository -->
+
+!INCLUDE "content/safetag_repo.adids.md"
 
 \newpage
+
+
+# PART ONE: Agreement and Information Gathering
+
+![The Pre-Audit](../../content/images/pre_audit_expertiese.svg)\
+
+
+\newpage
+<!-- Interviews -->
 <!-- Capacity Assessment -->
 
-!INCLUDE "content/capacity_assessment.adids.md"
+!INCLUDE "content/interviews.adids.md"
 
 \newpage
 <!-- Contextual Research -->
@@ -66,7 +92,7 @@
 !INCLUDE "content/remote_assessment.adids.md"
 
 \newpage
-<!-- Audit Preparation -->
+<!-- Audit Preparation  -->
 
 !INCLUDE "content/preparation.adids.md"
 
@@ -89,6 +115,11 @@
 <!-- Network Mapping -->
 
 !INCLUDE "content/network_mapping.adids.md"
+
+\newpage
+<!-- Physical -->
+
+!INCLUDE "content/physical_assessment.adids.md"
 
 \newpage
 <!-- Data Assessment -->
@@ -117,11 +148,6 @@
 ![The Post-Audit](../../content/images/post_audit_expertiese.svg)\
 
 \newpage
-<!-- Vulnerability Analysis -->
-
-!INCLUDE "content/vulnerability_analysis.adids.md"
-
-\newpage
 <!-- Vulnerability Prioritization -->
 
 !INCLUDE "content/vulnerability_prioritization.adids.md"
@@ -131,10 +157,7 @@
 
 !INCLUDE "content/recommendation_development.adids.md"
 
-\newpage
-<!-- Resource Identification -->
-
-!INCLUDE "content/resource_identification.adids.md"
+<!-- \newpage Resource Identification (included in recommendations for ADIDS)  !INCLUDE "content/resource_identification.adids.md" -->
 
 \newpage
 <!-- Roadmap Development -->
@@ -146,17 +169,49 @@
 
 !INCLUDE "content/report_creation.adids.md"
 
-\newpage
-<!-- Follow Up -->
-
-!INCLUDE "content/follow_up.adids.md"
-
-\newpage
+<!-- \newpage Follow Up (Included in reporting for ADIDS) !INCLUDE "content/follow_up.adids.md" \newpage -->
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
 
-<!-- Load Footnotes -->
+
+<!-- Load Footnotes 
+Footnotes
+
 !INCLUDE "content/references/footnotes.md"
+-->
+\newpage
+<!-- APPENDIX A - Sample Org-->
+
+# APPENDIX A : Agreement and Information Gathering Resources
+
+## Interview Resources
+
+!INCLUDE "content/adids/sample_org/safetag-sample-org.md"
+
+!INCLUDE "content/guides/interviews/examples/outputs_needed.md"
+
+!INCLUDE "content/guides/interviews/examples/interview_questions.md"
+
+## Context Research Sources
+
+!INCLUDE "content/guides/context_research/resources.md"
+
+!INCLUDE "content/references/context_research.md"
+
+!INCLUDE "content/references/threat_by_focus_area.md"
+
+!INCLUDE "content/references/threat_by_region.md"
+
+!INCLUDE "content/references/threat_by_method.md"
+
+!INCLUDE "content/references/comm_infrastructure_research.md"
+
+!INCLUDE "content/references/cyber_security_trends.md"
 
 
+## Agreement Template
+
+!INCLUDE "content/guides/assessment_plan/draft_engagement_agreement.md"
+
+\newpage

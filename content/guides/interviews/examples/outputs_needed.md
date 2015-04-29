@@ -1,12 +1,14 @@
-## Specific outputs from Interviews  ##
+## Specific outputs needed from Interviews  ##
 
 // Turn this in to a crib sheet form for auditors //
 
 "Homework"
+
  * Basic contact and organizational information: name, org, org's stated mission
  * Contextual research
 
 Organizational
+
  * Size of staff
  * Key roles in org for tech and management
  * Structure: Management and Technical?
@@ -15,6 +17,7 @@ Organizational
  * Languages used in office
 
 Contextual / Background / Threat information
+
  * What (if any) threats have occured to the organization and its partners? (digital, physical)
    * Surveillance? 
  * What other threats are you concerned about? What has happened to other organizations in the space?
@@ -23,6 +26,7 @@ Contextual / Background / Threat information
  * Program use of technology (SMS surveys, blogs, facebook pages, other websites, media recording and broadcast ...?)
 
 Technical:
+
  * Primary website:
  * Additional websites:
  * Website technologies (content management, hosting provider)
@@ -37,6 +41,7 @@ Technical:
 
 
 Preparation Support
+
  * Infrastructure
    * How is the office connected to the Internet?
    * Power outages or other challenges?

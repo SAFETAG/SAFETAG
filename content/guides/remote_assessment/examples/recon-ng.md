@@ -412,7 +412,7 @@ Now I have double of the same netblocks
 [*] 4 rows returned
 ```
 
-So now that I know their row-id's I can delete them.
+So now that I know their rowid numbers, I can delete them.
 ```
 [recon-ng][websitename][reverse_resolve] > del netblocks
 rowid(s) (INT): 2

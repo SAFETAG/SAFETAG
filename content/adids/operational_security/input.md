@@ -1,7 +1,12 @@
-
 ### Input 
 
   * Operational Security Basics
+
+Operational security is mandatory, not optional  -- don't be the weak link
+
+  * Evidence Handling
+
+
   * Secure Communications Process
     * Training participants in Secure Communications
     * Accessable Security
@@ -24,7 +29,27 @@
     (If they are already using them, or there is time for a training)
 	  * Truecrypt
 
-  * Evidence Handling
+
+When to drop out
+
+Incident response
+
   * Incident Response
     * Emergency Contact
     * What consitutes an incident
+
+Explaining opsec without alienating
+
+  * Tools that make this easier (mailvelope and crypto.cat)
+  * Go through cryptocat and minilock example
+
+Examples
+
+  * We use a digital camera instead of a phone. “Our camera has GPS enabled by default, so we downloaded an exif wiper to clear photos when we take them”
+
+
+"Things we don't talk about"
+
+
+
+
