@@ -11,7 +11,7 @@
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../activities/password_security/password_survey.md"
+!INCLUDE "../../activities/password_security/index.md"
 </div>
 
 <div class="boxtext">

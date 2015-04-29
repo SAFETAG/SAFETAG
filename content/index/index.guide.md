@@ -171,7 +171,11 @@
 
 # APPENDIX: Password Dictionaries
 
-!INCLUDE "content/activities/password_security/index.md"
+!INCLUDE "content/activities/password_security/dictionary_creation.md"
+
+# APPENDIX: Password Survey
+
+!INCLUDE "content/activities/password_security/password_survey.md"
 
 # APPENDIX: Recon-ng walkthrough
 
