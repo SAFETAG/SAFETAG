@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/remote_assessment/purpose.md"
+!INCLUDE "../../methods/reconnaissance/purpose.md"

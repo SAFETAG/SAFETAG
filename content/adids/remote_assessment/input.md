@@ -1,7 +1,13 @@
 ### Input [stub]
 
+#### Information Gathering Methodology  [stub]
 
-Remote / OSINT
+<?step-by-step explanation that is tool agnostic of the audit / approach?>
+
+!INCLUDE "../../methods/reconnaissance/approaches.md"
+
+
+#### Remote / OSINT
 
 DNS and mail records
 Built-with site
@@ -14,15 +20,6 @@ facebook graph, (Jon)
 Other tools
 
 
-
-
-#### Information Gathering Methodology  [stub]
-
-<?step-by-step explanation that is tool agnostic of the audit / approach?>
-
-!INCLUDE "../../guides/remote_assessment/approach.md"
-
-### Technical Context Research
 
 #### Introduction to recon-ng
 

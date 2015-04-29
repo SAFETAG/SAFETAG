@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/assessment_plan/purpose.md"
+!INCLUDE "../../exercises/assessment_plan/purpose.md"

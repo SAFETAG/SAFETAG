@@ -24,7 +24,7 @@ Overview of Framework and process
   * The Scope of a SAFETAG Audit
   * How the components merge into each other
 
-![The Safetag Audit Process](../../content/images/expertiese_vertical.svg)\
+![The Safetag Audit Process](../../images/expertiese_vertical.svg)\
 
 Goals 
 

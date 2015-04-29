@@ -302,9 +302,9 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^scope_questions]:["Questionnaires - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questionnaires)
 
-[^HCD_toolkit]["IDEO Human-Centered Design Toolkit"](http://www.ideo.com/work/human-centered-design-toolkit)
+[^HCD_toolkit]:["IDEO Human-Centered Design Toolkit"](http://www.ideo.com/work/human-centered-design-toolkit)
 
-[^Techscape_indicators]["TechScape Indicators - the engine room"](https://www.theengineroom.org/projects/techscape/tsindicators/)
+[^Techscape_indicators]:["TechScape Indicators - the engine room"](https://www.theengineroom.org/projects/techscape/tsindicators/)
 
 [^BUM_questions]:["Questions for Business Unit Managers - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questions_for_Business_Unit_Managers)
 

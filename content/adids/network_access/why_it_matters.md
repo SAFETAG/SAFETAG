@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../guides/network_access/purpose.md"
+!INCLUDE "../../methods/network_access/purpose.md"

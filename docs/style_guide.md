@@ -126,7 +126,21 @@ This is for any confidential information in a report that an organization should
 ANY TEXT
 </span>
 
+##### Activity Box {.boxtext}
 
+```
+<div class="boxtext">
+This text is in a lightly shaded (#e6f3ff , a tint of the Blue Grey primary color) box.
+</div>
+```
+
+##### research Box {.gretbox}
+
+```
+<div class="greybox">
+This text is in a lightly shaded (#f3f2f2 , a tint of the Warm Grey 11u primary color) box.
+</div>
+```
 
 # Color Scheme
 
