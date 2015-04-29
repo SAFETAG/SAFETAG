@@ -178,6 +178,20 @@
 
 <!-- \newpage Follow Up (Included in reporting for ADIDS) !INCLUDE "content/follow_up.adids.md" \newpage -->
 
+# Post - Training Mentorship [stub]
+
+## Collaborative Audits
+
+## Remote Collaborative Audits
+
+!INCLUDE "content/adids/training_followup/Remote Shadow Methodology.md"
+
+## Independent Audit Check-ins 
+
+* Daily summaries
+* Survey
+
+
 <!-- Load Default Images -->
 !INCLUDE "styles/image_defaults.md"
 
