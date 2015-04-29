@@ -1,31 +1,31 @@
 ## Network Access
 
 ### Summary
-!INCLUDE "content/objectives/network_access/summary.md"
+!INCLUDE "content/methods/network_access/summary.md"
 
 ### Purpose
-!INCLUDE "content/objectives/network_access/purpose.md"
+!INCLUDE "content/methods/network_access/purpose.md"
 
 ### The Flow of Information
 ![ Information Flow](content/images/info_flows/network_access.svg)
 
 ### Guiding Questions
-!INCLUDE "content/objectives/network_access/guiding_questions.md"
+!INCLUDE "content/methods/network_access/guiding_questions.md"
 
 ### Approach
-!INCLUDE "content/objectives/network_access/approaches.md"
+!INCLUDE "content/methods/network_access/approaches.md"
 
 ### Output
-!INCLUDE "content/objectives/network_access/output.md"
+!INCLUDE "content/methods/network_access/output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/network_access/operational_security.md"
+!INCLUDE "content/methods/network_access/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/network_access/preparation.md"
+!INCLUDE "content/methods/network_access/preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/network_access/activities.md"
+!INCLUDE "content/methods/network_access/activities.md"
 
 ### Resources
 

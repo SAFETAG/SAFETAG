@@ -46,9 +46,9 @@
 <!-- Audit Prep-->
 !INCLUDE "content/index/preparation.overview.md"
 
-# Objectives
+# Methods
 
-!INCLUDE "content/objectives/intro.md"
+!INCLUDE "content/methods/intro.md"
 
 \newpage
 <!-- Audit Scoping-->

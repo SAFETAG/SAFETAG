@@ -4,7 +4,7 @@
 
 <?step-by-step explanation that is tool agnostic of the audit / approach?>
 
-!INCLUDE "../../objectives/reconnaissance/approaches.md"
+!INCLUDE "../../methods/reconnaissance/approaches.md"
 
 
 #### Remote / OSINT

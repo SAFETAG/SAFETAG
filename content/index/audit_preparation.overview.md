@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/engagement_planning/summary.md"
+!INCLUDE "../methods/engagement_planning/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/engagement_planning/purpose.md"
+!INCLUDE "../methods/engagement_planning/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,9 +14,9 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/engagement_planning/guiding_questions.md"
+!INCLUDE "../methods/engagement_planning/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/engagement_planning/approaches.md"
+!INCLUDE "../methods/engagement_planning/approaches.md"
 

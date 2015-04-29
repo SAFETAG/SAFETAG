@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/capacity_assessment/summary.md"
+!INCLUDE "../methods/capacity_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/capacity_assessment/purpose.md"
+!INCLUDE "../methods/capacity_assessment/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,8 +14,8 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/capacity_assessment/guiding_questions.md"
+!INCLUDE "../methods/capacity_assessment/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/capacity_assessment/approaches.md"
+!INCLUDE "../methods/capacity_assessment/approaches.md"

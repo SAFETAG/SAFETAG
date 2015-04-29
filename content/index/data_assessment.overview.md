@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/data_assessment/summary.md"
+!INCLUDE "../methods/data_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/data_assessment/purpose.md"
+!INCLUDE "../methods/data_assessment/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,9 +14,9 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/data_assessment/guiding_questions.md"
+!INCLUDE "../methods/data_assessment/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/data_assessment/approaches.md"
+!INCLUDE "../methods/data_assessment/approaches.md"
 

@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/physical_assessment/summary.md"
+!INCLUDE "../methods/physical_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/physical_assessment/purpose.md"
+!INCLUDE "../methods/physical_assessment/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,8 +14,8 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/physical_assessment/guiding_questions.md"
+!INCLUDE "../methods/physical_assessment/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/physical_assessment/approaches.md"
+!INCLUDE "../methods/physical_assessment/approaches.md"

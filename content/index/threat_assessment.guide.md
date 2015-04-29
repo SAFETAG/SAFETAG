@@ -1,31 +1,31 @@
 ## Threat Assessment
 
 ### Summary
-!INCLUDE "../objectives/threat_assessment/summary.md"
+!INCLUDE "../methods/threat_assessment/summary.md"
 
 ### Purpose
-!INCLUDE "../objectives/threat_assessment/purpose.md"
+!INCLUDE "../methods/threat_assessment/purpose.md"
 
 ### The Flow Of Information
 ![Threat Assessment Information Flow](content/images/info_flows/threat_assessment.svg)
 
 ### Guiding Questions
-!INCLUDE "../objectives/threat_assessment/guiding_questions.md"
+!INCLUDE "../methods/threat_assessment/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "../objectives/threat_assessment/approaches.md"
+!INCLUDE "../methods/threat_assessment/approaches.md"
 
 ### Outputs
-!INCLUDE "content/objectives/threat_assessment/output.md"
+!INCLUDE "content/methods/threat_assessment/output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/threat_assessment/operational_security.md"
+!INCLUDE "content/methods/threat_assessment/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/threat_assessment/preparation.md"
+!INCLUDE "content/methods/threat_assessment/preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/threat_assessment/activities.md"
+!INCLUDE "content/methods/threat_assessment/activities.md"
 
 ### Resources
 <div class="greybox">

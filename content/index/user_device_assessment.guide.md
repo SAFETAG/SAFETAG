@@ -1,31 +1,31 @@
 ## User Device Assessment
 
 ### Summary
-!INCLUDE "../objectives/user_device_assessment/summary.md"
+!INCLUDE "../methods/user_device_assessment/summary.md"
 
 ### Purpose
-!INCLUDE "../objectives/user_device_assessment/purpose.md"
+!INCLUDE "../methods/user_device_assessment/purpose.md"
 
 ### The Flow Of Information
 ![User Device Assessment Information Flow](content/images/info_flows/user_device_assessment.svg)
 
 ### Guiding Questions
-!INCLUDE "../objectives/user_device_assessment/guiding_questions.md"
+!INCLUDE "../methods/user_device_assessment/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "../objectives/user_device_assessment/approaches.md"
+!INCLUDE "../methods/user_device_assessment/approaches.md"
 
 ### Outputs
-!INCLUDE "content/objectives/user_device_assessment/output.md"
+!INCLUDE "content/methods/user_device_assessment/output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/user_device_assessment/operational_security.md"
+!INCLUDE "content/methods/user_device_assessment/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/user_device_assessment/preparation.md"
+!INCLUDE "content/methods/user_device_assessment/preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/user_device_assessment/activities.md"
+!INCLUDE "content/methods/user_device_assessment/activities.md"
 
 ### Resources
 <div class="greybox">

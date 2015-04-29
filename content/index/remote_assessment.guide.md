@@ -1,42 +1,42 @@
 ## Remote Assessment
 
-!INCLUDE "content/objectives/remote_assessment/quote.md"
+!INCLUDE "content/methods/remote_assessment/quote.md"
 
 ### Summary
 
-!INCLUDE "content/objectives/remote_assessment/summary.md"
+!INCLUDE "content/methods/remote_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "content/objectives/remote_assessment/purpose.md"
+!INCLUDE "content/methods/remote_assessment/purpose.md"
 
 ### Baseline Skills [stub]
 
-!INCLUDE "content/objectives/remote_assessment/baseline_skills.md"
+!INCLUDE "content/methods/remote_assessment/baseline_skills.md"
 
 ### Preparation [stub]
 
-!INCLUDE "content/objectives/remote_assessment/preparation.md"
+!INCLUDE "content/methods/remote_assessment/preparation.md"
 
 ### Materials Needed [stub]
 
-!INCLUDE "content/objectives/remote_assessment/materials_needed.md"
+!INCLUDE "content/methods/remote_assessment/materials_needed.md"
 
 ### Approach
 
-!INCLUDE "content/objectives/remote_assessment/approach.md"
+!INCLUDE "content/methods/remote_assessment/approach.md"
 
 ### Output
 
-!INCLUDE "content/objectives/remote_assessment/output.md"
+!INCLUDE "content/methods/remote_assessment/output.md"
 
 ### Operational Security
 
-!INCLUDE "content/objectives/remote_assessment/operational_security.md"
+!INCLUDE "content/methods/remote_assessment/operational_security.md"
 
 ### Reporting Considerations: [stub]
 
-!INCLUDE "content/objectives/remote_assessment/reporting.md"
+!INCLUDE "content/methods/remote_assessment/reporting.md"
 
 ### Resources [stub]
 
@@ -62,4 +62,4 @@
 
 ### Example
 
-!INCLUDE "content/objectives/remote_assessment/examples/recon-ng.md"
+!INCLUDE "content/methods/remote_assessment/examples/recon-ng.md"

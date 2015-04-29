@@ -212,15 +212,15 @@ Footnotes
 
 ## Interview Cheatsheet
 
-!INCLUDE "content/activities/capacity_assessment_cheatsheet/instructions.md"
+!INCLUDE "content/exercises/capacity_assessment_cheatsheet/instructions.md"
 
 ## Interview Questions
 
-!INCLUDE "content/activities/interviews/interview_questions.md"
+!INCLUDE "content/exercises/interviews/interview_questions.md"
 
 ## Context Research Sources
 
-!INCLUDE "content/objectives/context_research/resources.md"
+!INCLUDE "content/methods/context_research/resources.md"
 
 !INCLUDE "content/references/context_research.md"
 
@@ -237,6 +237,6 @@ Footnotes
 
 ## Agreement Template
 
-!INCLUDE "content/activities/confidentiality_agreement/draft_engagement_agreement.md"
+!INCLUDE "content/exercises/confidentiality_agreement/draft_engagement_agreement.md"
 
 \newpage

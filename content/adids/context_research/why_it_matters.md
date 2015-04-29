@@ -1,3 +1,3 @@
 ### Why It Matters
 
-!INCLUDE "../../objectives/context_research/purpose.md"
+!INCLUDE "../../methods/context_research/purpose.md"

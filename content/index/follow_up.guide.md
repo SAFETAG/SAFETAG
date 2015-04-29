@@ -1,31 +1,31 @@
 ## Follow Up
 
 ### Summary
-!INCLUDE "content/objectives/follow_up/summary.md"
+!INCLUDE "content/methods/follow_up/summary.md"
 
 ### Purpose
-!INCLUDE "content/objectives/follow_up/purpose.md"
+!INCLUDE "content/methods/follow_up/purpose.md"
 
 ### The Flow of Information
 ![ Information Flow](content/images/info_flows/follow_up.svg)
 
 ### Guiding Questions
-!INCLUDE "content/objectives/follow_up/guiding_questions.md"
+!INCLUDE "content/methods/follow_up/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "content/objectives/follow_up/approaches.md"
+!INCLUDE "content/methods/follow_up/approaches.md"
 
 ### Outputs
-!INCLUDE "content/objectives/follow_up/output.md"
+!INCLUDE "content/methods/follow_up/output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/follow_up/operational_security.md"
+!INCLUDE "content/methods/follow_up/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/follow_up/preparation.md"
+!INCLUDE "content/methods/follow_up/preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/follow_up/activities.md"
+!INCLUDE "content/methods/follow_up/activities.md"
 
 ### Resources
 <div class="greybox">

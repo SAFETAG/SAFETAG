@@ -1,31 +1,31 @@
 ## Network Discovery
 
 ### Summary
-!INCLUDE "content/objectives/network_discovery/summary.md"
+!INCLUDE "content/methods/network_discovery/summary.md"
 
 ### Purpose
-!INCLUDE "content/objectives/network_discovery/purpose.md"
+!INCLUDE "content/methods/network_discovery/purpose.md"
 
 ### The Flow of Information
 ![ Information Flow](content/images/info_flows/network_discovery.svg)
 
 ### Guiding Questions
-!INCLUDE "content/objectives/network_discovery/guiding_questions.md"
+!INCLUDE "content/methods/network_discovery/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "content/objectives/network_discovery/approaches.md"
+!INCLUDE "content/methods/network_discovery/approaches.md"
 
 ### Output
-!INCLUDE "content/objectives/network_discovery/output.md"
+!INCLUDE "content/methods/network_discovery/output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/network_discovery/operational_security.md"
+!INCLUDE "content/methods/network_discovery/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/network_discovery/preparation.md"
+!INCLUDE "content/methods/network_discovery/preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/network_discovery/activities.md"
+!INCLUDE "content/methods/network_discovery/activities.md"
 
 ### Resources
 <div class="greybox">

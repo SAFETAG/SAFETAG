@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/audit_preparation/summary.md"
+!INCLUDE "../methods/audit_preparation/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/audit_preparation/purpose.md"
+!INCLUDE "../methods/audit_preparation/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,13 +14,13 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/audit_preparation/guiding_questions.md"
+!INCLUDE "../methods/audit_preparation/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/audit_preparation/approaches.md"
+!INCLUDE "../methods/audit_preparation/approaches.md"
 
-!INCLUDE "../objectives/audit_preparation/activities.md"
+!INCLUDE "../methods/audit_preparation/activities.md"
 
 ### Resources
 

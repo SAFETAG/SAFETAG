@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/network_mapping/summary.md"
+!INCLUDE "../methods/network_mapping/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/network_mapping/purpose.md"
+!INCLUDE "../methods/network_mapping/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,8 +14,8 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/network_mapping/guiding_questions.md"
+!INCLUDE "../methods/network_mapping/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/network_mapping/approaches.md"
+!INCLUDE "../methods/network_mapping/approaches.md"

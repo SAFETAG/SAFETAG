@@ -1,31 +1,31 @@
 ## Risk Modeling
 
 ### Summary
-!INCLUDE "content/objectives/risk_modeling/summary.md"
+!INCLUDE "content/methods/risk_modeling/summary.md"
 
 ### Purpose
-!INCLUDE "content/objectives/risk_modeling/purpose.md"
+!INCLUDE "content/methods/risk_modeling/purpose.md"
 
 ### The Flow of Information
 ![Risk Modeling Information Flow](content/images/info_flows/risk_modeling.svg)
 
 ### Guiding Questions
-!INCLUDE "content/objectives/risk_modeling/guiding_questions.md"
+!INCLUDE "content/methods/risk_modeling/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "content/objectives/risk_modeling/approaches.md"
+!INCLUDE "content/methods/risk_modeling/approaches.md"
 
 ### Outputs
-!INCLUDE "content/objectives/risk_modeling/output.md"
+!INCLUDE "content/methods/risk_modeling/output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/risk_modeling/operational_security.md"
+!INCLUDE "content/methods/risk_modeling/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/risk_modeling/preparation.md"
+!INCLUDE "content/methods/risk_modeling/preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/risk_modeling/activities.md"
+!INCLUDE "content/methods/risk_modeling/activities.md"
 
 ### Resources
 <div class="greybox">

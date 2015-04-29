@@ -21,7 +21,7 @@
 
 ##### Example: Travel Kit Checklist
 
-!INCLUDE "content/activities/travel_kit/index.md"
+!INCLUDE "content/exercises/travel_kit/index.md"
 
 ##### Example: Password Dictionary Creation
 
@@ -29,7 +29,7 @@ See Appendix C: Password Dictionary Creation
 
 ##### Example: Audit Timeline Planning
 
-!INCLUDE "content/activities/safetag_audit_timeline.md"
+!INCLUDE "content/exercises/safetag_audit_timeline.md"
 
 ##### Resources
 

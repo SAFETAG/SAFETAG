@@ -49,9 +49,9 @@
 
 !INCLUDE "content/index/preparation.guide.md"
 
-# Objectives
+# Methods
 
-!INCLUDE "content/objectives/intro.md"
+!INCLUDE "content/methods/intro.md"
 
 \newpage
 <!-- Audit Scoping-->
@@ -159,31 +159,31 @@
 
 # APPENDIX: Draft Engagement and Confidentiality Agreement
 
-!INCLUDE "content/activities/confidentiality_agreement/draft_engagement_agreement.md"
+!INCLUDE "content/exercises/confidentiality_agreement/draft_engagement_agreement.md"
 
 # APPENDIX: Travel Kit and Checklist
 
-!INCLUDE "content/activities/travel_kit/index.md"
+!INCLUDE "content/exercises/travel_kit/index.md"
 
 # APPENDIX: Sample Capacity Interview Questions
 
-!INCLUDE "content/activities/interviews/interview_questions.md"
+!INCLUDE "content/exercises/interviews/interview_questions.md"
 
 # APPENDIX: Password Dictionaries
 
-!INCLUDE "content/activities/password_security/dictionary_creation.md"
+!INCLUDE "content/exercises/password_security/dictionary_creation.md"
 
 # APPENDIX: Password Survey
 
-!INCLUDE "content/activities/password_security/password_survey.md"
+!INCLUDE "content/exercises/password_security/password_survey.md"
 
 # APPENDIX: Recon-ng walkthrough
 
-!INCLUDE "content/activities/automated_recon/recon-ng.md"
+!INCLUDE "content/exercises/automated_recon/recon-ng.md"
 
 # APPENDIX: Device Assessment Checklist
 
-!INCLUDE "content/activities/device_checklist/device_assessment_checklist.md"
+!INCLUDE "content/exercises/device_checklist/device_assessment_checklist.md"
 
 # Footnotes
 

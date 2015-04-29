@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "content/objectives/context_research/summary.md"
+!INCLUDE "content/methods/context_research/summary.md"
 
 ### Purpose
 
-!INCLUDE "content/objectives/context_research/purpose.md"
+!INCLUDE "content/methods/context_research/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,7 +14,7 @@
 
 ### Guiding Questions
 
-!INCLUDE "content/objectives/context_research/guiding_questions.md"
+!INCLUDE "content/methods/context_research/guiding_questions.md"
 
 ### Approaches
 

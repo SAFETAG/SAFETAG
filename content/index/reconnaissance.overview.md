@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/reconnaissance/summary.md"
+!INCLUDE "../methods/reconnaissance/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/reconnaissance/purpose.md"
+!INCLUDE "../methods/reconnaissance/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,9 +14,9 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/reconnaissance/guiding_questions.md"
+!INCLUDE "../methods/reconnaissance/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/reconnaissance/approaches.md"
+!INCLUDE "../methods/reconnaissance/approaches.md"
 

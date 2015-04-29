@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../objectives/user_device_assessment/summary.md"
+!INCLUDE "../methods/user_device_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "../objectives/user_device_assessment/purpose.md"
+!INCLUDE "../methods/user_device_assessment/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,9 +14,9 @@
 
 ### Guiding Questions
 
-!INCLUDE "../objectives/user_device_assessment/guiding_questions.md"
+!INCLUDE "../methods/user_device_assessment/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../objectives/user_device_assessment/approaches.md"
+!INCLUDE "../methods/user_device_assessment/approaches.md"
 
