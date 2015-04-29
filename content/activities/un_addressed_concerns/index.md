@@ -15,7 +15,10 @@
 
 !INCLUDE "materials_needed.md"
 
-##### Considerations
+##### Materials Needed 
+!INCLUDE "materials_needed.md" 
+
+#### Considerations
 
 !INCLUDE "considerations.md"
 

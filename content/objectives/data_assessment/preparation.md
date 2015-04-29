@@ -1,5 +1,3 @@
 
-#### Materials Needed:
-
-* Stickies and markers for activities
-* Flip chart paper or a whiteboard 
+* Facilitation skills or experience is useful for these exercises
+* Carefully review the exercises you plan to use
