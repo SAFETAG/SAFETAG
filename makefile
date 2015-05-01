@@ -2,7 +2,7 @@
 	install submodules pandoc wkhtmltopdf \ #Installation Rules
 	build_dirs \ #Setup Rules
 	pysetup fonts \ #Dependency Rules
-	all_docs adids report guide mini_guide overview clean_docs \ #Document Rules
+	all_docs adids report guide overview clean_docs \ #Document Rules
 
 
 #runs installation, post-installation preperation, and builds all core documents
@@ -158,7 +158,7 @@ overview: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		$(SRC_DIR)/overview.html $(DOC_DIR)/overview.pdf || true
 
 #Create the all SAFETAG documents
-all_docs: adids guide mini_guide overview
+all_docs: adids guide overview
 
 #Get list of all docs and document sources
 ALL_DOCS := $(wildcard $(DOC_DIR)/*.pdf)

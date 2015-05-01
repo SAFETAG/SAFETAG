@@ -1,29 +1,19 @@
+### Activity Title
 
-##### Summary
-
+#### Summary
 !INCLUDE "summary.md"
 
-##### Base Line Skills
+#### Overview
+!INCLUDE "approach.md"
 
-!INCLUDE "base_line_skills.md"
-
-##### Operational Security
-
-!INCLUDE "operational_security.md"
-
-##### Materials Needed
-
+#### Materials Needed
 !INCLUDE "materials_needed.md"
 
-##### Considerations
+#### Considerations
+!INCLUDE "operational_security.md"
 
-!INCLUDE "considerations.md"
+#### Walkthrough
+!INCLUDE "instructions.md"
 
-##### Output
-
-!INCLUDE "output.md"
-
-##### Resources
-
-!INCLUDE "resources.md"
-
+#### Recommendation
+!INCLUDE "recommendations.md"
