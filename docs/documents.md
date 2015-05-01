@@ -1,3 +1,12 @@
+See the SAFETAG wiki at 
+
+https://github.com/OpenInternet/SAFETAG/wiki/Document-Structure
+
+and
+
+https://github.com/OpenInternet/SAFETAG/wiki/Objectives-and-Activities-Map
+
+---
 # Document Types
 
 ## ADIDS
