@@ -1,1 +1,0 @@
-This component consists of an auditor documenting the possible actions the organization could take on to address the vulnerabilities found during the audit and the difficulty of taking on those actions.

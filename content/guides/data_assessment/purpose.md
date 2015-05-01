@@ -1,3 +1,0 @@
-Sensitive files are often stored across multiple devices in different levels of security. By researching not only centralized file shares, but also backups, local copies on laptops and computers, and organizational and personal use of cloud-based systems and the protections against unathorized access, the audit can recommend secure storage solutions which best meet the organizations risk assessment and workflow needs.
-
-While the auditor has insight on some of this based on the Network Access and Network Mapping work, cross-staff understanding and agreement on what constitutes sensitive data will support later organizational change.

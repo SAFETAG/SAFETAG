@@ -1,72 +1,119 @@
-## Mini Guide
 
-The "mini guide" is short overview of the SAFETAG process.
+#Content Structure
 
-  * summary - A short - two to three sentence - basic overview of the methodology.
-  * purpose - The justification for why this methodology is used.
-  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
-  * resources - Links to resources that can be used to deepen an auditors understanding or guide them through the activity.
+## Intro
 
-## Guide
+* Introduction
+* Overview
+* The Audit Life-cycle
+* "Metro" Map
+* Risk Assessment
+* Agency Building
+* Operational Security
 
-The "Guide" is a comprehensive overview of the SAFETAG process.
+## Objectives
 
-  * summary - A short - two to three sentence - basic overview of the methodology.
-  * purpose - The justification for why this methodology is used.
-  * baseline_skills - The minimum skills required to safely carry out this methodology. (only if new skills)
-  * materials_needed - The software or hardware required to carry out this activity. (only if extra materials beyond the norm)
-  * operational_security - Notes on safely carrying out an activity and protecting the data collected.
-  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
-  * preparation - The data or tool configuration needed before this activity can be conducted.
-  * reporting - Notes on what data is captured and how to capture it to support reporting.
-  * resources - Links to resources that can be used to deepen an auditors understanding or guide them through the activity.
+* Quote
+* Summary
+* Information Flow
+* Guiding Questions
+* Base Line Skills
+* Output
+* Preparation
+* Purpose
+* Approaches
+  * Approach
+* Activity
+  * Summary
+  * Instructions
+  * Recommendations
+* Reporting
+* Materials Needed
 
-## Extended Guide
+## Front & Back Matter
 
-The "Guide" is a comprehensive overview of the SAFETAG process.
+* Title Page
+* License
+* Glossary
+* Disclaimers
+* How to Read This Guide
 
-  * summary - A short - two to three sentence - basic overview of the methodology.
-  * purpose - The justification for why this methodology is used.
-  * baseline_skills - The minimum skills required to safely carry out this methodology. (only if new skills)
-  * materials_needed - The software or hardware required to carry out this activity. (only if extra materials beyond the norm)
-  * operational_security - Notes on safely carrying out an activity and protecting the data collected.
-  * approach - Step-by-step explanation of the methodology used that is tool agnostic.
-  * preparation - The data or tool configuration needed before this activity can be conducted.
-  * reporting - Notes on what data is captured and how to capture it to support reporting.
-  * resources - Links to resources that can be used to deepen an auditors understanding or guide them through the activity.
-  *  Examples
-    * instructions - tool-specific step-by-step instructions on how the vulnerability is identified.
-    * exploit - tool-specific step-by-step instructions on how the vulnerability is exploited. (optional)
-    * example - sample content from a false audit.
-    * operational_security - Tool specific operational security notes.
-  
-## ADIDS Manual
+## ADIDS Content
 
-The "ADIDS Manual" is a training curricula used to train auditors on the SAFETAG methodology.
+## Templates
 
-  * SEE templates/adids/
 
-## Audit Report
+# Content Definitions
 
-The "Audit Report" is a comprehensive set of documents the shows the current state of security, the process by which the auditor came to that assessment, and guide the hosts progression to meet their security goals.
+## Intro
 
-### Finding (Summary)
+Introduction
 
-  * summary - A short - two to three sentence - basic overview of the vulnerability.
-  * impact - What process this vulnerability impacts.
-  * risks - The vulnerabilities ranking on the risk matrix.
-  * recommendation - The recommended fix to address this problem.
+Overview
+
+The Audit Life-cycle
+
+"Metro" Map
+
+Risk Assessment
+
+Agency Building
+
+Operational Security
+
+## Objectives
+
+Quote
+
+Summary - A short - two to three sentence - basic overview of the methodology.
+
+Information Flow - The purpose of audit activities is to acquire risk assessment and mitigation information. As this information is acquired, earl er audit will have to be re-visited based upon this information. The "Flow of Information" shows the types of information that an audit activity builds upon (input), and the types of information that an audit activity may reveal (outcomes).
+
+Guiding Questions - Each audit activity is guided by a small set of core questions. Key questions are included to help an auditor identify when they have acquired enough information and customize their approach while still collecting the correct types of information to support the organization.
+
+Output
+
+Preparation
+
+Purpose - The justification for why this methodology is used.
+
+Approaches
+
+Approaches/approach - Many of these audit activities can be completed in multiple ways depending upon auditor skill and the organizational technical setup and capacity. The approach section includes a list of activites that can be used to carry out parts, or the whole, of the information collection for an audit activity.
+
+Activity/Summary - 
+
+Activity/Instructions - activity-specific step-by-step instructions on how to carry out the task
+
+Activity/Base Line Skills - The minimum skills required to safely carry out this methodology. (only if new skills)
+
+Activity/Operational_security - Notes on safely carrying out the activity and protecting the data collected.
+
+Activity/Reporting - Notes on what data is captured and how to capture it to support reporting.
+
+Activity/Recommendations -  Sample text of common recommendations for how to address vulnerabilities identified through this
+activity.
+
+Resources - Links to resources that can be used to deepen an auditors understanding or guide them through the activity.
+
+## Front & Back Matter
+
+Title Page
+
+License
+
+Glossary
+
+Disclaimers
+
+How to Read This Guide
+
+## ADIDS Content
+
+## Templates
+
 
 ### Finding (Detailed)
 
-  * summary - A short - two to three sentence - basic overview of the vulnerability.
-  * description - An longer in-depth - two to three paragraph - overview of the vulnerability.
-  * approach.summary - Step-by-step explanation of the methodology used that is tool agnostic.
-  * impact - What process this vulnerability impacts?
-  * risks - The vulnerabilities ranking on the risk matrix.
-  * recommendation - The recommended fix to address this problem.
-  * resources - Guidance on how to seek out support to address this issue.
-  * skills - The skills needed to address the problem identified. (In Appendix)
-  * approach.detailed - tool-specific step-by-step instructions on how the vulnerability was identified with data attached. (In Appendix)
 
 

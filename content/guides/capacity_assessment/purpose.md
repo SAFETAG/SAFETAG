@@ -1,1 +1,0 @@
-Knowing an organization's strengths and weaknesses will allow the auditor to provide more tailored recommendations that an organization will be more likely to attempt and achieve. The auditor will use this assessment in preparing for the audit itself as well as when evaluating the difficulty of a recommendation.
