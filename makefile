@@ -105,13 +105,13 @@ CURRENT_DIR = $(shell pwd)
 
 #Create the auditor adids guide
 adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py content/index/index.adids.md $(SRC_DIR)/adids.md
-	pandoc -s --variable=title:"ADIDS Guide" \
+	modules/markdown-pp/markdown-pp.py content/index/index.adids.md $(SRC_DIR)/curricula.md
+	pandoc -s --variable=title:"SAFETAG Curricula" \
 		--template=styles/html5.template \
-		--to=html5 $(SRC_DIR)/adids.md \
-		--output=$(SRC_DIR)/adids.html 
+		--to=html5 $(SRC_DIR)/curricula.md \
+		--output=$(SRC_DIR)/curricula.html 
 	wkhtmltopdf --user-style-sheet styles/core.css \
-		--title "SAFETAG ADIDS Curricula" \
+		--title "SAFETAG Curricula" \
 		--disable-smart-shrinking  \
 		--load-error-handling skip \
 		--load-media-error-handling skip \
@@ -119,7 +119,7 @@ adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		--header-right [doctitle] \
 		--outline \
 		--outline-depth 2 \
-		$(SRC_DIR)/adids.html $(DOC_DIR)/adids.pdf || true
+		$(SRC_DIR)/curricula.html $(DOC_DIR)/curricula.pdf || true
 
 #Create the auditor guide
 guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
