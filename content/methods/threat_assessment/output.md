@@ -1,4 +1,7 @@
 
-  * A summary of the most likely threats that the host and auditor may face:
-  * Possible adversaries and their capacity and willingness to act against the host,
-  * Latest general cyber-security threats,
+  * A host driven threat-matrix including the following:
+    * **Adversaries** (threat actors) with capabilities and willingness
+    * **Impacts** of attacks against **critical processes**, ranked by severity
+    * **Likelihood** of each (based on adversaries)
+  * Latest general cyber-security threats
+  * Identify existing in/formal security practices that the participants use to address risks.

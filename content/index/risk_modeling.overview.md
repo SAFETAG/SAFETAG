@@ -1,4 +1,4 @@
-## Risk Modeling
+## Process Mapping and Risk Modeling
 
 ### Summary
 !INCLUDE "content/methods/risk_modeling/summary.md"
