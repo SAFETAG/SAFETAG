@@ -32,3 +32,22 @@
 !INCLUDE "content/references/follow_up_overview.md"
 </div>
 
+<div class="greybox">
+!INCLUDE "content/references/resource_identification.overview.md"
+</div>
+
+<div class="greybox">
+!INCLUDE "content/references/resource_lists.md"
+</div>
+
+<div class="greybox">
+!INCLUDE "content/references/financial_resources.md"
+</div>
+
+<div class="greybox">
+!INCLUDE "content/references/digital_security_training.md"
+</div>
+
+<div class="greybox">
+!INCLUDE "content/references/emergency_resources.md"
+</div>
