@@ -75,6 +75,8 @@
 
   * *Organization:* ["ReliefWeb has been the leading source for reliable and timely humanitarian information on global crises and disasters since 1996."](http://reliefweb.int/) (ReliefWeb)
 
+  * *Reports:* [International NGO Safety](http://www.ngosafety.org/) (NGO proof, subscription required, covers Afghanistan, CAR, DRC, Kenya, Mali, and Syria currently)
+
 **What cyber-security practices is the government using?**
 
   * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports) (Privacy International)
