@@ -10,9 +10,9 @@ Each training session is designed to include:
   * **D**eepening (the hands-on portion of the session), and
   * a **S**ynthesis (wrap-up, review, and Q&A).
 
-Resources:
-https://www.level-up.cc/leading-trainings/preparing-ADIDS-sessions/
-https://www.level-up.cc/resources-for-trainers/pedagogical-resources/adult-learners
-https://www.level-up.cc/leading-trainings/preparing-ADIDS-sessions/
-https://www.level-up.cc/leading-trainings/curriculum-guide
+#### Resources:
+
+* [Preparing ADIDS Sessions](https://www.level-up.cc/leading-trainings/preparing-ADIDS-sessions/)
+* [Adult Learners](https://www.level-up.cc/resources-for-trainers/pedagogical-resources/adult-learners)
+* [How to Use the Level Up Training Curriculum](https://www.level-up.cc/leading-trainings/curriculum-guide)
 

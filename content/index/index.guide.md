@@ -27,8 +27,6 @@
 
 !INCLUDE "content/document_matter/audit_lifecycle.md"
 
-![SAFETAG Activities](content/images/activities_flow.svg)
-
 \newpage
 <!-- Risk Modeling -->
 

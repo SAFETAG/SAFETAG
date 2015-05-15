@@ -17,11 +17,11 @@
 
 <!-- Overview -->
 
-## The SAFETAG Process
-
 !INCLUDE "content/document_matter/overview.md"
 
-![The Safetag Audit Process](../../images/expertiese_vertical.svg)\
+![SAFETAG Activities](content/images/activities_flow.svg)
+
+![The Safetag Audit Process](content/images/expertiese_vertical.svg)
 
 \newpage
 
@@ -61,7 +61,7 @@
 
 # PART ONE: Agreement and Information Gathering
 
-![The Pre-Audit](../../images/pre_audit_expertiese.svg)\
+![The Pre-Audit](content/images/pre_audit_expertiese.svg)
 
 
 \newpage
@@ -84,7 +84,7 @@
 
 # PART TWO: The Audit
 
-![Pre-Audit](../../images/audit_expertiese.svg)\
+![Pre-Audit](content/images/audit_expertiese.svg)\
 
 \newpage
 <!-- Remote Assessment -->
@@ -152,7 +152,7 @@
 
 # PART THREE: Analysis and Reporting
 
-![The Post-Audit](../../images/post_audit_expertiese.svg)\
+![The Post-Audit](content/images/post_audit_expertiese.svg)\
 
 \newpage
 <!-- Vulnerability Prioritization -->
