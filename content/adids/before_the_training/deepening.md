@@ -1,8 +1,8 @@
 ### Deepening
 
-Below are a selection of homework assigments that can be used, or the trainer can adapt and create new ones.  We recommend steering away from assignments that would gather overly sensitive information before having taken trainees through an operational security session, and strongly advise against any "active" scans such as nmap or OpenVAS.
+Below are a selection of homework assignments that can be used, or the trainer can adapt and create new ones.  We recommend steering away from assignments that would gather overly sensitive information before having taken trainees through an operational security session, and strongly advise against any "active" scans such as nmap or OpenVAS.
 
-Trainees should either first go through the Build SAFETAG homework assginment, or be given the relevant cropped section(s) and appendices from the full SAFETAG giide.
+Trainees should either first go through the Build SAFETAG homework assignment, or be given the relevant cropped section(s) and appendices from the full SAFETAG guide.
 
 #### Homework Assignment: Build SAFETAG ####
 
@@ -18,18 +18,13 @@ You will want to set up an encrypted container to save the results of the below 
 
 You will also want to perform most of this research over tor or via a similar anonymizing proxy.
 
-With this organization in mind, go through the Context Research section of the SAFETAG guide (attached) and build an initial context
-report (one that does not mention the specific organization) on regional threats.  The real meat in this chapter is in the resources
-section at the end - finding what local and regional digital, legal, and physical threats are relevant is very important to understanding
-the environment an organization with operating within.  Even if this is a country you are familiar with, refreshing your understanding is
-key - are large online platforms responding to government information requests?  How many?  Is encryption illegal in any way?  Are digital
-attacks common?  Are there any current events or recent laws that could affect the organization or your ability to safely carry out the
-audit?
+With this organization in mind, go through the Context Research section of the SAFETAG guide (attached) and build an initial context report (one that does not mention the specific  organization) on regional threats.  The real meat in this chapter is in the resources section at the end - finding what local and regional digital, legal, and physical threats are relevant is very important to understanding the environment an organization with operating within.  Even if this is a country you are familiar with, refreshing your understanding is key - are large online platforms responding to government information requests?  How many?  Is encryption illegal in any way?  Are digital attacks common?  Are there any current events or recent laws that could affect the organization or your ability to safely carry out the audit?
 
 
 #### Homework Assignment: Recon-ng Setup ####
 
 (STUB)
+
  * Setup a VPN (tor won't work for this)
  * Gather API keys for use with recon-ng
 
