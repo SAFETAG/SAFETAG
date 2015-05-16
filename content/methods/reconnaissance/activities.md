@@ -1,6 +1,6 @@
 
 <div class="boxtext">
-Google dorking and other searches
+!INCLUDE "../../exercises/manual_recon/index.md"
 </div>
 
 <div class="boxtext">
