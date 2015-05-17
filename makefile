@@ -78,7 +78,7 @@ DATE_DIR := $(shell date +%Y_%m_%d_%H_%M_%S)
 audit: $(DATE_DIR)
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
 	#@python modules/audit_setup.py --directory audit/$(DATE_DIR)
-	cp -fr templates/audit/. audit/$(DATE_DIR)/
+	cp -fr content/templates/audit/. audit/$(DATE_DIR)/
 	cp styles/core.css audit/$(DATE_DIR)/build/core.css
 
 $(DATE_DIR):
