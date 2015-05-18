@@ -16,7 +16,11 @@ Google dorking tricks:
 
 ##### Social Media / Account Discovery
 
-* Use tools such as [namechk](https://namechk.com/) to find similar or organizationally-linked usernames across other social media accounts
+* Use tools such as [KnowEm](http://knowem.com/checksocialnames.php), [namechk](https://namechk.com/), or [namechecklist](http://www.namechecklist.com/) to find similar or organizationally-linked usernames across other social media accounts.
+
+##### Additional Tools
+
+* GlassDoor can provide insight (mostly for larger organizations) on whether there might be disgruntled former (or current) employees.
 
 ##### Pastebin Searching
 

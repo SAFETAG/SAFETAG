@@ -1,7 +1,7 @@
 
 #### Recon-ng
 
-  * *Site:* ["Recon-ng: Website"](https://bitbucket.org/LaNMaSteR53/recon-ng/overview) (Bitbucket)
+  * *Site:* ["Recon-ng: Website"](https://bitbucket.org/LaNMaSteR53/recon-ng/overview) (Bitbu  * *Guide:* [The Recon-ng Frameworkcket)
   
   * *Type:* ["Recon-ng: Usage Guide"](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide) (Bitbucket)
   
@@ -12,5 +12,7 @@
   * *Video:* [Tektip ep26 - Information gathering with Recon-ng Video Tutorial](http://www.tekdefense.com/news/2013/3/24/tektip-ep26-information-gathering-with-recon-ng.html)
 
   * *Guide:* [The Recon-ng Framework : Automated Information Gathering](http://resources.infosecinstitute.com/the-recon-ng-framework-automated-information-gathering/)
+
+  * *Guide:* [The Recon-ng Framework : Updated modules](http://resources.infosecinstitute.com/basic-updated-guide-to-recon-ng-plus-new-modules-rundown/)
 
    * *Blog:* [Professionally Evil Toolkit - Recon-ng](http://blog.secureideas.com/2013/11/professionally-evil-toolkit-recon-ng.html)
