@@ -33,4 +33,7 @@
 !INCLUDE "content/references/network_mapping.overview.md"
 
 !INCLUDE "content/references/network_mapping_methods.md"
+
+!INCLUDE "content/references/nmap_scanning.md"
+
 </div>

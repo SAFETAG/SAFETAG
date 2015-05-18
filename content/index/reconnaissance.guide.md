@@ -29,13 +29,12 @@
 
 ### Resources
 <div class="greybox">
-!INCLUDE "../references/remote_assessment.overview.md"
 
 !INCLUDE "../references/open_source_intel.md"
 
-!INCLUDE "../references/advanced_searching.md"
-
 !INCLUDE "../references/org_info_gathering.md"
+
+!INCLUDE "../references/advanced_searching.md"
 
 !INCLUDE "../references/pastebin_searching.md"
 

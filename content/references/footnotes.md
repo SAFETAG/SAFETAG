@@ -226,15 +226,6 @@
 
 [^security_focus]:["Security Focus Vulnerability Search"](http://www.securityfocus.com/)
 
-<!-- Guides -->
-
-[^toolsmith_recon_ng]:[toolsmith guide to Recon-ng](http://holisticinfosec.blogspot.com/2013/05/toolsmith-recon-ng.html)
-
-[^tektip_recon-ng]:[Tektip ep26 - Information gathering with Recon-ng Video Tutorial](http://www.tekdefense.com/news/2013/3/24/tektip-ep26-information-gathering-with-recon-ng.html)
-
-[^infosec_institute_recon-ng_guide]:[The Recon-ng Framework : Automated Information Gathering](http://resources.infosecinstitute.com/the-recon-ng-framework-automated-information-gathering/)
-
-[^secure_ideas_recon-ng]:[Professionally Evil Toolkit - Recon-ng](http://blog.secureideas.com/2013/11/professionally-evil-toolkit-recon-ng.html)
 <!-- Technical Training & Guides -->
 
 [^security_tube]:["Comprehensive, Hands-on, Practical and Affordable infosec training."](http://www.securitytube.net)

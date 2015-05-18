@@ -14,4 +14,3 @@
   * *Resource List:* ["Website Vulnerability Scanning Resources"](#website-vulnerability-scanning) (SAFETAG)
 
   * *Resource List:* ["nmap Scanning Resources"](#nmap-scanning) (SAFETAG)
-

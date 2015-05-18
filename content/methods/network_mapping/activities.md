@@ -16,6 +16,7 @@ Covered in full in  Vulnerability Scanning and Analysis
 </div>
 
 <div class="boxtext">
+
 ### Wireless Range Mapping
 
 Covered in full in Network Discovery
@@ -24,6 +25,7 @@ Covered in full in Network Discovery
 </div>
 
 <div class="boxtext">
+
 ### Monitor Open Wireless Traffic
 
 Covered in full in Network Discovery
