@@ -1,3 +1,3 @@
 ### What Participants Will Learn
 
-Participants will learn the basics of listening to wireless network traffic to identify an organization's network, acquiring the information needed to break in to the network, and the role of device beacons.
+Methods to work with organizations to discuss how they manage and store their data, and the risks involved.
