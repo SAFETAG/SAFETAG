@@ -214,18 +214,6 @@
 
 [^packetstorm_news]:["Packet Storm News"](http://packetstormsecurity.com/files/)
 
-<!-- Vulnerability Databases -->
-
-[^OSVDB]:["Open Sourced Vulnerability Database"](http://osvdb.org/)
-
-[^cve_search]:[Search CVE and CCE Vulnerability Database](https://web.nvd.nist.gov/view/vuln/search-advanced)
-
-[^threat_explorer]:["Threat Explorer"](http://us.norton.com/security_response/threatexplorer/vulnerabilities.jsp)
-
-[^exploit_database]:["The Exploit Database"](http://www.exploit-db.com/)
-
-[^security_focus]:["Security Focus Vulnerability Search"](http://www.securityfocus.com/)
-
 <!-- Technical Training & Guides -->
 
 [^security_tube]:["Comprehensive, Hands-on, Practical and Affordable infosec training."](http://www.securitytube.net)
