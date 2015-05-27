@@ -28,7 +28,7 @@
 
   * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) ( Global Cybersecurity Index (GCI))
 
-  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports) (Privacy International)
+  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/?q=reports) (Privacy International)
 
   * *Organization:* ["The Citizen Lab is an interdisciplinary laboratory based at the Munk School of Global Affairs, University of Toronto, Canada focusing on advanced research and development at the intersection of Information and Communication Technologies (ICTs), human rights, and global security."](https://citizenlab.org/) (The Citizen Lab)
 
