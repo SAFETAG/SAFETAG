@@ -1,0 +1,3 @@
+### What Participants Will Learn
+
+The remote assessment section overall focuses on enumerating the public facing digital aspects of an organization - both things like servers and email hosts as well as information about the organization that could be used to build convincing phishing emails.  SAFETAG has adopted a selection of tools which participants will be trained on, but there are many other tools and manual approaches available.
