@@ -1,1 +1,0 @@
-Schedule and have a follow up call to discuss the audit report.  This provides a valuable touch-point for the organization to read the report and ask any clarifying questions to the auditor, as well as for the auditor to underscore any important steps for the organization.  

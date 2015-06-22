@@ -1,2 +1,0 @@
-### Why It Matters
-

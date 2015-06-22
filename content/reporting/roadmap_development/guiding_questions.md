@@ -1,2 +1,0 @@
-* Compare the resources required against the capabilities identified in the risk modeling activities and the contextual research you completed. 
-* Based upon the organizational capacity assessment, build a menu that builds upon the organizational strengths to create a path forward that provides achievable outcomes, maintains agency, and steps towards long-term difficult outcomes with high reward for the host.
