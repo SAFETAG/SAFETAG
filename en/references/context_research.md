@@ -3,7 +3,7 @@
 
   * *Article:* ["Section 2.3 Context analysis p. 30"](http://www.odihpn.org/index.php?option=com_k2&view=item&layout=item&id=3159) (Operational Security Management in Violent Environments: (Revised Edition))
   
-  * *Guide:* ["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-en/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf) (Jonathan T. Dworken)
+  * *Guide:* ["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-content/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf) (Jonathan T. Dworken)
 
 #### Threats to the Auditor
 
@@ -24,7 +24,7 @@
 
   * *List:* ["Foreign travel advice"](https://www.gov.uk/foreign-travel-advice) (GOV.UK)
 
-* *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/en/passports/english/alertswarnings.html) (US Department of State)
+* *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/content/passports/english/alertswarnings.html) (US Department of State)
 
   * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission) 
 
