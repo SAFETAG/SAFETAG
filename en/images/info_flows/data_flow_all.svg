@@ -24,20 +24,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.6805457"
-     inkscape:cx="181.70088"
-     inkscape:cy="69.618868"
+     inkscape:zoom="1.1805462"
+     inkscape:cx="601.17525"
+     inkscape:cy="297.84981"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1871"
+     inkscape:window-width="1920"
      inkscape:window-height="1056"
-     inkscape:window-x="49"
-     inkscape:window-y="24"
+     inkscape:window-x="1920"
+     inkscape:window-y="37"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4833">
@@ -979,5 +979,179 @@
          id="path4035"
          d="m 244.53458,493.16388 0,0.84961 c -0.25391,-0.1302 -0.51759,-0.22786 -0.79102,-0.29297 -0.27344,-0.0651 -0.55664,-0.0977 -0.84961,-0.0977 -0.44596,1e-5 -0.78125,0.0684 -1.00586,0.20508 -0.22135,0.13673 -0.33203,0.3418 -0.33203,0.61524 0,0.20833 0.0797,0.37272 0.23926,0.49316 0.1595,0.11719 0.48014,0.2295 0.96191,0.33691 l 0.30762,0.0684 c 0.63802,0.13673 1.09049,0.33041 1.35742,0.58106 0.27018,0.2474 0.40527,0.59408 0.40528,1.04004 -1e-5,0.50781 -0.20183,0.90983 -0.60547,1.20605 -0.4004,0.29623 -0.95216,0.44434 -1.65528,0.44434 -0.29297,0 -0.59896,-0.0293 -0.91797,-0.0879 -0.31575,-0.0553 -0.64941,-0.13998 -1.00097,-0.25391 l 0,-0.92773 c 0.33203,0.17252 0.65918,0.30273 0.98144,0.39062 0.32227,0.0846 0.64128,0.12696 0.95703,0.12696 0.42318,0 0.7487,-0.0716 0.97657,-0.21485 0.22786,-0.14648 0.34179,-0.35156 0.34179,-0.61523 0,-0.24414 -0.083,-0.43132 -0.24902,-0.56153 -0.16276,-0.1302 -0.52246,-0.25553 -1.0791,-0.37597 l -0.3125,-0.0732 c -0.55664,-0.11718 -0.95866,-0.29622 -1.20606,-0.5371 -0.24739,-0.24414 -0.37109,-0.5778 -0.37109,-1.00098 0,-0.51432 0.18229,-0.91145 0.54688,-1.19141 0.36458,-0.27994 0.88215,-0.41991 1.55273,-0.41992 0.33203,1e-5 0.64453,0.0244 0.9375,0.0732 0.29296,0.0488 0.56315,0.12208 0.81055,0.21973" />
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text Layer"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="123.98254"
+       y="32.550873"
+       id="text3154"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3156"
+         x="123.98254"
+         y="32.550873"
+         style="font-size:10px">Threats</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="373.87372"
+       y="32.322392"
+       id="text3154-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3156-5"
+         x="373.87372"
+         y="32.322392"
+         style="font-size:10px">Threats</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="26.947275"
+       y="46.806274"
+       id="text3201"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3203"
+         x="26.947275"
+         y="46.806274"
+         style="font-size:10px">Actors</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="472.55466"
+       y="77.358307"
+       id="text3205"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3207"
+         x="472.55466"
+         y="77.358307"
+         style="font-size:10px">Barriers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="476.98108"
+       y="46.795654"
+       id="text3201-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3203-9"
+         x="476.98108"
+         y="46.795654"
+         style="font-size:10px">Actors</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
+       x="22.659492"
+       y="77.380836"
+       id="text3205-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3207-4"
+         x="22.659492"
+         y="77.380836"
+         style="font-size:10px;fill:#999999">Barriers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
+       x="26.576681"
+       y="106.94794"
+       id="text3251"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3253"
+         x="26.576681"
+         y="106.94794"
+         style="font-size:10px;fill:#999999">Assets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="476.68304"
+       y="106.98856"
+       id="text3251-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3253-6"
+         x="476.68304"
+         y="106.98856"
+         style="font-size:10px;fill:#999999">Assets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="120.54187"
+       y="62.55909"
+       id="text3276"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3278"
+         x="120.54187"
+         y="62.55909"
+         style="font-size:10px;fill:#999999">Capacity</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="370.59967"
+       y="62.425823"
+       id="text3276-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3278-7"
+         x="370.59967"
+         y="62.425823"
+         style="font-size:10px;fill:#999999">Capacity</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="119.46798"
+       y="92.473015"
+       id="text3301"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3303"
+         x="119.46798"
+         y="92.473015"
+         style="font-size:10px">Activities</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="369.53595"
+       y="92.535736"
+       id="text3301-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3303-4"
+         x="369.53595"
+         y="92.535736"
+         style="font-size:10px">Activities</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="107.36462"
+       y="122.38081"
+       id="text3347"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3349"
+         x="107.36462"
+         y="122.38081"
+         style="font-size:10px">Vulnerabilities</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans"
+       x="357.32852"
+       y="122.4767"
+       id="text3347-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3349-9"
+         x="357.32852"
+         y="122.4767"
+         style="font-size:10px;fill:#999999">Vulnerabilities</tspan></text>
   </g>
 </svg>
