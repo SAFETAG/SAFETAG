@@ -1,48 +1,48 @@
 
 ##  Introduction to SAFETAG
 
-!INCLUDE "content/adids/introduction/summary.md"
+!INCLUDE "en/adids/introduction/summary.md"
 
 <!-- Why The Topic Matters -->
 
-!INCLUDE "content/adids/introduction/why_it_matters.md"
+!INCLUDE "en/adids/introduction/why_it_matters.md"
 
 <!--  What Participants Will Learn -->
 
-!INCLUDE "content/adids/introduction/what_participants_will_learn.md"
+!INCLUDE "en/adids/introduction/what_participants_will_learn.md"
 
 <!-- Objectives {.sidebar} -->
 
-!INCLUDE "content/adids/introduction/objectives.md"
+!INCLUDE "en/adids/introduction/objectives.md"
 
 <!-- Baseline Skills -->
 
-!INCLUDE "content/adids/introduction/baseline_skills.md"
+!INCLUDE "en/adids/introduction/baseline_skills.md"
 
 <!-- Before you Start -->
 
-!INCLUDE "content/adids/introduction/before_you_start.md"
+!INCLUDE "en/adids/introduction/before_you_start.md"
 
 <!-- Materials Needed [stub] -->
 
-!INCLUDE "content/adids/introduction/materials_needed.md"
+!INCLUDE "en/adids/introduction/materials_needed.md"
 
 <!--Activity [stub] {.activity} -->
 
-!INCLUDE "content/adids/introduction/activity.md"
+!INCLUDE "en/adids/introduction/activity.md"
 
 <!--Discussion [stub] -->
 
-!INCLUDE "content/adids/introduction/discussion.md"
+!INCLUDE "en/adids/introduction/discussion.md"
 
 <!-- Input -->
 
-!INCLUDE "content/adids/introduction/input.md"
+!INCLUDE "en/adids/introduction/input.md"
 
 <!-- Deepening -->
 
-!INCLUDE "content/adids/introduction/deepening.md"
+!INCLUDE "en/adids/introduction/deepening.md"
 
 <!--Synthesis [stub] {.synthesis} -->
 
-!INCLUDE "content/adids/introduction/synthesis.md"
+!INCLUDE "en/adids/introduction/synthesis.md"

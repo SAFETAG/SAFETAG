@@ -1,7 +1,7 @@
 	
 <!-- License -->
 
-!INCLUDE "content/document_matter/license.md"
+!INCLUDE "en/document_matter/license.md"
 
 \newpage
 
@@ -9,139 +9,139 @@
 
 # Introduction
 
-!INCLUDE "content/document_matter/introduction.md"
+!INCLUDE "en/document_matter/introduction.md"
 
 \newpage
 
-!INCLUDE "content/document_matter/how_to_read_this_guide.overview.md"
+!INCLUDE "en/document_matter/how_to_read_this_guide.overview.md"
 
 \newpage
 
 <!-- Overview -->
 
-!INCLUDE "content/document_matter/overview.md"
+!INCLUDE "en/document_matter/overview.md"
 
 \newpage
 
 <!-- Audit Lifecyce -->
 
-!INCLUDE "content/document_matter/audit_lifecycle.md"
+!INCLUDE "en/document_matter/audit_lifecycle.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "content/document_matter/risk_assessment.md"
+!INCLUDE "en/document_matter/risk_assessment.md"
 
 \newpage
 <!-- Agency Building -->
 
-!INCLUDE "content/document_matter/agency_building.md"
+!INCLUDE "en/document_matter/agency_building.md"
 
 \newpage
 <!-- Operational Security -->
 
-!INCLUDE "content/document_matter/operational_security.md"
+!INCLUDE "en/document_matter/operational_security.md"
 
 \newpage
 <!-- Audit Prep-->
-!INCLUDE "content/index/preparation.overview.md"
+!INCLUDE "en/index/preparation.overview.md"
 
 # Methods
 
-!INCLUDE "content/methods/intro.md"
+!INCLUDE "en/methods/intro.md"
 
 \newpage
 <!-- Audit Scoping-->
 
-!INCLUDE "content/index/context_research.overview.md"
+!INCLUDE "en/index/context_research.overview.md"
 
 \newpage
 
-!INCLUDE "content/index/capacity_assessment.overview.md"
+!INCLUDE "en/index/capacity_assessment.overview.md"
 
 
 \newpage
 <!-- Recon-->
 
-!INCLUDE "content/index/reconnaissance.overview.md"
+!INCLUDE "en/index/reconnaissance.overview.md"
 
 \newpage
 <!-- Network Discovery-->
 
-!INCLUDE "content/index/network_discovery.overview.md"
+!INCLUDE "en/index/network_discovery.overview.md"
 
 \newpage
 <!-- Network Access -->
 
-!INCLUDE "content/index/network_access.overview.md"
+!INCLUDE "en/index/network_access.overview.md"
 
 \newpage
 <!-- Network Mapping -->
 
-!INCLUDE "content/index/network_mapping.overview.md"
+!INCLUDE "en/index/network_mapping.overview.md"
 
 \newpage
 <!-- User Device Assessment -->
 
-!INCLUDE "content/index/user_device_assessment.overview.md"
+!INCLUDE "en/index/user_device_assessment.overview.md"
 
 \newpage
 <!-- Vulnerability Analysis -->
 
-!INCLUDE "content/index/vulnerability_scanning.overview.md"
+!INCLUDE "en/index/vulnerability_scanning.overview.md"
 
 \newpage
 <!-- Data Assessment (assets) -->
 
-!INCLUDE "content/index/data_assessment.overview.md"
+!INCLUDE "en/index/data_assessment.overview.md"
 
 \newpage
 <!-- Physical Assessment -->
 
-!INCLUDE "content/index/physical_assessment.overview.md"
+!INCLUDE "en/index/physical_assessment.overview.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "content/index/risk_modeling.overview.md"
+!INCLUDE "en/index/risk_modeling.overview.md"
 
 \newpage
 <!-- Threat Assessment -->
 
-!INCLUDE "content/index/threat_assessment.overview.md"
+!INCLUDE "en/index/threat_assessment.overview.md"
 
 \newpage
 <!-- Responsive Support -->
 
-!INCLUDE "content/index/responsive_support.overview.md"
+!INCLUDE "en/index/responsive_support.overview.md"
 
 \newpage
 <!-- Debrief -->
 
-!INCLUDE "content/index/debrief.overview.md"
+!INCLUDE "en/index/debrief.overview.md"
 
 
 \newpage
 <!-- Follow Up -->
 
-!INCLUDE "content/index/follow_up.overview.md"
+!INCLUDE "en/index/follow_up.overview.md"
 
 # Reporting
 
 \newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "content/index/recommendation_development.overview.md"
+!INCLUDE "en/index/recommendation_development.overview.md"
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "content/index/roadmap_development.overview.md"
+!INCLUDE "en/index/roadmap_development.overview.md"
 
 \newpage
 <!-- Reporting Creation -->
 
-!INCLUDE "content/index/report_creation.overview.md"
+!INCLUDE "en/index/report_creation.overview.md"
 
 \newpage
 
@@ -149,10 +149,10 @@
 # Footnotes
 
 <!-- Load Footnotes -->
-!INCLUDE "content/references/footnotes.md"
+!INCLUDE "en/references/footnotes.md"
 
 <!-- Update Footnotes for overview -->
-!INCLUDE "content/references/footnotes.overview.md"
+!INCLUDE "en/references/footnotes.overview.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"

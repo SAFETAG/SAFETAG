@@ -7,7 +7,7 @@
 !INCLUDE "../methods/reconnaissance/purpose.md"
 
 ### The Flow Of Information
-![Reconnaissance Information Flow](content/images/info_flows/reconnaissance.svg)
+![Reconnaissance Information Flow](en/images/info_flows/reconnaissance.svg)
 
 ### Guiding Questions
 !INCLUDE "../methods/reconnaissance/guiding_questions.md"
@@ -16,13 +16,13 @@
 !INCLUDE "../methods/reconnaissance/approaches.md"
 
 ### Outputs
-!INCLUDE "content/methods/reconnaissance/output.md"
+!INCLUDE "en/methods/reconnaissance/output.md"
 
 ### Operational Security
-!INCLUDE "content/methods/reconnaissance/operational_security.md"
+!INCLUDE "en/methods/reconnaissance/operational_security.md"
 
 ### Preparation
-!INCLUDE "content/methods/reconnaisance/preparation.md"
+!INCLUDE "en/methods/reconnaisance/preparation.md"
 
 ### Activities
 !INCLUDE "../methods/reconnaissance/activities.md"

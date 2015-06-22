@@ -1,33 +1,33 @@
 ## Objective Title
 
 ### Summary
-!INCLUDE "content/objectives/ /summary.md"
+!INCLUDE "en/objectives/ /summary.md"
 
 ### Purpose
-!INCLUDE "content/objectives/ /purpose.md"
+!INCLUDE "en/objectives/ /purpose.md"
 
 ### The Flow of Information
-![ Information Flow](content/images/info_flows/ .svg)
+![ Information Flow](en/images/info_flows/ .svg)
 
 ### Guiding Questions
-!INCLUDE "content/objectives/ /guiding_questions.md"
+!INCLUDE "en/objectives/ /guiding_questions.md"
 
 ### Approaches
-!INCLUDE "content/objectives/ /approaches.md"
+!INCLUDE "en/objectives/ /approaches.md"
 
 ### Outputs
-!INCLUDE "content/objectives/ /output.md"
+!INCLUDE "en/objectives/ /output.md"
 
 ### Operational Security
-!INCLUDE "content/objectives/ /operational_security.md"
+!INCLUDE "en/objectives/ /operational_security.md"
 
 ### Preparation
-!INCLUDE "content/objectives/ /preparation.md"
+!INCLUDE "en/objectives/ /preparation.md"
 
 ### Activities
-!INCLUDE "content/objectives/ /activities.md"
+!INCLUDE "en/objectives/ /activities.md"
 
 ### Resources
 <div class="greybox">
-<!-- (direct includes to content/references/) -->
+<!-- (direct includes to en/references/) -->
 </div>

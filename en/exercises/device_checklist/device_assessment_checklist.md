@@ -48,7 +48,7 @@ Installed updates
 
 Control Panel Programs and features installed updates
 CLI:
-http://www.techsupportalert.com/content/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
+http://www.techsupportalert.com/en/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
 
 **Windows 7**
 

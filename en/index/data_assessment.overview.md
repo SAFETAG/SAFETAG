@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Data Assessment Information Flow](content/images/info_flows/data_assessment.svg)
+![Data Assessment Information Flow](en/images/info_flows/data_assessment.svg)
 
 ### Guiding Questions
 

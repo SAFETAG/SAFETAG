@@ -2,19 +2,19 @@
 
 ### Summary
 
-!INCLUDE "content/methods/context_research/summary.md"
+!INCLUDE "en/methods/context_research/summary.md"
 
 ### Purpose
 
-!INCLUDE "content/methods/context_research/purpose.md"
+!INCLUDE "en/methods/context_research/purpose.md"
 
 ### The Flow Of Information
 
-![Context Research Information Flow](content/images/info_flows/context_research.svg)
+![Context Research Information Flow](en/images/info_flows/context_research.svg)
 
 ### Guiding Questions
 
-!INCLUDE "content/methods/context_research/guiding_questions.md"
+!INCLUDE "en/methods/context_research/guiding_questions.md"
 
 ### Approaches
 

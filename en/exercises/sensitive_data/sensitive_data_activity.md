@@ -60,7 +60,7 @@ For a small group, this can be done as a "live" brainstorm.  For larger groups t
 
 An example may look something like this:
 
-![Level Up Backup Matrix Example](content/adids/data_assessment/backup-matrix-example.png)
+![Level Up Backup Matrix Example](en/adids/data_assessment/backup-matrix-example.png)
 
 Explain that this gives us an idea of where our data is. Elicit whether or not this is all the data we generate? Of course it isn't: It's only a small percentage.
 

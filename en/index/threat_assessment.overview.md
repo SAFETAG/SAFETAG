@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Threat Assessment Information Flow](content/images/info_flows/threat_assessment.svg)
+![Threat Assessment Information Flow](en/images/info_flows/threat_assessment.svg)
 
 ### Guiding Questions
 

@@ -60,7 +60,7 @@
 
   * *List:* ["Travel Advice"](http://www.smartraveller.gov.au/) (Australian Government)
 
-  * *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/content/passports/english/alertswarnings.html) (US Department of State)
+  * *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/en/passports/english/alertswarnings.html) (US Department of State)
 
   * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission) 
 

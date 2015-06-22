@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Audit Preparation Information Flow](content/images/info_flows/audit_preparation.svg)
+![Audit Preparation Information Flow](en/images/info_flows/audit_preparation.svg)
 
 ### Guiding Questions
 

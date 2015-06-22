@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Network Mapping Information Flow](content/images/info_flows/network_mapping.svg)
+![Network Mapping Information Flow](en/images/info_flows/network_mapping.svg)
 
 ### Guiding Questions
 

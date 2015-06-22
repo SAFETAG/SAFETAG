@@ -78,7 +78,7 @@ DATE_DIR := $(shell date +%Y_%m_%d_%H_%M_%S)
 audit: $(DATE_DIR)
 	@echo "Setting up a new audit in audit folder $(DATE_DIR)"
 	#@python modules/audit_setup.py --directory audit/$(DATE_DIR)
-	cp -fr content/templates/audit/. audit/$(DATE_DIR)/
+	cp -fr en/templates/audit/. audit/$(DATE_DIR)/
 	cp styles/core.css audit/$(DATE_DIR)/build/core.css
 
 $(DATE_DIR):
@@ -95,17 +95,17 @@ ifeq ("$(PY_SETUP_NOT_INST)", "not installed")
 	$(error "ERROR: Please install [python-setuptools]. It is required for the markdown preprocessor used in SAFETAG. (On Debian/Ubuntu, apt-get install python-setuptools.).")
 endif
 
-build/src/content:
+build/src/en:
 	@echo Creating content link for pdf creation
-	ln -s ../../content/ build/src/content
+	ln -s ../../en/ build/src/en
 
 # =============== Report Generation =================
 
 CURRENT_DIR = $(shell pwd)
 
 #Create the auditor adids guide
-adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py content/index/index.adids.md $(SRC_DIR)/curricula.md
+adids: | $(SRC_DIR) $(DOC_DIR) build/src/en
+	modules/markdown-pp/markdown-pp.py en/index/index.adids.md $(SRC_DIR)/curricula.md
 	pandoc -s --variable=title:"SAFETAG Curricula" \
 		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/curricula.md \
@@ -122,8 +122,8 @@ adids: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		$(SRC_DIR)/curricula.html $(DOC_DIR)/curricula.pdf || true
 
 #Create the auditor guide
-guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py content/index/index.guide.md $(SRC_DIR)/guide.md
+guide: | $(SRC_DIR) $(DOC_DIR) build/src/en
+	modules/markdown-pp/markdown-pp.py en/index/index.guide.md $(SRC_DIR)/guide.md
 	pandoc -s --variable=title:"Full Guide" \
 		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/guide.md \
@@ -140,8 +140,8 @@ guide: | $(SRC_DIR) $(DOC_DIR) build/src/content
 		$(SRC_DIR)/guide.html $(DOC_DIR)/guide.pdf
 
 #Create the auditor overview
-overview: | $(SRC_DIR) $(DOC_DIR) build/src/content
-	modules/markdown-pp/markdown-pp.py content/index/index.overview.md $(SRC_DIR)/overview.md
+overview: | $(SRC_DIR) $(DOC_DIR) build/src/en
+	modules/markdown-pp/markdown-pp.py en/index/index.overview.md $(SRC_DIR)/overview.md
 	pandoc -s --variable=title:"Overview" \
 		--template=styles/html5.template \
 		--to=html5 $(SRC_DIR)/overview.md \

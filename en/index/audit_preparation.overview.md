@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Engagement Planning Information Flow](content/images/info_flows/engagement_planning.svg)
+![Engagement Planning Information Flow](en/images/info_flows/engagement_planning.svg)
 
 ### Guiding Questions
 
