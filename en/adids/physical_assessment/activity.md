@@ -2,6 +2,8 @@
 
 This activity invites participants to explore a mock room or a “risky space” (a place that has been set aside in the training venue, or a separate room) to identify potential risks to equipment and data. In this activity, the space is prepared in advance and the trainer will keep a list of risks that have been intentionally left for participants to find.
 
+(Adapted from the "Risk Hunting" exercise in [SaferJourno](https://saferjourno.internews.org/pdf/SaferJourno_Guide.pdf))
+
 #### Preparation
 
 Prior to the start of the class, the trainer prepares the “risky space” with several risks left intentionally visible. These might include:
@@ -35,3 +37,13 @@ At the start of the exercise, the trainer explains that the purpose of the modul
   * Reminds participants that some “risks” will be obvious while others may not be obvious to all members in the group, and encourages discussion among participants to explore their views.
   * When 10 minutes are left in the activity, asks teams to take turns presenting their “risks list” and to explain why individual items on the list might create a risk.
   * Takes some time to point out any prepared risks that the group has not identified.
+
+#### Alternatives
+
+1. In cases where there is insufficient time or room to create the “risky space,” the trainer may
+wish to substitute this activity with the “Day in the Life,” described at the LevelUp website.
+
+2. In cases in which participants belong to the same media organization and the event takes
+place at their office, trainers may prefer to divide the class into teams and ask participants to
+assess their normal work surroundings. This encourages participants to look at familiar territory
+in new ways and provides an immediate, practical benefit to the organizers of the event.
