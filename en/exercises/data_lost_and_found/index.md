@@ -1,4 +1,4 @@
-### Risks of Data Lost and Found [stub]
+### Risks of Data Lost and Found
 
 #### Summary
 !INCLUDE "summary.md"

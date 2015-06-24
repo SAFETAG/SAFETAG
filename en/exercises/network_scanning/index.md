@@ -13,7 +13,7 @@
 #### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough [stub]
+#### Walkthrough
 !INCLUDE "instructions.md"
 
 #### Recommendation
