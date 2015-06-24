@@ -13,7 +13,7 @@ Participants will learn the basics of listening to wireless network traffic to i
   * Scan the network for devices (computers, servers, network hardware)
   * Observe network traffic for further investigation
 
-### Before you Start [stub]
+### Before you Start
 
   * Materials below installed and tested with necessary modules/patches applied
   * Preparation of a router (ideally) with WPA, WPS, and WEP networks set up, with a set of passphrases that seem secure, but can be broken with good password cracking procedures.
