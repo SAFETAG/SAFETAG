@@ -1,4 +1,4 @@
-### Input [stub] 
+### Input
 
 #### Reports
 
