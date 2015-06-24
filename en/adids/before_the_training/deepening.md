@@ -23,16 +23,10 @@ With this organization in mind, go through the Context Research section of the S
 
 #### Homework Assignment: Recon-ng Setup ####
 
-(STUB)
-
  * Setup a VPN (tor won't work for this)
- * Gather API keys for use with recon-ng
-
-
+ * Gather API keys for use with recon-ng (See recon-ng appendix)
 
 #### Homework Assignment: Open Source Intel Gathering ####
-
-(STUB)
 
 Finally, explore the remote assessment section.  Do NOT attempt any of the more active steps - OpenVAS and even nmap can break servers, and these have some very serious operational security concerns we want to discuss first.  However, the reference sections on advanced searching with Google and Pastebin to discover possibly unintentionally public information about the organization 
 
