@@ -8,35 +8,36 @@
 
 #### Manual OSINT
 
-DNS and mail records
-Built-with site
-pastebin search
-google dorking
+* DNS and mail records
+* Built-with site
+* pastebin search
+* google dorking
 
-Social Engineering research and staff enumeration
-facebook graph
-image exif data and reverse image searching
-social media account discovery
+* Social Engineering research and staff enumeration
+* facebook graph
+* image exif data and reverse image searching
+* social media account discovery
 
 #### Automated OSINT with  recon-ng
 
 
 intro to tool
+
 running on a server is ideal; fire up your vpns?
 https://layer8.org/linux-vpn-instructions ? 
 
 recon-ng tutorial overview
 
-Putting context research to work
+Putting context research to work:
 
-Adding all domains found
-Adding all hosts found
-Finding netblocks
-whois
-ping
-Adding e-mails found
-Adding staff found
-repeat and explore!
+* Adding all domains found
+* Adding all hosts found
+* Finding netblocks
+* whois
+* ping
+* Adding e-mails found
+* Adding staff found
+* repeat and explore!
 
 
 #### Advanced Concepts 
