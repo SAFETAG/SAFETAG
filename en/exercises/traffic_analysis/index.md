@@ -15,6 +15,6 @@
 #### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation [stub]
+#### Recommendation
 !INCLUDE "recommendations.md"
 
