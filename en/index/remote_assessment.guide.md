@@ -10,15 +10,15 @@
 
 !INCLUDE "en/methods/remote_assessment/purpose.md"
 
-### Baseline Skills [stub]
+### Baseline Skills
 
 !INCLUDE "en/methods/remote_assessment/baseline_skills.md"
 
-### Preparation [stub]
+### Preparation
 
 !INCLUDE "en/methods/remote_assessment/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "en/methods/remote_assessment/materials_needed.md"
 
@@ -34,11 +34,11 @@
 
 !INCLUDE "en/methods/remote_assessment/operational_security.md"
 
-### Reporting Considerations: [stub]
+### Reporting Considerations:
 
 !INCLUDE "en/methods/remote_assessment/reporting.md"
 
-### Resources [stub]
+### Resources
 
 !INCLUDE "en/references/remote_assessment.overview.md"
 

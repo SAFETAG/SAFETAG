@@ -23,15 +23,15 @@
 
 !INCLUDE "en/adids/introduction/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/introduction/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/introduction/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/introduction/discussion.md"
 
@@ -43,6 +43,6 @@
 
 !INCLUDE "en/adids/introduction/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/introduction/synthesis.md"

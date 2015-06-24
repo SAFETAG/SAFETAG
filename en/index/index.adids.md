@@ -178,7 +178,7 @@
 
 <!-- \newpage Follow Up (Included in reporting for ADIDS) !INCLUDE "en/follow_up.adids.md" \newpage -->
 
-# Post - Training Mentorship [stub]
+# Post - Training Mentorship
 
 ## Collaborative Audits
 

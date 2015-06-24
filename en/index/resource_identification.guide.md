@@ -10,15 +10,15 @@
 
 !INCLUDE "en/reporting/resource_identification/purpose.md"
 
-### Baseline Skills [stub]
+### Baseline Skills
 
 !INCLUDE "en/reporting/resource_identification/baseline_skills.md"
 
-### Preparation [stub]
+### Preparation
 
 !INCLUDE "en/reporting/resource_identification/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "en/reporting/resource_identification/materials_needed.md"
 
@@ -34,11 +34,11 @@
 
 !INCLUDE "en/reporting/resource_identification/operational_security.md"
 
-### Reporting [stub]
+### Reporting
 
 !INCLUDE "en/reporting/resource_identification/reporting.md"
 
-### Resources [stub]
+### Resources
 
 !INCLUDE "en/references/resource_identification.overview.md"
 

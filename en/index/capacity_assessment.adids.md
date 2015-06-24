@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/capacity_assessment/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/capacity_assessment/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/capacity_assessment/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/capacity_assessment/discussion.md"
 
@@ -45,7 +45,7 @@
 
 !INCLUDE "en/adids/capacity_assessment/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/capacity_assessment/synthesis.md"
 

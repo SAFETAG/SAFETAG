@@ -23,15 +23,15 @@
 
 !INCLUDE "en/adids/safetag_repo/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/safetag_repo/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/safetag_repo/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/safetag_repo/discussion.md"
 
@@ -43,6 +43,6 @@
 
 !INCLUDE "en/adids/safetag_repo/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/safetag_repo/synthesis.md"

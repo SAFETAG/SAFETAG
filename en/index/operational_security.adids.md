@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/operational_security/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/operational_security/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/operational_security/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/operational_security/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/operational_security/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/operational_security/synthesis.md"

@@ -26,15 +26,15 @@
 
 !INCLUDE "en/adids/interviews/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/interviews/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/interviews/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/interviews/discussion.md"
 
@@ -46,6 +46,6 @@
 
 !INCLUDE "en/adids/interviews/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/interviews/synthesis.md"

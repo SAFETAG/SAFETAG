@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/assessment_plan/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/assessment_plan/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/assessment_plan/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/assessment_plan/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/assessment_plan/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/assessment_plan/synthesis.md"

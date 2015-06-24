@@ -10,15 +10,15 @@
 
 !INCLUDE "guides/interviews/purpose.md"
 
-### Baseline Skills [stub]
+### Baseline Skills
 
 !INCLUDE "guides/interviews/baseline_skills.md"
 
-### Preparation [stub]
+### Preparation
 
 !INCLUDE "guides/interviews/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "guides/interviews/materials_needed.md"
 
@@ -34,7 +34,7 @@
 
 !INCLUDE "guides/interviews/operational_security.md"
 
-### Reporting [stub]
+### Reporting
 
 !INCLUDE "guides/interviews/reporting.md"
 

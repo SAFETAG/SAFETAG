@@ -10,13 +10,13 @@
 
 !INCLUDE "en/methods/assessment_plan/purpose.md"
 
-### Preparation [stub]
+### Preparation
 
 <?trainer resources?>
 
 !INCLUDE "en/methods/assessment_plan/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "en/methods/assessment_plan/materials_needed.md"
 
@@ -32,7 +32,7 @@
 
 !INCLUDE "en/methods/assessment_plan/operational_security.md"
 
-### Reporting  [stub]
+### Reporting 
 
 !INCLUDE "en/methods/assessment_plan/reporting.md"
 

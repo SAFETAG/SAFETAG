@@ -26,15 +26,15 @@
 
 !INCLUDE "en/adids/network_discovery/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/network_discovery/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/network_discovery/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/network_discovery/discussion.md"
 
@@ -46,6 +46,6 @@
 
 !INCLUDE "en/adids/network_discovery/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/network_discovery/synthesis.md"

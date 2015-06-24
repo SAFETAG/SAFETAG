@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/roadmap_development/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/roadmap_development/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/roadmap_development/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/roadmap_development/discussion.md"
 
@@ -45,7 +45,7 @@
 
 !INCLUDE "en/adids/roadmap_development/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/roadmap_development/synthesis.md"
 

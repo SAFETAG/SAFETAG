@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/follow_up/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/follow_up/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/follow_up/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/follow_up/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/follow_up/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/follow_up/synthesis.md"

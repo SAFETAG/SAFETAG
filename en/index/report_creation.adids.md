@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/report_creation/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/report_creation/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/report_creation/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/report_creation/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/report_creation/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/report_creation/synthesis.md"

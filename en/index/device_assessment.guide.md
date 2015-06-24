@@ -10,15 +10,15 @@
 
 !INCLUDE "guides/device_assessment/purpose.md"
 
-### Baseline Skills [stub]
+### Baseline Skills
 
 !INCLUDE "guides/device_assessment/baseline_skills.md"
 
-### Preparation [stub]
+### Preparation
 
 !INCLUDE "guides/device_assessment/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "guides/device_assessment/materials_needed.md"
 
@@ -34,7 +34,7 @@
 
 !INCLUDE "guides/device_assessment/operational_security.md"
 
-### Reporting [stub]
+### Reporting
 
 !INCLUDE "guides/device_assessment/reporting.md"
 

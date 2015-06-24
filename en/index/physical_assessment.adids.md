@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/physical_assessment/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/physical_assessment/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/physical_assessment/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/physical_assessment/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/physical_assessment/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/physical_assessment/synthesis.md"

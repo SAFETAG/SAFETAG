@@ -10,15 +10,15 @@
 
 !INCLUDE "en/reporting/report_creation/purpose.md"
 
-### Baseline Skills [stub]
+### Baseline Skills
 
 !INCLUDE "en/reporting/report_creation/baseline_skills.md"
 
-### Preparation [stub]
+### Preparation
 
 !INCLUDE "en/reporting/report_creation/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "en/reporting/report_creation/materials_needed.md"
 
@@ -26,7 +26,7 @@
 
 !INCLUDE "en/reporting/report_creation/approach.md"
 
-### Reporting [stub]
+### Reporting
 
 !INCLUDE "en/reporting/report_creation/reporting.md"
 

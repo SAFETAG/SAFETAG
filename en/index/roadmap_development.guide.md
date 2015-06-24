@@ -10,15 +10,15 @@
 
 !INCLUDE "en/reporting/roadmap_development/purpose.md"
 
-### Baseline Skills [stub]
+### Baseline Skills
 
 !INCLUDE "en/reporting/roadmap_development/baseline_skills.md"
 
-### Preparation [stub]
+### Preparation
 
 !INCLUDE "en/reporting/roadmap_development/preparation.md"
 
-### Materials Needed [stub]
+### Materials Needed
 
 !INCLUDE "en/reporting/roadmap_development/materials_needed.md"
 

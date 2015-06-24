@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/network_mapping/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/network_mapping/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/network_mapping/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/network_mapping/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/network_mapping/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/network_mapping/synthesis.md"

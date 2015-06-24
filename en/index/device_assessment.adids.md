@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/device_assessment/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/device_assessment/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/device_assessment/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/device_assessment/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/device_assessment/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/device_assessment/synthesis.md"

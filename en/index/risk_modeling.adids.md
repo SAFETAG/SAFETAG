@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/risk_modeling/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/risk_modeling/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/risk_modeling/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/risk_modeling/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/risk_modeling/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/risk_modeling/synthesis.md"

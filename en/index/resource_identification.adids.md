@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/resource_identification/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/resource_identification/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/resource_identification/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/resource_identification/discussion.md"
 
@@ -45,6 +45,6 @@
 
 !INCLUDE "en/adids/resource_identification/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/resource_identification/synthesis.md"

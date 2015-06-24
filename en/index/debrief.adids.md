@@ -25,15 +25,15 @@
 
 !INCLUDE "en/adids/debrief/before_you_start.md"
 
-<!-- Materials Needed [stub] -->
+<!-- Materials Needed -->
 
 !INCLUDE "en/adids/debrief/materials_needed.md"
 
-<!--Activity [stub] {.activity} -->
+<!--Activity {.activity} -->
 
 !INCLUDE "en/adids/debrief/activity.md"
 
-<!--Discussion [stub] -->
+<!--Discussion -->
 
 !INCLUDE "en/adids/debrief/discussion.md"
 
@@ -45,7 +45,7 @@
 
 !INCLUDE "en/adids/debrief/deepening.md"
 
-<!--Synthesis [stub] {.synthesis} -->
+<!--Synthesis {.synthesis} -->
 
 !INCLUDE "en/adids/debrief/synthesis.md"
 
