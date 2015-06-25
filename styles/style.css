@@ -1,33 +1,31 @@
 /* fonts */
 
-
 @font-face {
     font-family: 'Noto Sans Regular';
-    src: url('../styles/fonts/NotoSans-Regular.ttf')  format("truetype")
+    src: url('fonts/NotoSans-Regular.ttf')  format("truetype")
 }
-
 @font-face {
     font-family: 'Noto Sans Bold';
-    src: local('../styles/fonts/NotoSans-Bold.ttf')  format("truetype");
+    src: local('fonts/NotoSans-Bold.ttf')  format("truetype");
 }
 @font-face {
     font-family: 'Noto Sans Italic';
-    src: local('../styles/fonts/NotoSans-Italic.ttf')  format("truetype");
+    src: local('fonts/NotoSans-Italic.ttf')  format("truetype");
 }
 @font-face {
     font-family: 'Noto Sans Bold Italic';
-    src: local('../styles/fonts/NotoSans-BoldItalic.ttf')  format("truetype");
+    src: local('fonts/NotoSans-BoldItalic.ttf')  format("truetype");
 }
 
 html,
 body {
-	background: white;
-	font-size: 10pt;
-	font-family: 'Noto Sans Regular', sans-serif;
+        background: white;
+        font-size: 10pt;
+        font-family: 'Noto Sans Regular', sans-serif;
 }
 
 code {
-	font-size: .75em;
+        font-size: .75em;
 }
 
 h1,
@@ -39,8 +37,8 @@ h4 {
     margin-bottom: 0px;
 }
 
-h2, 
-h3 {	
+h2,
+h3 {
     text-transform: uppercase;
 }
 
@@ -85,9 +83,9 @@ table tr.even td {
 }
 
 .example {
-	border: 1px dashed darkblue;
-	background: lightblue;
-	padding: 1em;
+        border: 1px dashed darkblue;
+        background: lightblue;
+        padding: 1em;
 }
 
 .sidebar {
@@ -108,62 +106,62 @@ table tr.even td {
 
 
 .boxtext {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #005CAB;
-	background: #e6f3ff;
-	margin-top: 10px;
-	padding: 0px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #005CAB;
+        background: #e6f3ff;
+        margin-top: 10px;
+        padding: 0px;
 }
 
 
 .boxtext h3 {
-	text-transform: uppercase;
-	font-size: 14pt;
-	text-align: right;
-	color: #78716e;
-	margin: 0px;
-	padding: 2px
+        text-transform: uppercase;
+        font-size: 14pt;
+        text-align: right;
+        color: #78716e;
+        margin: 0px;
+        padding: 2px
 }
 
 .boxtext h3:first-child {
-	text-transform: uppercase;
-	font-size: 14pt;
-	text-align: right;
-	color: #ffffff;
-	padding-right: 5px;
-	background-color: #005CAB;
+        text-transform: uppercase;
+        font-size: 14pt;
+        text-align: right;
+        color: #ffffff;
+        padding-right: 5px;
+        background-color: #005CAB;
 /*
-	display:inline-block;
-	float: right;
-	position: relative;
-	margin-top: -28px; 
-	border-style: solid;
-	border-width: 1px;
-	border-color: #005CAB;
-	background-color: #e6f3ff;
-	border-bottom-style: none;
+        display:inline-block;
+        float: right;
+        position: relative;
+        margin-top: -28px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #005CAB;
+        background-color: #e6f3ff;
+        border-bottom-style: none;
 */
 }
 
 .boxtext h4 {
-	text-transform: title;
-	font-size: 12pt;
-	color: #404965;
-	padding: 2px
+        text-transform: title;
+        font-size: 12pt;
+        color: #404965;
+        padding: 2px
 }
 
 .boxtext p {
-	padding: 5px;
+        padding: 5px;
 }
 
 .greybox {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #78716e;
-	background: #f3f2f2;
-	margin-top: 5px;
-	padding: 0px 4px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #78716e;
+        background: #f3f2f2;
+        margin-top: 5px;
+        padding: 0px 4px;
 }
 
 /* TODO: Eventually use custom bullet's to get those big chunky light blue squres that we want. */
@@ -313,42 +311,42 @@ nav h1 {
 }
 
 
-/* 
+/*
    line above and below
    running people icon to the left
    float right of the icon
 */
 .activity {}
 
-/* 
+/*
    line above and below
    speech bubbles icon to the left
    float right of the icon
 */
 .discussion {}
 
-/* 
+/*
    line above and below
    person icon to the left
    float right of the icon
 */
 .input {}
 
-/* 
+/*
    line above and below
    magnefying glass icon to the left
    float right of the icon
 */
 .deepening {}
 
-/* 
+/*
    line above and below
    puzzle icon to the left
    float right of the icon
 */
 .synthesis {}
 
-/* 
+/*
    line above and below
    pencil icon to the left
    float right of the icon
