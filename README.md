@@ -26,5 +26,5 @@ See the [installation documentation](INSTALL.md).
 
 ## License
 
-Please see [license information](content/document_matter/license.md) for current licenses relating to SAFETAG as well as the various projects that we borrowed from. If you have further questions related to licensing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues) We are excited to discuss how we can best support those who wish to use SAFETAG and best attribute those whose content we adapted or redistributed through SAFETAG.
+Please see [license information](en/document_matter/license.md) for current licenses relating to SAFETAG as well as the various projects that we borrowed from. If you have further questions related to licensing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues) We are excited to discuss how we can best support those who wish to use SAFETAG and best attribute those whose content we adapted or redistributed through SAFETAG.
 
