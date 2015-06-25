@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Audit Preparation Information Flow](en/images/info_flows/capacity_assessment.svg)
+![Audit Preparation Information Flow](images/info_flows/capacity_assessment.svg)
 
 ### Guiding Questions
 

@@ -6,7 +6,7 @@
 
 ### The Flow Of Information
 
-![Remote Assessment Information Flow](en/images/info_flows/remote_assessment.svg)
+![Remote Assessment Information Flow](images/info_flows/remote_assessment.svg)
 
 ### Guiding Questions
 

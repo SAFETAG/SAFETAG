@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Reconnaissance Information Flow](en/images/info_flows/reconnaissance.svg)
+![Reconnaissance Information Flow](images/info_flows/reconnaissance.svg)
 
 ### Guiding Questions
 
