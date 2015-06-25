@@ -7,8 +7,6 @@
 
 <!-- Introduction -->
 
-# Introduction
-
 !INCLUDE "en/document_matter/introduction.md"
 
 \newpage
@@ -23,7 +21,7 @@
 
 \newpage
 
-<!-- Audit Lifecyce -->
+<!-- Audit Lifecycle -->
 
 !INCLUDE "en/document_matter/audit_lifecycle.md"
 
