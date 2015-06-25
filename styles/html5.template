@@ -11,7 +11,7 @@
 $if(title)$
 <header class="coverpage">
   <div class="covertop">
-    <img src="../../content/images/logo.svg" alt="SAFETAG Logo" />
+    <img src="../../en/images/logo.svg" alt="SAFETAG Logo" />
     <h2 class="title">A Security Auditing Framework and Evaluation Template for Advocacy Groups</h2>
   </div>
   <div class="covermiddle">
@@ -27,7 +27,7 @@ $if(title)$
     $endif$
   </div>
   <div class="coverbottom">
-    <img class="inlogo" src="../../content/images/internews_logo.svg" alt="Internews Logo" />
+    <img class="inlogo" src="../../en/images/internews_logo.svg" alt="Internews Logo" />
   </div>
 </header>
 $endif$

@@ -142,5 +142,5 @@ make guide
 
 To make an empty sample report.
 ```bash
-make report
+make audit
 ```

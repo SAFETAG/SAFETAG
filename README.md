@@ -15,15 +15,16 @@ This repository contains the publishing tools and templates to build customized 
 
 ## Requirements:
 
-  * See the [installation documentation](./docs/INSTALL.md). If the instructions are confusing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues)
+  * See the [installation documentation](INSTALL.md). If the instructions are confusing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues)
   * [pandoc](http://johnmacfarlane.net/pandoc/)
   * [wkhtmltopdf](http://wkhtmltopdf.org)
   * [python-setuptools](https://pypi.python.org/pypi/setuptools)
 
 ## Installation
 
-See the [installation documentation](./docs/INSTALL.md).
+See the [installation documentation](INSTALL.md).
 
 ## License
 
-Please see ```content/document_matter/license.md``` for current licenses relating to SAFETAG as well as the various projects that we borrowed from. If you have further questions related to licensing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues) We are excited to discuss how we can best support those who wish to use SAFETAG and best attribute those whose content we adapted or redistributed through SAFETAG.
+Please see [license information](en/document_matter/license.md) for current licenses relating to SAFETAG as well as the various projects that we borrowed from. If you have further questions related to licensing [PLEASE create an issue about it on github.](https://github.com/OpenInternet/SAFETAG/issues) We are excited to discuss how we can best support those who wish to use SAFETAG and best attribute those whose content we adapted or redistributed through SAFETAG.
+
