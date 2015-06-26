@@ -7,7 +7,7 @@
 !INCLUDE "../methods/responsive_support/purpose.md"
 
 ### The Flow of Information
-![Responsive Support Information Flow](en/images/info_flows/responsive_support.svg)
+![Responsive Support Information Flow](images/info_flows/responsive_support.svg)
 
 ### Guiding Questions
 !INCLUDE "../methods/responsive_support/guiding_questions.md"

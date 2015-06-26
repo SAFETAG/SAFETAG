@@ -2,7 +2,7 @@
 
 The SAFETAG audit consists of multiple information gathering and confirmations steps as well as research and capacity-building exercises with staff organized in a collection of objectives, each of which supports the core goals of SAFETAG, creating a risk assessment while also building the capacity of the organization.
 
-![SAFETAG Activities](en/images/activities_flow.svg)
+![SAFETAG Activities](images/activities_flow.svg)
 
 ## The Life Cycle of an Audit
 
@@ -10,7 +10,7 @@ The audit process in very cyclical. Newly identified threats, vulnerabilities, c
 
 Each objective requires a certain base of information, and outputs more information into this cyclical process.  Each objective has a "map" of the data flow that it and its specific activities provide based on this map:
 
-![SAFETAG Data Flow](en/images/info_flows/data_flow_all.svg)
+![SAFETAG Data Flow](images/info_flows/data_flow_all.svg)
 
 While more completely defined below in the Risk Assessment and Agency Building sections, a brief overview of the data flow components:
 
