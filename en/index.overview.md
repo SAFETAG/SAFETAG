@@ -1,3 +1,7 @@
+---
+title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
+subtitle: 'Overview'
+---
 
 <!-- License -->
 

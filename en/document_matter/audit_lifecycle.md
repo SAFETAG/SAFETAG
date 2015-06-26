@@ -6,7 +6,7 @@ The SAFETAG audit consists of multiple information gathering and confirmations s
 
 ## The Life Cycle of an Audit
 
-The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through conversations, training, and group activities is actively building the organizations agency and addressing time-sensitive or critical threats that are possible within the time frame. This iterative process eventually leads to a point where the auditor is confident they have identified the critical and low hanging fruit, and is confident the organization is capable of moving forward with their recommendations. 
+The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through conversations, training, and group activities is actively building the organizations agency and addressing time-sensitive or critical threats that are possible within the time frame. This iterative process eventually leads to a point where the auditor is confident they have identified the critical and low hanging fruit, and is confident the organization is capable of moving forward with their recommendations.
 
 Each objective requires a certain base of information, and outputs more information into this cyclical process.  Each objective has a "map" of the data flow that it and its specific activities provide based on this map:
 
