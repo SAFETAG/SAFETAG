@@ -44,7 +44,7 @@
 <!-- Audit Prep-->
 !INCLUDE "index/preparation.overview.md"
 
-# Methods
+<!-- METHODS -->
 
 !INCLUDE "methods/intro.md"
 
