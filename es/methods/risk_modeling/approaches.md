@@ -1,6 +1,6 @@
 - Ejercicios de Mapeo de Datos y/o de procesos.
 - Entrevistas uno a uno con el personal para complementar las actividades en grupo.
-- La identificación de riesgos basado en el mapeo de procesos y/o datos
+- Identificación de riesgos basándose en el proceso de mapeo de datos
 - FACILITACIÓN: Una clásica actividad de Evaluación de Riesgo: [Risk Assessment Activity](http://frontlinedefenders.org/files/workbook_eng.pdf#page=9).
 
 *Nota:* El modelado del riesgo requerirá un enfoque mixto de ejercicios, y el orden en el que se identificará cada componente variará dependiendo de la organización.

@@ -49,31 +49,27 @@ Enlaces a recursos que pueden ser usados para profundizar los conocimientos de l
 
 Un resumen básico de la actividad - de una a cuatro oraciones.
 
-#### Output
+#### Resultados
 
-Notes on what data can be created during this activity.
+Notas sobre la información que puede ser generada durante esta actividad
 
-#### Base Line Skills
+#### Habilidades básicas
 
-The baseline level of skills that the auditor must posses in order to carry out the intended activity.
+El nivel básico de habilidades que debe poseer un auditor para realizar una auditoría
 
-#### Operational Security
+#### Seguridad operacional
 
-Operational security guidelines that are specific to this activity.
+Guía de seguridad operacional específica de esta actividad
 
-#### Materials Needed
+#### Materiales necesarios
 
-Any materials beyond the norm that the trainers will need.
+Cualquier material fuera de la normativa que necesitará el instructor.
 
-#### Considerations
+#### Consideraciones
 
-Some of the activity specific concerns (ethical, skill level,  time, relationship, etc.) that an auditor must take into consideration when conducting this activity.
+Algunas de las preocupaciones específicas de actividad (ética, nivel de habilidad, tiempo, relación, etc.) que un auditor debe tener en cuenta a la hora realizar de esta actividad.
 
-#### Instructions
+#### Instrucciones
 
-Where relevant, an outline of the steps an auditor will take during this activity.  Not intended to replace true documentation, but useful for an auditor unable to connect to the Internet or to provide the organization's technical contact.
-
-
-
-
+Cuando sea relevante, se realizará una guía con los pasos que un auditor seguirá a lo largo de la actividad. No está diseñado para reemplazar la documentación oficial, pero será de utilidad para un auditor sin conexión a Internet o para proporcionar a la organización el soporte requerido.
 

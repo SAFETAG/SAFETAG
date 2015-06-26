@@ -3,7 +3,7 @@
 
 Las auditorías de SAFETAG consisten en múltiples pasos de recolección y confirmación de información, así como de ejercicios de investigación para instalar capacidades en el personal, organizados en objetivos, donde cada uno de éstos soporta a los objetivos principales de SAFETAG, al tiempo que se capacita a la institución.
 
-![SAFETAG Activities](images/activities_flow.svg)
+![Actividades de SAFETAG](images/activities_flow.svg)
 
 ## EL CICLO DE VIDA DE UNA AUDITORÍA
 
@@ -11,7 +11,7 @@ El proceso de una auditoría es cíclico. Nuevas amenazas identificadas, vulnera
 
 Cada objetivo requiere de cierta información básica, y entrega más información dentro de este proceso cíclico. Cada objetivo tiene un “mapa” de flujo de datos en el cual sus actividades están basadas en el siguiente gráfico:
 
-![SAFETAG Data Flow](images/info_flows/data_flow_all.svg)
+![El Flujo De La Información de SAFETAG](images/info_flows/data_flow_all.svg)
 
 A continuación se muestra un breve resumen de los componentes del flujo de información.  En las secciones de Evaluación de Riesgo y Desarrollo de Capacidades habrá una definición más completa.
 
