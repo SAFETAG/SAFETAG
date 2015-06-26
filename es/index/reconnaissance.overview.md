@@ -1,22 +1,22 @@
 ## Reconnaissance
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/reconnaissance/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/reconnaissance/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Reconnaissance Information Flow](en/images/info_flows/reconnaissance.svg)
+![Reconnaissance : El Flujo de la Información](images/info_flows/reconnaissance.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/reconnaissance/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/reconnaissance/approaches.md"
 

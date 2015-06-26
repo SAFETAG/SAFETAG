@@ -1,17 +1,17 @@
 ## Recommendation Development
 
-### Summary
+### Resumen
 
 !INCLUDE "../reporting/recommendation_development/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../reporting/recommendation_development/purpose.md"
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../reporting/recommendation_development/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../reporting/recommendation_development/approaches.md"

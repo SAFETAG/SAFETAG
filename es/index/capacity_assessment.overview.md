@@ -1,21 +1,21 @@
 ## Capacity Assessment
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/capacity_assessment/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/capacity_assessment/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Audit Preparation Information Flow](en/images/info_flows/capacity_assessment.svg)
+![Audit Preparation : El Flujo de la Información](images/info_flows/capacity_assessment.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/capacity_assessment/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/capacity_assessment/approaches.md"

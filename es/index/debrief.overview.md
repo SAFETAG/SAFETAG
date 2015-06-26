@@ -1,17 +1,17 @@
 ## Debrief
 
-### Summary
-!INCLUDE "en/methods/debrief/summary.md"
+### Resumen
+!INCLUDE "../methods/debrief/summary.md"
 
-### Purpose
-!INCLUDE "en/methods/debrief/purpose.md"
+### Propósito
+!INCLUDE "../methods/debrief/purpose.md"
 
-### The Flow of Information
-![ Information Flow](en/images/info_flows/debrief.svg)
+### El Flujo de la Información
+![Debrief : El Flujo de la Información](images/info_flows/debrief.svg)
 
-### Guiding Questions
-!INCLUDE "en/methods/debrief/guiding_questions.md"
+### Preguntas Orientadoras
+!INCLUDE "../methods/debrief/guiding_questions.md"
 
-### Approaches
-!INCLUDE "en/methods/debrief/approaches.md"
+### Enfoques
+!INCLUDE "../methods/debrief/approaches.md"
 

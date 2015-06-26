@@ -1,21 +1,21 @@
 ## Network Discovery
 
-### Summary
+### Resumen
 
-!INCLUDE "en/methods/network_discovery/summary.md"
+!INCLUDE "../methods/network_discovery/summary.md"
 
-### Purpose
+### Propósito
 
-!INCLUDE "en/methods/network_discovery/purpose.md"
+!INCLUDE "../methods/network_discovery/purpose.md"
 
-### The Flow of Information
-![ Information Flow](en/images/info_flows/network_discovery.svg)
+### El Flujo de la Información
+![Network Discovery : El Flujo de la Información](images/info_flows/network_discovery.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
-!INCLUDE "en/methods/network_discovery/guiding_questions.md"
+!INCLUDE "../methods/network_discovery/guiding_questions.md"
 
-### Approach
+### Enfoques
 
-!INCLUDE "en/methods/network_discovery/approaches.md"
+!INCLUDE "../methods/network_discovery/approaches.md"
 

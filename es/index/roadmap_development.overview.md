@@ -1,17 +1,17 @@
 ## Roadmap Development
 
-### Summary
+### Resumen
 
 !INCLUDE "en/reporting/roadmap_development/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "en/reporting/roadmap_development/purpose.md"
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "en/reporting/roadmap_development/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "en/reporting/roadmap_development/approaches.md"

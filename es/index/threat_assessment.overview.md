@@ -1,22 +1,22 @@
 ## Threat Assessment
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/threat_assessment/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/threat_assessment/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Threat Assessment Information Flow](en/images/info_flows/threat_assessment.svg)
+![Threat Assessment : El Flujo de la Información](images/info_flows/threat_assessment.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/threat_assessment/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/threat_assessment/approaches.md"
 

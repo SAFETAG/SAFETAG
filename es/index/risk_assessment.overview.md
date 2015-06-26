@@ -1,10 +1,10 @@
 ## Risk Assessment
 
-### Summary
+### Resumen
 
 !INCLUDE "guides/risk_modeling/summary.md"
 
-### Approach
+### Enfoques
 
 !INCLUDE "guides/risk_modeling/approach.md"
 

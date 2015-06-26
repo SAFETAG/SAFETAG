@@ -1,22 +1,22 @@
 ## Engagement Planning
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/engagement_planning/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/engagement_planning/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Engagement Planning Information Flow](en/images/info_flows/engagement_planning.svg)
+![Engagement Planning : El Flujo de la Información](es/images/info_flows/engagement_planning.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/engagement_planning/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/engagement_planning/approaches.md"
 

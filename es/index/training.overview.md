@@ -1,13 +1,13 @@
 ## Training
 
-### Summary
+### Resumen
 
 !INCLUDE "guides/training/summary.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Training Information Flow](en/images/info_flows/training.svg)
+![Training : El Flujo de la Información](images/info_flows/training.svg)
 
-### Approach
+### Enfoques
 
 !INCLUDE "guides/training/approach.md"

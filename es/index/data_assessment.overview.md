@@ -1,22 +1,22 @@
 ## Data Assessment
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/data_assessment/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/data_assessment/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Data Assessment Information Flow](en/images/info_flows/data_assessment.svg)
+![Data Assessment : El Flujo de la Información](images/info_flows/data_assessment.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/data_assessment/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/data_assessment/approaches.md"
 

@@ -1,21 +1,21 @@
 ## Physical Assessment
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/physical_assessment/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/physical_assessment/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Physical Assessment Information Flow](en/images/info_flows/physical_assessment.svg)
+![Physical Assessment : El Flujo de la Información](images/info_flows/physical_assessment.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/physical_assessment/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/physical_assessment/approaches.md"

@@ -1,21 +1,21 @@
 ## Network Mapping
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/network_mapping/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/network_mapping/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Network Mapping Information Flow](en/images/info_flows/network_mapping.svg)
+![Network Mapping : El Flujo de la Información](images/info_flows/network_mapping.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/network_mapping/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/network_mapping/approaches.md"
