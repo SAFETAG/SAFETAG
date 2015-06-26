@@ -1,4 +1,7 @@
-
+---
+title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
+subtitle: 'Guide'
+---
 <!-- License -->
 
 !INCLUDE "document_matter/license.md"
@@ -6,8 +9,6 @@
 \newpage
 
 <!-- Introduction -->
-
-# Introduction
 
 !INCLUDE "document_matter/introduction.md"
 
@@ -46,8 +47,6 @@
 <!-- Audit Prep-->
 
 !INCLUDE "index/preparation.guide.md"
-
-# Methods
 
 !INCLUDE "methods/intro.md"
 

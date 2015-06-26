@@ -1,34 +1,34 @@
 ## Network Access
 
 ### Summary
-!INCLUDE "methods/network_access/summary.md"
+!INCLUDE "../methods/network_access/summary.md"
 
 ### Purpose
-!INCLUDE "methods/network_access/purpose.md"
+!INCLUDE "../methods/network_access/purpose.md"
 
 ### The Flow of Information
 ![ Information Flow](images/info_flows/network_access.svg)
 
 ### Guiding Questions
-!INCLUDE "methods/network_access/guiding_questions.md"
+!INCLUDE "../methods/network_access/guiding_questions.md"
 
 ### Approach
-!INCLUDE "methods/network_access/approaches.md"
+!INCLUDE "../methods/network_access/approaches.md"
 
 ### Output
-!INCLUDE "methods/network_access/output.md"
+!INCLUDE "../methods/network_access/output.md"
 
 ### Operational Security
-!INCLUDE "methods/network_access/operational_security.md"
+!INCLUDE "../methods/network_access/operational_security.md"
 
 ### Preparation
-!INCLUDE "methods/network_access/preparation.md"
+!INCLUDE "../methods/network_access/preparation.md"
 
 ### Activities
-!INCLUDE "methods/network_access/activities.md"
+!INCLUDE "../methods/network_access/activities.md"
 
 ### Resources
 
 <div class="greybox">
-!INCLUDE "references/network_access.md"
+!INCLUDE "../references/network_access.md"
 </div>
