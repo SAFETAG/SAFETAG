@@ -1,4 +1,4 @@
-## Data Assessment
+## Evaluación De Datos
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Data Assessment : El Flujo de la Información](images/info_flows/data_assessment.svg)
+![Evaluación De Datos : El Flujo de la Información](images/info_flows/data_assessment.svg)
 
 ### Preguntas Orientadoras
 

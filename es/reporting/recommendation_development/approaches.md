@@ -1,0 +1,3 @@
+- **Identificar y Explicar las Preocupaciones No Resueltas:** Brindar explicaciones sobre algunos adversarios o amenazas que el auditor identifica como “no resueltas” con la capacidad actual de la organización.
+- **Identificar las Recomendaciones:** Identificar posibles acciones para hacer frente a cada vulnerabilidad.
+- **Identificar Recursos Útiles:** Identificar los recursos que la organización puede aprovechar para cumplir con las recomendaciones identificadas.

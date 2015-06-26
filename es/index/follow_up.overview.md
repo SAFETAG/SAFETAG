@@ -1,4 +1,4 @@
-## Follow Up
+## Seguimiento
 
 ### Resumen
 !INCLUDE "../methods/follow_up/summary.md"
@@ -7,7 +7,7 @@
 !INCLUDE "../methods/follow_up/purpose.md"
 
 ### El Flujo de la Información
-![Follow up : El Flujo de la Información](images/info_flows/follow_up.svg)
+![Seguimiento : El Flujo de la Información](images/info_flows/follow_up.svg)
 
 ### Preguntas Orientadoras
 !INCLUDE "../methods/follow_up/guiding_questions.md"

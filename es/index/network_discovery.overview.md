@@ -1,4 +1,4 @@
-## Network Discovery
+## Detección De Redes
 
 ### Resumen
 
@@ -9,7 +9,7 @@
 !INCLUDE "../methods/network_discovery/purpose.md"
 
 ### El Flujo de la Información
-![Network Discovery : El Flujo de la Información](images/info_flows/network_discovery.svg)
+![Detección De Redes : El Flujo de la Información](images/info_flows/network_discovery.svg)
 
 ### Preguntas Orientadoras
 

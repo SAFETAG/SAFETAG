@@ -1,4 +1,3 @@
-
-* What are the barriers the organization faced in implementing the recommended risk mitigation plan?
-* Are there new resources that the auditor can provide to supplement the original audit?
-* What can you do to make your follow up perceived as additional support instead of as an evaluation of their success?
+- ¿Qué barrera enfrentó la organización en la implementación del plan de mitigación de riesgo recomendado?
+- ¿Hay nuevos recursos que el auditor pueda proporcionar para complementar la auditoría digital?
+- ¿Qué puede hacer para que su seguimiento sea percibido como un apoyo adicional en lugar de una evaluación de su éxito?

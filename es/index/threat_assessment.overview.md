@@ -1,4 +1,4 @@
-## Threat Assessment
+## Evaluación De Amenazas
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Threat Assessment : El Flujo de la Información](images/info_flows/threat_assessment.svg)
+![Evaluación De Amenazas : El Flujo de la Información](images/info_flows/threat_assessment.svg)
 
 ### Preguntas Orientadoras
 

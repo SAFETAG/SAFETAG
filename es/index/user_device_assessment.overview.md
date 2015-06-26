@@ -1,4 +1,4 @@
-## User Device Assessment
+## Evaluación De Dispositivo Del Usuario
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![User Device Assessment : El Flujo de la Información](images/info_flows/user_device_assessment.svg)
+![Evaluación De Dispositivo Del Usuario : El Flujo de la Información](images/info_flows/user_device_assessment.svg)
 
 ### Preguntas Orientadoras
 

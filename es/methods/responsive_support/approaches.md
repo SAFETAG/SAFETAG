@@ -1,4 +1,2 @@
-
-* **Targeted Training:** Educational components can be introduced in order to cover the digital security basics, satisfy the team's expectations and motivate the target group to include digital security practices in their everyday lives.
-* **Targeted Support:** The auditor can provide small targeted technical/policy development support where there expertise overlaps and the audit time-line allows. 
-
+- **Capacitación Dirigida:** Componentes educativos que son introducidos con el fin de cubrir los conceptos básicos de seguridad digital, satisfacen las expectativas del equipo y motivan al grupo objetivo al incluir las prácticas de seguridad digital en su vida cotidiana.
+- **Soporte Específico:** El auditor puede proporcionar una pequeña y específica técnica/política de soporte para el desarrollo, en caso de que las experiencias se solapen; siempre que los tiempos de la auditoría lo permitan.

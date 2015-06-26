@@ -1,4 +1,3 @@
-
-* Is the organization empowered to make changes?
-* Do key personnel have a general understanding of the initial findings?
-* Does the organization understand the next steps of the audit process?
+- ¿Está la organización capacitada para hacer cambios?
+- ¿Tiene el personal clave un conocimiento general de los hallazgos iniciales?
+- ¿La organización entiende los siguientes pasos del proceso de auditoría?

@@ -1,4 +1,4 @@
-## Context Research
+## Investigación De Contexto
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Context Research : El Flujo de la Información](images/info_flows/context_research.svg)
+![Investigación De Contexto : El Flujo de la Información](images/info_flows/context_research.svg)
 
 ### Preguntas Orientadoras
 

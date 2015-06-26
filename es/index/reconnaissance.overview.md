@@ -1,4 +1,4 @@
-## Reconnaissance
+## Reconocimiento
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Reconnaissance : El Flujo de la Información](images/info_flows/reconnaissance.svg)
+![Reconocimiento : El Flujo de la Información](images/info_flows/reconnaissance.svg)
 
 ### Preguntas Orientadoras
 

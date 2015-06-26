@@ -1,7 +1,5 @@
-
-* What are the critical organizational activities?
-* What threats does the organization, its programs, partners, and beneficiaries face?
-* What would the impact of these threats be if they were to occur?
-* What adversaries (people or groups) may attempt to carry out threats?
-* Are those adversaries capable of carrying out these threats?
-
+- ¿Cuáles son la actividades críticas de la organización?
+- ¿A qué amenazas se enfrenta la organización, sus programas, socios y beneficiarios?
+- ¿Cuál sería el impacto si estas amenazas ocurriesen?
+- ¿Qué adversarios (personas o grupos) pueden intentar llevar a cabo amenazas?
+- ¿Son esos adversarios capaces de llevar a cabo estas amenazas?

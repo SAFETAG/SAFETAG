@@ -1,4 +1,3 @@
-
-* **Physical Access to the Lan & Servers:** Tour the office and look for exposed network devices, servers, and network jacks, document how difficult it would be for a visitor or after-hours break-in to access sensitive systems.
-* **The Impacts of a Lost Device:** Lead staff in an activity were they describe the impact if various devices were destroyed.
-* **The Impacts of a Found Device:** Lead staff in an activity identifying what critical data would be available if an adversary gained access to various devices.
+- **Acceso Físico a Servidores y a Redes Locales:** Visite la oficina y busque una red expuesta, dispositivos, servidores, conexiones de red. Documente las dificultades que encontrará un visitante o para acceder a los sistemas sensibles fuera de los horarios de trabajo.
+- **Impacto de la Pérdida de un Dispositivo:** personal de peso en una actividad describirá el impacto si varios dispositivos fueran destruidos.
+- **Impacto de un Dispositivo Encontrado:** Personal de peso en una actividad identificará qué datos críticos estarían disponibles si un adversario tuvo acceso a varios dispositivos.

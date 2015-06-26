@@ -1,4 +1,4 @@
-## Responsive Support
+## Soporte
 
 ### Resumen
 !INCLUDE "../methods/responsive_support/summary.md"
@@ -7,7 +7,7 @@
 !INCLUDE "../methods/responsive_support/purpose.md"
 
 ### El Flujo de la Información
-![Responsive Support : El Flujo de la Información](images/info_flows/responsive_support.svg)
+![Soporte : El Flujo de la Información](images/info_flows/responsive_support.svg)
 
 ### Preguntas Orientadoras
 !INCLUDE "../methods/responsive_support/guiding_questions.md"

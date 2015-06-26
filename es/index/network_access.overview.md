@@ -1,4 +1,4 @@
-## Network Access
+## Acceso A Redes
 
 ### Resumen
 
@@ -9,7 +9,7 @@
 !INCLUDE "../methods/network_access/purpose.md"
 
 ### El Flujo de la Información
-![Network Access : El Flujo de la Información](images/info_flows/network_access.svg)
+![Acceso A Redes : El Flujo de la Información](images/info_flows/network_access.svg)
 
 ### Preguntas Orientadoras
 

@@ -1,4 +1,4 @@
-## Physical Assessment
+## Evaluación Física
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Physical Assessment : El Flujo de la Información](images/info_flows/physical_assessment.svg)
+![Evaluación Física : El Flujo de la Información](images/info_flows/physical_assessment.svg)
 
 ### Preguntas Orientadoras
 

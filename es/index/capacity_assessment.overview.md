@@ -1,4 +1,4 @@
-## Capacity Assessment
+## Evaluación De La Capacidad
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Audit Preparation : El Flujo de la Información](images/info_flows/capacity_assessment.svg)
+![Evaluación De La Capacidad : El Flujo de la Información](images/info_flows/capacity_assessment.svg)
 
 ### Preguntas Orientadoras
 

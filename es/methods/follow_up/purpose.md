@@ -1,2 +1,1 @@
-
-Follow up can be a valuable tool for encouraging an organization to continue their digital security process. But, follow up needs to be desired by an organization and achievable for the auditor. As such, follow up must be minimally intrusive on both the auditor and the host's time. 
+El seguimiento puede ser una herramienta valiosa para incentivar a una organización a continuar con su proceso de seguridad digital. Pero, el seguimiento necesita ser buscado por la organización y realizable por el auditor. Como tal, debe ser mínimamente intrusivo para los tiempos tanto del auditor como de la organización.

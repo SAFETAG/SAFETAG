@@ -1,3 +1,7 @@
+---
+title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
+subtitle: 'Resumen'
+---
 
 <!-- License -->
 
@@ -124,7 +128,7 @@
 
 !INCLUDE "index/follow_up.overview.md"
 
-# Reporting
+# INFORMES
 
 \newpage
 <!-- Recommendation Development -->

@@ -1,4 +1,4 @@
-## Network Mapping
+## Mapeo De La Red
 
 ### Resumen
 
@@ -10,7 +10,7 @@
 
 ### El Flujo de la Información
 
-![Network Mapping : El Flujo de la Información](images/info_flows/network_mapping.svg)
+![Mapeo De La Red : El Flujo de la Información](images/info_flows/network_mapping.svg)
 
 ### Preguntas Orientadoras
 
