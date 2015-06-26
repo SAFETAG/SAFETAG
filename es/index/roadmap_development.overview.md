@@ -1,17 +1,17 @@
-## Roadmap Development
+## Desarrollo De Una Hoja De Ruta
 
-### Summary
+### Resumen
 
-!INCLUDE "en/reporting/roadmap_development/summary.md"
+!INCLUDE "../reporting/roadmap_development/summary.md"
 
-### Purpose
+### Propósito
 
-!INCLUDE "en/reporting/roadmap_development/purpose.md"
+!INCLUDE "../reporting/roadmap_development/purpose.md"
 
-### Guiding Questions
+### Preguntas Orientadoras
 
-!INCLUDE "en/reporting/roadmap_development/guiding_questions.md"
+!INCLUDE "../reporting/roadmap_development/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
-!INCLUDE "en/reporting/roadmap_development/approaches.md"
+!INCLUDE "../reporting/roadmap_development/approaches.md"

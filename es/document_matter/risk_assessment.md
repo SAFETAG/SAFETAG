@@ -7,7 +7,7 @@ El riesgo es la evaluación actual de la posibilidad de eventos nocivos. El ries
 
 La evaluación de SAFETAG gira en torno a la recolección de información suficiente para identificar y evaluar los distintos riesgos, a la organización, y a los actores relacionados. Todo ello con el fin de tomar acciones estratégicas.
 
-![La Ecuación de Riesgo](es/images/risk_equation.svg)
+![La Ecuación de Riesgo](images/risk_equation.svg)
 
 ### ANÁLISIS DEL PROGRAMA
 

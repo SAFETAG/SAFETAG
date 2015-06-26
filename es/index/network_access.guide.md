@@ -1,34 +1,39 @@
-## Network Access
+## Acceso A Redes
 
-### Summary
-!INCLUDE "en/methods/network_access/summary.md"
+### Resumen
 
-### Purpose
-!INCLUDE "en/methods/network_access/purpose.md"
+!INCLUDE "../methods/network_access/summary.md"
 
-### The Flow of Information
-![ Information Flow](en/images/info_flows/network_access.svg)
+### Propósito 
 
-### Guiding Questions
-!INCLUDE "en/methods/network_access/guiding_questions.md"
+!INCLUDE "../methods/network_access/purpose.md"
 
-### Approach
-!INCLUDE "en/methods/network_access/approaches.md"
+### El Flujo de la Información
+![Acceso A Redes : El Flujo de la Información](images/info_flows/network_access.svg)
+
+### Preguntas Orientadoras
+
+!INCLUDE "../methods/network_access/guiding_questions.md"
+
+### Enfoques
+
+!INCLUDE "../methods/network_access/approaches.md"
+
 
 ### Output
-!INCLUDE "en/methods/network_access/output.md"
+!INCLUDE "../methods/network_access/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/network_access/operational_security.md"
+!INCLUDE "../methods/network_access/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/network_access/preparation.md"
+!INCLUDE "../methods/network_access/preparation.md"
 
 ### Activities
-!INCLUDE "en/methods/network_access/activities.md"
+!INCLUDE "../methods/network_access/activities.md"
 
 ### Resources
 
 <div class="greybox">
-!INCLUDE "en/references/network_access.md"
+!INCLUDE "../references/network_access.md"
 </div>

@@ -1,3 +1,3 @@
-* **Manual OSINT:** Identify availability of partner, beneficiary, and current project information online using advanced Google searching and website-scraping. [^PETS_logical_intel]
-* **Recon-NG:** Use recon-ng to do automated web-based open source reconnaissance. [^recon-ng_data_flow]
-* **Social Network OSINT:** Identify availability of staff partner, beneficiary, and current project information by searching social networks for information leaked about the organization.
+- **Manual OSINT:** Identifica la disponibilidad de socios, beneficiarios y proyectos de información en línea con el uso de herramientas de búsqueda avanzada de google y el sitio webscraping. [^PETS_logical_intel]
+- **Recon-NG:** Use recon-ng para automatizar el reconocimiento de código abierto basado en la web. [^recon-ng_data_flow]
+- **Red social OSINT:** Identifica la disponibilidad de socios, beneficiarios e información actualizada del proyecto, mediante la búsqueda en redes sociales para obtener la información de filtraciones de la organización.

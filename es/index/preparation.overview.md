@@ -1,14 +1,14 @@
 
-## Preparation
+## Preparación
 
-### Summary
-!INCLUDE "en/document_matter/preparation/summary.md"
+### Resumen
+!INCLUDE "../document_matter/preparation/summary.md"
 
-### Purpose
-!INCLUDE "en/document_matter/preparation/purpose.md"
+### Propósito
+!INCLUDE "../document_matter/preparation/purpose.md"
 
-### Guiding Questions
-!INCLUDE "en/document_matter/preparation/guiding_questions.md"
+### Preguntas Orientadoras
+!INCLUDE "../document_matter/preparation/guiding_questions.md"
 
-### Approach
-!INCLUDE "en/document_matter/preparation/approaches.md"
+### Enfoques
+!INCLUDE "../document_matter/preparation/approaches.md"

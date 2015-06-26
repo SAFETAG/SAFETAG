@@ -1,3 +1,4 @@
-Analysis of context is the foundation of effective risk management. Both at-risk organizations and auditors will develop assumptions based upon their experience. It is important that an audit is based on information that is current and accurate.
 
-Checking the assumptions both of the organization and of the auditor by researching the current regional and technological context will ensure that an auditor is basing their work on accurate assessments of the conditions the organization faces and that they are making informed operational security considerations.
+El análisis de contexto es la base de una eficaz gestión de riesgos. Tanto las organizaciones en riesgo como los auditores desarrollarán supuestos a partir de su experiencia. Es importante que la auditoría se base en información exacta y actualizada.
+
+Revisando la comprobación de las hipótesis del auditor y de la organización a partir de la investigación del contexto regional y tecnológico, se podrá asegurar que un auditor esté basando su trabajo en evaluaciones precisas sobre las condiciones que enfrenta la organización; y que se estén haciendo las consideraciones de seguridad operacionales previamente informadas.

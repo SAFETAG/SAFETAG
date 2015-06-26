@@ -1,3 +1,3 @@
-Mapping an organization's network exposes the multitude of devices connected to it -- including mostly forgotten servers -- and provides the baseline for later work on device assessment and vulnerability research.
+El mapeo de una red expone una multitud de dispositivos conectados - incluyendo una mayoría de los servidores olvidados - y proporciona una base para luego trabajar sobre la evaluación del dispositivo y sobre la investigación de las vulnerabilidades.
 
-This process also reveals outside service usage (such as google services, dropbox, or others) which serve -- intentionally or not -- as shadow infrastructure for the organization. In combination with beacon research from the network discovery process, many devices can be associated with users. 
+Este proceso también revela el uso de servicios externos (como los servicios de google, dropbox y otros) que sirven, intencionalmente o no, como infraestructura de sombra en la organización. En combinación con la investigación inicial de proceso de descubrimiento, muchos dispositivos pueden estar asociados con usuarios.

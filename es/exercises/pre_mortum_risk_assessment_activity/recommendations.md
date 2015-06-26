@@ -1,0 +1,2 @@
+
+This activity can lead to feelings of hopelessness as well as stir up direct fears or challenges that the staff face. It is important to remind the staff that any risk can be mitigated, and indeed it is the goal of an audit to identify the highest priority ones based on actual likelihood and provide guidance on mitigation.

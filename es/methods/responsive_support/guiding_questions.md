@@ -1,6 +1,5 @@
-
-* Are there any critical vulnerabilities or remediation activities that the organization needs a deeper understanding to give proper weight to in the report?
-* How can you prepare the staff and management for aspects of the audit process might lead to alienation or inhibit the process?
-* What is the organization's readiness and likelihood to succeed in engaging with security technology?  What factors will complicate or inhibit the effective and safe uptake and use?
-* Is the support you want to provide (troubleshooting, fixes, upgrades, training, etc.) critical to the security of the organization? If not, can you provide that support without taking away from the audit?
-* Will you have the capacity to support software or hardware that you provided while providing support?
+- ¿Existen vulnerabilidades críticas o actividades de recuperación de las cuáles se necesita una comprensión más profunda para dar calidad adecuada al informe?
+- ¿Cómo se puede preparar al personal y a la administración para los aspectos de la auditoría que puedan llevar a aislamiento o inhibición del proceso?
+- ¿Cuál es la preparación y probabilidad de éxito en la participación tecnológica de seguridad de la organización? ¿Qué factores complicarán o inhibirán la comprensión y uso seguro y efectivo?
+- ¿Es el soporte que se quiere proporcionar (solución de problemas, correcciones, actualizaciones, capacitaciones, etc.) crítico para la seguridad de la organización? De no ser así, ¿se puede proveer de soporte sin desvalorizar el proceso de auditoría?
+- ¿Se tendrá la capacidad de proveer software o hardware de apoyo mientras se provee el soporte?

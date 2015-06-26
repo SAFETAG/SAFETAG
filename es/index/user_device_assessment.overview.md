@@ -1,22 +1,22 @@
-## User Device Assessment
+## Evaluación De Dispositivo Del Usuario
 
-### Summary
+### Resumen
 
 !INCLUDE "../methods/user_device_assessment/summary.md"
 
-### Purpose
+### Propósito
 
 !INCLUDE "../methods/user_device_assessment/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![User Device Assessment Information Flow](en/images/info_flows/user_device_assessment.svg)
+![Evaluación De Dispositivo Del Usuario : El Flujo de la Información](images/info_flows/user_device_assessment.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 !INCLUDE "../methods/user_device_assessment/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
 !INCLUDE "../methods/user_device_assessment/approaches.md"
 

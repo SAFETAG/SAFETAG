@@ -1,21 +1,21 @@
-## Context Research
+## Investigación De Contexto
 
-### Summary
+### Resumen
 
-!INCLUDE "en/methods/context_research/summary.md"
+!INCLUDE "../methods/context_research/summary.md"
 
-### Purpose
+### Propósito
 
-!INCLUDE "en/methods/context_research/purpose.md"
+!INCLUDE "../methods/context_research/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Context Research Information Flow](en/images/info_flows/context_research.svg)
+![Investigación De Contexto : El Flujo de la Información](images/info_flows/context_research.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
-!INCLUDE "en/methods/context_research/guiding_questions.md"
+!INCLUDE "../methods/context_research/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
-* RESEARCH: Search for background information that will help you better understand potential threats and overall context for the organization and the audit process.
+!INCLUDE "../methods/context_research/approaches.md"

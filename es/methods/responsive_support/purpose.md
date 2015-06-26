@@ -1,2 +1,1 @@
-
-In-audit activities and training are used to increase an organization's agency to seek out and address immediate security challenges within their organization, as well as enabling the organization to securely receive and store the audit report.
+Dentro de las actividades de la auditoría, la formación se utiliza para aumentar las capacidades de la organización, buscar y hacer frente a los desafíos de seguridad inmediata, así como, para habilitar a la organización a recibir y almacenar de forma segura el informe de la auditoría.

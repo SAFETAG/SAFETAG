@@ -1,5 +1,6 @@
 
-* Depending on the organization's security needs, does it "leak" any sensitive information online (location, staff identities, program locations?)
-* Can you identify partners or beneficiaries through the organizations sites?
-* What is the pattern for staff e-mail addresses?
-* Have any of the the organization's servers, users, or e-mail accounts been compromised in the past?
+- Dependiendo de las necesidades de seguridad de la organización, ¿se filtra información online (ubicación, identidad personal, ubicación de los programas)?
+- ¿Se pueden identificar socios o beneficiarios a través de los sitios de las organizaciones?
+- ¿Cuál es el patrón para las direcciones de email del personal?
+- ¿Alguno de los servidores de la organización, de los usuarios, de las cuentas de correo electrónico, han sido comprometidas en el pasado?
+

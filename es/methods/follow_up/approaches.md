@@ -1,5 +1,4 @@
-
-* **Staff Feedback Survey:** Receive feedback from the staff on the execution of the audit.
-* **Report Follow Up Meeting:** Have a follow-up call to discuss report.
-* **Making Introductions:** Introduce organization to known resources as needed.
-* **Long-Term Follow Up:** Contact host after a few months to check on progress, get long-term feedback and connect with any new resources.
+- **Encuesta de Devoluciones del Personal**: Recepción de devoluciones del personal sobre la ejecución de la auditoría.
+- **Reunión de Reporte de Seguimiento:** Realización de una llamada de seguimiento para discutir el reporte.
+- **Realizar Presentaciones:** Mostrar a la organización los recursos conocidos según sea necesario.
+- **Seguimiento a Largo Plazo:** Contactar a la organización auditada, luego de unos meses para comprobar el progreso, obtener devoluciones a largo plazo y conectarse con nuevos recursos.

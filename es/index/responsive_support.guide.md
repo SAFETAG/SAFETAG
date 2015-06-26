@@ -1,41 +1,42 @@
-## Responsive Support
+## Soporte
 
-### Summary
+### Resumen
 !INCLUDE "../methods/responsive_support/summary.md"
 
-### Purpose
+### Propósito
 !INCLUDE "../methods/responsive_support/purpose.md"
 
-### The Flow of Information
-![Responsive Support Information Flow](en/images/info_flows/responsive_support.svg)
+### El Flujo de la Información
+![Soporte : El Flujo de la Información](images/info_flows/responsive_support.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 !INCLUDE "../methods/responsive_support/guiding_questions.md"
 
-### Approaches
+### Enfoques
 !INCLUDE "../methods/responsive_support/approaches.md"
 
+
 ### Outputs
-!INCLUDE "en/methods/responsive_support/output.md"
+!INCLUDE "../methods/responsive_support/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/responsive_support/operational_security.md"
+!INCLUDE "../methods/responsive_support/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/responsive_support/preparation.md"
+!INCLUDE "../methods/responsive_support/preparation.md"
 
 ### Activities
-!INCLUDE "en/methods/responsive_support/activities.md"
+!INCLUDE "../methods/responsive_support/activities.md"
 
 ### Resources
 <div class="greybox">
 
-!INCLUDE "en/references/facilitation_prep.md"
+!INCLUDE "../references/facilitation_prep.md"
 
-!INCLUDE "en/references/digital_security_training.md"
+!INCLUDE "../references/digital_security_training.md"
 
-!INCLUDE "en/references/digital_security_guides.md"
+!INCLUDE "../references/digital_security_guides.md"
 
-!INCLUDE "en/references/training_resources.md"
+!INCLUDE "../references/training_resources.md"
 
 </div>

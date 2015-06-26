@@ -1,39 +1,22 @@
-## Audit Preparation
+## Engagement Planning
 
-### Summary
+### Resumen
 
-!INCLUDE "../methods/audit_preparation/summary.md"
+!INCLUDE "../methods/engagement_planning/summary.md"
 
-### Purpose
+### Propósito
 
-!INCLUDE "../methods/audit_preparation/purpose.md"
+!INCLUDE "../methods/engagement_planning/purpose.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Audit Preparation Information Flow](en/images/info_flows/audit_preparation.svg)
+![Engagement Planning : El Flujo de la Información](es/images/info_flows/engagement_planning.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
-!INCLUDE "../methods/audit_preparation/guiding_questions.md"
+!INCLUDE "../methods/engagement_planning/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
-!INCLUDE "../methods/audit_preparation/approaches.md"
+!INCLUDE "../methods/engagement_planning/approaches.md"
 
-!INCLUDE "../methods/audit_preparation/activities.md"
-
-### Resources
-
-!INCLUDE "../references/assessment_plan.overview.md"
-
-!INCLUDE "../references/pre_engagement.md"
-
-!INCLUDE "../references/incident_handling.md"
-
-!INCLUDE "../references/legal_considerations.md"
-
-!INCLUDE "../references/data_security_standards.md"
-
-!INCLUDE "../references/preparation.overview.md"
-
-!INCLUDE "../references/facilitation_prep.md"

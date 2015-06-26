@@ -1,17 +1,17 @@
-## Responsive Support
+## Soporte
 
-### Summary
+### Resumen
 !INCLUDE "../methods/responsive_support/summary.md"
 
-### Purpose
+### Propósito
 !INCLUDE "../methods/responsive_support/purpose.md"
 
-### The Flow of Information
-![Responsive Support Information Flow](en/images/info_flows/responsive_support.svg)
+### El Flujo de la Información
+![Soporte : El Flujo de la Información](images/info_flows/responsive_support.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 !INCLUDE "../methods/responsive_support/guiding_questions.md"
 
-### Approaches
+### Enfoques
 !INCLUDE "../methods/responsive_support/approaches.md"
 

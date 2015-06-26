@@ -1,15 +1,15 @@
 ## Network Assessment
 
-### Summary
+### Resumen
 
 !INCLUDE "guides/network_access/summary.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Network Assessment Information Flow](en/images/info_flows/network_assessment.svg)
+![Network Assessment : El Flujo de la Información](images/info_flows/network_assessment.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 * Is the local network vulnerable to threats?
 
-### Approaches
+### Enfoques

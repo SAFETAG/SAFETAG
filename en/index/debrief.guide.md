@@ -2,36 +2,36 @@
 
 
 ### Summary
-!INCLUDE "methods/debrief/summary.md"
+!INCLUDE "../methods/debrief/summary.md"
 
 ### Purpose
-!INCLUDE "methods/debrief/purpose.md"
+!INCLUDE "../methods/debrief/purpose.md"
 
 ### The Flow of Information
 ![Debrief Information Flow](images/info_flows/debrief.svg)
 
 ### Guiding Questions
-!INCLUDE "methods/debrief/guiding_questions.md"
+!INCLUDE "../methods/debrief/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "methods/debrief/approaches.md"
+!INCLUDE "../methods/debrief/approaches.md"
 
 ### Outputs
-!INCLUDE "methods/debrief/output.md"
+!INCLUDE "../methods/debrief/output.md"
 
 ### Operational Security
-!INCLUDE "methods/debrief/operational_security.md"
+!INCLUDE "../methods/debrief/operational_security.md"
 
 ### Preparation
-!INCLUDE "methods/debrief/preparation.md"
+!INCLUDE "../methods/debrief/preparation.md"
 
 ### Activities
-!INCLUDE "methods/debrief/activities.md"
+!INCLUDE "../methods/debrief/activities.md"
 
 ### Resources
 <div class="greybox">
-!INCLUDE "references/debrief.overview.md"
+!INCLUDE "../references/debrief.overview.md"
 
-!INCLUDE "references/facilitation_prep.md"
+!INCLUDE "../references/facilitation_prep.md"
 
 </div>

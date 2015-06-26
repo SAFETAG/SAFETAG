@@ -1,17 +1,17 @@
-## Follow Up
+## Seguimiento
 
-### Summary
-!INCLUDE "en/methods/follow_up/summary.md"
+### Resumen
+!INCLUDE "../methods/follow_up/summary.md"
 
-### Purpose
-!INCLUDE "en/methods/follow_up/purpose.md"
+### Propósito
+!INCLUDE "../methods/follow_up/purpose.md"
 
-### The Flow of Information
-![ Information Flow](en/images/info_flows/follow_up.svg)
+### El Flujo de la Información
+![Seguimiento : El Flujo de la Información](images/info_flows/follow_up.svg)
 
-### Guiding Questions
-!INCLUDE "en/methods/follow_up/guiding_questions.md"
+### Preguntas Orientadoras
+!INCLUDE "../methods/follow_up/guiding_questions.md"
 
-### Approaches
-!INCLUDE "en/methods/follow_up/approaches.md"
+### Enfoques
+!INCLUDE "../methods/follow_up/approaches.md"
 

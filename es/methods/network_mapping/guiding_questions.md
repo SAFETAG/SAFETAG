@@ -1,7 +1,6 @@
 
-* What operating systems, and services being hosted or used by an organization? Are any hosts running unusual, custom, or outdated operating systems and services?
-* Are there unexpected/unusual devices or services on the network?
-* What is the topology of the network? What are the routers and modems 
-managing it?
-* What services (e.g. dropbox, web-mail, etc.) are running on the network that have not been mentioned by the organizational staff?
-* What network assets does an attacker have access to once they have gained access to the internal network?
+- ¿Qué sistemas operativos y servicios están instalados o siendo utilizados por la organización? ¿Están los hosts funcionando de manera inusual, aleatoria o se están ejecutando sistemas operativos y servicios desactualizados o inesperados?
+- ¿Existen dispositivos o servicios inesperados/inusuales en la red?
+- ¿Cuál es la topología de la red?¿Cuáles son los router o modem administrados?
+- ¿De los servicios que se están ejecutando en la red (por ejemplo dropbox, webmail, etc.) Cuáles no han sido informados por el personal?
+- ¿Una vez que un atacante ha ingresado a la red a qué activos puede tener acceso?

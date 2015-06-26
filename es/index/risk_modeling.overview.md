@@ -1,16 +1,16 @@
-## Process Mapping and Risk Modeling
+## Mapeo De Los Procesos Y Modelado De Riesgo
 
-### Summary
-!INCLUDE "en/methods/risk_modeling/summary.md"
+### Resumen
+!INCLUDE "../methods/risk_modeling/summary.md"
 
-### Purpose
-!INCLUDE "en/methods/risk_modeling/purpose.md"
+### Propósito
+!INCLUDE "../methods/risk_modeling/purpose.md"
 
-### The Flow of Information
-![Risk Modeling Information Flow](en/images/info_flows/risk_modeling.svg)
+### El Flujo de la Información
+![Mapeo De Los Procesos : El Flujo de la Información](images/info_flows/risk_modeling.svg)
 
-### Guiding Questions
-!INCLUDE "en/methods/risk_modeling/guiding_questions.md"
+### Preguntas Orientadoras
+!INCLUDE "../methods/risk_modeling/guiding_questions.md"
 
-### Approaches
-!INCLUDE "en/methods/risk_modeling/approaches.md"
+### Enfoques
+!INCLUDE "../methods/risk_modeling/approaches.md"

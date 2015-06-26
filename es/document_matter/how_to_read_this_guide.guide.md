@@ -1,55 +1,57 @@
-## How to Read This Guide
+## Cómo Leer Esta Guía
 
-### Major Sections
+### Secciones Principales
 
-#### The Life Cycle of an Audit
+#### El Ciclo de Vida de una Auditoría
 
-This section contains explanations of the goals of the SAFETAG process and definitions of the major terminology.
+Esta sección contiene explicaciones sobre los principales componentes del proceso de SAFETAG y definiciones de su terminología.
 
-#### Objectives
+#### Objetivos
 
-This section contains the objectives of a SAFETAG audit. These are collections of specific **activities** that an auditor may use to gather and confirm information about the risks an organization faces,  their capacity to address them, and potential threat actors.
+Esta sección contiene los objetivos de una auditoría SAFETAG. Estos objetivos son utilizados para reunir información acerca de los riesgos que una organización enfrenta y de su capacidad para abordarlos.
 
-#### Reporting
+#### Reportes
 
-This section contains the post-audit objectives used to document the organizations risks and auditors recommendations based upon a final capacity and risk assessment.
-
+Esta sección contiene los objetivos post-auditoría utilizados para documentar los riesgos y recomendaciones del auditor sobre la base de una evaluación final de la capacidad y del riesgo.
 
 
 ### Objective Components
 
-#### Summary
+#### Resumen
 
-A short - one to four sentence - basic overview of the objective.
+Un resumen básico del objetivo - de una a cuatro oraciones.
 
-#### Purpose
+#### Propósito
 
-The justification for why we have included this objective.
+Justificación de porqué se ha incluido el objetivo.
 
-#### The Flow of Information
+#### El flujo de la información
 
-The purpose of audit activities is to acquire risk assessment and mitigation information. As this information is acquired, earlier audit steps will have to be re-visited based upon updated information. The "Flow of Information" shows the types of information that an audit objective builds upon (input), and the types of information that it may reveal (outcomes).
+El propósito de las auditorías es obtener la evaluación de riesgo y la información de mitigación. A medida que se obtiene la información, auditorías anteriores tendrán que ir siendo revisadas. El “Flujo de la información” muestra los tipos de información en los que una auditoría se basa (input-datos de entrada) y los tipos de información que una auditoría puede revelar (outcomes-resultados).
 
-#### Guiding Questions
+#### Preguntas de orientación
 
-Each audit objective is guided by a small set of core questions. Key questions are included to help an auditor identify when they have acquired enough information and customize their approach while still collecting the correct types of information to support the organization.
+Cada auditoría es guiada por un pequeño conjunto de preguntas clave. Estas preguntas se incluyen con el fin de ayudar al auditor a identificar cuándo se ha adquirido suficiente información, y personalizar el enfoque mientras se recolecta la información adecuada para apoyar a la organización.
 
-#### Approaches
+#### Enfoques 
 
-Many of these objectives can be completed in multiple ways depending upon auditor skill and the organizational technical setup and capacity. The approach section includes a list of activites that can be used to carry out parts, or the whole, of the information collection for an audit activity.
-
-#### Resources
-
-Links to resources that can be used to deepen an auditors understanding.
+Muchas de estas auditorías se pueden completar de múltiples maneras, dependiendo de las destrezas del auditor y de la capacidad y configuración técnica de la organización. La sección de enfoques incluye una lista de actividades que pueden ser utilizadas para recolectar toda o parte de la información requerida para una auditoría.
 
 
+#### Recursos
+
+Enlaces a recursos que pueden ser usados para profundizar los conocimientos de los auditores.
 
 
-### Activities
+### Actividades
 
-#### Summary
+#### Resumen
 
-A short - one to four sentence - basic overview of the activity.
+Un resumen básico de la actividad - de una a cuatro oraciones.
+
+#### Output
+
+Notes on what data can be created during this activity.
 
 #### Base Line Skills
 
@@ -63,22 +65,15 @@ Operational security guidelines that are specific to this activity.
 
 Any materials beyond the norm that the trainers will need.
 
-#### Instructions
-
-Where relevant, an outline of the steps an auditor will take during this activity.  Not intended to replace true documentation, but useful for an auditor unable to connect to the Internet or to provide the organization's technical contact.
-
 #### Considerations
 
 Some of the activity specific concerns (ethical, skill level,  time, relationship, etc.) that an auditor must take into consideration when conducting this activity.
 
-#### Output
+#### Instructions
 
-Notes on what data can be created during this activity.
+Where relevant, an outline of the steps an auditor will take during this activity.  Not intended to replace true documentation, but useful for an auditor unable to connect to the Internet or to provide the organization's technical contact.
 
-#### Reporting
 
-Notes on how to capture or present data collected to support the reporting process.
 
-#### Resources
 
-Links to resources that can be used to deepen an auditors understanding of an activity.
+

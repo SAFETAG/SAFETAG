@@ -1,2 +1,1 @@
-
-The auditor provides assistance for any immediate action needed (spot training, tool fixes, consulting on upcoming projects) -- this may also involve addressing vulnerabilities that triggered an incident response.
+El auditor proporcionará asistencia para cualquier acción inmediata necesaria (capacitación in situ, corrección de herramientas, consultas sobre proyectos futuros). Ésto también puede implicar que se aborden vulnerabilidades que hayan desencadenado una respuesta ante un incidente.

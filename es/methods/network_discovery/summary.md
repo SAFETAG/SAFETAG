@@ -1,1 +1,1 @@
-This component allows the auditor to show the "visibility" of an organization's wireless network and identify devices using that network. This component consists of wireless scanning, device identification, and wireless signal mapping.
+Este componente permite al auditor exponer la “visibilidad” de la tecnología inalámbrica de una organización, así como también, identificar los equipos que la usan. Este componente consta de un escaneo inalámbrico, identificación de dispositivos y mapeo de la señal inalámbrica.

@@ -1,46 +1,46 @@
 ## Report Creation
 
-!INCLUDE "reporting/report_creation/quote.md"
+!INCLUDE "../reporting/report_creation/quote.md"
 
 ### Summary
 
-!INCLUDE "reporting/report_creation/summary.md"
+!INCLUDE "../reporting/report_creation/summary.md"
 
 ### Purpose
 
-!INCLUDE "reporting/report_creation/purpose.md"
+!INCLUDE "../reporting/report_creation/purpose.md"
 
 ### Baseline Skills
 
-!INCLUDE "reporting/report_creation/baseline_skills.md"
+!INCLUDE "../reporting/report_creation/baseline_skills.md"
 
 ### Preparation
 
-!INCLUDE "reporting/report_creation/preparation.md"
+!INCLUDE "../reporting/report_creation/preparation.md"
 
 ### Materials Needed
 
-!INCLUDE "reporting/report_creation/materials_needed.md"
+!INCLUDE "../reporting/report_creation/materials_needed.md"
 
 ### Approach
 
-!INCLUDE "reporting/report_creation/approach.md"
+!INCLUDE "../reporting/report_creation/approach.md"
 
 ### Reporting
 
-!INCLUDE "reporting/report_creation/reporting.md"
+!INCLUDE "../reporting/report_creation/reporting.md"
 
 ### Output
 
-!INCLUDE "reporting/report_creation/output.md"
+!INCLUDE "../reporting/report_creation/output.md"
 
 ### Operational Security
 
-!INCLUDE "reporting/report_creation/operational_security.md"
+!INCLUDE "../reporting/report_creation/operational_security.md"
 
 ### Resources
 <div class="greybox">
-!INCLUDE "references/report_creation.overview.md"
+!INCLUDE "../references/report_creation.overview.md"
 
 !INCLUDE "reference/report_writing.md"
 

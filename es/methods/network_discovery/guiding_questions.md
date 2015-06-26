@@ -1,5 +1,4 @@
 
- * How far does the organization's wireless network extend beyond a controlled area?
- * Do the staff devices leak sensitive metadata?
- * What can be determined about the organization based on broadcast wireless data?
- 
+- ¿Más allá de la zonas controladas hasta dónde se extiende la red inalámbrica de la organización?
+- ¿Se filtran metadatos por los dispositivos del personal?
+- ¿Qué se puede determinar acerca de la organización, basándose en la información inalámbrica que se difunden?

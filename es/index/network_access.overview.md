@@ -1,21 +1,21 @@
-## Network Access
+## Acceso A Redes
 
-### Summary
+### Resumen
 
-!INCLUDE "en/methods/network_access/summary.md"
+!INCLUDE "../methods/network_access/summary.md"
 
-### Purpose 
+### Propósito 
 
-!INCLUDE "en/methods/network_access/purpose.md"
+!INCLUDE "../methods/network_access/purpose.md"
 
-### The Flow of Information
-![ Information Flow](en/images/info_flows/network_access.svg)
+### El Flujo de la Información
+![Acceso A Redes : El Flujo de la Información](images/info_flows/network_access.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
-!INCLUDE "en/methods/network_access/guiding_questions.md"
+!INCLUDE "../methods/network_access/guiding_questions.md"
 
-### Approach
+### Enfoques
 
-!INCLUDE "en/methods/network_access/approaches.md"
+!INCLUDE "../methods/network_access/approaches.md"
 

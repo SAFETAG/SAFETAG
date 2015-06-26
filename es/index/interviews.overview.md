@@ -1,14 +1,14 @@
 ## Interviews
 
-### Summary
+### Resumen
 
 !INCLUDE "guides/interviews/summary.md"
 
-### The Flow Of Information
+### El Flujo de la Información
 
-![Interview Information Flow](../../images/info_flows/interviews.svg)
+![Interview : El Flujo de la Información](../images/info_flows/interviews.svg)
 
-### Guiding Questions
+### Preguntas Orientadoras
 
 * What kinds of activities does the organization carry out?
 * Has the organization implemented any digital security practices in the past?
@@ -18,7 +18,7 @@
 * What is the organizations’ readiness and likelihood to succeed in engaging with security technology.
 * What kinds of threats does the organization, its partners, and its beneficiaries face?
 
-### Approaches
+### Enfoques
 
 * FACILITATED: Formal interviews with staff.
 * FACILITATED: Group interviews with key staff with short follow up interviews.

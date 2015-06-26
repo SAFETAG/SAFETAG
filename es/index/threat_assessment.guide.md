@@ -1,42 +1,48 @@
-## Threat Assessment
+## Evaluación De Amenazas
 
-### Summary
+### Resumen
+
 !INCLUDE "../methods/threat_assessment/summary.md"
 
-### Purpose
+### Propósito
+
 !INCLUDE "../methods/threat_assessment/purpose.md"
 
-### The Flow Of Information
-![Threat Assessment Information Flow](en/images/info_flows/threat_assessment.svg)
+### El Flujo de la Información
 
-### Guiding Questions
+![Evaluación De Amenazas : El Flujo de la Información](images/info_flows/threat_assessment.svg)
+
+### Preguntas Orientadoras
+
 !INCLUDE "../methods/threat_assessment/guiding_questions.md"
 
-### Approaches
+### Enfoques
+
 !INCLUDE "../methods/threat_assessment/approaches.md"
 
+
 ### Outputs
-!INCLUDE "en/methods/threat_assessment/output.md"
+!INCLUDE "../methods/threat_assessment/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/threat_assessment/operational_security.md"
+!INCLUDE "../methods/threat_assessment/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/threat_assessment/preparation.md"
+!INCLUDE "../methods/threat_assessment/preparation.md"
 
 ### Activities
-!INCLUDE "en/methods/threat_assessment/activities.md"
+!INCLUDE "../methods/threat_assessment/activities.md"
 
 ### Resources
 <div class="greybox">
 
-!INCLUDE "en/references/threat_activities.md"
+!INCLUDE "../references/threat_activities.md"
 
-!INCLUDE "en/references/threat_assessment.md"
+!INCLUDE "../references/threat_assessment.md"
 
-!INCLUDE "en/references/threat_by_focus_area.md"
+!INCLUDE "../references/threat_by_focus_area.md"
 
-!INCLUDE "en/references/threat_by_method.md"
+!INCLUDE "../references/threat_by_method.md"
 
-!INCLUDE "en/references/threat_by_region.md"
+!INCLUDE "../references/threat_by_region.md"
 </div>

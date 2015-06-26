@@ -1,3 +1,3 @@
-This component allows an auditor to explain and get feedback on their report as well as evaluate the success of the process over time through a continued relationship with the host.
+Este componente permite a un auditor explicar y obtener una devolución sobre su reporte, así como, evaluar el éxito del proceso en el tiempo a través de una relación continua con la organización auditada.
 
-This component consists of the final meeting with the host and following up with them after a period of a few months to see if they need further assistance, are willing to share their experience working with any of the recommended resources, or as new resources are identified.
+Este componente consiste en la reunión final con el auditor y el seguimiento en conjunto durante un período de unos pocos meses para observar si se requiere un apoyo adicional, si están dispuestos a compartir su experiencia de trabajo con cualquiera de los recursos recomendados, o para identificar nuevos recursos.

@@ -1,36 +1,32 @@
-## Device Assessment
+## User Device Assessment
 
-!INCLUDE "guides/device_assessment/quote.md"
+### Resumen
 
-### Summary
+!INCLUDE "../methods/user_device_assessment/summary.md"
 
-!INCLUDE "guides/device_assessment/summary.md"
+### Propósito
 
-### Purpose
+!INCLUDE "../methods/user_device_assessment/purpose.md"
 
-!INCLUDE "guides/device_assessment/purpose.md"
+### El Flujo de la Información
 
-### Baseline Skills
+![User Device Assessment : El Flujo de la Información](images/info_flows/user_device_assessment.svg)
 
-!INCLUDE "guides/device_assessment/baseline_skills.md"
+### Preguntas Orientadoras
 
-### Preparation
+!INCLUDE "../methods/user_device_assessment/guiding_questions.md"
 
-!INCLUDE "guides/device_assessment/preparation.md"
+### Enfoques
 
-### Materials Needed
-
-!INCLUDE "guides/device_assessment/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/device_assessment/approach.md"
+!INCLUDE "../methods/user_device_assessment/approaches.md"
 
 ### Output
 
 !INCLUDE "guides/device_assessment/output.md"
 
 ### Operational Security
+
+!INCLUDE "guides/device_assessment/baseline_skills.md"
 
 !INCLUDE "guides/device_assessment/operational_security.md"
 

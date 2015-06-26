@@ -1,3 +1,2 @@
-
-* **Open Source Threat Research:** Identify possible adversaries and threats using publicly available reports, news, and databases.
-* **Threat Mapping:**  Facilitate group activities where staff identify possible adversaries and the threats that they have/can leverage against the group.
+- **Open Source Threat Research:** Identifica posibles adversarios y amenazas utilizando informes públicos disponibles, noticias y bases de datos.
+- **Mapa de Amenazas:** Facilita las actividades de grupo donde el personal identifica posibles adversarios y las amenazas que pueden llegar a utilizar en contra del grupo.

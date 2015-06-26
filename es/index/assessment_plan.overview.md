@@ -1,9 +1,9 @@
 ## Assessment Plan
 
-### Summary
+### Resumen
 
 !INCLUDE "guides/assessment_plan/summary.md"
 
-### Approach
+### Enfoques
 
 !INCLUDE "guides/assessment_plan/approach.md"

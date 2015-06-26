@@ -1,39 +1,44 @@
-## Capacity Assessment
+## Evaluación De La Capacidad
 
-### Summary
-!INCLUDE "en/methods/capacity_assessment/summary.md"
+### Resumen
 
-### Purpose
-!INCLUDE "en/methods/capacity_assessment/purpose.md"
+!INCLUDE "../methods/capacity_assessment/summary.md"
 
-### The Flow Of Information
-![Audit Preparation Information Flow](en/images/info_flows/capacity_assessment.svg)
+### Propósito
 
-### Guiding Questions
-!INCLUDE "en/methods/capacity_assessment/guiding_questions.md"
+!INCLUDE "../methods/capacity_assessment/purpose.md"
 
-### Approaches
-!INCLUDE "en/methods/capacity_assessment/approaches.md"
+### El Flujo de la Información
+
+![Evaluación De La Capacidad : El Flujo de la Información](images/info_flows/capacity_assessment.svg)
+
+### Preguntas Orientadoras
+
+!INCLUDE "../methods/capacity_assessment/guiding_questions.md"
+
+### Enfoques
+
+!INCLUDE "../methods/capacity_assessment/approaches.md"
 
 ### Outputs
-!INCLUDE "en/methods/capacity_assessment/output.md"
+!INCLUDE "../methods/capacity_assessment/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/capacity_assessment/operational_security.md"
+!INCLUDE "../methods/capacity_assessment/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/capacity_assessment/preparation.md"
+!INCLUDE "../methods/capacity_assessment/preparation.md"
 
 ### Activities
-!INCLUDE "en/methods/capacity_assessment/activities.md"
+!INCLUDE "../methods/capacity_assessment/activities.md"
 
 ### Resources
 
 <div class="greybox">
-!INCLUDE "en/references/capacity_assessment.md"
+!INCLUDE "../references/capacity_assessment.md"
 
-!INCLUDE "en/references/interviews.overview.md"
+!INCLUDE "../references/interviews.overview.md"
 
-!INCLUDE "en/references/background_interviews.md"
+!INCLUDE "../references/background_interviews.md"
 
 </div>

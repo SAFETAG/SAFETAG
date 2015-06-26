@@ -1,17 +1,17 @@
-## Report Creation
+## Producción De Un Informe
 
-### Summary
+### Resumen
 
-!INCLUDE "en/reporting/report_creation/summary.md"
+!INCLUDE "../reporting/report_creation/summary.md"
 
-### Purpose
+### Propósito
 
-!INCLUDE "en/reporting/report_creation/purpose.md"
+!INCLUDE "../reporting/report_creation/purpose.md"
 
-### Guiding Questions
+### Preguntas Orientadoras
 
-!INCLUDE "en/reporting/report_creation/guiding_questions.md"
+!INCLUDE "../reporting/report_creation/guiding_questions.md"
 
-### Approaches
+### Enfoques
 
-!INCLUDE "en/reporting/report_creation/approaches.md"
+!INCLUDE "../reporting/report_creation/approaches.md"

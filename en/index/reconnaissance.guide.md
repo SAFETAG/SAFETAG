@@ -16,13 +16,13 @@
 !INCLUDE "../methods/reconnaissance/approaches.md"
 
 ### Outputs
-!INCLUDE "methods/reconnaissance/output.md"
+!INCLUDE "../methods/reconnaissance/output.md"
 
 ### Operational Security
-!INCLUDE "methods/reconnaissance/operational_security.md"
+!INCLUDE "../methods/reconnaissance/operational_security.md"
 
 ### Preparation
-!INCLUDE "methods/reconnaisance/preparation.md"
+!INCLUDE "../methods/reconnaisance/preparation.md"
 
 ### Activities
 !INCLUDE "../methods/reconnaissance/activities.md"

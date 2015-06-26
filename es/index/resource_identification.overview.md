@@ -1,9 +1,9 @@
 ## Resource Identification
 
-### Summary
+### Resumen
 
 !INCLUDE "guides/resource_identification/summary.md"
 
-### Approach
+### Enfoques
 
 !INCLUDE "guides/resource_identification/approach.md"

@@ -1,28 +1,33 @@
-## Reconnaissance
+## Reconocimiento
 
-### Summary
+### Resumen
+
 !INCLUDE "../methods/reconnaissance/summary.md"
 
-### Purpose
+### Propósito
+
 !INCLUDE "../methods/reconnaissance/purpose.md"
 
-### The Flow Of Information
-![Reconnaissance Information Flow](en/images/info_flows/reconnaissance.svg)
+### El Flujo de la Información
 
-### Guiding Questions
+![Reconocimiento : El Flujo de la Información](images/info_flows/reconnaissance.svg)
+
+### Preguntas Orientadoras
+
 !INCLUDE "../methods/reconnaissance/guiding_questions.md"
 
-### Approaches
+### Enfoques
+
 !INCLUDE "../methods/reconnaissance/approaches.md"
 
 ### Outputs
-!INCLUDE "en/methods/reconnaissance/output.md"
+!INCLUDE "../methods/reconnaissance/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/reconnaissance/operational_security.md"
+!INCLUDE "../methods/reconnaissance/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/reconnaisance/preparation.md"
+!INCLUDE "../methods/reconnaisance/preparation.md"
 
 ### Activities
 !INCLUDE "../methods/reconnaissance/activities.md"
