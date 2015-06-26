@@ -1,51 +1,25 @@
 ## Interviews
 
-!INCLUDE "guides/interviews/quote.md"
-
-### Summary
+### Resumen
 
 !INCLUDE "guides/interviews/summary.md"
 
-### Purpose
+### El Flujo de la Información
 
-!INCLUDE "guides/interviews/purpose.md"
+![Interview : El Flujo de la Información](../images/info_flows/interviews.svg)
 
-### Baseline Skills
+### Preguntas Orientadoras
 
-!INCLUDE "guides/interviews/baseline_skills.md"
+* What kinds of activities does the organization carry out?
+* Has the organization implemented any digital security practices in the past?
+* What technical infrastructure (assets) does the organization have?
+* What are they looking to gain out of the audit?
+* What factors will complicate or inhibit the effective and safe uptake and use.
+* What is the organizations’ readiness and likelihood to succeed in engaging with security technology.
+* What kinds of threats does the organization, its partners, and its beneficiaries face?
 
-### Preparation
+### Enfoques
 
-!INCLUDE "guides/interviews/preparation.md"
-
-### Materials Needed
-
-!INCLUDE "guides/interviews/materials_needed.md"
-
-### Approach
-
-!INCLUDE "guides/interviews/approach.md"
-
-### Output
-
-!INCLUDE "guides/interviews/output.md"
-
-### Operational Security
-
-!INCLUDE "guides/interviews/operational_security.md"
-
-### Reporting
-
-!INCLUDE "guides/interviews/reporting.md"
-
-### Resources
-<div class="greybox">
-!INCLUDE "references/interviews.overview.md"
-
-!INCLUDE "references/background_interviews.md"
-</div>
-
-\newpage
-
-### Example
-!INCLUDE "guides/interviews/examples/interview_questions.md"
+* FACILITATED: Formal interviews with staff.
+* FACILITATED: Group interviews with key staff with short follow up interviews.
+* FACILITATED: Formal interviews with key staff followed by informal one on one interviews with other staff.

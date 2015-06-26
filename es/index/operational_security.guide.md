@@ -1,19 +1,9 @@
 ## Operational Security
 
-!INCLUDE "guides/operational_security/quote.md"
+### Resumen
 
-### Summary
-
-!INCLUDE "guides/operational_security/summary.md"
-
-### Purpose
-
-!INCLUDE "guides/operational_security/purpose.md"
+!INCLUDE "guides/operational_security/summary.overview.md"
 
 ### General Guidelines
 
 !INCLUDE "guides/operational_security/guidelines.md"
-
-### Resources
-
-!INCLUDE "en/references/operational_security.overview.md"

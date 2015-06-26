@@ -1,39 +1,44 @@
-## Network Mapping
+## Mapeo De La Red
 
-### Summary
-!INCLUDE "en/methods/network_mapping/summary.md"
+### Resumen
 
-### Purpose
-!INCLUDE "en/methods/network_mapping/purpose.md"
+!INCLUDE "../methods/network_mapping/summary.md"
 
-### The Flow Of Information
-![Network Mapping Information Flow](en/images/info_flows/network_mapping.svg)
+### Propósito
 
-### Guiding Questions
-!INCLUDE "en/methods/network_mapping/guiding_questions.md"
+!INCLUDE "../methods/network_mapping/purpose.md"
 
-### Approaches
-!INCLUDE "en/methods/network_mapping/approaches.md"
+### El Flujo de la Información
+
+![Mapeo De La Red : El Flujo de la Información](images/info_flows/network_mapping.svg)
+
+### Preguntas Orientadoras
+
+!INCLUDE "../methods/network_mapping/guiding_questions.md"
+
+### Enfoques
+
+!INCLUDE "../methods/network_mapping/approaches.md"
 
 ### Outputs
-!INCLUDE "en/methods/network_mapping/output.md"
+!INCLUDE "../methods/network_mapping/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/network_mapping/operational_security.md"
+!INCLUDE "../methods/network_mapping/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/network_mapping/preparation.md"
+!INCLUDE "../methods/network_mapping/preparation.md"
 
 ### Activities
 
-!INCLUDE "en/methods/network_mapping/activities.md"
+!INCLUDE "../methods/network_mapping/activities.md"
 
 ### Resources
 <div class="greybox">
-!INCLUDE "en/references/network_mapping.overview.md"
+!INCLUDE "../references/network_mapping.overview.md"
 
-!INCLUDE "en/references/network_mapping_methods.md"
+!INCLUDE "../references/network_mapping_methods.md"
 
-!INCLUDE "en/references/nmap_scanning.md"
+!INCLUDE "../references/nmap_scanning.md"
 
 </div>

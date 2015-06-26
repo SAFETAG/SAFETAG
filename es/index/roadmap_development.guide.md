@@ -1,41 +1,31 @@
-## Roadmap Development
+## Desarrollo De Una Hoja De Ruta
 
-!INCLUDE "en/reporting/roadmap_development/quote.md"
+### Resumen
 
-### Summary
+!INCLUDE "../reporting/roadmap_development/summary.md"
 
-!INCLUDE "en/reporting/roadmap_development/summary.md"
+### Propósito
 
-### Purpose
+!INCLUDE "../reporting/roadmap_development/purpose.md"
 
-!INCLUDE "en/reporting/roadmap_development/purpose.md"
+### Preguntas Orientadoras
 
-### Baseline Skills
+!INCLUDE "../reporting/roadmap_development/guiding_questions.md"
 
-!INCLUDE "en/reporting/roadmap_development/baseline_skills.md"
+### Enfoques
 
-### Preparation
-
-!INCLUDE "en/reporting/roadmap_development/preparation.md"
-
-### Materials Needed
-
-!INCLUDE "en/reporting/roadmap_development/materials_needed.md"
-
-### Approach
-
-!INCLUDE "en/reporting/roadmap_development/approach.md"
+!INCLUDE "../reporting/roadmap_development/approaches.md"
 
 ### Output
 
-!INCLUDE "en/reporting/roadmap_development/output.md"
+!INCLUDE "../reporting/roadmap_development/output.md"
 
 ### Operational Security
 
-!INCLUDE "en/reporting/roadmap_development/operational_security.md"
+!INCLUDE "../reporting/roadmap_development/operational_security.md"
 
 ### Resources
 
-!INCLUDE "en/references/roadmap_development.overview.md"
+!INCLUDE "../references/roadmap_development.overview.md"
 
-!INCLUDE "en/references/determine_urgency.md"
+!INCLUDE "../references/determine_urgency.md"

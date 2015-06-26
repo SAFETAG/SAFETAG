@@ -1,3 +1,7 @@
+---
+title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
+subtitle: 'Guía'
+---
 
 <!-- License -->
 
@@ -6,8 +10,6 @@
 \newpage
 
 <!-- Introduction -->
-
-# Introduction
 
 !INCLUDE "document_matter/introduction.md"
 
@@ -47,7 +49,7 @@
 
 !INCLUDE "index/preparation.guide.md"
 
-# Methods
+<!-- METHODS -->
 
 !INCLUDE "methods/intro.md"
 
@@ -155,7 +157,7 @@
 \newpage
 <!-- APPENDIX A - Auditor travel Kit Checklist-->
 
-# APPENDIX: Draft Engagement and Confidentiality Agreement
+# APPENDIX: Borrador de Acuerdo de Compromiso
 
 !INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
 

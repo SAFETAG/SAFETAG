@@ -1,50 +1,36 @@
-## Report Creation
+## Producción De Un Informe
 
-!INCLUDE "en/reporting/report_creation/quote.md"
+### Resumen
 
-### Summary
+!INCLUDE "../reporting/report_creation/summary.md"
 
-!INCLUDE "en/reporting/report_creation/summary.md"
+### Propósito
 
-### Purpose
+!INCLUDE "../reporting/report_creation/purpose.md"
 
-!INCLUDE "en/reporting/report_creation/purpose.md"
+### Preguntas Orientadoras
 
-### Baseline Skills
+!INCLUDE "../reporting/report_creation/guiding_questions.md"
 
-!INCLUDE "en/reporting/report_creation/baseline_skills.md"
+### Enfoques
 
-### Preparation
-
-!INCLUDE "en/reporting/report_creation/preparation.md"
-
-### Materials Needed
-
-!INCLUDE "en/reporting/report_creation/materials_needed.md"
-
-### Approach
-
-!INCLUDE "en/reporting/report_creation/approach.md"
-
-### Reporting
-
-!INCLUDE "en/reporting/report_creation/reporting.md"
+!INCLUDE "../reporting/report_creation/approaches.md"
 
 ### Output
 
-!INCLUDE "en/reporting/report_creation/output.md"
+!INCLUDE "../reporting/report_creation/output.md"
 
 ### Operational Security
 
-!INCLUDE "en/reporting/report_creation/operational_security.md"
+!INCLUDE "../reporting/report_creation/operational_security.md"
 
 ### Resources
 <div class="greybox">
-!INCLUDE "en/references/report_creation.overview.md"
+!INCLUDE "../references/report_creation.overview.md"
 
-!INCLUDE "en/reference/report_writing.md"
+!INCLUDE "../reference/report_writing.md"
 
-!INCLUDE "en/reference/report_supporting_references.md"
+!INCLUDE "../reference/report_supporting_references.md"
 
-!INCLUDE "en/reference/financial_barriers.md"
+!INCLUDE "../reference/financial_barriers.md"
 </div>
