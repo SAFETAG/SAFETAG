@@ -3,7 +3,7 @@
 
 Las auditorías de SAFETAG consisten en múltiples pasos de recolección y confirmación de información, así como de ejercicios de investigación para instalar capacidades en el personal, organizados en objetivos, donde cada uno de éstos soporta a los objetivos principales de SAFETAG, al tiempo que se capacita a la institución.
 
-![SAFETAG Activities](images/activities_flow.svg)
+![SAFETAG Activities](images/info_flows/data_flow_all.svg)
 
 ## EL CICLO DE VIDA DE UNA AUDITORÍA
 

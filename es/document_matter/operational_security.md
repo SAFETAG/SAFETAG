@@ -18,4 +18,3 @@ Una auditoría revela gran cantidad de información confidencial sobre una organ
   * Seguridad de las comunicaciones 
     * Llevar a cabo todas las comunicaciones con el cliente a través de canales con un mínimo de seguridad, en los que se cifre la comunicación en tránsito en todo momento por las normas PenTest para la seguridad de datos.
     * Los niveles más altos de seguridad (como PGP, truecrypt o minilock) deben utilizarse para todas las transferencias de archivos y documentos.
-
