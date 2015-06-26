@@ -1,3 +1,3 @@
 
- * Conduct pre-audit interviews with key managerial and technical staff to identify organizational areas of strength and weakness (expertise, finance, staff time, etc.).
- * Have informal conversations with staff during the course of the audit to further gather capacity and historical "stories" of technology adoption.
+- LLevar a cabo entrevistas pre-auditoría con directivos y técnicos clave para identificar fortalezas y debilidades (experiencia, finanzas, tiempo del personal, etc.).
+- Tener conversaciones con el personal durante el transcurso de la auditoría para avanzar en la recopilación de información y en historias sobre la incorporación de tecnologías.

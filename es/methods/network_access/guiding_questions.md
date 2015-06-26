@@ -1,5 +1,4 @@
 
- * Does the organization use strong encryption (WPA2) to secure its wifi?
- * How secure is the password for the wifi network?
- * How are guests provided Internet access?
- 
+- ¿Utiliza la organización cifrado fuerte (WPA2) para asegurar su wifi?
+- ¿Que tan segura es la contraseña de la red wifi?
+- ¿Quiénes son los clientes a los que se les provee acceso a internet?

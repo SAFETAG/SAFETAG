@@ -1,3 +1,2 @@
-A SAFETAG audit has a short time frame. Preparation is vital to ensure that time on the ground is not spent negotiating over the audit scope, updating the auditors systems, searching for missing hardware, or refreshing oneself with the SAFETAG framework.
 
-To that end negotiations with the host organization help reveal if the organization has the capacity to undertake the audit and respond to its findings.
+Una auditoría SAFETAG tiene un período de tiempo corto. La preparación es vital para asegurar que el tiempo de trabajo no sea utilizado para negociar el alcance de la auditoría, en la actualización de los sistemas de auditoría, en la búsqueda de hardware desaparecido o actualizándose uno mismo con el sistema SAFETAG. Para tal fin, las negociaciones con la organización auditada ayudan a revelar si la institución tiene la capacidad para llevar a cabo la auditoría y responder a sus resultados. 

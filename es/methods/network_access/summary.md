@@ -1,1 +1,1 @@
-This component allows the auditor to test the strength of defenses the host has in place to protect their local area network. This component consists of gaining access to the local area network through a wireless access point and unsecured physical channels (such as an ethernet jack).
+Este componente permite al auditor testear las fortalezas de la organización para proteger su red de área local. Este componente consiste en el acceso a la red de área local a través de un punto de acceso inalámbrico y de canales físicos no seguros (como un conector ethernet).

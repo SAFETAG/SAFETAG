@@ -1,4 +1,4 @@
-* What work and personal devices do staff use to accomplish their work, store work related files, or engage in work communications?
-* What organizational and external/personal services  do staff use to accomplish their work, store work related files, or engage in work communications?
-* What are the organizational processes that staff take part in and the tools and communication channels that are used in those process'?
-* What are the existing in/formal security practices that the participants use to address risks.
+- ¿Qué dispositivos personales utiliza el staff para cumplir con su trabajo, almacenar archivos, o realizar comunicaciones laborales?
+- ¿Qué servicios organizacionales y personales utiliza el staff para cumplir con su trabajo, almacenar archivos, o realizar comunicaciones laborales?
+- ¿Cuáles son los procesos de la organización en los que participa el personal y qué herramientas y canales de comunicación se utilizan en tales procesos?
+- ¿Que prácticas de seguridad formales utilizan los participantes para afrontar los riesgos.

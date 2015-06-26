@@ -1,1 +1,1 @@
-This component allows the auditor to identify what sensitive data exists for the organization, where it is stored, and how it is transferred.
+Este componente permite al auditor identificar la información sensible que tiene la organización, donde está almacenada y la forma en que se transfiere.

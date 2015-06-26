@@ -1,1 +1,2 @@
-This component allows the auditor to identify the relevant regional and technological context needed to provide a safe and informed SAFETAG audit. This component consists of desk research that is collected and analyzed by the auditor, as well as inputs from the Interview component.
+
+Este componente permite al auditor identificar el contexto regional y tecnológico para realizar una auditoría SAFETAG segura y bien informada. Este componente consta de investigación documental, que es recopilada y analizada por el auditor, así como, por los aportes de las entrevistas.

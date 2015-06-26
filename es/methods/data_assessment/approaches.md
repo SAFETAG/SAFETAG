@@ -1,4 +1,3 @@
-
-* **Data Mapping Activity:** Have staff identify where that data is currently (what devices/physical locations), who has access (physical, login, permissions), and who needs to have access to get the organizations work completed.
-*  **Risks of Data Lost and Found Activity:** Have rank the impact if different data within the organization was lost, and if adversaries gained access to that data.
-* **Private Data Activity:** Guide staff through an activity to have them list private data within the organization [^personal_information_to_keep_private]
+- **Actividad de Mapeo de Datos:** Hacer que el personal identifique dónde está la información actualmente (en qué dispositivos/ubicaciones físicas), quién tiene acceso (físico, de inicio de sesión, permisos), y quién necesita tener acceso para realizar los trabajos de la organización.
+- **Actividad de los Riesgos de Perder y Encontrar Datos: **Solicitar que se clasifique el impacto dentro de la organización, si se perdieran diferentes datos, o si los adversarios tuvieran acceso a dichos datos.
+- **Actividad Privada de Datos:** Guiar al personal a través de una actividad en la que realicen un listado de datos privados dentro de la organización. (14)

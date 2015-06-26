@@ -1,4 +1,4 @@
-  
-  * Scan for wireless networks nearby, identify (and confirm) the office network(s).
-  * Identify range of wireless network outside of office space.
-  * Monitor traffic of that network and capture potentially sensitive metadata (wireless handshakes, beacons, and MAC addresses).
+
+ -  Escanear en busca de redes inalámbricas cercanas a la oficina, identificarlas (y confirmarlas).
+- Identificar el rango de redes inalámbricas fuera del espacio de la oficina.
+- Supervisar el tráfico de esa red y capturar metadatos potencialmente sensibles (apretones de manos inalámbricas, balizas y MAC addresses).

@@ -1,4 +1,4 @@
 
-* **Conduct a Hands on  Device Interview/Audit:** Inspect and record information on user devices (work & personal) for security concerns (patch levels, user privileges, drive encryption, ports/services running, anti-virus capabilities)
-* **Password User Survey:** Have staff take the password use survey for ALL devices used for work. [^password_survey]^,^[^password-security]
-* **A Day In the Life:** Have staff walk you through a usual "day in their life" showing you what devices they use, how they use them, and what data they have to interact with to conduct their work.
+- **Realizar entrevistas/auditorías con los dispositivos en mano:** Inspeccionar y registrar la información de los dispositivos (de trabajo y personales) por motivos de seguridad (niveles de parches, privilegios de usuarios, unidades de cifrado, puertos/servicios en ejecución, antivirus).
+- **Encuestas a usuarios de contraseñas:** Haga que el personal realice la encuesta sobre contraseñas para TODOS los dispositivos que utiliza para trabajar. (12,13)
+- **Un día en la vida...**: Haga que el personal lo guíe a través de un “día de su vida” normal mostrándole qué dispositivos utiliza, cómo los usa y la información con la que tiene que interactuar para llevar a cabo su trabajo.

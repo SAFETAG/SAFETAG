@@ -1,7 +1,6 @@
-
-* What are the most important data sets to keep available? Are there backups?
-* What are the most important data sets to keep private?
-* How does the organization currently determine who should have access to data?
-* Is there currently anyone who has access to data who should not?
-* Does the staff agree on what constitutes sensitive data?
-* What data does each staff member need to be able to access in order to do their job?
+- ¿Cuáles son los conjuntos de datos más importantes que hay que mantener disponibles?¿Hay copias de seguridad?
+- ¿Cuáles son los conjuntos de datos importantes que hay que mantener en privado?
+- ¿De qué manera la organización determina en la actualidad quién debe tener acceso a la información?
+- ¿Hay en la actualidad personas que tienen acceso a información a la cual no deberían tenerlo?
+- ¿Está el personal de acuerdo en lo que constituyen los datos sensibles?
+- ¿Qué información necesita cada uno de los empleados con el fin de realizar su trabajo?
