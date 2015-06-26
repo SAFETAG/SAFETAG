@@ -1,5 +1,5 @@
 ---
-title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
+title: 'El Sistema de Auditorías y Plantillas de Evaluación para Grupos de Defensoría'
 subtitle: 'Resumen'
 ---
 
