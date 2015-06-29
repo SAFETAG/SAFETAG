@@ -20,19 +20,19 @@
 !INCLUDE "../methods/network_access/approaches.md"
 
 
-### Output
+### Resultados
 !INCLUDE "../methods/network_access/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/network_access/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/network_access/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/network_access/activities.md"
 
-### Resources
+### Recursos
 
 <div class="greybox">
 !INCLUDE "../references/network_access.md"

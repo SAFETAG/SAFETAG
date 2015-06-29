@@ -15,19 +15,19 @@
 ### Enfoques
 !INCLUDE "../methods/risk_modeling/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/risk_modeling/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/risk_modeling/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/risk_modeling/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/risk_modeling/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 
 !INCLUDE "../references/risk_modeling.overview.md"

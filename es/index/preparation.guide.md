@@ -12,16 +12,16 @@
 ### Enfoques
 !INCLUDE "../document_matter/preparation/approaches.md"
 
-### Output
+### Resultados
 !INCLUDE "../document_matter/preparation/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../document_matter/preparation/operational_security.md"
 
-### Activities
+### Actividades
 !INCLUDE "../document_matter/preparation/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/preparation.overview.md"
 

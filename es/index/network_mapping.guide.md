@@ -20,20 +20,20 @@
 
 !INCLUDE "../methods/network_mapping/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/network_mapping/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/network_mapping/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/network_mapping/preparation.md"
 
-### Activities
+### Actividades
 
 !INCLUDE "../methods/network_mapping/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/network_mapping.overview.md"
 

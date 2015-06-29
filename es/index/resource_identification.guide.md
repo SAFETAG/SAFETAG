@@ -8,11 +8,11 @@
 
 !INCLUDE "guides/resource_identification/approach.md"
 
-### Output
+### Resultados
 
 !INCLUDE "../reporting/resource_identification/output.md"
 
-### Operational Security
+### Seguridad Operacional
 
 !INCLUDE "../reporting/resource_identification/operational_security.md"
 
@@ -20,7 +20,7 @@
 
 !INCLUDE "../reporting/resource_identification/reporting.md"
 
-### Resources
+### Recursos
 
 !INCLUDE "../references/resource_identification.overview.md"
 

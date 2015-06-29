@@ -20,11 +20,11 @@
 
 !INCLUDE "../methods/user_device_assessment/approaches.md"
 
-### Output
+### Resultados
 
 !INCLUDE "guides/device_assessment/output.md"
 
-### Operational Security
+### Seguridad Operacional
 
 !INCLUDE "guides/device_assessment/baseline_skills.md"
 
@@ -34,7 +34,7 @@
 
 !INCLUDE "guides/device_assessment/reporting.md"
 
-### Resources
+### Recursos
 
 !INCLUDE "references/device_assessment.overview.md"
 

@@ -20,19 +20,19 @@
 
 !INCLUDE "../methods/physical_assessment/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/physical_assessment/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/physical_assessment/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/physical_assessment/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/physical_assessment/activities.md"
 
-### Resources
+### Recursos
 
 <div class="greybox">
 !INCLUDE "../references/physical_assessment.overview.md"

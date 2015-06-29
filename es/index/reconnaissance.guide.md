@@ -20,19 +20,19 @@
 
 !INCLUDE "../methods/reconnaissance/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/reconnaissance/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/reconnaissance/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/reconnaisance/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/reconnaissance/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 
 !INCLUDE "../references/open_source_intel.md"

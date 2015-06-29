@@ -16,19 +16,19 @@
 !INCLUDE "../methods/follow_up/approaches.md"
 
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/follow_up/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/follow_up/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/follow_up/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/follow_up/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/follow_up_overview.md"
 </div>

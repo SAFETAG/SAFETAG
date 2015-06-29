@@ -20,19 +20,19 @@
 
 !INCLUDE "../methods/user_device_assessment/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/user_device_assessment/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/user_device_assessment/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/user_device_assessment/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/user_device_assessment/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/device_assessment.overview.md"
 

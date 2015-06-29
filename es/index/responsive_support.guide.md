@@ -16,19 +16,19 @@
 !INCLUDE "../methods/responsive_support/approaches.md"
 
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/responsive_support/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/responsive_support/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/responsive_support/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/responsive_support/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 
 !INCLUDE "../references/facilitation_prep.md"

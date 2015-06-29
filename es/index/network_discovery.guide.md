@@ -19,19 +19,19 @@
 
 !INCLUDE "../methods/network_discovery/approaches.md"
 
-### Output
+### Resultados
 !INCLUDE "../methods/network_discovery/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/network_discovery/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/network_discovery/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/network_discovery/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/network_discovery_methods.md"
 </div>

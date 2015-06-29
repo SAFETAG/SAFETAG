@@ -20,19 +20,19 @@
 
 !INCLUDE "../methods/context_research/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/context_research/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/context_research/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/context_research/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/context_research/activities.md"
 
-### Resources
+### Recursos
 
 <div class="greybox">
 !INCLUDE "../references/context_research.md"

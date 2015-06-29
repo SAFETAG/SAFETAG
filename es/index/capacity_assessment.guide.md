@@ -20,19 +20,19 @@
 
 !INCLUDE "../methods/capacity_assessment/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/capacity_assessment/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/capacity_assessment/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/capacity_assessment/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/capacity_assessment/activities.md"
 
-### Resources
+### Recursos
 
 <div class="greybox">
 !INCLUDE "../references/capacity_assessment.md"

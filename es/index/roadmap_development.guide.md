@@ -16,15 +16,15 @@
 
 !INCLUDE "../reporting/roadmap_development/approaches.md"
 
-### Output
+### Resultados
 
 !INCLUDE "../reporting/roadmap_development/output.md"
 
-### Operational Security
+### Seguridad Operacional
 
 !INCLUDE "../reporting/roadmap_development/operational_security.md"
 
-### Resources
+### Recursos
 
 !INCLUDE "../references/roadmap_development.overview.md"
 

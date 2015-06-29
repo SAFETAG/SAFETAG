@@ -16,15 +16,15 @@
 
 !INCLUDE "../reporting/report_creation/approaches.md"
 
-### Output
+### Resultados
 
 !INCLUDE "../reporting/report_creation/output.md"
 
-### Operational Security
+### Seguridad Operacional
 
 !INCLUDE "../reporting/report_creation/operational_security.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/report_creation.overview.md"
 

@@ -16,7 +16,7 @@
 
 !INCLUDE "../reporting/recommendation_development/approaches.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 
 #### Resource Links 

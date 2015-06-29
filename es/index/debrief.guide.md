@@ -15,19 +15,19 @@
 ### Enfoques
 !INCLUDE "../methods/debrief/approaches.md"
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/debrief/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/debrief/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/debrief/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/debrief/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 !INCLUDE "../references/debrief.overview.md"
 

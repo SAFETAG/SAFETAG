@@ -21,19 +21,19 @@
 !INCLUDE "../methods/threat_assessment/approaches.md"
 
 
-### Outputs
+### Resultados
 !INCLUDE "../methods/threat_assessment/output.md"
 
-### Operational Security
+### Seguridad Operacional
 !INCLUDE "../methods/threat_assessment/operational_security.md"
 
-### Preparation
+### Preparación
 !INCLUDE "../methods/threat_assessment/preparation.md"
 
-### Activities
+### Actividades
 !INCLUDE "../methods/threat_assessment/activities.md"
 
-### Resources
+### Recursos
 <div class="greybox">
 
 !INCLUDE "../references/threat_activities.md"

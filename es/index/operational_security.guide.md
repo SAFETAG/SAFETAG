@@ -1,4 +1,4 @@
-## Operational Security
+## Seguridad Operacional
 
 ### Resumen
 
