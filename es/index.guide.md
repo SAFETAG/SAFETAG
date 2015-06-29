@@ -132,12 +132,13 @@ subtitle: 'Guía'
 
 !INCLUDE "index/follow_up.guide.md"
 
-# Reporting
+# INFORMES
 
 \newpage
-<!-- Vulnerability Prioritization -->
+<!-- Vulnerability Prioritization
 
 !INCLUDE "index/vulnerability_prioritization.guide.md"
+ -->
 
 \newpage
 <!-- Recommendation Development -->
