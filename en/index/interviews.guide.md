@@ -26,7 +26,7 @@
 
 !INCLUDE "guides/interviews/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "guides/interviews/output.md"
 

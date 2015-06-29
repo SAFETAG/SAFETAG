@@ -16,7 +16,7 @@
 ### Approaches
 !INCLUDE "../document_matter/preparation/approaches.md"
 
-### Output
+### Outputs
 !INCLUDE "../document_matter/preparation/output.md"
 
 ### Operational Security

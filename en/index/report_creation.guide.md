@@ -30,7 +30,7 @@
 
 !INCLUDE "../reporting/report_creation/reporting.md"
 
-### Output
+### Outputs
 
 !INCLUDE "../reporting/report_creation/output.md"
 

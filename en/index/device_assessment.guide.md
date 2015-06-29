@@ -26,7 +26,7 @@
 
 !INCLUDE "guides/device_assessment/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "guides/device_assessment/output.md"
 

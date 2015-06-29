@@ -26,7 +26,7 @@
 
 !INCLUDE "../methods/remote_assessment/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "../methods/remote_assessment/output.md"
 

@@ -15,7 +15,7 @@
 ### Approaches
 !INCLUDE "../methods/network_discovery/approaches.md"
 
-### Output
+### Outputs
 !INCLUDE "../methods/network_discovery/output.md"
 
 ### Operational Security

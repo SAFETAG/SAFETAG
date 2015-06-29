@@ -15,7 +15,7 @@
 ### Approach
 !INCLUDE "../methods/network_access/approaches.md"
 
-### Output
+### Outputs
 !INCLUDE "../methods/network_access/output.md"
 
 ### Operational Security

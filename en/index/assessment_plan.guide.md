@@ -24,7 +24,7 @@
 
 !INCLUDE "../methods/assessment_plan/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "../methods/assessment_plan/output.md"
 

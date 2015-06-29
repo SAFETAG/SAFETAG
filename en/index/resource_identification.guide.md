@@ -26,7 +26,7 @@
 
 !INCLUDE "../reporting/resource_identification/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "../reporting/resource_identification/output.md"
 

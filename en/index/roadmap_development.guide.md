@@ -26,7 +26,7 @@
 
 !INCLUDE "../reporting/roadmap_development/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "../reporting/roadmap_development/output.md"
 
