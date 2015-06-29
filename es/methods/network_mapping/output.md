@@ -1,5 +1,5 @@
 
-  * A list of hosts, servers, and other network hardware on LAN
-  * The operating systems and services on each host.
-  * Services used by the host as identified by decrypted wireless network traffic.
-  * Possible vulnerable services and practices.[^vulnerability_analysis]
+  * Una lista de hosts, servidores y otro hardware de red LAN.
+  * Los sistemas operativos y servicios de cada host.
+  * Servicios utilizados por la organización, identificados como tráfico descifrado de la red inalámbrica.
+  * Posibles servicios y prácticas vulnerable.[^vulnerability_analysis]

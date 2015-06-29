@@ -1,4 +1,5 @@
 
-  * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.
-  * Ensure that any digital recordings of this process are kept secure and encrypted. 
-  * Consider who has physical and visual access to the room where this process takes place, and if the room can be secured if this activity may span long/overnight breaks.
+  * Asegurar que todas las notas y dibujos sean eliminados y destruidos una vez digitalizados.
+  * Asegurar que todas las grabaciones digitales de este proceso se mantengan seguras y cifradas. 
+  * Considerar quienes tienen acceso físico o visual al espacio donde este proceso tiene lugar, y si esa habitación puede ser asegurada en caso de largos descansos o durante la noche. 
+

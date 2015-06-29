@@ -1,5 +1,6 @@
 
-#### Baseline Skills
+#### Habilidades básicas
 
-* Experience giving digital security training
-* Each training guide has detailed lists of materials needed and trainer preparation - preview and prepare for any training you plan to give.
+* Experiencia brindando capacitación en seguridad digital
+* Cada guía de capacitación cuenta con listas detalladas de los materiales necesarios, y la preparación del instructor - prepararación previa para cualquier capacitación que se planea brindar.
+

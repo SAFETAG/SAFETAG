@@ -1,2 +1,2 @@
 
-  * In addition to ongoing secure communication practices, check for any changes in keys or other authentication changes. If these occur re-verify this information using out of band means. 
+  * Además de las prácticas seguras de comunicación en curso, comprobar que no existan cambios en las claves o de autenticación. Si esto ocurre volver a verificar la información utilizando recursos fuera de banda. 

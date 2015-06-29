@@ -1,6 +1,6 @@
 
-  * Clarify timing and seek permission with staff - some activities can tax the network or cause disruptions.
-  * Confirm that all devices you are accessing/scanning belong to the organization.
-  * Delete all devices from your scan that do not belong to the organization.
-  * Study outputs for any obviously embarrassing personal information (especially traffic sniffing or personal devices connected to the network) before sharing.
-  * Treat captured network traffic with the utmost security and empathetic responsibility. They may contain very personal data, passwords, and more. These should not be shared except in specific, intentional samples with anyone, including the organization itself.
+  * Acordar tiempos de trabajo y solicitar permiso al personal - algunas actividades pueden provocar interrupciones o demoras en la red. 
+  * Confirmar que todos los dispositivos a los que está accediendo/escanenado pertencen a la organización.
+  * Eliminar de su escaneo todos los dispositivos que no pertenezcan a la organización.
+  * Antes de compartir los resultado, analizarlos en busca de cualquier información personal compremetodra (especialmete tráfico sniffing o dispositivos personales conectados a la red).
+  * Tratar el tráfico de red capturado con la máxima seguridad y responsabilidad. Puede contener datos muy personales, contraseñas entre otros. Estos no deben ser compartidos intencionalmente con nadie, incluyendo la propia organización(excepto en muestreos específicos intencionales).

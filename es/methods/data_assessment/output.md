@@ -1,6 +1,7 @@
 
-  * A map of the staff's understanding of critical organizational data:
-      * what that data is,
-      * where it is stored, 
-      * who has access, 
-      * who needs access.
+* Mapa de la comprensión del personal de los datos críticos de la organización:
+      * Qué información se necesita.
+      * Dónde está almacenada.
+      * Quién tiene acceso.
+      * Quién necesita acceso.
+

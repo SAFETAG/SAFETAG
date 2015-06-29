@@ -1,3 +1,3 @@
 
-* Facilitation skills or experience is useful for these exercises
-* Carefully review the exercises you plan to use
+* Para estos ejercicios es útil tener habilidades de facilitación o experiencia.
+* Revisar cuidadosamente los ejercicios que se planean utilizar.

@@ -1,3 +1,3 @@
 
-#### Baseline Skills
-* Knowledge of wireless networking and the aircrack suite of tools
+#### Habilidades básicas
+* Conocimientos de redes inlámbricas y de las herramientas aircrack.

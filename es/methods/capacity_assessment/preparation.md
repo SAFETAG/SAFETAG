@@ -1,3 +1,3 @@
 
-* Review or create a set of interview questions to keep you on track
-* Have a secure note-taking process ready
+* Revisar o crear un conjunto de preguntas para la entrevista que permitan mantener el foco. 
+* Prever un proceso para la toma de notas.

@@ -1,2 +1,2 @@
 
-* Threat Identification works best grounded against mapped out organizational processes or a data/asset map. See the Process Mapping and Data Assessment methods for exercises to generate these.
+* La identificación de amenazas funciona mejor en contra procesos organizativos de datos/activos que no estén mapeados. Oara generar ésto, ver métodos del proceso de Mapeo y Evaluación de Datos con ejercicios.

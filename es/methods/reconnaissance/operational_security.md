@@ -1,9 +1,3 @@
 
-This Section:
-
-  * does not require privileged access to the organization's offices, infrastructure or staff;
-  * relies primarily on third-party data sources and observation and light probing of the organization’s infrastructure;
-  * can generally be carried out from any secure Internet connection.
-
- * While this does not focus on identifying of vulnerabilities, it may nonetheless expose certain threats, particularly with regard to publicly-accessible information that is presumed to be confidential, such as the identity of sensitive staff, the existence of sensitive partner- and funder-relationships, or the organization’s history of participation in sensitive events or travel to sensitive locations.
+ * Si bien ésto no se enfoca en la identificación de las vulnerabilidades, puede, sin embargo, exponer ciertas amenazas. Particularmente con respecto a la información accesible al público que se presume es confidencial: como la identidad del personal susceptible, la existencia de relaciones delicadas con socios y financistas, o historial de participación de la organización en eventos o viajes a lugares susceptibles.  
 

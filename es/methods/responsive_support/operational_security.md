@@ -1,5 +1,6 @@
 
-* If you are providing software tools, make sure to check file signatures (and explain the process) - do not be the weak link or introduce malware into the organization!
-* Do not attempt to train on any topic that you are not knowledgeable on.
-* For any targeted training, especially on new tools, ensure that key personnel at the organization successfully use these tools during the audit timeline. This is especially important for secure communications tools the auditor hopes to use to follow-up with the organization.
-* For any specific fixes or upgrades to the system, make sure that backups exist and to test extensively and with staff involvement after your intervention.
+* Si está brindando herramientas de software, asegúrese de revisar el archivo de firmas (y de explicar el proceso), no sea el eslabón débil y no introduzca malware en la organización.
+* No intente entrenar a nadie en un tema que usted no domina.
+* Para cualquier entrenamiento específico, sobretodo para herramientas nuevas, asegúrese de que el personal utilice correctamente esas herramienta durante el lapso de la auditoría. Ésto es especialmente importante a fin de asegurar las herramientas de comunicación que el auditor espera usar para realizar el seguimiento de la organización.
+* Para cualquier arreglo específico o actualización al sistema luego de su intervención, asegúrese de que existan backups y de realizar testeos generalizados involucrando al personal.
+

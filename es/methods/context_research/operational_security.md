@@ -1,2 +1,2 @@
 
-  * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization’s country, or is known to surveil.
+  * Usar VPN (Red Privada Virtual) o Tor para determinar si se realiza la búsqueda desde un país que es altamente competitivo con el país de la organización, o es conocido por vigilar.

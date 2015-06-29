@@ -1,5 +1,6 @@
 
-* List of all assets in the organization and whom they belong to.
-* List of software running on staff devices.
-* List of known vulnerabilities, and identifiable malware, that the office is vulnerable to.
-* List of malware found by running updated anti-virus on office computers (if anti-virus installed during device inspection.)
+* Lista de todos los activos de la organización y a quien pertenecen.
+* Lista del software que se está ejecutando en dispositivos del personal.
+* Lista de vulnerabilidades conocidas, y del malware identificable, al que la oficina es vulnerable.
+* Lista de malware identificado ejecutando un antivirus actualizado en las computadoras de la oficina (si se ha instalado un antivirus durante la inspección de dispositivos).
+

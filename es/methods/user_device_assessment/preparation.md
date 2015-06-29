@@ -1,5 +1,4 @@
 
-#### Baseline Skills
+#### Habilidades básicas
 
-* Basic systems administration experience for common operating systems
-
+* Experiencia básica en administración de sistemas operativos comunes

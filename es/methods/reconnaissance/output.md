@@ -1,7 +1,9 @@
 
-  * Dossier of organizational, partner, and beneficiary "open sources" information exposed online.
-    * A list of e-mail address for members of the organization.
-  * Identification and mapping of externally facing services and unintentionally exposed internal services.
-    * Possible vulnerabilities in the websites and externally facing servers of the organization.
-    * Existing information about earlier breaches identified in the paste-bin search.
-  * Follow the proper incident response plan if high risk problems are identified.
+  * Expediente de la organización, socios, y beneficiarios con información de "fuente abierto" (OSINT) expuesto en línea.
+  * Una lista de las direcciones de email de los miembros de la organización.
+  * Identificación y mapeo de los servicios vinculados al exterior  y servicios internos expuestos involuntariamente.
+  * Las posibles vulnerabilidades en los sitios web y servidores externos que enfrenta la organización.
+  * La información existente sobre las fallas anterios identificadas en los sitios de pastebin.
+  * Seguir el correcto plan de respuesta a incidentes si se identifican problemas de alto riesgo.
+
+    

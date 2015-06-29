@@ -1,4 +1,4 @@
 
-  * The name of wireless access points used by the host.
-  * airodump logs with key handshakes for wireless traffic on each relevant access point.
-  * A map or photos indicating the range of each relevant wireless access point.
+  * El nombre del punto de acceso inalámbrico usado por la organización.
+  * Registros de airodump con clave inalámbrica handshakes para cada uno de los puntos de acceso más relevantes.
+  * Un mapa o fotos que indiquen el rango de acceso inalámbrico de cada punto relevante.

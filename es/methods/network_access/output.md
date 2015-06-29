@@ -1,3 +1,3 @@
 
-  * Un-authorized access to the Wireless access point (WAP)
-  * List of unused ethernet jacks with network connectivity.
+  * Accesos no autorizado al punto de acceso inalámbrico (WAP)
+  * Lista de conectores ethenert con conectividad que están sin uso.
