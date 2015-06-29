@@ -1,4 +1,4 @@
-### Threat Identification
+### Threat Interaction
 
 #### Summary
 !INCLUDE "summary.md"
