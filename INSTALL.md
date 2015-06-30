@@ -28,6 +28,7 @@ The Document Builder can be used to generate the SAFETAG Overview, Guide, or rep
 ```
  /path/to/Documentation-Builder/builddoc -i /path/to/SAFETAG/en -I index.overview.md -o /path/to/outputfile.pdf -t /path/to/SAFETAG/styles
  ```
+The -i flag is the base directory, -I specifies the index file to build from, -o is the output file, and -t is the path to the template folder for styling.  -d provides debugging information and enables you to also get compiles markdown and HTML versions of the document. Run ```builddoc -h``` for more options.
 
  So, if you have all of your github repositories in a folder called "github" in your home directory, this command will build the full guide in your current directory:
 
