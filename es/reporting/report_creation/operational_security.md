@@ -1,2 +1,3 @@
 
-  * Treat the report with the utmost security. It should only be shared as a complete work between the auditor(s) and the identified leadership and points of contact of the organization.
+  * Tratar al informe con la máxima seguridad. Sólo debe ser compartido como un trabajo finalizado entre el/los auditor(es), y los directivos y personas clave de la organización.
+  

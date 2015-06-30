@@ -1,8 +1,8 @@
-  * A risk matrix with all vulnerabilities ranked on it.
-  * An "implementation matrix" showing each recommendation in relation to its difficulty to implement and its urgency.
-  * An overview of the risks the organization is accepting until they address each vulnerability.
-  * A short overview of the how the likelihood was determined for vulnerabilities.
-  * A listing of the process, impact, and likelihood for each vulnerability.
-  * A roadmap for a "recommended path" to address the threats the host faces.
-  * A short description of why a recommendation (and corresponding threat) was ranked with the urgency it was assigned.
 
+ * Una matriz de riesgo con la clasificación de las vulnerabilidades.
+ * Una matriz de implementación mostrando las recomendaciones en relación a la dificultad de implementación y a la urgencia.
+ * Una visión general de los riesgos que la organización está aceptando hasta que se aborde cada vulnerabilidad.
+ * Una breve descripción de la forma en que se determina la probabilidad de cada vulnerabilidad
+ * Un listado del proceso, el impacto y la probabilidad para cada vulnerabilidad.
+ * Una Hoja de ruta que indique el camino correcto para enfrentar las amenazas que afectan a la organización.
+ * Una breve descripción de por qué una recomendación (y amenaza correlacionada) se clasificó con la urgencia asignada.
