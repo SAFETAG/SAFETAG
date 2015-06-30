@@ -18,9 +18,6 @@ git clone --recursive https://github.com/openinternet/safetag.git
   * Follow the Document Builder's [Installation Instructions](https://github.com/OpenInternet/Documentation-Builder/blob/master/docs/INSTALL.md) to download and install.
 
 
-  * Download the binary [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html) application for your system.
-
-
 # Building Documentation and Reports
 
 The Document Builder can be used to generate the SAFETAG Overview, Guide, or reports using the following command:
