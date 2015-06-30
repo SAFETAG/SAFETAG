@@ -35,7 +35,8 @@
 !INCLUDE "../reporting/roadmap_development/operational_security.md"
 
 ### Resources
-
+<div class="greybox">
 !INCLUDE "../references/roadmap_development.overview.md"
 
 !INCLUDE "../references/determine_urgency.md"
+</div>

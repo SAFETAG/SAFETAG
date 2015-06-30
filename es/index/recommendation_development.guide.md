@@ -16,10 +16,19 @@
 
 !INCLUDE "../reporting/recommendation_development/approaches.md"
 
+### Resultados
+
+!INCLUDE "../reporting/recommendation_development/output.md"
+
+### Seguridad Operacional
+
+!INCLUDE "../reporting/recommendation_development/operational_security.md"
+
 ### Recursos
+
 <div class="greybox">
 
-#### Resource Links 
+#### Recursos
 
 !INCLUDE "../references/resource_identification.overview.md"
 

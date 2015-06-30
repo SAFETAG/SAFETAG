@@ -26,10 +26,6 @@
 
 !INCLUDE "../reporting/report_creation/approach.md"
 
-### Reporting
-
-!INCLUDE "../reporting/report_creation/reporting.md"
-
 ### Outputs
 
 !INCLUDE "../reporting/report_creation/output.md"

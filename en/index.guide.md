@@ -132,11 +132,13 @@ subtitle: 'Guide'
 # Reporting
 
 \newpage
-<!-- Vulnerability Prioritization -->
+<!-- Vulnerability Prioritization 
 
 !INCLUDE "index/vulnerability_prioritization.guide.md"
 
 \newpage
+-->
+
 <!-- Recommendation Development -->
 
 !INCLUDE "index/recommendation_development.guide.md"

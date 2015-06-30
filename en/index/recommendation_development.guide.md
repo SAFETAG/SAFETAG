@@ -18,6 +18,14 @@
 
 !INCLUDE "../reporting/recommendation_development/activities.md"
 
+### Outputs
+
+!INCLUDE "../reporting/recommendation_development/output.md"
+
+### Operational Security
+
+!INCLUDE "../reporting/recommendation_development/operational_security.md"
+
 ### Resources
 <div class="greybox">
 
