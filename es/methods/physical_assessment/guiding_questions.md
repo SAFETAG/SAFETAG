@@ -1,0 +1,3 @@
+- ¿Quién tiene acceso a qué? ¿En qué momentos los dispositivos no están controlados por personal confiable?
+- ¿Cómo podrían acceder los adversarios? (entrada por la fuerza, robo, ingeniería social, ataques) 
+- ¿Existen procedimientos de mitigación si los dispositivos se pierden o son tomados por los adversarios?

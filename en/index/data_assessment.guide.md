@@ -1,33 +1,33 @@
 ## Data Assessment
 
 ### Summary
-!INCLUDE "en/methods/data_assessment/summary.md"
+!INCLUDE "../methods/data_assessment/summary.md"
 
 ### Purpose
-!INCLUDE "en/methods/data_assessment/purpose.md"
+!INCLUDE "../methods/data_assessment/purpose.md"
 
 ### The Flow Of Information
-![Data Assessment Information Flow](en/images/info_flows/data_assessment.svg)
+![Data Assessment Information Flow](images/info_flows/data_assessment.svg)
 
 ### Guiding Questions
-!INCLUDE "en/methods/data_assessment/guiding_questions.md"
+!INCLUDE "../methods/data_assessment/guiding_questions.md"
 
 ### Approaches
-!INCLUDE "en/methods/data_assessment/approaches.md"
+!INCLUDE "../methods/data_assessment/approaches.md"
 
 ### Outputs
-!INCLUDE "en/methods/data_assessment/output.md"
+!INCLUDE "../methods/data_assessment/output.md"
 
 ### Operational Security
-!INCLUDE "en/methods/data_assessment/operational_security.md"
+!INCLUDE "../methods/data_assessment/operational_security.md"
 
 ### Preparation
-!INCLUDE "en/methods/data_assessment/preparation.md"
+!INCLUDE "../methods/data_assessment/preparation.md"
 
 ### Activities
-!INCLUDE "en/methods/data_assessment/activities.md"
+!INCLUDE "../methods/data_assessment/activities.md"
 
 ### Resources
 <div class="greybox">
-!INCLUDE "en/references/data_assessment.overview.md"
+!INCLUDE "../references/data_assessment.overview.md"
 </div>

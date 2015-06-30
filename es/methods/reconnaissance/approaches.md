@@ -1,0 +1,3 @@
+- **Manual OSINT:** Identifica la disponibilidad de socios, beneficiarios y proyectos de información en línea con el uso de herramientas de búsqueda avanzada de google y el sitio webscraping. [^PETS_logical_intel]
+- **Recon-NG:** Use recon-ng para automatizar el reconocimiento de fuente abierta (OSINT) basado en la web. [^recon-ng_data_flow]
+- **Red social OSINT:** Identifica la disponibilidad de socios, beneficiarios e información actualizada del proyecto, mediante la búsqueda en redes sociales para obtener la información de filtraciones de la organización.

@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![Physical Assessment Information Flow](en/images/info_flows/physical_assessment.svg)
+![Physical Assessment Information Flow](images/info_flows/physical_assessment.svg)
 
 ### Guiding Questions
 

@@ -1,0 +1,5 @@
+- ¿Existen vulnerabilidades críticas o actividades de recuperación de las cuáles se necesita una comprensión más profunda para dar calidad adecuada al informe?
+- ¿Cómo se puede preparar al personal y a la administración para los aspectos de la auditoría que puedan llevar a aislamiento o inhibición del proceso?
+- ¿Cuál es la preparación y probabilidad de éxito en la participación tecnológica de seguridad de la organización? ¿Qué factores complicarán o inhibirán la comprensión y uso seguro y efectivo?
+- ¿Es el soporte que se quiere proporcionar (solución de problemas, correcciones, actualizaciones, capacitaciones, etc.) crítico para la seguridad de la organización? De no ser así, ¿se puede proveer de soporte sin desvalorizar el proceso de auditoría?
+- ¿Se tendrá la capacidad de proveer software o hardware de apoyo mientras se provee el soporte?

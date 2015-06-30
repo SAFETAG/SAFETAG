@@ -1,0 +1,2 @@
+
+Una auditoría SAFETAG tiene un período de tiempo corto. La preparación es vital para asegurar que el tiempo de trabajo no sea utilizado para negociar el alcance de la auditoría, en la actualización de los sistemas de auditoría, en la búsqueda de hardware desaparecido o actualizándose uno mismo con el sistema SAFETAG. Para tal fin, las negociaciones con la organización auditada ayudan a revelar si la institución tiene la capacidad para llevar a cabo la auditoría y responder a sus resultados. 

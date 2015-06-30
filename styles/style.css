@@ -1,0 +1,363 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Noto Sans Regular';
+    src: url('fonts/NotoSans-Regular.ttf')  format("truetype")
+}
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: local('fonts/NotoSans-Bold.ttf')  format("truetype");
+}
+@font-face {
+    font-family: 'Noto Sans Italic';
+    src: local('fonts/NotoSans-Italic.ttf')  format("truetype");
+}
+@font-face {
+    font-family: 'Noto Sans Bold Italic';
+    src: local('fonts/NotoSans-BoldItalic.ttf')  format("truetype");
+}
+
+html,
+body {
+        background: white;
+        font-size: 10pt;
+        font-family: 'Noto Sans Regular', sans-serif;
+}
+
+code {
+        font-size: .75em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Noto Sans Regular", sans-serif;
+    font-style: bold;
+    margin-bottom: 0px;
+}
+
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 23pt;
+    line-height: auto;
+}
+h2 {
+    font-size: 18pt;
+    line-height: auto;
+}
+h3 {
+    font-size: 10pt;
+}
+h4 {
+    font-size: 10pt;
+}
+h1.bigtitle {
+    font-size: 40pt;
+}
+
+table th {
+    font-weight: bold;
+    text-align: left;
+    padding: 4px;
+    background-color: #005CAB;
+    color: #ffffff;
+}
+
+table tr.odd td {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+table tr.even td {
+    color: #000000;
+    background-color: #f3f2f2;
+}
+
+.note {
+    text-transform: uppercase;
+}
+
+.example {
+        border: 1px dashed darkblue;
+        background: lightblue;
+        padding: 1em;
+}
+
+.sidebar {
+    text-transform: uppercase;
+    color: #00467f;
+}
+
+.orange_sidebar {
+    text-transform: uppercase;
+    color: #c85c19;
+}
+
+.confidential {
+    border-style: dashed;
+    border-color: red;
+    border-width: 3px;
+}
+
+
+.boxtext {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #005CAB;
+        background: #e6f3ff;
+        margin-top: 10px;
+        padding: 0px;
+}
+
+
+.boxtext h3 {
+        text-transform: uppercase;
+        font-size: 14pt;
+        text-align: right;
+        color: #78716e;
+        margin: 0px;
+        padding: 2px
+}
+
+.boxtext h3:first-child {
+        text-transform: uppercase;
+        font-size: 14pt;
+        text-align: right;
+        color: #ffffff;
+        padding-right: 5px;
+        background-color: #005CAB;
+/*
+        display:inline-block;
+        float: right;
+        position: relative;
+        margin-top: -28px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #005CAB;
+        background-color: #e6f3ff;
+        border-bottom-style: none;
+*/
+}
+
+.boxtext h4 {
+        text-transform: title;
+        font-size: 12pt;
+        color: #404965;
+        padding: 2px
+}
+
+.boxtext p {
+        padding: 5px;
+}
+
+.greybox {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #78716e;
+        background: #f3f2f2;
+        margin-top: 5px;
+        padding: 0px 4px;
+}
+
+/* TODO: Eventually use custom bullet's to get those big chunky light blue squres that we want. */
+ul {
+    list-style: square;
+}
+
+/* Colors */
+
+h1 {
+    color: #6b8a21;
+    border-bottom: 2px solid #6b8a21;
+}
+
+h2 {
+    color: #004580;
+    border-bottom: 1px dotted #004580;
+}
+h3 {
+    color: #004580;
+}
+
+h4 {
+    color: #6b8a21;
+}
+
+.h5 {
+    color: #000000;
+}
+
+.orange_sub {
+    color: #c85c19;
+}
+
+.note {
+    color: #c85c19;
+}
+
+/* Print Formatting */
+
+h1,
+h2 {
+    page-break-before: always;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0mm;
+    padding-top: 10mm;
+    float: none;
+}
+h2,
+h3,
+h4 {
+    page-break-after: avoid;
+}
+
+h1.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    page-break-before: avoid;
+}
+h2.title {
+    page-break-before: avoid;
+}
+
+h1.bigtitle {
+    page-break-before: avoid;
+}
+
+.pagebreak {
+    page-break-after: always;
+}
+
+p {
+    orphans: 3;
+    widows: 3;
+}
+
+/* Images in their own paragraph should be centered.*/
+/*figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-family: "Noto Sans Regular", sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 8pt;
+}
+
+img.inlogo {
+    text-align:left;
+}
+
+/* prevent images from bleeding over the edge of the printed page: */
+img {
+    max-width: 100% !important;
+}
+
+/* Section Specific Formatting */
+
+.coverpage {
+    page-break-after: always;
+}
+
+/* Table of Contents */
+nav {
+    page-break-after: always;
+}
+
+nav li a:visited,
+nav li a:link,
+nav li a:hover,
+nav li a:active {
+    font-size: 10pt;
+    color: black;
+    text-decoration: none;
+}
+
+nav.toc ul ul li {
+    font-size: 10pt;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+.covertop {
+    margin-bottom: 10mm;
+    text-align: center;
+}
+
+.covermiddle {
+    margin-top: 20mm;
+    margin-bottom: 60mm;
+    text-align: center;
+}
+
+
+/*
+   line above and below
+   running people icon to the left
+   float right of the icon
+*/
+.activity {}
+
+/*
+   line above and below
+   speech bubbles icon to the left
+   float right of the icon
+*/
+.discussion {}
+
+/*
+   line above and below
+   person icon to the left
+   float right of the icon
+*/
+.input {}
+
+/*
+   line above and below
+   magnefying glass icon to the left
+   float right of the icon
+*/
+.deepening {}
+
+/*
+   line above and below
+   puzzle icon to the left
+   float right of the icon
+*/
+.synthesis {}
+
+/*
+   line above and below
+   pencil icon to the left
+   float right of the icon
+*/
+.handout {}
+
+
+
+/* Eventually use columns to add a sidebar
+div.titlepage+div.indexnote+div.index {
+    column-count: 2;
+    column-gap: 12pt;
+}
+*/

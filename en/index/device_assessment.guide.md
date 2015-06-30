@@ -26,7 +26,7 @@
 
 !INCLUDE "guides/device_assessment/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "guides/device_assessment/output.md"
 
@@ -40,21 +40,21 @@
 
 ### Resources
 
-!INCLUDE "references/device_assessment.overview.md"
+!INCLUDE "../references/device_assessment.overview.md"
 
-!INCLUDE "references/password_security.md"
+!INCLUDE "../references/password_security.md"
 
-!INCLUDE "references/privilege_separation.md"
+!INCLUDE "../references/privilege_separation.md"
 
-!INCLUDE "references/examining_firewalls.md"
+!INCLUDE "../references/examining_firewalls.md"
 
-!INCLUDE "references/software_versions.md"
+!INCLUDE "../references/software_versions.md"
 
-!INCLUDE "references/device_encryption.md"
+!INCLUDE "../references/device_encryption.md"
 
-!INCLUDE "references/anti_virus.md"
+!INCLUDE "../references/anti_virus.md"
 
-!INCLUDE "references/one_off_services.md"
+!INCLUDE "../references/one_off_services.md"
 
 ### Example
 

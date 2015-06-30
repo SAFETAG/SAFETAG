@@ -10,7 +10,7 @@
 
 ### The Flow Of Information
 
-![User Device Assessment Information Flow](en/images/info_flows/user_device_assessment.svg)
+![User Device Assessment Information Flow](images/info_flows/user_device_assessment.svg)
 
 ### Guiding Questions
 
