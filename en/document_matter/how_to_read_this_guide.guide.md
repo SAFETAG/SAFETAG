@@ -75,10 +75,6 @@ Some of the activity specific concerns (ethical, skill level,  time, relationshi
 
 Notes on what data can be created during this activity.
 
-#### Reporting
-
-Notes on how to capture or present data collected to support the reporting process.
-
 #### Resources
 
 Links to resources that can be used to deepen an auditors understanding of an activity.

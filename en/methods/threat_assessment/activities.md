@@ -24,6 +24,10 @@ Covered in full in Data Assessment:
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/threat_interaction/index.md"
+</div>
+
+<div class="boxtext">
 ### Regional Context Research
 
 Covered in full in Capacity Assessment:

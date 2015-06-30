@@ -1,0 +1,1 @@
+En este componente el auditor marcará los riesgos potenciales relacionados con el acceso físico, almacenamiento, copias de seguridad y encriptación de archivos digitales; sugiriendo nuevas políticas y prácticas. Cabe destacar que SAFETAG se enfoca solamente en los impactos digitales de la seguridad física. Esta guía no proporciona una evaluación completa de seguridad física.

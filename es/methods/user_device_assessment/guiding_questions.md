@@ -1,0 +1,4 @@
+- ¿Qué dispositivos personales utiliza el staff para cumplir con su trabajo, almacenar archivos, o realizar comunicaciones laborales?
+- ¿Qué servicios organizacionales y personales utiliza el staff para cumplir con su trabajo, almacenar archivos, o realizar comunicaciones laborales?
+- ¿Cuáles son los procesos de la organización en los que participa el personal y qué herramientas y canales de comunicación se utilizan en tales procesos?
+- ¿Que prácticas de seguridad formales utilizan los participantes para afrontar los riesgos.

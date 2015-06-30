@@ -1,0 +1,3 @@
+"*Testing must specifically target only [wireless emissions] from personnel who are under direct legal contract with the scope owner, computer systems on the property of the scope owner, and EM or MW signals or emanations of power level great enough to disrupt or harm wireless communications within the scope. Analysts must make efforts to not invade upon a person’s private life such as listening to or recording personal communications originating within the scope, where that private life has made efforts to separate itself from the scope.*" - _Open Source Security Testing Methodology Manual (OSSTMM)_ [^OSSTMM_wireless_security_testing]
+
+

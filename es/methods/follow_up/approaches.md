@@ -1,0 +1,4 @@
+- **Encuesta de Devoluciones del Personal**: Recepción de devoluciones del personal sobre la ejecución de la auditoría.
+- **Reunión de Reporte de Seguimiento:** Realización de una llamada de seguimiento para discutir el reporte.
+- **Realizar Presentaciones:** Mostrar a la organización los recursos conocidos según sea necesario.
+- **Seguimiento a Largo Plazo:** Contactar a la organización auditada, luego de unos meses para comprobar el progreso, obtener devoluciones a largo plazo y conectarse con nuevos recursos.

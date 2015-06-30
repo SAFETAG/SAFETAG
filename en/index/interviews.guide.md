@@ -26,7 +26,7 @@
 
 !INCLUDE "guides/interviews/approach.md"
 
-### Output
+### Outputs
 
 !INCLUDE "guides/interviews/output.md"
 
@@ -40,9 +40,9 @@
 
 ### Resources
 <div class="greybox">
-!INCLUDE "references/interviews.overview.md"
+!INCLUDE "../references/interviews.overview.md"
 
-!INCLUDE "references/background_interviews.md"
+!INCLUDE "../references/background_interviews.md"
 </div>
 
 \newpage

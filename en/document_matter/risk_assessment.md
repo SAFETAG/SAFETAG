@@ -6,7 +6,7 @@ Risk is the current assessment of the possibility of harmful events occurring. R
 
 The SAFETAG evaluation revolves around collecting enough information to identify and assess the various risks and an organization and its related actors face so that they can take action strategically.
 
-![The Risk Equation](en/images/risk_equation.svg)
+![The Risk Equation](images/risk_equation.svg)
 
 
 ### Program Analysis

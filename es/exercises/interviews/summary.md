@@ -1,0 +1,3 @@
+The auditor conducts interviews with various staff members to gather information on the organizations risks and capacity.
+
+Q&A sessions are unabashedly _white box_ aspects of a security assessment, and you will occasionally hear push-back along the lines of, "You wouldn't have found that thing if we hadn't told you about this other thing." Compelling _black box_ findings certainly do have an advantage when it comes to persuasiveness, but obtaining them can be quite time-consuming, so relying exclusively on vulnerabilities that you can identify without "help" is generally a mistake in this resource-constrained sector.

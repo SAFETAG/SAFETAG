@@ -1,0 +1,3 @@
+- ¿Qué barrera enfrentó la organización en la implementación del plan de mitigación de riesgo recomendado?
+- ¿Hay nuevos recursos que el auditor pueda proporcionar para complementar la auditoría digital?
+- ¿Qué puede hacer para que su seguimiento sea percibido como un apoyo adicional en lugar de una evaluación de su éxito?

@@ -6,7 +6,7 @@
 
 ### The Flow Of Information
 
-![Training Information Flow](en/images/info_flows/training.svg)
+![Training Information Flow](images/info_flows/training.svg)
 
 ### Approach
 
