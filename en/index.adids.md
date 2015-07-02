@@ -12,8 +12,6 @@ subtitle: 'Curricula'
 
 <!-- Introduction -->
 
-# About SAFETAG and this Curricula
-
 !INCLUDE "document_matter/introduction.md"
 
 \newpage
@@ -24,16 +22,16 @@ subtitle: 'Curricula'
 
 ![SAFETAG Activities](images/activities_flow.svg)
 
-![The Safetag Audit Process](images/expertiese_vertical.svg)
+<!-- ![The Safetag Audit Process](images/audit_expertiese.svg) -->
 
 \newpage
 
-## The ADIDS Process
+# About the SAFETAG Curricula
+
+### The ADIDS Process
 !INCLUDE "document_matter/overview.adids.md"
 
 \newpage
-
-# INTRODUCTION To SAFETAG
 
 <!-- Overview -->
 
@@ -64,7 +62,7 @@ subtitle: 'Curricula'
 
 # PART ONE: Agreement and Information Gathering
 
-![The Pre-Audit](images/pre_audit_expertiese.svg)
+<!--![The Pre-Audit](images/pre_audit_expertiese.svg)-->
 
 
 \newpage
@@ -87,12 +85,12 @@ subtitle: 'Curricula'
 
 # PART TWO: The Audit
 
-![Pre-Audit](images/audit_expertiese.svg)\
+<!--![Pre-Audit](images/audit_expertiese.svg)\ -->
 
 \newpage
 <!-- Remote Assessment -->
 
-!INCLUDE "index/remote_assessment.adids.md"
+!INCLUDE "index/reconnaissance.adids.md"
 
 \newpage
 <!-- Audit Preparation  -->
@@ -121,9 +119,9 @@ subtitle: 'Curricula'
 
 \newpage
 
-<!-- Vulnerability Scanning -->
+<!-- Vulnerability Scanning 
 
-!INCLUDE "index/vulnerability_scanning.adids.md"
+!INCLUDE "index/vulnerability_scanning.adids.md" -->
 
 \newpage
 
@@ -155,7 +153,7 @@ subtitle: 'Curricula'
 
 # PART THREE: Analysis and Reporting
 
-![The Post-Audit](images/post_audit_expertiese.svg)\
+<!-- ![The Post-Audit](images/post_audit_expertiese.svg)\ -->
 
 \newpage
 <!-- Vulnerability Prioritization -->
