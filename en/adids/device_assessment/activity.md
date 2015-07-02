@@ -4,4 +4,4 @@ A quick, open discussiopn among the participants around some of the more unusual
 
 Pull this back towards an empathetic view of users doing their best in a challenging and confusing landscape towards the end.
 
-[A Story about Jessica and her Computer](https://medium.com/@SwiftOnSecurity/a-story-about-jessica-and-her-computer-e400fa9fd4e) may be a useful refresher for the trainer and participants for the experience of "users."
+[A Story about Jessica and her Computer](http://swiftonsecurity.tumblr.com/post/98675308034/a-story-about-jessica) may be a useful refresher for the trainer and participants for the experience of "users."
