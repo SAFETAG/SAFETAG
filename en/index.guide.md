@@ -48,6 +48,9 @@ subtitle: 'Guide'
 
 !INCLUDE "index/preparation.guide.md"
 
+\newpage
+<!-- INTRO to Methods-->
+
 !INCLUDE "methods/intro.md"
 
 \newpage

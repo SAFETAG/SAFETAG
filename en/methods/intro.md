@@ -1,3 +1,5 @@
+# SAFETAG Methods
+
 These objectives provide collections of approaches and activities to gather and verify information in both technical and interactive/social methods, assess and build capacity, and targeted exercises with walk-through instructions for many of these.
 
 These are not meant to be a "checklist" or even a prescribed set of actions -- indeed, experienced auditors will deviate strongly from many of the specific activities.  These provide a focused "minimal set" of activities only.
