@@ -10,7 +10,7 @@ La plantilla de auditoría y la lista de verificación pretenden ser una referen
 
 La entrevista y los componentes de evaluación se atribuyen en gran medida al proyecto: The room´s tech escape. Su contenido está disponible bajo la licencia de Reconocimiento a Creative Commons.
 
-La actividad de valoración de información se tomó del proyecto de nivel superior (Level Up Project) disponible bajo la licencia Unported 3.0 de Reconocimiento a Creative Commons - NoComercial - CompartirIgual. Esta actividad está acreditada a Pablo, Daniel O’Clunaigh, Ali Ravi, y Samir Nassar.
+La actividad de valoración de información se tomó del proyecto de nivel superior (Level Up Project) disponible bajo la licencia Unported 3.0 de Reconocimiento a Creative Commons CompartirIgual. Esta actividad está acreditada a Pablo, Daniel O’Clunaigh, Ali Ravi, y Samir Nassar.
 
 ### USO DE “SAFETAG”
 
