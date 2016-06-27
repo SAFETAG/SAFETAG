@@ -2,7 +2,7 @@
 
 Los recursos de SAFETAG están disponibles bajo una licencia Atribución-CompartirIgual de Creative Commons 3.0 Unported (CC BY-SA 3.0).
 
-La estructura de la auditoría y la lista de verificación pueden ser utilizadas y compartidas con fines educacionales, no comerciales, con el debido reconocimiento a Internews. Los usuarios son libres de modificar y distribuir el contenido con las condiciones que figuran en esta licencia.
+La estructura de la auditoría y la lista de verificación pueden ser utilizadas y compartidas con fines educacionales con el debido reconocimiento a Internews. Los usuarios son libres de modificar y distribuir el contenido con las condiciones que figuran en esta licencia.
 
 La plantilla de auditoría y la lista de verificación pretenden ser una referencia y los autores no asumen la responsabilidad de la seguridad y la protección de las personas que las utilizan ya sea con propósitos personales o profesionales
 
