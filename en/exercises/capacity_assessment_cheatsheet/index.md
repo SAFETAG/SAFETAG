@@ -1,7 +1,7 @@
-### Capacity Assessment Checklist
+#### Capacity Assessment Checklist
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"

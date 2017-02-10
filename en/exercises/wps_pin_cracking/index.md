@@ -1,10 +1,10 @@
-### WPS PIN Cracking
+#### WPS PIN Cracking
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"
