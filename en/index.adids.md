@@ -35,9 +35,9 @@ subtitle: 'Curricula'
 
 <!-- Overview -->
 
-!INCLUDE "index/before_the_training.adids.md"
+!INCLUDE "adids/before_the_training.adids.md"
 
-!INCLUDE "index/introduction.adids.md"
+!INCLUDE "adids/introduction.adids.md"
 
 \newpage
 
@@ -49,13 +49,13 @@ subtitle: 'Curricula'
 
 <!-- Operational Security -->
 
-!INCLUDE "index/operational_security.adids.md"
+!INCLUDE "adids/operational_security.adids.md"
 
 \newpage
 
 <!-- The SAFETAG Repository -->
 
-!INCLUDE "index/safetag_repo.adids.md"
+!INCLUDE "adids/safetag_repo.adids.md"
 
 \newpage
 
@@ -69,12 +69,12 @@ subtitle: 'Curricula'
 <!-- Interviews -->
 <!-- Capacity Assessment -->
 
-!INCLUDE "index/interviews.adids.md"
+!INCLUDE "adids/interviews.adids.md"
 
 \newpage
 <!-- Contextual Research -->
 
-!INCLUDE "index/context_research.adids.md"
+!INCLUDE "adids/context_research.adids.md"
 
 \newpage
 <!-- Assessment Plan Development -->
@@ -90,54 +90,54 @@ subtitle: 'Curricula'
 \newpage
 <!-- Remote Assessment -->
 
-!INCLUDE "index/reconnaissance.adids.md"
+!INCLUDE "adids/reconnaissance.adids.md"
 
 \newpage
 <!-- Audit Preparation  -->
 
-!INCLUDE "index/preparation.adids.md"
+!INCLUDE "adids/preparation.adids.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "index/risk_modeling.adids.md"
+!INCLUDE "adids/risk_modeling.adids.md"
 
 \newpage
 <!-- Network Discovery -->
 
-!INCLUDE "index/network_discovery.adids.md"
+!INCLUDE "adids/network_discovery.adids.md"
 
 \newpage
 <!-- Network Access -->
 
-!INCLUDE "index/network_access.adids.md"
+!INCLUDE "adids/network_access.adids.md"
 
 \newpage
 <!-- Network Mapping -->
 
-!INCLUDE "index/network_mapping.adids.md"
+!INCLUDE "adids/network_mapping.adids.md"
 
 \newpage
 
 <!-- Vulnerability Scanning 
 
-!INCLUDE "index/vulnerability_scanning.adids.md" -->
+!INCLUDE "adids/vulnerability_scanning.adids.md" -->
 
 \newpage
 
 <!-- Physical -->
 
-!INCLUDE "index/physical_assessment.adids.md"
+!INCLUDE "adids/physical_assessment.adids.md"
 
 \newpage
 <!-- Data Assessment -->
 
-!INCLUDE "index/data_assessment.adids.md"
+!INCLUDE "adids/data_assessment.adids.md"
 
 \newpage
 <!-- Device Assessment -->
 
-!INCLUDE "index/device_assessment.adids.md"
+!INCLUDE "adids/device_assessment.adids.md"
 
 \newpage
 <!-- Social Engineering Exercise -->
@@ -147,7 +147,7 @@ subtitle: 'Curricula'
 \newpage
 <!-- Debrief -->
 
-!INCLUDE "index/debrief.adids.md"
+!INCLUDE "adids/debrief.adids.md"
 
 \newpage
 
@@ -158,24 +158,24 @@ subtitle: 'Curricula'
 \newpage
 <!-- Vulnerability Prioritization -->
 
-!INCLUDE "index/vulnerability_prioritization.adids.md"
+!INCLUDE "adids/vulnerability_prioritization.adids.md"
 
 \newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "index/recommendation_development.adids.md"
+!INCLUDE "adids/recommendation_development.adids.md"
 
 <!-- \newpage Resource Identification (included in recommendations for ADIDS)  !INCLUDE "resource_identification.adids.md" -->
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "index/roadmap_development.adids.md"
+!INCLUDE "adids/roadmap_development.adids.md"
 
 \newpage
 <!-- Report Creation -->
 
-!INCLUDE "index/report_creation.adids.md"
+!INCLUDE "adids/report_creation.adids.md"
 
 <!-- \newpage Follow Up (Included in reporting for ADIDS) !INCLUDE "follow_up.adids.md" \newpage -->
 
