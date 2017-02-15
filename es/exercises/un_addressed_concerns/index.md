@@ -1,32 +1,32 @@
 
-##### Summary
+###### Summary
 
 !INCLUDE "summary.md"
 
-##### Base Line Skills
+###### Base Line Skills
 
 !INCLUDE "base_line_skills.md"
 
-##### Operational Security
+###### Operational Security
 
 !INCLUDE "operational_security.md"
 
-##### Materials Needed
+###### Materials Needed
 
 !INCLUDE "materials_needed.md"
 
-##### Materials Needed 
+###### Materials Needed 
 !INCLUDE "materials_needed.md" 
 
-#### Considerations
+##### Considerations
 
 !INCLUDE "considerations.md"
 
-##### Output
+###### Output
 
 !INCLUDE "output.md"
 
-##### Resources
+###### Resources
 
 !INCLUDE "resources.md"
 
