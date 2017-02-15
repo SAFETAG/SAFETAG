@@ -47,7 +47,7 @@ subtitle: 'Guía'
 \newpage
 <!-- Audit Prep-->
 
-!INCLUDE "index/preparation.guide.md"
+!INCLUDE "methods/preparation.guide.md"
 
 <!-- METHODS -->
 
@@ -56,104 +56,104 @@ subtitle: 'Guía'
 \newpage
 <!-- Audit Scoping-->
 
-!INCLUDE "index/context_research.guide.md"
+!INCLUDE "methods/context_research.guide.md"
 
 \newpage
 
-!INCLUDE "index/capacity_assessment.guide.md"
+!INCLUDE "methods/capacity_assessment.guide.md"
 
 \newpage
 <!-- Engagement Planning-->
 
-!INCLUDE "index/engagement_planning.guide.md"
+!INCLUDE "methods/engagement_planning.guide.md"
 
 \newpage
 <!-- Recon-->
 
-!INCLUDE "index/reconnaissance.guide.md"
+!INCLUDE "methods/reconnaissance.guide.md"
 
 \newpage
 <!-- Network Discovery-->
 
-!INCLUDE "index/network_discovery.guide.md"
+!INCLUDE "methods/network_discovery.guide.md"
 
 \newpage
 <!-- Network Access -->
 
-!INCLUDE "index/network_access.guide.md"
+!INCLUDE "methods/network_access.guide.md"
 
 \newpage
 <!-- Network Mapping -->
 
-!INCLUDE "index/network_mapping.guide.md"
+!INCLUDE "methods/network_mapping.guide.md"
 
 \newpage
 <!-- User Device Assessment -->
 
-!INCLUDE "index/user_device_assessment.guide.md"
+!INCLUDE "methods/user_device_assessment.guide.md"
 
 \newpage
 <!-- Vulnerability Analysis -->
 
-!INCLUDE "index/vulnerability_scanning.guide.md"
+!INCLUDE "methods/vulnerability_scanning.guide.md"
 
 \newpage
 <!-- Data Assessment (assets) -->
 
-!INCLUDE "index/data_assessment.guide.md"
+!INCLUDE "methods/data_assessment.guide.md"
 
 \newpage
 <!-- Physical Assessment -->
 
-!INCLUDE "index/physical_assessment.guide.md"
+!INCLUDE "methods/physical_assessment.guide.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "index/risk_modeling.guide.md"
+!INCLUDE "methods/risk_modeling.guide.md"
 
 <!-- Threat Assessment -->
 
-!INCLUDE "index/threat_assessment.guide.md"
+!INCLUDE "methods/threat_assessment.guide.md"
 
 \newpage
 <!-- Responsive Support -->
 
-!INCLUDE "index/responsive_support.guide.md"
+!INCLUDE "methods/responsive_support.guide.md"
 
 \newpage
 <!-- Debrief -->
 
-!INCLUDE "index/debrief.guide.md"
+!INCLUDE "methods/debrief.guide.md"
 
 
 \newpage
 <!-- Follow Up -->
 
-!INCLUDE "index/follow_up.guide.md"
+!INCLUDE "methods/follow_up.guide.md"
 
 # INFORMES
 
 \newpage
 <!-- Vulnerability Prioritization
 
-!INCLUDE "index/vulnerability_prioritization.guide.md"
+!INCLUDE "methods/vulnerability_prioritization.guide.md"
  -->
 
 \newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "index/recommendation_development.guide.md"
+!INCLUDE "methods/recommendation_development.guide.md"
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "index/roadmap_development.guide.md"
+!INCLUDE "methods/roadmap_development.guide.md"
 
 \newpage
 <!-- Reporting Creation -->
 
-!INCLUDE "index/report_creation.guide.md"
+!INCLUDE "methods/report_creation.guide.md"
 
 \newpage
 <!-- APPENDIX A - Auditor travel Kit Checklist-->
