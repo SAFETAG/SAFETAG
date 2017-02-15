@@ -48,3 +48,5 @@
 
 !INCLUDE "../references/data_security_standards.md"
 </div>
+
+### Activities

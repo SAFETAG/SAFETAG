@@ -29,9 +29,9 @@
 ### Preparación
 !INCLUDE "../methods/network_mapping/preparation.md"
 
-### Actividades
 
-!INCLUDE "../methods/network_mapping/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
@@ -42,3 +42,5 @@
 !INCLUDE "../references/nmap_scanning.md"
 
 </div>
+
+### Actividades

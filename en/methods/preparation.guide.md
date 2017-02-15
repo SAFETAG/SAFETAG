@@ -22,9 +22,6 @@
 ### Operational Security
 !INCLUDE "../document_matter/preparation/operational_security.md"
 
-### Activities
-!INCLUDE "../document_matter/preparation/activities.md"
-
 ### Resources
 <div class="greybox">
 !INCLUDE "../references/preparation.overview.md"
@@ -32,4 +29,18 @@
 !INCLUDE "../references/facilitation_prep.md"
 
 !INCLUDE "../references/password_dictionaries.md"
+
+!INCLUDE "../references/assessment_plan.overview.md"
+
+!INCLUDE "../references/pre_engagement.md"
+
+!INCLUDE "../references/incident_handling.md"
+
+!INCLUDE "../references/legal_considerations.md"
+
+!INCLUDE "../references/data_security_standards.md"
 </div>
+
+### Activities
+
+

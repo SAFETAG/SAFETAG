@@ -18,7 +18,7 @@
 ### Seguridad Operacional
 !INCLUDE "../document_matter/preparation/operational_security.md"
 
-### Actividades
+
 !INCLUDE "../document_matter/preparation/activities.md"
 
 ### Recursos
@@ -29,3 +29,5 @@
 
 !INCLUDE "../references/password_dictionaries.md"
 </div>
+
+### Actividades

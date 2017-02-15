@@ -24,8 +24,8 @@
 ### Preparation
 !INCLUDE "../methods/capacity_assessment/preparation.md"
 
-### Activities
-!INCLUDE "../methods/capacity_assessment/activities.md"
+
+
 
 ### Resources
 
@@ -37,3 +37,5 @@
 !INCLUDE "../references/background_interviews.md"
 
 </div>
+
+### Activities

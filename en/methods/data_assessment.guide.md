@@ -24,10 +24,12 @@
 ### Preparation
 !INCLUDE "../methods/data_assessment/preparation.md"
 
-### Activities
-!INCLUDE "../methods/data_assessment/activities.md"
+
+
 
 ### Resources
 <div class="greybox">
 !INCLUDE "../references/data_assessment.overview.md"
 </div>
+
+### Activities

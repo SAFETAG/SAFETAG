@@ -51,3 +51,5 @@
 !INCLUDE "../references/identifying_recommendations.md"
 
 </div>
+
+### Actividades

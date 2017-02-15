@@ -29,9 +29,6 @@
 ### Preparación
 !INCLUDE "../methods/capacity_assessment/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/capacity_assessment/activities.md"
-
 ### Recursos
 
 <div class="greybox">
@@ -42,3 +39,5 @@
 !INCLUDE "../references/background_interviews.md"
 
 </div>
+
+### Actividades

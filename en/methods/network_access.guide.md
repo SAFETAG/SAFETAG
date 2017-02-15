@@ -24,11 +24,13 @@
 ### Preparation
 !INCLUDE "../methods/network_access/preparation.md"
 
-### Activities
-!INCLUDE "../methods/network_access/activities.md"
+
+
 
 ### Resources
 
 <div class="greybox">
 !INCLUDE "../references/network_access.md"
 </div>
+
+### Activities

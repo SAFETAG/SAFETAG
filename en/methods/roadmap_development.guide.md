@@ -40,3 +40,5 @@
 
 !INCLUDE "../references/determine_urgency.md"
 </div>
+
+### Activities

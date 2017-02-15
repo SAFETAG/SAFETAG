@@ -29,8 +29,8 @@
 ### Preparación
 !INCLUDE "../methods/reconnaisance/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/reconnaissance/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
@@ -45,3 +45,5 @@
 
 !INCLUDE "../references/recon-ng.md"
 </div>
+
+### Actividades

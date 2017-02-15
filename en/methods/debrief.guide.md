@@ -25,8 +25,8 @@
 ### Preparation
 !INCLUDE "../methods/debrief/preparation.md"
 
-### Activities
-!INCLUDE "../methods/debrief/activities.md"
+
+
 
 ### Resources
 <div class="greybox">
@@ -35,3 +35,5 @@
 !INCLUDE "../references/facilitation_prep.md"
 
 </div>
+
+### Activities

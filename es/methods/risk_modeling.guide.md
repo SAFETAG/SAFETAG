@@ -24,8 +24,8 @@
 ### Preparación
 !INCLUDE "../methods/risk_modeling/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/risk_modeling/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
@@ -43,4 +43,6 @@
 !INCLUDE "../references/alternative_risk_assessment_activities.md"
 
 </div>
+
+### Actividades
 

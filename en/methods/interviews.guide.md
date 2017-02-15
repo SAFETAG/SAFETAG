@@ -45,7 +45,5 @@
 !INCLUDE "../references/background_interviews.md"
 </div>
 
-\newpage
+### Activities
 
-### Example
-!INCLUDE "guides/interviews/examples/interview_questions.md"

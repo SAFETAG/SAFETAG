@@ -29,8 +29,8 @@
 ### Preparación
 !INCLUDE "../methods/user_device_assessment/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/user_device_assessment/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
@@ -51,3 +51,5 @@
 !INCLUDE "../references/one_off_services.md"
 
 </div>
+
+### Actividades

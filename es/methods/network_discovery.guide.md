@@ -28,10 +28,12 @@
 ### Preparación
 !INCLUDE "../methods/network_discovery/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/network_discovery/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
 !INCLUDE "../references/network_discovery_methods.md"
 </div>
+
+### Actividades

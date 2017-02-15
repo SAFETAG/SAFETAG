@@ -30,8 +30,8 @@
 ### Preparación
 !INCLUDE "../methods/threat_assessment/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/threat_assessment/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
@@ -46,3 +46,5 @@
 
 !INCLUDE "../references/threat_by_region.md"
 </div>
+
+### Actividades

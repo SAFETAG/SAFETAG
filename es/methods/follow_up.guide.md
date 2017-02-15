@@ -25,30 +25,22 @@
 ### Preparación
 !INCLUDE "../methods/follow_up/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/follow_up/activities.md"
+
+
 
 ### Recursos
 <div class="greybox">
 !INCLUDE "../references/follow_up_overview.md"
-</div>
 
-<div class="greybox">
 !INCLUDE "../references/resource_identification.overview.md"
-</div>
 
-<div class="greybox">
 !INCLUDE "../references/resource_lists.md"
-</div>
 
-<div class="greybox">
 !INCLUDE "../references/financial_resources.md"
-</div>
 
-<div class="greybox">
 !INCLUDE "../references/digital_security_training.md"
-</div>
 
-<div class="greybox">
 !INCLUDE "../references/emergency_resources.md"
 </div>
+
+### Actividades

@@ -24,8 +24,8 @@
 ### Preparation
 !INCLUDE "../methods/responsive_support/preparation.md"
 
-### Activities
-!INCLUDE "../methods/responsive_support/activities.md"
+
+
 
 ### Resources
 <div class="greybox">
@@ -39,3 +39,5 @@
 !INCLUDE "../references/training_resources.md"
 
 </div>
+
+### Activities

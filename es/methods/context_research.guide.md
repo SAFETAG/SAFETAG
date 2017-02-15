@@ -29,11 +29,13 @@
 ### Preparación
 !INCLUDE "../methods/context_research/preparation.md"
 
-### Actividades
-!INCLUDE "../methods/context_research/activities.md"
+
+
 
 ### Recursos
 
 <div class="greybox">
 !INCLUDE "../references/context_research.md"
 </div>
+
+### Actividades

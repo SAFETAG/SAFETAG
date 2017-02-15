@@ -24,8 +24,8 @@
 ### Preparation
 !INCLUDE "../methods/physical_assessment/preparation.md"
 
-### Activities
-!INCLUDE "../methods/physical_assessment/activities.md"
+
+
 
 ### Resources
 
@@ -34,3 +34,5 @@
 
 !INCLUDE "../references/physical_assessment.md"
 </div>
+
+### Activities
