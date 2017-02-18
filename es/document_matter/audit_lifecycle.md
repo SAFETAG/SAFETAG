@@ -1,17 +1,7 @@
 
-# EL SISTEMA DE SEGURIDAD SAFETAG
-
-Las auditorías de SAFETAG consisten en múltiples pasos de recolección y confirmación de información, así como de ejercicios de investigación para instalar capacidades en el personal, organizados en objetivos, donde cada uno de éstos soporta a los objetivos principales de SAFETAG, al tiempo que se capacita a la institución.
-
-Los objetivos proporcionan una lista de enfoques y actividades para: reunir y verificar tanto con métodos técnicos como interactivo/sociales; evaluar y crear capacidad; y crear ejercicios puntuales, algunos de ellos con instrucciones paso a paso. 
-
-Esto no pretende ser un checklist o un conjunto preescrito de instrucciones - de hecho los auditores experimentados se desvían considerablemente de muchas actividades específicas. Ésto sólo brinda un enfoque mínimo de las actividades establecidas. 
-
-Ciertamente, muchos de los objetivos y sus ejercicios específicos se superponen o se pueden realizar en conjunto - las entrevistas con el personal pueden coincidir con la evaluación de sus dispositivos a la vez que se tiene en cuenta cuestiones de seguridad física. De esta manera, los ejercicios de evaluación de datos pueden proporcionar información suficiente, siendo innecesarios generar otras instancias con el personal.
+## EL CICLO DE VIDA DE UNA AUDITORÍA
 
 ![Actividades de SAFETAG](images/activities_flow.svg)
-
-## EL CICLO DE VIDA DE UNA AUDITORÍA
 
 El proceso de una auditoría es cíclico. Nuevas amenazas identificadas, vulnerabilidades, capacidades y barreras de impacto en las actividades existentes y a implementar en el futuro. Al mismo tiempo, el auditor a través de conversaciones, entrenamientos y actividades de grupo está capacitando a las organizaciones y abordando amenazas críticas o sensibles dentro de los plazos. Este proceso iterativo finalmente lleva al auditor a un punto en el cual considera que han identificado los puntos críticos y ahora están listos para seguir adelante por su cuenta a partir de todas sus recomendaciones.
 

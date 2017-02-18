@@ -1,19 +1,9 @@
-# The SAFETAG Audit Framework
-
-The SAFETAG audit consists of multiple information gathering and confirmations steps as well as research and capacity-building exercises with staff organized in a collection of objectives, each of which supports the core goals of SAFETAG, creating a risk assessment while also building the capacity of the organization.
-
-These objectives provide collections of approaches and activities to gather and verify information in both technical and interactive/social methods, assess and build capacity, and targeted exercises with walk-through instructions for many of these.
-
-These are not meant to be a "checklist" or even a prescribed set of actions -- indeed, experienced auditors will deviate strongly from many of the specific activities.  These provide a focused "minimal set" of activities only.
-
-Indeed, many objectives and their specific exercises overlap or can be done together -- on-site interviews with staff can coincide with assessing their devices and keeping one's eyes open for physical security issues.  The data assessment exercises may provide enough information that other staff engagements are unnecessary.
-
-
-![SAFETAG Activities](images/activities_flow.svg)
 
 ## The Life Cycle of an Audit
 
-The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through conversations, training, and group activities is actively building the organizations agency and addressing time-sensitive or critical threats that are possible within the time frame. This iterative process eventually leads to a point where the auditor is confident they have identified the critical and low hanging fruit, and is confident the organization is capable of moving forward with their recommendations.
+![SAFETAG Activities](images/activities_flow.svg)
+
+The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through conversations, training, and group activities is actively building the organization's agency and addressing time-sensitive or critical threats that are possible within the time frame. This iterative process eventually leads to a point where the auditor is confident they have identified the critical and low hanging fruit, and is confident the organization is capable of moving forward with their recommendations.
 
 Each objective requires a certain base of information, and outputs more information into this cyclical process.  Each objective has a "map" of the data flow that it and its specific activities provide based on this map:
 
