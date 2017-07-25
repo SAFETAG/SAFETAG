@@ -5,17 +5,15 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Introduction -->
 
-!INCLUDE "document_matter/introduction.md"
-
+!INCLUDE "document_matter/introduction.mva.md"
 
 <!-- Audit Lifecyce -->
 
 !INCLUDE "document_matter/audit_lifecycle.md"
 
-\newpage
 
+# Audit Preparation
 
-# PREPARATION
 
 <!-- Agency Building -->
 
@@ -27,7 +25,6 @@ subtitle: 'Minimal Viable Audit'
 
 !INCLUDE "methods/preparation.overview.md"
 
-!INCLUDE "exercises/assessment_plan/index.md"
 
 \newpage
 
@@ -41,7 +38,7 @@ subtitle: 'Minimal Viable Audit'
 
 \newpage
 
-# ASSESSMENT AND ANALYSIS
+# Assessment and Analysis
 
 <!-- Risk Modeling -->
 
@@ -49,90 +46,48 @@ subtitle: 'Minimal Viable Audit'
 
 \newpage
 
-!INCLUDE "methods/risk_modeling.overview.md"
+!INCLUDE "methods/risk_modeling.mva.md"
 
-<div class="boxtext">
-!INCLUDE "exercises/process_mapping_activity/index.md"
-</div>
 
 <!-- Threat Assessment -->
 
-!INCLUDE "methods/threat_assessment.overview.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/threat_identification/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/threat_interaction/index.md"
-</div>
+!INCLUDE "methods/threat_assessment.mva.md"
 
 \newpage
 
 <!-- Capacity Assessment -->
 
-!INCLUDE "methods/capacity_assessment.overview.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/interviews/index.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/capacity_assessment_cheatsheet/index.md"
-</div>
+!INCLUDE "methods/capacity_assessment.mva.md"
 
 \newpage
-
-
-
-# DEVICE ASSESSMENT
 
 <!-- Device Assessment -->
 
-!INCLUDE "methods/user_device_assessment.overview.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/device_checklist/index.md"
-<div>
-\newpage
+!INCLUDE "methods/user_device_assessment.mva.md"
 
 <!-- Physical Assessment -->
 
-!INCLUDE "methods/physical_assessment.overview.md"
+!INCLUDE "methods/physical_assessment.mva.md"
 
-<div class="boxtext">
-!INCLUDE "exercises/guided_tour/index.md"
-<div>
-
+\newpage
 <!-- Data Mapping -->
 
-!INCLUDE "methods/data_assessment.overview.md"
-### Outputs
-!INCLUDE "methods/data_assessment/output.md"
+!INCLUDE "methods/data_assessment.mva.md"
 
-### Operational Security
-!INCLUDE "methods/data_assessment/operational_security.md"
-
-### Preparation
-!INCLUDE "methods/data_assessment/preparation.md"
+\newpage
 
 
-
-# FOLLOW UP AND REPORTING
+# Follow up and Reporting
 
 <!-- Debrief -->
 
-!INCLUDE "methods/debrief.overview.md"
-### Outputs
-!INCLUDE "methods/debrief/output.md"
+!INCLUDE "methods/debrief.guide.md"
 
 \newpage
+
 <!-- Follow Up -->
 
 !INCLUDE "methods/follow_up.overview.md"
-<div class="boxtext">
-!INCLUDE "exercises/follow_up_meeting/index.md"
-<div>
-
 
 \newpage
 
@@ -151,6 +106,16 @@ subtitle: 'Minimal Viable Audit'
 !INCLUDE "methods/report_creation.guide.md"
 
 
+# Footnotes
+
+<!-- Load Footnotes -->
+!INCLUDE "references/footnotes.md"
+
+<!-- Update Footnotes for overview -->
+!INCLUDE "references/footnotes.overview.md"
+
+<!-- Load Default Images -->
+!INCLUDE "theme/image_defaults.md"
 
 
 
