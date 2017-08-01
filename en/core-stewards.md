@@ -48,7 +48,6 @@ subtitle: 'Minimal Viable Audit'
 
 !INCLUDE "methods/risk_modeling.mva.md"
 
-
 <!-- Threat Assessment -->
 
 !INCLUDE "methods/threat_assessment.mva.md"
@@ -61,21 +60,15 @@ subtitle: 'Minimal Viable Audit'
 
 \newpage
 
-<!-- Device Assessment -->
-
-!INCLUDE "methods/user_device_assessment.mva.md"
-
-<!-- Physical Assessment -->
-
-!INCLUDE "methods/physical_assessment.mva.md"
-
-\newpage
 <!-- Data Mapping -->
 
 !INCLUDE "methods/data_assessment.mva.md"
 
 \newpage
 
+<!-- Organisational Device Assessment -->
+
+!INCLUDE "methods/organizational_device_assessment.md"
 
 # Follow up and Reporting
 
