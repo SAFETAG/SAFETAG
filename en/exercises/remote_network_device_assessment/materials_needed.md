@@ -27,7 +27,9 @@ In the case of using in the middle trusted VPN server:
 - OpenVPN client installed on the auditor's machine
 - A trusted OpenVPN Server
 
-
+**Applications to use**:
+[TightVNC](http://www.tightvnc.com/)
+[TeamViewer](https://www.teamviewer.com/en/)
 
 potential to send a preconfigured wifi router otr usb with tamper-proof tape? 
 risks: time, tampering, cost, troubleshooting/device failure -- or culd a local tech intermediary "hold" this device, and/or build it locally (e.g. SD card into a RPi with USB wifi....?) freedombox, netaidkit? 

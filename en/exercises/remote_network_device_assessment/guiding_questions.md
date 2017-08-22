@@ -1,1 +1,1 @@
-questions for identifying the scenario
+questions for assessing the auditee's capabilities need to be identified.
