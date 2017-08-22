@@ -1,15 +1,20 @@
-# Materials Needed
+## Scenario 1
 
-In the case of remote desktop:
-    Requirements:
+- A machine accessible globally via ssh. It could be a machine or a virtual server
+- A GNULinux machine on the auditor's side
+- A machine running Linux or Mac with ssh on the auditee's end. If the audited
+organization only has Windows computers, they can use a live distribution, for
+example [Ubuntu Live](https://tutorials.ubuntu.com/tutorial/try-ubuntu-before-you-install?_ga=2.100677957.597084418.1503414810-670812192.1503414810#0).
+
+## Scenario 2
+
+### In the case of remote desktop:
+
 - Clean PC connected to the local auditee LAN network
 - Stable and fast Internet connection at both ends
 - TeamViewer client installed on the local clean machine #Let's write other alternatives
 - TeamViewer installed on the auditor's machine
 
-Scenario 3
-
-# Materials Needed
 
 In the case of remote desktop:
     Requirements:

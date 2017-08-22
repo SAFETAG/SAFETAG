@@ -54,7 +54,7 @@ Once this session is open, the auditor can take control of the machine; access t
 
     now you have a tunnel from your localhost:2200 to  safetag-audit.org:2200, which in turn has a tunnel from  safetag-audit.org:2200 to the client machine on port 22.
 
-    - once you have that, you can use [sshuttle](https://sshuttle.readthedocs.io) (needs to be installed, it's in most Linux standard repositories) on the auditor's machine (A) to access additional web-based resources in the auditee's network (or other resources - that are non-ICMP).
+    - once you have that, you can use [sshuttle](https://sshuttle.readthedocs.io) (needs to be installed, it's in most Linux standard repositories) on the auditor's machine (A) to access additional web-based resources in the auditee's network (or other resources - that are non-ICMP). 
 
         to do this, you would need to use client credentials through the tunnel you just created, and provide the client subnet to route traffic correctly through that "VPN":
         
@@ -69,7 +69,7 @@ An additional thing that one might want to do is making the connection from C to
 There should be no need for multiple reverse tunnels, as multiple forward tunnels can be set up from S to C if needed (eg. VNC or RDP); this requires multiple forward tunnels from A to S though.
 
 
-## Scenario 3
+## Scenario 2
 
 **Legend**:
 
