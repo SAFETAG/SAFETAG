@@ -234,7 +234,7 @@ Covered in full in Network Discovery
 <div class="boxtext">
 #### Physical Security Guided Tour
 
-Covered in full in Physical Assessment:
+Covered in full in Operational Security Assessment:
 
 !INCLUDE "exercises/guided_tour/approach.md"
 </div>
@@ -294,22 +294,6 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
-#### Impact of a Lost Device
-
-Covered in full under Physical Assessment:
-
-!INCLUDE "exercises/impact_lost_device/approach.md"
-</div>
-
-<div class="boxtext">
-#### Impact of a Found Device
-
-Covered in full under Physical Assessment:
-
-!INCLUDE "exercises/impact_found_device/approach.md"
-</div>
-
-<div class="boxtext">
 !INCLUDE "exercises/private_data/index.md"
 </div>
 
@@ -318,20 +302,13 @@ Covered in full under Physical Assessment:
 
 <!-- Physical Assessment -->
 
-!INCLUDE "methods/physical_assessment.guide.md"
+!INCLUDE "methods/operational_security.guide.md"
 
 
 <div class="boxtext">
 !INCLUDE "exercises/guided_tour/index.md"
 </div>
 
-<div class="boxtext">
-!INCLUDE "exercises/impact_lost_device/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/impact_found_device/index.md"
-</div>
 
 \newpage
 <!-- Risk Modeling -->
@@ -347,7 +324,7 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-#### Risk Matrix 
+#### Risk Matrix
 
 Covered in full in Threat Identification:
 
@@ -453,7 +430,7 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 # Reporting
 
 \newpage
-<!-- Vulnerability Prioritization 
+<!-- Vulnerability Prioritization
 
 !INCLUDE "methods/vulnerability_prioritization.guide.md"
 
