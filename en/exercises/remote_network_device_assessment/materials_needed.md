@@ -5,6 +5,11 @@
 - A machine running Linux or Mac with ssh on the auditee's end. If the audited
 organization only has Windows computers, they can use a live distribution, for
 example [Ubuntu Live](https://tutorials.ubuntu.com/tutorial/try-ubuntu-before-you-install?_ga=2.100677957.597084418.1503414810-670812192.1503414810#0).
+    - If you're using a live Linux distribution, you will probably need to guide
+    the auditee into changing the BIOS settings for enabling the computer to
+    boot from a USB stick.
+- If we use sshuttle, `net-tools` needs to be installed on the auditee's side.
+This package is installed by default in Ubuntu.
 
 ## Scenario 2
 
