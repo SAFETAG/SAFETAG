@@ -18,18 +18,18 @@ At the organization, the facilitator explains the activity to the organization m
 * For each vulnerability noted, the staff member will get a point.  The facilitator should encourage staff to also look for other, not listed, vulnerabilities. For vulnerabilities that staff members suggest which were not listed; if they can explain how that vulnerability would realistically be exploited, the facilitator can award a point. 
 * If possible, a prize should be provided to the "winner" with the most points.
 * Staff must first check their own desks for 5-10 minutes total:
-     * Review the physical security of their work space. 
-* Take pictures or notes on their findings
-* Fix each vulnerability they found
-* Report back to the facilitator
+    * Review the physical security of their work space. 
+    * Take pictures or notes on their findings
+    * Fix each vulnerability they found
+    * Report back to the facilitator
 * In the entire office space, staff members will spend 15 minutes to:
-* Review the physical security of other desks, meeting rooms, shared spaces etc...
-* Take pictures or notes on their findings without touching anything
-* Report back to the facilitator
+    * Review the physical security of other desks, meeting rooms, shared spaces etc...
+    * Take pictures or notes on their findings without touching anything
+    * Report back to the facilitator
 * Debrief:
     *  After the "hunt" time is up, the facilitator should gather the staff back together. 
     * The facilitator will gather the notes and review quickly for any high-risk or embarrassing findings.  If those exist, the facilitator should privately tell the finder to not bring that up in discussion
     * The facilitator can lead a discussion on interesting findings, but focus on moving towards changes in practice and policy for the organization to consider.
     * If possible, quickly calculate scores and announce the winner 
 * Reporting:
-* The facilitator should combine the notes and communicate them securely to the Auditor, and securely destroy the notes.
+    * The facilitator should combine the notes and communicate them securely to the Auditor, and securely destroy the notes.
