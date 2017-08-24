@@ -126,4 +126,3 @@ Who has independent access to the office space, and routine after-hours access (
 * Do you host events or trainings at the office?  Open "cybercafe" or community meeting space?
 * Do you host 1:1 meetings with funders, partners,
 * Do staff work from or meet at homes or cafes/restaurants?
-* Do staff travel often? Where?
