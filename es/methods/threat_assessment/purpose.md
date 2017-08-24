@@ -1,0 +1,3 @@
+La comprobación de las hipótesis de investigación sobre las amenazas actuales tanto las de la organización, como las del auditor, aseguran que un auditor está basando su trabajo en evaluaciones precisas de las condiciones que enfrenta la organización y de que se están realizando las consideraciones operacionales de seguridad informadas.
+
+Una mayor apropiación del proceso por el personal ofrecerá la oportunidad de explorar su panorama y se comprometerá aún más en el tratamiento de las amenazas identificadas una vez que la auditoría se haya completado. Al involucrar al personal tanto como sea posible el auditor está proporcionando un marco para que el personal explore los procesos de identificación de amenazas cuando se haya ido.

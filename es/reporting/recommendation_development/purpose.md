@@ -1,0 +1,3 @@
+La organización tiene que ser capaz de tomar medidas luego de una auditoría. Las recomendaciones que un auditor ofrece para abordar las vulnerabilidades deben cubrir un rango que permita a una organización hacerles frente tanto en el corto plazo, como de una manera más comprensiva en el largo plazo.
+
+Conocer las fortalezas y debilidades de una organización permitirá al auditor proporcionar recomendaciones más a la medida. De esta manera, el auditor SAFETAG tiene la oportunidad de actuar como un intermediario de confianza entre organizaciones de la sociedad civil que necesitan de instituciones proveedoras de entrenamientos en seguridad digital, soporte técnológico, asistencia legal, y respuesta ante incidentes.

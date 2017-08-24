@@ -1,0 +1,5 @@
+El valor de la detección de redes depende de la evaluación de riesgo de la organización. En muchos casos, una organización no quiere que el nombre de la red inalámbrica esté asociado a la misma organización.
+
+Las balizas también son dispositivos interesantes, ya que pueden revelar vínculos organizativos, como también, los movimientos de los hotspots favoritos. Las balizas pueden des-anonimizar el nombre de una red ofuscada, así como, proporcionar un contenido rico para los ataques de ingeniería social. Ello proporciona una introducción ligeramente invasiva para discutir la trazabilidad de los dispositivos, especialmente móviles y notebooks.
+
+Las redes inalámbricas en términos de confianza son, con frecuencia equivalentes a las redes cableadas de oficina, a las que en gran medida ha sustituido, pero tienen diferencias importantes. Las redes inalámbricas son a menudo visibles desde afuera de las paredes de la oficina, desde espacios comunes o incluso desde la calle, sin mayor acceso, este paso revela una gran cantidad de información acerca del tamaño de la organización y el tipo de dispositivos que conectados a la red.

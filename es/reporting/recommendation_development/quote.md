@@ -1,0 +1,3 @@
+"*For each threat in your list, you need to make one or more decisions. The first decision is your strategy: Should you accept the risk, address it, avoid it, or transfer it? If you're going to address it, you must next decide when, and then how?*" [^shostack_addressing_threats]
+
+"*In human rights organisations where the HRDs are at risk, an organisational security plan will help to protect the workers and allow them to do their work more effectively. If your organisation acknowledges and plans for dealing with the risks, the staff and/or members will feel more supported and have increased allegiance to the organisation and its important work.*" - _Workbook on Security: Practical Steps for Human Rights Defenders at Risk_ [^workbook_on_security]

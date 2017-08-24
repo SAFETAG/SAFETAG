@@ -1,0 +1,3 @@
+- Discutir los próximos pasos.
+- Proporcionar atención psicosocial y re-encuadre según sea necesario.
+- Iniciar un seguimiento con la organización (institucional e individual).
