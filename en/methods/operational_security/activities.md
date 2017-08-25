@@ -4,9 +4,13 @@
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/impact_lost_device/index.md"
+!INCLUDE "../../exercises/physical_security_survey/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/impact_found_device/index.md"
+!INCLUDE "../../exercises/office_mapping/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "../../exercises/scavenger_hunt/index.md"
 </div>
