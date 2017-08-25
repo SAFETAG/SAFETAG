@@ -309,6 +309,19 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 !INCLUDE "exercises/guided_tour/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/physical_security_survey/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/office_mapping/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/scavenger_hunt/index.md"
+</div>
+
+
 
 \newpage
 <!-- Risk Modeling -->

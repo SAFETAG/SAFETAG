@@ -7,109 +7,7 @@ Once an initial interview or survey has taken place (as part of capacity assessm
 
 In creating new questions, be careful to not "lead" on security in a way that would discourage honest and transparent responses.  For example, ask "Do you host community events and trainings?" instead of "Do you allow outside people into your office"?
 
-**Selected questions from the Capacity Assessment Interview,  "Open Up" section:**
-
-@issues. What issues does the organization work on? (Provide an example if needed - Examples below)
-  * Human Rights
-  * Transparency
-  * Public Service Delivery
-  * Health
-  * Free Media and Information
-  * Climate Issues
-  * Gender Issues
-  * Poverty Alleviation
-  * Community Building
-  * Peace promotion
-  * Agricultural Development
-  * Entrepreneurship
-  * Water, Sanitation
-  * Transportation
-  * Disaster Relief
-  * Other
-  * No Specific Mandate
-@workloc. Where does your organization have activities?
-@workmultiloc. Does the organization have activities in more than one (city/provence/country/region)
-@funding. What kind of funding does you organization receive?
-@officeshare. Does the organization have its own office space?
-@domainbrand. Does the organization have a domain name or brand identity that is used for all online communications?
-@digistf. Does the organization have a staff member responsible for working with digital or mobile technology? Yes, more than one
-@digisftfocus. Is this staff member responsible for any of the following area
-  * Office IT infrastructure
-  * Internet Presence or website
-* Outreach or communications
-  * Managing programs
-@stftravel. How regularly do staff members of the organization travel outside of your country
-@stftrvlact. Does the organization do any of the following activities when travelling internationally
-  * Run programs
-  * Participate in events
-  * Run trainings
-  * Receive trainings
-  * Fundraising
-
-**From "Threat Information"**
-
-@incidentregion. To your knowledge, how often do the below incidents occur in the geographic areas or issue areas in which your organization is active? Could you please tell me if you think they happen never, sometimes or often
-    * The government lawfully intercepts information communicated by civil society or private person
-    * The government lawfully confiscates equipment because of the information it contains
-    * Government, public officials, non-state actors, police or security forces use digital or mobile technology to identify and target individuals for arrest or violen
-    * Government, public officials, non-state actors, police or security forces use digital or mobile technology to attack the reputations of individuals or organizations
-@techtoviolence. To your knowledge, how often do the below actors use digital or mobile technology to target or to identify individuals for arrest or violence? Do they use it never, sometimes, or often.
-    * government or public officials
-    * non-state actors (corporations, social groups)
-    * police, security forces or paramilitary groups
-@actorinfogather. And how often would you say that these actors use digital or mobile technology to monitor or gather information on civil society activities? Never, sometimes, or often.
-    * government or public officials
-    * non-state actors (corporations, social groups)
-    * police, security forces or paramilitary groups
-@curthreats. What do you feel are the most immediate and serious digital threats to the organization?
-@whatthreats. How much risk do you feel each of these digital threats presents to your organization?
-    * Online surveillance
-    * DDOS (Distributed Denial of Service) Attack
-    * Targeted for physical violence on the basis of digital activity
-    * Data loss
-    * Other.
-@staffphysdanger. Do you feel that any of these threats place the physical security of your staff in danger?
-@stakedanger. Do you feel that any of these threats place the physical security of your stakeholders in danger?
-@benedanger. Do you feel that any of these threats place the physical security of your beneficiaries in danger?
-@experiencethreat. In the last six months, have you or any of your civil society peers experienced any of the following?
-    * Intimidation or threats of violence by public officials, police or security force
-    * Intimidation or threats of violence by private or non-state actors.
-    * Threats of arrest or detention
-    * Arrest
-    * Threats of Torture.
-    * Confiscation of equipment
-    * Threats to administrative standing, such as stripping individuals of professional accreditation or organization of licenses
-    * Other
-@threatrespond. How has your organization responded to these threats?
-    * Addressed the issue in the press/online
-    * Told other organizations about the threat
-    * Contacted the authorities
-    * Trained staff to prevent and mitigate such threats in the future
-    * Requested help from other organizations
-    * Invested in hardware
-    * raised funds
-    * has not responded
-    * other
-@threatsteps. Has the organization taken any of the following steps to prepare against digital or physical threats?
-    * Staff have been trained
-    * There are specific plans in place for specific situations
-    * Equiptment and/or supplies have been made ready
-    * Other
-
-**From the Technical Only section**:
-
-
-@disrecov. Are Disaster Recovery Procedures in place for the application data?
-@chngmngt. Are Change Management procedures in place?
-@repairdelay. What is the mean time to repair systems outages?
-@sysmon. Is any system monitoring software in place?
-@criticalserv. What are the most critical servers and applications?
-@backup. Do you use backups in your organization?
-  * Are there any data/devices that are not backed up?
-  * Are backups tested on a regular basis?
-  * When was the last time the backups were restored?
-
-**Building on these questions, additional deep dives:**
+Below are questions not already covered in the capacity assessment interview process, and after that selected questions from that process which are of particular use here.
 
 **Office layout and access**
 
@@ -126,3 +24,83 @@ Who has independent access to the office space, and routine after-hours access (
 * Do you host events or trainings at the office?  Open "cybercafe" or community meeting space?
 * Do you host 1:1 meetings with funders, partners,
 * Do staff work from or meet at homes or cafes/restaurants?
+
+**Selected questions from the Capacity Assessment Interview,  "Open Up" section:**
+
+* What issues does the organization work on? Are these issues sensitive where you work?
+* Where does your organization have activities?
+* Does the organization have activities in more than one (city/provence/country/region)?
+* What kind of funding does you organization receive?
+* Does the organization have its own office space?
+* Does the organization have a domain name or brand identity that is used for all online communications?
+* Does the organization have a staff member responsible for working with digital or mobile technology?
+* How regularly do staff members of the organization travel outside of your country
+* Does the organization do any of the following activities when travelling internationally
+  * Run programs
+  * Participate in events
+  * Run trainings
+  * Receive trainings
+  * Fundraising
+
+**From "Threat Information"**
+
+* To your knowledge, how often do the below incidents occur in the geographic areas or issue areas in which your organization is active? Could you please tell me if you think they happen never, sometimes or often
+    * The government lawfully intercepts information communicated by civil society or private person
+    * The government lawfully confiscates equipment because of the information it contains
+    * Government, public officials, non-state actors, police or security forces use digital or mobile technology to identify and target individuals for arrest or violen
+    * Government, public officials, non-state actors, police or security forces use digital or mobile technology to attack the reputations of individuals or organizations
+* To your knowledge, how often do the below actors use digital or mobile technolog to target or to identify individuals for arrest or violence? Do they use it never, sometimes, or often?
+    * government or public officials
+    * non-state actors (corporations, social groups)
+    * police, security forces or paramilitary groups
+* And how often would you say that these actors use digital or mobile technology to monitor or gather information on civil society activities? Never, sometimes, or often.
+    * government or public officials
+    * non-state actors (corporations, social groups)
+    * police, security forces or paramilitary groups
+* What do you feel are the most immediate and serious digital threats to the organization?
+* How much risk do you feel each of these digital threats presents to your organization?
+    * Online surveillance
+    * DDOS (Distributed Denial of Service) Attack
+    * Targeted for physical violence on the basis of digital activity
+    * Data loss
+    * Other.
+* Do you feel that any of these threats place the physical security of your staff in danger?
+* Do you feel that any of these threats place the physical security of your stakeholders in danger?
+* Do you feel that any of these threats place the physical security of your beneficiaries in danger?
+* In the last six months, have you or any of your civil society peers experienced any of the following?
+    * Intimidation or threats of violence by public officials, police or security force
+    * Intimidation or threats of violence by private or non-state actors.
+    * Threats of arrest or detention
+    * Arrest
+    * Threats of Torture.
+    * Confiscation of equipment
+    * Threats to administrative standing, such as stripping individuals of professional accreditation or organization of licenses
+    * Other
+* How has your organization responded to these threats?
+    * Addressed the issue in the press/online
+    * Told other organizations about the threat
+    * Contacted the authorities
+    * Trained staff to prevent and mitigate such threats in the future
+    * Requested help from other organizations
+    * Invested in hardware
+    * raised funds
+    * has not responded
+    * other
+* Has the organization taken any of the following steps to prepare against digital or physical threats?
+    * Staff have been trained
+    * There are specific plans in place for specific situations
+    * Equiptment and/or supplies have been made ready
+    * Other
+
+**From the Technical Only section**:
+
+
+* Are Disaster Recovery Procedures in place for the application data?
+* Are Change Management procedures in place?
+* What is the mean time to repair systems outages?
+* Is any system monitoring software in place?
+* What are the most critical servers and applications?
+* Do you use backups in your organization?
+  * Are there any data/devices that are not backed up?
+  * Are backups tested on a regular basis?
+  * When was the last time the backups were restored?
