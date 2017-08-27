@@ -409,6 +409,9 @@ Covered in full in Capacity Assessment:
 <!-- Remote Facilitation -->
 
 !INCLUDE "methods/remote_facilitation.guide.md"
+
+
+
 \newpage
 
 <!-- Responsive Support -->
