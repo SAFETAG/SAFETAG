@@ -406,6 +406,11 @@ Covered in full in Capacity Assessment:
 
 
 \newpage
+<!-- Remote Facilitation -->
+
+!INCLUDE "methods/remote_facilitation.guide.md"
+\newpage
+
 <!-- Responsive Support -->
 
 !INCLUDE "methods/responsive_support.guide.md"

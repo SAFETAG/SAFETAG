@@ -1,0 +1,1 @@
+This component suggests approaches and methods to use if in-person facilitation, for activities such as process mapping and data assessment, is not possible. This may not provide as deep results as in-person facilitation, but should provide adequate level of expansion and verification needed.
