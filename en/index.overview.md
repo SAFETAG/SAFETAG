@@ -68,11 +68,6 @@ subtitle: 'Overview'
 !INCLUDE "methods/reconnaissance.overview.md"
 
 \newpage
-<!-- Network Discovery-->
-
-!INCLUDE "methods/network_discovery.overview.md"
-
-\newpage
 <!-- Network Access -->
 
 !INCLUDE "methods/network_access.overview.md"

@@ -1,4 +1,3 @@
 
-* **Physical Access to the Lan & Servers:** Tour the office and look for exposed network devices, servers, and network jacks, document how difficult it would be for a visitor or after-hours break-in to access sensitive systems.
-* **The Impacts of a Lost Device:** Lead staff in an activity were they describe the impact if various devices were destroyed.
-* **The Impacts of a Found Device:** Lead staff in an activity identifying what critical data would be available if an adversary gained access to various devices.
+* **Physical Access to the Lan, wifi, and Servers:** Tour the office and look for exposed network devices, servers, and network jacks, document how difficult it would be for a visitor or after-hours break-in to access sensitive systems. Determine the reach of the wireless network and how easy it is to identify it as connected to the organization.
+* **Mapping potential physical vulnerabilities with digital security impacts:**  Document potential vulnerabilities to the organization's information security based on physical aspects -- e.g. unencrypted devices which could be stolen, written passwords, or even wireless network metadata.
