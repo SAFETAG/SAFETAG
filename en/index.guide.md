@@ -138,19 +138,6 @@ See the Appendix for creating a password dictionary.
 </div>
 
 \newpage
-<!-- Network Discovery-->
-
-!INCLUDE "methods/network_discovery.guide.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/monitor_open_wireless_traffic/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/wireless_range_mapping/index.md"
-</div>
-
-\newpage
 <!-- Network Access -->
 
 !INCLUDE "methods/network_access.guide.md"
@@ -321,7 +308,13 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 !INCLUDE "exercises/scavenger_hunt/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/monitor_open_wireless_traffic/index.md"
+</div>
 
+<div class="boxtext">
+!INCLUDE "exercises/wireless_range_mapping/index.md"
+</div>
 
 \newpage
 <!-- Risk Modeling -->
