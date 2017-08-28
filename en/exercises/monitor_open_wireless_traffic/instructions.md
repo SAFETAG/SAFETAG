@@ -45,7 +45,7 @@ This command de-authenticates one targeted user with one attempted deauth packet
 
 There are scripts, like wifijammer, which use this same approach to jam *all* wifi connections in range of the attacking computer, so check against the documentation at http://www.aircrack-ng.org and act responsibly to protect yourself and the organization.
 
-##### Step 4: MAC Address Research
+###### Step 4: MAC Address Research
 
 The first three hex numbers of each MAC address designate the vendor, which can reveal useful information in matching MAC addresses to devices. The MAC address is a unique identifier, so never post or search using the full address.  Note that increasingly, devices are using MAC address randomization, but if it implemented, it often is poorly implemented against even minimally determined adversaries, as per this [2017 research study](https://www.theregister.co.uk/2017/03/10/mac_address_randomization/).
 
