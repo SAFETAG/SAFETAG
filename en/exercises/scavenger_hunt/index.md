@@ -1,4 +1,4 @@
-### Activity Title
+### Scavenger Hunt
 
 #### Summary
 !INCLUDE "summary.md"
