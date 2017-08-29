@@ -185,6 +185,10 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/remote_network_device_assessment/index.md"
+</div>
+
+<div class="boxtext">
 #### Router Attacks
 
 Covered in full in  Vulnerability Scanning and Analysis
@@ -347,7 +351,7 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-#### Risk Matrix 
+#### Risk Matrix
 
 Covered in full in Threat Identification:
 
@@ -453,7 +457,7 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 # Reporting
 
 \newpage
-<!-- Vulnerability Prioritization 
+<!-- Vulnerability Prioritization
 
 !INCLUDE "methods/vulnerability_prioritization.guide.md"
 
