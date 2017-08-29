@@ -1,1 +1,0 @@
-questions for assessing the auditee's capabilities need to be identified.
