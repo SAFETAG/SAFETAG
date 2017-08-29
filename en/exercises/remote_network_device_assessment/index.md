@@ -1,4 +1,4 @@
-#### Activity Title
+#### Remote Network and User Device Assessment
 
 ##### Summary
 !INCLUDE "summary.md"

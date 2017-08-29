@@ -40,5 +40,3 @@ remotely and use it as the auditor machine.
 2. VPN to a trusted VPN server. In this case, the auditee will connect one of
 their machines to a trusted VPN server, and the auditor will connect to the same
 VPN server, allowing both LANs at the auditee's and auditor's ends to connect.
-
-(There are diagrams here : https://docs.google.com/document/d/1lUVJSG9DF9DhEf1ep2Zk2j_AbqmVi90aPuBm72Pq1wo/edit )
