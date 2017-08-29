@@ -8,6 +8,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/remote_network_device_assessment/index.md"
+</div>
+
+<div class="boxtext">
 ### Router Attacks
 
 Covered in full in  Vulnerability Scanning and Analysis
