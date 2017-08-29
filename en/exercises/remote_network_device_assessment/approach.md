@@ -1,6 +1,6 @@
 There can be several approaches for this exercise, depending on the scenario.
 
-## Scenario 0
+###### Scenario 0
 
 The organization has contacted the auditor through an intermediary who is 
 familiar with tech and can follow SAFETAG instructions, or the organization has 
@@ -13,7 +13,7 @@ organization to follow the instructions in the exercise on
 assessment](../methods/network_mapping).
 
 
-## Scenario 1
+###### Scenario 1
 
 The organization has someone among their employees who is ready to follow simple
 instructions, including opening a terminal and pasting commands we will provide
@@ -26,7 +26,7 @@ within the organization's network to establish the tunnel, a UNIX system is
 needed. This will be a Linux live distribution or a Mac computer.
 
 
-## Scenario 2
+###### Scenario 2
 
 In this scenario, no one at the organization is ready to apply complex
 instructions. Instead of relying on an individual, the auditor will rely on 

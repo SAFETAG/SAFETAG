@@ -1,4 +1,4 @@
-## Scenario 1
+###### Scenario 1
 
 - A machine accessible globally via ssh. It could be a machine or a virtual server
 - A GNULinux machine on the auditor's side
@@ -11,9 +11,9 @@ example [Ubuntu Live](https://tutorials.ubuntu.com/tutorial/try-ubuntu-before-yo
 - If we use sshuttle, `net-tools` needs to be installed on the auditee's side.
 This package is installed by default in Ubuntu.
 
-## Scenario 2
+###### Scenario 2
 
-### In the case of remote desktop:
+In the case of remote desktop:
 
 - Clean PC connected to the local auditee LAN network
 - Stable and fast Internet connection at both ends

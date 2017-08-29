@@ -1,7 +1,7 @@
-## Scenario 0
+###### Scenario 0
 Instruct the intermediary or the tech person in the organization to follow the instructions in the exercise on [Network mapping](../methods/network_mapping) and on [User device assessment](../methods/network_mapping).
 
-## Scenario 1
+###### Scenario 1
 
 **Legend**
 
@@ -69,7 +69,7 @@ An additional thing that one might want to do is making the connection from C to
 There should be no need for multiple reverse tunnels, as multiple forward tunnels can be set up from S to C if needed (eg. VNC or RDP); this requires multiple forward tunnels from A to S though.
 
 
-## Scenario 2
+###### Scenario 2
 
 **Legend**:
 
@@ -99,7 +99,7 @@ There are pros and cons for this:
 **Note**: Some remote assistant software provides VPN solutions that turn Machine A into a VPN Server and allow Machine B to VPN into it. Tunneling into that VPN server will allow you to connect to the local LAN network, which will allow you to use Machine B to run the audit.
 
 
-#### Using in the middle trusted VPN server
+###### Using in the middle trusted VPN server
 
 **Legend**:
     
