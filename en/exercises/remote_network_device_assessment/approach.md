@@ -9,8 +9,8 @@ a tech person among their employees.
 This scenario is comparable to a situation where the auditor is on site. In this
 case, the auditor will instruct the intermediary or the tech person in the 
 organization to follow the instructions in the exercise on 
-[Network mapping](../methods/network_mapping) and on [User device 
-assessment](../methods/network_mapping).
+[Network mapping](../../methods/network_mapping) and on [User device 
+assessment](../../methods/network_mapping).
 
 
 ###### Scenario 1
