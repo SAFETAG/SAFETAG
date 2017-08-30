@@ -10,7 +10,7 @@ This scenario is comparable to a situation where the auditor is on site. In this
 case, the auditor will instruct the intermediary or the tech person in the 
 organization to follow the instructions in the exercise on 
 [Network mapping](../../methods/network_mapping) and on [User device 
-assessment](../../methods/network_mapping).
+assessment](../../methods/user_device_assessment).
 
 
 ###### Scenario 1
@@ -35,8 +35,8 @@ be done in two ways:
 
 1. Remote Desktop or remote VPN into targeted Network. Remote Desktop is 
 tunneling into a targeted machine that lives on the same targeted LAN network 
-and you wish to scan its network and do the assessment, and control the machine 
-remotely and use it as the auditor machine.
+where you wish to scan the network and do the device assessment; the auditor
+controls the machine remotely and uses it as the auditor machine.
 2. VPN to a trusted VPN server. In this case, the auditee will connect one of
 their machines to a trusted VPN server, and the auditor will connect to the same
 VPN server, allowing both LANs at the auditee's and auditor's ends to connect.
