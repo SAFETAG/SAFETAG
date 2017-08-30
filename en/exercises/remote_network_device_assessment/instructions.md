@@ -36,7 +36,7 @@ Let's assume we have a server named safetag-audit.org (S), and usernames for eac
          
 **Important**: make sure that the ports you use don't conflict with ports by other services or auditees, i.e. don't use a port number twice.
 
-Once this session is open, the auditor can take access the auditee's machine (C). At this point there are a few powerful options:
+Once this session is open, the auditor can access the auditee's machine (C). At this point there are a few powerful options:
 
 * simply ssh from S to C via the tunnel (port defined in the reverse tunnel on the server localhost interface); 
  
