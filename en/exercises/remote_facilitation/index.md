@@ -1,30 +1,16 @@
-## Remote Facilitation
+#### Remote Facilitation
 
-### Summary
-
+##### Summary
 !INCLUDE "summary.md"
 
-###Overview
+##### Overview
+!INCLUDE "approach.md"
 
-!INCLUDE "approaches.md"
-
-###Materials Needed
-
+##### Materials Needed
 !INCLUDE "materials_needed.md"
 
-###Preparation
-
-!INCLUDE "preparation.md"
-
-###Considerations
-
-!INCLUDE "guiding_questions.md"
-
-###Operational Security
-
+##### Considerations
 !INCLUDE "operational_security.md"
 
-###Walkthrough
-
+##### Walkthrough
 !INCLUDE "instructions.md"
-

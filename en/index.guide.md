@@ -347,7 +347,7 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-#### Risk Matrix 
+#### Risk Matrix
 
 Covered in full in Threat Identification:
 
@@ -456,7 +456,7 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 # Reporting
 
 \newpage
-<!-- Vulnerability Prioritization 
+<!-- Vulnerability Prioritization
 
 !INCLUDE "methods/vulnerability_prioritization.guide.md"
 
@@ -530,7 +530,7 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 !INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
 
 ## APPENDIX: Remote Facilitation
-[remote_facilitation]:[]
+
 !INCLUDE "exercises/remote_facilitation/index.md"
 
 
