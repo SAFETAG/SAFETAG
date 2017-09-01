@@ -406,10 +406,6 @@ Covered in full in Capacity Assessment:
 
 
 \newpage
-<!-- Remote Facilitation -->
-
-!INCLUDE "methods/remote_facilitation.guide.md"
-\newpage
 
 <!-- Responsive Support -->
 
@@ -530,6 +526,11 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 ## APPENDIX: Device Assessment Checklist
 
 !INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
+
+## APPENDIX: Remote Facilitation
+[remote_facilitation]:[]
+!INCLUDE "exercises/remote_facilitation/index.md"
+
 
 # Footnotes
 

@@ -1,4 +1,6 @@
 
+####There are four different approaches you can use, depending on situation
+
 * **Approach 1, hybrid online/synchronous**
 Can be used with large group of participants, where it is possible to meet over multiple sessions with enough time to collect and analyse responses in between.
 
