@@ -387,8 +387,6 @@ Covered in full in Capacity Assessment:
 
 \newpage
 
->>>>>>> d3bbc1908dadcc0d401498521e47df06b95afadf
-
 <!-- Responsive Support -->
 
 !INCLUDE "methods/responsive_support.guide.md"
@@ -468,7 +466,6 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 <!-- Roadmap Development -->
 
 !INCLUDE "methods/roadmap_development.guide.md"
-
 
 \newpage
 <!-- Reporting Creation -->
