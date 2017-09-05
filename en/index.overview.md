@@ -68,11 +68,6 @@ subtitle: 'Overview'
 !INCLUDE "methods/reconnaissance.overview.md"
 
 \newpage
-<!-- Network Discovery-->
-
-!INCLUDE "methods/network_discovery.overview.md"
-
-\newpage
 <!-- Network Access -->
 
 !INCLUDE "methods/network_access.overview.md"
@@ -100,7 +95,7 @@ subtitle: 'Overview'
 \newpage
 <!-- Physical Assessment -->
 
-!INCLUDE "methods/physical_assessment.overview.md"
+!INCLUDE "methods/operational_security.overview.md"
 
 \newpage
 <!-- Risk Modeling -->

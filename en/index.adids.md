@@ -240,4 +240,7 @@ Footnotes
 
 !INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
 
+## APPENDIX: Remote Facilitation
+
+!INCLUDE "exercises/remote_facilitation/index.md"
 \newpage

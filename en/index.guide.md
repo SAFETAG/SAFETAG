@@ -138,19 +138,6 @@ See the Appendix for creating a password dictionary.
 </div>
 
 \newpage
-<!-- Network Discovery-->
-
-!INCLUDE "methods/network_discovery.guide.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/monitor_open_wireless_traffic/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/wireless_range_mapping/index.md"
-</div>
-
-\newpage
 <!-- Network Access -->
 
 !INCLUDE "methods/network_access.guide.md"
@@ -182,6 +169,10 @@ See the Appendix for creating a password dictionary.
 
 <div class="boxtext">
 !INCLUDE "exercises/traffic_analysis/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/remote_network_device_assessment/index.md"
 </div>
 
 <div class="boxtext">
@@ -234,7 +225,7 @@ Covered in full in Network Discovery
 <div class="boxtext">
 #### Physical Security Guided Tour
 
-Covered in full in Physical Assessment:
+Covered in full in Operational Security Assessment:
 
 !INCLUDE "exercises/guided_tour/approach.md"
 </div>
@@ -294,22 +285,6 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
-#### Impact of a Lost Device
-
-Covered in full under Physical Assessment:
-
-!INCLUDE "exercises/impact_lost_device/approach.md"
-</div>
-
-<div class="boxtext">
-#### Impact of a Found Device
-
-Covered in full under Physical Assessment:
-
-!INCLUDE "exercises/impact_found_device/approach.md"
-</div>
-
-<div class="boxtext">
 !INCLUDE "exercises/private_data/index.md"
 </div>
 
@@ -318,7 +293,7 @@ Covered in full under Physical Assessment:
 
 <!-- Physical Assessment -->
 
-!INCLUDE "methods/physical_assessment.guide.md"
+!INCLUDE "methods/operational_security.guide.md"
 
 
 <div class="boxtext">
@@ -326,11 +301,23 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/impact_lost_device/index.md"
+!INCLUDE "exercises/physical_security_survey/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/impact_found_device/index.md"
+!INCLUDE "exercises/office_mapping/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/scavenger_hunt/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/monitor_open_wireless_traffic/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/wireless_range_mapping/index.md"
 </div>
 
 \newpage
@@ -347,7 +334,7 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-#### Risk Matrix 
+#### Risk Matrix
 
 Covered in full in Threat Identification:
 
@@ -406,6 +393,9 @@ Covered in full in Capacity Assessment:
 
 
 \newpage
+
+>>>>>>> d3bbc1908dadcc0d401498521e47df06b95afadf
+
 <!-- Responsive Support -->
 
 !INCLUDE "methods/responsive_support.guide.md"
@@ -453,7 +443,7 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 # Reporting
 
 \newpage
-<!-- Vulnerability Prioritization 
+<!-- Vulnerability Prioritization
 
 !INCLUDE "methods/vulnerability_prioritization.guide.md"
 
@@ -525,6 +515,11 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 ## APPENDIX: Device Assessment Checklist
 
 !INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
+
+## APPENDIX: Remote Facilitation
+
+!INCLUDE "exercises/remote_facilitation/index.md"
+
 
 # Footnotes
 
