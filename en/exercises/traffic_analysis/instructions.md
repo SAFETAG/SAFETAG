@@ -20,7 +20,7 @@ Sample Output:
 00:11:22:33:44:55 aa:bb:cc:dd:ee:ff 0806 42: arp reply 192.168.1.1 is-at 00:11:22:33:44:55
 ```
 
-In the example above, only a single victim (192.168.1.99) is being targeted, but the attack works fine against multiple victims, or even against the entire network. In other words, the attacker does not need to know which IP address (on the office or Internet cafe LAN, for example) belongs to her target. Furthermore, the victim is extremely unlikely to notice any sign that this phase of the attack is taking place.
+In the example above, only a single victim (192.168.1.99) is being targeted, but the attack works fine against multiple victims, or even against the entire network. In other words, the attacker does not need to know which IP address (on the office or Internet cafe LAN, for example) belongs to the target. Furthermore, the victim is extremely unlikely to notice any sign that this phase of the attack is taking place.
 
 EtterCap provides a powerful frontend to managing this process with multiple potential targets.  In EtterCap:
 
@@ -31,6 +31,6 @@ EtterCap provides a powerful frontend to managing this process with multiple pot
 
 <!-- Ettercap Screenshot -->
 
-**Step 2:** At this point, if the attacker is looking for unencrypted traffic, all she needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins, as well as traffic revealing shadow infrastructure usage, such as Dropbox.
+**Step 2:** At this point, if the attacker is looking for unencrypted traffic, all the attacker needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins, as well as traffic revealing shadow infrastructure usage, such as Dropbox.
 
 <!-- Wireshark screenshot -->
