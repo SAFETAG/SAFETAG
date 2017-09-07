@@ -1,7 +1,7 @@
 
 ##### Network Traffic Interception
 
-**Step 1:** The attacker tricks the victim into routing all of his traffic through the attacker’s machine. This involves making a simple request to the victim’s IP address, which is not difficult to do. Computers are rarely configured to ignore such requests.
+**Step 1:** The attacker tricks the victim into routing all of their traffic through the attacker’s machine. This involves making a simple request to the victim’s IP address, which is not difficult to do. Computers are rarely configured to ignore such requests.
 
 ```
 $ sudo sh -c 'echo 1 > /proc/sys/net/ipv4/ip_forward'
@@ -29,8 +29,8 @@ EtterCap provides a powerful frontend to managing this process with multiple pot
 * Under Mitm, select "arp spoofing" for this example
 * Select "Start" under the Sniffing menu
 
-<Ettercap Screenshot>
+<!-- Ettercap Screenshot -->
 
 **Step 2:** At this point, if the attacker is looking for unencrypted traffic, all she needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins, as well as traffic revealing shadow infrastructure usage, such as Dropbox.
 
-<Wireshark screenshot>
+<!-- Wireshark screenshot -->
