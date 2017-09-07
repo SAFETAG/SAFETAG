@@ -1,0 +1,44 @@
+
+# APPENDICES
+
+<!-- Definitions -->
+## APPENDIX: How to read SAFETAG
+
+!INCLUDE "document_matter/how_to_read_this_guide.guide.md"
+
+## APPENDIX: Draft Engagement and Confidentiality Agreement
+
+!INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
+
+## APPENDIX: Travel Kit and Checklist
+
+!INCLUDE "exercises/travel_kit/index.md"
+
+## APPENDIX: Sample Capacity Interview Questions
+
+!INCLUDE "exercises/interviews/interview_questions.md"
+
+## APPENDIX: Password Dictionaries
+
+!INCLUDE "exercises/password_security/dictionary_creation.md"
+
+## APPENDIX: Password Survey
+
+!INCLUDE "exercises/password_security/password_survey.md"
+
+## APPENDIX: Recon-ng walkthrough
+
+!INCLUDE "exercises/automated_recon/recon-ng.md"
+
+## APPENDIX: Device Assessment Checklist
+
+!INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
+
+## APPENDIX: Remote Facilitation
+
+!INCLUDE "exercises/remote_facilitation/index.md"
+
+# Footnotes
+
+<!-- Load Footnotes -->
+!INCLUDE "references/footnotes.md"

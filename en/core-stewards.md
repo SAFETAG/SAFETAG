@@ -1,6 +1,6 @@
 ---
 title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
-subtitle: 'Minimal Viable Audit'
+subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
 ---
 
 <!-- Introduction -->
@@ -75,6 +75,7 @@ subtitle: 'Minimal Viable Audit'
 
 <div class="boxtext">
 !INCLUDE "exercises/interviews/index.md"
+</div>
 
 <div class="boxtext">
 !INCLUDE "exercises/capacity_assessment_cheatsheet/index.md"
@@ -92,7 +93,7 @@ subtitle: 'Minimal Viable Audit'
 
 <div class="boxtext">
 !INCLUDE "exercises/device_checklist/index.md"
-<div>
+</div>
 \newpage
 
 <!-- Physical Assessment -->
@@ -101,7 +102,7 @@ subtitle: 'Minimal Viable Audit'
 
 <div class="boxtext">
 !INCLUDE "exercises/guided_tour/index.md"
-<div>
+</div>
 
 <!-- Data Mapping -->
 
@@ -131,7 +132,7 @@ subtitle: 'Minimal Viable Audit'
 !INCLUDE "methods/follow_up.overview.md"
 <div class="boxtext">
 !INCLUDE "exercises/follow_up_meeting/index.md"
-<div>
+</div>
 
 
 \newpage
@@ -149,8 +150,3 @@ subtitle: 'Minimal Viable Audit'
 <!-- Reporting Creation -->
 
 !INCLUDE "methods/report_creation.guide.md"
-
-
-
-
-

@@ -14,17 +14,9 @@ subtitle: 'Guide'
 
 \newpage
 
-!INCLUDE "document_matter/how_to_read_this_guide.guide.md"
-
-\newpage
-
-<!-- Overview -->
-
-!INCLUDE "document_matter/overview.md"
-
-\newpage
-
 <!-- Audit Lifecyce -->
+
+!INCLUDE "document_matter/safetag_core_intro.md"
 
 !INCLUDE "document_matter/audit_lifecycle.md"
 
@@ -44,6 +36,13 @@ subtitle: 'Guide'
 !INCLUDE "document_matter/operational_security.md"
 
 \newpage
+
+# SAFETAG Methods
+
+!INCLUDE "methods/intro.md"
+
+\newpage
+
 <!-- Audit Prep-->
 
 !INCLUDE "methods/preparation.guide.md"
@@ -76,14 +75,8 @@ See the Appendix for creating a password dictionary.
 !INCLUDE "exercises/safetag_audit_timeline.md"
 </div>
 
-
 \newpage
 
-# SAFETAG Methods
-
-!INCLUDE "methods/intro.md"
-
-\newpage
 <!-- Audit Scoping-->
 
 !INCLUDE "methods/context_research.guide.md"
@@ -394,8 +387,6 @@ Covered in full in Capacity Assessment:
 
 \newpage
 
->>>>>>> d3bbc1908dadcc0d401498521e47df06b95afadf
-
 <!-- Responsive Support -->
 
 !INCLUDE "methods/responsive_support.guide.md"
@@ -476,7 +467,6 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 !INCLUDE "methods/roadmap_development.guide.md"
 
-
 \newpage
 <!-- Reporting Creation -->
 
@@ -484,47 +474,10 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 \newpage
 
-# APPENDICES
+<!-- APPENDICES AND FOOTNOTES -->
 
-<!-- APPENDIX A - Auditor travel Kit Checklist-->
+!INCLUDE "appendix.md"
 
-## APPENDIX: Draft Engagement and Confidentiality Agreement
-
-!INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
-
-## APPENDIX: Travel Kit and Checklist
-
-!INCLUDE "exercises/travel_kit/index.md"
-
-## APPENDIX: Sample Capacity Interview Questions
-
-!INCLUDE "exercises/interviews/interview_questions.md"
-
-## APPENDIX: Password Dictionaries
-
-!INCLUDE "exercises/password_security/dictionary_creation.md"
-
-## APPENDIX: Password Survey
-
-!INCLUDE "exercises/password_security/password_survey.md"
-
-## APPENDIX: Recon-ng walkthrough
-
-!INCLUDE "exercises/automated_recon/recon-ng.md"
-
-## APPENDIX: Device Assessment Checklist
-
-!INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
-
-## APPENDIX: Remote Facilitation
-
-!INCLUDE "exercises/remote_facilitation/index.md"
-
-
-# Footnotes
-
-<!-- Load Footnotes -->
-!INCLUDE "references/footnotes.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
