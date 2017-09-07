@@ -242,23 +242,23 @@ Covered in full in Operational Security Assessment:
 </div>
 
 <div class="boxtext">
-### Explore Vulnerability Databases
+#### Explore Vulnerability Databases
 !INCLUDE "exercises/vulnerability_research/index.md"
 </div>
 
 <div class="boxtext">
-### Examine Service Configuration Files
+#### Examine Service Configuration Files
 !INCLUDE "exercises/check_config_files/index.md"
 </div>
 
 <div class="boxtext">
-### Network Vulnerabilities
+#### Network Vulnerabilities
 
 See the Network Access and Mapping activities for methods to expose insecure wireless networks and for methods to use network mapping and traffic analysis to discover further potential vulnerabilities or points to investigate.
 </div>
 
 <div class="boxtext">
-### Penetrating Wireless Routers
+#### Penetrating Wireless Routers
 
 !INCLUDE "exercises/router_attacks/index.md"
 </div>
@@ -311,6 +311,13 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 
 <div class="boxtext">
 !INCLUDE "exercises/wireless_range_mapping/index.md"
+</div>
+
+
+<div class="boxtext">
+#### A Day in the Life
+Covered in full in User Device Assessment:
+!INCLUDE "exercises/day_in_the_life/approach.md"
 </div>
 
 \newpage

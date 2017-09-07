@@ -22,3 +22,9 @@
 <div class="boxtext">
 !INCLUDE "../../exercises/wireless_range_mapping/index.md"
 </div>
+
+<div class="boxtext">
+#### A Day in the Life
+Covered in full in User Device Assessment:
+!INCLUDE "../../exercises/day_in_the_life/approach.md"
+</div>
