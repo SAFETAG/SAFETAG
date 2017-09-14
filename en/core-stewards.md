@@ -44,13 +44,24 @@ subtitle: 'Minimal Viable Audit'
 
 !INCLUDE "document_matter/risk_assessment.md"
 
+!INCLUDE "methods/risk_modeling.mva.md"
+
 \newpage
 
-!INCLUDE "methods/risk_modeling.mva.md"
+<div class="boxtext">
+!INCLUDE "exercises/process_mapping_activity/index.md"
+</div>
 
 <!-- Threat Assessment -->
 
 !INCLUDE "methods/threat_assessment.mva.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/threat_identification/index.md"
+</div>
+<div class="boxtext">
+!INCLUDE "exercises/threat_identification/threat_analysis_survey.md"
+</div>
 
 \newpage
 
@@ -58,11 +69,31 @@ subtitle: 'Minimal Viable Audit'
 
 !INCLUDE "methods/capacity_assessment.mva.md"
 
+<div class="boxtext">
+!INCLUDE "exercises/interviews/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/capacity_assessment_cheatsheet/index.md"
+</div>
+
 \newpage
 
-<!-- Data Mapping -->
+<!-- Data Mapping (Information mapping)--> 
 
 !INCLUDE "methods/data_assessment.mva.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/sensitive_data/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/data_lost_and_found/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/private_data/index.md"
+</div>
 
 \newpage
 
