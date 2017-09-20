@@ -66,12 +66,6 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 <div class="boxtext">
-#### Password Dictionary Creation
-
-See the Appendix for creating a password dictionary.
-</div>
-
-<div class="boxtext">
 !INCLUDE "exercises/safetag_audit_timeline.md"
 </div>
 
@@ -213,6 +207,10 @@ Covered in full in Network Discovery
 
 <div class="boxtext">
 !INCLUDE "exercises/password_security/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/password_strength/index.md"
 </div>
 
 <div class="boxtext">

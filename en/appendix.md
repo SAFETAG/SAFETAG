@@ -26,14 +26,6 @@
 
 !INCLUDE "exercises/interviews/interview_questions.md"
 
-## APPENDIX: Password Dictionaries
-
-!INCLUDE "exercises/password_security/dictionary_creation.md"
-
-## APPENDIX: Password Survey
-
-!INCLUDE "exercises/password_security/password_survey.md"
-
 ## APPENDIX: Recon-ng walkthrough
 
 !INCLUDE "exercises/automated_recon/recon-ng.md"
