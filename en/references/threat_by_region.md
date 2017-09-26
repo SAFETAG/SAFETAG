@@ -68,3 +68,6 @@
 
   * *Map:* ["A global display of Terrorism and Other Suspicious Events"](http://www.globalincidentmap.com/map.php) (Global Incident Map)
 
+#### Encryption Laws and Policies
+
+  * *Guide:* ["International Encryption Laws and Policies"](https://www.gp-digital.org/national-encryption-laws-and-policies/#) (Global Partners Digital)
