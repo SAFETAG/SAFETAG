@@ -5,6 +5,8 @@
   
   * *Guide:* ["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-content/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf) (Jonathan T. Dworken)
 
+  * *Guide:* ["National Encryption Laws and Policies"](https://www.gp-digital.org/national-encryption-laws-and-policies/#) (Global Partners Digital)
+ 
 #### Threats to the Auditor
 
 **Have aid workers faced retribution for their work in the region?**
