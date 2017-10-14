@@ -1,4 +1,4 @@
-#### Activity Title
+#### VoIP Security Assessment
 
 ##### Summary
 !INCLUDE "summary.md"
