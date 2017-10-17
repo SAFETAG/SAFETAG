@@ -32,3 +32,6 @@
   * *Guide:* ["Cracking WPA/WPA2 with oclHashcat"](http://hashcat.net/wiki/doku.php?id=cracking_wpawpa2) (Hashcat wiki)
 
   * *Guide:* ["Wireless Network Review"](http://www.amanhardikar.com/mindmaps/Wireless.html) (amanhardikar.com)
+
+  * *Guide:* ["Router HAcking"](http://www.amanhardikar.com/mindmaps/Wireless.html) (https://github.com/justinbeatz)
+  
