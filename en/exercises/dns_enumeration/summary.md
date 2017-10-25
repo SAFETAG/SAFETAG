@@ -8,7 +8,7 @@ In Recursive DNS query, the client needs an answer from the DNS server - either 
 
 In Iterative way, it basically asks the server for an answer IF, the server knows it. If not, it will get a "referral" which is the name of the server that may  have the answer (an authoritative server at a lower level in the hierchical structure. (example image).
 
-DNS enumeration is one of your initial steps in your overall vulnerability assessment and audit. It is one stage where it will allow you to discover more potential targets. Upon completion of this assessment stage, you may find issues such as leaked information caused by default settings and server misconfigurations. Along with these, you can also have a broader scope of targets, such as internal server information and other servers and IP addresses. 
+DNS enumeration is one of your initial steps in your overall vulnerability assessment and audit. It is one stage where it will allow you to discover more potential targets. Upon completion of this assessment stage, you may find issues such as leaked information caused by default settings and server misconfigurations. Along with these, you can also have a broader scope of targets, such as internal server IP addresses, company netblocks and domain/subdomain names. 
 
 
 
