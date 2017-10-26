@@ -1,5 +1,4 @@
-#### Activity Title
-
+#### DNS Enumeration
 ##### Summary
 !INCLUDE "summary.md"
 
