@@ -1,4 +1,4 @@
-# Overview
+#### DNS Enumeration Summary
 
 DNS Stands for Domain Name Service. In a nutshell, what it does is translate hosts/computer's name into it's IP addresses. It provides a way to know the IP address of any given machine on the internet, consider it as telephone directory of the Internet.
 
