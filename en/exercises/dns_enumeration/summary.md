@@ -1,8 +1,8 @@
-#### DNS Enumeration Summary
+###### DNS Enumeration Summary
 
 DNS Stands for Domain Name Service. In a nutshell, what it does is translate hosts/computer's name into it's IP addresses. It provides a way to know the IP address of any given machine on the internet, consider it as telephone directory of the Internet.
 
-**Recursive and Iterative DNS Queries:**
+Recursive and Iterative DNS Queries:
 
 In Recursive DNS query, the client needs an answer from the DNS server - either it can answer the query or give an error  message saying it can't find what it's looking for. The queried host/server must do whatever it takes to find the answer - even to query other servers until it gets an information, otherwise it will fail.
 
