@@ -46,7 +46,7 @@ subtitle: 'Overview'
 
 \newpage
 <!-- Audit Prep-->
-!INCLUDE "index/preparation.overview.md"
+!INCLUDE "methods/preparation.overview.md"
 
 # Methods
 
@@ -55,95 +55,90 @@ subtitle: 'Overview'
 \newpage
 <!-- Audit Scoping-->
 
-!INCLUDE "index/context_research.overview.md"
+!INCLUDE "methods/context_research.overview.md"
 
 \newpage
 
-!INCLUDE "index/capacity_assessment.overview.md"
+!INCLUDE "methods/capacity_assessment.overview.md"
 
 
 \newpage
 <!-- Recon-->
 
-!INCLUDE "index/reconnaissance.overview.md"
-
-\newpage
-<!-- Network Discovery-->
-
-!INCLUDE "index/network_discovery.overview.md"
+!INCLUDE "methods/reconnaissance.overview.md"
 
 \newpage
 <!-- Network Access -->
 
-!INCLUDE "index/network_access.overview.md"
+!INCLUDE "methods/network_access.overview.md"
 
 \newpage
 <!-- Network Mapping -->
 
-!INCLUDE "index/network_mapping.overview.md"
+!INCLUDE "methods/network_mapping.overview.md"
 
 \newpage
 <!-- User Device Assessment -->
 
-!INCLUDE "index/user_device_assessment.overview.md"
+!INCLUDE "methods/user_device_assessment.overview.md"
 
 \newpage
 <!-- Vulnerability Analysis -->
 
-!INCLUDE "index/vulnerability_scanning.overview.md"
+!INCLUDE "methods/vulnerability_scanning.overview.md"
 
 \newpage
 <!-- Data Assessment (assets) -->
 
-!INCLUDE "index/data_assessment.overview.md"
+!INCLUDE "methods/data_assessment.overview.md"
 
 \newpage
 <!-- Physical Assessment -->
 
-!INCLUDE "index/physical_assessment.overview.md"
+!INCLUDE "methods/operational_security.overview.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "index/risk_modeling.overview.md"
+!INCLUDE "methods/risk_modeling.overview.md"
 
 \newpage
 <!-- Threat Assessment -->
 
-!INCLUDE "index/threat_assessment.overview.md"
+!INCLUDE "methods/threat_assessment.overview.md"
 
 \newpage
 <!-- Responsive Support -->
 
-!INCLUDE "index/responsive_support.overview.md"
+!INCLUDE "methods/responsive_support.overview.md"
 
 \newpage
 <!-- Debrief -->
 
-!INCLUDE "index/debrief.overview.md"
+!INCLUDE "methods/debrief.overview.md"
 
 
 \newpage
 <!-- Follow Up -->
 
-!INCLUDE "index/follow_up.overview.md"
+!INCLUDE "methods/follow_up.overview.md"
 
 # Reporting
 
 \newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "index/recommendation_development.overview.md"
+!INCLUDE "methods/recommendation_development.overview.md"
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "index/roadmap_development.overview.md"
+!INCLUDE "methods/roadmap_development.overview.md"
 
 \newpage
 <!-- Reporting Creation -->
 
-!INCLUDE "index/report_creation.overview.md"
+!INCLUDE "methods/report_creation.overview.md"
 
 \newpage
 

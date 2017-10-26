@@ -1,11 +1,11 @@
 
-### WEP Password Cracking
+####WEP Password Cracking
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"

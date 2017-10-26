@@ -20,6 +20,8 @@
 
   * *Guide:* ["Encryption and International Travel"](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/) (Princeton University)
 
+  * *Guide:* ["World Map of Encryption Laws and Policies"](https://www.gp-digital.org/national-encryption-laws-and-policies/#) (Global Partners Digital)
+  
 **Is the area safe to travel to?**
 
   * *List:* ["Foreign travel advice"](https://www.gov.uk/foreign-travel-advice) (GOV.UK)

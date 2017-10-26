@@ -115,7 +115,7 @@ table tr.even td {
 }
 
 
-.boxtext h3 {
+.boxtext h4 {
         text-transform: uppercase;
         font-size: 14pt;
         text-align: right;
@@ -124,7 +124,7 @@ table tr.even td {
         padding: 2px
 }
 
-.boxtext h3:first-child {
+.boxtext h4:first-child {
         text-transform: uppercase;
         font-size: 14pt;
         text-align: right;
@@ -144,7 +144,7 @@ table tr.even td {
 */
 }
 
-.boxtext h4 {
+.boxtext h5 {
         text-transform: title;
         font-size: 12pt;
         color: #404965;

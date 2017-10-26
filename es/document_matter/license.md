@@ -1,8 +1,8 @@
 ## Licencia
 
-Los recursos de SAFETAG están disponibles bajo una licencia no comercial de Creative Commons 3.0 Unported (CC BY-NC 3.0).
+Los recursos de SAFETAG están disponibles bajo una licencia Atribución-CompartirIgual de Creative Commons 3.0 Unported (CC BY-SA 3.0).
 
-La estructura de la auditoría y la lista de verificación pueden ser utilizadas y compartidas con fines educacionales, no comerciales, con el debido reconocimiento a Internews. Los usuarios son libres de modificar y distribuir el contenido con las condiciones que figuran en esta licencia.
+La estructura de la auditoría y la lista de verificación pueden ser utilizadas y compartidas con fines educacionales con el debido reconocimiento a Internews. Los usuarios son libres de modificar y distribuir el contenido con las condiciones que figuran en esta licencia.
 
 La plantilla de auditoría y la lista de verificación pretenden ser una referencia y los autores no asumen la responsabilidad de la seguridad y la protección de las personas que las utilizan ya sea con propósitos personales o profesionales
 
@@ -10,7 +10,7 @@ La plantilla de auditoría y la lista de verificación pretenden ser una referen
 
 La entrevista y los componentes de evaluación se atribuyen en gran medida al proyecto: The room´s tech escape. Su contenido está disponible bajo la licencia de Reconocimiento a Creative Commons.
 
-La actividad de valoración de información se tomó del proyecto de nivel superior (Level Up Project) disponible bajo la licencia Unported 3.0 de Reconocimiento a Creative Commons - NoComercial - CompartirIgual. Esta actividad está acreditada a Pablo, Daniel O’Clunaigh, Ali Ravi, y Samir Nassar.
+La actividad de valoración de información se tomó del proyecto de nivel superior (Level Up Project) disponible bajo la licencia Unported 3.0 de Reconocimiento a Creative Commons CompartirIgual. Esta actividad está acreditada a Pablo, Daniel O’Clunaigh, Ali Ravi, y Samir Nassar.
 
 ### USO DE “SAFETAG”
 

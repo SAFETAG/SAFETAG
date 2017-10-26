@@ -22,6 +22,8 @@
 
   * *Guide:* ["Encryption and International Travel"](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/) (Princeton University)
 
+  * *Guide:* ["World Map of Encryption Laws and Policies"](https://www.gp-digital.org/national-encryption-laws-and-policies/#) (Global Partners Digital)
+
   * *List:* ["National Cyber Security Policy and Legal Documents"](http://www.ccdcoe.org/strategies-policies.html) (NATO Cooperative Cyber Defence Centre of Excellence)
 
 #### Technical Threats

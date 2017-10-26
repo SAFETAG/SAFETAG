@@ -1,20 +1,20 @@
 
-### A Day in the Life
+#### A Day in the Life
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
+##### Materials Needed 
 !INCLUDE "materials_needed.md" 
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "../traffic_analysis/recommendations.md"
