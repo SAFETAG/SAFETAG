@@ -242,6 +242,11 @@ Covered in full in Operational Security Assessment:
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/web_vulnerability_assessment/index.md"
+</div>
+
+
+<div class="boxtext">
 #### Explore Vulnerability Databases
 !INCLUDE "exercises/vulnerability_research/index.md"
 </div>
