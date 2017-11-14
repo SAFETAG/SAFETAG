@@ -1,4 +1,4 @@
-######Approach
+**Approach:**
 
 DNS Enumeration can be accomplished with different number of tools along with different approaches. This guide will discuss some of the approaches and the tools required to perform each of the activities.
 
