@@ -352,6 +352,15 @@ Covered in full in Data Assessment:
 !INCLUDE "exercises/sensitive_data/approach.md"
 </div>
 
+
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/advanced_threat/index.md"
+</div>
+
 \newpage
 
 <!-- Threat Assessment -->

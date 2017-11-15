@@ -103,6 +103,11 @@ subtitle: 'Overview'
 !INCLUDE "methods/risk_modeling.overview.md"
 
 \newpage
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.overview.md"
+
+\newpage
 <!-- Threat Assessment -->
 
 !INCLUDE "methods/threat_assessment.overview.md"
