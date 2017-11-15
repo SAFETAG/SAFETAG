@@ -1,20 +1,5 @@
 
-*  In case they still have the original binaries (Attachment, email..etc.)
-
-    1.  Download the file to your auditing machine, Scan the file via Anti-Virus or hash the file and use virustotal.com to search for it (Note, don’t upload the actual file to virus total as uploaded files are discoverable by paid subscribers in most cases)
-
-    2.  Check the email’s header and see if it looks suspicious
-
-*  In case there is no binaries (Attachment, email..etc.) or they have no access to it
-
-    1.  Take the machine offline
-
-    2.  In case you have time, Image the hard disk
-
-    3.  Help the auditees to operate another machine to fill the gap of the suspicious machine
-
-    4.  Run a non-depth scan for the machine and try to locate any suspicious files
-
-    5.  Collect the suspicious files hash them then search for them on virustotal.com
-
-    6.  Scan the open ports and monitor which applications is connected to external address
+* **Adversary Capability Assessment** - This likely should be an output from the context research work. Are there Advance Persistent Threats which should be taken in to account? How do they operate? Are there known IOCs to look for?
+* **Analyzing Specific Suspicious Events/Activities** - If the organization have specific concerns or evidence suggesting a targeted attack, the auditor can focus attention to match them against any known attacks or flag them for further research.
+* **Threat Hunting** - If the organization suspect that they have been compromised, but does not have any specific, suspicious device/process/email, the auditor can leverage techniques to intelligently spend their time to investigate further.
+* **In-Depth Analysis** - If malware is discovered, but cannot be identified, further analysis will be necessary. This may also trigger a change in assessment scope and/or an incident response approach.
