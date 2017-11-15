@@ -14,3 +14,20 @@
 
 ### Approaches
 !INCLUDE "../methods/advanced_threat/approaches.md"
+
+### Outputs
+!INCLUDE "../methods/advanced_threat/output.md"
+
+### Operational Security
+!INCLUDE "../methods/advanced_threat/operational_security.md"
+
+### Preparation
+!INCLUDE "../methods/advanced_threat/preparation.md"
+
+### Activities
+!INCLUDE "../methods/advanced_threat/activities.md"
+
+### Resources
+<div class="greybox">
+<!-- (direct includes to en/references/) -->
+</div>
