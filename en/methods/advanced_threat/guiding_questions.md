@@ -1,7 +1,6 @@
 
-* What suspicious behaviors are you witnessing on the Machine?
-* What makes you feel that the machine is somehow infected? 
-* Do you have an alternative to this machine so you can use it until we clear things up?
-* Did you receive any email, attachment or different form of communication that made you feel this way?
-* Do you still have access to the original email, attachment or any form of communication?
-* Can you share it with me?
+* Does the organization suspect they already have malware? If so, what evidence supports that?
+* Based on the context research and the organization's activities, how likely are targeted attacks?
+* How much time should be devoted to more complete analysis during the audit itself, and what other factors change that?
+* What are the implications of targeted malware for the organization, and for the current assessment process?
+* What types of malware should trigger an incident response approach?
