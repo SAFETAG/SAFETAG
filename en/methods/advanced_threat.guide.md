@@ -29,5 +29,5 @@
 
 ### Resources
 <div class="greybox">
-<!-- (direct includes to en/references/) -->
+!INCLUDE "../references/malware_analysis.md"
 </div>
