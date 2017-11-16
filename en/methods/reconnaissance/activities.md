@@ -8,6 +8,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/web_footprinting/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "../../exercises/mx-record-search/index.md"
 </div>
 
