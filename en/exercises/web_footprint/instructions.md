@@ -9,10 +9,10 @@ Record core details about the website - determine the hosting provider, platform
 - [Online Pentesting Tools](https://pentest-tools.com/)
 - [Hacker Target](https://hackertarget.com/)
 
+___
 
----------------------------------------
 ###### CMS Version Detection
 
 !INCLUDE "variant_cms_version.md"
 
----------------------------------------
+___
