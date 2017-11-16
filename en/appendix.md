@@ -34,10 +34,6 @@
 
 !INCLUDE "exercises/password_security/password_survey.md"
 
-## APPENDIX: Recon-ng walkthrough
-
-!INCLUDE "exercises/automated_recon/recon-ng.md"
-
 ## APPENDIX: Device Assessment Checklist
 
 !INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
