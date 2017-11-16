@@ -152,11 +152,9 @@ Once you've scoped your submission as described under "Getting Started" and the 
 
 #### Using Submission Templates
 
-We have developed easy to use templates for SAFETAG Methods and Activities you can use and submit with your issue.
+We have developed easy to use templates for SAFETAG Methods and Activities you can use and submit with your issue. These can be found at  *en/templates/method-template.md* and  *en/templates/activity-template.md*. If you would like to edit these as word processor files, you can use pandoc for conversion: ```pandoc -i activity_template.md -o activity_template.odt``` . Final files should be submitted as markdown, however.
 
-  Please refer to the current Methods in the SAFETAG guide for additional detail and examples. The template will require manual merging into the repository, so please include how you would like to be credited.
-
-Please note how you would like to be credited for this work, as it will not show up in the github commit history.
+Please refer to the current Methods in the SAFETAG guide for additional detail and examples. The template will require manual merging into the repository, so please include how you would like to be credited.
 
 #### Using Pull Requests
 
