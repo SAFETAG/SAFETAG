@@ -1,9 +1,9 @@
 **Materials needed**
 
-Before conducting DNS enumeration or any other assessments(network, web application etc), it is important that you have a decent computer with the folloinwg hardware specifications:
+Before conducting DNS enumeration or any other assessments (network, web application etc), it is important that you have a decent computer with the folloinwg hardware specifications:
 
 - Intel Core iSeries (i7 recommended)
-- 4GB RAM (8GB recommended)
+- 4GB RAM (8GB-16GB recommended)
 - 500GB Hard drive
 - [Kali Linux.](https://www.kali.org/downloads/)
 - Internet Connection
@@ -25,6 +25,9 @@ For more details on Kali Linux, visit their website [here](https://www.kali.org)
 
 **Inernet Connectivity**
 
-DNS Enumeration activity relies on the results of the public DNS records to be successful. It can be performed on, or off the organization's premise as long as a stable internet connectivity. 
+DNS Enumeration activity relies on the results of the public DNS records to be successful. It can be performed on, or off the organization's premise as long as a stable internet connectivity is available.
+
+
+
 
          
