@@ -1,6 +1,6 @@
-We will have three different strategies to cover in the walkthrough
+We will be using the following walkthrough
 
-1.  Investigating a suspicious file or email
+* Investigating a suspicious file or attachment 
 
 	In this part, you will be investigating a file and determine if it’s malicious or not
 
@@ -12,7 +12,6 @@ Questions to ask the user / organization
 	* Did you receive any email, attachment or different form of communication that made you feel this way?
 	* Do you still have access to the original email, attachment or any form of communication?
 	* Can you share it with me?
-
 
 
 * Step 1
@@ -64,3 +63,8 @@ In this step, you will be dealing with infected machine by one of the binaries y
 -   Taking back up in this stage is to back-up all the important data and save them on a hard drive, usually it’s the document, desktop, download, favorite and personal data, save them on external storage then Scan them using [ClamAV](https://www.howtoforge.com/tutorial/clamav-ubuntu/) or any available Anti-virus on your auditing virtual machine.
 
 -   Make sure the data is clean then transfer it to the clean replacement machine.
+
+
+###### Threat Hunting 
+
+!INCLUDE "threathunting.md"
