@@ -1,9 +1,4 @@
-* Anti-Virus scanning result, negative or positive
 
-* Virustotal report about the scanned items
-
-* Hard disk image
-
-* Suspicious files
-
-* Network traffic report
+* Identification and initial triage/analysis of suspicious processes, files, and emails (via Anti-Virus scanning results, Virustotal information, network traffic analysis, and other research)
+* Useful evidence for further analysis (including hard disk image, memory image, suspicious files, emails, network traffic captures, URLs)
+* Agreement with organization on sharing protocols.

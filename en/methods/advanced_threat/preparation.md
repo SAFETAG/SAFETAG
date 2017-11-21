@@ -1,7 +1,6 @@
-1. Baseline Skills
 
-	* Knowledge of spotting malicious elements, scanning machines and cleaning them
+#### Baseline Skills
 
-	* 	A Knowledge imaging a machine
-	
-	* 	Contacts with malware analysis experts for more in depth investigation
+* Knowledge of spotting malicious elements, scanning machines and cleaning them
+* Ability to image a machine
+* Contacts with malware analysis experts for more in depth investigation
