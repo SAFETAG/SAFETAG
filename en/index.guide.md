@@ -39,6 +39,9 @@ subtitle: 'Guide'
 
 # SAFETAG Methods
 
+\newpage
+<!-- INTRO to Methods-->
+
 !INCLUDE "methods/intro.md"
 
 \newpage
@@ -347,6 +350,15 @@ Covered in full in Threat Identification:
 Covered in full in Data Assessment:
 
 !INCLUDE "exercises/sensitive_data/approach.md"
+</div>
+
+
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/advanced_threat/index.md"
 </div>
 
 \newpage
