@@ -24,10 +24,9 @@
 ### Preparation
 !INCLUDE "../methods/advanced_threat/preparation.md"
 
-### Activities
-!INCLUDE "../methods/advanced_threat/activities.md"
-
 ### Resources
 <div class="greybox">
 !INCLUDE "../references/malware_analysis.md"
 </div>
+
+### Activities
