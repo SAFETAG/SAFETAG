@@ -67,4 +67,4 @@ In this step, you will be dealing with infected machine by one of the binaries y
 
 ###### Threat Hunting 
 
-!INCLUDE "threathunting.md"
+!INCLUDE "variant_threathunting.md"
