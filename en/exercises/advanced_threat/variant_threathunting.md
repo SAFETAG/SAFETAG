@@ -1,5 +1,5 @@
 **Threat Hunting**
-In case you went through the entire process and still you have doubts about a file, email or a process, you will probably need to work on specific threat hunting procedure that matches your need. 
+In case you went through the entire process and still you have doubts about a file, email, process, or have other reasons to believe the organization may have undetected malware, you will probably need to work on specific threat hunting procedure that matches your needs, the organization's assets, and the threat profile of potential adversaries.
 
 The [ThreatHunting.net](http://threathunting.net) project, is collecting different Threat Hunting techniques on their [GitHub ripo]( https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts).
 
