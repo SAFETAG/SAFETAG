@@ -53,13 +53,13 @@ OUTPUT OPTIONS:
  ```
  
   Standard DNS enumeration:
+  
+  ```dnsenum domain.com```
+  
+ DNSenum with Google scraping
  
-    ```dnsenum domain.com```
-  
- DNSenum with Google scraping 
-  
-    ```dnsenum allinurl: -www site:target.domain```  
+ ```dnsenum allinurl: -www site:target.domain```  
   
  Hostname and subdomain directory brute force
  
-    ```dnsenum -f listofsubdomain.txt -r <target.domain>```
+ ```dnsenum -f listofsubdomain.txt -r <target.domain>```
