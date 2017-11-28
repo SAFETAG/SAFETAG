@@ -54,12 +54,12 @@ OUTPUT OPTIONS:
  
   Standard DNS enumeration:
   
-  ```dnsenum domain.com```
+  ``` root@kali:~# dnsenum domain.com```
   
  DNSenum with Google scraping
  
- ```dnsenum allinurl: -www site:target.domain```  
+ ``` root@kali:~# dnsenum allinurl: -www site:target.domain```  
   
  Hostname and subdomain directory brute force
  
- ```dnsenum -f listofsubdomain.txt -r <target.domain>```
+ ``` root@kali:~# dnsenum -f listofsubdomain.txt -r <target.domain>```
