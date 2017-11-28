@@ -62,26 +62,26 @@ Options:
 
 Perform basic DNS enumeration on target:
 
-	dnsrecon -d <target domain>
+	 root@kali:~# dnsrecon -d <target domain>
 
 Perform DNS Zone Transfer enumeration:
 	
-	dnsrecon -d <target.domain> -a
-	dnsrecon -d <target.domain> -t axfr
+	 root@kali:~# dnsrecon -d <target.domain> -a
+	 root@kali:~# dnsrecon -d <target.domain> -t axfr
 
 Perform Reverse Lookup:
 
-	dnrecon -r <start-IP-to-end-IP>
+	 root@kali:~# dnrecon -r <start-IP-to-end-IP>
 
 Domain Brute-Force:
 
-	dnsrecon -d <target.domain> -D <namelist> -t brt 
+	 root@kali:~# dnsrecon -d <target.domain> -D <namelist> -t brt 
 
 Cache Snooping:
 
-	dnsrecon -t snoop -n Sever -D <Dictionary>
+	 root@kali:~# dnsrecon -t snoop -n Sever -D <Dictionary>
 
 Zone Walking:
 
-	dnsrecon -d <target.domain> -t zonewalk
+	 root@kali:~# dnsrecon -d <target.domain> -t zonewalk
 	
