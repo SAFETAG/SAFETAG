@@ -50,11 +50,12 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Threat Assessment -->
 
-!INCLUDE "methods/threat_assessment.mva.md"
+!INCLUDE "methods/threat_assessment.overview.md"
 
 <div class="boxtext">
 !INCLUDE "exercises/threat_identification/index.md"
 </div>
+
 <div class="boxtext">
 !INCLUDE "exercises/threat_identification/threat_analysis_survey.md"
 </div>
@@ -63,7 +64,7 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Capacity Assessment -->
 
-!INCLUDE "methods/capacity_assessment.mva.md"
+!INCLUDE "methods/capacity_assessment.overview.md"
 
 <div class="boxtext">
 !INCLUDE "exercises/interviews/index.md"
@@ -77,7 +78,7 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Data Mapping (Information mapping)--> 
 
-!INCLUDE "methods/data_assessment.mva.md"
+!INCLUDE "methods/data_assessment.overview.md"
 
 <div class="boxtext">
 !INCLUDE "exercises/sensitive_data/index.md"
