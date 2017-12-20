@@ -123,6 +123,10 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/web_footprinting/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/mx-record-search/index.md"
 </div>
 
@@ -228,27 +232,31 @@ Covered in full in Operational Security Assessment:
 </div>
 
 \newpage
-<!-- Vulnerability Analysis -->
+<!-- Vulnerability Scanning and Analysis -->
 
 !INCLUDE "methods/vulnerability_scanning.guide.md"
 
-
 <div class="boxtext">
-!INCLUDE "exercises/vulnerability_scanning/index.md"
+!INCLUDE "../../exercises/vulnerability_scanning/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/cms_version/index.md"
+#### Website Footprinting
+See Website Footprinting in Recon for passive / lightweight investigation tools
+
+!INCLUDE "../../exercises/web_footprinting/approach.md"
 </div>
 
 <div class="boxtext">
-#### Explore Vulnerability Databases
-!INCLUDE "exercises/vulnerability_research/index.md"
+!INCLUDE "exercises/web_vulnerability_assessment/index.md"
 </div>
 
 <div class="boxtext">
-#### Examine Service Configuration Files
-!INCLUDE "exercises/check_config_files/index.md"
+!INCLUDE "../../exercises/vulnerability_research/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "../../exercises/check_config_files/index.md"
 </div>
 
 <div class="boxtext">
@@ -258,9 +266,7 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
-#### Penetrating Wireless Routers
-
-!INCLUDE "exercises/router_attacks/index.md"
+!INCLUDE "../../exercises/router_attacks/index.md"
 </div>
 
 \newpage
