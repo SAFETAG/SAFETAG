@@ -26,6 +26,26 @@
 ##### Windows
 If Windows is not your primary OS, you can download sample Virtual Machines (with time limitations) from Microsoft through their project to improve IE support via https://www.modern.ie/en-us/virtualization-tools#downloads (see also http://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/ and https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf) 
 
+**Windows 10**
+
+* OS Security Updates
+  * Start --Settings --Update & Security --Windows Update
+* Firewall
+  * Start, type Firewall (select Windows Firewall)
+* Privacy
+  * Start --Settings -- Privacy 
+* Anti-Virus Version
+  * 
+* Privacy
+  * (GUI) Start --Settings -- Privacy
+* User privilege
+  * Start, type 'User Account', select "Change User Account Control settings" 
+* Drive Encryption
+  * (Bitlocker), https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10
+* Services Running
+  * Start, type "Task Manager"
+
+
 **Windows 8**
 
  * OS Security Updates
@@ -75,20 +95,8 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
 
 **Windows XP**
 
- * OS Security Updates
-   * Start -- Control Panel -- Security Center
- * Firewall
-   * Start -- Control Panel -- Security Center
- * Anti-Virus Version
-   * Start -- Control Panel -- Security Center
- * User privilege
-   * (GUI) Start -- Control Panel -- User Accounts will reveal which users have admin priviledges.
- * Drive Encryption
-   * TrueCrypt, [DiskCryptor](https://diskcryptor.net/wiki/Main_Page)
- * Services Running
-   * (CLI) (Pro only)
- ```tasklist``` 
-   * (GUI) Right-click on task bar, select "Start Task Manager"
+If user is still operating on windows XP, recommendation is to upgrade to later windows. Why you should not use Windows XP https://www.microsoft.com/windows/en-us/xp/end-of-xp-support.aspx
+
 
 ##### Linux
  * Firewall
@@ -115,3 +123,34 @@ In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center (S
   * (CLI) 
 ```top```
 
+
+##### Android
+On the Android the settings area is the primarily point for the phone's security management. These settings should work for Android 5.0 and later
+
+ * Software updates
+   * Settings -- About phone -- System update (OS updates)
+   * play store -- My Apps (installed apps updates)
+ * Device Lock
+   * Settings -- Security -- Screen lock
+ * Device Encryption
+   * Settings -- Security -- Encrypt phone
+ * Anti-Virus
+   (Install an antivirus)
+
+##### IOS
+On the iOS the settings area is primary control point of the devices security features. These settings should work for ios 9 and later
+
+ * Software updates
+   * Settings -- General -- Software update (OS update)
+   * App store -- Updates (Installed apps updates
+ * Device Lock
+   * Settings --Touch ID & Passcode
+ * Set restrictions (set passcode to perform certain tasks)
+   * Settings -- General -- Restrictions
+ * App permissions
+   * Settings -- Privacy (tap an item to view apps have requested to access its information)
+ * Device Encryption
+   (This is enabled once a passcode is added to the device)
+
+
+   
