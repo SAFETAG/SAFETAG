@@ -56,10 +56,6 @@ subtitle: 'Minimal Viable Audit'
 !INCLUDE "exercises/threat_identification/index.md"
 </div>
 
-<div class="boxtext">
-!INCLUDE "exercises/threat_identification/threat_analysis_survey.md"
-</div>
-
 \newpage
 
 <!-- Capacity Assessment -->
