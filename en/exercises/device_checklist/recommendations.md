@@ -1,35 +1,32 @@
+##### If Unsupported Operating System - Upgrade to Recent Version
 
-##### Upgrade Operating Systems
+Popular operating systems like Windows XP are, sadly, no longer receiving security updates. Upgrade to the latest version keeping in mind the system requirements of the version selected
 
-Popular operating systems like Windows XP are, sadly, no longer receiving security updates.
+##### If Pirated Software - Move to Licensed Software Systems
 
+While "pirated" operating systems and software are extremely common (especially for Windows) they often leave much to be desired in terms of security.  If the OS or Software is not receiving regular updates from the software creator, it is extremely vulnerable to thousands of potential attacks. Switch to licensed software or recommended Free Open Source Software
 
-##### Move to Licensed Operating Systems
+##### If Outdated - Update Operating Systems and Other Software
 
-While "pirated" operating systems are extremely common (especially Windows) they often leave much to be desired in terms of security.  If the OS is not receiving regular updates from the software creator, it is extremely vulnerable to thousands of potential attacks.
+Operating Systems and Softwares of all varieties - Windows, Mac, Linux, and others, are constantly being updated.  These updates often fix bugs, but they also protect the system from newly discovered vulnerabilities.  It can seem difficult to keep updating constantly, but this is very important to protect even non-sensitive systems.
 
-##### Update Operating Systems
+##### If Vulnerable Software - Update Vulnerable Software
 
-Operating Systems of all varieties - Windows, Mac, Linux, and others, are constantly being updated.  These updates often fix bugs, but they also protect the system from newly discovered vulnerabilities.  It can seem difficult to keep updating constantly, but this is very important to protect even non-sensitive systems.
+Many critical software components, such as Java or Adobe Flash, have many vulnerabilities and need to be aggressively updated. If there are not needed for work by the users, uninstall them
 
-##### Update Vulnerable Software
+##### If No Anti-Virus and Anti-Malware Scanner - Install Anti-Virus and Anti-Maware Scanner
 
-Many critical software components, such as Java or Adobe Flash, have many vulnerabilities and need to be aggressively updated.
+An Anti-virus and Anti-malware offer some minimal protection to the system and therefore is important to have them installed.
 
-##### Install Anti-Virus
+##### If Outdated Anti-Virus - Update Anti-Virus
 
+Most AV tools automatically update, but this can sometimes get out of sync, or if the AV was a pre-installed trial system, it will stop updating after its trial period.  An out of date anti-virus is worthless. Therefore ensure that continuous udpdating of AV is done.
 
-##### Move to Licensed Anti-Virus
+##### If Unencrypted Drive  - Encrypt Hard Drives
 
+Hard Drive encryption offers protection to data while the system is at rest and restricts access to anyone who does not have the appropriate keys or password.
 
-##### Update Anti-Virus
+##### If Inactive firewall - Activate both personal and server firewall (If present)
 
-Most AV tools automatically update, but this can sometimes get out of sync, or if the AV was a pre-installed trial system, it will stop updating after its trial period.  An out of date anti-virus is worthless.
-
-##### Install Anti-Malware scanner
-
-
-##### Encrypt Hard Drives
-
-##### Activate a personal firewall
+While most OS offer inbuilt firewalls, these firewalls are not turned on my default and therefore require activation. If you prefer an interactive firewall, you may need to opt for third party programs which offer those functionalities.
 
