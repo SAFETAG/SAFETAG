@@ -1,27 +1,30 @@
+
 <div class="boxtext">
-!INCLUDE "../../exercises/device_checklist/index.md"
+!INCLUDE "../exercises/guided_tour/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/day_in_the_life/index.md"
+!INCLUDE "../exercises/device_check/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/firewire/index.md"
+!INCLUDE "../exercises/password_security/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/password_security/index.md"
+### A Day in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "../../exercises/day_in_the_life/approach.md"
+
 </div>
 
 <div class="boxtext">
-### Physical Security Guided Tour
+#### Network Mapping
 
-Covered in full in Physical Assessment:
+Covered in full in Network Mapping
 
-!INCLUDE "../../exercises/guided_tour/approach.md"
-</div>
+!INCLUDE "exercises/network_scanning/approach.md"
 
-<div class="boxtext">
-!INCLUDE "../../exercises/check_user_browser_vulns/index.md"
 </div>

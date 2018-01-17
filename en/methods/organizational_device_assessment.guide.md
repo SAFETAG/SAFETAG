@@ -24,20 +24,6 @@
 ### Preparation
 !INCLUDE "../methods/organizational_device_assessment/preparation.md"
 
-### Activities
-<div class="boxtext">
-!INCLUDE "../exercises/guided_tour/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "../exercises/device_behaviour_check/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "../exercises/password_security/index.mva.md"
-</div>
-
-
 ### Resources
 <div class="greybox">
 !INCLUDE "../references/device_assessment.overview.md"
@@ -60,6 +46,4 @@
 
 </div>
 
-
-
-
+### Activities

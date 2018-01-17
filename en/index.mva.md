@@ -103,7 +103,9 @@ For a more comprehesive assessment, use of the full SAFETAG guide and other tool
 
 <!-- Organisational Device Assessment -->
 
-!INCLUDE "methods/organizational_device_assessment.md"
+!INCLUDE "methods/organizational_device_assessment.guide.md"
+
+!INCLUDE "methods/organizational_device_assessment/activities.md"
 
 # Follow up and Reporting
 
