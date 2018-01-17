@@ -57,7 +57,7 @@ subtitle: 'Minimal Viable Audit'
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/threat_identification/threat_analysis_survey.md"
+!INCLUDE "exercises/threat_interaction/threat_analysis_survey.md"
 </div>
 
 \newpage
@@ -76,7 +76,7 @@ subtitle: 'Minimal Viable Audit'
 
 \newpage
 
-<!-- Data Mapping (Information mapping)--> 
+<!-- Data Mapping (Information mapping)-->
 
 !INCLUDE "methods/data_assessment.overview.md"
 
@@ -137,6 +137,3 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
-
-
-
