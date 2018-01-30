@@ -18,70 +18,23 @@ Below are some of the types of DNS Enumeration:
 
 DNSrecon is located in your /usr/bin/ folder. you can execute dnsrecon directly from the Kali terminal:
 
-```
 root@kali:~# dnsrecon -h
 
-Version: 0.8.10
-Usage: dnsrecon.py <options>
-
-Options:
-   -h, --help                   Show this help message and exit.
-   -d, --domain      <domain>   Target domain.
-   -r, --range       <range>    IP range for reverse lookup brute force in formats (first-last) or in (range/bitmask).
-   -n, --name_server <name>     Domain server to use. If none is given, the SOA of the target will be used.
-   -D, --dictionary  <file>     Dictionary file of subdomain and hostnames to use for brute force.
-   -f                           Filter out of brute force domain lookup, records that resolve to the wildcard defined
-                                IP address when saving records.
-   -t, --type        <types>    Type of enumeration to perform:
-                                std       SOA, NS, A, AAAA, MX and SRV if AXRF on the NS servers fail.
-                                rvl       Reverse lookup of a given CIDR or IP range.
-                                brt       Brute force domains and hosts using a given dictionary.
-                                srv       SRV records.
-                                axfr      Test all NS servers for a zone transfer.
-                                goo       Perform Google search for subdomains and hosts.
-                                snoop     Perform cache snooping against all NS servers for a given domain, testing
-                                          all with file containing the domains, file given with -D option.
-                                tld       Remove the TLD of given domain and test against all TLDs registered in IANA.
-                                zonewalk  Perform a DNSSEC zone walk using NSEC records.
-   -a                           Perform AXFR with standard enumeration.
-   -s                           Perform a reverse lookup of IPv4 ranges in the SPF record with standard enumeration.
-   -g                           Perform Google enumeration with standard enumeration.
-   -w                           Perform deep whois record analysis and reverse lookup of IP ranges found through
-                                Whois when doing a standard enumeration.
-   -z                           Performs a DNSSEC zone walk with standard enumeration.
-   --threads         <number>   Number of threads to use in reverse lookups, forward lookups, brute force and SRV
-                                record enumeration.
-   --lifetime        <number>   Time to wait for a server to response to a query.
-   --db              <file>     SQLite 3 file to save found records.
-   --xml             <file>     XML file to save found records.
-   --iw                         Continue brute forcing a domain even if a wildcard records are discovered.
-   -c, --csv         <file>     Comma separated value file.
-   -j, --json        <file>     JSON file.
-   -v                           Show attempts in the brute force modes.
-```
-
-Perform basic DNS enumeration on target:
-
-	 root@kali:~# dnsrecon -d <target domain>
-
-Perform DNS Zone Transfer enumeration:
-	
-	 root@kali:~# dnsrecon -d <target.domain> -a
-	 root@kali:~# dnsrecon -d <target.domain> -t axfr
-
-Perform Reverse Lookup:
-
-	 root@kali:~# dnrecon -r <start-IP-to-end-IP>
-
-Domain Brute-Force:
-
-	 root@kali:~# dnsrecon -d <target.domain> -D <namelist> -t brt 
-
-Cache Snooping:
-
-	 root@kali:~# dnsrecon -t snoop -n Sever -D <Dictionary>
-
-Zone Walking:
-
-	 root@kali:~# dnsrecon -d <target.domain> -t zonewalk
-	
+|Command|Description|
+|-----|-----|
+|dnsrecon -d ```target.domain```|Perform basic DNS enumeration on target|
+|dnsrecon -d ```target.domain``` -t axfr|Perform DNS zone transfer enumeration|
+|dnsrecon -r ```<start-IP-to-end-IP>``` |Perform reverse lookup|
+|dnsrecon -d ```<target.domain>``` -D <namelist> -t brt |Domain brute-force|
+|dnsrecon -t snoop -n Sever -D ```Dictionary``` |Cache snooping|
+|dnsrecon -d ```<target.domain>``` -t zonewalk | Perform DNS zone walking|
+|dnsrecon -d ```target.domain``` -t rvl| Perform a reverse lookup of a given CIDR or IP range.|
+|dnsrecon -d ```target.domain``` -t brt -D ```/path/to/subdomains.wd```|Perform brute force domains and hosts using a given dictionary.|
+|dnsrecon -d ```target.domain``` -t brt -D ```/path/to/subdomains.wd``` --iw|Brute force domains and hosts using a given dictionary. `Continue brute forcing a domain even if a wildcard records are discovered.`|
+|dnsrecon -d ```target.domain``` -t axfr|Test all NS servers for a zone transfer.|
+|dnsrecon -d ```target.domain``` -t goo|Perform Google search for subdomains and hosts.|
+|dnsrecon -d ```target.domain``` -t tld|Remove the TLD of given domain and test against all TLDs registered in IANA.|
+|dnsrecon -d ```target.domain``` -t zonewalk|Perform a DNSSEC zone walk using NSEC records.|
+|dnsrecon -d ```target.domain``` --db ```/path/to/report.sqlite```|Save enumeration results in a sqlite file.|
+|dnsrecon -d ```target.domain``` --xml ```/path/to/report.xml```|Save enumeration results in a xml file.|
+|dnsrecon -d ```target.domain``` -c ```/path/to/report.csv```|Save enumeration results in a csv file.|
