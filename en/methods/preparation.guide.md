@@ -39,8 +39,11 @@
 !INCLUDE "../references/legal_considerations.md"
 
 !INCLUDE "../references/data_security_standards.md"
+
+!INCLUDE "../references/sensitive_data_reference_guides.md"
+
+!INCLUDE "../references/incident_handling.md"
+
 </div>
 
 ### Activities
-
-

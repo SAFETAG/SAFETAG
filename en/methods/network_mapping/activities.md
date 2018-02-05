@@ -20,6 +20,15 @@ Covered in full in  Vulnerability Scanning and Analysis
 </div>
 
 <div class="boxtext">
+### VOIP Assessment
+
+Covered in full in  Vulnerability Scanning and Analysis
+
+!INCLUDE "../../exercises/voip_assessment/approach.md"
+</div>
+
+
+<div class="boxtext">
 
 ### Wireless Range Mapping
 

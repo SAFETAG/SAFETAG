@@ -123,7 +123,7 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/web_footprinting/index.md"
+!INCLUDE "exercises/web_footprint/index.md"
 </div>
 
 <div class="boxtext">
@@ -233,18 +233,18 @@ Covered in full in Operational Security Assessment:
 !INCLUDE "methods/vulnerability_scanning.guide.md"
 
 <div class="boxtext">
-!INCLUDE "../../exercises/vulnerability_scanning/index.md"
+!INCLUDE "exercises/vulnerability_scanning/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/vulnerability_research/index.md"
+!INCLUDE "exercises/vulnerability_research/index.md"
 </div>
 
 <div class="boxtext">
 #### Website Footprinting
 See Website Footprinting in Recon for passive / lightweight investigation tools
 
-!INCLUDE "../../exercises/web_footprinting/approach.md"
+!INCLUDE "exercises/web_footprinting/approach.md"
 </div>
 
 <div class="boxtext">
@@ -252,7 +252,7 @@ See Website Footprinting in Recon for passive / lightweight investigation tools
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/check_config_files/index.md"
+!INCLUDE "exercises/check_config_files/index.md"
 </div>
 
 <div class="boxtext">
@@ -262,7 +262,7 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/router_attacks/index.md"
+!INCLUDE "exercises/router_attacks/index.md"
 </div>
 
 \newpage
