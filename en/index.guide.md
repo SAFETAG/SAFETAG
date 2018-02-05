@@ -127,11 +127,7 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/mx-record-search/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/dns-zone-transfer/index.md"
+!INCLUDE "exercises/dns_enumeration/index.md"
 </div>
 
 \newpage
@@ -241,6 +237,10 @@ Covered in full in Operational Security Assessment:
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/vulnerability_research/index.md"
+</div>
+
+<div class="boxtext">
 #### Website Footprinting
 See Website Footprinting in Recon for passive / lightweight investigation tools
 
@@ -249,10 +249,6 @@ See Website Footprinting in Recon for passive / lightweight investigation tools
 
 <div class="boxtext">
 !INCLUDE "exercises/web_vulnerability_assessment/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "../../exercises/vulnerability_research/index.md"
 </div>
 
 <div class="boxtext">
