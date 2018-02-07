@@ -1,4 +1,4 @@
-The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate.
+The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. Your investigation may be blocked by CloudFlare, a popular DDoS protection service. ["CloudFlair"])(https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/) provides some options in this case.
 
 **DNS Enumerations Tools:**
 
