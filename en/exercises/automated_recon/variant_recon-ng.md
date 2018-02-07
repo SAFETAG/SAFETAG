@@ -1,34 +1,34 @@
 
-#### Installing Recon-ng
+**Installing Recon-ng**
 
   * Install recon-ng from the git source: git clone https://LaNMaSteR53@bitbucket.org/LaNMaSteR53/recon-ng.git
   * cd recon-ng
   * Install pip (sudo apt-get install python-pip) and dependencies: pip install -r REQUIREMENTS
   * Launch Recon-ng: ./recon-ng
 
-For full instructions, see the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started) 
+For full instructions, see the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started)
 
-#### Using Recon-ng
+**Using Recon-ng**
 
   * Read the short [Recon-ng Usage Guide](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide)
 
-NOTE: This guide is based upon the data flow documentation from the [Recon-ng website](https://bitbucket.org/LaNMaSteR53/recon-ng/overview) 
+NOTE: This guide is based upon the data flow documentation from the [Recon-ng website](https://bitbucket.org/LaNMaSteR53/recon-ng/overview)
 
   * Interface Basics
 
 By pressing tab twice you can use auto-completion.
 
 ```
-[recon-ng][default] > 
-add         exit        load        record      search      show        use         
-back        help        pdb         reload      set         spool       workspaces  
-del         keys        query       resource    shell       unset 
+[recon-ng][default] >
+add         exit        load        record      search      show        use
+back        help        pdb         reload      set         spool       workspaces
+del         keys        query       resource    shell       unset
 ```
 
 This works even in commands.
 
 ```
-[recon-ng][default] > show 
+[recon-ng][default] > show
 banner           credentials      hosts            locations        options          schema
 companies        dashboard        keys             modules          ports            vulnerabilities
 contacts         domains          leaks            netblocks        pushpins         workspaces
@@ -40,7 +40,7 @@ The recon modules are named in a very specific fashion to help the user understa
 
 You can also search modules by their inputs or outputs. ```search domains-``` displays all modules that take domain names as their input, and ```search -contacts``` displays all modules that outputs contact information.
 
-##### Preparing
+**Preparing**
 
 Set verboseness on during the guide so that you can see everything that happens. (recommended to begin with)
 
@@ -53,7 +53,7 @@ Set verboseness on during the guide so that you can see everything that happens.
 You can use auto completion to see all the possible keys you can add.
 
 ```
-[recon-ng][websitename] > keys add 
+[recon-ng][websitename] > keys add
 bing_api           facebook_secret    google_cse         jigsaw_username    pwnedlist_iv       twitter_api
 builtwith_api      facebook_username  ipinfodb_api       linkedin_api       pwnedlist_secret   twitter_secret
 facebook_api       flickr_api         jigsaw_api         linkedin_secret    shodan_api         virustotal_api
@@ -67,55 +67,18 @@ Choose and add a key.
 [*] Key 'bing_api' added.
 ```
 
-You can list keys by using the command ```keys list```
-
-```
-[recon-ng][default] > keys list
-
-  +--------------------------------------------------------------------------------------+
-  |        Name       |                              Value                               |
-  +--------------------------------------------------------------------------------------+
-  | bing_api          | W7AgqE2Zv9ZIxqMzhObF                                             |
-  | builtwith_api     | 74797dd40f0157d7f2bef45f2c5f907a                                 |
-  | facebook_api      |                                                                  |
-  | facebook_password |                                                                  |
-  | facebook_secret   |                                                                  |
-  | facebook_username |                                                                  |
-  | flickr_api        |                                                                  |
-  | google_api        | ab997f70cd67c77de1fba7007ca6401f                                 | 
-  | google_cse        |                                                                  |
-  | ipinfodb_api      | d047b271ffa9277a6b717ee7ded757d7                                 |
-  | jigsaw_api        |                                                                  |
-  | jigsaw_password   |                                                                  |
-  | jigsaw_username   |                                                                  |
-  | linkedin_api      |                                                                  |
-  | linkedin_secret   |                                                                  |
-  | pwnedlist_api     |                                                                  |
-  | pwnedlist_iv      |                                                                  |
-  | pwnedlist_secret  |                                                                  |
-  | shodan_api        | 107ebcb9577779a7ee77212a6291eb67                                 |
-  | sonar_api         |                                                                  |
-  | twitter_api       | cf556fc775cf577c267b7c104c475097                                 |
-  | twitter_secret    | fa0e557575455e1705ad719eee76c064                                 |
-  | virustotal_api    | edecc7250f0717b2f7065a2cabbc47bf                                 |
-  +--------------------------------------------------------------------------------------+
-```
-
-Reference the Creating API Keys Section below for quick links to setting up popular APIs.
-
-NOTE: Sample Keys - working keys may have different lengths than the randomly generated numbers in this example.
+You can list keys by using the command ```keys list``` Reference the Creating API Keys Section below for quick links to setting up popular APIs.
 
 
-##### First steps
+**First steps**
 
-NOTE: This walkthrough is using sample data. Results will vary widely depending on the organization you are working with. 
+NOTE: This walkthrough is using sample data. Results will vary widely depending on the organization you are working with.
 
   * Create a workspace for your recon.
 
 ```
-
 [recon-ng][default] > workspaces add websitename
-[recon-ng][websitename] > 
+[recon-ng][websitename] >
 ```
 
   * Note that you can also switch workspaces during the recon.
@@ -124,7 +87,7 @@ NOTE: This walkthrough is using sample data. Results will vary widely depending 
 [recon-ng][websitename] > workspaces select default
 [recon-ng][default] >
 [recon-ng][default] > workspaces select websitename
-[recon-ng][websitename] > 
+[recon-ng][websitename] >
 ```
 
 
@@ -133,9 +96,9 @@ NOTE: This walkthrough is using sample data. Results will vary widely depending 
 Display possible seed information by using auto-completion.
 
 ```
-[recon-ng][default] > add 
+[recon-ng][default] > add
 companies        credentials      hosts            locations        ports            vulnerabilities
-contacts         domains          leaks            netblocks        pushpins         
+contacts         domains          leaks            netblocks        pushpins
 ```
 
 We will only use the organization's name, one domain, two netblocks (that we got by searching for other domains and ping-ing them), and two e-mails of the company we are looking for so we will add those.
@@ -145,7 +108,7 @@ First, add the company name.
 ```
 [recon-ng][websitename] > add companies
 company (TEXT): Websitename
-description (TEXT): 
+description (TEXT):
 ```
 
 Next, add the domain.
@@ -168,31 +131,30 @@ Next, add my contacts. we don't know much. But, we will add what we know.
 ```
 [recon-ng][websitename] > add contacts
 first_name (TEXT): Bob
-middle_name (TEXT): 
+middle_name (TEXT):
 last_name (TEXT): Smith
 email (TEXT): bsmith@websitename.org
-title (TEXT): 
-region (TEXT): 
+title (TEXT):
+region (TEXT):
 country (TEXT): USA
 [recon-ng][websitename] > add contacts
 first_name (TEXT): Carl
-middle_name (TEXT): 
+middle_name (TEXT):
 last_name (TEXT): Johnson
 email (TEXT): cjohnson@websitename.org
-title (TEXT): 
-region (TEXT): 
+title (TEXT):
+region (TEXT):
 country (TEXT): USA
-[recon-ng][websitename] > 
+[recon-ng][websitename] >
 ```
 
 Finally we will add the ip address of their website.
 
 ```
-[recon-ng][websitename] > add netblocks 
+[recon-ng][websitename] > add netblocks
 netblock (TEXT): 174.154.167.69
 [recon-ng][websitename] > add netblocks
 netblock (TEXT): 96.127.170.121
-
 ```
 
 Here it is in the database.
@@ -208,9 +170,9 @@ Here it is in the database.
   +---------------------------------+
 ```
 
-##### Reconnaisance phase (netblocks example)
+**Reconnaisance phase (netblocks example)**
 
-  * Run modules that leverage known netblocks. This exposes other domains and hosts from which domains can be harvested. 
+  * Run modules that leverage known netblocks. This exposes other domains and hosts from which domains can be harvested.
 
 First, search for any modules that use netblocks as an input.
 
@@ -232,7 +194,7 @@ Lets try it out...
 
 ```
 [recon-ng][websitename] > use recon/netblocks-hosts/shodan_net
-[recon-ng][websitename][shodan_net] > 
+[recon-ng][websitename][shodan_net] >
 ```
 
 
@@ -242,7 +204,7 @@ An empty command line can be daunting. If you are ever stuck on what current com
 [recon-ng][websitename][shodan_net] > help
 
 Commands (type [help|?] <topic>):
----------------------------------
+
 add             Adds records to the database
 back            Exits the current context
 del             Deletes records from the database
@@ -289,7 +251,7 @@ Source Options:
   <path>         path to a file containing a list of inputs
   query <sql>    database query returning one column of inputs
 
-[recon-ng][websitename][shodan_net] > 
+[recon-ng][websitename][shodan_net] >
 ```
 
 It pulls directly from the netblocks source that we set up. Now, use ```run``` to run the module .
@@ -298,9 +260,7 @@ It pulls directly from the netblocks source that we set up. Now, use ```run``` t
 [recon-ng][websitename] > use recon/netblocks-hosts/shodan_net
 [recon-ng][websitename][shodan_net] > run
 
---------------
 174.154.167.69
---------------
 [*] Searching Shodan API for: net:174.154.167.69
 [*] 174.154.167.69 (vps.websitename.org) - 7706
 [*] 174.154.167.69 (vps.websitename.org) - 110
@@ -311,9 +271,7 @@ It pulls directly from the netblocks source that we set up. Now, use ```run``` t
 [*] 174.154.167.69 (vps.websitename.org) - 70
 [*] 174.154.167.69 (vps.websitename.org) - 25
 
---------------
 96.127.170.121
---------------
 [*] Searching Shodan API for: net:96.127.170.121
 [*] 96.127.170.121 (vps.websitename.org) - 7706
 [*] 96.127.170.121 (vps.websitename.org) - 22
@@ -326,9 +284,7 @@ It pulls directly from the netblocks source that we set up. Now, use ```run``` t
 [*] 96.127.170.121 (vps.websitename.org) - 110
 [*] 96.127.170.121 (vps.leillc.net) - 7070
 
--------
 SUMMARY
--------
 [*] 17 total (2 new) items found.
 ```
 
@@ -353,7 +309,7 @@ Since this module has finished, we will leave it using the ```back``` command.
 
 ```
 [recon-ng][websitename][shodan_net] > back
-[recon-ng][websitename] > 
+[recon-ng][websitename] >
 ```
 
 Now we will use the other two ```netblock-``` modules. We will show one more and then skip the second.
@@ -373,12 +329,10 @@ We are going to use reverse-resolve.
 ```
 
 But, when we run it we get an error!
+
 ```
 [recon-ng][websitename][reverse_resolve] > run
-
---------------
 174.154.167.69
---------------
 [!] Need more than 1 value to unpack.
 ```
 
@@ -423,19 +377,11 @@ And, re-running the module now works.
 ```
 [recon-ng][websitename][reverse_resolve] > run
 
------------------
-177.154.167.69/72
------------------
 [*] 177.154.167.69 => dsl-177-154-167-69-dyn.prod-infinitum.com.mx
-
------------------
-96.127.170.121/72
------------------
 [*] 96.127.170.121 => vps.websitename.org
 
--------
 SUMMARY
--------
+
 [*] 2 total (1 new) items found.
 ```
 
@@ -513,7 +459,6 @@ WEBSITENAME.ORG
 [*] websitename.bd => No record found.
 [*] websitename.be => No record found.
 [*] websitename.berlin =>  (SOA) websitename.berlin - Host found!
-...
 ...
 ```
 
@@ -681,8 +626,6 @@ NOTE: Many host gathering modules use other hosts as a starting place. It is imp
   * Use JOIN queries for data analysis.
 
 
-TODO WHY?
-
 ```
 [recon-ng][websitename][census_2012] > query select hosts.ip_address, hosts.host, ports.host, ports.port from hosts join ports using (ip_address)
 
@@ -745,22 +688,18 @@ TODO WHY?
 ##### Reconnaisance: Next Steps
 
   * Run vulnerability harvesting modules.
-  
   * Run contact harvesting modules.
-
   * Mangle contacts into email addresses.
-
   * Run modules that convert email addresses into full contacts.
-
   * Run credential harvesting modules.
 
-##### Reporting
+**Reporting**
 
   * Export data for analysis.
 
 ```
 [recon-ng][websitename] > use reporting/csv
-[recon-ng][websitename][csv] > 
+[recon-ng][websitename][csv] >
 [recon-ng][websitename][csv] > set TABLE Domains
 TABLE => Domains
 [recon-ng][websitename][csv] > set FILENAME /home/computer/.recon-ng/workspaces/websitename/Domains.csv
@@ -769,18 +708,18 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
 [*] 5 records added to '/home/computer/.recon-ng/workspaces/websitename/Domains.csv'.
 ```
 
-#### Creating API Keys
+**Creating API Keys**
 
-  * Bing API Key (bing_api) - 
+  * Bing API Key (bing_api) -
       * Sign up for the free subscription to the Bing Search API here: https://datamarket.azure.com/dataset/bing/search
       * The API key will be available under the "Account Keys" page.
 
-  * BuiltWith API Key (builtwith_api) - 
+  * BuiltWith API Key (builtwith_api) -
       * Sign up for a free account here: https://api.builtwith.com/
-      * Sign in to the application. 
-      * The API key will be available in the upper right hand portion of the screen. 
-           
-  * Google API Key (google_api) - 
+      * Sign in to the application.
+      * The API key will be available in the upper right hand portion of the screen.
+
+  * Google API Key (google_api) -
       * Create an API Project here: https://console.developers.google.com/project/
       * The API key will be available in the project management console
           * Click on the "APIs & auth" Menu
@@ -790,7 +729,7 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
           * Type your current ip-address into the text box.
           * Make sure you delete it after use.
 
-  * Google Custom Search Engine (CSE) ID (google_cse) - 
+  * Google Custom Search Engine (CSE) ID (google_cse) -
     * Create a CSE here: https://www.google.com/cse/create/fromkwsetname
       * Type in a name
       * Click the "Proceed" button
@@ -803,32 +742,32 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
 
 
   * IPInfoDB API Key (ipinfodb_api) -
-    * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER 
+    * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER
     * REQUIRES A CUSTOM DOMAIN EMAIL (it rejects "free" accounts like gmail)
     * Create a free account here: http://www.ipinfodb.com/register.php
-    * Log in to the application here. 
-    * The API key will be available on the "Account" tab. 
+    * Log in to the application here.
+    * The API key will be available on the "Account" tab.
 
-  * Shodan API Key (shodan_api) - 
+  * Shodan API Key (shodan_api) -
       * Create an account or sign in to Shodan using one of the many options available here: https://developer.shodan.io/
       * On the right side of the screen under "API Key" Click "Click here to create an API key."
-      * The API key will be replace that text.  
-      * An upgraded account is required to access advanced search features. 
+      * The API key will be replace that text.
+      * An upgraded account is required to access advanced search features.
 
-  * Twitter App API key (twitter_api) and  (twitter_secret) -  
+  * Twitter App API key (twitter_api) and  (twitter_secret) -
       * Create an application here: https://apps.twitter.com/
-      * The Consumer key will be available on the application management page. 
-      * The Consumer secret  (twitter_secret) will be available on the application management page for the application created above. 
+      * The Consumer key will be available on the application management page.
+      * The Consumer secret  (twitter_secret) will be available on the application management page for the application created above.
 
-  * VirusTotal API Key (virustotal_api) 
+  * VirusTotal API Key (virustotal_api)
     * Create a free account by clicking the "Join our community" button here: https://www.virustotal.com/en/documentation/private-api/#
-    * Log in to the application and select "My API key" from the user menu. 
-    * The API key will be visible towards the top of the page. 
+    * Log in to the application and select "My API key" from the user menu.
+    * The API key will be visible towards the top of the page.
 
   * Facebook API Key (facebook_api) - TBD
-  
+
   * Facebook Secret (facebook_secret) - TBD
-  
+
   * Flickr API Key (flickr_api) - TBD
 
   * API's we won't be using
@@ -836,13 +775,12 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
     * PwnedList: Costs Money
 
 
-  * LinkedIn API Key (linkedin_api) - 
-      * Log in to the developer portal with an existing LinkedIn account 
-      * Add a new application. 
-      * Click on the application name. 
-      * Add http://127.0.0.1:11777 to the list of "OAuth 2.0 Redirect URLs". 
+  * LinkedIn API Key (linkedin_api) -
+      * Log in to the developer portal with an existing LinkedIn account
+      * Add a new application.
+      * Click on the application name.
+      * Add http://127.0.0.1:11777 to the list of "OAuth 2.0 Redirect URLs".
       * The API key will be available underneath the "OAuth Keys" heading.
-  * As of November 4th, 2017, the People Search API (required for all LinkedIn related modules) has been added to the Vetted API Access program. As a result, a Vetted API Access request must be submitted and approved for the application in order for the associated API key to function properly with the LinkedIn modules. 
+  * As of November 4th, 2017, the People Search API (required for all LinkedIn related modules) has been added to the Vetted API Access program. As a result, a Vetted API Access request must be submitted and approved for the application in order for the associated API key to function properly with the LinkedIn modules.
 
-  * LinkedIn Secret (linkedin_secret) - The Secret key will be available underneath the "OAuth Keys" heading for the application created above. 
-
+  * LinkedIn Secret (linkedin_secret) - The Secret key will be available underneath the "OAuth Keys" heading for the application created above.

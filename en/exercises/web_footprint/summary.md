@@ -1,0 +1,6 @@
+
+Using online tools as a starting point in assessing the auditee web application is a good way to expand online reconnaisance as well as start your vulnerability assessment. You can build a profile and a good understanding of the web application by identifying what comprises the web application and technologies behind. From there you can start your next move by putting together different strategies on conducting your vulnerability assessment.
+
+For example, after discovering accessable web directories, you can then start looking for forgotten or abandoned files and applications that might contain sensitive information like (Passwords) or an outdated and vulnerable applications.  Content management systems, while powerful, require ongoing maintenance and updates to stay secure. Quite often these (or specific plugins) fall out of date and become increasingly vulnerable to automated as well as targeted attacks.
+
+Online tools offer ways of performing "passive" scans, in which your identity is hidden from the target organization, in cases where there are IDS/IPS, firewalls deployed. These should be used in conjuction with other outputs from reconnaisance to determine platforms and hosts which are out of scope.

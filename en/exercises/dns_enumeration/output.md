@@ -1,0 +1,2 @@
+* A fuller map of the organization's online presence, including additional (potentially forgotten) hosts/services connected with the organization.
+* The output of your DNS enumeration might contain "more" information about the client organization (internal DNS records, hostnames, router names, additional IP addresses). This data is sometimes caused by misconfigured DNS or default service configurations, so look for misleading and false-positive results.
