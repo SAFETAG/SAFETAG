@@ -18,3 +18,7 @@
 <div class="boxtext">
 !INCLUDE "../../exercises/dns-zone-transfer/index.md"
 </div>
+
+<div class="boxtext">
+!INCLUDE "../../exercises/dns_enumeration/index.md"
+</div>
