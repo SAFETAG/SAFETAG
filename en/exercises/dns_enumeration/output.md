@@ -1,4 +1,2 @@
-The output of your DNS enumeration might contain "more" information about the client organization (internal DNS records, hostnames, router names, additional IP addresses).
-These information are sometimes caused by misconfigured DNS or default service configurations.
-
-You can use different tools, methods and approach in achieving results, it depends on which you are most familiar with.
+* A fuller map of the organization's online presence, including additional (potentially forgotten) hosts/services connected with the organization.
+* The output of your DNS enumeration might contain "more" information about the client organization (internal DNS records, hostnames, router names, additional IP addresses). This data is sometimes caused by misconfigured DNS or default service configurations, so look for misleading and false-positive results.

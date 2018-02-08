@@ -14,8 +14,6 @@ Below are some of the types of DNS Enumeration:
 - Zone Walking
 - Google Lookup
 
-**DNSrecon**
-
 DNSrecon is located in your /usr/bin/ folder. you can execute dnsrecon directly from the Kali terminal:
 
 root@kali:~# dnsrecon -h
@@ -38,3 +36,4 @@ root@kali:~# dnsrecon -h
 |dnsrecon -d ```target.domain``` --db ```/path/to/report.sqlite```|Save enumeration results in a sqlite file.|
 |dnsrecon -d ```target.domain``` --xml ```/path/to/report.xml```|Save enumeration results in a xml file.|
 |dnsrecon -d ```target.domain``` -c ```/path/to/report.csv```|Save enumeration results in a csv file.|
+

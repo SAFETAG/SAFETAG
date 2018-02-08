@@ -1,38 +1,37 @@
-**Verify Target**
+The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. You can both use "Active" and "Passive" scan depending on your assessment flow.
 
-Before performing DNS enumeration, make sure that you have the right target URL/s. This is to avoid scanning out-of-scope targets. Verify with the organization that you have the right target. 
+**DNS Enumerations Tools:**
 
-**DNS enumeration types**
+| Tools | Description | Type | Technique |
+|-------|-------------|------|-----------|
+|[Robtex](https://www.robtex.com/)|Gathers public information about IP numbers, domain names, host names, Autonomous systems, routes etc, then indexes the data in a big database and provide free access to that data | Online | Passive |
+|[DNSdumpster](https://dnsdumpster.com/)|Free domain research tool that can discover hosts related to a domain, results with banners for HTTP, FTP, SSH & Telnet |Online | Passive |
+|[CentralOps-Domain Dossier](https://centralops.net/co/)|Investigates domains and IP addresses. Gathers registrant information, DNS records, Network and Domain Whois Records, services scans and traceroutes | Online | Passive |
+|[DNSSEC Analyzer](http://dnssec-debugger.verisignlabs.com/)| Checks for DNSSEC keys managment and configurations records | Online | Passive |
+|[Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng)| Automated web reconnaissance framework written in Python. Complete with independent modules, database interaction, built-in convenience functions, interactive help and command completion. | Script | Active |
+[IntoDNS](https://intodns.com/) | IntoDNS checks the health and configuration of your DNS and provides report on MX records too. Provides suggestions to fix and improve findings | Online | Passive |
+|[YougetSignal](https://www.yougetsignal.com/tools/web-sites-on-web-server/)| Helps you find other sites being hosted on a particular IP address, verifying if the target is using a shared hosting service | Online | Passive |
+|[DNSRecon](https://github.com/darkoperator/dnsrecon)|A Python script written by Carlos Perez for conducting DNS reconnaissance. It can enumerate general DNS records, perform zone transfers, perform reverse lookups, and brute-force subdomains among other functions. It will even perform Google scanning, automating the process we discussed in the Using Google to find subdomains section. | Script | Active |
+|[DNSenum](https://github.com/fwaeytens/dnsenum)|multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.|Script|Online|
 
-**Passive**
+Specific instructions for selected tools/techniques follows:
 
-Passive technique, or "indirect" approach refers to the enumeration process that doesn't send any traffic or packets from your machine, directly to your target. This can be done using 3rd tools such as online tools and cloud based scanners.
+###### Passive: Third Party and Online Tools
 
-**Active**
+!INCLUDE "variant_3rd_party_and_online_tools.md"
 
-Active technique, or "direct" approach refers to sending DNS queries and enumeration tests directly to the target. Consider that traffic is send over the target which may leave traces or traffic logs coming from your source IP.
+###### Active: DNSrecon
 
-**DNS results Documentation**
+!INCLUDE "variant_dns_recon.md"
 
-Managing your enumeration results can help you in later preparation for vulnerability assessment and penetration testing, or reporting and documentation. An organized report will be easier to read and to compile, and also can be used for presentation and PoC (Proof of Concepts) in the future.
+###### Active: DNSenum
 
+!INCLUDE "variant_dns_enum.md"
 
-###### Using Online Tools and Resources
-
-!INCLUDE "variant_using_online_tools_resources"
-
-###### PErforming DNS Zone Transfer
+###### Active: Simple Zone Transfer
 
 !INCLUDE "variant_dns_zone_transfer"
 
-###### Using DNS Recon
+###### Active: MX Records
 
-!INCLUDE "variant_dns_recon"
-
-###### Performing DNS History Assessment
-
-!INCLUDE "variant_dns_history_assessment"
-
-###### Using DNS Enum
-
-!INCLUDE "variant_dns_enum"
+!INCLUDE "variant_mx_records.md"
