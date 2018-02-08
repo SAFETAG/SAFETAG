@@ -4,10 +4,10 @@
 
 **NOTE:** Covered in full under ...
 
-!INCLUDE "../../exercises/ /approach.md"
+!INCLUDE "../../exercises/process_mapping_activity/approach.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/ /index.md"
+!INCLUDE "../../exercises/process_mapping_activity/index.md"
 </div>
 
