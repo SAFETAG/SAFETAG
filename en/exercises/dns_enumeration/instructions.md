@@ -1,4 +1,4 @@
-The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate.
+The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. You can both use "Active" and "Passive" scan depending on your assessment flow.
 
 **DNS Enumerations Tools:**
 
@@ -30,7 +30,7 @@ Specific instructions for selected tools/techniques follows:
 
 ###### Active: Simple Zone Transfer
 
-!INCLUDE "variant_zonetransfer.md"
+!INCLUDE "variant_dns_zone_transfer"
 
 ###### Active: MX Records
 

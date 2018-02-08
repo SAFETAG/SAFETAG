@@ -1,3 +1,4 @@
+**DNS reconnaissance with dns_enum**
 
 DNSenum, just like DNSrecon, is a tool designed to analyze DNS information of a specific DNS target. From zone transfer, hostname and subdomain dictionary brute force, reverse lookup service record and standard record query and top level domain name expansion, results are almost identical for both assessment tools.
 
