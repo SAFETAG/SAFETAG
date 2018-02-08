@@ -1,2 +1,2 @@
 
-!INCLUDE "process_activity.md"
+!INCLUDE "process_mapping_activity.md"
