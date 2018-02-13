@@ -1,22 +1,24 @@
 ---
 title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
-subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
+subtitle: 'SAFETAG Playlist: Minimal Viable Audit'
 ---
-
 <!-- Introduction -->
 
 !INCLUDE "document_matter/introduction.md"
+
+## SAFETAG Playlist: Minimal Viable Audit
+
+The Minimal Viable Audit is designed as the starting point for an assessment to be considered viable under the SAFETAG framework. It primarily focuses on identification of possible threats in and to the organization, its capacity to deal with them, data management and organizational device usuage. It is intended to be used where time for the assessment is very limited, and a starting point is needed to determine the status of the organization.
+
+For a more comprehesive assessment, use of the full SAFETAG guide and other tools will be required.
 
 
 <!-- Audit Lifecyce -->
 
 !INCLUDE "document_matter/audit_lifecycle.md"
 
-\newpage
 
-
-# PREPARATION
-
+# Audit Preparation
 <!-- Agency Building -->
 
 !INCLUDE "document_matter/agency_building.md"
@@ -27,7 +29,6 @@ subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
 
 !INCLUDE "methods/preparation.overview.md"
 
-!INCLUDE "exercises/assessment_plan/index.md"
 
 \newpage
 
@@ -41,15 +42,14 @@ subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
 
 \newpage
 
-# ASSESSMENT AND ANALYSIS
-
+# Assessment and Analysis
 <!-- Risk Modeling -->
 
 !INCLUDE "document_matter/risk_assessment.md"
 
-\newpage
-
 !INCLUDE "methods/risk_modeling.overview.md"
+
+\newpage
 
 <div class="boxtext">
 !INCLUDE "exercises/process_mapping_activity/index.md"
@@ -64,7 +64,7 @@ subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/threat_interaction/index.md"
+!INCLUDE "exercises/threat_interaction/threat_analysis_survey.md"
 </div>
 
 \newpage
@@ -83,57 +83,41 @@ subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
 
 \newpage
 
-
-
-# DEVICE ASSESSMENT
-
-<!-- Device Assessment -->
-
-!INCLUDE "methods/user_device_assessment.overview.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/device_checklist/index.md"
-</div>
-\newpage
-
-<!-- Physical Assessment -->
-
-!INCLUDE "methods/physical_assessment.overview.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/guided_tour/index.md"
-</div>
-
-<!-- Data Mapping -->
+<!-- Data Mapping (Information mapping)-->
 
 !INCLUDE "methods/data_assessment.overview.md"
-### Outputs
-!INCLUDE "methods/data_assessment/output.md"
 
-### Operational Security
-!INCLUDE "methods/data_assessment/operational_security.md"
+<div class="boxtext">
+!INCLUDE "exercises/sensitive_data/index.md"
+</div>
 
-### Preparation
-!INCLUDE "methods/data_assessment/preparation.md"
+<div class="boxtext">
+!INCLUDE "exercises/data_lost_and_found/index.md"
+</div>
 
+<div class="boxtext">
+!INCLUDE "exercises/private_data/index.md"
+</div>
 
+\newpage
 
-# FOLLOW UP AND REPORTING
+<!-- Organisational Device Assessment -->
+
+!INCLUDE "methods/organizational_device_assessment.guide.md"
+
+!INCLUDE "methods/organizational_device_assessment/activities.md"
+
+# Follow up and Reporting
 
 <!-- Debrief -->
 
-!INCLUDE "methods/debrief.overview.md"
-### Outputs
-!INCLUDE "methods/debrief/output.md"
+!INCLUDE "methods/debrief.guide.md"
 
 \newpage
+
 <!-- Follow Up -->
 
 !INCLUDE "methods/follow_up.overview.md"
-<div class="boxtext">
-!INCLUDE "exercises/follow_up_meeting/index.md"
-</div>
-
 
 \newpage
 
@@ -150,3 +134,15 @@ subtitle: 'Minimal Viable Audit: Steward's Meeting Updates'
 <!-- Reporting Creation -->
 
 !INCLUDE "methods/report_creation.guide.md"
+
+
+# Footnotes
+
+<!-- Load Footnotes -->
+!INCLUDE "references/footnotes.md"
+
+<!-- Update Footnotes for overview -->
+!INCLUDE "references/footnotes.overview.md"
+
+<!-- Load Default Images -->
+!INCLUDE "theme/image_defaults.md"
