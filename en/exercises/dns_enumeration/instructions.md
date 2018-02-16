@@ -30,7 +30,7 @@ Specific instructions for selected tools/techniques follows:
 
 ###### Active: Simple Zone Transfer
 
-!INCLUDE "variant_dns_zone_transfer"
+!INCLUDE "variant_dns_zonetransfer"
 
 ###### Active: MX Records
 
