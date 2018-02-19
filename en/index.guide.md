@@ -160,11 +160,11 @@ See the Appendix for creating a password dictionary.
 !INCLUDE "methods/network_mapping.guide.md"
 
 <div class="boxtext">
-!INCLUDE "exercises/network_scanning/index.md"
+!INCLUDE exercises/network_scanning/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/traffic_analysis/index.md"
+!INCLUDE exercises/traffic_analysis/index.md"
 </div>
 
 <div class="boxtext">
@@ -200,15 +200,15 @@ Covered in full in Network Discovery
 !INCLUDE "methods/organizational_device_assessment.guide.md"
 
 <div class="boxtext">
-!INCLUDE "../exercises/guided_tour/index.md"
+!INCLUDE "exercises/guided_tour/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../exercises/device_check/index.md"
+!INCLUDE "exercises/device_check/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../exercises/password_security/index.md"
+!INCLUDE "exercises/password_security/index.md"
 </div>
 
 <div class="boxtext">
@@ -216,7 +216,7 @@ Covered in full in Network Discovery
 
 Covered in full in User Device Assessment:
 
-!INCLUDE "../../exercises/day_in_the_life/approach.md"
+!INCLUDE "exercises/day_in_the_life/approach.md"
 
 </div>
 
@@ -235,7 +235,7 @@ Covered in full in Network Mapping
 
 Covered in full in Physical Assessment:
 
-!INCLUDE "../../exercises/guided_tour/approach.md"
+!INCLUDE "exercises/guided_tour/approach.md"
 </div>
 
 
