@@ -160,11 +160,11 @@ See the Appendix for creating a password dictionary.
 !INCLUDE "methods/network_mapping.guide.md"
 
 <div class="boxtext">
-!INCLUDE exercises/network_scanning/index.md"
+!INCLUDE "exercises/network_scanning/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE exercises/traffic_analysis/index.md"
+!INCLUDE "exercises/traffic_analysis/index.md"
 </div>
 
 <div class="boxtext">
