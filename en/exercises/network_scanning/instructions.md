@@ -11,7 +11,7 @@ Using a network scanning tool (**nmap/zenmap** work well), discover the devices 
   * Inspect all systems providing internal services to the host organization.
     * Record the version and patch levels of software on the device. [^identifying-software-versions]
     * Identify weak ports or services available under the current device's firewall configuration. [^examining-firewalls-across-os]
-    * Identify all odd/obscure/one-off services. [^identifying-oddone-off-services]
+    * Identify and investigate any [open ports](#open_ports) that should not be open (e.g.: no ports should be open in personal computers)
   
   * Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.
 
@@ -25,5 +25,58 @@ Using a network scanning tool (**nmap/zenmap** work well), discover the devices 
 Unsigned NTLM authentication messages vulnerable to Man-in-the-Middle attack on SMB file servers
 
 Unsigned NTLM authentication messages allow an attacker on the LAN to add, remove or copy files to and from the organization’s file servers (and workstations with filesharing enabled).
+
+<a name="open_ports"></a>
+## How to decide if an open port is suspicious
+
+If a port is open in a personal computer or mobile device, this should be immediately considered suspicious and investigated.
+
+An open port in a server or IoT device should be investigated if it doesn't correspond to a known service. For example, if the open port is 80, 8080, or 443, it's supposed to be open for a web server, so you can try to browse it by pasting the IP address in your browser address bar. If it's for SSH (port 22), try to log into it through SSH.
+
+In general, these are ports that might be open in a server:
+
+| Port  | Service |
+|-------|---------|
+|  21   |  FTP    |
+|  22   |  SSH    |
+|  23   |  Telnet |
+|  25   |  SMTP   |
+|  53   |  DNS    |
+|  80   |  HTTP   |
+|  110  |  POP    |
+|  143  |  IMAP   |
+|  194  |  IRC    |
+|  443  |  HTTPS  |
+|  465  |  SMTP   |
+|  530  |  CUPS   |
+|  587  |  SMTP   |
+|  667  |  IRC    |
+|  993  |  IMAP   |
+|  995  |  POP    |
+|  1900 |  port authority |
+|  3306 |  MySQL  |
+|  6881 to 6889 |  Torrent|
+|  6969 |  Torrent |
+|  8080 |  HTTP   |
+
+To identify what a port might be used for, look at the complete list [here](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml).
+
+Once you have identified what service that port might be used for, always check that that service is actually running in the machine and that the user or sysadmin is aware of it.
+
+If the service isn't supposed to be running in the identified device, you can run a scan of the open ports to identify what service they are connected to.
+
+- On Mac and Linux, launch `netstat -tulpn`
+- On Windows, we recommend you install the official [Microsoft Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) (right-click a process to see the Properties - the port will be visible in the TCP/IP tab).
+- On Windows, you can also use netstat from the command prompt as an administrator: the command would be `netstat -ab`
+
+If that service isn't running in the machine, the port might have been opened by malware. In such case, the device where the suspicious port is open needs to be analyzed. See [the exercise on user device assessment](#section4.9).
+
+
+
+
+
+
+
+
 
 
