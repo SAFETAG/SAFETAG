@@ -1,4 +1,2 @@
-* To identify if there are indicators that tell us that they have been compromised or someone they know have faced advanced threats.
-* To identify what threats they are dealing with.
-* To help the auditor prioritize what we should work on with the organisation during the audit and follow up.
-* To understand whether the auditor has the expertise to address or understand the threat or if outside expertise is needed.
+
+This additional interview activity is to identify if there are any indicators that the organization may have already been attacked and/or compromised, or if someone they know has faced advanced threats. It should help identify what threats / threat actors they are dealing with, and their intent.  This will help the auditor prioritize work with the organisation during the audit and follow up and understand whether the auditor has the expertise to address or understand the threat or if outside expertise is needed.
