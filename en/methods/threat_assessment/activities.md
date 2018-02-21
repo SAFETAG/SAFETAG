@@ -12,7 +12,7 @@ Covered in full in Risk Assessment:
 
 Covered in full in Capacity Assessment:
 
-!INCLUDE "../../exercises/interviews_highrisk/index.md"
+!INCLUDE "../../exercises/interviews_highrisk/approach.md"
 </div>
 
 <div class="boxtext">
