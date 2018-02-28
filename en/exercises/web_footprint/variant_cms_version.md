@@ -1,3 +1,10 @@
+Identification of CMS during web footprint can be done either using sripts and tools or using online services.
+
+you can use certain websites to determine the type of CMS a target website is using:
+
+  - https://builtwith.com
+  - https://sitecheck.sucuri.net
+  - http://guess.scritch.org
 
 For CMS systems, out of date components can mean well-known and easy to exploit by malicious actors.
 
@@ -25,3 +32,17 @@ Wordpress sites tend to advertise their version number in the header of each web
 ```
 
 There is a web-based tool with browser add-ons available here: http://www.whitefirdesign.com/tools/wordpress-version-check.html
+
+Document your finding and list what type of CMS your target is using along with it's version. You can use this information in the next possible activities:
+
+  - Vulnerability Scanning
+  - Vulnerability Research
+
+
+
+
+
+
+
+
+
