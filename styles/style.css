@@ -1,19 +1,19 @@
 /* fonts */
 
 @font-face {
-    font-family: 'Noto Sans Regular';
+    font-family: 'Noto Sans Regular', sans-serif;
     src: url('fonts/NotoSans-Regular.ttf')  format("truetype")
 }
 @font-face {
-    font-family: 'Noto Sans Bold';
+    font-family: 'Noto Sans Bold', sans-serif;
     src: local('fonts/NotoSans-Bold.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Noto Sans Italic';
+    font-family: 'Noto Sans Italic', sans-serif;
     src: local('fonts/NotoSans-Italic.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Noto Sans Bold Italic';
+    font-family: 'Noto Sans Bold Italic', sans-serif;
     src: local('fonts/NotoSans-BoldItalic.ttf')  format("truetype");
 }
 
