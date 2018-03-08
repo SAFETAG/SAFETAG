@@ -68,11 +68,6 @@ subtitle: 'Overview'
 !INCLUDE "methods/reconnaissance.overview.md"
 
 \newpage
-<!-- Network Discovery-->
-
-!INCLUDE "methods/network_discovery.overview.md"
-
-\newpage
 <!-- Network Access -->
 
 !INCLUDE "methods/network_access.overview.md"
@@ -81,6 +76,11 @@ subtitle: 'Overview'
 <!-- Network Mapping -->
 
 !INCLUDE "methods/network_mapping.overview.md"
+
+\newpage
+<!-- Organizational Device Assessment -->
+
+!INCLUDE "methods/organizational_device_assessment.guide.md"
 
 \newpage
 <!-- User Device Assessment -->
@@ -100,12 +100,17 @@ subtitle: 'Overview'
 \newpage
 <!-- Physical Assessment -->
 
-!INCLUDE "methods/physical_assessment.overview.md"
+!INCLUDE "methods/operational_security.overview.md"
 
 \newpage
 <!-- Risk Modeling -->
 
 !INCLUDE "methods/risk_modeling.overview.md"
+
+\newpage
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.overview.md"
 
 \newpage
 <!-- Threat Assessment -->

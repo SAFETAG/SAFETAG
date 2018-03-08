@@ -14,17 +14,9 @@ subtitle: 'Guide'
 
 \newpage
 
-!INCLUDE "document_matter/how_to_read_this_guide.guide.md"
-
-\newpage
-
-<!-- Overview -->
-
-!INCLUDE "document_matter/overview.md"
-
-\newpage
-
 <!-- Audit Lifecyce -->
+
+!INCLUDE "document_matter/safetag_core_intro.md"
 
 !INCLUDE "document_matter/audit_lifecycle.md"
 
@@ -44,6 +36,16 @@ subtitle: 'Guide'
 !INCLUDE "document_matter/operational_security.md"
 
 \newpage
+
+# SAFETAG Methods
+
+\newpage
+<!-- INTRO to Methods-->
+
+!INCLUDE "methods/intro.md"
+
+\newpage
+
 <!-- Audit Prep-->
 
 !INCLUDE "methods/preparation.guide.md"
@@ -76,14 +78,8 @@ See the Appendix for creating a password dictionary.
 !INCLUDE "exercises/safetag_audit_timeline.md"
 </div>
 
-
 \newpage
 
-# SAFETAG Methods
-
-!INCLUDE "methods/intro.md"
-
-\newpage
 <!-- Audit Scoping-->
 
 !INCLUDE "methods/context_research.guide.md"
@@ -130,24 +126,11 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/mx-record-search/index.md"
+!INCLUDE "exercises/web_footprint/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/dns-zone-transfer/index.md"
-</div>
-
-\newpage
-<!-- Network Discovery-->
-
-!INCLUDE "methods/network_discovery.guide.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/monitor_open_wireless_traffic/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/wireless_range_mapping/index.md"
+!INCLUDE "exercises/dns_enumeration/index.md"
 </div>
 
 \newpage
@@ -185,6 +168,10 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/remote_network_device_assessment/index.md"
+</div>
+
+<div class="boxtext">
 #### Router Attacks
 
 Covered in full in  Vulnerability Scanning and Analysis
@@ -206,6 +193,49 @@ Covered in full in Network Discovery
 Covered in full in Network Discovery
 
 !INCLUDE "exercises/monitor_open_wireless_traffic/approach.md"
+</div>
+
+\newpage
+<!-- Organizational Device Assessment -->
+!INCLUDE "methods/organizational_device_assessment.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/guided_tour/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/device_check/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/password_security/index.md"
+</div>
+
+<div class="boxtext">
+### A Day in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "exercises/day_in_the_life/approach.md"
+
+</div>
+
+<div class="boxtext">
+#### Network Mapping
+
+Covered in full in Network Mapping
+
+!INCLUDE "exercises/network_scanning/approach.md"
+
+</div>
+
+
+<div class="boxtext">
+### Physical Security Guided Tour
+
+Covered in full in Physical Assessment:
+
+!INCLUDE "exercises/guided_tour/approach.md"
 </div>
 
 
@@ -234,7 +264,7 @@ Covered in full in Network Discovery
 <div class="boxtext">
 #### Physical Security Guided Tour
 
-Covered in full in Physical Assessment:
+Covered in full in Operational Security Assessment:
 
 !INCLUDE "exercises/guided_tour/approach.md"
 </div>
@@ -244,38 +274,40 @@ Covered in full in Physical Assessment:
 </div>
 
 \newpage
-<!-- Vulnerability Analysis -->
+<!-- Vulnerability Scanning and Analysis -->
 
 !INCLUDE "methods/vulnerability_scanning.guide.md"
-
 
 <div class="boxtext">
 !INCLUDE "exercises/vulnerability_scanning/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/cms_version/index.md"
-</div>
-
-<div class="boxtext">
-### Explore Vulnerability Databases
 !INCLUDE "exercises/vulnerability_research/index.md"
 </div>
 
 <div class="boxtext">
-### Examine Service Configuration Files
+#### Website Footprinting
+See Website Footprinting in Recon for passive / lightweight investigation tools
+
+!INCLUDE "exercises/web_footprinting/approach.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/web_vulnerability_assessment/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/check_config_files/index.md"
 </div>
 
 <div class="boxtext">
-### Network Vulnerabilities
+#### Network Vulnerabilities
 
 See the Network Access and Mapping activities for methods to expose insecure wireless networks and for methods to use network mapping and traffic analysis to discover further potential vulnerabilities or points to investigate.
 </div>
 
 <div class="boxtext">
-### Penetrating Wireless Routers
-
 !INCLUDE "exercises/router_attacks/index.md"
 </div>
 
@@ -294,22 +326,6 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
-#### Impact of a Lost Device
-
-Covered in full under Physical Assessment:
-
-!INCLUDE "exercises/impact_lost_device/approach.md"
-</div>
-
-<div class="boxtext">
-#### Impact of a Found Device
-
-Covered in full under Physical Assessment:
-
-!INCLUDE "exercises/impact_found_device/approach.md"
-</div>
-
-<div class="boxtext">
 !INCLUDE "exercises/private_data/index.md"
 </div>
 
@@ -318,7 +334,7 @@ Covered in full under Physical Assessment:
 
 <!-- Physical Assessment -->
 
-!INCLUDE "methods/physical_assessment.guide.md"
+!INCLUDE "methods/operational_security.guide.md"
 
 
 <div class="boxtext">
@@ -326,11 +342,30 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/impact_lost_device/index.md"
+!INCLUDE "exercises/physical_security_survey/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/impact_found_device/index.md"
+!INCLUDE "exercises/office_mapping/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/scavenger_hunt/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/monitor_open_wireless_traffic/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/wireless_range_mapping/index.md"
+</div>
+
+
+<div class="boxtext">
+#### A Day in the Life
+Covered in full in User Device Assessment:
+!INCLUDE "exercises/day_in_the_life/approach.md"
 </div>
 
 \newpage
@@ -347,7 +382,7 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-#### Risk Matrix 
+#### Risk Matrix
 
 Covered in full in Threat Identification:
 
@@ -360,6 +395,15 @@ Covered in full in Threat Identification:
 Covered in full in Data Assessment:
 
 !INCLUDE "exercises/sensitive_data/approach.md"
+</div>
+
+
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/advanced_threat/index.md"
 </div>
 
 \newpage
@@ -406,6 +450,7 @@ Covered in full in Capacity Assessment:
 
 
 \newpage
+
 <!-- Responsive Support -->
 
 !INCLUDE "methods/responsive_support.guide.md"
@@ -453,7 +498,7 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 # Reporting
 
 \newpage
-<!-- Vulnerability Prioritization 
+<!-- Vulnerability Prioritization
 
 !INCLUDE "methods/vulnerability_prioritization.guide.md"
 
@@ -486,7 +531,6 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 !INCLUDE "methods/roadmap_development.guide.md"
 
-
 \newpage
 <!-- Reporting Creation -->
 
@@ -494,42 +538,10 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 \newpage
 
-# APPENDICES
+<!-- APPENDICES AND FOOTNOTES -->
 
-<!-- APPENDIX A - Auditor travel Kit Checklist-->
+!INCLUDE "appendix.md"
 
-## APPENDIX: Draft Engagement and Confidentiality Agreement
-
-!INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
-
-## APPENDIX: Travel Kit and Checklist
-
-!INCLUDE "exercises/travel_kit/index.md"
-
-## APPENDIX: Sample Capacity Interview Questions
-
-!INCLUDE "exercises/interviews/interview_questions.md"
-
-## APPENDIX: Password Dictionaries
-
-!INCLUDE "exercises/password_security/dictionary_creation.md"
-
-## APPENDIX: Password Survey
-
-!INCLUDE "exercises/password_security/password_survey.md"
-
-## APPENDIX: Recon-ng walkthrough
-
-!INCLUDE "exercises/automated_recon/recon-ng.md"
-
-## APPENDIX: Device Assessment Checklist
-
-!INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
-
-# Footnotes
-
-<!-- Load Footnotes -->
-!INCLUDE "references/footnotes.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"

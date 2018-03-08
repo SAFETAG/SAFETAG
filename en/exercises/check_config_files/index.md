@@ -1,4 +1,4 @@
-#### Activity Title
+#### Check Config Files
 
 ##### Summary
 !INCLUDE "summary.md"
@@ -17,4 +17,3 @@
 
 ##### Recommendation
 !INCLUDE "recommendations.md"
-

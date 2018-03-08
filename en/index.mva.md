@@ -1,10 +1,17 @@
 ---
 title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
-subtitle: 'Minimal Viable Audit'
+subtitle: 'SAFETAG Playlist: Minimal Viable Audit'
 ---
 <!-- Introduction -->
 
-!INCLUDE "document_matter/introduction.mva.md"
+!INCLUDE "document_matter/introduction.md"
+
+## SAFETAG Playlist: Minimal Viable Audit
+
+The Minimal Viable Audit is designed as the starting point for an assessment to be considered viable under the SAFETAG framework. It primarily focuses on identification of possible threats in and to the organization, its capacity to deal with them, data management and organizational device usuage. It is intended to be used where time for the assessment is very limited, and a starting point is needed to determine the status of the organization.
+
+For a more comprehesive assessment, use of the full SAFETAG guide and other tools will be required.
+
 
 <!-- Audit Lifecyce -->
 
@@ -56,6 +63,10 @@ subtitle: 'Minimal Viable Audit'
 !INCLUDE "exercises/threat_identification/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/threat_interaction/threat_analysis_survey.md"
+</div>
+
 \newpage
 
 <!-- Capacity Assessment -->
@@ -72,7 +83,7 @@ subtitle: 'Minimal Viable Audit'
 
 \newpage
 
-<!-- Data Mapping (Information mapping)--> 
+<!-- Data Mapping (Information mapping)-->
 
 !INCLUDE "methods/data_assessment.overview.md"
 
@@ -92,7 +103,9 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Organisational Device Assessment -->
 
-!INCLUDE "methods/organizational_device_assessment.md"
+!INCLUDE "methods/organizational_device_assessment.guide.md"
+
+!INCLUDE "methods/organizational_device_assessment/activities.md"
 
 # Follow up and Reporting
 
@@ -133,6 +146,3 @@ subtitle: 'Minimal Viable Audit'
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
-
-
-

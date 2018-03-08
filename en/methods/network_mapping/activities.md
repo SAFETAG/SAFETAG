@@ -8,6 +8,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/remote_network_device_assessment/index.md"
+</div>
+
+<div class="boxtext">
 ### Router Attacks
 
 Covered in full in  Vulnerability Scanning and Analysis
@@ -16,10 +20,19 @@ Covered in full in  Vulnerability Scanning and Analysis
 </div>
 
 <div class="boxtext">
+### VOIP Assessment
+
+Covered in full in  Vulnerability Scanning and Analysis
+
+!INCLUDE "../../exercises/voip_assessment/approach.md"
+</div>
+
+
+<div class="boxtext">
 
 ### Wireless Range Mapping
 
-Covered in full in Network Discovery
+Covered in full in Physical and Operational Security
 
 !INCLUDE "../../exercises/wireless_range_mapping/approach.md"
 </div>
@@ -28,7 +41,7 @@ Covered in full in Network Discovery
 
 ### Monitor Open Wireless Traffic
 
-Covered in full in Network Discovery
+Covered in full in Physical and Operational Security
 
 !INCLUDE "../../exercises/monitor_open_wireless_traffic/approach.md"
 </div>

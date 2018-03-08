@@ -1,6 +1,6 @@
 
 #### Instructions Social Engineering Suspicious email Activity
- 
+
 In this exercise participants will examine an email for clues about its authenticity.
 
 ##### Materials to Prepare
@@ -11,14 +11,14 @@ In this exercise participants will examine an email for clues about its authenti
   * Example infected attachment (you may want to use this one, which has the EICAR test virus).
   * (Optional) Example phishing website which should be created using XAMPP and HTTrack. (Approximately 90 minutes to set up for the first time, though once it is prepared you will only need to turn on XAMPP for the demonstration)
   * Flipchart or whiteboard with markers (flipcharts are often preferred so you can keep the notes from the session to refer to later as needed)
-  * Projector 
+  * Projector
 
 ###### Creating the "malicious" example email
 
   * Send an e-mail to yourself and export it as a .EML file (Mail message file) so that you can edit the source code. You can use Notepad or any other text editor to do so.
     * To export to EML in Outlook, simply select your message and click “Save As”. Then select “Outlook Message Format - Unicode” as your file type.
     * In Thunderbird, right-click on the e-mail message you would like to export and select “Save as”. Leave “All files” as your file type.
-    * If you’re using GMail, click the down arrow next to “Reply” in the header area of the e-mail you want to save. Select “Show original” from the menu that comes up. Select all text, copy it and paste it on any plain text editor (such as Notepad) then save the file as “.EML”.  
+    * If you’re using GMail, click the down arrow next to “Reply” in the header area of the e-mail you want to save. Select “Show original” from the menu that comes up. Select all text, copy it and paste it on any plain text editor (such as Notepad) then save the file as “.EML”.
   * (Optional) When composing the e-mail you will send to yourself, include an attachment, such as this "report" (Right-click and select “Save File As) to download which is infected with the EICAR script.
   * Locate the “From:” header and add a “Reply-to: badguy@example.com” header to show an e-mail can be sent from a spoofed account. For example:
 
@@ -52,7 +52,7 @@ Remember to visit <a href=’http://www.harmfulsite.com’>http://www.example.co
 
 You can also create a website as an example of phishing. This is recommended for trainers with some previous knowledge of HTML editing, Apache server configuration, and name to IP-translation using the HOSTS file.
 
-(**Note:** You don’t have to link to this site in your email. The purpose is simply to show how a hacker might camouflage a fake site with a clever URL - such as “tvvitter.com” - while maintaining the design of the genuine site). 
+(**Note:** You don’t have to link to this site in your email. The purpose is simply to show how a hacker might camouflage a fake site with a clever URL - such as “tvvitter.com” - while maintaining the design of the genuine site).
 
   * Choose the site you would like to mirror.
     * Use WinHTTrack to create a local copy of the website on your computer.
@@ -67,7 +67,7 @@ You can also create a website as an example of phishing. This is recommended for
     * Copy your mirrored website (usually under ```“C:\My Websites\projectname”```) to your htdocs folder (usually ```“C:\xampp\htdocs”```) making sure the htdocs folder is now the root directory of the index.htm for your mirrored website.
     * Test if your mirrored website is working. Start Apache under the XAMPP control panel and point your web browser to http://127.0.0.1. You should be able to see a copy of the mirrored website.
     * Edit some elements of the website (directly from opening the index.htm file in your htdocs folder with your favorite HTML editor, or a text editor like Notepad) to alert users that they are visiting a fake website.
-    * (Optional) On the HTML source of your mirrored website, you can include a Javascript routine to alert the user that he or she was “infected” by a virus, like this:
+    * (Optional) On the HTML source of your mirrored website, you can include a Javascript routine to alert the user that they were “infected” by a virus, like this:
 
 ```
 <body onload=”javascript:alert(‘test’);”>Body of your mirrored website</body>
@@ -93,10 +93,10 @@ You can also create a website as an example of phishing. This is recommended for
 
 ##### Running the Activity
 
-This activity directly blends into the discussion that follows, so the division below is somewhat false. You can run this as group activity or with the entire group of particpants.  Or you can display the e-mail in your projector and having people comment on any inconsistencies. Sending particpants the email allows it to be more interactive. 
- 
+This activity directly blends into the discussion that follows, so the division below is somewhat false. You can run this as group activity or with the entire group of particpants.  Or you can display the e-mail in your projector and having people comment on any inconsistencies. Sending particpants the email allows it to be more interactive.
+
 **Option One:** Sharing the e-mail you've prepared with all participants. Ask them to open it using a mail client and see what happens when they click the links or open the attachment. (Note: Since the EICAR file is a known, albeit innocuous test file for malware, it may be directed into spam folders by some of the major email providers, such as Gmail. Because of this, we suggest sharing it with participants via USB.) (This approach also serves as a way to check whether or not they have functioning anti-virus programs that provide real-time protection.) You will also want to have the email available on the projector for the subsequent discussion.
- 
+
 **Option Two:** Display the email via projector and engage the participants as a group as you analyze the email and its contents.  *See also the Phishing Quiz example in this section.*
 
 ##### Discussion
@@ -108,7 +108,7 @@ Once the email is shared, you can lead a discussion as participants explore its 
   * Hover the cursor over links in the email (without clicking). Are participants able to spot anything suspicious (or phishy)? Explain URL shorteners, what they consist of and why they pose a security threat. Explain how most short URLs can be previewed.
   * Any observations about the sender? The addresses of those cc'd (if any)?
   * What happens when they open the attachment? (After participant input on this, open the EICAR file on your computer being projected and show how your own A/V in prevents the computer from being infected.)
-  * On the flipchart, write “'phishing” and “malware” and explain the meaning of these words. 
+  * On the flipchart, write “'phishing” and “malware” and explain the meaning of these words.
   * If you mirrored a website, now is a good time to show participants what a phishing website looks like. Note the subtle URL variances between the original website and the “fake” one.
   * Facilitate further discussion among participants: Do they have their own techniques for identifying phishing attacks and avoiding infections through email and websites?
   * What would they do if they spotted an email they suspected as a phishing email? [1. delete/mark as spam; 2. tell co-workers/colleagues/friends if relevant.]

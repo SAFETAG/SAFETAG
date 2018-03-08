@@ -8,9 +8,9 @@
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/mx-record-search/index.md"
+!INCLUDE "../../exercises/web_footprinting/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/dns-zone-transfer/index.md"
+!INCLUDE "../../exercises/dns_enumeration/index.md"
 </div>

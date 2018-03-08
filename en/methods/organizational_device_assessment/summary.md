@@ -1,2 +1,2 @@
 
-During this component an  auditor flags potential risks related to physical access, storage, backups, and security of the individual devices and suggests new policies and practices. It should be noted that SAFETAG is focused primarily on the digital impacts of physical assests. This guide does not provide a full physical security assessment.
+This component allows the auditor to discover and assess the security of the devices on the network and/or used in the organization. This component consists of interviews, surveys, network mapping, and inspection of devices.
