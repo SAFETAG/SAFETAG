@@ -1,9 +1,5 @@
 
 <div class="boxtext">
-!INCLUDE "../../exercises/guided_tour/index.md"
-</div>
-
-<div class="boxtext">
 !INCLUDE "../../exercises/device_checklist/index.md"
 </div>
 
@@ -25,7 +21,7 @@ Covered in full in User Device Assessment:
 
 Covered in full in Network Mapping
 
-!INCLUDE "exercises/network_scanning/approach.md"
+!INCLUDE "../../exercises/network_scanning/approach.md"
 
 </div>
 

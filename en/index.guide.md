@@ -201,7 +201,7 @@ Covered in full in Network Discovery
 
 
 <div class="boxtext">
-!INCLUDE "exercises/device_check/index.md"
+!INCLUDE "exercises/device_checklist/index.md"
 </div>
 
 <div class="boxtext">
