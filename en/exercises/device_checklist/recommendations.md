@@ -1,4 +1,3 @@
-##### If Unsupported Operating System - Upgrade to Recent Version
 
 **If Unsupported Operating System - Upgrade to Recent Version**
 
