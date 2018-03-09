@@ -199,12 +199,9 @@ Covered in full in Network Discovery
 <!-- Organizational Device Assessment -->
 !INCLUDE "methods/organizational_device_assessment.guide.md"
 
-<div class="boxtext">
-!INCLUDE "exercises/guided_tour/index.md"
-</div>
 
 <div class="boxtext">
-!INCLUDE "exercises/device_check/index.md"
+!INCLUDE "exercises/device_checklist/index.md"
 </div>
 
 <div class="boxtext">
@@ -212,7 +209,7 @@ Covered in full in Network Discovery
 </div>
 
 <div class="boxtext">
-### A Day in the Life
+#### A Day in the Life
 
 Covered in full in User Device Assessment:
 
@@ -231,7 +228,7 @@ Covered in full in Network Mapping
 
 
 <div class="boxtext">
-### Physical Security Guided Tour
+#### Physical Security Guided Tour
 
 Covered in full in Physical Assessment:
 

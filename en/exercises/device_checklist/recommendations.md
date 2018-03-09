@@ -3,6 +3,7 @@
 
 Popular operating systems like Windows XP are, sadly, no longer receiving security updates. Upgrade to the latest version keeping in mind the system requirements of the version selected
 
+While "pirated" operating systems and software are extremely common (especially for Windows) they often leave much to be desired in terms of security.  If the OS or Software is not receiving regular updates from the software creator, it is extremely vulnerable to thousands of potential attacks. Switch to licensed software or recommended Free Open Source Software
 
 **If Pirated Software - Move to Licensed Software Systems**
 
