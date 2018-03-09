@@ -8,6 +8,6 @@ Remember that in any process mapping sessions, participants may bring up excepti
     - List all issues and errors and review them later
 
 2. Have the mindset of a hacker.
-    - Depending on your skill level, or understanding of hacking, you should already be thinking of how you can exploit weak processes even during discussion. You must put yourself in a position of a hacker, who's goal is to identify all weakpoints in their process. If this is your way of thinking, you may already be formulating ideas on how to mitigate those attacks and give the best recommendation according to their process.
+    - Unlike other infosec/digisec auditors, a background in digital security is important, because depending on your skill level, or understanding of digital security, it helps you as an auditor to identify possible ways how you one can exploit a weak processes even after discussion. You must put yourself in a position of a hacker, who's goal is to identify all weakpoints in their process. If this is your way of thinking, you may already be formulating ideas on how to mitigate those attacks and give the best recommendation according to their process.
  
 This activity can sometimes lead to hopelessness, or challenge; it is important to remind the staff that any risk can be mitigated, and indeed it is the goal of an audit to identify the highest priority ones based on actual likelihood and provide guidance on mitigation.
