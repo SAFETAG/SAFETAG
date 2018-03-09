@@ -1,8 +1,10 @@
+In preparation with the remote facilitation activity, the following materials and documentation should be considered.
 
-  * Secure video chat services, (check: ricochet.im, meet.jit.si, chatb.org)
-  * Fallback communication channels
-  * Desktop sharing or secure online spreadsheet service to collectively work on information, as an alternative to whiteboard.
-  * Templates, per activity
+  * Communication Guidelines
+  * Approved communication applications and channels (including fallback communication channels)
+  * Questionnaire, survey forms, templates (categorized)
+  * Auditing tools: Remote Desktop applications, auditing software (Lynis, Belarc Advisor)
+  * Project planning tools (Online Gantt Chart, Task Management etc)
 
 
 
