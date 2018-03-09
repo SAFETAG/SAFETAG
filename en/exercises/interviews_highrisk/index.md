@@ -1,5 +1,4 @@
-
-#### Interviews
+#### Guiding Questions for High-Risk Organisations
 
 ##### Summary
 !INCLUDE "summary.md"
@@ -15,3 +14,6 @@
 
 ##### Walkthrough
 !INCLUDE "instructions.md"
+
+##### Recommendation
+!INCLUDE "recommendations.md"

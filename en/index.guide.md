@@ -109,6 +109,10 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/interviews_highrisk/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/capacity_assessment_cheatsheet/index.md"
 </div>
 
@@ -415,6 +419,14 @@ Covered in full in Data Assessment:
 Covered in full in Risk Assessment:
 
 !INCLUDE "exercises/pre_mortum_risk_assessment_activity/approach.md"
+</div>
+
+<div class="boxtext">
+#### Guiding Questions for High-Risk Organisations
+
+Covered in full in Capacity Assessment:
+
+!INCLUDE "exercises/interviews_highrisk/approach.md"
 </div>
 
 <div class="boxtext">
