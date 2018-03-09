@@ -60,8 +60,16 @@ To identify what a port might be used for, look at the complete list at [IANA.or
 
 If the service isn't supposed to be running in the identified device, you can run a scan of the open ports to identify what service they are connected to.
 
-- On Mac and Linux, launch `netstat -tulpn`
-- On Windows, we recommend you install the official [Microsoft Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) (right-click a process to see the Properties - the port will be visible in the TCP/IP tab).
-- On Windows, you can also use netstat from the command prompt as an administrator: the command would be `netstat -ab`
+**Windows**
 
-If that service isn't running in the machine, the port might have been opened by malware. In such case, the device where the suspicious port is open needs to be analyzed, see User Device Assessment
+- On Windows, use netstat from the command prompt as an administrator: the command would be `netstat -ab` - this will show you the name of the process running on the open port.
+- To identify the process on the open port more in-depth, run the official [Microsoft Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) (right-click a process to see the Properties - the port will be visible in the TCP/IP tab and you will find more information on the path of the process in the "Image" tab).
+- You can investigate the process on Virustotal directly from Process Explorer, by right-clicking on the process and then clicking "Check VirusTotal".
+
+**MacOS**
+
+- On Mac, launch `netstat lsof` - this will show you the path of the process running on the open port.
+
+**GNULinux**
+
+- On Linux, follow [these instructions](https://www.cyberciti.biz/faq/what-process-has-open-linux-port/).
