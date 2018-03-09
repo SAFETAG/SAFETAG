@@ -13,4 +13,14 @@
   - Modifying & changing a flow in a process is easy and more chance to change. It can also make the participants interactive.
   - Slides looks formal and official, and somehow difficult to change and modify
 
+Remember that in any process mapping session, participants may bring up exceptions and errors. Adding digital only makes things more complicated and messy. In order to manage your time effeciently and not end up discussing issues and solving them during session, you must:
+
+1. Be firm with your goal.
+    - Map out the current overall process first
+    - Manage and control your audience by limitating discussion over insignificant topics
+    - List all issues and errors and review them later
+
+2. Balance active facilitation with taking time to look for weaknesses
+    - A background in digital security helps you as an auditor to identify possible ways how you one can exploit a weak processes. While largely letting the organization drive the process creation, ask targeted questions to fully expose the full extent of a critical process and keep an eye on ways the processes could be vulnerable. If this is your way of thinking, you may already be formulating ideas on how to mitigate those attacks and give the best recommendation according to their process.
+    
 If it was not possible to conduct these activities in person, you can conduct them remotely through applying one of the remote facilitation approaches described in the [Remote Facilitation](#appendix-remote-facilitation) appendix.
