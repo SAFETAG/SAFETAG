@@ -40,15 +40,15 @@ Before we proceed with this guide, let us first take a look on Maltego's 3 main 
 
   - Transform
   
-    Tranforms id defined as "is a piece of code that takes one entity to another. It does this by querying a data source and returning the results as new entities on your graph. The data sources are places like DNS servers, search engines, social networks, WHOIS information, etc."
+    Tranforms is defined as "a piece of code that takes one entity to another. It does this by querying a data source and returning the results as new entities on your graph. The data sources are places like DNS servers, search engines, social networks, WHOIS information, etc."
 
   - Machines
   
-    No a machine is "a chain multiple transforms together to automate common/tedious tasks." 
+    In Maltego, a machine can "a chain multiple transforms together to automate common/tedious tasks." 
 
 **Running Maltego for the first time**
 
-To initialize Maltego, on you Kali Linux, click ```Applications``` > ```01 - Information Gathering``` > ```Maltego```. This will bring you to the "Home" screen of the Maltego application and will show you a list of available Transforms. Transforms are simply a set of activities that you can run against a specific target. We'll learn more of transforms in the following topics. 
+To initialize Maltego, on your Kali Linux, click ```Applications``` > ```01 - Information Gathering``` > ```Maltego```. This will bring you to the "Home" screen of the Maltego application and will show you a list of available Transforms. Transforms are simply a set of activities that you can run against a specific target. We'll learn more of transforms in the following topics. 
 
 **Creating a New Graph**
 
