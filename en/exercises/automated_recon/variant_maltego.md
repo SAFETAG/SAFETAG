@@ -28,7 +28,7 @@ For this exercise, we will be using the Maltego CE version.
 **Registration**
 
 Maltego is available in the latest release of Kali Linux. (See [here](https://www.kali.org/kali-linux-releases))
-NOTE: To run Maltego, you first need to have an account. To register, click [here](https://www.paterva.com/web7/community/community.php)
+NOTE: To run Maltego, you first need to have an account. To register, click [here](https://www.paterva.com/web7/community/community.php). Consider carefully the operational security implications of this requirement, in particular if you use one account for multiple different audits.
 
 **Getting Started:**
 
