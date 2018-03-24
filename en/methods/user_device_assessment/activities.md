@@ -3,6 +3,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/mobile_devices/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "../../exercises/day_in_the_life/index.md"
 </div>
 
