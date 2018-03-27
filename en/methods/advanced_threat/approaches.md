@@ -95,7 +95,7 @@ If the URL was sent to the user through a message, ask them if they clicked the 
 
 *This step should not take more than 2 hours, and the auditor should coordinate the response, rather than carry it out themselves.*
 
-For the implementation of mitigation measures, you can refer the auditees to a third party. This may be the organization's IT staff, a rapid response helpline, a malware researcher, etc. You can find a list of organizations you can refer the auditee to for malware analysis and incident response [here](https://rarenet.github.io/DFAK/en/Malware/).
+For the implementation of mitigation measures, you can refer the auditees to a third party. This may be the organization's IT staff, a rapid response helpline, a malware researcher, etc.
 
 Some of the mitigation steps can be implemented by the user, following the instructions included [here](https://rarenet.github.io/DFAK/en/Malware/).
 
