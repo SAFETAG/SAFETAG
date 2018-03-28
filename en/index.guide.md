@@ -251,7 +251,7 @@ Covered in full in Physical Assessment:
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/mobile_devices/index.md"
+!INCLUDE "exercises/mobile_device_survey/index.md"
 </div>
 
 <div class="boxtext">
