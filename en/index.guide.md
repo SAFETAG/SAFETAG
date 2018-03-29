@@ -404,7 +404,7 @@ Covered in full in Data Assessment:
 !INCLUDE "methods/advanced_threat.guide.md"
 
 <div class="boxtext">
-!INCLUDE "exercises/advanced_threat/index.md"
+!INCLUDE "exercises/suspicious_activity_analysis/index.md"
 </div>
 
 \newpage
