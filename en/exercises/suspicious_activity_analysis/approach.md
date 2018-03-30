@@ -18,18 +18,3 @@
     5.  Collect the suspicious files, hash them, then search for them on virustotal.com
 
     6.  Scan the open ports and monitor which applications is connected to external address
-
-
-Scanning suspicious files
-
-Scanning suspicious machines
-
-Take an image from the hard disk
-
-Submit the image for in depth investigation
-
-Back up data
-
-Reformat the machine
-
-Transfer the data back

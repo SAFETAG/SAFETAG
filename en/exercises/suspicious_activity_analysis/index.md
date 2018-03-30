@@ -1,4 +1,4 @@
-#### ADVANCED THREAT
+#### Suspicious Activity Analysis
 
 ##### Summary
 !INCLUDE "summary.md"
