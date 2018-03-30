@@ -14,27 +14,33 @@ ___
 ###### Phishing or Suspicious Emails
 
 !INCLUDE "variant_phishing.md"
+
 ___
 
 ###### Malicious Files
 
 !INCLUDE "variant_malicious_file.md"
+
 ___
 
 ###### Suspicious URLs
 
 !INCLUDE "variant_urls.md"
+
 ___
 
 ###### Suspicious Processes
 
 !INCLUDE "variant_suspicious_process.md"
+
 ___
 
 ###### Unusual Network Traffic
 
 Advanced threats may be identified during the network scanning and traffic analysis. See the Network Scanning and Traffic Analysis activities.
+
 ___
+
 
 ###### Threat Hunting
 

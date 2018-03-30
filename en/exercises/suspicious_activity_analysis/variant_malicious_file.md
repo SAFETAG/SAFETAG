@@ -38,7 +38,7 @@ In this step, you will be dealing with infected machine by one of the binaries y
 
 *See the Incident Response activity for additional details.*
 
-You will need at least one hour to prepare and carry the advanced investigation. this step is optional in case you have time and you think you still have doubts about the file and you need a more advanced result. In this step, you will analyze the suspicious file using Cuckoo Sandbox, an automated malware analysis system. In case you decided to go with this option, you will need an installed Linux on your audit machine you can use [this guide](https://docs.kali.org/installation/kali-linux-hard-disk-install) to install Kali Linux.
+You will need at least one hour to prepare and carry the advanced investigation. this step is optional in case you have time and you think you still have doubts about the file and you need a more advanced result. In this step, you will analyze the suspicious file using Cuckoo Sandbox, an automated malware analysis system. In case you decided to go with this option, you will need an installed Linux on your audit machine you can use [this Kali guide](https://docs.kali.org/installation/kali-linux-hard-disk-install) to install Kali Linux.
 
 -   Make sure you have that you have Cuckoo Sandbox installed on your audit Linux machine by running the following command `cuckoo`
 
@@ -46,8 +46,8 @@ You will need at least one hour to prepare and carry the advanced investigation.
 
 -   Create a new folder and copy-paste the suspicious (file)s inside
 
--   You can use ‘submit’ to start analyzing the binary, you can find more options [here](http://docs.cuckoosandbox.org/en/latest/usage/submit/) , the easiest way to do it is by running the following command: `cuckoo submit /folder/targeted/binary`
+-   You can use ‘submit’ to start analyzing the binary, you can find more options in the  [Cuckoo Sandbox documentation](http://docs.cuckoosandbox.org/en/latest/usage/submit/) , the easiest way to do it is by running the following command: `cuckoo submit /folder/targeted/binary`
 
 -   To view the analysis results, once an analysis is completed, you will find the result in `$CWD/storage/analyses/`
 
--   You can find more information on how to read the results [here](http://docs.cuckoosandbox.org/en/latest/usage/results/)
+-   You can find more information on how to read the results in the  [Cuckoo Sandbox documentation](http://docs.cuckoosandbox.org/en/latest/usage/results/)
