@@ -25,8 +25,11 @@
 !INCLUDE "../methods/advanced_threat/preparation.md"
 
 ### Resources
+
 <div class="greybox">
 !INCLUDE "../references/malware_analysis.md"
+
+!INCLUDE "../references/digital_forensics.md"
 </div>
 
 ### Activities
