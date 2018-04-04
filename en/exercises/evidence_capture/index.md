@@ -1,4 +1,4 @@
-#### Activity Title
+#### Digital Forensics and Evidence Capture
 
 ##### Summary
 !INCLUDE "summary.md"
