@@ -85,4 +85,26 @@ http://211.212.101.22:8080** ```172.16.1.1```|Relay nmap scans through HTTP/SOCK
 |**-oA ```results```**|nmap ```172.16.1.1``` **-oA results** |Generate output to 3 different major formal|
 
 
+**Working with GUI using Zenmap**
+
+While Nmap may seem to be intimidating to some specially with all those commands and options, you can use a GUI-based Nmap called ```Zenmap```. You can download Zenmap from this [link](https://nmap.org/zenmap/)
+
+Zenmap has different features that helps you manage scans to importing and exporting of results.
+
+It comes with a pre-set scan settings that you can choose. Depending on your target environment and your agreement with the client, you can select from:
+
+|Option|Command|
+|--|--|
+|**Intense Scan**|```nmap -T4 -A -v```|
+|**Intense Scan + UDP**|```nmap -sS -sU -T4 -A -v```|
+|**Intense Scan + all TCP ports**|```nmap -p 1-65535 -T4 -A -v```|
+|**Intense Scan - No ping**|```nmap -T4 -A -v -Pn```|
+|**Ping Scan**|```nmap -sn```|
+|**Quick Scan**|```nmap -T4 -F```|
+|**Quick Scan Plus**|```nmap -sV -T4 -O -F --version-light```|
+|**Quick Traceroute**|```nmap -sn --traceroute```|
+|**Regular Scan**|```nmap```|
+|**Slow Comprehensive Scan**|```nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script "default or (discovery and safe)"```|
+
+
 
