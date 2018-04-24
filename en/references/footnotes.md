@@ -182,7 +182,7 @@
 
 [^internet_storm_center]:[SANS: Internet Storm Center](https://isc.sans.edu//)
 
-[^mcafee_threat_trends]:[McAfee Threat Trends Papers](www.mcafee.com/us/security-awareness/threat-trends.aspx)
+[^mcafee_threat_trends]:[McAfee Threat Trends Papers](https://www.mcafee.com/us/security-awareness/threat-trends.aspx)
 
 [^us-cert_current_activity]:[US-CERT Current Activity web page is a regularly updated summary of the most frequent, high-impact types of security incidents currently being reported](https://www.us-cert.gov/ncas/current-activity/)
 

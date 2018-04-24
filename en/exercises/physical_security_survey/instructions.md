@@ -9,15 +9,81 @@ In creating new questions, be careful to not "lead" on security in a way that wo
 
 Below are questions not already covered in the capacity assessment interview process, and after that selected questions from that process which are of particular use here.
 
-**Office layout and access**
+**Office layout and proximity concerns**
 
-* Describe your office - is it on a floor of a building? An entire floor? (What level of the building?) How close are other buildings? Is it a shared, open office space or co-working space? (shared network? open access?)?
+Describe your office - is it on a floor of a building? An entire floor? (What level of the building?) How close are other buildings? Is it a shared, open office space or co-working space? (shared network? open access?)?
 
 Has the organization dealt with robberies/theft, break-ins, or office raids?  If so, what happened, when, and how did you respond (or do you have a policy or contingency plan? When was that last reviewed/updated?)
 
+What other wifi networks can you see? (See https://wigle.net/ )
+
+**Physical Access Controls**
+
+Do you consider your office space to be secure?
+
+- [ ] No
+- [ ] Yes
+
 Who has independent access to the office space, and routine after-hours access (i.e. who is able to unlock the space).  This may include security, cleaning or other building service personnel.
 
-* What other wifi networks can you see? (See https://wigle.net/ )
+Do you have policies and procedures for authorizing and limiting unauthorized physical access to digital systems and the facilities in which they are housed?
+
+  - [ ] No
+  - [ ] Yes
+
+Describe the measures to restrict physical access to the following
+
+  - Servers (Data server, Internet server, etc)
+  - User workstations/laptops
+  - Network devices (eg routers, switches, etc)
+  - Printers
+
+Do your policies and procedures specify the methods used to control physical access to your secure areas, such as door locks, access control systems, security officers, or video monitoring?
+
+  - [ ] No
+  - [ ] Yes
+
+**Device Controls**
+
+Do you have procedures for physically securing portable devices such as laptops and mobile phones?
+
+  - [ ] No
+  - [ ] Yes
+If yes, please highlight them
+
+Do you have a key personnel responsible for the security of digital resources?
+
+  - [ ] No
+  - [ ] Yes
+
+Do you have policies covering laptop security (e.g. cable lock or secure storage)?
+
+  - [ ] No
+  - [ ] Yes
+
+Are there procedures to automatically lock digital devices if left unattended for sometime?
+
+  - [ ] No
+  - [ ] Yes
+If yes, what are the procedures?
+
+**Emergency Planning**
+
+Do you have a business continuity plan in case of serious incidents or disaster to your digital resources and is it current?
+
+  - [ ] No
+  - [ ] Yes
+If yes, please highlight the steps taken.
+
+Does your plan identify areas and facilities that need to be sealed off immediately in case of an emergency?
+
+  - [ ] No
+  - [ ] Yes
+
+Are key personnel aware of the plan and how to respond to the emergency?
+
+  - [ ] No
+  - [ ] Yes
 
 **Programs and staff**
 
@@ -93,7 +159,6 @@ Who has independent access to the office space, and routine after-hours access (
     * Other
 
 **From the Technical Only section**:
-
 
 * Are Disaster Recovery Procedures in place for the application data?
 * Are Change Management procedures in place?

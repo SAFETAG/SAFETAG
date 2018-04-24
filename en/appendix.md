@@ -22,10 +22,6 @@
 
 !INCLUDE "exercises/travel_kit/index.md"
 
-## APPENDIX: Sample Capacity Interview Questions
-
-!INCLUDE "exercises/interviews/interview_questions.md"
-
 ## APPENDIX: Password Dictionaries
 
 !INCLUDE "exercises/password_security/dictionary_creation.md"

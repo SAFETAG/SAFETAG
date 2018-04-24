@@ -28,6 +28,10 @@
 
 #### Technical Threats
 
+  * *Database:* ["APT Groups and Operations"](https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit#gid=1864660085)
+
+  * *Database:* ["APTNotes"](https://github.com/aptnotes/data)
+
   * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) ( Global Cybersecurity Index (GCI))
 
   * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/?q=reports) (Privacy International)

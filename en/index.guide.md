@@ -39,6 +39,9 @@ subtitle: 'Guide'
 
 # SAFETAG Methods
 
+\newpage
+<!-- INTRO to Methods-->
+
 !INCLUDE "methods/intro.md"
 
 \newpage
@@ -106,6 +109,10 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/interviews_highrisk/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/capacity_assessment_cheatsheet/index.md"
 </div>
 
@@ -123,15 +130,11 @@ See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/web_footprinting/index.md"
+!INCLUDE "exercises/web_footprint/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/mx-record-search/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/dns-zone-transfer/index.md"
+!INCLUDE "exercises/dns_enumeration/index.md"
 </div>
 
 \newpage
@@ -196,6 +199,46 @@ Covered in full in Network Discovery
 !INCLUDE "exercises/monitor_open_wireless_traffic/approach.md"
 </div>
 
+\newpage
+<!-- Organizational Device Assessment -->
+!INCLUDE "methods/organizational_device_assessment.guide.md"
+
+
+<div class="boxtext">
+!INCLUDE "exercises/device_checklist/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/password_security/index.md"
+</div>
+
+<div class="boxtext">
+#### A Day in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "exercises/day_in_the_life/approach.md"
+
+</div>
+
+<div class="boxtext">
+#### Network Mapping
+
+Covered in full in Network Mapping
+
+!INCLUDE "exercises/network_scanning/approach.md"
+
+</div>
+
+
+<div class="boxtext">
+#### Physical Security Guided Tour
+
+Covered in full in Physical Assessment:
+
+!INCLUDE "exercises/guided_tour/approach.md"
+</div>
+
 
 
 \newpage
@@ -205,6 +248,10 @@ Covered in full in Network Discovery
 
 <div class="boxtext">
 !INCLUDE "exercises/device_checklist/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/mobile_device_survey/index.md"
 </div>
 
 <div class="boxtext">
@@ -237,14 +284,18 @@ Covered in full in Operational Security Assessment:
 !INCLUDE "methods/vulnerability_scanning.guide.md"
 
 <div class="boxtext">
-!INCLUDE "../../exercises/vulnerability_scanning/index.md"
+!INCLUDE "exercises/vulnerability_scanning/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/vulnerability_research/index.md"
 </div>
 
 <div class="boxtext">
 #### Website Footprinting
 See Website Footprinting in Recon for passive / lightweight investigation tools
 
-!INCLUDE "../../exercises/web_footprinting/approach.md"
+!INCLUDE "exercises/web_footprinting/approach.md"
 </div>
 
 <div class="boxtext">
@@ -252,11 +303,7 @@ See Website Footprinting in Recon for passive / lightweight investigation tools
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/vulnerability_research/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "../../exercises/check_config_files/index.md"
+!INCLUDE "exercises/check_config_files/index.md"
 </div>
 
 <div class="boxtext">
@@ -266,7 +313,7 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/router_attacks/index.md"
+!INCLUDE "exercises/router_attacks/index.md"
 </div>
 
 \newpage
@@ -355,6 +402,15 @@ Covered in full in Data Assessment:
 !INCLUDE "exercises/sensitive_data/approach.md"
 </div>
 
+
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/suspicious_activity_analysis/index.md"
+</div>
+
 \newpage
 
 <!-- Threat Assessment -->
@@ -367,6 +423,14 @@ Covered in full in Data Assessment:
 Covered in full in Risk Assessment:
 
 !INCLUDE "exercises/pre_mortum_risk_assessment_activity/approach.md"
+</div>
+
+<div class="boxtext">
+#### Guiding Questions for High-Risk Organisations
+
+Covered in full in Capacity Assessment:
+
+!INCLUDE "exercises/interviews_highrisk/approach.md"
 </div>
 
 <div class="boxtext">

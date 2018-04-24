@@ -111,9 +111,9 @@
 
   * *Reports:* ["Secunia Country Reports"](https://secunia.com/resources/countryreports/) (Secunia)
 
-  * *Reports:* ["McAfee Threat Trends Papers"](www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
+  * *Reports:* ["McAfee Threat Trends Papers"](https://www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
 
-  * *Report:* ["Monthly intelligence report"](http://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
+  * *Report:* ["Monthly intelligence report"](https://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
 
 **What level of technology is available in the region?**
 
