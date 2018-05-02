@@ -1,8 +1,12 @@
+
+**Skills Needed**
+* Use of evidence capture tools (below) to capture memory dumps and to byte-copy the data in order to create a forensic image to be used to execute tests without affecting the original evidence received.
+
 **Required software** - depending on the data acquisition type and the operating system, you will need the following tools:
 
 * Windows: DumpIt
 * Mac OS: OSXpmem
-* Linux: LiME - Linux Memory Extractor 
+* Linux: LiME - Linux Memory Extractor
 * DEFT distro
 
 **Additional materials**
