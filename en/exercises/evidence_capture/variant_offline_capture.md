@@ -1,6 +1,6 @@
 Dead or offline imaging (also known as disk acquisition) is the action of creating a forensic image of an entire disk, where the imaging process does not alter any data on the disk, and all data, metadata, and unallocated space are included. Details on how to do this (using CLI commands or a forensic distro) can be found in the section "How to Byte-Copy Data" below (instead of using an external medium as source device, the hard disk of the victim's device should be used).
 
-Additional tutorials can be find here:
+Additional tutorials can be found here:
 
 - [Windows](https://www.circl.lu/pub/tr-22/#disk-acquisition)
 - [Mac and Linux](http://www.forensicswiki.org/wiki/Dd and http://guymager.sourceforge.net/)
