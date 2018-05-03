@@ -4,7 +4,7 @@ Additional tutorials can be found here:
 
 - [Windows](https://www.circl.lu/pub/tr-22/#disk-acquisition)
 - Mac and Linux:
-    - [Forensic Wiki: Dd](http://www.forensicswiki.org/wiki/Dd]
+    - [Forensic Wiki: Dd](http://www.forensicswiki.org/wiki/Dd)
     - [Guymager](http://guymager.sourceforge.net/)
 - [Solid State Drives](https://articles.forensicfocus.com/2018/03/13/forensic-acquisition-of-solid-state-drives-with-open-source-tools/)
 
