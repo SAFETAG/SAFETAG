@@ -37,7 +37,7 @@ For the command examples, these name conventions will be used:
 
     There are two ways to capture the forensic image:
 
-    1. using a bootable Linux forensic distribution on a CD or USB stick (see "Variant: Offline / Dead Capture Using a forensic distribution"), or
+    1. using a bootable Linux forensic distribution on a CD or USB stick (see "Using a Forensic distribution" below), or
     2. by command line (terminal). If possible, use the forensic distribution, as this method does not mount devices by default.
 
 
