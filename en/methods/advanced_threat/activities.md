@@ -5,6 +5,24 @@
 
 </div>
 
+
+<div class="boxtext">
+
+!INCLUDE "../../exercises/evidence_capture/index.md"
+
+</div>
+
+
+
+<div class="boxtext">
+
+!INCLUDE "../../exercises/forensic_analysis/index.md"
+
+</div>
+
+
+
+
 <div class="boxtext">
 #### Incident Response
 Covered in full in Preparation:

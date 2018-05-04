@@ -11,9 +11,6 @@
   * Linux: LiME - Linux Memory Extractor
 * Dead imaging:
   * DEFT distro
-* Forensic analysis of the acquired data:
-  * Sleuth Kit
-  * Volatility  
 
 **Additional materials**
 
