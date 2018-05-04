@@ -85,12 +85,6 @@ ___
 ___
 
 
-##### Variant: Offline / Dead Capture Using a forensic distribution
-
-!INCLUDE "variant_offline_using_forensic_distro.md"
-
-___
-
 **Forensic Analysis of the Acquired Data**
 
 In order to facilitate the data analysis, we recommend to get the output data from the image acquisition in raw/dd format, which is accepted as input file in several forensic analysis tools.
@@ -100,5 +94,3 @@ To analyze the acquired data, you can use the following tools:
 - [Sleuth Kit](http://www.sleuthkit.org/index.php) is a kit of useful open source digital forensic tools to analyze the acquired data. Available tools in this kit include command line tools and a C library that allows you to analyze disk images and recover files from them, and a GUI-based program (Autopsy) that allows you to efficiently analyze hard drives and smartphones. Both tools can be found in the DEFT distro (The Sleuthkit 4.1.3), along with another useful tool kit (Digital Forensics Framework 1.3).
 
 - [Volatility](http://www.volatilityfoundation.org/releases) is an open source framework used for volatile memory forensics or RAM forensics for images taken in Linux, MacOS and Windows. More info and tutorials can be found [here](https://github.com/volatilityfoundation/volatility/wiki).
-
-
