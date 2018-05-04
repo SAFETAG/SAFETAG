@@ -411,6 +411,10 @@ Covered in full in Data Assessment:
 !INCLUDE "exercises/suspicious_activity_analysis/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/evidence_capture/index.md"
+</div>
+
 \newpage
 
 <!-- Threat Assessment -->
