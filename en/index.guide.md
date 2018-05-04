@@ -415,6 +415,11 @@ Covered in full in Data Assessment:
 !INCLUDE "exercises/evidence_capture/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/forensic_analysis/index.md"
+</div>
+
+
 \newpage
 
 <!-- Threat Assessment -->
