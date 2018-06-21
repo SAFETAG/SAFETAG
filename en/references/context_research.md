@@ -44,7 +44,7 @@
 
   * Human  Rights
     * [Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
-    * [Amnesty International regional news on human rights](https://www.amnesty.org/en/news/regional)
+    * [Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
     * [Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
   * Transparency
     * [Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
