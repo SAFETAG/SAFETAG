@@ -15,7 +15,7 @@ The SAFETAG framework can also be used in situations where the auditor cannot tr
 
 Many of the activities included in the framework (for example for the reconnaissance and follow-up stages) do not require the auditor to be on site, while others are more difficult to perform remotely, especially if access to physical devices is needed.
 
-This playlist has been created to highlight the possibilities of carrying out a full SAFETAG audit from remote, with customized activities for remote operational security assessment, office mapping, local 
+This playlist has been created to highlight the possibilities of carrying out a full SAFETAG audit from remote, with customized activities for remote operational security assessment, office mapping, local
 scanning, device assessment, and group facilitation.
 
 More information on the single modules that address remote assessment methods can be found in [this article](https://safetag.org/2017/08/31/Remote_Audits.html).
@@ -255,15 +255,12 @@ See the Network Access and Mapping activities for methods to use network mapping
 
 !INCLUDE "methods/data_assessment.guide.md"
 
-<div class="boxtext">
-#### Data Assessment Activities
-
 The following activities require group facilitation.
 
 Remote facilitation is covered in full in the Remote Facilitation guide:
 
+<div class="boxtext">
 !INCLUDE "exercises/remote_facilitation/index.md"
-
 </div>
 
 <div class="boxtext">
@@ -524,4 +521,3 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
-
