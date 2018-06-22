@@ -16,7 +16,7 @@
 
   * *Website:* ["This website contains information on regulations, policies, and local organizations working on issues related to digital rights in Latin America. The information is organized by country"](https://redlatam.org/) (RedLatAm)
 
-  * *Article:* ["Legal Issues in Penetration Testing"](http://www.securitycurrent.com/en/analysis/ac_analysis/legal-issues-in-penetration-testing) (Security Current)
+  * *Article:* ["Legal Issues in Penetration Testing"](https://securitycurrent.com/legal-issues-in-penetration-testing/) (Security Current)
 
   * *Wiki Page:* ["Anti-circumvention: Laws and Treaties"(https://en.wikipedia.org/wiki/Anti-circumvention)] (Wikipedia)
 

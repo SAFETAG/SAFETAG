@@ -103,7 +103,7 @@
 
 [^corruptions_perception_index]:[Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
 
-[^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/news/regional)
+[^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
 
 [^HRW_regional_work]:[Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
 
