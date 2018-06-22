@@ -16,7 +16,7 @@
   * *Survey:* ["This is a survey of existing and proposed laws and regulations on cryptography - systems used for protecting information against unauthorized access.
 "](http://www.cryptolaw.org/) (The Crypto Law Survey)
 
-  * *Article:* ["Legal Issues in Penetration Testing"](http://www.securitycurrent.com/en/analysis/ac_analysis/legal-issues-in-penetration-testing) (Security Current)
+  * *Article:* ["Legal Issues in Penetration Testing"](https://securitycurrent.com/legal-issues-in-penetration-testing/) (Security Current)
 
   * *Guide:* ["Encryption and International Travel"](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/) (Princeton University)
 
