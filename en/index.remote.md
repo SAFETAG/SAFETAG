@@ -15,7 +15,8 @@ The SAFETAG framework can also be used in situations where the auditor cannot tr
 
 Many of the activities included in the framework (for example for the reconnaissance and follow-up stages) do not require the auditor to be on site, while others are more difficult to perform remotely, especially if access to physical devices is needed.
 
-This playlist has been created to highlight the possibilities of carrying out a full SAFETAG audit from remote, with customized activities for remote operational security assessment, office mapping, local network scanning, device assessment, and group facilitation.
+This playlist has been created to highlight the possibilities of carrying out a full SAFETAG audit from remote, with customized activities for remote operational security assessment, office mapping, local 
+scanning, device assessment, and group facilitation.
 
 More information on the single modules that address remote assessment methods can be found in [this article](https://safetag.org/2017/08/31/Remote_Audits.html).
 
@@ -138,11 +139,14 @@ See the Appendix for creating a password dictionary.
 !INCLUDE "exercises/remote_network_device_assessment/index.md"
 </div>
 
-\newpage
-<!-- Organizational Device Assessment -->
+<div class="boxtext">
+#### Device Assessment
+
+For instructions on how to access the devices remotely, see Remote Network and User Device Assessment.
+
 !INCLUDE "methods/organizational_device_assessment.guide.md"
 
-
+</div>
 <div class="boxtext">
 !INCLUDE "exercises/device_checklist/index.md"
 </div>
@@ -251,12 +255,16 @@ See the Network Access and Mapping activities for methods to use network mapping
 
 !INCLUDE "methods/data_assessment.guide.md"
 
+<div class="boxtext">
 #### Data Assessment Activities
 
 The following activities require group facilitation.
 
 Remote facilitation is covered in full in the Remote Facilitation guide:
+
 !INCLUDE "exercises/remote_facilitation/index.md"
+
+</div>
 
 <div class="boxtext">
 !INCLUDE "exercises/sensitive_data/index.md"
@@ -306,6 +314,7 @@ Covered in full in User Device Assessment:
 
 !INCLUDE "methods/risk_modeling.guide.md"
 
+<div class="boxtext">
 #### Risk Modeling Activities
 
 The following activities require group facilitation.
@@ -314,6 +323,7 @@ Remote facilitation is covered in full in the Remote Facilitation guide:
 
 !INCLUDE "exercises/remote_facilitation/index.md"
 
+</div>
 
 <div class="boxtext">
 !INCLUDE "exercises/process_mapping_activity/index.md"
@@ -363,6 +373,7 @@ Covered in full in Data Assessment:
 
 !INCLUDE "methods/threat_assessment.guide.md"
 
+<div class="boxtext">
 #### Threat Assessment Activities
 
 The following activities require group facilitation.
@@ -370,7 +381,7 @@ The following activities require group facilitation.
 Remote facilitation is covered in full in the Remote Facilitation guide:
 
 !INCLUDE "exercises/remote_facilitation/index.md"
-
+</div>
 
 <div class="boxtext">
 #### Pre-Mortum Risk Modeling
@@ -513,3 +524,4 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
+
