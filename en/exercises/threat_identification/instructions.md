@@ -24,9 +24,9 @@
     * If any of the impacts identified in the pre-mortum or other process-mapping exercises are not covered ask participants where they would go.
     * Take photos of the threats once you have finished enumerating them.
     * Write risks on one set of post-its and impacts on another color of post-its to make it easy to keep track.
-	* Look at the["CVSS V2 Base Metrics"](https://ics-cert.us-cert.gov/sites/default/files/documents/Cyber_Security_Assessments_of_Industrial_Control_Systems.pdf#page=31) for an example of the severity of different threats.
+	* Look at the ["CVSS v3 Base Metrics"](https://www.first.org/cvss/calculator/3.0) for an example of the severity of different threats.
 
-**Impact Identification: (30 minutes per process)** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
+**Impact Identification (30 minutes per process):** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
 
   * Give participants a pen and three sticky note pads.
   * Explain the topic and the categories. [^GPR_8_impacts]
