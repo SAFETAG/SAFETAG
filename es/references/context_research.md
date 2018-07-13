@@ -1,7 +1,7 @@
 
 #### Other Context Analysis Methodologies
 
-  * *Article:* ["Section 2.3 Context analysis p. 30"](http://www.odihpn.org/index.php?option=com_k2&view=item&layout=item&id=3159) (Operational Security Management in Violent Environments: (Revised Edition))
+  * *Article:* ["Section 2.3 Context analysis p. 30"](https://odihpn.org/resources/operational-security-management-in-violent-environments-revised-edition/) (Operational Security Management in Violent Environments: (Revised Edition))
   
   * *Guide:* ["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-content/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf) (Jonathan T. Dworken)
 
