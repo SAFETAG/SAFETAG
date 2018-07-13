@@ -70,12 +70,13 @@ Within both Methods and Activities are smaller chunks of content which are used 
 
 **New activities must be linked to a method.** To link an activity to a method, please update both the activities.md file in the method folder, and also add it directly to index.guide.md under the method. The current build process uses the index.guide.md link, but for content tracking, it's best to update both. If adding an activity to multiple methods, select a primary method where it is the most relevant to that method's outputs, and for additional methods, link it in following this format:
 
+
 ```
-<div class="boxtext">
-#### Activity Title
-Covered in full in Primary Method:
-!INCLUDE "exercises/activity_title/approach.md"
-</div>
+ <div class="boxtext">
+ #### Activity Title
+ Covered in full in Primary Method:
+ !INCLUDE "exercises/activity_title/approach.md"
+ </div>
 ```
 
 #### Activity Content notes:
@@ -85,7 +86,7 @@ Covered in full in Primary Method:
 * All Activities must be linked to at least one Method.
 * Ideally, also create curricula content for each Activity, or at least notes for someone training on the topic.
 
-*Note: For activities where multiple different approaches could fulfill the exact same goals, activity variants are being explored, see https://github.com/SAFETAG/SAFETAG/issues/315 for detail.*
+**Note:** For activities where multiple different approaches could fulfill the exact same goals consider building **activity variants**, see below
 
 #### Activity Content and Stylistic notes:
 
@@ -98,8 +99,25 @@ Covered in full in Primary Method:
 | Materials Needed|-|+|-|Optional; does this require specific software, hardware, or preparation?|
 | Considerations|-|+|-|Optional; Notes on safely carrying out the activity and protecting the data collected, as well as other challenges (psycho-social, legal, ethical) to be aware of -- Are there operational security concerns, or important baseline skills to master before undertaking this activity?|
 | Walkthrough|-|+|-|A multi-use guide with concise instructions for a skilled technologist to replicate or prove the vulnerability.  This is used in the SAFETAG curricula, by auditors needing to recall that random flag for that one command without going online, and for the organization's technical staff to verify that this vulnerability has been addressed. This should provide concise guidance at a peer level for the general steps an auditor should take, but should point to, not re-create existing documentation. For technical aspects, ideal walkthroughs should enable IT staff/contractors to follow along and verify fixes. For research activities, research methods and preferred resources should be provided, and for facilitative exercises, a clear explanation of the process and any tips or challenges should be explained.|
-| Variants|-|+|-|Parallel approaches which can be used for the same affect but might work better in different contexts. See https://github.com/SAFETAG/SAFETAG/issues/315 |
+| Variants|-|+|-|Parallel approaches which can be used for the same affect but might work better in different contexts. See below for when and how to use these |
 | Recommendations|-|+|-|Optional; Sample text of common recommendations for how to address vulnerabilities identified through this activity; e.g. "Work with the webmaster to update PHP and/or migrate to a hosting system which manages this automatically...") -- for activities which have common findings, provide stock language to assist in report creation|
+
+#### Activity variants
+
+In some cases, one activity will have many parallel ways to achieve the goal this is often the case with technical activities where there is a collection of similar tools all focused on the same overall outcome.  In cases like these, it is best to create *Activity Variants* instead of new activities.  This lets different auditors select and use tools and approaches they are most comfortable with, while still operating within the larger SAFETAG framework.
+
+To use variants, you will create files in the activity's folder that begin with variant_, and link them in from the instructions.md file.  The variant_ files should not use any header formatting.
+
+In your instructions.md file, begin by introducing any common, cross-variant instructions or guidance not covered in other activity sections, and summarize each variant. At the end of the instructions text, add the following for each variant, updating the title and file name to the specific variant:
+
+```
+ ___
+
+ ###### VARIANT TITLE
+
+ !INCLUDE "variant_descriptive_file_name.md"
+```
+
 
 ### Other SAFETAG Content
 
