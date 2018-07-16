@@ -22,14 +22,6 @@
 
 !INCLUDE "exercises/travel_kit/index.md"
 
-## APPENDIX: Password Dictionaries
-
-!INCLUDE "exercises/password_security/dictionary_creation.md"
-
-## APPENDIX: Password Survey
-
-!INCLUDE "exercises/password_security/password_survey.md"
-
 ## APPENDIX: Device Assessment Checklist
 
 !INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
