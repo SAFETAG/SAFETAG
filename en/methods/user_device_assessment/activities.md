@@ -19,6 +19,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/password_strength/index.md"
+</div>
+
+<div class="boxtext">
 ### Physical Security Guided Tour
 
 Covered in full in Physical Assessment:

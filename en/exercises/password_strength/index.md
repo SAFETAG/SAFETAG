@@ -1,6 +1,6 @@
 
 
-#### Password Security Survey
+#### Password Strength
 
 ##### Summary
 !INCLUDE "summary.md"

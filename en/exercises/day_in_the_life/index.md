@@ -7,8 +7,8 @@
 ##### Overview
 !INCLUDE "approach.md"
 
-##### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
 ##### Considerations
 !INCLUDE "operational_security.md"
@@ -17,4 +17,4 @@
 !INCLUDE "instructions.md"
 
 ##### Recommendation
-!INCLUDE "../traffic_analysis/recommendations.md"
+!INCLUDE "recommendations.md"
