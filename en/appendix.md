@@ -28,7 +28,7 @@
 
 ## APPENDIX: Password Survey
 
-!INCLUDE "exercises/password_security/password_survey.md"
+!INCLUDE "exercises/password_security/instructions.md"
 
 ## APPENDIX: Device Assessment Checklist
 

@@ -50,7 +50,6 @@ For a more comprehensive assessment, use of the full SAFETAG guide and other too
 !INCLUDE "exercises/assessment_plan/instructions.md"
 
 ##### Resources
-- [Appendix: Interview Cheatsheet](#appendix-interview-cheatsheet)
 - [Appendix: Interview Questions](#appendix-interview-questions): Especially the "warm-up" questions and the baseline questions
 
 <!-- ##### Recommendation
