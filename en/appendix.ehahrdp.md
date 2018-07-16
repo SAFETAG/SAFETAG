@@ -18,11 +18,15 @@
 
 !INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
 
-## Interview Cheatsheet
+## APPENDIX: Sample Audit Timeline and Planning
+
+!INCLUDE "exercises/safetag_audit_timeline.md"
+
+## APPENDIX: Interview Cheatsheet
 
 !INCLUDE "exercises/capacity_assessment_cheatsheet/instructions.md"
 
-## Interview Questions
+## APPENDIX: Interview Questions
 
 !INCLUDE "exercises/interviews/instructions.md"
 

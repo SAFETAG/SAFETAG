@@ -29,6 +29,79 @@ For a more comprehensive assessment, use of the full SAFETAG guide and other too
 
 !INCLUDE "methods/preparation.overview.md"
 
+<div class="boxtext">
+<!-- !INCLUDE "exercises/assessment_plan/index.md" -->
+
+#### Assessment Plan
+
+##### Summary
+!INCLUDE "exercises/assessment_plan/summary.md"
+
+##### Overview
+!INCLUDE "exercises/assessment_plan/approach.md"
+
+<!-- ##### Materials Needed
+!INCLUDE "materials_needed.md"  -->
+
+##### Considerations
+!INCLUDE "exercises/assessment_plan/operational_security.md"
+
+##### Walkthrough
+!INCLUDE "exercises/assessment_plan/instructions.md"
+
+##### Resources
+- [Appendix: Interview Cheatsheet](#appendix-interview-cheatsheet)
+- [Appendix: Interview Questions](#appendix-interview-questions): Especially the "warm-up" questions and the baseline questions
+
+<!-- ##### Recommendation
+!INCLUDE "recommendations.md" -->
+</div>
+
+<div class="boxtext">
+<!-- !INCLUDE "exercises/confidentiality_agreement/index.md" -->
+#### Confidentiality Agreement
+See the appendix for a draft of a [Confidentiality Agreement](#appendix-draft-engagement-and-confidentiality-agreement)
+</div>
+
+<div class="boxtext">
+<!-- !INCLUDE "exercises/incident_response/index.md" -->
+#### Incident Response and Emergency Contact
+
+##### Summary
+!INCLUDE "exercises/incident_response/summary.md"
+
+##### Overview
+!INCLUDE "exercises/incident_response/approach.md"
+
+<!-- ##### Materials Needed
+!INCLUDE "exercises/incident_response/materials_needed.md"  -->
+
+##### Considerations
+!INCLUDE "exercises/incident_response/operational_security.md"
+
+<!-- ##### Walkthrough
+!INCLUDE "exercises/incident_response/instructions.md" -->
+</div>
+
+<div class="boxtext">
+#### Context Research
+See the [Context Research](#context-research) section.
+</div>
+
+<div class="boxtext">
+#### Travel Checklist
+See the appendix for a [sample travel kit / checklist](#appendix-travel-kit-and-checklist).
+</div>
+
+<div class="boxtext">
+#### Prepare Systems
+See the [Operational Security](#operational-security) section.
+</div>
+
+<div class="boxtext">
+#### Example Audit Timeline
+For further planning see the appendix for a [sample audit timeline and planning](#appendix-sample-audit-timeline-and-planning).
+</div>
 
 \newpage
 
