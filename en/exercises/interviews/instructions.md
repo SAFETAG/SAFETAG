@@ -37,7 +37,7 @@ In all cases, the HCD Toolkit recommends that you "warm up the participant with 
 
 For organizations with signficant online operations/programs, the following questions may be asked of the management point of contact and/or a program staff member.
 
-!INCLUDE "variant_interview_technical.md"
+!INCLUDE "variant_interview_programstaff.md"
 
 ###### Technical Staff Questions
 Ask these of the most technical staff member you are in touch with. If the organization has dedicated IT support, this section also includes specific questions for IT.
@@ -46,7 +46,7 @@ Ask these of the most technical staff member you are in touch with. If the organ
 
 ###### Baseline Threat Identification Questions
 
-!INCLUDE "variant_interview_technical.md"
+!INCLUDE "variant_interview_threatidentification.md"
 
 ###### Questions for Known High Risk Organizations
 
