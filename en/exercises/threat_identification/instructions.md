@@ -1,7 +1,7 @@
 
  * Requires a process or data mapping exercise's outputs
 
-**Threat Identification (30 minutes per process):** 
+**Threat Identification (30 minutes per process):**
 
  * Give participants a "cheat sheet" of threats.
   * Explain the types of threats.
@@ -19,7 +19,7 @@
   * Continue doing this for all the interactions in the critical process'.
   * Discuss and rearrange threats as groupings emerge.
   * Label threat clusters that appear.
-  
+
   * **NOTES:**
     * If any of the impacts identified in the pre-mortum or other process-mapping exercises are not covered ask participants where they would go.
     * Take photos of the threats once you have finished enumerating them.
@@ -42,14 +42,14 @@ physical injury, temporary or longer-term psychological damage, death, legal cos
   * Have participants add stickies for any secondary/cascading impacts
   * Discuss and rearrange impacts as groupings emerge.
   * Label impact clusters that appear.
-  
+
   * **NOTES:**
     * Tell participants to write multiple impacts per color.
 	* Look for opportunities to create sub-groups.
 	* Limit the time frame for discussion.
     * Take photos of the impact clusters once you have finished enumerating them.
 
-**Adversary Exploration (Likelyhood):** 
+**Adversary Exploration (Likelyhood):**
 
   * Explain the topic and the categories. [^GPR_8_Likelihood]
     * "History – a past incidence or pattern of attacks on similar organizations."
@@ -59,14 +59,14 @@ physical injury, temporary or longer-term psychological damage, death, legal cos
   * Pick an adversary and write their name on the board.
   * Write specific instances of adversary history, intent, and capacity announced by the participants.
   * Repeat the process until all adversaries are completed.
-  
+
   * **NOTES:**
 	* Limit the time frame for discussion.
     * Take photos of the adversary lists.
 
-**Impact Ranking:** The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible impacts from the threats they have just explored. 
+**Impact Ranking:** The goal of this exercise is to have the trainee lead the host organization in classifying the severity of the possible impacts from the threats they have just explored.
 
-  * Create a post it for each impact.
+  * Create a post-it for each impact.
   * Place two points on the wall. On one side are "Inconvenient" impacts that disrupt the organization in a very small way. On the other side are "critical" impacts that may pose life-safety risks to employees, partners, or the general public.
   * The low end of the scale may include  a fire alarm may cause the staff to lose a half an hour of work time, but does not impact any short or long-term activities.
   * The high end of the scale would include events such as a fire that destroys the organizations headquarters and endangers staffs lives or legal issues that cause termination of the program.
@@ -74,6 +74,6 @@ physical injury, temporary or longer-term psychological damage, death, legal cos
   * Give each item its own place on the scale. No two items can be the same severity.
 
   * **NOTES:**
-	* Listen carefully to every point of deliberation. 
+	* Listen carefully to every point of deliberation.
     * As risks are placed on the wall, the trainee can use other already ranked risks to help participants identify the right place. "Is a robbery more or less likely than a fire?"
     * Take photos of the impact scale once you have finished it.
