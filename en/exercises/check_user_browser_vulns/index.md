@@ -1,6 +1,4 @@
-
-
-#### Password Security Survey
+#### Check Browser and Plugin Vulnerabilities
 
 ##### Summary
 !INCLUDE "summary.md"

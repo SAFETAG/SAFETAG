@@ -1,20 +1,5 @@
-## summary
 
-Outdated Java browser plugins
-
-One or more of the organization’s laptops were seen to be running an outdated, known-vulnerable version of the Java plugin for Internet Explorer.
-
-
-## description
-
-This version contains a vulnerability that is easily exploitable using one of the recent Java exploit modules from the widely available Metasploit security auditing framework. These modules allow an attacker to gain complete control over the computer of a victim who visits a malicious Web site hosted anywhere on the Internet. If the attacker is inside the office LAN, they can easily trick the victim into visiting that malicious Web site without the victim even knowing it.
-
-## recommendation
-
-At least one of the organization’s computers is running an outdated Java browser plugin, and exploit code is widely-available for several critical vulnerabilities in versions older than “Java 7, update 16.” All of the organization’s Java installations should be updated to the latest version. This can be troublesome, as (unlike the Windows operating system itself) Java plugins sometimes require user input before they will install updates.
-
-
-## exploit
+###### Outdated Java browser plugins
 
 While the threat described below is more severe if carried out by a local attacker (as they can more readily direct the victim to a malicious Web site), it also works remotely. In fact, if a user can be tricked, by a remote attacker, into clicking on a malicious email or Web link, attacks like this represent a significant perimeter threat. By compromising the victim’s machine, they can give the attacker a local point-of-presence without requiring the attacker to crack WPA keys or gain local access in some other way.
 
