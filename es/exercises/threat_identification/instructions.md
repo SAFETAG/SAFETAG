@@ -1,7 +1,7 @@
 
  * Requires a process or data mapping exercise's outputs
 
-**Threat Identification: (30 minutes per process)** 
+**Threat Identification (30 minutes per process):** 
 
  * Give participants a "cheat sheet" of threats.
   * Explain the types of threats.
@@ -13,7 +13,7 @@
   	* **Auditability**: If you cannot verify that an asset/process is secure.
    * Identify a "interaction line" from the process map to start with.
   * Generate a list of threats that would cause that interaction to fail.
-  * Mark the back of the post it with the interaction name or number.
+  * Mark the back of the post-it with the interaction name or number.
   * Write the threat and their impact on post-its and arrange them in an orderly way.
   * If multiple risks cause the same consequence create a new post-it near the new risk.
   * Continue doing this for all the interactions in the critical process'.
