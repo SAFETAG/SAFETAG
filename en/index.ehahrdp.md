@@ -85,7 +85,7 @@ For a more comprehensive assessment, use of the full SAFETAG guide and other too
 
 <!-- Data Mapping (Information mapping)-->
 
-!INCLUDE "methods/data_assessment.overview.md"
+<!-- !INCLUDE "methods/data_assessment.overview.md"
 
 <div class="boxtext">
 !INCLUDE "exercises/sensitive_data/index.md"
@@ -97,52 +97,50 @@ For a more comprehensive assessment, use of the full SAFETAG guide and other too
 
 <div class="boxtext">
 !INCLUDE "exercises/private_data/index.md"
-</div>
+</div> -->
 
 \newpage
 
 <!-- Organisational Device Assessment -->
 
-!INCLUDE "methods/organizational_device_assessment.guide.md"
+<!-- !INCLUDE "methods/organizational_device_assessment.guide.md"
 
-!INCLUDE "methods/organizational_device_assessment/activities.md"
+!INCLUDE "methods/organizational_device_assessment/activities.md" -->
 
 # Follow up and Reporting
 
 <!-- Debrief -->
 
-!INCLUDE "methods/debrief.guide.md"
+<!-- !INCLUDE "methods/debrief.guide.md" -->
 
 \newpage
 
 <!-- Follow Up -->
 
-!INCLUDE "methods/follow_up.overview.md"
+<!-- !INCLUDE "methods/follow_up.overview.md" -->
 
 \newpage
 
 <!-- Recommendation Development -->
 
-!INCLUDE "methods/recommendation_development.overview.md"
+<!-- !INCLUDE "methods/recommendation_development.overview.md" -->
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "methods/roadmap_development.overview.md"
+<!-- !INCLUDE "methods/roadmap_development.overview.md" -->
 
 \newpage
 <!-- Reporting Creation -->
 
-!INCLUDE "methods/report_creation.guide.md"
+<!-- !INCLUDE "methods/report_creation.guide.md" -->
 
+\newpage
 
-# Footnotes
+<!-- APPENDICES AND FOOTNOTES -->
 
-<!-- Load Footnotes -->
-!INCLUDE "references/footnotes.md"
+!INCLUDE "appendix.ehahrdp.md"
 
-<!-- Update Footnotes for overview -->
-!INCLUDE "references/footnotes.overview.md"
 
 <!-- Load Default Images -->
 !INCLUDE "theme/image_defaults.md"
