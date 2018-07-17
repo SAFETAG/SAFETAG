@@ -1,3 +1,6 @@
+##### Internal Network scanning
+
+Local networks often have a variety of devices connected to them - servers, user devices such as cellphones, tablets, laptops and printers. Scanning the connected devices can reveal potential areas for further research such as odd ports being open, out of date devices/services, forgotten servers/services etc. These information are then reviewed in vulnerability research exercise, and then (if required) validated in the penetration testing exercise.
 
 **Host Identification**
 
@@ -15,81 +18,41 @@ For example: If you will scan a big chunk of IP addresses without categorizing d
 
 Running selected scan and selecting specific vulnerability scans (e.g., Windows exploits against Windows systems) can decrease the time spent in your scan as it will only run relevant vulnerabilities against it's targets.
 
-**In Scope Devices**
 
-Just always remember that some may not want you to scan everything on their network. To avoid this, always ask your auditee if there are specific devices that needs exclusion. These machine can be critical to their operation or they just don't want to get scanned. If your auditee have exclusions, explain the consequences possible if a machine does not undergo vulnerability assessment.
-
-
-**External Network Scans**
-
-External network scans are different for local network scans. This is because you are scanning devices that are publicly available, and can be done remotely outside the organization's premise. If your auditee agreed to have their public facing machines scanned, keep in mind that you need to consider asking your auditee for whitelisting options for shunning IDS/IPS, firewalls and other blocking mechanisms during your scan. Also make sure that you have verified the target in-scope. This is to avoid scanning out-of-scope targets that may lead you to other problems.
-
-Most of the machines you'll encounter over external network scans were:
-
-  - Web servers
-  - DNS servers
-  - Mail servers
-  - Gateway devices
-  - FTP Servers
-  - Cloud servers
-
-**Local Network Environment**
-
-Local networks often have a variety of devices connected to them - servers, user devices such as cellphones, tablets, laptops and printers. Scanning the connected devices can reveal potential areas for further research such as odd ports being open, out of date devices/services, forgotten servers/services etc. These information are then reviewed in vulnerability research exercise, and then (if required) validated in the penetration testing exercise.
-
-
-**Public Network Environment**
-
-Selected scanning of external network devices (websites, webmail, extranet services) may also reveal vulnerabilities or other areas of concern. However, it is important that you seek approval or any written document that proves you have the authority to scan your target organization along with its web resources and services.
-
-
-
-
-
-Using a network scanning tool (**nmap/zenmap** work well), discover the devices connected to the organization's network, and explore further information such as services, service banners, and operating systems.  More intense scans can be too time-consuming to run across the entire network, so target those to higher value systems.  As always, be aware of the scans and additional scripts you choose, and focus your exploration (in nmap) on scripts categorized as safe or "non-disruptive".
-
-  * Discover network-connected devices, including servers and workstations, but also smartphones, voip phones, and other devices.
-  * Open ports
-  * OS detection
-  * Capture banners (not all ports correctly map to their "expected" services, also provides service version information)
-  * additional Scripts and more exhaustive port scanning as needed (See different variants)
-
-**Internal Network**
-
- **Application and Services Analysis**
+**Application and Services Analysis**
 
 Using a network scanning tool (**nmap/zenmap** work well), discover the devices connected to the organization's network, and explore further information such as services, service banners, and operating systems. More intense scans can be too time-consuming to run across the entire network, so target those to higher value systems. As always, be aware of the scans and additional scripts you choose, and focus your exploration (in nmap) on scripts categorized as "safe".
 
- * Discover network-connected devices, including servers and workstations, but also smartphones, printers, security cameras, voip phones, and other devices.
- * OS detection
- * Open ports and banners (not all ports correctly map to their "expected" services, also provides service version information)
- * additional scripts and more exhaustive port scanning as needed
+* Discover network-connected devices, including servers and workstations, but also smartphones, printers, security cameras, voip phones, and other devices.
+* OS detection
+* Open ports and banners (not all ports correctly map to their "expected" services, also provides service version information)
+* additional scripts and more exhaustive port scanning as needed
 
 **Port/Service research**
 
-  * Inspect all systems providing internal services to the host organization.
-  * Record the version and patch levels of software on the device. [^identifying-software-versions]
-  * Identify weak ports or services available under the current device's firewall configuration. [^examining-firewalls-across-os]
-    * Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.
-    * Identify and investigate any open ports that should not be open (e.g.: almost no ports should be open in personal computers, see below)
+ * Inspect all systems providing internal services to the host organization.
+ * Record the version and patch levels of software on the device. [^identifying-software-versions]
+ * Identify weak ports or services available under the current device's firewall configuration. [^examining-firewalls-across-os]
+   * Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.
+   * Identify and investigate any open ports that should not be open (e.g.: almost no ports should be open in personal computers, see below)
 
 **SMB Network tools**
 
-  - Inspect all systems providing internal services to the host organization.
-  - Record the version and patch levels of software on the device. [^identifying-software-versions]
-  - Identify weak ports or services available under the current device's firewall configuration. [^examining-firewalls-across-os]
-  - Identify all odd/obscure/one-off services. [^identifying-oddone-off-services]
-  - Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.
+ - Inspect all systems providing internal services to the host organization.
+ - Record the version and patch levels of software on the device. [^identifying-software-versions]
+ - Identify weak ports or services available under the current device's firewall configuration. [^examining-firewalls-across-os]
+ - Identify all odd/obscure/one-off services. [^identifying-oddone-off-services]
+ - Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.
 
- **Windows Services**
+**Windows Services**
 
-  - SNMP
-  - SMB
-  - NetBIOS
-  - Shared Folders
-  - RDP
-  - Telnet
-  - Password Sniffing
+ - SNMP
+ - SMB
+ - NetBIOS
+ - Shared Folders
+ - RDP
+ - Telnet
+ - Password Sniffing
 
 Unsigned NTLM authentication messages vulnerable to Man-in-the-Middle attack on SMB file servers. It also allow an attacker on the LAN to add, remove or copy files to and from the organization’s file servers (and workstations with filesharing enabled).
 
@@ -143,3 +106,23 @@ If the service isn't supposed to be running in the identified device, you can ru
 **GNULinux**
 
 - On Linux, follow [these instructions](https://www.cyberciti.biz/faq/what-process-has-open-linux-port/).
+
+
+###### External Network Scanning
+
+Selected scanning of external network devices (websites, webmail, extranet services) may also reveal vulnerabilities or other areas of concern. However, it is important that you seek approval or any written document that proves you have the authority to scan your target organization along with its web resources and services.
+
+External network scans are different for local network scans. This is because you are scanning devices that are publicly available, and can be done remotely outside the organization's premise. If your auditee agreed to have their public facing machines scanned, keep in mind that you need to consider asking your auditee for whitelisting options for shunning IDS/IPS, firewalls and other blocking mechanisms during your scan. Also make sure that you have verified the target in-scope. This is to avoid scanning out-of-scope targets that may lead you to other problems.
+
+Most of the machines you'll encounter over external network scans were:
+
+  - Web servers
+  - DNS servers
+  - Mail servers
+  - Gateway devices
+  - FTP Servers
+  - Cloud servers
+
+###### Using nmap/zenmap
+
+!INCLUDE "variant_nmap.md"
