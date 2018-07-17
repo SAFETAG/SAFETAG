@@ -81,7 +81,7 @@
 
 **What cyber-security practices is the government using?**
 
-  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports) (Privacy International)
+  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy) (Privacy International)
 
   * *List:* ["National Cyber Security Policy and Legal Documents"](http://www.ccdcoe.org/strategies-policies.html) (NATO Cooperative Cyber Defence Centre of Excellence)
 
