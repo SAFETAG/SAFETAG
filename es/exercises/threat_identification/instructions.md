@@ -1,7 +1,7 @@
 
  * Requires a process or data mapping exercise's outputs
 
-**Threat Identification: (30 minutes per process)** 
+**Threat Identification (30 minutes per process):** 
 
  * Give participants a "cheat sheet" of threats.
   * Explain the types of threats.
@@ -13,7 +13,7 @@
   	* **Auditability**: If you cannot verify that an asset/process is secure.
    * Identify a "interaction line" from the process map to start with.
   * Generate a list of threats that would cause that interaction to fail.
-  * Mark the back of the post it with the interaction name or number.
+  * Mark the back of the post-it with the interaction name or number.
   * Write the threat and their impact on post-its and arrange them in an orderly way.
   * If multiple risks cause the same consequence create a new post-it near the new risk.
   * Continue doing this for all the interactions in the critical process'.
@@ -24,9 +24,9 @@
     * If any of the impacts identified in the pre-mortum or other process-mapping exercises are not covered ask participants where they would go.
     * Take photos of the threats once you have finished enumerating them.
     * Write risks on one set of post-its and impacts on another color of post-its to make it easy to keep track.
-	* Look at the["CVSS V2 Base Metrics"](https://ics-cert.us-cert.gov/sites/default/files/documents/Cyber_Security_Assessments_of_Industrial_Control_Systems.pdf#page=31) for an example of the severity of different threats.
+	* Look at the ["CVSS v3 Base Metrics"](https://www.first.org/cvss/calculator/3.0) for an example of the severity of different threats.
 
-**Impact Identification: (30 minutes per process)** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
+**Impact Identification (30 minutes per process):** This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences (impacts) when the threats identified earlier occur.
 
   * Give participants a pen and three sticky note pads.
   * Explain the topic and the categories. [^GPR_8_impacts]

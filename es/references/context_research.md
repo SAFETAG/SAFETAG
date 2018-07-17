@@ -1,8 +1,8 @@
 
 #### Other Context Analysis Methodologies
 
-  * *Article:* ["Section 2.3 Context analysis p. 30"](http://www.odihpn.org/index.php?option=com_k2&view=item&layout=item&id=3159) (Operational Security Management in Violent Environments: (Revised Edition))
-  
+  * *Article:* ["Section 2.3 Context analysis p. 30"](https://odihpn.org/resources/operational-security-management-in-violent-environments-revised-edition/) (Operational Security Management in Violent Environments: (Revised Edition))
+
   * *Guide:* ["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-content/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf) (Jonathan T. Dworken)
 
 #### Threats to the Auditor
@@ -26,7 +26,7 @@
 
 * *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/content/passports/english/alertswarnings.html) (US Department of State)
 
-  * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission) 
+  * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission)
 
   * *List:* ["A list of aircraft operators that have that have suffered an accident, serious incident or hijacking."](http://aviation-safety.net/database/operator/) (Aviation Safety Network)
 
@@ -48,7 +48,7 @@
     * [Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
   * Public  Service  Delivery
   * Health
-  * Free  Media  and  Information 
+  * Free  Media  and  Information
     * [Threatened Voices: Tracking suppression of online free speech.](http://threatened.globalvoicesonline.org/)
     * [IREX’s Media Sustainability Index (MSI) provides in-depth analyses of the conditions for independent media in 80 countries across the world.](http://www.irex.org/project/media-sustainability-index-msi)
     * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](http://www.freedomhouse.org/report-types/freedom-net)
@@ -79,7 +79,7 @@
 
 **What cyber-security practices is the government using?**
 
-  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports) (Privacy International)
+  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy) (Privacy International)
 
   * *List:* ["National Cyber Security Policy and Legal Documents"](http://www.ccdcoe.org/strategies-policies.html) (NATO Cooperative Cyber Defence Centre of Excellence)
 
@@ -118,4 +118,3 @@
   * *Database:* ["World Telecommunication/ICT Indicators database 2014"](http://www.itu.int/en/ITU-D/Statistics/Pages/publications/wtid.aspx) (WT-ICT)
 
   * *Comparisons:* ["Country Comparisons"](https://www.cia.gov/library/publications/the-world-factbook/) (CIA fact-book)
-
