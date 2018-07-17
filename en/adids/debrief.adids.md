@@ -1,3 +1,11 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
 
 ##  Debrief
 
@@ -48,4 +56,3 @@
 <!--Synthesis {.synthesis} -->
 
 !INCLUDE "../adids/debrief/synthesis.md"
-
