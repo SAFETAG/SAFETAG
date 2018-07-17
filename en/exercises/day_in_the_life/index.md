@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 25
+Remote_options:
+- Partial
+Skills_required:
+- N/A
+Time_required_minutes:
+- 120
+---
 
 #### A Day in the Life
 

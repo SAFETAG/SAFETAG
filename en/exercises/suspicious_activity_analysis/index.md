@@ -1,3 +1,18 @@
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 100
+Remote_options:
+- None
+Skills_required:
+- Malware Analysis
+Time_required_minutes:
+- 120
+---
+
 #### Suspicious Activity Analysis
 
 ##### Summary

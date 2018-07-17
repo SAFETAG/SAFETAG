@@ -1,3 +1,17 @@
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 1000
+Remote_options:
+- with-support
+Skills_required:
+- sslstrip, traffic monitoring
+Time_required_minutes:
+- 30
+---
 
 #### Insecure Email Connections
 

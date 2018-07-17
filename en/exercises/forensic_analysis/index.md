@@ -1,3 +1,18 @@
+---
+Approach:
+- Technical
+Authors:
+- Anonymous
+Org_size_under:
+- 100
+Remote_options:
+- None
+Skills_required:
+- Digital Forensics
+Time_required_minutes:
+- 480
+---
+
 #### Forensic Analysis
 
 ##### Summary

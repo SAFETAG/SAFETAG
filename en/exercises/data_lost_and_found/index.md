@@ -1,3 +1,18 @@
+---
+Approach:
+- unknown
+Authors:
+- SAFETAG
+Org_size_under:
+- unknown
+Remote_options:
+- unknown
+Skills_required:
+- unknown
+Time_required_minutes:
+- unknown
+---
+
 #### Risks of Data Lost and Found
 
 ##### Summary
