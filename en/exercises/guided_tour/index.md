@@ -16,5 +16,11 @@
 ##### Walkthrough
 !INCLUDE "instructions.md"
 
+##### Materials that may be useful
+!INCLUDE "physical_security_survey.md"
+
 ##### Recommendation
 !INCLUDE "recommendations.md"
+
+
+

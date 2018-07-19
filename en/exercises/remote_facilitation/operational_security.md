@@ -1,3 +1,1 @@
-  *  Ensure to conduct the exercise over secure communication channels
-  *  Ensure secure management of notes and collected information
-
+Remote facilitation, if not done securely, can expose sensitive information from both the auditor and the organization. There are different ways to communicate and exchange information remotely. This can be by voice calls, emails, video conference, survey forms cloud storages and chat messages. Choose your tools based on ease of adoption for the organization, proven security, and open source, ideally audited code when possible.  

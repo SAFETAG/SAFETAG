@@ -11,7 +11,7 @@
 
   * *Report:* ["Annual threat report"](https://www.mandiant.com/resources/mandiant-reports/) (Mandiant)
 
-  * *Reports:* ["McAfee Threat Trends Papers"](www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
+  * *Reports:* ["McAfee Threat Trends Papers"](https://www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
 
   * *News Feed:* ["US-CERT Current Activity"](https://www.us-cert.gov/ncas/current-activity/) (US-CERT)
 
