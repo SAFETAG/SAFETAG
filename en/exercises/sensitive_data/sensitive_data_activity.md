@@ -2,7 +2,7 @@
 
 **_Duration: 45 minutes_	**
 
-*This exercise is adapted from the LevelUp Activity, [Backup Matrix](https://www.level-up.cc/leading-trainings/training-curriculum/activity/backup-matrix), part of the curricula for [Data Retrention and Backup](https://www.level-up.cc/leading-trainings/training-curriculum/data-retention-and-backup) by Daniel O'Clunaigh, Ali Ravi, Samir Nassar, and Carol.*
+*This exercise is adapted from the LevelUp Activity, [Backup Matrix](https://level-up.cc/curriculum/protecting-data/data-backup-basics/activity-discussion/data-backup-matrix-creating-information-map/), part of the curricula for [Data Retrention and Backup](https://level-up.cc/curriculum/protecting-data/data-backup-basics/) by Daniel O'Clunaigh, Ali Ravi, Samir Nassar, and Carol.*
 
 ##### Materials to Prepare:
 
@@ -44,7 +44,7 @@ Elicit from participants what type of information or data they have in each of t
 * Images
 * Private messages on Facebook, etc.
 
-To encourage participant interaction, write one example on a sticky and place it in the appropriate box in the matrix. Then, ask whether there is another copy of this data somewhere. If there is, you can use another sticky and put it wherever they keep the duplicate. 
+To encourage participant interaction, write one example on a sticky and place it in the appropriate box in the matrix. Then, ask whether there is another copy of this data somewhere. If there is, you can use another sticky and put it wherever they keep the duplicate.
 
 *TIP:* Place Computers, Phones, and Email next to each other, so you won't have to create duplicates for everything "stored" in email (and therefore on laptops and phones)
 

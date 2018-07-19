@@ -10,7 +10,7 @@ Below are the baseline operational security guidelines for a SAFETAG audit. Acti
 
 ### Purpose
 
-An audit uncovers an array of sensitive information about an organization. For some at-risk populations the mere act of getting a digital security audit can increase their likelihood of being actively attacked by an adversary. The foundation of the SAFETAG process is the goal of increasing the safety of the host organization, its staff, and the auditor. It is vital that an auditor weigh the possible risk and audit may incur on the organization or the auditor against the possible outcomes of an audit.
+An audit uncovers an array of sensitive information about an organization. For some at-risk populations the mere act of getting a digital security audit can increase their likelihood of being actively attacked by an adversary. The foundation of the SAFETAG process is the goal of increasing the safety of the host organization, its staff, and the auditor. It is vital that an auditor weigh the possible risk an audit may incur on the organization or the auditor against the possible outcomes of an audit.
 
 ### Approaches
 

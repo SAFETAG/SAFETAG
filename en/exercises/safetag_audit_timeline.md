@@ -63,7 +63,7 @@ Whenever you set off a scan (airodumping, nmap, openvas...) are good times to st
 
 #### Debrief and Setting Expectations
 
-Largely covered in the [debrief section], making time at the end of the (often hectic) audit week is very important to making sure the next few steps are absolutely clear in terms of timelines and communication protocols.
+Largely covered in the [debrief] section, making time at the end of the (often hectic) audit week is very important to making sure the next few steps are absolutely clear in terms of timelines and communication protocols.
 
 
 #### Clean up

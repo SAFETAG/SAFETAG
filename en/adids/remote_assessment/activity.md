@@ -1,6 +1,6 @@
 ### Activity
 
-If the energy level is a bit low, consider using the "Two Truths and a Lie" energizer from [Level Up](https://www.level-up.cc/leading-trainings/icebreakers-energizers#Icebreakers) to start this lesson:
+If the energy level is a bit low, consider using the "Two Truths and a Lie" energizer from [Level Up](https://level-up.cc/you-the-trainer/ice-breakers-and-energizers/) to start this lesson:
 
 Instructions:
 

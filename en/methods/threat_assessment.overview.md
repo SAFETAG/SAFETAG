@@ -20,3 +20,7 @@
 
 !INCLUDE "../methods/threat_assessment/approaches.md"
 
+### Outputs
+
+!INCLUDE "../methods/threat_assessment/output.md"
+

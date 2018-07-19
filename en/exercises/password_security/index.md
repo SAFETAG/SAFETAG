@@ -19,6 +19,3 @@
 
 ##### Recommendation
 !INCLUDE "recommendations.md"
-
-###### Materials that may be useful
-!INCLUDE "password_survey.md"

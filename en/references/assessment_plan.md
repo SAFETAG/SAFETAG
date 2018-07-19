@@ -9,6 +9,6 @@
 
   * *Article:* ["Vulnerability Assessment and Penetration Testing"](https://www.gosafeonline.sg/vulnerability-assessment-and-penetration-testing-0) (gosafe)
 
-  * *Article:* ["Legal Issues in Penetration Testing"](http://www.securitycurrent.com/en/analysis/ac_analysis/legal-issues-in-penetration-testing)
+  * *Article:* ["Legal Issues in Penetration Testing"](https://securitycurrent.com/legal-issues-in-penetration-testing/)
 
 

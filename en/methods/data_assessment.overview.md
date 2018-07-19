@@ -20,3 +20,7 @@
 
 !INCLUDE "../methods/data_assessment/approaches.md"
 
+### Outputs
+
+!INCLUDE "../methods/data_assessment/output.md"
+

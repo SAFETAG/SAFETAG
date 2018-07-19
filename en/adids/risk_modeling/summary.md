@@ -8,7 +8,7 @@ Obviously the information generated through this is of a highly sensitive nature
 
 SAFETAG uses a specific series of exercises, but these are not prescriptive:
 
- 1 Critical process mapping
- 2 Identify threats to those processes and the impact if those threats occur
- 3 Impact Ranking
- 4 Identify likelihood and potential adversaries
+ 1) Critical process mapping
+ 2) Identify threats to those processes and the impact if those threats occur
+ 3) Impact and Likelihood Ranking
+ 
