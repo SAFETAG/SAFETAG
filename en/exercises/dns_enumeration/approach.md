@@ -1,3 +1,3 @@
-DNS Enumeration can be accomplished with different number of tools along with different approaches. This guide will discuss some of the approaches and the tools required to perform each of the activities.
 
-There are two way you can perform DNS enumeration: passive and active. These are detailed below.
+* Using a variety of passive and active techniques, uncover as many domains/subdomains linked to the target organization as possible.
+* Use these to advance other aspects of your work to discover additional credentials and potential vulnerable or outdated services.

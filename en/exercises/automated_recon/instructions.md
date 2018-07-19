@@ -14,3 +14,7 @@ ___
 !INCLUDE "variant_foca_analyzer.md"
 
 ___
+
+###### Maltego
+
+!INCLUDE "variant_maltego.md"

@@ -4,7 +4,7 @@ Clone the [SAFETAG repository](https://github.com/OpenInternet/SAFETAG)
 ```git clone https://github.com/OpenInternet/SAFETAG.git ```
 
 
-Follow the [pre-make process](https://github.com/OpenInternet/SAFETAG/blob/master/docs/INSTALL.md)
+Follow the [pre-make process](https://github.com/SAFETAG/SAFETAG/blob/master/INSTALL.md)
 
 Try running the make process to build the guide:
  ```make all```
