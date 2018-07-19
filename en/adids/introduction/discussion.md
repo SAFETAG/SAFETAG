@@ -8,5 +8,4 @@ Setting Expectations for Participants and Trainers
   * Encourage asking questions
   * Social media, photos, communication during training
 
-See also [Be a Better Trainer](https://www.level-up.cc/resources-for-trainers/best-practices) at LevelUp
-
+See also [Be a Better Trainer](https://level-up.cc/you-the-trainer/be-a-better-trainer/) at LevelUp

@@ -76,5 +76,3 @@ Under ```Metadata``` you will have two sub-menus, ```Documents``` and ```Metadat
   - Servers
 
 These information can then be added to your records and be used for other attack surface such as social engineering attacks.
-
-Along with your other results, from different tools and recon activity, you may include all of these information to your documentation tool. Kali Linux comes with a documentation tool called Keepnote.

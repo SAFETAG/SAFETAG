@@ -1,19 +1,19 @@
 /* fonts */
 
 @font-face {
-    font-family: 'Noto Sans Regular';
+    font-family: 'Noto Sans Regular', sans-serif;
     src: url('fonts/NotoSans-Regular.ttf')  format("truetype")
 }
 @font-face {
-    font-family: 'Noto Sans Bold';
+    font-family: 'Noto Sans Bold', sans-serif;
     src: local('fonts/NotoSans-Bold.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Noto Sans Italic';
+    font-family: 'Noto Sans Italic', sans-serif;
     src: local('fonts/NotoSans-Italic.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Noto Sans Bold Italic';
+    font-family: 'Noto Sans Bold Italic', sans-serif;
     src: local('fonts/NotoSans-BoldItalic.ttf')  format("truetype");
 }
 
@@ -47,15 +47,24 @@ h1 {
     line-height: auto;
 }
 h2 {
-    font-size: 18pt;
+    font-size: 20pt;
     line-height: auto;
 }
 h3 {
-    font-size: 10pt;
+    font-size: 16pt;
 }
 h4 {
+    font-size: 14pt;
+}
+
+h5 {
+    font-size: 12pt;
+}
+
+h6 {
     font-size: 10pt;
 }
+
 h1.bigtitle {
     font-size: 40pt;
 }
@@ -148,7 +157,14 @@ table tr.even td {
         text-transform: title;
         font-size: 12pt;
         color: #404965;
-        padding: 2px
+        padding: 2px;
+}
+
+.boxtext h6 {
+        text-transform: title;
+        font-size: 10pt;
+        color: #404965;
+	border-bottom: 1px dotted #404965;
 }
 
 .boxtext p {
@@ -191,6 +207,8 @@ h4 {
 .h5 {
     color: #000000;
 }
+
+.h6 {}
 
 .orange_sub {
     color: #c85c19;
