@@ -22,7 +22,7 @@
 !INCLUDE "../methods/reconnaissance/operational_security.md"
 
 ### Preparation
-!INCLUDE "../methods/reconnaissance/preparation.md"
+!INCLUDE "../methods/reconnaisance/preparation.md"
 
 
 

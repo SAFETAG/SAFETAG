@@ -1,4 +1,3 @@
-
 This Section:
 
   * does not require privileged access to the organization's offices, infrastructure or staff;

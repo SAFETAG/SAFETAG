@@ -39,9 +39,6 @@ subtitle: 'Guide'
 
 # SAFETAG Methods
 
-\newpage
-<!-- INTRO to Methods-->
-
 !INCLUDE "methods/intro.md"
 
 \newpage
@@ -66,6 +63,12 @@ subtitle: 'Guide'
 #### Travel Checklist
 
 See the Appendix for a sample travel kit / checklist
+</div>
+
+<div class="boxtext">
+#### Password Dictionary Creation
+
+See the Appendix for creating a password dictionary.
 </div>
 
 <div class="boxtext">
@@ -100,10 +103,6 @@ See the Appendix for a sample travel kit / checklist
 
 <div class="boxtext">
 !INCLUDE "exercises/interviews/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/interviews_highrisk/index.md"
 </div>
 
 <div class="boxtext">
@@ -193,46 +192,6 @@ Covered in full in Network Discovery
 !INCLUDE "exercises/monitor_open_wireless_traffic/approach.md"
 </div>
 
-\newpage
-<!-- Organizational Device Assessment -->
-!INCLUDE "methods/organizational_device_assessment.guide.md"
-
-
-<div class="boxtext">
-!INCLUDE "exercises/device_checklist/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/password_security/index.md"
-</div>
-
-<div class="boxtext">
-#### A Day in the Life
-
-Covered in full in User Device Assessment:
-
-!INCLUDE "exercises/day_in_the_life/approach.md"
-
-</div>
-
-<div class="boxtext">
-#### Network Mapping
-
-Covered in full in Network Mapping
-
-!INCLUDE "exercises/network_scanning/approach.md"
-
-</div>
-
-
-<div class="boxtext">
-#### Physical Security Guided Tour
-
-Covered in full in Physical Assessment:
-
-!INCLUDE "exercises/guided_tour/approach.md"
-</div>
-
 
 
 \newpage
@@ -245,10 +204,6 @@ Covered in full in Physical Assessment:
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/mobile_device_survey/index.md"
-</div>
-
-<div class="boxtext">
 !INCLUDE "exercises/day_in_the_life/index.md"
 </div>
 
@@ -258,10 +213,6 @@ Covered in full in Physical Assessment:
 
 <div class="boxtext">
 !INCLUDE "exercises/password_security/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/password_strength/index.md"
 </div>
 
 <div class="boxtext">
@@ -400,24 +351,6 @@ Covered in full in Data Assessment:
 !INCLUDE "exercises/sensitive_data/approach.md"
 </div>
 
-
-<!-- Advanced Threat Response -->
-
-!INCLUDE "methods/advanced_threat.guide.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/suspicious_activity_analysis/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/evidence_capture/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/forensic_analysis/index.md"
-</div>
-
-
 \newpage
 
 <!-- Threat Assessment -->
@@ -430,14 +363,6 @@ Covered in full in Data Assessment:
 Covered in full in Risk Assessment:
 
 !INCLUDE "exercises/pre_mortum_risk_assessment_activity/approach.md"
-</div>
-
-<div class="boxtext">
-#### Guiding Questions for High-Risk Organisations
-
-Covered in full in Capacity Assessment:
-
-!INCLUDE "exercises/interviews_highrisk/approach.md"
 </div>
 
 <div class="boxtext">
@@ -479,13 +404,12 @@ Covered in full in Capacity Assessment:
 <div class="boxtext">
 Due to the wide variety of needs found during SAFETAG audits, the framework relies on the wealth of existing training curricula and digital security guides, listed below.
 
-Of specific use are the following training guides from Level-Up. Review the [Level-Up Curricula Guide](https://level-up.cc/before-an-event/using-levelup-trainers-curriculum/) prior to using these activities:
+Of specific use are the following training guides from Level-Up. Review the [Level-Up Curricula Guide](https://www.level-up.cc/leading-trainings/curriculum-guide) prior to using these activities:
 
-* [Malware Fundamentals and Social Engineering](https://level-up.cc/curriculum/malware-protection/using-antivirus-tools/input/malware-101/)
-* [Secure Passwords](https://level-up.cc/curriculum/protecting-data/creating-and-managing-strong-passwords/)
-* [Advanced Email Security](https://level-up.cc/curriculum/safer-communication/)
+* [Malware Fundamentals and Social Engineering](https://www.level-up.cc/leading-trainings/training-curriculum/malware-fundamentals)
+* [Secure Passwords](https://www.level-up.cc/leading-trainings/training-curriculum/secure-passwords)
+* [Advanced Email Security](https://www.level-up.cc/leading-trainings/training-curriculum/email-security)
 </div>
-
 
 
 \newpage

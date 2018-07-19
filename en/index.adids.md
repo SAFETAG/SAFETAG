@@ -217,7 +217,7 @@ Footnotes
 
 ## Interview Questions
 
-!INCLUDE "exercises/interviews/instructions.md"
+!INCLUDE "exercises/interviews/interview_questions.md"
 
 ## Context Research Sources
 

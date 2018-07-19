@@ -19,7 +19,3 @@
 ### Approaches
 
 !INCLUDE "../methods/capacity_assessment/approaches.md"
-
-### Outputs
-
-!INCLUDE "../methods/capacity_assessment/output.md"

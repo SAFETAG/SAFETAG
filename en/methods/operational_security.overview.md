@@ -2,11 +2,11 @@
 
 ### Summary
 
-!INCLUDE "../methods/operational_security/summary.md"
+!INCLUDE "../methods/physical_assessment/summary.md"
 
 ### Purpose
 
-!INCLUDE "../methods/operational_security/purpose.md"
+!INCLUDE "../methods/physical_assessment/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,8 +14,8 @@
 
 ### Guiding Questions
 
-!INCLUDE "../methods/operational_security/guiding_questions.md"
+!INCLUDE "../methods/physical_assessment/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../methods/operational_security/approaches.md"
+!INCLUDE "../methods/physical_assessment/approaches.md"

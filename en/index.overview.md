@@ -78,11 +78,6 @@ subtitle: 'Overview'
 !INCLUDE "methods/network_mapping.overview.md"
 
 \newpage
-<!-- Organizational Device Assessment -->
-
-!INCLUDE "methods/organizational_device_assessment.guide.md"
-
-\newpage
 <!-- User Device Assessment -->
 
 !INCLUDE "methods/user_device_assessment.overview.md"
@@ -106,11 +101,6 @@ subtitle: 'Overview'
 <!-- Risk Modeling -->
 
 !INCLUDE "methods/risk_modeling.overview.md"
-
-\newpage
-<!-- Advanced Threat Response -->
-
-!INCLUDE "methods/advanced_threat.overview.md"
 
 \newpage
 <!-- Threat Assessment -->

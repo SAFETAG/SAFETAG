@@ -1,10 +1,9 @@
-The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. Your investigation may be blocked by CloudFlare, a popular DDoS protection service. ["CloudFlair"](https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/) provides some options in this case.
-
+The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. You can both use "Active" and "Passive" scan depending on your assessment flow.
 
 **DNS Enumerations Tools:**
 
 | Tools | Description | Type | Technique |
-|-------|------------------------------------------------------|------|------|
+|-------|-------------|------|-----------|
 |[Robtex](https://www.robtex.com/)|Gathers public information about IP numbers, domain names, host names, Autonomous systems, routes etc, then indexes the data in a big database and provide free access to that data | Online | Passive |
 |[DNSdumpster](https://dnsdumpster.com/)|Free domain research tool that can discover hosts related to a domain, results with banners for HTTP, FTP, SSH & Telnet |Online | Passive |
 |[CentralOps-Domain Dossier](https://centralops.net/co/)|Investigates domains and IP addresses. Gathers registrant information, DNS records, Network and Domain Whois Records, services scans and traceroutes | Online | Passive |
@@ -19,7 +18,7 @@ Specific instructions for selected tools/techniques follows:
 
 ###### Passive: Third Party and Online Tools
 
-!INCLUDE "variant_using_online_tools_resources.md"
+!INCLUDE "variant_3rd_party_and_online_tools.md"
 
 ###### Active: DNSrecon
 
@@ -31,7 +30,7 @@ Specific instructions for selected tools/techniques follows:
 
 ###### Active: Simple Zone Transfer
 
-!INCLUDE "variant_zonetransfer.md"
+!INCLUDE "variant_dns_zone_transfer"
 
 ###### Active: MX Records
 
