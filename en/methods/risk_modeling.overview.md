@@ -14,3 +14,6 @@
 
 ### Approaches
 !INCLUDE "../methods/risk_modeling/approaches.md"
+
+### Outputs
+!INCLUDE "../methods/risk_modeling/output.md"

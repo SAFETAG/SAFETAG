@@ -1,8 +1,8 @@
 
 #### Other Context Analysis Methodologies
 
-  * *Article:* ["Section 2.3 Context analysis p. 30"](http://www.odihpn.org/index.php?option=com_k2&view=item&layout=item&id=3159) (Operational Security Management in Violent Environments: (Revised Edition))
-  
+  * *Article:* ["Section 2.3 Context analysis p. 30"](https://odihpn.org/resources/operational-security-management-in-violent-environments-revised-edition/) (Operational Security Management in Violent Environments: (Revised Edition))
+
   * *Guide:* ["Vulnerability Assessment: Training module for NGOs operating in Conflict Zones and High-Crime Areas"](https://www.eisf.eu/wp-content/uploads/2014/09/0603-Dworken-undated-Vulnerability-assesment-training-module.pdf) (Jonathan T. Dworken)
 
 #### Threats to the Auditor
@@ -16,19 +16,19 @@
   * *Survey:* ["This is a survey of existing and proposed laws and regulations on cryptography - systems used for protecting information against unauthorized access.
 "](http://www.cryptolaw.org/) (The Crypto Law Survey)
 
-  * *Article:* ["Legal Issues in Penetration Testing"](http://www.securitycurrent.com/en/analysis/ac_analysis/legal-issues-in-penetration-testing) (Security Current)
+  * *Article:* ["Legal Issues in Penetration Testing"](https://securitycurrent.com/legal-issues-in-penetration-testing/) (Security Current)
 
   * *Guide:* ["Encryption and International Travel"](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/) (Princeton University)
 
-  * *Guide:* ["World Map of Encryption Laws and Policies"](https://www.gp-digital.org/national-encryption-laws-and-policies/#) (Global Partners Digital)
-  
+  * *Guide:* ["World Map of Encryption Laws and Policies"](https://www.gp-digital.org/world-map-of-encryption/) (Global Partners Digital)
+
 **Is the area safe to travel to?**
 
   * *List:* ["Foreign travel advice"](https://www.gov.uk/foreign-travel-advice) (GOV.UK)
 
 * *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/content/passports/english/alertswarnings.html) (US Department of State)
 
-  * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission) 
+  * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission)
 
   * *List:* ["A list of aircraft operators that have that have suffered an accident, serious incident or hijacking."](http://aviation-safety.net/database/operator/) (Aviation Safety Network)
 
@@ -44,13 +44,13 @@
 
   * Human  Rights
     * [Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
-    * [Amnesty International regional news on human rights](https://www.amnesty.org/en/news/regional)
+    * [Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
     * [Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
   * Transparency
     * [Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
   * Public  Service  Delivery
   * Health
-  * Free  Media  and  Information 
+  * Free  Media  and  Information
     * [Threatened Voices: Tracking suppression of online free speech.](http://threatened.globalvoicesonline.org/)
     * [IREX’s Media Sustainability Index (MSI) provides in-depth analyses of the conditions for independent media in 80 countries across the world.](http://www.irex.org/project/media-sustainability-index-msi)
     * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](http://www.freedomhouse.org/report-types/freedom-net)
@@ -81,7 +81,7 @@
 
 **What cyber-security practices is the government using?**
 
-  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports) (Privacy International)
+  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy) (Privacy International)
 
   * *List:* ["National Cyber Security Policy and Legal Documents"](http://www.ccdcoe.org/strategies-policies.html) (NATO Cooperative Cyber Defence Centre of Excellence)
 
@@ -111,13 +111,12 @@
 
   * *Reports:* ["Secunia Country Reports"](https://secunia.com/resources/countryreports/) (Secunia)
 
-  * *Reports:* ["McAfee Threat Trends Papers"](www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
+  * *Reports:* ["McAfee Threat Trends Papers"](https://www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
 
-  * *Report:* ["Monthly intelligence report"](http://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
+  * *Report:* ["Monthly intelligence report"](https://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
 
 **What level of technology is available in the region?**
 
   * *Database:* ["World Telecommunication/ICT Indicators database 2014"](http://www.itu.int/en/ITU-D/Statistics/Pages/publications/wtid.aspx) (WT-ICT)
 
   * *Comparisons:* ["Country Comparisons"](https://www.cia.gov/library/publications/the-world-factbook/) (CIA fact-book)
-

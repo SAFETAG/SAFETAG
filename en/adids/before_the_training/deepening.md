@@ -6,7 +6,7 @@ Trainees should either first go through the Build SAFETAG homework assignment, o
 
 #### Homework Assignment: Build SAFETAG ####
 
-To get us started quickly and (more or less) seamlessly at the training itself, please try to download and build the SAFETAG guide ahead of time.  You can do this by going to the [github repository](https://github.com/OpenInternet/SAFETAG) and following the [installation instructions](https://github.com/OpenInternet/SAFETAG/blob/master/docs/INSTALL.md). Please let us know (either via email of by filing an issue) if you encounter any problems.
+To get us started quickly and (more or less) seamlessly at the training itself, please try to download and build the SAFETAG guide ahead of time.  You can do this by going to the [github repository](https://github.com/OpenInternet/SAFETAG) and following the [installation instructions](https://github.com/OpenInternet/SAFETAG/blob/master/INSTALL.md). Please let us know (either via email of by filing an issue) if you encounter any problems.
 
 #### Homework Assignment: Context Research ####
 
