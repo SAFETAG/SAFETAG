@@ -2,7 +2,7 @@ For the implementation of mitigation measures, you can refer the auditees to a t
 
 You should consider a web application compromise serious and coordinate an incident response if any of the following is happening:
 
-- Unusual accounts are created
-- Access from regions beyond the organizations location
+- Unusual accounts are created in server and CMS
+- Access logs from outside regions beyond the organizations location
 - Malicious php scripts (webshells) are present on the server
-- Pages are blank and locked (password protected)
+- Defaced web pages and are sometimes password protected
