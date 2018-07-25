@@ -1,8 +1,9 @@
+Insider Threat
 
-Insider Threat refers to any threat to an organization that comes from people inside the organization.
+Insider Threat refers to any threat to an organization that comes within or inside the organization.
+These can include (but not limited to)
 
-This includes:
     - Employees
-    - Former staff
+    - Former employees
     - Contractors
     - Interns
