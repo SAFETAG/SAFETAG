@@ -7,7 +7,3 @@ These can include (but not limited to)
     - Former employees
     - Contractors
     - Interns
-
-
-
-
