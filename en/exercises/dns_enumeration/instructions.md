@@ -29,9 +29,9 @@ Specific instructions for selected tools/techniques follows:
 
 !INCLUDE "variant_dns_enum.md"
 
-###### Active: Simple Zone Transfer
+###### Active:DNS Zone Transfer
 
-!INCLUDE "variant_zonetransfer.md"
+!INCLUDE "variant_dns_zonetransfer.md"
 
 ###### Active: MX Records
 
