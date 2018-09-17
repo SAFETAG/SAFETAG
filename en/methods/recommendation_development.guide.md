@@ -16,8 +16,6 @@
 
 !INCLUDE "../reporting/recommendation_development/approaches.md"
 
-!INCLUDE "../reporting/recommendation_development/activities.md"
-
 ### Outputs
 
 !INCLUDE "../reporting/recommendation_development/output.md"
@@ -29,7 +27,7 @@
 ### Resources
 <div class="greybox">
 
-#### Resource Links 
+#### Resource Links
 
 !INCLUDE "../references/resource_identification.overview.md"
 
@@ -53,4 +51,4 @@
 
 </div>
 
-### Activities
+<!-- ### Activities -->
