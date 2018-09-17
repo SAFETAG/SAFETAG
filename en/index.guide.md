@@ -531,21 +531,8 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 !INCLUDE "methods/recommendation_development.guide.md"
 
 <div class="boxtext">
-#### Identify Useful Resources
-
 !INCLUDE "exercises/identify_useful_resources/index.md"
 </div>
-
-<div class="boxtext">
-#### Identify and Explain Un-Addressed Concerns
-
-!INCLUDE "exercises/un_addressed_concerns/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/identify_recommendations/index.md"
-</div>
-
 
 \newpage
 <!-- Roadmap Development -->

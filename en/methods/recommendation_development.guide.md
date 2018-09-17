@@ -25,8 +25,6 @@ Info_required:
 
 !INCLUDE "../reporting/recommendation_development/approaches.md"
 
-!INCLUDE "../reporting/recommendation_development/activities.md"
-
 ### Outputs
 
 !INCLUDE "../reporting/recommendation_development/output.md"
@@ -38,7 +36,7 @@ Info_required:
 ### Resources
 <div class="greybox">
 
-#### Resource Links 
+#### Resource Links
 
 !INCLUDE "../references/resource_identification.overview.md"
 
@@ -62,4 +60,4 @@ Info_required:
 
 </div>
 
-### Activities
+<!-- ### Activities -->

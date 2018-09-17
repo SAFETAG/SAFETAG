@@ -54,4 +54,4 @@ Info_required:
 !INCLUDE "reference/financial_barriers.md"
 </div>
 
-### Activities
+<!-- ### Activities -->
