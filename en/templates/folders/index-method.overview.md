@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- Actors, Assets, Activities, Barriers, Capacity, Threats, Vulnerabilities
+Info_required:
+- Actors, Assets, Activities, Barriers, Capacity, Threats, Vulnerabilities
+---
+
 ## Objective Title
 
 ### Summary
