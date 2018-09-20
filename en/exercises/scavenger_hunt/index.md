@@ -1,3 +1,18 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- AlWalid
+Org_size_under:
+- 50
+Remote_options:
+- with-support
+Skills_required:
+- Group Facilitation, Psycho-social care
+Time_required_minutes:
+- 90
+---
+
 #### Scavenger Hunt
 
 ##### Summary

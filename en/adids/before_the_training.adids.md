@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
+
 ##  Before the Training
 
 !INCLUDE "../adids/before_the_training/summary.md"

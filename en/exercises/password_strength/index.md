@@ -1,3 +1,17 @@
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 100
+Remote_options:
+- Partial
+Skills_required:
+- Password auditing
+Time_required_minutes:
+- 120
+---
 
 
 #### Password Strength

@@ -1,4 +1,4 @@
-Identification of CMS during web footprint can be done either using sripts and tools or using online services.
+Identification of CMS during web footprint can be done either using scripts and tools or using online services.
 
 you can use certain websites to determine the type of CMS a target website is using:
 
@@ -37,12 +37,3 @@ Document your finding and list what type of CMS your target is using along with 
 
   - Vulnerability Scanning
   - Vulnerability Research
-
-
-
-
-
-
-
-
-

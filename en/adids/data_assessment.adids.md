@@ -1,3 +1,11 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
 
 ##  Data Assessment
 
@@ -46,4 +54,3 @@
 !INCLUDE "../adids/data_assessment/deepening.md"
 
 <!--Synthesis {.synthesis} -->
-

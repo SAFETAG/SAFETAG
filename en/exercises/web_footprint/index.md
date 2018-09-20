@@ -1,3 +1,17 @@
+---
+Approach:
+- Technical, Research
+Authors:
+- SAFETAG
+Org_size_under:
+- 1000
+Remote_options:
+- Complete
+Skills_required:
+- Website scanning
+Time_required_minutes:
+- 60
+---
 
 #### Website Footprinting
 
