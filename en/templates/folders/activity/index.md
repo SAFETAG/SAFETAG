@@ -6,7 +6,7 @@ Authors:
 Org_size_under:
 - 1000
 Remote_options:
-- Complete, Partial, None
+- Complete, Partial, with-support, None
 Skills_required:
 - N/A
 Time_required_minutes:
