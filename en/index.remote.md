@@ -20,36 +20,11 @@ scanning, device assessment, and group facilitation.
 
 More information on the single modules that address remote assessment methods can be found in [this article](https://safetag.org/2017/08/31/Remote_Audits.html).
 
-
-<!-- Audit Lifecycle -->
-
-!INCLUDE "document_matter/audit_lifecycle.md"
-
-\newpage
-<!-- Risk Modeling -->
-
-!INCLUDE "document_matter/risk_assessment.md"
-
-\newpage
-<!-- Agency Building -->
-
-!INCLUDE "document_matter/agency_building.md"
-
-\newpage
-<!-- Operational Security -->
-
-!INCLUDE "document_matter/operational_security.md"
+This playlist does not include much of the core SAFETAG introductory material. Please refer to the main [SAFETAG framework documents](https://SAFETAG.org/index.html#framework).
 
 \newpage
 
 # SAFETAG Methods
-
-\newpage
-<!-- INTRO to Methods-->
-
-!INCLUDE "methods/intro.md"
-
-\newpage
 
 <!-- Audit Prep-->
 
@@ -516,7 +491,14 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 <!-- APPENDICES AND FOOTNOTES -->
 
-!INCLUDE "appendix_remote.md"
+## APPENDIX: Remote Facilitation
+
+!INCLUDE "exercises/remote_facilitation/index.md"
+
+# Footnotes
+
+<!-- Load Footnotes -->
+!INCLUDE "references/footnotes.md"
 
 
 <!-- Load Default Images -->
