@@ -10,7 +10,7 @@ subtitle: 'SAFETAG Playlist: Minimal Viable Audit'
 
 The Minimal Viable Audit is designed as the starting point for an assessment to be considered viable under the SAFETAG framework. It primarily focuses on identification of possible threats in and to the organization, its capacity to deal with them, data management and organizational device usage. It is intended to be used where time for the assessment is very limited, and a starting point is needed to determine the status of the organization.
 
-For a more comprehensive assessment, use of the full SAFETAG guide and other tools will be required.
+For a more comprehensive assessment, use the full SAFETAG guide.
 
 
 <!-- Audit Lifecyce -->
