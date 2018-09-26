@@ -10,6 +10,8 @@ When submitting new content, please write in clear, concise, and gender neutral 
 
 Before you start work, it is critically important to review the current content and existing [issues][issues] and **create a new issue for your proposed work** to solicit feedback -- this will save you a lot of time as the SAFETAG community can help refine your idea and advise on where best to include it in the framework (is it a new method? An activity or variant? Is there existing content in SAFETAG to update or improve?), as well as suggest additional resources worth considering, operational security and safety considerations.
 
+You can also join the [public slack](https://join.slack.com/t/humansafetag/shared_invite/enQtNDM4MDIwNzM0NTc3LTYzM2Y4YjIyZmY2ZjhiODZjZDE0ODhmYzgwMTZmMjU2MTA2NDdjMTM2M2U4ODk1OWMzZThkMmI5OGY3MjFiM2M) to discuss changes and ask questions to the community.
+
 ### Content Creation Guidelines
 
 *This section helps walk you though how SAFETAG is constructed, and what pieces of content are important to provide in a submission. Submissions which do not follow these guidelines will take significantly longer to be incorporated.*
