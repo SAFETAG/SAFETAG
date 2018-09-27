@@ -1,3 +1,18 @@
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 25
+Remote_options:
+- with-support
+Skills_required:
+- N/A
+Time_required_minutes:
+- 30
+---
+
 #### Check Browser and Plugin Vulnerabilities
 
 ##### Summary

@@ -1,11 +1,13 @@
 **FOCA Quick Guide**
 
 Requirements:
+
 - FOCA executable
 - Windows Environment (Virtualized)
 - .NET Framework
 
 **Installing FOCA analyzer**
+
 - Download from [FOCA website](https://www.elevenpaths.com/labstools/foca/index.html#)
 - Install [.NET Framework](https://www.microsoft.com/net/download/linux)
 - Extract FOCA zip file into a folder
@@ -20,6 +22,7 @@ FOCA scanner has tons of great features from web searches and DNS searches as ex
 To create a project in FOCA, click ```Project``` on the tab menu, and select ```New Project```
 
 There are few items to fill in FOCA:
+
 - **Project name:** Name of your project
 - **Domain website:** the Website of your target
 - **Alternative domains:** for sub-domains, and other domains that your target own
@@ -59,13 +62,15 @@ You may start analyzing the files one-by-one of all at once. To do this, first, 
 
 After downloading documents and extracting metadata, you may view the results on the left side pane of your FOCA.
 On the left pane, you will see the following options:
+
   - Network
   - Domains
   - Roles
   - Vulnerabilities
   - Metadata
-  
+
 Under ```Metadata``` you will have two sub-menus, ```Documents``` and ```Metadata Summary```. The ```Documents```, option displays scraped metadata per document/file. However, on ```Metadata Summary``` option, you will have the following options:
+
   - User
   - Folders
   - Printers
@@ -76,5 +81,3 @@ Under ```Metadata``` you will have two sub-menus, ```Documents``` and ```Metadat
   - Servers
 
 These information can then be added to your records and be used for other attack surface such as social engineering attacks.
-
-Along with your other results, from different tools and recon activity, you may include all of these information to your documentation tool. Kali Linux comes with a documentation tool called Keepnote.

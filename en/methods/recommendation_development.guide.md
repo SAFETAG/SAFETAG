@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Recommendation Development and Resource Identification
 
 ### Summary
@@ -16,8 +25,6 @@
 
 !INCLUDE "../reporting/recommendation_development/approaches.md"
 
-!INCLUDE "../reporting/recommendation_development/activities.md"
-
 ### Outputs
 
 !INCLUDE "../reporting/recommendation_development/output.md"
@@ -29,7 +36,7 @@
 ### Resources
 <div class="greybox">
 
-#### Resource Links 
+#### Resource Links
 
 !INCLUDE "../references/resource_identification.overview.md"
 
@@ -53,4 +60,4 @@
 
 </div>
 
-### Activities
+<!-- ### Activities -->

@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- Partial
+Skills_required:
+- Interviewing, Surveys
+Time_required_minutes:
+- 45
+---
 
 #### Mobile Device Assessment
 

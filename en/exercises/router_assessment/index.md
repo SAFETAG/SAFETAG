@@ -1,19 +1,20 @@
 ---
 Approach:
-- Technical, Research
+- Technical
 Authors:
 - SAFETAG
 Org_size_under:
-- 1000
+- 100
 Remote_options:
-- Complete
+- with-support
 Skills_required:
-- DNS, OSINT
+- Networking
 Time_required_minutes:
-- 45
+- 15
 ---
 
-#### DNS Enumeration
+#### Router Based Attacks
+
 ##### Summary
 !INCLUDE "summary.md"
 

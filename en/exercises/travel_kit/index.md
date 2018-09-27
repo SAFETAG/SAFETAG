@@ -1,3 +1,17 @@
+---
+Approach:
+- N/A
+Authors:
+- SAFETAG
+Org_size_under:
+- N/A
+Remote_options:
+- N/A
+Skills_required:
+- N/A
+Time_required_minutes:
+- 120
+---
 
 #### Travel Kit Checklist
 
@@ -30,5 +44,3 @@
  * Ground transit plan (to your hotel, to the site)
  * Emergency contact numbers
  * Travel plan
-
-

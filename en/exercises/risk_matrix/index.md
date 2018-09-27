@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- with-support
+Skills_required:
+- Risk Assessment
+Time_required_minutes:
+- 60
+---
 
 #### Creating a Risk Matrix
 
@@ -7,8 +21,8 @@
 ##### Overview
 !INCLUDE "approach.md"
 
-##### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
 ##### Considerations
 !INCLUDE "operational_security.md"
@@ -18,4 +32,3 @@
 
 ##### Recommendation
 !INCLUDE "recommendations.md"
-

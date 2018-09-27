@@ -34,7 +34,7 @@ Covered in full in Preparation:
 #### Technical Context Research
 Covered in full in Context Research:
 
-!INCLUDE "../../exercises/technical_contect_research/approach.md"
+!INCLUDE "../../exercises/technical_context_research/approach.md"
 
 </div>
 

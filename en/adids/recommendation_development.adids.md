@@ -1,3 +1,11 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
 
 ##  Recommendation Development
 
@@ -48,4 +56,3 @@
 <!--Synthesis {.synthesis} -->
 
 !INCLUDE "../adids/recommendation_development/synthesis.md"
-

@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- Complete
+Skills_required:
+- Interviewing
+Time_required_minutes:
+- 120
+---
 
 #### Interviews
 
