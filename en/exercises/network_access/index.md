@@ -6,9 +6,9 @@ Authors:
 Org_size_under:
 - 1000
 Remote_options:
-- Complete
+- None
 Skills_required:
-- OSINT Tools
+- password cracking, wireless network monitoring
 Time_required_minutes:
 - 240
 ---
@@ -27,3 +27,5 @@ Time_required_minutes:
 #### Walkthrough
 !INCLUDE "instructions.md"
 
+##### Recommendation
+!INCLUDE "recommendations.md"

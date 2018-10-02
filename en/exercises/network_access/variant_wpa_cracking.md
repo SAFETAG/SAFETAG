@@ -1,6 +1,4 @@
 
-**Summary**
-
 The organization’s wireless Local Area Network (WLAN) protects the network and its users with WPA encryption. This is an important security measure, and a WPA-protected wireless network is much safer than an unencrypted “open” network or a WEP-protected network. (WEP is fundamentally flawed, and extremely simple attacks have been widely known for over a decade.) However, the ease with an attacker could guess the WPA key, or “WiFi password,” is a serious issue, particularly considering its importance as an essential perimeter control. An attacker who gains access to the wireless LAN immediately bypasses many protections that network administrators, and other users of the office network, often take for granted. Put another way, anyone able to guess the WPA key is immediately “inside the firewall.”
 
 Using a laptop and a wireless card with a standard, internal antenna (or using a customized smartphone or other small device), an attacker could easily position themselves close enough to the office to carry out the first phase of this attack, which would only take a few minutes. The second phase, which is supposed to be the difficult part, could take even less time. From the privacy of their own home or office, the attacker could use a minimally customized password dictionary to guess the WPA key .
@@ -9,7 +7,7 @@ Using a laptop and a wireless card with a standard, internal antenna (or using a
 
 **Materials Needed**
 
-* For the (most common) WPA password-based attacks, an already-prepared dictionary of words to use to attack the password will be required. See the Appendix on Audit Preparation for guidance on dictionary preparation.
+* For the (most common) WPA password-based attacks, an already-prepared dictionary of words to use to attack the password will be required. See the Password Strength activity for guidance on dictionary preparation.
 
 **Instructions**
 
@@ -92,28 +90,13 @@ The fourth line of the above output provides some useful information about the e
 
 It is worth noting that an attacker with the resources and the expertise could increase this rate by a factor of a hundred. Using a computer with powerful graphical processing units (GPUs) or a cloud computing service like Amazon’s EC2, it is possible to test 250,000 or more keys per second. A setup like this would still take several lifetimes to guess a strong password, however.
 
-Regardless, the success of this attack against a wireless network would allow an attacker to bypass all perimeter controls, including the network firewall. Without access to the office LAN, a non-ISP, non-government attacker would have to position himself on the same network as an external staff member in order to exploit any flaws in the organization’s email or file-sharing services. With access to the local network, however, that attacker could begin carrying out Local attacks quite quickly, and from a distance.
+Regardless, the success of this attack against a wireless network would allow an attacker to bypass all perimeter controls, including the network firewall. Without access to the office LAN, a non-ISP, non-government attacker would have to position themselves on the same network as an external staff member in order to exploit any flaws in the organization’s email or file-sharing services. With access to the local network, however, that attacker could begin carrying out local attacks quite quickly, and from a distance.
 
-With regard to the distance from which an attacker could maintain such access, the office WiFi network appears to have a relatively strong signal, which extends to the street out front:
+See the *Wireless Range Mapping* activity for guidance on mapping the reach of the wifi network.
 
-{photograph of location}
-
-Figure 1: WiFi signal strength from a nearby location
-
-{screenshot of WiFi strength}
-
-
-##### Material that may be Useful:
+**References**
 
   * *Tutorial:* [“How to Crack WPA/WPA2”](http://www.aircrack-ng.org/doku.php?id=cracking_wpa) (Aircrack-ng Wiki)
 [“Aircrack-ng”](http://www.aircrack-ng.org/doku.php?id=aircrack-ng) (Aircrack-ng Wiki)
   * *Documentation:* [“Aireplay-ng”](http://www.aircrack-ng.org/doku.php?id=aireplay-ng) (Aircrack-ng Wiki)
   * *Documentation:* [“Airodump-ng”](http://www.aircrack-ng.org/doku.php?id=airodump-ng) (Aircrack-ng Wiki)
-
-**Recommendations**
-
-The WPA key should be long enough and complex enough to prevent both standard dictionary attacks and “brute-force attacks” in which clusters of powerful computers work in parallel to test every possible character combination. (We recommend 12 or more completely random characters or a passphrase that contains four or five—or more—relatively uncommon words.) The key should not contain common “phrases,” including number sequences, especially if they are related to the organization, its employees or its work. Choosing a strong WPA key is one of the most important steps toward defending an organization’s network perimeter from an adversary with the ability to spend some time in the vicinity of the offices. By extension, mitigating this vulnerability is critical to the protection of employees and partners (and confidential data) from the sort of persistent exposure that eventually brings down even the most well-secured information systems.
-
-Because shared keys inevitably end up being written on whiteboards, given to office visitors and emailed to partners, the WPA key should also be changed periodically. This does not have to happen frequently, but anything less than three or four times per year may be unsafe.
-Assets affected by this issue
-
