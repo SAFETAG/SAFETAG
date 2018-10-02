@@ -65,7 +65,7 @@ An open port in a server or IoT device should be investigated if it doesn't corr
 In general, these are ports that might be open in a server:
 
 | Port  | Service |
-|-------|--------------|
+|-------|-------------------|
 |  21   |  FTP    |
 |  22   |  SSH    |
 |  23   |  Telnet |
