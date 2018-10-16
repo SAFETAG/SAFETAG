@@ -22,10 +22,10 @@ Contextual / Background / Threat information
  * Specific programs or other work outside of publicly stated mission that are high-risk
  * Program use of technology (SMS surveys, blogs, facebook pages, other websites, media recording and broadcast ...?)
 
-Technical:
+Technical
 
- * Primary website:
- * Additional websites:
+ * Primary website
+ * Additional websites
  * Website technologies (content management, hosting provider)
  * Technology in use:
    * Desktop software (OS, Office)
@@ -46,3 +46,9 @@ Preparation Support
    * Shared office space, shared floor or building?
    * Physical security of the office?
 
+Practices and behaviors
+
+ * Office access and location
+ * Personal device usage
+ * Transporation means used to get to and from home
+ * Remote access to organizational resources (VPN, shared files)

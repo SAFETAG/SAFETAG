@@ -51,3 +51,9 @@
   * Does the organization experience power outages in its office
   * Does the organization have access to the Internet in its offices?
   * In the last month, has your organization lost access to Internet for reasons other than power outages
+  * What are the security threats in the office surroundings?
+    * Robery?
+    * Kidnapping?
+    * Harrasment?
+    * Surveillance?
+    * Physical violence?
