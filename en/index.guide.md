@@ -201,6 +201,15 @@ Covered in full in User Device Assessment:
 </div>
 
 <div class="boxtext">
+#### A Night in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "exercises/night_in_the_life/approach.md"
+
+</div>
+
+<div class="boxtext">
 #### Network Mapping
 
 Covered in full in Network Mapping
@@ -235,6 +244,10 @@ Covered in full in Physical Assessment:
 
 <div class="boxtext">
 !INCLUDE "exercises/day_in_the_life/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/night_in_the_life/index.md"
 </div>
 
 <div class="boxtext">
@@ -362,6 +375,12 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 #### A Day in the Life
 Covered in full in User Device Assessment:
 !INCLUDE "exercises/day_in_the_life/approach.md"
+</div>
+
+<div class="boxtext">
+#### A Night in the Life
+Covered in full in User Device Assessment:
+!INCLUDE "exercises/night_in_the_life/approach.md"
 </div>
 
 \newpage
