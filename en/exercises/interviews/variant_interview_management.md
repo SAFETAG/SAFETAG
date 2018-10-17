@@ -64,6 +64,6 @@
     * Trainings
     * External meetings
     * Press conferences
-  * What time does the staff usually comes in and gets out of the office?
+  * What time does the staff usually come in and get out of the office?
   * How secure are the office surroundings?
   * What are the common means of transportation used?
