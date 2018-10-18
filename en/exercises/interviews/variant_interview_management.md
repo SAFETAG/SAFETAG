@@ -25,7 +25,7 @@
 
 **Go Specific**
 
-"Dig deeper on the challenge at hand & prompt with ‘what if’ scenarios." [^HCD_toolkit]
+"Dig deeper on the challenge at hand & prompt with ‘what if’ scenarios."
 
   * Is the manager aware that a test is about to be performed?
 
@@ -50,7 +50,7 @@
 
 **Go Personal**
 
-"Dig deeper on the practices outside of work & prompt with ‘what if’ scenarios." [^HCD_toolkit]
+"Dig deeper on the practices outside of work & prompt with ‘what if’ scenarios."
 
   * Does the staff usually work remotely?
   * Does the staff usually take their work devices home?
