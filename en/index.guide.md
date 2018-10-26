@@ -412,6 +412,10 @@ Covered in full in Data Assessment:
 !INCLUDE "exercises/sensitive_data/approach.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "../../exercises/self_doxing/index.md"
+</div>
+
 
 <!-- Advanced Threat Response -->
 
@@ -480,6 +484,13 @@ Covered in full in Capacity Assessment:
 !INCLUDE "exercises/regional_context_research/approach.md"
 </div>
 
+<div class="boxtext">
+### Self Doxing
+
+Covered in full in Risk Modeling:
+
+!INCLUDE "../../exercises/self_doxing/approach.md"
+</div>
 
 \newpage
 
