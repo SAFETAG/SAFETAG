@@ -1,4 +1,5 @@
 
+  * Recommend the usage of the Tor Browser for this activity
   * Treat threat and adversary data with the utmost security.
   * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.
   * Ensure that any digital recordings of this process are kept secure and encrypted. 
