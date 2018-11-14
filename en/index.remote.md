@@ -218,7 +218,7 @@ See Website Footprinting in Recon for passive / lightweight investigation tools
 
 For instructions on how to access the devices remotely, see Remote Network and User Device Assessment.
 
-See the Network Access and Mapping activities for methods to use network mapping and traffic analysis to discover further potential vulnerabilities or points to investigate.
+See the Network Mapping method for activities to use network mapping and traffic analysis to discover further potential vulnerabilities or points to investigate.
 </div>
 
 <div class="boxtext">

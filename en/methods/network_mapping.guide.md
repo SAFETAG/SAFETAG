@@ -33,15 +33,15 @@ Info_required:
 ### Preparation
 !INCLUDE "../methods/network_mapping/preparation.md"
 
-
-
-
-
 ### Resources
 <div class="greybox">
 !INCLUDE "../references/network_mapping.overview.md"
 
 !INCLUDE "../references/network_mapping_methods.md"
+
+!INCLUDE "../references/network_access.md"
+
+!INCLUDE "../references/network_discover_methods.md"
 
 !INCLUDE "../references/nmap_scanning.md"
 

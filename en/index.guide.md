@@ -132,30 +132,29 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 \newpage
-<!-- Network Access -->
-
-!INCLUDE "methods/network_access.guide.md"
-
-<div class="boxtext">
-!INCLUDE "exercises/wpa_password_cracking/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/wps_pin_cracking/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/wep_password_cracking/index.md"
-</div>
-
-<div class="boxtext">
-!INCLUDE "exercises/mac_filtering/index.md"
-</div>
-
-\newpage
 <!-- Network Mapping -->
 
 !INCLUDE "methods/network_mapping.guide.md"
+
+<div class="boxtext">
+#### Wireless Range Mapping
+
+Covered in full in Physical and Operational Security
+
+!INCLUDE "exercises/wireless_range_mapping/approach.md"
+</div>
+
+<div class="boxtext">
+#### Monitor open wireless traffic
+
+Covered in full in Physical and Operational Security
+
+!INCLUDE "exercises/monitor_open_wireless_traffic/approach.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/network_access/index.md"
+</div>
 
 <div class="boxtext">
 !INCLUDE "exercises/network_scanning/index.md"
@@ -170,28 +169,14 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 <div class="boxtext">
-#### Router Attacks
+#### Router Assessment
 
 Covered in full in  Vulnerability Scanning and Analysis
 
 !INCLUDE "exercises/router_attacks/approach.md"
 </div>
 
-<div class="boxtext">
-#### Wireless Range Mapping
 
-Covered in full in Network Discovery
-
-!INCLUDE "exercises/wireless_range_mapping/approach.md"
-</div>
-
-<div class="boxtext">
-#### Monitor Open Wireless Traffic
-
-Covered in full in Network Discovery
-
-!INCLUDE "exercises/monitor_open_wireless_traffic/approach.md"
-</div>
 
 \newpage
 <!-- Organizational Device Assessment -->
@@ -262,6 +247,14 @@ Covered in full in Physical Assessment:
 
 <div class="boxtext">
 !INCLUDE "exercises/password_strength/index.md"
+</div>
+
+<div class="boxtext">
+#### Monitor open wireless traffic
+
+Covered in full in Physical and Operational Security
+
+!INCLUDE "exercises/monitor_open_wireless_traffic/approach.md"
 </div>
 
 <div class="boxtext">
