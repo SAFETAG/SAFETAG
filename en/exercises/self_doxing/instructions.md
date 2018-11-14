@@ -19,6 +19,6 @@
 
     * Show the group a reverse image search on [TinEyE](https://tineye.com/) or Google and recommend they do it on pictures of themselves they have published online.
 
-    * Show the group how to check if their online account has been previously compromised on [';--have i been pwned?](https://haveibeenpwned.com/). Explain that often results are old and if they have changed their password recently, showing up on this search may not be a problem. Tell them that if they are still using that old password for the compromised account of for other accounts, they should immediately change that password. 
+    * Show the group how to check if their online account has been previously compromised on [Have I Been Pwned?](https://haveibeenpwned.com/). Explain that often results are old and if they have changed their password recently, showing up on this search may not be a problem. Tell them that if they are still using that old password for the compromised account of for other accounts, they should immediately change that password. 
 
 
