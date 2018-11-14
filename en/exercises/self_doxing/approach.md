@@ -6,7 +6,7 @@ This activity is aimed at showing the group how to research on the traces they h
 - Explain that during this activity participants will use the same tools and techniques on themselves, practicing "self-doxing".
 - Identify relevant search engines and other websites for self-doxing in the organization's particular context.
 - Participants practice self-doxing in couples.
-- (In alternative, this activity may be assigned as homework, rather than practiced as a group exercise, to protect participants' privacy.)
+- (Alternatively, this activity may be assigned as homework, rather than practiced as a group exercise, to protect participants' privacy.)
 - If significant results are found that might endanger an individual or the entire organization, instruct them on how to perform a takedown request to the relevant website and/or search engine.
 
 
