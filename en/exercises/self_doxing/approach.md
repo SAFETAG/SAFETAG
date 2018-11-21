@@ -1,8 +1,8 @@
 **Self-doxing:**
 
-This activity is aimed at showing the group how to research on the traces they have left online, as well as to improve the results of the Manual Reconnaissance activity with a research carried out by individuals on themselves, which helps protect their privacy and makes results more detailed. With this approach, only if takedown or other mitigation steps are indicated, will the auditor be informed about the results.
+This activity is aimed at showing the group how to research the data traces they leave online, as well as to improve the results of the Manual Reconnaissance activity with research carried out by individuals on themselves, which helps protect their privacy and makes results more detailed. With this approach, the auditor will only be informed about the results if mitigation steps such as takedowns are indicated.
 
-- Explain to group that harassers and stalkers use several tools and techniques to gather information about their targets.
+- Explain to the group that harassers and stalkers use several tools and techniques to gather information about their targets.
 - Explain that during this activity participants will use the same tools and techniques on themselves, practicing "self-doxing".
 - Identify relevant search engines and other websites for self-doxing in the organization's particular context.
 - Participants practice self-doxing in couples.
