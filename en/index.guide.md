@@ -413,7 +413,7 @@ Covered in full in Data Assessment:
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/self_doxing/index.md"
+!INCLUDE "exercises/self_doxing/index.md"
 </div>
 
 
@@ -489,7 +489,7 @@ Covered in full in Capacity Assessment:
 
 Covered in full in Risk Modeling:
 
-!INCLUDE "../../exercises/self_doxing/approach.md"
+!INCLUDE "exercises/self_doxing/approach.md"
 </div>
 
 \newpage
