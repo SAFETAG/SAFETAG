@@ -42,3 +42,11 @@ Covered in full in Capacity Assessment:
 
 !INCLUDE "../../exercises/regional_context_research/approach.md"
 </div>
+
+<div class="boxtext">
+### Self Doxing
+
+Covered in full in Risk Modeling:
+
+!INCLUDE "../../exercises/self_doxing/approach.md"
+</div>

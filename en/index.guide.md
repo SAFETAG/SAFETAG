@@ -201,6 +201,15 @@ Covered in full in User Device Assessment:
 </div>
 
 <div class="boxtext">
+#### A Night in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "exercises/night_in_the_life/approach.md"
+
+</div>
+
+<div class="boxtext">
 #### Network Mapping
 
 Covered in full in Network Mapping
@@ -235,6 +244,10 @@ Covered in full in Physical Assessment:
 
 <div class="boxtext">
 !INCLUDE "exercises/day_in_the_life/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/night_in_the_life/index.md"
 </div>
 
 <div class="boxtext">
@@ -364,6 +377,12 @@ Covered in full in User Device Assessment:
 !INCLUDE "exercises/day_in_the_life/approach.md"
 </div>
 
+<div class="boxtext">
+#### A Night in the Life
+Covered in full in User Device Assessment:
+!INCLUDE "exercises/night_in_the_life/approach.md"
+</div>
+
 \newpage
 <!-- Risk Modeling -->
 
@@ -391,6 +410,10 @@ Covered in full in Threat Identification:
 Covered in full in Data Assessment:
 
 !INCLUDE "exercises/sensitive_data/approach.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/self_doxing/index.md"
 </div>
 
 
@@ -461,6 +484,13 @@ Covered in full in Capacity Assessment:
 !INCLUDE "exercises/regional_context_research/approach.md"
 </div>
 
+<div class="boxtext">
+### Self Doxing
+
+Covered in full in Risk Modeling:
+
+!INCLUDE "exercises/self_doxing/approach.md"
+</div>
 
 \newpage
 

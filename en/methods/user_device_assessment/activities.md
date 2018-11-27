@@ -11,6 +11,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/night_in_the_life/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "../../exercises/firewire/index.md"
 </div>
 
