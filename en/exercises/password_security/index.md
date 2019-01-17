@@ -1,24 +1,35 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- Complete
+Skills_required:
+- Surveys
+Time_required_minutes:
+- 30
+---
 
 
-### Password Security Survey
+#### Password Security Survey
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed
+##### Materials Needed
 !INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"
-
-##### Materials that may be useful
-!INCLUDE "password_survey.md"

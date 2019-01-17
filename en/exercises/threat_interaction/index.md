@@ -1,19 +1,34 @@
-### Threat Interaction
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- with-support
+Skills_required:
+- Group Facilitation, Psycho-social care
+Time_required_minutes:
+- 120
+---
 
-#### Summary
+#### Threat Interaction
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed
+##### Materials Needed
 !INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"

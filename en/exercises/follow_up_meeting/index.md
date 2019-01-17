@@ -1,21 +1,34 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 100
+Remote_options:
+- Complete
+Skills_required:
+- Report writing
+Time_required_minutes:
+- 60
+---
 
-### Follow-up Meeting
+#### Follow-up Meeting
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"
-

@@ -1,8 +1,9 @@
+
 **Office Equipment is unsecured against burglary**
 
 Unsecured physical network components and devices such as computers, servers, and external drives present a risk of sensitive data loss through theft, seizure, and malicious interference. Access to network compontents and servers should be limited and devices should be secured when not in use.
 
-In the event of a burglary or office raid, an attacker could easily obtain sensitive information from devices without encryption, external hard drives, and other easily accessible items.  An advanced attacker could compromise the network for later surveillance.  
+In the event of a burglary or office raid, an attacker could easily obtain sensitive information from devices without encryption, external hard drives, and other easily accessible items.  An advanced attacker could compromise the network for later surveillance.
 
 **Secure Devices**
 
@@ -20,6 +21,4 @@ Direct access to servers and network components such as routers, cablemodems, pa
 
 _De-activate unused network ports_
 
-Hard-wired network ports tend to connect directly into the most trusted parts of a network.  De-activating any that are in public areas of the office (front desk, conference rooms, break rooms), as well as any that are not needed is recommended. 
-
-
+Hard-wired network ports tend to connect directly into the most trusted parts of a network.  De-activating any that are in public areas of the office (front desk, conference rooms, break rooms), as well as any that are not needed is recommended.

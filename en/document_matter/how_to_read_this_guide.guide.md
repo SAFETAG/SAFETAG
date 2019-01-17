@@ -1,4 +1,3 @@
-## How to Read This Guide
 
 ### Major Sections
 

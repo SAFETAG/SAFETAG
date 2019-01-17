@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- Actors, Assets, Activities, Barriers, Capacity, Threats, Vulnerabilities
+Info_required:
+- Actors, Assets, Activities, Barriers, Capacity, Threats, Vulnerabilities
+---
+
 ## Objective Title
 
 ### Summary
@@ -14,20 +23,3 @@
 
 ### Approaches
 !INCLUDE "objectives/ /approaches.md"
-
-### Outputs
-!INCLUDE "objectives/ /output.md"
-
-### Operational Security
-!INCLUDE "objectives/ /operational_security.md"
-
-### Preparation
-!INCLUDE "objectives/ /preparation.md"
-
-### Activities
-!INCLUDE "objectives/ /activities.md"
-
-### Resources
-<div class="greybox">
-<!-- (direct includes to en/references/) -->
-</div>

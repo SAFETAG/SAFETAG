@@ -1,16 +1,31 @@
-### Regional Context Research
+---
+Approach:
+- Research
+Authors:
+- SAFETAG
+Org_size_under:
+- 1000
+Remote_options:
+- Complete
+Skills_required:
+- Research, Language
+Time_required_minutes:
+- 240
+---
 
-#### Summary
+#### Regional Context Research
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"

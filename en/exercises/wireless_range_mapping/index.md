@@ -1,19 +1,34 @@
-### Wireless Range Mapping
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 500
+Remote_options:
+- None
+Skills_required:
+- Wireless
+Time_required_minutes:
+- 30
+---
 
-#### Summary
+#### Wireless Range Mapping
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"

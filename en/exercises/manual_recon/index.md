@@ -1,19 +1,34 @@
-### Manual Reconnaissance
+---
+Approach:
+- Research, Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 100
+Remote_options:
+- Complete
+Skills_required:
+- OSINT Research
+Time_required_minutes:
+- 240
+---
 
-#### Summary
+#### Manual Reconnaissance
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed
+##### Materials Needed
 !INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"

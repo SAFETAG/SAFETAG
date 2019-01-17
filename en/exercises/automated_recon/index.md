@@ -1,22 +1,35 @@
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 1000
+Remote_options:
+- Complete
+Skills_required:
+- OSINT Tools
+Time_required_minutes:
+- 240
+---
 
-### Automated Reconnaisance
+#### Automated Reconnaisance
 
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"
-

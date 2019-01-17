@@ -1,16 +1,31 @@
-### Technical Context Research
+---
+Approach:
+- Research, Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 1000
+Remote_options:
+- Complete
+Skills_required:
+- Research, Malware analysis, Risk Assessment
+Time_required_minutes:
+- 480
+---
 
-#### Summary
+#### Technical Context Research
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"

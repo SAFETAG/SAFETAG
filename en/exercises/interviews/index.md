@@ -1,21 +1,31 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- Complete
+Skills_required:
+- Interviewing
+Time_required_minutes:
+- 120
+---
 
-### Interviews
+#### Interviews
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
-
-See the Appendix for a sample set of interview questions
-
-
-
+##### Walkthrough
+!INCLUDE "instructions.md"

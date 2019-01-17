@@ -1,20 +1,37 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 25
+Remote_options:
+- Partial
+Skills_required:
+- N/A
+Time_required_minutes:
+- 30
+---
 
-### Guided Tour
+#### Guided Tour
 
-#### Summary
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Materials that may be useful
+!INCLUDE "physical_security_survey.md"
+
+##### Recommendation
 !INCLUDE "recommendations.md"

@@ -2,7 +2,6 @@
 title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
 subtitle: 'Overview'
 ---
-
 <!-- License -->
 
 !INCLUDE "document_matter/license.md"
@@ -15,17 +14,9 @@ subtitle: 'Overview'
 
 \newpage
 
-!INCLUDE "document_matter/how_to_read_this_guide.overview.md"
+<!-- Audit Lifecyce -->
 
-\newpage
-
-<!-- Overview -->
-
-!INCLUDE "document_matter/overview.md"
-
-\newpage
-
-<!-- Audit Lifecycle -->
+!INCLUDE "document_matter/safetag_core_intro.md"
 
 !INCLUDE "document_matter/audit_lifecycle.md"
 
@@ -44,106 +35,108 @@ subtitle: 'Overview'
 
 !INCLUDE "document_matter/operational_security.md"
 
-\newpage
-<!-- Audit Prep-->
-!INCLUDE "index/preparation.overview.md"
-
 # Methods
 
 !INCLUDE "methods/intro.md"
 
 \newpage
+<!-- Audit Prep-->
+
+!INCLUDE "methods/preparation.overview.md"
+
+\newpage
 <!-- Audit Scoping-->
 
-!INCLUDE "index/context_research.overview.md"
+!INCLUDE "methods/context_research.overview.md"
 
 \newpage
 
-!INCLUDE "index/capacity_assessment.overview.md"
+!INCLUDE "methods/capacity_assessment.overview.md"
 
 
 \newpage
 <!-- Recon-->
 
-!INCLUDE "index/reconnaissance.overview.md"
+!INCLUDE "methods/reconnaissance.overview.md"
 
 \newpage
-<!-- Network Discovery-->
 
-!INCLUDE "index/network_discovery.overview.md"
-
-\newpage
-<!-- Network Access -->
-
-!INCLUDE "index/network_access.overview.md"
-
-\newpage
 <!-- Network Mapping -->
 
-!INCLUDE "index/network_mapping.overview.md"
+!INCLUDE "methods/network_mapping.overview.md"
+
+\newpage
+<!-- Organizational Device Assessment -->
+
+!INCLUDE "methods/organizational_device_assessment.guide.md"
 
 \newpage
 <!-- User Device Assessment -->
 
-!INCLUDE "index/user_device_assessment.overview.md"
+!INCLUDE "methods/user_device_assessment.overview.md"
 
 \newpage
 <!-- Vulnerability Analysis -->
 
-!INCLUDE "index/vulnerability_scanning.overview.md"
+!INCLUDE "methods/vulnerability_scanning.overview.md"
 
 \newpage
 <!-- Data Assessment (assets) -->
 
-!INCLUDE "index/data_assessment.overview.md"
+!INCLUDE "methods/data_assessment.overview.md"
 
 \newpage
 <!-- Physical Assessment -->
 
-!INCLUDE "index/physical_assessment.overview.md"
+!INCLUDE "methods/operational_security.overview.md"
 
 \newpage
 <!-- Risk Modeling -->
 
-!INCLUDE "index/risk_modeling.overview.md"
+!INCLUDE "methods/risk_modeling.overview.md"
+
+\newpage
+<!-- Advanced Threat Response -->
+
+!INCLUDE "methods/advanced_threat.overview.md"
 
 \newpage
 <!-- Threat Assessment -->
 
-!INCLUDE "index/threat_assessment.overview.md"
+!INCLUDE "methods/threat_assessment.overview.md"
 
 \newpage
 <!-- Responsive Support -->
 
-!INCLUDE "index/responsive_support.overview.md"
+!INCLUDE "methods/responsive_support.overview.md"
 
 \newpage
 <!-- Debrief -->
 
-!INCLUDE "index/debrief.overview.md"
+!INCLUDE "methods/debrief.overview.md"
 
 
 \newpage
 <!-- Follow Up -->
 
-!INCLUDE "index/follow_up.overview.md"
+!INCLUDE "methods/follow_up.overview.md"
 
 # Reporting
 
 \newpage
 <!-- Recommendation Development -->
 
-!INCLUDE "index/recommendation_development.overview.md"
+!INCLUDE "methods/recommendation_development.overview.md"
 
 \newpage
 <!-- Roadmap Development -->
 
-!INCLUDE "index/roadmap_development.overview.md"
+!INCLUDE "methods/roadmap_development.overview.md"
 
 \newpage
 <!-- Reporting Creation -->
 
-!INCLUDE "index/report_creation.overview.md"
+!INCLUDE "methods/report_creation.overview.md"
 
 \newpage
 

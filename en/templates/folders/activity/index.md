@@ -1,19 +1,34 @@
-### Activity Title
+---
+Approach:
+- Interpersonal, Technical, Research
+Authors:
+- SAFETAG
+Org_size_under:
+- 1000
+Remote_options:
+- Complete, Partial, with-support, None
+Skills_required:
+- N/A
+Time_required_minutes:
+- 120
+---
 
-#### Summary
+#### Activity Title
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed
+##### Materials Needed
 !INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"

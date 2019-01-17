@@ -1,20 +1,34 @@
-### Network Traffic Analysis
+---
+Approach:
+- Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 100
+Remote_options:
+- with-support
+Skills_required:
+- Traffic Analysis, Malware Analysis
+Time_required_minutes:
+- 240
+---
 
-#### Summary
+#### Network Traffic Analysis
+
+##### Summary
 !INCLUDE "summary.md"
 
-#### Overview
+##### Overview
 !INCLUDE "approach.md"
 
-#### Materials Needed 
-!INCLUDE "materials_needed.md" 
+##### Materials Needed
+!INCLUDE "materials_needed.md"
 
-#### Considerations
+##### Considerations
 !INCLUDE "operational_security.md"
 
-#### Walkthrough
+##### Walkthrough
 !INCLUDE "instructions.md"
 
-#### Recommendation
+##### Recommendation
 !INCLUDE "recommendations.md"
-

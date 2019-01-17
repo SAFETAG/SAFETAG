@@ -1,11 +1,7 @@
 
-# EL SISTEMA DE SEGURIDAD SAFETAG
-
-Las auditorías de SAFETAG consisten en múltiples pasos de recolección y confirmación de información, así como de ejercicios de investigación para instalar capacidades en el personal, organizados en objetivos, donde cada uno de éstos soporta a los objetivos principales de SAFETAG, al tiempo que se capacita a la institución.
+## EL CICLO DE VIDA DE UNA AUDITORÍA
 
 ![Actividades de SAFETAG](images/activities_flow.svg)
-
-## EL CICLO DE VIDA DE UNA AUDITORÍA
 
 El proceso de una auditoría es cíclico. Nuevas amenazas identificadas, vulnerabilidades, capacidades y barreras de impacto en las actividades existentes y a implementar en el futuro. Al mismo tiempo, el auditor a través de conversaciones, entrenamientos y actividades de grupo está capacitando a las organizaciones y abordando amenazas críticas o sensibles dentro de los plazos. Este proceso iterativo finalmente lleva al auditor a un punto en el cual considera que han identificado los puntos críticos y ahora están listos para seguir adelante por su cuenta a partir de todas sus recomendaciones.
 

@@ -11,5 +11,4 @@
   * A liability waiver signed by the host organization. [^PETS_permission_to_test]
   * Approval from any third parties. [^PETS_third_parties]
 
-
-See the Appendix for a DRAFT combined engagement and confidentiality agreement.
+Auditors are encouraged to use, or at least reference, the [SAFETAG Agreement Generator](https://github.com/SAFETAG/safetag_agreement_generator), a python script which provides a decision tree covering the above points, and builds a basic, clear-language agreement which can be translated and formalized as needed. Sample outputs and a diagram of the full decision tree are available in the "outputs" folder of the Agreement Generator repository. This replaces the draft agreement previously part of SAFETAG.
