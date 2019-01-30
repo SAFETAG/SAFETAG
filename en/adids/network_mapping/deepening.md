@@ -1,8 +1,8 @@
 ### Deepening
 
-This portion of the module covers mapping a network as well as running deeper scans on selected targets once you have gained access. This exercise covers both using nmap and common command-line network utilities as well as using OpenVAS for vulnerability detection.  This section is split into the same sub-divisions as the Input section:
+This portion of the module covers accessing and mapping a network as well as running deeper scans on selected targets once you have gained access. This exercise covers both using nmap and common command-line network utilities as well as using OpenVAS for vulnerability detection.  This section is split into the same sub-divisions as the Input section:
 
-
+  * Network Access
   * Network Mapping and Service Discovery
     * Basic Network Mapping
     * Identifying Network Hardware
@@ -17,7 +17,34 @@ This portion of the module covers mapping a network as well as running deeper sc
 
 **Note** {.note} Don't forget that other participants will show up on the network.
 
-#### Network Mapping and Service Discovery
+#### Network Access
+
+This section covers accessing networks. We have only included the WPA cracking section in this default curricula. You can find WEP, WPA, and MAC filtered network techniques in the Network Access guide examples.
+
+##### EXERCISE: Password Dictionary Creation
+
+**The instructions for this section are in the Password Dictionary Example under the Preparation section of the full guide**
+
+ * With a whiteboard or flipchart, ask the trainees to come up with words related to a sample organization
+ * Find a locally relevant password dictionary
+ * Build a micro-dictionary and start playing with combination attacks
+
+##### EXERCISE: WPA password hacking exercise with router
+
+**The instructions for this section are in the WPA Example under the Network Access section of the full guide**
+
+The purpose of this exercise is to walk participants through attaining access to a WPA protected access point by cracking the WPA password.
+
+(Trainer will log in with credentials, and then share their MAC address for trainees to deauth at will.)
+
+  * Start the wireless interface in monitor mode on the specific AP channel
+  * Start airodump-ng on AP channel with filter for bssid to collect authentication handshake
+  * Use aireplay-ng to deauthenticate the wireless client
+  * Run aircrack-ng to crack the pre-shared key using the authentication handshake
+    * Use your earlier generated (See: Audit Preparation) "John the Ripper" password dictionary
+
+
+##### Network Mapping and Service Discovery
 
 Continuing from the *zenmap* Activity, we will now dive deeper into network scanning; first by more advanced and precise *nmap* scannning.
 
@@ -49,14 +76,14 @@ Continuing from the *zenmap* Activity, we will now dive deeper into network scan
   * Enumerating the mapping techniques used earlier in this section up the network chain
     *NOTE:*{.note} ONLY do this with approval and within the LAN that are owned by the organization.)
   * Identifying the network's public IP (via whatismyipaddress, skype resolvers, discuss other methods)
-  * With permission, run an nmap scan (via a VPN) against this external-facing IP. 
+  * With permission, run an nmap scan (via a VPN) against this external-facing IP.
 
 
 #### Network Traffic Analysis: Listening to the Network
 
  * Wireshark
  * Working with Filters
- 
+
 #### Server Vulnerability Scanning
 
 ##### Using OpenVas
@@ -72,7 +99,7 @@ Continuing from the *zenmap* Activity, we will now dive deeper into network scan
 ##### Other Tools
 
  * Light-touch Website tools: Builtwith, (DrupalVersionCheck site?)
- * SkipFish,  OwaspZAP, ProxyStrike 
+ * SkipFish,  OwaspZAP, ProxyStrike
 
 
 #### Vulnerability Research
