@@ -1,5 +1,7 @@
 ### Input
 
+Many of these methods, while all using open data, can be incredibly damaging if used maliciously. Review the SAFETAG Code of Conduct.
+
 #### Information Gathering Methodology
 
 <?step-by-step explanation that is tool agnostic of the audit / approach?>
@@ -12,19 +14,18 @@
 * Built-with site
 * pastebin search
 * google dorking
-
+* shodan.io
+* Wigle.net
 * Social Engineering research and staff enumeration
-* facebook graph
 * image exif data and reverse image searching
 * social media account discovery
 
 #### Automated OSINT with  recon-ng
 
-
-intro to tool
+intro to tool and discussion of other tool options
 
 running on a server is ideal; fire up your vpns?
-https://layer8.org/linux-vpn-instructions ? 
+https://layer8.org/linux-vpn-instructions ?
 
 recon-ng tutorial overview
 
@@ -40,7 +41,7 @@ Putting context research to work:
 * repeat and explore!
 
 
-#### Advanced Concepts 
+#### Advanced Concepts
 
 For audit sections we will do the actual tool training and  conduct mini-follow up on the larger safetag audit themes in relationship to that audit.
 
