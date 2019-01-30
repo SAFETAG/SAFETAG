@@ -107,11 +107,7 @@ subtitle: 'Curricula'
 !INCLUDE "adids/risk_modeling.adids.md"
 
 \newpage
-<!-- Network Discovery -->
 
-!INCLUDE "adids/network_discovery.adids.md"
-
-\newpage
 <!-- Network Mapping -->
 
 !INCLUDE "adids/network_mapping.adids.md"
@@ -127,6 +123,11 @@ subtitle: 'Curricula'
 <!-- Physical -->
 
 !INCLUDE "adids/physical_assessment.adids.md"
+<!-- Network Discovery -->
+
+!INCLUDE "adids/network_discovery.adids.md"
+<!-- TODO: update  physical assessment and add discovery to it -->
+
 
 \newpage
 <!-- Data Assessment -->
@@ -139,6 +140,8 @@ subtitle: 'Curricula'
 !INCLUDE "adids/device_assessment.adids.md"
 
 \newpage
+
+<!-- TODO: Add responsive support section -->
 <!-- Social Engineering Exercise -->
 
 !INCLUDE "social_engineering_exercise.adids.md"
