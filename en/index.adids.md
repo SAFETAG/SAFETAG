@@ -85,12 +85,6 @@ subtitle: 'Curricula'
 !INCLUDE "adids/assessment_plan.adids.md"
 
 \newpage
-
-# PART TWO: The Audit
-
-<!--![Pre-Audit](images/audit_expertiese.svg)\ -->
-
-\newpage
 <!-- Remote Assessment -->
 
 !INCLUDE "adids/reconnaissance.adids.md"
@@ -101,6 +95,13 @@ subtitle: 'Curricula'
 !INCLUDE "adids/preparation.adids.md"
 
 \newpage
+
+# PART TWO: The Audit
+
+<!--![Pre-Audit](images/audit_expertiese.svg)\ -->
+
+
+\newpage
 <!-- Risk Modeling -->
 
 !INCLUDE "adids/risk_modeling.adids.md"
@@ -109,11 +110,6 @@ subtitle: 'Curricula'
 <!-- Network Discovery -->
 
 !INCLUDE "adids/network_discovery.adids.md"
-
-\newpage
-<!-- Network Access -->
-
-!INCLUDE "adids/network_access.adids.md"
 
 \newpage
 <!-- Network Mapping -->

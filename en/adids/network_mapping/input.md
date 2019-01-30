@@ -1,5 +1,16 @@
 ### INPUT
 
+#### Network access
+
+The SAFETAG full guide contains sections on running active pen tests against wifi networks.  While the skills to accomplish that are valuable for auditors to have, understand, and be able to use in discussions around the importance of network security, the activities themselves tend to take more time than is useful in most audit situations, and failure to "break in" to the network can undermine an auditor's credibility. Training material and guides are available in this section and as part of the Network Mapping methodology, but overall the other aspects - mapping a network, and discussing wifi password and guest network policies or practices are more valuable for an assessment. The WPA3 wifi standard provides significant protections against the attacks discussed in SAFETAG.
+
+Organizations approach their wireless setup in a myriad of different ways based on how and where they work.  However, with wireless networks in almost every case being treated as trusted internal networks, we need to ensure that they provide a reasonable level of equivalent security as well as using the failings of wireless networks to have further discussions with organizations over defense in depth concepts.
+
+Encrypted networks take a bit more directed effort to access without being given the password, but many wireless networks are protected by weak passwords.  Given the value of the information inside the network, it is worthwhile to test the strength of the network password, and use it as ax way to begin a disucssion on password strength in general, as well as concepts around defense in depth, and not relying on any one "point of failure" to secure your information.
+
+The SAFETAG team has yet to encounter a WEP network in the field, but we presume there are still some out there, and WEP can be reliably broken through brute-force attacks. While WPA is a significant improvement over WEP's security, weak passwords or WPS access are extremely common, and even the simplest dictionary attacks can open a network in minutes.
+
+WPS was built as an addition to WPA to make it easier to add devices without typing in secure passwords, but this ease of use means that a malicious actor can pose as a device and effectively reduce the potentially very difficult passwords WPA allows down to a simple numeric-only 8 character PIN.  Further, the WPS system allows an attacker to work on this PIN in two parallel chunks, further reducing its security.  This, like WEP, is a "live" attack - you have to stay connected to the network - but also like WEP, it is a guaranteed attack; your brute forcing of the WPS system will eventually (2-10 hours) allow you network access.
 
 
 #### Network Mapping and Service Discovery
@@ -44,7 +55,7 @@ replacing the AA... and FF... with the mac addresses of the auditors.  The rest 
 
 ##### Operational Security and Responsibility Note
 
-It is entirely possible that you could capture **extremely sensitive information** with this packet capture - anything from unencrypted personal chats to passwords to work and non-work services, or worse.  **Never share the raw packet capture** - Wireshark has a powerful export functionality to export filtered views, specific ranges and only selected packets. If you need data from the capture, export only what you need and carefully examine the export to ensure nothing sensitive is accidentally included.  Consider deleting the raw packet capture file after you have studied and exported filtered versions of it. 
+It is entirely possible that you could capture **extremely sensitive information** with this packet capture - anything from unencrypted personal chats to passwords to work and non-work services, or worse.  **Never share the raw packet capture** - Wireshark has a powerful export functionality to export filtered views, specific ranges and only selected packets. If you need data from the capture, export only what you need and carefully examine the export to ensure nothing sensitive is accidentally included.  Consider deleting the raw packet capture file after you have studied and exported filtered versions of it.
 
 #### Vulnerability Scanning
 
@@ -101,11 +112,11 @@ Identifying vulnerabilities in Default Configurations & common pitfalls
 ##### Material that may be Useful:
 
   * *Standard* [Vulnerability Analysis -  Research Phase](http://www.pentest-standard.org/index.php/Vulnerability_Analysis#Research) (Penetration Testing Execution Standard)
-  
+
   * *Framework* [Vulnerability Assessment](http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html#FMFreemind_Link_1513945467FM) (http://www.vulnerabilityassessment.co.uk)
-  
+
   * *Poster* [Ultimate Pen Test 2013](https://www.sans.org/security-resources/posters/ultimate-pen-test-2013-45) (SANS Institute)
-  
+
   * *Report* [The Common Vulnerability Scoring System (CVSS) and Its Applicability to Federal Agency Systems](http://csrc.nist.gov/publications/nistir/ir7435/NISTIR-7435.pdf) (NIST - National Institute of Standards and Technology)
 
   * *Report* [The Common Configuration Scoring System (CCSS): Metrics for Software Security Configuration Vulnerabilities](http://csrc.nist.gov/publications/nistir/ir7502/nistir-7502_CCSS.pdf) (NIST - National Institute of Standards and Technology)
