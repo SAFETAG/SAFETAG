@@ -18,7 +18,10 @@ subtitle: 'Curricula'
 
 <!-- Overview -->
 
-!INCLUDE "document_matter/overview.md"
+!INCLUDE "document_matter/safetag_core_intro.md"
+
+!INCLUDE "document_matter/audit_lifecycle.md"
+
 
 ![SAFETAG Activities](images/activities_flow.svg)
 
@@ -79,7 +82,7 @@ subtitle: 'Curricula'
 \newpage
 <!-- Assessment Plan Development -->
 
-!INCLUDE "assessment_plan.adids.md"
+!INCLUDE "adids/assessment_plan.adids.md"
 
 \newpage
 
@@ -119,7 +122,7 @@ subtitle: 'Curricula'
 
 \newpage
 
-<!-- Vulnerability Scanning 
+<!-- Vulnerability Scanning
 
 !INCLUDE "adids/vulnerability_scanning.adids.md" -->
 
