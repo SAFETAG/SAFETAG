@@ -123,11 +123,6 @@ subtitle: 'Curricula'
 <!-- Physical -->
 
 !INCLUDE "adids/physical_assessment.adids.md"
-<!-- Network Discovery -->
-
-!INCLUDE "adids/network_discovery.adids.md"
-<!-- TODO: update  physical assessment and add discovery to it -->
-
 
 \newpage
 <!-- Data Assessment -->
