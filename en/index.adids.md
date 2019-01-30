@@ -136,11 +136,6 @@ subtitle: 'Curricula'
 
 \newpage
 
-<!-- TODO: Add responsive support section -->
-<!-- Social Engineering Exercise -->
-
-!INCLUDE "social_engineering_exercise.adids.md"
-
 \newpage
 <!-- Debrief -->
 
