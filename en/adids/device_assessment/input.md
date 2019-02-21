@@ -1,6 +1,6 @@
 ### Input
 
-The Device Assessment portion of the audit is a rich source of information about daily practice, as opposed to policy.  The information from this exercise is as insightful, if not moreso, than the network scanning and mapping portions.  In a two-auditor setup, this is generally performed by the more "facilitator" style auditor.  In the case of a one-auditor process, it is a great exercise to interleave with other processes, and to do while running a slow scan on the network or simply capturing daily traffic.
+The Device Assessment portion of the audit is a rich source of information about daily practice, as opposed to policy.  The information from this exercise is as insightful, if not more so, than the network scanning and mapping portions.  In a two-auditor setup, this is generally performed by the more "facilitator" style auditor.  In the case of a one-auditor process, it is a great exercise to interleave with other processes, and to do while running a slow scan on the network or simply capturing daily traffic.
 
 It is best to do on the second or third day of the audit, balancing your familiarity to the staff with protecting your ability to react or dig deeper into information revealed during this.
 

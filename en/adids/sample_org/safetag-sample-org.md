@@ -1,8 +1,8 @@
-## Sample Organization ##
+### Sample Organization
 
 This provides a detailed snapshot of an organization that can be used as a focal point during SAFETAG training for examples, program concepts, personalities, and office setup. Trainers can adopt personalities from this for mock interviews and to answer questions from the  risk assessment or critical data exercises.
 
-### Organization: Local Media Rights (LMR)
+#### Organization: Local Media Rights (LMR)
 (http://LocalMediaRights.org)
 
 **Mission**: "Advancing the next generation of local and independent media"
@@ -11,11 +11,11 @@ This provides a detailed snapshot of an organization that can be used as a focal
 
 LMR works with local journalists and activists supporting freedom of expression and human rights through multiple programs, including training, incubation, and outreach.
 
-#### Programs and Procedures ####
+##### Programs and Procedures
 
 LMR has two active projects, a training program called "Local Media Next" managed by the Program Manager, and an incubation program supporting a collaborative blog called "MediaRights". Outreach and advocacy work is an ongoing task, but not always "funded".
 
-##### Project: Local Media Next #####
+###### Project: Local Media Next
 LMNext provides a series of training events in different tracks on advocacy, journalism, HR documentation. It has added an online component to some of the trainings as well.
 
 Components:
@@ -25,7 +25,7 @@ Components:
  * MOOC?
  * email lists?
 
-##### Project: MediaRights #####
+###### Project: MediaRights
 
 MediaRights is a policy/political blog on the current laws and implications on human rights in the country. It has drawn criticism from the government and was DDoSed once after a particularly harsh post. The bloggers share one account but often will sign their names to posts they write. They tend to be medium high profile (a university professor, the Executive Director and Project Director of LMR, etc.), but it also includes some university students and independent activists.
 
@@ -38,7 +38,7 @@ Components:
  * Google doc drafts
 
 
-#### People ####
+##### People
 **Executive Director, Jamie** : Jamie is very excited about improving the organization's digital security.  Jamie met some trainers at a conference and believes it is important for the organization.  Jamie reached out to the auditor and has been the primary point of contact and the "managerial interview" subject.  Unfortunately, the audit overlaps with an important presentation, and Jamie will not available or even particularly responsive to email. More of a visionary than a leader, Jamie is often absent or disconnected from the details and challenges of the office. Jamis is fluent in a variety of languages.
 
 **Office Manager (and tech lead, printer repair, etc.), Taylor** : Taylor is stretched between managing the finances for the entire organization, much of the grant-writing nitty-gritty and reporting work, and on top of that is the most technical person in the office;  often found supporting staff (mostly the ED) in printing/adware/website issues. Taylor speaks limited English in addition to the local language.
@@ -53,7 +53,7 @@ Components:
 
 **Office Support, Carter** : Carter is the first to arrive every day to unlock the office, make tea, and fetch lunch.  Comfortable enough in working on printers, and enjoys using cheap but interesting technology.
 
-##### Other People #####
+###### Other People
 
 Security guard?
 
@@ -63,7 +63,7 @@ Former employees?
 
 MediaRights bloggers
 
-### Web Presence ###
+#### Web Presence ###
 
 Website: LocalMediaRights.org
 
@@ -74,13 +74,14 @@ Other sites/subs:
  * localmediarights.dreamhosters.com == dev.localmediarights.org
  * Hosted at dreamhost - default config subdomains: ftp.
 
-#### Social Media ####
-Twitter
-Facebook
-Youtube Channel
-...?
+##### Social Media
 
-### Office Layout ###
+* Twitter
+* Facebook
+* Youtube Channel
+* ...?
+
+#### Office Layout
 
  * Doors
  * Windows
@@ -88,7 +89,7 @@ Youtube Channel
  * Locks / Guards
  * Nearby?
 
- TODO: Add SVG of layout
+<!-- TODO: Add SVG of layout -->
 
 Interior Rooms:
 
@@ -100,7 +101,7 @@ Interior Rooms:
 * Kitchen / breakroom
 * Bathroom
 
-### Office Network and Devices ###
+#### Office Network and Devices
 
 Exec Dir and Comms Dir both have Mac laptops at OSX 10.8 (Mountain Lion). They did not upgrade because they heard Mavericks didn't work well.
 
@@ -113,4 +114,4 @@ Cables are run to the desktop machines and the laptops are on wireless.  The Exe
 
 There is a file server (running Windows 2003) and an Apple Time Machine on the network. Physically, the Time Machine is next to the wireless router, and the server is in a closet in the program staff office.
 
-
+<!-- TODO: Create nmap output  -->
