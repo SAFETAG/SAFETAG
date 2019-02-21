@@ -132,6 +132,36 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 \newpage
+<!-- Organizational Policies -->
+
+!INCLUDE "methods/organizational_policies.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/polices_informal/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/policies_review/index.md"
+</div>
+
+<div class="boxtext">
+### Conduct Interviews
+
+**NOTE:** Covered in full under Capacity Assessment
+
+!INCLUDE "../../exercises/interviews/approach.md"
+</div>
+
+
+<div class="boxtext">
+### A Day in the Life
+
+**NOTE:** Covered in full under Organizational Device Assessment
+
+!INCLUDE "../../exercises/day_in_the_life/approach.md"
+</div>
+
+\newpage
 <!-- Network Mapping -->
 
 !INCLUDE "methods/network_mapping.guide.md"
