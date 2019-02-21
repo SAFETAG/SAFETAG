@@ -240,6 +240,15 @@ Covered in full in User Device Assessment:
 </div>
 
 <div class="boxtext">
+#### Assessing Usage of Cloud Services
+
+Covered in full in Data Assessment:
+
+!INCLUDE "exercises/cloud_services/approach.md"
+
+</div>
+
+<div class="boxtext">
 #### Network Mapping
 
 Covered in full in Network Mapping
@@ -368,6 +377,9 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 !INCLUDE "exercises/private_data/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/cloud_services/index.md"
+</div>
 
 \newpage
 
