@@ -27,11 +27,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.0293101"
-     inkscape:cx="104.10117"
-     inkscape:cy="22.476431"
+     inkscape:zoom="2.1420457"
+     inkscape:cx="139.74325"
+     inkscape:cy="-15.891747"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -316,7 +316,7 @@
      transform="translate(0,-2.8320313e-6)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="153.98254"
        y="32.550873"
        id="text3154"><tspan
@@ -324,7 +324,7 @@
          id="tspan3156"
          x="153.98254"
          y="32.550873"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#999999">التهديدات</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">التهديدات</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -338,15 +338,15 @@
          style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif">التهديدات</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh', sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="56.947273"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="66.947273"
        y="46.806274"
        id="text3201"><tspan
          sodipodi:role="line"
          id="tspan3203"
-         x="56.947273"
+         x="66.947273"
          y="46.806274"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh', sans-serif">الممثلون</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif">الممثلون</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -371,7 +371,7 @@
          style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif">الممثلون</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="52.659492"
        y="77.380836"
        id="text3205-9"><tspan
@@ -379,10 +379,10 @@
          id="tspan3207-4"
          x="52.659492"
          y="77.380836"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#999999">العوائق</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">العوائق</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="56.576679"
        y="106.94794"
        id="text3251"><tspan
@@ -390,7 +390,7 @@
          id="tspan3253"
          x="56.576679"
          y="106.94794"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#999999">الأصول</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">الأصول</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -412,7 +412,7 @@
          id="tspan3278"
          x="150.54187"
          y="62.55909"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#999999">الالقدرة</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">الالقدرة</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -426,7 +426,7 @@
          style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">الالقدرة</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="149.46799"
        y="92.473015"
        id="text3301"><tspan
@@ -434,7 +434,7 @@
          id="tspan3303"
          x="149.46799"
          y="92.473015"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#999999">الالأنشطة</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">الالأنشطة</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -448,7 +448,7 @@
          style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">الالأنشطة</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="147.36462"
        y="122.38081"
        id="text3347"><tspan
@@ -456,7 +456,7 @@
          id="tspan3349"
          x="147.36462"
          y="122.38081"
-         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#999999">الثغرات</tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:'Droid Arabic Naskh',sans-serif;fill:#000000">الثغرات</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Droid Arabic Naskh',sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"

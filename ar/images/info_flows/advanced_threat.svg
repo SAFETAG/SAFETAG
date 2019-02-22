@@ -344,7 +344,7 @@
          style="font-size:10px">Actors</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;"
        x="472.55466"
        y="77.358307"
        id="text3205"><tspan
@@ -352,7 +352,7 @@
          id="tspan3207"
          x="472.55466"
          y="77.358307"
-         style="font-size:10px;fill:#999999;fill-opacity:1;">Barriers</tspan></text>
+         style="font-size:10px;fill:#000000;fill-opacity:1;">Barriers</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -366,7 +366,7 @@
          style="font-size:10px">Actors</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;"
        x="22.659492"
        y="77.380836"
        id="text3205-9"><tspan
@@ -374,7 +374,7 @@
          id="tspan3207-4"
          x="22.659492"
          y="77.380836"
-         style="font-size:10px;fill:#999999;fill-opacity:1;">Barriers</tspan></text>
+         style="font-size:10px;fill:#000000;fill-opacity:1;">Barriers</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -388,7 +388,7 @@
          style="font-size:10px;fill:#000000">Assets</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;"
        x="476.68304"
        y="106.98856"
        id="text3251-1"><tspan
@@ -396,10 +396,10 @@
          id="tspan3253-6"
          x="476.68304"
          y="106.98856"
-         style="font-size:10px;fill:#999999;fill-opacity:1;">Assets</tspan></text>
+         style="font-size:10px;fill:#000000;fill-opacity:1;">Assets</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;"
        x="120.54187"
        y="62.55909"
        id="text3276"><tspan
@@ -407,10 +407,10 @@
          id="tspan3278"
          x="120.54187"
          y="62.55909"
-         style="font-size:10px;fill:#999999;fill-opacity:1;">Capacity</tspan></text>
+         style="font-size:10px;fill:#000000;fill-opacity:1;">Capacity</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;"
        x="370.59967"
        y="62.425823"
        id="text3276-3"><tspan
@@ -418,7 +418,7 @@
          id="tspan3278-7"
          x="370.59967"
          y="62.425823"
-         style="font-size:10px;fill:#999999;fill-opacity:1;">Capacity</tspan></text>
+         style="font-size:10px;fill:#000000;fill-opacity:1;">Capacity</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -432,7 +432,7 @@
          style="font-size:10px">Activities</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;"
        x="369.53595"
        y="92.535736"
        id="text3301-5"><tspan
@@ -440,7 +440,7 @@
          id="tspan3303-4"
          x="369.53595"
          y="92.535736"
-         style="font-size:10px;fill:#999999;fill-opacity:1;">Activities</tspan></text>
+         style="font-size:10px;fill:#000000;fill-opacity:1;">Activities</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"

@@ -191,8 +191,6 @@ info@safetag.org | https://safetag.org
 ## الأمن التشغيلي
 
 
-"*Also be aware that local groups may not be able to accurately gauge the safety of their communications with you. Sometimes they underestimate the likelihood of risk - at other times, they can wildly overestimate the risk. Either way, trainers need to navigate this issues carefully and respectfully with a "do no harm" approach that respects the reported needs, context, and experiences of your local contact and potential trainees.*" - _Needs Assessment: Level-Up_ [^event_planning_input]
-
 ### ملخص
 
 أدناه خط الأساس لإرشادات الأمن التشغيلي في تدقيق SAFETAG. يحتوي كل نشاط على إرشادات الأمن التشغيلي الخاصة به.
