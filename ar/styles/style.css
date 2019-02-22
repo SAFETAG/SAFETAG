@@ -1,19 +1,19 @@
 /* fonts */
 
 @font-face {
-    font-family: 'Droid Arabis Naskh';
+    font-family: 'Droid Arabic Naskh';
     src: url('fonts/DroidNaskh-Regular.ttf')  format("truetype")
 }
 @font-face {
-    font-family: 'Droid Arabis Naskh Bold';
+    font-family: 'Droid Arabic Naskh Bold';
     src: local('fonts/DroidNaskh-Bold.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Droid Arabis Naskh Italic';
+    font-family: 'Droid Arabic Naskh Italic';
     src: local('fonts/DroidNaskh-Bold.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Droid Arabis Naskh Bold Italic';
+    font-family: 'Droid Arabic Naskh Bold Italic';
     src: local('fonts/DroidNaskh-Bold.ttf')  format("truetype");
 }
 
@@ -21,7 +21,7 @@ html,
 body {
         background: white;
         font-size: 10pt;
-        font-family: 'Droid Arabis Naskh', sans-serif;
+        font-family: 'Droid Arabic Naskh', sans-serif;
 }
 
 code {
@@ -32,7 +32,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Droid Arabis Naskh", sans-serif;
+    font-family: "Droid Arabic Naskh", sans-serif;
     font-style: bold;
     margin-bottom: 0px;
 }
@@ -256,7 +256,7 @@ figure {
 }
 
 figcaption {
-    font-family: "Droid Arabis Naskh", sans-serif;
+    font-family: "Droid Arabic Naskh", sans-serif;
     font-style: italic;
     text-align: center;
     font-size: 8pt;
