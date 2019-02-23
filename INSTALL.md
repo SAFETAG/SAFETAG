@@ -53,4 +53,4 @@ To build the Arabic version of SAFETAG:
 ```
 ~/github/Documentation-Builder/builddoc -i ~/github/SAFETAG/ar -I index.guide.md -o guide.pdf -t ~/github/SAFETAG/ar/styles
 ```
-*Note:* The Arabic version requires the styles and templates to be adapted to use a right-to-left text flow and implements custom fonts.  We recommend downloading and using the Apache 2.0 Licensed [Droid Arabic Naskh]( https://fontlibrary.org/en/font/droid-arabic-naskh) for readability, storing the font files in SAFETAG/ar/styles/fonts .
+*Note:* The Arabic version requires the styles and templates to be adapted to use a right-to-left text flow and implements custom fonts.  We recommend downloading and using the SIL Open Font 1.1 licensed Noto Naskh Arabic  (https://www.google.com/get/noto/#naskh-arab), storing the font files in SAFETAG/ar/styles/fonts . If you choose a different font, you will need to edit the ar/styles/styles.css to link and reference it, and you may encounter errors rendering periods (.).
