@@ -1,0 +1,6 @@
+[User by Wilson Joseph from The Noun Project](http://thenounproject.com/term/user/65095)
+[User by Wilson Joseph from The Noun Project](http://thenounproject.com/term/user/65094)
+[News by Wilson Joseph from The Noun Project](http://thenounproject.com/term/news/28159/)
+[Chat by Wilson Joseph from The Noun Project](http://thenounproject.com/term/chat/36234/)
+[Surveillance Camera by Wilson Joseph from The Noun Project](http://thenounproject.com/term/surveillance-camera/38042/)
+[User by Wilson Joseph from The Noun Project](http://thenounproject.com/term/user/76369)
