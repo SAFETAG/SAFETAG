@@ -1,27 +1,29 @@
 /* fonts */
 
 @font-face {
-    font-family: 'Droid Arabis Naskh';
-    src: url('fonts/DroidNaskh-Regular.ttf')  format("truetype")
+    font-family: 'Noto Naskh Arabic';
+    src: url('fonts/NotoNaskhArabic-Regular.ttf')  format("truetype")
 }
 @font-face {
-    font-family: 'Droid Arabis Naskh Bold';
-    src: local('fonts/DroidNaskh-Bold.ttf')  format("truetype");
+    font-family: 'Noto Naskh Arabic Bold';
+    src: local('fonts/NotoNaskhArabic-Bold.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Droid Arabis Naskh Italic';
-    src: local('fonts/DroidNaskh-Bold.ttf')  format("truetype");
+    font-family: 'Noto Naskh Arabic Italic';
+    src: local('fonts/NotoNaskhArabic-Bold.ttf')  format("truetype");
 }
 @font-face {
-    font-family: 'Droid Arabis Naskh Bold Italic';
-    src: local('fonts/DroidNaskh-Bold.ttf')  format("truetype");
+    font-family: 'Noto Naskh Arabic Bold Italic';
+    src: local('fonts/NotoNaskhArabic-Bold.ttf')  format("truetype");
 }
 
 html,
 body {
         background: white;
         font-size: 10pt;
-        font-family: 'Droid Arabis Naskh', sans-serif;
+        font-family: 'Noto Naskh Arabic', sans-serif;
+
+
 }
 
 code {
@@ -32,7 +34,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Droid Arabis Naskh", sans-serif;
+    font-family: 'Noto Naskh Arabic', sans-serif;
     font-style: bold;
     margin-bottom: 0px;
 }
@@ -256,7 +258,7 @@ figure {
 }
 
 figcaption {
-    font-family: "Droid Arabis Naskh", sans-serif;
+    font-family: 'Noto Naskh Arabic', sans-serif;
     font-style: italic;
     text-align: center;
     font-size: 8pt;
