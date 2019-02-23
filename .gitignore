@@ -20,3 +20,16 @@ modules/texlive
 #Ignore all fonts that are downloaded
 styles/fonts
 NotoSans-hinted.zip
+DESCRIPTION.en_us.html
+DroidNaskh-Bold.arabic
+DroidNaskh-Bold.menu
+DroidNaskh-Bold.ttf
+DroidNaskh-Regular.arabic
+DroidNaskh-Regular.menu
+DroidNaskh-Regular.ttf
+EARLY_ACCESS.css
+EARLY_ACCESS.family
+EARLY_ACCESS.html
+LICENSE.txt
+METADATA.json
+VERSION.txt
