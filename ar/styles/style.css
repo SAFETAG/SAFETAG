@@ -311,7 +311,9 @@ nav h1 {
     margin-bottom: 60mm;
     text-align: center;
 }
-
+.footnotes {
+    direction: ltr;
+  }
 
 /*
    line above and below
