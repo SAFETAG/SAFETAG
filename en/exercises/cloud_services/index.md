@@ -2,7 +2,7 @@
 Approach:
 - Research
 Authors:
-- SAFETAG
+- Natasha Msonza, Neil Blazevic
 Org_size_under:
 - 1000
 Remote_options:

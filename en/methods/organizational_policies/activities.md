@@ -1,10 +1,10 @@
 
 <div class="boxtext">
-!INCLUDE "../../exercises/polices_informal/index.md"
+!INCLUDE "../../exercises/policies_informal/index.md"
 </div>
 
 <div class="boxtext">
-!INCLUDE "../../exercises/polices_review/index.md"
+!INCLUDE "../../exercises/policies_review/index.md"
 </div>
 
 <div class="boxtext">

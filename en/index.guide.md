@@ -137,7 +137,7 @@ See the Appendix for a sample travel kit / checklist
 !INCLUDE "methods/organizational_policies.guide.md"
 
 <div class="boxtext">
-!INCLUDE "exercises/polices_informal/index.md"
+!INCLUDE "exercises/policies_informal/index.md"
 </div>
 
 <div class="boxtext">

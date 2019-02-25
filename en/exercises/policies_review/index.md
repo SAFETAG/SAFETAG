@@ -2,7 +2,7 @@
 Approach:
 - Research
 Authors:
-- SAFETAG
+- Carlos Guerra, Candace Lazarou
 Org_size_under:
 - 1000
 Remote_options:
