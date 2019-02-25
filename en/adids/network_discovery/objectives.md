@@ -1,5 +1,4 @@
 ### Objectives
 
-  * Identify an organization's network
-  * Determine its security type
+  * Identifying an organization's network
   * Map out connected devices to likely hardware (e.g. Mac laptop, Android) and staff
