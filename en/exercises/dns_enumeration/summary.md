@@ -8,5 +8,3 @@ DNS Enumeration can be accomplished with different number of tools along with di
 **Passive**, or "indirect" approach refers to the enumeration process that doesn't send any traffic or packets from your machine, directly to your target. This can be done using 3rd tools such as online tools and cloud based scanners.
 
 **Active**, or "direct" approach refers to sending DNS queries and enumeration tests directly to the target. Consider that traffic is send over the target which may leave traces or traffic logs coming from your source IP. Active techniques include Zone Transfer, Reverse Lookup, Domain and Host Brute-Forcing, Standard Record Enumeration (wildcard, SOA, MX, A, TXT etc), Cache snooping, and Zone Walking
-
-*NOTE: When performing "active enumeration" it is always good to ask to whitelisting your IPs whenever you perform assessments. This rules out the idea of attackers having able to avoid shunning. Whitelisting your IPs also removes false positive reports and inaccurate results*

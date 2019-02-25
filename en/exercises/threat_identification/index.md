@@ -1,3 +1,18 @@
+---
+Approach:
+- Research, Interpersonal, Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 25
+Remote_options:
+- with-support
+Skills_required:
+- Group Facilitation, Psycho-social care, Risk Assessment
+Time_required_minutes:
+- 240
+---
+
 #### Threat Identification
 
 ##### Summary

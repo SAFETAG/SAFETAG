@@ -1,3 +1,18 @@
+---
+Approach:
+- unknown
+Authors:
+- SAFETAG
+Org_size_under:
+- 25
+Remote_options:
+- with-support
+Skills_required:
+- System Administration
+Time_required_minutes:
+- 60
+---
+
 #### Check Config Files
 
 ##### Summary

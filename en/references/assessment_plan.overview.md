@@ -5,4 +5,4 @@
 
   * *Template:* ["Rules of Engagement Template"](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=67) (NIST SP 800-115)
 
-  * *Article:* ["Legal Issues in Penetration Testing"](http://www.securitycurrent.com/en/analysis/ac_analysis/legal-issues-in-penetration-testing)
+  * *Article:* ["Legal Issues in Penetration Testing"](https://securitycurrent.com/legal-issues-in-penetration-testing/)

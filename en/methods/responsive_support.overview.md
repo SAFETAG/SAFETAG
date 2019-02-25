@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Responsive Support
 
 ### Summary
@@ -14,4 +23,3 @@
 
 ### Approaches
 !INCLUDE "../methods/responsive_support/approaches.md"
-

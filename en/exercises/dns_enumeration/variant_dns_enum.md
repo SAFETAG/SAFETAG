@@ -10,7 +10,7 @@ To access DNSenum, simply type the command ```dnsenum```. (You can add ```-h``` 
 The table below will help you get started with your DNS enumeration using ```dnsenum``` tool.
 
 | DNS Command | Description |
-|-------------|-------------|
+|-------------|-------------------------------------------------------|
 |dnsenum -h|Display ```Help``` options|
 |dnsenum ```domain.com```|Performs basic DNS enumeration|
 |dnsenum --enum ```domain.com```|Performs fast enumeration ```(equivalent to --threads 5 -s 15 -w)```|

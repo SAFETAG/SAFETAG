@@ -31,7 +31,7 @@
 
 <!-- Threat Modeling -->
 
-[^shostack_anchoring]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 298. 
+[^shostack_anchoring]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 298.
 
 [^NIST_SP_800_115_soc_eng_hostile]:["Individual targeting can lead to embarrassment for those individuals if testers successfully elicit information or gain access. It is important that the results of social engineering testing are used to improve the security of the organization and not to single out individuals."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
@@ -41,9 +41,9 @@
 
 <!-- Facilitation -->
 
-[^psych_sec_training]:[The Psychological Underpinnings of Security Training - Craig Higson-Smith](https://www.level-up.cc/resources-for-trainers/holistic/psychological-underpinnings-security-training)
+[^psych_sec_training]:[The Psychological Underpinnings of Security Training - Craig Higson-Smith](https://level-up.cc/before-an-event/psychosocial-underpinnings-of-security-training/)
 
-[^event_planning_input]:[Event Planning Inputs - Level-Up](https://www.level-up.cc/leading-trainings/event-planning)
+[^event_planning_input]:[Event Planning Inputs - Level-Up](https://www.level-up.cc/before-an-event/planning-your-training-event/)
 
 [^integratedsecurity_prep_tips]:[Integrated Security Facilitator Preparation Tips](http://integratedsecuritymanual.org/sites/default/files/integratedsecurity_themanual_1.pdf#page=25)
 
@@ -103,13 +103,13 @@
 
 [^corruptions_perception_index]:[Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
 
-[^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/news/regional)
+[^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
 
 [^HRW_regional_work]:[Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
 
 <!-- Surveillance and Censorship -->
 
-[^pi_country_reports]:[Privacy International's in-depth country reports and submissions to the United Nations.](https://www.privacyinternational.org/resources/reports)
+[^pi_country_reports]:[Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy)
 
 [^surveillance_whos_who]:[Surveillance Who's Who exposes the government agencies that attended ISS World surveillance trade shows between 2006 and 2011.](https://www.privacyinternational.org/resources/surveillance-whos-who)
 
@@ -128,9 +128,9 @@
 
 [^NIST_exploit_confirm]:["While vulnerability scanners check only for the possible existence of a vulnerability, the attack phase of a penetration test exploits the vulne rability to confirm its existence."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=38)
 
-[^shostack_finding_threats]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 125. 
+[^shostack_finding_threats]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 125.
 
-[^shostack_addressing_threats]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 167. 
+[^shostack_addressing_threats]: See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 167.
 
 [^shostack]: "Threat Modeling: Designing for Security" by Adam Shostack
 
@@ -164,7 +164,7 @@
 
 [^cryptolaw]:["A survey of existing and proposed laws and regulations on cryptography - systems used for protecting information against unauthorized access."](http://www.cryptolaw.org/) (The Crypto Law Survey)
 
-<!-- Malware and Threat reports --> 
+<!-- Malware and Threat reports -->
 
 [^staying_abreast_of_tech_and_threats]:["Assessors need to remain abreast of new technology and the latest means by which an adversary may attack that technology. They should periodically refresh their knowledge base, reassess their methodology-updating techniques as appropriate, and update their tool kits."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=47)
 
@@ -182,7 +182,7 @@
 
 [^internet_storm_center]:[SANS: Internet Storm Center](https://isc.sans.edu//)
 
-[^mcafee_threat_trends]:[McAfee Threat Trends Papers](www.mcafee.com/us/security-awareness/threat-trends.aspx)
+[^mcafee_threat_trends]:[McAfee Threat Trends Papers](https://www.mcafee.com/us/security-awareness/threat-trends.aspx)
 
 [^us-cert_current_activity]:[US-CERT Current Activity web page is a regularly updated summary of the most frequent, high-impact types of security incidents currently being reported](https://www.us-cert.gov/ncas/current-activity/)
 
@@ -225,7 +225,7 @@
 
 [^speak_safe_keeping_data_safe]:[Keeping Your Data Safe - Surveillance Self-Defense](https://ssd.eff.org/en/module/keeping-your-data-safe)
 
-<!-- Tech adoption and usability --> 
+<!-- Tech adoption and usability -->
 
 [^email_adoption_for_paranoid]:["Everyone except computer support staff said
 encrypting all e-mail messages was unnecessary. In fact, several mentioned encrypting all messages was for paranoid people rather than pragmatic ones."](https://cups.cs.cmu.edu/soups/2005/2005posters/10-gaw.pdf)

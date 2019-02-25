@@ -33,4 +33,10 @@ EtterCap provides a powerful frontend to managing this process with multiple pot
 
 **Step 2:** At this point, if the attacker is looking for unencrypted traffic, all the attacker needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins, as well as traffic revealing shadow infrastructure usage, such as Dropbox.
 
+Wireshark can also be used to identify malicious traffic.
+
+If you rarely use Wireshark, the output you will see will be a long list of packets, protocols and connections that might be hard to classify. To look into suspicious processes in a clearer way, you can use the "Protocol Hierarchy" option in the Statistics menu A good video to learn how to use this option for this purpose can be found [here](https://www.youtube.com/watch?v=OwQmwbD1uIs).
+
+- If you want to practice with captures of malicious traffic, you can find them in the [Wireshark wiki](https://wiki.wireshark.org/SampleCaptures).
+
 <!-- Wireshark screenshot -->

@@ -1,0 +1,2 @@
+
+This additional interview activity is to identify if there are any indicators that the organization may have already been attacked and/or compromised, or if someone they know has faced advanced threats. It should help identify what threats / threat actors they are dealing with, and their intent.  This will help the auditor prioritize work with the organisation during the audit and follow up and understand whether the auditor has the expertise to address or understand the threat or if outside expertise is needed.

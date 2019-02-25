@@ -1,3 +1,18 @@
+---
+Approach:
+- Research, Technical
+Authors:
+- SAFETAG
+Org_size_under:
+- 100
+Remote_options:
+- with-support
+Skills_required:
+- Research, Network Scanning
+Time_required_minutes:
+- 30
+---
+
 #### VoIP Security Assessment
 
 ##### Summary

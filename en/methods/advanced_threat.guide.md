@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Responding to Advanced Threats
 
 ### Summary
@@ -25,8 +34,11 @@
 !INCLUDE "../methods/advanced_threat/preparation.md"
 
 ### Resources
+
 <div class="greybox">
 !INCLUDE "../references/malware_analysis.md"
+
+!INCLUDE "../references/digital_forensics.md"
 </div>
 
 ### Activities

@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Reconnaissance
 
 ### Summary
@@ -22,7 +31,7 @@
 !INCLUDE "../methods/reconnaissance/operational_security.md"
 
 ### Preparation
-!INCLUDE "../methods/reconnaisance/preparation.md"
+!INCLUDE "../methods/reconnaissance/preparation.md"
 
 
 

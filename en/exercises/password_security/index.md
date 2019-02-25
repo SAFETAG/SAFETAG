@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- Complete
+Skills_required:
+- Surveys
+Time_required_minutes:
+- 30
+---
 
 
 #### Password Security Survey
@@ -19,6 +33,3 @@
 
 ##### Recommendation
 !INCLUDE "recommendations.md"
-
-###### Materials that may be useful
-!INCLUDE "password_survey.md"

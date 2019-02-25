@@ -1,5 +1,13 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
 
-##  Debrief
+##  Responsive Support and Debrief
 
 <!-- ![](images/capacity_assessment.png "") -->
 
@@ -48,4 +56,3 @@
 <!--Synthesis {.synthesis} -->
 
 !INCLUDE "../adids/debrief/synthesis.md"
-

@@ -1,3 +1,11 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
 
 ##  Capacity Assessment
 
@@ -48,4 +56,3 @@
 <!--Synthesis {.synthesis} -->
 
 !INCLUDE "../adids/capacity_assessment/synthesis.md"
-

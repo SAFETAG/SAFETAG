@@ -2,7 +2,6 @@
 title: 'A Security Auditing Framework and Evaluation Template for Advocacy Groups'
 subtitle: 'Overview'
 ---
-
 <!-- License -->
 
 !INCLUDE "document_matter/license.md"
@@ -15,17 +14,9 @@ subtitle: 'Overview'
 
 \newpage
 
-!INCLUDE "document_matter/how_to_read_this_guide.overview.md"
+<!-- Audit Lifecyce -->
 
-\newpage
-
-<!-- Overview -->
-
-!INCLUDE "document_matter/overview.md"
-
-\newpage
-
-<!-- Audit Lifecycle -->
+!INCLUDE "document_matter/safetag_core_intro.md"
 
 !INCLUDE "document_matter/audit_lifecycle.md"
 
@@ -44,13 +35,14 @@ subtitle: 'Overview'
 
 !INCLUDE "document_matter/operational_security.md"
 
-\newpage
-<!-- Audit Prep-->
-!INCLUDE "methods/preparation.overview.md"
-
 # Methods
 
 !INCLUDE "methods/intro.md"
+
+\newpage
+<!-- Audit Prep-->
+
+!INCLUDE "methods/preparation.overview.md"
 
 \newpage
 <!-- Audit Scoping-->
@@ -68,11 +60,14 @@ subtitle: 'Overview'
 !INCLUDE "methods/reconnaissance.overview.md"
 
 \newpage
-<!-- Network Access -->
 
-!INCLUDE "methods/network_access.overview.md"
+<!-- Organizational Policies -->
+
+!INCLUDE "methods/organizational_policies.overview.md"
+
 
 \newpage
+
 <!-- Network Mapping -->
 
 !INCLUDE "methods/network_mapping.overview.md"

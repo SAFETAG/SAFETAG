@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350.73816"
+   height="63.405758"
+   id="svg2"
+   version="1.1"
+   direction="rtl"
+   xml:lang="fa"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="risk_equation.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.5212353"
+     inkscape:cx="115.80096"
+     inkscape:cy="3.3372204"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="41"
+     inkscape:window-maximized="1"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-72.133776,139.15571"
+       orientation="0,1"
+       id="guide50"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(23.831913,-320.85392)">
+    <path
+       style="fill:#79b84c;fill-opacity:1;stroke:#79b84c;stroke-width:1.6746614px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 176.26572,351.82562 H -7.831913"
+       id="path2989"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       style="font-style:normal;font-weight:normal;font-size:18.57625771px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#79b84c;fill-opacity:1;stroke:none"
+       id="text2999"
+       transform="matrix(-1,0,0,1,223.06798,0)">
+      <path
+         d="m 156.13704,333.10765 -3.67353,4.94339 3.86401,5.2155 h -1.96829 l -2.95696,-3.99099 -2.95696,3.99099 h -1.96829 l 3.94564,-5.31528 -3.61003,-4.84361 h 1.96828 l 2.69392,3.6191 2.69392,-3.6191 h 1.96829"
+         id="path3510"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="font-style:normal;font-weight:normal;font-size:19.73500633px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#79b84c;fill-opacity:1;stroke:none"
+       id="text3366"
+       transform="matrix(-1,0,0,1,239.06798,0)">
+      <path
+         d="M 35.230729,349.04071 H 47.58438 v 1.61889 H 35.230729 v -1.61889 m 0,3.93159 H 47.58438 v 1.63816 H 35.230729 v -1.63816"
+         id="path3490"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:'Droid Sans Fallback';-inkscape-font-specification:'Droid Sans Fallback';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="313.16922"
+       y="358.53818"
+       id="text48"><tspan
+         sodipodi:role="line"
+         id="tspan46"
+         x="313.16922"
+         y="358.53818"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Droid Arabic Naskh';-inkscape-font-specification:'Droid Arabic Naskh'">الخطورة</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:'Droid Sans Fallback';-inkscape-font-specification:'Droid Sans Fallback';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="168.12213"
+       y="343.77066"
+       id="text3757"><tspan
+         sodipodi:role="line"
+         id="tspan3755"
+         x="168.12213"
+         y="343.77066"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Droid Arabic Naskh';-inkscape-font-specification:'Droid Arabic Naskh'">التهديد</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:'Droid Sans Fallback';-inkscape-font-specification:'Droid Sans Fallback';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="53.854568"
+       y="343.77066"
+       id="text3761"><tspan
+         sodipodi:role="line"
+         id="tspan3759"
+         x="53.854568"
+         y="343.77066"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Droid Arabic Naskh';-inkscape-font-specification:'Droid Arabic Naskh'">الثغرة</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:'Droid Sans Fallback';-inkscape-font-specification:'Droid Sans Fallback';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="104.05605"
+       y="375.77066"
+       id="text3765"><tspan
+         sodipodi:role="line"
+         id="tspan3763"
+         x="104.05605"
+         y="375.77066"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Droid Arabic Naskh';-inkscape-font-specification:'Droid Arabic Naskh'">القدرة</tspan></text>
+  </g>
+</svg>

@@ -18,7 +18,10 @@ subtitle: 'Curricula'
 
 <!-- Overview -->
 
-!INCLUDE "document_matter/overview.md"
+!INCLUDE "document_matter/safetag_core_intro.md"
+
+!INCLUDE "document_matter/audit_lifecycle.md"
+
 
 ![SAFETAG Activities](images/activities_flow.svg)
 
@@ -79,13 +82,7 @@ subtitle: 'Curricula'
 \newpage
 <!-- Assessment Plan Development -->
 
-!INCLUDE "assessment_plan.adids.md"
-
-\newpage
-
-# PART TWO: The Audit
-
-<!--![Pre-Audit](images/audit_expertiese.svg)\ -->
+!INCLUDE "adids/assessment_plan.adids.md"
 
 \newpage
 <!-- Remote Assessment -->
@@ -98,28 +95,26 @@ subtitle: 'Curricula'
 !INCLUDE "adids/preparation.adids.md"
 
 \newpage
+
+# PART TWO: The Audit
+
+<!--![Pre-Audit](images/audit_expertiese.svg)\ -->
+
+
+\newpage
 <!-- Risk Modeling -->
 
 !INCLUDE "adids/risk_modeling.adids.md"
 
 \newpage
-<!-- Network Discovery -->
 
-!INCLUDE "adids/network_discovery.adids.md"
-
-\newpage
-<!-- Network Access -->
-
-!INCLUDE "adids/network_access.adids.md"
-
-\newpage
 <!-- Network Mapping -->
 
 !INCLUDE "adids/network_mapping.adids.md"
 
 \newpage
 
-<!-- Vulnerability Scanning 
+<!-- Vulnerability Scanning
 
 !INCLUDE "adids/vulnerability_scanning.adids.md" -->
 
@@ -140,9 +135,6 @@ subtitle: 'Curricula'
 !INCLUDE "adids/device_assessment.adids.md"
 
 \newpage
-<!-- Social Engineering Exercise -->
-
-!INCLUDE "social_engineering_exercise.adids.md"
 
 \newpage
 <!-- Debrief -->
@@ -161,14 +153,8 @@ subtitle: 'Curricula'
 !INCLUDE "adids/vulnerability_prioritization.adids.md"
 
 \newpage
-<!-- Recommendation Development -->
 
-!INCLUDE "adids/recommendation_development.adids.md"
-
-<!-- \newpage Resource Identification (included in recommendations for ADIDS)  !INCLUDE "resource_identification.adids.md" -->
-
-\newpage
-<!-- Roadmap Development -->
+<!-- Recommendation, Resources, and Roadmap Development -->
 
 !INCLUDE "adids/roadmap_development.adids.md"
 
@@ -181,16 +167,11 @@ subtitle: 'Curricula'
 
 # Post - Training Mentorship
 
-## Collaborative Audits
 
-## Remote Collaborative Audits
+<!-- SAFETAG Training Follow up -->
 
-!INCLUDE "adids/training_followup/Remote Shadow Methodology.md"
+!INCLUDE "adids/training_followup.adids.md"
 
-## Independent Audit Check-ins
-
-* Daily summaries
-* Survey
 
 
 <!-- Load Default Images -->
@@ -205,42 +186,6 @@ Footnotes
 \newpage
 <!-- APPENDIX A - Sample Org-->
 
-# APPENDIX A : Agreement and Information Gathering Resources
-
-## Sample Organization
+# APPENDIX A : Sample Organization
 
 !INCLUDE "adids/sample_org/safetag-sample-org.md"
-
-## Interview Cheatsheet
-
-!INCLUDE "exercises/capacity_assessment_cheatsheet/instructions.md"
-
-## Interview Questions
-
-!INCLUDE "exercises/interviews/interview_questions.md"
-
-## Context Research Sources
-
-!INCLUDE "methods/context_research/resources.md"
-
-!INCLUDE "references/context_research.md"
-
-!INCLUDE "references/threat_by_focus_area.md"
-
-!INCLUDE "references/threat_by_region.md"
-
-!INCLUDE "references/threat_by_method.md"
-
-!INCLUDE "references/comm_infrastructure_research.md"
-
-!INCLUDE "references/cyber_security_trends.md"
-
-
-## Agreement Template
-
-!INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
-
-## APPENDIX: Remote Facilitation
-
-!INCLUDE "exercises/remote_facilitation/index.md"
-\newpage

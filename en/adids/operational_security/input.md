@@ -1,4 +1,4 @@
-### Input 
+### Input
 
   * Operational Security Basics
 
@@ -6,50 +6,23 @@ Operational security is mandatory, not optional  -- don't be the weak link
 
   * Evidence Handling
 
+Refer to the Advanced Threats Methodology for minimal evidence handling approaches and to review initial triage steps for auditors with varying skill levels.
 
-  * Secure Communications Process
-    * Training participants in Secure Communications
-    * Accessable Security
-  If the process is too difficult members of the organization will "circumvent" it. You need to do a basic assessment of their capabilities and then base the level of operational security on that.
-    * Security Alienation
-	
+  * Opsec and Secure Communications Process
+
+It is crucial to work with the organization to settle on a secure communication protocol that is both responsible to their potential threats (as identified by the context research) and usable. If the process is alienating or too difficult members of the organization will "circumvent" it. You need to do a basic assessment of their capabilities and then base the level of operational security on that.
+
   * Securing Data In motion
-    * Basic Usable Tools
-      * CryptoCat
-	    * How to teach installation.
-    * Advanced tools
-    (If they are already using them, or there is time for a training)
-      * GPG
+    * Basic Usable Tools (e.g. Signal, Wire, Mailvelope)
+    * Advanced tools (If they are already using them, or there is time for a training - such as GPG)
   * Securing Data At Rest
-    * Basic Usable Tools
-      * MiniLock
-        * How to teach installation.
-        * How to quickly get them to use a good initial password.
-    * Advanced tools
-    (If they are already using them, or there is time for a training)
-	  * Truecrypt
+    * Basic Usable Tools (Options are limited, WinZip with AES256 password protection (NOT 7-zip or built in Windows zip) or GPG4USB are popular)
+    * Advanced tools (If they are already using them, or there is time for a training, e.g. Veracrypt)
 
+Give Examples: We use a digital camera instead of a phone. “Our camera has GPS enabled by default, so we downloaded an exif wiper to clear photos when we take them”
 
-When to drop out
-
-Incident response
-
-  * Incident Response
+ * Incident response (see the Incident Response activity for details)
     * Emergency Contact
-    * What consitutes an incident
+    * What constitutes an incident
 
-Explaining opsec without alienating
-
-  * Tools that make this easier (mailvelope and crypto.cat)
-  * Go through cryptocat and minilock example
-
-Examples
-
-  * We use a digital camera instead of a phone. “Our camera has GPS enabled by default, so we downloaded an exif wiper to clear photos when we take them”
-
-
-"Things we don't talk about"
-
-
-
-
+* Auditor security

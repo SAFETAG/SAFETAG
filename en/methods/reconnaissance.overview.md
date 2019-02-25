@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Reconnaissance
 
 ### Summary
@@ -19,4 +28,3 @@
 ### Approaches
 
 !INCLUDE "../methods/reconnaissance/approaches.md"
-

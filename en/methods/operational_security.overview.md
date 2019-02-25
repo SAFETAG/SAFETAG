@@ -1,12 +1,21 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Physical Assessment
 
 ### Summary
 
-!INCLUDE "../methods/physical_assessment/summary.md"
+!INCLUDE "../methods/operational_security/summary.md"
 
 ### Purpose
 
-!INCLUDE "../methods/physical_assessment/purpose.md"
+!INCLUDE "../methods/operational_security/purpose.md"
 
 ### The Flow Of Information
 
@@ -14,8 +23,8 @@
 
 ### Guiding Questions
 
-!INCLUDE "../methods/physical_assessment/guiding_questions.md"
+!INCLUDE "../methods/operational_security/guiding_questions.md"
 
 ### Approaches
 
-!INCLUDE "../methods/physical_assessment/approaches.md"
+!INCLUDE "../methods/operational_security/approaches.md"

@@ -1,3 +1,11 @@
+---
+Authors:
+- SAFETAG
+Skills_required:
+- unknown
+Skills_trained:
+- unknown
+---
 
 ##  Network Access
 
@@ -46,4 +54,3 @@
 !INCLUDE "../adids/network_access/deepening.md"
 
 <!--Synthesis {.synthesis} -->
-

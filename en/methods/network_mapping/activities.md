@@ -4,6 +4,10 @@
 </div>
 
 <div class="boxtext">
+!INCLUDE "../../exercises/network_access/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "../../exercises/traffic_analysis/index.md"
 </div>
 

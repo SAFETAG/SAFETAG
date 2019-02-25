@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- with-support
+Skills_required:
+- N/A
+Time_required_minutes:
+- 60
+---
 
 #### Office Mapping
 

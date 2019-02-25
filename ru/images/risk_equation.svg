@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350.73816"
+   height="63.405758"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="risk_equation.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.9797787"
+     inkscape:cx="192.48788"
+     inkscape:cy="-31.140641"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="41"
+     inkscape:window-maximized="1"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     units="px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(23.831913,-320.85392)">
+    <path
+       style="fill:#79b84c;fill-opacity:1;stroke:#79b84c;stroke-width:1.91049063px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 61.236472,351.82562 H 300.83492"
+       id="path2989"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       style="font-size:18.57625771px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#79b84c;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text2999">
+      <path
+         d="m 156.13704,333.10765 -3.67353,4.94339 3.86401,5.2155 -1.96829,0 -2.95696,-3.99099 -2.95696,3.99099 -1.96829,0 3.94564,-5.31528 -3.61003,-4.84361 1.96828,0 2.69392,3.6191 2.69392,-3.6191 1.96829,0"
+         style=""
+         id="path3510" />
+    </g>
+    <g
+       style="font-size:19.73500633px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#79b84c;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text3366">
+      <path
+         d="m 35.230729,349.04071 12.353651,0 0,1.61889 -12.353651,0 0,-1.61889 m 0,3.93159 12.353651,0 0,1.63816 -12.353651,0 0,-1.63816"
+         style=""
+         id="path3490" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="7.5625248"
+       y="36.327545"
+       id="text853"><tspan
+         sodipodi:role="line"
+         id="tspan851"
+         x="7.5625248"
+         y="36.327545"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans'">РИСК</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="89.493454"
+       y="24.713411"
+       id="text857"><tspan
+         sodipodi:role="line"
+         id="tspan855"
+         x="89.493454"
+         y="24.713411"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans'">УГРОЗА</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="189.1741"
+       y="24.713411"
+       id="text861"><tspan
+         sodipodi:role="line"
+         id="tspan859"
+         x="189.1741"
+         y="24.713411"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans'">УЯЗВИМОСТИ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="170.8772"
+       y="53.228722"
+       id="text865"><tspan
+         sodipodi:role="line"
+         id="tspan863"
+         x="170.8772"
+         y="53.228722"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans'">РЕСУРСЫ</tspan></text>
+  </g>
+</svg>

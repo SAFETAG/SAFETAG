@@ -1,12 +1,15 @@
 
 As you work with staff members (this pairs well with the device checklist activity), also interview them about the other devices they use, and how they connect to work services - email/webmail, intra/extranet tools, Constituent Relationship Management (CRM) tools like CiviCRM or Salesforce, financial tracking tools, and website management tools.
 
-##### Phone Usage
+This can also be done remotely. Ask to have the staff member use a screensharing tool (meet.jit.si or appear.in offer easy-to-use, browser based options) so that you can watch how they interact with their computer and what applications are active in the background.
+
+**Phone Usage**
+
  * Work Email
  * Work Calls
  * Chat Apps with partners/work related
 
-##### User Software and Tools
+**User Software and Tools**
 
  * Email software
  * Calendars
@@ -17,13 +20,13 @@ As you work with staff members (this pairs well with the device checklist activi
  * Program tracking software
    * Financial
    * Progress
-   * Databases 
+   * Databases
    * intranet
    * extranet / other sites?
 
-##### Remote Services
+**Remote Services**
 
-* Dropbox
+* Dropbox / Google Drive
 * Work Email
 * Websites and blogs
 * Social media

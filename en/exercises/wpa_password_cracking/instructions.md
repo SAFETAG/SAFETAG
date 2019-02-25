@@ -4,7 +4,7 @@ An attacker can crack the office’s WPA key in approximately with a short and m
 
 **Step 1:** The attacker customizes their WiFi password dictionary, adding phrases related to the subject: organization name, street address, phone number, email domain, wireless network name, etc. Common password fragments are included, as well: qwerty, 12345, asdf and all four-digit dates back to the year 2001, for example, among others. The attacker may then add hundreds or thousands of words (in English and/or other relevant languages).
 
-See the Dictionary Creation example under Preparation for details on password dictionary buidling.
+See the Password Strength exercise for details on password dictionary buidling and usage.
 
 **Step 2:** The attacker would then begin recording all (encrypted) wireless traffic associated with the organization’s access point:
 

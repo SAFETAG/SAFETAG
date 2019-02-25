@@ -1,3 +1,17 @@
+---
+Approach:
+- Interpersonal, Research
+Authors:
+- SAFETAG
+Org_size_under:
+- 50
+Remote_options:
+- Partial
+Skills_required:
+- Surveys, Interviewing
+Time_required_minutes:
+- 60
+---
 
 #### Operational Security Survey
 

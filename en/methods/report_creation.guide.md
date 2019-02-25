@@ -1,3 +1,12 @@
+---
+Authors:
+- SAFETAG
+Info_provided:
+- unknown
+Info_required:
+- unknown
+---
+
 ## Report Creation
 
 !INCLUDE "../reporting/report_creation/quote.md"
@@ -45,4 +54,4 @@
 !INCLUDE "reference/financial_barriers.md"
 </div>
 
-### Activities
+<!-- ### Activities -->

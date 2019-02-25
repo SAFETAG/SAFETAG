@@ -1,8 +1,9 @@
 
 **If Unsupported Operating System - Upgrade to Recent Version**
 
-Popular operating systems like Windows XP are, sadly, no longer receiving security updates. Upgrade to the latest version keeping in mind the system requirements of the version selected
+Popular operating systems like Windows XP are, sadly, no longer receiving security updates. Upgrade to the latest version keeping in mind the system requirements of the version selected. For Windows, review the [Windows lifecycle fact sheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet) for upcoming "EOLs" (End of Life). Apple does not publish EOL schedules, but historically releases security updates for their current and two prior releases. 
 
+While "pirated" operating systems and software are extremely common (especially for Windows) they often leave much to be desired in terms of security.  If the OS or Software is not receiving regular updates from the software creator, it is extremely vulnerable to thousands of potential attacks. Switch to licensed software or recommended Free Open Source Software
 
 **If Pirated Software - Move to Licensed Software Systems**
 
