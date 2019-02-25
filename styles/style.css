@@ -328,6 +328,10 @@ nav h1 {
     text-align: center;
 }
 
+.footnotes {
+    direction: ltr;
+  }
+
 
 /*
    line above and below
