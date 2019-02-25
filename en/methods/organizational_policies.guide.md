@@ -1,6 +1,6 @@
 ---
 Authors:
-- SAFETAG
+- Carlos Guerra, Candace Lazarou
 Info_provided:
 - Capacity, Barriers
 Info_required:
