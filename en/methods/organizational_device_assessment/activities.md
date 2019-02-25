@@ -25,6 +25,16 @@ Covered in full in User Device Assessment:
 
 </div>
 
+
+<div class="boxtext">
+#### Assessing Usage of Cloud Services
+
+Covered in full in Data Assessment:
+
+!INCLUDE "../../exercises/cloud_services/approach.md"
+
+</div>
+
 <div class="boxtext">
 #### Network Mapping
 
