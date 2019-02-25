@@ -54,8 +54,6 @@ De hecho, muchos objetivos y sus ejercicios específicos se superponen o pueden 
 
 ## El Ciclo de Vida de una Auditoría
 
-![Actividades SAFETAG](images/activities_flow.svg)
-
 El proceso de auditoría es muy cíclico. Las amenazas, vulnerabilidades, capacidades y barreras identificadas recientemente impactan las actividades que han sido ejecutadas, y las que todavía han de serlo. Al mismo tiempo el auditor, a través de conversaciones, entrenamiento y actividades grupales, está construyendo activamente la operatividad de la organización y abordando amenazas críticas o urgentes, que son posibles dentro del plazo. Este proceso iterativo eventualmente conduce a un punto en el cual el auditor tiene la confianza que se han identificado las acciones críticas de mayor consenso y facilidad de inmediata implementación, y la organización es capaz de seguir adelante con sus recomendaciones.
 
 Cada objetivo requiere cierta base de información, y produce más información que es incorporada en este proceso cíclico. Cada objetivo tiene un "mapa" del flujo de datos que este mismo y sus actividades específicas proveen, basado en el siguiente:
@@ -129,7 +127,7 @@ Entender la exposición de la organización a amenazas, puntos de debilidad y la
 
 Análisis de amenazas es el proceso para identificar posibles atacantes y la recopilación de información de trasfondo acerca de la capacidad de estos atacantes de amenazar a la organización. La base de esta información es un **historial** de amenazas potenciales de llevar a cabo amenazas específicas, su **capacidad** de ejecutar esas amenazas en la actualidad, y prueba de que la amenaza tiene la **intención** de explotar recursos en contra del objetivo.
 
-#### Amenaza 
+#### Amenaza
 
 **Definición:** Una amenaza es un posible ataque o incidente que tiene el potencial de dañar la vida, información, operaciones, el medio ambiente y/o la propiedad.
 
@@ -879,7 +877,7 @@ Cuando esto no pueda ser descartado, la recopilación de evidencia, ejecución d
 La gestión del tiempo es extremadamente crucial cuando se esté respondiendo a potenciales infecciones por malware y similares amenazas más avanzadas. Si emplea este método, el auditor debería cuestionarse constantemente si continúa este proceso o completa otros aspectos de su plan de auditoría. Al final del proceso de auditoría, el no tener un entendimiento de la tolerancia al riesgo, la capacidad existente, las prácticas/procesos/políticas actuales y recursos informáticos existentes de la organización socavará la habilidad del auditor de proveer un reporte priorizado o entender el contexto alrededor de la actividad potencialmente maliciosa que ha descubierto.
 
 * **Evaluación de la Capacidad del Adversario** - Esta debería ser un resultado del trabajo técnico de investigación de contexto. ¿Hay Amenazas Avanzadas Persistentes que debieran ser tenidas en cuenta? ¿Cómo operan? ¿Hay indicadores de compromiso conocidos para buscar?
-* **Analizando Eventos/Actividades Sospechosas Específicas** - Si la organización tiene preocupaciones específicas o evidencia sugiriendo un ataque dirigido, el auditor puede enfocar su atención en correlacionarlos con ataques conocidos o señalarlos para una posterior investigación. 
+* **Analizando Eventos/Actividades Sospechosas Específicas** - Si la organización tiene preocupaciones específicas o evidencia sugiriendo un ataque dirigido, el auditor puede enfocar su atención en correlacionarlos con ataques conocidos o señalarlos para una posterior investigación.
 * **Buscando Indicadores de Compromiso y Caza de Amenazas** - Si la organización sospecha que ha sido comprometida, pero no tiene ningún dispositivo/proceso/correo electrónico específico sospechoso, el auditor puede potenciar técnicas para invertir su tiempo inteligentemente en investigar con mayor profundidad.
 * **Capturar Evidencia para posterior Análisis** - Si son identificadas actividades sospechosas, el auditor puede querer capturar evidencia para analizar o compartir con profesionales. Esto consume tiempo y la evidencia capturada es de alto riesgo, por lo que debe ser extremadamente cuidadoso al proseguir esto.
 * **Análisis en profundidad** - Si es descubierto malware, pero no puede ser identificado, será necesario un análisis posterior. Esto también puede desencadenar un cambio en el alcance de la evaluación y/o un proceso de respuesta al incidente.
