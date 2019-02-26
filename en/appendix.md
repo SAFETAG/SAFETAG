@@ -18,10 +18,6 @@
 
 !INCLUDE "exercises/travel_kit/index.md"
 
-## APPENDIX: Device Assessment Checklist
-
-!INCLUDE "exercises/device_checklist/device_assessment_checklist.md"
-
 ## APPENDIX: Remote Facilitation
 
 !INCLUDE "exercises/remote_facilitation/index.md"

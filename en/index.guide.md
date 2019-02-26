@@ -145,7 +145,7 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 <div class="boxtext">
-### Conduct Interviews
+#### Conduct Interviews
 
 **NOTE:** Covered in full under Capacity Assessment
 
@@ -154,7 +154,7 @@ See the Appendix for a sample travel kit / checklist
 
 
 <div class="boxtext">
-### A Day in the Life
+#### A Day in the Life
 
 **NOTE:** Covered in full under Organizational Device Assessment
 
@@ -527,7 +527,7 @@ Covered in full in Capacity Assessment:
 </div>
 
 <div class="boxtext">
-### Self Doxing
+#### Self Doxing
 
 Covered in full in Risk Modeling:
 
