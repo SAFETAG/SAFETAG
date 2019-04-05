@@ -13,19 +13,19 @@ Time_required_minutes:
 - 120
 ---
 
-#### Interviews
+#### Интервью
 
-##### Summary
+##### Резюме
 !INCLUDE "summary.md"
 
-##### Overview
+##### беглый обзор
 !INCLUDE "approach.md"
 
-##### Materials Needed
+##### Необходимые материалы
 !INCLUDE "materials_needed.md"
 
-##### Considerations
+##### соображения
 !INCLUDE "operational_security.md"
 
-##### Walkthrough
+##### инструкции
 !INCLUDE "instructions.md"
