@@ -209,7 +209,9 @@ Covered in full in  Vulnerability Scanning and Analysis
 
 
 \newpage
+
 <!-- Organizational Device Assessment -->
+
 !INCLUDE "methods/organizational_device_assessment.guide.md"
 
 
