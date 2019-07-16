@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical, Interpersonal, Research
@@ -11,6 +12,7 @@ Skills_required:
 - Malware analysis, Research, Digital Forensics
 Time_required_minutes:
 - 480
+
 ---
 
 #### Incident Response and Emergency Contact

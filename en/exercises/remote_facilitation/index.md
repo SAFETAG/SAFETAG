@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Interpersonal, Technical
@@ -11,6 +12,7 @@ Skills_required:
 - Group Facilitation, Networking
 Time_required_minutes:
 - 240
+
 ---
 
 #### Remote Facilitation

@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Research, Interpersonal, Technical
@@ -11,6 +12,7 @@ Skills_required:
 - Group Facilitation, Psycho-social care, Risk Assessment
 Time_required_minutes:
 - 240
+
 ---
 
 #### Threat Identification

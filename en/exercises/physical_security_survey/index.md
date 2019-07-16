@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Interpersonal, Research
@@ -11,6 +12,7 @@ Skills_required:
 - Surveys, Interviewing
 Time_required_minutes:
 - 60
+
 ---
 
 #### Operational Security Survey

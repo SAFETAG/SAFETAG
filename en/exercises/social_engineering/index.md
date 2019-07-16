@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical, Interpersonal
@@ -15,6 +16,7 @@ id:
 - audit-internal-social-engineer-index
 type:
 - guide
+
 ---
 
 

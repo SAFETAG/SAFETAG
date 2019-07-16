@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Research, Interpersonal, Technical
@@ -11,6 +12,7 @@ Skills_required:
 - Group Facilitation, Risk Assessment
 Time_required_minutes:
 - 120
+
 ---
 
 #### Self Doxing

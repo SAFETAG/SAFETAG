@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Research, Technical
@@ -11,6 +12,7 @@ Skills_required:
 - Research, Network Scanning
 Time_required_minutes:
 - 30
+
 ---
 
 #### VoIP Security Assessment

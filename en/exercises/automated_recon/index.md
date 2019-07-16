@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical
@@ -11,6 +12,7 @@ Skills_required:
 - OSINT Tools
 Time_required_minutes:
 - 240
+
 ---
 
 #### Automated Reconnaisance

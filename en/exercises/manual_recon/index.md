@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Research, Technical
@@ -11,6 +12,7 @@ Skills_required:
 - OSINT Research
 Time_required_minutes:
 - 240
+
 ---
 
 #### Manual Reconnaissance

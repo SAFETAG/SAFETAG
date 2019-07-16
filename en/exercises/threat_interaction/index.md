@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Interpersonal
@@ -11,6 +12,7 @@ Skills_required:
 - Group Facilitation, Psycho-social care
 Time_required_minutes:
 - 120
+
 ---
 
 #### Threat Interaction

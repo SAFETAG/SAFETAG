@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical
@@ -11,6 +12,7 @@ Skills_required:
 - Malware Analysis
 Time_required_minutes:
 - 120
+
 ---
 
 #### Suspicious Activity Analysis

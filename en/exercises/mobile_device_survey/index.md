@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Interpersonal
@@ -11,6 +12,7 @@ Skills_required:
 - Interviewing, Surveys
 Time_required_minutes:
 - 45
+
 ---
 
 #### Mobile Device Assessment

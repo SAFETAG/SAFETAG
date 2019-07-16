@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical
@@ -11,6 +12,7 @@ Skills_required:
 - sslstrip, traffic monitoring
 Time_required_minutes:
 - 30
+
 ---
 
 #### Insecure Email Connections

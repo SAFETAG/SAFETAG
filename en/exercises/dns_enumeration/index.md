@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical, Research
@@ -11,6 +12,7 @@ Skills_required:
 - DNS, OSINT
 Time_required_minutes:
 - 45
+
 ---
 
 #### DNS Enumeration

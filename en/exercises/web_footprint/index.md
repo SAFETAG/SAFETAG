@@ -1,3 +1,4 @@
+
 ---
 Approach:
 - Technical, Research
@@ -11,6 +12,7 @@ Skills_required:
 - Website scanning
 Time_required_minutes:
 - 60
+
 ---
 
 #### Website Footprinting
