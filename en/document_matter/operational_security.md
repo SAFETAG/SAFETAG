@@ -34,4 +34,3 @@ An audit uncovers an array of sensitive information about an organization. For s
 * *Standard*: [Pentest Standards for data security](http://www.pentest-standard.org/index.php/Pre-engagement#PGP_and_Other_Alternatives)
 * *Guide*: [Surveillance Self Defense](https://ssd.eff.org/en/index) (cross-platform guides for WhatsApp, Signal, PGP, and OTR secure communications)
 * *Guide*: [Security in a box: Secure File Storage](https://securityinabox.org/en/guide/secure-file-storage/)
-* *Guide*: [Digital First Aid Kit: Secure Communications](https://rarenet.github.io/DFAK/en/SecureCommunication/)
