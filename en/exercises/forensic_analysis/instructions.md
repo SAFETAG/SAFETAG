@@ -1,5 +1,5 @@
 
-*In most cases, reach out for help, there are multiple organizations which coordinate and can support malware analysis targeting NGOs. The [Digital First Aid Kit](https://rarenet.github.io/DFAK/en/SecureCommunication/) has a list of organizations and in most cases secure contact details to seek support in doing advanced analysis. The [Rapid Response Network](http://www.rarenet.org/), a project of [CiviCERT](https://civicert.org/) is a consortia of these organizations who may be able to help. [Citizen Lab](https://citizenlab.ca/) is also well known for their analysis and research.*
+*In most cases, reach out for help, there are multiple organizations which coordinate and can support malware analysis targeting NGOs. The [Digital First Aid Kit](https://digitalfirstaid.org/en/support/) has a list of [CiviCERT](https://civicert.org/) organizations to seek support in doing advanced analysis. [Citizen Lab](https://citizenlab.ca/) is also well known for their analysis and research.*
 
 There are some procedures that must be followed to ensure the evidence is properly handled while the forensic analysis is taking place. These include:
 
