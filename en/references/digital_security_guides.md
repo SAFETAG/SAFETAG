@@ -7,7 +7,7 @@
 
   * *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/en/index) (EFF)
  
-  * *Guide:* ["The Digital First Aid Kit"](https://digitaldefenders.org/digitalfirstaid/#DFAk/) (Digital Defenders Partnership)
+  * *Guide:* ["The Digital First Aid Kit"](https://digitalfirstaid.org) (RaReNet)
 
   * *Guides:* ["Protektor Services Manuals"](http://protektor-blog.blogspot.com/) (Protektor Services)
 
