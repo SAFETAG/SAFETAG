@@ -17,6 +17,25 @@ Covered in full in User Device Assessment:
 </div>
 
 <div class="boxtext">
+#### A Night in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "../../exercises/night_in_the_life/approach.md"
+
+</div>
+
+
+<div class="boxtext">
+#### Assessing Usage of Cloud Services
+
+Covered in full in Data Assessment:
+
+!INCLUDE "../../exercises/cloud_services/approach.md"
+
+</div>
+
+<div class="boxtext">
 #### Network Mapping
 
 Covered in full in Network Mapping

@@ -1,6 +1,8 @@
 
   * Do the organization’s staff have access to computers for their work?
   * How many staff members do not have access to their own computer or need to share computers with other?
+  * How many staff members use their personal devices to access organizational assets?
+  * How many staff members work remotely?
   * What ways has the organization used any of the following methods to build skills and capacities for using digital or mobile technologies?
     * Local Training
     * Training in other countries

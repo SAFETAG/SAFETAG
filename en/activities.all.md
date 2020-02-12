@@ -43,6 +43,11 @@
 \newpage
 
 
+!INCLUDE "exercises/night_in_the_life/index.md" 
+
+\newpage
+
+
 !INCLUDE "exercises/device_checklist/index.md" 
 
 \newpage

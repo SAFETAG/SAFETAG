@@ -5,3 +5,5 @@ Monitoring sites (like pastebin with tools like [pasteLert](http://www.andrewmoh
 
 Running images through tools to remove "EXIF" data is useful, particularly when the images come from devices (such as smartphones) with GPS built-in.
 
+Consider the risk of doxing, which affects particularly organizations with a focus on topics that carry a social stigma - OSINT-based attacks can affect for example single members of women's and LGBTQ rights organizations. In these cases the research described in this exercise should also be carried out on the most visible persons of the organization. This activity can be combined with the Self-Doxing exercise to identify and mitigate vulnerabilities without intruding into team members' privacy.
+

@@ -25,7 +25,7 @@
 
 **Go Specific**
 
-"Dig deeper on the challenge at hand & prompt with ‘what if’ scenarios." [^HCD_toolkit]
+"Dig deeper on the challenge at hand & prompt with ‘what if’ scenarios."
 
   * Is the manager aware that a test is about to be performed?
 
@@ -47,3 +47,23 @@
     * Financial Services
     * Other Services
   * Does the organization have a hierarchy for decision-making, according to which different people have different responsibilities and levels of authority?
+
+**Go Personal**
+
+"Dig deeper on the practices outside of work & prompt with ‘what if’ scenarios."
+
+  * Does the staff usually work remotely?
+  * Does the staff usually take their work devices home?
+  * Does the staff usually access organizational assets from personal devices? (Provide an example if needed - examples below)
+    * Work email
+    * Work social media accounts
+    * Office network (VPN)
+    * Shared files
+  * Does the staff usually attend out-of-office events? (Provide an example if needed - examples below)
+    * Protests
+    * Trainings
+    * External meetings
+    * Press conferences
+  * What time does the staff usually come in and get out of the office?
+  * How secure are the office surroundings?
+  * What are the common means of transportation used?

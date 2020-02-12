@@ -7,7 +7,7 @@ Skills_trained:
 - unknown
 ---
 
-##  Debrief
+##  Responsive Support and Debrief
 
 <!-- ![](images/capacity_assessment.png "") -->
 

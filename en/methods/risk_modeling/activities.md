@@ -23,4 +23,6 @@ Covered in full in Data Assessment:
 !INCLUDE "../../exercises/sensitive_data/approach.md"
 </div>
 
-
+<div class="boxtext">
+!INCLUDE "../../exercises/self_doxing/index.md"
+</div>

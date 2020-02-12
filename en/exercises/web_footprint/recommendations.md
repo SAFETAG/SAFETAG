@@ -9,4 +9,4 @@ A community-based, open source alternative is [Deflect](https://deflect.ca/), wh
 
 Some of these services will be revealed by BuiltWith, but checking the HTTP Response Headers (in Chromium/Chrome, available under the Inspect Element tool, or by using [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/) in Firefox. See [Deflect's wiki](https://wiki.deflect.ca/wiki/About_Deflect#Is_it_working.3F) for more information.
 
-Guide for NGOs about DDoS: [Digital First Aid Kit](https://rarenet.github.io/DFAK/en/DDoSMitigation/)
+Guide for NGOs to diagnose issues with a website: [Digital First Aid Kit](https://digitalfirstaid.org/en/topics/website-not-working/)

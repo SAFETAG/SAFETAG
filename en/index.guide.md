@@ -132,6 +132,36 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 \newpage
+<!-- Organizational Policies -->
+
+!INCLUDE "methods/organizational_policies.guide.md"
+
+<div class="boxtext">
+!INCLUDE "exercises/policies_informal/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/policies_review/index.md"
+</div>
+
+<div class="boxtext">
+#### Conduct Interviews
+
+**NOTE:** Covered in full under Capacity Assessment
+
+!INCLUDE "../../exercises/interviews/approach.md"
+</div>
+
+
+<div class="boxtext">
+#### A Day in the Life
+
+**NOTE:** Covered in full under Organizational Device Assessment
+
+!INCLUDE "../../exercises/day_in_the_life/approach.md"
+</div>
+
+\newpage
 <!-- Network Mapping -->
 
 !INCLUDE "methods/network_mapping.guide.md"
@@ -179,7 +209,9 @@ Covered in full in  Vulnerability Scanning and Analysis
 
 
 \newpage
+
 <!-- Organizational Device Assessment -->
+
 !INCLUDE "methods/organizational_device_assessment.guide.md"
 
 
@@ -197,6 +229,24 @@ Covered in full in  Vulnerability Scanning and Analysis
 Covered in full in User Device Assessment:
 
 !INCLUDE "exercises/day_in_the_life/approach.md"
+
+</div>
+
+<div class="boxtext">
+#### A Night in the Life
+
+Covered in full in User Device Assessment:
+
+!INCLUDE "exercises/night_in_the_life/approach.md"
+
+</div>
+
+<div class="boxtext">
+#### Assessing Usage of Cloud Services
+
+Covered in full in Data Assessment:
+
+!INCLUDE "exercises/cloud_services/approach.md"
 
 </div>
 
@@ -235,6 +285,10 @@ Covered in full in Physical Assessment:
 
 <div class="boxtext">
 !INCLUDE "exercises/day_in_the_life/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/night_in_the_life/index.md"
 </div>
 
 <div class="boxtext">
@@ -325,6 +379,9 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 !INCLUDE "exercises/private_data/index.md"
 </div>
 
+<div class="boxtext">
+!INCLUDE "exercises/cloud_services/index.md"
+</div>
 
 \newpage
 
@@ -364,6 +421,12 @@ Covered in full in User Device Assessment:
 !INCLUDE "exercises/day_in_the_life/approach.md"
 </div>
 
+<div class="boxtext">
+#### A Night in the Life
+Covered in full in User Device Assessment:
+!INCLUDE "exercises/night_in_the_life/approach.md"
+</div>
+
 \newpage
 <!-- Risk Modeling -->
 
@@ -391,6 +454,10 @@ Covered in full in Threat Identification:
 Covered in full in Data Assessment:
 
 !INCLUDE "exercises/sensitive_data/approach.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/self_doxing/index.md"
 </div>
 
 
@@ -461,6 +528,13 @@ Covered in full in Capacity Assessment:
 !INCLUDE "exercises/regional_context_research/approach.md"
 </div>
 
+<div class="boxtext">
+#### Self Doxing
+
+Covered in full in Risk Modeling:
+
+!INCLUDE "exercises/self_doxing/approach.md"
+</div>
 
 \newpage
 

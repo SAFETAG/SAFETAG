@@ -1,5 +1,5 @@
 ### Materials Needed
 
   * Internet connection
-  * Linux computer (ideally debian-based)
+  * Linux computer or virtual machine (ideally debian-based)
   * github account (optional)
