@@ -2,11 +2,11 @@
 ## Operational Security
 
 
-"*Also be aware that local groups may not be able to accurately gauge the safety of their communications with you. Sometimes they underestimate the likelihood of risk - at other times, they can wildly overestimate the risk. Either way, trainers need to navigate this issues carefully and respectfully with a "do no harm" approach that respects the reported needs, context, and experiences of your local contact and potential trainees.*" - _Needs Assessment: Level-Up_ [^event_planning_input]
+"*Be aware that local groups may not be able to accurately gauge the safety of their communications with you. Sometimes they underestimate the likelihood of risk - at other times, they can wildly overestimate the risk. Either way, trainers need to navigate this issues carefully and respectfully with a "do no harm" approach that respects the reported needs, context, and experiences of your local contact and potential trainees.*" - _Needs Assessment: Level-Up_ [^event_planning_input]
 
 ### Summary
 
-Below are the baseline operational security guidelines for a SAFETAG audit. Activity specific operational security guidelines are contained within each activity.
+Operational security refers to the security measures taken by you to protect the auditee and yourself throughout the audit process itself. Below are some baseline operational security guidelines for a SAFETAG audit. Activity-specific operational security guidelines are contained within each activity.
 
 ### Purpose
 
@@ -14,15 +14,15 @@ An audit uncovers an array of sensitive information about an organization. For s
 
 ### Approaches
 
-  * Data storage and transit security
-    * Keep ALL data related to the assessment secured and compartmentalized, from interview and research notes through audit findings and reporting outputs. Auditors should note where tools (such as OpenVAS or recon-ng) store their internal data. Practically speaking, LUKS or VeraCrypt volumes are useful, secure, and portable. The auditor should modify their data storage approach based on threat information from their context research as well as ongoing inputs.
+  * Data storage and data transit security
+    * Keep ALL data related to the assessment secured and compartmentalized, from interview and research notes through audit findings and reporting outputs. Auditors should note where tools (such as OpenVAS or recon-ng) store their internal data. Practically speaking, LUKS or VeraCrypt volumes are useful, secure, and portable. The auditor should modify their data storage approach based on threat information from their context research.
     * Consider what secure storage options the organization will need to have in place to store the final report and findings documents.
-    * Consider if the raw data may be at risk during transit post-audit and plan mitigations in advance of travel (e.g. completing the report on-site or uploading to a secure remote server and securely deleting all data locally.)
+    * Consider if the raw data may be at risk during transit post-audit and plan mitigations in advance of travel (e.g. completing the report on-site or uploading to a secure remote server and securely deleting all data locally).
     * Refer back to the agreement established with the organization.
 
   * Communications security
     * Conduct all communication with the client over at least minimally secure channels where the communication is encrypted in transit at all times. Consider risks to the organization and the auditor(s) if the organization is actively compromised.
-    * Higher levels of security with end-to-end guarantees (such as Signal, PGP, veracrypt, or peerio/minilock) should be used for file and document transfers.
+    * Higher levels of security with end-to-end guarantees (such as Signal, PGP, Veracrypt, or Peerio/Minilock) should be used for file and document transfers.
     * Training and support may be required to ensure the organization is able to reliably and securely receive such communications.
 
   * Data Deletion
