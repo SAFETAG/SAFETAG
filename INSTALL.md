@@ -3,19 +3,19 @@
 These instructions work best on Debian-based systems, like Ubuntu and Kali Linux.  They are only necessary to create custom versions of the SAFETAG materials or to build reports. To browse SAFETAG guides, see the [Releases](https://github.com/OpenInternet/SAFETAG/releases).
 
 
-  * Install git
+  1. Install git
 
 ```
 sudo apt-get install git
 ```
 
-  * Download SAFETAG
+  2. Download SAFETAG
 
 ```
 git clone --recursive https://github.com/SAFETAG/SAFETAG.git
 ```
 
-  * Follow the Document Builder's [Installation Instructions](https://github.com/OpenInternet/Documentation-Builder/blob/master/docs/INSTALL.md) to download and install.
+  3. Follow the Document Builder's [Installation Instructions](https://github.com/OpenInternet/Documentation-Builder/blob/master/docs/INSTALL.md) to download and install.
 
 
 # Building Documentation and Reports
@@ -26,7 +26,7 @@ The Document Builder can be used to generate the SAFETAG Overview, Guide, or rep
 /path/to/Documentation-Builder/builddoc \
   -i /path/to/SAFETAG/en \
   -I index.overview.md \
-  -o /path/to/outputfile.pdf \
+  -o outputfile.pdf \
   -t /path/to/SAFETAG/styles
 ```
 The `-i` flag is the base directory, `-I` specifies the index file to build from, `-o` is the output file, and `-t` is the path to the template folder for styling. `-d` provides debugging information and enables you to also get compiles markdown and HTML versions of the document. Run ```builddoc -h``` for more options.
@@ -35,10 +35,10 @@ The `-i` flag is the base directory, `-I` specifies the index file to build from
 
 ```
 /path/to/Documentation-Builder/builddoc \
-  -i /path/to/SAFETAG/en \
+  -i /home/user/github/SAFETAG/en \
   -I index.guide.md \
   -o guide.pdf \
-  -t /path/to/SAFETAG/styles
+  -t /home/user/github/SAFETAG/styles
 ```
 
 Replace index.guide.md with index.overview.md to build the more focused Overview document:
