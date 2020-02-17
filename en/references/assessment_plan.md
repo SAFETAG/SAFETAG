@@ -1,3 +1,4 @@
+#### Creating Agreements and Rules of Engagement
 
   * *Standard:* ["Pre-Engagement"](http://www.pentest-standard.org/index.php/Pre-engagement) (The Penetration Testing Execution Standard: Pre-Engagement Guidelines)
 
@@ -10,5 +11,3 @@
   * *Article:* ["Vulnerability Assessment and Penetration Testing"](https://www.gosafeonline.sg/vulnerability-assessment-and-penetration-testing-0) (gosafe)
 
   * *Article:* ["Legal Issues in Penetration Testing"](https://securitycurrent.com/legal-issues-in-penetration-testing/)
-
-
