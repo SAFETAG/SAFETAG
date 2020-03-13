@@ -22,7 +22,7 @@ By pressing the tab key twice you can use auto-completion to see the available o
 
 ```
 [recon-ng][default] >
-back         db           help         keys         modules      pdb          shell        snapshots    workspaces   exit         index        marketplace  options      script       show         spool  
+back         db           help         keys         modules      pdb          shell        snapshots    workspaces   exit         index        marketplace  options      script       show         spool
 ```
 
 These are the first level of commands
@@ -70,7 +70,7 @@ The results of the search query look like this:
 ```
 As explained in the search results legend, a module with a * in the D column has dependencies which will be listed if you check the module info. Dependencies can be installed outside of recon-ng using ```pip install <dependency_name>```. Modules with a * in the K column require an API key, explained below.
 
-Install a module with ```marketplace install <module_name>``` or install all modules with ```marketplace install all``` though modules with missing dependencies and missing API keys will not work until you address those needs.
+Install a module with ```marketplace install <module_name>``` or install all modules with ```marketplace install all``` though modules with missing dependencies and missing API keys will not work until you address those needs. You can also install a collection of modules by using commands like ```marketplace install recon``` to install all the recon/* modules, or ```marketplace install recon/domains-hosts``` to get all of the domains-hosts modules under recon.
 
 **First steps**
 
@@ -103,7 +103,7 @@ Display possible seed information by using auto-completion - type the command be
 ```
 [recon-ng][websitename] > db insert
 companies        credentials      hosts            locations        ports            pushpins         vulnerabilities
-contacts         domains          leaks            netblocks        profiles         repositories     
+contacts         domains          leaks            netblocks        profiles         repositories
 ```
 
 We will only use the organization's name, one domain, two netblocks (that we got by searching for other domains and ping-ing them), and two e-mails of the company we are looking for so we will add those.
