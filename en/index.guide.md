@@ -55,6 +55,10 @@ subtitle: 'Guide'
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/confidentiality_agreement/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/incident_response/index.md"
 </div>
 
