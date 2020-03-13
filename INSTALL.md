@@ -22,6 +22,8 @@ git clone --recursive https://github.com/SAFETAG/SAFETAG.git
 
 The Document Builder can be used to generate the SAFETAG Overview, Guide, or reports using the following command, customizing it to the correct paths for where each have been downloaded
 
+**Please note /path/to** -- thoughtout this guide, /path/to is used as a placeholder which you will need to replace with the right path for where your SAFETAG and Documentation-Builder repositories are stored.  This is generally your home directory (generally /home/username/SAFETAG , or in a subdirectory (e.g. /home/username/github/SAFETAG or /home/username/Documents/SAFETAG). The symbol ~ is a shortcut in Linux which means /home/username,  so the above examples could also be ~/SAFETAG , ~/github/SAFETAG, and ~/Documents/SAFETAG)
+
 ```
 /path/to/Documentation-Builder/builddoc \
   -i /path/to/SAFETAG/en \
@@ -29,16 +31,16 @@ The Document Builder can be used to generate the SAFETAG Overview, Guide, or rep
   -o outputfile.pdf \
   -t /path/to/SAFETAG/styles
 ```
-The `-i` flag is the base directory, `-I` specifies the index file to build from, `-o` is the output file, and `-t` is the path to the template folder for styling. `-d` provides debugging information and enables you to also get compiles markdown and HTML versions of the document. Run ```builddoc -h``` for more options.
+The `-i` flag is the base directory, `-I` specifies the index file to build from, `-o` is the output file (it will be created in the directory you run the script from -- but you do not have to run the script from the Document-Builder directory!), and `-t` is the path to the template folder for styling. `-d` provides debugging information and enables you to also get compiled markdown and HTML versions of the document from the tmp directories it creates and lists in the output. Run ```builddoc -h``` for more options.
 
  So, if you have all of your github repositories in a folder called "github" in your home directory, this command will build the full guide in your current directory:
 
 ```
 /path/to/Documentation-Builder/builddoc \
-  -i /home/user/github/SAFETAG/en \
+  -i /path/to/SAFETAG/en \
   -I index.guide.md \
   -o guide.pdf \
-  -t /home/user/github/SAFETAG/styles
+  -t /path/to/SAFETAG/styles
 ```
 
 Replace index.guide.md with index.overview.md to build the more focused Overview document:
