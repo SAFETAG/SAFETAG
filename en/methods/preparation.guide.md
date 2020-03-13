@@ -36,9 +36,9 @@ Info_required:
 
 !INCLUDE "../references/facilitation_prep.md"
 
-!INCLUDE "../references/password_dictionaries.md"
+!INCLUDE "../references/assessment_plan.md"
 
-!INCLUDE "../references/assessment_plan.overview.md"
+!INCLUDE "../references/password_dictionaries.md"
 
 !INCLUDE "../references/pre_engagement.md"
 

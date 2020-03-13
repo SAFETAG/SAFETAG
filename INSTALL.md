@@ -3,33 +3,35 @@
 These instructions work best on Debian-based systems, like Ubuntu and Kali Linux.  They are only necessary to create custom versions of the SAFETAG materials or to build reports. To browse SAFETAG guides, see the [Releases](https://github.com/OpenInternet/SAFETAG/releases).
 
 
-  * Install git
+  1. Install git
 
 ```
 sudo apt-get install git
 ```
 
-  * Download SAFETAG
+  2. Download SAFETAG
 
 ```
 git clone --recursive https://github.com/SAFETAG/SAFETAG.git
 ```
 
-  * Follow the Document Builder's [Installation Instructions](https://github.com/OpenInternet/Documentation-Builder/blob/master/docs/INSTALL.md) to download and install.
+  3. Follow the Document Builder's [Installation Instructions](https://github.com/OpenInternet/Documentation-Builder/blob/master/docs/INSTALL.md) to download and install.
 
 
 # Building Documentation and Reports
 
 The Document Builder can be used to generate the SAFETAG Overview, Guide, or reports using the following command, customizing it to the correct paths for where each have been downloaded
 
+**Please note /path/to** -- thoughtout this guide, /path/to is used as a placeholder which you will need to replace with the right path for where your SAFETAG and Documentation-Builder repositories are stored.  This is generally your home directory (generally /home/username/SAFETAG , or in a subdirectory (e.g. /home/username/github/SAFETAG or /home/username/Documents/SAFETAG). The symbol ~ is a shortcut in Linux which means /home/username,  so the above examples could also be ~/SAFETAG , ~/github/SAFETAG, and ~/Documents/SAFETAG)
+
 ```
 /path/to/Documentation-Builder/builddoc \
   -i /path/to/SAFETAG/en \
   -I index.overview.md \
-  -o /path/to/outputfile.pdf \
+  -o outputfile.pdf \
   -t /path/to/SAFETAG/styles
 ```
-The `-i` flag is the base directory, `-I` specifies the index file to build from, `-o` is the output file, and `-t` is the path to the template folder for styling. `-d` provides debugging information and enables you to also get compiles markdown and HTML versions of the document. Run ```builddoc -h``` for more options.
+The `-i` flag is the base directory, `-I` specifies the index file to build from, `-o` is the output file (it will be created in the directory you run the script from -- but you do not have to run the script from the Document-Builder directory!), and `-t` is the path to the template folder for styling. `-d` provides debugging information and enables you to also get compiled markdown and HTML versions of the document from the tmp directories it creates and lists in the output. Run ```builddoc -h``` for more options.
 
  So, if you have all of your github repositories in a folder called "github" in your home directory, this command will build the full guide in your current directory:
 

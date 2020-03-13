@@ -1,16 +1,16 @@
 ### Audit Timeline and Planning
- 
-Review these notes in preparation for the audit as you begin to map out your schedule.  This provides a rough, suggested outline of how to schedule your time on site for a SAFETAG audit, and some reminders of the work you need to have completed before arriving in country.
+
+Review these notes in preparation for the audit as you begin to map out your schedule.  This provides a rough, suggested outline of how to schedule your time on site for a SAFETAG audit, and some reminders of the work you need to have completed before arriving in country. You may adapt this plan or use its sections as a template to develop your own timeline fitting the context of each audit.
 
 
 #### Prepare for Uncertainty
 
-The SAFETAG roadmap is a crisp, clear data flow of inputs to outputs.  Reality, generally speaking, is less direct.  There are a few core parts of the audit process that force action, but others are more flexible.  Outcomes of your discussion and exploration of the network will also de-rail the process in impossible-to-predict ways.  The pre-audit interviews and your own contexts research, research on the organization, and preparation are meant to give you the best possible idea of what situation you'll walk in to, but even with all of that, frankly, shit happens.
+The SAFETAG roadmap is a crisp, clear data flow of inputs to outputs.  Reality, generally speaking, is less direct.  There are a few core parts of the audit process that force action, but others are more flexible.  Outcomes of your discussion and exploration of the network will also derail the process in impossible-to-predict ways.  The pre-audit interviews and your own contexts research, research on the organization, and preparation are meant to give you the best possible idea of what situation you'll walk in to, but even with all of that, frankly, shit happens.
 
-Before Travel
+#### Before Travel
 
 * Agreements, Scope, Risk Analysis
-* Remote Research 
+* Remote Research
   * Openly sourced data: DNS, MX, Web, research via social media and google
   * Revealed information via Skype / etc. (office IP address?), nmap
 * Packing and Prep
@@ -25,7 +25,7 @@ Priorities for the first day include meeting staff (even, possibly especially, f
 * Meet staff, discuss operations and plan interruptions with key staff
 * In-person discussions of risks, challenges, fears, questions, and experiences around digital security
 * (If relevant) Attempt to crack wifi without password knowledge
-* Parallel, collect wifi beacons while not associated to any one network (sending connection resets). 
+* Parallel, collect wifi beacons while not associated to any one network (sending connection resets).
 * Once wifi password is obtained (through cracking or asking), start a capture of decrypted traffic and run it as long as possible for later analysis
 * Map out the “visible” network (nmap)
 
@@ -33,13 +33,12 @@ Priorities for the first day include meeting staff (even, possibly especially, f
 #### Early steps
 From a data-gathering point of view, the first steps are to try and access the wireless network by password guessing, but also to connect to the network and capture traffic for analysis overnight.  This provides other views on the actual technology and services used on the network, different both from the management and IT view as well as other tools discussed by staff.
 
-First or Second day
-
 * Associate nmap scans, MAC addresses, and beacons with people and specific systems, plus servers/networking hardware
 * Scans on the captured traffic for passwords, auth cookies, suspicious traffic, unencrypted connections
 
-Further Days (on Location)
-The next day you’re on location, you have hopefully looked through the research data you gathered, and have some specific follow-up things to investigate.  It’s also now time to start going through the audit tasks. 
+#### Further Days (on Location)
+
+The next day you’re on location, you have hopefully looked through the research data you gathered, and have some specific follow-up things to investigate.  It’s also now time to start going through the audit tasks.
 
 * Deeper dive into what hardware is connected and what it is doing
 * Begin organizing vulnerabilities and tracking against the audit framework
@@ -48,7 +47,7 @@ The next day you’re on location, you have hopefully looked through the researc
 * Physical audit tasks
 
 
-Final Day (on Location)
+#### Final Day (on Location)
 
 * Discuss initial findings and responses
 * Suggestions for follow-up training, resources to consult, and possibly targeted trainings for relevant staff (what is a secure password? How to communicate securely?)
@@ -73,4 +72,3 @@ If you have been using paper or post-it notes during the audit, be sure you secu
 #### Follow up care and Reporting
 
 See the reporting sections for specific details here, but a series of check-ins with the organization to support their ability to respond to any incidents, understand further topics from the debrief, and to help provide them a timeline to expect the final report is valuable in maintaining their engagement post-audit to support the needed changes.
-

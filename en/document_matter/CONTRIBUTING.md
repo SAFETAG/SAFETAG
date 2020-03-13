@@ -28,6 +28,12 @@ Within both Methods and Activities are smaller chunks of content which are used 
 
 **SAFETAG is in the process of being rebuilt in a more interactive, meta-data driven interface at [https://github.com/contentascode/safetag](https://github.com/contentascode/safetag). The current structure will be migrated into this format, and updates to the process will be posted here.**
 
+#### language Guide
+Although SAFETAG contributors and users come from around the world, adherence to a single style guide and linguistic conventions will improve the readability and cohesion of SAFETAG as a resource.
+
+* The English version of SAFETAG defaults to being written in American English (_Organization_, not _Organisation_). Please note that this will not block contributions.
+* Use the Oxford Comma (_Interview management, staff, and volunteers_)
+
 ### Creating a new SAFETAG Method
 
 * Follow the Getting Started instructions above.

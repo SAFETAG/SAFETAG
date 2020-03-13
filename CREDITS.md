@@ -4,6 +4,7 @@ SAFETAG is an open, community-developed framework. In most cases, contributions 
 Contributors include (alphabetical order by github username):
 
 * AlWalid
+* blazman
 * dlshad
 * florianap
 * hackatom
