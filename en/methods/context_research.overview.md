@@ -27,4 +27,4 @@ Info_required:
 
 ### Approaches
 
-* RESEARCH: Search for background information that will help you better understand potential threats and overall context for the organization and the audit process.
+!INCLUDE "../methods/context_research/approaches.md"
