@@ -1,1 +1,0 @@
-This component consists of trip preparation activities that are needed to ensure the technical and facilitated components of the audit are able to be conducted effectively and within the on-site time-frame.
