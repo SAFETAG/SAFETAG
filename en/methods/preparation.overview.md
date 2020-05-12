@@ -18,5 +18,5 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/preparation/guiding_questions.md"
 
-### Approach
-!INCLUDE "../methods/preparation/approaches.md"
+
+

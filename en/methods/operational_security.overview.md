@@ -25,6 +25,6 @@ Info_required:
 
 !INCLUDE "../methods/operational_security/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../methods/operational_security/approaches.md"
+
+

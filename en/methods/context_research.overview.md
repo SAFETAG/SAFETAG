@@ -25,6 +25,6 @@ Info_required:
 
 !INCLUDE "../methods/context_research/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../methods/context_research/approaches.md"
+
+

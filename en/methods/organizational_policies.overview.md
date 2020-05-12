@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/organizational_device_assessment/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/organizational_device_assessment/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/organizational_device_assessment/output.md"

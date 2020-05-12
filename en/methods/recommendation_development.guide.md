@@ -21,9 +21,9 @@ Info_required:
 
 !INCLUDE "../methods/reporting_and_recommendation_development/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../methods/reporting_and_recommendation_development/approaches.md"
+
+
 
 ### Outputs
 

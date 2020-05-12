@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/reconnaissance/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/reconnaissance/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/reconnaissance/output.md"

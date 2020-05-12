@@ -21,5 +21,4 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/advanced_threat/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/advanced_threat/approaches.md"
+

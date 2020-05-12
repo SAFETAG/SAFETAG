@@ -22,8 +22,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/debrief/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/debrief/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/debrief/output.md"

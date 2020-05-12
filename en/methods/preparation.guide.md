@@ -21,8 +21,8 @@ Info_required:
 ### The Flow of Information
 ![Preparation Information Flow](images/info_flows/preparation.svg)
 
-### Approaches
-!INCLUDE "../methods/preparation/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/preparation/output.md"
