@@ -8,3 +8,4 @@
   * Update glossary where needed.
   * Compile full report contents.
   * Send the report to client. [^secure_reporting]
+  * Document updates to activities to submit back to SAFETAG.
