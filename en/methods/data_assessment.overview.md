@@ -25,9 +25,9 @@ Info_required:
 
 !INCLUDE "../methods/data_assessment/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../methods/data_assessment/approaches.md"
+
+
 
 ### Outputs
 

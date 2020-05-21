@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/follow_up/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/follow_up/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/follow_up/output.md"

@@ -1,4 +1,0 @@
-* **Risk Matrix Development:** Create a risk matrix that maps each vulnerability found  to its likelihood and impact.
-* **Implementation Matrix Development:** Create an "implementation matrix." with the urgency of the threat addressed balanced by the difficulty of implementation given available organizational capacity for the recommendations.
-* **Roadmap Development:** Identify critical vulnerabilities, with achievable recommendations that fit into threat narratives that you heard from staff during the audit to create a remediation roadmap for addressing the threats faced by the organization.
-* **Documenting Existing Success':** Place the  recommendations on a time-line that includes the existing practices of the organization to show that the remediation process is a continuation of the hosts existing in/formal security practices. [^shostack_anchoring] 

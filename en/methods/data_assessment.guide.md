@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/data_assessment/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/data_assessment/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/data_assessment/output.md"

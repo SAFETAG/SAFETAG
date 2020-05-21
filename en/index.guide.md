@@ -585,33 +585,31 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 # Reporting
 
-\newpage
-<!-- Vulnerability Prioritization
-
-!INCLUDE "methods/vulnerability_prioritization.guide.md"
-
-\newpage
--->
-
 <!-- Recommendation Development -->
 
 !INCLUDE "methods/recommendation_development.guide.md"
 
 <div class="boxtext">
+!INCLUDE "exercises/risk_matrix/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/roadmap_development/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/identify_useful_resources/index.md"
 </div>
 
-\newpage
-<!-- Roadmap Development -->
+<div class="boxtext">
+!INCLUDE "exercises/identify_recommendations/index.md"
+</div>
 
-!INCLUDE "methods/roadmap_development.guide.md"
+<div class="boxtext">
+!INCLUDE "exercises/report_creation/index.md"
+</div>
 
-\newpage
-<!-- Reporting Creation -->
 
-!INCLUDE "methods/report_creation.guide.md"
-
-\newpage
 
 <!-- APPENDICES AND FOOTNOTES -->
 

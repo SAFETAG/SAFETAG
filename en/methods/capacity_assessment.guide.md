@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/capacity_assessment/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/capacity_assessment/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/capacity_assessment/output.md"

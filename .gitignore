@@ -10,6 +10,9 @@
 \#*\#
 *~
 
+#Ignore "working" files
+WORKING__*
+
 #Ignore Latex Modules
 modules/install-tl*
 modules/texlive

@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/responsive_support/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/responsive_support/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/responsive_support/output.md"

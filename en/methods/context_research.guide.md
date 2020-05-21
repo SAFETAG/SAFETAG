@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/context_research/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/context_research/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/context_research/output.md"
