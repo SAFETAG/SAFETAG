@@ -1,3 +1,0 @@
-This component suggests approaches to use if in-person facilitation is not possible, and to include participation from remote staff or offices when an organization has multiple locations. This supplements the Data Assessment, Process Mapping, and Threat Assessment exercises, enabling them to be conducted remotely.
-
-This may not provide as deep results as in-person facilitation, but should provide adequate levels of expansion and verification of information needed, and even provide the secondary benefits in most cases of helping the organization build a shared understanding of its processes, risks, and riosk tolerances.

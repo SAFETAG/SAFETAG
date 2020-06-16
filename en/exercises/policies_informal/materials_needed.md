@@ -1,2 +1,0 @@
-
-* Materials for taking notes

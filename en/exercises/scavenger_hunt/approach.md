@@ -1,4 +1,0 @@
-
-A local facilitator is required to lead this "scavenger hunt" where staff members seek out potential physical security challenges themselves. This activity should only be conducted within an environment with a high level of trust and consent. The auditor should get the agreement from the host NGO to involve all staff members into the exercise to avoid causing trust issues. By involving the staff members in identifying physical security risks, you are also taking a step forward to increase  awareness on these issues. 
-
-With facilitation, staff members will explore their own office looking for potential physical security risks and share results. To reduce the risk of individual staff embarrassment, they will first review their own working space and secure it before looking around other parts of the office.  The facilitator, in consultation with the auditor and the organizational point of contact may declare some areas "off limits"

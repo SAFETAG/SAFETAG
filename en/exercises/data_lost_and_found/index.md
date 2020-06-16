@@ -16,19 +16,16 @@ Time_required_minutes:
 #### Risks of Data Lost and Found
 
 ##### Summary
-!INCLUDE "summary.md"
+Have staff rank the impact if different data within the organization was lost, and the impact if various adversaries gained access to that data.
 
 ##### Overview
-!INCLUDE "approach.md"
 
 ##### Materials Needed 
-!INCLUDE "materials_needed.md" 
 
 ##### Considerations
-!INCLUDE "operational_security.md"
 
 ##### Walkthrough
-!INCLUDE "instructions.md"
+
+See the Sensitive Data activity for an interactive way to gather the types of data in the organization for this ranking exercise.
 
 ##### Recommendation
-!INCLUDE "recommendations.md"
