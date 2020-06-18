@@ -33,8 +33,14 @@ This is natural, but it is important to keep track of where your organization's 
 ##### Materials Needed
 
 * Stickies and markers for activities
-* Flip chart paper or a whiteboard
-* Camera to record outputs digitally
+* Flipchart paper
+* One larger sheet of paper taped to wall in landscape orientation, with or without prepared titles. (For an example with prepared headings, see the matrix below.) The Sensitivity axis is optional in the original exercise, but critical for this one. It can be added after the initial round of brainstorming however to streamline the flow.
+
+|Relative Sensitivity|Computer|USB / External Drive|Cloud Storage|Phones, Print, etc.|
+|--------------------|--------|--------------------|-------------|-------------------|
+|High|||||
+|Moderate|||||
+|Low|||||
 
 ##### Considerations
 
@@ -49,18 +55,6 @@ This is natural, but it is important to keep track of where your organization's 
 
 *This exercise is adapted from the LevelUp Activity, [Backup Matrix](https://level-up.cc/curriculum/protecting-data/data-backup-basics/activity-discussion/data-backup-matrix-creating-information-map/), part of the curricula for [Data Retrention and Backup](https://level-up.cc/curriculum/protecting-data/data-backup-basics/) by Daniel O'Clunaigh, Ali Ravi, Samir Nassar, and Carol.*
 
-##### Materials to Prepare:
-
-  * Stickies
-  * Markers
-  * Flipchart paper
-  * One larger sheet of paper taped to wall in landscape orientation, with or without prepared titles. (For an example with prepared headings, see the matrix below.) The Sensitivity axis is optional in the original exercise, but critical for this one. It can be added after the initial round of brainstorming however to streamline the flow.
-
-|Relative Sensitivity|Computer|USB / External Drive|Cloud Storage|Phones, Print, etc.|
-|--------------------|--------|--------------------|-------------|-------------------|
-|High|||||
-|Moderate|||||
-|Low|||||
 
 Explain to participants that we're going to conduct an information mapping activity to get a sense of where our important information actually is.
 

@@ -80,7 +80,7 @@ The flexibility of having multiple options in performing a DNS enumeration activ
 
 Specific instructions for selected tools/techniques follows:
 
-###### Passive: Third Party and Online Tools
+###### Variant: Passive: Third Party and Online Tools
 
 
 Using 3rd party and online tools can help an auditor/tester in avoiding his/her machine to generate logs on the target's end. In cases where the target, or partner organization who requests for an audit/assessment has some security devices in place (IDS/IPS, Firewall etc.) Generating logs from your machine/network may result sometimes in our traffic getting blocked due to "automatic blocking" features in these security devices/appliances.
@@ -94,7 +94,7 @@ Using 3rd party and online tools can help an auditor/tester in avoiding his/her 
   - [IntoDNS](https://intodns.com)
   - [YougetSignal Reverse IP Domain Check](https://www.yougetsignal.com/tools/web-sites-on-web-server)
 
-###### Active: DNSrecon
+###### Variant: Active: DNSrecon
 
 
 DNSrecon (available in Kali 2017 Release) is a powerful DNS enumeration script that can help and auditor in gathering information during the recon stage. This tool checks all NS records for Zone transfers, enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF and TXT). Performs SRV record enumeration and TLD (Top Level Domain) Expansion to name some.
@@ -126,7 +126,7 @@ Zone Walking:
 
 	 root@kali:~# dnsrecon -d <target.domain> -t zonewalk
 
-###### Active: DNSenum
+###### Variant: Active: DNSenum
 
 
 DNSenum, just like DNSrecon, is a tool designed to analyze DNS information of a specific DNS target. From zone transfer, hostname and subdomain dictionary brute force, reverse lookup service record and standard record query and top level domain name expansion, results are almost identical for both assessment tools.
@@ -148,10 +148,41 @@ The table below will help you get started with your DNS enumeration using ```dns
 |dnsenum -f list.txt -s 5 -p 5 ```domain.com```|Enumerate using subdomain list,```(list.txt)``` scrap 5 subdomains ```(-s)```, with 5 Google result pages ```(-p)```|
 |dnsenum -f ```list.txt``` -o ```result.xml``` ```internews.org```|Enumerate target with subdomain list ```(list.exe)```, generates output in XML format ```-o``` |
 
-###### Active:DNS Zone Transfer
+###### Variant: Active: DNS Zone Transfer
+
+Anonymous individuals online can request the full list of the hostnames on the organizations domain. Responding to zone requests from anyone on the Internet is comparable to providing an inventory of office locations, pending projects and service providers to anyone who asks. As such, it is not inherently dangerous, but it does require that the organization not rely on the assumption that unpublicized URLs are in fact secret.
+
+An overly permissive domain name service (DNS) provider allows an attacker to enumerate online services that the organization might think are “hidden” because they have not been (intentionally) published. A zone transfer returns all of the hostnames at a particular domain, or “zone.” So, a request for sample.org may return www.sample.org, webmail.sample.org and ftp.sample.org, along with other less obviously guessable targets, such as wordpress-testing.sample.org.
+
+While any user should be able to use a name server to look up a hostname and convert it to the corresponding IP address, most well-administered name servers allow full “zone transfer” requests only from a specific list of authorized locations (often themselves subsidiary name servers).
+
+Determine the authoritative name server(s) for the organization’s primary domain:
+
+```
+$ host -t ns sample.org
+sample.org name server ns1.something.net.
+sample.org name server ns2.something.net.
+```
+
+Attempt a zone transfer on that domain, using that name server:
+
+```
+$ host -l sample.org ns1.something.net
+Using domain server:
+Name: ns1.something.net
+Address: 256.0.0.1#53
+Aliases:
+
+www.sample.org has address 256.0.0.2
+mail.sample.org has address 256.0.0.3
+webmail.sample.org has address 256.0.0.4
+ftp.sample.org has address 256.0.0.5
+foo.sample.org has address 256.0.0.6
+bar.sample.org has address 256.0.0.7
+```
 
 
-###### Active: MX Records
+###### Variant: Active: MX Records
 
 MX, or Mail Exchange, records are required to be public for any domain you wish to receive email through. These records can still reveal sensitive information about an organization's hosting set-up and office software in use through further scanning (see Vulnerability Scanning). MX Records can reveal vulnerable mail servers or information about other services hosted internally. Unless other assessments reveals specific vulnerabilities in e-mail services used, there is no specific action to take. If an orgnization is self-hosting email, it may be advisable to suggest outsourcing that if funds permit. While self-hosted email provides more control and potentially security, managing the security of the server is a complex job. Other mail services can provide some level of protection by being a first-pass check for spam and viruses, and (slightly) reducing the visibility of an organizational mail server.
 

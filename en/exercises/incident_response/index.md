@@ -44,7 +44,7 @@ Incidents can include problems such as insider threats, active remote access mal
 
 ___
 
-###### Malware / Remote Access
+###### Variant: Malware / Remote Access
 
 
 
@@ -65,9 +65,10 @@ Possible mitigation steps are below. *This step should not take more than 2 hour
 - if the forensic capture of the whole hard disk would take too long, and an investigation is needed, the hard disk can be replaced (See the Advanced Threats Method for further guidance)
 - if reinstalling the system is not possible, the device should be replaced
 - mobile devices can be reset to factory settings. After resetting to factory settings, make sure any app or data recovery is not including potential compromise vectors, such as browser extensions, malicious applications, etc.
+-
 ___
 
-###### Insider Threat
+###### Variant: Insider Threat
 
 Insider Threat refers to any threat to an organization that comes within or inside the organization.
 These can include (but not limited to)
@@ -80,7 +81,19 @@ These can include (but not limited to)
 Suspicions or evidence for insider threats must be raised discretely with organisational management through the audit contact person.
 ___
 
-###### Active Surveillance
+###### Variant: WebApp Hacking
+
+For the implementation of mitigation measures, you can refer the auditees to a third party. This may be the organization's IT staff, hosting service provider, a rapid response helpline, a digital forensic expert, etc.
+
+You should consider a web application compromise serious and coordinate an incident response if any of the following is happening:
+
+- Unusual accounts are created in server and CMS
+- Access logs from outside regions beyond the organizations location
+- Malicious php scripts (webshells) are present on the server
+- Defaced web pages and are sometimes password pro
+
+___
+###### Variant: Active Surveillance
 
 
 To be developed.

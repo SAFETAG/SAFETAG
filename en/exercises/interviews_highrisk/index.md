@@ -28,6 +28,13 @@ This additional interview activity is to identify if there are any indicators th
 * Be aware of time and don't spend too much time on explaining what advanced threats are
 * Before starting the interview process, read about known or common attacks you can reference (DDoS attacks, malware, phishing, ransomware, etc.) to remind staff and get the conversation started. In order for the stories to be compelling, they should be localised and the threats should reflect common challenges in their line of work. Much of this can come from your technical context research work.
 
+**Expected Outputs**
+
+* Indicators of attack or compromise of the organization
+* Information about attacks against similar organizations and/or community members
+* New or verified threats and intent
+
+
 ##### Materials Needed
 ~45 minutes per interview / staff member
 1 hr interview as an org, depending on organisational culture

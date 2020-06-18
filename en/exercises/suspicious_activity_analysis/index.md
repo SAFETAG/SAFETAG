@@ -90,7 +90,7 @@ The next sections often are highly interrelated - a phishing email may include m
 
 ___
 
-###### Phishing or Suspicious Emails
+###### Variant: Phishing or Suspicious Emails
 
 
 If the organization staff has received suspicious communications, the first step should be to clearly warn the auditee that any associated files or links *should not be opened*.
@@ -107,7 +107,7 @@ If the organization staff has received suspicious communications, the first step
 
 ___
 
-###### Malicious Files
+###### Variant: Malicious Files
 
 In this part, you will be investigating a file and determine if it’s malicious or not. The auditor will not have much time for this step, but a preliminary analysis (not longer than one hour) can be performed, following these instructions:
 
@@ -165,7 +165,7 @@ You will need at least one hour to prepare and carry the advanced investigation.
 
 ___
 
-###### Suspicious URLs
+###### Variant: Suspicious URLs
 
 
 You may have found suspicious URLs in your wireshark output during the traffic analysis, in the email content, in IMs, etc.
@@ -180,7 +180,7 @@ If the URL was sent to the user through a message, ask them if they clicked the 
 
 ___
 
-###### Suspicious Processes
+###### Variant: Suspicious Processes
 
 
 If you find suspicious open ports, follow the instructions in the Network Scanning activity section "How to decide if an open port is suspicious".
@@ -209,14 +209,14 @@ It can also be useful to follow these steps:
 
 ___
 
-###### Unusual Network Traffic
+###### Variant: Unusual Network Traffic
 
-Advanced threats may be identified during the network scanning and traffic analysis. See the Network Scanning and Traffic Analysis activities.
+Advanced threats may be identified during the network scanning and traffic analysis. See the **Network Scanning and Traffic Analysis** activities.
 
 ___
 
 
-###### Threat Hunting
+###### Variant: Threat Hunting
 
 **Threat Hunting**
 In case you went through the entire process and still you have doubts about a file, email, process, or have other reasons to believe the organization may have undetected malware, you will probably need to work on specific threat hunting procedure that matches your needs, the organization's assets, and the threat profile of potential adversaries.

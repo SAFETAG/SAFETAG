@@ -351,4 +351,4 @@ Ask these of the most technical staff member you are in touch with. If the organ
 
 ###### Questions for Known High Risk Organizations
 
-See Guiding Questions for High Risk Organizations if there are concerns that the organization may be targeted by advanced threat actors.
+See **Guiding Questions for High Risk Organizations** if there are concerns that the organization may be targeted by advanced threat actors.

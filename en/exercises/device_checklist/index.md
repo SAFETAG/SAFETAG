@@ -49,7 +49,7 @@ Below is a checklist to assist in checking across different platforms/versions f
 
 ___
 
-###### OS X
+###### Variant: OS X
 
 
 
@@ -86,7 +86,7 @@ GUI: The "Activity Monitor" application is located in /Applications/Utilities pr
 
 ___
 
-###### Windows
+###### Variant: Windows
 
 
 If Windows is not your primary OS, you can download sample Virtual Machines (with time limitations) from Microsoft through their project to improve IE support via https://www.modern.ie/en-us/virtualization-tools#downloads (see also http://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/ and https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf)
@@ -188,7 +188,7 @@ If user is still operating on windows XP, recommendation is to upgrade to later 
 
 If there is an organizationally critical system relying on Windows XP, removing it from the network and carefully managing data exchange with it may provide a bridge solution until a replacement process can be funded and rolled out.
 
-###### Linux
+###### Variant: Linux
 
  * OS Security Updates
 
@@ -234,7 +234,7 @@ CLI:
 
 **If Unsupported Operating System - Upgrade to Recent Version**
 
-Popular operating systems like Windows XP are, sadly, no longer receiving security updates. Upgrade to the latest version keeping in mind the system requirements of the version selected. For Windows, review the [Windows lifecycle fact sheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet) for upcoming "EOLs" (End of Life). Apple does not publish EOL schedules, but historically releases security updates for their current and two prior releases. 
+Popular operating systems like Windows XP are, sadly, no longer receiving security updates. Upgrade to the latest version keeping in mind the system requirements of the version selected. For Windows, review the [Windows lifecycle fact sheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet) for upcoming "EOLs" (End of Life). Apple does not publish EOL schedules, but historically releases security updates for their current and two prior releases.
 
 While "pirated" operating systems and software are extremely common (especially for Windows) they often leave much to be desired in terms of security.  If the OS or Software is not receiving regular updates from the software creator, it is extremely vulnerable to thousands of potential attacks. Switch to licensed software or recommended Free Open Source Software
 

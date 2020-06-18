@@ -54,7 +54,7 @@ Both Recon-ng and Foca are open source reconnaissance tools with many available 
 
 ___
 
-###### Recon-ng
+###### Variant: Recon-ng
 
 **What is recon-ng?**
 
@@ -599,7 +599,7 @@ Ok that was pretty successful, let's take a look at our bounty:
 
 ```
 
-##### Reconnaissance: Next Steps
+**Next Steps**
 
 Below are some suggestions for further steps in the reconnaissance phase:
 
@@ -708,9 +708,7 @@ To add a key after you have obtained one (see below), get the recon-ng name for 
 
 ___
 
-###### Foca Analyzer
-
-**FOCA Quick Guide**
+###### Variant: Foca Analyzer
 
 Requirements:
 
@@ -796,7 +794,7 @@ These information can then be added to your records and be used for other attack
 
 ___
 
-###### Maltego
+###### Variant: Maltego
 
 **What is Maltego?**
 

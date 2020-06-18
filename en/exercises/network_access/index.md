@@ -67,7 +67,7 @@ On the other hand, WPA/WPA2 (Wi-Fi Protected Access) is also found to be vulnera
 
 ___
 
-###### WEP Cracking
+###### Variant: WEP Cracking
 
 The auditor can be guaranteed to access a WEP network with sufficient time by cracking the WEP key.
 
@@ -89,7 +89,7 @@ For educational purposes, if no WEP network is available, you can use [this](htt
 
 ___
 
-###### MAC Filtering Bypass
+###### Variant: MAC Filtering Bypass
 
 
 Open and MAC-address-filtered wireless access points are not only open to anyone within range to join and listen in to, but also do not provide protection to those on the network itself, even if they do not "broadcast" their name.  These may seem like great ways to prevent unauthorized users from accessing your network without resorting to passwords, but they are trivial to overcome.
@@ -119,7 +119,7 @@ ifconfig mon0 up
 
 ___
 
-###### WPA Cracking
+###### Variant: WPA Cracking
 
 
 The organization’s wireless Local Area Network (WLAN) protects the network and its users with WPA encryption. This is an important security measure, and a WPA-protected wireless network is much safer than an unencrypted “open” network or a WEP-protected network. (WEP is fundamentally flawed, and extremely simple attacks have been widely known for over a decade.) However, the ease with an attacker could guess the WPA key, or “WiFi password,” is a serious issue, particularly considering its importance as an essential perimeter control. An attacker who gains access to the wireless LAN immediately bypasses many protections that network administrators, and other users of the office network, often take for granted. Put another way, anyone able to guess the WPA key is immediately “inside the firewall.”
@@ -226,8 +226,7 @@ See the *Wireless Range Mapping* activity for guidance on mapping the reach of t
 
 ___
 
-###### WPS PIN Cracking
-
+###### Variant: WPS PIN Cracking
 
 WPS was built as an addition to WPA to make it easier to add devices without typing in secure passwords, but this ease of use means that a malicious actor can pose as a device and effectively reduce the potentially very difficult passwords WPA allows down to a simple numeric-only 8 character PIN. Further, the WPS system allows an attacker to work on this PIN in two parallel chunks, further reducing its security. This, like WEP, is a &quot;live&quot; attack - you have to stay connected to the network - but also like WEP, it is a guaranteed attack; your brute forcing of the WPS system will eventually (2-10 hours) allow you network access.
 
