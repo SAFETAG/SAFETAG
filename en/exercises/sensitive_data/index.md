@@ -17,7 +17,7 @@ Time_required_minutes:
 
 ##### Summary
 
-Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or projects use cloud services like Dropbox or Google Drive for some activities, a shared server for others, and a mix of work and personal devices (laptops, phones, tablets...).  
+Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or projects use cloud services like Dropbox or Google Drive for some activities, a shared server for others, and a mix of work and personal devices (laptops, phones, tablets...).
 
 This is natural, but it is important to keep track of where your organization's data lives and who can access it.
 
@@ -30,10 +30,10 @@ This is natural, but it is important to keep track of where your organization's 
 * Discuss the impact of a device being exposed / taken by an adversary
 * Identify who has access (physical access, login access, and permissions), and who needs to have access to get the organizations work completed.
 
-##### Materials Needed 
+##### Materials Needed
 
 * Stickies and markers for activities
-* Flip chart paper or a whiteboard 
+* Flip chart paper or a whiteboard
 * Camera to record outputs digitally
 
 ##### Considerations
@@ -118,8 +118,18 @@ Call out the information that they are keeping on their computer's hard drive (w
  * Infrastructural problems, like a power failure broke a computer
  * Inexplicably bricked computer, etc.
 
-For SAFETAG, we focus on the "Sensitive data in the wrong hands" section.  Based on the clustering of sensitive data along the vertical access, choose a column that has an unsual amount of sensitive data (email or computers, usually).  
+For SAFETAG, we focus on the "Sensitive data in the wrong hands" section.  Based on the clustering of sensitive data along the vertical access, choose a column that has an unsual amount of sensitive data (email or computers, usually).
 
 Remove the stickies from the column but keep them in your hand and read them. Now I have this information. What can I do with it? And what are you left with?  Is anyone at risk - yourselves? partners?  If this were published on the Internet, what would happen?
 
 ##### Recommendation
+
+Laptops, workstations, servers, external hard drives, and backup systems should be configured to use some form of hard drive encryption.
+
+  * For Windows, Microsoft BitLocker is built in to the latest versions, free-of-charge for anyone with a valid Windows 7 “Ultimate” license or Windows 8.
+
+  * For Apple OSX users, FileVault2 is a built-in alternative that is also free-of-charge.
+
+  * TrueCrypt is a cross-platform solution that is open source and free of charge, and can work on Mac, Windows, and Linux machines as well.
+
+All three solutions provide a way to encrypt data on internal drives as well as external hard drives, and USB memory sticks.

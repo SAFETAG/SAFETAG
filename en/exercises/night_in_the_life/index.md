@@ -79,3 +79,5 @@ This can also be done remotely. Ask to have the staff member use a screensharing
 **Multi Factor Authentication**
 
 When possible, enable multi factor authentication on work accounts (email, social media, website administration, etc). Specially if the accounts are being accessed with personal devices.
+
+**See also the recommendations under the Device Checklist activity**

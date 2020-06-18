@@ -14,6 +14,7 @@ Time_required_minutes:
 ---
 
 #### DNS Enumeration
+
 ##### Summary
 
 DNS Stands for Domain Name Service. In a nutshell, what it does is translate hosts/computer's name into it's IP addresses. It provides a way to know the IP address of any given machine on the internet, with the corresponding URL, or domain. You can consider it as telephone directory of the Internet.
@@ -30,6 +31,21 @@ DNS Enumeration can be accomplished with different number of tools along with di
 
 * Using a variety of passive and active techniques, uncover as many domains/subdomains linked to the target organization as possible.
 * Use these to advance other aspects of your work to discover additional credentials and potential vulnerable or outdated services.
+
+**Expected Outputs**
+
+* A fuller map of the organization's online presence, including additional (potentially forgotten) hosts/services connected with the organization.
+  *Domains + IP addresses
+  * Subdomains + IP addresses
+  * MX Records + IP addresses
+  * DNSKeys
+  * SOA records, DNS records and registrar
+  * Domains hosted within the same IP address
+  * DNS history Records
+  * Domain Reputation (Web of Trust)
+* Some of this information may already give you an idea of how your target's infrastructure setup. For example, you may see if the target domain goes into a CDN (Content Delivery Network) or sometimes DDoS mitigations services by finding out it's NS records. You can also identify if the target's MX records are behind a DLP (Data Leakage Prevention) systems.
+* The output of your DNS enumeration might contain "more" information about the client organization (internal DNS records, hostnames, router names, additional IP addresses). This data is sometimes caused by misconfigured DNS or default service configurations, so look for misleading and false-positive results.
+
 
 ##### Materials Needed
 

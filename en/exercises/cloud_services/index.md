@@ -32,6 +32,11 @@ Despite these challenges, significant organizational processes and sensitive dat
 * Review formal policies of cloud services in use
 * Search for historical security problems with each provider and their response to it.
 
+**Expected Outputs**
+
+* A list of all identified 3rd party / cloud services in use
+* A mapping of what data and metadata and which users have access on which providers
+
 ##### Materials Needed
 
 ##### Considerations
@@ -40,7 +45,7 @@ Despite these challenges, significant organizational processes and sensitive dat
 
 ##### Walkthrough
 
-It is increasingly difficult to run complex organizations without some reliance on cloud-based service providers such as email hosting, web hosting, or document management/backup. Organizations (and as assisted by the auditor) should review their options in the selection of cloud providers, and in parallel consider ways to apply practices and policies to their use to meet organizational security requirements.  
+It is increasingly difficult to run complex organizations without some reliance on cloud-based service providers such as email hosting, web hosting, or document management/backup. Organizations (and as assisted by the auditor) should review their options in the selection of cloud providers, and in parallel consider ways to apply practices and policies to their use to meet organizational security requirements.
 
 ##### Cloud Service Provider Review
 

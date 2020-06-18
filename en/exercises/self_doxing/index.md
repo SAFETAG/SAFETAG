@@ -21,7 +21,7 @@ Doxing (also "doxxing", or "d0xing", a word derived from "documents", or "docs")
 
 Doxing is premised on the idea that "The more you know about your target, the easier it will be to find their flaws”. A malicious actor may use this method to identify valuable information about their target. Once they have found sensitive information, they may publish this information for defamation, blackmail the target person, or use it for other goals.
 
-This activity aims to help participants identify any unwanted personal information that may be publicly available online, and to make them aware of the risk of doxing and how to prevent it. 
+This activity aims to help participants identify any unwanted personal information that may be publicly available online, and to make them aware of the risk of doxing and how to prevent it.
 
 ##### Overview
 **Self-doxing:**
@@ -51,7 +51,7 @@ This activity is aimed at showing the group how to research the data traces they
   * Recommend the usage of the Tor Browser for this activity.
   * Treat threat and adversary data with the utmost security.
   * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.
-  * Ensure that any digital recordings of this process are kept secure and encrypted. 
+  * Ensure that any digital recordings of this process are kept secure and encrypted.
   * Before targeting any individuals, do the research for the organization itself.
   * If using a staff member for the example, have a private session with them beforehand to make sure you do not expose any sensitive information to the group.
   * Ensure that you have consent from the staff members you will use as an example for this activity.
@@ -59,7 +59,7 @@ This activity is aimed at showing the group how to research the data traces they
 ##### Walkthrough
 * Prepare before the activity by doing this research on a few members of the organization to identify good examples
 * Present the problem to the group:
- 
+
     Harassers and stalkers use several tools and techniques to gather information about their targets, but since these tools and techniques are mostly public and easy to use, we can also use them ourselves, on ourselves, as a preventative measure. "Self-doxing" can help us make informed decisions about what we share online, and how. (Of course, these same instruments can also be used to learn more than is immediately obvious about someone we have met online before we give them our full trust  - for example to decide if we want to admit them to a private mailing list or group on social networking platforms.)
  Methods used for doxing (and self-doxing!) include exploring archives, yellow pages, phone directories and other publicly available information; querying common search engines like Google or DuckDuckGo; looking for a person's profile in specific services; searching for information in public forums and mailing lists; or looking for images that the person has shared (and for instance may have also published in another, more personal, account). But it can also simply consist in looking up the public information on the owner of a website, through a simple "whois search".
 
@@ -78,8 +78,30 @@ This activity is aimed at showing the group how to research the data traces they
 
     * Show the group a reverse image search on [TinEyE](https://tineye.com/) or Google and recommend they do it on pictures of themselves they have published online.
 
-    * Show the group how to check if their online account has been previously compromised on [Have I Been Pwned?](https://haveibeenpwned.com/). Explain that often results are old and if they have changed their password recently, showing up on this search may not be a problem. Tell them that if they are still using that old password for the compromised account of for other accounts, they should immediately change that password. 
+    * Show the group how to check if their online account has been previously compromised on [Have I Been Pwned?](https://haveibeenpwned.com/). Explain that often results are old and if they have changed their password recently, showing up on this search may not be a problem. Tell them that if they are still using that old password for the compromised account of for other accounts, they should immediately change that password.
 
 
 
 ##### Recommendation
+
+If significant results are found that might endanger an individual or the whole organization, the auditor should give immediate mitigation recommendations.
+
+If the personal information is on a website, help the organization identify the contact point they need to contact for the takedown request. European Union citizens can often rely on the [right to be forgotten](https://en.wikipedia.org/wiki/Right_to_be_forgotten#European_Union).
+
+What follows is a list of links to start a takedown request:
+
+
+- **Google**
+    - [Form to be removed from Google **searches**](https://www.google.com/webmasters/tools/legal-removal-request?complaint_type=rtbf)
+    - [How to request the removal of content on various Google **services**](https://support.google.com/legal/troubleshooter/1114905?rd=1/troubleshooter/1114905?rd=1)
+
+- **Facebook**: [Form to request removal of photo or video because it violates someone's rights](https://www.facebook.com/help/contact/144059062408922)
+
+- **Twitter**: [Form to report doxing or posting of private information](https://help.twitter.com/forms/private_information)
+
+- **Snapchat**: [Help Center](https://support.snapchat.com/en-US/i-need-help) - Click on "Report a Safety Concern".
+
+- **Reddit**: [What to do if someone posted your personal information](https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/posting-someones-private-or-personal)
+
+- **Tumblr**: [How to report a privacy violation](https://www.tumblr.com/abuse/privacy)
+    - If the public form cannot help, abuse can be reported by email following [these instructions](http://emergencycenter.tumblr.com/post/22769438497/is-there-a-way-to-report-something-on-tumblr)

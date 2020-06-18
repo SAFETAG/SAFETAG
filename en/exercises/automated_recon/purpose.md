@@ -1,3 +1,0 @@
-While much of SAFETAG focuses on digital security challenges within and around the office, remote attacks on the organization's website, extranets, and unintended information available from "open sources" all pose real threats and deserve significant attention.  SAFETAG takes great care to take a very passive approach to this work, especially when done off-site, so as not to have unintended consequences on the organization's infrastructure or undermine operational security concerns.
-
-This remote work also feeds in to the Auditor's understanding of the organization's digital presence (and their own understanding thereof), and will guide specific vulnerabilities to investigate once on site.

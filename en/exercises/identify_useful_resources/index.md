@@ -20,8 +20,6 @@ In this component the auditor documents resources that the host may be able to l
 
 This can include, but is not limited to, local technical support and incident response groups/trade organizations, places to obtain discount software, trainers, and guides/resources they can use to support their up-skilling.
 
- 
-
 ##### Overview
   * Identify trusted resources that the organization can leverage to accomplish the identified recommendations.
 
@@ -34,6 +32,7 @@ This can include, but is not limited to, local technical support and incident re
 
 ##### Walkthrough
 
+A SAFETAG auditor has an opportunity to act as a trusted conduit between civil society organizations in need and organizations providing digital security training, technological support, legal assistance, and incident response. As SAFETAG auditors develop deep knowledge of regional and global resources available the organizations they audit will have a greater chance of identifying resources that they can use. As auditors share resources they have identified back to the SAFETAG network, each auditor's possible impact can be increased.
 
   * Lists of organizations that can assist the host accomplish their task.
   * Lists of educational resources the organization can use for training.

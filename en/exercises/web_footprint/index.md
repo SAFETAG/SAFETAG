@@ -94,6 +94,14 @@ ___
 
 Most popular CMS platforms provide emailed alerts and semi-automated ways to update their software. Make sure someone responsible for the website is either receiving these emails or checking regularly for available updates. Security updates should be applied immediately. It is a best practice however to have a “test” site where you can first deploy any CMS update before attempting it on a production site.
 
+For websites using a content management system (Drupal, Wordpress, Joomla or similar), it is important to use a popular and open source tool (as opposed to a custom tool that a web design firm has put together for its customer base). Open source tools are more likely to have their security holes discovered and fixed at a rapid pace, but the burden remains on the organization to keep up to date with these security updates.
+
+The top CMS tools have dashboards and other tools to help alert the webmaster to available updates, and security updates should be heeded quickly. For sites that hold password data, it is worth exploring additional security features – the built-in password security for even modern CMS systems is weak, but the methods to improve upon them vary widely depending on the system.
+
+For sites built on custom CMS software which does not regularly receive updates, it is strongly advisable to migrate to a more standard, open source system.
+
+Note that “Static” websites – those created with a web design tool and uploaded to a server – are both more secure (no code to break) and also withstand denial of service attacks easier. However, these are more difficult to maintain and update, and work best only for “brochure” style sites.
+
 For custom CMS systems, it is strongly advisable to migrate to a more standard, open source system.
 
 An increasingly good practice is for organizations to take advantage of the "free" tiers of DDoS mitigation services, of which [CloudFlare](https://www.cloudflare.com/) is probably the best known. A challenge of these free services can be that they have definite limits to their protection. With CloudFlare, organizations can request to be a part of their [Project Galileo](https://www.cloudflare.com/galileo) program to support at-risk sites even beyond their normal scope of support.

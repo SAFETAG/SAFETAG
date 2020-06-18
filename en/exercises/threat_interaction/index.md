@@ -28,6 +28,14 @@ This exercise works well with larger groups, and can be woven in to the Threat I
 * Mark the threats which have occurred
 * Select one threat and arrange other threats, where relevant, as potential causes or outcomes of that threat
 
+**Expected Outputs**
+
+* List of threats and some level of prioritization based on concern
+* Historical threat information for the organization
+* Improved staff understanding of risk
+* Auditor should be able to fill in the below threat analysis worksheet
+
+
 ##### Materials Needed
 
 * Stickies (ideally 3 colors)
@@ -40,7 +48,7 @@ This exercise works well with larger groups, and can be woven in to the Threat I
 
   * Treat threat and adversary data with the utmost security.
   * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.
-  * Ensure that any digital recordings of this process are kept secure and encrypted. 
+  * Ensure that any digital recordings of this process are kept secure and encrypted.
   * Consider who has physical and visual access to the room where this process takes place, and if the room can be secured if this activity may span long/overnight breaks.
 
 ##### Walkthrough

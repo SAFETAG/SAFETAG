@@ -16,7 +16,7 @@ Time_required_minutes:
 #### Network Access
 
 #### Summary
-This activity helps auditors to test the strength of defenses the organizations' network has in place to protect their local area network. 
+This activity helps auditors to test the strength of defenses the organizations' network has in place to protect their local area network.
 This component consists of gaining access to the local area network through a wireless access point and unsecured physical channels (such as an ethernet jack).
 
 #### Overview
@@ -26,12 +26,24 @@ This component consists of gaining access to the local area network through a wi
   * Test unused ethernet ports for live network connectivity.
   * Find out how guest access is managed
 
+**Expected Outputs**
+
+  * Un-authorized access to the Wireless access point (WAP)
+  * List of unused ethernet jacks with network connectivity.
+
+
 *Note*:
 Cracking wireless passwords often take a huge amount of time performing, and the same results for the audit and organizational buy-in can be had simply by showing how password cracking works, and how far outside of the office the wireless network can be seen. Once an organization is using vulnerable authentication method, you can flag it right away as "finding". Given that the recommendations are often the same (move to WPA2 (and WPA3 as available), disable WEP and WPS access, provide a separate guest network, etc.), this should rarely be used during an audit (but is a useful skill to practice and understand how it works). If you do choose to use this during an audit, be aware that many of the stps disrupt network traffic, and success with WPA2 password cracking is by no means guaranteed, so can backfire.
 
+By walking organizations through the vulnerabilities of wireless networks, you have the opportunity to discuss password strength, and the power that having "offline" access to a password means in terms of brute forcing it, as well as the importance of defense in depth even within their trusted work network - reducing the services computers and servers are sharing, setting up local firewalls on computers, and requiring authentication to access files.
+
+Even a few minutes of network "sniffing" by an adversary can enable them to work offline to reveal the network password.  Knowing this password would let someone then access the entire internal network, files shared internally, and even change network settings to enable remote access.  While in an ideal setup, this would give no further access to sensitive documents, it is not uncommon to find shared file folders, or to gain access to the firewall or network routers (often set to the default password, because they're only accessible from inside the network...).
+
+
+
 #### Considerations
 
-*Note:* This section is one of the few sections where the SAFETAG audit does go through attack scenarios, from attempting to "break in" to the wireless network to testing exposed ethernet jacks for connectivity. 
+*Note:* This section is one of the few sections where the SAFETAG audit does go through attack scenarios, from attempting to "break in" to the wireless network to testing exposed ethernet jacks for connectivity.
 
 The reasons for this are threefold.  First, access to an organization's internal network tends to reveal sensitive data and "shadow" infrastructures (such as dropbox usage) that lead to many recommendations to improve access control and discussions of the value of defense in depth.  Second, the specific act of breaking the wifi password allows for a discussion on password security without attacking any specific user's password. Finally, with wireless networks treated as equivalent to wired networks in many offices, reminding the organization that wireless networks extend beyond the physical walls of the office is useful in discussing password rotation and guest network policies.
 
