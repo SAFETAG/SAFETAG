@@ -372,6 +372,10 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/remote_asset_valuation/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/data_lost_and_found/index.md"
 </div>
 
