@@ -1,2 +1,0 @@
-
-There must be a good understanding of the organizational capacity and commitment to implementing and maintaining formal security policies. Based on this assessment, consider beginning with more informal agreements among staff which still help centralize their approach to security and improve their preventative measures and ability to respond to incidents that is easy and effective to adopt. Encourage a "testing" phase of these practices for the organization to then begin formalizing the ones which work and test new approaches for any which did not continue.
