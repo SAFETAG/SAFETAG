@@ -7,31 +7,31 @@ Info_required:
 - unknown
 ---
 
-## Recommendation Development and Resource Identification
+## Report Creation and Recommendation Development
 
 ### Summary
 
-!INCLUDE "../reporting/recommendation_development/summary.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/summary.md"
 
 ### Purpose
 
-!INCLUDE "../reporting/recommendation_development/purpose.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/purpose.md"
 
 ### Guiding Questions
 
-!INCLUDE "../reporting/recommendation_development/guiding_questions.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../reporting/recommendation_development/approaches.md"
+
+
 
 ### Outputs
 
-!INCLUDE "../reporting/recommendation_development/output.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/output.md"
 
 ### Operational Security
 
-!INCLUDE "../reporting/recommendation_development/operational_security.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/operational_security.md"
 
 ### Resources
 <div class="greybox">
@@ -57,7 +57,7 @@ Info_required:
 !INCLUDE "../references/recommendation_development.overview.md"
 
 !INCLUDE "../references/identifying_recommendations.md"
-
+### Identify Useful Resources
 </div>
 
 <!-- ### Activities -->

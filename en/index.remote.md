@@ -20,7 +20,7 @@ scanning, device assessment, and group facilitation.
 
 More information on the single modules that address remote assessment methods can be found in [this article](https://safetag.org/2017/08/31/Remote_Audits.html).
 
-This playlist does not include much of the core SAFETAG introductory material. Please refer to the main [SAFETAG framework documents](https://SAFETAG.org/index.html#framework).
+*DISCLAIMER: This playlist was built to meet a specific context and need. As such, it does not include much of the core SAFETAG introductory material nor does it include all of the SAFETAG methodology. Please refer to the main [SAFETAG framework documents](https://SAFETAG.org/index.html#framework) both for introductory information as well as additional activities of relevance to your context and needs.*
 
 \newpage
 
@@ -239,7 +239,7 @@ Remote facilitation is covered in full in the Remote Facilitation guide:
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/sensitive_data/index.md"
+!INCLUDE "exercises/remote_asset_valuation/index.md"
 </div>
 
 <div class="boxtext">

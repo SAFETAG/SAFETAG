@@ -145,7 +145,7 @@ See the Appendix for a sample travel kit / checklist
 </div>
 
 <div class="boxtext">
-### Conduct Interviews
+#### Conduct Interviews
 
 **NOTE:** Covered in full under Capacity Assessment
 
@@ -154,7 +154,7 @@ See the Appendix for a sample travel kit / checklist
 
 
 <div class="boxtext">
-### A Day in the Life
+#### A Day in the Life
 
 **NOTE:** Covered in full under Organizational Device Assessment
 
@@ -209,7 +209,9 @@ Covered in full in  Vulnerability Scanning and Analysis
 
 
 \newpage
+
 <!-- Organizational Device Assessment -->
+
 !INCLUDE "methods/organizational_device_assessment.guide.md"
 
 
@@ -370,6 +372,10 @@ See the Network Access and Mapping activities for methods to expose insecure wir
 </div>
 
 <div class="boxtext">
+!INCLUDE "exercises/remote_asset_valuation/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/data_lost_and_found/index.md"
 </div>
 
@@ -527,7 +533,7 @@ Covered in full in Capacity Assessment:
 </div>
 
 <div class="boxtext">
-### Self Doxing
+#### Self Doxing
 
 Covered in full in Risk Modeling:
 
@@ -583,33 +589,31 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 # Reporting
 
-\newpage
-<!-- Vulnerability Prioritization
-
-!INCLUDE "methods/vulnerability_prioritization.guide.md"
-
-\newpage
--->
-
 <!-- Recommendation Development -->
 
 !INCLUDE "methods/recommendation_development.guide.md"
 
 <div class="boxtext">
+!INCLUDE "exercises/risk_matrix/index.md"
+</div>
+
+<div class="boxtext">
+!INCLUDE "exercises/roadmap_development/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/identify_useful_resources/index.md"
 </div>
 
-\newpage
-<!-- Roadmap Development -->
+<div class="boxtext">
+!INCLUDE "exercises/identify_recommendations/index.md"
+</div>
 
-!INCLUDE "methods/roadmap_development.guide.md"
+<div class="boxtext">
+!INCLUDE "exercises/report_creation/index.md"
+</div>
 
-\newpage
-<!-- Reporting Creation -->
 
-!INCLUDE "methods/report_creation.guide.md"
-
-\newpage
 
 <!-- APPENDICES AND FOOTNOTES -->
 

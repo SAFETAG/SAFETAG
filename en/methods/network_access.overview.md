@@ -24,6 +24,6 @@ Info_required:
 
 !INCLUDE "../methods/network_access/guiding_questions.md"
 
-### Approach
 
-!INCLUDE "../methods/network_access/approaches.md"
+
+

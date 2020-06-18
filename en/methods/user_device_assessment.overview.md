@@ -25,6 +25,6 @@ Info_required:
 
 !INCLUDE "../methods/user_device_assessment/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../methods/user_device_assessment/approaches.md"
+
+

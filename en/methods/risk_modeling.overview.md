@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/risk_modeling/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/risk_modeling/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/risk_modeling/output.md"

@@ -25,6 +25,5 @@ Info_required:
 
 !INCLUDE "../methods/network_mapping/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../methods/network_mapping/approaches.md"
+

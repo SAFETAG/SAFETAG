@@ -7,20 +7,20 @@ Info_required:
 - unknown
 ---
 
-## Recommendation Development
+## Report Creation and Recommendation Development
 
 ### Summary
 
-!INCLUDE "../reporting/recommendation_development/summary.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/summary.md"
 
 ### Purpose
 
-!INCLUDE "../reporting/recommendation_development/purpose.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/purpose.md"
 
 ### Guiding Questions
 
-!INCLUDE "../reporting/recommendation_development/guiding_questions.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/guiding_questions.md"
 
-### Approaches
 
-!INCLUDE "../reporting/recommendation_development/approaches.md"
+
+

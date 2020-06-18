@@ -1,31 +1,33 @@
+**What is recon-ng?**
 
-**Installing Recon-ng**
+recon-ng is an interactive command-line application written in python which is used to carry out reconnaissance using various open source intelligence resources. It offers a library of modules to carry out various searches using existing knowledge such as a website domain, an IP, an email address, a name, or a geographic location. Some modules require usage of a service API which you will need to obtain yourself (some of these are free with usage limitations while others must be paid for). Usage of the modules will populate dynamic database tables with information of interest such as personnel contacts, usernames, emails, technical information like hosts, IPs, and ports, and password hashes or plaintexts.
 
-  * Install recon-ng from the git source: git clone https://LaNMaSteR53@bitbucket.org/LaNMaSteR53/recon-ng.git
-  * cd recon-ng
-  * Install pip (sudo apt-get install python-pip) and dependencies: pip install -r REQUIREMENTS
-  * Launch Recon-ng: ./recon-ng
+**Installing recon-ng**
 
-For full instructions, see the [Recon-ng Getting Started Instructions](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide#!getting-started)
+Follow installation instructions from [Recon-ng Getting Started Instructions](https://github.com/lanmaster53/recon-ng/wiki/Getting-Started#installation). Note that recon-ng is already included in Kali Linux and Parrot.
 
-**Using Recon-ng**
+**Using recon-ng**
 
-  * Read the short [Recon-ng Usage Guide](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide)
+  Below is a walkthrough on using recon-ng v5, but there is also a good introductory recon-ng V5 video series at [Recon-ng v5 series](https://www.youtube.com/playlist?list=PLBf0hzazHTGOg9taK90uFjdcb8UgGfRKZ)
 
-NOTE: This guide is based upon the data flow documentation from the [Recon-ng website](https://bitbucket.org/LaNMaSteR53/recon-ng/overview)
+**Interface Basics**
 
-  * Interface Basics
+Run recon-ng from the command line:
 
-By pressing tab twice you can use auto-completion.
+```
+# recon-ng
+```
+
+By pressing the tab key twice you can use auto-completion to see the available options. This is a good way to familiarize yourself with the commands and navigation. On a new installation, pressing tab twice will display:
 
 ```
 [recon-ng][default] >
-add         exit        load        record      search      show        use
-back        help        pdb         reload      set         spool       workspaces
-del         keys        query       resource    shell       unset
+back         db           help         keys         modules      pdb          shell        snapshots    workspaces   exit         index        marketplace  options      script       show         spool
 ```
 
-This works even in commands.
+These are the first level of commands
+
+Autocomplete (pressing tab) works even inside commands:
 
 ```
 [recon-ng][default] > show
@@ -34,45 +36,48 @@ companies        dashboard        keys             modules          ports       
 contacts         domains          leaks            netblocks        pushpins         workspaces
 ```
 
-Using recon modules
 
-The recon modules are named in a very specific fashion to help the user understand the flow of data inside the tool. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.   The inputs are the first part of each module, and the outputs are the second part.  The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.).  If you provide the name of the specific module, recon-ng can figure it out (though tab completion doesn't help) -- for example, ``` use  breachalarm``` works just as well as ```use recon/contacts-creds/breachalarm```
+**Adding recon modules**
 
-You can also search modules by their inputs or outputs. ```search domains-``` displays all modules that take domain names as their input, and ```search -contacts``` displays all modules that outputs contact information.
+recon-ng v5 does not come with any modules pre-installed but contains a marketplace from which you can search and install individual modules.
 
-**Preparing**
+Typing ```marketplace search``` will list all modules in the marketplace. Note that modules have a specific name format which helps the user understand the flow of data inside the tool. Remember that recon-ng organises information into a number of database tables such as domains, hosts, contacts, leaks. Modules use the syntax ```<methodology step>/<input table>-<output table>/<module>```.  The inputs are the first part of each module, and the outputs are the second part. The module name itself is the tool used to process the data.  So, recon/domains-hosts/brute-hosts takes domain names (websitename.org) as an input, and outputs hostnames (extranet.websitename.org, etc.).  If you provide the name of the specific module, recon-ng can figure it out (though tab completion doesn't help) -- for example, ``` marketplace info threatminer``` works just as well as ```marketplace info recon/domains-hosts/threatminer```
 
-Set verboseness on during the guide so that you can see everything that happens. (recommended to begin with)
+Typing ```marketplace search``` will display all modules in the marketplace. You can also search for a specific word or input/output table such as ```marketplace search DNS``` or ```marketplace search hosts```.
 
-```
-[recon-ng][default] > set VERBOSE True
-```
+If you want to read what a module does before installing it then execute ```marketplace info <modulename>```
 
-  * Add API Keys
-
-You can use auto completion to see all the possible keys you can add.
+The results of the search query look like this:
 
 ```
-[recon-ng][websitename] > keys add
-bing_api           facebook_secret    google_cse         jigsaw_username    pwnedlist_iv       twitter_api
-builtwith_api      facebook_username  ipinfodb_api       linkedin_api       pwnedlist_secret   twitter_secret
-facebook_api       flickr_api         jigsaw_api         linkedin_secret    shodan_api         virustotal_api
-facebook_password  google_api         jigsaw_password    pwnedlist_api      sonar_api
+[recon-ng][default] > marketplace search DNS
+[*] Searching module index for 'DNS'...
+
+  +--------------------------------------------------------------------------------------+
+  |                  Path                 | Version |     Status    |  Updated   | D | K |
+  +--------------------------------------------------------------------------------------+
+  | discovery/info_disclosure/cache_snoop | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/domains-domains/brute_suffix    | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/domains-hosts/binaryedge        | 1.0     | not installed | 2019-06-24 |   | * |
+  | recon/domains-hosts/brute_hosts       | 1.0     | installed     | 2019-06-24 |   |   |
+  | recon/domains-hosts/findsubdomains    | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/domains-hosts/threatcrowd       | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/domains-hosts/threatminer       | 1.0     | not installed | 2019-06-24 |   |   |
+  +--------------------------------------------------------------------------------------+
+
+  D = Has dependencies. See info for details.
+  K = Requires keys. See info for details.
+
 ```
+As explained in the search results legend, a module with a * in the D column has dependencies which will be listed if you check the module info. Dependencies can be installed outside of recon-ng using ```pip install <dependency_name>```. Modules with a * in the K column require an API key, explained below.
 
-Choose and add a key.
-
-```
-[recon-ng][default] > keys add bing_api TYPE_THE_KEY_VALUE_HERE
-[*] Key 'bing_api' added.
-```
-
-You can list keys by using the command ```keys list``` Reference the Creating API Keys Section below for quick links to setting up popular APIs.
-
+Install a module with ```marketplace install <module_name>``` or install all modules with ```marketplace install all``` though modules with missing dependencies and missing API keys will not work until you address those needs. You can also install a collection of modules by using commands like ```marketplace install recon``` to install all the recon/* modules, or ```marketplace install recon/domains-hosts``` to get all of the domains-hosts modules under recon.
 
 **First steps**
 
 NOTE: This walkthrough is using sample data. Results will vary widely depending on the organization you are working with.
+
+recon-ng lets you set up separate workspaces to organise your reconnaissance work. This will likely be used to separate results and findings for reconnaissance on different organisations. Different workspaces maintain separate results database tables.
 
   * Create a workspace for your recon.
 
@@ -84,21 +89,22 @@ NOTE: This walkthrough is using sample data. Results will vary widely depending 
   * Note that you can also switch workspaces during the recon.
 
 ```
-[recon-ng][websitename] > workspaces select default
+[recon-ng][websitename] > workspaces load default
 [recon-ng][default] >
-[recon-ng][default] > workspaces select websitename
+[recon-ng][default] > workspaces load websitename
 [recon-ng][websitename] >
 ```
 
-
   * Add known seed information (domains, netblocks, company names, locations, etc.)
 
-Display possible seed information by using auto-completion.
+Start off with information you already know about the organisation you are conducting reconnaissance on.
+
+Display possible seed information by using auto-completion - type the command below followed by tapping tab twice:
 
 ```
-[recon-ng][default] > add
-companies        credentials      hosts            locations        ports            vulnerabilities
-contacts         domains          leaks            netblocks        pushpins
+[recon-ng][websitename] > db insert
+companies        credentials      hosts            locations        ports            pushpins         vulnerabilities
+contacts         domains          leaks            netblocks        profiles         repositories
 ```
 
 We will only use the organization's name, one domain, two netblocks (that we got by searching for other domains and ping-ing them), and two e-mails of the company we are looking for so we will add those.
@@ -106,205 +112,199 @@ We will only use the organization's name, one domain, two netblocks (that we got
 First, add the company name.
 
 ```
-[recon-ng][websitename] > add companies
+[recon-ng][websitename] > db insert companies
 company (TEXT): Websitename
 description (TEXT):
 ```
 
-Next, add the domain.
+Next, add the domain. You can then use the ```show``` command to see the data you have entered or collected in that table.
 
 ```
-[recon-ng][default] > add domains websitename.org
+[recon-ng][websitename] > db insert domains
+domain (TEXT): websitename.org
+notes (TEXT):
+[*] 1 rows affected.
 [recon-ng][websitename] > show domains
 
-  +--------------------------------+
-  | rowid |     domain    | module |
-  +--------------------------------+
-  | 1     | websitename.org | base   |
-  +--------------------------------+
+  +------------------------------------------------+
+  | rowid |      domain     | notes |    module    |
+  +------------------------------------------------+
+  | 1     | websitename.org |       | user_defined |
+  +------------------------------------------------+
 
 [*] 1 rows returned
-```
-
-Next, add my contacts. we don't know much. But, we will add what we know.
 
 ```
-[recon-ng][websitename] > add contacts
+
+Next, add any contacts. we don't know much. But, we will add what we know.
+
+```
+[recon-ng][websitename] > db insert contacts
 first_name (TEXT): Bob
-middle_name (TEXT):
+middle_name (TEXT): Pirate
 last_name (TEXT): Smith
-email (TEXT): bsmith@websitename.org
-title (TEXT):
+email (TEXT): bpsmith@websitename.org
+title (TEXT): Compliance Manager
 region (TEXT):
 country (TEXT): USA
-[recon-ng][websitename] > add contacts
-first_name (TEXT): Carl
+phone (TEXT):
+notes (TEXT):
+[*] 1 rows affected.
+
+[recon-ng][websitename] > db insert contacts
+first_name (TEXT): Susan
 middle_name (TEXT):
-last_name (TEXT): Johnson
-email (TEXT): cjohnson@websitename.org
-title (TEXT):
+last_name (TEXT): Mirembe
+email (TEXT): smirembe@websitename.org
+title (TEXT): Chief of Party
 region (TEXT):
 country (TEXT): USA
-[recon-ng][websitename] >
+phone (TEXT):
+notes (TEXT):
+[*] 1 rows affected.
 ```
 
 Finally we will add the ip address of their website.
 
 ```
-[recon-ng][websitename] > add netblocks
-netblock (TEXT): 174.154.167.69
-[recon-ng][websitename] > add netblocks
+[recon-ng][websitename] > db insert netblocks
+netblock (TEXT): 96.127.170.252
+notes (TEXT): Public website IP
+[*] 1 rows affected.
+[recon-ng][websitename] > db insert netblocks
 netblock (TEXT): 96.127.170.121
+notes (TEXT): Public website IP
+[*] 1 rows affected.
 ```
 
 Here it is in the database.
 
 ```
-[recon-ng][websitename][shodan_net] > show netblocks
+[recon-ng][websitename] > show netblocks
 
-  +---------------------------------+
-  | rowid |    netblock    | module |
-  +---------------------------------+
-  | 2     | 174.154.167.69 | base   |
-  | 3     | 96.127.170.121 | base   |
-  +---------------------------------+
+  +-----------------------------------------------------------+
+  | rowid |    netblock    |       notes       |    module    |
+  +-----------------------------------------------------------+
+  | 1     | 96.127.170.252 | Public website IP | user_defined |
+  | 2     | 96.127.170.121 | Public website IP | user_defined |
+  +-----------------------------------------------------------+
+
+[*] 2 rows returned
+
 ```
 
-**Reconnaisance phase (netblocks example)**
+**Reconnaissance phase (netblocks example)**
 
   * Run modules that leverage known netblocks. This exposes other domains and hosts from which domains can be harvested.
 
 First, search for any modules that use netblocks as an input.
 
 ```
-recon-ng][websitename] > search netblocks-
-[*] Searching for 'netblocks-'...
+[recon-ng][websitename] > marketplace search netblocks-
+[*] Searching module index for 'netblocks-'...
 
-  Recon
-  -----
-    recon/netblocks-hosts/reverse_resolve
-    recon/netblocks-hosts/shodan_net
-    recon/netblocks-ports/census_2012
-```
-
-
-In the case of ```recon/netblocks-hosts/shodan_net``` we can see that the "shodan_net" module is a reconnaissance module that takes in netblocks and produces hosts.
-
-Lets try it out...
-
-```
-[recon-ng][websitename] > use recon/netblocks-hosts/shodan_net
-[recon-ng][websitename][shodan_net] >
-```
-
-
-An empty command line can be daunting. If you are ever stuck on what current commands you can use the help command to see the current commands.
+  +--------------------------------------------------------------------------------------+
+  |                  Path                 | Version |     Status    |  Updated   | D | K |
+  +--------------------------------------------------------------------------------------+
+  | recon/netblocks-companies/whois_orgs  | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/netblocks-hosts/reverse_resolve | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/netblocks-hosts/shodan_net      | 1.0     | not installed | 2019-06-24 |   | * |
+  | recon/netblocks-hosts/virustotal      | 1.0     | not installed | 2019-06-24 |   | * |
+  | recon/netblocks-ports/census_2012     | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/netblocks-ports/censysio        | 1.0     | not installed | 2019-06-24 |   | * |
+  +--------------------------------------------------------------------------------------+
 
 ```
-[recon-ng][websitename][shodan_net] > help
 
-Commands (type [help|?] <topic>):
+In the case of ```recon/netblocks-hosts/reverse_resolve``` we can see that the "reverse_resolve" module is a reconnaissance module that takes in netblocks and produces hosts.
 
-add             Adds records to the database
-back            Exits the current context
-del             Deletes records from the database
-exit            Exits the framework
-help            Displays this menu
-keys            Manages framework API keys
-load            Loads selected module
-pdb             Starts a Python Debugger session
-query           Queries the database
-record          Records commands to a resource file
-resource        Executes commands from a resource file
-run             Runs the module
-search          Searches available modules
-set             Sets module options
-shell           Executes shell commands
-show            Shows various framework items
-spool           Spools output to a file
-unset           Unsets module options
-use             Loads selected module
-```
+Lets install it  with ```marketplace install recon/netblocks-hosts/reverse_resolve``` or just ```marketplace install reverse_resovle```.
 
-Use the ```show info``` command to learn about the module and see what options are available.
+Now we can load that module to use it
 
 ```
-[recon-ng][websitename][shodan_net] > show info
+[recon-ng][websitename] > modules load recon/netblocks-hosts/reverse_resolve
+[recon-ng][websitename][reverse_resolve] >
+```
 
-      Name: Shodan Network Enumerator
-      Path: modules/recon/netblocks-hosts/shodan_net.py
-    Author: Mike Siegel and Tim Tomes (@LaNMaSteR53)
+An empty command line can be daunting. Use the ```info``` command to learn about the module and see what options are available.
+
+```
+[recon-ng][websitename][reverse_resolve] > info
+
+      Name: Reverse Resolver
+    Author: John Babio (@3vi1john)
+   Version: 1.0
 
 Description:
-  Harvests hosts from the Shodanhq.com API by using the 'net' search operator. Updates the 'hosts'
-  table with the results.
+  Conducts a reverse lookup for each of a netblock's IP addresses to resolve the hostname. Updates the
+  'hosts' table with the results.
 
 Options:
   Name    Current Value  Required  Description
   ------  -------------  --------  -----------
-  LIMIT   1              yes       limit number of api requests per input source (0 = unlimited)
-  SOURCE  default        yes       source of input (see 'show info' for details)
+  SOURCE  default        yes       source of input (see 'info' for details)
 
 Source Options:
-  default        SELECT DISTINCT netblock FROM netblocks WHERE netblock IS NOT NULL ORDER BY netblock
+  default        SELECT DISTINCT netblock FROM netblocks WHERE netblock IS NOT NULL
   <string>       string representing a single input
   <path>         path to a file containing a list of inputs
   query <sql>    database query returning one column of inputs
 
-[recon-ng][websitename][shodan_net] >
 ```
 
-It pulls directly from the netblocks source that we set up. Now, use ```run``` to run the module .
+Notice how the current value of SOURCE is 'default'? Then look at the source options - the default behaviour is to run the module on all netblocks found within the netblock table which we have already begun to populate in the last step. There are other options such as resolving one particular IP by changing the source using ```options set SOURCE 8.8.8.8```, or using an input file or a custom database query. In this walkthrough, we will use the default behaviour which takes the current contents of netblocks as input. Now, use ```run``` to run the module .
 
 ```
-[recon-ng][websitename] > use recon/netblocks-hosts/shodan_net
-[recon-ng][websitename][shodan_net] > run
+[recon-ng][websitename][reverse_resolve] > run
 
-174.154.167.69
-[*] Searching Shodan API for: net:174.154.167.69
-[*] 174.154.167.69 (vps.websitename.org) - 7706
-[*] 174.154.167.69 (vps.websitename.org) - 110
-[*] 174.154.167.69 (vps.websitename.org) - 57
-[*] 174.154.167.69 (vps.websitename.org) - 22
-[*] 174.154.167.69 (vps.websitename.org) - 147
-[*] 174.154.167.69 (vps.websitename.org) - 997
-[*] 174.154.167.69 (vps.websitename.org) - 70
-[*] 174.154.167.69 (vps.websitename.org) - 25
-
+--------------
 96.127.170.121
-[*] Searching Shodan API for: net:96.127.170.121
-[*] 96.127.170.121 (vps.websitename.org) - 7706
-[*] 96.127.170.121 (vps.websitename.org) - 22
-[*] 96.127.170.121 (vps.websitename.org) - 465
-[*] 96.127.170.121 (vps.websitename.org) - 997
-[*] 96.127.170.121 (vps.websitename.org) - 25
-[*] 96.127.170.121 (vps.websitename.org) - 995
-[*] 96.127.170.121 (vps.websitename.org) - 57
-[*] 96.127.170.121 (vps.websitename.org) - 147
-[*] 96.127.170.121 (vps.websitename.org) - 110
-[*] 96.127.170.121 (vps.leillc.net) - 7070
+--------------
+[*] Country: None
+[*] Host: vps.websitename.org
+[*] Ip_Address: 96.127.170.121
+[*] Latitude: None
+[*] Longitude: None
+[*] Notes: None
+[*] Region: None
+[*] --------------------------------------------------
 
+--------------
+96.127.170.252
+--------------
+[*] Country: None
+[*] Host: vps.websitename.org
+[*] Ip_Address: 96.127.170.252
+[*] Latitude: None
+[*] Longitude: None
+[*] Notes: None
+[*] Region: None
+[*] --------------------------------------------------
+
+-------
 SUMMARY
-[*] 17 total (2 new) items found.
-```
-
-Since it promised me hosts, we will see what hosts it uncovered.
+-------
+[*] 2 total (2 new) hosts found.
 
 ```
-[recon-ng][websitename][shodan_net] > show hosts
 
-  +---------------------------------------------------------------------------------------------------+
-  | rowid |        host       |   ip_address   | region | country | latitude | longitude |   module   |
-  +---------------------------------------------------------------------------------------------------+
-  | 1     | vps.websitename.org | 174.154.167.69 |      |         |          |           | shodan_net |
-  | 2     | vps.websitename.org | 96.127.170.121 |      |         |          |           | shodan_net |
-  | 3     | vps.leillc.net    | 96.127.170.121 |        |         |          |           | shodan_net |
-  +---------------------------------------------------------------------------------------------------+
+Since it promised us hosts, we will see what hosts it uncovered.
 
-[*] 3 rows returned
+```
+[recon-ng][websitename][reverse_resolve] > show hosts
+
+  +----------------------------------------------------------------------------------------------------------------+
+  | rowid |        host       |   ip_address   | region | country | latitude | longitude | notes |      module     |
+  +----------------------------------------------------------------------------------------------------------------+
+  | 1     | vps.websitename.org | 96.127.170.121 |        |         |          |           |       | reverse_resolve |
+  | 2     | vps.websitename.org | 96.127.170.252 |        |         |          |           |       | reverse_resolve |
+  +----------------------------------------------------------------------------------------------------------------+
+
+[*] 2 rows returned
+
 ```
 
-It seems the website leillc.net is obviously not associated with the company I am doing recon on.
 Since this module has finished, we will leave it using the ```back``` command.
 
 ```
@@ -312,393 +312,258 @@ Since this module has finished, we will leave it using the ```back``` command.
 [recon-ng][websitename] >
 ```
 
-Now we will use the other two ```netblock-``` modules. We will show one more and then skip the second.
+* Run modules that conduct DNS brute forcing of TLDs and sub-domains against current domains.
 
-First we find all the possible modules using tab completion.
+Reconnaissance is all about turning existing information into more information. You may start with something as simple as a company name, like ACME, and you know their website is ACME.com, but did you know that they have a non-profit arm at ACME.org, and that there is a European branch at ACME.eu or that their development team runs an extranet at ACME.net and that vendors login from vendor.acme.net while the development team logs in at dev.acme.net?
 
-```
-[recon-ng][websitename] > use recon/netblocks-
-recon/netblocks-hosts/reverse_resolve  recon/netblocks-hosts/shodan_net       recon/netblocks-ports/census_2012
-[recon-ng][websitename] > use recon/netblocks-
-```
-
-We are going to use reverse-resolve.
+Let's find new domains using brute forcing. First we should look for what is available, then install, load, and run the selected module. Follow along the command prompts below. Due to the large number of TLDs this can take a long time - if you get tired of waiting press CTRL + C to interrupt the process - it will still save the results in the database:
 
 ```
-[recon-ng][websitename][census_2012] > use recon/netblocks-hosts/reverse_resolve
-```
+[recon-ng][websitename] > marketplace search domains-domains
+[*] Searching module index for 'domains-domains'...
 
-But, when we run it we get an error!
-
-```
-[recon-ng][websitename][reverse_resolve] > run
-174.154.167.69
-[!] Need more than 1 value to unpack.
-```
-
-OPTIONAL: To figure out what was going on, go ```back``` and then ```set DEBUG True``` to see the underlying error. The debug error message lets us know that we need to use full netmask syntax for netblocks. We will now add new netblocks in the correct format and then delete the old ones.
-
-First we will add them correctly.
-
-```
-[recon-ng][websitename][reverse_resolve] > add netblocks
-netblock (TEXT): 177.154.167.69/72
-[recon-ng][websitename][reverse_resolve] > add netblocks
-netblock (TEXT): 96.127.170.121/72
-```
-
-Now we have double of the same netblocks
-
-```
-[recon-ng][websitename][reverse_resolve] > show netblocks
-
-  +---------------------------------------------+
-  | rowid |      netblock     |      module     |
-  +---------------------------------------------+
-  | 2     | 174.154.167.69    | base            |
-  | 4     | 177.154.167.69/72 | reverse_resolve |
-  | 3     | 96.127.170.121    | base            |
-  | 5     | 96.127.170.121/72 | reverse_resolve |
-  +---------------------------------------------+
-
-[*] 4 rows returned
-```
-
-Now that we know their rowid numbers, I can delete them.
-```
-[recon-ng][websitename][reverse_resolve] > del netblocks
-rowid(s) (INT): 2
-[recon-ng][websitename][reverse_resolve] > del netblocks
-rowid(s) (INT): 3
-```
-
-And, re-running the module now works.
-
-```
-[recon-ng][websitename][reverse_resolve] > run
-
-[*] 177.154.167.69 => dsl-177-154-167-69-dyn.prod-infinitum.com.mx
-[*] 96.127.170.121 => vps.websitename.org
-
-SUMMARY
-
-[*] 2 total (1 new) items found.
-```
-
-Now, exploring these hosts we realize quickly that most the new hosts on other domains are not associated with the company. Hence, we will remove them.
-
-```
-[recon-ng][websitename] > show hosts
-
-  +-----------------------------------------------------------------------------------------------------------------------------------+
-  | rowid |                     host                     |   ip_address   | region | country | latitude | longitude |      module     |
-  +-----------------------------------------------------------------------------------------------------------------------------------+
-  | 4     | dsl-177-154-167-69-dyn.prod-infinitum.com.mx | 177.154.167.69 |        |         |          |           | reverse_resolve |
-  | 1     | vps.websitename.org                          | 174.154.167.69 |        |         |          |           | shodan_net      |
-  | 2     | vps.websitename.org                          | 96.127.170.121 |        |         |          |           | shodan_net      |
-  | 7     | vps.pineapplebob.net                         | 96.127.170.121 |        |         |          |           | shodan_net      |
-  +-----------------------------------------------------------------------------------------------------------------------------------+
-
-[*] 4 rows returned
-[recon-ng][websitename] > del hosts
-rowid(s) (INT): 4
-[recon-ng][websitename] > del hosts
-rowid(s) (INT): 7
-```
-
-We skip the last module ```recon/netblocks-ports/census_2012``` since you already get the idea.
-
-  * Add new domains gleaned from the results if they have not automatically been added.
-
-Sadly, none of the new domains were actually useful.
-
-  * Run modules that conduct DNS brute forcing of TLDs and SLDs against current domains.
-
-Let's find new domains using brute forcing. First we should look for what is available.
-
-```
-[recon-ng][websitename] > search domains-domains
-[*] Searching for 'domains-domains'...
-
-  Recon
-  -----
-    recon/domains-domains/brute_suffix
-[recon-ng][websitename] > use recon/domains-domains/brute_suffix
-```
-
-```
+  +-----------------------------------------------------------------------------------+
+  |                Path                | Version |     Status    |  Updated   | D | K |
+  +-----------------------------------------------------------------------------------+
+  | recon/domains-domains/brute_suffix | 1.0     | not installed | 2019-06-24 |   |   |
+  +-----------------------------------------------------------------------------------+
+[recon-ng][websitename] > marketplace install recon/domains-domains/brute_suffix
+[recon-ng][websitename] > modules load brute_suffix
 [recon-ng][websitename][brute_suffix] > run
 
--------------
+---------------
 WEBSITENAME.ORG
--------------
-[*] websitename.ac => No record found.
-[*] websitename.academy => No record found.
-[*] websitename.ad => No record found.
-[*] websitename.ae => No record found.
-[*] websitename.aero => No record found.
-[*] websitename.af => (SOA) websitename.af - Host found!
-[*] websitename.ag => No record found.
-[*] websitename.ai => No record found.
-[*] websitename.al => No record found.
-[*] websitename.am => (SOA) websitename.am - Host found!
-[*] websitename.an => No record found.
-[*] websitename.ao => No record found.
-[*] websitename.aq => (SOA) websitename.aq - Host found!
-[*] websitename.ar => No record found.
-[*] websitename.arpa => No record found.
-[*] websitename.as => No record found.
-[*] websitename.asia => No record found.
-[*] websitename.at => No record found.
-[*] websitename.au => No record found.
-[*] websitename.aw => (SOA) websitename.aw - Host found!
-[*] websitename.ax => No record found.
-[*] websitename.az => No record found.
-[*] websitename.ba => No record found.
+---------------
+[*] websitename.0 => No record found.
+[*] websitename.01 => No record found.
+
+[*] websitename.baltimore => No record found.
+[*] websitename.banking => No record found.
+[*] websitename.bayarea => No record found.
 [*] websitename.bb => No record found.
+[*] websitename.bbdd => No record found.
+[*] websitename.bbs => No record found.
 [*] websitename.bd => No record found.
+[*] websitename.bdc => No record found.
 [*] websitename.be => No record found.
-[*] websitename.berlin =>  (SOA) websitename.berlin - Host found!
-...
-```
-
-This returned quite a few domains. We have removed the middle section
-
-```
-[recon-ng][websitename][brute_suffix] > show domains
-
-  +------------------------------------------+
-  | rowid |       domain      |    module    |
-  +------------------------------------------+
-  | 2     | websitename.af      | brute_suffix |
-  | 7     | websitename.am      | brute_suffix |
-  | 4     | websitename.asia    | brute_suffix |
-  | 5     | websitename.aq      | brute_suffix |
-  | 7     | websitename.bg      | brute_suffix |
-             ....
-			 ....
-			 ....
-  | 25    | websitename.net     | brute_suffix |
-  | 1     | websitename.org     | base         |
-  | 17    | websitename.uz      | brute_suffix |
-  +------------------------------------------+
-```
-
-  * Have list of domains validated by the client.
-  * Remove out-of-scope domains with the "del" command or generate a query which only selects the scoped domains as input.
-
-Many out of scope domains had to be removed, but luckily you can specify ranges when you delete.
-
-```
-[recon-ng][websitename][brute_suffix] > del domains
-rowid(s) (INT): 72-44
-```
-
-  * Run modules that conduct DNS brute forcing of hosts against all domains.
-
-There are a lot of these, so we will only run one since there is little to nothing new to learn here.
-
-```
-[recon-ng][websitename][brute_suffix] > use recon/domains-hosts/baidu_site
-[recon-ng][websitename][baidu_site] > run
-
-------------
-WEBSITENAME.EU
-------------
-[*] URL: http://www.baidu.com/s?pn=0&wd=site%7Awebsitename.eu
-[*] www.websitename.eu
-[*] Sleeping to avoid lockout...
-
-------------
-WEBSITENAME.FR
-------------
-[*] URL: http://www.baidu.com/s?pn=0&wd=site%7Awebsitename.fr
-
--------------
-WEBSITENAME.ORG
--------------
-[*] URL: http://www.baidu.com/s?pn=0&wd=site%7Awebsitename.org
-[*] www.websitename.org
-[*] things.websitename.org
-[*] Sleeping to avoid lockout...
-
-----------------
-WEBSITENAME.ORG.UK
-----------------
-[*] URL: http://www.baidu.com/s?pn=0&wd=site%7Awebsitename.org.uk
-
-------------
-WEBSITENAME.COM
-------------
-[*] URL: http://www.baidu.com/s?pn=0&wd=site%7Awebsitename.com
-[*] www.websitename.com
-[*] Sleeping to avoid lockout...
+[*] websitename.bea => No record found.
+[*] websitename.beta => No record found.
+[*] websitename.bf => No record found.
+[*] websitename.bg => No record found.
+[*] websitename.bh => No record found.
+[*] websitename.bi => No record found.
+[*] websitename.billing => No record found.
+[*] websitename.biz => (SOA) websitename.biz
+[*] Domain: websitename.biz
+[*] Notes: None
+[*] --------------------------------------------------
+[*] websitename.biztalk => No record found.
+[*] websitename.bj => No record found.
+[*] websitename.black => No record found.
+[*] websitename.blackberry => No record found.
+[*] websitename.blog => No record found.
+[*] websitename.blogs => No record found.
+[*] websitename.blue => No record found.
+[*] websitename.bm => No record found.
+[*] websitename.bn => No record found.
+[*] websitename.bnc => No record found.
+[*] websitename.bo => No record found.
+[*] websitename.bob => No record found.
+[*] websitename.bof => No record found.
+^C
 
 -------
 SUMMARY
 -------
-[*] 5 total (2 new) items found.
-```
+[*] 1 total (1 new) domains found.
+[recon-ng][websitename][brute_suffix] > show domains
+
+  +------------------------------------------------+
+  | rowid |      domain     | notes |    module    |
+  +------------------------------------------------+
+  | 1     | websitename.org |       | user_defined |
+  | 2     | websitename.biz |       | brute_suffix |
+  +------------------------------------------------+
+
+[*] 2 rows returned
+[recon-ng][websitename][brute_suffix] >
 
 ```
-[recon-ng][websitename][baidu_site] > use recon/domains-hosts/brute_hosts
+
+  * Remove out-of-scope domains with the ```db delete domains``` command or generate a query which only selects the scoped domains as input.
+
+  * Run modules that conduct search for additional hosts via search engine or DNS brute forcing of hosts.
+
+Let's start by using a search engine to find additional sub-domains. Go ahead and ```marketplace install bing_domain_web``` and ```modules load bing_domain_web```.
+
+
+```
+[recon-ng][websitename][bing_domain_web] > run
+-------------
+websitename.ORG
+-------------
+[*] URL: https://www.bing.com/search?first=0&q=domain%3Awebsitename.org
+[*] Country: None
+[*] Host: internetinitiatives.websitename.org
+[*] Ip_Address: None
+[*] Latitude: None
+[*] Longitude: None
+[*] Notes: None
+[*] Region: None
+[*] --------------------------------------------------
+[*] Country: None
+[*] Host: design.websitename.org
+[*] Ip_Address: None
+[*] Latitude: None
+[*] Longitude: None
+[*] Notes: None
+[*] Region: None
+[*] --------------------------------------------------
+[*] Sleeping to avoid lockout...
+[*] URL: https://www.bing.com/search?first=0&q=domain%3Awebsitename.org+-domain%3Ainternetinitiatives.websitename.org+-domain%3Adesign.websitename.org
+[*] Country: None
+[*] Host: www.speakupspeakout.websitename.org
+[*] Ip_Address: None
+[*] Latitude: None
+[*] Longitude: None
+[*] Notes: None
+[*] Region: None
+[*] --------------------------------------------------
+[*] Sleeping to avoid lockout...
+[*] URL: https://www.bing.com/search?first=0&q=domain%3Awebsitename.org+-domain%3Ainternetinitiatives.websitename.org+-domain%3Adesign.websitename.org+-domain%3Awww.speakupspeakout.websitename.org
+
+-------
+SUMMARY
+-------
+[*] 3 total (3 new) hosts found.
+```
+
+Now let's try some sub-domain brute force guessing using the brute_hosts module. You should know how to install and load it by now. This also returned a lot of results so they are truncated below
+
+```
 [recon-ng][websitename][brute_hosts] > run
 
 -------------
-WEBSITENAME.ORG
+websitename.ORG
 -------------
 [*] No Wildcard DNS entry found.
-[*] 0.websitename.org => No record found.
-[*] 01.websitename.org => No record found.
-[*] 02.websitename.org => No record found.
-[*] 03.websitename.org => No record found.
-[*] 1.websitename.org => No record found.
-[*] 10.websitename.org => No record found.
-[*] 11.websitename.org => No record found.
-[*] 12.websitename.org => No record found.
-[*] 13.websitename.org => No record found.
-[*] 14.websitename.org => No record found.
-[*] 15.websitename.org => No record found.
-[*] 16.websitename.org => No record found.
-[*] 17.websitename.org => No record found.
-[*] 18.websitename.org => No record found.
-[*] 19.websitename.org => No record found.
-[*] 2.websitename.org => No record found.
-[*] 20.websitename.org => No record found.
-[*] 3.websitename.org => No record found.
-[*] 3com.websitename.org => No record found.
-[*] 4.websitename.org => No record found.
-[*] 5.websitename.org => No record found.
-[*] 6.websitename.org => No record found.
 ...
+[*] cn.websitename.org => No record found.
+[*] code.websitename.org => No record found.
+[*] chatserver.websitename.org => No record found.
+[*] cocoa.websitename.org => No record found.
+[*] coldfusion.websitename.org => No record found.
+[*] colombus.websitename.org => No record found.
+[*] columbus.websitename.org => No record found.
+[*] colorado.websitename.org => No record found.
+[*] com.websitename.org => No record found.
+[*] commerce.websitename.org => No record found.
+[*] commerceserver.websitename.org => No record found.
+[*] community.websitename.org => No record found.
+[*] compaq.websitename.org => No record found.
+[*] communigate.websitename.org => No record found.
+[*] compras.websitename.org => No record found.
+[*] conference.websitename.org => (A) 12.172.123.133
+[*] Country: None
+[*] Host: conference.websitename.org
+[*] Ip_Address: 12.172.123.133
+[*] Latitude: None
+[*] Longitude: None
+[*] Notes: None
+[*] Region: None
+[*] --------------------------------------------------
+[*] con.websitename.org => No record found.
+[*] concentrator.websitename.org => No record found.
+[*] conf.websitename.org => No record found.
+[*] confidential.websitename.org => No record found.
+[*] conferencing.websitename.org => No record found.
+[*] connect.websitename.org => No record found.
+[*] consola.websitename.org => No record found.
+[*] connecticut.websitename.org => No record found.
 ...
-[*] autodiscover.websitename.org => (CNAME) autodiscover.websitename-mail.org - Host found!
-[*] autodiscover.websitename.org => (A) autodiscover.websitename.org - Host found!
-[*] autorun.websitename.org => No record found.
-[*] av.websitename.org => No record found.
-...
-...
+-------
+SUMMARY
+-------
+[*] 39 total (35 new) hosts found.
+
 ```
+Ok that was pretty successful, let's take a look at our bounty:
 
 ```
 [recon-ng][websitename] > show hosts
 
-  +------------------------------------------------------------------------------------------------------------------+
-  | rowid |               host              |   ip_address   | region | country | latitude | longitude |    module   |
-  +------------------------------------------------------------------------------------------------------------------+
-  | 8     | autodiscover.websitename-mail.org |                |        |         |          |           | brute_hosts |
-  | 9     | autodiscover.websitename.org      |                |        |         |          |           | brute_hosts |
-  | 32    | autodiscover.websitename.com       |                |        |         |          |           | brute_hosts |
-  | 10    | conference.websitename.org        |                |        |         |          |           | brute_hosts |
-  | 12    | beta.websitename.org              |                |        |         |          |           | brute_hosts |
-  | 5     | demo.websitename.org            |                |        |         |          |           | baidu_site  |
-  | 14    | email.websitename.org             |                |        |         |          |           | brute_hosts |
-  | 15    | intranet.websitename.org               |                |        |         |          |           | brute_hosts |
-  | 16    | ftp.websitename.org               |                |        |         |          |           | brute_hosts |
-  | 37    | ftp.websitename.com                |                |        |         |          |           | brute_hosts |
-  | 13    | ftp2.websitename.org              |                |        |         |          |           | brute_hosts |
-  | 11    | websitename.github.com            |                |        |         |          |           | brute_hosts |
-  | 24    | websitename.org                   |                |        |         |          |           | brute_hosts |
-  | 75    | websitename.com                    |                |        |         |          |           | brute_hosts |
-  | 18    | localhost.websitename.org         |                |        |         |          |           | brute_hosts |
-  | 19    | mail.websitename.org              |                |        |         |          |           | brute_hosts |
-  | 36    | mail.websitename.com               |                |        |         |          |           | brute_hosts |
-  | 20    | ns1.websitename.org               |                |        |         |          |           | brute_hosts |
-  | 27    | temp.websitename.org              |                |        |         |          |           | brute_hosts |
-  | 25    | test.websitename.org              |                |        |         |          |           | brute_hosts |
-  | 1     | vps.websitename.org               | 174.174.177.77 |        |         |          |           | shodan_net  |
-  | 2     | vps.websitename.org               | 77.127.170.121 |        |         |          |           | shodan_net  |
-  | 27    | webmail.websitename.com            |                |        |         |          |           | brute_hosts |
-  | 4     | www.websitename.org               |                |        |         |          |           | baidu_site  |
-  | 7     | www.websitename.com                |                |        |         |          |           | baidu_site  |
-  +------------------------------------------------------------------------------------------------------------------+
+  +---------------------------------------------------------------------------------------------------------------------------------+
+  | rowid |                host               |    ip_address   | region | country | latitude | longitude | notes |      module     |
+  +---------------------------------------------------------------------------------------------------------------------------------+
+  | 2     | vps.websitename.org                 | 96.127.170.121  |        |         |          |           |       | reverse_resolve |
+  | 3     | vps.websitename.org                 | 96.127.170.252  |        |         |          |           |       | reverse_resolve |
+  | 4     | internetinitiatives.websitename.org |                 |        |         |          |           |       | bing_domain_web |
+  | 5     | design.websitename.org              |                 |        |         |          |           |       | bing_domain_web |
+  | 6     | www.speakupspeakout.websitename.org |                 |        |         |          |           |       | bing_domain_web |
+  | 7     | autodiscover.outlook.com          |                 |        |         |          |           |       | brute_hosts     |
+  | 8     | autodiscover.websitename.org        |                 |        |         |          |           |       | brute_hosts     |
+  | 9     | autod.ha-autod.office.com         |                 |        |         |          |           |       | brute_hosts     |
+  | 10    | autod.ms-acdc-autod.office.com    |                 |        |         |          |           |       | brute_hosts     |
+  | 11    | autodiscover.websitename.org        | 40.101.19.152   |        |         |          |           |       | brute_hosts     |
+  | 12    | autodiscover.websitename.org        | 40.101.121.8    |        |         |          |           |       | brute_hosts     |
+  | 13    | autodiscover.websitename.org        | 40.101.80.200   |        |         |          |           |       | brute_hosts     |
+  | 14    | autodiscover.websitename.org        | 52.97.144.184   |        |         |          |           |       | brute_hosts     |
+  | 15    | bw.websitename.org                  | 70.33.180.230   |        |         |          |           |       | brute_hosts     |
+  | 16    | conference.websitename.org          | 12.172.123.133  |        |         |          |           |       | brute_hosts     |
+  | 17    | websitename.github.com              |                 |        |         |          |           |       | brute_hosts     |
+  | 18    | data.websitename.org                |                 |        |         |          |           |       | brute_hosts     |
+  | 19    | github.github.io                  |                 |        |         |          |           |       | brute_hosts     |
+  | 20    | data.websitename.org                | 185.199.110.153 |        |         |          |           |       | brute_hosts     |
+  | 21    | data.websitename.org                | 185.199.111.153 |        |         |          |           |       | brute_hosts     |
+  | 22    | data.websitename.org                | 185.199.109.153 |        |         |          |           |       | brute_hosts     |
+  | 23    | data.websitename.org                | 185.199.108.153 |        |         |          |           |       | brute_hosts     |
+  | 24    | design.websitename.org              | 108.178.27.2    |        |         |          |           |       | brute_hosts     |
+  | 25    | email.websitename.org               | 65.111.246.35   |        |         |          |           |       | brute_hosts     |
+  | 26    | erp.websitename.org                 | 70.33.180.228   |        |         |          |           |       | brute_hosts     |
+  | 27    | localhost.websitename.org           | 127.0.0.1       |        |         |          |           |       | brute_hosts     |
+  | 28    | mail.websitename.org                | 65.111.246.35   |        |         |          |           |       | brute_hosts     |
+  | 29    | ns1.websitename.org                 | 71.128.36.8     |        |         |          |           |       | brute_hosts     |
+  | 30    | secure.websitename.org              | 198.143.166.46  |        |         |          |           |       | brute_hosts     |
+  | 31    | sharepoint.websitename.org          | 70.33.180.236   |        |         |          |           |       | brute_hosts     |
+  | 32    | temp.websitename.org                | 184.154.33.5    |        |         |          |           |       | brute_hosts     |
+  | 33    | websitename.org                     |                 |        |         |          |           |       | brute_hosts     |
+  | 34    | test.websitename.org                |                 |        |         |          |           |       | brute_hosts     |
+  | 35    | test.websitename.org                | 192.124.249.154 |        |         |          |           |       | brute_hosts     |
+  | 36    | webmail.websitename-mail.org        |                 |        |         |          |           |       | brute_hosts     |
+  | 37    | webmail.websitename.org             |                 |        |         |          |           |       | brute_hosts     |
+  | 38    | webmail.websitename.org             | 70.33.180.234   |        |         |          |           |       | brute_hosts     |
+  | 39    | webmail.websitename.org             | 70.33.180.233   |        |         |          |           |       | brute_hosts     |
+  | 40    | www.websitename.org                 |                 |        |         |          |           |       | brute_hosts     |
+  | 41    | www.websitename.org                 | 192.124.249.154 |        |         |          |           |       | brute_hosts     |
+  +---------------------------------------------------------------------------------------------------------------------------------+
 
-[*] 77 rows returned
+[*] 40 rows returned
+
 ```
 
-  * Run host gathering modules.
+##### Reconnaissance: Next Steps
 
-NOTE: Many host gathering modules use other hosts as a starting place. It is important to sanitize the hosts database between modules to make sure that you do start enumerating based upon incorrectly added hosts.
+Below are some suggestions for further steps in the reconnaissance phase:
 
   * Resolve IP addresses.
-  * Run vhost enumeration modules.
-  * Run port scan data harvesting modules.
-  * Use JOIN queries for data analysis.
-
-
-```
-[recon-ng][websitename][census_2012] > query select hosts.ip_address, hosts.host, ports.host, ports.port from hosts join ports using (ip_address)
-
-  +----------------------------------------------------------------------+
-  |   ip_address   |           host           |        host       | port |
-  +----------------------------------------------------------------------+
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 110  |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 147  |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 22   |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 27   |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 7707 |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 77   |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 70   |
-  | 174.174.177.77 | vps.websitename.org        | vps.websitename.org | 777  |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 110  |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 147  |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 22   |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 27   |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 7707 |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 477  |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 77   |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 777  |
-  | 77.127.170.121 | vps.websitename.org        | vps.websitename.org | 777  |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 110  |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 147  |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 22   |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 27   |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 7707 |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 77   |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 70   |
-  | 174.174.177.77 | www.websitename.org        | vps.websitename.org | 777  |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 110  |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 147  |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 22   |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 27   |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 7707 |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 477  |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 77   |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 777  |
-  | 77.127.170.121 | things.websitename.org | vps.websitename.org | 777  |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 110  |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 147  |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 22   |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 27   |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 7707 |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 77   |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 70   |
-  | 174.174.177.77 | websitename.org            | vps.websitename.org | 777  |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 110  |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 147  |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 22   |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 27   |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 7707 |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 77   |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 70   |
-  | 174.174.177.77 | test.websitename.org       | vps.websitename.org | 777  |
-  +----------------------------------------------------------------------+
-```
-
-##### Reconnaisance: Next Steps
-
+  * Run port scan data harvesting modules (try recon/hosts-ports/binaryedge using the BinaryEdge API).
   * Run vulnerability harvesting modules.
   * Run contact harvesting modules.
   * Mangle contacts into email addresses.
   * Run modules that convert email addresses into full contacts.
   * Run credential harvesting modules.
 
+Many useful modules require the usage of a 3rd party service's API key.
+
+As you can see recon-ng is very powerful when used efficiently with and understanding of the actions made available by the different modules. By spending time reading through the module descriptions (```marketplace info <modulename>```), utilising the tool, and understanding various API services, you can master the usage of this tool for your reconnaissance work.
+
 **Reporting**
 
-  * Export data for analysis.
+  * Export data for analysis or presentation:
 
 ```
-[recon-ng][websitename] > use reporting/csv
+[recon-ng][websitename] > marketplace install reporting/csv
+[recon-ng][websitename] > modules load reporting/csv
 [recon-ng][websitename][csv] >
 [recon-ng][websitename][csv] > set TABLE Domains
 TABLE => Domains
@@ -710,14 +575,18 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
 
 **Creating API Keys**
 
+To use modules requiring an API key you will need to sign up for an API key from the specified service. These keys may offer free or paid plans, and functionality may be limited on free plans.
+
+To add a key after you have obtained one (see below), get the recon-ng name for the key by typing ```keys list``` which will tell you the name of keys needed for the modules you have already installed. With your new API key in hand, add them with ```keys add <apiname> <apikey>```, for instance ```keys add bing_api a7b92c729e829f8a7cba4bc```.
+
   * Bing API Key (bing_api) -
-      * Sign up for the free subscription to the Bing Search API here: https://datamarket.azure.com/dataset/bing/search
+      * Sign up for the free subscription to the Bing Search API here: https://azure.microsoft.com/en-us/try/cognitive-services/?api=search-api-v7
+      * Use the free Azure account option
       * The API key will be available under the "Account Keys" page.
 
   * BuiltWith API Key (builtwith_api) -
       * Sign up for a free account here: https://api.builtwith.com/
-      * Sign in to the application.
-      * The API key will be available in the upper right hand portion of the screen.
+      * Sign in to the application at the same link.
 
   * Google API Key (google_api) -
       * Create an API Project here: https://console.developers.google.com/project/
@@ -729,30 +598,17 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
           * Type your current ip-address into the text box.
           * Make sure you delete it after use.
 
-  * Google Custom Search Engine (CSE) ID (google_cse) -
-    * Create a CSE here: https://www.google.com/cse/create/fromkwsetname
-      * Type in a name
-      * Click the "Proceed" button
-      * Click "Setup" in the side bar.
-      * Change the "Sites to search" drop-down from "Search only included sites" to "Search the entire web bit emphasize included sites"
-      * Read here for guidance on configuring the CSE to search the entire web. Otherwise, the CSE will be restricted to only searching domains specified within the CSE management console. This will drastically effect the results of any module which leverages the CSE.
-    * The CSE ID will be available in the CSE management console.
-      * Click "Setup" in the side bar.
-	  * Click the "Search engine ID" button in the "Details" section.
-
-
   * IPInfoDB API Key (ipinfodb_api) -
-    * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER
+    * REQUIRES A PERMANENT IP ADDRESS LIKE A SERVER FROM WHICH API REQUESTS WILL BE MADE
     * REQUIRES A CUSTOM DOMAIN EMAIL (it rejects "free" accounts like gmail)
     * Create a free account here: http://www.ipinfodb.com/register.php
     * Log in to the application here.
     * The API key will be available on the "Account" tab.
 
   * Shodan API Key (shodan_api) -
-      * Create an account or sign in to Shodan using one of the many options available here: https://developer.shodan.io/
-      * On the right side of the screen under "API Key" Click "Click here to create an API key."
-      * The API key will be replace that text.
-      * An upgraded account is required to access advanced search features.
+      * Create an account or sign in to Shodan using one of the many options available here: https://www.shodan.io/
+      * On the top right side of the screen click "My Account" to obtain an API key
+      * An upgraded account is required to access most search features. The current cost of this is $50 for lifetime access. Upgrade your account by signing in at https://www.shodan.io and clicking "Upgrade" in the top-right corner.
 
   * Twitter App API key (twitter_api) and  (twitter_secret) -
       * Create an application here: https://apps.twitter.com/
@@ -760,27 +616,34 @@ FILENAME => /home/computer/.recon-ng/workspaces/websitename/Domains.csv
       * The Consumer secret  (twitter_secret) will be available on the application management page for the application created above.
 
   * VirusTotal API Key (virustotal_api)
-    * Create a free account by clicking the "Join our community" button here: https://www.virustotal.com/en/documentation/private-api/#
+    * Create a free account by clicking the "Sign up to the VirusTotal community" button here: https://www.virustotal.com/en/documentation/private-api/#
     * Log in to the application and select "My API key" from the user menu.
     * The API key will be visible towards the top of the page.
 
-  * Facebook API Key (facebook_api) - TBD
+  * HaveIBeenPwned (hibp_api)
+    * Used to check if email addresses, domains, and passwords have been found in past data breaches
+    * Sign up at https://haveibeenpwned.com/API/Key. There is currently a $3.50/monthly charge for API access.
 
-  * Facebook Secret (facebook_secret) - TBD
+  * BinaryEdge (binaryedge_api)
+    * Internet scanning resources (IPs, domains, ports, services)
+    * Sign up for a free account at https://app.binaryedge.io/sign-up
 
-  * Flickr API Key (flickr_api) - TBD
+  * Censys.io (censysio_id) and (censysio_secret)
+    * Sign up for a free account at https://censys.io/register
 
-  * API's we won't be using
-    * Jigsaw API Key: Costs $1,500/year
-    * PwnedList: Costs Money
+  * Full Contact (fullcontact_api)
+    * Sign up at https://www.fullcontact.com/developer-portal/
+    * Free key includes 1,000 searches
 
+  * Namechk (namechk_api)
+    * Used to check if a given username has accounts on different platforms
+    * Sign up at https://namechk.com/access
 
-  * LinkedIn API Key (linkedin_api) -
-      * Log in to the developer portal with an existing LinkedIn account
-      * Add a new application.
-      * Click on the application name.
-      * Add http://127.0.0.1:11777 to the list of "OAuth 2.0 Redirect URLs".
-      * The API key will be available underneath the "OAuth Keys" heading.
-  * As of November 4th, 2017, the People Search API (required for all LinkedIn related modules) has been added to the Vetted API Access program. As a result, a Vetted API Access request must be submitted and approved for the application in order for the associated API key to function properly with the LinkedIn modules.
+  * Hashes (hashes_api)
+    * Used to check if a password hash has a known plaintext value
+    * Sign up at https://www.hashes.org/register.php
+    * Obtain your key from https://www.hashes.org/settings.php
 
-  * LinkedIn Secret (linkedin_secret) - The Secret key will be available underneath the "OAuth Keys" heading for the application created above.
+  * IPstack (ipstack_api)
+    * Used for geo-identifying the location for an IP address
+    * Sign up for a free account at https://ipstack.com/product

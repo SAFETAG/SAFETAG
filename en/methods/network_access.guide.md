@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/network_access/guiding_questions.md"
 
-### Approach
-!INCLUDE "../methods/network_access/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/network_access/output.md"

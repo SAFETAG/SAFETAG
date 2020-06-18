@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/network_mapping/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/network_mapping/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/network_mapping/output.md"

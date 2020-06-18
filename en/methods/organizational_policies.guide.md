@@ -21,8 +21,8 @@ Info_required:
 ### Guiding Questions
 !INCLUDE "../methods/organizational_policies/guiding_questions.md"
 
-### Approaches
-!INCLUDE "../methods/organizational_policies/approaches.md"
+
+
 
 ### Outputs
 !INCLUDE "../methods/organizational_policies/output.md"
