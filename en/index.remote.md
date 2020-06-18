@@ -239,7 +239,7 @@ Remote facilitation is covered in full in the Remote Facilitation guide:
 </div>
 
 <div class="boxtext">
-!INCLUDE "exercises/sensitive_data/index.md"
+!INCLUDE "exercises/remote_asset_valuation/index.md"
 </div>
 
 <div class="boxtext">
