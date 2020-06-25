@@ -10,10 +10,6 @@
 
 !INCLUDE "document_matter/CONTRIBUTING.md"
 
-## APPENDIX: Draft Engagement and Confidentiality Agreement
-
-!INCLUDE "exercises/confidentiality_agreement/draft_engagement_agreement.md"
-
 ## APPENDIX: Travel Kit and Checklist
 
 !INCLUDE "exercises/travel_kit/index.md"
