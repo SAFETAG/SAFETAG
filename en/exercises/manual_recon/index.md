@@ -45,7 +45,7 @@ Take care, however, to not waste time on this; using image information tools on 
 
 Google dorking tricks:
 
-* limit to the target webiste using site: and look for potentially accidentally uploaded file types (e.g. xlsx, you can reference this [full list of searchable filetypes](https://support.google.com/webmasters/answer/35287?hl=en))
+* limit to the target website using site: and look for potentially accidentally uploaded file types (e.g. xlsx, you can reference this [full list of searchable filetypes](https://support.google.com/webmasters/answer/35287?hl=en))
 * inurl:
 * search for link: to discover partners and projects (add "project of" and similar), removing known, un-interesting and irrelevant sites with -site:
 * Browse [Exploit-db](https://www.exploit-db.com/google-hacking-database/) for interesting and advanced combinations to consider, e.g. inurl:/wp-en/wpbackitup_backups
