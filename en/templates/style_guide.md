@@ -4,7 +4,7 @@
 # Assessing Risks
 large "section" header
 dark blue #404965
-all caps
+all caps, pagebreak
 ```
 
 # Assessing Risks
@@ -13,7 +13,7 @@ all caps
 ## Lesson Plan {.orange_sub_header}
 "Lesson Plan" header
 Orange
-All Caps
+All Caps, pagebreak
 ```
 
 ## Lesson Plan {.orange_sub_header}
@@ -134,7 +134,7 @@ This text is in a lightly shaded (#e6f3ff , a tint of the Blue Grey primary colo
 </div>
 ```
 
-##### research Box {.gretbox}
+##### research Box {.greybox}
 
 ```
 <div class="greybox">

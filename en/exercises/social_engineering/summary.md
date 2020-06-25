@@ -1,1 +1,0 @@
-This component allows the auditor to gauge staff awareness of social engineering risks. The staff take part in activities to explore what phishing look like based on sample "phishing campaign" style emails sent by the auditor as examples.  The auditor and staff will discuss the consequences of having their devices compromised.

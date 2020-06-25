@@ -16,19 +16,18 @@ Time_required_minutes:
 #### Check Config Files
 
 ##### Summary
-!INCLUDE "summary.md"
+
+Examine configuration files for vulnerabilities  using "hardening", or "common mistake" guides found online.
 
 ##### Overview
-!INCLUDE "approach.md"
+  * Explore default configurations.
+    * Identify if systems are using default passwords or users
+  * Use hardening guides & common min-configurations to identify weak/vulnerable configurations.
 
 ##### Materials Needed
-!INCLUDE "materials_needed.md"
 
 ##### Considerations
-!INCLUDE "operational_security.md"
 
 ##### Walkthrough
-!INCLUDE "instructions.md"
 
 ##### Recommendation
-!INCLUDE "recommendations.md"

@@ -2,15 +2,15 @@
 
 SAFETAG welcomes contributions!
 
-SAFETAG is a community-managed product with an advisory board and community management roles laid out in our [Code of Conduct][code-of-conduct]. The [Code of Conduct][code-of-conduct] further outlines expectations of not only those using the content herein but also those contributing to it. By participating, you are expected to uphold this code.
+SAFETAG is a community-managed product with an advisory board and community management roles laid out in our [Code of Conduct][code-of-conduct]. The Code of Conduct further outlines expectations of not only those using the content herein but also those contributing to it. By participating, you are expected to uphold this code.
 
-When submitting new content, please write in clear, concise, and gender neutral language. This document will be updated with guidance on content translation once we have settled on a process for that. If you would like to submit content in a language other than English or Spanish, please open an issue to set that language up for submission.
+When submitting new content, please write in clear, concise, and gender neutral language. This document will be updated with guidance on content translation once we have settled on a process for that. If you would like to submit content in a language other than English, Spanish, Arabic, or Russian - please open an issue to set that language up for submission.
 
 ### Getting Starting
 
 Before you start work, it is critically important to review the current content and existing [issues][issues] and **create a new issue for your proposed work** to solicit feedback -- this will save you a lot of time as the SAFETAG community can help refine your idea and advise on where best to include it in the framework (is it a new method? An activity or variant? Is there existing content in SAFETAG to update or improve?), as well as suggest additional resources worth considering, operational security and safety considerations.
 
-You can also join the [public slack](https://join.slack.com/t/humansafetag/shared_invite/enQtNDM4MDIwNzM0NTc3LTYzM2Y4YjIyZmY2ZjhiODZjZDE0ODhmYzgwMTZmMjU2MTA2NDdjMTM2M2U4ODk1OWMzZThkMmI5OGY3MjFiM2M) to discuss changes and ask questions to the community.
+You can also join the [public slack](https://join.slack.com/t/humansafetag/) to discuss changes and ask questions to the community.
 
 ### Content Creation Guidelines
 
@@ -24,7 +24,7 @@ Generally speaking, **Methods** are high-level, goal-focused aspects of the asse
 
 **Activities** are the meat of an audit, and answer "how" and "where" type questions.  To accomplish the goals of a method, one might conduct multiple activities to explore and verify organization practices from different angles - research, policy review, conversations / discussions, and technical verification, exploration, and scanning.
 
-Within both Methods and Activities are smaller chunks of content which are used across the full range of SAFETAG "products." The tables below map out what content chunks exist across which products, and what they are. The [Templates][templates] folder has sub-folders which provide the default files and indices for methods and activities.
+Within both Methods and Activities are smaller chunks of content which are used across the full range of SAFETAG "products." The tables below map out what content chunks exist across which products, and what they are. The [Templates](https://github.com/SAFETAG/SAFETAG/tree/master/en/templates) folder has sub-folders which provide the default files and indices for methods and activities.
 
 #### Language Guide
 
@@ -37,10 +37,10 @@ Although SAFETAG contributors and users come from around the world, adherence to
 
 * Follow the Getting Started instructions above.
 * Decide on a name for the method, and create the a corresponding folder (lowercased, with _ replacing spaces). If your new method is "Creating SAFETAG Content", the folder would be *en/methods/creating_safetag_content*.
-* Copy the Method [template][templates] files from [https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders/method](https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders/method) into the method folder. The content of these files is described below.
+* Copy the Method [template](https://github.com/SAFETAG/SAFETAG/tree/master/en/templates) files from [https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders/method](https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders/method) into the method folder. The content of these files is described below.
 * Create index files for your method: In addition to the content files below, each Method must also have two index files, a method_name.guide.md and a method_name.overview.md . The contents of these index files are generally the same for every method, and templates exist at [https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders](https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders) .
 
-**New methods must be lined into the master index file, and must have activities linked to them.** To link the new method into the master index file (and therefore have the method "included" in the "master" SAFETAG build, these index files must be linked into the relevant master index file in the language folder (*en/index.guide.md* and *en/index.overview.md*).  See below for how Activities are linked in to the methods.
+**New methods must be linked into the master index file, and must have activities linked to them.** To link the new method into the master index file (and therefore have the method "included" in the "master" SAFETAG build, these index files must be linked into the relevant master index file in the language folder (*en/index.guide.md* and *en/index.overview.md*).  See below for how Activities are linked in to the methods.
 
 #### Method Content notes:
 
@@ -75,14 +75,12 @@ Although SAFETAG contributors and users come from around the world, adherence to
 * Copy the Activity [template][templates] files from [https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders/activity](https://github.com/SAFETAG/SAFETAG/tree/master/en/templates/folders/activity) into the method folder. The content of these files is described below.
 * Activity contents also have an index file (within the same folder, not above it as with methods).  The index file needs to be updated with the title of the activity but is otherwise the same across most activities.
 
-**New activities must be linked to a method.** To link an activity to a method, please update both the activities.md file in the method folder, and also add it directly to index.guide.md under the method. The current build process uses the index.guide.md link, but for content tracking, it's best to update both. If adding an activity to multiple methods, select a primary method where it is the most relevant to that method's outputs, and for additional methods, link it in following this format:
-
+**New activities must be linked to a method.** To link an activity to a method, add it directly to index.guide.md under the method. If adding an activity to multiple methods, select a primary method where it is the most relevant to that method's outputs, and for additional methods, link it in following this format:
 
 ```
  <div class="boxtext">
  #### Activity Title
- Covered in full in Primary Method:
- !INCLUDE "exercises/activity_title/approach.md"
+ Covered in full in **Primary Method**
  </div>
 ```
 
@@ -97,7 +95,7 @@ Although SAFETAG contributors and users come from around the world, adherence to
 
 #### Activity Content and Stylistic notes:
 
-* Activities should operate at header 4 and below, the Activity title is h4, the major subheadings (below) are h5, so any headings within the content (most often used in the instructions/walkthrough file) must only be at h6.
+* Activities should operate at header 4 and below, the Activity title is h4, the major subheadings (below) are h5, so any headings within the content (most often used in the instructions/walkthrough file for variants) must only be at h6.
 
 | Section|ADIDS|Guide|Overview|Definition|
 |--|-|-|-|---------------------------------------------------------------------|
@@ -109,22 +107,7 @@ Although SAFETAG contributors and users come from around the world, adherence to
 | Variants|-|+|-|Parallel approaches which can be used for the same affect but might work better in different contexts. See below for when and how to use these |
 | Recommendations|-|+|-|Optional; Sample text of common recommendations for how to address vulnerabilities identified through this activity; e.g. "Work with the webmaster to update PHP and/or migrate to a hosting system which manages this automatically...") -- for activities which have common findings, provide stock language to assist in report creation|
 
-#### Activity variants
-
-In some cases, one activity will have many parallel ways to achieve the goal this is often the case with technical activities where there is a collection of similar tools all focused on the same overall outcome.  In cases like these, it is best to create *Activity Variants* instead of new activities.  This lets different auditors select and use tools and approaches they are most comfortable with, while still operating within the larger SAFETAG framework.
-
-To use variants, you will create files in the activity's folder that begin with variant_, and link them in from the instructions.md file.  The variant_ files should not use any header formatting.
-
-In your instructions.md file, begin by introducing any common, cross-variant instructions or guidance not covered in other activity sections, and summarize each variant. At the end of the instructions text, add the following for each variant, updating the title and file name to the specific variant:
-
-```
- ___
-
- ###### VARIANT TITLE
-
- !INCLUDE "variant_descriptive_file_name.md"
-```
-
+In some cases, one activity will have many parallel ways to achieve the goal this is often the case with technical activities where there is a collection of similar tools all focused on the same overall outcome.  In cases like these, it is best to create *Activity Variants* instead of new activities.  This lets different auditors select and use tools and approaches they are most comfortable with, while still operating within the larger SAFETAG framework. **Add these as part of the Walkthrough section with a h6 title.**
 
 ### Other SAFETAG Content
 
@@ -148,55 +131,36 @@ Generally speaking, these sections won't be updated very often.
 | Appendices | - | + | - | Including the Code of Conduct, How To Read this Guide, Contribution guidance, and more. |
 | Footnotes | - | + |+ | |
 
-#### Reporting Contents
-
-**Reporting content and creation will be revisited shortly**
-<!--
-| Section|ADIDS|Guide|Overview||
-|--|-|-|-|---------------------------------------------------------------------|
-| Quote|-|+|-||
-| Summary|-|+|+||
-| Guiding Questions|+|+|+||
-| Output|-|+|-||
-| Preparation|-|+|-||
-| Purpose|-|+|+||
-| Resources|-|+|-||
-| Approaches|-|+|+|||
-| Activity|||||
-| → Summary|-|+|-||
-| → Instructions|-|-|-||
-| → Recommendations|-|-|-||
-| → Base Line Skills|+|+|-||
-| → Operational Security|-|-|-||
-
--->
-
-### Contributing
-
-Once you've scoped your submission as described under "Getting Started" and the "Content Creation Guidelines" sections above, you can follow the fork/pull method or use the templated approach to submit new content. Regardless of the approach you take,
-
-#### Using Submission Templates
-
-We have developed easy to use templates for SAFETAG Methods and Activities you can use and submit with your issue. These can be found at  *en/templates/method-template.md* and  *en/templates/activity-template.md*. If you would like to edit these as word processor files, you can use pandoc for conversion: ```pandoc -i activity_template.md -o activity_template.odt``` . Final files should be submitted as markdown, however.
-
-Please refer to the current Methods in the SAFETAG guide for additional detail and examples. The template will require manual merging into the repository, so please include how you would like to be credited.
-
-#### Using Pull Requests
-
-0. Fork the repository, clone a local copy, and a create a new branch for your work (See [Resources][resources] below for help with using git).
-0. Update your issue with your fork so the community can follow along!
-0. Follow the content creation guidelines below to create or update new content
-0. Making many small, targeted commits with concise, clear commit messages. Keeping each pull request focused is greatly appreciated. Please submit different pull requests (and possibly even branches!) for different thematic work.
-0. Test to make sure your changes work by building the PDF and/or migrating the content into the static site generator system.
-0. Push to your fork and submit a pull request to the Dev branch!
 
 
+### How to Contribute
 
-### Resources
+**We have developed easy to use *templates* for SAFETAG Methods and Activities you can use and submit with your issue or directly by using git.**
 
+These can be found at *en/templates/method-template.md* and  *en/templates/activity-template.md*.
+
+#### Contributing using issues
+
+Submit an [issues][issues] and include to the extent possible a complete version of the [templates][templates] as well as any context/background that could be helpful in understanding how this is intended to be used in SAFETAG.
+
+#### Contributing Using Git
+
+This guide will not itself cover how to use git, but here are some helpful resources to start with:
 - [Super Basic Git Guide for Content Development](https://gist.github.com/joncamfield/9249d2442c5849335c9811b8b70e0bc6)
 - [Using Pull Requests](https://help.github.com/articles/using-pull-requests/)
 - [GitHub Help](https://help.github.com)
+
+0. Create a github account that can be publicly associated with SAFETAG
+0. Submit an [issue][issues] in the SAFETAG repository to alert the community to what you're working on.
+0. Fork the repository to your Github account
+0. Clone a local copy
+0. Set a remote source, to make it easier to continue pulling updated content from the SAFETAG repository. This can be done many ways ([upstream tracking](https://mincong.io/2018/05/02/git-upstream-tracking/), or [remote branches](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)). For the Remote method, in your local repository, you can run this command: (HTTPS) ```git remote add upstream https://github.com/SAFETAG/SAFETAG``` ; (SSH) ```git remote add upstream https://github.com/SAFETAG/SAFETAG``` .
+0. Create a new branch for your work (optional but recommended)
+0. Update your issue with your fork so the community can follow along!
+0. Follow the content creation guidelines to create or update content
+0. Make many small, targeted commits with concise, clear commit messages. Keeping each pull request focused is greatly appreciated. **Please submit different pull requests (and possibly even branches!) for different thematic work.** (if you're working on 2 new activities and updating 1 existing activity, please submit these as different pull requests -- this is where branching can help)
+0. Test to make sure your changes work by building the PDF and/or migrating the content into the static site generator system.
+0. Push to your fork and submit a pull request to the Dev branch!
 
 [code-of-conduct]: https://github.com/SAFETAG/SAFETAG/blob/master/en/document_matter/CODE_OF_CONDUCT.md
 [issues]: https://github.com/SAFETAG/SAFETAG/issues
