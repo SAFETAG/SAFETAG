@@ -61,7 +61,24 @@ DNS Enumeration can be accomplished with different number of tools along with di
 * It is important that we verify that we have the correct target domain(s) before proceeding with any of the scans/audits/assessments exercises within SAFETAG Framework. The last thing we wouldn't want to happen is to scan and enumerate target which is out of scope!)
 
 ##### Walkthrough
-The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. Your investigation may be blocked by CloudFlare, a popular DDoS protection service. ["CloudFlair"](https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/) provides some options in this case.
+The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate.
+
+
+**A note on DDoS Protection Services** Your investigation may be blocked by DDoS protection services which operate at the DNS level such as Deflect or CloudFlare. ["CloudFlair"](https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/) provides some options in this case, as does tracking DNS and IP history to see if only DNS records changed.
+
+One way to identify if a website is using DDoS service or not is by investigating it's DNS record. Since that we're working with organizations may not have enough funding to subscribe to a DNS mitigation service, lot's of time you will see them not using DDoS protection.
+
+  - [Into DNS](https://intodns.com)
+
+Looking up ```Server Names``` or your ```A Record``` that points to a particular 3rd party CDN DDoS service such as the following examples:
+
+    - brianna.ns.cloudflare.com (Cloudflare)
+    - toby.ns.cloudflare.com (Cloudflare)
+    - 4k9o.x.incapdns.net (Incapsula)
+    - e3396.dscx.akamaiedge.net (Akamai)
+
+If these appears on your result, then there's a high probability that your target is behind DDoS service
+
 
 
 **DNS Enumerations Tools:**
@@ -203,5 +220,12 @@ mail.sample.org has address 256.0.0.3
 DNS is inherently public information, but we can still do a lot of steps to secure any parts of it which are revealing more private information. Fortinet provides a set of good recommendations:
 
 https://blog.fortinet.com/2016/03/10/10-simple-ways-to-mitigate-dns-based-ddos-attacks
+
+If the site is not protected from DDoS attacks, there are multiple resources which provide not only DDoS protection but additional security against attacks, such as:
+
+  - [Deflect.ca](https://deflect.ca)
+  - [Project Galileo by Cloudflare](https://www.cloudflare.com/galileo)
+  - [Project Shield by Google](https://projectshield.withgoogle.com/public)
+
 
 If a zone transfer was successful, (most providers automatically limit anonymous zone transfers), you will need to work with their support team to prevent this, or switch to a different DNS provider. If your organization maintains its own DNS servers, the administrator of those servers should check the zone transfer policies to prevent anonymous transfers.
