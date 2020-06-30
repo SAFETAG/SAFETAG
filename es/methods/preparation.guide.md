@@ -1,25 +1,22 @@
 ## Preparación
 
 ### Resumen
-!INCLUDE "../document_matter/preparation/summary.md"
+!INCLUDE "../methods/preparation/summary.md"
 
 ### Propósito
-!INCLUDE "../document_matter/preparation/purpose.md"
+!INCLUDE "../methods/preparation/purpose.md"
 
 ### Preguntas Orientadoras
-!INCLUDE "../document_matter/preparation/guiding_questions.md"
-
-### Enfoques
-!INCLUDE "../document_matter/preparation/approaches.md"
+!INCLUDE "../methods/preparation/guiding_questions.md"
 
 ### Resultados
-!INCLUDE "../document_matter/preparation/output.md"
+!INCLUDE "../methods/preparation/output.md"
 
 ### Seguridad Operacional
-!INCLUDE "../document_matter/preparation/operational_security.md"
+!INCLUDE "../methods/preparation/operational_security.md"
 
 
-!INCLUDE "../document_matter/preparation/activities.md"
+!INCLUDE "../methods/preparation/activities.md"
 
 ### Recursos
 <div class="greybox">
