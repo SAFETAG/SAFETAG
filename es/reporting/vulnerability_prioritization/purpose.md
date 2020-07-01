@@ -1,2 +1,0 @@
-
-As part of SAFETAG's dedication to building agency and supporting organizational adoption of safer practices, a careful prioritization of vulnerabilities is invaluable in keeping audit results from appearing overwhelming. In addition, this component ranks the vulnerabilties identified using the risk-matrix developed with the host organization's staff. Using the host-created framework will allow for a deeper understanding of the impact of vulnerabilities and encourage greater investment in addressing them.

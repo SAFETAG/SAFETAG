@@ -1,2 +1,0 @@
-- Comparar los recursos necesarios con las capacidades identificadas en las actividades de modelización de riesgos, y con la investigación contextual realizada.
-- Basándose en la evaluación de la capacidad de la organización, establecer una propuesta que se apoye en las fortalezas de la organización creando un plan a futuro que proporcione resultados alcanzables, mantenimiento del programa, y a largo plazo, metas difíciles, pero con alta recompensa para la organización.

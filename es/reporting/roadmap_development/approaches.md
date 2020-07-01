@@ -1,4 +1,0 @@
-- **Desarrollo de una Matriz de Riesgo:** crear una matriz de riesgo donde a cada vulnerabilidad identificada se le asigna una probabilidad e impacto.
-- **Desarrollo de una Matriz de Implementación:** crear una “matriz de implementación” con la urgencia de la amenaza balanceada con la dificultad de implementación, brindando capacidad organizacional a partir de las recomendaciones. 
-- **Desarrollo de una Hoja de Ruta:** Identificar las vulnerabilidades críticas, con recomendaciones alcanzables que se ajusten a las devoluciones recibidas del personal durante la auditoría. Crear una hoja de ruta con los abordajes de recuperación para las amenazas que enfrenta la organización.
-- **Documentar los Éxitos:** Colocar las recomendaciones en una línea de tiempo que incluya las prácticas existentes de la organización, demostrando que el proceso de recuperación es una continuación de las prácticas de seguridad formales. (16)

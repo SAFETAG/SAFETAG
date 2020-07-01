@@ -1,1 +1,0 @@
-"*A good analysis might turn the threats into stories so they stay close to mind as software is being written or reviewed. A good story contains conflict, and conflict has sides. In this case, you are on one side, and an attacker is the other side.*" - _Threat Modeling: Designing for Security_ [^shostack_reports]
