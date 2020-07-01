@@ -2,19 +2,17 @@
 ####Confidentiality Agreement
 
 ##### Summary
-!INCLUDE "summary.md"
+Negotiate an agreement with the organization that outlines how an auditor will protect the privacy of the organization and the outcomes of the audit.
 
 ##### Overview
-!INCLUDE "approach.md"
+
+  * Host provides auditor consent to conduct the agreed to scope of the audit in the form of a signed liability waiver. [^auditor_consent_template]
 
 ##### Materials Needed 
-!INCLUDE "materials_needed.md" 
 
 ##### Considerations
-!INCLUDE "operational_security.md"
 
 ##### Walkthrough
-!INCLUDE "instructions.md"
+See the Appendix for a DRAFT Engagement and Confidentiality Agreement.
 
 ##### Recommendation
-!INCLUDE "recommendations.md"

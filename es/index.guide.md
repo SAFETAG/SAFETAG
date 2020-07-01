@@ -92,8 +92,6 @@ See the Appendix for creating a password dictionary.
 <div class="boxtext">
 #### Conduct Interviews
 
-**NOTE:** Covered in full under Capacity Assessment
-
 !INCLUDE "exercises/interviews/approach.md"
 </div>
 
@@ -349,14 +347,6 @@ Covered in full under Physical Assessment:
 </div>
 
 <div class="boxtext">
-#### Risk Matrix 
-
-Covered in full in Threat Identification:
-
-!INCLUDE "exercises/risk_matrix/approach.md"
-</div>
-
-<div class="boxtext">
 #### Critical Data Activity
 
 Covered in full in Data Assessment:
@@ -404,7 +394,6 @@ Covered in full in Data Assessment:
 
 Covered in full in Capacity Assessment:
 
-!INCLUDE "exercises/regional_context_research/approach.md"
 </div>
 
 \newpage
@@ -470,42 +459,25 @@ Of specific use are the following training guides from Level-Up. Review the [Lev
 
 # INFORMES
 
-\newpage
-<!-- Vulnerability Prioritization
-
-!INCLUDE "methods/vulnerability_prioritization.guide.md"
- -->
-
-\newpage
 <!-- Recommendation Development -->
 
 !INCLUDE "methods/recommendation_development.guide.md"
 
 <div class="boxtext">
-#### Identify Useful Resources
+!INCLUDE "exercises/risk_matrix/index.md"
+</div>
 
+<div class="boxtext">
+!INCLUDE "exercises/roadmap_development/index.md"
+</div>
+
+<div class="boxtext">
 !INCLUDE "exercises/identify_useful_resources/index.md"
 </div>
 
 <div class="boxtext">
-#### Identify and Explain Un-Addressed Concerns
-
-!INCLUDE "exercises/un_addressed_concerns/index.md"
+!INCLUDE "exercises/report_creation/index.md"
 </div>
-
-<div class="boxtext">
-!INCLUDE "exercises/identify_recommendations/index.md"
-</div>
-
-\newpage
-<!-- Roadmap Development -->
-
-!INCLUDE "methods/roadmap_development.guide.md"
-
-\newpage
-<!-- Reporting Creation -->
-
-!INCLUDE "methods/report_creation.guide.md"
 
 \newpage
 <!-- APPENDIX A - Auditor travel Kit Checklist-->

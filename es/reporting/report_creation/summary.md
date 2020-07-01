@@ -1,1 +1,0 @@
-En este componente el auditor compila sus notas de auditoría y recomendaciones en un amplio conjunto de documentos que muestra el estado actual de la seguridad, el proceso por el cual el auditor llegó a esa evaluación y las recomendaciones que guiarán a la organización a cumplir sus objetivos de seguridad

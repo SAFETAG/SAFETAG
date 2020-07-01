@@ -2,27 +2,27 @@
 
 ### Resumen
 
-!INCLUDE "../reporting/recommendation_development/summary.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/summary.md"
 
 ### Propósito
 
-!INCLUDE "../reporting/recommendation_development/purpose.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/purpose.md"
 
 ### Preguntas Orientadoras
 
-!INCLUDE "../reporting/recommendation_development/guiding_questions.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/guiding_questions.md"
 
 ### Enfoques
 
-!INCLUDE "../reporting/recommendation_development/approaches.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/approaches.md"
 
 ### Resultados
 
-!INCLUDE "../reporting/recommendation_development/output.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/output.md"
 
 ### Seguridad Operacional
 
-!INCLUDE "../reporting/recommendation_development/operational_security.md"
+!INCLUDE "../methods/reporting_and_recommendation_development/operational_security.md"
 
 ### Recursos
 

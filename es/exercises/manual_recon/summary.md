@@ -1,1 +1,0 @@
-This exercise suggests some targeted online search tools and tricks to gather information leakages from organizations.  While many advocacy, activism, and media/journalism focused organizations are very public as part of their operations, the searches suggested here aim to explore data that could be used to better attack or socially engineer an organization.

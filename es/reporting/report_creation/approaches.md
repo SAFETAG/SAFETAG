@@ -1,3 +1,0 @@
-- **Identificar las Partes Interesadas:** Durante la auditoría se identificarán las partes que tendrán un proceso de recuperación de vulnerabilidades (por ejemplo, inversionistas, consultores externos, socios), y el trabajo con la organización sobre los componentes principales de informe.
-- **Visualización de Gráficos:** Crear gráficos, diagramas de la hoja de ruta, la matriz de riesgos, la matriz de implementación y de los procesos críticos.
-- **Traducción de Documentos:** Realizar secciones que serán compartidas por las partes interesadas (inversionistas, soporte técnico, capacitadores) para apoyar a las organizaciones que involucradas. 

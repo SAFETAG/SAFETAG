@@ -2,19 +2,19 @@
 ####The Impacts of a Lost Device
 
 ##### Summary
-!INCLUDE "summary.md"
+
+Lead staff in an activity were they describe the impact if various devices were destroyed.
 
 ##### Overview
-!INCLUDE "approach.md"
+
+* Lead staff in an activity were they describe the impact if various devices were destroyed.
 
 ##### Materials Needed 
-!INCLUDE "materials_needed.md" 
 
 ##### Considerations
-!INCLUDE "operational_security.md"
 
 ##### Walkthrough
-!INCLUDE "instructions.md"
+
+This can be built in to the Sensitive Data exercise, described in the Data Assessment method.
 
 ##### Recommendation
-!INCLUDE "recommendations.md"

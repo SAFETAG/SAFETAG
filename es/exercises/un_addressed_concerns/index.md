@@ -1,32 +1,25 @@
 
 ###### Summary
 
-!INCLUDE "summary.md"
+Write explanations for why any adversaries or threats that the auditor identifies as "un-addressable" with the organizations current capacity.
 
 ###### Base Line Skills
 
-!INCLUDE "base_line_skills.md"
 
 ###### Operational Security
 
-!INCLUDE "operational_security.md"
 
 ###### Materials Needed
 
-!INCLUDE "materials_needed.md"
 
 ###### Materials Needed 
-!INCLUDE "materials_needed.md" 
 
 ##### Considerations
 
-!INCLUDE "considerations.md"
 
 ###### Output
 
-!INCLUDE "output.md"
 
 ###### Resources
 
-!INCLUDE "resources.md"
 
