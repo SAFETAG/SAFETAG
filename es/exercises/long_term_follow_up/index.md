@@ -2,20 +2,22 @@
 ####Long-Term Follow-up
 
 ##### Summary
-!INCLUDE "summary.md"
+Follow up with host after a few months to check on progress, get long-term feedback and connect with any new resources.
 
 ##### Overview
-!INCLUDE "approach.md"
 
 ##### Materials Needed 
-!INCLUDE "materials_needed.md" 
+
+* A copy of the report
+* A secure note-taking system.
 
 ##### Considerations
-!INCLUDE "operational_security.md"
+
+* A secure, real-time VOIP system is recommended for this call, as many of the highly sensitive audit findings are likely to be discussed in detail.  Skype may suffice in some regions, but also consider secure call options (https://ostel.co/).
 
 ##### Walkthrough
-!INCLUDE "instructions.md"
+
+This can be combined with the Staff Feedback Survey exercise, or to follow up on any concerns you have based on their responses to that survey.  The main goal of the long-term follow-up is to ensure that the organization has ongoing connection points to any resources or connections they need to remove barriers to adoption.
 
 ##### Recommendation
-!INCLUDE "recommendations.md"
 

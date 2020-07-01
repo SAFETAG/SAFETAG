@@ -2,19 +2,17 @@
 ####The Impacts of a "Found" Device
 
 ##### Summary
-!INCLUDE "summary.md"
+Lead staff in an activity identifying what critical data (as identified in during the Data Assessment) would be available if an adversary gained access to various devices.
 
 ##### Overview
-!INCLUDE "approach.md"
+* Lead staff in an activity identifying what critical data (as identified in during the Data Assessment) would be available if an adversary gained access to various devices.
 
 ##### Materials Needed 
-!INCLUDE "materials_needed.md" 
 
 ##### Considerations
-!INCLUDE "operational_security.md"
 
 ##### Walkthrough
-!INCLUDE "instructions.md"
+
+This can be built in to the Sensitive Data exercise, described in the Data Assessment method.
 
 ##### Recommendation
-!INCLUDE "recommendations.md"
