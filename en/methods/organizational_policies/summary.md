@@ -1,1 +1,0 @@
-This methodology explores existing organizational practices, informal agreements, and policies around managing information security and responding to threats. It also seeks to reveal presumptions made within the organization which are neither shared  (informal or no) nor codified in policies.
