@@ -8,7 +8,7 @@ Org_size_under:
 Remote_options:
 - with-support
 Skills_required:
-- - Group Facilitation, Psycho-social care, Risk Assessment
+- Group Facilitation, Psycho-social care, Risk Assessment
 Time_required_minutes:
 - 120
 ---
