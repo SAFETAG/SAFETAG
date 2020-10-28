@@ -1,6 +1,0 @@
-- ¿Cuáles son los conjuntos de datos más importantes que hay que mantener disponibles?¿Hay copias de seguridad?
-- ¿Cuáles son los conjuntos de datos importantes que hay que mantener en privado?
-- ¿De qué manera la organización determina en la actualidad quién debe tener acceso a la información?
-- ¿Hay en la actualidad personas que tienen acceso a información a la cual no deberían tenerlo?
-- ¿Está el personal de acuerdo en lo que constituyen los datos sensibles?
-- ¿Qué información necesita cada uno de los empleados con el fin de realizar su trabajo?

@@ -1,2 +1,0 @@
-- **Capacitación Dirigida:** Componentes educativos que son introducidos con el fin de cubrir los conceptos básicos de seguridad digital, satisfacen las expectativas del equipo y motivan al grupo objetivo al incluir las prácticas de seguridad digital en su vida cotidiana.
-- **Soporte Específico:** El auditor puede proporcionar una pequeña y específica técnica/política de soporte para el desarrollo, en caso de que las experiencias se solapen; siempre que los tiempos de la auditoría lo permitan.

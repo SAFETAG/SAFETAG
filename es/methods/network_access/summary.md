@@ -1,1 +1,0 @@
-Este componente permite al auditor testear las fortalezas de la organización para proteger su red de área local. Este componente consiste en el acceso a la red de área local a través de un punto de acceso inalámbrico y de canales físicos no seguros (como un conector ethernet).

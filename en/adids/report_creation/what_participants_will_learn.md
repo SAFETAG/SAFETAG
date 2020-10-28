@@ -1,2 +1,0 @@
-### What Participants Will Learn
-

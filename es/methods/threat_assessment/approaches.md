@@ -1,2 +1,0 @@
-- **Open Source Threat Research:** Identifica posibles adversarios y amenazas utilizando informes públicos disponibles, noticias y bases de datos.
-- **Mapa de Amenazas:** Facilita las actividades de grupo donde el personal identifica posibles adversarios y las amenazas que pueden llegar a utilizar en contra del grupo.

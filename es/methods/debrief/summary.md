@@ -1,1 +1,0 @@
-Este componente consiste en un breve resumen de los puntos clave, proporciona un alivio a las presiones a través de interacciones grupales e individuales, como así también, un planeamiento de los futuros seguimientos con el anfitrión y las personas clave.

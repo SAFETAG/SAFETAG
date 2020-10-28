@@ -1,2 +1,0 @@
-
-"*Vulnerability testing is the process of discovering flaws in systems and applications which can be leveraged by an attacker. These flaws can range anywhere from host and service misconfiguration, or insecure application design. Although the process used to look for flaws varies and is highly dependent on the particular component being tested, some key principals apply to the process.*" - _Vulnerability Analysis - The Penetration Testing Execution Standard_ [^PTES_testing] 

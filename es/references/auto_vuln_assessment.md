@@ -1,3 +1,0 @@
-
-#### Automated Vulnerability Assessment Tools
-

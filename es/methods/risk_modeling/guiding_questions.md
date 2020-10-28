@@ -1,5 +1,0 @@
-- ¿Cuáles son la actividades críticas de la organización?
-- ¿A qué amenazas se enfrenta la organización, sus programas, socios y beneficiarios?
-- ¿Cuál sería el impacto si estas amenazas ocurriesen?
-- ¿Qué adversarios (personas o grupos) pueden intentar llevar a cabo amenazas?
-- ¿Son esos adversarios capaces de llevar a cabo estas amenazas?

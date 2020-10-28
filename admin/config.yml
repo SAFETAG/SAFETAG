@@ -1,0 +1,289 @@
+backend:
+  name: github
+  repo: safetag/safetag
+  branch: guide-source
+  site_domain: safetag-dev-admin.netlify.app
+
+media_folder: static/img
+public_folder: /img
+
+publish_mode: editorial_workflow
+
+collections:
+  - label: "Guide Sections"
+    name: "guide_sections"
+    files:
+      - label: "Introduction"
+        name: "introduction"
+        file: "content/guide_sections/introduction.md"
+        fields:
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              description: "Markdown content to be included in guide beginning.",
+            }
+      - label: "Section 1 (Guide Information)"
+        name: "section_1"
+        file: "content/guide_sections/section_1.md"
+        fields:
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              description: "First section, including general information about SAFETAG and the guide.",
+            }
+      - label: "Section 3 (Reporting)"
+        name: "section_3"
+        file: "content/guide_sections/section_3.md"
+        fields:
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              description: "Third section, included after selected methods.",
+            }
+      - label: "Section 4 (Appendices)"
+        name: "section_4"
+        file: "content/guide_sections/section_4.md"
+        fields:
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              description: "Fourth section, appendices.",
+            }
+      - label: "Section 5 (Footnotes)"
+        name: "section_5"
+        file: "content/guide_sections/section_5.md"
+        fields:
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              description: "Fourth section, footnotes.",
+            }
+  - name: "activities"
+    label: "Activities"
+    label_singular: "Activity"
+    folder: "content/activities"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Approaches",
+          name: "approaches",
+          widget: "relation",
+          collection: approaches,
+          searchFields: ["title"],
+          valueField: "title",
+          required: true,
+          multiple: true,
+        }
+      - {
+          label: "Authors",
+          name: "authors",
+          widget: "relation",
+          collection: authors,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          required: false,
+        }
+      - {
+          label: "Skills Required",
+          name: "skills_required",
+          widget: "relation",
+          collection: skills,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          required: false,
+        }
+      - {
+          label: "Skills Trained",
+          name: "skills_trained",
+          widget: "relation",
+          collection: skills,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          required: false,
+        }
+      - {
+          label: "Remote Options",
+          name: "remote_options",
+          widget: "relation",
+          collection: remote_options,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+        }
+      - {
+          label: "Time Required (minutes)",
+          name: "time_required_minutes",
+          widget: "number",
+        }
+      - {
+          label: "Organization Size Under",
+          name: "organization_size_under",
+          widget: "number",
+        }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Overview",
+          name: "overview",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Materials Needed",
+          name: "materials_needed",
+          widget: "markdown",
+          required: false,
+        }
+      - {
+          label: "Considerations",
+          name: "Considerations`",
+          widget: "markdown",
+          required: false,
+        }
+      - {
+          label: "Walk-through",
+          name: "walk_through",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Recommendations",
+          name: "recommendations",
+          widget: "markdown",
+          required: false,
+        }
+  - name: "approaches"
+    label: "Approach Types"
+    label_singular: "Approach"
+    folder: "content/approaches"
+    create: true
+    required: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+  - name: "authors"
+    label: "Authors"
+    label_singular: "Author"
+    folder: "content/authors"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+
+  - name: "methods"
+    label: "Methods"
+    label_singular: "Method"
+    folder: "content/methods"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Activities",
+          name: "activities",
+          widget: "relation",
+          collection: activities,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          required: true,
+        }
+      - {
+          label: "References",
+          name: "references",
+          widget: "relation",
+          collection: references,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          required: true,
+        }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Purpose",
+          name: "purpose",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "The Flow of Information",
+          name: "the_flow_of_information",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Guiding Questions",
+          name: "guiding_questions",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Outputs",
+          name: "outputs",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Operational Security",
+          name: "operational_security",
+          widget: "markdown",
+          required: true,
+        }
+      - {
+          label: "Preparation",
+          name: "preparation",
+          widget: "markdown",
+          required: false,
+        }
+  - name: "remote_options"
+    label: "Remote Options"
+    label_singular: "Remote Option"
+    folder: "content/remote-options"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+  - name: "references"
+    label: "References"
+    label_singular: "Reference"
+    folder: "content/references"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "skills"
+    label: "Skills"
+    label_singular: "Skill"
+    folder: "content/skills"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }

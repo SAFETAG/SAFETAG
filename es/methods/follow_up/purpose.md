@@ -1,1 +1,0 @@
-El seguimiento puede ser una herramienta valiosa para incentivar a una organización a continuar con su proceso de seguridad digital. Pero, el seguimiento necesita ser buscado por la organización y realizable por el auditor. Como tal, debe ser mínimamente intrusivo para los tiempos tanto del auditor como de la organización.
