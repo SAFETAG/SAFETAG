@@ -2,7 +2,7 @@ backend:
   name: github
   repo: safetag/safetag
   branch: guide-source
-  site_domain: safetag-dev-admin.netlify.app
+  site_domain: safetag-guide.netlify.app
 
 media_folder: static/img
 public_folder: /img
