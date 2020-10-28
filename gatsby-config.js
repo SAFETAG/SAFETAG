@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/safetag-web',
   siteMetadata: {
     title: `Safetag`,
     description: `Create custom Safetag guides for your needs`,
