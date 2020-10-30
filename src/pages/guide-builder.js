@@ -127,10 +127,12 @@ const ActivitiesSelector = styled.div`
   width: 100%;
   margin-bottom: 0.5rem;
   ${Button} {
-    margin-left: 1rem;
-    &:first-of-type {
-      margin-left: auto;
-    }
+    ${media.largeUp`
+      margin-left: 1rem;
+      &:first-of-type {
+        margin-left: auto;
+      }
+    `}
   }
 `
 
@@ -140,9 +142,13 @@ const ActivitiesHeading = styled.h4`
   font-family: ${themeVal("type.heading.family")};
   text-transform: uppercase;
   border-bottom: 1px solid ${themeVal("color.base")};
+  flex-basis: 100%;
   ${FormCheckableGroup} > & {
     margin: 1rem 0;
   }
+  ${media.mediumUp`
+    flex: inherit;
+  `}
 `
 
 const ActivityLine = styled.div`
