@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: safetag/safetag
+  open_authoring: true
   branch: guide-source
   site_domain: safetag-guide.netlify.app
 
