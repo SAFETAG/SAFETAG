@@ -8,6 +8,7 @@ summary: >
   exposed to a malicious actor.  This results in the staff creating a risk
   matrix which is used as the foundation of the auditor's recommendations.
 the_flow_of_information: "![](/img/risk_modeling.png)"
+method_icon: "/img/risk_modeling_icon.png"
 guiding_questions: >+
   
   * What are the critical organizational activities?

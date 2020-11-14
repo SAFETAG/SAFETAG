@@ -7,6 +7,7 @@ references:
   - debrief
   - Facilitation Preparation
 title: Debrief
+method_icon: "/img/debrief_icon.png"
 summary: >
 
   This component consists of an out-brief to key points of contact, providing

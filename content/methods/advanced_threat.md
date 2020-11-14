@@ -6,6 +6,7 @@ summary: >
   binary and determine if it is malicious or not, and recommend urgent
   mitigation steps.
 the_flow_of_information: "![](/img/advanced_threat.png)"
+method_icon: "/img/advanced_threat_icon.png"
 guiding_questions: >+
   
   * Does the organization suspect they already have malware? If so, what evidence supports that?

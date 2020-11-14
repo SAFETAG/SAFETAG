@@ -1,5 +1,6 @@
 ---
 title: Follow Up
+method_icon: "/img/follow_up_icon.png"
 summary: >
   This component allows an auditor to explain and get feedback on their report
   as well as evaluate the success of the process over time through a continued

@@ -4,6 +4,7 @@ summary: >
   
   This component allows the auditor to discover and assess the security of the devices on the network and/or used in the organization. This component consists of interviews, surveys, network mapping, and inspection of devices.
 the_flow_of_information: "![](/img/org_device_assessment.png)"
+method_icon: "/img/org_device_icon.png"
 guiding_questions: >
   
   * What work and personal devices do staff use to accomplish their work, store work related files, or engage in work communications?

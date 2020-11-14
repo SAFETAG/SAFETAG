@@ -6,6 +6,7 @@ summary: >
   to threats. It also seeks to reveal presumptions made within the organization
   which are neither shared  (informal or no) nor codified in policies.
 the_flow_of_information: "![](/img/organizational_policies.png)"
+method_icon: "/img/policy_review_icon.png"
 guiding_questions: >
   
   * Are there documented policies or practices, including any employee onboarding guidance?
