@@ -198,6 +198,12 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
+          label: "Method Icon",
+          name: "method_icon",
+          widget: "image",
+          required: true,
+        }
+      - {
           label: "Activities",
           name: "activities",
           widget: "relation",
