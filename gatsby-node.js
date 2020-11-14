@@ -22,6 +22,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       time_required_minutes: String
       info_provided: [String]
       info_required: [String]
+      method_icon: String
     }
   `
   createTypes(typeDefs)
