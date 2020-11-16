@@ -80,7 +80,11 @@ export const SquareUl = styled.ul`
       border-right: 2px solid white;
     }
   }
-  
+  img {
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 export const TagList = styled.dl``
