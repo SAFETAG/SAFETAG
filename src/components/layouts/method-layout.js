@@ -88,7 +88,9 @@ function MethodLayout({ data, location }) {
       })
   )
 
-  const { state: { prevPath, prevPage } = {} } = location
+  // Get previous page path, if available
+  let prevPath = location.state && location.state.prevPath || ""
+  let prevPage = location.state && location.state.prevPage || ""
 
   // Fix images URL by adding app root url with prefix
   const sections = mapValues(frontmattermd, section => {
@@ -111,7 +113,7 @@ function MethodLayout({ data, location }) {
               <MoreLink
                 direction="back"
                 to={
-                  prevPath?.startsWith("/guide-builder")
+                  prevPath.startsWith("/guide-builder")
                     ? prevPage
                     : "/#allMethods"
                 }
