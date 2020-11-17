@@ -78,6 +78,18 @@ const Card = styled.article`
 
 export default Card
 
+export const CardHeader = styled.div`
+  display: flex;
+  align-items: flex-start;
+  img {
+    max-height: 2rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    flex: 1;
+  }
+`
+
 export const CardHeading = styled(Heading)`
   margin-bottom: ${glsp()};
   position: relative;
@@ -103,7 +115,7 @@ export const CardList = styled.ul`
     ${media.smallUp`
       grid-column: auto / span 3;
     `}
-
+e
     /* Large up */
     ${media.largeUp`
       grid-column: auto / span 2;
