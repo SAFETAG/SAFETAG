@@ -115,7 +115,7 @@ export const CardList = styled.ul`
     ${media.smallUp`
       grid-column: auto / span 3;
     `}
-e
+
     /* Large up */
     ${media.largeUp`
       grid-column: auto / span 2;
