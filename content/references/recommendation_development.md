@@ -1,5 +1,5 @@
 ---
-title: recommendation_development
+title: Recommendation Development
 ---
 
   * *Guide:* ["Mitigation Recommendation"](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=62) (NIST SP 800-115)

@@ -43,7 +43,7 @@ activities:
   - A Day in the Life
 references:
   - Organizational Policies
-  - recommendation_development
+  - Recommendation Development
 outputs: >
   
   * List of existing agreements and policies and their gaps

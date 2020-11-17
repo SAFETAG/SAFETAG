@@ -17,7 +17,7 @@ references:
   - Training Resources
   - Emergency Resources
   - Resource Lists
-  - recommendation_development
+  - Recommendation Development
   - identifying_recommendations
 title: Report Creation and Recommendation Development
 summary: >+
