@@ -1,5 +1,5 @@
 ---
-title: 'Nmap Scanning {#nmap-scanning}'
+title: Nmap Scanning
 ---
 
   * *Guide:* ["The Official Nmap Project Guide to Network Discovery and Security Scanning"](http://nmap.org/book/toc.html) (Gordon “Fyodor” Lyon)
