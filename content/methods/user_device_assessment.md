@@ -1,5 +1,6 @@
 ---
 title: User Device Assessment
+method_icon: "/img/user_device_assessment_icon.png"
 summary: >
   This component allows the auditor to assess the security of the individual
   devices on the network. This component consists of interviews, surveys, and

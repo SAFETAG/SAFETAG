@@ -27,6 +27,15 @@ const MethodHeadline = styled(InpageHeadline)`
   `}
 `
 
+const MethodIcon = styled.img`
+  position: relative;
+  max-width: 2.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  bottom: -0.25rem;
+  vertical-align: bottom;
+`
+
 const MethodIntro = styled.article`
   display: flex;
   flex-flow: column nowrap;
@@ -120,6 +129,7 @@ function MethodLayout({ data, location }) {
               </MoreLink>
               <InpageTitle size="jumbo" variation="primary">
                 {frontmatter.title}
+                <MethodIcon src={frontmatter.method_icon} />
               </InpageTitle>
             </MethodHeadline>
             <MethodIntro>
@@ -288,6 +298,7 @@ export const query = graphql`
           info_provided
           info_required
           references
+          method_icon
         }
         fields {
           frontmattermd {

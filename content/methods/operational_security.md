@@ -16,6 +16,7 @@ references:
   - operational_security
   - operational_security
 title: Physical and Operational Security
+method_icon: "/img/physical_assessment_icon.png"
 summary: >
 
   The organizational security methodology is focused on how to mitigate against

@@ -6,6 +6,7 @@ summary: >
   This component consists of desk research that is collected and analyzed by the
   auditor, as well as inputs from the Interview component.
 the_flow_of_information: "![](/img/context_research.png)"
+method_icon: "/img/context_research_icon.png"
 guiding_questions: >
   
   * What infrastructural barriers exist in the region?

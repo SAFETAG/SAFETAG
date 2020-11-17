@@ -5,6 +5,7 @@ summary: >
   ensure the technical and facilitated components of the audit are able to be
   conducted effectively and within the on-site time-frame.
 the_flow_of_information: "![](/img/preparation.png)"
+method_icon: "/img/preparation_icon.png"
 guiding_questions: >
   
   * Does the organization have existing digital security practices or has it attempted to implement them in the past?

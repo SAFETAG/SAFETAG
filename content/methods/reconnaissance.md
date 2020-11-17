@@ -8,6 +8,7 @@ summary: >
   email servers, but also social media information) connected to the
   organization and remotely gather information about those resources.
 the_flow_of_information: "![](/img/reconnaissance.png)"
+method_icon: "/img/reconnaissance_icon.png"
 guiding_questions: >
   
   * Depending on the organization's security needs, does it "leak" any sensitive information online (location, staff identities, program locations?)
