@@ -138,15 +138,15 @@ function MethodLayout({ data, location }) {
               <InpageTitle size="large" withDeco>
                 Summary
               </InpageTitle>
-              <p
-                dangerouslySetInnerHTML={{ __html: frontmattermd.summary.html }}
-              ></p>
+              <div
+                dangerouslySetInnerHTML={{ __html: sections.summary }}
+              ></div>
               <InpageTitle size="large" withDeco>
                 Purpose
               </InpageTitle>
-              <p
-                dangerouslySetInnerHTML={{ __html: frontmattermd.purpose.html }}
-              ></p>
+              <div
+                dangerouslySetInnerHTML={{ __html: sections.purpose }}
+              ></div>
             </MethodIntro>
             <MethodMeta>
               <Dl boldDesc>
@@ -239,11 +239,11 @@ function MethodLayout({ data, location }) {
                 {(frontmatter.references || []).map(reference => (
                   <>
                     <p>{referenceNodes[reference].title}:</p>
-                    <p
+                    <div
                       dangerouslySetInnerHTML={{
                         __html: referenceNodes[reference].html,
                       }}
-                    ></p>
+                    ></div>
                   </>
                 ))}
               </SquareUl>
@@ -264,11 +264,11 @@ function MethodLayout({ data, location }) {
                       withHover
                     >
                       <CardHeading variation="primary">{activity}_</CardHeading>
-                      <p
+                      <div
                         dangerouslySetInnerHTML={{
                           __html: activityNodes[activity].excerpt,
                         }}
-                      ></p>
+                      ></div>
                     </ActivityCard>
                   </li>
                 ))}
