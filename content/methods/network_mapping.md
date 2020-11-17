@@ -33,7 +33,7 @@ references:
   - Network Mapping Methods
   - network_access
   - Network Discovery Methods
-  - Nmap Scanning {#nmap-scanning}
+  - Nmap Scanning
 outputs: >2
   
     * The reach of and security protections in place on any wireless networks
