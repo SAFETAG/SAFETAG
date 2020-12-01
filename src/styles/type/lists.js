@@ -62,6 +62,9 @@ export const SquareUl = styled.ul`
       text-indent: -1.8rem;
     }
   }
+  pre {
+    text-indent: 0;
+  }
   table {
     margin: 2rem 0;
     font-size: 0.875rem;
