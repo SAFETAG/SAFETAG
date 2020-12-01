@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
@@ -20,9 +20,7 @@ import {
 } from "../styles/inpage"
 import Heading, { Subheading } from "../styles/type/heading"
 import MoreLink from "../styles/button/more-link"
-import Card, { CardHeader, CardHeading, CardList } from "../styles/card"
-import useAllGuideData from "../helpers/useAllGuideData"
-import { prepareGuide } from "../helpers/generate-guide"
+import Card, { CardHeading, CardList } from "../styles/card"
 
 import LogoSymbolWhite from "../../static/assets/logo/SafetagSymbolWhite.svg"
 
@@ -86,9 +84,6 @@ const HomeCardList = styled(CardList)`
 `
 
 function IndexPage({ data }) {
-  const { fullGuide, fixedSections } = useAllGuideData()
-  const [isFullGuideLoading, setFullGuideLoader] = useState(false)
-
 
   return (
     <GlobalLayout>
@@ -119,18 +114,11 @@ function IndexPage({ data }) {
               box="semi-fluid"
               variation="primary-outline"
               title="Download full guide as PDF"
-              onClick={async () => {
-                setFullGuideLoader(true)
-                await prepareGuide(fullGuide, 'full-guide', fixedSections)
-                setTimeout(() => {
-                  setFullGuideLoader(false)
-                }, 1000)
+              onClick={() => { 
+                window.open('/guides/Safetag_full_guide.pdf');
               }}
-              isSpinning={isFullGuideLoading}
-              spinnerColor="light"
-              disabled={isFullGuideLoading}
             >
-              {isFullGuideLoading ? "Downloading" : "Download Full Guide"}
+              Download Full Guide
             </Button>
             <Button
               size="jumbo"
@@ -161,12 +149,9 @@ function IndexPage({ data }) {
                         to={node.fields.slug}
                         withHover
                       >
-                        <CardHeader>
-                        	<img src={node.childMarkdownRemark.frontmatter.method_icon} />
-                        	<CardHeading variation="primary" withDeco>
-                        	  {node.childMarkdownRemark.frontmatter.title}
-                        	</CardHeading>
-                        </CardHeader>
+                        <CardHeading variation="primary" withDeco>
+                          {node.childMarkdownRemark.frontmatter.title}
+                        </CardHeading>
                         <p>
                           {
                             node.childMarkdownRemark.fields.frontmattermd
@@ -207,7 +192,6 @@ export const query = graphql`
           childMarkdownRemark {
             frontmatter {
               title
-              method_icon
             }
             fields {
               frontmattermd {
