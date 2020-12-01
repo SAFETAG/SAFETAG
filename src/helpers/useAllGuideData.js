@@ -84,6 +84,7 @@ export default function useAllGuideData() {
               childMarkdownRemark {
                 frontmatter {
                   title
+                  method_icon
                   activities
                   references
                 }

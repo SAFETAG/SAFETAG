@@ -391,7 +391,7 @@ export async function prepareGuide(
     fixedSections["section_1.md"],
     "# Safetag Methods",
   ]
-  values(guideVersion).map(({ title, references, sections, activities }) => {
+  values(guideVersion).map(({ title, method_icon, references, sections, activities }) => {
     const selectedActivities = isFull
       ? values(pickBy(activities))
       : values(pickBy(activities, a => a.checked))
@@ -400,6 +400,9 @@ export async function prepareGuide(
     if (selectedActivities.length > 0) {
       // Add method title
       customGuide.push(`## ${title}`)
+      if (method_icon) {
+        customGuide.push(`![](${method_icon})`)
+      }
 
       // Add method sections
       if (sections.summary && sections.summary.rawMarkdownBody) {
