@@ -3,7 +3,7 @@ title: Introduction
 ---
 ![SAFETAG Logo](/img/safetaglogoblue.png)
 
-# A Security Auditing Framework and Evaluation Template for Advocacy Groups
+### A Security Auditing Framework and Evaluation Template for Advocacy Groups
 
 
 
