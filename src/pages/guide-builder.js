@@ -191,7 +191,6 @@ const GuideBuilder = ({ location }) => {
   const [isNoResults, setNoResults] = useState(false)
   const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
   const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
-  const [isFullGuideLoading, setFullGuideLoader] = useState(false)
 
     // eslint-disable-next-line no-unused-vars
     const [query, setQuery] = useQueryParams({});
@@ -411,7 +410,7 @@ const GuideBuilder = ({ location }) => {
                   }}
                   isSpinning={isCustomGuideLoading}
                   spinnerColor="light"
-                  disabled={isCustomGuideLoading || isFullGuideLoading || !activitiesInCustomGuide.length}
+                  disabled={isCustomGuideLoading || !activitiesInCustomGuide.length}
                 >
                   {isCustomGuideLoading
                     ? "Exporting selected..."
@@ -421,21 +420,11 @@ const GuideBuilder = ({ location }) => {
                   size="xlarge"
                   variation="base-plain"
                   title="Download full guide"
-                  onClick={async () => {
-                    setFullGuideLoader(true)
-                    await prepareGuide(fullGuide, 'full-guide', fixedSections)
-                    // requires a small buffer period
-                    setTimeout(() => {
-                      setFullGuideLoader(false)
-                    }, 1000)
+                  onClick={() => { 
+                    window.open('/guides/Safetag_full_guide.pdf');
                   }}
-                  isSpinning={isFullGuideLoading}
-                  spinnerColor="dark"
-                  disabled={isCustomGuideLoading || isFullGuideLoading}
                 >
-                  {isFullGuideLoading
-                    ? "Exporting Full Guide..."
-                    : "Download Full Guide"}
+                  Download Full Guide
                 </Button>
               </ExportButtons>
               {
