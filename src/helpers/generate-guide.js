@@ -509,7 +509,7 @@ export default async function generateGuide(md, guideTitle) {
 
   // Create stream
   const stream = doc.pipe(blobStream())
-
+  const todaysDate = new Date().toISOString().slice(0, 10)
   // Add content
   await render(doc, md)
 
@@ -545,6 +545,6 @@ export default async function generateGuide(md, guideTitle) {
   doc.end()
 
   return await stream.on("finish", function () {
-    saveAs(stream.toBlob("application/pdf"), `Safetag - ${guideTitle}.pdf`)
+    saveAs(stream.toBlob("application/pdf"), `Safetag-${guideTitle}_${todaysDate}.pdf`)
   })
 }
