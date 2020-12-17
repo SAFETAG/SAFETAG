@@ -20,7 +20,7 @@ import {
 } from "../styles/inpage"
 import Heading, { Subheading } from "../styles/type/heading"
 import MoreLink from "../styles/button/more-link"
-import Card, { CardHeading, CardList } from "../styles/card"
+import Card, { CardHeader, CardHeading, CardList } from "../styles/card"
 
 import LogoSymbolWhite from "../../static/assets/logo/SafetagSymbolWhite.svg"
 
@@ -149,9 +149,12 @@ function IndexPage({ data }) {
                         to={node.fields.slug}
                         withHover
                       >
-                        <CardHeading variation="primary" withDeco>
-                          {node.childMarkdownRemark.frontmatter.title}
-                        </CardHeading>
+                        <CardHeader>
+                        	<img src={node.childMarkdownRemark.frontmatter.method_icon} />
+                        	<CardHeading variation="primary" withDeco>
+                        	  {node.childMarkdownRemark.frontmatter.title}
+                        	</CardHeading>
+                        </CardHeader>
                         <p>
                           {
                             node.childMarkdownRemark.fields.frontmattermd
@@ -192,6 +195,7 @@ export const query = graphql`
           childMarkdownRemark {
             frontmatter {
               title
+              method_icon
             }
             fields {
               frontmattermd {
