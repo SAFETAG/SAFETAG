@@ -1,6 +1,12 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// Serve files from `static` in development per https://github.com/gatsbyjs/gatsby/issues/13072
+const express = require('express')
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static("static"))
+}
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
