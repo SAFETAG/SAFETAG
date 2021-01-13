@@ -43,11 +43,14 @@ const ActivityPage = styled(Inpage)`
   ${Dl} {
     dd {
       display: flex;
-      align-items: center;
       img {
         max-width: 1.75rem;
-        margin-left: 1rem;
-        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        order: -1;
+
+      }
+      + dd {
+        margin-top: 0;
       }
     }
   }
