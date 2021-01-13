@@ -43,11 +43,14 @@ const ActivityPage = styled(Inpage)`
   ${Dl} {
     dd {
       display: flex;
-      align-items: center;
       img {
         max-width: 1.75rem;
-        margin-left: 1rem;
-        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        order: -1;
+
+      }
+      + dd {
+        margin-top: 0;
       }
     }
   }
@@ -119,7 +122,7 @@ function ActivityLayout({ data }) {
                 <Dl boldDesc>
                   <dt>Approach</dt>
                   {frontmatter.approaches.map(approach => (
-                    <dd key={approach}>{approach}<img src={`/img/${approach}_icon.png`} /></dd>
+                    <dd key={approach}>{approach}<img src={`/img/${approach.toLowerCase()}_icon.png`} /></dd>
                   ))}
                   <dt>Authors</dt>
                   <dd>{frontmatter.authors}</dd>
