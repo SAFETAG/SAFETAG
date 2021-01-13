@@ -119,7 +119,7 @@ function ActivityLayout({ data }) {
                 <Dl boldDesc>
                   <dt>Approach</dt>
                   {frontmatter.approaches.map(approach => (
-                    <dd key={approach}>{approach}<img src={`/img/${approach}_icon.png`} /></dd>
+                    <dd key={approach}>{approach}<img src={`/img/${approach.toLowerCase()}_icon.png`} /></dd>
                   ))}
                   <dt>Authors</dt>
                   <dd>{frontmatter.authors}</dd>
