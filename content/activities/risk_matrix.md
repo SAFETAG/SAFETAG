@@ -40,10 +40,10 @@ walk_through: >
   * Position the vulnerability on the risk matrix in relation to its likelihood and its impact.
 
 
-  ![Risk vs Difficulty](img/risk_vs_difficulty.svg)
+  ![Risk vs Difficulty](/img/risk_vs_difficulty.svg)
 
 
-  ![Risk vs Likelihood](img/risk_vs_likelihood.svg)
+  ![Risk vs Likelihood](/img/risk_vs_likelihood.svg)
 
 
   **Create a risk matrix**
@@ -56,7 +56,7 @@ walk_through: >
   * Create a list of all services or assets that were identified during the activity that were not already known by the auditor.
 
 
-  ![Impact vs Severity](img/impact_vs_severity.svg)
+  ![Impact vs Severity](/img/impact_vs_severity.svg)
 considerations: >2
   
     * Treat the data and analyses of this step with the utmost security.
