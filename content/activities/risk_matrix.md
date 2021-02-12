@@ -43,7 +43,7 @@ walk_through: >
   ![Risk vs Difficulty](img/risk_vs_difficulty.svg)
 
 
-  ![Risk vs Likelihood](img/matrices/risk_vs_likelihood.svg)
+  ![Risk vs Likelihood](img/risk_vs_likelihood.svg)
 
 
   **Create a risk matrix**
