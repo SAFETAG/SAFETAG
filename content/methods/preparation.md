@@ -1,14 +1,12 @@
 ---
-title: Preparation
 summary: >
-  This component consists of trip preparation activities that are needed to
-  ensure the technical and facilitated components of the audit are able to be
-  conducted effectively and within the on-site time-frame.
+  This component consists of audit preparation activities that are needed to
+  ensure the components of the audit are able to be conducted effectively and
+  within the on-site time-frame.
 the_flow_of_information: "![](/img/preparation.png)"
-method_icon: "/img/preparation_icon.png"
 guiding_questions: >
-  
-  * Does the organization have existing digital security practices or has it attempted to implement them in the past?
+  * Does the organization have existing digital security practices or has it
+  attempted to implement them in the past?
 
   * What agreements will govern the audit?
 
@@ -37,29 +35,45 @@ references:
   - Data Security Standards
   - Sensitive Data & Information Guides
   - Incident Handling Resources
-outputs: >2
-   * An agreement with the organisation to receive the audit including scope, timeframe, confidentiality clauses, operational security measures or minimums, and points of contact.
-   * Any Visas or paperwork needed, plus travel arragements (tickets, hotels) for auditor travel.
-   * A travel kit. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
-   * Systems updated and ready for testing.
-   * A custom password dictionary [^password_dictionary_resources] (if password cracking activities expected).
-   * Risks to host and auditor conducting a SAFETAG audit.
-   * Modifications to the audit plan as necessary.
 operational_security: >
-  
+  * **Prepare Systems:** Update and test your systems, A/V and audit
+  tools[^latest_version_of_tools], prepare storage devices and systems to
+  reflect the required operational security, and ensure you have power supply
+  adapters, cables and relevant adapters, usb drives, external wireless cards
+  and any other equipment needed for testing. 
+
   * **Prepare for Travel:** Check travel logistical needs -- visa, letter of invitation, travel tickets and hotel reservations. Note that some visas can take significant effort and may require the auditor to be without a passport while they are being processed.
 
-  * **Prepare Systems:** Update and test your systems, A/V and audit tools[^latest_version_of_tools], prepare storage devices and systems to reflect the required operational security, and ensure you have power supply adapters, cables and relevant adapters, usb drives, external wireless cards and any other equipment needed for testing. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
-
-  * Carefully consider packing needs and explanations 
+  * Carefully consider packing needs and explanations [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_required: []
+outputs: >-
+  * An agreement with the organisation to receive the audit including scope,
+  timeframe, confidentiality clauses, operational security measures or minimums,
+  and points of contact.
+
+  * Systems updated and ready for testing.
+
+  * A custom password dictionary [^password_dictionary_resources] (if password cracking activities expected).
+
+  * Risks to host and auditor conducting a SAFETAG audit.
+
+  * Modifications to the audit plan as necessary.
+
+
+  In case audit involves travel:
+
+
+  * Any Visas or paperwork needed, plus travel arragements (tickets, hotels) for auditor travel.
+
+  * A travel kit. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_provided: []
-purpose: >
-  A SAFETAG audit has a short time frame. Preparation is vital to ensure that
-  time on the ground is not spent negotiating over the audit scope, updating the
-  auditors systems, searching for missing hardware, or refreshing oneself with
-  the SAFETAG framework. To that end negotiations with the host organization
-  help reveal if the organization has the capacity to undertake the audit and
-  respond to its findings.
+title: Preparation
+method_icon: /img/preparation_icon.png
+purpose: A SAFETAG audit has a short time frame. Preparation is vital to ensure
+  that time on the ground is not spent negotiating over the audit scope,
+  updating the auditor's systems, searching for missing hardware, or refreshing
+  oneself with the SAFETAG framework. Preparatory discussions with the host
+  organization help reveal if the organization has the capacity to undertake the
+  audit and respond to its findings.
 preparation: ""
 ---
