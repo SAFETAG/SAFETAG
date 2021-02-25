@@ -1,13 +1,14 @@
 ### Input
 
+Present (eg. slides or group discussion and activities) on the following content:
 
 #### Why interviews before the fact? ####
 
- * Auditor Preparation - knowing what you’re getting in to, both at the org and context levels
- * Value of regional auditors and local expertise (see also context research section)
+ * Auditor Preparation - knowing what you’re getting in to, both at the level of the organization and the broader local, national, and thematic context
  * Assessing an organization’s capacity and challenges
  * Filling in the blanks and finding policy/practice mismatches
- * Opsec drop out point? Secure communication?
+ * Informs initial open source intelligence (OSINT) information gathering
+ 
 
 #### Outputs ####
 
@@ -23,7 +24,7 @@ The interviews should also uncover some specific initial targets for the remote 
 
 **Interview and Capacity Assessment Questions**
 
-We include a series of interview questions to use as a guide, derived from the engine room's TechScape project (in the SAFETAG interviews methodology), and below are further references on the subject.
+We include a series of interview questions to use as a guide, derived from *the engine room*'s TechScape project (in the SAFETAG interviews methodology), and below are further references on the subject.
 
 !INCLUDE "../../references/background_interviews.md"
 

@@ -1,5 +1,9 @@
 ### Input
 
+Present (eg. slides or group discussion and activities) on the following content:
+
+#### Ethics
+
 Many of these methods, while all using open data, can be incredibly damaging if used maliciously. Review the SAFETAG Code of Conduct.
 
 #### Information Gathering Methodology
@@ -22,14 +26,11 @@ Many of these methods, while all using open data, can be incredibly damaging if 
 
 #### Automated OSINT with  recon-ng
 
-intro to tool and discussion of other tool options
+Introduce the tool and discuss other tool options
 
-running on a server is ideal; fire up your vpns?
-https://layer8.org/linux-vpn-instructions ?
+recon-ng tutorial overview (based on SAFETAG activity)
 
-recon-ng tutorial overview
-
-Putting context research to work:
+#### Putting context research to work:
 
 * Adding all domains found
 * Adding all hosts found
@@ -42,8 +43,6 @@ Putting context research to work:
 
 
 #### Advanced Concepts
-
-For audit sections we will do the actual tool training and  conduct mini-follow up on the larger safetag audit themes in relationship to that audit.
 
 - Operational Security
 - Practices for results capture

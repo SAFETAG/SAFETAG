@@ -1,22 +1,24 @@
 ### Input
 
-See the Curricula Appendix A or the Reference section the full SAFETAG Guide for Context Research Sources
+Present (eg. slides or group discussion and activities) on the following content:
+
+**Resources for context research** 
+See the Reference section of the full SAFETAG Guide for Context Research Sources.
 
 **Regional context research**
 
  * Identify additional adversaries not identified in interviews
  * Identify capacity and willingness of potential adversaries to act against the organization.
- * explore reports
+ * Explore reports
  * News and recent events
 
 **Technical context research**
 
- * explore reports based on interview, and refresh with later data from physical assessment devices
+ * Explore reports based on interview, and refresh with later data from physical assessment devices
 
 **Legal context research**
 
- * explore reports/data
- * ministry of truth
+ * Explore reports/data
  * Security tool and encryption legality
  * Transparency reports
 
