@@ -1,3 +1,3 @@
 ### Materials Needed
 
-* post-it notes and sharpies
+* Post-it notes (Sticky Notes) and markers
