@@ -1,7 +1,7 @@
 
 ### Synthesis
 
-Open discussion	- if there is not much energy or conversation, consider introducing some topics for discussion such as:
+Open discussion	- or consider introducing some topics for discussion such as:
 
   * Organizational Change experiences of the participants - both failures and successes
   * Risks inherent in performing digital security work for at-risk organizations, pros and cons
