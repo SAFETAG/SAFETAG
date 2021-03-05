@@ -24,11 +24,13 @@ Remind participants to describe processes *As-is, not as you'd-like-it!*
 
 #### 2) Threat Brainstorming: The Pre-Mortem
 
-The Pre-Mortem is an exercise used to simplify the complex mapping tasks that the participants have just taken part in. With the process maps created the participants are to come up with the reasons that these process' could be disrupted and the consequences of those disruptions.
+The Pre-Mortem is an exercise used to simplify the complex mapping tasks that the participants have just taken part in. With the process maps created the participants are to come up with the reasons that these processes could be disrupted and the consequences of those disruptions. 
 
->"[This] Exercise is to ask planner to imagine that it is months into the future and that their plan has been carried out. And it has failed. That is all they know; they have to explain why they think it has failed. they have to look for the causes that would make them say, "Of course, it wasn't going to work, because..." The idea is that they are breaking the emotional attachment to the plan's success by taking on the challenge of showing their creativity and competence by identifying likely sources of breakdown." - Klein
+>"[This] Exercise is to ask planners to imagine that it is months into the future and that their plan has been carried out. And it has failed. That is all they know; they have to explain why they think it has failed. they have to look for the causes that would make them say, "Of course, it wasn't going to work, because..." The idea is that they are breaking the emotional attachment to the plan's success by taking on the challenge of showing their creativity and competence by identifying likely sources of breakdown." - Klein
 
-*NOTE:* There are other threat brainstorming activities besides pre-mortem that an auditor can use. We chose the pre-mortem activity as the basic activity taught for SAFETAG because it assumes that the participants have a realistic understanding of the threats that they face. In the future we will include activities for groups who feel un-realistically safe (Action Movie - Shostack ) or un-realistically at risk.
+Pre-Mortems are often used to analyze individual projects. While this may be appropriate for the organization under audit, it may be more useful for the auditor to ask organizational participants to consider a scenario of failure at a higher level of the organization's existence and mission. 
+
+*NOTE:* There are other threat brainstorming activities besides pre-mortem that an auditor can use. We chose the pre-mortem activity as the basic activity taught for SAFETAG because it assumes that the participants have a realistic understanding of the threats that they face.
 
 Note that the narrative nature of this brainstorm often provides a lot of information that is not relevant to the current activity, but that the facilitator will want for future activities.  This tends to include items such as assets, adversaries, risks, and consequences. There are many ways of capturing this data:
 
@@ -52,11 +54,11 @@ Note that the narrative nature of this brainstorm often provides a lot of inform
   * If an asset/process becomes unreliable.
     * Consistency is when assets behave and work as expected, all the time.
 
-##### B. Identifying the consequence of threat on identified process/action
+##### B. Identifying the consequence of threats on identified process/action
 
-In this exercise the trainee leads the participants in an overview of the consequences of the identified during the activity and then a **rapid** ranking of the importance of process' based upon the consequences if they fail. 
+In this exercise the trainee leads the participants in an overview of the consequences of the identified threats during the activity and then a **rapid** ranking of the importance of processes based upon the consequences if they fail. 
 
-This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain threats occur to the process' and actions identified earlier. Identify the warning's, notices, status indicators, training, and policies that already exist to address these risks.
+This exercise has the trainee lead the participants on a brainstorming of hypothetical consequences when certain threats occur to the processes and actions identified earlier. Identify the warnings, notices, status indicators, training, and policies that already exist to address these risks.
 
 Current approaches to addressing these risks are used to anchor the recommendations in the final report within existing organizational practices.
 
@@ -74,11 +76,12 @@ As consequences are placed on the wall, the trainee can use other already ranked
 
 Take photos of the severity scale to record it for later.
 
-#### D. Estimating Likelyhood of Risks
+#### D. Estimating Likelihood of Risks
 
 The goal of this exercise is to have the trainee lead the host organization in estimating the likelihood of the risk occurring. The auditor has the participants prioritize the risks on a scale of their likelihood.  On one side "certain" attacks that the participants know will happen. On the other side "limited" events that the participants believe are less likely to occur than to not occur.
 
 As risks are placed on the wall, the trainee can use other already ranked risks to help participants identify the right place.
+
   * "Is a robbery more or less likely than a fire?"
 
 Take photos of the likelihood scale to record it for later.

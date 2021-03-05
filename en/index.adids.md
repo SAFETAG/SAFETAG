@@ -108,9 +108,21 @@ subtitle: 'Curricula'
 
 \newpage
 
+<!-- Network Discovery -->
+
+!INCLUDE "adids/network_discovery.adids.md"
+
+\newpage
+
 <!-- Network Mapping -->
 
 !INCLUDE "adids/network_mapping.adids.md"
+
+\newpage
+
+<!-- Network Access -->
+
+!INCLUDE "adids/network_access.adids.md"
 
 \newpage
 
