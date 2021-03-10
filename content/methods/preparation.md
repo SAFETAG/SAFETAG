@@ -42,7 +42,7 @@ operational_security: >
   adapters, cables and relevant adapters, usb drives, external wireless cards
   and any other equipment needed for testing. 
 
-  * **Prepare for Travel:** Check travel logistical needs -- visa, letter of invitation, travel tickets and hotel reservations. Note that some visas can take significant effort and may require the auditor to be without a passport while they are being processed.
+  * **Prepare for Travel:** Check travel logistics if needed -- visa, letter of invitation, travel tickets and hotel reservations. Note that some visas can take significant effort and may require the auditor to be without a passport while they are being processed.
 
   * Carefully consider packing needs and explanations [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_required: []
