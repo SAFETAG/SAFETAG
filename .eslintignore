@@ -1,1 +1,3 @@
-/static/
+/static/**
+/static/presentation/reveal.js/plugin/search/*.js
+/static/presentation/reveal.js/dist/*.js
