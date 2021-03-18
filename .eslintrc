@@ -25,5 +25,4 @@
   "rules": {
     "inclusive-language/use-inclusive-words": "error"
   }
-   "ignorePatterns": [ "static/*" ] 
 }
