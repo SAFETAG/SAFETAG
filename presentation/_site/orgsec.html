@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Organizational Security and the SAFETAG framework</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Jon Camfield">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+<style>
+
+h1, h2, h3, h4 {padding: .25em !important;}
+h2 {text-align: left;}
+h3 {text-align: right;}
+p {font-size: 1.25em !important; background-color: rgba(072,065,058,.8);}
+
+.bluegreen h1, .bluegreen h2 {background-color: rgba(000,092,171,.8); }
+.bluegreen h3 {background-color: rgba(100,128,0,.8);}
+
+
+.orange h1, .orange h2 {background-color: rgba(241,093,034,.8); }
+.orange h3 {background-color: rgba(100,128,0,.8);}
+
+.green h1, .green h2 {background-color: rgba(108,179,063,.8); }
+.green h3 {background-color: rgba(108,179,063,.8);}
+
+.blue h1, .blue h2 {background-color: rgba(000,092,171,.8); }
+.blue {background-color: rgba(000,092,171,.8);}
+
+
+</style>
+		<!--[if lt IE 9]>
+		<script src="../reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+				<section id="orgsec">
+
+					<section  data-state="bluegreen" data-background="../images/8689478611_c4a4e96f59_k_flickr-chadcooperphotos.jpg">
+						<h2>Organizational Security</h2>
+						<p>Addressing Organizational Risk</p>
+						<p>Jon Camfield, Director, Global Technology Programs, Internews<br />jcamfield@internews.org</p>
+
+
+						<aside class="notes">
+							I'm Jon, I direct our digital security portfolio, working globally across technology development, training, and organizational risk.
+
+						</aside>
+					</section>
+
+
+					<section  data-state="blue" data-background="../images/weak-chain.jpg">
+						<h2>What is Organizational Security?</h2>
+						<p>Understanding and reacting to risks at an intentional, organizational level</p>
+						<aside class="notes">It is not individuals independently managing their own risk, nor is it only reactive, after an event.
+						</aside>
+					</section>
+
+
+					<section  data-state="orange" data-background="../images/unsplash_cc0_cristina-gottardi-192989.resized.resized.jpg">
+						<h2>Organizational Security is Dynamic - not just a checklist</h2>
+						<p class="fragment">Don't open email attachments</p>
+						<p class="fragment">Minimize travel to high-risk locations</p>
+						<p class="fragment">Avoid protests, political unrest</p>
+						<p class="fragment">Minimize social media engagement</p>
+
+						<aside class="notes">OrgSec is also when I advise most orgs we end up looking at a checklist like (FRAGS):
+							... Obviously this doesn't easily transfer to journalists, where this list of don'ts is basically their job description.
+						</aside>
+					</section>
+
+					<section  data-state="orange" data-background="../images/rusty_lock-wallpapers_wallpaperswide_ccU.jpg">
+						<h2>But -- Why ?</h2>
+						<p>Security is complicated and costly - and we've made it this far...</p>
+						<aside class="notes">Security success is very quiet - but so are many security failures if you're not looking.
+						</aside>
+					</section>
+
+					<section  data-state="orange" data-background="../images/Doors_cc-by-nc_Flickr-AndreaKirkby.jpg">
+						<h2>But -- Why ?</h2>
+						<p class="fragment">Keep a story private until it's ready</p>
+						<p class="fragment">Keep a story online once it's out</p>
+						<p class="fragment">Protect staff from repercussions</p>
+						<p class="fragment">Protect sources</p>
+						<p class="fragment">Protect readers and your reputation</p>
+						<aside class="notes">						</aside>
+					</section>
+
+
+					<section  data-state="orange" data-background="../images/bolt_digital_art_padlock_locks_locked_latch_1920x1080_70318.jpg">
+						<h2>Where do we start?</h2>
+						<p class="fragment">Look at real threats</p>
+						<p class="fragment">Address Organizational Capacity</p>
+						<p class="fragment">Be strategic and focused</p>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section  data-state="orange" data-background="../images/Italy-Locks_ccBY_joncamfield.jpg">
+						<h2>Understanding Organizational Risk</h2>
+						<p class="fragment">Identify</p>
+						<p class="fragment">Assess</p>
+						<p class="fragment">Respond</p>
+						<aside class="notes">
+						</aside>
+					</section>
+
+				</section>
+
+<section id="safetag">
+
+				<section  data-state="green" data-background="../images/RustyLock_ccU_wallcoo-ThroughMyLens.jpg">
+					<h1>SAFETAG</h1>
+					<h3 style="background-color: rgba(000,000,000,.5)"">The Security Auditing Framework and Evaluation Template for Advocacy Groups</h3>
+					<aside class="notes">
+						SAFETAG is an open source organizational risk assessment and audit framework
+					</aside>
+				</section>
+
+<!--
+					<section  data-state="bluegreen" data-background="../images/unsplash_cc0_cristina-gottardi-192989.resized.resized.jpg">
+						<h2>Some History</h2>
+						<p>How did we get to today?</p>
+
+
+						<aside class="notes">
+							Digital Security training has classically targeted the individual human rights defender or journalist
+						</aside>
+					</section>
+
+					<section data-state="blue" data-background="../images/unsplash_cc0_ruben-bagues-135824.resized.jpg">
+						<h2>Train organizations — <nobr>not just individuals</nobr></h2>
+						<p></p>
+
+						<aside class="notes">
+							To have impact with organizations, we must address them as a whole.
+						</aside>
+					</section>
+
+					<section data-state="blue" data-background="../images/unsplash_cc0_giulio-magnifico-78819.resized.jpg">
+						<h2>But, organizations are different.</h2>
+						<p></p>
+						<aside class="notes">
+						This means looking at organizational systems, workflows, and change management, as well as capacities and priorities
+						</aside>
+-->
+
+					<section data-state="blue" data-background="../images/weakest-linkChain.jpg">
+						<h2>"Pen-testing" is not the way forward</h2>
+						<p></p>
+						<aside class="notes">
+							What works in the corporate world doesn't scale to the NGO world. Aggressive and exhausting hacking of small NGOs does not support effective long-term changes
+						</aside>
+					</section>
+
+					<section  data-state="green" data-background="../images/Door-and-padlock-BW_deviantart_ccU_picture-frame.jpg">
+						<h2>So what is SAFETAG?</h2>
+						<p></p>
+						<aside class="notes">
+							SAFETAG is an organizational security auditing and assessment tool designed for the NGO community.
+							It currently exists as an auditor guide with 12 thematic areas and over 50 specific exercises tailored for small organizations with limited technical resources, with a strong focus on agency-building and organizational change dynamics throughout the process.
+
+							It has a corresponding curricula to train new auditors, and is available in English and Spanish.
+
+							Internews has used and adapted SAFETAG over its 3+ year life in dozens of audits ourselves, and it has been adopted in various forms by the ISC Project, Frontline Defenders, NDI, and many independent auditors as well.
+						</aside>
+					</section>
+
+					<section  data-state="green" data-background="../images/Lock-Screen-Wallpapers_viewallpaper_ccU_Mike-Rush.jpg">
+						<h2>How does SAFETAG work?</h2>
+						<p class="fragment">Capacity-focused</p>
+						<p class="fragment">Agency-building</p>
+						<p class="fragment">Organizational priority-driven</p>
+						<aside class="notes">
+							Fragments: Capacity, agency, priority
+							... this adds up to a pragmatic but determined, org-driven approach
+						</aside>
+					</section>
+
+					<section data-state="green" data-background="../images/weak-chain.jpg">
+						<h2>Understanding Capacity and Building Agency</h2>
+						<p></p>
+						<aside class="notes">
+						SAFETAG differs from other organizational risk assessment practices by understanding and focusing on each organization's ability to change and their current capacity to adopt more secure practices.
+						</aside>
+					</section>
+
+					<section data-state="green" data-background="../images/sneak-attack_gizmodo_ccU_Chris-Allen-CKAllen.jpg">
+						<h2>Focus on real threats and priorities</h2>
+						<p>Fiercely pragmatic security: Risk Reduction Plans</p>
+						<aside class="notes">
+						Intensive mapping of organizational process and priority
+						Understand the real threats
+						Find the first steps at the intersection
+						</aside>
+					</section>
+
+				</section>
+
+				<section id="next">
+					<section  data-state="orange" data-background="../images/unsplash_cc0_giulio-magnifico-78819.resized.jpg">
+						<h2>What's next?</h2>
+						<p></p>
+						<aside class="notes">
+							We are at an important point in SAFETAG's life; where we are working with this broader community of organizational security practitioners to rebuild SAFETAG in a much more modular structure, with the core "minimal viable audit" as the unifying theme and approach -- with partners building customized "playlists" and creating new modules to be suit the communities they work with.
+						</aside>
+					</section>
+
+					<section data-state="orange" data-background="../images/Lock-It-Up_flickr_cc-BY_xlibber.jpg">
+						<h2>Community-led rebuilding</h2>
+						<p class="fragment">Modular and adaptable to different organizational structures and needs</p>
+						<p class="fragment">Custom "playlists" to match the needs of organizations and the skills of auditors</p>
+						<aside class="notes">
+						metadata, playlists, custom content for different org structures, sizes, threats, etc.
+						</aside>
+					</section>
+
+					<section data-state="orange" data-background="../images/Doors_cc-by-nc_Flickr-AndreaKirkby.jpg">
+						<h2>Join us!</h2>
+						<p>https://github.com/SAFETAG</p>
+						<p>https://SAFETAG.org</p>
+						<aside class="notes">
+						Questions to the crowd:
+						* What would make this useful for you?
+						* When working with orgs, what are the most impactful "variables"
+						* For those of you using SAFETAG, what can it do better?
+						</aside>
+					</section>
+				</section>
+
+
+
+			</div>
+
+		</div>
+
+				<script src="../reveal.js/lib/js/head.min.js"></script>
+				<script src="../reveal.js/js/reveal.js"></script>
+
+				<script>
+
+					// Full list of configuration options available at:
+					// https://github.com/hakimel/reveal.js#configuration
+					Reveal.initialize({
+						controls: true,
+						progress: true,
+						history: true,
+						center: true,
+						touch: true,
+
+						transition: 'slide', // none/fade/slide/convex/concave/zoom
+			  			autoSlide: 8000,
+
+						// Optional reveal.js plugins
+						dependencies: [
+							{ src: '../reveal.js/plugin/notes/notes.js', async: true }
+						]
+					});
+
+				</script>
+
+			</body>
+		</html>
