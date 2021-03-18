@@ -25,7 +25,7 @@ activities:
   - Technical Context Research
   -  Audit Timeline and Planning
 references:
-  - preparation
+  - Preparation
   - Facilitation Preparation
   - Creating Agreements and Rules of Engagement
   - Password Dictionary Creation
