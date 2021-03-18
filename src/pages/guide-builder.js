@@ -413,8 +413,8 @@ const GuideBuilder = ({ location }) => {
                   disabled={isCustomGuideLoading || !activitiesInCustomGuide.length}
                 >
                   {isCustomGuideLoading
-                    ? "Exporting selected..."
-                    : "Export selected"}
+                    ? "Generating PDF..."
+                    : "Generate PDF Guide"}
                 </Button>
                 <Button
                   size="xlarge"
