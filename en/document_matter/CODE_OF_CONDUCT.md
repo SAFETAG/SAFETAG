@@ -6,7 +6,7 @@ What we do: The community collaborates actively to share knowledge, build capaci
 
 ### Community Standards
 
-The SAFETAG Community of Practice (SCoP) exists in both public and private groups, currently found including a public Slack channel, the Internet Freedom Festival Mattermost, and the orgsec.community listserv.
+The SAFETAG Community of Practice (SCoP) exists in both public and private groups, currently including a public Slack channel, the Internet Freedom Festival Mattermost, and the orgsec.community listserv.
 
 * Community members are encouraged to be active - positively contributing / leading discussions on community channels, creating, curating, or peer-reviewing content or contributing to the issue queue. 
 * Some SCoP members may have privacy concerns, and should join the community using a pseudonym they are comfortable with engaging online in both public and private spaces with.
