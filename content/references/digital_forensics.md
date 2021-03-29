@@ -3,6 +3,8 @@ title: Digital Forensics
 ---
 * *Guide* [Guide to Quick Forensics](https://guides.securitywithoutborders.org/guide-to-quick-forensics/) Security Without Borders
 
+* *Guide* [Investigating Infrastructure Links with Passive DNS and Whois Data](https://citizenevidence.org/2020/06/26/investigating-infrastructure-links-with-passive-dns-and-whois-data/) Citizen Evidence Lab by Amnesty International
+
 * *Guide* [ENISA Electronic evidence - a basic guide for First Responders](https://www.enisa.europa.eu/publications/electronic-evidence-a-basic-guide-for-first-responders)
 
 * *Guide* Mahesh Kolhe et al., [Live Vs Dead Computer Forensic Image Acquisition](http://ijcsit.com/docs/Volume%208/vol8issue3/ijcsit2017080331.pdf)
