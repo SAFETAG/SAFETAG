@@ -106,7 +106,7 @@ walk_through: >-
 
   * **Definition and Guiding Questions**: Encryption and/or secure communications and anonymity is limited or banned via regulation. Are users prohibited from using encryption software to protect their communications? Are there laws restricting the use of encryption and other security tools, or requiring that the government be given access to encryption keys and algorithms?
 
-  * **Useful Data Sources**: <https://www.gp-digital.org/world-map-of-encryption/>, <http://www.cryptolaw.org> <https://github.com/digitalfreedom>, <http://www.nationaldefensemagazine.org/archive/2013/August/pages/UseCautionWhenTravelingWithEncryptionSoftware.aspx> <http://www.infolawgroup.com/> , <https://mlat.info/> , <http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx>
+  * **Useful Data Sources**: <https://www.gp-digital.org/world-map-of-encryption/>, <http://www.cryptolaw.org> <https://github.com/digitalfreedom>, <http://www.infolawgroup.com/> , <https://mlat.info/> , <http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx>
 
 
   *Identity Tracking*
