@@ -117,7 +117,7 @@ walk_through: >-
   * **Useful Data Sources**:  <https://www.gp-digital.org/world-map-of-encryption/>, <http://www.cryptolaw.org> <https://github.com/digitalfreedom>, <http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx>
 
 
-  * *Requests for User Information*
+  *Requests for User Information*
 
     * **Definition and Guiding Questions**: The government requests user data from internet intermediaries like ISP’s, social media, and online services.
     * **Useful Data Sources**: Recent transparency reports from top and/or locally relevant service providers; see the following for listings: <https://www.accessnow.org/transparency-reporting-index/> , <http://thememoryhole2.org/blog/transparency-reports>
@@ -190,7 +190,7 @@ walk_through: >-
 
   * **Definition and Guiding Questions**: Likelihood of confiscation of user devices when interacting with security forces. E.g. When crossing borders, at internal checkpoints, or during detainment or arrest. See themes for "targeted individuals"
 
-  * **Useful Data Sources**: See physical-security risk register and for information around border crossings.
+  * **Useful Data Sources**: See physical-security risk register for information around border crossings.
 
 
   *Targeted Raids*
