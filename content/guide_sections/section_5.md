@@ -94,9 +94,9 @@ Usually when working with an external funder an engagement report, free of sensi
 
 [^OSF_digital_media]:[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
 
-[^press_freedom_index]:[Press Freedom Index (RSF)](https://en.rsf.org/press-freedom-index.html)
+[^press_freedom_index]:[Press Freedom Index (RSF)](https://rsf.org/en/ranking)
 
-[^press_freedom_index_methodology]:[Press Freedom Index Methodology (RSF)](http://rsf.org/index2014/data/2014_wpfi_methodology.pdf)
+[^press_freedom_index_methodology]:[Press Freedom Index Methodology (RSF)](https://rsf.org/en/detailed-methodology)
 
 
 <!-- Human Rights and Governance-->
