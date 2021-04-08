@@ -151,7 +151,9 @@ function MethodLayout({ data, location }) {
             <MethodMeta>
               <Dl boldDesc>
                 <dt>Author</dt>
-                <dd>{frontmatter.authors}</dd>
+                {frontmatter.authors.map(authr => (
+                  <dd key={authr}>{authr}</dd>
+                ))}
                 {frontmatter.info_provided !== "" && (
                   <>
                     <dt>Info Provided</dt>

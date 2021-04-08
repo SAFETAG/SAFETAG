@@ -125,7 +125,9 @@ function ActivityLayout({ data }) {
                     <dd key={approach}>{approach}<img src={`/img/${approach.toLowerCase()}_icon.png`} /></dd>
                   ))}
                   <dt>Authors</dt>
-                  <dd>{frontmatter.authors}</dd>
+                  {frontmatter.authors.map(authr => (
+                    <dd key={authr}>{authr}</dd>
+                  ))}
                   <dt>Org Size under</dt>
                   <dd>{frontmatter.organization_size_under}</dd>
                   <dt>Remote options</dt>
