@@ -53,7 +53,7 @@ walk_through: >+
 
 
   To capture outgoing (SMTP) messages, the process is nearly identical to the
-  traffic monitoring exercise.
+  [traffic monitoring exercise](https://guide.safetag.org/activities/monitor_open_wireless_traffic).
 
 recommendations: >+
 

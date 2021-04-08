@@ -53,8 +53,8 @@ materials_needed: >
 considerations: >
 
   * If you have not analyzed malware before, do not start with real, live, and
-  potentially targeted malware. See the References section from the Advanced
-  Threat method for opportunities to build your skills without putting the
+  potentially targeted malware. See the References section from the [Advanced
+  Threats method](https://guide.safetag.org/methods/advanced_threat) for opportunities to build your skills without putting the
   organization or yourself at additional risk.
 
   * Any analysis must be done with extreme caution (using a dedicated system,

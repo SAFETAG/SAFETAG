@@ -149,7 +149,7 @@ walk_through: >-
   * **Step 4 (Optional): Analysis**
 
 
-  *See the Incident Response activity for additional details.*
+  *See the [Incident Response Activity](https://guide.safetag.org/activities/incident_response) for additional details.*
 
 
   You will need at least one hour to prepare and carry the advanced investigation. this step is optional in case you have time and you think you still have doubts about the file and you need a more advanced result. In this step, you will analyze the suspicious file using Cuckoo Sandbox, an automated malware analysis system. In case you decided to go with this option, you will need an installed Linux on your audit machine you can use [this Kali guide](https://docs.kali.org/installation/kali-linux-hard-disk-install) to install Kali Linux.
@@ -227,7 +227,7 @@ walk_through: >-
   * Check if any suspicious applications have been installed from outside the official app stores, and on android, if this has been enabled.
 
 
-  *See the User Device Assessment and Mobile Device Assessment activities for more in-depth device analysis.*
+  *See the [Device Checklist](https://guide.safetag.org/activities/device_checklist/) and [Mobile Device Assessment](https://guide.safetag.org/activities/mobile_device_survey/) activities for more in-depth device analysis.*
 
 
   - - -
@@ -236,7 +236,7 @@ walk_through: >-
   ###### Variant: Unusual Network Traffic
 
 
-  Advanced threats may be identified during the network scanning and traffic analysis. See the **Network Scanning and Traffic Analysis** activities.
+  Advanced threats may be identified during the network scanning and traffic analysis. See the [Network Scanning](https://guide.safetag.org/activities/network_scanning) and [Traffic Analysis](https://guide.safetag.org/activities/traffic_analysis) activities.
 
 
   - - -

@@ -58,7 +58,7 @@ purpose: >
   processes when the auditor is gone.
 preparation: >
 
-  * Threat Identification works best grounded against mapped out organizational processes or a data/asset map. See the Process Mapping and Data Assessment methods for exercises to generate these.
+  * Threat Identification works best grounded against mapped out organizational processes or a data/asset map. See the [Process Mapping](https://guide.safetag.org/methods/risk_modeling) and [Data Assessment](https://guide.safetag.org/methods/data_assessment) Methods for exercises to generate these.
 
   * Threat Identification discussions, where you facilitate group activities where staff identify possible adversaries and the threats that they have/can leverage against the group, can trigger strong emotions and be draining for the participants. Prepare accordingly to schedule this with downtime (i.e. not right before or after another intense exercise) and to have a plan to address the psychosocial needs of individuals.
 

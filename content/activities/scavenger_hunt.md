@@ -39,7 +39,7 @@ overview: >
   contact may declare some areas "off limits"
 materials_needed: |
 
-  * (Optional) Mobile phone cameras (see operational security considerations)
+  * (Optional) Mobile phone cameras (see operational security considerations below)
   * Notepad + Pen for each staff member
   * Printout of example security risks
   * Encrypted file sharing platform (Signal)
@@ -145,7 +145,7 @@ walk_through: >
   * Reporting:
       * The facilitator should combine the notes and communicate them securely to the Auditor, and securely destroy the notes.
 recommendations: |
-  (See "Guided Tour") 
+  See the [Guided Tour Activity](https://guide.safetag.org/activities/guided_tour)
 organization_size_under: 50
 time_required_minutes: 90
 ---

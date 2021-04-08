@@ -23,7 +23,7 @@ walk_through: >+
   organization and the outcomes of the audit.
 
 
-  See the Appendix for a DRAFT Engagement and Confidentiality Agreement. See
+  See the [Appendix](https://LINKBEFORELAUNCH) for a DRAFT Engagement and Confidentiality Agreement. See
   also the in-progress [SAFETAG Agreement
   Generator](https://github.com/SAFETAG/safetag_agreement_generator) for  more
   advanced and flexible "plain language" agreement text and guidance on

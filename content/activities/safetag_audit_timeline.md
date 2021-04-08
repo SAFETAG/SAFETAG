@@ -108,13 +108,13 @@ walk_through: >
   #### Clean up
 
 
-  If you have been using paper or post-it notes during the audit, be sure you securely destroy them (by shredding, burning, or tearing into small pieces) before you leave the site on the last day.  By the same token, any digital reports should be stored on secure media and securely deleted from all other locations.  See the [operational security] section and per-item notes for further details. Clean off any whiteboards used, and check any camera used to remove sensitive photos.
+  If you have been using paper or post-it notes during the audit, be sure you securely destroy them (by shredding, burning, or tearing into small pieces) before you leave the site on the last day.  By the same token, any digital reports should be stored on secure media and securely deleted from all other locations.  See the [operational security section](https://LINKBEFORELAUNCH) and per-item notes for further details. Clean off any whiteboards used, and check any camera used to remove sensitive photos.
 
 
   #### Follow up care and Reporting
 
 
-  See the reporting sections for specific details here, but a series of check-ins with the organization to support their ability to respond to any incidents, understand further topics from the debrief, and to help provide them a timeline to expect the final report is valuable in maintaining their engagement post-audit to support the needed changes.
+  See the reporting, support, and follow-up Methods for specific details here, but a series of check-ins with the organization to support their ability to respond to any incidents, understand further topics from the debrief, and to help provide them a timeline to expect the final report is valuable in maintaining their engagement post-audit to support the needed changes.
 considerations: ""
 title: Audit Timeline and Planning
 skills_required: []

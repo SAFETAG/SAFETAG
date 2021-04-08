@@ -41,7 +41,7 @@ materials_needed: >
 
   * For the (most common) WPA password-based attacks, an already-prepared
   dictionary of words to use to attack the password will be required. See the
-  Appendix on Audit Preparation for guidance on dictionary preparation.
+  [Appendix on Audit Preparation](https://LINKBEFORELAUNCH) for guidance on dictionary preparation.
 considerations: ''
 walk_through: >
 
@@ -59,7 +59,7 @@ walk_through: >
   or thousands of words (in English and/or other relevant languages).
 
 
-  See the Password Strength exercise for details on password dictionary buidling
+  See the [Password Strength Activity](https://guide.safetag.org/activities/password_strength) for details on password dictionary building
   and usage.
 
 

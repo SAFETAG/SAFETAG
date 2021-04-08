@@ -83,7 +83,7 @@ recommendations: >
   functionality.
 
 
-  See also Monitoring Open Wireless Traffic recommendations and Network Access
+  See also [Monitoring Open Wireless Traffic](https://guide.safetag.org/activities/monitor_open_wireless_traffic) recommendations and [Network Access](https://guide.safetag.org/activities/network_access)
   security recommendations.
 organization_size_under: 500
 time_required_minutes: 30

@@ -105,8 +105,8 @@ walk_through: >
   content and reinstall the system
 
   - if the forensic capture of the whole hard disk would take too long, and an
-  investigation is needed, the hard disk can be replaced (See the Advanced
-  Threats Method for further guidance)
+  investigation is needed, the hard disk can be replaced (See the [Advanced
+  Threats Method](https://guide.safetag.org/methods/advanced_threat) for further guidance)
 
   - if reinstalling the system is not possible, the device should be replaced
 
