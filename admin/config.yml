@@ -236,12 +236,6 @@ collections:
           required: true,
         }
       - {
-          label: "The Flow of Information",
-          name: "the_flow_of_information",
-          widget: "markdown",
-          required: true,
-        }
-      - {
           label: "Guiding Questions",
           name: "guiding_questions",
           widget: "markdown",
