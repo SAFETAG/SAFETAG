@@ -413,13 +413,13 @@ export async function prepareGuide(
         customGuide.push(`### Purpose`)
         customGuide.push(sections.purpose.rawMarkdownBody)
       }
-      if (
+      {/* if (
         sections.the_flow_of_information &&
         sections.the_flow_of_information.rawMarkdownBody
       ) {
         customGuide.push(`### The Flow of Information`)
         customGuide.push(sections.the_flow_of_information.rawMarkdownBody)
-      }
+      } */}
       if (
         sections.guiding_questions &&
         sections.guiding_questions.rawMarkdownBody

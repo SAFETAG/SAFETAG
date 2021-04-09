@@ -154,14 +154,14 @@ function MethodLayout({ data, location }) {
                 {frontmatter.authors.map(authr => (
                   <dd key={authr}>{authr}</dd>
                 ))}
-                {frontmatter.info_provided !== "" && (
+                {/* {frontmatter.info_provided !== "" && (
                   <>
                     <dt>Info Provided</dt>
                     <dd>{frontmatter.info_provided}</dd>
                     <dt>Info Required</dt>
                     <dd>{frontmatter.required}</dd>
                   </>
-                )}
+                )}*/}
               </Dl>
             </MethodMeta>
           </InpageInnerColumns>
@@ -169,7 +169,7 @@ function MethodLayout({ data, location }) {
         <InpageBody>
           <InpageInnerColumns columnLayout="2:1">
             <section>
-              {sections.the_flow_of_information && (
+              {/*{sections.the_flow_of_information && (
                 <>
                   <InpageTitle size="large" withDeco>
                     The Flow of Information
@@ -180,7 +180,7 @@ function MethodLayout({ data, location }) {
                     }}
                   ></SquareUl>
                 </>
-              )}
+                  )}*/}
               <InpageTitle size="large" withDeco>
                 Guiding Questions
               </InpageTitle>
@@ -310,9 +310,6 @@ export const query = graphql`
               html
             }
             purpose {
-              html
-            }
-            the_flow_of_information {
               html
             }
             guiding_questions {

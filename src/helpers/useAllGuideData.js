@@ -97,9 +97,6 @@ export default function useAllGuideData() {
                     purpose {
                       rawMarkdownBody
                     }
-                    the_flow_of_information {
-                      rawMarkdownBody
-                    }
                     guiding_questions {
                       rawMarkdownBody
                     }

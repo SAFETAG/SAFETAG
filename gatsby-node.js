@@ -22,7 +22,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       remote_options: [String]
       authors: [String]
       organization_size_under: Int
-      the_flow_of_information: String
       operational_security: String
       skills_required: [String]
       time_required_minutes: String
