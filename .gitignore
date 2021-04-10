@@ -68,6 +68,3 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 .vscode
-
-#CNAME for Dev
-static/CNAME
