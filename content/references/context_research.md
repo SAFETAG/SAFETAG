@@ -76,7 +76,7 @@ title: Other Context Analysis Methodologies
 **What cyber-security practices is the government using?**
 
 * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search?keywords=state+privacy) (Privacy International)
-* *List:* ["National Cyber Security Policy and Legal Documents"](http://www.ccdcoe.org/strategies-policies.html) (NATO Cooperative Cyber Defence Centre of Excellence)
+* *List:* ["National Cyber Security Policy and Legal Documents"](https://ccdcoe.org/library/strategy-and-governance/) (NATO Cooperative Cyber Defence Centre of Excellence)
 * *Reports:* ["Country Reports"](https://opennet.net/research/profiles) (Open Network Inititiative)
 * *Portal:* ["Country Level Information security threats"](https://iscproject.org/country-assessments/) (The ISC Project)
 * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (Global Cybersecurity Index (GCI))
