@@ -77,8 +77,8 @@ title: Other Context Analysis Methodologies
 
 * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search?keywords=state+privacy) (Privacy International)
 * *List:* ["National Cyber Security Policy and Legal Documents"](https://ccdcoe.org/library/strategy-and-governance/) (NATO Cooperative Cyber Defence Centre of Excellence)
-* *Reports:* ["Country Reports"](https://opennet.net/research/profiles) (Open Network Inititiative)
-* *Portal:* ["Country Level Information security threats"](https://iscproject.org/country-assessments/) (The ISC Project)
+* *Reports:* ["Country Reports"](https://opennet.net/research/profiles) (Open Network Initiative)
+* *Portal:* ["Country Level Information security threats"](https://iscproject.org/) (The ISC Project)
 * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (Global Cybersecurity Index (GCI))
 * *Organization:* ["The Citizen Lab is an interdisciplinary laboratory based at the Munk School of Global Affairs, University of Toronto, Canada focusing on advanced research and development at the intersection of Information and Communication Technologies (ICTs), human rights, and global security."](https://citizenlab.org/) (The Citizen Lab)
 * *Map:* ["Cyber-Censorship Map"](https://alkasir.com/map) (Alkasir)
@@ -89,7 +89,7 @@ title: Other Context Analysis Methodologies
 **What general cyber-security threats is the organization facing?**
 
 * *Report:* ["The Internet Annual Security Threat Report"](http://www.symantec.com/security_response/publications/threatreport.jsp) (Symantec)
-* *Report:* ["Annual threat report"](https://www.mandiant.com/resources/mandiant-reports/) (Mandiant)
+* *Report:* ["Annual threat report"](https://www.fireeye.com/current-threats/annual-threat-report.html) (Mandiant)
 * *Reports:* ["APWG Phishing Attack Trends Reports"](http://www.apwg.org/resources/apwg-reports/) (Anti-Phishing Working Group)
 
   * *Reports:* ["Secunia Country Reports"](https://secunia.com/resources/countryreports/) (Secunia)
@@ -99,4 +99,4 @@ title: Other Context Analysis Methodologies
 **What level of technology is available in the region?**
 
 * *Database:* ["World Telecommunication/ICT Indicators database 2014"](http://www.itu.int/en/ITU-D/Statistics/Pages/publications/wtid.aspx) (WT-ICT)
-* *Comparisons:* ["Country Comparisons"](https://www.cia.gov/library/publications/the-world-factbook/) (CIA fact-book)
+* *Comparisons:* ["Country Comparisons"](https://www.cia.gov/the-world-factbook/) (CIA fact-book)
