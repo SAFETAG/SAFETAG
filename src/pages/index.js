@@ -93,7 +93,7 @@ function IndexPage({ data }) {
           <HomepageHeaderInner>
             <InpageHeadline>
               <HomepageTitle size="jumbo" variation="white">
-                Safetag
+                SAFETAG (BETA)
               </HomepageTitle>
               <Subheading>Custom guide creator_</Subheading>
             </InpageHeadline>
