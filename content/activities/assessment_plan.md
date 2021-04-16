@@ -38,7 +38,7 @@ walk_through: >2
     * Share a liability waiver signed by the host organization. [^PETS_permission_to_test]
     * Obtain approval from any third parties, if necessary. [^PETS_third_parties]
 
-  The Audit agreement, non-disclosure agreement, liability waiver may be accomplished through a single document
+  The Audit agreement, non-disclosure agreement, liability waiver may be accomplished through a single document, or they may be separate documents.
 
 
   Auditors are encouraged to use, or at least reference text from the following sources:
