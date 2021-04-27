@@ -280,5 +280,11 @@ overview: >
 
 
   In the following, you should look for files and URLs that may indicate a compromise and may help you identify an infection. If you have time, some inital light research may be suggested to see if the URLs or files hashes have been identified by other security researchers which can help you provide more context to the organization around the types of threats they are facing.
-recommendations: ""
+recommendations: If the organization potentially receives documents from unknown
+  and untrusted sources which could potentially target them through exploits,
+  they may use Dangerzone from First Look Media, a tool which will safely
+  re-render various file formats through an automated process and allow the user
+  to view documents stripped of any malicious content. See more at this [blog
+  post](https://tech.firstlook.media/dangerzone-working-with-suspicious-documents-without-getting-hacked)
+  or at the [GitHub page](https://github.com/firstlookmedia/dangerzone).
 ---
