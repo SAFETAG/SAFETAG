@@ -16,11 +16,21 @@ const PageFoot = styled.footer`
 const PageFootInner = styled(Constrainer)`
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 `
 
 const PageCredits = styled.p`
   color: ${themeVal("color.surface")};
 `
+
+const PageSocial = styled.p`
+  color: ${themeVal("color.surface")};
+`
+const PageNetlify = styled.p`
+  color: ${themeVal("color.surface")};
+`
+
 
 const Year = new Date().getFullYear()
 
@@ -31,6 +41,16 @@ const GlobalFooter = () => {
         <PageCredits>
           &copy; {Year} SAFETAG&trade;: A Project of Internews
         </PageCredits>
+
+        <PageSocial>
+        <a href="/contact">Contact us</a>
+         </PageSocial>
+
+        <PageNetlify>
+          <a href="https://www.netlify.com">
+              <img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+            </a>
+        </PageNetlify>
       </PageFootInner>
     </PageFoot>
   )
