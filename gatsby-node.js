@@ -40,10 +40,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const contentType = node.relativeDirectory
 
   // Create slugs for activities, methods and references
-  if (
-    mediaType === `text/markdown` &&
-    ["activities", "methods", "references"].includes(node.relativeDirectory)
-  ) {
+  if ( mediaType === `text/markdown` && ["activities", "references"].includes(node.relativeDirectory) ) {
     const slug = createFilePath({
       node,
       getNode,
@@ -55,6 +52,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: "slug",
       value: `/${contentType}${slug.substring(slug.lastIndexOf("/"))}`,
+    })
+  } else if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath && node.fileAbsolutePath.includes("methods")) {
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: 'methods/', // FIXME: hardcoded in a hurry
+      trailingSlash: false,
+    })
+
+    createNodeField({
+      node,
+      name: "slug",
+      value: `/methods${slug.substring(slug.lastIndexOf("/"))}`,
     })
   }
 }
@@ -101,11 +111,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const methods = await graphql(
     `
       query {
-        allFile(
-          filter: {
-            relativeDirectory: { eq: "methods" }
-            internal: { mediaType: { eq: "text/markdown" } }
-          }
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___title],  },
+          filter: {fileAbsolutePath: {regex: "/methods/"}}
         ) {
           edges {
             node {
@@ -124,7 +132,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
   // Create pages for each file.
-  methods.data.allFile.edges.forEach(({ node }) => {
+  methods.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/components/layouts/method-layout.js`),

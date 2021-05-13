@@ -71,7 +71,7 @@ function MethodLayout({ data, location }) {
   const {
     frontmatter,
     fields: { frontmattermd },
-  } = data.method.childMarkdownRemark
+  } = data.method
 
   // creates an object with activity names as keys and activity slugs as values
   let activities = data.activities.edges
@@ -292,38 +292,36 @@ export default MethodLayout
 
 export const query = graphql`
   query($slug: String!) {
-    method: file(fields: { slug: { eq: $slug } }) {
-      childMarkdownRemark {
-        html
-        frontmatter {
-          title
-          authors
-          activities
-          info_provided
-          info_required
-          references
-          method_icon
-        }
-        fields {
-          frontmattermd {
-            summary {
-              html
-            }
-            purpose {
-              html
-            }
-            guiding_questions {
-              html
-            }
-            preparation {
-              html
-            }
-            outputs {
-              html
-            }
-            operational_security {
-              html
-            }
+    method: markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        authors
+        activities
+        info_provided
+        info_required
+        references
+        method_icon
+      }
+      fields {
+        frontmattermd {
+          summary {
+            html
+          }
+          purpose {
+            html
+          }
+          guiding_questions {
+            html
+          }
+          preparation {
+            html
+          }
+          outputs {
+            html
+          }
+          operational_security {
+            html
           }
         }
       }
