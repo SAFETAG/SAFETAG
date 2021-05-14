@@ -71,9 +71,8 @@ export default function useAllGuideData() {
           }
         }
         methods: allMarkdownRemark(
-          filter: {
-            fileAbsolutePath: {regex: "/methods/"}
-          }
+          filter: { fileAbsolutePath: {regex: "/methods/"} }
+          sort: { fields: [frontmatter___position],  },
         ) {
           edges {
             node {
