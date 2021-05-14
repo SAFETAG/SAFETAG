@@ -68,10 +68,7 @@ const ActivityCard = styled(Card)`
 `
 
 function MethodLayout({ data, location }) {
-  const {
-    frontmatter,
-    fields: { frontmattermd },
-  } = data.method
+  const frontmatter = data.method.frontmatter
 
   // creates an object with activity names as keys and activity slugs as values
   let activities = data.activities.edges
@@ -102,7 +99,7 @@ function MethodLayout({ data, location }) {
   let prevPage = location.state && location.state.prevPage || ""
 
   // Fix images URL by adding app root url with prefix
-  const sections = mapValues(frontmattermd, section => {
+  const sections = mapValues(frontmatter, section => {
     if (section && section.html) {
       return section.html.replace(
         /<img src="\/img/g,
@@ -302,28 +299,12 @@ export const query = graphql`
         info_required
         references
         method_icon
-      }
-      fields {
-        frontmattermd {
-          summary {
-            html
-          }
-          purpose {
-            html
-          }
-          guiding_questions {
-            html
-          }
-          preparation {
-            html
-          }
-          outputs {
-            html
-          }
-          operational_security {
-            html
-          }
-        }
+        summary
+        purpose
+        guiding_questions
+        preparation
+        outputs
+        operational_security
       }
     }
     activities: allFile(

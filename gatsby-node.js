@@ -113,7 +113,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       query {
         allMarkdownRemark(
           sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "/methods/"}}
+          filter: {fileAbsolutePath: {regex: "/methods/"}} 
         ) {
           edges {
             node {

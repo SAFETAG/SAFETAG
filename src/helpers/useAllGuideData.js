@@ -70,10 +70,9 @@ export default function useAllGuideData() {
             }
           }
         }
-        methods: allFile(
+        methods: allMarkdownRemark(
           filter: {
-            relativeDirectory: { eq: "methods" }
-            internal: { mediaType: { eq: "text/markdown" } }
+            fileAbsolutePath: {regex: "/methods/"}
           }
         ) {
           edges {
@@ -81,36 +80,17 @@ export default function useAllGuideData() {
               fields {
                 slug
               }
-              childMarkdownRemark {
-                frontmatter {
-                  title
-                  method_icon
-                  activities
-                  references
-                }
-                fields {
-                  frontmattermd {
-                    summary {
-                      excerpt(pruneLength: 280)
-                      rawMarkdownBody
-                    }
-                    purpose {
-                      rawMarkdownBody
-                    }
-                    guiding_questions {
-                      rawMarkdownBody
-                    }
-                    outputs {
-                      rawMarkdownBody
-                    }
-                    operational_security {
-                      rawMarkdownBody
-                    }
-                    preparation {
-                      rawMarkdownBody
-                    }
-                  }
-                }
+              frontmatter {
+                title
+                method_icon
+                activities
+                references
+                summary
+                purpose
+                guiding_questions
+                outputs
+                operational_security
+                preparation
               }
             }
           }
@@ -148,11 +128,10 @@ export default function useAllGuideData() {
   }))
 
   const methods = data.methods.edges.map(({ node }) => ({
-    id: node.childMarkdownRemark.frontmatter.title,
-    sections: node.childMarkdownRemark.fields.frontmattermd,
+    id: node.frontmatter.title,
+    sections: [node.frontmatter.summary, node.frontmatter.purpose, node.frontmatter.guiding_questions, node.frontmatter.outputs, node.frontmatter.operational_security, node.frontmatter.preparation],
     slug: node.fields.slug,
-    ...node.childMarkdownRemark.frontmatter,
-    ...node.childMarkdownRemark.fields.frontmattermd,
+    ...node.frontmatter,
   }))
 
   const references = data.references.edges.map(({ node }) => ({
