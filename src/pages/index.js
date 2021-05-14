@@ -186,7 +186,7 @@ export default IndexPage
 export const query = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___title],  },
+      sort: { fields: [frontmatter___position],  },
       filter: {fileAbsolutePath: {regex: "/methods/"}}
     ) {
       edges {
@@ -196,6 +196,7 @@ export const query = graphql`
           }
           frontmatter {
             title
+            position
             method_icon
             summary
           }

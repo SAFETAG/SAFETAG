@@ -7,7 +7,7 @@ summary: >
   information to modify the audit scope and recommendations accordingly.
 the_flow_of_information: "![](/img/capacity_assessment.png)"
 guiding_questions: >-2
-  
+
    * What is the organization's ability to adopt new technologies or practices?
    * What resources does the organization have available to them?
    * What is the environment that the organization works within like? What barriers, threat actors, and other aspects influence their work?
@@ -33,7 +33,7 @@ operational_security: >-
 info_required: []
 outputs: >
   Assessment data of:
-   
+
   * Organization's ability to:
       * Adopt new technology
       * Learn from others
@@ -58,7 +58,8 @@ purpose: >
   of an organization's workflow, infrastructure and even vulnerabilities that
   you might otherwise have overlooked.
 preparation: |
-  
+
   * Review or create a set of interview questions to keep you on track
   * Have a secure note-taking process ready
+position: 30
 ---

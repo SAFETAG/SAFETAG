@@ -8,7 +8,7 @@ summary: >
 the_flow_of_information: "![](/img/advanced_threat.png)"
 method_icon: "/img/advanced_threat_icon.png"
 guiding_questions: >+
-  
+
   * Does the organization suspect they already have malware? If so, what evidence supports that?
 
   * Have staff members received suspicious communications, like emails or IMs?
@@ -34,7 +34,7 @@ references:
   - Malware Analysis
   - Digital Forensics
 operational_security: >
-  
+
   * For engagements with high levels of potential threats, the auditor should conduct a more comprehensive **Adversary Capability Assessment** - based on the the technical context research work. Are there Advanced Persistent Threats which should be taken into account? How do they operate? Are there known indicators of compromise to look for?
 
   * An agreement on capturing data in infected devices should be signed with the organization before this step.
@@ -50,7 +50,7 @@ operational_security: >
   * For severe infections or incidents, the auditor and the organization may agree, through the Incident Response Plan, to clean or reformat critical devices. This is extremely time consuming, and may result in the loss of data, critical programs where the installation media/license has been lost, and potential re-infection. Proceed with extreme caution and clarity.
 info_required: []
 outputs: >
-  
+
   **Due to the limited window of time, the auditor should focus on identifying suspicious activities and triaging them rapidly**. Many of these will be false positives related to other non-malicious software causing the machine to "act weird" or other types of less serious (and non-targeted) malicious software like adware or ransomware.
 
 
@@ -70,7 +70,7 @@ purpose: >
   methods and their activities, from interactions and discussions with staff to
   hands-on device assessment and traffic analysis.
 preparation: >
-  
+
   #### Baseline Skills
 
 
@@ -81,4 +81,5 @@ preparation: >
   * Ability to image a machine and practice good digital forensics and evidence capture processes (see the [Evidence Capture Activity](https://guide.safetag.org/activities/evidence_capture))
 
   * Contacts with malware analysis experts for more in depth investigation
+position: 20
 ---

@@ -8,7 +8,7 @@ summary: >
 the_flow_of_information: "![](/img/organizational_policies.png)"
 method_icon: "/img/policy_review_icon.png"
 guiding_questions: >
-  
+
   * Are there documented policies or practices, including any employee onboarding guidance?
 
   * What is the level of formality of the security practices in place? are verbal conventions, written documents or something in between?
@@ -46,7 +46,7 @@ references:
   - Organizational Policies
   - Recommendation Development
 outputs: >
-  
+
   * List of existing agreements and policies and their gaps
 
   * Resources to formalize/expand agreements to policies
@@ -80,6 +80,7 @@ purpose: >
 
   * Onboarding checklist (entry/exit policies?)
 preparation: >
-  
+
   If (through interviews or even the audit agreement process); you have received copies of policies, a thorough review of the written policies is required to assess if they are being followed, enforced, or have changed since being formalized.
+position: 110
 ---
