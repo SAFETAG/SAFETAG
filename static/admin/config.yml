@@ -204,6 +204,12 @@ collections:
           required: true,
         }
       - {
+          label: "Position",
+          name: "position",
+          widget: "number",
+          required: true
+        }
+      - {
           label: "Activities",
           name: "activities",
           widget: "relation",
