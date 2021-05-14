@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: safetag/safetag
+  repo: jplusplus/safetag
   open_authoring: true
-  branch: guide-source
+  branch: feature/method-ordering
   site_domain: dev.safetag.org
 
 media_folder: static/img
