@@ -155,7 +155,7 @@ function IndexPage({ data }) {
                         </CardHeader>
                         <p>
                           {
-                            node.frontmatter.summary
+                            node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
                           }
                         </p>
                       </Card>
