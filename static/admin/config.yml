@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: jplusplus/safetag
+  repo: safetag/safetag
   open_authoring: true
-  branch: feature/method-ordering
-  site_domain: dev.safetag.org
+  branch: guide-source
+  site_domain: safetag-guide.netlify.app
 
 media_folder: static/img
 public_folder: /img
