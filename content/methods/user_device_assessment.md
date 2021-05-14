@@ -37,7 +37,7 @@ references:
   - Anti-Virus Updates
   - Identifying Odd/One-Off Services
 outputs: >
-  
+
   * List of all assets in the organization and whom they belong to.
 
   * List of software running on staff devices.
@@ -46,16 +46,17 @@ outputs: >
 
   * List of malware found by running updated anti-virus on office computers (if anti-virus installed during device inspection.)
 operational_security: >2
-  
+
     * Treat device assessment data as well as any additional service information learned with the utmost security
 info_required: []
 info_provided: []
 purpose: >
-  
+
   Compromised devices have the ability to undermine nearly any other organizational attempt at securing information. Knowing if devices receive basic software and security upgrades and what core protections against unauthorized access exist is vital to designing a strategy to make the host more secure.
 preparation: |+
-  
+
   #### Baseline Skills
 
   * Basic systems administration experience for common operating systems
+position: 180
 ---

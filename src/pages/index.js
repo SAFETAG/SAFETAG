@@ -114,7 +114,7 @@ function IndexPage({ data }) {
               box="semi-fluid"
               variation="primary-outline"
               title="Download full guide as PDF"
-              onClick={() => { 
+              onClick={() => {
                 window.open('/guides/Safetag_full_guide.pdf');
               }}
             >
@@ -138,10 +138,8 @@ function IndexPage({ data }) {
             </Heading>
             <Subheading>Explore all Safetag Methods</Subheading>
             <HomeCardList>
-              {data.allFile.edges.map(
-                ({ node }, index) =>
-                  node.fields != null &&
-                  node.childMarkdownRemark != null && (
+              {data.allMarkdownRemark.edges.map(
+                ({ node }, index) => (
                     <li key={index}>
                       <Card
                         border="primary"
@@ -150,15 +148,14 @@ function IndexPage({ data }) {
                         withHover
                       >
                         <CardHeader>
-                        	<img src={node.childMarkdownRemark.frontmatter.method_icon} />
+                        	<img src={node.frontmatter.method_icon} />
                         	<CardHeading variation="primary" withDeco>
-                        	  {node.childMarkdownRemark.frontmatter.title}
+                        	  {node.frontmatter.title}
                         	</CardHeading>
                         </CardHeader>
                         <p>
                           {
-                            node.childMarkdownRemark.fields.frontmattermd
-                              .summary.excerpt
+                            node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
                           }
                         </p>
                       </Card>
@@ -179,31 +176,29 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-export const query = graphql`
-  query {
-    allFile(
+/*
       filter: {
         relativeDirectory: { eq: "methods" }
         internal: { mediaType: { eq: "text/markdown" } }
       }
+*/
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___position],  },
+      filter: {fileAbsolutePath: {regex: "/methods/"}}
     ) {
       edges {
         node {
           fields {
             slug
           }
-          childMarkdownRemark {
-            frontmatter {
-              title
-              method_icon
-            }
-            fields {
-              frontmattermd {
-                summary {
-                  excerpt
-                }
-              }
-            }
+          frontmatter {
+            title
+            position
+            method_icon
+            summary
           }
         }
       }

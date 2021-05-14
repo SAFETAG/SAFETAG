@@ -1,12 +1,12 @@
 ---
 title: Organizational Device Usage
 summary: >
-  
+
   This component allows the auditor to discover and assess the security of the devices on the network and/or used in the organization. This component consists of interviews, surveys, network mapping, and inspection of devices.
 the_flow_of_information: "![](/img/org_device_assessment.png)"
 method_icon: "/img/org_device_icon.png"
 guiding_questions: >
-  
+
   * What work and personal devices do staff use to accomplish their work, store work related files, or engage in work communications?
 
   * What organizational and external/personal services  do staff use to accomplish their work, store work related files, or engage in work communications?
@@ -44,7 +44,7 @@ references:
   - Identifying Odd/One-Off Services
   - physical_assessment
 outputs: >
-  
+
   * List of all assets in the organization and whom they belong to.
 
   * Notes on un/documented access controls measures for the office
@@ -61,16 +61,17 @@ outputs: >
 
   * Written-down passwords
 operational_security: >2
-  
-    * Treat the information learned/collected with the utmost sensitivity and security. Physical notes should be destroyed immediately after use and digital notes should be kept in line with overall SAFETAG standards. 
+
+    * Treat the information learned/collected with the utmost sensitivity and security. Physical notes should be destroyed immediately after use and digital notes should be kept in line with overall SAFETAG standards.
 info_required: []
 info_provided: []
 purpose: >
-  
+
   Compromised devices have the ability to undermine nearly any other organizational attempt at securing information. Knowing if devices receive basic software and security updates/upgrades and what core protections exist against unauthorized access is vital to designing a strategy to make the host more secure. Because the SAFETAG framework is focused on the security of data, it's also crucial that the physicality of devices on which this data resides, including the hard-wired networks through which it's exchanged, be not overlooked.
 preparation: |+
-  
+
   #### Baseline Skills
 
   * Basic systems administration experience for common operating systems
+position: 100
 ---

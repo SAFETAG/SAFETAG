@@ -28,7 +28,7 @@ purpose: >
   immediate outcomes to the host and its staff, initial psycho-social care and
   re-framing as needed, and in combination with training or security
   consultation in the Responsive Support section, the auditor can ensure that
-  the host sees the audit as a guide instead of a condemnation. 
+  the host sees the audit as a guide instead of a condemnation.
 guiding_questions: |
 
   * Is the organization empowered to make changes?
@@ -45,5 +45,5 @@ outputs: |2
 
     * Initiate follow-up with host (organizational and individual).
 the_flow_of_information: ''
+position: 60
 ---
-
