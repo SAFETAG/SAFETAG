@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: jplusplus/safetag
+  repo: safetag/safetag
   open_authoring: true
   branch: guide-source
   site_domain: dev.safetag.org
