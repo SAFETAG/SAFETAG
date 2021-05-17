@@ -69,6 +69,7 @@ const ActivityCard = styled(Card)`
 
 function MethodLayout({ data, location }) {
   const frontmatter = data.method.frontmatter
+  const frontmattermd = data.method.fields.frontmattermd
 
   // creates an object with activity names as keys and activity slugs as values
   let activities = data.activities.edges
@@ -136,13 +137,13 @@ function MethodLayout({ data, location }) {
                 Summary
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: sections.summary }}
+                dangerouslySetInnerHTML={{ __html: frontmattermd.summary.html }}
               ></div>
               <InpageTitle size="large" withDeco>
                 Purpose
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: sections.purpose }}
+                dangerouslySetInnerHTML={{ __html: frontmattermd.purpose.html }}
               ></div>
             </MethodIntro>
             <MethodMeta>
@@ -183,7 +184,7 @@ function MethodLayout({ data, location }) {
               </InpageTitle>
               <SquareUl
                 dangerouslySetInnerHTML={{
-                  __html: sections.guiding_questions,
+                  __html: frontmattermd.guiding_questions.html,
                 }}
               ></SquareUl>
             </section>
@@ -195,7 +196,7 @@ function MethodLayout({ data, location }) {
                 <CardHeading>Operational Security</CardHeading>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: sections.operational_security,
+                    __html: frontmattermd.operational_security.html,
                   }}
                 ></div>
               </Card>
@@ -205,7 +206,7 @@ function MethodLayout({ data, location }) {
                 <CardHeading>Preparation</CardHeading>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.preparation,
+                    __html: frontmattermd.preparation.html,
                   }}
                 ></SquareUl>
               </Card>
@@ -220,7 +221,7 @@ function MethodLayout({ data, location }) {
                   </InpageTitle>
                   <SquareUl
                     dangerouslySetInnerHTML={{
-                      __html: sections.outputs,
+                      __html: frontmattermd.outputs.html,
                     }}
                   ></SquareUl>
                 </>
@@ -305,6 +306,16 @@ export const query = graphql`
         preparation
         outputs
         operational_security
+      }
+      fields {
+        frontmattermd {
+          summary { html }
+          purpose { html }
+          guiding_questions { html }
+          preparation { html }
+          outputs { html }
+          operational_security { html }
+        }
       }
     }
     activities: allFile(
