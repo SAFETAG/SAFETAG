@@ -114,6 +114,21 @@ const getBodyStyles = ({ variation }) => {
         }
       }
     `
+  else if (variation === "blue")
+    return css`
+      background-color: ${themeVal("color.primary")};
+      & * {
+        color: ${themeVal("color.surface")};
+        border-color: ${themeVal("color.surface")};
+        &:after {
+          background-color: ${themeVal("color.surface")};
+        }
+        a {
+          color: ${themeVal("color.surface")};
+          text-decoration: underline;
+        }
+      }
+    `
   return css`
     background-color: transparent;
   `
