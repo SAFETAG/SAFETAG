@@ -59,6 +59,7 @@ const ActivityCard = styled(Card)`
 `
 
 function PostLayout({ data, location }) {
+  const post = data.post
   const frontmatter = data.post.frontmatter
   // const frontmattermd = data.post.fields.frontmattermd
 
@@ -99,26 +100,14 @@ function PostLayout({ data, location }) {
               </InpageTitle>
             </PostHeadline>
             <PostIntro>
-              <InpageTitle size="large" withDeco>
-                Summary
-              </InpageTitle>
-              <InpageTitle size="large" withDeco>
-                Purpose
-              </InpageTitle>
-              <div>content</div>
+              <div className="blog-post-content"
+                   dangerouslySetInnerHTML={{ __html: post.html }}
+              />
             </PostIntro>
             <PostMeta>
               <Dl boldDesc>
                 <dt>Author</dt>
-                <dd>Luther</dd>
-                {/* {frontmatter.info_provided !== "" && (
-                  <>
-                    <dt>Info Provided</dt>
-                    <dd>{frontmatter.info_provided}</dd>
-                    <dt>Info Required</dt>
-                    <dd>{frontmatter.required}</dd>
-                  </>
-                )}*/}
+                <dd>{frontmatter.author}</dd>
               </Dl>
             </PostMeta>
           </InpageInnerColumns>
@@ -143,7 +132,11 @@ export const query = graphql`
       html
       frontmatter {
         title
-        authors
+        author
+        date
+        main_image
+        main_image_caption
+        draft
       }
     }
   }
