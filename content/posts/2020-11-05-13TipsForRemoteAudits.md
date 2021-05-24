@@ -3,12 +3,12 @@ layout: post
 title: "15 Tips for Conducting Remote SAFETAG Audits"
 date: 2020-11-05 09:00:00
 author: "Digital Security Lab Ukraine, Defend Defenders, and Conexo, along with other Internews partners"
-main_image: "/images/blog/15Tips.png" # 342px × 178p ~2x1
+main_image: "/img/blog/15Tips.png" # 342px × 178p ~2x1
 main_image_caption: "Image with title 13 Tips for Conducting Remote SAFETAG Audits"
 tags: ["COVID-19", "SAFETAG", "Remote Audits", "ADOPTABLE"]
 draft: false
 ---
-<div style="text-align: center"><img src="/images/blog/15Tips.png" alt="Image with title 15 Tips for Conducting Remote SAFETAG Audits" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/15Tips.png" alt="Image with title 15 Tips for Conducting Remote SAFETAG Audits" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 The COVID-19 pandemic has led to a dramatic increase in the need for remote audits and other virtual digital security interventions. Auditors are having to adapt their approaches and respond to new security threats and landscapes. In coordination with auditors across the globe, Internews has developed a Remote Audit Playlist, a collection of [SAFETAG](https://safetag.org) activities that can be performed remotely under varying conditions from low bandwidth to distributed team scenarios. While remote audits are new for some practitioners, others have been implementing them for years. Below are some of the lessons Internews and our partners have learned while conducting remote SAFETAG audits.
 

@@ -3,13 +3,13 @@ layout: post
 title: "8 Tips for Facilitating a Remote Training of SAFETAG Auditors"
 date: 2020-12-04 09:00:00
 author: "Internews and partners: Defend Defenders, Digital Security Lab Ukraine, and Conexo"
-main_image: "images/blog/8Tips_RemoteToA.png" # 342px × 178p ~2x1
+main_image: "img/blog/8Tips_RemoteToA.png" # 342px × 178p ~2x1
 main_image_caption: "Image with title 8 Tips for Facilitating a Remote Training of SAFETAG Auditors"
 tags: ["COVID-19", "SAFETAG", "Training Of Auditors", "Remote Training", "SAFETAG Tips", "ADOPTABLE"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/8Tips_RemoteToA.png" alt="Image with title 8 Tips for Facilitating a Remote Training of SAFETAG Auditors" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/8Tips_RemoteToA.png" alt="Image with title 8 Tips for Facilitating a Remote Training of SAFETAG Auditors" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 Over the last few months and as a direct result of the COVID-19 pandemic, the world has had to shift to a fully-remote workflow. Organizational security audits and trainings for new SAFETAG auditors are no exception. Thankfully, a few Internews partners have already implemented  remote trainings, and have shared some lessons learned and resources.
 

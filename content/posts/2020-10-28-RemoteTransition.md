@@ -3,13 +3,13 @@ layout: post
 title: "Responding to COVID-19: A Transition to Remote SAFETAG Audits"
 date: 2020-10-28 09:00:00
 author: "Digital Security Lab Ukraine, DefendDefenders, and Conexo, along with other Internews partners"
-main_image: "/images/blog/RemoteTransition.png" # 342px × 178p ~2x1
+main_image: "/img/blog/RemoteTransition.png" # 342px × 178p ~2x1
 main_image_caption: "Image with title Responding to COVID-19: A Transition to Remote SAFETAG Audits"
 tags: ["COVID-19", "SAFETAG", "Remote Audits", "ADOPTABLE"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/RemoteTransition.png" alt="Image with title Responding to COVID-19: A Transition to Remote SAFETAG Audits" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/RemoteTransition.png" alt="Image with title Responding to COVID-19: A Transition to Remote SAFETAG Audits" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 For the past several years, the SAFETAG community has explored what remote support could be provided to organizations in situations where the auditor cannot travel to the organization or meet with staff in-person. There are also organizations which have distributed teams operating fully remotely or from multiple physical locations, making it difficult or impossible to conduct in-person audits. Though these conversations around remote audits began years ago, the recent COVID-19 pandemic has reignited discussions and led to a dramatic increase in the need for remote audits and other virtual digital security interventions. Civil society organizations around the world have been forced to migrate to a fully-remote workflow. This transition, in addition to creating new security challenges, has also required auditors to adapt the way in which they are providing support.
 

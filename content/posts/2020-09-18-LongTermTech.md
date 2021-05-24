@@ -3,13 +3,13 @@ layout: post
 title: "Rights Con 2020: What happens between SAFETAG-based audits in NGOs? Long term tech support"
 date: 2020-09-18 09:00:00
 author: "Adriana"
-# main_image: "/images/blog/RC_01.png" # 342px × 178p ~2x1
+# main_image: "/img/blog/RC_01.png" # 342px × 178p ~2x1
 # main_image_caption: "Image with USABLE logo and title What happens between SAFETAG-based audits in NGOs? Long term tech support"
 tags: ["RightsCon2020", "USABLE", "Communityled", "SAFETAG", "Audit", "ADOPTABLE"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/RC_01.png" alt="Image with USABLE logo and title What happens between SAFETAG-based audits in NGOs? Long term tech support" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/RC_01.png" alt="Image with USABLE logo and title What happens between SAFETAG-based audits in NGOs? Long term tech support" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 *This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG. Read more about this effort on the [Global Technology Blog](https://globaltech.internews.org/blog/introducing-adoptable)*
 

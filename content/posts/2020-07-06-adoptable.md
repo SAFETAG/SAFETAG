@@ -3,7 +3,7 @@ layout: post
 title: "Introducing ADOPTABLE"
 date: 2020-07-06 09:00:00
 author: "Ashley"
-# main_image: "images/blog/IFFOSV_Title.svg" # 342px × 178p ~2x1
+# main_image: "img/blog/IFFOSV_Title.svg" # 342px × 178p ~2x1
 # main_image_caption: ""
 tags: ["SAFETAG", "OrgSec", "IFF", "Events"]
 draft: false

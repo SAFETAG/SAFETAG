@@ -3,19 +3,19 @@ layout: post
 title: "Join us for the IFF Organizational Security Village!"
 date: 2020-05-26 09:00:00
 author: "Adriana"
-# main_image: "images/blog/IFFOSV_Title.svg" # 342px × 178p ~2x1
+# main_image: "img/blog/IFFOSV_Title.svg" # 342px × 178p ~2x1
 # main_image_caption: ""
 tags: ["SAFETAG", "OrgSec", "IFF", "Events"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/IFFOSV_Title.svg" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/IFFOSV_Title.svg" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 ## IFF OrgSec Village
 
 Internews is excited to announce that we will be hosting a virtual [Internet Freedom Festival (IFF)](https://internetfreedomfestival.org/) **Organizational Security Village** from **June 8-12**. This event will bring together security auditors, digital security trainers, and other experts and practitioners for a five-day program of over 20 community-led sessions exploring five major themes in organizational security.
 
-<div style="text-align: center "><img src="/images/blog/IFFOSV_Theme.png" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 75%; padding: 1em;" /></div>
+<div style="text-align: center "><img src="/img/blog/IFFOSV_Theme.png" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 75%; padding: 1em;" /></div>
 
 ## Virtual Village Format
 

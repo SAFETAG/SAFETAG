@@ -3,13 +3,13 @@ layout: post
 title: "SAFETAG Community Feedback"
 date: 2020-09-24 09:00:00
 author: "Adriana"
-#main_image: "/images/blog/CommunityFeedback.png" # 342px × 178p ~2x1
+#main_image: "/img/blog/CommunityFeedback.png" # 342px × 178p ~2x1
 #main_image_caption: "Image with title SAFETAG Community Feedback"
 tags: ["SAFETAG", "USABLE", "Feedback Collection", "ADOPTABLE"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/CommunityFeedback.png" alt="Image with title SAFETAG Community Feedback" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/CommunityFeedback.png" alt="Image with title SAFETAG Community Feedback" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 *This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG. Read more about this effort on the [Global Technology Blog](https://globaltech.internews.org/blog/introducing-adoptable)*
 

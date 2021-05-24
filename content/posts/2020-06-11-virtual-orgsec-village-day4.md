@@ -3,7 +3,7 @@ layout: post
 title: "IFF Organizational Security Village Day 4"
 date: 2020-06-12 09:00:00
 author: "Ashley"
-# main_image: "images/blog/IFFOSV_Title.svg" # 342px × 178p ~2x1
+# main_image: "img/blog/IFFOSV_Title.svg" # 342px × 178p ~2x1
 # main_image_caption: ""
 tags: ["SAFETAG", "OrgSec", "IFF", "Events"]
 draft: false
@@ -35,4 +35,4 @@ Sessions on Day 4 focused on responding to advanced threats.
 
 Register at: [https://docs.google.com/forms/d/e/1FAIpQLSd_vzeIABKyYt1pMiq4_Ka-Ffk8kcjGmHnJQw9-n2UCfjAbig/viewform](https://docs.google.com/forms/d/e/1FAIpQLSd_vzeIABKyYt1pMiq4_Ka-Ffk8kcjGmHnJQw9-n2UCfjAbig/viewform)
 
-<div style="text-align: center"><img src="/images/blog/IFFOSV_Title.svg" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/IFFOSV_Title.svg" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 100%; padding: 1em;" /></div>

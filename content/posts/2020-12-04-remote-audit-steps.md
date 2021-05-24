@@ -3,13 +3,13 @@ layout: post
 title: "How to implement a remote SAFETAG audit: A step by step guide."
 date: 2020-12-04 09:00:00
 author: "Megan DeBlois and Carlos Guerra"
-main_image: "images/blog/RemoteSteps.png" # 342px × 178p ~2x1
+main_image: "img/blog/RemoteSteps.png" # 342px × 178p ~2x1
 main_image_caption: "Image with title How to implement a remote SAFETAG audit: A step by step guide."
 tags: ["COVID-19", "SAFETAG", "Remote Audits", "ADOPTABLE"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/RemoteSteps.png" alt="Image with title How to implement a remote SAFETAG audit: A step by step guide." style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/RemoteSteps.png" alt="Image with title How to implement a remote SAFETAG audit: A step by step guide." style="border: 0; width: 100%; padding: 1em;" /></div>
 
 Since the pandemic, the information security community has been experimenting with how to make security auditing and risk assessments safer, adapting them to be remote where possible. This is the third blog post in a series exploring how we can improve the remote [SAFETAG](https://github.com/SAFETAG) auditing experience, capturing guidance that will be useful for other security practitioners using the SAFETAG framework.
 

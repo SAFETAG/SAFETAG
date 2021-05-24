@@ -6,7 +6,7 @@ tags: SAFETAG, Russian, Spanish, Arabic
 author: Jon
 ---
 
-![SAFETAG's Information flow in Arabic](/images/blog/ar-flow.png)
+![SAFETAG's Information flow in Arabic](/img/blog/ar-flow.png)
 
 We are happy to announce that SAFETAG's methods are now available in Russian, Arabic, and Spanish (updated)!
 

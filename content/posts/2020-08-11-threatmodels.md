@@ -3,13 +3,13 @@ layout: post
 title: "From Usability to Threat Modeling"
 date: 2020-08-11 09:00:00
 author: "Jon"
-# main_image: "images/blog/markus-winkler-aYPtEknQmXE-unsplash-blog.png" # 342px × 178p ~2x1
+# main_image: "img/blog/markus-winkler-aYPtEknQmXE-unsplash-blog.png" # 342px × 178p ~2x1
 # main_image_caption: ""
 tags: ["SAFETAG", "OrgSec", "UX", "personas", "threat models"]
 draft: false
 ---
 
-<div style="text-align: center"><img src="/images/blog/markus-winkler-aYPtEknQmXE-unsplash-blog.png" alt="Stylized photo of puzzle pieces" style="border: 0; width: 100%; padding: 1em;" /></div>
+<div style="text-align: center"><img src="/img/blog/markus-winkler-aYPtEknQmXE-unsplash-blog.png" alt="Stylized photo of puzzle pieces" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 <p>Across our portfolio of technology, training, and advocacy to support a
 free and open Internet that protects and advances human rights, we are

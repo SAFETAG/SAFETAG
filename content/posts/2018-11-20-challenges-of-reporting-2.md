@@ -16,7 +16,7 @@ from others work are:
 1: The magic recipe oriented report
 -----------------------------------
 
-![](/images/blog/challengesreporting/image1.png)
+![](/img/blog/challengesreporting/image1.png)
 
 Simple, short and sometimes effective, usually this kind of reports have
 a short list of actions the organization needs to do to improve their
@@ -49,7 +49,7 @@ be.
 2: The asset oriented report
 ----------------------------
 
-![](/images/blog/challengesreporting/image3.png)
+![](/img/blog/challengesreporting/image3.png)
 
 The organization generally knows what assets they have, so it's
 interesting to talk in a language they can understand easily
@@ -79,7 +79,7 @@ interesting to talk in a language they can understand easily
 3: The activity oriented report
 -------------------------------
 
-![](/images/blog/challengesreporting/image2.png)
+![](/img/blog/challengesreporting/image2.png)
 
 Another way we can order the information of the assessment is in
 function of the specific activities we run during the assessment. This
@@ -110,9 +110,9 @@ organization.
 4: The super comprehensive (and sometimes dangerously long) risk oriented report
 --------------------------------------------------------------------------------
 
-![](/images/blog/challengesreporting/image4.png)
+![](/img/blog/challengesreporting/image4.png)
 
-![](/images/blog/challengesreporting/image4.png)
+![](/img/blog/challengesreporting/image4.png)
 
 This approach without doubt is the more complete on this article, it
 aims to catalogue and develop 4 types of information:

@@ -7,7 +7,7 @@ author: Jon
 ---
 
 ### Curricula Updates
-<a href="https://karisma.org.co/nueva-guia-para-auditorias-en-seguridad-digital"><img src="/images/blog/karisma-curriculo.png" alt="Karisma's  SAFETAG Curriculum" align="right" style="float: right; width: 40%;"/></a>
+<a href="https://karisma.org.co/nueva-guia-para-auditorias-en-seguridad-digital"><img src="/img/blog/karisma-curriculo.png" alt="Karisma's  SAFETAG Curriculum" align="right" style="float: right; width: 40%;"/></a>
 
 The SAFETAG Curriculum has also been updated to better match the changes to the SAFETAG methodology over the past 2 years and introduce some of the clarifying context (such as the TRI approach) to selecting activities.
 
