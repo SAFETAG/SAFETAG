@@ -20,7 +20,6 @@ import {
 } from "../styles/inpage"
 import Heading, { Subheading } from "../styles/type/heading"
 import MoreLink from "../styles/button/more-link"
-import Card, { CardHeader, CardHeading, CardList } from "../styles/card"
 
 import LogoSymbolWhite from "../../static/assets/logo/SafetagSymbolWhite.svg"
 
@@ -79,92 +78,116 @@ const HomepageHeaderButtons = styled.div`
   }
 `
 
-const HomeCardList = styled(CardList)`
-  margin: ${glsp(4)} 0;
-`
-
 function IndexPage({ data }) {
 
   return (
     <GlobalLayout>
-      <SEO title="Safetag guide" />
+      <SEO title="Safetag" />
       <Inpage>
         <HomepageHeader>
           <HomepageHeaderInner>
             <InpageHeadline>
               <HomepageTitle size="jumbo" variation="white">
-                SAFETAG (BETA)
+                SAFETAG
               </HomepageTitle>
-              <Subheading>Custom guide creator_</Subheading>
+              <Subheading>Security Auditing Framework and Evaluation Template for Advocacy Groups</Subheading>
             </InpageHeadline>
             <p>
-              Security Auditing Framework and Evaluation Template for Advocacy
-              Groups. SAFETAG is a professional audit framework that adapts
+              SAFETAG is a professional audit framework that adapts
               traditional penetration testing and risk assessment methodologies
               to be relevant to smaller non-profit organizations based or
               operating in the developing world.
             </p>
-            <MoreLink direction="forward" to="/about/">
-              Learn More
-            </MoreLink>
           </HomepageHeaderInner>
-          <HomepageHeaderButtons>
-            <Button
-              size="jumbo"
-              box="semi-fluid"
-              variation="primary-outline"
-              title="Download full guide as PDF"
-              onClick={() => {
-                window.open('/guides/Safetag_full_guide.pdf');
-              }}
-            >
-              Download Full Guide
-            </Button>
-            <Button
-              size="jumbo"
-              box="semi-fluid"
-              variation="primary-raised-light"
-              to="/guide-builder/"
-              as={Link}
-            >
-              Create Custom Guide
-            </Button>
-          </HomepageHeaderButtons>
         </HomepageHeader>
         <InpageBody>
           <InpageBodyInner>
-            <Heading id="allMethods" size="jumbo" variation="primary" withDeco>
-              Methods
+            <Heading id="about" size="jumbo" variation="primary" withDeco>
+              About SAFETAG
             </Heading>
-            <Subheading>Explore all Safetag Methods</Subheading>
-            <HomeCardList>
+            <p>
+              SAFETAG audits serve small scale civil society organizations and independent
+              media houses who have digital security concerns by working with them to identify
+              the risks they face and providing capacity-aware, pragmatic next steps to
+              address them.
+            </p>
+            <p>
+              Traditional security audits are based upon the assumption that an organization
+              has the time, money, and capacity to aim for perfect security. Low-income
+              at-risk groups have none of these luxuries. SAFETAG combines assessment
+              activities from the the security auditing world with best-practices for working
+              with small scale at-risk organizations.
+            </p>
+            <p>
+              SAFETAG auditors lead a risk modeling process that helps staff and leadership
+              take an institutional look at their digital security problems, expose
+              vulnerabilities that impact their critical processes and assets, and provide
+              clear reporting and follow up to help the organization strategically move
+              forward and identify the support that they need.
+            </p>
+          </InpageBodyInner>
+        </InpageBody>
+
+        <InpageBody variation="blue">
+          <InpageBodyInner>
+            <Heading id="recent-updates" size="jumbo" variation="primary" withDeco>
+              Recent Updates
+            </Heading>
+            <ul>
               {data.allMarkdownRemark.edges.map(
                 ({ node }, index) => (
                     <li key={index}>
-                      <Card
-                        border="primary"
-                        as={Link}
-                        to={node.fields.slug}
-                        withHover
-                      >
-                        <CardHeader>
-                        	<img src={node.frontmatter.method_icon} />
-                        	<CardHeading variation="primary" withDeco>
-                        	  {node.frontmatter.title}
-                        	</CardHeading>
-                        </CardHeader>
-                        <p>
-                          {
-                            node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
-                          }
-                        </p>
-                      </Card>
+                      <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+
+                      {node.frontmatter.date}
                     </li>
                   )
               )}
-            </HomeCardList>
+            </ul>
           </InpageBodyInner>
         </InpageBody>
+
+        <InpageBody>
+          <InpageBodyInner>
+
+            <Heading id="framework" size="jumbo" variation="primary" withDeco>
+              The SAFETAG Audit Framework
+            </Heading>
+
+            <Heading id="methods" size="large">
+              SAFETAG Methods
+            </Heading>
+            <p>
+              The Overview contains the SAFETAG Methods and top-level approaches
+              and is available in mutiple languages:
+            </p>
+            <ul>
+              <li><span>العربية</span></li>
+              <li><span>english</span></li>
+              <li><span>español</span></li>
+              <li><span>русский</span></li>
+            </ul>
+
+            <Heading id="methods" size="large">
+              Full Guide
+            </Heading>
+            <p>
+              You can <a href="" target="_blank" rel="noopener">explore the full
+              guide online</a> and download it in <a href="" target="_blank"
+              rel="noopener">English</a>.
+            </p>
+
+            <Heading id="curricula" size="large">
+              Curricula
+            </Heading>
+            <p>
+              To train new auditors, Internews has also provided an <a href="">Auditor training curricula</a>.
+            </p>
+
+
+          </InpageBodyInner>
+        </InpageBody>
+
       </Inpage>
     </GlobalLayout>
   )
@@ -186,8 +209,9 @@ export default IndexPage
 export const query = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___position],  },
-      filter: {fileAbsolutePath: {regex: "/methods/"}}
+      sort: { fields: [frontmatter___date],  order: DESC },
+      limit: 5,
+      filter: {fileAbsolutePath: {regex: "/posts/"}}
     ) {
       edges {
         node {
@@ -196,9 +220,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            position
-            method_icon
-            summary
+            date(formatString: "MMMM Do, YYYY")
           }
         }
       }
