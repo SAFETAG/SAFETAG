@@ -137,9 +137,7 @@ function IndexPage({ data }) {
               {data.allMarkdownRemark.edges.map(
                 ({ node }, index) => (
                     <li key={index}>
-                      <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-
-                      {node.frontmatter.date}
+                      <Link to={node.fields.slug}>{node.frontmatter.title}</Link> &mdash; {node.frontmatter.date}
                     </li>
                   )
               )}
