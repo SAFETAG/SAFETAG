@@ -40,6 +40,12 @@ const PostIntro = styled.article`
     }
   }
 `
+
+const PostBody = styled.article`
+  display: flex;
+  flex-flow: column nowrap;
+`
+
 const PostMeta = styled.aside``
 
 const ActivityList = styled.section`
@@ -99,11 +105,11 @@ function PostLayout({ data, location }) {
                 {frontmatter.title}
               </InpageTitle>
             </PostHeadline>
-            <PostIntro>
+            <PostBody>
               <div className="blog-post-content"
                    dangerouslySetInnerHTML={{ __html: post.html }}
               />
-            </PostIntro>
+            </PostBody>
             <PostMeta>
               <Dl boldDesc>
                 <dt>Author</dt>

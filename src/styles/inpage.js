@@ -90,6 +90,7 @@ export const InpageTitleWrapper = styled.div`
 
 export const InpageTitle = styled(({ ...props }) => <Heading {...props} />)`
   margin-bottom: ${glsp(0.5)};
+  line-height: 3rem;
 `
 
 export const InpageTagline = styled.p`
