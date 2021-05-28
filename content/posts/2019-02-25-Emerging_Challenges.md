@@ -2,7 +2,7 @@
 layout: post
 title:  "Curricula updates and new approaches for emerging challenges!"
 date:   2019-02-27 13:49:55
-tags: SAFETAG, tbilisi, IoT, Cloud, psychosocial
+tags: ["SAFETAG", "tbilisi", "IoT", "Cloud", "psychosocial"]
 author: Jon
 ---
 

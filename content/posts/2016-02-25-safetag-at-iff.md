@@ -2,7 +2,7 @@
 layout: post
 title:  "Meet us at the Internet Freedom Festival next week!"
 date:   2016-02-25 12:09:25
-tags: safetag, iff
+tags: ["safetag", "iff"]
 author: Jon
 ---
 

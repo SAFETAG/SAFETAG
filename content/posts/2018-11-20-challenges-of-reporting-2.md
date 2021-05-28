@@ -2,7 +2,7 @@
 layout: post
 title:  "The challenges of reporting: Reporting Styles"
 date:   2018-11-20 15:12:00
-tags: Reporting
+tags: ["Reporting"]
 author: Carlos Guerra, Mario Felaco
 ---
 

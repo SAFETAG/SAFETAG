@@ -2,7 +2,7 @@
 layout: post
 title:  "SAFETAG Stories: If you fail -- TRI, TRI Again"
 date:   2018-08-16 12:49:55
-tags: SAFETAG, dropbox, TRI, metadata
+tags: ["SAFETAG", "dropbox", "TRI", "metadata"]
 author: Jon
 ---
 *This is the first in a series of blog posts sharing some stories gleaned from audits over the years (often combined from multiple experiences and with all identifying information removed).  The goal is to share experiences and approaches to help new auditors get into the mindset of SAFETAG*

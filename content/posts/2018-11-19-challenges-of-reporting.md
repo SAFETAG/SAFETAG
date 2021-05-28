@@ -2,7 +2,7 @@
 layout: post
 title:  "The challenges of reporting"
 date:   2018-11-19 18:12:00
-tags: Reporting
+tags: ["Reporting"]
 author: Carlos Guerra, Mario Felaco
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Remote SAFETAG Assessments?"
 date:   2017-08-31 13:09:25
-tags: SAFETAG, remote, content, update
+tags: ["SAFETAG", "remote", "content", "update"]
 author: Jon
 ---
 

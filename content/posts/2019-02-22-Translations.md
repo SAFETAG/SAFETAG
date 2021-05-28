@@ -2,7 +2,7 @@
 layout: post
 title:  "New Translations of SAFETAG"
 date:   2019-02-22 12:49:55
-tags: SAFETAG, Russian, Spanish, Arabic
+tags: ["SAFETAG", "Russian", "Spanish", "Arabic"]
 author: Jon
 ---
 

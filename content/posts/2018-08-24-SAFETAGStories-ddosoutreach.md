@@ -2,7 +2,7 @@
 layout: post
 title:  "SAFETAG Stories: The DDoS Outreach Strategy"
 date:   2018-08-23 15:49:55
-tags: SAFETAG, ddos, website, TRI, metadata
+tags: ["SAFETAG", "ddos", "website", "TRI", "metadata"]
 author: Jon
 ---
 *This is the third in a series of blog posts sharing some stories gleaned from audits over the years (often combined from multiple experiences and with all identifying information removed).  The goal is to share experiences and approaches to help new auditors get into the mindset of SAFETAG*

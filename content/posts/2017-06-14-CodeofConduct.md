@@ -2,7 +2,7 @@
 layout: post
 title:  "Code of Conduct and Community Governance"
 date:   2017-06-14 14:32:17
-tags: codeofconduct, governance
+tags: ["codeofconduct", "governance"]
 author: Jon
 ---
 

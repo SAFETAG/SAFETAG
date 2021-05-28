@@ -2,7 +2,7 @@
 layout: post
 title:  "Updates from the Advanced Threats Workshop!"
 date:   2018-05-04 12:49:55
-tags: SAFETAG, malware, prague, advanced threats
+tags: ["SAFETAG", "malware", "prague", "advanced threats"]
 author: Jon
 ---
 

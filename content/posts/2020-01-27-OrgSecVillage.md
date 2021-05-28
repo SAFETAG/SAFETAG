@@ -2,7 +2,7 @@
 layout: post
 title:  "Shape the agenda for the Internet Freedom Festival's OrgSec Village"
 date:   2020-01-27 09:00:00
-tags: SAFETAG, IFF, Internet Freedom Festival, OrgSec
+tags: ["SAFETAG", "IFF", "Internet Freedom Festival", "OrgSec"]
 author: Jon
 ---
 

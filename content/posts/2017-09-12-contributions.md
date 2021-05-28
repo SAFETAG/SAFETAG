@@ -2,7 +2,7 @@
 layout: post
 title:  "Contributing to SAFETAG -- and an Updated Guide!"
 date:   2017-09-12 17:35:15
-tags: SAFETAG, content, structure
+tags: ["SAFETAG", "content", "structure"]
 author: Jon
 ---
 

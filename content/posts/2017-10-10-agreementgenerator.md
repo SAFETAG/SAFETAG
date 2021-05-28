@@ -2,7 +2,7 @@
 layout: post
 title:  "SAFETAG Agreement Generator"
 date:   2017-10-10 16:49:55
-tags: SAFETAG, Agreement Generator
+tags: ["SAFETAG", "Agreement Generator"]
 author: Jon
 ---
 

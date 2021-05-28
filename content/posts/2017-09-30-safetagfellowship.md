@@ -2,7 +2,7 @@
 layout: post
 title:  "REMINDER: Nov 17 deadline for SAFETAG Fellowship Grants "
 date:   2017-11-09 08:58:55
-tags: SAFETAG, funding
+tags: ["SAFETAG", "funding"]
 author: Jon
 ---
 

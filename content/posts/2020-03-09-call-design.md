@@ -2,7 +2,7 @@
 layout: post
 title:  "Re-designing SAFETAG: Developing a Brand"
 date:   2020-03-09 01:01:01
-tags: tags
+tags: ["SAFETAG", "brand"]
 author: Adriana
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "SAFETAG Stories: The Forgotten Incident"
 date:   2018-08-20 12:49:55
-tags: SAFETAG, incidentresponse, TRI, metadata
+tags: ["SAFETAG", "incident response", "TRI", "metadata"]
 author: Jon
 ---
 *This is the second in a series of blog posts sharing some stories gleaned from audits over the years (often combined from multiple experiences and with all identifying information removed).  The goal is to share experiences and approaches to help new auditors get into the mindset of SAFETAG*

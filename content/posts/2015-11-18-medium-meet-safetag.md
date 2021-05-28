@@ -2,7 +2,7 @@
 layout: post
 title:  "Meet SAFETAG: Helping Non-Profits Focus on Digital Security"
 date:   2015-11-18 12:09:25
-tags: safetag, medium
+tags: ["safetag", "medium"]
 author: Jon
 ---
 
