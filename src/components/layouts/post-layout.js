@@ -96,10 +96,10 @@ function PostLayout({ data, location }) {
                 to={
                   prevPath.startsWith("/guide-builder")
                     ? prevPage
-                    : "/#allPosts"
+                    : "/posts/"
                 }
               >
-                Back to {prevPath ? "guide builder" : "all post"}
+                Back to {prevPath ? "the home page" : "the blog index"}
               </MoreLink>
               <InpageTitle size="jumbo" variation="primary">
                 {frontmatter.title}
@@ -114,6 +114,12 @@ function PostLayout({ data, location }) {
               <Dl boldDesc>
                 <dt>Author</dt>
                 <dd>{frontmatter.author}</dd>
+              </Dl>
+              <Dl>
+                <dt>Tags</dt>
+                {frontmatter.tags.map(tag => (
+                  <dd key={tag}>{tag}</dd>
+                ))}
               </Dl>
             </PostMeta>
           </InpageInnerColumns>
@@ -140,6 +146,7 @@ export const query = graphql`
         title
         author
         date
+        tags
         main_image
         main_image_caption
         draft
