@@ -128,6 +128,9 @@ const getBodyStyles = ({ variation }) => {
           color: ${themeVal("color.surface")};
           text-decoration: underline;
         }
+        a:visited {
+          color: ${themeVal("color.surface")};
+        }
       }
     `
   return css`
