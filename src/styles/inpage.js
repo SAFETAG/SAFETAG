@@ -144,6 +144,11 @@ export const InpageBody = styled.section`
     padding-top: ${glsp(2)};
     padding-bottom: ${glsp(2)};
   }
+  p > img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
 `
 
 export const InpageBodyInner = styled(Constrainer)`

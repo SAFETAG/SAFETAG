@@ -44,6 +44,11 @@ const PostIntro = styled.article`
 const PostBody = styled.article`
   display: flex;
   flex-flow: column nowrap;
+  p > img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
 `
 
 const PostMeta = styled.aside``
