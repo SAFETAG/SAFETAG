@@ -20,6 +20,7 @@ import {
 } from "../styles/inpage"
 import Heading, { Subheading } from "../styles/type/heading"
 import MoreLink from "../styles/button/more-link"
+import Card, { CardHeader, CardHeading, CardList } from "../styles/card"
 
 import LogoSymbolWhite from "../../static/assets/logo/SafetagSymbolWhite.svg"
 
@@ -78,6 +79,11 @@ const HomepageHeaderButtons = styled.div`
   }
 `
 
+
+const HomeCardList = styled(CardList)`
+  margin: ${glsp(4)} 0;
+`
+
 function IndexPage({ data }) {
 
   return (
@@ -134,7 +140,7 @@ function IndexPage({ data }) {
               Recent Updates
             </Heading>
             <ul>
-              {data.allMarkdownRemark.edges.map(
+              {data.posts.edges.map(
                 ({ node }, index) => (
                     <li key={index}>
                       <Link to={node.fields.slug}>{node.frontmatter.title}</Link> &mdash; {node.frontmatter.date}
@@ -148,40 +154,36 @@ function IndexPage({ data }) {
         <InpageBody>
           <InpageBodyInner>
 
-            <Heading id="framework" size="jumbo" variation="primary" withDeco>
-              The SAFETAG Audit Framework
+            <Heading id="allMethods" size="jumbo" variation="primary" withDeco>
+              The SAFETAG Methods
             </Heading>
-
-            <Heading id="methods" size="large">
-              SAFETAG Methods
-            </Heading>
-            <p>
-              The Overview contains the SAFETAG Methods and top-level approaches
-              and is available in mutiple languages:
-            </p>
-            <ul>
-              <li><span>العربية</span></li>
-              <li><span>english</span></li>
-              <li><span>español</span></li>
-              <li><span>русский</span></li>
-            </ul>
-
-            <Heading id="methods" size="large">
-              Full Guide
-            </Heading>
-            <p>
-              You can <a href="" target="_blank" rel="noopener">explore the full
-              guide online</a> and download it in <a href="" target="_blank"
-              rel="noopener">English</a>.
-            </p>
-
-            <Heading id="curricula" size="large">
-              Curricula
-            </Heading>
-            <p>
-              To train new auditors, Internews has also provided an <a href="">Auditor training curricula</a>.
-            </p>
-
+            <Subheading>Explore all Safetag Methods</Subheading>
+            <HomeCardList>
+              {data.methods.edges.map(
+                ({ node }, index) => (
+                    <li key={index}>
+                      <Card
+                        border="primary"
+                        as={Link}
+                        to={node.fields.slug}
+                        withHover
+                      >
+                        <CardHeader>
+                        	<img src={node.frontmatter.method_icon} />
+                        	<CardHeading variation="primary" withDeco>
+                        	  {node.frontmatter.title}
+                        	</CardHeading>
+                        </CardHeader>
+                        <p>
+                          {
+                            node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
+                          }
+                        </p>
+                      </Card>
+                    </li>
+                  )
+              )}
+            </HomeCardList>
 
           </InpageBodyInner>
         </InpageBody>
@@ -206,7 +208,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date],  order: DESC },
       limit: 5,
       filter: {fileAbsolutePath: {regex: "/posts/"}}
@@ -219,6 +221,24 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM Do, YYYY")
+          }
+        }
+      }
+    }
+    methods: allMarkdownRemark(
+      sort: { fields: [frontmatter___position],  },
+      filter: {fileAbsolutePath: {regex: "/methods/"}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            position
+            method_icon
+            summary
           }
         }
       }
