@@ -179,7 +179,7 @@ walk_through: >
   ___
 recommendations: |
 
-  See [Incident Response guidance](https://guide.safetag.org/activities/incident_response).
+  See [Incident Response guidance](https://safetag.org/activities/incident_response).
 organization_size_under: 10000
 time_required_minutes: 60
 ---

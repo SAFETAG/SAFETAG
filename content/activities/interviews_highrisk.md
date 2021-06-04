@@ -200,7 +200,7 @@ walk_through: >
   assets are the most important, sensitive and possibly targeted
 recommendations: >
   Recommendations will depend on the advanced threats raised during the
-  interview. See the [Advanced Threat Method](https://guide.safetag.org/methods/advanced_threat) for details.
+  interview. See the [Advanced Threat Method](https://safetag.org/methods/advanced_threat) for details.
 organization_size_under: 50
 time_required_minutes: 30
 ---

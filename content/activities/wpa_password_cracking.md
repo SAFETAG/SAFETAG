@@ -59,7 +59,7 @@ walk_through: >
   or thousands of words (in English and/or other relevant languages).
 
 
-  See the [Password Strength Activity](https://guide.safetag.org/activities/password_strength) for details on password dictionary building
+  See the [Password Strength Activity](https://safetag.org/activities/password_strength) for details on password dictionary building
   and usage.
 
 

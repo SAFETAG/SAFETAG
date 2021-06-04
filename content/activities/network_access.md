@@ -233,7 +233,7 @@ walk_through: >
 
   * For the (most common) WPA password-based attacks, an already-prepared
   dictionary of words to use to attack the password will be required. See the
-  [Password Strength activity](https://guide.safetag.org/activities/password_strength) for guidance on dictionary preparation.
+  [Password Strength activity](https://safetag.org/activities/password_strength) for guidance on dictionary preparation.
 
 
   **Instructions**
@@ -252,7 +252,7 @@ walk_through: >
   or thousands of words (in English and/or other relevant languages).
 
 
-  See the [Password Strength Activity](https://guide.safetag.org/activities/password_strength) for details on password dictionary building
+  See the [Password Strength Activity](https://safetag.org/activities/password_strength) for details on password dictionary building
   and usage.
 
 
@@ -388,7 +388,7 @@ walk_through: >
   carrying out local attacks quite quickly, and from a distance.
 
 
-  See the [Wireless Range Mapping Activity](https://guide.safetag.org/activities/wireless_range_mapping) for guidance on mapping the reach of
+  See the [Wireless Range Mapping Activity](https://safetag.org/activities/wireless_range_mapping) for guidance on mapping the reach of
   the Wi-Fi network.
 
 

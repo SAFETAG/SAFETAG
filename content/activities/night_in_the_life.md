@@ -108,7 +108,7 @@ recommendations: >
   being accessed with personal devices.
 
 
-  **See also the recommendations under the [Device Checklist Activity](https://guide.safetag.org/activities/device_checklist)**
+  **See also the recommendations under the [Device Checklist Activity](https://safetag.org/activities/device_checklist)**
 organization_size_under: 25
 time_required_minutes: 120
 ---

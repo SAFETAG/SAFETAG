@@ -17,7 +17,7 @@ materials_needed: ''
 considerations: ''
 walk_through: >
 
-  This can be built in to the [Sensitive Data Activity](https://guide.safetag.org/activities/sensitive_data).
+  This can be built in to the [Sensitive Data Activity](https://safetag.org/activities/sensitive_data).
 recommendations: ''
 ---
 

@@ -348,7 +348,7 @@ walk_through: >
     * When was the last time the backups were restored?
 recommendations: >
 
-  See recommendation section in the [Guided Tour Activity](https://guide.safetag.org/activities/guided_tour).
+  See recommendation section in the [Guided Tour Activity](https://safetag.org/activities/guided_tour).
 
 
   For useful organizational policy recommendations, review the SANS  

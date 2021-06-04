@@ -78,7 +78,7 @@ preparation: >
 
   * Ability to do initial malware research safely
 
-  * Ability to image a machine and practice good digital forensics and evidence capture processes (see the [Evidence Capture Activity](https://guide.safetag.org/activities/evidence_capture))
+  * Ability to image a machine and practice good digital forensics and evidence capture processes (see the [Evidence Capture Activity](https://safetag.org/activities/evidence_capture))
 
   * Contacts with malware analysis experts for more in depth investigation
 position: 130

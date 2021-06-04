@@ -118,7 +118,7 @@ walk_through: >
     * If you discovered your office had been broken in to, what would your first guess of where or how the burglar broke in be?
 recommendations: |
 
-  See recommendation section in the [Guided Tour Activity](https://guide.safetag.org/activities/guided_tour).
+  See recommendation section in the [Guided Tour Activity](https://safetag.org/activities/guided_tour).
 organization_size_under: 50
 time_required_minutes: 60
 ---

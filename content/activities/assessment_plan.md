@@ -44,7 +44,7 @@ walk_through: >2
   Auditors are encouraged to use, or at least reference text from the following sources:
 
 
-  * Sample Text for a Statement of Work and Engagement Agreement in the [Confidentiality Agreement Activity](https://guide.safetag.org/activities/confidentiality_agreement/).
+  * Sample Text for a Statement of Work and Engagement Agreement in the [Confidentiality Agreement Activity](https://safetag.org/activities/confidentiality_agreement/).
 
   * The [SAFETAG Agreement Generator](https://github.com/SAFETAG/safetag_agreement_generator), a python script which provides a decision tree covering the above points, and builds a basic, clear-language agreement which can be translated and formalized as needed. Sample outputs and a diagram of the full decision tree are available in the "outputs" folder of the Agreement Generator repository. This replaces the draft agreement previously part of SAFETAG.
 considerations: >2

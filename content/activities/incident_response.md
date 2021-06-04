@@ -57,7 +57,7 @@ walk_through: >+
 
   - In consultation with the organization and any IT staff, delete the hard disk content and reinstall the system
 
-  - if the forensic capture of the whole hard disk would take too long, and an investigation is needed, the hard disk can be replaced (See the [Advanced Threats Method](https://guide.safetag.org/methods/advanced_threat) for further guidance)
+  - if the forensic capture of the whole hard disk would take too long, and an investigation is needed, the hard disk can be replaced (See the [Advanced Threats Method](https://safetag.org/methods/advanced_threat) for further guidance)
 
   - if reinstalling the system is not possible, the device should be replaced
 

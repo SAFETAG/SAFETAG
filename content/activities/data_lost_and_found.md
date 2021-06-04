@@ -14,7 +14,7 @@ materials_needed: ''
 considerations: ''
 walk_through: >
 
-  See the [Sensitive Data activity](https://guide.safetag.org/activities/sensitive_data) for an interactive way to gather the types of
+  See the [Sensitive Data activity](https://safetag.org/activities/sensitive_data) for an interactive way to gather the types of
   data in the organization for this ranking exercise.
 recommendations: ''
 ---

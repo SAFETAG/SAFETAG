@@ -145,7 +145,7 @@ walk_through: >
   * Reporting:
       * The facilitator should combine the notes and communicate them securely to the Auditor, and securely destroy the notes.
 recommendations: |
-  See the [Guided Tour Activity](https://guide.safetag.org/activities/guided_tour)
+  See the [Guided Tour Activity](https://safetag.org/activities/guided_tour)
 organization_size_under: 50
 time_required_minutes: 90
 ---
