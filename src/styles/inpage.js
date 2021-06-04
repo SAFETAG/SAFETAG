@@ -90,6 +90,7 @@ export const InpageTitleWrapper = styled.div`
 
 export const InpageTitle = styled(({ ...props }) => <Heading {...props} />)`
   margin-bottom: ${glsp(0.5)};
+  line-height: 3rem;
 `
 
 export const InpageTagline = styled.p`
@@ -114,6 +115,24 @@ const getBodyStyles = ({ variation }) => {
         }
       }
     `
+  else if (variation === "blue")
+    return css`
+      background-color: ${themeVal("color.primary")};
+      & * {
+        color: ${themeVal("color.surface")};
+        border-color: ${themeVal("color.surface")};
+        &:after {
+          background-color: ${themeVal("color.surface")};
+        }
+        a {
+          color: ${themeVal("color.surface")};
+          text-decoration: underline;
+        }
+        a:visited {
+          color: ${themeVal("color.surface")};
+        }
+      }
+    `
   return css`
     background-color: transparent;
   `
@@ -124,6 +143,11 @@ export const InpageBody = styled.section`
   & ~ & {
     padding-top: ${glsp(2)};
     padding-bottom: ${glsp(2)};
+  }
+  p > img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
   }
 `
 

@@ -79,66 +79,93 @@ const HomepageHeaderButtons = styled.div`
   }
 `
 
+
 const HomeCardList = styled(CardList)`
   margin: ${glsp(4)} 0;
+`
+
+const ContactButton = styled(Button)`
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
 `
 
 function IndexPage({ data }) {
 
   return (
     <GlobalLayout>
-      <SEO title="Safetag guide" />
+      <SEO title="Safetag" />
       <Inpage>
         <HomepageHeader>
           <HomepageHeaderInner>
             <InpageHeadline>
               <HomepageTitle size="jumbo" variation="white">
-                SAFETAG (BETA)
+                SAFETAG
               </HomepageTitle>
-              <Subheading>Custom guide creator_</Subheading>
+              <Subheading>Security Auditing Framework and Evaluation Template for Advocacy Groups</Subheading>
             </InpageHeadline>
             <p>
-              Security Auditing Framework and Evaluation Template for Advocacy
-              Groups. SAFETAG is a professional audit framework that adapts
+              SAFETAG is a professional audit framework that adapts
               traditional penetration testing and risk assessment methodologies
               to be relevant to smaller non-profit organizations based or
               operating in the developing world.
             </p>
-            <MoreLink direction="forward" to="/about/">
-              Learn More
-            </MoreLink>
           </HomepageHeaderInner>
-          <HomepageHeaderButtons>
-            <Button
-              size="jumbo"
-              box="semi-fluid"
-              variation="primary-outline"
-              title="Download full guide as PDF"
-              onClick={() => {
-                window.open('/guides/Safetag_full_guide.pdf');
-              }}
-            >
-              Download Full Guide
-            </Button>
-            <Button
-              size="jumbo"
-              box="semi-fluid"
-              variation="primary-raised-light"
-              to="/guide-builder/"
-              as={Link}
-            >
-              Create Custom Guide
-            </Button>
-          </HomepageHeaderButtons>
         </HomepageHeader>
         <InpageBody>
           <InpageBodyInner>
+            <Heading id="about" size="jumbo" variation="primary" withDeco>
+              About SAFETAG
+            </Heading>
+            <p>
+              SAFETAG audits serve small scale civil society organizations and independent
+              media houses who have digital security concerns by working with them to identify
+              the risks they face and providing capacity-aware, pragmatic next steps to
+              address them.
+            </p>
+            <p>
+              Traditional security audits are based upon the assumption that an organization
+              has the time, money, and capacity to aim for perfect security. Low-income
+              at-risk groups have none of these luxuries. SAFETAG combines assessment
+              activities from the the security auditing world with best-practices for working
+              with small scale at-risk organizations.
+            </p>
+            <p>
+              SAFETAG auditors lead a risk modeling process that helps staff and leadership
+              take an institutional look at their digital security problems, expose
+              vulnerabilities that impact their critical processes and assets, and provide
+              clear reporting and follow up to help the organization strategically move
+              forward and identify the support that they need.
+            </p>
+          </InpageBodyInner>
+        </InpageBody>
+
+        <InpageBody variation="blue">
+          <InpageBodyInner>
+            <Heading id="recent-updates" size="jumbo" variation="primary" withDeco>
+              Recent Updates
+            </Heading>
+            <ul>
+              {data.posts.edges.map(
+                ({ node }, index) => (
+                    <li key={index}>
+                      <Link to={node.fields.slug}>{node.frontmatter.title}</Link> &mdash; {node.frontmatter.date}
+                    </li>
+                  )
+              )}
+            </ul>
+          </InpageBodyInner>
+        </InpageBody>
+
+        <InpageBody>
+          <InpageBodyInner>
+
             <Heading id="allMethods" size="jumbo" variation="primary" withDeco>
-              Methods
+              The SAFETAG Methods
             </Heading>
             <Subheading>Explore all Safetag Methods</Subheading>
             <HomeCardList>
-              {data.allMarkdownRemark.edges.map(
+              {data.methods.edges.map(
                 ({ node }, index) => (
                     <li key={index}>
                       <Card
@@ -163,8 +190,60 @@ function IndexPage({ data }) {
                   )
               )}
             </HomeCardList>
+
           </InpageBodyInner>
         </InpageBody>
+
+        <InpageBody variation="blue">
+          <InpageBodyInner>
+            <Heading id="license" size="jumbo" variation="primary" withDeco>
+              License
+            </Heading>
+            <p>
+              SAFETAG resources are available under a <a
+              href="https://creativecommons.org/licenses/by-sa/3.0/">Creative
+              Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
+            </p>
+            <p>
+              For photo and design details, check out the <Link
+              to="/credits/">Credits</Link> page.
+            </p>
+            <p>
+              Please see the <Link to="/license/">full license</Link> for
+              content attribution and a usage guide to referring to the
+              "SAFETAG" wordmark.
+            </p>
+          </InpageBodyInner>
+        </InpageBody>
+
+        <InpageBody>
+          <InpageBodyInner>
+            <Heading id="license" size="jumbo" variation="primary" withDeco>
+              Get in touch
+            </Heading>
+            <ContactButton
+                variation="primary-raised-light"
+                to="#"
+                onClick={(e) => {
+                  window.location = "mailto:info@SAFETAG.org";
+                  e.preventDefault();
+                }}
+                as={Link}>
+              info@SAFETAG.org
+            </ContactButton>
+            <p>
+              We have a global network of auditors trained in the SAFETAG
+              framework available for independent work with small NGOs.
+            </p>
+            <p>
+              For updates or suggestions for the framework, <Link
+              to="https://github.com/SAFETAG/SAFETAG/issues">submit an
+              issue</Link>.
+            </p>
+
+          </InpageBodyInner>
+        </InpageBody>
+
       </Inpage>
     </GlobalLayout>
   )
@@ -185,7 +264,24 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    posts: allMarkdownRemark(
+      sort: { fields: [frontmatter___date],  order: DESC },
+      limit: 5,
+      filter: {fileAbsolutePath: {regex: "/posts/"}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "MMMM Do, YYYY")
+          }
+        }
+      }
+    }
+    methods: allMarkdownRemark(
       sort: { fields: [frontmatter___position],  },
       filter: {fileAbsolutePath: {regex: "/methods/"}}
     ) {

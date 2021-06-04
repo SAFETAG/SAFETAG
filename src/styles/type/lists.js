@@ -73,7 +73,7 @@ export const SquareUl = styled.ul`
       background-color: ${themeVal("color.primary")};
       color: ${themeVal("color.surface")};
     }
-   
+
     tbody tr:nth-child(odd) {
       background-color: ${themeVal("color.mist")};
     }
@@ -82,11 +82,6 @@ export const SquareUl = styled.ul`
       padding: 0.25rem 0.5rem;
       border-right: 2px solid white;
     }
-  }
-  img {
-    margin: 1rem 0;
-    width: 100%;
-    max-width: 100%;
   }
 `
 

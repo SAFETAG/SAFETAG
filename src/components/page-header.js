@@ -107,7 +107,7 @@ const GlobalMenu = styled.ul`
     right: 0;
     background: none;
     border-bottom: none;
-    opacity: 1; 
+    opacity: 1;
     transition: none;
     > li {
       margin: 0;
@@ -149,7 +149,7 @@ const Toggle = styled.div`
   cursor: pointer;
   padding: 0.75rem 0;
   margin-left: auto;
-  ${media.mediumUp` 
+  ${media.mediumUp`
     display: none;
   `}
 `
@@ -245,6 +245,11 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
+                <GlobalMenuLink to="/posts/" scrolled={scrolled}>
+                  Blog
+                </GlobalMenuLink>
+              </li>
+              <li>
                 <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
                   Methods
                 </GlobalMenuLink>
@@ -273,6 +278,11 @@ const GlobalHeader = () => {
               <li>
                 <GlobalMenuLink to="/about/" scrolled={scrolled}>
                   About
+                </GlobalMenuLink>
+              </li>
+              <li>
+                <GlobalMenuLink to="/posts/" scrolled={scrolled}>
+                  Blog
                 </GlobalMenuLink>
               </li>
               <li>
