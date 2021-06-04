@@ -46,5 +46,5 @@ purpose: >
 
   Checking the assumptions both of the organization and of the auditor by researching the current regional and technological context will ensure that an auditor is basing their work on accurate assessments of the conditions the organization faces and that they are making informed operational security considerations.
 preparation: ""
-position: 40
+position: 20
 ---

@@ -73,5 +73,5 @@ preparation: |+
   #### Baseline Skills
 
   * Basic systems administration experience for common operating systems
-position: 100
+position: 70
 ---
