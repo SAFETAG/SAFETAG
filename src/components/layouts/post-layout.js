@@ -1,8 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, withPrefix } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
-import mapValues from "lodash.mapvalues"
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
@@ -19,7 +18,6 @@ import {
 import MoreLink from "../../styles/button/more-link"
 import Dl from "../../styles/type/lists"
 import media from "../../styles/utils/media-queries"
-import Card, { CardHeading, CardList } from "../../styles/card"
 
 const PostHeadline = styled(InpageHeadline)`
   ${media.mediumUp`
