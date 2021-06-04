@@ -62,24 +62,6 @@ const HomepageTitle = styled(Heading)`
   padding-top: ${glsp()};
 `
 
-const HomepageHeaderButtons = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position:relative;
-  z-index: 1;
-  ${media.mediumUp`
-    flex-flow: row nowrap;
-  `}
-  ${Button} {
-    margin: ${glsp()};
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
-  }
-`
-
-
 const HomeCardList = styled(CardList)`
   margin: ${glsp(4)} 0;
 `
@@ -211,7 +193,7 @@ function IndexPage({ data }) {
             <p>
               Please see the <Link to="/license/">full license</Link> for
               content attribution and a usage guide to referring to the
-              "SAFETAG" wordmark.
+              &quot;SAFETAG&quot; wordmark.
             </p>
           </InpageBodyInner>
         </InpageBody>
