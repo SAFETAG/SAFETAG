@@ -50,21 +50,6 @@ const GlobalFooter = () => {
           <a href="https://www.netlify.com">
               <img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
             </a>
-          
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://stats.openinternetproject.org/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-
         </PageNetlify>
       </PageFootInner>
     </PageFoot>
