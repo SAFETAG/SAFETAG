@@ -51,7 +51,6 @@ const GlobalFooter = () => {
               <img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
             </a>
           
-<!-- Matomo -->
 <script type="text/javascript">
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -65,7 +64,6 @@ const GlobalFooter = () => {
     g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<!-- End Matomo Code -->
 
         </PageNetlify>
       </PageFootInner>
