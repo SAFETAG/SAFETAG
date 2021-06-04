@@ -223,7 +223,11 @@ function IndexPage({ data }) {
             </Heading>
             <ContactButton
                 variation="primary-raised-light"
-                to="mailto:info@SAFETAG.org"
+                to="#"
+                onClick={(e) => {
+                  window.location = "mailto:info@SAFETAG.org";
+                  e.preventDefault();
+                }}
                 as={Link}>
               info@SAFETAG.org
             </ContactButton>
