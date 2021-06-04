@@ -84,6 +84,12 @@ const HomeCardList = styled(CardList)`
   margin: ${glsp(4)} 0;
 `
 
+const ContactButton = styled(Button)`
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+`
+
 function IndexPage({ data }) {
 
   return (
@@ -184,6 +190,52 @@ function IndexPage({ data }) {
                   )
               )}
             </HomeCardList>
+
+          </InpageBodyInner>
+        </InpageBody>
+
+        <InpageBody variation="blue">
+          <InpageBodyInner>
+            <Heading id="license" size="jumbo" variation="primary" withDeco>
+              License
+            </Heading>
+            <p>
+              SAFETAG resources are available under a <a
+              href="https://creativecommons.org/licenses/by-sa/3.0/">Creative
+              Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
+            </p>
+            <p>
+              For photo and design details, check out the <Link
+              to="/credits/">Credits</Link> page.
+            </p>
+            <p>
+              Please see the <Link to="/license/">full license</Link> for
+              content attribution and a usage guide to referring to the
+              "SAFETAG" wordmark.
+            </p>
+          </InpageBodyInner>
+        </InpageBody>
+
+        <InpageBody>
+          <InpageBodyInner>
+            <Heading id="license" size="jumbo" variation="primary" withDeco>
+              Get in touch
+            </Heading>
+            <ContactButton
+                variation="primary-raised-light"
+                to="mailto:info@SAFETAG.org"
+                as={Link}>
+              info@SAFETAG.org
+            </ContactButton>
+            <p>
+              We have a global network of auditors trained in the SAFETAG
+              framework available for independent work with small NGOs.
+            </p>
+            <p>
+              For updates or suggestions for the framework, <Link
+              to="https://github.com/SAFETAG/SAFETAG/issues">submit an
+              issue</Link>.
+            </p>
 
           </InpageBodyInner>
         </InpageBody>
