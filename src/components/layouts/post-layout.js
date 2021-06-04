@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, Link, withPrefix } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
 import mapValues from "lodash.mapvalues"
 
@@ -17,7 +17,7 @@ import {
 } from "../../styles/inpage"
 
 import MoreLink from "../../styles/button/more-link"
-import Dl, { SquareUl } from "../../styles/type/lists"
+import Dl from "../../styles/type/lists"
 import media from "../../styles/utils/media-queries"
 import Card, { CardHeading, CardList } from "../../styles/card"
 
@@ -25,20 +25,6 @@ const PostHeadline = styled(InpageHeadline)`
   ${media.mediumUp`
     grid-column: span 2;
   `}
-`
-
-const PostIntro = styled.article`
-  display: flex;
-  flex-flow: column nowrap;
-  p {
-    max-width: 60ch;
-    &:first-of-type {
-      &::first-line {
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-    }
-  }
 `
 
 const PostBody = styled.article`
@@ -53,22 +39,6 @@ const PostBody = styled.article`
 
 const PostMeta = styled.aside``
 
-const ActivityList = styled.section`
-  grid-column: span 2;
-
-  ${CardList} {
-    margin-top: 2rem;
-  }
-`
-const ActivityCard = styled(Card)`
-  ${media.mediumUp`
-    min-height: 6rem;
-  `}
-  ${CardHeading} {
-    margin: 0;
-  }
-`
-
 function PostLayout({ data, location }) {
   const post = data.post
   const frontmatter = data.post.frontmatter
@@ -79,6 +49,7 @@ function PostLayout({ data, location }) {
   let prevPage = location.state && location.state.prevPage || ""
 
   // Fix images URL by adding app root url with prefix
+  /*
   const sections = mapValues(frontmatter, section => {
     if (section && section.html) {
       return section.html.replace(
@@ -88,6 +59,7 @@ function PostLayout({ data, location }) {
     }
     return section
   })
+  */
 
   return (
     <GlobalLayout>

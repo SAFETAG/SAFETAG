@@ -14,7 +14,6 @@ import {
   Inpage,
   InpageHeader,
   InpageHeaderInner,
-  InpageHeadline,
   InpageBody,
   InpageBodyInner,
 } from "../styles/inpage"
