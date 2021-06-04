@@ -246,7 +246,7 @@ const GlobalHeader = () => {
               </li>
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  News
+                  Blog
                 </GlobalMenuLink>
               </li>
               <li>
@@ -282,7 +282,7 @@ const GlobalHeader = () => {
               </li>
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  News
+                  Blog
                 </GlobalMenuLink>
               </li>
               <li>
