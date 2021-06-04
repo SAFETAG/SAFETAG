@@ -8,7 +8,6 @@ main_image_caption: "Image with title SAFETAG’s New Visual Identity!"
 tags: ["SAFETAG", "Visual Identity", "Design", "Community", "ADOPTABLE"]
 draft: false
 ---
-
 <div style="text-align: center"><img src="/img/blog/newvizblogcover.png" alt="Image with title SAFETAG's New Visual Identity" style="border: 0; width: 100%; padding: 1em;" /></div>
 
 Over the past year, Internews has worked closely with [Tafka Co-op](https://opencollective.com/tafka-co-op), [Development Seed](https://developmentseed.org/), [J++](https://jplusplus.org/en/) and the SAFETAG community to create a new visual identity and web interface that is more user-friendly, interactive, and community-focused. 
@@ -17,7 +16,7 @@ Through a series of open calls, a community survey, and input from Internews par
 
 ### New logo and design assets
 
-![](img/blog/logosmall.jpg)
+![](/img/blog/logosmall.jpg)
 As part of the new visual identity, Tafka Co-op worked with Internews and the broader SAFETAG community to update and/or create the following assets:
 
 * Updated logo, shown above
@@ -30,11 +29,11 @@ As part of the new visual identity, Tafka Co-op worked with Internews and the br
 
 One of our priorities when redesigning the SAFETAG interface was to make the framework more usable. A lot of the feedback received showed that new auditors had trouble following the framework, knowing where to begin, how many activities to use in their audit, etc. In response to this, we developed new iconography which will help guide auditors through the interface and framework based on their needs. A total of [20 icons](https://www.figma.com/file/ATTHbHSGthsteeXP4gnlxF/Safetag-%E2%86%92-Branding-system?node-id=55%3A0) were developed, however the three that will be used to represent each type of activity are shown below. 
 
-![](img/blog/TRI.png)
+![](/img/blog/TRI.png)
 
 Each SAFETAG audit is custom-built to the needs of the organization which is being audited. Designed with this in mind, the logo and all icons were built using a series of shapes and colors, or elements, arranged to represent each activity. These elements are used as building blocks, combining to form each icon. 
 
-![](img/blog/shapes.png)
+![](/img/blog/shapes.png)
 
 *Basic shapes are configured to represent methods and activities such as Physical Assessment, Responsive Support, and Organizational Device Usage.*
 
