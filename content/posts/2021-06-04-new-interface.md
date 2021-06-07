@@ -36,4 +36,4 @@ The new interface allows auditors to directly edit and contribute new content vi
 
 ### Check it out!
 
-You can explore the new and improved site [here](https://www.safetag.org/! Go ahead and try the [new content contribution feature](https://safetag.org/admin) and please share any feedback on the site with us at info [at] safetag [dot] org. 
+You can explore the new and improved site [here](https://www.safetag.org/)! Go ahead and try the [new content contribution feature](https://safetag.org/admin) and please share any feedback on the site with us at info [at] safetag [dot] org. 
