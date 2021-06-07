@@ -218,9 +218,9 @@ function IndexPage({ data }) {
               framework available for independent work with small NGOs.
             </p>
             <p>
-              For updates or suggestions for the framework, <Link
-              to="https://github.com/SAFETAG/SAFETAG/issues">submit an
-              issue</Link>.
+              For updates or suggestions for the framework, <a
+              href="https://github.com/SAFETAG/SAFETAG/issues">submit an
+              issue</a>.
             </p>
 
           </InpageBodyInner>
