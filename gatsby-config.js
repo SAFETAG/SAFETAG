@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-matomo`,
       options: {
         siteId: '1',
-        matomoUrl: 'stats.openinternetproject.org',
+        matomoUrl: 'https://stats.openinternetproject.org',
         siteUrl: 'https://safetag.org'
       },
     },
