@@ -187,9 +187,9 @@ function IndexPage({ data }) {
               Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
             </p>
             <p>
-              Check out the <Link to="/credits/">Credits and Licensing</Link>
-              page for content attribution and a usage guide to referring to
-              the &quot;SAFETAG&quot; wordmark.
+              Check out the <Link to="/credits/">Credits and Licensing
+              </Link> page for content attribution and a usage guide to
+              referring to the &quot;SAFETAG&quot; wordmark.
 
             </p>
             <p>
