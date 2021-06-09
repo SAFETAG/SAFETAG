@@ -26,13 +26,13 @@ While the creation of a playlist was possible previously with SAFETAG, the proce
 
 Using SAFETAG’s new visual identity, Development Seed and J++ helped us create a site that not only allows auditors to build customized playlists, but also organizes SAFETAG’s methods and activities in a format that is much easier to understand and use. After receiving feedback from the community, we knew that understanding the guide and where to begin as a new auditor was one of the top challenges faced by the auditor community. The new interface allows auditors to explore each method individually, with the necessary information and activities displayed on its own page, as shown below. 
 
-![](/img/blog/interface_2.png)
+![Screenshot of a SAFETAG method page for the Organizational Policy Review](/img/blog/interface_2.png)
 
 ### Contributing Content
 
 The new interface allows auditors to directly edit and contribute new content via Netlify CMS, a process much simpler and easier to use than the previous method done exclusively through GitHub. The Netlify CMS portal will allow both new and experienced auditors to edit and contribute without much Git experience required, reducing the barrier to entry for many SAFETAG users. SAFETAG remains a fully open source project and all source code from this tech staff as well as the contents of the guide can be accessed on [GitHub](https://github.com/SAFETAG/SAFETAG/tree/guide-source).
 
-![](/img/blog/interface_3.png)
+!["Screenshot of a webpage with Collections, Activities and a sort by filter menu"](/img/blog/interface_3.png)
 
 ### Check it out!
 
