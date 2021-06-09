@@ -24,12 +24,21 @@ const AboutPage = () => (
           </InpageBodyInner>
           <InpageInnerColumns columnLayout="2:1">
             <article>
-            <p>We have a global network of hundreds auditors trained in the SAFETAG framework available for independent work with small NGOs.</p>
-            <p>Want to learn more? Find -- or become -- an auditor? Join the SAFETAG community discussion?</p>
-            <p><strong>Email us at <a href="mailto:info@SAFETAG.org">info@SAFETAG.org</a></strong></p>
-            <h2>Get involved!</h2>
-            <p>For updates or suggestions for the framework: <br /> <a href="https://github.com/SAFETAG/SAFETAG/issues">submit an issue</a> or learn how to contribute directly!</p>
 
+            <p>We have a global network of hundreds auditors trained in the
+            SAFETAG framework available for independent work with small
+            NGOs.</p>
+
+            <p>Want to learn more? Find -- or become -- an auditor? Join the
+            SAFETAG community discussion?</p>
+
+            <p><strong>Email us at <a
+            href="mailto:info@SAFETAG.org">info@SAFETAG.org</a></strong></p>
+
+            <h2>Get involved!</h2>
+            <p>For updates or suggestions for the framework: <br /> <a
+            href="https://github.com/SAFETAG/SAFETAG/issues">submit an issue</a>
+            or learn how to contribute directly!</p>
 
             </article>
           </InpageInnerColumns>
