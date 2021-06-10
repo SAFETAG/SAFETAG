@@ -187,13 +187,12 @@ function IndexPage({ data }) {
               Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
             </p>
             <p>
-              For photo and design details, check out the <Link
-              to="/credits/">Credits</Link> page.
+              Check out the <Link to="/credits/">Credits and Licensing
+              </Link> page for content attribution and a usage guide to
+              referring to the &quot;SAFETAG&quot; wordmark.
+
             </p>
             <p>
-              Please see the <Link to="/license/">full license</Link> for
-              content attribution and a usage guide to referring to the
-              &quot;SAFETAG&quot; wordmark.
             </p>
           </InpageBodyInner>
         </InpageBody>
@@ -218,9 +217,9 @@ function IndexPage({ data }) {
               framework available for independent work with small NGOs.
             </p>
             <p>
-              For updates or suggestions for the framework, <Link
-              to="https://github.com/SAFETAG/SAFETAG/issues">submit an
-              issue</Link>.
+              For updates or suggestions for the framework, <a
+              href="https://github.com/SAFETAG/SAFETAG/issues">submit an
+              issue</a>.
             </p>
 
           </InpageBodyInner>
