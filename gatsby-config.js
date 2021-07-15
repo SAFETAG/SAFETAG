@@ -62,28 +62,7 @@ module.exports = {
           keySeparator: false,
           nsSeparator: false
         },
-        pages: [
-          {
-            matchPath: '/:lang?/blog/:uid',
-            getLanguageFromPath: true,
-            // excludeLanguages: ['es']
-          },
-          {
-            matchPath: '/preview',
-            languages: ['en']
-          }
-        ]
       }
-    },
-    {
-      resolve: `gatsby-source-transifex`,
-      options: {
-        organization: `otf`,
-        project: `safetag-overview`,
-        source_lang_code: `en`, // default lang
-        locales: ['fr'], // array of all translated lang
-        auth: `${process.env.TRANSIFEX_USER}:${process.env.TRANSIFEX_TOKEN}`,
-      },
     },
     {
       resolve: `gatsby-plugin-matomo`,

@@ -14,6 +14,7 @@ import {
 import Heading from "../styles/type/heading"
 
 const AboutPage = () => {
+  const { t, i18n, ready } = useTranslation('Site strings', { useSuspense: false });
   return (
   <GlobalLayout>
     <SEO title="About" />
