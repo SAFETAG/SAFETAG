@@ -1,6 +1,7 @@
 import React from "react"
+import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import GlobalLayout from "../components/layouts/global-layout"
@@ -73,7 +74,7 @@ const ContactButton = styled(Button)`
 `
 
 function IndexPage({ data }) {
-
+  const { t, i18n, ready } = useTranslation('Site strings', { useSuspense: false });
   return (
     <GlobalLayout>
       <SEO title="Safetag" />
@@ -84,48 +85,48 @@ function IndexPage({ data }) {
               <HomepageTitle size="jumbo" variation="white">
                 SAFETAG
               </HomepageTitle>
-              <Subheading>Security Auditing Framework and Evaluation Template for Advocacy Groups</Subheading>
+              <Subheading><Trans i18nKey="index-subtitle">Security Auditing Framework and Evaluation Template for Advocacy Groups</Trans></Subheading>
             </InpageHeadline>
-            <p>
+            <p><Trans i18nKey="index-intro">
               SAFETAG is a professional audit framework that adapts
               traditional penetration testing and risk assessment methodologies
               to be relevant to smaller non-profit organizations based or
               operating in the developing world.
-            </p>
+            </Trans></p>
           </HomepageHeaderInner>
         </HomepageHeader>
         <InpageBody>
           <InpageBodyInner>
             <Heading id="about" size="jumbo" variation="primary" withDeco>
-              About SAFETAG
+              <Trans i18nKey="index-about-title">About SAFETAG</Trans>
             </Heading>
-            <p>
+            <p><Trans i18nKey="index-about-1">
               SAFETAG audits serve small scale civil society organizations and independent
               media houses who have digital security concerns by working with them to identify
               the risks they face and providing capacity-aware, pragmatic next steps to
               address them.
-            </p>
-            <p>
+            </Trans></p>
+            <p><Trans i18nKey="index-about-2">
               Traditional security audits are based upon the assumption that an organization
               has the time, money, and capacity to aim for perfect security. Low-income
               at-risk groups have none of these luxuries. SAFETAG combines assessment
               activities from the the security auditing world with best-practices for working
               with small scale at-risk organizations.
-            </p>
-            <p>
+            </Trans></p>
+            <p><Trans i18nKey="index-about-3">
               SAFETAG auditors lead a risk modeling process that helps staff and leadership
               take an institutional look at their digital security problems, expose
               vulnerabilities that impact their critical processes and assets, and provide
               clear reporting and follow up to help the organization strategically move
               forward and identify the support that they need.
-            </p>
+            </Trans></p>
           </InpageBodyInner>
         </InpageBody>
 
         <InpageBody variation="blue">
           <InpageBodyInner>
             <Heading id="recent-updates" size="jumbo" variation="primary" withDeco>
-              Recent Updates
+              <Trans i18nKey="index-updates-title">Recent Updates</Trans>
             </Heading>
             <ul>
               {data.posts.edges.map(
@@ -143,9 +144,11 @@ function IndexPage({ data }) {
           <InpageBodyInner>
 
             <Heading id="allMethods" size="jumbo" variation="primary" withDeco>
-              The SAFETAG Methods
+              <Trans i18nKey="index-methods-title">The SAFETAG Methods</Trans>
             </Heading>
-            <Subheading>Explore all Safetag Methods</Subheading>
+            <Subheading>
+              <Trans i18nKey="index-methods-subtitle">Explore all Safetag Methods</Trans>
+            </Subheading>
             <HomeCardList>
               {data.methods.edges.map(
                 ({ node }, index) => (
@@ -179,28 +182,25 @@ function IndexPage({ data }) {
         <InpageBody variation="blue">
           <InpageBodyInner>
             <Heading id="license" size="jumbo" variation="primary" withDeco>
-              License
+              <Trans i18nKey="index-license-title">License</Trans>
             </Heading>
-            <p>
+            <p><Trans i18nKey="index-license-1">
               SAFETAG resources are available under a <a
               href="https://creativecommons.org/licenses/by-sa/3.0/">Creative
               Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
-            </p>
-            <p>
+            </Trans></p>
+            <p><Trans i18nKey="index-license-2">
               Check out the <Link to="/credits/">Credits and Licensing
               </Link> page for content attribution and a usage guide to
               referring to the &quot;SAFETAG&quot; wordmark.
-
-            </p>
-            <p>
-            </p>
+            </Trans></p>
           </InpageBodyInner>
         </InpageBody>
 
         <InpageBody>
           <InpageBodyInner>
-            <Heading id="license" size="jumbo" variation="primary" withDeco>
-              Get in touch
+            <Heading id="contact" size="jumbo" variation="primary" withDeco>
+              <Trans i18nKey="index-contact-title">Get in touch</Trans>
             </Heading>
             <ContactButton
                 variation="primary-raised-light"
@@ -212,15 +212,15 @@ function IndexPage({ data }) {
                 as={Link}>
               info@SAFETAG.org
             </ContactButton>
-            <p>
+            <p><Trans i18nKey="index-contact-1">
               We have a global network of auditors trained in the SAFETAG
               framework available for independent work with small NGOs.
-            </p>
-            <p>
+            </Trans></p>
+            <p><Trans i18nKey="index-contact-2">
               For updates or suggestions for the framework, <a
               href="https://github.com/SAFETAG/SAFETAG/issues">submit an
               issue</a>.
-            </p>
+            </Trans></p>
 
           </InpageBodyInner>
         </InpageBody>
@@ -244,7 +244,7 @@ export default IndexPage
 */
 
 export const query = graphql`
-  query {
+  query($language: String!) {
     posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date],  order: DESC },
       limit: 5,
@@ -262,6 +262,7 @@ export const query = graphql`
         }
       }
     }
+
     methods: allMarkdownRemark(
       sort: { fields: [frontmatter___position],  },
       filter: {fileAbsolutePath: {regex: "/methods/"}}
@@ -280,5 +281,16 @@ export const query = graphql`
         }
       }
     }
+
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+
   }
 `

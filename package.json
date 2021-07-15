@@ -78,9 +78,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "build-deploy": "gatsby build --prefix-paths",
+    "build": "npm run transifex && gatsby build",
+    "develop": "npm run transifex && gatsby develop",
+    "build-deploy": "npm run transifex && gatsby build --prefix-paths",
     "deploy-gh-pages": "gatsby build --prefix-paths && gh-pages -d public -b guide",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",

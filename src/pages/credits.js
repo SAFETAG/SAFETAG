@@ -13,11 +13,11 @@ import {
 
 import Heading from "../styles/type/heading"
 
-const AboutPage = () => {
+const CreditsPage = () => {
   const { t, i18n, ready } = useTranslation('Site strings', { useSuspense: false });
   return (
   <GlobalLayout>
-    <SEO title="About" />
+    <SEO title="Credits and License" />
       <Inpage>
         <InpageBody>
           <InpageBodyInner>
