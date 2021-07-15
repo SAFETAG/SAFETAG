@@ -1,5 +1,5 @@
 import React from "react"
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import { graphql } from "gatsby"
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
@@ -14,7 +14,7 @@ import {
 import Heading from "../styles/type/heading"
 
 const CreditsPage = () => {
-  const { t, i18n, ready } = useTranslation('Site strings', { useSuspense: false });
+  useTranslation('Site strings', { useSuspense: false });
   return (
   <GlobalLayout>
     <SEO title="Credits and License" />
@@ -52,7 +52,7 @@ const CreditsPage = () => {
 
 }
 
-export default AboutPage
+export default CreditsPage
 
 export const query = graphql`
   query($language: String!) {
