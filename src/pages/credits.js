@@ -27,7 +27,6 @@ const CreditsPage = () => {
           </InpageBodyInner>
           <InpageInnerColumns columnLayout="2:1">
             <article>
-
             <p><Trans i18nKey="credits-trademark">SAFETAG is a trademark of Internews. Please read the <a
             href="https://github.com/SAFETAG/SAFETAG/blob/master/LICENSE.md#usage-of-safetag">SAFETAG
             License</a> for detailed information on the usage of &quot;SAFETAG&quot; as a
@@ -50,6 +49,7 @@ const CreditsPage = () => {
       </Inpage>
   </GlobalLayout>
 )
+
 }
 
 export default AboutPage

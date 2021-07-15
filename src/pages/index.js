@@ -221,7 +221,6 @@ function IndexPage({ data }) {
               href="https://github.com/SAFETAG/SAFETAG/issues">submit an
               issue</a>.
             </Trans></p>
-
           </InpageBodyInner>
         </InpageBody>
 
