@@ -89,7 +89,7 @@
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "extract": "i18next 'src/pages/*.js'",
-    "transifex": "transifex -u \"$(grep USER .env.production | cut -d '=' -f2):$(grep PASSWORD .env.production | cut -d '=' -f2)\" -p safetag-overview -c site-strings -d locales"
+    "transifex": "node -r dotenv/config src/helpers/transifex.js"
   },
   "repository": {
     "type": "git",
