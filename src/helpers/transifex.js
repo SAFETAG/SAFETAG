@@ -33,6 +33,7 @@ function failed(err) {
 }
 
 function importFromTransifex(options) {
+  console.log(options.credential)
   // Retrieve all the data e.g. resource names, category names
   var transifex = new Transifex(options);
   transifex.resourcesSetMethod(options.project_slug, function(error, data) {
