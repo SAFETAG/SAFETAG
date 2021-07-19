@@ -8,6 +8,8 @@ jobs:
 
     env:
       SITE_NAME: 'Safetag'
+      TRANSIFEX_USER: ${{ secrets.TRANSIFEX_USER }}
+      TRANSIFEX_PASSWORD: ${{ secrets.TRANSIFEX_PASSWORD }}
 
     strategy:
       matrix:
