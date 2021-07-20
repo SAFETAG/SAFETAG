@@ -294,3 +294,42 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
+
+  - name: "posts"
+    label: "Blog posts"
+    label_singular: "Blog post"
+    folder: "content/posts"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - {
+          label: "Authors",
+          name: "authors",
+          widget: "relation",
+          collection: authors,
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          required: false,
+        }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          format: 'YYYY-MM-DD HH:mm',
+        }
+      - { name: tags, label: Tags, widget: list }
+      - {
+          label: 'Main Image',
+          name: 'main_image',
+          widget: 'image',
+          required: false,
+          tagname: '',
+        }
+      - { label: "Main Image caption", name: "main_image_caption", widget: "string" }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
