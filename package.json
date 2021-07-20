@@ -78,7 +78,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn run transifex && gatsby build",
+    "build": "npm run transifex && gatsby build",
     "develop": "npm run transifex && gatsby develop",
     "build-deploy": "npm run transifex && gatsby build --prefix-paths",
     "deploy-gh-pages": "gatsby build --prefix-paths && gh-pages -d public -b guide",
