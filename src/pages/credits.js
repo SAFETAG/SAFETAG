@@ -52,7 +52,7 @@ const CreditsPage = () => {
 
 }
 
-export default AboutPage
+export default CreditsPage
 
 export const query = graphql`
   query($language: String!) {
