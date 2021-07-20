@@ -11,12 +11,19 @@ jobs:
         node-version: [12]
 
     steps:
+      - name: Create env file
+        run: |
+          touch .env
+          echo TRANSIFEX_USER=${{ secrets.TRANSIFEX_USER }} >> .env
+          echo TRANSIFEX_PASSWORD=${{ secrets.TRANSIFEX_PASSWORD }} >> .env
+          cp .env .env.production
+          cp .env .env.development
+          cat .env
+
       - name: Checkout
         uses: actions/checkout@v2
         env:
           SITE_NAME: 'Safetag'
-          TRANSIFEX_USER: ${{ secrets.TRANSIFEX_USER }}
-          TRANSIFEX_PASSWORD: ${{ secrets.TRANSIFEX_PASSWORD }}
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
