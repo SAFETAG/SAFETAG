@@ -20,9 +20,6 @@ jobs:
           cp .env .env.development
           cat .env
 
-      - name: Update translations from Transifex
-        run: npm run transifex
-
       - name: Checkout
         uses: actions/checkout@v2
         env:
@@ -41,6 +38,9 @@ jobs:
 
       - name: Test
         run: yarn test
+
+      - name: Update translations from Transifex
+        run: npm run transifex
 
       - name: Test Build
         run: yarn build
