@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Announcing the 2021 Organizational Secutiry Village"
+title: "Announcing the 2021 Organizational Security Village"
 date: 2021-07-20 17:00:00
 author: "Internews"
 main_image: "" # 342px × 178p ~2x1
