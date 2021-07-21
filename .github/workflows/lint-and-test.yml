@@ -21,7 +21,7 @@ jobs:
           cat .env
 
       - name: Update translations from Transifex
-        run: yarn run transifex
+        run: npm run transifex
 
       - name: Checkout
         uses: actions/checkout@v2
