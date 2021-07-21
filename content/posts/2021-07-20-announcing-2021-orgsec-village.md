@@ -1,14 +1,17 @@
 ---
-layout: post
-title: "Announcing the 2021 Organizational Security Village"
-date: 2021-07-20 17:00:00
-author: "Internews"
-main_image: "" # 342px × 178p ~2x1
-main_image_caption: ""
-tags: ["SAFETAG", "OrgSec", "Community", "ADOPTABLE"]
 draft: false
+layout: post
+author: Internews
+title: Announcing the 2021 Organizational Security Village
+date: 2021-07-20 17:00:00
+tags:
+  - SAFETAG
+  - OrgSec
+  - Community
+  - ADOPTABLE
+main_image: /img/title_osv2021.png
+main_image_caption: ""
 ---
-
 Internews is excited to announce that we will be hosting our second virtual Organizational Security Village from **August 30-September 2, 2021**. This event will bring together security auditors, digital security trainers, and other experts and practitioners for a four-day program highlighting community-led sessions exploring organizational security.
 
 ## Virtual Village Format
@@ -19,11 +22,11 @@ We recognize that some may not be able to join due to timing or prior engagement
 
 ## Registration and CoC
 
-Please let us know you will be attending by registering here no later than **August 23**: [https://forms.office.com/r/YZBn5JwPuK](https://forms.office.com/r/YZBn5JwPuK)  We ask that you register even if you only plan to attend a few days or sessions.
+Please let us know you will be attending by registering here no later than **August 23**: <https://forms.office.com/r/YZBn5JwPuK>  We ask that you register even if you only plan to attend a few days or sessions.
 
-**_Event access details will only be shared with registered participants._**
+***Event access details will only be shared with registered participants.***
 
-_Please also complete the registration form if you are not able to join the live sessions but would like to review notes or contribute asynchronously._
+*Please also complete the registration form if you are not able to join the live sessions but would like to review notes or contribute asynchronously.*
 
 This event will follow the [USABLE Code of Conduct](https://usable.tools/coc/).
 
@@ -31,6 +34,6 @@ This event will follow the [USABLE Code of Conduct](https://usable.tools/coc/).
 
 Community members are invited to submit a session proposal via the form below. All sessions will last approximately 50 minutes and breakout functionality will be available.
 
-Session Proposals: [https://forms.office.com/r/5Piqqab7mX](https://forms.office.com/r/5Piqqab7mX)
+Session Proposals: <https://forms.office.com/r/5Piqqab7mX>
 
-Session proposals are due by **July 31**. Applicants will be notified of selection no later than **August 13**.
+Session proposals are due by **August 4**. Applicants will be notified of selection no later than **August 13**.
