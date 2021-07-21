@@ -22,6 +22,15 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2
+        
+      - name: Set up secrets
+        run: |
+          touch .env
+          echo TRANSIFEX_USER=${{ secrets.TRANSIFEX_USER }} >> .env
+          echo TRANSIFEX_PASSWORD=${{ secrets.TRANSIFEX_PASSWORD }} >> .env
+          cp .env .env.production
+          cp .env .env.development
+          cat .env
 
       - name: Use Node.js 12
         uses: actions/setup-node@v1

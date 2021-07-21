@@ -74,7 +74,7 @@ const ContactButton = styled(Button)`
 `
 
 function IndexPage({ data }) {
-  const { t, i18n, ready } = useTranslation('Site strings', { useSuspense: false });
+  useTranslation('Site strings', { useSuspense: false });
   return (
     <GlobalLayout>
       <SEO title="Safetag" />
