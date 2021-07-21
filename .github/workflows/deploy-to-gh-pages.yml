@@ -32,6 +32,9 @@ jobs:
           cp .env .env.development
           cat .env
 
+      - name: Update translations from Transifex
+        run: yarn run transifex
+
       - name: Use Node.js 12
         uses: actions/setup-node@v1
         with:
