@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - guide-source
+      - main
 
 jobs:
   build-and-deploy:
@@ -13,7 +13,7 @@ jobs:
       SITE_NAME: "Safetag"
 
     steps:
-      # Cancel previous workflows to avoid overlapping deploys as content 
+      # Cancel previous workflows to avoid overlapping deploys as content
       # editing might add several commits in short intervals.
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.6.0
@@ -22,7 +22,7 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Set up secrets
         run: |
           touch .env
