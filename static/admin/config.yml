@@ -331,5 +331,5 @@ collections:
           required: false,
           tagname: '',
         }
-      - { label: "Main Image caption", name: "main_image_caption", widget: "string" }
+      - { label: "Main Image caption", name: "main_image_caption", widget: "string", required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
