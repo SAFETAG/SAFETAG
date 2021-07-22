@@ -1,13 +1,14 @@
-name: Build and Deploy (production)
+name: Build and Deploy (staging)
 
 on:
   push:
     branches:
-      - main
+      - development
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: staging
 
     env:
       SITE_NAME: "Safetag"
@@ -44,10 +45,19 @@ jobs:
           yarn test
           yarn build
 
-      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: guide
           FOLDER: public
           CLEAN: true # Automatically remove deleted files from the deploy branch
+
+      - name: Deploy 🚀
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./public/*
+          host: ${{ secrets.SSH_HOST }}
+          remote: ${{ secrets.SSH_DIR }}
+          port: 22
+          user: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
