@@ -45,13 +45,6 @@ jobs:
           yarn test
           yarn build
 
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: guide
-          FOLDER: public
-          CLEAN: true # Automatically remove deleted files from the deploy branch
-
       - name: Deploy 🚀
         uses: nogsantos/scp-deploy@master
         with:
