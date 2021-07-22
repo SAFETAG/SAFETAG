@@ -47,11 +47,12 @@ jobs:
           yarn build
 
       - name: Deploy 🚀
-        uses: nogsantos/scp-deploy@master
+        uses: burnett01/rsync-deployments@4.1
         with:
-          src: ./public/*
-          host: ${{ secrets.SSH_HOST }}
-          remote: ${{ secrets.SSH_DIR }}
-          port: 22
-          user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          switches: -avzr --delete
+          path: public/
+          remote_path: ${{ secrets.SSH_DIR }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_port: 22
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
