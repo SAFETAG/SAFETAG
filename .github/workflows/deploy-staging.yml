@@ -39,11 +39,11 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install and Build
+      - name: Install, create translations and Build
         run: |
           yarn install
           yarn lint
-          yarn test
+          yarn extract
           yarn build
 
       - name: Deploy 🚀
