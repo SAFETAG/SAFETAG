@@ -37,9 +37,14 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install and Build
+      - name: Install
+        run: yarn install
+
+      - name: Update translations from Transifex
+        run: npm run transifex
+
+      - name: Build
         run: |
-          yarn install
           yarn lint
           yarn test
           yarn build
