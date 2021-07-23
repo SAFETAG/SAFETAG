@@ -55,7 +55,7 @@ export default IndexPage
 */
 
 export const query = graphql`
-  query {
+  query($language: String!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date],  order: DESC },
       filter: {fileAbsolutePath: {regex: "/posts/"}}
@@ -69,6 +69,15 @@ export const query = graphql`
             title
             date(formatString: "MMMM Do, YYYY")
           }
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

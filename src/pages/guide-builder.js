@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import pickBy from "lodash.pickby"
@@ -194,8 +195,8 @@ const GuideBuilder = ({ location }) => {
 
     // eslint-disable-next-line no-unused-vars
     const [query, setQuery] = useQueryParams({});
-  
-  
+
+
     // adds selected activities to guide if any exist in url param on initial load
     useEffect(() => {
       if(location.search) {
@@ -211,7 +212,7 @@ const GuideBuilder = ({ location }) => {
             }
             }
           }, {})
-  
+
           return {
             ...guide,
             ...prev,
@@ -223,24 +224,24 @@ const GuideBuilder = ({ location }) => {
                 }
               }
             }
-        }, {}) 
+        }, {})
         setGuide(newGuide)
     }
     }, [])
-  
+
     // stores list of selected activities to be references by url params and filter guide
     useEffect(() => {
       const activities = values(guide).filter(({ id, activities }) => {
         const act = values(pickBy(activities, a => a.checked))
-        return act.length && {[id]: values(pickBy(activities, a => a.checked))} 
-      })   
+        return act.length && {[id]: values(pickBy(activities, a => a.checked))}
+      })
       setActivitiesInCustomGuide(activities)
     }, [guide])
-  
+
     // sets url params as activities are selected
     useEffect(() => {
       if(activitiesInCustomGuide.length) {
-  
+
         const allSelectedActivities = activitiesInCustomGuide.map(method => {
           const activityArray = Object.values(method.activities)
           .filter(activity => activity.checked)
@@ -254,7 +255,7 @@ const GuideBuilder = ({ location }) => {
       } else {
         setQuery({},'replace')
       }
-  
+
     }, [activitiesInCustomGuide])
 
   const selectMultipleActivities = (methodId, allOrNone) => {
@@ -420,7 +421,7 @@ const GuideBuilder = ({ location }) => {
                   size="xlarge"
                   variation="base-plain"
                   title="Download full guide"
-                  onClick={() => { 
+                  onClick={() => {
                     window.open('/guides/Safetag_full_guide.pdf');
                   }}
                 >
@@ -494,3 +495,17 @@ GuideBuilder.propTypes = {
   })
 
 }
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

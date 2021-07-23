@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
@@ -41,3 +42,17 @@ const AboutPage = () =>{
 }
 
 export default AboutPage
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

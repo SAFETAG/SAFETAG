@@ -184,7 +184,7 @@ export default IndexPage
 */
 
 export const query = graphql`
-  query {
+  query($language: String!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___position],  },
       filter: {fileAbsolutePath: {regex: "/methods/"}}
@@ -200,6 +200,15 @@ export const query = graphql`
             method_icon
             summary
           }
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

@@ -92,7 +92,7 @@ Activities.propTypes = {
 export default Activities
 
 export const query = graphql`
-  query {
+  query($language: String!) {
     allFile(
       filter: {
         relativeDirectory: { eq: "activities" }
@@ -116,6 +116,15 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }
