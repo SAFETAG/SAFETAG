@@ -68,7 +68,3 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 .vscode
-
-# Locale files are auto-generated
-locales/
-
