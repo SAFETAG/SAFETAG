@@ -10,8 +10,10 @@ tags:
   - Community
   - ADOPTABLE
 main_image: /img/title_osv2021.png
-main_image_caption: ""
+main_image_caption: August 30-September 2, 2021
 ---
+<div style="text-align: center"><img src="/img/blog/title_osv2021.png" alt="OrgSec Village - August 30-September 2, 2021" style="border: 0; width: 100%; padding: 1em;" /></div>
+
 Internews is excited to announce that we will be hosting our second virtual Organizational Security Village from **August 30-September 2, 2021**. This event will bring together security auditors, digital security trainers, and other experts and practitioners for a four-day program highlighting community-led sessions exploring organizational security.
 
 ## Virtual Village Format
