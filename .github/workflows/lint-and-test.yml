@@ -1,6 +1,6 @@
 name: Lint and Test
 
-on: pull_request
+on: [pull_request, workflow_dispatch]
 
 jobs:
   lint-and-test:
@@ -38,6 +38,9 @@ jobs:
 
       - name: Test
         run: yarn test
+
+      - name: Update translations from Transifex
+        run: npm run transifex
 
       - name: Test Build
         run: yarn build

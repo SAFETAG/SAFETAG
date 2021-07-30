@@ -78,9 +78,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run transifex && gatsby build",
-    "develop": "npm run transifex && gatsby develop",
-    "build-deploy": "npm run transifex && gatsby build --prefix-paths",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "build-deploy": "gatsby build --prefix-paths",
     "deploy-gh-pages": "gatsby build --prefix-paths && gh-pages -d public -b guide",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
@@ -88,7 +88,7 @@
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "extract": "i18next 'src/pages/*.js'",
+    "extract": "i18next 'src/pages/*.js' && cp -r content locales/en/",
     "transifex": "node -r dotenv/config src/helpers/transifex.js"
   },
   "repository": {

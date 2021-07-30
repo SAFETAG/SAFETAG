@@ -1,13 +1,15 @@
-name: Build and Deploy (production)
+name: Build and Deploy (staging)
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - development
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: staging
 
     env:
       SITE_NAME: "Safetag"
@@ -37,22 +39,20 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install
-        run: yarn install
-
-      - name: Update translations from Transifex
-        run: npm run transifex
-
-      - name: Build
+      - name: Install, create translations and Build
         run: |
+          yarn install
           yarn lint
-          yarn test
+          yarn extract
           yarn build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: burnett01/rsync-deployments@4.1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: guide
-          FOLDER: public
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          switches: -avzr --delete
+          path: public/
+          remote_path: ${{ secrets.SSH_DIR }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_port: 22
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}

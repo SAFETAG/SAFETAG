@@ -14,7 +14,7 @@ import {
 import Heading from "../styles/type/heading"
 
 const CreditsPage = () => {
-  useTranslation('Site strings', { useSuspense: false });
+  useTranslation('site', { useSuspense: false });
   return (
   <GlobalLayout>
     <SEO title="Credits and License" />
