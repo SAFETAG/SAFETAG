@@ -1,5 +1,6 @@
-import { Link } from "gatsby"
 import React, { useState, useLayoutEffect } from "react"
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { graphql } from "gatsby"
 import styled from "styled-components"
 import { window } from "browser-monads"
 
@@ -189,6 +190,7 @@ const Hamburger = styled.div`
 `
 
 const GlobalHeader = () => {
+  useTranslation('site', { useSuspense: false });
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [scrolled, setScrolled] = useState(window.scrollY)
 
@@ -241,21 +243,24 @@ const GlobalHeader = () => {
             <GlobalMenu open scrolled={scrolled}>
               <li>
                 <GlobalMenuLink to="/about/" scrolled={scrolled}>
-                  About
+                  <Trans i18nKey="navmenu-about">About</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
+                  <Trans i18nKey="navmenu-blog">Blog</Trans>
                   Blog
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
+                  <Trans i18nKey="navmenu-methods">Methods</Trans>
                   Methods
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/activities/" scrolled={scrolled}>
+                  <Trans i18nKey="navmenu-activities">Activities</Trans>
                   Activities
                 </GlobalMenuLink>
               </li>
@@ -269,7 +274,7 @@ const GlobalHeader = () => {
                   to="/guide-builder/"
                   as={Link}
                 >
-                  Create Guide
+                  <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
             </GlobalMenu>
@@ -277,22 +282,22 @@ const GlobalHeader = () => {
             <GlobalMenu scrolled={scrolled}>
               <li>
                 <GlobalMenuLink to="/about/" scrolled={scrolled}>
-                  About
+                  <Trans i18nKey="navmenu-about">About</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  Blog
+                  <Trans i18nKey="navmenu-blog">Blog</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
-                  Methods
+                  <Trans i18nKey="navmenu-methods">Methods</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/activities/" scrolled={scrolled}>
-                  Activities
+                  <Trans i18nKey="navmenu-activities">Activities</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
@@ -305,7 +310,7 @@ const GlobalHeader = () => {
                   to="/guide-builder/"
                   as={Link}
                 >
-                  Create Guide
+                  <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
             </GlobalMenu>

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Button from "../styles/button/button"
@@ -27,6 +28,7 @@ const SearchHeading = styled.label`
 `
 
 function Search({ fullGuide, setGuide, setNoResults }) {
+  useTranslation('site', { useSuspense: false });
   const [searchTerm, setSearchTerm] = useState("")
 
   const handleChange = event => {
@@ -69,7 +71,7 @@ function Search({ fullGuide, setGuide, setNoResults }) {
         variation="base-raised-semidark"
         title="Enter search terms"
       >
-        Search
+        <Trans i18nKey="label-search">Search</Trans>
       </Button>
     </SearchFilters>
   )

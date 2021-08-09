@@ -1,4 +1,5 @@
 import React from "react"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
@@ -75,6 +76,7 @@ const ActivityIntro = styled.article`
 const ActivityMeta = styled.aside``
 
 function ActivityLayout({ data }) {
+  useTranslation('site', { useSuspense: false });
   const {
     frontmatter,
     fields: { frontmattermd },
@@ -99,7 +101,7 @@ function ActivityLayout({ data }) {
           <InpageInnerColumns columnLayout="3:1">
             <ActivityHeadline>
               <MoreLink direction="back" to="/activities/">
-                Back to all activities
+                <Trans i18nKey="activity-back">Back to all activities</Trans>
               </MoreLink>
               <ActivityTitle size="xlarge" variation="primary">
                 {frontmatter.title}
@@ -107,7 +109,7 @@ function ActivityLayout({ data }) {
             </ActivityHeadline>
             <ActivityIntro>
               <InpageTitle size="large" withDeco>
-                Summary
+                <Trans i18nKey="activity-summary">Summary</Trans>
               </InpageTitle>
               {sections.summary && (
                 <div
@@ -120,23 +122,23 @@ function ActivityLayout({ data }) {
             <ActivityMeta>
               <Card variation="outline" border="base">
                 <Dl boldDesc>
-                  <dt>Approach</dt>
+                  <dt><Trans i18nKey="activity-approach">Approach</Trans></dt>
                   {frontmatter.approaches.map(approach => (
                     <dd key={approach}>{approach}<img src={`/img/${approach.toLowerCase()}_icon.png`} /></dd>
                   ))}
-                  <dt>Authors</dt>
+                  <dt><Trans i18nKey="activity-authors">Authors</Trans></dt>
                   {frontmatter.authors.map(authr => (
                     <dd key={authr}>{authr}</dd>
                   ))}
-                  <dt>Org Size under</dt>
+                  <dt><Trans i18nKey="activity-orgsize">Org Size under</Trans></dt>
                   <dd>{frontmatter.organization_size_under}</dd>
-                  <dt>Remote options</dt>
+                  <dt><Trans i18nKey="activity-remote">Remote options</Trans></dt>
                   <dd>{frontmatter.remote_options}</dd>
-                  <dt>Skills required</dt>
+                  <dt><Trans i18nKey="activity-skills">Skills required</Trans></dt>
                   {frontmatter.skills_required.map(skill => (
                     <dd key={skill}>{skill}</dd>
                   ))}
-                  <dt>Time required (minutes)</dt>
+                  <dt><Trans i18nKey="activity-time">Time required (minutes)</Trans></dt>
                   <dd>{frontmatter.time_required_minutes}</dd>
                 </Dl>
               </Card>
@@ -148,7 +150,7 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <aside>
                 <InpageTitle size="large" withDeco>
-                  Overview
+                  <Trans i18nKey="activity-overview">Overview</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
@@ -159,7 +161,7 @@ function ActivityLayout({ data }) {
               {sections.materials_needed && (
                 <aside>
                   <Card variation="outline" border="white">
-                    <CardHeading>Materials Needed</CardHeading>
+                    <CardHeading><Trans i18nKey="activity-materials">Materials Needed</Trans></CardHeading>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: sections.materials_needed,
@@ -176,7 +178,7 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  Considerations
+                  <Trans i18nKey="activity-considerations">Considerations</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
@@ -190,7 +192,7 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  Walkthrough
+                  <Trans i18nKey="activity-walkthrough">Walkthrough</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
@@ -205,7 +207,7 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  Recommendation
+                  <Trans i18nKey="activity-recommendations">Recommendations</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
