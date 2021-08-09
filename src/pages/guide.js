@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 
 import GlobalLayout from "../components/layouts/global-layout"
@@ -84,6 +85,7 @@ const HomeCardList = styled(CardList)`
 `
 
 function IndexPage({ data }) {
+  useTranslation('site', { useSuspense: false });
 
   return (
     <GlobalLayout>
@@ -93,17 +95,17 @@ function IndexPage({ data }) {
           <HomepageHeaderInner>
             <InpageHeadline>
               <HomepageTitle size="jumbo" variation="white">
-                SAFETAG (BETA)
+                <Trans i18nKey="guide-title">SAFETAG</Trans>
               </HomepageTitle>
-              <Subheading>Custom guide creator_</Subheading>
+              <Subheading><Trans i18nKey="guide-subtitle">Custom guide creator</Trans></Subheading>
             </InpageHeadline>
-            <p>
+            <p><Trans i18nKey="guide-intro">
               Security Auditing Framework and Evaluation Template for Advocacy
               Groups. SAFETAG is a professional audit framework that adapts
               traditional penetration testing and risk assessment methodologies
               to be relevant to smaller non-profit organizations based or
               operating in the developing world.
-            </p>
+            </Trans></p>
             <MoreLink direction="forward" to="/about/">
               Learn More
             </MoreLink>
@@ -118,7 +120,7 @@ function IndexPage({ data }) {
                 window.open('/guides/Safetag_full_guide.pdf');
               }}
             >
-              Download Full Guide
+              <Trans i18nKey="guide-download">Download Full Guide</Trans>
             </Button>
             <Button
               size="jumbo"
@@ -127,16 +129,17 @@ function IndexPage({ data }) {
               to="/guide-builder/"
               as={Link}
             >
-              Create Custom Guide
+              <Trans i18nKey="guide-custom">Create Custom Guide</Trans>
             </Button>
           </HomepageHeaderButtons>
         </HomepageHeader>
         <InpageBody>
           <InpageBodyInner>
             <Heading id="allMethods" size="jumbo" variation="primary" withDeco>
-              Methods
+              <Trans i18nKey="guide-methods-heading">Methods</Trans>
             </Heading>
-            <Subheading>Explore all Safetag Methods</Subheading>
+            <Subheading><Trans i18nKey="guide-methods-subheading">Explore all Safetag Methods</Trans></Subheading>
+
             <HomeCardList>
               {data.allMarkdownRemark.edges.map(
                 ({ node }, index) => (

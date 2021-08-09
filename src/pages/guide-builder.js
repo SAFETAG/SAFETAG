@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import pickBy from "lodash.pickby"
@@ -186,6 +187,7 @@ const ExportButtons = styled.div`
 `
 
 const GuideBuilder = ({ location }) => {
+  const { t } = useTranslation('site', { useSuspense: false });
   const { fullGuide, activities, fixedSections } = useAllGuideData()
   // Add the full guide to state
   const [guide, setGuide] = useState(fullGuide)
@@ -283,7 +285,7 @@ const GuideBuilder = ({ location }) => {
         <InpageHeader>
           <InpageHeaderInner>
             <InpageTitle size="jumbo" variation="primary" withDeco>
-              Custom Guide Builder
+              <Trans i18nKey="builder-title">Custom Guide Builder</Trans>
             </InpageTitle>
           </InpageHeaderInner>
         </InpageHeader>
@@ -307,7 +309,7 @@ const GuideBuilder = ({ location }) => {
           <SplitPanels columnLayout="1:1">
             <Panel border="base">
               <InpageTitle size="xlarge">
-                {fullGuide ? "Full" : "Filtered"} Safetag Guide Content
+                {fullGuide ? t("builder-full", "Full Safetag Guide Content") : t("builder-filtered", "Filtered Safetag Guide Content")}
               </InpageTitle>
               {isNoResults && <p>No Search Results</p>}
               <GuideSelector>
@@ -315,7 +317,7 @@ const GuideBuilder = ({ location }) => {
                   return (
                     <FormGroup key={method.id}>
                       <FormGroupHeader>
-                        <MethodHeading>Method: {method.title}</MethodHeading>
+                        <MethodHeading><Trans i18nKey="builder-method">Method</Trans>: {method.title}</MethodHeading>
                       </FormGroupHeader>
                       <FormGroupBody>
                         <div>{method.summary.excerpt}</div>
@@ -326,12 +328,12 @@ const GuideBuilder = ({ location }) => {
                             prevPage: location.pathname + location.search,
                           }}
                         >
-                          Read More
+                          <Trans i18nKey="builder-readmore">Read More</Trans>
                         </MoreLink>
                         <FormCheckableGroup>
                           {method.activities[0] !== "" && (
                             <ActivitiesSelector>
-                              <ActivitiesHeading>Activities</ActivitiesHeading>
+                              <ActivitiesHeading><Trans i18nKey="builder-activities">Activities</Trans></ActivitiesHeading>
                               <Button
                                 variation="primary-plain"
                                 title="Select all activities in this method"
@@ -339,7 +341,7 @@ const GuideBuilder = ({ location }) => {
                                   selectMultipleActivities(method.id, "all")
                                 }
                               >
-                                Select All
+                                <Trans i18nKey="builder-selectall">Select All</Trans>
                               </Button>
                               <Button
                                 variation="danger-plain"
@@ -348,7 +350,7 @@ const GuideBuilder = ({ location }) => {
                                   selectMultipleActivities(method.id, "none")
                                 }
                               >
-                                Select None
+                                <Trans i18nKey="builder-selectnone">Select None</Trans>
                               </Button>
                             </ActivitiesSelector>
                           )}
@@ -394,7 +396,7 @@ const GuideBuilder = ({ location }) => {
             </Panel>
             <Panel border="base">
               <InpageTitle size="xlarge">
-                Selected Safetag Guide Content
+                <Trans i18nKey="builder-selected">Selected Safetag Guide Content</Trans>
               </InpageTitle>
               <ExportButtons>
                 <Button
@@ -414,8 +416,8 @@ const GuideBuilder = ({ location }) => {
                   disabled={isCustomGuideLoading || !activitiesInCustomGuide.length}
                 >
                   {isCustomGuideLoading
-                    ? "Generating PDF..."
-                    : "Generate PDF Guide"}
+                    ? t("builder-genpdf", "Generating PDF...")
+                    : t("builder-genpdfguide", "Generate PDF Guide")}
                 </Button>
                 <Button
                   size="xlarge"
@@ -425,14 +427,14 @@ const GuideBuilder = ({ location }) => {
                     window.open('/guides/Safetag_full_guide.pdf');
                   }}
                 >
-                  Download Full Guide
+                  <Trans i18nKey="builder-downloadfull">Download Full Guide</Trans>
                 </Button>
               </ExportButtons>
               {
                 !activitiesInCustomGuide.length &&
                 <GuideSelected>
-                  <h3>No sections selected</h3>
-                  <p>← Select activities from the panel to the left to build your custom guide</p>
+                  <h3><Trans i18nKey="builder-nosections">No sections selected</Trans></h3>
+                  <p><Trans i18nKey="builder-nosections-more">← Select activities from the panel to the left to build your custom guide</Trans></p>
                 </GuideSelected>
               }
               {values(guide).map(method => {
@@ -446,9 +448,9 @@ const GuideBuilder = ({ location }) => {
 
                 return (
                   <GuideSelected key={method.id}>
-                    <MethodHeading>Method: {method.title}</MethodHeading>
+                    <MethodHeading><Trans i18nKey="builder-method">Method</Trans>: {method.title}</MethodHeading>
                     <p>{method.summary.excerpt}</p>
-                    <ActivitiesHeading>Activities</ActivitiesHeading>
+                    <ActivitiesHeading><Trans i18nKey="builder-activities">Activities</Trans></ActivitiesHeading>
                     {selectedActivities.map(activity => (
                       <ActivityLine key={activity.id}>
                         <ActivityTitle>{activity.title}</ActivityTitle>
