@@ -1,6 +1,5 @@
 import React, { useState, useLayoutEffect } from "react"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import { graphql } from "gatsby"
 import styled from "styled-components"
 import { window } from "browser-monads"
 
