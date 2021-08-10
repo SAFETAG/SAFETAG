@@ -3,6 +3,7 @@ import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import { window } from "browser-monads"
 
+import Search from "../components/search-site"
 import Constrainer from "../styles/constrainer"
 import Button from "../styles/button/button"
 import Heading from "../styles/type/heading"
@@ -276,6 +277,9 @@ const GlobalHeader = () => {
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
+              <li>
+                <Search />
+              </li>
             </GlobalMenu>
           ) : (
             <GlobalMenu scrolled={scrolled}>
@@ -311,6 +315,9 @@ const GlobalHeader = () => {
                 >
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
+              </li>
+              <li>
+                <Search />
               </li>
             </GlobalMenu>
           )}
