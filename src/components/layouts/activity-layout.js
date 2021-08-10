@@ -244,24 +244,12 @@ export const query = graphql`
         }
         fields {
           frontmattermd {
-            overview {
-              html
-            }
-            materials_needed {
-              html
-            }
-            considerations {
-              html
-            }
-            recommendations {
-              html
-            }
-            summary {
-              html
-            }
-            walk_through {
-              html
-            }
+            overview { html }
+            materials_needed { html }
+            considerations { html }
+            recommendations { html }
+            summary { html }
+            walk_through { html }
           }
         }
       }
