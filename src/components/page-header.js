@@ -3,7 +3,6 @@ import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import { window } from "browser-monads"
 
-import Search from "../components/search-site"
 import Constrainer from "../styles/constrainer"
 import Button from "../styles/button/button"
 import Heading from "../styles/type/heading"
@@ -249,19 +248,21 @@ const GlobalHeader = () => {
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
                   <Trans i18nKey="navmenu-blog">Blog</Trans>
-                  Blog
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
                   <Trans i18nKey="navmenu-methods">Methods</Trans>
-                  Methods
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/activities/" scrolled={scrolled}>
                   <Trans i18nKey="navmenu-activities">Activities</Trans>
-                  Activities
+                </GlobalMenuLink>
+              </li>
+              <li>
+                <GlobalMenuLink to="/search/" scrolled={scrolled}>
+                  <Trans i18nKey="navmenu-search">Search</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
@@ -276,9 +277,6 @@ const GlobalHeader = () => {
                 >
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
-              </li>
-              <li>
-                <Search />
               </li>
             </GlobalMenu>
           ) : (
@@ -304,6 +302,11 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
+                <GlobalMenuLink to="/search/" scrolled={scrolled}>
+                  <Trans i18nKey="navmenu-search">Search</Trans>
+                </GlobalMenuLink>
+              </li>
+              <li>
                 <GlobalMenuButton
                   variation={
                     scrolled > 0
@@ -315,9 +318,6 @@ const GlobalHeader = () => {
                 >
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
-              </li>
-              <li>
-                <Search />
               </li>
             </GlobalMenu>
           )}
