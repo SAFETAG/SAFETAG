@@ -1,4 +1,0 @@
----
-title: Identifying Lockout Thresholds
----
-
