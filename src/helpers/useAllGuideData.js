@@ -97,11 +97,11 @@ export default function useAllGuideData() {
   )
 
   const activities = data.activities.edges.map(({ node }) => ({
-    id: node.childMarkdownRemark.frontmatter.title,
-    sections: node.childMarkdownRemark.fields.frontmattermd,
+    id: node.frontmatter.title,
+    sections: node.fields.frontmattermd,
     slug: node.fields.slug,
-    ...node.childMarkdownRemark.frontmatter,
-    ...node.childMarkdownRemark.fields.frontmattermd,
+    ...node.frontmatter,
+    ...node.fields.frontmattermd,
   }))
 
   const methods = data.methods.edges.map(({ node }) => ({
@@ -112,12 +112,12 @@ export default function useAllGuideData() {
   }))
 
   const references = data.references.edges.map(({ node }) => ({
-    id: node.childMarkdownRemark.frontmatter.title,
-    rawMarkdownBody: node.childMarkdownRemark.rawMarkdownBody,
+    id: node.frontmatter.title,
+    rawMarkdownBody: node.rawMarkdownBody,
   }))
 
   const fixedSections = data.fixedSections.edges.reduce((acc, { node }) => {
-    acc[node.base] = node.childMarkdownRemark.rawMarkdownBody
+    acc[node.base] = node.rawMarkdownBody
     return acc
   }, {})
 
