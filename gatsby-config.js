@@ -101,6 +101,12 @@ module.exports = {
             resolver: 'fields.slug',
             store: true,
           },
+          {
+            name: 'type',
+            indexed: false,
+            resolver: 'fields.content_type',
+            store: true
+          },
         ],
       },
     },

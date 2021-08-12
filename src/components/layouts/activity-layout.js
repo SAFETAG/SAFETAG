@@ -80,7 +80,7 @@ function ActivityLayout({ data }) {
   const {
     frontmatter,
     fields: { frontmattermd },
-  } = data.file.childMarkdownRemark
+  } = data.markdownRemark
 
   // Fix images URL by adding app root url with prefix
   const sections = mapValues(frontmattermd, section => {
@@ -224,33 +224,32 @@ function ActivityLayout({ data }) {
 }
 
 ActivityLayout.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
 }
 
 export default ActivityLayout
 
 export const query = graphql`
   query($slug: String!) {
-    file(fields: { slug: { eq: $slug } }) {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          approaches
-          authors
-          remote_options
-          skills_required
-          time_required_minutes
-          organization_size_under
-        }
-        fields {
-          frontmattermd {
-            overview { html }
-            materials_needed { html }
-            considerations { html }
-            recommendations { html }
-            summary { html }
-            walk_through { html }
-          }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        approaches
+        authors
+        remote_options
+        skills_required
+        time_required_minutes
+        organization_size_under
+      }
+      fields {
+        frontmattermd {
+          overview { html }
+          materials_needed { html }
+          considerations { html }
+          recommendations { html }
+          summary { html }
+          walk_through { html }
         }
       }
     }

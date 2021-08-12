@@ -24,54 +24,37 @@ export default function useAllGuideData() {
             }
           }
         }
-        activities: allFile(
-          filter: {
-            relativeDirectory: { eq: "activities" }
-            internal: { mediaType: { eq: "text/markdown" } }
-          }
+        activities: allMarkdownRemark(
+          filter: { fileAbsolutePath: {regex: "/activities//"} }
         ) {
           edges {
             node {
               fields {
                 slug
-              }
-              childMarkdownRemark {
-                frontmatter {
-                  title
-                  summary
-                  orgSize: organization_size_under
-                  approaches
-                  remoteOptions: remote_options
-                }
-                fields {
-                  frontmattermd {
-                    summary {
-                      excerpt
-                      rawMarkdownBody
-                    }
-                    overview {
-                      rawMarkdownBody
-                    }
-                    materials_needed {
-                      rawMarkdownBody
-                    }
-                    considerations {
-                      rawMarkdownBody
-                    }
-                    walk_through {
-                      rawMarkdownBody
-                    }
-                    recommendations {
-                      rawMarkdownBody
-                    }
+                frontmattermd {
+                  summary {
+                    excerpt
+                    rawMarkdownBody
                   }
+                  overview { rawMarkdownBody }
+                  materials_needed { rawMarkdownBody }
+                  considerations { rawMarkdownBody }
+                  walk_through { rawMarkdownBody }
+                  recommendations { rawMarkdownBody }
                 }
+              }
+              frontmatter {
+                title
+                summary
+                orgSize: organization_size_under
+                approaches
+                remoteOptions: remote_options
               }
             }
           }
         }
         methods: allMarkdownRemark(
-          filter: { fileAbsolutePath: {regex: "/methods/"} }
+          filter: { fileAbsolutePath: {regex: "/methods//"} }
           sort: { fields: [frontmatter___position],  },
         ) {
           edges {
@@ -94,23 +77,18 @@ export default function useAllGuideData() {
             }
           }
         }
-        references: allFile(
-          filter: {
-            relativeDirectory: { eq: "references" }
-            internal: { mediaType: { eq: "text/markdown" } }
-          }
+        references: allMarkdownRemark(
+          filter: { fileAbsolutePath: {regex: "/references//"} }
         ) {
           edges {
             node {
               fields {
                 slug
               }
-              childMarkdownRemark {
-                frontmatter {
-                  title
-                }
-                rawMarkdownBody
+              frontmatter {
+                title
               }
+              rawMarkdownBody
             }
           }
         }

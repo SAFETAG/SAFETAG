@@ -52,10 +52,10 @@ function Activities({ data }) {
         <InpageBody>
           <InpageBodyInner>
             <CardList>
-              {data.allFile.edges.map(
+              {data.activities.edges.map(
                 ({ node }, index) =>
                   node.fields != null &&
-                  node.childMarkdownRemark.fields.frontmattermd.summary && (
+                  node.frontmatter.summary && (
                     <li key={index}>
                       <ActivityCard
                         variation="secondary"
@@ -65,13 +65,10 @@ function Activities({ data }) {
                         withHover
                       >
                         <CardHeading variation="primary">
-                          {node.childMarkdownRemark.frontmatter.title}
+                          { node.frontmatter.title}
                         </CardHeading>
                         <p>
-                          {
-                            node.childMarkdownRemark.fields.frontmattermd
-                              .summary.excerpt
-                          }
+                          { node.frontmatter.summary.excerpt }
                         </p>
                       </ActivityCard>
                     </li>
@@ -93,28 +90,17 @@ export default Activities
 
 export const query = graphql`
   query($language: String!) {
-    allFile(
-      filter: {
-        relativeDirectory: { eq: "activities" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
+    activities: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/activities//"}}
     ) {
       edges {
         node {
           fields {
             slug
           }
-          childMarkdownRemark {
-            frontmatter {
-              title
-            }
-            fields {
-              frontmattermd {
-                summary {
-                  excerpt
-                }
-              }
-            }
+          frontmatter {
+            title
+            summary
           }
         }
       }
