@@ -65,15 +65,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
        node.fileAbsolutePath.includes("/references/") ||
        node.fileAbsolutePath.includes("/posts/"))) {
 
-    let basepath
+    let basepath, ctype
     if (node.fileAbsolutePath.includes("/posts/")) {
       basepath = "posts"
+      ctype = "blog post"
     } else if (node.fileAbsolutePath.includes("/activities/")){
       basepath = "activities"
+      ctype = "activity"
     } else if (node.fileAbsolutePath.includes("/references/")){
       basepath = "references"
+      ctype = "reference"
     } else {
       basepath = "methods"
+      ctype = "method"
     }
     const slug = createFilePath({
       node,
@@ -90,7 +94,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "content_type",
-      value: basepath,
+      value: ctype,
     })
   } else {
 

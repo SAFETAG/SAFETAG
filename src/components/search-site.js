@@ -42,16 +42,19 @@ class Search extends Component {
       let message = ''
 
       if (this.state.results.length > 0) {
-        this.state.results.map((page, i) => (
-          results.push({
-            key: i,
-            slug: page.url,
-            title: page.title,
-            // type: page.type,
-            // type: page.url ? page.url.replace('/', '').split('/')[0] : '',
-            type: page.type
-          })
-        ))
+        this.state.results.map((page, i) => {
+          console.log(page.type)
+          if (['activity', 'method', 'reference', 'blog post'].includes(page.type)) {
+            results.push({
+              key: i,
+              slug: page.url,
+              title: page.title,
+              // type: page.type,
+              // type: page.url ? page.url.replace('/', '').split('/')[0] : '',
+              type: page.type
+            })
+          }
+        })
       } else if (this.state.query.length > 2) {
         message = 'No results for ' + this.state.query
       } else if (
@@ -63,16 +66,18 @@ class Search extends Component {
         message = ''
       }
       if (results.length > 0) {
-        console.log(results)
         return (
         <div className="m-search__results">
+          <ul>
           {results.map((result) => (
-              <div className="m-search__result" key={result.key}>
-                <h6>{result.type}: <a href={result.slug}>{result.title}</a></h6>
-              </div>)
+              <li className="m-search__result" key={result.key}>
+                {result.type.replace(/^\w/, (c) => c.toUpperCase())}:
+                <a href={result.slug}>{result.title}</a>
+              </li>)
             )}
-          </div>
-          )
+          </ul>
+        </div>
+        )
       } else if (message){
         return (<div className="m-search__results">
           <div className="m-search__result">{ message }</div>

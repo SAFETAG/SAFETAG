@@ -77,7 +77,7 @@ module.exports = {
             resolver: 'frontmatter.title',
             attributes: {
               encode: 'balance',
-              tokenize: 'strict',
+              tokenize: 'forward',
               threshold: 6,
               depth: 3,
             },
@@ -89,7 +89,7 @@ module.exports = {
             resolver: 'frontmatter.description',
             attributes: {
               encode: 'balance',
-              tokenize: 'strict',
+              tokenize: 'forward',
               threshold: 6,
               depth: 3,
             },
