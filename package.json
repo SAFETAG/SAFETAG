@@ -89,7 +89,7 @@
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "extract": "i18next 'src/pages/*.js' && cp -r content locales/en/",
+    "extract": "i18next 'src/pages/*.js'",
     "transifex": "node -r dotenv/config src/helpers/transifex.js"
   },
   "repository": {
