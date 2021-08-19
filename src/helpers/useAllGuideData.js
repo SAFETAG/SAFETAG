@@ -117,7 +117,7 @@ export default function useAllGuideData() {
   }))
 
   const fixedSections = data.fixedSections.edges.reduce((acc, { node }) => {
-    acc[node.base] = node.rawMarkdownBody
+    acc[node.base] = node.childMarkdownRemark.rawMarkdownBody
     return acc
   }, {})
 

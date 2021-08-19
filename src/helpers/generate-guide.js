@@ -45,7 +45,7 @@ async function loadMarkdownStyles() {
   const sourceCodeFont = await fetch(IBMPlexMonoRegular).then(response =>
     response.arrayBuffer()
   )
-  const bulletGlyphFont = await fetch(SourceCodeProBold).then(response => 
+  const bulletGlyphFont = await fetch(SourceCodeProBold).then(response =>
     response.arrayBuffer()
   )
 
