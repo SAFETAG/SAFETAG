@@ -12,7 +12,7 @@ import {
 } from "../styles/inpage"
 import Heading from "../styles/type/heading"
 
-function IndexPage({ data }) {
+function PostsPage({ data }) {
 
   return (
     <GlobalLayout>
@@ -41,11 +41,11 @@ function IndexPage({ data }) {
   )
 }
 
-IndexPage.propTypes = {
+PostsPage.propTypes = {
   data: PropTypes.array,
 }
 
-export default IndexPage
+export default PostsPage
 
 /*
       filter: {

@@ -66,6 +66,51 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-flexsearch',
+      options: {
+        languages: ['en'],
+        type: 'MarkdownRemark',
+        fields: [
+          {
+            name: 'title',
+            indexed: true,
+            resolver: 'frontmatter.title',
+            attributes: {
+              encode: 'balance',
+              tokenize: 'forward',
+              threshold: 6,
+              depth: 3,
+            },
+            store: true,
+          },
+          {
+            name: 'description',
+            indexed: true,
+            resolver: 'frontmatter.description',
+            attributes: {
+              encode: 'balance',
+              tokenize: 'forward',
+              threshold: 6,
+              depth: 3,
+            },
+            store: false,
+          },
+          {
+            name: 'url',
+            indexed: false,
+            resolver: 'fields.slug',
+            store: true,
+          },
+          {
+            name: 'type',
+            indexed: false,
+            resolver: 'fields.content_type',
+            store: true
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-matomo`,
       options: {
         siteId: '1',

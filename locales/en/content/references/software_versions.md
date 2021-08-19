@@ -1,5 +1,0 @@
----
-title: Identifying Software Versions
----
-
-

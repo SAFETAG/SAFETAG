@@ -230,7 +230,7 @@ function IndexPage({ data }) {
 }
 
 IndexPage.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.object,
 }
 
 export default IndexPage

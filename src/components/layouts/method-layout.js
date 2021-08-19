@@ -318,49 +318,33 @@ export const query = graphql`
         }
       }
     }
-    activities: allFile(
-      filter: {
-        relativeDirectory: { eq: "activities" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
+    activities: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/activities//"}}
     ) {
       edges {
         node {
           fields {
             slug
           }
-          childMarkdownRemark {
-            frontmatter {
-              title
-            }
-            fields {
-              frontmattermd {
-                summary {
-                  excerpt
-                }
-              }
-            }
+          frontmatter {
+            title
+            summary
           }
         }
       }
     }
-    references: allFile(
-      filter: {
-        relativeDirectory: { eq: "references" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
+    references: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/references//"}}
     ) {
       edges {
         node {
           fields {
             slug
           }
-          childMarkdownRemark {
-            frontmatter {
-              title
-            }
-            html
+          frontmatter {
+            title
           }
+          html
         }
       }
     }

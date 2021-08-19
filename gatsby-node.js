@@ -36,11 +36,11 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
+  // Create slugs for activities, methods and references
+  /*
   const { mediaType } = node.internal
   const contentType = node.relativeDirectory
-
-  // Create slugs for activities, methods and references
-  if ( mediaType === `text/markdown` && ["activities", "references"].includes(node.relativeDirectory) ) {
+  if ( mediaType === `text/markdown` && ["references"].includes(node.relativeDirectory) ) {
     const slug = createFilePath({
       node,
       getNode,
@@ -53,14 +53,31 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "slug",
       value: `/${contentType}${slug.substring(slug.lastIndexOf("/"))}`,
     })
-  } else if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath &&
-      (node.fileAbsolutePath.includes("methods") || node.fileAbsolutePath.includes("posts"))) {
+    createNodeField({
+      node,
+      name: "content_type",
+      value: contentType,
+    })
+    */
+  if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath &&
+      (node.fileAbsolutePath.includes("/methods/") ||
+       node.fileAbsolutePath.includes("/activities/") ||
+       node.fileAbsolutePath.includes("/references/") ||
+       node.fileAbsolutePath.includes("/posts/"))) {
 
-    let basepath
-    if (node.fileAbsolutePath.includes("posts")) {
+    let basepath, ctype
+    if (node.fileAbsolutePath.includes("/posts/")) {
       basepath = "posts"
+      ctype = "blog post"
+    } else if (node.fileAbsolutePath.includes("/activities/")){
+      basepath = "activities"
+      ctype = "activity"
+    } else if (node.fileAbsolutePath.includes("/references/")){
+      basepath = "references"
+      ctype = "reference"
     } else {
       basepath = "methods"
+      ctype = "method"
     }
     const slug = createFilePath({
       node,
@@ -74,6 +91,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "slug",
       value: `/${basepath}${slug.substring(slug.lastIndexOf("/"))}`,
     })
+    createNodeField({
+      node,
+      name: "content_type",
+      value: ctype,
+    })
+  } else {
+
   }
 }
 
@@ -83,11 +107,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const activities = await graphql(
     `
       query {
-        allFile(
-          filter: {
-            relativeDirectory: { eq: "activities" }
-            internal: { mediaType: { eq: "text/markdown" } }
-          }
+        allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "//activities//"}}
         ) {
           edges {
             node {
@@ -106,7 +127,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
   // Create pages for each file.
-  activities.data.allFile.edges.forEach(({ node }) => {
+  activities.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/components/layouts/activity-layout.js`),
@@ -121,7 +142,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       query {
         allMarkdownRemark(
           sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "/posts/"}}
+          filter: {fileAbsolutePath: {regex: "/posts//"}}
         ) {
           edges {
             node {
@@ -155,7 +176,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       query {
         allMarkdownRemark(
           sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "/methods/"}}
+          filter: {fileAbsolutePath: {regex: "/methods//"}}
         ) {
           edges {
             node {

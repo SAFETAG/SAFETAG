@@ -13,7 +13,7 @@ import {useQueryParams} from 'use-query-params';
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
 import Filters from "../components/filters"
-import Search from "../components/search"
+import Search from "../components/search-guide"
 import useAllGuideData from "../helpers/useAllGuideData"
 import { prepareGuide } from "../helpers/generate-guide"
 
