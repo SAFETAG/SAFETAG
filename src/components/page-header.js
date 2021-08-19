@@ -13,6 +13,8 @@ import media from "../styles/utils/media-queries"
 import LogoWhite from "../../static/assets/logo/SafetagLogoWhite.svg"
 import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg"
 
+import SearchBox from "./search-box-header.js"
+
 const PageHead = styled.header`
   position: sticky;
   top: 0;
@@ -261,9 +263,7 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
-                <GlobalMenuLink to="/search/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-search">Search</Trans>
-                </GlobalMenuLink>
+                <SearchBox />
               </li>
               <li>
                 <GlobalMenuButton
@@ -302,9 +302,7 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
-                <GlobalMenuLink to="/search/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-search">Search</Trans>
-                </GlobalMenuLink>
+                <SearchBox />
               </li>
               <li>
                 <GlobalMenuButton

@@ -13,8 +13,8 @@ import {
 } from "../styles/inpage"
 import Heading from "../styles/type/heading"
 
-function SearchPage({ data }) {
-
+function SearchPage({ location }) {
+  const initialQuery = location.state.searchQuery ? location.state.searchQuery : ''
   return (
     <GlobalLayout>
       <SEO title="Safetag" />
@@ -25,7 +25,7 @@ function SearchPage({ data }) {
               Search SAFETAG
             </Heading>
 
-            <Search />
+            <Search initialQuery={initialQuery} />
 
           </InpageBodyInner>
         </InpageBody>
@@ -36,10 +36,10 @@ function SearchPage({ data }) {
 
 SearchPage.propTypes = {
   data: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default SearchPage
-
 
 export const query = graphql`
   query($language: String!) {
