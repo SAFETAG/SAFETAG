@@ -76,10 +76,10 @@ function MethodLayout({ data, location }) {
   const activityNodes = {}
   activities.forEach(
     activity =>
-      (activityNodes[activity.node.childMarkdownRemark.frontmatter.title] = {
+      (activityNodes[activity.node.frontmatter.title] = {
         slug: activity.node.fields.slug,
         excerpt:
-          activity.node.childMarkdownRemark.fields.frontmattermd.summary
+          activity.node.fields.frontmattermd.summary
             ?.excerpt,
       })
   )
@@ -89,9 +89,9 @@ function MethodLayout({ data, location }) {
   const referenceNodes = {}
   references.forEach(
     reference =>
-      (referenceNodes[reference.node.childMarkdownRemark.frontmatter.title] = {
-        title: reference.node.childMarkdownRemark.frontmatter.title,
-        html: reference.node.childMarkdownRemark.html,
+      (referenceNodes[reference.node.frontmatter.title] = {
+        title: reference.node.frontmatter.title,
+        html: reference.node.html,
       })
   )
 
@@ -325,6 +325,9 @@ export const query = graphql`
         node {
           fields {
             slug
+            frontmattermd {
+              summary { excerpt }
+            }
           }
           frontmatter {
             title

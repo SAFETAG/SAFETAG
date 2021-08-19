@@ -14,7 +14,10 @@ import {
 import Heading from "../styles/type/heading"
 
 function SearchPage({ location }) {
-  const initialQuery = location.state.searchQuery ? location.state.searchQuery : ''
+  let initialQuery = '';
+  if (location.state && location.state.searchQuery) {
+    initialQuery = location.state.searchQuery
+  }
   return (
     <GlobalLayout>
       <SEO title="Safetag" />
