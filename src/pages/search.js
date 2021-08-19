@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Search from "../components/search-site"
 
 import GlobalLayout from "../components/layouts/global-layout"

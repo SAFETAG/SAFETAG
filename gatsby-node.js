@@ -96,8 +96,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "content_type",
       value: ctype,
     })
-  } else {
-
   }
 }
 
