@@ -2,6 +2,20 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from "prop-types"
 
+const searchBoxStyle = {
+  'margin': '2em 0',
+}
+const resultUlStyle = {
+  'list-style-type': 'none',
+}
+const resultLiStyle = {
+  margin: '0.5em 0',
+}
+const resultTypeStyle = {
+  color: '#aaa',
+  'margin-right': '1em',
+}
+
 class Search extends Component {
   state = {
     query: this.props.initialQuery ? this.props.initialQuery : '',
@@ -18,20 +32,6 @@ class Search extends Component {
     this.searchInput.focus()
   }
 
-  // state = { query: this.props.initialQuery }
-
-  node = React.createRef();
-
-  handleClickOutside = e => {
-    if (!this.node.current.contains(e.target)) {
-      this.reset();
-    }
-  };
-
-  handleClickInside = () => {
-    this.reset();
-  };
-
   render() {
     const ResultList = () => {
       let results = []
@@ -40,7 +40,7 @@ class Search extends Component {
       if (this.state.results.length > 0) {
         this.state.results.map((page, i) => {
           console.log(page.type)
-          if (['activity', 'method', 'reference', 'blog post'].includes(page.type)) {
+          if (['activity', 'method', 'blog post'].includes(page.type)) {
             results.push({
               key: i,
               slug: page.url,
@@ -64,10 +64,10 @@ class Search extends Component {
       if (results.length > 0) {
         return (
         <div className="m-search__results">
-          <ul>
+          <ul style={resultUlStyle}>
           {results.map((result) => (
-              <li className="m-search__result" key={result.key}>
-                {result.type.replace(/^\w/, (c) => c.toUpperCase())}:
+              <li style={resultLiStyle} className="m-search__result" key={result.key}>
+                <span style={resultTypeStyle}>{result.type.replace(/^\w/, (c) => c.toUpperCase())}</span>
                 <Link to={result.slug} className="link">
                 {result.title}
                 </Link>
@@ -83,13 +83,12 @@ class Search extends Component {
       } else { return '' }
     }
 
-
-
     return (
       <div ref={this.node} className={'row m-search ' + this.props.classNames + '__search'}>
           <div className={"m-search__wrapper col-sm-12 col-md-8 col-lg-" + this.props.cols}>
             <div className="m-search__input">
                 <input type="text"
+                style={searchBoxStyle}
                 onChange={this.search}
                 placeholder={'Search'}
                 value={this.state.query}
