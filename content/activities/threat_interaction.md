@@ -2,6 +2,7 @@
 title: Threat Interaction
 approaches:
   - Interpersonal
+position: 50
 authors:
   - SAFETAG
 remote_options:

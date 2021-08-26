@@ -3,6 +3,7 @@ title: Remote Facilitation
 approaches:
   - Interpersonal
   - Technical
+position: 50
 authors:
   - SAFETAG
 remote_options:

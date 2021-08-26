@@ -2,6 +2,7 @@
 title: Check Browser and Plugin Vulnerabilities
 approaches:
   - Technical
+position: 50
 authors:
   - SAFETAG
 remote_options:

@@ -106,6 +106,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       query {
         allMarkdownRemark(
+          sort: { fields: [frontmatter___position],  },
           filter: {fileAbsolutePath: {regex: "//activities//"}}
         ) {
           edges {
@@ -139,7 +140,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       query {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___position],  },
+          sort: { fields: [frontmatter___date],  },
           filter: {fileAbsolutePath: {regex: "/posts//"}}
         ) {
           edges {

@@ -2,6 +2,7 @@
 title: Assessing Usage of Cloud Services
 approaches:
   - Research
+position: 50
 authors:
   - Natasha Msonza
   - Neil Blazevic

@@ -2,6 +2,7 @@
 title: Private Data
 approaches:
   - Interpersonal
+position: 50
 authors:
   - SAFETAG
 remote_options:
@@ -42,7 +43,7 @@ recommendations: >
   information will require specific identification of user devices (and by
   extension, their users), as well as very sensitive organizational data. None
   of this data, by intention, accident, or adversarial action, should be shared
-  with third parties. 
+  with third parties.
 
 
   Please refer to the Analysis and Reporting section for the limited data set
@@ -51,4 +52,3 @@ recommendations: >
 organization_size_under: 25
 time_required_minutes: 60
 ---
-

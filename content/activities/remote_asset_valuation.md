@@ -2,6 +2,7 @@
 title: Remote Asset Valuation
 approaches:
   - Risk Analysis
+position: 50
 authors:
   - SAFETAG
 remote_options:

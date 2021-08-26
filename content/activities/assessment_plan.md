@@ -1,6 +1,7 @@
 ---
 approaches:
   - Interpersonal
+position: 50
 authors:
   - SAFETAG
 skills_trained: []

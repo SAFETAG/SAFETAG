@@ -2,6 +2,7 @@
 title: Capacity Assessment Checklist
 approaches:
   - Research
+position: 50
 authors:
   - SAFETAG
 remote_options:

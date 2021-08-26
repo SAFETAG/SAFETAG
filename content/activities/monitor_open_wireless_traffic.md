@@ -2,6 +2,7 @@
 title: Monitor Open Wireless Traffic
 approaches:
   - Technical
+position: 50
 authors:
   - SAFETAG
 remote_options:

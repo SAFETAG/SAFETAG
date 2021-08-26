@@ -2,6 +2,7 @@
 title: Regional Context Research
 approaches:
   - Research
+position: 1
 authors:
   - SAFETAG
 remote_options:
@@ -13,7 +14,7 @@ skills_trained: []
 summary: >
   This exercise focuses on research and re-confirmation of regional issues from
   general trends to specific legal restrictions and safety concerns, as well as
-  current news and persistent challenges. 
+  current news and persistent challenges.
 overview: >
 
   * Identify any legal risks associated with conducting the audit (Secure
@@ -45,4 +46,3 @@ recommendations: ''
 organization_size_under: 1000
 time_required_minutes: 240
 ---
-

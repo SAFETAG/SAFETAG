@@ -2,6 +2,7 @@
 title: A Day in the Life
 approaches:
   - Interpersonal
+position: 50
 authors:
   - SAFETAG
 remote_options:

@@ -1,6 +1,7 @@
 ---
 title: The Impacts of a "Found" Device
 approaches: []
+position: 50
 authors: []
 remote_options: []
 skills_required: []

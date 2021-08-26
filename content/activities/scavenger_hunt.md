@@ -2,6 +2,7 @@
 title: Scavenger Hunt
 approaches:
   - Interpersonal
+position: 50
 authors:
   - AlWalid
 remote_options:

@@ -3,6 +3,7 @@ title: Identifying Informal Agreements
 approaches:
   - Interpersonal
   - Research
+position: 50
 authors:
   - Carlos Guerra
   - Candace Lazarou

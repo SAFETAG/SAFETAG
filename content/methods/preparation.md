@@ -23,7 +23,7 @@ activities:
   - Incident Response and Emergency Contact
   - Regional Context Research
   - Technical Context Research
-  -  Audit Timeline and Planning
+  - Audit Timeline and Planning
 references:
   - Preparation
   - Facilitation Preparation

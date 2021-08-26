@@ -92,6 +92,7 @@ export const query = graphql`
   query($language: String!) {
     activities: allMarkdownRemark(
       filter: {fileAbsolutePath: {regex: "/activities//"}}
+      sort: { fields: [frontmatter___position, frontmatter___title],  },
     ) {
       edges {
         node {
@@ -101,6 +102,7 @@ export const query = graphql`
           frontmatter {
             title
             summary
+            position
           }
         }
       }

@@ -2,6 +2,7 @@
 title: Firewire Access to Encrypted/Locked computers
 approaches:
   - Technical
+position: 50
 authors:
   - SAFETAG
 remote_options:

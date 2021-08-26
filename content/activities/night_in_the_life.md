@@ -3,6 +3,7 @@ title: A Night in the Life
 approaches:
   - Research
   - Interpersonal
+position: 50
 authors:
   - SAFETAG
 remote_options:

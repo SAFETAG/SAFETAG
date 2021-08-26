@@ -3,6 +3,7 @@ title: Operational Security Survey
 approaches:
   - Interpersonal
   - Research
+position: 50
 authors:
   - SAFETAG
 remote_options:

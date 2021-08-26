@@ -2,6 +2,7 @@
 title: Wireless Range Mapping
 approaches:
   - Technical
+position: 50
 authors:
   - SAFETAG
 remote_options:

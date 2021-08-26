@@ -1,6 +1,7 @@
 ---
 title: Travel Kit Checklist
 approaches: []
+position: 50
 authors:
   - SAFETAG
 remote_options: []

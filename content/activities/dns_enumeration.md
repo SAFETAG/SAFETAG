@@ -3,6 +3,7 @@ title: DNS Enumeration
 approaches:
   - Technical
   - Research
+position: 50
 authors:
   - SAFETAG
 remote_options:

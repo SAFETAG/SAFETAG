@@ -2,6 +2,7 @@
 title: Security policy review
 approaches:
   - Research
+position: 50
 authors:
   - Carlos Guerra
   - Candace Lazarou

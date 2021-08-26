@@ -26,6 +26,7 @@ export default function useAllGuideData() {
         }
         activities: allMarkdownRemark(
           filter: { fileAbsolutePath: {regex: "/activities//"} }
+          sort: { fields: [frontmatter___position],  },
         ) {
           edges {
             node {
@@ -48,6 +49,7 @@ export default function useAllGuideData() {
                 summary
                 orgSize: organization_size_under
                 approaches
+                position
                 remoteOptions: remote_options
               }
             }

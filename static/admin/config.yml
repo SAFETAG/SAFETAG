@@ -74,6 +74,12 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
+          label: "Position",
+          name: "position",
+          widget: "number",
+          required: true
+        }
+      - {
           label: "Approaches",
           name: "approaches",
           widget: "relation",
