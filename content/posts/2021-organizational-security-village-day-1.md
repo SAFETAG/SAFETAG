@@ -5,17 +5,17 @@ authors:
   - SAFETAG
 date: 2021-08-31 10:30
 tags:
-  - OSV
+  - Orgsec Village
 ---
 Internews is hosting our second virtual Organizational Security Village throughout this week (August 30-September 2)! The event is bringing together security auditors, digital security trainers, and other experts and practitioners for a four-day program of over 25 community-led sessions exploring four major themes in organizational security.
 
 Sessions on Day 1 centred around various OrgSec tools and resources. Highlights from Day 1 of the OrgSec village included:
 
 * *A conversation on how to bridge the gap between open source tool developers and users to improve usability and accessibility.* 
-* *A tour of the RaReNet (Rapid Response Network) and CiviCERT’s Digital First Aid Kit (DFAK).*
-* *An introduction to the new SAFETAG interface.* 
-* *An overview of the recently released RAWRR, an offline multiplatform and easy-to-use tool for security evaluation report generation.*
-* *A preview of NDI’s Cybersecurity Handbook for Civil Society Organizations.* 
+* *A tour of the [RaReNet ](https://www.rarenet.org/)(Rapid Response Network) and CiviCERT’s [Digital First Aid Kit](https://digitalfirstaid.org/) (DFAK).*
+* *An introduction to the [new SAFETAG interface](https://safetag.org/).* 
+* *An overview of the recently released [RAWRR](https://conexo.org/project/rawrr/), an offline multiplatform and easy-to-use tool for security evaluation report generation.*
+* *A preview of NDI’s [Cybersecurity Handbook for Civil Society Organizations](https://cso.cyberhandbook.org/).* 
 
  Key takeaways from the discussions included:
 
