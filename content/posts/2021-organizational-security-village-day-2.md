@@ -9,11 +9,11 @@ tags:
 ---
 During the second day of Internews’ virtual **Organizational Security Village** we continued exploring OrgSec tools and resources, while also beginning to look at diverse approaches to OrgSec adopted by practitioners in the community. Highlights from Day 2 of the OrgSec Village included:
 
-* An interactive session aimed at deconstructing resistance to change in organizations adopting digital security improvements.
-* An in-depth introduction on how to use Open Source Intelligence (OSINT) tools and techniques to protect yourself from risk.
-* The sharing of lessons learned from conducting SAFETAG trainings of auditors on and offline.
-* An exploration of the ecosystem of tools and resources available to OrgSec practitioners.
-* An overview of the processes and required resources for launching a non-profit organization that provides digital security support to civil society organizations.
+* *An interactive session aimed at deconstructing resistance to change in organizations adopting digital security improvements.*
+* *An in-depth introduction on how to use Open Source Intelligence (OSINT) tools and techniques to protect yourself from risk.*
+* *The sharing of lessons learned from conducting SAFETAG trainings of auditors on and offline.*
+* *An exploration of the ecosystem of tools and resources available to OrgSec practitioners.*
+* *An overview of the processes and required resources for launching a non-profit organization that provides digital security support to civil society organizations.*
 
 Key takeaways from the discussions included:
 
