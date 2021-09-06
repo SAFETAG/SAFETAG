@@ -41,7 +41,7 @@ const GlobalFooter = () => {
     <PageFoot role="contentinfo">
       <PageFootInner>
         <PageCredits>
-          <Trans i18nKey="footer-1">&copy; {Year} SAFETAG&trade;: A Project of Internews</Trans>
+          <Trans i18nKey="footer-1">&copy; {{Year}} SAFETAG&trade;: A Project of Internews</Trans>
         </PageCredits>
 
         <PageSocial>
