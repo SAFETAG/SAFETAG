@@ -152,6 +152,16 @@ function MethodLayout({ data, location }) {
                 {frontmatter.authors.map(authr => (
                   <dd key={authr}>{authr}</dd>
                 ))}
+
+                <dt>Included activities</dt>
+                {frontmatter.activities.map(act => (
+                  <dd key={act}>
+                    <Link to={`${activityNodes[act].slug}/`}>
+                      {act}
+                    </Link>
+                  </dd>
+                ))}
+
                 {/* {frontmatter.info_provided !== "" && (
                   <>
                     <dt>Info Provided</dt>
