@@ -500,7 +500,7 @@ export async function prepareGuide(
   customGuide.push(fixedSections["section_4.md"])
   customGuide.push(fixedSections["section_5.md"])
 
-  return await generateGuide(customGuide.join("\n"), guideTitle)
+  return await generateGuide(customGuide.join("\n\n"), guideTitle)
 }
 
 export default async function generateGuide(md, guideTitle) {
