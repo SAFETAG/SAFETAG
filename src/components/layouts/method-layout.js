@@ -153,11 +153,11 @@ function MethodLayout({ data, location }) {
                   <dd key={authr}>{authr}</dd>
                 ))}
 
-                <dt>Included activities</dt>
-                {frontmatter.activities.map(act => (
-                  <dd key={act}>
-                    <Link to={`${activityNodes[act].slug}/`}>
-                      {act}
+                {frontmatter.activities ? <dt>Included activities</dt> : ""}
+                {(frontmatter.activities || []).map((activity) => (
+                  <dd key={activity}>
+                    <Link to={`${activityNodes[activity].slug}/`}>
+                      {activity}
                     </Link>
                   </dd>
                 ))}
