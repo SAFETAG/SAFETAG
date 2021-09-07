@@ -45,7 +45,7 @@ async function loadMarkdownStyles() {
   const sourceCodeFont = await fetch(IBMPlexMonoRegular).then(response =>
     response.arrayBuffer()
   )
-  const bulletGlyphFont = await fetch(SourceCodeProBold).then(response => 
+  const bulletGlyphFont = await fetch(SourceCodeProBold).then(response =>
     response.arrayBuffer()
   )
 
@@ -235,6 +235,26 @@ class Node {
         // Supported format are png/jpg
         if (["png", "jpg"].indexOf(fileExt) > -1) {
           try {
+            // first we need to determine if we require a new page,
+            // otherwise the image gets cut off
+            const img = new Image()
+            img.name = filePath
+            img.src = filePath
+            console.log(doc)
+            console.log(doc.page)
+            console.log('Img height margin: ' + (img.height + doc.page.y + doc.currentLineHeight(true) +
+                  doc.page.margins.top + doc.page.margins.bottom))
+            console.log('page.y: ' + doc.page.y)
+            console.log('lineheight: ' + doc.currentLineHeight(true))
+
+            console.log('Max Y margin: ' + doc.page.maxY())
+            if ( (img.height + doc.page.y + doc.currentLineHeight(true) +
+                  doc.page.margins.top + doc.page.margins.bottom) > doc.page.maxY()
+                ) {
+              console.log(`Info: Image ${filePath} doesn't fit on this page, adding a new page`)
+              doc.addPage();
+            }
+
             const imageFile = await fetch(filePath).then(res =>
               res.arrayBuffer()
             )
@@ -242,6 +262,7 @@ class Node {
           } catch (error) {
             // eslint-disable-line
             console.log("Could not add image to PDF file: ", filePath)
+            console.log(error)
           }
 
           // Add image caption, if available
