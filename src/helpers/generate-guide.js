@@ -240,18 +240,10 @@ class Node {
             const img = new Image()
             img.name = filePath
             img.src = filePath
-            console.log(doc)
-            console.log(doc.page)
-            console.log('Img height margin: ' + (img.height + doc.page.y + doc.currentLineHeight(true) +
-                  doc.page.margins.top + doc.page.margins.bottom))
-            console.log('page.y: ' + doc.page.y)
-            console.log('lineheight: ' + doc.currentLineHeight(true))
-
-            console.log('Max Y margin: ' + doc.page.maxY())
-            if ( (img.height + doc.page.y + doc.currentLineHeight(true) +
+            if ( (img.height + doc.y + doc.currentLineHeight(true) +
                   doc.page.margins.top + doc.page.margins.bottom) > doc.page.maxY()
                 ) {
-              console.log(`Info: Image ${filePath} doesn't fit on this page, adding a new page`)
+              console.log(`Info: Image ${filePath} doesn't fit on this page, moving to a new page`)
               doc.addPage();
             }
 
@@ -413,7 +405,7 @@ export async function prepareGuide(
     "# Safetag Methods",
   ]
   values(guideVersion).map(({ title, method_icon, references, activities,
-          summary, purpose, guiding_questions, outputs, operational_security, 
+          summary, purpose, guiding_questions, outputs, operational_security,
           preparation }) => {
     const selectedActivities = isFull
       ? values(pickBy(activities))
