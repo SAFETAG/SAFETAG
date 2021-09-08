@@ -412,7 +412,9 @@ export async function prepareGuide(
     fixedSections["section_1.md"],
     "# Safetag Methods",
   ]
-  values(guideVersion).map(({ title, method_icon, references, sections, activities }) => {
+  values(guideVersion).map(({ title, method_icon, references, activities,
+          summary, purpose, guiding_questions, outputs, operational_security, 
+          preparation }) => {
     const selectedActivities = isFull
       ? values(pickBy(activities))
       : values(pickBy(activities, a => a.checked))
@@ -426,42 +428,29 @@ export async function prepareGuide(
       }
 
       // Add method sections
-      if (sections.summary && sections.summary.rawMarkdownBody) {
+      if (summary) {
         customGuide.push(`### Summary`)
-        customGuide.push(sections.summary.rawMarkdownBody)
+        customGuide.push(summary)
       }
-      if (sections.purpose && sections.purpose.rawMarkdownBody) {
+      if (purpose) {
         customGuide.push(`### Purpose`)
-        customGuide.push(sections.purpose.rawMarkdownBody)
+        customGuide.push(purpose)
       }
-      {/* if (
-        sections.the_flow_of_information &&
-        sections.the_flow_of_information.rawMarkdownBody
-      ) {
-        customGuide.push(`### The Flow of Information`)
-        customGuide.push(sections.the_flow_of_information.rawMarkdownBody)
-      } */}
-      if (
-        sections.guiding_questions &&
-        sections.guiding_questions.rawMarkdownBody
-      ) {
+      if (guiding_questions) {
         customGuide.push(`### Guiding Questions`)
-        customGuide.push(sections.guiding_questions.rawMarkdownBody)
+        customGuide.push(guiding_questions)
       }
-      if (sections.outputs && sections.outputs.rawMarkdownBody) {
+      if (outputs) {
         customGuide.push(`### Outputs`)
-        customGuide.push(sections.outputs.rawMarkdownBody)
+        customGuide.push(outputs)
       }
-      if (
-        sections.operational_security &&
-        sections.operational_security.rawMarkdownBody
-      ) {
+      if (operational_security) {
         customGuide.push(`### Operational Security`)
-        customGuide.push(sections.operational_security.rawMarkdownBody)
+        customGuide.push(operational_security)
       }
-      if (sections.preparation && sections.preparation.rawMarkdownBody) {
+      if (preparation) {
         customGuide.push(`### Preparation`)
-        customGuide.push(sections.preparation.rawMarkdownBody)
+        customGuide.push(preparation)
       }
 
       if (Object.keys(references).length > 0) {
