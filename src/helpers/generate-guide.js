@@ -445,13 +445,6 @@ export async function prepareGuide(
         customGuide.push(preparation)
       }
 
-      if (Object.keys(references).length > 0) {
-        customGuide.push(`### References`)
-        values(references).forEach(({ id, rawMarkdownBody }) => {
-          customGuide.push(`#### ${id}`)
-          customGuide.push(rawMarkdownBody)
-        })
-      }
       customGuide.push(`### Activities`)
       selectedActivities.forEach(
         ({
@@ -495,6 +488,13 @@ export async function prepareGuide(
           }
         }
       )
+      if (Object.keys(references).length > 0) {
+        customGuide.push(`### References and resources for ${title}`)
+        values(references).forEach(({ id, rawMarkdownBody }) => {
+          customGuide.push(`#### ${id}`)
+          customGuide.push(rawMarkdownBody)
+        })
+      }
     }
   })
 
