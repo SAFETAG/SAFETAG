@@ -65,7 +65,10 @@ function Activities({ data }) {
                         withHover
                       >
                         <CardHeading variation="primary">
-                          { node.frontmatter.title}
+                          {node.frontmatter.approaches.map(approach => (
+                            <img src={`/img/${approach.toLowerCase()}_icon.png`} />
+                          ))}
+                          { node.frontmatter.title }
                         </CardHeading>
                         <p>
                           { node.fields.frontmattermd.summary.excerpt }
@@ -106,6 +109,7 @@ export const query = graphql`
             title
             summary
             position
+            approaches
           }
         }
       }

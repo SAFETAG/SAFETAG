@@ -78,6 +78,7 @@ function MethodLayout({ data, location }) {
     activity =>
       (activityNodes[activity.node.frontmatter.title] = {
         slug: activity.node.fields.slug,
+        approaches: activity.node.frontmatter.approaches,
         excerpt:
           activity.node.fields.frontmattermd.summary
             ?.excerpt,
@@ -256,7 +257,12 @@ function MethodLayout({ data, location }) {
                         variation="secondary"
                         withHover
                       >
-                        <CardHeading variation="primary">{activity}_</CardHeading>
+                        <CardHeading variation="primary">
+                        {activityNodes[activity].approaches.map(approach => (
+                          <img src={`/img/${approach.toLowerCase()}_icon.png`} />
+                        ))}
+                        {activity}_
+                        </CardHeading>
                         <div
                           dangerouslySetInnerHTML={{
                             __html: activityNodes[activity].excerpt,
@@ -345,6 +351,7 @@ export const query = graphql`
           frontmatter {
             title
             summary
+            approaches
           }
         }
       }
