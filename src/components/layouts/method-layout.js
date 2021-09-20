@@ -156,7 +156,7 @@ function MethodLayout({ data, location }) {
                 {frontmatter.activities ? <dt>Included activities</dt> : ""}
                 {(frontmatter.activities || []).map((activity) => (
                   <dd key={activity}>
-                    <Link to={`${activityNodes[activity].slug}/`}>
+                    <Link to="#activities">
                       {activity}
                     </Link>
                   </dd>
@@ -241,9 +241,38 @@ function MethodLayout({ data, location }) {
         </InpageBody>
         <InpageBody>
           <InpageInnerColumns columnLayout="2:1">
+            <section id="activities">
+              <ActivityList>
+                <InpageTitle size="large" withDeco>
+                  Activities
+                </InpageTitle>
+                <CardList>
+                  {(frontmatter.activities || []).map((activity, index) => (
+                    <li key={index}>
+                      <ActivityCard
+                        as={Link}
+                        to={`${activityNodes[activity].slug}/`}
+                        border="primary"
+                        variation="secondary"
+                        withHover
+                      >
+                        <CardHeading variation="primary">{activity}_</CardHeading>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: activityNodes[activity].excerpt,
+                          }}
+                        ></div>
+                      </ActivityCard>
+                    </li>
+                  ))}
+                </CardList>
+              </ActivityList>
+            </section>
+          </InpageInnerColumns>
+          <InpageInnerColumns columnLayout="2:1">
             <section>
               <InpageTitle size="large" withDeco>
-                References
+                References and resources for {frontmatter.title}
               </InpageTitle>
               <SquareUl>
                 {(frontmatter.references || []).map(reference => (
@@ -258,32 +287,6 @@ function MethodLayout({ data, location }) {
                 ))}
               </SquareUl>
             </section>
-            <section></section>
-            <ActivityList>
-              <InpageTitle size="large" withDeco>
-                Activities
-              </InpageTitle>
-              <CardList>
-                {(frontmatter.activities || []).map((activity, index) => (
-                  <li key={index}>
-                    <ActivityCard
-                      as={Link}
-                      to={`${activityNodes[activity].slug}/`}
-                      border="primary"
-                      variation="secondary"
-                      withHover
-                    >
-                      <CardHeading variation="primary">{activity}_</CardHeading>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: activityNodes[activity].excerpt,
-                        }}
-                      ></div>
-                    </ActivityCard>
-                  </li>
-                ))}
-              </CardList>
-            </ActivityList>
           </InpageInnerColumns>
         </InpageBody>
       </Inpage>
