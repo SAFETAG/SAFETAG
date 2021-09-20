@@ -259,7 +259,7 @@ function MethodLayout({ data, location }) {
                       >
                         <CardHeading variation="primary">
                         {activityNodes[activity].approaches.map(approach => (
-                          <img src={`/img/${approach.toLowerCase()}_icon.png`} />
+                          <img key="$(approach)" src={`/img/${approach.toLowerCase()}_icon.png`} />
                         ))}
                         {activity}_
                         </CardHeading>

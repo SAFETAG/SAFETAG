@@ -66,7 +66,7 @@ function Activities({ data }) {
                       >
                         <CardHeading variation="primary">
                           {node.frontmatter.approaches.map(approach => (
-                            <img src={`/img/${approach.toLowerCase()}_icon.png`} />
+                            <img key="$(approach)" src={`/img/${approach.toLowerCase()}_icon.png`} />
                           ))}
                           { node.frontmatter.title }
                         </CardHeading>
