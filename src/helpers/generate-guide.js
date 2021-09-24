@@ -399,8 +399,12 @@ export async function prepareGuide(
   isFull = true
 ) {
   // Init guide by add fixed sections on start
+  const d = new Date()
+  const dateString = d.toUTCString()
+  const generatedNote = `_This custom guide was generated on ${dateString}. Create your own custom guide or get the full guide at www.safetag.org_`
+  var intro = fixedSections["introduction.md"] + '\n' + generatedNote
   const customGuide = [
-    fixedSections["introduction.md"],
+    intro,
     fixedSections["section_1.md"],
     "# Safetag Methods",
   ]
