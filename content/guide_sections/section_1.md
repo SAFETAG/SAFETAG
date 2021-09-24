@@ -193,7 +193,7 @@ An audit uncovers an array of sensitive information about an organization. For s
 **Communications security**
 
 * Conduct all communication with the client over at least minimally secure channels where the communication is encrypted in transit at all times. Consider risks to the organization and the auditor(s) if the organization is actively compromised.
-* Higher levels of security with end-to-end guarantees (such as Signal, PGP, Veracrypt, or Peerio/Minilock) should be used for file and document transfers.
+* Higher levels of security with end-to-end guarantees (such as Signal, Wire, PGP, or Veracrypt) should be used for file and document transfers.
 * Training and support may be required to ensure the organization is able to reliably and securely receive such communications.
 
 **Data Deletion**
