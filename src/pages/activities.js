@@ -94,7 +94,7 @@ export default Activities
 export const query = graphql`
   query($language: String!) {
     activities: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/activities//"}}
+      filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}},
       sort: { fields: [frontmatter___position, frontmatter___title],  },
     ) {
       edges {

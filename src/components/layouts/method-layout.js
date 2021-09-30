@@ -72,17 +72,18 @@ function MethodLayout({ data, location }) {
   const frontmattermd = data.method.fields.frontmattermd
 
   // creates an object with activity names as keys and activity slugs as values
-  let activities = data.activities.edges
+  const activities = data.activities.edges
   const activityNodes = {}
   activities.forEach(
-    activity =>
-      (activityNodes[activity.node.frontmatter.title] = {
+    activity => {
+      activityNodes[activity.node.frontmatter.title] = {
         slug: activity.node.fields.slug,
         approaches: activity.node.frontmatter.approaches,
         excerpt:
           activity.node.fields.frontmattermd.summary
             ?.excerpt,
-      })
+      }
+    }
   )
 
   // creates an object with reference names as keys and reference slugs as values
@@ -252,20 +253,20 @@ function MethodLayout({ data, location }) {
                     <li key={index}>
                       <ActivityCard
                         as={Link}
-                        to={`${activityNodes[activity].slug}/`}
+                        to={activityNodes[activity] ? `${activityNodes[activity].slug}/`: ''}
                         border="primary"
                         variation="secondary"
                         withHover
                       >
                         <CardHeading variation="primary">
-                        {activityNodes[activity].approaches.map(approach => (
+                        {activityNodes[activity] ? activityNodes[activity].approaches.map(approach => (
                           <img key="$(approach)" src={`/img/${approach.toLowerCase()}_icon.png`} />
-                        ))}
+                        )) : ''}
                         {activity}_
                         </CardHeading>
                         <div
                           dangerouslySetInnerHTML={{
-                            __html: activityNodes[activity].excerpt,
+                            __html: activityNodes[activity] ? activityNodes[activity].excerpt : '',
                           }}
                         ></div>
                       </ActivityCard>

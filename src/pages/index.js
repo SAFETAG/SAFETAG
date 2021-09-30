@@ -235,13 +235,6 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-/*
-      filter: {
-        relativeDirectory: { eq: "methods" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
-*/
-
 export const query = graphql`
   query($language: String!) {
     posts: allMarkdownRemark(
