@@ -308,8 +308,8 @@ MethodLayout.propTypes = {
 export default MethodLayout
 
 export const query = graphql`
-  query($slug: String!) {
-    method: markdownRemark(fields: { slug: { eq: $slug } }) {
+  query($slug: String!, $language: String!) {
+    method: markdownRemark(fields: { slug: { eq: $slug }, langKey: {eq: $language} }) {
       html
       frontmatter {
         title
@@ -368,6 +368,15 @@ export const query = graphql`
             title
           }
           html
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }
