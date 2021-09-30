@@ -69,8 +69,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const fileNode = getNode(node.parent)
     if (fileNode.relativePath.split('/').length == 2) {
       langKey = "en"
-    } else {
+    } else if (fileNode.relativePath.split('/').length == 4) {
       langKey = fileNode.relativePath.split('/')[0]
+    } else {
+      console.log("Filenode error: " + fileNode.relativePath)
+      langKey = "en"
     }
     if (node.fileAbsolutePath.includes("/posts/")) {
       basepath = "posts"

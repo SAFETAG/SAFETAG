@@ -230,8 +230,8 @@ ActivityLayout.propTypes = {
 export default ActivityLayout
 
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query($slug: String!, $language: String!) {
+    markdownRemark(fields: { slug: { eq: $slug }, langKey: {eq: $language} }) {
       html
       frontmatter {
         title
@@ -250,6 +250,15 @@ export const query = graphql`
           recommendations { html }
           summary { html }
           walk_through { html }
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

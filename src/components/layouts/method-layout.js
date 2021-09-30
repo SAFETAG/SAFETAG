@@ -338,7 +338,7 @@ export const query = graphql`
       }
     }
     activities: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/activities//"}}
+      filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}}
     ) {
       edges {
         node {
