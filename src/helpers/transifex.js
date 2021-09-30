@@ -36,7 +36,6 @@ function importFromTransifex(options) {
   // Retrieve all the data e.g. resource names, category names
   var transifex = new Transifex(options);
   transifex.resourcesSetMethod(options.project_slug, function(error, data) {
-    // console.log(data)
     if ( error ) {
       failed(error);
     }
@@ -59,8 +58,6 @@ function importFromTransifex(options) {
 
       // We are going to iterate through all the languages first before calling the function
       var wait = languages.teams.length;
-      // console.log(languages)
-      // console.log(languages.teams)
 
       // Check if there is more than one resource with the same category
       /*
@@ -84,7 +81,6 @@ function importFromTransifex(options) {
           transifex.statisticsMethods(projectName, resource.slug, function(err, data) {
             // Write each file with the given filename and content.
             Object.keys(data).forEach(function(language){
-              console.log(language + resource)
               writeFile(path.join(language, "meta-" + resource.name + ".json"), JSON.stringify(data[language], null, 2), function( err ) {
                 if (err) {
                   throw new Error(err);
@@ -105,7 +101,8 @@ function importFromTransifex(options) {
               filename = filename.replace(/_(activities|authors|guide_sections|methods|skills|references|approaches|infos|remote-options)_/, '/$1/')
               wait--;
               // Write each file with the given filename and content.
-              console.log(filename)
+              fileContent = fileContent.replace(/\npurpose: \n/, '\npurpose: ')
+              fileContent = fileContent.replace(/\nsummary: \n/, '\nsummary: ')
               writeFile(filename, fileContent, function( err ) {
                 if (err) {
                   throw new Error(err);

@@ -65,7 +65,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
        node.fileAbsolutePath.includes("/references/") ||
        node.fileAbsolutePath.includes("/posts/"))) {
 
-    let basepath, ctype
+    let basepath, ctype, langKey
+    const fileNode = getNode(node.parent)
+    if (fileNode.relativePath.split('/').length == 2) {
+      langKey = "en"
+    } else {
+      langKey = fileNode.relativePath.split('/')[0]
+    }
     if (node.fileAbsolutePath.includes("/posts/")) {
       basepath = "posts"
       ctype = "blog post"
@@ -95,6 +101,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: "content_type",
       value: ctype,
+    })
+    createNodeField({
+      node,
+      name: "langKey",
+      value: langKey,
     })
   }
 }

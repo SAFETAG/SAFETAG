@@ -264,7 +264,7 @@ export const query = graphql`
 
     methods: allMarkdownRemark(
       sort: { fields: [frontmatter___position],  },
-      filter: {fileAbsolutePath: {regex: "/methods/"}}
+      filter: {fileAbsolutePath: {regex: "/methods/"}, fields: {langKey: {eq: $language}}}
     ) {
       edges {
         node {
