@@ -6,19 +6,15 @@ authors: []
 remote_options: []
 skills_required: []
 skills_trained: []
-summary: >
-
+summary: |
   Lead staff in an activity were they describe the impact if various devices
   were destroyed.
-overview: >
-
+overview: |
   * Lead staff in an activity were they describe the impact if various devices
   were destroyed.
 materials_needed: ''
 considerations: ''
-walk_through: >
-
+walk_through: |
   This can be built in to the [Sensitive Data Activity](https://safetag.org/activities/sensitive_data).
 recommendations: ''
 ---
-

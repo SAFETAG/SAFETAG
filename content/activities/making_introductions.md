@@ -11,20 +11,16 @@ skills_required: []
 skills_trained: []
 summary: |
   Make introduction between host and known resources as needed.
-overview: >
-
+overview: |
   * Introduce relevant organizational representatives to resources
-
   * Follow up with both the organization and the resource later to check on
   progress 
 materials_needed: ''
-considerations: >
-
+considerations: |
   * Consider the implications of the meta-data (email addresses, subject lines,
   dates) involved in these introductions.
-
   * Provide PGP keys (signed if possible) for introductions where possible
-walk_through: >+
+walk_through: |
   Based on the specific recommendations in the audit report, as well as the
   auditor's understanding of the organization's capacity and barriers faced,
   introduce the relevant points of contact at the organization to resources such
@@ -34,13 +30,10 @@ walk_through: >+
   help address their needs (e.g. secure hosting providers, rapid response
   support).
 
-
   Follow up with both the organization and the resources introduced to check in
   on process and revise which introductions you make going forward.
-
 
 recommendations: ''
 organization_size_under: 100
 time_required_minutes: 30
 ---
-

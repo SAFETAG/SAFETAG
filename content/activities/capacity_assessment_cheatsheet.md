@@ -9,8 +9,7 @@ remote_options:
   - Partial
 skills_required: []
 skills_trained: []
-summary: >
-
+summary: |
   A monolithic, one-time interview with key staff is not always possible or
   advisable, but interacting with a variety of staff exposes valuable
   information about every aspect of the audit, from vulnerabilities to capacity
@@ -21,32 +20,24 @@ overview: ''
 materials_needed: ''
 considerations: ''
 walk_through: |
-
   "Homework"
-
    * Basic contact and organizational information: name, org, org's stated mission
    * Contextual research
-
   Organizational
-
    * Size of staff
    * Key roles in org for tech and management
    * Structure: Management and Technical?
    * (Program size, activities, information)
    * (Change management)
    * Languages used in office
-
   Contextual / Background / Threat information
-
    * What (if any) threats have occured to the organization and its partners? (digital, physical)
-     * Surveillance? 
+     * Surveillance?
    * What other threats are you concerned about? What has happened to other organizations in the space?
    * Org responses to these threats - trainings, technical responses, organization process/change successes?
    * Specific programs or other work outside of publicly stated mission that are high-risk
    * Program use of technology (SMS surveys, blogs, facebook pages, other websites, media recording and broadcast ...?)
-
   Technical
-
    * Primary website
    * Additional websites
    * Website technologies (content management, hosting provider)
@@ -59,18 +50,14 @@ walk_through: |
      * Other less formal tools - external emails, dropbox...
      * Internal network - wired, wireless, type of wireless network, ISP
 
-
   Preparation Support
-
    * Infrastructure
      * How is the office connected to the Internet?
      * Power outages or other challenges?
    * Office setup and size
      * Shared office space, shared floor or building?
      * Physical security of the office?
-
   Practices and behaviors
-
    * Office access and location
    * Personal device usage
    * Transporation means used to get to and from home
@@ -79,4 +66,3 @@ recommendations: ''
 organization_size_under: 50
 time_required_minutes: 30
 ---
-

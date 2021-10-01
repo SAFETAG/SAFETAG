@@ -15,4 +15,3 @@ walk_through: ''
 recommendations: ''
 time_required_minutes: 120
 ---
-

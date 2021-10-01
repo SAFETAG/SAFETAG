@@ -10,7 +10,7 @@ remote_options:
 skills_required:
   - Wireless
 skills_trained: []
-summary: >
+summary: |
   This component allows the auditor to show the "visibility" of an
   organization's wireless network to determine how far the organization's
   wireless network extends beyond a controlled area. Wireless networks are often
@@ -19,7 +19,7 @@ summary: >
   "visible" from outside the walls of the office - from common spaces or even
   the street. Without further access, this reveals a wealth of information about
   the organization's size and the type of devices connecting to their network.
-overview: >
+overview: |
   This component consists of wireless scanning and wireless signal mapping.  It
   is useful for organizations with offices in shared spaces/buildings/apartment
   complexes or near locations where an adversary could easily "listen" to
@@ -28,31 +28,24 @@ overview: >
   parallel with Office Mapping to build a more comprehensive view of the
   information assets of the organization.
 
-
   * Identify and verify the network(s) belonging to the organization
-
   * Create a map or photos indicating the range of each relevant wireless access
   point.
-materials_needed: >
-
+materials_needed: |
   * A portable wireless device (like an Android phone/tablet) is useful to map
   the network boundaries without causing undue suspicion. Some Apps like [Wifi
   analyzer](https://play.google.com/store/apps/details?id=cz.webprovider.wifianalyzer)
   and [Wifi
   Mapper](https://play.google.com/store/apps/details?id=com.osiris_mobile.wifimapper&hl=en)
   can help.
-considerations: >
-
+considerations: |
   * Despite this exercise covering only broadcast data, check the local laws
   which might cover this process before conducting it.
-
   * Consider how it looks to third parties as you are scanning a network,
   especially from outside an office.
-walk_through: >
-
+walk_through: |
   Map the range of the organizations wireless network outside of office space,
   using wifite or other tools to track network strength.
-
 
   A variety of apps and tools can support this work without resorting to
   professional "wifi site survey" tools. If the Office Mapping exercise has
@@ -64,29 +57,21 @@ walk_through: >
   tools to track visible networks and their strengths [as described on
   StackExchange](https://askubuntu.com/questions/237777/is-there-a-tool-like-wifi-analyzer-for-ubuntu):
 
-
   ```
-
   watch  "nmcli -f "CHAN,BARS,SIGNAL,SSID" d wifi list ifname wlx10feed21ae1d  |
   sort -n"
-
   ```
 
-
   * https://www.netspotapp.com/ (OSX, Windows, free for non-commercial uses)
-
   * http://wifianalyzer.mobi,  http://wifiheat.com/ (Android)
-recommendations: >
-
+recommendations: |
   Depending on office layout, moving the wireless access point may help to
   reduce how far the network is transmitted outside of the office space, and
   changing devices which do not move to better enable this without loss of
   functionality.
-
 
   See also [Monitoring Open Wireless Traffic](https://safetag.org/activities/monitor_open_wireless_traffic) recommendations and [Network Access](https://safetag.org/activities/network_access)
   security recommendations.
 organization_size_under: 500
 time_required_minutes: 30
 ---
-

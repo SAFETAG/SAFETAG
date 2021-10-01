@@ -12,8 +12,7 @@ skills_required:
   - Traffic Analysis
   - Password auditing
 skills_trained: []
-summary: >
-
+summary: |
   WPS was built as an addition to WPA to make it easier to add devices without
   typing in secure passwords, but this ease of use means that a malicious actor
   can pose as a device and effectively reduce the potentially very difficult
@@ -26,16 +25,13 @@ summary: >
 overview: ''
 materials_needed: ''
 considerations: ''
-walk_through: |2
-
-    * Find the BSSID of the target routerr
-    * Use Wash to find WPS Routers
-    * Start Reaver : estimated time: Between 2 and 10 hours
-recommendations: >-
-
+walk_through: |
+  * Find the BSSID of the target routerr
+  * Use Wash to find WPS Routers
+  * Start Reaver : estimated time: Between 2 and 10 hours
+recommendations: |
   WPS Pin entry should be disabled on the wireless router, or only enabled
   temporarily to add new devices to the network.
 organization_size_under: 1000
 time_required_minutes: 60
 ---
-
