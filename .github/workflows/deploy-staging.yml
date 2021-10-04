@@ -44,6 +44,7 @@ jobs:
           yarn install
           yarn lint
           yarn extract
+          yarn transifex
           yarn build
 
       - name: Deploy 🚀

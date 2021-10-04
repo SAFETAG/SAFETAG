@@ -100,7 +100,7 @@ function importFromTransifex(options) {
               var filename = path.join(language, resource.name + "." + type);
               filename = filename.replace(/_(activities|authors|guide_sections|methods|skills|references|approaches|infos|remote-options)_/, '/$1/')
               wait--;
-              // Write each file with the given filename and content.
+              // Postprocess the Transifex-delivered content to avoid errors
               fileContent = fileContent.replace(/\npurpose: \n/, '\npurpose: ')
               fileContent = fileContent.replace(/\nsummary: \n/, '\nsummary: ')
               writeFile(filename, fileContent, function( err ) {
