@@ -51,14 +51,9 @@ walk_through: |
   Below is a checklist to assist in checking across different platforms/versions
   for common security needs.
 
-
-
   ___
 
-
   ###### Variant: OS X
-
-
 
    * OS Security Updates
 
@@ -82,7 +77,6 @@ walk_through: |
 
   ```sudo fdesetup status```
 
-
   GUI: Choose System Preferences from the Apple menu, Security (10.5 and before)
   or Security & Privacy (10.6 and later), then the FileVault tab.  Also check
   for VeraCrypt
@@ -93,22 +87,16 @@ walk_through: |
 
   ```sudo launchctl list```
 
-
   CLI:
 
   ```ps -ef```
 
-
   GUI: The "Activity Monitor" application is located in /Applications/Utilities
   provides a similar interface to "top"
 
-
   ___
 
-
   ###### Variant: Windows
-
-
 
   If Windows is not your primary OS, you can download sample Virtual Machines
   (with time limitations) from Microsoft through their project to improve IE
@@ -118,49 +106,34 @@ walk_through: |
   and
   https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf)
 
-
   **Windows 10**
-
 
   * OS Security Updates
 
-
   GUI: Start --Settings --Update & Security --Windows Update
-
 
   * Firewall
 
-
   GUI: Start, type Firewall (select Windows Firewall)
-
 
   * Privacy
 
-
   GUI: Start --Settings -- Privacy
-
 
   * Anti-Virus Version
 
-
   * User privilege
-
 
   GUI: Start, type 'User Account', select "Change User Account Control settings"
 
-
   * Drive Encryption
 
-
-  GUI: Bitlocker 
+  GUI: Bitlocker
   https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10
-
 
   * Services Running
 
-
   GUI: Start, type "Task Manager"
-
 
   **Windows 8**
 
@@ -171,7 +144,6 @@ walk_through: |
    CLI:
    http://www.techsupportalert.com/en/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
 
-
    * Firewall
 
   GUI: Start (or Down Arrow Icon, PC Settings) -- Control Panel -- Windows
@@ -180,7 +152,6 @@ walk_through: |
   CLI:
 
   ```Netsh Advfirewall show allprofiles```
-
 
   more detail:
   http://windows.microsoft.com/en-us/windows-8/windows-firewall-from-start-to-finish
@@ -197,10 +168,7 @@ walk_through: |
 
   GUI: Right-Click on bottom taskbar, select "Task Manager"
 
-
-
   **Windows 7**
-
 
   In Windows 7, (GUI) Control Panel -- All Control Panel Items -- Action Center
   (Security tab) provides a quick run-down of most security features installed
@@ -208,7 +176,6 @@ walk_through: |
   versions.
 
    * OS Security Updates
-
 
    * Firewall
 
@@ -308,10 +275,6 @@ walk_through: |
   CLI:
 
   ```ps -ef```
-
-
-
-  -----
 recommendations: |
   **If Unsupported Operating System - Upgrade to Recent Version**
 

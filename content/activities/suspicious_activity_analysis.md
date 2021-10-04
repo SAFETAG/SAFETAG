@@ -25,7 +25,6 @@ summary: |
 
   In case the machine was infected, taking an image of the operating system will allow you to replicate the infected machine and run it after you finish your audit for a more in-depth investigation or send it to an expert to work on investigating the malware. Note, this also can be difficult in an audit setting where time is limited. Also see operational security considerations that come with replicating the files of a staff member of a sensitive organization. Be sure this is absolutely necessary and the staff members provides consent before completing.
 materials_needed: |
-  
   * An Incident Response Plan agreed upon with the organization
   * An emergency contact for the organization
   * A Kali Virtual machine connected to the Internet
@@ -171,7 +170,7 @@ walk_through: |
 
   The provided Threat Hunting procedures will guide on how to address your doubts on specific issue which means, you have to be able at least able to identify the category of the possible threat then apply the steps provided by [ThreatHunting.net](http://threathunting.net) project.
 considerations: |
-  
+
   * Consider the time you have, investigating malware can take days (you should not investigate during the audit itself)
   * Confirm that the device belongs to the organization
   * Make sure to take the device offline before start working on it
@@ -183,12 +182,12 @@ title: Suspicious Activity Analysis
 skills_required:
   - Malware Analysis
 overview: |
-  
   * Identification and **initial triage/analysis** of suspicious processes, files, and emails (via Anti-Virus scanning results, MISP and Virustotal information, network traffic analysis, and other research)
   * **Analyzing Specific Suspicious Events/Activities** - If the organization have specific concerns or evidence suggesting a targeted attack, the auditor can focus attention to match them against any known attacks or flag them for further research.
 
   In the following, you should look for files and URLs that may indicate a compromise and may help you identify an infection. If you have time, some inital light research may be suggested to see if the URLs or files hashes have been identified by other security researchers which can help you provide more context to the organization around the types of threats they are facing.
-recommendations: If the organization potentially receives documents from unknown
+recommendations: |
+  If the organization potentially receives documents from unknown
   and untrusted sources which could potentially target them through exploits,
   they may use Dangerzone from First Look Media, a tool which will safely
   re-render various file formats through an automated process and allow the user

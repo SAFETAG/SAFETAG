@@ -12,7 +12,18 @@ skills_required:
   - Psycho-social care
   - Risk Assessment
 skills_trained: []
-summary: "\nThis activity helps to identify the processes that allow the organization to function (publishing articles, payments, communicating with sources, field work etc) the assets and systems (websites, software, PayPal accounts) they rely on, and which ones are critical to their work.\n\nParticipating organization/s are asked to \"brain-storm\" a list of all the processes that are critical for their work and the auditor works to map the details of critical processes out to expose points of risk.\n\nIf done correctly, process mapping can help the auditor\n\t- Identify risk exposure\n\t- Communication issues and effective incident response\n\t- Identify what are affected (people, systems, technologies)\n\t- Identify areas of improvement in securing organization's process\n\t- Generate a mitigation/solution plan for missing security controls\n\t- Show the importance of digital security to staff, management team and stakeholders\n"
+summary: |
+  This activity helps to identify the processes that allow the organization to function (publishing articles, payments, communicating with sources, field work etc) the assets and systems (websites, software, PayPal accounts) they rely on, and which ones are critical to their work.
+
+  Participating organization/s are asked to "brain-storm" a list of all the processes that are critical for their work and the auditor works to map the details of critical processes out to expose points of risk.
+
+  If done correctly, process mapping can help the auditor
+  - Identify risk exposure
+  - Communication issues and effective incident response
+  - Identify what are affected (people, systems, technologies)
+  - Identify areas of improvement in securing organization's process
+  - Generate a mitigation/solution plan for missing security controls
+  - Show the importance of digital security to staff, management team and stakeholders
 overview: |
   * Brainstorm with staff on the organizational processes -- Try to make sure
   that everyone is present as the processes mapping involves them who use the
@@ -46,7 +57,7 @@ overview: |
     - List all issues and errors and review them later
   2. Balance active facilitation with taking time to look for weaknesses
     - A background in digital security helps you as an auditor to identify possible ways how you one can exploit a weak processes. While largely letting the organization drive the process creation, ask targeted questions to fully expose the full extent of a critical process and keep an eye on ways the processes could be vulnerable. If this is your way of thinking, you may already be formulating ideas on how to mitigate those attacks and give the best recommendation according to their process.
-    
+
   If it was not possible to conduct these activities in person, you can conduct
   them remotely through applying one of the remote facilitation approaches
   described in the [Remote Facilitation](#appendix-remote-facilitation)
@@ -66,7 +77,39 @@ considerations: |
   - Ensure that any digital recordings of this process are kept secure, encrypted, and backed up
   - Consider who has physical and visual access to the room where this process takes place, and if the room can be secured if this activity may span long/overnight breaks.
   - For high-risk organizations, or even among others, it is of best practice to keep digital devices such as mobile phones, laptops and computers turned off during the mapping activity. The use of camera, (not camera phones) is recommended. Mobile devices such as laptops and mobile phones if compromised can record audio, and capture videos.
-walk_through: "\n  * **List all organizational processes:** The goal of this exercise is for the auditor to lead the host participants in \"brain-storming\" a list of all the processes the organization takes part in to carry out their work. It is important to remember this is a brainstorming session of all of the processes that occur in the organization. To get started, the auditor may find it useful to give the participants a few examples such as:\n\n    * Research gathering and source management\n    * Editing / Publishing\n    * Outreach and advocacy\n    * Paying Staff\n    * Managing grants or other funding\n\n  * **Determine critical processes:** During this exercise the aim is for the auditor to lead the attendees in narrowing down the subset of activities to those that are crucial to their work. Once the participants have brainstormed these out the facilitator leads the participants in identifying  critical processes (this may be all of the processes identified).\n    * Quickly identify the main purpose of the organization.\n    * Once a complete list has been created, the auditor will then go through through to identify with the participants the critical processes within the organization – that is, without these processes the organization would not be able to function or function at a very poor level, or would not fulfill its mission\n\n*NOTE:* If an auditor does not ensure that the uniquely identified subset of processes speaks to the full range of participants, their recommendations are more likely to be met with resistance.\n\n  * **Map out critical processes:** In this exercises the auditor does free-hand drawing (ideally on a whiteboard to allow for easy changes) mapping for each process guided by the host participants. The auditor needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.\n    * Clearly identify the process name on the whiteboard or flipchart\n    * Have your participants explain to you what the process is step-by-step, while making a note on the side where there will be follow on processes.\n    * Keep it simple to facilitate broad understanding of the OVERALL process. Too much detail early on can be overwhelming and/or lead to confusion. If you agree that more detail is required on a particular action, it is easy to highlight that box and produce a separate chart showing the process taking place within.\n  \t* Take quick notes to remind yourself of any key points not clearly marked on the map before they move on to the next activity.\n    * Keep track of participant engagement and reactions in case there are edge cases you may need to follow up on individually afterwards.\n  \t* After completing all the key events take a photo of the whiteboard / store the chart-paper for later documentation.\n\nWhile doing this it is important to consider level of detail you will be mapping out (this should be pre-determined or established so everyone is on the same page).  You will generally want to capture:\n\n  * The people involved;\n  * The tasks, conversations, and decisions they carry out;\n  * The flow of materials, information and documents between them;\n  * How the actions take place (email, calls, travel)\n  * The relationship and dependance between the steps.\n  * Actual processes, not idealized ones\n\n* **Identify points of failure:** Begin to ask questions of how or why a particular process or step could be problematic or risky. Depending on the organization, you may want to do this as only mental notes to yourself or as a more interactive discussion.  The goal is to improve the organization's understanding of their own processes and the risks they include. \n"
+walk_through: |
+  * **List all organizational processes:** The goal of this exercise is for the auditor to lead the host participants in "brain-storming" a list of all the processes the organization takes part in to carry out their work. It is important to remember this is a brainstorming session of all of the processes that occur in the organization. To get started, the auditor may find it useful to give the participants a few examples such as:
+
+    * Research gathering and source management
+    * Editing / Publishing
+    * Outreach and advocacy
+    * Paying Staff
+    * Managing grants or other funding
+
+  * **Determine critical processes:** During this exercise the aim is for the auditor to lead the attendees in narrowing down the subset of activities to those that are crucial to their work. Once the participants have brainstormed these out the facilitator leads the participants in identifying  critical processes (this may be all of the processes identified).
+    * Quickly identify the main purpose of the organization.
+    * Once a complete list has been created, the auditor will then go through through to identify with the participants the critical processes within the organization – that is, without these processes the organization would not be able to function or function at a very poor level, or would not fulfill its mission
+
+    *NOTE:* If an auditor does not ensure that the uniquely identified subset of processes speaks to the full range of participants, their recommendations are more likely to be met with resistance.
+
+  * **Map out critical processes:** In this exercises the auditor does free-hand drawing (ideally on a whiteboard to allow for easy changes) mapping for each process guided by the host participants. The auditor needs to make sure that they work to develop a broad understanding of the overall process. This is a time consuming activity, and managing their overall time to complete the entire needs assessment, and respect the time constraints of the staff, is critical.
+    * Clearly identify the process name on the whiteboard or flipchart
+    * Have your participants explain to you what the process is step-by-step, while making a note on the side where there will be follow on processes.
+    * Keep it simple to facilitate broad understanding of the OVERALL process. Too much detail early on can be overwhelming and/or lead to confusion. If you agree that more detail is required on a particular action, it is easy to highlight that box and produce a separate chart showing the process taking place within.
+    * Take quick notes to remind yourself of any key points not clearly marked on the map before they move on to the next activity.
+    * Keep track of participant engagement and reactions in case there are edge cases you may need to follow up on individually afterwards.
+    * After completing all the key events take a photo of the whiteboard / store the chart-paper for later documentation.
+
+    While doing this it is important to consider level of detail you will be mapping out (this should be pre-determined or established so everyone is on the same page).  You will generally want to capture:
+
+    * The people involved;
+    * The tasks, conversations, and decisions they carry out;
+    * The flow of materials, information and documents between them;
+    * How the actions take place (email, calls, travel)
+    * The relationship and dependance between the steps.
+    * Actual processes, not idealized ones
+
+  * **Identify points of failure:** Begin to ask questions of how or why a particular process or step could be problematic or risky. Depending on the organization, you may want to do this as only mental notes to yourself or as a more interactive discussion.  The goal is to improve the organization's understanding of their own processes and the risks they include.
 recommendations: |
   Process mapping is simply documenting the steps in a certain process or simply
   an inventory of why you do the things that you do. It is your job as an

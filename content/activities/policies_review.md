@@ -49,7 +49,8 @@ walk_through: |
 
   With all this input, propose a map like the one in the "Identifying Informal Agreements" activity.
 considerations: ""
-recommendations: There must be a good understanding of the organizational
+recommendations: |
+  There must be a good understanding of the organizational
   capacity and commitment to implementing and maintaining formal security
   policies. Based on this assessment, consider beginning with more informal
   agreements among staff which still help centralize their approach to security

@@ -10,10 +10,11 @@ remote_options:
 time_required_minutes: 60
 organization_size_under: 25
 summary: |
-  
+
   Examine configuration files for vulnerabilities  using "hardening", or "common mistake" guides found online.
 materials_needed: ""
-walk_through: This will depend on the particular software or system you are
+walk_through: |
+  This will depend on the particular software or system you are
   examining. Use online guides and product documentation to check the security
   status of exiting configurations.
 considerations: ""

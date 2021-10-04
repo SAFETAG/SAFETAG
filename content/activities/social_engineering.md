@@ -125,7 +125,7 @@ walk_through: |
     * If you want, you may connect immediately or delay the mirror. Click Next to start the download.
     * Wait until the mirror is finished. Then click Finish.
   * Create a web server in your computer using XAMPP
-    * Install XAMPP on your computer. If you extract XAMPP in a top level folder like ```"C:\"``` or ```"D:\"```, you can start most servers like Apache or MySQL directly.
+    * Install XAMPP on your computer. If you extract XAMPP in a top level folder like ```"C:"``` or ```"D:"```, you can start most servers like Apache or MySQL directly.
     * Copy your mirrored website (usually under ```“C:\My Websites\projectname”```) to your htdocs folder (usually ```“C:\xampp\htdocs”```) making sure the htdocs folder is now the root directory of the index.htm for your mirrored website.
     * Test if your mirrored website is working. Start Apache under the XAMPP control panel and point your web browser to http://127.0.0.1. You should be able to see a copy of the mirrored website.
     * Edit some elements of the website (directly from opening the index.htm file in your htdocs folder with your favorite HTML editor, or a text editor like Notepad) to alert users that they are visiting a fake website.

@@ -10,16 +10,16 @@ remote_options:
 time_required_minutes: 120
 organization_size_under: 25
 summary: |
-  
-  The pre-mortem strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum]. 
+
+  The pre-mortem strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum].
 materials_needed: |
-  
+
   * Stickies (in multiple colors)
   * Whiteboard or flip-chart
   * Markers
   * Camera to digitally capture the data
 walk_through: |
-  
+
   Prepare a flipchart / space on the white-board to keep track of process', threats, impacts, and adversaries that are identified during other activities. Participants can easily get ahead of the process as they explore individual ideas. Keeping a space for these "upcoming" activities will help re-center them on the activity at hand.
 
   **Pre-Mortem Strategy: (30 Minutes)** The pre-mortem strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum]
@@ -45,17 +45,15 @@ walk_through: |
   * Take quick notes to remind yourself of any key points not clearly marked on the map before they move on to the next activity.
   * After completing all the key events take a photo of the whiteboard / store the chart-paper for later documentation.
 considerations: |
-  
   * Treat risk modeling data with the utmost security
   * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.
-  * Ensure that any digital recordings of this process are kept secure and encrypted. 
+  * Ensure that any digital recordings of this process are kept secure and encrypted.
 title: Risk Modeling Using the Pre-Mortem Strategy
 skills_required:
   - Group Facilitation
   - Psycho-social care
   - Risk Assessment
 overview: |
-  
   * "Pre-Mortem" Activity
   * Identification of critical processes
   * Selected critical process mapping
@@ -63,7 +61,5 @@ overview: |
   * Impact Identification
   * Adversary Exploration (Likelyhood)
   * Impact Ranking
-recommendations: |
-  
-  This activity can lead to feelings of hopelessness as well as stir up direct fears or challenges that the staff face. It is important to remind the staff that any risk can be mitigated, and indeed it is the goal of an audit to identify the highest priority ones based on actual likelihood and provide guidance on mitigation.
+recommendations: "This activity can lead to feelings of hopelessness as well as stir up direct fears or challenges that the staff face. It is important to remind the staff that any risk can be mitigated, and indeed it is the goal of an audit to identify the highest priority ones based on actual likelihood and provide guidance on mitigation."
 ---

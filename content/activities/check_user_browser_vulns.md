@@ -36,13 +36,6 @@ walk_through: |
   ```
   $ msfconsole
 
-  IIIIII    dTb.dTb        _.---._
-    II     4'  v  'B   .'"".'/|\`.""'.
-    II     6.     .P  :  .' / | \ `.  :
-    II     'T;. .;P'  '.'  /  |  \  `.'
-    II      'T; ;P'    `. /   |   \ .'
-  IIIIII     'YvP'       `-.__|__.-'
-
   I love shells --egypt
 
        =[ metasploit v4.7.0-dev [core:4.7 api:1.0]

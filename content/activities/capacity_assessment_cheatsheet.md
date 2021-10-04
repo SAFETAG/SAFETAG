@@ -20,7 +20,7 @@ overview: ''
 materials_needed: ''
 considerations: ''
 walk_through: |
-  "Homework"
+  'Homework'
    * Basic contact and organizational information: name, org, org's stated mission
    * Contextual research
   Organizational
@@ -49,7 +49,6 @@ walk_through: |
      * Other communication tools - skype, facebook, chat, mobile...
      * Other less formal tools - external emails, dropbox...
      * Internal network - wired, wireless, type of wireless network, ISP
-
   Preparation Support
    * Infrastructure
      * How is the office connected to the Internet?
