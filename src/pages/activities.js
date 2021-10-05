@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import { Link } from 'gatsby-plugin-react-i18next';
 
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"

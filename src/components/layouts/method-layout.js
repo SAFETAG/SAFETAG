@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, Link, withPrefix } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
+import { Link } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import mapValues from "lodash.mapvalues"
 
