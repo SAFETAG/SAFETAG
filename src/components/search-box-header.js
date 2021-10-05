@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react'
-import { navigate } from 'gatsby';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 
 function SearchBox () {
   const [ searchQuery, setSearchQuery ] = useState('')
   const [ isOpened, setIsOpened ] = useState(false)
   const searchInput = useRef(null)
+  const { navigate } = useI18next()
 
   function showInputBox() {
     setIsOpened(true)

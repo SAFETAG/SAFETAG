@@ -136,6 +136,10 @@ module.exports = {
             name: 'type', resolver: 'fields.content_type',
             indexed: false, store: true
           },
+          {
+            name: 'lang', resolver: 'fields.langKey',
+            indexed: false, store: true
+          },
         ],
       },
     },

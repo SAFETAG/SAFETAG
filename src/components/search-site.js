@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import { Link, I18nextContext } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
+
 
 const searchBoxStyle = {
   'margin': '2em 0',
@@ -15,6 +16,7 @@ const resultTypeStyle = {
   color: '#aaa',
   'margin-right': '1em',
 }
+
 
 class Search extends Component {
   state = {
@@ -36,11 +38,11 @@ class Search extends Component {
     const ResultList = () => {
       let results = []
       let message = ''
+      const context = React.useContext(I18nextContext);
 
       if (this.state.results.length > 0) {
         this.state.results.map((page, i) => {
-          console.log(page.type)
-          if (['activity', 'method', 'blog post'].includes(page.type)) {
+          if (['activity', 'method', 'blog post'].includes(page.type) && page.lang == context.language) {
             results.push({
               key: i,
               slug: page.url,
