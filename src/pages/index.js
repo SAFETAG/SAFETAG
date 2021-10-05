@@ -157,7 +157,6 @@ function IndexPage({ data }) {
                         border="primary"
                         as={Link}
                         to={node.fields.slug}
-                        withHover
                       >
                         <CardHeader>
                         	<img src={node.frontmatter.method_icon} />

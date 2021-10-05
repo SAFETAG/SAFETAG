@@ -7,6 +7,7 @@ import sys
 import re
 import glob
 
+
 def process_file(filename):
     f = open(filename, "r")
     lines = f.readlines()
@@ -15,12 +16,11 @@ def process_file(filename):
     newlines = []
     processing = False
     for line in lines:
-        if line.startswith(('walk_through: ', 'recommendations: ')):
+        if line.startswith(("walk_through: ", "recommendations: ")):
             if line.strip().endswith(("|", "''")):
                 newlines.append(line)
                 continue
             processing = True
-            print(line)
             key, start = line.split(': "')
             newlines.append(key + ": |\n")
             newlines.append("  " + start)
@@ -40,8 +40,9 @@ def process_file(filename):
     f.write(output)
     f.close()
 
+
 if __name__ == "__main__":
     # this will be run from the project root via npm, so that's the base path
-    for f in glob.glob('locales/**/content/activities/*.md'):
-    # for f in glob.glob('locales/es/content/activities/*.md'):
+    for f in glob.glob("locales/**/content/activities/*.md"):
+        # for f in glob.glob('locales/es/content/activities/*.md'):
         process_file(f)
