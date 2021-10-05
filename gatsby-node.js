@@ -63,6 +63,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       (node.fileAbsolutePath.includes("/methods/") ||
        node.fileAbsolutePath.includes("/activities/") ||
        node.fileAbsolutePath.includes("/references/") ||
+       node.fileAbsolutePath.includes("/approaches/") ||
        node.fileAbsolutePath.includes("/posts/"))) {
 
     let basepath, ctype, langKey
@@ -84,6 +85,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     } else if (node.fileAbsolutePath.includes("/references/")){
       basepath = "references"
       ctype = "reference"
+    } else if (node.fileAbsolutePath.includes("/approaches/")){
+      basepath = "approaches"
+      ctype = "approach"
     } else {
       basepath = "methods"
       ctype = "method"

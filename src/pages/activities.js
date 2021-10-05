@@ -37,6 +37,16 @@ const ActivityCard = styled(Card)`
 `
 
 function Activities({ data }) {
+  let approaches = data.approaches.edges
+  const approachNodes = {}
+  approaches.forEach(
+    approach =>
+      (approachNodes[approach.node.frontmatter.title] = {
+        title: approach.node.frontmatter.title,
+        icon: `/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`
+      })
+  )
+
   return (
     <GlobalLayout>
       <SEO title="Activities" />
@@ -66,8 +76,8 @@ function Activities({ data }) {
                         withHover
                       >
                         <CardHeading variation="primary">
-                          {node.frontmatter.approaches.map(approach => (
-                            <img key="$(approach)" src={`/img/${approach.toLowerCase()}_icon.png`} />
+                          {node.frontmatter.approaches.map((approach, index) => (
+                            <img key={`approach-${index}`} src={approachNodes[approach].icon} />
                           ))}
                           { node.frontmatter.title }
                         </CardHeading>
@@ -115,6 +125,23 @@ export const query = graphql`
         }
       }
     }
+    approaches: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/approaches//"}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+          html
+        }
+      }
+    }
+
+
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
         node {
