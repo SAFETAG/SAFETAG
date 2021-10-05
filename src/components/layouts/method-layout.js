@@ -98,6 +98,17 @@ function MethodLayout({ data, location }) {
       })
   )
 
+  // the same for approaches
+  let approaches = data.approaches.edges
+  const approachNodes = {}
+  approaches.forEach(
+    approach =>
+      (approachNodes[approach.node.frontmatter.title] = {
+        title: approach.node.frontmatter.title,
+        icon: `/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`
+      })
+  )
+
   // Get previous page path, if available
   let prevPath = location.state && location.state.prevPath || ""
   let prevPage = location.state && location.state.prevPage || ""
@@ -159,9 +170,9 @@ function MethodLayout({ data, location }) {
                 {frontmatter.activities ? <dt>Included activities</dt> : ""}
                 {(frontmatter.activities || []).map((activity) => (
                   <dd key={activity}>
-                    <Link to="#activities">
+                    <a href="#activities">
                       {activity}
-                    </Link>
+                    </a>
                   </dd>
                 ))}
 
@@ -260,8 +271,8 @@ function MethodLayout({ data, location }) {
                         withHover
                       >
                         <CardHeading variation="primary">
-                        {activityNodes[activity] ? activityNodes[activity].approaches.map(approach => (
-                          <img key="$(approach)" src={`/img/${approach.toLowerCase()}_icon.png`} />
+                        {activityNodes[activity] ? activityNodes[activity].approaches.map((approach, index) => (
+                          <img key={`approach-${index}`} src={approachNodes[approach].icon} />
                         )) : ''}
                         {activity}_
                         </CardHeading>
@@ -355,6 +366,21 @@ export const query = graphql`
             summary
             approaches
           }
+        }
+      }
+    }
+    approaches: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/approaches//"}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+          html
         }
       }
     }
