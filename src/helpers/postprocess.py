@@ -16,14 +16,15 @@ def process_file(filename):
     newlines = []
     processing = False
     for line in lines:
-        if line.startswith(("walk_through: ", "recommendations: ")):
+        if line.startswith(("walk_through: ", "recommendations: ", "overview: ")):
             if line.strip().endswith(("|", "''")):
                 newlines.append(line)
                 continue
+            print(line)
             processing = True
-            key, start = line.split(': "')
+            key, start = line.split(": ", 1)
             newlines.append(key + ": |\n")
-            newlines.append("  " + start)
+            newlines.append("  " + start.strip('"'))
             continue
 
         if processing:
