@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"

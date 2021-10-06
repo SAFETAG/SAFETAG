@@ -29,7 +29,7 @@ function SearchBox () {
           <input type="text"
             style={{ display: isOpened ? "block" : "none" }}
             ref={searchInput}
-            placeholder={t("Search..."}
+            placeholder={t("Search...")}
             value={searchQuery ? searchQuery : ''}
             onChange={() => setSearchQuery(event.target.value)}/>
         </form>

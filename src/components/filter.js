@@ -1,5 +1,5 @@
 import React from "react"
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import {
   ListboxInput,
@@ -114,7 +114,7 @@ function Filter({ title, type, options, selected, setFilter }) {
           }
         }}
       >
-        <FilterButton title={`${t("Filter by")} ${title}`)}>{title}</FilterButton>
+        <FilterButton title={`${t("Filter by")} ${title}`}>{title}</FilterButton>
         <FilterPopover>
           <ListboxList>
             <ListboxGroup>
