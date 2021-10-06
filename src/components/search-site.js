@@ -35,10 +35,10 @@ class Search extends Component {
   }
 
   render() {
-    const { t } = useTranslation('site', { useSuspense: false })
     const ResultList = () => {
       let results = []
       let message = ''
+      const { t } = useTranslation('site', { useSuspense: false })
       const context = React.useContext(I18nextContext);
 
       if (this.state.results.length > 0) {
@@ -93,7 +93,7 @@ class Search extends Component {
                 <input type="text"
                 style={searchBoxStyle}
                 onChange={this.search}
-                placeholder={t('Search')}
+                placeholder="Search"
                 value={this.state.query}
                 ref={inputEl => (this.searchInput = inputEl)}
                 />

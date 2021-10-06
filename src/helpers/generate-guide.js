@@ -29,8 +29,6 @@ const pdfDocumentOptions = {
 // Image options, please refer to https://pdfkit.org/docs/images.html
 const imageOptions = {}
 
-const { t } = useTranslation('site', { useSuspense: false })
-
 /**
  * Load styles and fonts asynchronously
  */
@@ -404,6 +402,7 @@ export async function prepareGuide(
   // Init guide by add fixed sections on start
   const d = new Date()
   const dateString = d.toUTCString()
+  const { t } = useTranslation('site', { useSuspense: false })
   const generatedNote = `_${t("This custom guide was generated on")} ${dateString}. ${t("Create your own custom guide or get the full guide at www.safetag.org")}_`
   var intro = fixedSections["introduction.md"] + '\n' + generatedNote
   const customGuide = [
@@ -513,6 +512,7 @@ export async function prepareGuide(
 }
 
 export default async function generateGuide(md, guideTitle) {
+  const { t } = useTranslation('site', { useSuspense: false })
   // Load styles
   await loadMarkdownStyles()
 

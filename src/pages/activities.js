@@ -77,9 +77,11 @@ function Activities({ data }) {
                         withHover
                       >
                         <CardHeading variation="primary">
-                          {node.frontmatter.approaches.map((approach, index) => (
-                            <img key={`approach-${index}`} src={approachNodes[approach].icon} />
-                          ))}
+                          {node.frontmatter.approaches.map((approach, index) => {
+                            if (approachNodes[approach]) {
+                              <img key={`approach-${index}`} src={approachNodes[approach].icon} />
+                            }
+                          })}
                           { node.frontmatter.title }
                         </CardHeading>
                         <p>
