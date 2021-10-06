@@ -1,11 +1,12 @@
 import React, { useState, useRef } from 'react'
-import { useI18next } from 'gatsby-plugin-react-i18next';
+import { Trans, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 
 function SearchBox () {
+  const { navigate } = useI18next()
+  const { t } = useTranslation('site', { useSuspense: false });
   const [ searchQuery, setSearchQuery ] = useState('')
   const [ isOpened, setIsOpened ] = useState(false)
   const searchInput = useRef(null)
-  const { navigate } = useI18next()
 
   function showInputBox() {
     setIsOpened(true)
@@ -20,7 +21,7 @@ function SearchBox () {
     <div className="searchBoxHeader">
       <div className="boxTitle" onClick={showInputBox}
           style={{ display: isOpened ? "none" : "block" }}>
-        Search
+        <Trans i18nKey="search-title">Search</Trans>
       </div>
 
       {isOpened && (
@@ -28,7 +29,7 @@ function SearchBox () {
           <input type="text"
             style={{ display: isOpened ? "block" : "none" }}
             ref={searchInput}
-            placeholder="Search..."
+            placeholder={t("Search..."}
             value={searchQuery ? searchQuery : ''}
             onChange={() => setSearchQuery(event.target.value)}/>
         </form>

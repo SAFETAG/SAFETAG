@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Button from "../styles/button/button"
@@ -28,7 +28,7 @@ const SearchHeading = styled.label`
 `
 
 function Search({ fullGuide, setGuide, setNoResults }) {
-  useTranslation('site', { useSuspense: false });
+  const { t } = useTranslation('site', { useSuspense: false })
   const [searchTerm, setSearchTerm] = useState("")
 
   const handleChange = event => {
@@ -56,20 +56,20 @@ function Search({ fullGuide, setGuide, setNoResults }) {
       }}
     >
       <SearchHeading htmlFor="search" id="search">
-        Search
+        <Trans i18nKey="guide-search-title">Search</Trans>
       </SearchHeading>
       <input
         name="search"
         type="text"
         value={searchTerm}
         onChange={handleChange}
-        placeholder="Search method titles"
+        placeholder={t("Search method titles")}
       />
       <Button
         type="submit"
         size="xlarge"
         variation="base-raised-semidark"
-        title="Enter search terms"
+        title={t("Enter search terms")}
       >
         <Trans i18nKey="label-search">Search</Trans>
       </Button>

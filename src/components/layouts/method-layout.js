@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, withPrefix } from "gatsby"
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import mapValues from "lodash.mapvalues"
 
@@ -69,6 +69,7 @@ const ActivityCard = styled(Card)`
 `
 
 function MethodLayout({ data, location }) {
+  const { t } = useTranslation('site', { useSuspense: false })
   const frontmatter = data.method.frontmatter
   const frontmattermd = data.method.fields.frontmattermd
 
@@ -139,7 +140,7 @@ function MethodLayout({ data, location }) {
                     : "/#allMethods"
                 }
               >
-                Back to {prevPath ? "guide builder" : "all methods"}
+                <Trans i18nKey="method-back">Back to</Trans> {prevPath ? t("guide builder") : t("all methods")}
               </MoreLink>
               <InpageTitle size="jumbo" variation="primary">
                 {frontmatter.title}
@@ -148,13 +149,13 @@ function MethodLayout({ data, location }) {
             </MethodHeadline>
             <MethodIntro>
               <InpageTitle size="large" withDeco>
-                Summary
+                <Trans i18nKey="method-title-summary">Summary</Trans>
               </InpageTitle>
               <div
                 dangerouslySetInnerHTML={{ __html: frontmattermd.summary.html }}
               ></div>
               <InpageTitle size="large" withDeco>
-                Purpose
+                <Trans i18nKey="method-title-purpose">Purpose</Trans>
               </InpageTitle>
               <div
                 dangerouslySetInnerHTML={{ __html: frontmattermd.purpose.html }}
@@ -162,12 +163,12 @@ function MethodLayout({ data, location }) {
             </MethodIntro>
             <MethodMeta>
               <Dl boldDesc>
-                <dt>Author</dt>
+                <Trans i18nKey="method-title-author">Author</Trans>
                 {frontmatter.authors.map(authr => (
                   <dd key={authr}>{authr}</dd>
                 ))}
 
-                {frontmatter.activities ? <dt>Included activities</dt> : ""}
+                {frontmatter.activities ? <dt><Trans i18nKey="method-title-act">Included activities</Trans></dt> : ""}
                 {(frontmatter.activities || []).map((activity) => (
                   <dd key={activity}>
                     <a href="#activities">
@@ -204,7 +205,7 @@ function MethodLayout({ data, location }) {
                 </>
                   )}*/}
               <InpageTitle size="large" withDeco>
-                Guiding Questions
+                <Trans i18nKey="method-title-questions">Guiding Questions</Trans>
               </InpageTitle>
               <SquareUl
                 dangerouslySetInnerHTML={{
@@ -217,7 +218,7 @@ function MethodLayout({ data, location }) {
           <InpageInnerColumns columnLayout="1:1">
             {sections.operational_security && (
               <Card border="base">
-                <CardHeading>Operational Security</CardHeading>
+                <CardHeading><Trans i18nKey="method-title-opsec">Operational Security</Trans></CardHeading>
                 <div
                   dangerouslySetInnerHTML={{
                     __html: frontmattermd.operational_security.html,
@@ -227,7 +228,7 @@ function MethodLayout({ data, location }) {
             )}
             {sections.preparation && (
               <Card border="base">
-                <CardHeading>Preparation</CardHeading>
+                <CardHeading><Trans i18nKey="method-title-prep">Preparation</Trans></CardHeading>
                 <SquareUl
                   dangerouslySetInnerHTML={{
                     __html: frontmattermd.preparation.html,
@@ -241,7 +242,7 @@ function MethodLayout({ data, location }) {
               {sections.outputs && (
                 <>
                   <InpageTitle size="large" withDeco>
-                    Outputs
+                    <Trans i18nKey="method-title-outputs">Outputs</Trans>
                   </InpageTitle>
                   <SquareUl
                     dangerouslySetInnerHTML={{
@@ -258,7 +259,7 @@ function MethodLayout({ data, location }) {
             <section id="activities">
               <ActivityList>
                 <InpageTitle size="large" withDeco>
-                  Activities
+                  <Trans i18nKey="method-title-activities">Activities</Trans>
                 </InpageTitle>
                 <CardList>
                   {(frontmatter.activities || []).map((activity, index) => (
@@ -291,7 +292,7 @@ function MethodLayout({ data, location }) {
           <InpageInnerColumns columnLayout="2:1">
             <section>
               <InpageTitle size="large" withDeco>
-                References and resources for {frontmatter.title}
+                <Trans i18nKey="method-title-references">References and resources for</Trans> {frontmatter.title}
               </InpageTitle>
               <SquareUl>
                 {(frontmatter.references || []).map(reference => (

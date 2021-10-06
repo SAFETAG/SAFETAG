@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, I18nextContext } from 'gatsby-plugin-react-i18next';
+import { Link, I18nextContext, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 
 
@@ -35,6 +35,7 @@ class Search extends Component {
   }
 
   render() {
+    const { t } = useTranslation('site', { useSuspense: false })
     const ResultList = () => {
       let results = []
       let message = ''
@@ -54,12 +55,12 @@ class Search extends Component {
           }
         })
       } else if (this.state.query.length > 2) {
-        message = 'No results for ' + this.state.query
+        message = t('No results for ') + this.state.query + '.'
       } else if (
         this.state.results.length === 0 &&
         this.state.query.length > 0
       ) {
-        message = 'Please insert at least 3 characters'
+        message = t('Please insert at least 3 characters.')
       } else {
         message = ''
       }
@@ -71,7 +72,7 @@ class Search extends Component {
               <li style={resultLiStyle} className="m-search__result" key={result.key}>
                 <span style={resultTypeStyle}>{result.type.replace(/^\w/, (c) => c.toUpperCase())}</span>
                 <Link to={result.slug} className="link">
-                {result.title}
+                  {result.title}
                 </Link>
               </li>)
             )}
@@ -92,7 +93,7 @@ class Search extends Component {
                 <input type="text"
                 style={searchBoxStyle}
                 onChange={this.search}
-                placeholder={'Search'}
+                placeholder={t('Search')}
                 value={this.state.query}
                 ref={inputEl => (this.searchInput = inputEl)}
                 />

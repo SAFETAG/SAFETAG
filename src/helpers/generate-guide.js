@@ -4,6 +4,7 @@ import { saveAs } from "file-saver"
 import marked from "marked"
 import pickBy from "lodash.pickby"
 import values from "lodash.values"
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import IBMPlexSansRegular from "../../static/fonts/IBMPlexSans-Regular.ttf"
 import IBMPlexSansBold from "../../static/fonts/IBMPlexSans-Bold.ttf"
@@ -27,6 +28,8 @@ const pdfDocumentOptions = {
 
 // Image options, please refer to https://pdfkit.org/docs/images.html
 const imageOptions = {}
+
+const { t } = useTranslation('site', { useSuspense: false })
 
 /**
  * Load styles and fonts asynchronously
@@ -401,12 +404,12 @@ export async function prepareGuide(
   // Init guide by add fixed sections on start
   const d = new Date()
   const dateString = d.toUTCString()
-  const generatedNote = `_This custom guide was generated on ${dateString}. Create your own custom guide or get the full guide at www.safetag.org_`
+  const generatedNote = `_${t("This custom guide was generated on")} ${dateString}. ${t("Create your own custom guide or get the full guide at www.safetag.org")}_`
   var intro = fixedSections["introduction.md"] + '\n' + generatedNote
   const customGuide = [
     intro,
     fixedSections["section_1.md"],
-    "# Safetag Methods",
+    `# ${t("Safetag Methods")}`,
   ]
   values(guideVersion).map(({ title, method_icon, references, activities,
           summary, purpose, guiding_questions, outputs, operational_security,
@@ -425,31 +428,31 @@ export async function prepareGuide(
 
       // Add method sections
       if (summary) {
-        customGuide.push(`### Summary`)
+        customGuide.push(`### ${t("Summary")}`)
         customGuide.push(summary)
       }
       if (purpose) {
-        customGuide.push(`### Purpose`)
+        customGuide.push(`### ${t("Purpose")}`)
         customGuide.push(purpose)
       }
       if (guiding_questions) {
-        customGuide.push(`### Guiding Questions`)
+        customGuide.push(`### ${t("Guiding Questions")}`)
         customGuide.push(guiding_questions)
       }
       if (outputs) {
-        customGuide.push(`### Outputs`)
+        customGuide.push(`### ${t("Outputs")}`)
         customGuide.push(outputs)
       }
       if (operational_security) {
-        customGuide.push(`### Operational Security`)
+        customGuide.push(`### ${t("Operational Security")}`)
         customGuide.push(operational_security)
       }
       if (preparation) {
-        customGuide.push(`### Preparation`)
+        customGuide.push(`### ${t("Preparation")}`)
         customGuide.push(preparation)
       }
 
-      customGuide.push(`### Activities`)
+      customGuide.push(`### ${t("Activities")}`)
       selectedActivities.forEach(
         ({
           title,
@@ -467,33 +470,33 @@ export async function prepareGuide(
 
           // Add activities sections
           if (summary && summary.rawMarkdownBody) {
-            customGuide.push(`##### Summary`)
+            customGuide.push(t(`##### ${t("Summary")}`))
             customGuide.push(summary.rawMarkdownBody)
           }
           if (overview && overview.rawMarkdownBody) {
-            customGuide.push(`##### Overview`)
+            customGuide.push(t(`##### ${t("Overview")}`))
             customGuide.push(overview.rawMarkdownBody)
           }
           if (materials_needed && materials_needed.rawMarkdownBody) {
-            customGuide.push(`##### Materials Needed`)
+            customGuide.push(t(`##### ${t("Materials Needed")}`))
             customGuide.push(materials_needed.rawMarkdownBody)
           }
           if (considerations && considerations.rawMarkdownBody) {
-            customGuide.push(`##### Considerations`)
+            customGuide.push(t(`##### ${t("Considerations")}`))
             customGuide.push(considerations.rawMarkdownBody)
           }
           if (walk_through && walk_through.rawMarkdownBody) {
-            customGuide.push(`##### Walk Through`)
+            customGuide.push(t(`##### ${t("Walk Through")}`))
             customGuide.push(walk_through.rawMarkdownBody)
           }
           if (recommendations && recommendations.rawMarkdownBody) {
-            customGuide.push(`##### Recommendations`)
+            customGuide.push(t(`##### ${t("Recommendations")}`))
             customGuide.push(recommendations.rawMarkdownBody)
           }
         }
       )
       if (Object.keys(references).length > 0) {
-        customGuide.push(`### References and resources for ${title}`)
+        customGuide.push(t(`### ${t("References and resources for ")} ${title}`))
         values(references).forEach(({ id, rawMarkdownBody }) => {
           customGuide.push(`#### ${id}`)
           customGuide.push(rawMarkdownBody)
@@ -536,13 +539,13 @@ export default async function generateGuide(md, guideTitle) {
       .fillColor("#454644")
       .fontSize(8)
       .text(
-        'SAFETAG™: A Project of Internews',
+        t('SAFETAG™: A Project of Internews'),
         50,
         doc.page.height - (oldBottomMargin/2),
         { align: 'left' }
       )
       .text(
-        `Page ${i + 1} of ${pages.count}`,
+        t(`Page ${i + 1} of ${pages.count}`),
         0,
         doc.page.height - (oldBottomMargin/2), // Centered vertically in bottom margin
         { align: 'right' }

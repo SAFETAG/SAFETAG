@@ -1,4 +1,5 @@
 import React from "react"
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import {
   ListboxInput,
@@ -88,11 +89,12 @@ const FilterPopover = styled(ListboxPopover)`
   }
 `
 function Filter({ title, type, options, selected, setFilter }) {
+  const { t } = useTranslation('site', { useSuspense: false })
   const selectedIds = selected[type] ? selected[type] : []
 
   return (
     <>
-      <VisuallyHidden id="filter-guide">Filter by {title}</VisuallyHidden>
+      <VisuallyHidden id="filter-guide"><Trans i18nKey="filter-by">Filter by</Trans> {title}</VisuallyHidden>
       <ListboxInput
         name="filter"
         aria-labelledby="filter-guide"
@@ -112,7 +114,7 @@ function Filter({ title, type, options, selected, setFilter }) {
           }
         }}
       >
-        <FilterButton title={`Filter by ${title}`}>{title}</FilterButton>
+        <FilterButton title={`${t("Filter by")} ${title}`)}>{title}</FilterButton>
         <FilterPopover>
           <ListboxList>
             <ListboxGroup>

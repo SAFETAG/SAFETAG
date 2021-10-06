@@ -20,7 +20,6 @@ def process_file(filename):
             if line.strip().endswith(("|", "''")):
                 newlines.append(line)
                 continue
-            print(line)
             processing = True
             key, start = line.split(": ", 1)
             newlines.append(key + ": |\n")

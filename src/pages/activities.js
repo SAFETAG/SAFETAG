@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
@@ -37,6 +37,7 @@ const ActivityCard = styled(Card)`
 `
 
 function Activities({ data }) {
+  useTranslation('site', { useSuspense: false });
   let approaches = data.approaches.edges
   const approachNodes = {}
   approaches.forEach(
@@ -55,7 +56,7 @@ function Activities({ data }) {
           <InpageInnerColumns columnLayout="3:1">
             <MethodHeadline>
               <InpageTitle size="jumbo" variation="primary" withDeco>
-                Activities
+                <Trans i18nKey="activities-title">Activities</Trans>
               </InpageTitle>
             </MethodHeadline>
           </InpageInnerColumns>
