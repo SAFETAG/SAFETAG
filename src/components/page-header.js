@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from "react"
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import { window } from "browser-monads"
 
@@ -14,6 +14,9 @@ import LogoWhite from "../../static/assets/logo/SafetagLogoWhite.svg"
 import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg"
 
 import SearchBox from "./search-box-header.js"
+
+import ReactLanguageSelect from 'react-languages-select';
+import 'react-languages-select/css/react-languages-select.css';
 
 const PageHead = styled.header`
   position: sticky;
@@ -190,10 +193,30 @@ const Hamburger = styled.div`
   }
 `
 
+const LanguageSelect = styled(ReactLanguageSelect)`
+  color: white !important;
+  button {
+    color: white;
+  }
+  ul {
+    background: #0721eb;
+  }
+`
+
+
 const GlobalHeader = () => {
   useTranslation('site', { useSuspense: false });
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [scrolled, setScrolled] = useState(window.scrollY)
+  const { changeLanguage } = useI18next()
+  let langSelector = React.createRef();
+
+  function onSelectLanguage(languageCode){
+    console.log(languageCode)
+    changeLanguage(languageCode)
+    console.log(langSelector)
+    langSelector.updateSelected(languageCode)
+  }
 
   useLayoutEffect(() => {
     const handleScroll = () => {
@@ -316,6 +339,14 @@ const GlobalHeader = () => {
                 >
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
+              </li>
+              <li>
+                <LanguageSelect
+                   languages={["en", "fr", "es"]}
+                   placeholder="Select Language"
+                   onSelect={onSelectLanguage}
+                   ref={(el) => langSelector = el}
+                />
               </li>
             </GlobalMenu>
           )}
