@@ -4,7 +4,6 @@ import { saveAs } from "file-saver"
 import marked from "marked"
 import pickBy from "lodash.pickby"
 import values from "lodash.values"
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import IBMPlexSansRegular from "../../static/fonts/IBMPlexSans-Regular.ttf"
 import IBMPlexSansBold from "../../static/fonts/IBMPlexSans-Bold.ttf"
@@ -393,6 +392,11 @@ const render = async (doc, markdownContent) => {
  * @param  {bool} isFull
  * @returns {func}
  */
+function t(text) {
+  return text
+}
+// const { t } = useTranslation('site', { useSuspense: false })
+
 export async function prepareGuide(
   guideVersion,
   guideTitle,
@@ -402,7 +406,7 @@ export async function prepareGuide(
   // Init guide by add fixed sections on start
   const d = new Date()
   const dateString = d.toUTCString()
-  const { t } = useTranslation('site', { useSuspense: false })
+  // const { t } = useTranslation('site', { useSuspense: false })
   const generatedNote = `_${t("This custom guide was generated on")} ${dateString}. ${t("Create your own custom guide or get the full guide at www.safetag.org")}_`
   var intro = fixedSections["introduction.md"] + '\n' + generatedNote
   const customGuide = [
@@ -512,7 +516,6 @@ export async function prepareGuide(
 }
 
 export default async function generateGuide(md, guideTitle) {
-  const { t } = useTranslation('site', { useSuspense: false })
   // Load styles
   await loadMarkdownStyles()
 

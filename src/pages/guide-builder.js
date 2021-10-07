@@ -9,12 +9,12 @@ import MoreLink from "../styles/button/more-link"
 import queryString from 'query-string'
 
 import {useQueryParams} from 'use-query-params';
+import keyBy from "lodash.keyby"
 
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
-import Filters from "../components/filters"
-import Search from "../components/search-guide"
-import useAllGuideData from "../helpers/useAllGuideData"
+// import Filters from "../components/filters"
+// import Search from "../components/search-guide"
 import { prepareGuide } from "../helpers/generate-guide"
 
 import {
@@ -23,7 +23,7 @@ import {
   InpageHeaderInner,
   InpageTitle,
   InpageBody,
-  InpageBodyInner,
+  // InpageBodyInner,
   InpageInnerColumns,
 } from "../styles/inpage"
 import Button from "../styles/button/button"
@@ -186,12 +186,64 @@ const ExportButtons = styled.div`
   gap: 1rem;
 `
 
-const GuideBuilder = ({ location }) => {
+function useAllGuideData(data) {
+  const activities = data.activities.edges.map(({ node }) => ({
+    id: node.frontmatter.title,
+    sections: node.fields.frontmattermd,
+    slug: node.fields.slug,
+    ...node.frontmatter,
+    ...node.fields.frontmattermd,
+  }))
+
+  const methods = data.methods.edges.map(({ node }) => ({
+    id: node.frontmatter.title,
+    sections: [node.frontmatter.summary, node.frontmatter.purpose, node.frontmatter.guiding_questions, node.frontmatter.outputs, node.frontmatter.operational_security, node.frontmatter.preparation],
+    slug: node.fields.slug,
+    ...node.frontmatter,
+  }))
+
+  const references = data.references.edges.map(({ node }) => ({
+    id: node.frontmatter.title,
+    rawMarkdownBody: node.rawMarkdownBody,
+  }))
+
+  const fixedSections = data.fixedSections.edges.reduce((acc, { node }) => {
+    acc[node.base] = node.childMarkdownRemark.rawMarkdownBody
+    return acc
+  }, {})
+
+  return {
+    fullGuide: keyBy(
+      methods.map(m => {
+        return {
+          ...m,
+          activities: keyBy(
+            (m.activities || []).map(id => activities.find(a => a.id === id)),
+            "id"
+          ),
+          references: keyBy(
+            (m.references || []).map(id => references.find(r => r.id === id)),
+            "id"
+          ),
+        }
+      }),
+      "id"
+    ),
+    references,
+    activities,
+    fixedSections,
+  }
+}
+
+
+const GuideBuilder = ({ data, location }) => {
   const { t } = useTranslation('site', { useSuspense: false });
-  const { fullGuide, activities, fixedSections } = useAllGuideData()
+  const { fullGuide, fixedSections } = useAllGuideData(data)
+  // const { fullGuide, activities, fixedSections } = useAllGuideData(data)
   // Add the full guide to state
   const [guide, setGuide] = useState(fullGuide)
   const [isNoResults, setNoResults] = useState(false)
+  console.log(setNoResults)
   const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
   const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
 
@@ -289,6 +341,7 @@ const GuideBuilder = ({ location }) => {
             </InpageTitle>
           </InpageHeaderInner>
         </InpageHeader>
+        {/*
         <InpageBody>
           <InpageBodyInner>
             <Search
@@ -305,6 +358,7 @@ const GuideBuilder = ({ location }) => {
             />
           </InpageBodyInner>
         </InpageBody>
+        */}
         <InpageBody>
           <SplitPanels columnLayout="1:1">
             <Panel border="base">
@@ -491,6 +545,7 @@ const GuideBuilder = ({ location }) => {
 export default GuideBuilder
 
 GuideBuilder.propTypes = {
+  data: PropTypes.object,
   location: PropTypes.shape({
     search: PropTypes.string,
     pathname: PropTypes.string,
@@ -500,6 +555,91 @@ GuideBuilder.propTypes = {
 
 export const query = graphql`
   query($language: String!) {
+    fixedSections: allFile(
+      filter: {
+        relativeDirectory: { eq: "guide_sections" }
+        internal: { mediaType: { eq: "text/markdown" } }
+      }
+    ) {
+      edges {
+        node {
+          childMarkdownRemark {
+            rawMarkdownBody
+          }
+          base
+        }
+      }
+    }
+    activities: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}} },
+      sort: { fields: [frontmatter___position],  },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            frontmattermd {
+              summary {
+                excerpt
+                rawMarkdownBody
+              }
+              overview { rawMarkdownBody }
+              materials_needed { rawMarkdownBody }
+              considerations { rawMarkdownBody }
+              walk_through { rawMarkdownBody }
+              recommendations { rawMarkdownBody }
+            }
+          }
+          frontmatter {
+            title
+            summary
+            orgSize: organization_size_under
+            approaches
+            position
+            remoteOptions: remote_options
+          }
+        }
+      }
+    }
+    methods: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/methods//"}, fields: {langKey: {eq: $language}} },
+      sort: { fields: [frontmatter___position],  },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            method_icon
+            activities
+            references
+            summary
+            purpose
+            guiding_questions
+            outputs
+            operational_security
+            preparation
+          }
+        }
+      }
+    }
+    references: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/references//"}, fields: {langKey: {eq: $language}} },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+          rawMarkdownBody
+        }
+      }
+    }
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
         node {
@@ -510,4 +650,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
