@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect } from "react"
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
+import { useLocation } from '@reach/router';
 import styled from "styled-components"
 import { window } from "browser-monads"
 
@@ -209,6 +210,8 @@ const GlobalHeader = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [scrolled, setScrolled] = useState(window.scrollY)
   const { changeLanguage } = useI18next()
+  const location = useLocation();
+  console.log(`LOCATION PATHNAME: ${location.pathname}`)
   let langSelector = React.createRef();
 
   function onSelectLanguage(languageCode){
@@ -216,6 +219,7 @@ const GlobalHeader = () => {
     changeLanguage(languageCode)
     console.log(langSelector)
     langSelector.updateSelected(languageCode)
+    console.log(`LOCATION PATHNAME: ${location.pathname}`)
   }
 
   useLayoutEffect(() => {
