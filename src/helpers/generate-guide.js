@@ -229,7 +229,7 @@ class Node {
         break
       }
       case "image": {
-        const filePath = `..${this.attrs.href}`
+        const filePath = this.attrs.href
         const fileExt = filePath.split(".").pop()
 
         // Supported format are png/jpg
