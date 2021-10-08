@@ -1,6 +1,5 @@
 import React, { useState, useLayoutEffect } from "react"
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
-import { useLocation } from '@reach/router';
 import styled from "styled-components"
 import { window } from "browser-monads"
 
