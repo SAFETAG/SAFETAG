@@ -242,8 +242,7 @@ const GuideBuilder = ({ data, location }) => {
   // const { fullGuide, activities, fixedSections } = useAllGuideData(data)
   // Add the full guide to state
   const [guide, setGuide] = useState(fullGuide)
-  const [isNoResults, setNoResults] = useState(false)
-  console.log(setNoResults)
+  const [isNoResults] = useState(false)
   const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
   const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
 
@@ -255,31 +254,36 @@ const GuideBuilder = ({ data, location }) => {
     useEffect(() => {
       if(location.search) {
         const qs = queryString.parse(location.search)
-        const newGuide = Object.entries(qs).reduce((prev, [key, value]) => {
-          const values = value.split(',')
-          const checkedActivities = values.reduce((prev, curr) => {
-            return {
-              ...prev,
-              [curr]: {
-                ...guide[key].activities[curr],
-              checked: true,
-            }
-            }
-          }, {})
 
-          return {
-            ...guide,
-            ...prev,
-            [key]: {
-              ...guide[key],
-              activities: {
-                ...guide[key].activities,
-                ...checkedActivities
+        try {
+          const newGuide = Object.entries(qs).reduce((prev, [key, value]) => {
+            const values = value.split(',')
+            const checkedActivities = values.reduce((prev, curr) => {
+              return {
+                ...prev,
+                [curr]: {
+                  ...guide[key].activities[curr],
+                checked: true,
+              }
+              }
+            }, {})
+
+            return {
+              ...guide,
+              ...prev,
+              [key]: {
+                ...guide[key],
+                activities: {
+                  ...guide[key].activities,
+                  ...checkedActivities
+                  }
                 }
               }
-            }
-        }, {})
-        setGuide(newGuide)
+          }, {})
+          setGuide(newGuide)
+        } catch (error) {
+          console.log("Error parsing the search string, dropping.")
+        }
     }
     }, [])
 

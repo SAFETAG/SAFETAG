@@ -210,16 +210,11 @@ const GlobalHeader = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [scrolled, setScrolled] = useState(window.scrollY)
   const { changeLanguage } = useI18next()
-  const location = useLocation();
-  console.log(`LOCATION PATHNAME: ${location.pathname}`)
   let langSelector = React.createRef();
 
   function onSelectLanguage(languageCode){
-    console.log(languageCode)
     changeLanguage(languageCode)
-    console.log(langSelector)
     langSelector.updateSelected(languageCode)
-    console.log(`LOCATION PATHNAME: ${location.pathname}`)
   }
 
   useLayoutEffect(() => {
