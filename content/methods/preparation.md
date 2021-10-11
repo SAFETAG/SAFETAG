@@ -56,7 +56,8 @@ outputs: |
 info_provided: []
 title: Preparation
 method_icon: /img/preparation_icon.png
-purpose: A SAFETAG audit has a short time frame. Preparation is vital to ensure
+purpose: |
+  A SAFETAG audit has a short time frame. Preparation is vital to ensure
   that time on the ground is not spent negotiating over the audit scope,
   updating the auditor's systems, searching for missing hardware, or refreshing
   oneself with the SAFETAG framework. Preparatory discussions with the host

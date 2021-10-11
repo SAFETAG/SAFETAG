@@ -6,7 +6,7 @@ summary: |
   adopting new digital and physical security practices. The auditor uses this
   information to modify the audit scope and recommendations accordingly.
 the_flow_of_information: "![](/img/capacity_assessment.png)"
-guiding_questions: >-2
+guiding_questions: |
    * What is the organization's ability to adopt new technologies or practices?
    * What resources does the organization have available to them?
    * What is the environment that the organization works within like? What barriers, threat actors, and other aspects influence their work?
