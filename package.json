@@ -91,9 +91,9 @@
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "extract": "i18next 'src/pages/*.js' 'src/components/*.js' 'src/components/layouts/*.js'",
-    "transifex": "node -r dotenv/config src/helpers/transifex.js && python src/helpers/postprocess.py",
-    "postproc": "python src/helpers/postprocess.py"
+    "extract": "i18next 'src/pages/*.js' 'src/components/*.js' 'src/components/layouts/*.js' 'src/helpers/*.js'",
+    "transifex": "node -r dotenv/config src/helpers/transifex.js && python3 src/helpers/postprocess.py",
+    "postproc": "python3 src/helpers/postprocess.py"
   },
   "repository": {
     "type": "git",

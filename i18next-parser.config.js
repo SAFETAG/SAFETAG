@@ -7,7 +7,7 @@ module.exports = {
   createOldCatalogs: true,
   // Save the \_old files
 
-  defaultNamespace: 'translation',
+  defaultNamespace: 'site',
   // Default namespace used in your i18next config
 
   defaultValue: '',

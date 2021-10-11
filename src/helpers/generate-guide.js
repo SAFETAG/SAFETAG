@@ -392,27 +392,24 @@ const render = async (doc, markdownContent) => {
  * @param  {bool} isFull
  * @returns {func}
  */
-function t(text) {
-  return text
-}
-// const { t } = useTranslation('site', { useSuspense: false })
 
 export async function prepareGuide(
   guideVersion,
   guideTitle,
   fixedSections,
-  isFull = true
+  isFull = true,
+  t,
 ) {
   // Init guide by add fixed sections on start
   const d = new Date()
   const dateString = d.toUTCString()
-  // const { t } = useTranslation('site', { useSuspense: false })
-  const generatedNote = `_${t("This custom guide was generated on")} ${dateString}. ${t("Create your own custom guide or get the full guide at www.safetag.org")}_`
+
+  const generatedNote = `_${t("guide-gen-date", "This custom guide was generated on")} ${dateString}. ${t("guide-notice", "Create your own custom guide or get the full guide at www.safetag.org")}_`
   var intro = fixedSections["introduction.md"] + '\n' + generatedNote
   const customGuide = [
     intro,
     fixedSections["section_1.md"],
-    `# ${t("Safetag Methods")}`,
+    `# ${t("guide-methods", "Safetag Methods")}`,
   ]
   values(guideVersion).map(({ title, method_icon, references, activities,
           summary, purpose, guiding_questions, outputs, operational_security,
@@ -431,31 +428,31 @@ export async function prepareGuide(
 
       // Add method sections
       if (summary) {
-        customGuide.push(`### ${t("Summary")}`)
+        customGuide.push(`### ${t("method-title-summary", "Summary")}`)
         customGuide.push(summary)
       }
       if (purpose) {
-        customGuide.push(`### ${t("Purpose")}`)
+        customGuide.push(`### ${t("method-title-purpose", "Purpose")}`)
         customGuide.push(purpose)
       }
       if (guiding_questions) {
-        customGuide.push(`### ${t("Guiding Questions")}`)
+        customGuide.push(`### ${t("method-title-questions", "Guiding Questions")}`)
         customGuide.push(guiding_questions)
       }
       if (outputs) {
-        customGuide.push(`### ${t("Outputs")}`)
+        customGuide.push(`### ${t("method-title-outputs", "Outputs")}`)
         customGuide.push(outputs)
       }
       if (operational_security) {
-        customGuide.push(`### ${t("Operational Security")}`)
+        customGuide.push(`### ${t("method-title-opsec", "Operational Security")}`)
         customGuide.push(operational_security)
       }
       if (preparation) {
-        customGuide.push(`### ${t("Preparation")}`)
+        customGuide.push(`### ${t("method-title-prep", "Preparation")}`)
         customGuide.push(preparation)
       }
 
-      customGuide.push(`### ${t("Activities")}`)
+      customGuide.push(`### ${t("method-title-activities", "Activities")}`)
       selectedActivities.forEach(
         ({
           title,
@@ -473,33 +470,33 @@ export async function prepareGuide(
 
           // Add activities sections
           if (summary && summary.rawMarkdownBody) {
-            customGuide.push(t(`##### ${t("Summary")}`))
+            customGuide.push(`##### ${t('activity-summary', "Summary")}`)
             customGuide.push(summary.rawMarkdownBody)
           }
           if (overview && overview.rawMarkdownBody) {
-            customGuide.push(t(`##### ${t("Overview")}`))
+            customGuide.push(`##### ${t('activity-overview', "Overview")}`)
             customGuide.push(overview.rawMarkdownBody)
           }
           if (materials_needed && materials_needed.rawMarkdownBody) {
-            customGuide.push(t(`##### ${t("Materials Needed")}`))
+            customGuide.push(`##### ${t('activity-materials', "Materials Needed")}`)
             customGuide.push(materials_needed.rawMarkdownBody)
           }
           if (considerations && considerations.rawMarkdownBody) {
-            customGuide.push(t(`##### ${t("Considerations")}`))
+            customGuide.push(`##### ${t('activity-considerations', "Considerations")}`)
             customGuide.push(considerations.rawMarkdownBody)
           }
           if (walk_through && walk_through.rawMarkdownBody) {
-            customGuide.push(t(`##### ${t("Walk Through")}`))
+            customGuide.push(`##### ${t('activity-walkthrough', "Walk Through")}`)
             customGuide.push(walk_through.rawMarkdownBody)
           }
           if (recommendations && recommendations.rawMarkdownBody) {
-            customGuide.push(t(`##### ${t("Recommendations")}`))
+            customGuide.push(`##### ${t('activity-recommendations', "Recommendations")}`)
             customGuide.push(recommendations.rawMarkdownBody)
           }
         }
       )
       if (Object.keys(references).length > 0) {
-        customGuide.push(t(`### ${t("References and resources for ")} ${title}`))
+        customGuide.push(`### ${t("guide-references", "References and resources for ")} ${title}`)
         values(references).forEach(({ id, rawMarkdownBody }) => {
           customGuide.push(`#### ${id}`)
           customGuide.push(rawMarkdownBody)
@@ -512,10 +509,10 @@ export async function prepareGuide(
   customGuide.push(fixedSections["section_4.md"])
   customGuide.push(fixedSections["section_5.md"])
 
-  return await generateGuide(customGuide.join("\n\n"), guideTitle)
+  return await generateGuide(customGuide.join("\n\n"), guideTitle, t)
 }
 
-export default async function generateGuide(md, guideTitle) {
+export default async function generateGuide(md, guideTitle, t) {
   // Load styles
   await loadMarkdownStyles()
 
@@ -542,13 +539,13 @@ export default async function generateGuide(md, guideTitle) {
       .fillColor("#454644")
       .fontSize(8)
       .text(
-        t('SAFETAG™: A Project of Internews'),
+        t("guide-footer", "SAFETAG™: A Project of Internews"),
         50,
         doc.page.height - (oldBottomMargin/2),
         { align: 'left' }
       )
       .text(
-        t(`Page ${i + 1} of ${pages.count}`),
+        `${t("guide-page-number", "Page")} ${i + 1} ${t("guide-page-number-of", "of")} ${pages.count}`,
         0,
         doc.page.height - (oldBottomMargin/2), // Centered vertically in bottom margin
         { align: 'right' }

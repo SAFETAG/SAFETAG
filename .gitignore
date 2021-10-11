@@ -71,3 +71,6 @@ yarn-error.log
 
 # local temporary dir
 tmp/
+
+locales/*
+!locales/en

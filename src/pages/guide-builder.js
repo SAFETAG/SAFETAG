@@ -463,7 +463,7 @@ const GuideBuilder = ({ data, location }) => {
                   title="Export selected methods and activities as PDF"
                   onClick={async () => {
                     setCustomGuideLoader(true)
-                    await prepareGuide(guide, 'custom-guide', fixedSections, false)
+                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t)
                     // requires a small buffer period
                     setTimeout(() => {
                       setCustomGuideLoader(false)

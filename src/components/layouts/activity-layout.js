@@ -192,7 +192,7 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  <Trans i18nKey="activity-walkthrough">Walkthrough</Trans>
+                  <Trans i18nKey="activity-walkthrough">Walk Through</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
