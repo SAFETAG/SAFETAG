@@ -36,34 +36,12 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  // Create slugs for activities, methods and references
-  /*
-  const { mediaType } = node.internal
-  const contentType = node.relativeDirectory
-  if ( mediaType === `text/markdown` && ["references"].includes(node.relativeDirectory) ) {
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: contentType,
-      trailingSlash: false,
-    })
-
-    createNodeField({
-      node,
-      name: "slug",
-      value: `/${contentType}${slug.substring(slug.lastIndexOf("/"))}`,
-    })
-    createNodeField({
-      node,
-      name: "content_type",
-      value: contentType,
-    })
-    */
   if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath &&
       (node.fileAbsolutePath.includes("/methods/") ||
        node.fileAbsolutePath.includes("/activities/") ||
        node.fileAbsolutePath.includes("/references/") ||
        node.fileAbsolutePath.includes("/approaches/") ||
+       node.fileAbsolutePath.includes("/guide_sections/") ||
        node.fileAbsolutePath.includes("/posts/"))) {
 
     let basepath, ctype, langKey
@@ -88,6 +66,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     } else if (node.fileAbsolutePath.includes("/approaches/")){
       basepath = "approaches"
       ctype = "approach"
+    } else if (node.fileAbsolutePath.includes("/guide_sections/")){
+      basepath = "sections"
+      ctype = "section"
     } else {
       basepath = "methods"
       ctype = "method"
@@ -221,8 +202,41 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
-}
 
+  const sections = await graphql(
+    `
+      query {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___position],  },
+          filter: {fileAbsolutePath: {regex: "/guide_sections//"}}
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  // Handle errors
+  if (methods.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  // Create pages for each file.
+  sections.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/components/layouts/section-layout.js`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+}
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html") {
     actions.setWebpackConfig({
