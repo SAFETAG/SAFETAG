@@ -205,9 +205,9 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
         title={t("Approaches")}
         type="approaches"
         options={[
-          { id: t("Technical") },
-          { id: t("Interpersonal") },
-          { id: t("Research") },
+          { id: "technical", label: t("Technical") },
+          { id: "interpersonal", label: t("Interpersonal") },
+          { id: "research", label: t("Research") },
         ]}
         selected={selectedFilters}
         setFilter={setFilter}
@@ -270,7 +270,7 @@ Filters.propTypes = {
   fullGuide: PropTypes.object,
   activitiesInCustomGuide: PropTypes.array,
   setGuide: PropTypes.func,
-  activities: PropTypes.object,
+  activities: PropTypes.array,
 }
 
 export default Filters

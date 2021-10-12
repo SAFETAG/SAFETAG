@@ -121,14 +121,14 @@ function Filter({ title, type, options, selected, setFilter }) {
               <FilterListHeader>{title}</FilterListHeader>
               {options.map(option => (
                 <FilterItem
-                  key={option.id}
-                  value={option.id}
+                  key={String(option.id)}
+                  value={String(option.id)}
                   selected={!!selectedIds.includes(option.id)}
                 >
                   <FormCheckable
                     type="checkbox"
-                    id={option.id}
-                    name={option.id}
+                    id={String(option.id)}
+                    name={String(option.id)}
                     defaultChecked={selectedIds.includes(option.id)}
                     readOnly
                   ></FormCheckable>
@@ -149,6 +149,7 @@ Filter.propTypes = {
   title: PropTypes.string,
   type: PropTypes.string,
   options: PropTypes.array,
+  activities: PropTypes.array,
   selected: PropTypes.object,
   setFilter: PropTypes.func,
 }
