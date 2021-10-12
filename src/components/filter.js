@@ -129,7 +129,7 @@ function Filter({ title, type, options, selected, setFilter }) {
                     type="checkbox"
                     id={option.id}
                     name={option.id}
-                    checked={selectedIds.includes(option.id)}
+                    defaultChecked={selectedIds.includes(option.id)}
                     readOnly
                   ></FormCheckable>
                   {option.label || option.id}
@@ -144,6 +144,8 @@ function Filter({ title, type, options, selected, setFilter }) {
 }
 
 Filter.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
   title: PropTypes.string,
   type: PropTypes.string,
   options: PropTypes.array,

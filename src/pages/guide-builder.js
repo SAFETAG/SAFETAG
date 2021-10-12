@@ -13,8 +13,8 @@ import keyBy from "lodash.keyby"
 
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
-// import Filters from "../components/filters"
-// import Search from "../components/search-guide"
+import Filters from "../components/filters"
+import Search from "../components/search-guide"
 import { prepareGuide } from "../helpers/generate-guide"
 
 import {
@@ -23,7 +23,7 @@ import {
   InpageHeaderInner,
   InpageTitle,
   InpageBody,
-  // InpageBodyInner,
+  InpageBodyInner,
   InpageInnerColumns,
 } from "../styles/inpage"
 import Button from "../styles/button/button"
@@ -238,11 +238,10 @@ function useAllGuideData(data) {
 
 const GuideBuilder = ({ data, location }) => {
   const { t } = useTranslation('site', { useSuspense: false });
-  const { fullGuide, fixedSections } = useAllGuideData(data)
-  // const { fullGuide, activities, fixedSections } = useAllGuideData(data)
+  const { fullGuide, activities, fixedSections } = useAllGuideData(data)
   // Add the full guide to state
   const [guide, setGuide] = useState(fullGuide)
-  const [isNoResults] = useState(false)
+  const [isNoResults, setNoResults] = useState(false)
   const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
   const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
 
@@ -337,6 +336,7 @@ const GuideBuilder = ({ data, location }) => {
   return (
     <GlobalLayout>
       <SEO title="Guide Creator" />
+      {fullGuide && activities && <div>
       <Inpage>
         <InpageHeader>
           <InpageHeaderInner>
@@ -345,24 +345,22 @@ const GuideBuilder = ({ data, location }) => {
             </InpageTitle>
           </InpageHeaderInner>
         </InpageHeader>
-        {/*
         <InpageBody>
           <InpageBodyInner>
-            <Search
-              fullGuide={fullGuide}
-              setGuide={setGuide}
-              setNoResults={setNoResults}
-            />
-            <Filters
-              fullGuide={fullGuide}
-              activitiesInCustomGuide={activitiesInCustomGuide}
-              setGuide={setGuide}
-              activities={activities}
-              // initialFilters={queryString.parse(location.search)}
-            />
+              <Search
+                 fullGuide={fullGuide}
+                 setGuide={setGuide}
+                 setNoResults={setNoResults}
+              />
+              <Filters
+                fullGuide={fullGuide}
+                activitiesInCustomGuide={activitiesInCustomGuide}
+                setGuide={setGuide}
+                activities={activities}
+                // initialFilters={queryString.parse(location.search)}
+              />
           </InpageBodyInner>
         </InpageBody>
-        */}
         <InpageBody>
           <SplitPanels columnLayout="1:1">
             <Panel border="base">
@@ -421,7 +419,7 @@ const GuideBuilder = ({ data, location }) => {
                                     type="checkbox"
                                     id={fieldId}
                                     name={fieldId}
-                                    checked={activity.checked}
+                                    defaultChecked={activity.checked}
                                     onChange={() => {
                                       setGuide({
                                         ...guide,
@@ -542,6 +540,7 @@ const GuideBuilder = ({ data, location }) => {
           </SplitPanels>
         </InpageBody>
       </Inpage>
+      </div>}
     </GlobalLayout>
   )
 }
