@@ -172,27 +172,27 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
 
   return (
     <FilterSection>
-      <FilterHeading><Trans i18nKey="filters-title">Filters</Trans></FilterHeading>
+      <FilterHeading><Trans i18nKey="filter-title">Filters</Trans></FilterHeading>
 
       <Filter
-        title={t("Methods")}
+        title={t("filter-methods", "Methods")}
         type="methods"
         options={Object.keys(fullGuide).map(method => ({ id: method }))}
         selected={selectedFilters}
         setFilter={setFilter}
       />
       <Filter
-        title={t("Activities")}
+        title={t("filter-activities", "Activities")}
         type="activities"
         options={allActivities}
         selected={selectedFilters}
         setFilter={setFilter}
       />
       <Filter
-        title={t("Org Size")}
+        title={t("filter-orgsize", "Org Size")}
         type="orgSize"
         options={[
-          { id: 25, label: t("<= 25 people") },
+          { id: 25, label: "<= 25 " + t("filter-people", "people") },
           { id: 50, label: "<= 50" },
           { id: 100, label: "<= 100" },
           { id: 200, label: "<= 200" },
@@ -202,7 +202,7 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
         setFilter={setFilter}
       />
       <Filter
-        title={t("Approaches")}
+        title={t("filter-approaches", "Approaches")}
         type="approaches"
         options={[
           { id: "technical", label: t("Technical") },
@@ -216,11 +216,11 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
         title={t("Remote Options")}
         type="remoteOptions"
         options={[
-          { id: "Yes", label: t("Yes") },
-          { id: "Complete", label: t("Complete") },
-          { id: "Partial", label: t("Partial") },
-          { id: "with-support", label: t("With Support") },
-          { id: "None", label: t("No Options") },
+          { id: "yes", label: t("filter-remote-1", "Yes") },
+          { id: "complete", label: t("filter-remote-2", "Complete") },
+          { id: "partial", label: t("filter-remote-3", "Partial") },
+          { id: "with-support", label: t("filter-remote-4", "With Support") },
+          { id: "none", label: t("filter-remote-5", "No Options") },
         ]}
         selected={selectedFilters}
         setFilter={setFilter}
