@@ -82,6 +82,21 @@ function ActivityLayout({ data }) {
     fields: { frontmattermd },
   } = data.markdownRemark
 
+  // creates an object with tool names as keys and tool slugs as values
+  const tools = data.tools.edges
+  console.log(tools)
+  const toolNodes = {}
+  tools.forEach(
+    tool => {
+      toolNodes[tool.node.frontmatter.title] = {
+        slug: tool.node.fields.slug,
+        html: tool.node.html
+      }
+    }
+  )
+  console.log(toolNodes)
+  console.log(frontmatter)
+
   // Fix images URL by adding app root url with prefix
   const sections = mapValues(frontmattermd, section => {
     if (section && section.html) {
@@ -203,6 +218,31 @@ function ActivityLayout({ data }) {
               <span></span>
             </InpageInnerColumns>
           )}
+
+          {frontmatter.tools && (
+            <div>
+              <InpageInnerColumns columnLayout="3:1">
+                <InpageTitle size="large" withDeco>
+                  <Trans i18nKey="activity-tools">Tools and variants</Trans>
+                </InpageTitle>
+              </InpageInnerColumns>
+              <InpageInnerColumns columnLayout="3:1">
+                <article>
+                {(frontmatter.tools || []).map((tool) => (
+                  <div key={tool}>
+                    <h3>{tool}</h3>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: toolNodes[tool].html,
+                      }}
+                    ></div>
+                  </div>
+                ))}
+                </article>
+              </InpageInnerColumns>
+            </div>
+          )}
+
           {sections.recommendations && (
             <InpageInnerColumns columnLayout="3:1">
               <article>
@@ -236,6 +276,7 @@ export const query = graphql`
       frontmatter {
         title
         approaches
+        tools
         authors
         remote_options
         skills_required
@@ -250,6 +291,21 @@ export const query = graphql`
           recommendations { html }
           summary { html }
           walk_through { html }
+        }
+      }
+    }
+    tools: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/tools//"}, fields: {langKey: {eq: $language}}}
+    ) {
+      edges {
+        node {
+          html
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }
