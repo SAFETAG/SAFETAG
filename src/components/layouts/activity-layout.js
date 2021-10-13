@@ -230,7 +230,7 @@ function ActivityLayout({ data }) {
                 <article>
                 {(frontmatter.tools || []).map((tool) => (
                   <div key={tool}>
-                    <h3>{tool}</h3>
+                    <h6>{tool}</h6>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: toolNodes[tool].html,

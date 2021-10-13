@@ -41,6 +41,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
        node.fileAbsolutePath.includes("/activities/") ||
        node.fileAbsolutePath.includes("/references/") ||
        node.fileAbsolutePath.includes("/approaches/") ||
+       node.fileAbsolutePath.includes("/tools/") ||
        node.fileAbsolutePath.includes("/guide_sections/") ||
        node.fileAbsolutePath.includes("/posts/"))) {
 
@@ -69,6 +70,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     } else if (node.fileAbsolutePath.includes("/guide_sections/")){
       basepath = "sections"
       ctype = "section"
+    } else if (node.fileAbsolutePath.includes("/tools/")){
+      basepath = "tools"
+      ctype = "tool"
     } else {
       basepath = "methods"
       ctype = "method"
