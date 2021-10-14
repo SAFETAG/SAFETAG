@@ -211,7 +211,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       query {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___position],  },
           filter: {fileAbsolutePath: {regex: "/guide_sections//"}}
         ) {
           edges {
@@ -226,7 +225,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
   // Handle errors
-  if (methods.errors) {
+  if (sections.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
@@ -240,6 +239,40 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
+
+  const tools = await graphql(
+    `
+      query {
+        allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/tools//"}}
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  // Handle errors
+  if (tools.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  // Create pages for each file.
+  tools.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/components/layouts/tool-layout.js`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+
 }
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html") {

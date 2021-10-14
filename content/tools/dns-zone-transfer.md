@@ -1,5 +1,6 @@
 ---
 title: DNS Zone Transfer
+short_summary: Extract a domain's hostnames
 ---
 
 Anonymous individuals online can request the full list of the hostnames on the organizations domain. Responding to zone requests from anyone on the Internet is comparable to providing an inventory of office locations, pending projects and service providers to anyone who asks. As such, it is not inherently dangerous, but it does require that the organization not rely on the assumption that unpublicized URLs are in fact secret.
