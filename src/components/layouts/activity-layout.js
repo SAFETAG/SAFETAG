@@ -1,5 +1,5 @@
 import React from "react"
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
@@ -18,7 +18,7 @@ import {
 } from "../../styles/inpage"
 import MoreLink from "../../styles/button/more-link"
 import Dl, { SquareUl } from "../../styles/type/lists"
-import Card, { CardHeading } from "../../styles/card"
+import Card, { CardHeading, CardList } from "../../styles/card"
 import media from "../../styles/utils/media-queries"
 import { themeVal } from "../../styles/utils/general"
 
@@ -75,6 +75,22 @@ const ActivityIntro = styled.article`
 `
 const ActivityMeta = styled.aside``
 
+const ToolList = styled.section`
+  grid-column: span 2;
+
+  ${CardList} {
+    margin-top: 2rem;
+  }
+`
+const ToolCard = styled(Card)`
+  ${media.mediumUp`
+    min-height: 6rem;
+  `}
+  ${CardHeading} {
+    margin: 0;
+  }
+`
+
 function ActivityLayout({ data }) {
   useTranslation('site', { useSuspense: false });
   const {
@@ -84,18 +100,15 @@ function ActivityLayout({ data }) {
 
   // creates an object with tool names as keys and tool slugs as values
   const tools = data.tools.edges
-  console.log(tools)
   const toolNodes = {}
   tools.forEach(
     tool => {
       toolNodes[tool.node.frontmatter.title] = {
         slug: tool.node.fields.slug,
-        html: tool.node.html
+        short_summary: tool.node.frontmatter.short_summary,
       }
     }
   )
-  console.log(toolNodes)
-  console.log(frontmatter)
 
   // Fix images URL by adding app root url with prefix
   const sections = mapValues(frontmattermd, section => {
@@ -222,25 +235,33 @@ function ActivityLayout({ data }) {
           {frontmatter.tools && (
             <div>
               <InpageInnerColumns columnLayout="3:1">
-                <InpageTitle size="large" withDeco>
-                  <Trans i18nKey="activity-tools">Tools and variants</Trans>
-                </InpageTitle>
-              </InpageInnerColumns>
-              <InpageInnerColumns columnLayout="3:1">
-                <article>
-                {(frontmatter.tools || []).map((tool) => (
-                  <div key={tool}>
-                    <SquareUl>
-                      <h6>{tool}</h6>
-                    </SquareUl>
-                    <SquareUl
-                      dangerouslySetInnerHTML={{
-                        __html: toolNodes[tool].html,
-                      }}
-                    ></SquareUl>
-                  </div>
-                ))}
-                </article>
+                <ToolList>
+                  <InpageTitle size="large" withDeco>
+                    <Trans i18nKey="activity-tools">Tools and variants</Trans>
+                  </InpageTitle>
+                  <CardList>
+                    {(frontmatter.tools || []).map((tool) => (
+                      <li key={tool}>
+                        <ToolCard
+                          as={Link}
+                          to={toolNodes[tool] ? `${toolNodes[tool].slug}/`: ''}
+                          border="primary"
+                          variation="secondary"
+                          withHover
+                        >
+                          <CardHeading variation="primary">
+                            {tool}_
+                          </CardHeading>
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: toolNodes[tool] ? toolNodes[tool].short_summary : '',
+                            }}
+                          ></div>
+                        </ToolCard>
+                      </li>
+                    ))}
+                  </CardList>
+                </ToolList>
               </InpageInnerColumns>
             </div>
           )}
@@ -301,12 +322,12 @@ export const query = graphql`
     ) {
       edges {
         node {
-          html
           fields {
             slug
           }
           frontmatter {
             title
+            short_summary
           }
         }
       }
