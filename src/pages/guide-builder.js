@@ -187,13 +187,16 @@ const ExportButtons = styled.div`
 `
 
 function useAllGuideData(data) {
-  const activities = data.activities.edges.map(({ node }) => ({
-    id: node.frontmatter.title,
-    sections: node.fields.frontmattermd,
-    slug: node.fields.slug,
-    ...node.frontmatter,
-    ...node.fields.frontmattermd,
-  }))
+  const activities = data.activities.edges.map(({ node }) => {
+    return {
+      id: node.frontmatter.title,
+      sections: node.fields.frontmattermd,
+      toolnames: node.frontmatter.tools,
+      slug: node.fields.slug,
+      ...node.frontmatter,
+      ...node.fields.frontmattermd,
+    }
+  })
 
   const methods = data.methods.edges.map(({ node }) => ({
     id: node.frontmatter.title,
@@ -206,6 +209,21 @@ function useAllGuideData(data) {
     id: node.frontmatter.title,
     rawMarkdownBody: node.rawMarkdownBody,
   }))
+
+  // creates an object with tool names as keys and tool slugs as values
+  const datatools = data.tools.edges
+  const tools = {}
+  datatools.forEach(
+    tool => {
+      tools[tool.node.frontmatter.title] = {
+        id: tool.node.id,
+        slug: tool.node.fields.slug,
+        title: tool.node.frontmatter.title,
+        short_summary: tool.node.frontmatter.short_summary,
+        rawMarkdownBody: tool.node.rawMarkdownBody,
+      }
+    }
+  )
 
   const fixedSections = data.fixedSections.edges.reduce((acc, { node }) => {
     acc[node.base] = node.childMarkdownRemark.rawMarkdownBody
@@ -225,12 +243,14 @@ function useAllGuideData(data) {
             (m.references || []).map(id => references.find(r => r.id === id)),
             "id"
           ),
+          tools: tools,
         }
       }),
       "id"
     ),
     references,
     activities,
+    tools,
     fixedSections,
   }
 }
@@ -599,6 +619,7 @@ export const query = graphql`
             orgSize: organization_size_under
             approaches
             position
+            tools
             remoteOptions: remote_options
           }
         }
@@ -638,6 +659,22 @@ export const query = graphql`
           }
           frontmatter {
             title
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+    tools: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/tools//"}, fields: {langKey: {eq: $language}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            short_summary
           }
           rawMarkdownBody
         }

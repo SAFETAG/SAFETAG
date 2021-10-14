@@ -158,6 +158,8 @@ function ActivityLayout({ data }) {
                   {frontmatter.authors.map(authr => (
                     <dd key={authr}>{authr}</dd>
                   ))}
+
+
                   <dt><Trans i18nKey="activity-orgsize">Org Size under</Trans></dt>
                   <dd>{frontmatter.organization_size_under}</dd>
                   <dt><Trans i18nKey="activity-remote">Remote options</Trans></dt>
@@ -168,6 +170,14 @@ function ActivityLayout({ data }) {
                   ))}
                   <dt><Trans i18nKey="activity-time">Time required (minutes)</Trans></dt>
                   <dd>{frontmatter.time_required_minutes}</dd>
+                  {frontmatter.tools ? <dt><Trans i18nKey="activity-included-tools">Included tools</Trans></dt> : ""}
+                {(frontmatter.tools || []).map((tool) => (
+                  <dd key={tool}>
+                    <a href="#tools">
+                      {tool}
+                    </a>
+                  </dd>
+                ))}
                 </Dl>
               </Card>
             </ActivityMeta>
@@ -233,7 +243,7 @@ function ActivityLayout({ data }) {
           )}
 
           {frontmatter.tools && (
-            <div>
+            <div id="tools">
               <InpageInnerColumns columnLayout="3:1">
                 <ToolList>
                   <InpageTitle size="large" withDeco>

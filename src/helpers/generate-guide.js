@@ -411,7 +411,7 @@ export async function prepareGuide(
     fixedSections["section_1.md"],
     `# ${t("guide-methods", "Safetag Methods")}`,
   ]
-  values(guideVersion).map(({ title, method_icon, references, activities,
+  values(guideVersion).map(({ title, method_icon, references, activities, tools,
           summary, purpose, guiding_questions, outputs, operational_security,
           preparation }) => {
     const selectedActivities = isFull
@@ -456,6 +456,7 @@ export async function prepareGuide(
       selectedActivities.forEach(
         ({
           title,
+          toolnames,
           sections: {
             summary,
             overview,
@@ -488,6 +489,14 @@ export async function prepareGuide(
           if (walk_through && walk_through.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-walkthrough', "Walk Through")}`)
             customGuide.push(walk_through.rawMarkdownBody)
+          }
+          if (toolnames) {
+            customGuide.push(`##### ${t('activity-tools', "Tools and variants")}`)
+            toolnames.forEach((toolname) => {
+              const tool = tools[toolname]
+              customGuide.push(`###### ${tool.title}`)
+              customGuide.push(tool.rawMarkdownBody)
+            })
           }
           if (recommendations && recommendations.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-recommendations', "Recommendations")}`)
