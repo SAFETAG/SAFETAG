@@ -98,7 +98,7 @@ function importFromTransifex(options) {
                 throw new Error(err);
               }
               var filename = path.join(language, resource.name + "." + type);
-              filename = filename.replace(/_(activities|authors|guide_sections|methods|skills|references|approaches|infos|remote-options)_/, '/$1/')
+              filename = filename.replace(/_(activities|authors|guide_sections|methods|skills|references|approaches|infos|tools|remote-options)_/, '/$1/')
               wait--;
               // Postprocess the Transifex-delivered content to avoid errors
               fileContent = fileContent.replace(/\npurpose: \n/, '\npurpose: ')
