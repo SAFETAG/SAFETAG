@@ -8,6 +8,10 @@ import mapValues from "lodash.mapvalues"
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
 
+// import {unified} from 'unified'
+// import remarkParse from 'remark-parse'
+// import remarkHtml from 'remark-html'
+
 import {
   Inpage,
   InpageInnerColumns,
@@ -92,20 +96,36 @@ const ToolCard = styled(Card)`
 `
 
 function ActivityLayout({ data }) {
-  useTranslation('site', { useSuspense: false });
+  const { i18n } = useTranslation('site', { useSuspense: false });
   const {
     frontmatter,
     fields: { frontmattermd },
   } = data.markdownRemark
 
-  // creates an object with tool names as keys and tool slugs as values
-  const tools = data.tools.edges
-  const toolNodes = {}
-  tools.forEach(
-    tool => {
-      toolNodes[tool.node.frontmatter.title] = {
-        slug: tool.node.fields.slug,
-        short_summary: tool.node.frontmatter.short_summary,
+  // load and parse footnotes
+  const footnotesNode = data.references.edges.filter(
+    r => r.node.fields.slug.includes('footnotes') && r.node.fields.langKey == i18n.language
+  )[0]
+  const footnotesMD = footnotesNode.node.rawMarkdownBody
+  const footnotes = {}
+  // format them into a key-content object
+  footnotesMD.split('\n\n').forEach(
+    line => {
+      line = line.trim()
+      if (line && !line.startsWith('<!--')) {
+        const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/, '')
+        const value = line.replace(':', '|').split('|')[1]
+        footnotes[key] = value
+      }
+    }
+  )
+  console.log(frontmatter)
+  console.log(frontmattermd)
+  Object.keys(footnotes).forEach(
+    key => {
+      if (frontmatter.summary.includes(key)) {
+        frontmatter.summary = frontmatter.summary.replace(key, 'HELLO')
+        console.log(frontmatter.summary)
       }
     }
   )
@@ -120,6 +140,19 @@ function ActivityLayout({ data }) {
     }
     return section
   })
+
+
+  // creates an object with tool names as keys and tool slugs as values
+  const tools = data.tools.edges
+  const toolNodes = {}
+  tools.forEach(
+    tool => {
+      toolNodes[tool.node.frontmatter.title] = {
+        slug: tool.node.fields.slug,
+        short_summary: tool.node.frontmatter.short_summary,
+      }
+    }
+  )
 
   return (
     <GlobalLayout>
@@ -298,6 +331,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        summary
         approaches
         tools
         authors
@@ -312,7 +346,7 @@ export const query = graphql`
           materials_needed { html }
           considerations { html }
           recommendations { html }
-          summary { html }
+          summary { rawMarkdownBody, html }
           walk_through { html }
         }
       }
@@ -329,6 +363,22 @@ export const query = graphql`
             title
             short_summary
           }
+        }
+      }
+    }
+    references: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/references//"}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            langKey
+          }
+          frontmatter {
+            title
+          }
+          rawMarkdownBody
         }
       }
     }

@@ -56,6 +56,7 @@
     "react-i18next": "^11.11.1",
     "react-languages-select": "^1.0.20",
     "rehype-react": "^6.1.0",
+    "remark-html": "^15.0.0",
     "styled-components": "^5.1.1",
     "transifex": "^1.6.6",
     "use-query-params": "^1.1.8"
