@@ -1411,3 +1411,33 @@ source_file = content/remote-options/complete.md
 source_lang = en
 type = GITHUBMARKDOWN
 
+[safetag-overview.content_tools_dns-zone-transfer]
+file_filter = locales/<lang>/tools/dns-zone-transfer.md
+source_file = content/tools/dns-zone-transfer.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[safetag-overview.content_tools_third-party-online]
+file_filter = locales/<lang>/tools/third-party-online.md
+source_file = content/tools/third-party-online.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[safetag-overview.content_tools_mx-records]
+file_filter = locales/<lang>/tools/mx-records.md
+source_file = content/tools/mx-records.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[safetag-overview.content_tools_dnsenum]
+file_filter = locales/<lang>/tools/dnsenum.md
+source_file = content/tools/dnsenum.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[safetag-overview.content_tools_dnsrecon]
+file_filter = locales/<lang>/tools/dnsrecon.md
+source_file = content/tools/dnsrecon.md
+source_lang = en
+type = GITHUBMARKDOWN
+
