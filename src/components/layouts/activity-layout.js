@@ -112,7 +112,7 @@ function ActivityLayout({ data }) {
     line => {
       line = line.trim()
       if (line && !line.startsWith('<!--')) {
-        const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/, '')
+        const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/g, '')
         const value = line.replace(':', '|').split('|')[1]
         allFootnotes[key] = value
       }
@@ -129,14 +129,16 @@ function ActivityLayout({ data }) {
             hasFootnotes = true
             section.rawMarkdownBody = section.rawMarkdownBody.replace(
               `[^${key}]`,
-              `[${key}](#${key})`
+              `[${key.replace(/_/g, ' ')}](#${key})`
             )
             if (!(footnotes.filter(fn => fn.key == key).length)) {
               footnotes.push({
                 key: key,
                 md: allFootnotes[key],
-                html: remark().use(remarkHTML).processSync(allFootnotes[key]).contents,
-                index: footnotes.length + 1
+                html: remark().use(remarkHTML).processSync(allFootnotes[key]).contents
+                  .replace(/<p>/g, ' ')
+                  .replace(/<\/p>/g, '')
+                  ,
               })
             }
           }
@@ -147,10 +149,14 @@ function ActivityLayout({ data }) {
         section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
       }
       // Fix images URL by adding app root url with prefix
-      return section.html.replace(
-        /<img src="\/img/g,
-        `<img src="${withPrefix("/img")}`
-      )
+      return section.html
+        .replace(
+          /<img src="\/img/g,
+          `<img src="${withPrefix("/img")}`
+        ).replace(
+          /\^,\^/g,
+          ' '
+        )
     }
     return section
   })
@@ -347,7 +353,7 @@ function ActivityLayout({ data }) {
                 <SquareUl>
                   {footnotes.map(fn => (
                     <li key={fn.key} id={fn.key}>
-                      {fn.index} &ndash; {fn.key}
+                      <strong>{fn.key.replace(/_/g, ' ')}</strong>:
                       <span
                         dangerouslySetInnerHTML={{
                           __html: fn.html,
