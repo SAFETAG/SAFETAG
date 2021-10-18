@@ -129,7 +129,7 @@ function ActivityLayout({ data }) {
             hasFootnotes = true
             section.rawMarkdownBody = section.rawMarkdownBody.replace(
               `[^${key}]`,
-              `[${key.replace(/_/g, ' ')}](#${key})`
+              `[[${key.replace(/_/g, ' ')}]](#${key})`
             )
             if (!(footnotes.filter(fn => fn.key == key).length)) {
               footnotes.push({
