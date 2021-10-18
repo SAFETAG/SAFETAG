@@ -118,7 +118,7 @@ function ActivityLayout({ data }) {
       }
     }
   )
-
+  // process sections and format footnotes properly
   let footnotes = []
   const sections = mapValues(frontmattermd, section => {
     if (section && section.html) {

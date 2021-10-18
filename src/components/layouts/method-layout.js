@@ -8,6 +8,9 @@ import mapValues from "lodash.mapvalues"
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
 
+import remark from 'remark'
+import remarkHTML from 'remark-html'
+
 import {
   Inpage,
   InpageInnerColumns,
@@ -69,7 +72,7 @@ const ActivityCard = styled(Card)`
 `
 
 function MethodLayout({ data, location }) {
-  const { t } = useTranslation('site', { useSuspense: false })
+  const { t, i18n } = useTranslation('site', { useSuspense: false })
   const frontmatter = data.method.frontmatter
   const frontmattermd = data.method.fields.frontmattermd
 
@@ -114,13 +117,62 @@ function MethodLayout({ data, location }) {
   let prevPath = location.state && location.state.prevPath || ""
   let prevPage = location.state && location.state.prevPage || ""
 
-  // Fix images URL by adding app root url with prefix
-  const sections = mapValues(frontmatter, section => {
+  // load and parse footnotes
+  const footnotesNode = data.references.edges.filter(
+    r => r.node.fields.slug.includes('footnotes') && r.node.fields.langKey == i18n.language
+  )[0]
+  const footnotesMD = footnotesNode.node.rawMarkdownBody
+  const allFootnotes = {}
+  // format them into a key-content object
+  footnotesMD.split('\n\n').forEach(
+    line => {
+      line = line.trim()
+      if (line && !line.startsWith('<!--')) {
+        const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/g, '')
+        const value = line.replace(':', '|').split('|')[1]
+        allFootnotes[key] = value
+      }
+    }
+  )
+  // process sections and format footnotes properly
+  let footnotes = []
+  const sections = mapValues(frontmattermd, section => {
     if (section && section.html) {
-      return section.html.replace(
-        /<img src="\/img/g,
-        `<img src="${withPrefix("/img")}`
+      let hasFootnotes = false
+      Object.keys(allFootnotes).forEach(
+        key => {
+          if (section.rawMarkdownBody.includes(key)) {
+            hasFootnotes = true
+            section.rawMarkdownBody = section.rawMarkdownBody.replace(
+              `[^${key}]`,
+              `[[${key.replace(/_/g, ' ')}]](#${key})`
+            )
+            if (!(footnotes.filter(fn => fn.key == key).length)) {
+              footnotes.push({
+                key: key,
+                md: allFootnotes[key],
+                html: remark().use(remarkHTML).processSync(allFootnotes[key]).contents
+                  .replace(/<p>/g, ' ')
+                  .replace(/<\/p>/g, '')
+                  ,
+              })
+            }
+          }
+        }
       )
+      if (hasFootnotes) {
+        // regenerate HTML rendering with updated footnote refs
+        section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
+      }
+      // Fix images URL by adding app root url with prefix
+      return section.html
+        .replace(
+          /<img src="\/img/g,
+          `<img src="${withPrefix("/img")}`
+        ).replace(
+          /\^,\^/g,
+          ' '
+        )
     }
     return section
   })
@@ -269,7 +321,6 @@ function MethodLayout({ data, location }) {
                         to={activityNodes[activity] ? `${activityNodes[activity].slug}/`: ''}
                         border="primary"
                         variation="secondary"
-                        withHover
                       >
                         <CardHeading variation="primary">
                         {activityNodes[activity] ? activityNodes[activity].approaches.map((approach, index) => (
@@ -289,21 +340,44 @@ function MethodLayout({ data, location }) {
               </ActivityList>
             </section>
           </InpageInnerColumns>
+
+          {footnotes.length && (
+            <InpageInnerColumns columnLayout="3:1">
+              <article>
+                <InpageTitle size="large" withDeco>
+                  <Trans i18nKey="activity-footnotes">Footnotes</Trans>
+                </InpageTitle>
+                <SquareUl>
+                  {footnotes.map(fn => (
+                    <li key={fn.key} id={fn.key}>
+                      <strong>{fn.key.replace(/_/g, ' ')}</strong>:
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: fn.html,
+                        }}
+                        ></span>
+                    </li>
+                  ))}
+                </SquareUl>
+              </article>
+            </InpageInnerColumns>
+          )}
+
           <InpageInnerColumns columnLayout="2:1">
             <section>
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="method-title-references">References and resources for</Trans> {frontmatter.title}
               </InpageTitle>
               <SquareUl>
-                {(frontmatter.references || []).map(reference => (
-                  <>
+                {(frontmatter.references || []).map((reference, index) => (
+                  <div key={"ref-" + index}>
                     <p>{referenceNodes[reference].title}:</p>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: referenceNodes[reference].html,
                       }}
                     ></div>
-                  </>
+                  </div>
                 ))}
               </SquareUl>
             </section>
@@ -342,12 +416,12 @@ export const query = graphql`
       }
       fields {
         frontmattermd {
-          summary { html }
-          purpose { html }
-          guiding_questions { html }
-          preparation { html }
-          outputs { html }
-          operational_security { html }
+          summary { html, rawMarkdownBody }
+          purpose { html, rawMarkdownBody }
+          guiding_questions { html, rawMarkdownBody }
+          preparation { html, rawMarkdownBody }
+          outputs { html, rawMarkdownBody }
+          operational_security { html, rawMarkdownBody }
         }
       }
     }
@@ -392,10 +466,12 @@ export const query = graphql`
         node {
           fields {
             slug
+            langKey
           }
           frontmatter {
             title
           }
+          rawMarkdownBody
           html
         }
       }
