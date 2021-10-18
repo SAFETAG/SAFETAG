@@ -8,9 +8,9 @@ import mapValues from "lodash.mapvalues"
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
 
-// import {unified} from 'unified'
-// import remarkParse from 'remark-parse'
-// import remarkHtml from 'remark-html'
+import remark from 'remark'
+import remarkParse from 'remark-parse'
+import remarkHTML from 'remark-html'
 
 import {
   Inpage,
@@ -107,7 +107,7 @@ function ActivityLayout({ data }) {
     r => r.node.fields.slug.includes('footnotes') && r.node.fields.langKey == i18n.language
   )[0]
   const footnotesMD = footnotesNode.node.rawMarkdownBody
-  const footnotes = {}
+  const allFootnotes = {}
   // format them into a key-content object
   footnotesMD.split('\n\n').forEach(
     line => {
@@ -115,24 +115,39 @@ function ActivityLayout({ data }) {
       if (line && !line.startsWith('<!--')) {
         const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/, '')
         const value = line.replace(':', '|').split('|')[1]
-        footnotes[key] = value
-      }
-    }
-  )
-  console.log(frontmatter)
-  console.log(frontmattermd)
-  Object.keys(footnotes).forEach(
-    key => {
-      if (frontmatter.summary.includes(key)) {
-        frontmatter.summary = frontmatter.summary.replace(key, 'HELLO')
-        console.log(frontmatter.summary)
+        allFootnotes[key] = value
       }
     }
   )
 
-  // Fix images URL by adding app root url with prefix
+  let footnotes = []
   const sections = mapValues(frontmattermd, section => {
     if (section && section.html) {
+      let hasFootnotes = false
+      Object.keys(allFootnotes).forEach(
+        key => {
+          if (section.rawMarkdownBody.includes(key)) {
+            hasFootnotes = true
+            section.rawMarkdownBody = section.rawMarkdownBody.replace(
+              `[^${key}]`,
+              `[${key}](#${key})`
+            )
+            if (!(footnotes.filter(fn => fn.key == key).length)) {
+              footnotes.push({
+                key: key,
+                md: allFootnotes[key],
+                html: remark().use(remarkHTML).processSync(allFootnotes[key]).contents,
+                index: footnotes.length + 1
+              })
+            }
+          }
+        }
+      )
+      if (hasFootnotes) {
+        // regenerate HTML rendering with updated footnote refs
+        section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
+      }
+      // Fix images URL by adding app root url with prefix
       return section.html.replace(
         /<img src="\/img/g,
         `<img src="${withPrefix("/img")}`
@@ -323,6 +338,29 @@ function ActivityLayout({ data }) {
               </article>
             </InpageInnerColumns>
           )}
+
+          {footnotes.length && (
+            <InpageInnerColumns columnLayout="3:1">
+              <article>
+                <InpageTitle size="large" withDeco>
+                  <Trans i18nKey="activity-footnotes">Footnotes</Trans>
+                </InpageTitle>
+                <SquareUl>
+                  {footnotes.map(fn => (
+                    <li key={fn.key} id={fn.key}>
+                      {fn.index} &ndash; {fn.key}
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: fn.html,
+                        }}
+                        ></span>
+                    </li>
+                  ))}
+                </SquareUl>
+              </article>
+            </InpageInnerColumns>
+          )}
+
         </InpageBody>
       </ActivityPage>
     </GlobalLayout>
@@ -330,7 +368,7 @@ function ActivityLayout({ data }) {
 }
 
 ActivityLayout.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.object,
 }
 
 export default ActivityLayout
@@ -352,12 +390,12 @@ export const query = graphql`
       }
       fields {
         frontmattermd {
-          overview { html }
-          materials_needed { html }
-          considerations { html }
-          recommendations { html }
+          overview { rawMarkdownBody, html }
+          materials_needed { rawMarkdownBody, html }
+          considerations { rawMarkdownBody, html }
+          recommendations { rawMarkdownBody, html }
           summary { rawMarkdownBody, html }
-          walk_through { html }
+          walk_through { rawMarkdownBody, html }
         }
       }
     }
