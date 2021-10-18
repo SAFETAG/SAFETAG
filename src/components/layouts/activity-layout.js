@@ -9,7 +9,6 @@ import GlobalLayout from "./global-layout"
 import SEO from "../seo"
 
 import remark from 'remark'
-import remarkParse from 'remark-parse'
 import remarkHTML from 'remark-html'
 
 import {
