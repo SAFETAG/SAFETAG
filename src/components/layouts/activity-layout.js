@@ -25,6 +25,8 @@ import Card, { CardHeading, CardList } from "../../styles/card"
 import media from "../../styles/utils/media-queries"
 import { themeVal } from "../../styles/utils/general"
 
+import loadAllFootnotes from "../../helpers/footnotes.js"
+
 const ActivityPage = styled(Inpage)`
   article {
     overflow-x: hidden;
@@ -101,23 +103,8 @@ function ActivityLayout({ data }) {
     fields: { frontmattermd },
   } = data.markdownRemark
 
-  // load and parse footnotes
-  const footnotesNode = data.references.edges.filter(
-    r => r.node.fields.slug.includes('footnotes') && r.node.fields.langKey == i18n.language
-  )[0]
-  const footnotesMD = footnotesNode.node.rawMarkdownBody
-  const allFootnotes = {}
-  // format them into a key-content object
-  footnotesMD.split('\n\n').forEach(
-    line => {
-      line = line.trim()
-      if (line && !line.startsWith('<!--')) {
-        const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/g, '')
-        const value = line.replace(':', '|').split('|')[1]
-        allFootnotes[key] = value
-      }
-    }
-  )
+  const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
+
   // process sections and format footnotes properly
   let footnotes = []
   const sections = mapValues(frontmattermd, section => {
