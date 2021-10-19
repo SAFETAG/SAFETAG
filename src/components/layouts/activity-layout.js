@@ -127,10 +127,6 @@ function ActivityLayout({ data }) {
         key => {
           if (section.rawMarkdownBody.includes(key)) {
             hasFootnotes = true
-            section.rawMarkdownBody = section.rawMarkdownBody.replace(
-              `[^${key}]`,
-              `[[${key.replace(/_/g, ' ')}]](#${key})`
-            )
             if (!(footnotes.filter(fn => fn.key == key).length)) {
               footnotes.push({
                 key: key,
@@ -145,6 +141,15 @@ function ActivityLayout({ data }) {
         }
       )
       if (hasFootnotes) {
+        footnotes.forEach(
+          (fn, index) => {
+            fn.index = index + 1
+            section.rawMarkdownBody = section.rawMarkdownBody.replace(
+              `[^${fn.key}]`,
+              `[[${fn.index}]](#${fn.key})`
+            )
+          }
+        )
         // regenerate HTML rendering with updated footnote refs
         section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
       }
@@ -353,8 +358,7 @@ function ActivityLayout({ data }) {
                 <SquareUl>
                   {footnotes.map(fn => (
                     <li key={fn.key} id={fn.key}>
-                      <strong>{fn.key.replace(/_/g, ' ')}</strong>:
-                      <span
+                      <strong>{fn.index}</strong> <span
                         dangerouslySetInnerHTML={{
                           __html: fn.html,
                         }}
@@ -395,12 +399,12 @@ export const query = graphql`
       }
       fields {
         frontmattermd {
-          overview { rawMarkdownBody, html }
-          materials_needed { rawMarkdownBody, html }
-          considerations { rawMarkdownBody, html }
-          recommendations { rawMarkdownBody, html }
           summary { rawMarkdownBody, html }
+          overview { rawMarkdownBody, html }
+          considerations { rawMarkdownBody, html }
           walk_through { rawMarkdownBody, html }
+          materials_needed { rawMarkdownBody, html }
+          recommendations { rawMarkdownBody, html }
         }
       }
     }
