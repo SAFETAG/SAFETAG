@@ -1,15 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, withPrefix } from "gatsby"
+import { graphql } from "gatsby"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
-import mapValues from "lodash.mapvalues"
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
-
-import remark from 'remark'
-import remarkHTML from 'remark-html'
 
 import {
   Inpage,
@@ -24,6 +20,8 @@ import MoreLink from "../../styles/button/more-link"
 import Dl, { SquareUl } from "../../styles/type/lists"
 import media from "../../styles/utils/media-queries"
 import Card, { CardHeading, CardList } from "../../styles/card"
+
+import { loadAllFootnotes, processSections } from "../../helpers/footnotes.js"
 
 const MethodHeadline = styled(InpageHeadline)`
   ${media.mediumUp`
@@ -117,65 +115,9 @@ function MethodLayout({ data, location }) {
   let prevPath = location.state && location.state.prevPath || ""
   let prevPage = location.state && location.state.prevPage || ""
 
-  // load and parse footnotes
-  const footnotesNode = data.references.edges.filter(
-    r => r.node.fields.slug.includes('footnotes') && r.node.fields.langKey == i18n.language
-  )[0]
-  const footnotesMD = footnotesNode.node.rawMarkdownBody
-  const allFootnotes = {}
-  // format them into a key-content object
-  footnotesMD.split('\n\n').forEach(
-    line => {
-      line = line.trim()
-      if (line && !line.startsWith('<!--')) {
-        const key = line.split(':')[0].replace('[^', '').replace(']', '').replace(/"/g, '')
-        const value = line.replace(':', '|').split('|')[1]
-        allFootnotes[key] = value
-      }
-    }
-  )
-  // process sections and format footnotes properly
-  let footnotes = []
-  const sections = mapValues(frontmattermd, section => {
-    if (section && section.html) {
-      let hasFootnotes = false
-      Object.keys(allFootnotes).forEach(
-        key => {
-          if (section.rawMarkdownBody.includes(key)) {
-            hasFootnotes = true
-            section.rawMarkdownBody = section.rawMarkdownBody.replace(
-              `[^${key}]`,
-              `[[${key.replace(/_/g, ' ')}]](#${key})`
-            )
-            if (!(footnotes.filter(fn => fn.key == key).length)) {
-              footnotes.push({
-                key: key,
-                md: allFootnotes[key],
-                html: remark().use(remarkHTML).processSync(allFootnotes[key]).contents
-                  .replace(/<p>/g, ' ')
-                  .replace(/<\/p>/g, '')
-                  ,
-              })
-            }
-          }
-        }
-      )
-      if (hasFootnotes) {
-        // regenerate HTML rendering with updated footnote refs
-        section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
-      }
-      // Fix images URL by adding app root url with prefix
-      return section.html
-        .replace(
-          /<img src="\/img/g,
-          `<img src="${withPrefix("/img")}`
-        ).replace(
-          /\^,\^/g,
-          ' '
-        )
-    }
-    return section
-  })
+  // load and integrate footnotes
+  const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
+  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
 
   return (
     <GlobalLayout>
@@ -228,15 +170,6 @@ function MethodLayout({ data, location }) {
                     </a>
                   </dd>
                 ))}
-
-                {/* {frontmatter.info_provided !== "" && (
-                  <>
-                    <dt>Info Provided</dt>
-                    <dd>{frontmatter.info_provided}</dd>
-                    <dt>Info Required</dt>
-                    <dd>{frontmatter.required}</dd>
-                  </>
-                )}*/}
               </Dl>
             </MethodMeta>
           </InpageInnerColumns>
@@ -244,18 +177,6 @@ function MethodLayout({ data, location }) {
         <InpageBody>
           <InpageInnerColumns columnLayout="2:1">
             <section>
-              {/*{sections.the_flow_of_information && (
-                <>
-                  <InpageTitle size="large" withDeco>
-                    The Flow of Information
-                  </InpageTitle>
-                  <SquareUl
-                    dangerouslySetInnerHTML={{
-                      __html: sections.the_flow_of_information,
-                    }}
-                  ></SquareUl>
-                </>
-                  )}*/}
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="method-title-questions">Guiding Questions</Trans>
               </InpageTitle>
@@ -350,8 +271,7 @@ function MethodLayout({ data, location }) {
                 <SquareUl>
                   {footnotes.map(fn => (
                     <li key={fn.key} id={fn.key}>
-                      <strong>{fn.key.replace(/_/g, ' ')}</strong>:
-                      <span
+                      <strong>{fn.index}</strong> <span
                         dangerouslySetInnerHTML={{
                           __html: fn.html,
                         }}

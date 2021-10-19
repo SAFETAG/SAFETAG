@@ -1,15 +1,12 @@
 import React from "react"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
-import { graphql, withPrefix } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
-import mapValues from "lodash.mapvalues"
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
 
-import remark from 'remark'
-import remarkHTML from 'remark-html'
 
 import {
   Inpage,
@@ -25,7 +22,7 @@ import Card, { CardHeading, CardList } from "../../styles/card"
 import media from "../../styles/utils/media-queries"
 import { themeVal } from "../../styles/utils/general"
 
-import loadAllFootnotes from "../../helpers/footnotes.js"
+import { loadAllFootnotes, processSections } from "../../helpers/footnotes.js"
 
 const ActivityPage = styled(Inpage)`
   article {
@@ -103,56 +100,9 @@ function ActivityLayout({ data }) {
     fields: { frontmattermd },
   } = data.markdownRemark
 
+  // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-
-  // process sections and format footnotes properly
-  let footnotes = []
-  const sections = mapValues(frontmattermd, section => {
-    if (section && section.html) {
-      let hasFootnotes = false
-      Object.keys(allFootnotes).forEach(
-        key => {
-          if (section.rawMarkdownBody.includes(key)) {
-            hasFootnotes = true
-            if (!(footnotes.filter(fn => fn.key == key).length)) {
-              footnotes.push({
-                key: key,
-                md: allFootnotes[key],
-                html: remark().use(remarkHTML).processSync(allFootnotes[key]).contents
-                  .replace(/<p>/g, ' ')
-                  .replace(/<\/p>/g, '')
-                  ,
-              })
-            }
-          }
-        }
-      )
-      if (hasFootnotes) {
-        footnotes.forEach(
-          (fn, index) => {
-            fn.index = index + 1
-            section.rawMarkdownBody = section.rawMarkdownBody.replace(
-              `[^${fn.key}]`,
-              `[[${fn.index}]](#${fn.key})`
-            )
-          }
-        )
-        // regenerate HTML rendering with updated footnote refs
-        section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
-      }
-      // Fix images URL by adding app root url with prefix
-      return section.html
-        .replace(
-          /<img src="\/img/g,
-          `<img src="${withPrefix("/img")}`
-        ).replace(
-          /\^,\^/g,
-          ' '
-        )
-    }
-    return section
-  })
-
+  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
 
   // creates an object with tool names as keys and tool slugs as values
   const tools = data.tools.edges
