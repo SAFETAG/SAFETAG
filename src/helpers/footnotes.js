@@ -24,14 +24,21 @@ export function loadAllFootnotes(referenceEdges, langKey) {
   return allFootnotes
 }
 
-export function processSections(frontmattermd, allFootnotes) {
+export function processSections(frontmattermd, allFootnotes, existingFootnotes) {
   let footnotes = []
+  if (existingFootnotes) {
+    footnotes = existingFootnotes
+  }
   let sections = mapValues(frontmattermd, section => {
-    if (section && section.html) {
+    if (section && (section.rawMarkdownBody || (typeof section === 'string' || section instanceof String))) {
+      let content = section
+      if (section.rawMarkdownBody) {
+        content = section.rawMarkdownBody
+      }
       let hasFootnotes = false
       Object.keys(allFootnotes).forEach(
         key => {
-          if (section.rawMarkdownBody.includes(key)) {
+          if (content.includes(key)) {
             hasFootnotes = true
             if (!(footnotes.filter(fn => fn.key == key).length)) {
               footnotes.push({
@@ -50,24 +57,22 @@ export function processSections(frontmattermd, allFootnotes) {
         footnotes.forEach(
           (fn, index) => {
             fn.index = index + 1
-            section.rawMarkdownBody = section.rawMarkdownBody.replace(
+            content = content.replace(
               `[^${fn.key}]`,
               `[[${fn.index}]](#${fn.key})`
             )
           }
         )
+        content = content.replace( /\^,\^/g, ' ')
         // regenerate HTML rendering with updated footnote refs
-        section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
+        if (section.rawMarkdownBody) {
+          section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
+            .replace( /<img src="\/img/g, `<img src="${withPrefix("/img")}`)
+          section.rawMarkdownBody = content
+        } else {
+          section = content
+        }
       }
-      // Fix images URL by adding app root url with prefix
-      return section.html
-        .replace(
-          /<img src="\/img/g,
-          `<img src="${withPrefix("/img")}`
-        ).replace(
-          /\^,\^/g,
-          ' '
-        )
     }
     return section
   })

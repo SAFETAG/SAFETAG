@@ -257,7 +257,7 @@ function useAllGuideData(data) {
 
 
 const GuideBuilder = ({ data, location }) => {
-  const { t } = useTranslation('site', { useSuspense: false });
+  const { t, i18n } = useTranslation('site', { useSuspense: false });
   const { fullGuide, activities, fixedSections } = useAllGuideData(data)
   // Add the full guide to state
   const [guide, setGuide] = useState(fullGuide)
@@ -481,7 +481,7 @@ const GuideBuilder = ({ data, location }) => {
                   title="Export selected methods and activities as PDF"
                   onClick={async () => {
                     setCustomGuideLoader(true)
-                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t)
+                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t, i18n, data.references.edges)
                     // requires a small buffer period
                     setTimeout(() => {
                       setCustomGuideLoader(false)
@@ -656,6 +656,7 @@ export const query = graphql`
         node {
           fields {
             slug
+            langKey
           }
           frontmatter {
             title

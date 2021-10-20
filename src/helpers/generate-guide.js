@@ -11,6 +11,8 @@ import SpaceMonoBold from "../../static/fonts/SpaceMono-Bold.ttf"
 import IBMPlexMonoRegular from "../../static/fonts/IBMPlexMono-Regular.ttf"
 import SourceCodeProBold from "../../static/fonts/SourceCodePro-Bold.ttf"
 
+import { loadAllFootnotes, processSections } from "./footnotes.js"
+
 marked.setOptions({
   mangle: false,
 })
@@ -399,11 +401,12 @@ export async function prepareGuide(
   fixedSections,
   isFull = true,
   t,
+  i18n,
+  referenceEdges
 ) {
-  // Init guide by add fixed sections on start
+  // Add cover and intro
   const d = new Date()
   const dateString = d.toUTCString()
-
   const generatedNote = `_${t("guide-gen-date", "This custom guide was generated on")} ${dateString}. ${t("guide-notice", "Create your own custom guide or get the full guide at www.safetag.org")}_`
   var intro = fixedSections["introduction.md"] + '\n' + generatedNote
   const customGuide = [
@@ -411,102 +414,111 @@ export async function prepareGuide(
     fixedSections["section_1.md"],
     `# ${t("guide-methods", "Safetag Methods")}`,
   ]
-  values(guideVersion).map(({ title, method_icon, references, activities, tools,
-          summary, purpose, guiding_questions, outputs, operational_security,
-          preparation }) => {
+
+  // Prepare the footnotes for methods
+  const allFootnotes = loadAllFootnotes(referenceEdges, i18n.language)
+  let footnotes = []
+  let methods = {}
+  Object.keys(guideVersion).forEach(title => {
+    let method = guideVersion[title]
+    let result = processSections(method, allFootnotes, footnotes)
+    footnotes = result.footnotes
+    method = result.sections
+    methods[title] = method
+  })
+
+  // Process and add each method to the guide
+  values(methods).map((method) => {
     const selectedActivities = isFull
-      ? values(pickBy(activities))
-      : values(pickBy(activities, a => a.checked))
+      ? values(pickBy(method.activities))
+      : values(pickBy(method.activities, a => a.checked))
 
     // If there are activities selected on this method
     if (selectedActivities.length > 0) {
       // Add method title
-      customGuide.push(`## ${title}`)
-      if (method_icon) {
-        customGuide.push(`![](${method_icon})`)
+      customGuide.push(`## ${method.title}`)
+      if (method.method_icon) {
+        customGuide.push(`![](${method.method_icon})`)
       }
-
       // Add method sections
-      if (summary) {
+      if (method.summary) {
         customGuide.push(`### ${t("method-title-summary", "Summary")}`)
-        customGuide.push(summary)
+        customGuide.push(method.summary)
       }
-      if (purpose) {
+      if (method.purpose) {
         customGuide.push(`### ${t("method-title-purpose", "Purpose")}`)
-        customGuide.push(purpose)
+        customGuide.push(method.purpose)
       }
-      if (guiding_questions) {
+      if (method.guiding_questions) {
         customGuide.push(`### ${t("method-title-questions", "Guiding Questions")}`)
-        customGuide.push(guiding_questions)
+        customGuide.push(method.guiding_questions)
       }
-      if (outputs) {
+      if (method.outputs) {
         customGuide.push(`### ${t("method-title-outputs", "Outputs")}`)
-        customGuide.push(outputs)
+        customGuide.push(method.outputs)
       }
-      if (operational_security) {
+      if (method.operational_security) {
         customGuide.push(`### ${t("method-title-opsec", "Operational Security")}`)
-        customGuide.push(operational_security)
+        customGuide.push(method.operational_security)
       }
-      if (preparation) {
+      if (method.preparation) {
         customGuide.push(`### ${t("method-title-prep", "Preparation")}`)
-        customGuide.push(preparation)
+        customGuide.push(method.preparation)
       }
 
       customGuide.push(`### ${t("method-title-activities", "Activities")}`)
-      selectedActivities.forEach(
-        ({
-          title,
-          toolnames,
-          sections: {
-            summary,
-            overview,
-            materials_needed,
-            considerations,
-            walk_through,
-            recommendations,
-          },
-        }) => {
-          // Add activity title
-          customGuide.push(`#### ${title}`)
 
+      // process each activity's footnotes before placing it
+      const activities = []
+      selectedActivities.forEach(act => {
+          let result = processSections(act, allFootnotes, footnotes)
+          footnotes = result.footnotes
+          let activity = result.sections
+          activities.push(activity)
+      })
+
+      activities.forEach(activity => {
+          // Add activity title
+          customGuide.push(`#### ${activity.title}`)
+          let sections = activity.sections
           // Add activities sections
-          if (summary && summary.rawMarkdownBody) {
+          if (sections.summary && sections.summary.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-summary', "Summary")}`)
-            customGuide.push(summary.rawMarkdownBody)
+            customGuide.push(sections.summary.rawMarkdownBody)
           }
-          if (overview && overview.rawMarkdownBody) {
+          if (sections.overview && sections.overview.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-overview', "Overview")}`)
-            customGuide.push(overview.rawMarkdownBody)
+            customGuide.push(sections.overview.rawMarkdownBody)
           }
-          if (materials_needed && materials_needed.rawMarkdownBody) {
+          if (sections.materials_needed && sections.materials_needed.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-materials', "Materials Needed")}`)
-            customGuide.push(materials_needed.rawMarkdownBody)
+            customGuide.push(activity.sections.materials_needed.rawMarkdownBody)
           }
-          if (considerations && considerations.rawMarkdownBody) {
+          if (sections.considerations && sections.considerations.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-considerations', "Considerations")}`)
-            customGuide.push(considerations.rawMarkdownBody)
+            customGuide.push(sections.considerations.rawMarkdownBody)
           }
-          if (walk_through && walk_through.rawMarkdownBody) {
+          if (sections.walk_through && sections.walk_through.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-walkthrough', "Walk Through")}`)
-            customGuide.push(walk_through.rawMarkdownBody)
+            customGuide.push(sections.walk_through.rawMarkdownBody)
           }
-          if (toolnames) {
+          if (activity.toolnames) {
             customGuide.push(`##### ${t('activity-tools', "Tools and variants")}`)
-            toolnames.forEach((toolname) => {
-              const tool = tools[toolname]
+            activity.toolnames.forEach((toolname) => {
+              const tool = method.tools[toolname]
               customGuide.push(`###### ${tool.title}`)
               customGuide.push(tool.rawMarkdownBody)
             })
           }
-          if (recommendations && recommendations.rawMarkdownBody) {
+          if (sections.recommendations && sections.recommendations.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-recommendations', "Recommendations")}`)
-            customGuide.push(recommendations.rawMarkdownBody)
+            customGuide.push(sections.recommendations.rawMarkdownBody)
           }
         }
       )
-      if (Object.keys(references).length > 0) {
-        customGuide.push(`### ${t("guide-references", "References and resources for ")} ${title}`)
-        values(references).forEach(({ id, rawMarkdownBody }) => {
+      if (Object.keys(method.references).length > 0) {
+        customGuide.push(`### ${t("guide-references", "References and resources for ")} ${method.title}`)
+        values(method.references).forEach(({ id, rawMarkdownBody }) => {
           customGuide.push(`#### ${id}`)
           customGuide.push(rawMarkdownBody)
         })
@@ -516,7 +528,13 @@ export async function prepareGuide(
 
   customGuide.push(fixedSections["section_3.md"])
   customGuide.push(fixedSections["section_4.md"])
-  customGuide.push(fixedSections["section_5.md"])
+
+  if (footnotes) {
+    customGuide.push(`# ${t("guide-footnotes", "Footnotes")}`)
+    footnotes.forEach(fn => {
+      customGuide.push(`${fn.index}: ${fn.md}`)
+    })
+  }
 
   return await generateGuide(customGuide.join("\n\n"), guideTitle, t)
 }
