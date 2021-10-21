@@ -1,4 +1,4 @@
-import { graphql, withPrefix } from "gatsby"
+import { withPrefix } from "gatsby"
 import mapValues from "lodash.mapvalues"
 import remark from 'remark'
 import remarkHTML from 'remark-html'
