@@ -15,8 +15,8 @@ import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg"
 
 import SearchBox from "./search-box-header.js"
 
-import ReactLanguageSelect from 'react-languages-select';
-import 'react-languages-select/css/react-languages-select.css';
+import ReactLanguageSelect from './vendor/lang-select.js';
+import '../styles/vendor/react-languages-select.css';
 
 const PageHead = styled.header`
   position: sticky;
