@@ -1,0 +1,20 @@
+.searchBoxHeader input {
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border-radius: 0;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  transition: background-color 0.24s ease 0s;
+}
+
+.searchBoxHeader input:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.searchBoxHeader img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}

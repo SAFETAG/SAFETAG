@@ -1,7 +1,10 @@
 import React, { useState, useRef } from 'react'
-import { Trans, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
+import { useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 
-function SearchBox () {
+import SearchIcon from "../../static/assets/search.svg"
+import SearchIconWhite from "../../static/assets/search-white.svg"
+
+function SearchBox ({ scrolled }) {
   const { navigate } = useI18next()
   const { t } = useTranslation('site', { useSuspense: false });
   const [ searchQuery, setSearchQuery ] = useState('')
@@ -21,15 +24,16 @@ function SearchBox () {
     <div className="searchBoxHeader">
       <div className="boxTitle" onClick={showInputBox}
           style={{ display: isOpened ? "none" : "block" }}>
-        <Trans i18nKey="search-title">Search</Trans>
+        <img src={ scrolled > 0 ? SearchIcon : SearchIconWhite}
+             alt="Search" />
       </div>
 
       {isOpened && (
         <form onSubmit={handleSubmit}>
-          <input type="text"
+          <input className="search-header-input" type="text"
             style={{ display: isOpened ? "block" : "none" }}
             ref={searchInput}
-            placeholder={t("Search...")}
+            placeholder={t("search-placeholder", "Search...")}
             value={searchQuery ? searchQuery : ''}
             onChange={() => setSearchQuery(event.target.value)}/>
         </form>

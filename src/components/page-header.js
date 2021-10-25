@@ -14,6 +14,7 @@ import LogoWhite from "../../static/assets/logo/SafetagLogoWhite.svg"
 import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg"
 
 import SearchBox from "./search-box-header.js"
+import '../styles/search.css';
 
 import ReactLanguageSelect from './vendor/lang-select.js';
 import '../styles/vendor/react-languages-select.css';
@@ -284,7 +285,7 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
-                <SearchBox />
+                <SearchWidget scrolled={scrolled} />
               </li>
               <li>
                 <GlobalMenuButton
@@ -323,7 +324,7 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
-                <SearchBox />
+                <SearchWidget scrolled={scrolled} />
               </li>
               <li>
                 <GlobalMenuButton
