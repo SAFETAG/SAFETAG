@@ -195,9 +195,11 @@ const Hamburger = styled.div`
 `
 
 const LanguageSelect = styled(ReactLanguageSelect)`
-  color: white !important;
   button {
-    color: white;
+    background: ${({ scrolled }) =>
+      scrolled > 0 ? 'transparent url("/assets/language.svg") no-repeat !important'
+                   : 'transparent url("/assets/language-white.svg") no-repeat !important'
+    };
   }
   ul {
     background: #0721eb;
@@ -342,7 +344,7 @@ const GlobalHeader = () => {
               <li>
                 <LanguageSelect
                    languages={["en", "fr", "es"]}
-                   placeholder="Select Language"
+                   placeholder=""
                    onSelect={onSelectLanguage}
                    ref={(el) => langSelector = el}
                 />
