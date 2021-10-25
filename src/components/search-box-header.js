@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import PropTypes from 'prop-types';
 import { useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import SearchIcon from "../../static/assets/search.svg"
@@ -43,3 +44,7 @@ function SearchBox ({ scrolled }) {
 }
 
 export default SearchBox
+
+SearchBox.propTypes = {
+  scrolled: PropTypes.number
+}

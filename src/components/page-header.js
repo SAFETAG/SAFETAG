@@ -285,7 +285,7 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
-                <SearchWidget scrolled={scrolled} />
+                <SearchBox scrolled={scrolled} />
               </li>
               <li>
                 <GlobalMenuButton
@@ -324,7 +324,7 @@ const GlobalHeader = () => {
                 </GlobalMenuLink>
               </li>
               <li>
-                <SearchWidget scrolled={scrolled} />
+                <SearchBox scrolled={scrolled} />
               </li>
               <li>
                 <GlobalMenuButton
