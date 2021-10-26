@@ -197,8 +197,8 @@ const Hamburger = styled.div`
 const LanguageSelect = styled(ReactLanguageSelect)`
   button {
     background: ${({ scrolled }) =>
-      scrolled > 0 ? 'transparent url("/assets/language.svg") no-repeat !important'
-                   : 'transparent url("/assets/language-white.svg") no-repeat !important'
+      scrolled > 0 ? 'transparent url("/assets/language.svg") no-repeat;'
+                   : 'transparent url("/assets/language-white.svg") no-repeat;'
     };
   }
   ul {
@@ -347,6 +347,7 @@ const GlobalHeader = () => {
                    placeholder=""
                    onSelect={onSelectLanguage}
                    ref={(el) => langSelector = el}
+                   scrolled={scrolled}
                 />
               </li>
             </GlobalMenu>
