@@ -75,7 +75,7 @@
 .flag-select__option:not(.flag-select__option--placeholder):focus,
 .flag-select__option:not(.flag-select__option--placeholder):hover {
   outline: none;
-  background: #eaeaea;
+  background: #263ded;
 }
 .flag-select__option.has-label {
   padding: 0 20px 3px 8px;

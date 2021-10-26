@@ -202,7 +202,15 @@ const LanguageSelect = styled(ReactLanguageSelect)`
     };
   }
   ul {
-    background: #0721eb;
+    ${({ scrolled }) =>
+      scrolled > 0 ? 'background: white;   color: #0721eb;'
+                   : 'background: #0721eb; color: white:'
+    };
+  }
+  .flag-select__option:not(.flag-select__option--placeholder):focus,
+  .flag-select__option:not(.flag-select__option--placeholder):hover {
+    outline: none;
+    background: #263ded;
   }
 `
 
