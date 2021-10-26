@@ -252,7 +252,13 @@ class Node {
             const imageFile = await fetch(filePath).then(res =>
               res.arrayBuffer()
             )
-            doc.image(imageFile, imageOptions)
+            let opts = imageOptions
+            /*
+            if (imageFile.includes('_icon')) {
+              opts['scale'] = 0.5
+            }
+            */
+            doc.image(imageFile, opts)
           } catch (error) {
             // eslint-disable-line
             console.log("Could not add image to PDF file: ", filePath)
@@ -436,9 +442,10 @@ export async function prepareGuide(
     // If there are activities selected on this method
     if (selectedActivities.length > 0) {
       // Add method title
-      customGuide.push(`## ${method.title}`)
       if (method.method_icon) {
-        customGuide.push(`![](${method.method_icon})`)
+        customGuide.push(`## \`     \` ${method.title} ![](${method.method_icon.replace('img/', 'img/24x24/')})`)
+      } else {
+        customGuide.push(`![](${method.title})`)
       }
       // Add method sections
       if (method.summary) {
