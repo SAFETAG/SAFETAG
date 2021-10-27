@@ -34,6 +34,11 @@ const PageHead = styled.header`
     ${({ scrolled }) =>
       scrolled > 0 ? themeVal("color.primary") : themeVal("color.surface")};
   transition: all 0.25s ease-out;
+  [id] {
+    @media (min-height: 7em) {
+      scroll-margin-top: 5rem; // 1
+    }
+  }
 `
 
 const PageHeadInner = styled(Constrainer)`
