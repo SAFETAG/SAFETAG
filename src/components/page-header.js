@@ -202,7 +202,8 @@ const LanguageSelect = styled(ReactLanguageSelect)`
     };
   }
   ul {
-    background: #0721eb;
+    background: ${({ scrolled }) => scrolled > 0 ? '#fff' : themeVal("color.primary") };
+    color: ${({ scrolled }) => scrolled > 0 ? themeVal("color.primary") : '#fff;' };
   }
 `
 
