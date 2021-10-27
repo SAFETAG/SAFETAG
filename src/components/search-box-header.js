@@ -31,7 +31,8 @@ function SearchBox ({ scrolled }) {
 
       {isOpened && (
         <form onSubmit={handleSubmit}>
-          <input className="search-header-input" type="text"
+          <input type="text"
+            className={scrolled > 0 ? "search-header-input scrolled" : "search-header-input"}
             style={{ display: isOpened ? "block" : "none" }}
             ref={searchInput}
             placeholder={t("search-placeholder", "Search...")}
