@@ -75,6 +75,12 @@ async function loadMarkdownStyles() {
       fontSize: 14,
       padding: 10,
     },
+    h4activity: {
+      font: displayFont,
+      fontSize: 14,
+      padding: 10,
+      color: "blue",
+    },
     h5: {
       font: displayFont,
       fontSize: 12,
@@ -191,7 +197,12 @@ class Node {
         break
     }
 
-    this.style = styles[this.type] || styles.para
+    if (this.type == "h4" && this.content.length > 1 && this.content[1].text.includes('Activity:')) {
+      // activity titles have their own styling
+      this.style = styles['h4activity']
+    } else {
+      this.style = styles[this.type] || styles.para
+    }
   }
 
   // sets the styles on the document for this node
@@ -242,8 +253,10 @@ class Node {
             const img = new Image()
             img.name = filePath
             img.src = filePath
+            // look for images that won't fit on a page, but don't consider icons
             if ( (img.height + doc.y + doc.currentLineHeight(true) +
                   doc.page.margins.top + doc.page.margins.bottom) > doc.page.maxY()
+                  && !(img.name.includes('_icon'))
                 ) {
               console.log(`Info: Image ${filePath} doesn't fit on this page, moving to a new page`)
               doc.addPage();
@@ -408,7 +421,8 @@ export async function prepareGuide(
   isFull = true,
   t,
   i18n,
-  referenceEdges
+  referenceEdges,
+  approachEdges
 ) {
   // Add cover and intro
   const d = new Date()
@@ -485,10 +499,17 @@ export async function prepareGuide(
       })
 
       activities.forEach(activity => {
-          // Add activity title
-          customGuide.push(`#### ${activity.title}`)
-          let sections = activity.sections
+          // Add activity title and approach icon
+          const approach = approachEdges.filter(
+            r => r.node.frontmatter.title == activity.approaches[0] && r.node.fields.langKey == i18n.language
+          )[0]
+          const approachIcon = `/img/${approach.node.fields.slug.replace('/approaches/', '24x24/')}_icon.png`
+          // pad with empty lines to avoid text flow problems
+          customGuide.push(`\` \``)
+          customGuide.push(`#### \`      \` Activity: ${activity.title} ![](${approachIcon})`)
+          customGuide.push(`\` \``)
           // Add activities sections
+          let sections = activity.sections
           if (sections.summary && sections.summary.rawMarkdownBody) {
             customGuide.push(`##### ${t('activity-summary', "Summary")}`)
             customGuide.push(sections.summary.rawMarkdownBody)
@@ -524,7 +545,7 @@ export async function prepareGuide(
         }
       )
       if (Object.keys(method.references).length > 0) {
-        customGuide.push(`### ${t("guide-references", "References and resources for ")} ${method.title}`)
+        customGuide.push(`### ${t("guide-references", "References and resources for")} ${method.title}`)
         values(method.references).forEach(({ id, rawMarkdownBody }) => {
           customGuide.push(`#### ${id}`)
           customGuide.push(rawMarkdownBody)
