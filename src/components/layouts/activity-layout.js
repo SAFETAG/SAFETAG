@@ -137,7 +137,7 @@ function ActivityLayout({ data }) {
               {sections.summary && (
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: sections.summary,
+                    __html: sections.summary.html,
                   }}
                 ></div>
               )}
@@ -187,7 +187,7 @@ function ActivityLayout({ data }) {
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.overview,
+                    __html: sections.overview.html,
                   }}
                 ></SquareUl>
               </aside>
@@ -197,7 +197,7 @@ function ActivityLayout({ data }) {
                     <CardHeading><Trans i18nKey="activity-materials">Materials Needed</Trans></CardHeading>
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: sections.materials_needed,
+                        __html: sections.materials_needed.html,
                       }}
                     ></div>
                   </Card>
@@ -215,7 +215,7 @@ function ActivityLayout({ data }) {
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.considerations,
+                    __html: sections.considerations.html,
                   }}
                 ></SquareUl>
               </article>
@@ -229,7 +229,7 @@ function ActivityLayout({ data }) {
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.walk_through,
+                    __html: sections.walk_through.html,
                   }}
                 ></SquareUl>
               </article>
@@ -259,7 +259,7 @@ function ActivityLayout({ data }) {
                           </CardHeading>
                           <div
                             dangerouslySetInnerHTML={{
-                              __html: toolNodes[tool] ? toolNodes[tool].short_summary : '',
+                              __html: toolNodes[tool] ? toolNodes[tool].short_summary.html : '',
                             }}
                           ></div>
                         </ToolCard>
@@ -279,7 +279,7 @@ function ActivityLayout({ data }) {
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.recommendations,
+                    __html: sections.recommendations.html,
                   }}
                 ></SquareUl>
               </article>
