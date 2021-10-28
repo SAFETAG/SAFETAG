@@ -481,7 +481,7 @@ const GuideBuilder = ({ data, location }) => {
                   title="Export selected methods and activities as PDF"
                   onClick={async () => {
                     setCustomGuideLoader(true)
-                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t, i18n, data.references.edges)
+                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t, i18n, data.references.edges, data.approaches.edges)
                     // requires a small buffer period
                     setTimeout(() => {
                       setCustomGuideLoader(false)
@@ -662,6 +662,21 @@ export const query = graphql`
             title
           }
           rawMarkdownBody
+        }
+      }
+    }
+    approaches: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/approaches//"}, fields: {langKey: {eq: $language}} },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            langKey
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }

@@ -9,6 +9,12 @@
   transition: background-color 0.24s ease 0s;
 }
 
+.searchBoxHeader input.scrolled {
+  color: rgb(7, 33, 235);
+  border: 2px solid rgb(7, 33, 235);
+  background-color: rgba(7, 33, 235, 0.1);
+}
+
 .searchBoxHeader input:focus {
   background-color: rgba(255, 255, 255, 0);
 }

@@ -34,6 +34,11 @@ const PageHead = styled.header`
     ${({ scrolled }) =>
       scrolled > 0 ? themeVal("color.primary") : themeVal("color.surface")};
   transition: all 0.25s ease-out;
+  [id] {
+    @media (min-height: 7em) {
+      scroll-margin-top: 5rem; // 1
+    }
+  }
 `
 
 const PageHeadInner = styled(Constrainer)`
@@ -202,10 +207,8 @@ const LanguageSelect = styled(ReactLanguageSelect)`
     };
   }
   ul {
-    ${({ scrolled }) =>
-      scrolled > 0 ? 'background: white;   color: #0721eb;'
-                   : 'background: #0721eb; color: white:'
-    };
+    background: ${({ scrolled }) => scrolled > 0 ? '#fff' : themeVal("color.primary") };
+    color: ${({ scrolled }) => scrolled > 0 ? themeVal("color.primary") : '#fff;' };
   }
   .flag-select__option:not(.flag-select__option--placeholder):focus,
   .flag-select__option:not(.flag-select__option--placeholder):hover {
