@@ -77,7 +77,7 @@ collections:
           label: "Position",
           name: "position",
           widget: "number",
-          required: true
+          required: true,
         }
       - {
           label: "Approaches",
