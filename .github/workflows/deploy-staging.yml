@@ -34,6 +34,11 @@ jobs:
           cp .env .env.development
           cat .env
 
+      # https://github.com/aws/aws-cli/issues/1249
+      - name: Fix mimetypes detection for yaml files
+        run: |
+          echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
+
       - name: Use Node.js 12
         uses: actions/setup-node@v1
         with:
