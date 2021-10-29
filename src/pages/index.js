@@ -166,7 +166,8 @@ function IndexPage({ data }) {
                         </CardHeader>
                         <p>
                           {
-                            node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
+                            node.frontmatter.short_summary ? node.frontmatter.short_summary
+                              : node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
                           }
                         </p>
                       </Card>
@@ -269,6 +270,7 @@ export const query = graphql`
             position
             method_icon
             summary
+            short_summary
           }
         }
       }

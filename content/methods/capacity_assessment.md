@@ -5,6 +5,7 @@ summary: |
   and weakness (expertise, finance, willingness to learn, staff time, etc.) to
   adopting new digital and physical security practices. The auditor uses this
   information to modify the audit scope and recommendations accordingly.
+short_summary: Identify and act on an organization's strengths and weaknesses
 the_flow_of_information: "![](/img/capacity_assessment.png)"
 guiding_questions: |
    * What is the organization's ability to adopt new technologies or practices?
