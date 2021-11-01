@@ -8,6 +8,7 @@ summary: |
   auditor to identify publicly available resources (such as websites, extranets,
   email servers, but also social media information) connected to the
   organization and remotely gather information about those resources.
+short_summary: Use publicly available data sources to identify resources, assets, and information connected to the organization and which forms a potential attack surface.
 the_flow_of_information: "![](/img/reconnaissance.png)"
 guiding_questions: |
   * Depending on the organization's security needs, does it "leak" any sensitive

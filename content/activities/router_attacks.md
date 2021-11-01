@@ -15,6 +15,7 @@ summary: |
   Default Password Search”](http://www.routerpasswords.com/), meaning that
   anyone with access to the network could also take complete control of the
   router - adding in remote access tools or setting up other attacks.
+short_summary: Check routers for default passwords, unpatched firmware, vulnerabilities, remote access, and misconfiguration.
 overview: |
   * Find the router(s) (``route`` works well for this)
   * Test using default passwords

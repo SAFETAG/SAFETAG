@@ -3,6 +3,7 @@ summary: |
   This component consists of audit preparation activities that are needed to
   ensure the components of the audit are able to be conducted effectively and
   within the on-site time-frame.
+short_summary: Audit preparation activities which ensure all components of the audit can be conducted safely, effectively, and within your time-frame.
 the_flow_of_information: "![](/img/preparation.png)"
 guiding_questions: |
   * Does the organization have existing digital security practices or has it
