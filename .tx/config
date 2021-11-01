@@ -673,6 +673,12 @@ source_file = content/guide_sections/introduction.md
 source_lang = en
 type = GITHUBMARKDOWN
 
+[safetag-overview.content_guide_sections_credits_license]
+file_filter = locales/<lang>/guide_sections/credits_license.md
+source_file = content/guide_sections/credits_license.md
+source_lang = en
+type = GITHUBMARKDOWN
+
 [safetag-overview.content_guide_sections_section_1]
 file_filter = locales/<lang>/guide_sections/section_1.md
 source_file = content/guide_sections/section_1.md
