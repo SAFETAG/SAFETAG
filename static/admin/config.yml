@@ -24,6 +24,16 @@ collections:
               widget: "markdown",
               description: "Markdown content to be included in guide beginning.",
             }
+       - label: "Credits and License"
+        name: "credits_license"
+        file: "content/guide_sections/credits_license.md"
+        fields:
+          - {
+              label: "Body",
+              name: "body",
+              widget: "markdown",
+              description: "Section containing SAFETAG credits and license",
+            }      
       - label: "Section 1 (Guide Information)"
         name: "section_1"
         file: "content/guide_sections/section_1.md"
