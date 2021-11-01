@@ -120,6 +120,9 @@ function IndexPage({ data }) {
               clear reporting and follow up to help the organization strategically move
               forward and identify the support that they need.
             </Trans></p>
+            <p><Trans i18nKey="index-about-4">
+              Read the [Introduction](https://dev.safetag.org/sections/section_1) to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.
+            </Trans></p>
           </InpageBodyInner>
         </InpageBody>
 
@@ -190,7 +193,7 @@ function IndexPage({ data }) {
               Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
             </Trans></p>
             <p><Trans i18nKey="index-license-2">
-              Check out the <Link to="/credits/">Credits and Licensing
+              Check out the <Link to="/sections/credits_license">Credits and Licensing
               </Link> page for content attribution and a usage guide to
               referring to the &quot;SAFETAG&quot; wordmark.
             </Trans></p>

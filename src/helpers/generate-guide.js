@@ -428,9 +428,10 @@ export async function prepareGuide(
   const d = new Date()
   const dateString = d.toUTCString()
   const generatedNote = `_${t("guide-gen-date", "This custom guide was generated on")} ${dateString}. ${t("guide-notice", "Create your own custom guide or get the full guide at www.safetag.org")}_`
-  var intro = fixedSections["introduction.md"] + '\n' + generatedNote
+  var intro = fixedSections["introduction.md"] + '\n' + generatedNote + '\n' + '#Guide'
   const customGuide = [
     intro,
+    fixedSections["credits_license.md"],
     fixedSections["section_1.md"],
     `# ${t("guide-methods", "Safetag Methods")}`,
   ]
