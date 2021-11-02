@@ -25,6 +25,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          sudo apt install transifex-client
+
       - name: Set up secrets
         run: |
           touch .env
@@ -44,10 +48,16 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install, create translations and Build
+      - name: Install and lint
         run: |
           yarn install
           yarn lint
+
+      - name: Update translations and build
+        run: |
+          yarn extract
+          tx config mapping-bulk -p safetag-overview --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir content/ --expression 'locales/<lang>/{filepath}/{filename}{extension}' --ignore-dir posts --execute
+          tx push -s
           yarn transifex
           yarn build
 
