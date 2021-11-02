@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt install transifex-client
+          sudo pip install transifex-client
 
       - name: Set up secrets
         run: |
