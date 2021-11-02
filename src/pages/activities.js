@@ -87,7 +87,7 @@ function Activities({ data }) {
                         <p>
                           {
                             node.frontmatter.short_summary ? node.frontmatter.short_summary
-                              : node.frontmattermd.summary.excerpt
+                              : node.fields.frontmattermd.summary.excerpt
                           }
                         </p>
                       </ActivityCard>
