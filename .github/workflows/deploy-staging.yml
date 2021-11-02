@@ -57,7 +57,7 @@ jobs:
       - name: Update translations and build
         run: |
           yarn extract
-          - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"$TRANSIFEX_USER"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\ntoken = '"$TRANSIFEX_API_TOKEN"$'\n' > ~/.transifexrc
+          sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"$TRANSIFEX_USER"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\ntoken = '"$TRANSIFEX_API_TOKEN"$'\n' > ~/.transifexrc
           tx config mapping-bulk -p safetag-overview --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir content/ --expression 'locales/<lang>/{filepath}/{filename}{extension}' --ignore-dir posts --execute
           tx push -s
           yarn transifex
