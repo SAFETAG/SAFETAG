@@ -13,6 +13,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Guide Sections"
     name: "guide_sections"
+    create: true
     files:
       - label: "Introduction"
         name: "introduction"
