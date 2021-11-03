@@ -120,8 +120,13 @@ function IndexPage({ data }) {
               clear reporting and follow up to help the organization strategically move
               forward and identify the support that they need.
             </Trans></p>
+            <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
             <p><Trans i18nKey="index-about-4">
-              Read the [Introduction](/sections/section_1) to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.
+              <ul>
+                <li>Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
+                <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
+                <li>Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</li>
+              </ul>
             </Trans></p>
           </InpageBodyInner>
         </InpageBody>
