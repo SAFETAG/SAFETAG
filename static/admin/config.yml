@@ -20,6 +20,11 @@ collections:
         file: "content/guide_sections/introduction.md"
         fields:
           - {
+              label: "Title",
+              name: "title",
+              widget: "string"
+            }
+          - {
               label: "Body",
               name: "body",
               widget: "markdown",
@@ -29,6 +34,11 @@ collections:
         name: "credits_license"
         file: "content/guide_sections/credits_license.md"
         fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string"
+            }
           - {
               label: "Body",
               name: "body",
@@ -40,6 +50,11 @@ collections:
         file: "content/guide_sections/section_1.md"
         fields:
           - {
+              label: "Title",
+              name: "title",
+              widget: "string"
+            }
+          - {
               label: "Body",
               name: "body",
               widget: "markdown",
@@ -49,6 +64,11 @@ collections:
         name: "section_3"
         file: "content/guide_sections/section_3.md"
         fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string"
+            }
           - {
               label: "Body",
               name: "body",
@@ -60,6 +80,11 @@ collections:
         file: "content/guide_sections/section_4.md"
         fields:
           - {
+              label: "Title",
+              name: "title",
+              widget: "string"
+            }
+          - {
               label: "Body",
               name: "body",
               widget: "markdown",
@@ -69,6 +94,11 @@ collections:
         name: "section_5"
         file: "content/guide_sections/section_5.md"
         fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string"
+            }
           - {
               label: "Body",
               name: "body",
