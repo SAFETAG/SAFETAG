@@ -1,7 +1,3 @@
-# Credits and License
-
-## License
-
 SAFETAG is a trademark of Internews.
 
 SAFETAG resources are available under a Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) License
