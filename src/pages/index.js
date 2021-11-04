@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import { themeVal } from "../styles/utils/general"
 import { glsp } from "../styles/utils/theme-values"
 import media from "../styles/utils/media-queries"
+import { SquareUl } from "../styles/type/lists"
 
 import Button from "../styles/button/button"
 import {
@@ -18,6 +19,7 @@ import {
   InpageHeadline,
   InpageBody,
   InpageBodyInner,
+  InpageInnerColumns,
 } from "../styles/inpage"
 import Heading, { Subheading } from "../styles/type/heading"
 import MoreLink from "../styles/button/more-link"
@@ -120,15 +122,20 @@ function IndexPage({ data }) {
               clear reporting and follow up to help the organization strategically move
               forward and identify the support that they need.
             </Trans></p>
-            <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
-            <Trans i18nKey="index-about-4">
-              <ul>
-                <li>Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
-                <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
-                <li>Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</li>
-              </ul>
-            </Trans>
           </InpageBodyInner>
+            <InpageInnerColumns columnLayout="2:1">
+              <SquareUl>
+                <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
+                <ul>
+                  <li>Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
+                  <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
+                  <li>Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</li>
+                </ul>
+              </SquareUl>
+              <div>
+              <img src="/img/activities_flow.svg" style={{ 'max-width': '100%' }}/>
+              </div>
+          </InpageInnerColumns>
         </InpageBody>
 
         <InpageBody variation="blue">
@@ -136,6 +143,7 @@ function IndexPage({ data }) {
             <Heading id="recent-updates" size="jumbo" variation="primary" withDeco>
               <Trans i18nKey="index-updates-title">Recent Updates</Trans>
             </Heading>
+            <SquareUl>
             <ul>
               {data.posts.edges.map(
                 ({ node }, index) => (
@@ -145,6 +153,7 @@ function IndexPage({ data }) {
                   )
               )}
             </ul>
+            </SquareUl>
           </InpageBodyInner>
         </InpageBody>
 
