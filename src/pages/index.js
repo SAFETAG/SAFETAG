@@ -121,7 +121,7 @@ function IndexPage({ data }) {
               forward and identify the support that they need.
             </Trans></p>
             <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
-            <Trans i18nKey="index-about-4">
+            <Trans i18nKey="index-about-4a">
               <ul>
                 <li>Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
                 <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
