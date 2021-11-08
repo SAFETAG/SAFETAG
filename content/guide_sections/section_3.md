@@ -1,3 +1,7 @@
+---
+title: Guide: Reporting
+---
+
 # Reporting
 
 ## Recommendation Development
@@ -21,7 +25,7 @@ The host needs to be able to take action after an audit. The recommendations tha
 * What are the organizational barriers to adoption?
 * Are the recommendations you are providing directly related to the security
   audit? If not, do they support the organization in accomplishing their
-  security tasks, or distract from them? 
+  security tasks, or distract from them?
 
 ### Approaches
 
