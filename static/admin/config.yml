@@ -12,8 +12,10 @@ publish_mode: editorial_workflow
 
 collections:
   - label: "Guide Sections"
+    label_singular: "Section"
     name: "guide_sections"
     create: true
+    folder: "content/guide_sections"
     fields:
       - {
           label: "Title",
