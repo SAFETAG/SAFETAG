@@ -1,5 +1,6 @@
-# Credits and License
-
+---
+title: SAFETAG License and Credits
+---
 ## License
 
 SAFETAG is a trademark of Internews.
@@ -22,7 +23,37 @@ This usage policy does not affect the distribution of SAFETAG materials, covered
 
 ### Credits and Attribution for content from other Licenses
 
-See [SAFETAG Contributors](https://github.com/SAFETAG/SAFETAG/graphs/contributors) for information on who has contributed content to SAFETAG.
+See [SAFETAG Contributors](https://github.com/SAFETAG/SAFETAG/graphs/contributors) for information on who has contributed content to SAFETAG. Due to a main branch change in August 2021 GitHub does not display contributors to the previous main branch. We thank the following contributors who worked on the project before that date:
+
+* Seamus Tuohy
+* Jon Camfield
+*  Ricardo Lafuente
+* Neil Blazevic
+* Hackatom
+* kakron
+* floriana
+* Lane Goodman
+* Dlshad Othman
+* Björn Weghenkel
+* AlWalid
+* Hackatom
+* Michael Carbone
+* Vitor George
+* megdeb
+* Carlos Guerra
+* Rogelio
+* kanjoli
+* Hanna Kreitem
+* Jun Matsushita
+* Mishari Muqbil
+* Lu
+* Marc Farra
+* Maya Richman
+* Porter Darby
+* globalashm
+* maysara
+
+We also recognize contributions from other projects made available under other Open Source Licenses:
 
 * The Interview and Capacity Assessment components borrows heavily from [the engine room's](https://www.theengineroom.org) [TechScape](https://www.theengineroom.org/projects/techscape/) project. They have [made their content available](https://www.theengineroom.org/attribution-policy/) under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/3.0/us/).
 * The Data Assessment Activity was taken from the [Level Up Project](https://level-up.cc) is available under a [Creative Commons Attribution-Share Alike Unported 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). This activity is credited to Pablo, Daniel O’Clunaigh, Ali Ravi, and Samir Nassar.

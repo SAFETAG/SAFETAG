@@ -122,14 +122,28 @@ function IndexPage({ data }) {
               clear reporting and follow up to help the organization strategically move
               forward and identify the support that they need.
             </Trans></p>
+
+
+
+            <!--
+              <ul>
+                <li>Read the <a href="/sections/section_1">Introduction to SAFETAG</a> to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
+                <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
+                <li>Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</li>
+                <li>Scroll down to browse all <a href="#allMethods">SAFETAG Methods</a>.</li>
+              </ul>
+            -->
+
+
+
           </InpageBodyInner>
             <InpageInnerColumns columnLayout="2:1">
               <SquareUl>
                 <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
                 <ul>
-                  <li>Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
-                  <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
-                  <li>Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</li>
+                  <li><Trans i18nKey="index-about-getting-started-1">Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</Trans></li>
+                  <li><Trans i18nKey="index-about-getting-started-1">Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></Trans></li>
+                  <li><Trans i18nKey="index-about-getting-started-1">Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</Trans></li>
                 </ul>
               </SquareUl>
               <div>
@@ -209,7 +223,7 @@ function IndexPage({ data }) {
             <p><Trans i18nKey="index-license-2">
               Check out the <Link to="/sections/credits_license">Credits and Licensing
               </Link> page for content attribution and a usage guide to
-              referring to the &quot;SAFETAG&quot; wordmark.
+              referring to the SAFETAG wordmark.
             </Trans></p>
           </InpageBodyInner>
         </InpageBody>
