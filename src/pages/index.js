@@ -122,33 +122,20 @@ function IndexPage({ data }) {
               clear reporting and follow up to help the organization strategically move
               forward and identify the support that they need.
             </Trans></p>
-
-
-
-            <!--
-              <ul>
-                <li>Read the <a href="/sections/section_1">Introduction to SAFETAG</a> to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</li>
-                <li>Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></li>
-                <li>Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</li>
-                <li>Scroll down to browse all <a href="#allMethods">SAFETAG Methods</a>.</li>
-              </ul>
-            -->
-
-
-
           </InpageBodyInner>
-            <InpageInnerColumns columnLayout="2:1">
-              <SquareUl>
-                <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
-                <ul>
-                  <li><Trans i18nKey="index-about-getting-started-1">Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</Trans></li>
-                  <li><Trans i18nKey="index-about-getting-started-1">Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></Trans></li>
-                  <li><Trans i18nKey="index-about-getting-started-1">Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</Trans></li>
-                </ul>
-              </SquareUl>
-              <div>
+          <InpageInnerColumns columnLayout="2:1">
+            <SquareUl>
+              <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
+              <ul>
+                <li><Trans i18nKey="index-about-getting-started-1">Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-2">Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-3">Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-4">Scroll down to browse all <a href="#allMethods">SAFETAG Methods</a>.</Trans></li>
+              </ul>
+            </SquareUl>
+            <div>
               <img src="/img/activities_flow.svg" style={{ 'max-width': '100%' }}/>
-              </div>
+            </div>
           </InpageInnerColumns>
         </InpageBody>
 
