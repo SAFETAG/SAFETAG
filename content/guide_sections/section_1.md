@@ -1,5 +1,5 @@
 ---
-title: Guide: Introduction to SAFETAG
+title: Guide - Introduction to SAFETAG
 ---
 The Security Auditing Framework and Evaluation Template for Advocacy Groups (SAFETAG) is a professional audit framework that adapts traditional penetration testing and risk assessment methodologies to be relevant to small and medium, non-profit, human rights organizations based or operating in the developing world, taking into account the capacity constraints and unique threats faced in this community.
 

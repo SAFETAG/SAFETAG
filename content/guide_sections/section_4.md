@@ -1,5 +1,5 @@
 ---
-title: Guide: Appendices
+title: Guide - Appendices
 ---
 
 # APPENDICES

@@ -1,5 +1,5 @@
 ---
-title: Guide: Cover
+title: Guide - Cover
 ---
 
 ![SAFETAG Logo](/img/safetaglogoblue.png)

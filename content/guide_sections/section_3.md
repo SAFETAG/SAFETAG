@@ -1,5 +1,5 @@
 ---
-title: Guide: Reporting
+title: Guide - Reporting
 ---
 
 # Reporting
