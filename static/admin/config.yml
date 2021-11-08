@@ -14,6 +14,18 @@ collections:
   - label: "Guide Sections"
     name: "guide_sections"
     create: true
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string"
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          description: "Markdown content to be included in guide beginning.",
+        }
     files:
       - label: "Introduction"
         name: "introduction"
