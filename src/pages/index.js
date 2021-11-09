@@ -127,9 +127,9 @@ function IndexPage({ data }) {
             <SquareUl>
               <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
               <ul>
-                <li><Trans i18nKey="index-about-getting-started-1">Read the <a href="/sections/section_1">Introduction</a> to SAFETAG to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</Trans></li>
-                <li><Trans i18nKey="index-about-getting-started-2">Read about the <a href="">SAFETAG approach to Risk Assessment and Capacity Building</a></Trans></li>
-                <li><Trans i18nKey="index-about-getting-started-3">Read about <a href="">preserving Operational Security</a> during a SAFETAG audit</Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-1">Read the <a href="sections/section_1">Introduction to SAFETAG</a> to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-2">Read about the <a href="sections/the-safetag-approach-to-risk-assessment-agency-building">SAFETAG approach to Risk Assessment and Capacity Building</a></Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-3">Read about <a href="sections/operational-security-during-an-audit">preserving Operational Security</a> during a SAFETAG audit</Trans></li>
                 <li><Trans i18nKey="index-about-getting-started-4">Scroll down to browse all <a href="#allMethods">SAFETAG Methods</a>.</Trans></li>
               </ul>
             </SquareUl>
