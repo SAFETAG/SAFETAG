@@ -20,6 +20,10 @@ jobs:
           cp .env .env.development
           cat .env
 
+      - name: Install dependencies
+        run: |
+          sudo pip install transifex-client
+
       - name: Checkout
         uses: actions/checkout@v2
         env:
