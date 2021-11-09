@@ -431,7 +431,10 @@ export async function prepareGuide(
   var intro = fixedSections["introduction.md"] + '\n' + generatedNote + '\n' + '#Guide'
   const customGuide = [
     intro,
+    `# ${t("guide-toc-opening", "Guide")}`,
+    `## ${t("guide-toc-license", "License and Credits")}`,
     fixedSections["credits_license.md"],
+    `## ${t("guide-toc-introduction", "Introduction")}`,
     fixedSections["section_1.md"],
     `# ${t("guide-methods", "Safetag Methods")}`,
   ]
