@@ -47,9 +47,8 @@ jobs:
         run: |
           echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"${{ secrets.TRANSIFEX_USER }}"$'\npassword = '"${{ secrets.TRANSIFEX_PASSWORD }}"$'\ntoken = '"${{ secrets.TRANSIFEX_TOKEN }}"$'\n' | tee ~/.transifexrc
           yarn extract
-          tx config mapping-bulk -p safetag-overview --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir content/ --expression 'locales/<lang>/{filepath}/{filename}{extension}' --ignore-dir posts --execute
-          tx push -s --parallel --skip --use-git-timestamps --no-interactive
-          yarn transifex
+          yarn transifex-push
+          yarn transifex-pull
 
       - name: Test Build
         run: yarn build

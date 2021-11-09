@@ -27,7 +27,7 @@ See [SAFETAG Contributors](https://github.com/SAFETAG/SAFETAG/graphs/contributor
 
 * Seamus Tuohy
 * Jon Camfield
-*  Ricardo Lafuente
+* Ricardo Lafuente
 * Neil Blazevic
 * Hackatom
 * kakron

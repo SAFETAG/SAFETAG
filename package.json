@@ -93,7 +93,8 @@
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "extract": "i18next 'src/pages/*.js' 'src/components/*.js' 'src/components/layouts/*.js' 'src/helpers/*.js'",
-    "transifex": "node -r dotenv/config src/helpers/transifex.js && python3 src/helpers/postprocess.py",
+    "transifex-push": "tx config mapping-bulk -p safetag-overview --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir content/ --expression 'locales/<lang>/{filepath}/{filename}{extension}' --ignore-dir posts --execute && tx push -s --parallel --skip --use-git-timestamps --no-interactive",
+    "transifex-pull": "node -r dotenv/config src/helpers/transifex.js && python3 src/helpers/postprocess.py",
     "postproc": "python3 src/helpers/postprocess.py"
   },
   "repository": {
