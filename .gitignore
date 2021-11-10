@@ -72,5 +72,5 @@ yarn-error.log
 # local temporary dir
 tmp/
 
-locales/*
-!locales/en/site.json
+locales/
+.tx/
