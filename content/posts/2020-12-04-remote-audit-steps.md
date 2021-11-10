@@ -1,12 +1,17 @@
 ---
+draft: false
 layout: post
+author: Megan DeBlois and Carlos Guerra
 title: "How to implement a remote SAFETAG audit: A step by step guide."
 date: 2020-12-04 09:00:00
-author: "Megan DeBlois and Carlos Guerra"
-main_image: "img/blog/RemoteSteps.png" # 342px × 178p ~2x1
-main_image_caption: "Image with title How to implement a remote SAFETAG audit: A step by step guide."
-tags: ["COVID-19", "SAFETAG", "Remote Audits", "ADOPTABLE"]
-draft: false
+tags:
+  - COVID-19
+  - SAFETAG
+  - Remote Audits
+  - ADOPTABLE
+main_image: img/blog/RemoteSteps.png
+main_image_caption: "Image with title How to implement a remote SAFETAG audit: A
+  step by step guide."
 ---
 
 <div style="text-align: center"><img src="/img/blog/RemoteSteps.png" alt="Image with title How to implement a remote SAFETAG audit: A step by step guide." style="border: 0; width: 100%; padding: 1em;" /></div>
@@ -53,17 +58,17 @@ With all of this in mind, a general workflow to implement a remote audit could l
 2. **Start your asynchronous activities:** Starting these asynchronous activities while coordinating larger or one-on-one meetings can help get the audit process moving forward. Some examples of these activities are:
 
     - OSINT
-    - [Reconnaissance](https://github.com/SAFETAG/SAFETAG/tree/master/en/methods/reconnaissance)
-    - [Website Assessment](https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/web_vulnerability_assessment/index.md)
-    - [Policy Reviews](https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/policies_review/index.md)
-    - [Capacity Assessment Surveys](https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/capacity_assessment_cheatsheet/index.md)
+    - [Reconnaissance](../methods/reconnaissance)
+    - [Website Assessment](../activities/web_vulnerability_assessment)
+    - [Policy Reviews](../activities/policies_review)
+    - [Capacity Assessment Surveys](../activities/capacity_assessment_cheatsheet)
 
 3. **Set up common synchronous activities:** As mentioned throughout the article, we cannot overemphasize being organized when doing everything in a remote setting. There are more logistics, more technological difficulties, and overall more challenges with building  trust when interacting with staff through a screen. Some examples of synchronous activities you may prioritize to complete during your audit include:
 
-    - [One-on-One Interviews (rather than Process Mapping)](https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/interviews/index.md)
-    - [Data Mapping / Asset Valuation](https://github.com/SAFETAG/SAFETAG/tree/master/en/exercises/remote_asset_valuation)
-    - [Threat Mapping](https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/threat_identification/index.md)
-    - [User Device Assessment](https://github.com/SAFETAG/SAFETAG/tree/master/en/methods/user_device_assessment)
+    - [One-on-One Interviews (rather than Process Mapping)](../activities/interviews)
+    - [Data Mapping / Asset Valuation](../activities/remote_asset_valuation)
+    - [Threat Mapping](../activities/threat_identification)
+    - [Remote User Device Assessment](../methods/user_device_assessment)
 
     **From Process Mapping to Interviews**
 
