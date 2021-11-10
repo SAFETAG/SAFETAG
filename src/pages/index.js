@@ -236,7 +236,7 @@ function IndexPage({ data }) {
             </Trans></p>
             <p><Trans i18nKey="index-contact-2">
               For updates or suggestions for the framework, <a
-              href="https://github.com/SAFETAG/SAFETAG/issues">submit an
+              href="https://github.com/SAFETAG/SAFETAG/issues">please submit an
               issue</a>.
             </Trans></p>
           </InpageBodyInner>
