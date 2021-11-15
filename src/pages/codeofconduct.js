@@ -38,26 +38,26 @@ const CodeofconductPage = () => {
 
             <p><Trans i18nKey="coc-scop">The SAFETAG Community of Practice (SCoP) exists in both public and private groups, currently including a public Slack channel, the Internet Freedom Festival Mattermost, and the orgsec.community listserv.</Trans></p>
 
-            <li>
-                <ul><Trans i18nKey="coc-scopparameters-1">Community members are encouraged to be active - positively contributing / leading discussions on community channels, creating, curating, or peer-reviewing content or contributing to the issue queue. </Trans></ul>
-                <ul><Trans i18nKey="coc-scopparameters-2">Some SCoP members may have privacy concerns, and should join the community using a pseudonym they are comfortable with engaging online in both public and private spaces with.</Trans></ul>
-                <ul><Trans i18nKey="coc-scopparameters-3">Joining the community: An invitation link for joining the SAFETAG Slack can be obtained by emailing on info at safetag dot org; for joining the Internet Freedom Mattermost can be found at https://internetfreedomfestival.org/wiki/index.php/IFF_Mattermost.</Trans></ul>
-                <ul><Trans i18nKey="coc-scopparameters-4">The SCoP is responsible for adhering to the SAFETAG Code of Conduct, below</Trans></ul>
-            </li>
+            <ul>
+                <li><Trans i18nKey="coc-scopparameters-1">Community members are encouraged to be active - positively contributing / leading discussions on community channels, creating, curating, or peer-reviewing content or contributing to the issue queue. </Trans></li>
+                <li><Trans i18nKey="coc-scopparameters-2">Some SCoP members may have privacy concerns, and should join the community using a pseudonym they are comfortable with engaging online in both public and private spaces with.</Trans></li>
+                <li><Trans i18nKey="coc-scopparameters-3">Joining the community: An invitation link for joining the SAFETAG Slack can be obtained by emailing on info at safetag dot org; for joining the Internet Freedom Mattermost can be found at https://internetfreedomfestival.org/wiki/index.php/IFF_Mattermost.</Trans></li>
+                <li><Trans i18nKey="coc-scopparameters-4">The SCoP is responsible for adhering to the SAFETAG Code of Conduct, below</Trans></li>
+            </ul>
 
 
             <h1><Trans i18nKey="coc-coctitle">SAFETAG Code of Conduct</Trans></h1>
 
             <p><Trans i18nKey="coc-expectationsopen">Members of the SAFETAG community are expected to:</Trans></p>
 
-           <li>
-            <ul><Trans i18nKey="coc-expectations-1">Respect the auditees, their contexts (including the legal framework they operate within), and protect their privacy and security</Trans></ul>
-            <ul><Trans i18nKey="coc-expectations-2">Protect the identifying information and audit findings of your auditees, unless you have full, informed consent of the auditee -- and even then, exercise extreme care.</Trans></ul>
-            <ul><Trans i18nKey="coc-expectations-3">Never use your knowledge, skills and/or access to do harm against organizations or communities you are working with or your peer auditors through malice or neglect.</Trans></ul>
-            <ul><Trans i18nKey="coc-expectations-4">Minimize any conflict of interests through transparency in your contracting, reporting, and recommendations; e.g. if you were not hired initially to implement recommendations, suggest options other than yourself for implementation, and provide reporting that would enable that to be a success in every case.</Trans></ul>
-            <ul><Trans i18nKey="coc-expectations-5">Perform your job responsibly and well. Ask and consult with fellow members of the community.</Trans></ul>
-            <ul><Trans i18nKey="coc-expectations-6">Respect other members of the community as peers and promote a safe, inclusive, and harassment-free environment.</Trans></ul>
-           </li>
+           <ul>
+            <li><Trans i18nKey="coc-expectations-1">Respect the auditees, their contexts (including the legal framework they operate within), and protect their privacy and security</Trans></li>
+            <li><Trans i18nKey="coc-expectations-2">Protect the identifying information and audit findings of your auditees, unless you have full, informed consent of the auditee -- and even then, exercise extreme care.</Trans></li>
+            <li><Trans i18nKey="coc-expectations-3">Never use your knowledge, skills and/or access to do harm against organizations or communities you are working with or your peer auditors through malice or neglect.</Trans></li>
+            <li><Trans i18nKey="coc-expectations-4">Minimize any conflict of interests through transparency in your contracting, reporting, and recommendations; e.g. if you were not hired initially to implement recommendations, suggest options other than yourself for implementation, and provide reporting that would enable that to be a success in every case.</Trans></li>
+            <li><Trans i18nKey="coc-expectations-5">Perform your job responsibly and well. Ask and consult with fellow members of the community.</Trans></li>
+            <li><Trans i18nKey="coc-expectations-6">Respect other members of the community as peers and promote a safe, inclusive, and harassment-free environment.</Trans></li>
+           </ul>
 
           <h1><Trans i18nKey="coc-violationtitle">Code of Conduct Violations</Trans></h1>
 

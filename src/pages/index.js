@@ -213,7 +213,7 @@ function IndexPage({ data }) {
               referring to the SAFETAG wordmark.
             </Trans></p>
             <p><Trans i18nKey="index-license-4">
-              The SAFEETAG Community of Practice is goverend by the<Link to="/codeofconduct">SAFETAG Code of Conduct.</Link> 
+              The SAFEETAG Community of Practice is goverened by the <Link to="/codeofconduct">SAFETAG Code of Conduct.</Link> 
             </Trans></p>
           </InpageBodyInner>
         </InpageBody>
