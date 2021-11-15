@@ -345,6 +345,13 @@ class Node {
               fragment.text = fragment.text.replace(/[\r\n]\s*/g, " ")
             }
 
+            // reformat relative links if present
+            if (fragment.text.includes('](../')) {
+              // text.replace(/\]\(\.\.\//, `](/${i18n.language}/`)
+              fragment.text = fragment.text.replace(/[\r\n]\s*/g, " ")
+            }
+
+
             doc.text(fragment.text, options)
           } else {
             const options = this.setStyle(doc)
@@ -394,7 +401,17 @@ class Node {
 }
 
 // reads and renders a markdown/literate javascript file to the document
-const render = async (doc, markdownContent) => {
+const render = async (doc, markdownContent, lang) => {
+  // lang is only used to reformat relative links
+  if (markdownContent.includes('](../')) {
+    let prefix
+    if (lang == "en") {
+      prefix = `https://safetag.org/`
+    } else {
+      prefix = `https://safetag.org/${lang}/`
+    }
+    markdownContent = markdownContent.replace(/\]\(\.\.\//, `](${prefix}`)
+  }
   const tree = marked.lexer(markdownContent)
 
   const result = []
@@ -568,10 +585,10 @@ export async function prepareGuide(
     })
   }
 
-  return await generateGuide(customGuide.join("\n\n"), guideTitle, t)
+  return await generateGuide(customGuide.join("\n\n"), guideTitle, t, i18n.language)
 }
 
-export default async function generateGuide(md, guideTitle, t) {
+export default async function generateGuide(md, guideTitle, t, lang) {
   // Load styles
   await loadMarkdownStyles()
 
@@ -582,7 +599,7 @@ export default async function generateGuide(md, guideTitle, t) {
   const stream = doc.pipe(blobStream())
   const todaysDate = new Date().toISOString().slice(0, 10)
   // Add content
-  await render(doc, md)
+  await render(doc, md, lang)
 
   //Global Edits to All Pages (Header/Footer, etc)
   let pages = doc.bufferedPageRange();
