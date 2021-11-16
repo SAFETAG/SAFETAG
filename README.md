@@ -14,24 +14,9 @@ The site is developed via Gatsby, default instructions for which appear below.
 - Yarn or NPM
 
 
-## 🚀 Start Developing
+## Installing dependencies
 
-1.  Set Node.js version
-
-    Assuming you already have [nvm](https://github.com/nvm-sh/nvm) on your machine, this will install the version specified in `.nvmrc` file:
-
-    ```shell
-    nvm install
-    ```
-
-2.  Install dependencies
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    yarn install
-    ```
-
+Navigate into your site’s directory and start it up with `yarn install` or `npm install`.
 
 
 ## Building for local development
@@ -46,9 +31,7 @@ The site is built using GitHub actions, which take care of all the interfacing w
 
 Once you have your token, you will need to install the Transifex CLI command. On Debian/Ubuntu systems, this is available with `sudo apt install transifex-client`. On other platforms (including OSX), the command `sudo pip install transifex-client` should take care of it. See the [Transifex CLI repo](https://github.com/transifex/transifex-client/) for more details.
 
-As the final setup step, run `tx init` and paste your API token when asked.
-
-After installing the necessary project dependencies with `yarn install` or `npm install`, we are ready to build the project using the following commands:
+As the final setup step, run `tx init` and paste your API token when asked. Now, we are ready to build the project using the following commands:
 
 ```
 yarn extract
