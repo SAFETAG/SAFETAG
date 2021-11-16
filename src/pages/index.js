@@ -212,6 +212,9 @@ function IndexPage({ data }) {
               </Link> page for content attribution and a usage guide to
               referring to the SAFETAG wordmark.
             </Trans></p>
+            <p><Trans i18nKey="index-license-4">
+              The SAFEETAG Community of Practice is goverened by the <Link to="/codeofconduct">SAFETAG Code of Conduct.</Link> 
+            </Trans></p>
           </InpageBodyInner>
         </InpageBody>
 
