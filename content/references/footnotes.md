@@ -269,6 +269,10 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^device_encryption_by_os]:[Device Encryption By OS Type](#device-encryption-by-os)
 
+<!-- Testing Footnotes -->
+
+[^footnotetest1]:["The happiest place on the internet"](https://www.youtube.com/watch?v=6WpMlwVwydo)
+
 <!-- Appendices -->
 
 [^travel_kit_appendix]:[APPENDIX A - Auditor travel kit checklist](#appendix-a)
