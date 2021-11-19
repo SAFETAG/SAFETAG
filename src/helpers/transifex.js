@@ -19,10 +19,7 @@ meta = false;
 function writeFile( relPath, strings, locale, callback ) {
   callback = callback || function(){};
   var absPath = path.join(dirName, relPath);
-  mkpath(path.dirname(absPath), function( err ) {
-    if ( err ) {
-      return callback( err );
-    }
+  mkpath(path.dirname(absPath), function( ) {
     fs.writeFile(absPath, strings, { encoding: "utf-8" }, callback);
   });
 }
