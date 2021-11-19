@@ -75,7 +75,7 @@ outputs: >
 
   * Any Visas or paperwork needed, plus travel arragements (tickets, hotels) for auditor travel.
 
-  * A travel kit. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep],[^footnotetest1]
+  * A travel kit. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_provided: []
 title: Preparation
 method_icon: /img/preparation_icon.png
