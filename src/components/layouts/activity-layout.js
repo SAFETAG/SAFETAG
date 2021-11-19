@@ -286,7 +286,7 @@ function ActivityLayout({ data }) {
             </InpageInnerColumns>
           )}
 
-          {footnotes.length && (
+          {footnotes.length ? (
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
@@ -305,7 +305,7 @@ function ActivityLayout({ data }) {
                 </SquareUl>
               </article>
             </InpageInnerColumns>
-          )}
+          ) : ""}
 
         </InpageBody>
       </ActivityPage>

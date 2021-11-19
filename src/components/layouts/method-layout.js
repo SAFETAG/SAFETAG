@@ -262,7 +262,7 @@ function MethodLayout({ data, location }) {
             </section>
           </InpageInnerColumns>
 
-          {footnotes.length && (
+          {footnotes.length ? (
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
@@ -281,7 +281,7 @@ function MethodLayout({ data, location }) {
                 </SquareUl>
               </article>
             </InpageInnerColumns>
-          )}
+          ) : ""}
 
           <InpageInnerColumns columnLayout="2:1">
             <section>
