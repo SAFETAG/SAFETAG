@@ -127,6 +127,7 @@ export const query = graphql`
             summary
             position
             approaches
+            short_summary
           }
         }
       }

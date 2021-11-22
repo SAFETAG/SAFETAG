@@ -82,9 +82,9 @@ function MethodLayout({ data, location }) {
       activityNodes[activity.node.frontmatter.title] = {
         slug: activity.node.fields.slug,
         approaches: activity.node.frontmatter.approaches,
-        excerpt:
-          activity.node.fields.frontmattermd.summary
-            ?.excerpt,
+        excerpt: activity.node.frontmatter.short_summary ?
+          activity.node.frontmatter.short_summary
+          : activity.node.fields.frontmattermd.summary?.excerpt,
       }
     }
   )
@@ -360,6 +360,7 @@ export const query = graphql`
             title
             summary
             approaches
+            short_summary
           }
         }
       }
