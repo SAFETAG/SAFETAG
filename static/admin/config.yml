@@ -21,6 +21,22 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Tools"
+    label_singular: "Tool"
+    name: "tools"
+    create: true
+    folder: "content/tools"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Short summary",
+          name: "short_summary",
+          widget: "string",
+          pattern: ['^.{1,125}$', "Cannot be longer than 125 characters"]
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "activities"
     label: "Activities"
     label_singular: "Activity"

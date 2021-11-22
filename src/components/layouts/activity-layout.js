@@ -259,7 +259,7 @@ function ActivityLayout({ data }) {
                           </CardHeading>
                           <div
                             dangerouslySetInnerHTML={{
-                              __html: toolNodes[tool] ? toolNodes[tool].short_summary.html : '',
+                              __html: toolNodes[tool] ? toolNodes[tool].short_summary : '',
                             }}
                           ></div>
                         </ToolCard>
