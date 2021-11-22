@@ -288,7 +288,7 @@ function ActivityLayout({ data }) {
 
           {footnotes.length ? (
             <InpageInnerColumns columnLayout="3:1">
-              <article>
+              <article id="footnotes">
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-footnotes">Footnotes</Trans>
                 </InpageTitle>

@@ -146,13 +146,13 @@ function MethodLayout({ data, location }) {
                 <Trans i18nKey="method-title-summary">Summary</Trans>
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: frontmattermd.summary.html }}
+                dangerouslySetInnerHTML={{ __html: sections.summary.html }}
               ></div>
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="method-title-purpose">Purpose</Trans>
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: frontmattermd.purpose.html }}
+                dangerouslySetInnerHTML={{ __html: sections.purpose.html }}
               ></div>
             </MethodIntro>
             <MethodMeta>
@@ -182,7 +182,7 @@ function MethodLayout({ data, location }) {
               </InpageTitle>
               <SquareUl
                 dangerouslySetInnerHTML={{
-                  __html: frontmattermd.guiding_questions.html,
+                  __html: sections.guiding_questions.html,
                 }}
               ></SquareUl>
             </section>
@@ -194,17 +194,17 @@ function MethodLayout({ data, location }) {
                 <CardHeading><Trans i18nKey="method-title-opsec">Operational Security</Trans></CardHeading>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: frontmattermd.operational_security.html,
+                    __html: sections.operational_security.html,
                   }}
                 ></div>
               </Card>
             )}
-            {sections.preparation && (
+            {sections.preparation.html && (
               <Card border="base">
                 <CardHeading><Trans i18nKey="method-title-prep">Preparation</Trans></CardHeading>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: frontmattermd.preparation.html,
+                    __html: sections.preparation.html,
                   }}
                 ></SquareUl>
               </Card>
@@ -219,7 +219,7 @@ function MethodLayout({ data, location }) {
                   </InpageTitle>
                   <SquareUl
                     dangerouslySetInnerHTML={{
-                      __html: frontmattermd.outputs.html,
+                      __html: sections.outputs.html,
                     }}
                   ></SquareUl>
                 </>
@@ -264,7 +264,7 @@ function MethodLayout({ data, location }) {
 
           {footnotes.length ? (
             <InpageInnerColumns columnLayout="3:1">
-              <article>
+              <article id="footnotes">
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-footnotes">Footnotes</Trans>
                 </InpageTitle>
