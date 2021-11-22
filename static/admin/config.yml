@@ -102,6 +102,12 @@ collections:
           required: true,
         }
       - {
+          label: "Short summary",
+          name: "short_summary",
+          widget: "string",
+          pattern: ['^.{1,125}$', "Cannot be longer than 125 characters"]
+        }
+      - {
           label: "Overview",
           name: "overview",
           widget: "markdown",
@@ -197,6 +203,12 @@ collections:
           name: "summary",
           widget: "markdown",
           required: true,
+        }
+      - {
+          label: "Short summary",
+          name: "short_summary",
+          widget: "string",
+          pattern: ['^.{1,125}$', "Cannot be longer than 125 characters"]
         }
       - {
           label: "Purpose",
