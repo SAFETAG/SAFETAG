@@ -4,6 +4,8 @@ title: footnotes
 
 <!-- Penetration/Security/Risk Testing Standards / Guides -->
 
+[^testfootnote2]:[testingfootnote here](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
+
 [^NIST_SP_800-115]:[NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
 [^pen_testing_systematic]:[Penetration Testing - A Systematic Approach](http://www.infosecwriters.com/text_resources/pdf/PenTest_MSaindane.pdf)
