@@ -4,16 +4,20 @@ var Transifex   = require("transifex"),
     fs          = require('fs'),
     mkpath      = require('mkpath');
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 
 var projectName = "safetag-overview"
 var dirName = "locales/"
 var categoryName = 'site-strings'
+var transifexOptions = {
+    project_slug: projectName,
+    credential: `${process.env.TRANSIFEX_USER}:${process.env.TRANSIFEX_PASSWORD}`,
+    category: categoryName,
+    dir: dirName,
+  }
 
-var source_language = false,
-meta = false;
+var source_language = false
+var transifex = new Transifex(transifexOptions);
 
 // write files by the given path and locale
 function writeFile( relPath, strings, locale, callback ) {
@@ -29,9 +33,28 @@ function failed(err) {
   process.exit(1);
 }
 
+function fetchResource(resource, language) {
+  // Download the file for the specified locale
+  transifex.translationInstanceMethod(projectName, resource.slug, language,
+    function(err, fileContent, type) {
+      if (err) {
+        throw new Error(err);
+      }
+      var filename = path.join(language, resource.name + "." + type);
+      filename = filename.replace(/_(activities|authors|guide_sections|methods|skills|references|approaches|infos|tools|remote-options)_/, '/$1/')
+      // Postprocess the Transifex-delivered content to avoid errors
+      fileContent = fileContent.replace(/\npurpose: \n/, '\npurpose: ')
+      fileContent = fileContent.replace(/\nsummary: \n/, '\nsummary: ')
+      writeFile(filename, fileContent, function( err ) {
+        if (err) {
+          throw new Error(err);
+        }
+      });
+  });
+}
+
 function importFromTransifex(options) {
   // Retrieve all the data e.g. resource names, category names
-  var transifex = new Transifex(options);
   transifex.resourcesSetMethod(options.project_slug, function(error, data) {
     if ( error ) {
       failed(error);
@@ -53,80 +76,32 @@ function importFromTransifex(options) {
         }
       }
 
-      // We are going to iterate through all the languages first before calling the function
-      var wait = languages.teams.length;
-
-      // Check if there is more than one resource with the same category
-      /*
-      var resources = data.filter(function(v) {
-        if(v.categories !== null) {
-          if(v.categories.indexOf(categoryName) !== -1) {
-            return true;
-          }
-        }
-      });
-      */
       var resources = data
-
       if(!resources.length) {
         failed("Error: Please check your category name");
       }
 
-      var i = resources.length - 1;
+      var resourceCount = {}
+      languages.teams.forEach(function(language) {
+        resourceCount[language] = 0
+      })
       resources.forEach(function(resource) {
-        if(meta) {
-          transifex.statisticsMethods(projectName, resource.slug, function(err, data) {
-            // Write each file with the given filename and content.
-            Object.keys(data).forEach(function(language){
-              writeFile(path.join(language, "meta-" + resource.name + ".json"), JSON.stringify(data[language], null, 2), function( err ) {
-                if (err) {
-                  throw new Error(err);
-                }
-              });
-            });
-          });
-        }
-
         languages.teams.forEach(function(language) {
-          // Request the file for the specified locale then write the file
-          transifex.translationInstanceMethod(projectName, resource.slug, language,
-            function(err, fileContent, type) {
-              if (err) {
-                throw new Error(err);
-              }
-              var filename = path.join(language, resource.name + "." + type);
-              filename = filename.replace(/_(activities|authors|guide_sections|methods|skills|references|approaches|infos|tools|remote-options)_/, '/$1/')
-              wait--;
-              // Postprocess the Transifex-delivered content to avoid errors
-              fileContent = fileContent.replace(/\npurpose: \n/, '\npurpose: ')
-              fileContent = fileContent.replace(/\nsummary: \n/, '\nsummary: ')
-              writeFile(filename, fileContent, function( err ) {
-                if (err) {
-                  throw new Error(err);
-                }
-              });
-              if(wait === 0) {
-                i--;
-                wait = languages.teams.length;
-                if(i < 0) {
-                  console.log("Transifex: Download completed");
-                  process.exit(0);
-                }
-              }
-          });
-        });
-      });
-    });
-  });
+          fetchResource(resource, language)
+          resourceCount[language]++
+        })
+      })
+      languages.teams.forEach(function(language) {
+        if (resourceCount[language] != resources.length) {
+          console.log(`ERROR: Resource count for language "${language}" does not match (has ${resourceCount[language]}, should have ${resources.length})`)
+        }
+      })
+    })
+  })
 }
 
 function main() {
-  importFromTransifex({
-    project_slug: projectName,
-    credential: `${process.env.TRANSIFEX_USER}:${process.env.TRANSIFEX_PASSWORD}`,
-    category: categoryName,
-    dir: dirName,
-  });
+  importFromTransifex(transifexOptions);
 }
 
 if (!module.parent) {
