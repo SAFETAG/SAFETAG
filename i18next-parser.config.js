@@ -1,6 +1,9 @@
 // i18next-parser.config.js
 
 module.exports = {
+  locales: ['en', 'fr'],
+  // An array of the locales in your applications
+
   contextSeparator: '_',
   // Key separator used in your translation keys
 
@@ -43,9 +46,6 @@ module.exports = {
 
   lineEnding: 'auto',
   // Control the line ending. See options at https://github.com/ryanve/eol
-
-  locales: ['en', 'fr'],
-  // An array of the locales in your applications
 
   namespaceSeparator: ':',
   // Namespace separator used in your translation keys

@@ -13,6 +13,13 @@ The site is developed via Gatsby, default instructions for which appear below.
 - Node 12.x
 - Yarn or NPM
 
+## Project structure
+
+The Safetag site is running on [Gatsby](https://www.gatsbyjs.com), employing
+[PDFkit](https://github.com/foliojs/pdfkit) for generating print PDF's, and
+relying on [Transifex](https://transifex.com) and
+[i18next-parser](https://github.com/i18next/i18next-parser) for handling
+translations.
 
 ## Installing dependencies
 
@@ -44,15 +51,68 @@ If you're using npm instead of yarn, just replace the yarn command with `npm run
 
 If everything runs without error, you can go on working on the site using `yarn develop` or `npm run develop` to run a local webserver accessible through `http://localhost:8000`.
 
+
+
+
+
 ## Working with translations
 
-The project is set up for easy translation of strings. Contributing to new and existing translations can be done at Transifex.
+The project is set up for easy translation of strings. Contributing to new and
+existing translations can be done at Transifex.
 
-Once new content, pages or templates are added, it's important to mark strings as translatable so that they show up in the Transifex interface.
+Adding new languages on Transifex will create a new resource list with English
+language strings, which can then be translated on the Transifex site.
 
-### Strings in code
+The translation status set in Transifex (Reviewed, Proofread) has no effect on
+what gets included in the site. New translations can be integrated by activating
+each language on the Safetag site config, as the next section explains.
 
-In order to mark a string as translatable in the project code (say, in a JS variable), you'll only need to wrap it inside a `t()` object, so that
+
+### Activating and deactivating languages
+
+Languages can be added and worked on directly on Transifex. In order to make
+them visible in the Safetag website, the code for the new language needs to be
+added to two files:
+
+In `gatsby-config.js`, look for the following section and alter the `languages`
+array accordingly:
+
+```
+options: {
+  localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+  languages: [`en`, `fr`],
+  redirect: false,
+  (...)
+```
+
+And in `i18next-parser.config.js`, you'll find this line near the beginning of
+the file:
+
+```
+locales: ['en', 'fr'],
+```
+
+which should be edited in the same way.
+
+You might notice that every build will synchronise the local translation files,
+including languages that are not yet active, but this won't affect the languages
+displayed to the user on the site until they are activated by editing the two
+files above.
+
+### Marking text for translation
+
+Once new content, pages or templates are added, it's important to mark strings
+as translatable so that they show up in the Transifex interface.
+
+After marking new strings, running `yarn extract` and `yarn transifex-push`
+will make them available on Transifex, where they can be edited. To update
+the local copy with the latest version of the translations, run `yarn
+transifex-pull`.
+
+#### Strings in code
+
+In order to mark a string as translatable in the project code (say, in a JS
+variable), you'll only need to wrap it inside a `t()` object, so that
 
 ```
 let variable = "value"
@@ -64,12 +124,17 @@ becomes
 let variable = t("variable-value-string", "value")
 ```
 
-The first parameter to `t` is the **key** of the string to use as an index for Transifex, and the only concern here is that it's a unique string. The second parameter is the English language string to be translated.
+The first parameter to `t` is the **key** of the string to use as an index for
+Transifex, and the only concern here is that it's a unique string. The second
+parameter is the English language string to be translated.
 
 
-### Strings in HTML/JSX templates
+#### Strings in HTML/JSX templates
 
-There are templates inside the .js files for pages like the index or the guide builder. These templates look and behave like HTML, and have a specific procedure for marking translatable strings using the Trans tag. Using this example:
+There are templates inside the .js files for pages like the index or the guide
+builder. These templates look and behave like HTML, and have a specific
+procedure for marking translatable strings using the Trans tag. Using this
+example:
 
 ```
 <ul>
@@ -79,7 +144,7 @@ There are templates inside the .js files for pages like the index or the guide b
 </ul>
 ```
 
-We'd mark it thus:
+We'd mark it like this:
 
 ```
 <ul>
@@ -87,62 +152,15 @@ We'd mark it thus:
   <li><Trans i18nKey="nav-blog">Blog</Trans></li>
   <li><Trans i18nKey="nav-contact">Contact</Trans></li>
 </ul>
-
-
 ```
 
 When marking up text using the Trans tag, keep in mind the following details:
-- Links can be included inside Trans tags, but including any other element should be actively avoided. Notice how Trans is inside the `<li>` elements and not outside.
-- The `i18nKey` sets the translation key (see the `t()` explanation above)
+- Links can be included inside Trans tags, but including any other element
+  should be actively avoided. Notice how Trans is inside the `<li>` elements and
+  not outside.
+- The `i18nKey` attribute sets the translation key (see the `t()` explanation
+  above)
 
-
-### Markdown files
-The Markdown files inside the `content/` directory need no further work, as they're automatically pushed to Transifex on build.
-
-
-
-
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+#### Markdown files
+The Markdown files inside the `content/` directory need no further work, as
+they're automatically pushed to Transifex on build.
