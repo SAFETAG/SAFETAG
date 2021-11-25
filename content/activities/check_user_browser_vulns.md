@@ -1,23 +1,22 @@
 ---
-title: Check Browser and Plugin Vulnerabilities
+position: 50
 approaches:
   - Technical
-position: 50
 authors:
   - SAFETAG
+skills_trained: []
 remote_options:
   - with-support
-skills_required: []
-skills_trained: []
+time_required_minutes: 30
+organization_size_under: 25
 summary: |
   Though modern browsers are better at self-updating, and the prevalence of
   powerful plugins like flash and java are slowly declining, it is valuable to
-  ensure that the browsers in use have updated plugins and are themselves
+  ensure that the browsers in-use have updated plugins and are themselves
   updated.
-overview: ''
+short_summary: Ensure that browsers in-use have updated plugins and are themselves updated.
 materials_needed: |
   * Metasploit
-considerations: ''
 walk_through: |
   ###### Outdated Java browser plugins
 
@@ -81,6 +80,11 @@ walk_through: |
 
   Figure 1: Attacker in control of the victim’s computer through a remote
   command shell
+considerations: ""
+title: Check Browser and Plugin Vulnerabilities
+skills_required: []
+overview: Use direct access, interviewing, walk-throughs, or penetration testing
+  methods to identify vulnerable browsers.
 recommendations: |
   **Sample Recommendation for outdated Java**
 
@@ -101,6 +105,4 @@ recommendations: |
   organization’s Java installations should be updated to the latest version.
   This can be troublesome, as (unlike the Windows operating system itself) Java
   plugins sometimes require user input before they will install updates.
-organization_size_under: 25
-time_required_minutes: 30
 ---
