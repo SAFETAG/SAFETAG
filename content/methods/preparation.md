@@ -1,10 +1,10 @@
 ---
-short_summary: Audit preparation activities which ensure all components of the
-  audit can be conducted safely, effectively, and within your time-frame.
 summary: |
   This component consists of audit preparation activities that are needed to
   ensure the components of the audit are able to be conducted effectively and
   within the on-site time-frame.
+short_summary: Audit preparation activities which ensure all components of the
+  audit can be conducted safely, effectively, and within your time-frame.
 the_flow_of_information: "![](/img/preparation.png)"
 guiding_questions: >
   * Does the organization have existing digital security practices or has it
@@ -32,7 +32,6 @@ references:
   - Preparation
   - Facilitation Preparation
   - Creating Agreements and Rules of Engagement
-  - Password Dictionary Creation
   - Other Pre-Engagement Resources
   - Incident Handling Resources
   - Legal Considerations
@@ -62,8 +61,6 @@ outputs: >
   and points of contact.
 
   * Systems updated and ready for testing.
-
-  * A custom password dictionary [^password_dictionary_resources] (if password cracking activities expected).
 
   * Risks to host and auditor conducting a SAFETAG audit.
 
