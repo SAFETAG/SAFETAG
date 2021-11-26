@@ -34,7 +34,7 @@ collections:
           label: "Short summary",
           name: "short_summary",
           widget: "string",
-          pattern: ['^.{1,125}$', "Cannot be longer than 125 characters"]
+          pattern: ['^.{1,160}$', "Cannot be longer than 160 characters"]
         }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "activities"
@@ -121,7 +121,7 @@ collections:
           label: "Short summary",
           name: "short_summary",
           widget: "string",
-          pattern: ['^.{1,125}$', "Cannot be longer than 125 characters"]
+          pattern: ['^.{1,160}$', "Cannot be longer than 160 characters"]
         }
       - {
           label: "Overview",
@@ -224,7 +224,7 @@ collections:
           label: "Short summary",
           name: "short_summary",
           widget: "string",
-          pattern: ['^.{1,125}$', "Cannot be longer than 125 characters"]
+          pattern: ['^.{1,160}$', "Cannot be longer than 160 characters"]
         }
       - {
           label: "Purpose",
