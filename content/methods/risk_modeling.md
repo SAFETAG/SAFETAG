@@ -24,7 +24,7 @@ activities:
   - Sensitive Data
   - Self Doxing
 references:
-  - risk_modeling
+  - Risk Modeling
   - Threat Modeling Resources (General)
   - Risk Assessment Activities
   - Threat Assessment Activities

@@ -35,7 +35,7 @@ activities:
   - Guided Tour
   - Check Browser and Plugin Vulnerabilities
 references:
-  - device_assessment
+  - Device Assessment
   - Password Security
   - Privilege Separation Across OS
   - Examining Firewalls Across OS
@@ -43,7 +43,7 @@ references:
   - Device Encryption By OS
   - Anti-Virus Updates
   - Identifying Odd/One-Off Services
-  - physical_assessment
+  - Physical Assessment
 operational_security: >
   * Treat the information learned/collected with the utmost sensitivity and
   security. Physical notes should be destroyed immediately after use and digital

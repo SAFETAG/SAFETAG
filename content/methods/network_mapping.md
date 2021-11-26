@@ -24,7 +24,7 @@ activities:
   - Monitor Open Wireless Traffic
 references:
   - Network Mapping Methods
-  - network_access
+  - Network Access
   - Network Discovery Methods
   - Nmap Scanning
 outputs: |

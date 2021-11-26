@@ -4,7 +4,7 @@ authors:
 info_provided: []
 info_required: []
 references:
-  - debrief
+  - Debrief
   - Facilitation Preparation
 title: Debrief
 method_icon: "/img/debrief_icon.png"

@@ -25,7 +25,7 @@ activities:
   - Guided Tour
   - Check Browser and Plugin Vulnerabilities
 references:
-  - device_assessment
+  - Device Assessment
   - Password Security
   - Privilege Separation Across OS
   - Examining Firewalls Across OS

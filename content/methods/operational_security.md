@@ -13,8 +13,7 @@ authors:
 info_provided: []
 info_required: []
 references:
-  - operational_security
-  - operational_security
+  - Operational Security
 title: Physical and Operational Security
 method_icon: "/img/physical_assessment_icon.png"
 summary: |

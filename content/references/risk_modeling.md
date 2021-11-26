@@ -1,5 +1,5 @@
 ---
-title: risk_modeling
+title: Risk Modeling
 ---
 
   * *Overview:* ["An Introduction to Threat Modeling"](https://ssd.eff.org/en/module/introduction-threat-modeling) (Surveillance Self-Defense)

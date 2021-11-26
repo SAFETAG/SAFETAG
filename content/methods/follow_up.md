@@ -20,8 +20,8 @@ activities:
   - Long-Term Follow-up
   - Staff Feedback Survey
 references:
-  - follow_up
-  - resource_identification
+  - Follow Up
+  - Resource Identification
   - Resource Lists
   - Possible Financial Resources for Host Organizations
   - Digital Security Trainings

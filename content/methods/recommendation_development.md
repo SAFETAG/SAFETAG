@@ -15,7 +15,7 @@ activities:
   - Resource Identification
   - Report Creation
 references:
-  - resource_identification
+  - Resource Identification
   - Digital Security Guides
   - Digital Security Guides
   - Possible Financial Resources for Host Organizations
@@ -23,7 +23,7 @@ references:
   - Emergency Resources
   - Resource Lists
   - Recommendation Development
-  - identifying_recommendations
+  - Identifying Recommendations
 operational_security: |
   * Treat the data and analyses of this step with the utmost security.
   * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization's country, or is known to surveil.

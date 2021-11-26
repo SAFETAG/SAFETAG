@@ -19,8 +19,8 @@ activities:
   - Guiding Questions for High-Risk Organisations
   - Capacity Assessment Checklist
 references:
-  - capacity_assessment
-  - interviews
+  - Capacity Assessment
+  - Interviews
   - Background Interview Approaches
 operational_security: |
   * You may be interacting with many staff members. Avoid reporting the comments
