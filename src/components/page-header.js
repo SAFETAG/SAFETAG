@@ -214,6 +214,7 @@ const LanguageSelect = styled(ReactLanguageSelect)`
 
 
 const GlobalHeader = () => {
+  const { languages } = useI18next();
   useTranslation('site', { useSuspense: false });
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [scrolled, setScrolled] = useState(window.scrollY)
@@ -347,15 +348,17 @@ const GlobalHeader = () => {
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
+              {languages.length > 1 ?
               <li>
                 <LanguageSelect
-                   languages={["en", "fr", "es"]}
+                   languages={languages}
                    placeholder=""
                    onSelect={onSelectLanguage}
                    ref={(el) => langSelector = el}
                    scrolled={scrolled}
                 />
               </li>
+              : ""}
             </GlobalMenu>
           )}
         </PageNav>
