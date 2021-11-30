@@ -134,7 +134,7 @@ function IndexPage({ data }) {
               </ul>
             </SquareUl>
             <div>
-              <img src="/img/activities_flow.svg" style={{ 'max-width': '100%' }}/>
+              <img src="/img/activities_flow.svg" style={{ maxWidth: '100%' }}/>
             </div>
           </InpageInnerColumns>
         </InpageBody>
@@ -213,7 +213,7 @@ function IndexPage({ data }) {
               referring to the SAFETAG wordmark.
             </Trans></p>
             <p><Trans i18nKey="index-license-4">
-              The SAFEETAG Community of Practice is goverened by the <Link to="/codeofconduct">SAFETAG Code of Conduct.</Link> 
+              The SAFETAG Community of Practice is governed by the <Link to="/codeofconduct">SAFETAG Code of Conduct.</Link>
             </Trans></p>
           </InpageBodyInner>
         </InpageBody>
