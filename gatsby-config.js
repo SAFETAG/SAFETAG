@@ -55,7 +55,7 @@ module.exports = {
         redirect: false,
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://dev.safetag.org/`,
+        siteUrl: `https://safetag.org/`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
