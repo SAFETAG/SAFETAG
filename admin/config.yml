@@ -2,7 +2,7 @@ backend:
   name: github
   repo: safetag/safetag
   open_authoring: true
-  branch: main
+  branch: development
   site_domain: safetag.org
 
 media_folder: static/img
@@ -12,58 +12,31 @@ publish_mode: editorial_workflow
 
 collections:
   - label: "Guide Sections"
+    label_singular: "Section"
     name: "guide_sections"
-    files:
-      - label: "Introduction"
-        name: "introduction"
-        file: "content/guide_sections/introduction.md"
-        fields:
-          - {
-              label: "Body",
-              name: "body",
-              widget: "markdown",
-              description: "Markdown content to be included in guide beginning.",
-            }
-      - label: "Section 1 (Guide Information)"
-        name: "section_1"
-        file: "content/guide_sections/section_1.md"
-        fields:
-          - {
-              label: "Body",
-              name: "body",
-              widget: "markdown",
-              description: "First section, including general information about SAFETAG and the guide.",
-            }
-      - label: "Section 3 (Reporting)"
-        name: "section_3"
-        file: "content/guide_sections/section_3.md"
-        fields:
-          - {
-              label: "Body",
-              name: "body",
-              widget: "markdown",
-              description: "Third section, included after selected methods.",
-            }
-      - label: "Section 4 (Appendices)"
-        name: "section_4"
-        file: "content/guide_sections/section_4.md"
-        fields:
-          - {
-              label: "Body",
-              name: "body",
-              widget: "markdown",
-              description: "Fourth section, appendices.",
-            }
-      - label: "Section 5 (Footnotes)"
-        name: "section_5"
-        file: "content/guide_sections/section_5.md"
-        fields:
-          - {
-              label: "Body",
-              name: "body",
-              widget: "markdown",
-              description: "Fourth section, footnotes.",
-            }
+    create: true
+    folder: "content/guide_sections"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Tools"
+    label_singular: "Tool"
+    name: "tools"
+    create: true
+    folder: "content/tools"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Short summary",
+          name: "short_summary",
+          widget: "string",
+          pattern: ['^.{1,160}$', "Cannot be longer than 160 characters"]
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "activities"
     label: "Activities"
     label_singular: "Activity"
@@ -73,6 +46,12 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Position",
+          name: "position",
+          widget: "number",
+          required: true,
+        }
       - {
           label: "Approaches",
           name: "approaches",
@@ -137,6 +116,12 @@ collections:
           name: "summary",
           widget: "markdown",
           required: true,
+        }
+      - {
+          label: "Short summary",
+          name: "short_summary",
+          widget: "string",
+          pattern: ['^.{1,160}$', "Cannot be longer than 160 characters"]
         }
       - {
           label: "Overview",
@@ -234,6 +219,12 @@ collections:
           name: "summary",
           widget: "markdown",
           required: true,
+        }
+      - {
+          label: "Short summary",
+          name: "short_summary",
+          widget: "string",
+          pattern: ['^.{1,160}$', "Cannot be longer than 160 characters"]
         }
       - {
           label: "Purpose",
