@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, Link, withPrefix } from "gatsby"
+import { graphql } from "gatsby"
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
-import mapValues from "lodash.mapvalues"
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
@@ -20,6 +20,8 @@ import MoreLink from "../../styles/button/more-link"
 import Dl, { SquareUl } from "../../styles/type/lists"
 import media from "../../styles/utils/media-queries"
 import Card, { CardHeading, CardList } from "../../styles/card"
+
+import { loadAllFootnotes, processSections } from "../../helpers/footnotes.js"
 
 const MethodHeadline = styled(InpageHeadline)`
   ${media.mediumUp`
@@ -68,20 +70,23 @@ const ActivityCard = styled(Card)`
 `
 
 function MethodLayout({ data, location }) {
+  const { t, i18n } = useTranslation('site', { useSuspense: false })
   const frontmatter = data.method.frontmatter
   const frontmattermd = data.method.fields.frontmattermd
 
   // creates an object with activity names as keys and activity slugs as values
-  let activities = data.activities.edges
+  const activities = data.activities.edges
   const activityNodes = {}
   activities.forEach(
-    activity =>
-      (activityNodes[activity.node.childMarkdownRemark.frontmatter.title] = {
+    activity => {
+      activityNodes[activity.node.frontmatter.title] = {
         slug: activity.node.fields.slug,
-        excerpt:
-          activity.node.childMarkdownRemark.fields.frontmattermd.summary
-            ?.excerpt,
-      })
+        approaches: activity.node.frontmatter.approaches,
+        excerpt: activity.node.frontmatter.short_summary ?
+          activity.node.frontmatter.short_summary
+          : activity.node.fields.frontmattermd.summary?.excerpt,
+      }
+    }
   )
 
   // creates an object with reference names as keys and reference slugs as values
@@ -89,9 +94,20 @@ function MethodLayout({ data, location }) {
   const referenceNodes = {}
   references.forEach(
     reference =>
-      (referenceNodes[reference.node.childMarkdownRemark.frontmatter.title] = {
-        title: reference.node.childMarkdownRemark.frontmatter.title,
-        html: reference.node.childMarkdownRemark.html,
+      (referenceNodes[reference.node.frontmatter.title] = {
+        title: reference.node.frontmatter.title,
+        html: reference.node.html,
+      })
+  )
+
+  // the same for approaches
+  let approaches = data.approaches.edges
+  const approachNodes = {}
+  approaches.forEach(
+    approach =>
+      (approachNodes[approach.node.frontmatter.title] = {
+        title: approach.node.frontmatter.title,
+        icon: `/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`
       })
   )
 
@@ -99,16 +115,9 @@ function MethodLayout({ data, location }) {
   let prevPath = location.state && location.state.prevPath || ""
   let prevPage = location.state && location.state.prevPage || ""
 
-  // Fix images URL by adding app root url with prefix
-  const sections = mapValues(frontmatter, section => {
-    if (section && section.html) {
-      return section.html.replace(
-        /<img src="\/img/g,
-        `<img src="${withPrefix("/img")}`
-      )
-    }
-    return section
-  })
+  // load and integrate footnotes
+  const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
+  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
 
   return (
     <GlobalLayout>
@@ -125,7 +134,7 @@ function MethodLayout({ data, location }) {
                     : "/#allMethods"
                 }
               >
-                Back to {prevPath ? "guide builder" : "all methods"}
+                <Trans i18nKey="method-back">Back to</Trans> {prevPath ? t("guide builder") : t("all methods")}
               </MoreLink>
               <InpageTitle size="jumbo" variation="primary">
                 {frontmatter.title}
@@ -134,32 +143,33 @@ function MethodLayout({ data, location }) {
             </MethodHeadline>
             <MethodIntro>
               <InpageTitle size="large" withDeco>
-                Summary
+                <Trans i18nKey="method-title-summary">Summary</Trans>
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: frontmattermd.summary.html }}
+                dangerouslySetInnerHTML={{ __html: sections.summary.html }}
               ></div>
               <InpageTitle size="large" withDeco>
-                Purpose
+                <Trans i18nKey="method-title-purpose">Purpose</Trans>
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: frontmattermd.purpose.html }}
+                dangerouslySetInnerHTML={{ __html: sections.purpose.html }}
               ></div>
             </MethodIntro>
             <MethodMeta>
               <Dl boldDesc>
-                <dt>Author</dt>
+                <Trans i18nKey="method-title-author">Author</Trans>
                 {frontmatter.authors.map(authr => (
                   <dd key={authr}>{authr}</dd>
                 ))}
-                {/* {frontmatter.info_provided !== "" && (
-                  <>
-                    <dt>Info Provided</dt>
-                    <dd>{frontmatter.info_provided}</dd>
-                    <dt>Info Required</dt>
-                    <dd>{frontmatter.required}</dd>
-                  </>
-                )}*/}
+
+                {frontmatter.activities ? <dt><Trans i18nKey="method-title-act">Included activities</Trans></dt> : ""}
+                {(frontmatter.activities || []).map((activity) => (
+                  <dd key={activity}>
+                    <a href="#activities">
+                      {activity}
+                    </a>
+                  </dd>
+                ))}
               </Dl>
             </MethodMeta>
           </InpageInnerColumns>
@@ -167,24 +177,12 @@ function MethodLayout({ data, location }) {
         <InpageBody>
           <InpageInnerColumns columnLayout="2:1">
             <section>
-              {/*{sections.the_flow_of_information && (
-                <>
-                  <InpageTitle size="large" withDeco>
-                    The Flow of Information
-                  </InpageTitle>
-                  <SquareUl
-                    dangerouslySetInnerHTML={{
-                      __html: sections.the_flow_of_information,
-                    }}
-                  ></SquareUl>
-                </>
-                  )}*/}
               <InpageTitle size="large" withDeco>
-                Guiding Questions
+                <Trans i18nKey="method-title-questions">Guiding Questions</Trans>
               </InpageTitle>
               <SquareUl
                 dangerouslySetInnerHTML={{
-                  __html: frontmattermd.guiding_questions.html,
+                  __html: sections.guiding_questions.html,
                 }}
               ></SquareUl>
             </section>
@@ -193,20 +191,20 @@ function MethodLayout({ data, location }) {
           <InpageInnerColumns columnLayout="1:1">
             {sections.operational_security && (
               <Card border="base">
-                <CardHeading>Operational Security</CardHeading>
+                <CardHeading><Trans i18nKey="method-title-opsec">Operational Security</Trans></CardHeading>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: frontmattermd.operational_security.html,
+                    __html: sections.operational_security.html,
                   }}
                 ></div>
               </Card>
             )}
-            {sections.preparation && (
+            {sections.preparation.html && (
               <Card border="base">
-                <CardHeading>Preparation</CardHeading>
+                <CardHeading><Trans i18nKey="method-title-prep">Preparation</Trans></CardHeading>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: frontmattermd.preparation.html,
+                    __html: sections.preparation.html,
                   }}
                 ></SquareUl>
               </Card>
@@ -217,11 +215,11 @@ function MethodLayout({ data, location }) {
               {sections.outputs && (
                 <>
                   <InpageTitle size="large" withDeco>
-                    Outputs
+                    <Trans i18nKey="method-title-outputs">Outputs</Trans>
                   </InpageTitle>
                   <SquareUl
                     dangerouslySetInnerHTML={{
-                      __html: frontmattermd.outputs.html,
+                      __html: sections.outputs.html,
                     }}
                   ></SquareUl>
                 </>
@@ -231,49 +229,78 @@ function MethodLayout({ data, location }) {
         </InpageBody>
         <InpageBody>
           <InpageInnerColumns columnLayout="2:1">
+            <section id="activities">
+              <ActivityList>
+                <InpageTitle size="large" withDeco>
+                  <Trans i18nKey="method-title-activities">Activities</Trans>
+                </InpageTitle>
+                <CardList>
+                  {(frontmatter.activities || []).map((activity, index) => (
+                    <li key={index}>
+                      <ActivityCard
+                        as={Link}
+                        to={activityNodes[activity] ? `${activityNodes[activity].slug}/`: ''}
+                        border="primary"
+                        variation="secondary"
+                      >
+                        <CardHeading variation="primary">
+                        {activityNodes[activity] ? activityNodes[activity].approaches.map((approach, index) => (
+                          <img key={`approach-${index}`} src={approachNodes[approach].icon} />
+                        )) : ''}
+                        {activity}_
+                        </CardHeading>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: activityNodes[activity] ? activityNodes[activity].excerpt : '',
+                          }}
+                        ></div>
+                      </ActivityCard>
+                    </li>
+                  ))}
+                </CardList>
+              </ActivityList>
+            </section>
+          </InpageInnerColumns>
+
+          {footnotes.length ? (
+            <InpageInnerColumns columnLayout="3:1">
+              <article id="footnotes">
+                <InpageTitle size="large" withDeco>
+                  <Trans i18nKey="activity-footnotes">Footnotes</Trans>
+                </InpageTitle>
+                <SquareUl>
+                  {footnotes.map(fn => (
+                    <li key={fn.key} id={fn.key}>
+                      <strong>{fn.index}</strong> <span
+                        dangerouslySetInnerHTML={{
+                          __html: fn.html,
+                        }}
+                        ></span>
+                    </li>
+                  ))}
+                </SquareUl>
+              </article>
+            </InpageInnerColumns>
+          ) : ""}
+
+          <InpageInnerColumns columnLayout="2:1">
             <section>
               <InpageTitle size="large" withDeco>
-                References
+                <Trans i18nKey="method-title-references">References and resources for</Trans> {frontmatter.title}
               </InpageTitle>
               <SquareUl>
-                {(frontmatter.references || []).map(reference => (
-                  <>
+                {(frontmatter.references || []).map((reference, index) => (
+                  <div key={"ref-" + index}>
                     <p>{referenceNodes[reference].title}:</p>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: referenceNodes[reference].html,
                       }}
                     ></div>
-                  </>
+                  </div>
                 ))}
               </SquareUl>
             </section>
-            <section></section>
-            <ActivityList>
-              <InpageTitle size="large" withDeco>
-                Activities
-              </InpageTitle>
-              <CardList>
-                {(frontmatter.activities || []).map((activity, index) => (
-                  <li key={index}>
-                    <ActivityCard
-                      as={Link}
-                      to={`${activityNodes[activity].slug}/`}
-                      border="primary"
-                      variation="secondary"
-                      withHover
-                    >
-                      <CardHeading variation="primary">{activity}_</CardHeading>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: activityNodes[activity].excerpt,
-                        }}
-                      ></div>
-                    </ActivityCard>
-                  </li>
-                ))}
-              </CardList>
-            </ActivityList>
           </InpageInnerColumns>
         </InpageBody>
       </Inpage>
@@ -289,8 +316,8 @@ MethodLayout.propTypes = {
 export default MethodLayout
 
 export const query = graphql`
-  query($slug: String!) {
-    method: markdownRemark(fields: { slug: { eq: $slug } }) {
+  query($slug: String!, $language: String!) {
+    method: markdownRemark(fields: { slug: { eq: $slug }, langKey: {eq: $language} }) {
       html
       frontmatter {
         title
@@ -309,58 +336,73 @@ export const query = graphql`
       }
       fields {
         frontmattermd {
-          summary { html }
-          purpose { html }
-          guiding_questions { html }
-          preparation { html }
-          outputs { html }
-          operational_security { html }
+          summary { html, rawMarkdownBody }
+          purpose { html, rawMarkdownBody }
+          guiding_questions { html, rawMarkdownBody }
+          preparation { html, rawMarkdownBody }
+          outputs { html, rawMarkdownBody }
+          operational_security { html, rawMarkdownBody }
         }
       }
     }
-    activities: allFile(
-      filter: {
-        relativeDirectory: { eq: "activities" }
-        internal: { mediaType: { eq: "text/markdown" } }
+    activities: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            frontmattermd {
+              summary { excerpt }
+            }
+          }
+          frontmatter {
+            title
+            summary
+            approaches
+            short_summary
+          }
+        }
       }
+    }
+    approaches: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/approaches//"}}
     ) {
       edges {
         node {
           fields {
             slug
           }
-          childMarkdownRemark {
-            frontmatter {
-              title
-            }
-            fields {
-              frontmattermd {
-                summary {
-                  excerpt
-                }
-              }
-            }
+          frontmatter {
+            title
           }
+          html
         }
       }
     }
-    references: allFile(
-      filter: {
-        relativeDirectory: { eq: "references" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
+    references: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/references//"}}
     ) {
       edges {
         node {
           fields {
             slug
+            langKey
           }
-          childMarkdownRemark {
-            frontmatter {
-              title
-            }
-            html
+          frontmatter {
+            title
           }
+          rawMarkdownBody
+          html
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

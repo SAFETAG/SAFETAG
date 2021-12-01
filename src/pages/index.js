@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import { themeVal } from "../styles/utils/general"
 import { glsp } from "../styles/utils/theme-values"
 import media from "../styles/utils/media-queries"
+import { SquareUl } from "../styles/type/lists"
 
 import Button from "../styles/button/button"
 import {
@@ -18,6 +19,7 @@ import {
   InpageHeadline,
   InpageBody,
   InpageBodyInner,
+  InpageInnerColumns,
 } from "../styles/inpage"
 import Heading, { Subheading } from "../styles/type/heading"
 import MoreLink from "../styles/button/more-link"
@@ -121,6 +123,20 @@ function IndexPage({ data }) {
               forward and identify the support that they need.
             </Trans></p>
           </InpageBodyInner>
+          <InpageInnerColumns columnLayout="2:1">
+            <SquareUl>
+              <Subheading> <Trans i18nKey="index-about-getting-started">Getting Started with SAFETAG?</Trans></Subheading>
+              <ul>
+                <li><Trans i18nKey="index-about-getting-started-1">Read the <a href="sections/section_1">Introduction to SAFETAG</a> to learn about the SAFETAG Audit Framework Core and the Life Cycle of a SAFETAG audit.</Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-2">Read about the <a href="sections/the-safetag-approach-to-risk-assessment-agency-building">SAFETAG approach to Risk Assessment and Capacity Building.</a></Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-3">Read about <a href="sections/operational-security-during-an-audit">preserving Operational Security</a> during a SAFETAG audit</Trans></li>
+                <li><Trans i18nKey="index-about-getting-started-4">Scroll down to browse all <a href="#allMethods">SAFETAG Methods</a>.</Trans></li>
+              </ul>
+            </SquareUl>
+            <div>
+              <img src="/img/activities_flow.svg" style={{ maxWidth: '100%' }}/>
+            </div>
+          </InpageInnerColumns>
         </InpageBody>
 
         <InpageBody variation="blue">
@@ -128,6 +144,7 @@ function IndexPage({ data }) {
             <Heading id="recent-updates" size="jumbo" variation="primary" withDeco>
               <Trans i18nKey="index-updates-title">Recent Updates</Trans>
             </Heading>
+            <SquareUl>
             <ul>
               {data.posts.edges.map(
                 ({ node }, index) => (
@@ -137,6 +154,7 @@ function IndexPage({ data }) {
                   )
               )}
             </ul>
+            </SquareUl>
           </InpageBodyInner>
         </InpageBody>
 
@@ -157,7 +175,6 @@ function IndexPage({ data }) {
                         border="primary"
                         as={Link}
                         to={node.fields.slug}
-                        withHover
                       >
                         <CardHeader>
                         	<img src={node.frontmatter.method_icon} />
@@ -167,7 +184,8 @@ function IndexPage({ data }) {
                         </CardHeader>
                         <p>
                           {
-                            node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
+                            node.frontmatter.short_summary ? node.frontmatter.short_summary
+                              : node.frontmatter.summary.split(' ').slice(0,25).join(' ') + "..."
                           }
                         </p>
                       </Card>
@@ -190,9 +208,12 @@ function IndexPage({ data }) {
               Commons Attribution-ShareAlike (CC BY-SA 3.0) License</a>.
             </Trans></p>
             <p><Trans i18nKey="index-license-2">
-              Check out the <Link to="/credits/">Credits and Licensing
+              Check out the <Link to="/sections/credits_license">Credits and Licensing
               </Link> page for content attribution and a usage guide to
-              referring to the &quot;SAFETAG&quot; wordmark.
+              referring to the SAFETAG wordmark.
+            </Trans></p>
+            <p><Trans i18nKey="index-license-4">
+              The SAFETAG Community of Practice is governed by the <Link to="/codeofconduct">SAFETAG Code of Conduct.</Link>
             </Trans></p>
           </InpageBodyInner>
         </InpageBody>
@@ -218,7 +239,7 @@ function IndexPage({ data }) {
             </Trans></p>
             <p><Trans i18nKey="index-contact-2">
               For updates or suggestions for the framework, <a
-              href="https://github.com/SAFETAG/SAFETAG/issues">submit an
+              href="https://github.com/SAFETAG/SAFETAG/issues">please submit an
               issue</a>.
             </Trans></p>
           </InpageBodyInner>
@@ -230,17 +251,10 @@ function IndexPage({ data }) {
 }
 
 IndexPage.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.object,
 }
 
 export default IndexPage
-
-/*
-      filter: {
-        relativeDirectory: { eq: "methods" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
-*/
 
 export const query = graphql`
   query($language: String!) {
@@ -264,7 +278,8 @@ export const query = graphql`
 
     methods: allMarkdownRemark(
       sort: { fields: [frontmatter___position],  },
-      filter: {fileAbsolutePath: {regex: "/methods/"}}
+      filter: {fileAbsolutePath: {regex: "/methods/"},
+      fields: {langKey: {eq: $language}}}
     ) {
       edges {
         node {
@@ -276,6 +291,7 @@ export const query = graphql`
             position
             method_icon
             summary
+            short_summary
           }
         }
       }

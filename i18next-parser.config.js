@@ -1,13 +1,16 @@
 // i18next-parser.config.js
 
 module.exports = {
+  locales: ['en', 'fr'],
+  // An array of the locales in your applications
+
   contextSeparator: '_',
   // Key separator used in your translation keys
 
   createOldCatalogs: true,
   // Save the \_old files
 
-  defaultNamespace: 'translation',
+  defaultNamespace: 'site',
   // Default namespace used in your i18next config
 
   defaultValue: '',
@@ -43,9 +46,6 @@ module.exports = {
 
   lineEnding: 'auto',
   // Control the line ending. See options at https://github.com/ryanve/eol
-
-  locales: ['en', 'fr'],
-  // An array of the locales in your applications
 
   namespaceSeparator: ':',
   // Namespace separator used in your translation keys

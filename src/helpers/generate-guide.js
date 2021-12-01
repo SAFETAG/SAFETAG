@@ -11,6 +11,8 @@ import SpaceMonoBold from "../../static/fonts/SpaceMono-Bold.ttf"
 import IBMPlexMonoRegular from "../../static/fonts/IBMPlexMono-Regular.ttf"
 import SourceCodeProBold from "../../static/fonts/SourceCodePro-Bold.ttf"
 
+import { loadAllFootnotes, processSections } from "./footnotes.js"
+
 marked.setOptions({
   mangle: false,
 })
@@ -45,7 +47,7 @@ async function loadMarkdownStyles() {
   const sourceCodeFont = await fetch(IBMPlexMonoRegular).then(response =>
     response.arrayBuffer()
   )
-  const bulletGlyphFont = await fetch(SourceCodeProBold).then(response => 
+  const bulletGlyphFont = await fetch(SourceCodeProBold).then(response =>
     response.arrayBuffer()
   )
 
@@ -72,6 +74,12 @@ async function loadMarkdownStyles() {
       font: displayFont,
       fontSize: 14,
       padding: 10,
+    },
+    h4activity: {
+      font: displayFont,
+      fontSize: 14,
+      padding: 10,
+      color: "blue",
     },
     h5: {
       font: displayFont,
@@ -189,7 +197,12 @@ class Node {
         break
     }
 
-    this.style = styles[this.type] || styles.para
+    if (this.type == "h4" && this.content.length > 1 && this.content[1].text.includes('Activity:')) {
+      // activity titles have their own styling
+      this.style = styles['h4activity']
+    } else {
+      this.style = styles[this.type] || styles.para
+    }
   }
 
   // sets the styles on the document for this node
@@ -229,19 +242,40 @@ class Node {
         break
       }
       case "image": {
-        const filePath = `..${this.attrs.href}`
+        const filePath = this.attrs.href
         const fileExt = filePath.split(".").pop()
 
         // Supported format are png/jpg
         if (["png", "jpg"].indexOf(fileExt) > -1) {
           try {
+            // first we need to determine if we require a new page,
+            // otherwise the image gets cut off
+            const img = new Image()
+            img.name = filePath
+            img.src = filePath
+            // look for images that won't fit on a page, but don't consider icons
+            if ( (img.height + doc.y + doc.currentLineHeight(true) +
+                  doc.page.margins.top + doc.page.margins.bottom) > doc.page.maxY()
+                  && !(img.name.includes('_icon'))
+                ) {
+              console.log(`Info: Image ${filePath} doesn't fit on this page, moving to a new page`)
+              doc.addPage();
+            }
+
             const imageFile = await fetch(filePath).then(res =>
               res.arrayBuffer()
             )
-            doc.image(imageFile, imageOptions)
+            let opts = imageOptions
+            /*
+            if (imageFile.includes('_icon')) {
+              opts['scale'] = 0.5
+            }
+            */
+            doc.image(imageFile, opts)
           } catch (error) {
             // eslint-disable-line
             console.log("Could not add image to PDF file: ", filePath)
+            console.log(error)
           }
 
           // Add image caption, if available
@@ -311,6 +345,13 @@ class Node {
               fragment.text = fragment.text.replace(/[\r\n]\s*/g, " ")
             }
 
+            // reformat relative links if present
+            if (fragment.text.includes('](../')) {
+              // text.replace(/\]\(\.\.\//, `](/${i18n.language}/`)
+              fragment.text = fragment.text.replace(/[\r\n]\s*/g, " ")
+            }
+
+
             doc.text(fragment.text, options)
           } else {
             const options = this.setStyle(doc)
@@ -360,7 +401,17 @@ class Node {
 }
 
 // reads and renders a markdown/literate javascript file to the document
-const render = async (doc, markdownContent) => {
+const render = async (doc, markdownContent, lang) => {
+  // lang is only used to reformat relative links
+  if (markdownContent.includes('](../')) {
+    let prefix
+    if (lang == "en") {
+      prefix = `https://safetag.org/`
+    } else {
+      prefix = `https://safetag.org/${lang}/`
+    }
+    markdownContent = markdownContent.replace(/\]\(\.\.\//, `](${prefix}`)
+  }
   const tree = marked.lexer(markdownContent)
 
   const result = []
@@ -379,131 +430,165 @@ const render = async (doc, markdownContent) => {
  * @param  {bool} isFull
  * @returns {func}
  */
+
 export async function prepareGuide(
   guideVersion,
   guideTitle,
   fixedSections,
-  isFull = true
+  isFull = true,
+  t,
+  i18n,
+  referenceEdges,
+  approachEdges
 ) {
-  // Init guide by add fixed sections on start
+  // Add cover and intro
+  const d = new Date()
+  const dateString = d.toUTCString()
+  const generatedNote = `_${t("guide-gen-date", "This custom guide was generated on")} ${dateString}. ${t("guide-notice", "Create your own custom guide or get the full guide at www.safetag.org")}_`
+  var intro = fixedSections["introduction.md"] + '\n' + generatedNote + '\n' + '#Guide'
   const customGuide = [
-    fixedSections["introduction.md"],
+    intro,
+    `# ${t("guide-toc-opening", "Guide")}`,
+    `## ${t("guide-toc-license", "License and Credits")}`,
+    fixedSections["credits_license.md"],
+    `## ${t("guide-toc-introduction", "Introduction")}`,
     fixedSections["section_1.md"],
-    "# Safetag Methods",
+    `# ${t("guide-methods", "Safetag Methods")}`,
   ]
-  values(guideVersion).map(({ title, method_icon, references, sections, activities }) => {
+
+  // Prepare the footnotes for methods
+  const allFootnotes = loadAllFootnotes(referenceEdges, i18n.language)
+  let footnotes = []
+  let methods = {}
+  Object.keys(guideVersion).forEach(title => {
+    let method = guideVersion[title]
+    let result = processSections(method, allFootnotes, footnotes)
+    footnotes = result.footnotes
+    method = result.sections
+    methods[title] = method
+  })
+
+  // Process and add each method to the guide
+  values(methods).map((method) => {
     const selectedActivities = isFull
-      ? values(pickBy(activities))
-      : values(pickBy(activities, a => a.checked))
+      ? values(pickBy(method.activities))
+      : values(pickBy(method.activities, a => a.checked))
 
     // If there are activities selected on this method
     if (selectedActivities.length > 0) {
       // Add method title
-      customGuide.push(`## ${title}`)
-      if (method_icon) {
-        customGuide.push(`![](${method_icon})`)
+      if (method.method_icon) {
+        customGuide.push(`## \`     \` ${method.title} ![](${method.method_icon.replace('img/', 'img/24x24/')})`)
+      } else {
+        customGuide.push(`![](${method.title})`)
       }
-
       // Add method sections
-      if (sections.summary && sections.summary.rawMarkdownBody) {
-        customGuide.push(`### Summary`)
-        customGuide.push(sections.summary.rawMarkdownBody)
+      if (method.summary) {
+        customGuide.push(`### ${t("method-title-summary", "Summary")}`)
+        customGuide.push(method.summary)
       }
-      if (sections.purpose && sections.purpose.rawMarkdownBody) {
-        customGuide.push(`### Purpose`)
-        customGuide.push(sections.purpose.rawMarkdownBody)
+      if (method.purpose) {
+        customGuide.push(`### ${t("method-title-purpose", "Purpose")}`)
+        customGuide.push(method.purpose)
       }
-      {/* if (
-        sections.the_flow_of_information &&
-        sections.the_flow_of_information.rawMarkdownBody
-      ) {
-        customGuide.push(`### The Flow of Information`)
-        customGuide.push(sections.the_flow_of_information.rawMarkdownBody)
-      } */}
-      if (
-        sections.guiding_questions &&
-        sections.guiding_questions.rawMarkdownBody
-      ) {
-        customGuide.push(`### Guiding Questions`)
-        customGuide.push(sections.guiding_questions.rawMarkdownBody)
+      if (method.guiding_questions) {
+        customGuide.push(`### ${t("method-title-questions", "Guiding Questions")}`)
+        customGuide.push(method.guiding_questions)
       }
-      if (sections.outputs && sections.outputs.rawMarkdownBody) {
-        customGuide.push(`### Outputs`)
-        customGuide.push(sections.outputs.rawMarkdownBody)
+      if (method.outputs) {
+        customGuide.push(`### ${t("method-title-outputs", "Outputs")}`)
+        customGuide.push(method.outputs)
       }
-      if (
-        sections.operational_security &&
-        sections.operational_security.rawMarkdownBody
-      ) {
-        customGuide.push(`### Operational Security`)
-        customGuide.push(sections.operational_security.rawMarkdownBody)
+      if (method.operational_security) {
+        customGuide.push(`### ${t("method-title-opsec", "Operational Security")}`)
+        customGuide.push(method.operational_security)
       }
-      if (sections.preparation && sections.preparation.rawMarkdownBody) {
-        customGuide.push(`### Preparation`)
-        customGuide.push(sections.preparation.rawMarkdownBody)
+      if (method.preparation) {
+        customGuide.push(`### ${t("method-title-prep", "Preparation")}`)
+        customGuide.push(method.preparation)
       }
 
-      if (Object.keys(references).length > 0) {
-        customGuide.push(`### References`)
-        values(references).forEach(({ id, rawMarkdownBody }) => {
+      customGuide.push(`### ${t("method-title-activities", "Activities")}`)
+
+      // process each activity's footnotes before placing it
+      const activities = []
+      selectedActivities.forEach(act => {
+          let result = processSections(act, allFootnotes, footnotes)
+          footnotes = result.footnotes
+          let activity = result.sections
+          activities.push(activity)
+      })
+
+      activities.forEach(activity => {
+          // Add activity title and approach icon
+          const approach = approachEdges.filter(
+            r => r.node.frontmatter.title == activity.approaches[0] && r.node.fields.langKey == i18n.language
+          )[0]
+          const approachIcon = `/img/${approach.node.fields.slug.replace('/approaches/', '24x24/')}_icon.png`
+          // pad with empty lines to avoid text flow problems
+          customGuide.push(`\` \``)
+          customGuide.push(`#### \`      \` Activity: ${activity.title} ![](${approachIcon})`)
+          customGuide.push(`\` \``)
+          // Add activities sections
+          let sections = activity.sections
+          if (sections.summary && sections.summary.rawMarkdownBody) {
+            customGuide.push(`##### ${t('activity-summary', "Summary")}`)
+            customGuide.push(sections.summary.rawMarkdownBody)
+          }
+          if (sections.overview && sections.overview.rawMarkdownBody) {
+            customGuide.push(`##### ${t('activity-overview', "Overview")}`)
+            customGuide.push(sections.overview.rawMarkdownBody)
+          }
+          if (sections.materials_needed && sections.materials_needed.rawMarkdownBody) {
+            customGuide.push(`##### ${t('activity-materials', "Materials Needed")}`)
+            customGuide.push(activity.sections.materials_needed.rawMarkdownBody)
+          }
+          if (sections.considerations && sections.considerations.rawMarkdownBody) {
+            customGuide.push(`##### ${t('activity-considerations', "Considerations")}`)
+            customGuide.push(sections.considerations.rawMarkdownBody)
+          }
+          if (sections.walk_through && sections.walk_through.rawMarkdownBody) {
+            customGuide.push(`##### ${t('activity-walkthrough', "Walk Through")}`)
+            customGuide.push(sections.walk_through.rawMarkdownBody)
+          }
+          if (activity.toolnames) {
+            customGuide.push(`##### ${t('activity-tools', "Tools and variants")}`)
+            activity.toolnames.forEach((toolname) => {
+              const tool = method.tools[toolname]
+              customGuide.push(`###### ${tool.title}`)
+              customGuide.push(tool.rawMarkdownBody)
+            })
+          }
+          if (sections.recommendations && sections.recommendations.rawMarkdownBody) {
+            customGuide.push(`##### ${t('activity-recommendations', "Recommendations")}`)
+            customGuide.push(sections.recommendations.rawMarkdownBody)
+          }
+        }
+      )
+      if (Object.keys(method.references).length > 0) {
+        customGuide.push(`### ${t("guide-references", "References and resources for")} ${method.title}`)
+        values(method.references).forEach(({ id, rawMarkdownBody }) => {
           customGuide.push(`#### ${id}`)
           customGuide.push(rawMarkdownBody)
         })
       }
-      customGuide.push(`### Activities`)
-      selectedActivities.forEach(
-        ({
-          title,
-          sections: {
-            summary,
-            overview,
-            materials_needed,
-            considerations,
-            walk_through,
-            recommendations,
-          },
-        }) => {
-          // Add activity title
-          customGuide.push(`#### ${title}`)
-
-          // Add activities sections
-          if (summary && summary.rawMarkdownBody) {
-            customGuide.push(`##### Summary`)
-            customGuide.push(summary.rawMarkdownBody)
-          }
-          if (overview && overview.rawMarkdownBody) {
-            customGuide.push(`##### Overview`)
-            customGuide.push(overview.rawMarkdownBody)
-          }
-          if (materials_needed && materials_needed.rawMarkdownBody) {
-            customGuide.push(`##### Materials Needed`)
-            customGuide.push(materials_needed.rawMarkdownBody)
-          }
-          if (considerations && considerations.rawMarkdownBody) {
-            customGuide.push(`##### Considerations`)
-            customGuide.push(considerations.rawMarkdownBody)
-          }
-          if (walk_through && walk_through.rawMarkdownBody) {
-            customGuide.push(`##### Walk Through`)
-            customGuide.push(walk_through.rawMarkdownBody)
-          }
-          if (recommendations && recommendations.rawMarkdownBody) {
-            customGuide.push(`##### Recommendations`)
-            customGuide.push(recommendations.rawMarkdownBody)
-          }
-        }
-      )
     }
   })
 
   customGuide.push(fixedSections["section_3.md"])
   customGuide.push(fixedSections["section_4.md"])
-  customGuide.push(fixedSections["section_5.md"])
 
-  return await generateGuide(customGuide.join("\n"), guideTitle)
+  if (footnotes) {
+    customGuide.push(`# ${t("guide-footnotes", "Footnotes")}`)
+    footnotes.forEach(fn => {
+      customGuide.push(`${fn.index}: ${fn.md}`)
+    })
+  }
+
+  return await generateGuide(customGuide.join("\n\n"), guideTitle, t, i18n.language)
 }
 
-export default async function generateGuide(md, guideTitle) {
+export default async function generateGuide(md, guideTitle, t, lang) {
   // Load styles
   await loadMarkdownStyles()
 
@@ -514,7 +599,7 @@ export default async function generateGuide(md, guideTitle) {
   const stream = doc.pipe(blobStream())
   const todaysDate = new Date().toISOString().slice(0, 10)
   // Add content
-  await render(doc, md)
+  await render(doc, md, lang)
 
   //Global Edits to All Pages (Header/Footer, etc)
   let pages = doc.bufferedPageRange();
@@ -530,13 +615,13 @@ export default async function generateGuide(md, guideTitle) {
       .fillColor("#454644")
       .fontSize(8)
       .text(
-        'SAFETAG™: A Project of Internews',
+        t("guide-footer", "SAFETAG™: A Project of Internews"),
         50,
         doc.page.height - (oldBottomMargin/2),
         { align: 'left' }
       )
       .text(
-        `Page ${i + 1} of ${pages.count}`,
+        `${t("guide-page-number", "Page")} ${i + 1} ${t("guide-page-number-of", "of")} ${pages.count}`,
         0,
         doc.page.height - (oldBottomMargin/2), // Centered vertically in bottom margin
         { align: 'right' }

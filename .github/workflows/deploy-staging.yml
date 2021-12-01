@@ -25,25 +25,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          sudo pip install transifex-client
+
       - name: Set up secrets
         run: |
           touch .env
           echo TRANSIFEX_USER=${{ secrets.TRANSIFEX_USER }} >> .env
           echo TRANSIFEX_PASSWORD=${{ secrets.TRANSIFEX_PASSWORD }} >> .env
+          echo TRANSIFEX_API_TOKEN=${{ secrets.TRANSIFEX_TOKEN }} >> .env
           cp .env .env.production
           cp .env .env.development
           cat .env
+
+      # https://github.com/aws/aws-cli/issues/1249
+      - name: Fix mimetypes detection for yaml files
+        run: |
+          echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
 
       - name: Use Node.js 12
         uses: actions/setup-node@v1
         with:
           node-version: 12
 
-      - name: Install, create translations and Build
+      - name: Install and lint
         run: |
           yarn install
           yarn lint
+
+      - name: Update translations and build
+        run: |
+          echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"${{ secrets.TRANSIFEX_USER }}"$'\npassword = '"${{ secrets.TRANSIFEX_PASSWORD }}"$'\ntoken = '"${{ secrets.TRANSIFEX_TOKEN }}"$'\n' | tee ~/.transifexrc
           yarn extract
+          yarn transifex-push
+          yarn transifex-pull
           yarn build
 
       - name: Deploy 🚀

@@ -7,6 +7,7 @@ module.exports = {
     title: `Safetag`,
     description: `Create custom Safetag guides for your needs`,
     author: `@developmentseed`,
+    siteUrl: `https://safetag.org`,
   },
   plugins: [
     {
@@ -50,7 +51,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`en`, `fr`],
+        languages: [`en`],
         redirect: false,
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
@@ -64,6 +65,83 @@ module.exports = {
           nsSeparator: false
         },
       }
+    },
+    {
+      resolve: 'gatsby-plugin-flexsearch',
+      options: {
+        languages: ['en'],
+        type: 'MarkdownRemark',
+        fields: [
+          {
+            name: 'title', resolver: 'frontmatter.title',
+            indexed: true, store: true,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'description', resolver: 'frontmatter.description',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'summary', resolver: 'frontmatter.summary',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+
+          },
+          {
+            name: 'materials_needed', resolver: 'frontmatter.materials_needed',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'overview', resolver: 'frontmatter.materials_needed',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'walk_through', resolver: 'frontmatter.walk_through',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'guiding_questions', resolver: 'frontmatter.guiding_questions',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'outputs', resolver: 'frontmatter.outputs',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'operational_security', resolver: 'frontmatter.operational_security',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'purpose', resolver: 'frontmatter.purpose',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'preparation', resolver: 'frontmatter.preparation',
+            indexed: true, store: false,
+            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
+          },
+          {
+            name: 'url', resolver: 'fields.slug',
+            indexed: false, store: true,
+          },
+          {
+            name: 'type', resolver: 'fields.content_type',
+            indexed: false, store: true
+          },
+          {
+            name: 'lang', resolver: 'fields.langKey',
+            indexed: false, store: true
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-matomo`,
@@ -89,6 +167,60 @@ module.exports = {
               maxWidth: 1024,
               linkImagesToOriginal: false,
             },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: {fileAbsolutePath: {regex: "/posts/"}}
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "SAFETAG - RSS Feed",
           },
         ],
       },

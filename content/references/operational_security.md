@@ -1,5 +1,5 @@
 ---
-title: operational_security
+title: Operational Security
 ---
 
   * *Guide:* ["Step Zero: The Go / Don't Go Decision"](https://www.level-up.cc/before-an-event/planning-your-training-event/) (Level-Up)

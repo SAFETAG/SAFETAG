@@ -1,5 +1,5 @@
 ---
-title: network_access
+title: Network Access
 ---
 
   * *Resource List:* ["Wireless Access Guides & Resources"](#wireless-access-guides-resources) (SAFETAG)

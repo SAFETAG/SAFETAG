@@ -14,6 +14,7 @@ const baseStyles = css`
     font-size: ${themeVal("type.base.root")};
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scroll-behavior: smooth;
+    scroll-padding-top: 150px;
     height: 100%;
   }
   *,

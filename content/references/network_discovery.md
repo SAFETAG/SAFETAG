@@ -1,5 +1,5 @@
 ---
-title: network_discovery
+title: Network Discovery
 ---
 
 

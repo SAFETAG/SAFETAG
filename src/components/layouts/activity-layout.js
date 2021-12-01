@@ -1,11 +1,12 @@
 import React from "react"
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
-import { graphql, withPrefix } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
-import mapValues from "lodash.mapvalues"
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
+
 
 import {
   Inpage,
@@ -17,9 +18,11 @@ import {
 } from "../../styles/inpage"
 import MoreLink from "../../styles/button/more-link"
 import Dl, { SquareUl } from "../../styles/type/lists"
-import Card, { CardHeading } from "../../styles/card"
+import Card, { CardHeading, CardList } from "../../styles/card"
 import media from "../../styles/utils/media-queries"
 import { themeVal } from "../../styles/utils/general"
+
+import { loadAllFootnotes, processSections } from "../../helpers/footnotes.js"
 
 const ActivityPage = styled(Inpage)`
   article {
@@ -74,22 +77,44 @@ const ActivityIntro = styled.article`
 `
 const ActivityMeta = styled.aside``
 
+const ToolList = styled.section`
+  grid-column: span 2;
+
+  ${CardList} {
+    margin-top: 2rem;
+  }
+`
+const ToolCard = styled(Card)`
+  ${media.mediumUp`
+    min-height: 6rem;
+  `}
+  ${CardHeading} {
+    margin: 0;
+  }
+`
+
 function ActivityLayout({ data }) {
+  const { i18n } = useTranslation('site', { useSuspense: false });
   const {
     frontmatter,
     fields: { frontmattermd },
-  } = data.file.childMarkdownRemark
+  } = data.markdownRemark
 
-  // Fix images URL by adding app root url with prefix
-  const sections = mapValues(frontmattermd, section => {
-    if (section && section.html) {
-      return section.html.replace(
-        /<img src="\/img/g,
-        `<img src="${withPrefix("/img")}`
-      )
+  // load and integrate footnotes
+  const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
+  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
+
+  // creates an object with tool names as keys and tool slugs as values
+  const tools = data.tools.edges
+  const toolNodes = {}
+  tools.forEach(
+    tool => {
+      toolNodes[tool.node.frontmatter.title] = {
+        slug: tool.node.fields.slug,
+        short_summary: tool.node.frontmatter.short_summary,
+      }
     }
-    return section
-  })
+  )
 
   return (
     <GlobalLayout>
@@ -99,7 +124,7 @@ function ActivityLayout({ data }) {
           <InpageInnerColumns columnLayout="3:1">
             <ActivityHeadline>
               <MoreLink direction="back" to="/activities/">
-                Back to all activities
+                <Trans i18nKey="activity-back">Back to all activities</Trans>
               </MoreLink>
               <ActivityTitle size="xlarge" variation="primary">
                 {frontmatter.title}
@@ -107,12 +132,12 @@ function ActivityLayout({ data }) {
             </ActivityHeadline>
             <ActivityIntro>
               <InpageTitle size="large" withDeco>
-                Summary
+                <Trans i18nKey="activity-summary">Summary</Trans>
               </InpageTitle>
               {sections.summary && (
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: sections.summary,
+                    __html: sections.summary.html,
                   }}
                 ></div>
               )}
@@ -120,24 +145,34 @@ function ActivityLayout({ data }) {
             <ActivityMeta>
               <Card variation="outline" border="base">
                 <Dl boldDesc>
-                  <dt>Approach</dt>
+                  <dt><Trans i18nKey="activity-approach">Approach</Trans></dt>
                   {frontmatter.approaches.map(approach => (
                     <dd key={approach}>{approach}<img src={`/img/${approach.toLowerCase()}_icon.png`} /></dd>
                   ))}
-                  <dt>Authors</dt>
+                  <dt><Trans i18nKey="activity-authors">Authors</Trans></dt>
                   {frontmatter.authors.map(authr => (
                     <dd key={authr}>{authr}</dd>
                   ))}
-                  <dt>Org Size under</dt>
+
+
+                  <dt><Trans i18nKey="activity-orgsize">Org Size under</Trans></dt>
                   <dd>{frontmatter.organization_size_under}</dd>
-                  <dt>Remote options</dt>
+                  <dt><Trans i18nKey="activity-remote">Remote options</Trans></dt>
                   <dd>{frontmatter.remote_options}</dd>
-                  <dt>Skills required</dt>
+                  <dt><Trans i18nKey="activity-skills">Skills required</Trans></dt>
                   {frontmatter.skills_required.map(skill => (
                     <dd key={skill}>{skill}</dd>
                   ))}
-                  <dt>Time required (minutes)</dt>
+                  <dt><Trans i18nKey="activity-time">Time required (minutes)</Trans></dt>
                   <dd>{frontmatter.time_required_minutes}</dd>
+                  {frontmatter.tools ? <dt><Trans i18nKey="activity-included-tools">Included tools</Trans></dt> : ""}
+                {(frontmatter.tools || []).map((tool) => (
+                  <dd key={tool}>
+                    <a href="#tools">
+                      {tool}
+                    </a>
+                  </dd>
+                ))}
                 </Dl>
               </Card>
             </ActivityMeta>
@@ -148,21 +183,21 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <aside>
                 <InpageTitle size="large" withDeco>
-                  Overview
+                  <Trans i18nKey="activity-overview">Overview</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.overview,
+                    __html: sections.overview.html,
                   }}
                 ></SquareUl>
               </aside>
               {sections.materials_needed && (
                 <aside>
                   <Card variation="outline" border="white">
-                    <CardHeading>Materials Needed</CardHeading>
+                    <CardHeading><Trans i18nKey="activity-materials">Materials Needed</Trans></CardHeading>
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: sections.materials_needed,
+                        __html: sections.materials_needed.html,
                       }}
                     ></div>
                   </Card>
@@ -176,11 +211,11 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  Considerations
+                  <Trans i18nKey="activity-considerations">Considerations</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.considerations,
+                    __html: sections.considerations.html,
                   }}
                 ></SquareUl>
               </article>
@@ -190,31 +225,88 @@ function ActivityLayout({ data }) {
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  Walkthrough
+                  <Trans i18nKey="activity-walkthrough">Walk Through</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.walk_through,
+                    __html: sections.walk_through.html,
                   }}
                 ></SquareUl>
               </article>
               <span></span>
             </InpageInnerColumns>
           )}
+
+          {frontmatter.tools && (
+            <div id="tools">
+              <InpageInnerColumns columnLayout="3:1">
+                <ToolList>
+                  <InpageTitle size="large" withDeco>
+                    <Trans i18nKey="activity-tools">Tools and variants</Trans>
+                  </InpageTitle>
+                  <CardList>
+                    {(frontmatter.tools || []).map((tool) => (
+                      <li key={tool}>
+                        <ToolCard
+                          as={Link}
+                          to={toolNodes[tool] ? `${toolNodes[tool].slug}/`: ''}
+                          border="primary"
+                          variation="secondary"
+                          withHover
+                        >
+                          <CardHeading variation="primary">
+                            {tool}_
+                          </CardHeading>
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: toolNodes[tool] ? toolNodes[tool].short_summary : '',
+                            }}
+                          ></div>
+                        </ToolCard>
+                      </li>
+                    ))}
+                  </CardList>
+                </ToolList>
+              </InpageInnerColumns>
+            </div>
+          )}
+
           {sections.recommendations && (
             <InpageInnerColumns columnLayout="3:1">
               <article>
                 <InpageTitle size="large" withDeco>
-                  Recommendation
+                  <Trans i18nKey="activity-recommendations">Recommendations</Trans>
                 </InpageTitle>
                 <SquareUl
                   dangerouslySetInnerHTML={{
-                    __html: sections.recommendations,
+                    __html: sections.recommendations.html,
                   }}
                 ></SquareUl>
               </article>
             </InpageInnerColumns>
           )}
+
+          {footnotes.length ? (
+            <InpageInnerColumns columnLayout="3:1">
+              <article id="footnotes">
+                <InpageTitle size="large" withDeco>
+                  <Trans i18nKey="activity-footnotes">Footnotes</Trans>
+                </InpageTitle>
+                <SquareUl>
+                  {footnotes.map(fn => (
+                    <li key={fn.key} id={fn.key}>
+                      <strong>{fn.index}</strong> <span
+                        dangerouslySetInnerHTML={{
+                          __html: fn.html,
+                        }}
+                        ></span>
+                    </li>
+                  ))}
+                </SquareUl>
+              </article>
+            </InpageInnerColumns>
+          ) : ""}
+
         </InpageBody>
       </ActivityPage>
     </GlobalLayout>
@@ -228,39 +320,68 @@ ActivityLayout.propTypes = {
 export default ActivityLayout
 
 export const query = graphql`
-  query($slug: String!) {
-    file(fields: { slug: { eq: $slug } }) {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          approaches
-          authors
-          remote_options
-          skills_required
-          time_required_minutes
-          organization_size_under
+  query($slug: String!, $language: String!) {
+    markdownRemark(fields: { slug: { eq: $slug }, langKey: {eq: $language} }) {
+      html
+      frontmatter {
+        title
+        summary
+        approaches
+        tools
+        authors
+        remote_options
+        skills_required
+        time_required_minutes
+        organization_size_under
+      }
+      fields {
+        frontmattermd {
+          summary { rawMarkdownBody, html }
+          overview { rawMarkdownBody, html }
+          considerations { rawMarkdownBody, html }
+          walk_through { rawMarkdownBody, html }
+          materials_needed { rawMarkdownBody, html }
+          recommendations { rawMarkdownBody, html }
         }
-        fields {
-          frontmattermd {
-            overview {
-              html
-            }
-            materials_needed {
-              html
-            }
-            considerations {
-              html
-            }
-            recommendations {
-              html
-            }
-            summary {
-              html
-            }
-            walk_through {
-              html
-            }
+      }
+    }
+    tools: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/tools//"}, fields: {langKey: {eq: $language}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
           }
+          frontmatter {
+            title
+            short_summary
+          }
+        }
+      }
+    }
+    references: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/references//"}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            langKey
+          }
+          frontmatter {
+            title
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

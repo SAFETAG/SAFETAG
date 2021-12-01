@@ -1,4 +1,4 @@
 ---
-title: follow_up
+title: Follow Up
 ---
 

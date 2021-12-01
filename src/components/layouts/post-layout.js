@@ -1,4 +1,5 @@
 import React from "react"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"
@@ -38,6 +39,7 @@ const PostBody = styled.article`
 const PostMeta = styled.aside``
 
 function PostLayout({ data, location }) {
+  const { t } = useTranslation('site', { useSuspense: false });
   const post = data.post
   const frontmatter = data.post.frontmatter
   // const frontmattermd = data.post.fields.frontmattermd
@@ -74,7 +76,7 @@ function PostLayout({ data, location }) {
                     : "/posts/"
                 }
               >
-                Back to {prevPath ? "the home page" : "the blog index"}
+                Back to {prevPath ? t("the home page") : t("the blog index")}
               </MoreLink>
               <InpageTitle size="jumbo" variation="primary">
                 {frontmatter.title}
@@ -87,11 +89,11 @@ function PostLayout({ data, location }) {
             </PostBody>
             <PostMeta>
               <Dl boldDesc>
-                <dt>Author</dt>
+                <dt><Trans i18nKey="post-author">Author</Trans></dt>
                 <dd>{frontmatter.author}</dd>
               </Dl>
               <Dl>
-                <dt>Tags</dt>
+                <dt><Trans i18nKey="post-tags">Tags</Trans></dt>
                 {frontmatter.tags.map(tag => (
                   <dd key={tag}>{tag}</dd>
                 ))}

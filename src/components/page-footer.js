@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 
 import Constrainer from "../styles/constrainer"
 import { themeVal } from "../styles/utils/general"
@@ -35,21 +36,22 @@ const PageNetlify = styled.p`
 const Year = new Date().getFullYear()
 
 const GlobalFooter = () => {
+  useTranslation('site', { useSuspense: false });
   return (
     <PageFoot role="contentinfo">
       <PageFootInner>
         <PageCredits>
-          &copy; {Year} SAFETAG&trade;: A Project of Internews
+          <Trans i18nKey="footer-1">© {{Year}} SAFETAG™: A Project of Internews</Trans>
         </PageCredits>
 
         <PageSocial>
-        <a href="/contact">Contact us</a>
-         </PageSocial>
+          <a href="/contact"><Trans i18nKey="footer-2">Contact us</Trans></a>
+        </PageSocial>
 
         <PageNetlify>
           <a href="https://www.netlify.com">
-              <img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
-            </a>
+            <img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+          </a>
         </PageNetlify>
       </PageFootInner>
     </PageFoot>

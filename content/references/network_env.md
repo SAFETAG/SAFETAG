@@ -1,5 +1,5 @@
 ---
-title: network_env
+title: Vulnerable Machine Images
 ---
 
   *Database:* ["Database of Vulnerable Virtual Machines"](http://www.vulnhub.com) (VulnHub)

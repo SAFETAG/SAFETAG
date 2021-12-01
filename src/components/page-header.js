@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
 import React, { useState, useLayoutEffect } from "react"
+import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import { window } from "browser-monads"
 
@@ -12,6 +12,12 @@ import media from "../styles/utils/media-queries"
 
 import LogoWhite from "../../static/assets/logo/SafetagLogoWhite.svg"
 import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg"
+
+import SearchBox from "./search-box-header.js"
+import '../styles/search.css';
+
+import ReactLanguageSelect from './vendor/lang-select.js';
+import '../styles/vendor/react-languages-select.css';
 
 const PageHead = styled.header`
   position: sticky;
@@ -188,9 +194,37 @@ const Hamburger = styled.div`
   }
 `
 
+const LanguageSelect = styled(ReactLanguageSelect)`
+  button {
+    background: ${({ scrolled }) =>
+      scrolled > 0 ? 'transparent url("/assets/language.svg") no-repeat;'
+                   : 'transparent url("/assets/language-white.svg") no-repeat;'
+    };
+  }
+  ul {
+    background: ${({ scrolled }) => scrolled > 0 ? '#fff' : themeVal("color.primary") };
+    color: ${({ scrolled }) => scrolled > 0 ? themeVal("color.primary") : '#fff;' };
+  }
+  .flag-select__option:not(.flag-select__option--placeholder):focus,
+  .flag-select__option:not(.flag-select__option--placeholder):hover {
+    outline: none;
+    background: #263ded;
+  }
+`
+
+
 const GlobalHeader = () => {
+  const { languages } = useI18next();
+  useTranslation('site', { useSuspense: false });
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [scrolled, setScrolled] = useState(window.scrollY)
+  const { changeLanguage } = useI18next()
+  let langSelector = React.createRef();
+
+  function onSelectLanguage(languageCode){
+    changeLanguage(languageCode)
+    langSelector.updateSelected(languageCode)
+  }
 
   useLayoutEffect(() => {
     const handleScroll = () => {
@@ -241,23 +275,26 @@ const GlobalHeader = () => {
             <GlobalMenu open scrolled={scrolled}>
               <li>
                 <GlobalMenuLink to="/about/" scrolled={scrolled}>
-                  About
+                  <Trans i18nKey="navmenu-about">About</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  Blog
+                  <Trans i18nKey="navmenu-blog">Blog</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
-                  Methods
+                  <Trans i18nKey="navmenu-methods">Methods</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/activities/" scrolled={scrolled}>
-                  Activities
+                  <Trans i18nKey="navmenu-activities">Activities</Trans>
                 </GlobalMenuLink>
+              </li>
+              <li>
+                <SearchBox scrolled={scrolled} />
               </li>
               <li>
                 <GlobalMenuButton
@@ -269,7 +306,7 @@ const GlobalHeader = () => {
                   to="/guide-builder/"
                   as={Link}
                 >
-                  Create Guide
+                  <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
             </GlobalMenu>
@@ -277,23 +314,26 @@ const GlobalHeader = () => {
             <GlobalMenu scrolled={scrolled}>
               <li>
                 <GlobalMenuLink to="/about/" scrolled={scrolled}>
-                  About
+                  <Trans i18nKey="navmenu-about">About</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  Blog
+                  <Trans i18nKey="navmenu-blog">Blog</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
-                  Methods
+                  <Trans i18nKey="navmenu-methods">Methods</Trans>
                 </GlobalMenuLink>
               </li>
               <li>
                 <GlobalMenuLink to="/activities/" scrolled={scrolled}>
-                  Activities
+                  <Trans i18nKey="navmenu-activities">Activities</Trans>
                 </GlobalMenuLink>
+              </li>
+              <li>
+                <SearchBox scrolled={scrolled} />
               </li>
               <li>
                 <GlobalMenuButton
@@ -305,9 +345,20 @@ const GlobalHeader = () => {
                   to="/guide-builder/"
                   as={Link}
                 >
-                  Create Guide
+                  <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
+              {languages.length > 1 ?
+              <li>
+                <LanguageSelect
+                   languages={languages}
+                   placeholder=""
+                   onSelect={onSelectLanguage}
+                   ref={(el) => langSelector = el}
+                   scrolled={scrolled}
+                />
+              </li>
+              : ""}
             </GlobalMenu>
           )}
         </PageNav>

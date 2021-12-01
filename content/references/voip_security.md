@@ -1,5 +1,5 @@
 ---
-title: voip_security
+title: VoIP Security
 ---
 
 * *Guide:* ["VoIP Security Checklist"](https://www.computerworld.com/article/2567181/networking/the-voip-security-checklist.html) (ComputerWorld)
