@@ -7,14 +7,14 @@ const searchBoxStyle = {
   'margin': '2em 0',
 }
 const resultUlStyle = {
-  'list-style-type': 'none',
+  listStyleType: 'none',
 }
 const resultLiStyle = {
   margin: '0.5em 0',
 }
 const resultTypeStyle = {
   color: '#aaa',
-  'margin-right': '1em',
+  marginRight: '1em',
 }
 
 
@@ -122,6 +122,7 @@ class Search extends Component {
       console.log("Not searching")
       return []
     } else {
+      query = query.replace(/ /, '+')
       console.log("Searching for " + query)
       var results = []
       Object.keys(index).forEach(idx => {
