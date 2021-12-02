@@ -1,4 +1,5 @@
 import React from "react"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import {
   ListboxInput,
@@ -88,11 +89,12 @@ const FilterPopover = styled(ListboxPopover)`
   }
 `
 function Filter({ title, type, options, selected, setFilter }) {
+  const { t } = useTranslation('site', { useSuspense: false })
   const selectedIds = selected[type] ? selected[type] : []
 
   return (
     <>
-      <VisuallyHidden id="filter-guide">Filter by {title}</VisuallyHidden>
+      <VisuallyHidden id="filter-guide"><Trans i18nKey="filter-by">Filter by</Trans> {title}</VisuallyHidden>
       <ListboxInput
         name="filter"
         aria-labelledby="filter-guide"
@@ -112,22 +114,22 @@ function Filter({ title, type, options, selected, setFilter }) {
           }
         }}
       >
-        <FilterButton title={`Filter by ${title}`}>{title}</FilterButton>
+        <FilterButton title={`${t("Filter by")} ${title}`}>{title}</FilterButton>
         <FilterPopover>
           <ListboxList>
             <ListboxGroup>
               <FilterListHeader>{title}</FilterListHeader>
               {options.map(option => (
                 <FilterItem
-                  key={option.id}
-                  value={option.id}
+                  key={String(option.id)}
+                  value={String(option.id)}
                   selected={!!selectedIds.includes(option.id)}
                 >
                   <FormCheckable
                     type="checkbox"
-                    id={option.id}
-                    name={option.id}
-                    checked={selectedIds.includes(option.id)}
+                    id={String(option.id)}
+                    name={String(option.id)}
+                    defaultChecked={selectedIds.includes(option.id)}
                     readOnly
                   ></FormCheckable>
                   {option.label || option.id}
@@ -142,9 +144,12 @@ function Filter({ title, type, options, selected, setFilter }) {
 }
 
 Filter.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
   title: PropTypes.string,
   type: PropTypes.string,
   options: PropTypes.array,
+  activities: PropTypes.array,
   selected: PropTypes.object,
   setFilter: PropTypes.func,
 }

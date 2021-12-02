@@ -11,15 +11,6 @@ jobs:
         node-version: [12]
 
     steps:
-      - name: Create env file
-        run: |
-          touch .env
-          echo TRANSIFEX_USER=${{ secrets.TRANSIFEX_USER }} >> .env
-          echo TRANSIFEX_PASSWORD=${{ secrets.TRANSIFEX_PASSWORD }} >> .env
-          cp .env .env.production
-          cp .env .env.development
-          cat .env
-
       - name: Checkout
         uses: actions/checkout@v2
         env:
@@ -38,9 +29,3 @@ jobs:
 
       - name: Test
         run: yarn test
-
-      - name: Update translations from Transifex
-        run: npm run transifex
-
-      - name: Test Build
-        run: yarn build

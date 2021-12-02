@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Filter from "./filter"
@@ -145,6 +146,7 @@ const initialFilterState = {
 }
 
 function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
+  const { t } = useTranslation('site', { useSuspense: false });
   const [selectedFilters, setFilter] = useState(initialFilterState)
   const [allActivities, setAllActivities] = useState([])
 
@@ -170,26 +172,27 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
 
   return (
     <FilterSection>
-      <FilterHeading>Filters</FilterHeading>
+      <FilterHeading><Trans i18nKey="filter-title">Filters</Trans></FilterHeading>
+
       <Filter
-        title="Methods"
+        title={t("filter-methods", "Methods")}
         type="methods"
         options={Object.keys(fullGuide).map(method => ({ id: method }))}
         selected={selectedFilters}
         setFilter={setFilter}
       />
       <Filter
-        title="Activities"
+        title={t("filter-activities", "Activities")}
         type="activities"
         options={allActivities}
         selected={selectedFilters}
         setFilter={setFilter}
       />
       <Filter
-        title="Org Size"
+        title={t("filter-orgsize", "Org Size")}
         type="orgSize"
         options={[
-          { id: 25, label: "<= 25 people" },
+          { id: 25, label: "<= 25 " + t("filter-people", "people") },
           { id: 50, label: "<= 50" },
           { id: 100, label: "<= 100" },
           { id: 200, label: "<= 200" },
@@ -199,25 +202,25 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
         setFilter={setFilter}
       />
       <Filter
-        title="Approaches"
+        title={t("filter-approaches", "Approaches")}
         type="approaches"
         options={[
-          { id: "Technical" },
-          { id: "Interpersonal" },
-          { id: "Research" },
+          { id: "technical", label: t("Technical") },
+          { id: "interpersonal", label: t("Interpersonal") },
+          { id: "research", label: t("Research") },
         ]}
         selected={selectedFilters}
         setFilter={setFilter}
       />
       <Filter
-        title="Remote Options"
+        title={t("Remote Options")}
         type="remoteOptions"
         options={[
-          { id: "Yes", label: "Yes" },
-          { id: "Complete", label: "Complete" },
-          { id: "Partial", label: "Partial" },
-          { id: "with-support", label: "With Support" },
-          { id: "None", label: "No Options" },
+          { id: "yes", label: t("filter-remote-1", "Yes") },
+          { id: "complete", label: t("filter-remote-2", "Complete") },
+          { id: "partial", label: t("filter-remote-3", "Partial") },
+          { id: "with-support", label: t("filter-remote-4", "With Support") },
+          { id: "none", label: t("filter-remote-5", "No Options") },
         ]}
         selected={selectedFilters}
         setFilter={setFilter}
@@ -228,10 +231,10 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
           type="submit"
           size="xlarge"
           variation="danger-plain"
-          title="Clear all filters"
+          title={t("Clear all filters")}
           onClick={() => setFilter(initialFilterState)}
         >
-          Clear Filters
+          <Trans i18nKey="filter-clear">Clear Filters</Trans>
         </Button>
       ) : null}
       <FilterChips>
@@ -243,14 +246,14 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
                 <ChipHeading>{filterKey}</ChipHeading>
                 {
                   filterValues.map(value => {
-                    return ( 
+                    return (
                       <ChipButton
                         variation="primary-plain"
                         key={value}
                         onClick={() => setFilter({...selectedFilters, [filterKey]: filterValues.filter(f => f !== value)})}
                       >
                         {filterKey === "orgSize" ? `<= ${value}` : value}
-                      </ChipButton> 
+                      </ChipButton>
                     )
                   })
                 }
@@ -267,7 +270,7 @@ Filters.propTypes = {
   fullGuide: PropTypes.object,
   activitiesInCustomGuide: PropTypes.array,
   setGuide: PropTypes.func,
-  activities: PropTypes.object,
+  activities: PropTypes.array,
 }
 
 export default Filters

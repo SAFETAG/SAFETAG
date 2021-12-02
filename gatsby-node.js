@@ -36,31 +36,46 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  const { mediaType } = node.internal
-  const contentType = node.relativeDirectory
+  if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath &&
+      (node.fileAbsolutePath.includes("/methods/") ||
+       node.fileAbsolutePath.includes("/activities/") ||
+       node.fileAbsolutePath.includes("/references/") ||
+       node.fileAbsolutePath.includes("/approaches/") ||
+       node.fileAbsolutePath.includes("/tools/") ||
+       node.fileAbsolutePath.includes("/guide_sections/") ||
+       node.fileAbsolutePath.includes("/posts/"))) {
 
-  // Create slugs for activities, methods and references
-  if ( mediaType === `text/markdown` && ["activities", "references"].includes(node.relativeDirectory) ) {
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: contentType,
-      trailingSlash: false,
-    })
-
-    createNodeField({
-      node,
-      name: "slug",
-      value: `/${contentType}${slug.substring(slug.lastIndexOf("/"))}`,
-    })
-  } else if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath &&
-      (node.fileAbsolutePath.includes("methods") || node.fileAbsolutePath.includes("posts"))) {
-
-    let basepath
-    if (node.fileAbsolutePath.includes("posts")) {
+    let basepath, ctype, langKey
+    const fileNode = getNode(node.parent)
+    if (fileNode.relativePath.split('/').length == 2) {
+      langKey = "en"
+    } else if (fileNode.relativePath.split('/').length == 4) {
+      langKey = fileNode.relativePath.split('/')[0]
+    } else {
+      console.log("Filenode error: " + fileNode.relativePath)
+      langKey = "en"
+    }
+    if (node.fileAbsolutePath.includes("/posts/")) {
       basepath = "posts"
+      ctype = "blog post"
+    } else if (node.fileAbsolutePath.includes("/activities/")){
+      basepath = "activities"
+      ctype = "activity"
+    } else if (node.fileAbsolutePath.includes("/references/")){
+      basepath = "references"
+      ctype = "reference"
+    } else if (node.fileAbsolutePath.includes("/approaches/")){
+      basepath = "approaches"
+      ctype = "approach"
+    } else if (node.fileAbsolutePath.includes("/guide_sections/")){
+      basepath = "sections"
+      ctype = "section"
+    } else if (node.fileAbsolutePath.includes("/tools/")){
+      basepath = "tools"
+      ctype = "tool"
     } else {
       basepath = "methods"
+      ctype = "method"
     }
     const slug = createFilePath({
       node,
@@ -74,6 +89,16 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "slug",
       value: `/${basepath}${slug.substring(slug.lastIndexOf("/"))}`,
     })
+    createNodeField({
+      node,
+      name: "content_type",
+      value: ctype,
+    })
+    createNodeField({
+      node,
+      name: "langKey",
+      value: langKey,
+    })
   }
 }
 
@@ -83,11 +108,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const activities = await graphql(
     `
       query {
-        allFile(
-          filter: {
-            relativeDirectory: { eq: "activities" }
-            internal: { mediaType: { eq: "text/markdown" } }
-          }
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___position],  },
+          filter: {fileAbsolutePath: {regex: "//activities//"}}
         ) {
           edges {
             node {
@@ -106,7 +129,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
   // Create pages for each file.
-  activities.data.allFile.edges.forEach(({ node }) => {
+  activities.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/components/layouts/activity-layout.js`),
@@ -120,8 +143,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       query {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "/posts/"}}
+          sort: { fields: [frontmatter___date],  },
+          filter: {fileAbsolutePath: {regex: "/posts//"}}
         ) {
           edges {
             node {
@@ -155,7 +178,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       query {
         allMarkdownRemark(
           sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "/methods/"}}
+          filter: {fileAbsolutePath: {regex: "/methods//"}}
         ) {
           edges {
             node {
@@ -183,8 +206,74 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
-}
 
+  const sections = await graphql(
+    `
+      query {
+        allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/guide_sections//"}}
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  // Handle errors
+  if (sections.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  // Create pages for each file.
+  sections.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/components/layouts/section-layout.js`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+
+  const tools = await graphql(
+    `
+      query {
+        allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/tools//"}}
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  // Handle errors
+  if (tools.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  // Create pages for each file.
+  tools.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/components/layouts/tool-layout.js`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+
+}
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html") {
     actions.setWebpackConfig({

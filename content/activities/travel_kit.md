@@ -1,6 +1,7 @@
 ---
 title: Travel Kit Checklist
 approaches: []
+position: 50
 authors:
   - SAFETAG
 remote_options: []
@@ -14,4 +15,3 @@ walk_through: ''
 recommendations: ''
 time_required_minutes: 120
 ---
-

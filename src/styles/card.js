@@ -94,6 +94,10 @@ export const CardHeading = styled(Heading)`
   margin-bottom: ${glsp()};
   position: relative;
   letter-spacing: 0.5px;
+  img {
+    max-height: 1.5rem;
+    margin-right: 0.75rem;
+  }
 `
 
 export const CardFooter = styled.div`

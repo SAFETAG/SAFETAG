@@ -1,5 +1,5 @@
 ---
-title: tool_guides
+title: Tool Guides
 ---
 
 # Auditor Trainee Tool Resource List

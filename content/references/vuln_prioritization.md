@@ -1,5 +1,5 @@
 ---
-title: vuln_prioritization
+title: Vulnerability Prioritization
 ---
 
   * *Guide:* ["Severity Assessment: Threats, Events, Vulnerabilities, Risks"](https://www.symantec.com/content/en/us/about/media/securityintelligence/SSR-Severity-Assesment.pdf) (symantec)

@@ -40,7 +40,7 @@ BaseButton.propTypes = {
   useIcon: T.oneOfType([T.array, T.string]),
   type: T.string,
   isSpinning: T.bool,
-  spinnerColor: T.oneOfType(["light", 'dark']),
+  spinnerColor: T.string,
   children: T.node,
   active: T.bool,
   hideText: T.bool,
@@ -55,7 +55,7 @@ BaseButton.defaultProps = {
   type: "button",
   size: "medium",
   radius: "rounded",
-  spinnerStyle: "dark"
+  spinnerstyle: "dark"
 }
 
 /**

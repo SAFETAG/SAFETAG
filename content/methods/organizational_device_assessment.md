@@ -1,13 +1,13 @@
 ---
-title: Organizational Device Usage
 summary: >
-
-  This component allows the auditor to discover and assess the security of the devices on the network and/or used in the organization. This component consists of interviews, surveys, network mapping, and inspection of devices.
+  This component allows the auditor to discover and assess the security of the
+  devices on the network and/or used in the organization. This component
+  consists of interviews, surveys, network mapping, and inspection of devices.
+short_summary: Discover and assess the security of the devices used in the organization.
 the_flow_of_information: "![](/img/org_device_assessment.png)"
-method_icon: "/img/org_device_icon.png"
 guiding_questions: >
-
-  * What work and personal devices do staff use to accomplish their work, store work related files, or engage in work communications?
+  * What work and personal devices do staff use to accomplish their work, store
+  work related files, or engage in work communications?
 
   * What organizational and external/personal services  do staff use to accomplish their work, store work related files, or engage in work communications?
 
@@ -24,6 +24,7 @@ guiding_questions: >
   * Are there mitigation procedures if devices are lost or taken by adversaries? (e.g.: encrypted drives, offsite backups?)
 authors:
   - SAFETAG
+position: 70
 activities:
   - Device and Behaviour Assessment
   - Password Security Survey
@@ -34,7 +35,7 @@ activities:
   - Guided Tour
   - Check Browser and Plugin Vulnerabilities
 references:
-  - device_assessment
+  - Device Assessment
   - Password Security
   - Privilege Separation Across OS
   - Examining Firewalls Across OS
@@ -42,9 +43,13 @@ references:
   - Device Encryption By OS
   - Anti-Virus Updates
   - Identifying Odd/One-Off Services
-  - physical_assessment
+  - Physical Assessment
+operational_security: >
+  * Treat the information learned/collected with the utmost sensitivity and
+  security. Physical notes should be destroyed immediately after use and digital
+  notes should be kept in line with overall SAFETAG standards.
+info_required: []
 outputs: >
-
   * List of all assets in the organization and whom they belong to.
 
   * Notes on un/documented access controls measures for the office
@@ -60,18 +65,19 @@ outputs: >
   * Notes on existing security measures for all digital systems
 
   * Written-down passwords
-operational_security: >2
-
-    * Treat the information learned/collected with the utmost sensitivity and security. Physical notes should be destroyed immediately after use and digital notes should be kept in line with overall SAFETAG standards.
-info_required: []
 info_provided: []
+title: Organizational Device Usage
+method_icon: /img/org_device_icon.png
 purpose: >
-
-  Compromised devices have the ability to undermine nearly any other organizational attempt at securing information. Knowing if devices receive basic software and security updates/upgrades and what core protections exist against unauthorized access is vital to designing a strategy to make the host more secure. Because the SAFETAG framework is focused on the security of data, it's also crucial that the physicality of devices on which this data resides, including the hard-wired networks through which it's exchanged, be not overlooked.
-preparation: |+
-
+  Compromised devices have the ability to undermine nearly any other
+  organizational attempt at securing information. Knowing if devices receive
+  basic software and security updates/upgrades and what core protections exist
+  against unauthorized access is vital to designing a strategy to make the host
+  more secure. Because the SAFETAG framework is focused on the security of data,
+  it's also crucial that the physicality of devices on which this data resides,
+  including the hard-wired networks through which it's exchanged, be not
+  overlooked.
+preparation: |
   #### Baseline Skills
-
   * Basic systems administration experience for common operating systems
-position: 70
 ---

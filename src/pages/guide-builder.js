@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import pickBy from "lodash.pickby"
@@ -7,12 +9,12 @@ import MoreLink from "../styles/button/more-link"
 import queryString from 'query-string'
 
 import {useQueryParams} from 'use-query-params';
+import keyBy from "lodash.keyby"
 
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
 import Filters from "../components/filters"
-import Search from "../components/search"
-import useAllGuideData from "../helpers/useAllGuideData"
+import Search from "../components/search-guide"
 import { prepareGuide } from "../helpers/generate-guide"
 
 import {
@@ -184,8 +186,79 @@ const ExportButtons = styled.div`
   gap: 1rem;
 `
 
-const GuideBuilder = ({ location }) => {
-  const { fullGuide, activities, fixedSections } = useAllGuideData()
+function useAllGuideData(data) {
+  const activities = data.activities.edges.map(({ node }) => {
+    return {
+      id: node.frontmatter.title,
+      sections: node.fields.frontmattermd,
+      toolnames: node.frontmatter.tools,
+      slug: node.fields.slug,
+      ...node.frontmatter,
+      ...node.fields.frontmattermd,
+    }
+  })
+
+  const methods = data.methods.edges.map(({ node }) => ({
+    id: node.frontmatter.title,
+    sections: [node.frontmatter.summary, node.frontmatter.purpose, node.frontmatter.guiding_questions, node.frontmatter.outputs, node.frontmatter.operational_security, node.frontmatter.preparation],
+    slug: node.fields.slug,
+    ...node.frontmatter,
+  }))
+
+  const references = data.references.edges.map(({ node }) => ({
+    id: node.frontmatter.title,
+    rawMarkdownBody: node.rawMarkdownBody,
+  }))
+
+  // creates an object with tool names as keys and tool slugs as values
+  const datatools = data.tools.edges
+  const tools = {}
+  datatools.forEach(
+    tool => {
+      tools[tool.node.frontmatter.title] = {
+        id: tool.node.id,
+        slug: tool.node.fields.slug,
+        title: tool.node.frontmatter.title,
+        short_summary: tool.node.frontmatter.short_summary,
+        rawMarkdownBody: tool.node.rawMarkdownBody,
+      }
+    }
+  )
+
+  const fixedSections = data.fixedSections.edges.reduce((acc, { node }) => {
+    acc[node.base] = node.childMarkdownRemark.rawMarkdownBody
+    return acc
+  }, {})
+
+  return {
+    fullGuide: keyBy(
+      methods.map(m => {
+        return {
+          ...m,
+          activities: keyBy(
+            (m.activities || []).map(id => activities.find(a => a.id === id)),
+            "id"
+          ),
+          references: keyBy(
+            (m.references || []).map(id => references.find(r => r.id === id)),
+            "id"
+          ),
+          tools: tools,
+        }
+      }),
+      "id"
+    ),
+    references,
+    activities,
+    tools,
+    fixedSections,
+  }
+}
+
+
+const GuideBuilder = ({ data, location }) => {
+  const { t, i18n } = useTranslation('site', { useSuspense: false });
+  const { fullGuide, activities, fixedSections } = useAllGuideData(data)
   // Add the full guide to state
   const [guide, setGuide] = useState(fullGuide)
   const [isNoResults, setNoResults] = useState(false)
@@ -194,53 +267,58 @@ const GuideBuilder = ({ location }) => {
 
     // eslint-disable-next-line no-unused-vars
     const [query, setQuery] = useQueryParams({});
-  
-  
+
+
     // adds selected activities to guide if any exist in url param on initial load
     useEffect(() => {
       if(location.search) {
         const qs = queryString.parse(location.search)
-        const newGuide = Object.entries(qs).reduce((prev, [key, value]) => {
-          const values = value.split(',')
-          const checkedActivities = values.reduce((prev, curr) => {
+
+        try {
+          const newGuide = Object.entries(qs).reduce((prev, [key, value]) => {
+            const values = value.split(',')
+            const checkedActivities = values.reduce((prev, curr) => {
+              return {
+                ...prev,
+                [curr]: {
+                  ...guide[key].activities[curr],
+                checked: true,
+              }
+              }
+            }, {})
+
             return {
+              ...guide,
               ...prev,
-              [curr]: {
-                ...guide[key].activities[curr],
-              checked: true,
-            }
-            }
-          }, {})
-  
-          return {
-            ...guide,
-            ...prev,
-            [key]: {
-              ...guide[key],
-              activities: {
-                ...guide[key].activities,
-                ...checkedActivities
+              [key]: {
+                ...guide[key],
+                activities: {
+                  ...guide[key].activities,
+                  ...checkedActivities
+                  }
                 }
               }
-            }
-        }, {}) 
-        setGuide(newGuide)
+          }, {})
+          setGuide(newGuide)
+        } catch (error) {
+          console.log("Error parsing the search string, dropping.")
+        }
     }
     }, [])
-  
+
     // stores list of selected activities to be references by url params and filter guide
     useEffect(() => {
       const activities = values(guide).filter(({ id, activities }) => {
         const act = values(pickBy(activities, a => a.checked))
-        return act.length && {[id]: values(pickBy(activities, a => a.checked))} 
-      })   
+        return act.length && {[id]: values(pickBy(activities, a => a.checked))}
+      })
       setActivitiesInCustomGuide(activities)
     }, [guide])
-  
+
     // sets url params as activities are selected
     useEffect(() => {
       if(activitiesInCustomGuide.length) {
-  
+
         const allSelectedActivities = activitiesInCustomGuide.map(method => {
           const activityArray = Object.values(method.activities)
           .filter(activity => activity.checked)
@@ -254,7 +332,7 @@ const GuideBuilder = ({ location }) => {
       } else {
         setQuery({},'replace')
       }
-  
+
     }, [activitiesInCustomGuide])
 
   const selectMultipleActivities = (methodId, allOrNone) => {
@@ -278,35 +356,36 @@ const GuideBuilder = ({ location }) => {
   return (
     <GlobalLayout>
       <SEO title="Guide Creator" />
+      {fullGuide && activities && <div>
       <Inpage>
         <InpageHeader>
           <InpageHeaderInner>
             <InpageTitle size="jumbo" variation="primary" withDeco>
-              Custom Guide Builder
+              <Trans i18nKey="builder-title">Custom Guide Builder</Trans>
             </InpageTitle>
           </InpageHeaderInner>
         </InpageHeader>
         <InpageBody>
           <InpageBodyInner>
-            <Search
-              fullGuide={fullGuide}
-              setGuide={setGuide}
-              setNoResults={setNoResults}
-            />
-            <Filters
-              fullGuide={fullGuide}
-              activitiesInCustomGuide={activitiesInCustomGuide}
-              setGuide={setGuide}
-              activities={activities}
-              // initialFilters={queryString.parse(location.search)}
-            />
+              <Search
+                 fullGuide={fullGuide}
+                 setGuide={setGuide}
+                 setNoResults={setNoResults}
+              />
+              <Filters
+                fullGuide={fullGuide}
+                activitiesInCustomGuide={activitiesInCustomGuide}
+                setGuide={setGuide}
+                activities={activities}
+                // initialFilters={queryString.parse(location.search)}
+              />
           </InpageBodyInner>
         </InpageBody>
         <InpageBody>
           <SplitPanels columnLayout="1:1">
             <Panel border="base">
               <InpageTitle size="xlarge">
-                {fullGuide ? "Full" : "Filtered"} Safetag Guide Content
+                {fullGuide ? t("builder-full", "Full Safetag Guide Content") : t("builder-filtered", "Filtered Safetag Guide Content")}
               </InpageTitle>
               {isNoResults && <p>No Search Results</p>}
               <GuideSelector>
@@ -314,7 +393,7 @@ const GuideBuilder = ({ location }) => {
                   return (
                     <FormGroup key={method.id}>
                       <FormGroupHeader>
-                        <MethodHeading>Method: {method.title}</MethodHeading>
+                        <MethodHeading><Trans i18nKey="builder-method">Method</Trans>: {method.title}</MethodHeading>
                       </FormGroupHeader>
                       <FormGroupBody>
                         <div>{method.summary.excerpt}</div>
@@ -325,12 +404,12 @@ const GuideBuilder = ({ location }) => {
                             prevPage: location.pathname + location.search,
                           }}
                         >
-                          Read More
+                          <Trans i18nKey="builder-readmore">Read More</Trans>
                         </MoreLink>
                         <FormCheckableGroup>
                           {method.activities[0] !== "" && (
                             <ActivitiesSelector>
-                              <ActivitiesHeading>Activities</ActivitiesHeading>
+                              <ActivitiesHeading><Trans i18nKey="builder-activities">Activities</Trans></ActivitiesHeading>
                               <Button
                                 variation="primary-plain"
                                 title="Select all activities in this method"
@@ -338,7 +417,7 @@ const GuideBuilder = ({ location }) => {
                                   selectMultipleActivities(method.id, "all")
                                 }
                               >
-                                Select All
+                                <Trans i18nKey="builder-selectall">Select All</Trans>
                               </Button>
                               <Button
                                 variation="danger-plain"
@@ -347,7 +426,7 @@ const GuideBuilder = ({ location }) => {
                                   selectMultipleActivities(method.id, "none")
                                 }
                               >
-                                Select None
+                                <Trans i18nKey="builder-selectnone">Select None</Trans>
                               </Button>
                             </ActivitiesSelector>
                           )}
@@ -360,7 +439,7 @@ const GuideBuilder = ({ location }) => {
                                     type="checkbox"
                                     id={fieldId}
                                     name={fieldId}
-                                    checked={activity.checked}
+                                    defaultChecked={activity.checked}
                                     onChange={() => {
                                       setGuide({
                                         ...guide,
@@ -393,7 +472,7 @@ const GuideBuilder = ({ location }) => {
             </Panel>
             <Panel border="base">
               <InpageTitle size="xlarge">
-                Selected Safetag Guide Content
+                <Trans i18nKey="builder-selected">Selected Safetag Guide Content</Trans>
               </InpageTitle>
               <ExportButtons>
                 <Button
@@ -402,7 +481,7 @@ const GuideBuilder = ({ location }) => {
                   title="Export selected methods and activities as PDF"
                   onClick={async () => {
                     setCustomGuideLoader(true)
-                    await prepareGuide(guide, 'custom-guide', fixedSections, false)
+                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t, i18n, data.references.edges, data.approaches.edges)
                     // requires a small buffer period
                     setTimeout(() => {
                       setCustomGuideLoader(false)
@@ -413,25 +492,25 @@ const GuideBuilder = ({ location }) => {
                   disabled={isCustomGuideLoading || !activitiesInCustomGuide.length}
                 >
                   {isCustomGuideLoading
-                    ? "Generating PDF..."
-                    : "Generate PDF Guide"}
+                    ? t("builder-genpdf", "Generating PDF...")
+                    : t("builder-genpdfguide", "Generate PDF Guide")}
                 </Button>
                 <Button
                   size="xlarge"
                   variation="base-plain"
                   title="Download full guide"
-                  onClick={() => { 
+                  onClick={() => {
                     window.open('/guides/Safetag_full_guide.pdf');
                   }}
                 >
-                  Download Full Guide
+                  <Trans i18nKey="builder-downloadfull">Download Full Guide</Trans>
                 </Button>
               </ExportButtons>
               {
                 !activitiesInCustomGuide.length &&
                 <GuideSelected>
-                  <h3>No sections selected</h3>
-                  <p>← Select activities from the panel to the left to build your custom guide</p>
+                  <h3><Trans i18nKey="builder-nosections">No sections selected</Trans></h3>
+                  <p><Trans i18nKey="builder-nosections-more">← Select activities from the panel to the left to build your custom guide</Trans></p>
                 </GuideSelected>
               }
               {values(guide).map(method => {
@@ -445,9 +524,9 @@ const GuideBuilder = ({ location }) => {
 
                 return (
                   <GuideSelected key={method.id}>
-                    <MethodHeading>Method: {method.title}</MethodHeading>
+                    <MethodHeading><Trans i18nKey="builder-method">Method</Trans>: {method.title}</MethodHeading>
                     <p>{method.summary.excerpt}</p>
-                    <ActivitiesHeading>Activities</ActivitiesHeading>
+                    <ActivitiesHeading><Trans i18nKey="builder-activities">Activities</Trans></ActivitiesHeading>
                     {selectedActivities.map(activity => (
                       <ActivityLine key={activity.id}>
                         <ActivityTitle>{activity.title}</ActivityTitle>
@@ -481,6 +560,7 @@ const GuideBuilder = ({ location }) => {
           </SplitPanels>
         </InpageBody>
       </Inpage>
+      </div>}
     </GlobalLayout>
   )
 }
@@ -488,9 +568,142 @@ const GuideBuilder = ({ location }) => {
 export default GuideBuilder
 
 GuideBuilder.propTypes = {
+  data: PropTypes.object,
   location: PropTypes.shape({
     search: PropTypes.string,
     pathname: PropTypes.string,
   })
 
 }
+
+export const query = graphql`
+  query($language: String!) {
+    fixedSections: allFile(
+      filter: {
+        relativeDirectory: { eq: "guide_sections" }
+        internal: { mediaType: { eq: "text/markdown" } }
+      }
+    ) {
+      edges {
+        node {
+          childMarkdownRemark {
+            rawMarkdownBody
+          }
+          base
+        }
+      }
+    }
+    activities: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}} },
+      sort: { fields: [frontmatter___position],  },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            frontmattermd {
+              summary {
+                excerpt
+                rawMarkdownBody
+              }
+              overview { rawMarkdownBody }
+              materials_needed { rawMarkdownBody }
+              considerations { rawMarkdownBody }
+              walk_through { rawMarkdownBody }
+              recommendations { rawMarkdownBody }
+            }
+          }
+          frontmatter {
+            title
+            summary
+            orgSize: organization_size_under
+            approaches
+            position
+            tools
+            remoteOptions: remote_options
+          }
+        }
+      }
+    }
+    methods: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/methods//"}, fields: {langKey: {eq: $language}} },
+      sort: { fields: [frontmatter___position],  },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            method_icon
+            activities
+            references
+            summary
+            purpose
+            guiding_questions
+            outputs
+            operational_security
+            preparation
+          }
+        }
+      }
+    }
+    references: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/references//"}, fields: {langKey: {eq: $language}} },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            langKey
+          }
+          frontmatter {
+            title
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+    approaches: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex: "/approaches//"}, fields: {langKey: {eq: $language}} },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            langKey
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+    tools: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/tools//"}, fields: {langKey: {eq: $language}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            short_summary
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

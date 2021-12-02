@@ -1,5 +1,6 @@
 import React from "react"
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import { graphql } from "gatsby"
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import GlobalLayout from "../components/layouts/global-layout"
 import SEO from "../components/seo"
 
@@ -13,7 +14,7 @@ import {
 import Heading from "../styles/type/heading"
 
 const ContactPage = () => {
-  const { t, i18n, ready } = useTranslation('Site strings', { useSuspense: false });
+  useTranslation('site', { useSuspense: false });
   return (
   <GlobalLayout>
     <SEO title="Contact" />
@@ -51,3 +52,17 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

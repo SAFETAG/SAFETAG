@@ -1,3 +1,6 @@
+---
+title: Guide - Appendices
+---
 
 # APPENDICES
 
@@ -284,7 +287,7 @@ This component suggests approaches to use if in-person facilitation is not possi
 This may not provide as deep results as in-person facilitation, but should provide adequate levels of expansion and verification of information needed, and even provide the secondary benefits in most cases of helping the organization build a shared understanding of its processes, risks, and riosk tolerances.
 
 ##### Overview
-Conducting digital security audit remotely requires great commitment from both auditor and the organization. It requires careful planning, scheduling, documentation and coordination from both parties. 
+Conducting digital security audit remotely requires great commitment from both auditor and the organization. It requires careful planning, scheduling, documentation and coordination from both parties.
 
 As situations may arise during the course of the project, adherence to the activities indicated on the project plan is required. Constant communication and participation are the keys for a successful remote audit.
 
@@ -306,17 +309,17 @@ Planning your audit:
   - Schedule (Upcoming calendar events)
   - Availability (Can be 30min to 1hour a day/individual or can be 1 hour for a group of 4-5)
   - Communication method (Video, email, chat)
- 
+
 Depending on which area you are auditing, you may decide on using mixed approaches during the course of the audit.
 
 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
 
 ##### Materials Needed
 In preparation with the remote facilitation activity, the following materials and documentation should be considered.

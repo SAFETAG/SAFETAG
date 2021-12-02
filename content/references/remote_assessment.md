@@ -1,5 +1,5 @@
 ---
-title: remote_assessment
+title: Remote Assessment
 ---
 
   * *Guide:* ["Passive Reconnaissance"](http://www.securitysift.com/passive-reconnaissance/) (Security Sift)

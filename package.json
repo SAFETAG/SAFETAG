@@ -17,6 +17,8 @@
     "gatsby": "^2.23.10",
     "gatsby-cli": "^2.12.78",
     "gatsby-image": "^2.4.21",
+    "gatsby-plugin-feed": "^3.12.0",
+    "gatsby-plugin-flexsearch": "^1.0.3",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-matomo": "^0.10.0",
     "gatsby-plugin-netlify-cms": "^4.3.11",
@@ -52,7 +54,9 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.11.1",
+    "react-languages-select": "^1.0.20",
     "rehype-react": "^6.1.0",
+    "remark-html": "^15.0.0",
     "styled-components": "^5.1.1",
     "transifex": "^1.6.6",
     "use-query-params": "^1.1.8"
@@ -88,8 +92,10 @@
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "extract": "i18next 'src/pages/*.js' && cp -r content locales/en/",
-    "transifex": "node -r dotenv/config src/helpers/transifex.js"
+    "extract": "i18next 'src/pages/*.js' 'src/components/*.js' 'src/components/layouts/*.js' 'src/helpers/*.js'",
+    "transifex-push": "tx init --no-interactive; tx config mapping -r safetag-overview.site --source-lang en --type json --source-file locales/en/site.json --expression 'locales/<lang>/site.json' --execute && tx config mapping-bulk -p safetag-overview --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir content/ --expression 'locales/<lang>/{filepath}/{filename}{extension}' --ignore-dir posts --execute && tx push -s --parallel --skip --use-git-timestamps --no-interactive",
+    "transifex-pull": "node -r dotenv/config src/helpers/transifex.js && python3 src/helpers/postprocess.py",
+    "postproc": "python3 src/helpers/postprocess.py"
   },
   "repository": {
     "type": "git",

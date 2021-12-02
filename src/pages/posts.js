@@ -12,7 +12,7 @@ import {
 } from "../styles/inpage"
 import Heading from "../styles/type/heading"
 
-function IndexPage({ data }) {
+function PostsPage({ data }) {
 
   return (
     <GlobalLayout>
@@ -41,11 +41,11 @@ function IndexPage({ data }) {
   )
 }
 
-IndexPage.propTypes = {
+PostsPage.propTypes = {
   data: PropTypes.array,
 }
 
-export default IndexPage
+export default PostsPage
 
 /*
       filter: {
@@ -55,7 +55,7 @@ export default IndexPage
 */
 
 export const query = graphql`
-  query {
+  query($language: String!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date],  order: DESC },
       filter: {fileAbsolutePath: {regex: "/posts/"}}
@@ -69,6 +69,15 @@ export const query = graphql`
             title
             date(formatString: "MMMM Do, YYYY")
           }
+        }
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }
