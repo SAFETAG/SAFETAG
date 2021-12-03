@@ -199,7 +199,7 @@ function MethodLayout({ data, location }) {
                 ></div>
               </Card>
             )}
-            {sections.preparation.html && (
+            {sections.preparation && (
               <Card border="base">
                 <CardHeading><Trans i18nKey="method-title-prep">Preparation</Trans></CardHeading>
                 <SquareUl
