@@ -28,12 +28,14 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
   if (existingFootnotes) {
     footnotes = existingFootnotes
   }
-  let sections = {}
-  Object.keys(frontmattermd).forEach(sectionName => {
-    // use a deep copy so as not to alter the original object
-    let section = Object.assign({}, frontmattermd[sectionName])
+  // use a deep copy so as not to alter the original object
+  let sections = Object.assign({}, frontmattermd)
+
+  Object.keys(sections).forEach(sectionName => {
+    let section = sections[sectionName]
     if (section && (section.rawMarkdownBody || (typeof section === 'string' || section instanceof String))) {
-      let content = section
+      // make a copy of the string - https://stackoverflow.com/a/31733628/122400
+      let content = (' ' + section).slice(1);
       if (section.rawMarkdownBody) {
         content = section.rawMarkdownBody
       }
