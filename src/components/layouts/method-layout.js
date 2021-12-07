@@ -117,7 +117,8 @@ function MethodLayout({ data, location }) {
 
   // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
+  let frontmatterCopy = Object.assign({}, frontmattermd)
+  let { sections, footnotes } = processSections(frontmatterCopy, allFootnotes)
 
   return (
     <GlobalLayout>

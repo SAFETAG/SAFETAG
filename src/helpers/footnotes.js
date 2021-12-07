@@ -34,11 +34,16 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
   Object.keys(sections).forEach(sectionName => {
     let section = sections[sectionName]
     if (section && (section.rawMarkdownBody || (typeof section === 'string' || section instanceof String))) {
-      // make a copy of the string - https://stackoverflow.com/a/31733628/122400
-      let content = (' ' + section).slice(1);
+      let content
       if (section.rawMarkdownBody) {
-        content = section.rawMarkdownBody
+        section = Object.assign({}, section)
+        // make a copy of the string - https://stackoverflow.com/a/31733628/122400
+        content = (' ' + section.rawMarkdownBody).slice(1)
+      } else {
+        section = (' ' + section).slice(1)
+        content = (' ' + section).slice(1)
       }
+      // TODO: Redo this with regexes
       Object.keys(allFootnotes).forEach(key => {
         if (content.includes(`[^${key}]`) && !(footnotes.filter(fn => fn.key == key).length)) {
           footnotes.push({
@@ -77,5 +82,6 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
     }
     sections[sectionName] = section
   })
+  console.log(footnotes)
   return {sections: sections, footnotes: footnotes}
 }
