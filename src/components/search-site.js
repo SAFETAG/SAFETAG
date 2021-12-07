@@ -43,7 +43,7 @@ class Search extends Component {
 
       if (this.state.results.length > 0) {
         this.state.results.map((page, i) => {
-          if (['activity', 'method', 'blog post'].includes(page.type) && page.lang == context.language) {
+          if (['activity', 'method', 'blog post', 'tool'].includes(page.type) && page.lang == context.language) {
             results.push({
               key: i,
               slug: page.url,
@@ -122,7 +122,7 @@ class Search extends Component {
       console.log("Not searching")
       return []
     } else {
-      query = query.replace(/ /, '+')
+      query = query.replace(/ /g, '+')
       console.log("Searching for " + query)
       var results = []
       Object.keys(index).forEach(idx => {
