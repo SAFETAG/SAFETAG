@@ -43,7 +43,7 @@ class Search extends Component {
 
       if (this.state.results.length > 0) {
         this.state.results.map((page, i) => {
-          if (['activity', 'method', 'blog post'].includes(page.type) && page.lang == context.language) {
+          if (['activity', 'method', 'blog post', 'tool'].includes(page.type) && page.lang == context.language) {
             results.push({
               key: i,
               slug: page.url,
