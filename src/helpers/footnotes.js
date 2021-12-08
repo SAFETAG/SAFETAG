@@ -82,6 +82,5 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
     }
     sections[sectionName] = section
   })
-  console.log(footnotes)
   return {sections: sections, footnotes: footnotes}
 }
