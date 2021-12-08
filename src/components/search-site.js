@@ -122,7 +122,7 @@ class Search extends Component {
       console.log("Not searching")
       return []
     } else {
-      query = query.replace(/ /g, '+')
+      // query = query.replace(/ /g, '+')
       console.log("Searching for " + query)
       var results = []
       Object.keys(index).forEach(idx => {
