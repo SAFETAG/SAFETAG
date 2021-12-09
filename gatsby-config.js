@@ -75,58 +75,46 @@ module.exports = {
           {
             name: 'title', resolver: 'frontmatter.title',
             indexed: true, store: true,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'description', resolver: 'frontmatter.description',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'summary', resolver: 'frontmatter.summary',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
-
           },
           {
             name: 'materials_needed', resolver: 'frontmatter.materials_needed',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'overview', resolver: 'frontmatter.materials_needed',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'walk_through', resolver: 'frontmatter.walk_through',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'guiding_questions', resolver: 'frontmatter.guiding_questions',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'outputs', resolver: 'frontmatter.outputs',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'operational_security', resolver: 'frontmatter.operational_security',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'purpose', resolver: 'frontmatter.purpose',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'preparation', resolver: 'frontmatter.preparation',
             indexed: true, store: false,
-            attributes: { encode: 'balance', tokenize: 'forward', threshold: 6, depth: 3, },
           },
           {
             name: 'url', resolver: 'fields.slug',
