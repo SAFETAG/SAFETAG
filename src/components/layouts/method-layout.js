@@ -117,7 +117,8 @@ function MethodLayout({ data, location }) {
 
   // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
+  let frontmatterCopy = Object.assign({}, frontmattermd)
+  let { sections, footnotes } = processSections(frontmatterCopy, allFootnotes)
 
   return (
     <GlobalLayout>
@@ -199,7 +200,7 @@ function MethodLayout({ data, location }) {
                 ></div>
               </Card>
             )}
-            {sections.preparation.html && (
+            {sections.preparation && (
               <Card border="base">
                 <CardHeading><Trans i18nKey="method-title-prep">Preparation</Trans></CardHeading>
                 <SquareUl

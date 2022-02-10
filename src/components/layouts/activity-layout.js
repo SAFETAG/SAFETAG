@@ -102,7 +102,8 @@ function ActivityLayout({ data }) {
 
   // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-  let { sections, footnotes } = processSections(frontmattermd, allFootnotes)
+  let frontmatterCopy = Object.assign({}, frontmattermd)
+  let { sections, footnotes } = processSections(frontmatterCopy, allFootnotes)
 
   // creates an object with tool names as keys and tool slugs as values
   const tools = data.tools.edges
