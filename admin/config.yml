@@ -2,7 +2,7 @@ backend:
   name: github
   repo: safetag/safetag
   open_authoring: true
-  branch: development
+  branch: main
   site_domain: safetag.org
 
 media_folder: static/img
