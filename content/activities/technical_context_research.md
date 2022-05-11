@@ -241,7 +241,7 @@ overview: >
 
   * Research known uses of surveillance, censorship, or malware in the country/region and/or affecting the organization's line of work
 
-  * Identify known [technical threats](#technical-threats-by-region) and Advanced Persistent Threats impacting the region or type of work the organization conducts.
+  * Identify known technical threats and Advanced Persistent Threats impacting the region or type of work the organization conducts.
 
   * Investigate current non-targeted digital threats affecting the region and/or type of organization.
 
