@@ -100,7 +100,7 @@ walk_through: |
   level of the building?) How close are other buildings? Is it a shared, open
   office space or co-working space? (shared network? open access?)?
 
-  Has the organization dealt with robberies/theft, break-ins, or office raids? 
+  Has the organization dealt with robberies/theft, break-ins, or office raids?
   If so, what happened, when, and how did you respond (or do you have a policy
   or contingency plan? When was that last reviewed/updated?)
 
@@ -272,8 +272,7 @@ walk_through: |
     * Are there any data/devices that are not backed up?
     * Are backups tested on a regular basis?
     * When was the last time the backups were restored?
-recommendations: >
-
+recommendations: |
   See recommendation section in the [Guided Tour Activity](https://safetag.org/activities/guided_tour).
 
   For useful organizational policy recommendations, review the SANS  

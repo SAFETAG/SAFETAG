@@ -21,7 +21,7 @@ short_summary: Research the technical capacity of potential threat actors,
   including both historical attack data and any indicators of changes to their
   capacity
 materials_needed: ""
-walk_through: >
+walk_through: |
   Thoroughly research technical attack history for the country/region, with a
 
   focus on identifying attacks which may focus on the work of the organization.
@@ -68,7 +68,7 @@ walk_through: >
   If the country(ies) of interest are in the [Freedom on the Net](https://freedomhouse.org/report-types/freedom-net) report, you will be able to gather a great deal of baseline information across all the sections by reading through the relevant country reports. [The key internet controls found in the Freedom on the Net report](https://freedomhouse.org/report/freedom-net/2020/key-internet-controls) guided many of the categories used here, reducing the effort required to create a baseline report. More advanced reporting could include references to the [CAPEC](https://capec.mitre.org/) (Common Attack Pattern Enumeration and Classification) taxonomy, and auditors may also be interested in leveraging the [STIX](https://oasis-open.github.io/cti-documentation/stix/intro) standard to better automate sharing and further research into specific threats using threat information sharing platforms.
 
 
-  Additional organizations which regularly release in-depth digital security focused country reports which are strongly recommended to review in creation of an assessment are listed below. These sources often link to their primary sources or other groups doing dedicated research on the country or topic for further research. 
+  Additional organizations which regularly release in-depth digital security focused country reports which are strongly recommended to review in creation of an assessment are listed below. These sources often link to their primary sources or other groups doing dedicated research on the country or topic for further research.
 
 
   **Digital attacks and threat information affecting NGOs and media**
@@ -78,7 +78,7 @@ walk_through: >
 
   * [Human Rights Watch](https://www.hrw.org/regions)
 
-  * [Reporters Without Borders](https://www.rsf.org) 
+  * [Reporters Without Borders](https://www.rsf.org)
 
   * [Privacy International](https://www.privacyinternational.org/) (site:<https://www.privacyinternational.org/> "\[COUNTRY]" filetype:pdf)
 
@@ -215,9 +215,8 @@ walk_through: >
 
   * **Definition and Guiding Questions**: Likelihood of (non-host nation) theft of user or office devices
 
-  * **Useful Data Sources**: US Department of State's Overseas Security Advisory Council (OSAC) reports <https://www.osac.gov/Pages/ContentReports.aspx?cid=2> , Pinkerton Risk Reports <https://www.pinkerton.com/> 
-considerations: >
-  
+  * **Useful Data Sources**: US Department of State's Overseas Security Advisory Council (OSAC) reports <https://www.osac.gov/Pages/ContentReports.aspx?cid=2> , Pinkerton Risk Reports <https://www.pinkerton.com/>
+considerations: |
   * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization's country, or is known to surveil.
 
   * The regional or country focus of the report may reveal information about the acitivites of an auditor. If the report is to be shared, consider sharing in bulk or a significant time after any travel has been completed.
@@ -228,7 +227,7 @@ skills_required:
   - Research
   - Malware analysis
   - Risk Assessment
-overview: >
+overview: |
   * Explore latest cyber security trends, focusing on the security landscape of
 
   organizational hardware and software identified in interviews.

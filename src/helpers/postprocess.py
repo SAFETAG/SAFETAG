@@ -7,8 +7,36 @@ import sys
 import re
 import glob
 
+long_keys = (
+                "walk_through: ",
+                "recommendations: ",
+                "overview: ",
+                "guiding_questions: ",
+                "operational_security: ",
+                "outputs: ",
+                "summary: ",
+                "considerations: ",
+                "materials_needed: ",
+                "recommendations: ",
+)
+
+frontmatter_keys = (
+                "walk_through: ",
+                "recommendations: ",
+                "overview: ",
+                "guiding_questions: ",
+                "operational_security: ",
+                "outputs: ",
+                "summary: ",
+                "considerations: ",
+                "materials_needed: ",
+                "recommendations: ",
+                "organization_size_under: ",
+                "time_required_minutes: ",
+            )
 
 def process_file(filename):
+    print(filename)
     f = open(filename, "r")
     lines = f.readlines()
     f.close()
@@ -16,20 +44,14 @@ def process_file(filename):
     newlines = []
     processing = False
     for line in lines:
-
-        if line.startswith(
-            (
-                "walk_through: ",
-                "recommendations: ",
-                "overview: ",
-                "guiding_questions: ",
-                "operational_security: ",
-                "outputs: ",
-                "considerations: ",
-            )
-        ):
-            if line.strip().endswith(("|")):
+        if line.startswith(long_keys):
+            if line.strip().endswith((">")):
+                newlines.append(line.replace(">", '|'))
+                processing = True
+                continue
+            elif line.strip().endswith(("|")):
                 newlines.append(line)
+                processing = True
                 continue
             elif line.strip().endswith(("''", '""')):
                 newlines.append(line)
@@ -44,6 +66,10 @@ def process_file(filename):
         if processing:
             if line.strip() == '"':
                 processing = False
+                continue
+            elif line.startswith(frontmatter_keys):
+                processing = False
+                newlines.append(line.replace(">", "|"))
                 continue
             newlines.append("  " + line)
         else:
