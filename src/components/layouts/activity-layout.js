@@ -161,7 +161,7 @@ function ActivityLayout({ data }) {
                   <dt><Trans i18nKey="activity-remote">Remote options</Trans></dt>
                   <dd>{frontmatter.remote_options}</dd>
                   <dt><Trans i18nKey="activity-skills">Skills required</Trans></dt>
-                  {frontmatter.skills_required.map(skill => (
+                  {(frontmatter.skills_required || []).map(skill => (
                     <dd key={skill}>{skill}</dd>
                   ))}
                   <dt><Trans i18nKey="activity-time">Time required (minutes)</Trans></dt>

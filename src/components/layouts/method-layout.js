@@ -153,13 +153,13 @@ function MethodLayout({ data, location }) {
                 <Trans i18nKey="method-title-purpose">Purpose</Trans>
               </InpageTitle>
               <div
-                dangerouslySetInnerHTML={{ __html: sections.purpose.html }}
+                dangerouslySetInnerHTML={{ __html: (sections.purpose ? sections.purpose.html : "") }}
               ></div>
             </MethodIntro>
             <MethodMeta>
               <Dl boldDesc>
                 <Trans i18nKey="method-title-author">Author</Trans>
-                {frontmatter.authors.map(authr => (
+                {(frontmatter.authors || []).map(authr => (
                   <dd key={authr}>{authr}</dd>
                 ))}
 
