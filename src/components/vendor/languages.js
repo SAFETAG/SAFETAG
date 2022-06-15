@@ -1,148 +1,197 @@
 export var languages = {
-  "sq": "shqiptar",
-  "ar": "العربية",
-  "bn": "বাংলা",
-  "ch": "中文",
-  "nl": "Nederlandse",
-  "en": "English",
-  "fr": "Français",
-  "de": "German",
-  "gr": "ελληνική",
-  "gu": "Avañe'ẽ",
-  "hi": "हिंदुस्तानी",
-  "it": "Italiano",
-  "ko": "한국어",
-  "ms": "Melayu",
-  "fa": "پارسی",
-  "pt": "Português",
-  "ro": "Română",
-  "ru": "русский",
-  "sr": "Српско-хрватски",
-  "es": "Español",
-  "sw": "Kiswahili",
-  "sv": "Swedish",
-  "ta": "தமிழ்",
-  "tr": "Türk"
+  sq: "shqiptar",
+  ar: "العربية",
+  bn: "বাংলা",
+  ch: "中文",
+  nl: "Nederlandse",
+  en: "English",
+  fr: "Français",
+  de: "German",
+  gr: "ελληνική",
+  gu: "Avañe'ẽ",
+  hi: "हिंदुस्तानी",
+  it: "Italiano",
+  ko: "한국어",
+  ms: "Melayu",
+  my: "မြန်မာစာ",
+  fa: "پارسی",
+  pt: "Português",
+  ro: "Română",
+  ru: "русский",
+  sr: "Српско-хрватски",
+  es: "Español",
+  sw: "Kiswahili",
+  sv: "Swedish",
+  ta: "தமிழ்",
+  tr: "Türk",
 };
 export var languagesX = {
-  "sq": {
-    "name": "Albanian",
-    "localName": "shqiptar",
-    "countries": ["Albania", "Kosovo", "North Macedonia"]
+  sq: {
+    name: "Albanian",
+    localName: "shqiptar",
+    countries: ["Albania", "Kosovo", "North Macedonia"],
   },
-  "ar": {
-    "name": "Arabic",
-    "localName": "العربية",
-    "countries": ["Egypt", "Sudan", "Algeria", "Iraq", "Morocco", "Saudi Arabia"]
+  ar: {
+    name: "Arabic",
+    localName: "العربية",
+    countries: ["Egypt", "Sudan", "Algeria", "Iraq", "Morocco", "Saudi Arabia"],
   },
-  "bn": {
-    "name": "Bengali",
-    "localName": "বাংলা",
-    "countries": ["Bangladesh", "India"]
+  my: {
+    name: "Burmese",
+    localName: "မြန်မာစာ",
+    countries: ["Myanmar"],
   },
-  "ch": {
-    "name": "Chinese",
-    "localName": "中文",
-    "countries": ["China", "Singapore", "Taiwan"]
+  bn: {
+    name: "Bengali",
+    localName: "বাংলা",
+    countries: ["Bangladesh", "India"],
   },
-  "nl": {
-    "name": "Dutch",
-    "localName": "Nederlandse",
-    "countries": ["Netherlands", "Belgium", "Suriname"]
+  ch: {
+    name: "Chinese",
+    localName: "中文",
+    countries: ["China", "Singapore", "Taiwan"],
   },
-  "en": {
-    "name": "English",
-    "localName": "English",
-    "countries": ["United Kingdom", "Nigeria", "Philippines", "Bangladesh", "India"]
+  nl: {
+    name: "Dutch",
+    localName: "Nederlandse",
+    countries: ["Netherlands", "Belgium", "Suriname"],
   },
-  "fr": {
-    "name": "French",
-    "localName": "Français",
-    "countries": ["Canada", "Belgium", "Switzerland", "Madagascar", "Monaco", "Haiti"]
+  en: {
+    name: "English",
+    localName: "English",
+    countries: [
+      "United Kingdom",
+      "Nigeria",
+      "Philippines",
+      "Bangladesh",
+      "India",
+    ],
   },
-  "de": {
-    "name": "German",
-    "localName": "German",
-    "countries": ["Germany", "Austria", "Switzerland", "Belgium", "Luxembourg", "Liechtenstein"]
+  fr: {
+    name: "French",
+    localName: "Français",
+    countries: [
+      "Canada",
+      "Belgium",
+      "Switzerland",
+      "Madagascar",
+      "Monaco",
+      "Haiti",
+    ],
   },
-  "gr": {
-    "name": "Greek",
-    "localName": "ελληνική",
-    "countries": ["Greece", "Cyprus"]
+  de: {
+    name: "German",
+    localName: "German",
+    countries: [
+      "Germany",
+      "Austria",
+      "Switzerland",
+      "Belgium",
+      "Luxembourg",
+      "Liechtenstein",
+    ],
   },
-  "gu": {
-    "name": "Guarani",
-    "localName": "Avañe'ẽ",
-    "countries": ["Bolivia", "Paraguay"]
+  gr: {
+    name: "Greek",
+    localName: "ελληνική",
+    countries: ["Greece", "Cyprus"],
   },
-  "hi": {
-    "name": "Hindi",
-    "localName": "हिंदुस्तानी",
-    "countries": ["India", "Fiji (known as Hindustani)", "Pakistan (known as Urdu)"]
+  gu: {
+    name: "Guarani",
+    localName: "Avañe'ẽ",
+    countries: ["Bolivia", "Paraguay"],
   },
-  "it": {
-    "name": "Italian",
-    "localName": "Italiano",
-    "countries": ["Italy", "Switzerland", "San Marino", "Vatican City"]
+  hi: {
+    name: "Hindi",
+    localName: "हिंदुस्तानी",
+    countries: [
+      "India",
+      "Fiji (known as Hindustani)",
+      "Pakistan (known as Urdu)",
+    ],
   },
-  "ko": {
-    "name": "Korean",
-    "localName": "한국어",
-    "countries": ["North Korea", "South Korea"]
+  it: {
+    name: "Italian",
+    localName: "Italiano",
+    countries: ["Italy", "Switzerland", "San Marino", "Vatican City"],
   },
-  "ms": {
-    "name": "Malay",
-    "localName": "Melayu",
-    "countries": ["Indonesia (known as Indonesian), Malaysia", "Singapore", "Brunei"]
+  ko: {
+    name: "Korean",
+    localName: "한국어",
+    countries: ["North Korea", "South Korea"],
   },
-  "fa": {
-    "name": "Persian",
-    "localName": "پارسی",
-    "countries": ["Iran", "Afghanistan (known as Dari), Tajikistan (known as Tajik)"]
+  ms: {
+    name: "Malay",
+    localName: "Melayu",
+    countries: [
+      "Indonesia (known as Indonesian), Malaysia",
+      "Singapore",
+      "Brunei",
+    ],
   },
-  "pt": {
-    "name": "Portuguese",
-    "localName": "Português",
-    "countries": ["Portugal", "Brazil", "Mozambique", "Angola"]
+  fa: {
+    name: "Persian",
+    localName: "پارسی",
+    countries: [
+      "Iran",
+      "Afghanistan (known as Dari), Tajikistan (known as Tajik)",
+    ],
   },
-  "ro": {
-    "name": "Romanian",
-    "localName": "Română",
-    "countries": ["Romania", "Moldova"]
+  pt: {
+    name: "Portuguese",
+    localName: "Português",
+    countries: ["Portugal", "Brazil", "Mozambique", "Angola"],
   },
-  "ru": {
-    "name": "Russian",
-    "localName": "русский",
-    "countries": ["Russia", "Kazakhstan", "Belarus", "Kyrgyzstan"]
+  ro: {
+    name: "Romanian",
+    localName: "Română",
+    countries: ["Romania", "Moldova"],
   },
-  "sr": {
-    "name": "Serbo-Croatian",
-    "localName": "Српско-хрватски",
-    "countries": ["Serbia", "Croatia", "Bosnia and Herzegovina", "Montenegro", "Kosovo"]
+  ru: {
+    name: "Russian",
+    localName: "русский",
+    countries: ["Russia", "Kazakhstan", "Belarus", "Kyrgyzstan"],
   },
-  "es": {
-    "name": "Spanish",
-    "localName": "Español",
-    "countries": ["Spain", "Mexico", "Colombia", "Argentina"]
+  sr: {
+    name: "Serbo-Croatian",
+    localName: "Српско-хрватски",
+    countries: [
+      "Serbia",
+      "Croatia",
+      "Bosnia and Herzegovina",
+      "Montenegro",
+      "Kosovo",
+    ],
   },
-  "sw": {
-    "name": "Swahili",
-    "localName": "Kiswahili",
-    "countries": ["Tanzania", "Kenya", "Uganda", "Rwanda", "Democratic Republic of the Congo"]
+  es: {
+    name: "Spanish",
+    localName: "Español",
+    countries: ["Spain", "Mexico", "Colombia", "Argentina"],
   },
-  "sv": {
-    "name": "Swedish",
-    "localName": "Swedish",
-    "countries": ["Sweden", "Finland"]
+  sw: {
+    name: "Swahili",
+    localName: "Kiswahili",
+    countries: [
+      "Tanzania",
+      "Kenya",
+      "Uganda",
+      "Rwanda",
+      "Democratic Republic of the Congo",
+    ],
   },
-  "ta": {
-    "name": "Tamil",
-    "localName": "தமிழ்",
-    "countries": ["Sri Lanka", "Singapore", "India"]
+  sv: {
+    name: "Swedish",
+    localName: "Swedish",
+    countries: ["Sweden", "Finland"],
   },
-  "tr": {
-    "name": "Turkish",
-    "localName": "Türk",
-    "countries": ["Turkey", "Cyprus"]
-  }
+  ta: {
+    name: "Tamil",
+    localName: "தமிழ்",
+    countries: ["Sri Lanka", "Singapore", "India"],
+  },
+  tr: {
+    name: "Turkish",
+    localName: "Türk",
+    countries: ["Turkey", "Cyprus"],
+  },
 };
