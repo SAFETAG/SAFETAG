@@ -14,6 +14,7 @@ guiding_questions: |
   * What are the existing in/formal security practices that the participants use to address risks.
 authors:
   - SAFETAG
+position: 80
 activities:
   - Device and Behaviour Assessment
   - Mobile Device Assessment
@@ -24,6 +25,7 @@ activities:
   - Password Strength
   - Guided Tour
   - Check Browser and Plugin Vulnerabilities
+  - Remote Network and User Device Assessment
 references:
   - Device Assessment
   - Password Security
@@ -47,5 +49,4 @@ purpose: |
 preparation: |
   #### Baseline Skills
   * Basic systems administration experience for common operating systems
-position: 80
 ---

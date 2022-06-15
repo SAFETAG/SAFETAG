@@ -19,7 +19,7 @@ summary: |
   trusted networks.
 short_summary: Research the technical capacity of potential threat actors,
   including both historical attack data and any indicators of changes to their
-  capacity
+  capacity.
 materials_needed: ""
 walk_through: |
   Thoroughly research technical attack history for the country/region, with a
@@ -86,7 +86,7 @@ walk_through: |
 
   * Amnesty International site:<http://www.amnestyusa.org/research/reports/> \[TERM] \[COUNTRY]
 
-  * Information Security and Cyber Threats sections of the US Department of State's Overseas Security Advisory Council (OSAC) assessments:  https://www.osac.gov/Pages/ContentReports.aspx?cid=3
+  * Information Security and Cyber Threats sections of the US Department of State Overseas Security Advisory Council (OSAC) assessments: https://www.osac.gov/Pages/ContentReports.aspx?cid=3
 
 
   **Industry-wide news and data**
@@ -110,7 +110,7 @@ walk_through: |
 
   * **Definition and Guiding Questions**: Telecommunications network monitoring or surveillance technology in use. To what extent are providers of access to digital technologies required to aid the government in monitoring the communications of their users?
 
-  * **Useful Data Sources**: Google Searches of Privacy international:   site:<https://www.privacyinternational.org/>  "\[COUNTRY]" filetype:pdf, Google Searches of Citizen Lab: site:<https://citizenlab.org/>  \[TERM] \[COUNTRY], Information Security and Cyber Threats sections of US Department of State's Overseas Security Advisory Council (OSAC) assessments (see link above)
+  * **Useful Data Sources**: Google Searches of Privacy international:   site:<https://www.privacyinternational.org/>  "\[COUNTRY]" filetype:pdf, Google Searches of Citizen Lab: site:<https://citizenlab.org/>  \[TERM] \[COUNTRY], Information Security and Cyber Threats sections of OSAC assessments (see link above)
 
 
   *Encryption Regulation*
@@ -215,7 +215,7 @@ walk_through: |
 
   * **Definition and Guiding Questions**: Likelihood of (non-host nation) theft of user or office devices
 
-  * **Useful Data Sources**: US Department of State's Overseas Security Advisory Council (OSAC) reports <https://www.osac.gov/Pages/ContentReports.aspx?cid=2> , Pinkerton Risk Reports <https://www.pinkerton.com/>
+  * **Useful Data Sources**: US Department of State Overseas Security Advisory Council (OSAC) reports <https://www.osac.gov/Pages/ContentReports.aspx?cid=2> , Pinkerton Risk Reports <https://www.pinkerton.com/>
 considerations: |
   * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization's country, or is known to surveil.
 
@@ -240,7 +240,7 @@ overview: |
 
   * Research known uses of surveillance, censorship, or malware in the country/region and/or affecting the organization's line of work
 
-  * Identify known [technical threats](#technical-threats-by-region) and Advanced Persistent Threats impacting the region or type of work the organization conducts.
+  * Identify known technical threats and Advanced Persistent Threats impacting the region or type of work the organization conducts.
 
   * Investigate current non-targeted digital threats affecting the region and/or type of organization.
 
