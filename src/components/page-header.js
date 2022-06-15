@@ -1,23 +1,28 @@
-import React, { useState, useLayoutEffect } from "react"
-import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
-import styled from "styled-components"
-import { window } from "browser-monads"
+import React, { useState, useLayoutEffect } from "react";
+import {
+  Link,
+  Trans,
+  useTranslation,
+  useI18next,
+} from "gatsby-plugin-react-i18next";
+import styled from "styled-components";
+import { window } from "browser-monads";
 
-import Constrainer from "../styles/constrainer"
-import Button from "../styles/button/button"
-import Heading from "../styles/type/heading"
-import { themeVal } from "../styles/utils/general"
-import { glsp } from "../styles/utils/theme-values"
-import media from "../styles/utils/media-queries"
+import Constrainer from "../styles/constrainer";
+import Button from "../styles/button/button";
+import Heading from "../styles/type/heading";
+import { themeVal } from "../styles/utils/general";
+import { glsp } from "../styles/utils/theme-values";
+import media from "../styles/utils/media-queries";
 
-import LogoWhite from "../../static/assets/logo/SafetagLogoWhite.svg"
-import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg"
+import LogoWhite from "../../static/assets/logo/SafetagLogoWhite.svg";
+import LogoBlue from "../../static/assets/logo/SafetagLogoBlue.svg";
 
-import SearchBox from "./search-box-header.js"
-import '../styles/search.css';
+import SearchBox from "./search-box-header.js";
+import "../styles/search.css";
 
-import ReactLanguageSelect from './vendor/lang-select.js';
-import '../styles/vendor/react-languages-select.css';
+import ReactLanguageSelect from "./vendor/lang-select.js";
+import "../styles/vendor/react-languages-select.css";
 
 const PageHead = styled.header`
   position: sticky;
@@ -34,16 +39,16 @@ const PageHead = styled.header`
     ${({ scrolled }) =>
       scrolled > 0 ? themeVal("color.primary") : themeVal("color.surface")};
   transition: all 0.25s ease-out;
-`
+`;
 
 const PageHeadInner = styled(Constrainer)`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
-const PageHeadline = styled.div``
+const PageHeadline = styled.div``;
 
 const PageTitle = styled(Heading)`
   margin: 0;
@@ -70,12 +75,12 @@ const PageTitle = styled(Heading)`
   img {
     max-width: 10rem;
   }
-`
+`;
 
 const PageNav = styled.nav`
   margin: 0;
   padding: 0;
-`
+`;
 
 const GlobalMenu = styled.ul`
   display: flex;
@@ -123,7 +128,7 @@ const GlobalMenu = styled.ul`
       margin: 0;
     }
   `}
-`
+`;
 
 const GlobalMenuLink = styled(Link)`
   font-family: ${themeVal("type.heading.family")};
@@ -145,9 +150,9 @@ const GlobalMenuLink = styled(Link)`
         scrolled > 0 ? themeVal("color.link") : themeVal("color.surface")};
     }
   }
-`
+`;
 
-const GlobalMenuButton = styled(Button)``
+const GlobalMenuButton = styled(Button)``;
 
 const Toggle = styled.div`
   display: flex;
@@ -158,7 +163,7 @@ const Toggle = styled.div`
   ${media.mediumUp`
     display: none;
   `}
-`
+`;
 
 const Hamburger = styled.div`
   background-color: ${({ scrolled }) =>
@@ -192,51 +197,52 @@ const Hamburger = styled.div`
     transform: ${({ open }) => (open ? "rotate(90deg) " : "rotate(0deg)")};
     top: 10px;
   }
-`
+`;
 
 const LanguageSelect = styled(ReactLanguageSelect)`
   button {
     background: ${({ scrolled }) =>
-      scrolled > 0 ? 'transparent url("/assets/language.svg") no-repeat;'
-                   : 'transparent url("/assets/language-white.svg") no-repeat;'
-    };
+      scrolled > 0
+        ? 'transparent url("/assets/language.svg") no-repeat;'
+        : 'transparent url("/assets/language-white.svg") no-repeat;'};
   }
   ul {
-    background: ${({ scrolled }) => scrolled > 0 ? '#fff' : themeVal("color.primary") };
-    color: ${({ scrolled }) => scrolled > 0 ? themeVal("color.primary") : '#fff;' };
+    background: ${({ scrolled }) =>
+      scrolled > 0 ? "#fff" : themeVal("color.primary")};
+    color: ${({ scrolled }) =>
+      scrolled > 0 ? themeVal("color.primary") : "#fff;"};
   }
   .flag-select__option:not(.flag-select__option--placeholder):focus,
   .flag-select__option:not(.flag-select__option--placeholder):hover {
     outline: none;
     background: #263ded;
   }
-`
-
+`;
 
 const GlobalHeader = () => {
   const { languages } = useI18next();
-  useTranslation('site', { useSuspense: false });
-  const [navbarOpen, setNavbarOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(window.scrollY)
-  const { changeLanguage } = useI18next()
+  useTranslation("site", { useSuspense: false });
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(window.scrollY);
+  const { changeLanguage } = useI18next();
   let langSelector = React.createRef();
 
-  function onSelectLanguage(languageCode){
-    changeLanguage(languageCode)
-    langSelector.updateSelected(languageCode)
+  function onSelectLanguage(languageCode) {
+    changeLanguage(languageCode);
+    langSelector.updateSelected(languageCode);
   }
 
   useLayoutEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY)
-    }
+      setScrolled(window.scrollY);
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <PageHead role="banner" scrolled={scrolled}>
@@ -348,25 +354,27 @@ const GlobalHeader = () => {
                   <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
                 </GlobalMenuButton>
               </li>
-              {languages.length > 1 ?
-              <li>
-                <LanguageSelect
-                   languages={languages}
-                   placeholder=""
-                   onSelect={onSelectLanguage}
-                   ref={(el) => langSelector = el}
-                   scrolled={scrolled}
-                />
-              </li>
-              : ""}
+              {languages.length > 1 ? (
+                <li>
+                  <LanguageSelect
+                    languages={languages}
+                    placeholder=""
+                    onSelect={onSelectLanguage}
+                    ref={(el) => (langSelector = el)}
+                    scrolled={scrolled}
+                  />
+                </li>
+              ) : (
+                ""
+              )}
             </GlobalMenu>
           )}
         </PageNav>
       </PageHeadInner>
     </PageHead>
-  )
-}
+  );
+};
 
-GlobalHeader.propTypes = {}
+GlobalHeader.propTypes = {};
 
-export default GlobalHeader
+export default GlobalHeader;
