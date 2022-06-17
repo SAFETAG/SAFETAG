@@ -1,4 +1,5 @@
 ---
+title: Responsive Support
 activities: []
 authors:
   - SAFETAG
@@ -9,7 +10,6 @@ references:
   - Digital Security Trainings
   - Digital Security Guides
   - Training Resources
-title: Responsive Support
 method_icon: "/img/responsive_support_icon.png"
 summary: |
   The auditor provides assistance for any immediate action needed (spot

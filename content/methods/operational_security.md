@@ -1,4 +1,5 @@
 ---
+title: Physical and Operational Security
 activities:
   - Guided Tour
   - Operational Security Survey
@@ -14,7 +15,6 @@ info_provided: []
 info_required: []
 references:
   - Operational Security
-title: Physical and Operational Security
 method_icon: "/img/physical_assessment_icon.png"
 summary: |
   The organizational security methodology is focused on how to mitigate against

@@ -3,10 +3,10 @@ authors:
   - SAFETAG
 info_provided: []
 info_required: []
+activities: []
 references:
   - Debrief
   - Facilitation Preparation
-title: Debrief
 method_icon: "/img/debrief_icon.png"
 summary: |
   This component consists of an out-brief to key points of contact, providing
@@ -40,4 +40,5 @@ outputs: |
   * Initiate follow-up with host (organizational and individual).
 the_flow_of_information: ''
 position: 160
+title: Debrief
 ---

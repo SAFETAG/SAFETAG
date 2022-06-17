@@ -14,7 +14,6 @@ guiding_questions: |
   * What are the existing in/formal security practices that the participants use to address risks.
 authors:
   - SAFETAG
-position: 80
 activities:
   - Device and Behaviour Assessment
   - Mobile Device Assessment
@@ -44,6 +43,7 @@ operational_security: |
   * Treat device assessment data as well as any additional service information learned with the utmost security
 info_required: []
 info_provided: []
+position: 80
 purpose: |
   Compromised devices have the ability to undermine nearly any other organizational attempt at securing information. Knowing if devices receive basic software and security upgrades and what core protections against unauthorized access exist is vital to designing a strategy to make the host more secure.
 preparation: |
