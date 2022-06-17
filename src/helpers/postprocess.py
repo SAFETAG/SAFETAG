@@ -7,33 +7,40 @@ import sys
 import re
 import glob
 
-long_keys = (
-                "walk_through: ",
-                "recommendations: ",
-                "overview: ",
-                "guiding_questions: ",
-                "operational_security: ",
-                "outputs: ",
-                "summary: ",
-                "considerations: ",
-                "materials_needed: ",
-                "recommendations: ",
-)
+long_keys = [
+                "walk_through:",
+                "recommendations:",
+                "overview:",
+                "guiding_questions:",
+                "operational_security:",
+                "outputs:",
+                "summary:",
+                "short_summary:",
+                "considerations:",
+                "materials_needed:",
+                "recommendations:",
+                "purpose:",
+                "preparation:",
+                "author:",
+                "authors:",
+                "activities:",
+                "references:",
+                "skills_required:",
+                "skills_trained:",
+                "remote_options:",
+]
 
-frontmatter_keys = (
-                "walk_through: ",
-                "recommendations: ",
-                "overview: ",
-                "guiding_questions: ",
-                "operational_security: ",
-                "outputs: ",
-                "summary: ",
-                "considerations: ",
-                "materials_needed: ",
-                "recommendations: ",
-                "organization_size_under: ",
-                "time_required_minutes: ",
-            )
+frontmatter_keys = [
+                "title:"
+                "position:",
+                "overview:",
+                "organization_size_under:",
+                "time_required_minutes:",
+                "info_required:",
+                "info_provided:",
+                "method_icon:",
+                "the_flow_of_information:",
+            ]
 
 def process_file(filename):
     print(filename)
@@ -44,7 +51,7 @@ def process_file(filename):
     newlines = []
     processing = False
     for line in lines:
-        if line.startswith(long_keys):
+        if line.startswith(tuple(long_keys)):
             if line.strip().endswith((">")):
                 newlines.append(line.replace(">", '|'))
                 processing = True
@@ -58,20 +65,38 @@ def process_file(filename):
                 processing = False
                 continue
             processing = True
-            key, start = line.split(": ", 1)
-            newlines.append(key + ": |\n")
-            newlines.append("  " + start.strip('"'))
+            key, start = line.split(":", 1)
+            if start.strip() == '[]':
+                newlines.append(line)
+                processing = False
+            elif start.strip():
+                newlines.append(key + ": |\n")
+                newlines.append("  " + start.strip('"'))
+            else:
+                newlines.append(line)
             continue
 
         if processing:
             if line.strip() == '"':
                 processing = False
                 continue
-            elif line.startswith(frontmatter_keys):
+            elif line.strip() == '---':
                 processing = False
-                newlines.append(line.replace(">", "|"))
+                newlines.append(line)
                 continue
-            newlines.append("  " + line)
+            elif line.strip().startswith(tuple(frontmatter_keys)):
+                processing = False
+                newlines.append(line.strip() + '\n')
+                continue
+            elif line.startswith(tuple(frontmatter_keys)):
+                processing = False
+                newlines.append(line.strip() + '\n')
+                continue
+            elif line.strip().startswith(("- ", "* ")):
+                newlines.append("  " + line)
+                continue
+            else:
+                newlines.append("  " + line)
         else:
             newlines.append(line)
 
