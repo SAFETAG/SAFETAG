@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.cc6531616821b05b9931.css" id="gatsby-global-css">:root{--reach-listbox:1}[data-reach-listbox-popover]{display:block;position:absolute;min-width:-moz-fit-content;min-width:-webkit-min-content;min-width:min-content;padding:.25rem 0;background:#fff;outline:none;border:1px solid rgba(0,0,0,.25)}[data-reach-listbox-popover]:focus-within{box-shadow:0 0 4px Highlight;outline:4px auto -webkit-focus-ring-color}[data-reach-listbox-popover][hidden]{display:none}[data-reach-listbox-list]{margin:0;padding:0;list-style:none}[data-reach-listbox-list]:focus{box-shadow:none;outline:none}[data-reach-listbox-option]{display:block;margin:0;padding:.25rem .5rem;white-space:nowrap;-webkit-user-select:none;-ms-user-select:none;user-select:none}[data-reach-listbox-option][aria-selected=true]{background:#1672d4;color:#fff}[data-reach-listbox-option][data-current]{font-weight:bolder}[data-reach-listbox-option][data-current][data-confirming]{-webkit-animation:flash .1s;animation:flash .1s;-webkit-animation-iteration-count:1;animation-iteration-count:1}[data-reach-listbox-option][aria-disabled=true]{opacity:.5}[data-reach-listbox-button]{display:inline-flex;align-items:center;justify-content:space-between;padding:1px 10px 2px;border-color:#d8d8d8 #d1d1d1 #bababa;border-style:solid;border-width:1px;cursor:default;-webkit-user-select:none;-ms-user-select:none;user-select:none}[data-reach-listbox-button][aria-disabled=true]{opacity:.5}[data-reach-listbox-arrow]{margin-left:.5rem;display:block;font-size:.5em}[data-reach-listbox-group-label]{display:block;margin:0;padding:.25rem .5rem;white-space:nowrap;-webkit-user-select:none;-ms-user-select:none;user-select:none;font-weight:bolder}@-webkit-keyframes flash{0%{background:#1159a6;color:#fff;opacity:1}50%{opacity:.5;background:inherit;color:inherit}to{background:#1159a6;color:#fff;opacity:1}}@keyframes flash{0%{background:#1159a6;color:#fff;opacity:1}50%{opacity:.5;background:inherit;color:inherit}to{background:#1159a6;color:#fff;opacity:1}}.searchBoxHeader input{color:#fff;font-family:Space Mono,monospace;font-weight:700;border-radius:0;border:2px solid #fff;background-color:hsla(0,0%,100%,.2);padding:.25rem .75rem;transition:background-color .24s ease 0s}.searchBoxHeader input.scrolled{color:#0721eb;border:2px solid #0721eb;background-color:rgba(7,33,235,.1)}.searchBoxHeader input:focus{background-color:hsla(0,0%,100%,0)}.searchBoxHeader img{width:1.5rem;height:1.5rem;cursor:pointer}
+
+/*!
+ * react-languages-select v1.0.19 - https://gitlab.com/marcosolari/react-languages-select#readme
+ * MIT Licensed
+ */.flag-select{position:relative;display:inline-block;vertical-align:inherit;padding-bottom:5px;text-align:left}.flag-select__btn{padding:0 8px;color:#4d4d4d;border:none;background-size:contain;cursor:pointer}.flag-select__btn:after,.flag-select__btn[aria-expanded=true]:after{content:" ";width:0;height:0;display:inline-block;vertical-align:middle;margin-left:5px}.flag-select__btn:after{border-top:5px solid #fff;border-bottom:0}.flag-select__btn:after,.flag-select__btn[aria-expanded=true]:after{border-left:5px solid transparent;border-right:5px solid transparent}.flag-select__btn[aria-expanded=true]:after{border-top:0;border-bottom:5px solid #4d4d4d}.flag-select__btn:before{content:" ";display:block;width:100%;height:100%;position:absolute;z-index:999}.flag-select__option{cursor:pointer;padding:0 8px 3px;margin:4px 0;white-space:nowrap}.flag-select__options{position:absolute;z-index:999999;border:1px solid #bdbbbb;border-radius:3px;background:#fff;margin-top:8px;padding:8px 0;max-height:160px;overflow:auto}.flag-select__options.to--left{right:10px}.flag-select__option--placeholder{height:inherit;width:inherit;display:inline-block;vertical-align:middle}.flag-select__option:not(.flag-select__option--placeholder):focus,.flag-select__option:not(.flag-select__option--placeholder):hover{outline:none;background:#263ded}.flag-select__option.has-label{padding:0 20px 3px 8px}.flag-select__option__label{font-size:1em;position:relative;padding-left:9px}.flag-select__option__icon{width:1.3em;height:1.3em;position:relative;top:.3em}.flag-select .filterBox{width:100%}.flag-select .filterBox input{width:90%;margin:0 4%}.flag-select .filterBox input:focus{outline:none}.flag-select .hidden{display:none}.flag-select .no--focus{pointer-events:none}</style><meta name="generator" content="Gatsby 2.32.13"/><title data-react-helmet="true">Activity:  | Safetag</title><link data-react-helmet="true" rel="icon" type="image/svg+xml" sizes="16x16" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDQwOCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjYwIDU2QzI2MCA4Ni45Mjc5IDIzNC45MjggMTEyIDIwNCAxMTJDMTczLjA3MiAxMTIgMTQ4IDg2LjkyNzkgMTQ4IDU2QzE0OCAyNS4wNzIxIDE3My4wNzIgMCAyMDQgMEMyMzQuOTI4IDAgMjYwIDI1LjA3MjEgMjYwIDU2Wk0xNDggMjI4QzE0OCAxOTcuMDcyIDE3My4wNzIgMTcyIDIwNCAxNzJDMjM0LjkyOCAxNzIgMjYwIDE5Ny4wNzIgMjYwIDIyOEgzMDRDMzA0IDE3Mi43NzIgMjU5LjIyOCAxMjggMjA0IDEyOEMxNDguNzcyIDEyOCAxMDQgMTcyLjc3MiAxMDQgMjI4VjQwOEgzMDRWMjUySDE0OFYyMjhaIiBmaWxsPSIjMDcyMUVCIi8+Cjwvc3ZnPgo="/><link data-react-helmet="true" rel="icon" type="image/svg+xml" sizes="32x32" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDQwOCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjYwIDU2QzI2MCA4Ni45Mjc5IDIzNC45MjggMTEyIDIwNCAxMTJDMTczLjA3MiAxMTIgMTQ4IDg2LjkyNzkgMTQ4IDU2QzE0OCAyNS4wNzIxIDE3My4wNzIgMCAyMDQgMEMyMzQuOTI4IDAgMjYwIDI1LjA3MjEgMjYwIDU2Wk0xNDggMjI4QzE0OCAxOTcuMDcyIDE3My4wNzIgMTcyIDIwNCAxNzJDMjM0LjkyOCAxNzIgMjYwIDE5Ny4wNzIgMjYwIDIyOEgzMDRDMzA0IDE3Mi43NzIgMjU5LjIyOCAxMjggMjA0IDEyOEMxNDguNzcyIDEyOCAxMDQgMTcyLjc3MiAxMDQgMjI4VjQwOEgzMDRWMjUySDE0OFYyMjhaIiBmaWxsPSIjMDcyMUVCIi8+Cjwvc3ZnPgo="/><link data-react-helmet="true" rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDQwOCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjYwIDU2QzI2MCA4Ni45Mjc5IDIzNC45MjggMTEyIDIwNCAxMTJDMTczLjA3MiAxMTIgMTQ4IDg2LjkyNzkgMTQ4IDU2QzE0OCAyNS4wNzIxIDE3My4wNzIgMCAyMDQgMEMyMzQuOTI4IDAgMjYwIDI1LjA3MjEgMjYwIDU2Wk0xNDggMjI4QzE0OCAxOTcuMDcyIDE3My4wNzIgMTcyIDIwNCAxNzJDMjM0LjkyOCAxNzIgMjYwIDE5Ny4wNzIgMjYwIDIyOEgzMDRDMzA0IDE3Mi43NzIgMjU5LjIyOCAxMjggMjA0IDEyOEMxNDguNzcyIDEyOCAxMDQgMTcyLjc3MiAxMDQgMjI4VjQwOEgzMDRWMjUySDE0OFYyMjhaIiBmaWxsPSIjMDcyMUVCIi8+Cjwvc3ZnPgo="/><meta data-react-helmet="true" name="description" content="Create custom Safetag guides for your needs"/><meta data-react-helmet="true" property="og:title" content="Activity: "/><meta data-react-helmet="true" property="og:description" content="Create custom Safetag guides for your needs"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@developmentseed"/><meta data-react-helmet="true" name="twitter:title" content="Activity: "/><meta data-react-helmet="true" name="twitter:description" content="Create custom Safetag guides for your needs"/><style data-styled="" data-styled-version="5.3.5">html{line-height:1.15;-webkit-text-size-adjust:100%;text-size-adjust:100%;font-family:sans-serif;}/*!sc*/
+article,aside,footer,header,nav,section{display:block;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+figcaption,figure,main{display:block;}/*!sc*/
+figure{margin:1em 40px;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+b,strong{font-weight:inherit;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+dfn{font-style:italic;}/*!sc*/
+mark{background-color:#ff0;color:#000;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+audio,video{display:inline-block;}/*!sc*/
+audio:not([controls]){display:none;height:0;}/*!sc*/
+img{border-style:none;}/*!sc*/
+svg:not(:root){overflow:hidden;}/*!sc*/
+button,input,optgroup,select,textarea{margin:0;font-family:sans-serif;font-size:100%;line-height:1.15;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{display:inline-block;vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details,menu{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+canvas{display:inline-block;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+body{margin:0;}/*!sc*/
+a:active,a:hover{outline-width:0;}/*!sc*/
+html{box-sizing:border-box;font-size:16px;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;-webkit-scroll-padding-top:150px;-moz-scroll-padding-top:150px;-ms-scroll-padding-top:150px;scroll-padding-top:150px;height:100%;}/*!sc*/
+*,*::before,*::after{box-sizing:inherit;}/*!sc*/
+body{background-color:#FFFFFF;color:#282828;font-size:1rem;line-height:1.5;font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-style:normal;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;}/*!sc*/
+ul{padding-inline-start:1rem;}/*!sc*/
+a{cursor:pointer;color:rgba(7,33,235,0.84);-webkit-text-decoration:none;text-decoration:none;position:relative;}/*!sc*/
+a:after{position:absolute;bottom:0;left:0;width:100%;-webkit-transform:translateY(0%);-ms-transform:translateY(0%);transform:translateY(0%);height:2px;content:"";background:#0721EB;opacity:0;-webkit-transition:all 0.16s cubic-bezier(0.55,0.085,0.68,0.53);transition:all 0.16s cubic-bezier(0.55,0.085,0.68,0.53);}/*!sc*/
+a:visited{color:#0721EB;}/*!sc*/
+a:hover{color:#0721EB;}/*!sc*/
+a:hover:after{opacity:1;-webkit-transform:translateY(150%);-ms-transform:translateY(150%);transform:translateY(150%);}/*!sc*/
+a:active{-webkit-transform:translate(0,1px);-ms-transform:translate(0,1px);transform:translate(0,1px);}/*!sc*/
+a[class^="card"]{cursor:pointer;}/*!sc*/
+a[class^="card"]:hover,a[class^="card"]:active{opacity:1;-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+[role="button"]{cursor:pointer;}/*!sc*/
+input,select,textarea{font:inherit;height:auto;width:auto;margin:0;}/*!sc*/
+table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+blockquote,q{quotes:none;}/*!sc*/
+blockquote::before,blockquote::after,q::before,q::after{content:"";content:none;}/*!sc*/
+b,strong{font-weight:700;}/*!sc*/
+::selection{background-color:rgba(6,204,211,0.64);}/*!sc*/
+#root{min-height:100vh;}/*!sc*/
+.tether-element{z-index:1000;}/*!sc*/
+#gatsby-focus-wrapper{min-height:100vh;}/*!sc*/
+#gatsby-focus-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}/*!sc*/
+data-styled.g1[id="sc-global-fqqitK1"]{content:"sc-global-fqqitK1,"}/*!sc*/
+.kFlfln{padding:1rem;margin:0 auto;max-width:1280px;}/*!sc*/
+data-styled.g2[id="constrainer__Constrainer-sc-vi2beb-0"]{content:"kFlfln,"}/*!sc*/
+.bdulGt{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;text-align:center;white-space:nowrap;vertical-align:middle;line-height:1.5rem;font-size:1rem;padding:0.25rem 0.75rem;min-width:2rem;background:none;text-shadow:none;border:0;font-family:"Space Mono",monospace;font-weight:700;cursor:pointer;position:relative;-webkit-transition:background-color 0.24s ease 0s;transition:background-color 0.24s ease 0s;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,0.08),0 2px 0px 0 rgba(0,0,0,0.16);line-height:1.5rem;font-size:1rem;padding:0.25rem 0.75rem;min-width:2rem;border-radius:0;display:inline-block;}/*!sc*/
+.bdulGt,.bdulGt:focus{outline:none;}/*!sc*/
+.bdulGt:hover{opacity:1;}/*!sc*/
+.bdulGt.active,.bdulGt:active{-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+.bdulGt::before,.bdulGt::after{font-size:1rem;}/*!sc*/
+.bdulGt::before{margin-right:0.375rem;}/*!sc*/
+.bdulGt::after{margin-left:0.375rem;}/*!sc*/
+.bdulGt::before,.bdulGt::after,.bdulGt > *{vertical-align:top;display:inline-block;line-height:inherit !important;}/*!sc*/
+.bdulGt > input[type=checkbox],.bdulGt > input[type=radio]{border:0 none;-webkit-clip:rect(0,0,0,0);clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}/*!sc*/
+.bdulGt,.bdulGt:visited{color:#0721EB;}/*!sc*/
+.bdulGt:after{border-color:#fff;}/*!sc*/
+.bdulGt:hover{background-color:#d7dbfb;color:#0721EB;}/*!sc*/
+.bdulGt.active,.bdulGt:active{background-color:#ebedfd;box-shadow:inset 0 1px 2px 0 rgba(0,0,0,0.16);}/*!sc*/
+.bdulGt:after{position:absolute;content:'';opacity:0;width:100%;height:100%;left:0;top:0;z-index:-1;border-width:2px;border-style:solid;background:none;-webkit-transition:all .16s cubic-bezier(.55,.085,.68,.53);transition:all .16s cubic-bezier(.55,.085,.68,.53);}/*!sc*/
+.bdulGt:hover:after{opacity:1;-webkit-transform:translate(5px,10px);-ms-transform:translate(5px,10px);transform:translate(5px,10px);-webkit-transition-delay:.08s;transition-delay:.08s;}/*!sc*/
+data-styled.g5[id="button__Button-sc-9piufk-0"]{content:"bdulGt,"}/*!sc*/
+.jWBCWW{font-family:"Space Mono",monospace;font-weight:700;margin:0;position:relative;font-size:clamp(1rem,1rem,3rem);line-height:1.5rem;color:#282828;}/*!sc*/
+.eWsLIv{font-family:"Space Mono",monospace;font-weight:700;margin:0;position:relative;font-size:clamp(1rem,1.75rem,3rem);line-height:2rem;color:#0721EB;}/*!sc*/
+.hCGKPk{font-family:"Space Mono",monospace;font-weight:700;margin:0;position:relative;font-size:clamp(1rem,1.25rem,3rem);line-height:1.75rem;color:#282828;padding:0.5rem 0 0.75rem;border-top:2px solid #282828;border-bottom:1px solid #282828;}/*!sc*/
+data-styled.g6[id="heading__Heading-sc-127qstd-0"]{content:"jWBCWW,eWsLIv,hCGKPk,"}/*!sc*/
+.bRQNwO{position:-webkit-sticky;position:sticky;top:0;left:0;z-index:10;color:#FFFFFF;background:#0721EB;border-top:2px solid #FFFFFF;border-bottom:1px solid #FFFFFF;-webkit-transition:all 0.25s ease-out;transition:all 0.25s ease-out;}/*!sc*/
+data-styled.g9[id="page-header__PageHead-sc-9vep08-0"]{content:"bRQNwO,"}/*!sc*/
+.hHzsfO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+data-styled.g10[id="page-header__PageHeadInner-sc-9vep08-1"]{content:"hHzsfO,"}/*!sc*/
+.jjkCVp{margin:0;$$typeof:Symbol(react.forward_ref);render:[object Object];}/*!sc*/
+.jjkCVp *{display:block;}/*!sc*/
+.jjkCVp,.jjkCVp a{-webkit-text-decoration:none;text-decoration:none;-webkit-transition:all 0.24s ease 0s;transition:all 0.24s ease 0s;}/*!sc*/
+.jjkCVp,.jjkCVp a,.jjkCVp:visited,.jjkCVp a:visited{color:inherit;-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+.jjkCVp:hover,.jjkCVp a:hover{color:#0721EB;opacity:1;}/*!sc*/
+.jjkCVp:after,.jjkCVp a:after{content:none;}/*!sc*/
+.jjkCVp img{max-width:10rem;}/*!sc*/
+data-styled.g12[id="page-header__PageTitle-sc-9vep08-3"]{content:"jjkCVp,"}/*!sc*/
+.itpvWz{margin:0;padding:0;}/*!sc*/
+data-styled.g13[id="page-header__PageNav-sc-9vep08-4"]{content:"itpvWz,"}/*!sc*/
+.eELmqa{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;list-style:none;position:fixed;width:100%;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;opacity:0;-webkit-transition:all 0.2s ease-in;transition:all 0.2s ease-in;top:5rem;right:-100%;z-index:10;background:#0721EB;color:#FFFFFF;border-bottom:1px solid #FFFFFF;}/*!sc*/
+.eELmqa > li{margin:1rem;list-style:none;}/*!sc*/
+@media only screen and (min-width:768px){.eELmqa{-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;top:0;right:0;background:none;border-bottom:none;opacity:1;-webkit-transition:none;transition:none;}.eELmqa > li{margin:0;margin-right:2rem;}.eELmqa > *:last-child{margin:0;}}/*!sc*/
+data-styled.g14[id="page-header__GlobalMenu-sc-9vep08-5"]{content:"eELmqa,"}/*!sc*/
+.czxnJx{font-family:"Space Mono",monospace;color:#FFFFFF;-webkit-text-decoration:none;text-decoration:none;-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;}/*!sc*/
+.czxnJx,.czxnJx:visited{color:#FFFFFF;}/*!sc*/
+.czxnJx:hover{color:#FFFFFF;opacity:1;}/*!sc*/
+.czxnJx:hover:after{background:#FFFFFF;}/*!sc*/
+data-styled.g15[id="page-header__GlobalMenuLink-sc-9vep08-6"]{content:"czxnJx,"}/*!sc*/
+.knTWaV{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;cursor:pointer;padding:0.75rem 0;margin-left:auto;}/*!sc*/
+@media only screen and (min-width:768px){.knTWaV{display:none;}}/*!sc*/
+data-styled.g17[id="page-header__Toggle-sc-9vep08-8"]{content:"knTWaV,"}/*!sc*/
+.eRPsbj{background-color:#FFFFFF;width:30px;height:3px;-webkit-transition:all 0.3s linear;transition:all 0.3s linear;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;position:relative;-webkit-transform:inherit;-ms-transform:inherit;transform:inherit;}/*!sc*/
+.eRPsbj::before,.eRPsbj::after{width:30px;height:3px;background-color:#FFFFFF;content:"";position:absolute;-webkit-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}/*!sc*/
+.eRPsbj::before{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);top:-10px;}/*!sc*/
+.eRPsbj::after{opacity:1;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);top:10px;}/*!sc*/
+data-styled.g18[id="page-header__Hamburger-sc-9vep08-9"]{content:"eRPsbj,"}/*!sc*/
+.hfXwCH button{background:transparent url("/assets/language-white.svg") no-repeat;}/*!sc*/
+.hfXwCH ul{background:#0721EB;color:#fff;}/*!sc*/
+.hfXwCH .flag-select__option:not(.flag-select__option--placeholder):focus,.hfXwCH .flag-select__option:not(.flag-select__option--placeholder):hover{outline:none;background:#263ded;}/*!sc*/
+data-styled.g19[id="page-header__LanguageSelect-sc-9vep08-10"]{content:"hfXwCH,"}/*!sc*/
+.hLTPzn{background-color:#000000;font-size:0.875rem;line-height:1rem;padding:2rem 0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;}/*!sc*/
+data-styled.g20[id="page-footer__PageFoot-sc-1wx9oy3-0"]{content:"hLTPzn,"}/*!sc*/
+.kvKyNW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+data-styled.g21[id="page-footer__PageFootInner-sc-1wx9oy3-1"]{content:"kvKyNW,"}/*!sc*/
+.fdMdPB{color:#FFFFFF;}/*!sc*/
+data-styled.g22[id="page-footer__PageCredits-sc-1wx9oy3-2"]{content:"fdMdPB,"}/*!sc*/
+.jzErNF{color:#FFFFFF;}/*!sc*/
+data-styled.g23[id="page-footer__PageSocial-sc-1wx9oy3-3"]{content:"jzErNF,"}/*!sc*/
+.jKPPkQ{color:#FFFFFF;}/*!sc*/
+data-styled.g24[id="page-footer__PageNetlify-sc-1wx9oy3-4"]{content:"jKPPkQ,"}/*!sc*/
+.cARici{-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;overflow:hidden;}/*!sc*/
+data-styled.g25[id="global-layout__SiteContent-sc-1kk8eb4-0"]{content:"cARici,"}/*!sc*/
+.fkUPZT{padding:2rem 1.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;color:#000000;background:transparent;position:relative;border:2px solid #000000;}/*!sc*/
+.fkUPZT >:last-child:not(:first-child){padding-top:2rem;}/*!sc*/
+.fkUPZT:visited{color:#000000;}/*!sc*/
+.fkUPZT a,.fkUPZT a:visited{color:#0721EB;}/*!sc*/
+.fkUPZT h1,.fkUPZT h2,.fkUPZT h3{margin:0;}/*!sc*/
+.cikiWz{padding:2rem 1.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;color:#000000;background:transparent;position:relative;border:2px solid #FFFFFF;}/*!sc*/
+.cikiWz >:last-child:not(:first-child){padding-top:2rem;}/*!sc*/
+.cikiWz:visited{color:#000000;}/*!sc*/
+.cikiWz a,.cikiWz a:visited{color:#0721EB;}/*!sc*/
+.cikiWz h1,.cikiWz h2,.cikiWz h3{margin:0;}/*!sc*/
+data-styled.g26[id="card__Card-sc-1neqwum-0"]{content:"fkUPZT,cikiWz,"}/*!sc*/
+.gVieEx{margin-bottom:1rem;position:relative;-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;}/*!sc*/
+.gVieEx img{max-height:1.5rem;margin-right:0.75rem;}/*!sc*/
+data-styled.g28[id="card__CardHeading-sc-1neqwum-2"]{content:"gVieEx,"}/*!sc*/
+.kRraGI{display:grid;height:100%;grid-template-rows:auto 1fr;}/*!sc*/
+data-styled.g31[id="inpage__Inpage-sc-1dtk98a-0"]{content:"kRraGI,"}/*!sc*/
+.buObBj{display:grid;grid-template-columns:1fr;padding-top:1rem;padding-bottom:2rem;}/*!sc*/
+@media only screen and (min-width:768px){.buObBj{grid-template-columns:3fr 1fr;gap:4rem;padding-top:2rem;}}/*!sc*/
+.buObBj > section > .card__Card-sc-1neqwum-0{margin-top:1rem;display:block;}/*!sc*/
+.buObBj > *{margin-bottom:2rem;}/*!sc*/
+@media only screen and (min-width:768px){.buObBj > *{margin-bottom:0;}}/*!sc*/
+data-styled.g32[id="inpage__InpageInnerColumns-sc-1dtk98a-1"]{content:"buObBj,"}/*!sc*/
+.gpOrCg{padding-bottom:2rem;}/*!sc*/
+data-styled.g33[id="inpage__InpageHeader-sc-1dtk98a-2"]{content:"gpOrCg,"}/*!sc*/
+.cuARmr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;min-width:0;}/*!sc*/
+.cuARmr > *:first-child{margin-bottom:1rem;}/*!sc*/
+.cuARmr > *:last-child{margin-bottom:1rem;}/*!sc*/
+data-styled.g35[id="inpage__InpageHeadline-sc-1dtk98a-4"]{content:"cuARmr,"}/*!sc*/
+.kOSUSg{margin-bottom:0.5rem;line-height:3rem;}/*!sc*/
+data-styled.g38[id="inpage__InpageTitle-sc-1dtk98a-7"]{content:"kOSUSg,"}/*!sc*/
+.cYTaLI{background-color:#000000;}/*!sc*/
+.cYTaLI *{color:#FFFFFF;border-color:#FFFFFF;}/*!sc*/
+.cYTaLI *:after{background-color:#FFFFFF;}/*!sc*/
+.cYTaLI * a{color:#FFFFFF;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.inpage__InpageBody-sc-1dtk98a-9 ~ .inpage__InpageBody-sc-1dtk98a-9{padding-top:2rem;padding-bottom:2rem;}/*!sc*/
+.cYTaLI p > img{display:block;margin:1rem auto;max-width:100%;}/*!sc*/
+.hquRBB{background-color:transparent;}/*!sc*/
+.inpage__InpageBody-sc-1dtk98a-9 ~ .inpage__InpageBody-sc-1dtk98a-9{padding-top:2rem;padding-bottom:2rem;}/*!sc*/
+.hquRBB p > img{display:block;margin:1rem auto;max-width:100%;}/*!sc*/
+data-styled.g40[id="inpage__InpageBody-sc-1dtk98a-9"]{content:"cYTaLI,hquRBB,"}/*!sc*/
+.bkBrST{color:inherit;font-size:0.875rem;line-height:1.25rem;font-feature-settings:"pnum" 0;font-family:"Space Mono",monospace;font-weight:300;text-transform:uppercase;-webkit-letter-spacing:0.025rem;-moz-letter-spacing:0.025rem;-ms-letter-spacing:0.025rem;letter-spacing:0.025rem;}/*!sc*/
+.bkBrST:before{padding-right:0.5rem;content:'\27F5';-webkit-transition:all 0.16s cubic-bezier(.55,.085,.68,.53);transition:all 0.16s cubic-bezier(.55,.085,.68,.53);}/*!sc*/
+.bkBrST:hover:before{padding-right:1rem;}/*!sc*/
+.bkBrST:hover:before,.bkBrST:active:before{-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+.bkBrST:after{opacity:1;-webkit-transform:none;-ms-transform:none;transform:none;left:inherit;bottom:inherit;height:inherit;background:inherit;}/*!sc*/
+data-styled.g42[id="more-link__MoreLink-sc-4fj82l-0"]{content:"bkBrST,"}/*!sc*/
+.jvSzfW{margin:0;font-feature-settings:"pnum" 0;}/*!sc*/
+.jvSzfW dt{color:inherit;font-size:0.875rem;line-height:1.25rem;font-feature-settings:"pnum" 0;font-family:"IBM Plex Sans",sans-serif;font-weight:400;text-transform:uppercase;margin:0 0 0.25rem 0;}/*!sc*/
+.jvSzfW dd{margin:0 0 1rem 0;font-weight:bold;}/*!sc*/
+.jvSzfW dd + dd{margin-top:-1rem;}/*!sc*/
+data-styled.g43[id="lists__Dl-sc-16pqb8y-0"]{content:"jvSzfW,"}/*!sc*/
+.ioOhRX,.ioOhRX > ul,.ioOhRX > ul > ul{padding-left:1rem;}/*!sc*/
+.ioOhRX li{list-style:none;text-indent:-1.8rem;margin-left:1rem;margin-bottom:0.25rem;}/*!sc*/
+.ioOhRX li:before{content:"\25A0";font-size:1.5rem;vertical-align:baseline;list-style-position:inherit;margin-right:1rem;}/*!sc*/
+.ioOhRX li>p:before{content:'';}/*!sc*/
+.ioOhRX li>p:first-child{display:inline;text-indent:-1.8rem;}/*!sc*/
+.ioOhRX pre{text-indent:0;}/*!sc*/
+.ioOhRX table{margin:2rem 0;font-size:0.875rem;text-align:left;}/*!sc*/
+.ioOhRX table thead tr{background-color:#0721EB;color:#FFFFFF;}/*!sc*/
+.ioOhRX table tbody tr:nth-child(odd){background-color:rgba(0,0,0,0.04);}/*!sc*/
+.ioOhRX table th,.ioOhRX table td{padding:0.25rem 0.5rem;border-right:2px solid white;}/*!sc*/
+data-styled.g44[id="lists__SquareUl-sc-16pqb8y-1"]{content:"ioOhRX,"}/*!sc*/
+.iCudHk article{overflow-x:hidden;}/*!sc*/
+.iCudHk article pre{padding:1rem;font-family:"IBM Plex Mono",monospace;background:rgba(0,0,0,0.04);overflow-x:scroll;font-size:0.875rem;}/*!sc*/
+.iCudHk .lists__SquareUl-sc-16pqb8y-1 h6{font-size:1rem;font-family:"IBM Plex Mono",monospace;color:#0721EB;text-transform:uppercase;}/*!sc*/
+.iCudHk .lists__Dl-sc-16pqb8y-0 dd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.iCudHk .lists__Dl-sc-16pqb8y-0 dd img{max-width:1.75rem;margin-right:1rem;-webkit-order:-1;-ms-flex-order:-1;order:-1;}/*!sc*/
+.iCudHk .lists__Dl-sc-16pqb8y-0 dd + dd{margin-top:0;}/*!sc*/
+data-styled.g46[id="activity-layout__ActivityPage-sc-333p9v-0"]{content:"iCudHk,"}/*!sc*/
+@media only screen and (min-width:768px){.OuOah{grid-column:span 2;}}/*!sc*/
+data-styled.g47[id="activity-layout__ActivityHeadline-sc-333p9v-1"]{content:"OuOah,"}/*!sc*/
+.bNrIWI:after{content:"_";}/*!sc*/
+data-styled.g48[id="activity-layout__ActivityTitle-sc-333p9v-2"]{content:"bNrIWI,"}/*!sc*/
+@media only screen and (min-width:768px){.soWTi{max-width:40vw;}}/*!sc*/
+data-styled.g49[id="activity-layout__ActivityIntro-sc-333p9v-3"]{content:"soWTi,"}/*!sc*/
+</style><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Mono:400,700|Space+Mono:700&amp;display=swap" rel="stylesheet"/><link rel="preconnect" href="https://stats.openinternetproject.org"/><link rel="alternate" type="application/rss+xml" title="SAFETAG - RSS Feed" href="/rss.xml"/><link as="script" rel="preload" href="/webpack-runtime-d6fb8b1e9f7369c15c2e.js"/><link as="script" rel="preload" href="/framework-9ef14e9ae19a1d403c0a.js"/><link as="script" rel="preload" href="/532a2f07-3c67b2f9981cf3c66c80.js"/><link as="script" rel="preload" href="/app-e2e3ab1c2d95451eaff6.js"/><link as="script" rel="preload" href="/styles-e9d24b1846c7d6eb9685.js"/><link as="script" rel="preload" href="/commons-71010467aec970c6c06c.js"/><link as="script" rel="preload" href="/4283810af98cd00d8748060c5fde52ec3bf9fce7-e1a792357ffa8cac2a27.js"/><link as="script" rel="preload" href="/component---src-components-layouts-activity-layout-js-982e16205ed96bb39187.js"/><link as="fetch" rel="preload" href="/page-data/my/activities/suspicious_activity_analysis/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3649515864.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header role="banner" class="page-header__PageHead-sc-9vep08-0 bRQNwO"><div class="constrainer__Constrainer-sc-vi2beb-0 page-header__PageHeadInner-sc-9vep08-1 kFlfln hHzsfO"><div class="page-header__PageHeadline-sc-9vep08-2 crPiEN"><h1 class="heading__Heading-sc-127qstd-0 page-header__PageTitle-sc-9vep08-3 jWBCWW jjkCVp"><a hrefLang="my" href="/my/"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTM2IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDUzNiAxNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01OS40NCA2Mi40NEM1OS40NCA1OC42IDYwLjg1MzMgNTUuNjEzMyA2My42OCA1My40OEM2Ni41MDY3IDUxLjI5MzMgNzAuMzIgNTAuMiA3NS4xMiA1MC4yQzc5LjQ0IDUwLjIgODMuMDQgNTEuMTg2NyA4NS45MiA1My4xNkM4OC44IDU1LjA4IDkwLjc0NjcgNTcuNjkzMyA5MS43NiA2MUw4Mi42NCA2My44QzgxLjc4NjcgNTkuODUzMyA3OS4yOCA1Ny44OCA3NS4xMiA1Ny44OEM3My4yIDU3Ljg4IDcxLjczMzMgNTguMjI2NyA3MC43MiA1OC45MkM2OS43MDY3IDU5LjYxMzMgNjkuMiA2MC41NzMzIDY5LjIgNjEuOEM2OS4yIDYzLjA4IDY5LjcwNjcgNjQuMDY2NyA3MC43MiA2NC43NkM3MS43ODY3IDY1LjQgNzMuNDEzMyA2NS45MzMzIDc1LjYgNjYuMzZMNzcuNjggNjYuNzZDODEuMTQ2NyA2Ny40NTMzIDgzLjk3MzMgNjguMjI2NyA4Ni4xNiA2OS4wOEM4OC4zNDY3IDY5LjkzMzMgOTAuMDggNzEuMTYgOTEuMzYgNzIuNzZDOTIuNjkzMyA3NC4zNiA5My4zNiA3Ni40NjY3IDkzLjM2IDc5LjA4QzkzLjM2IDgzLjE4NjcgOTEuODY2NyA4Ni4zODY3IDg4Ljg4IDg4LjY4Qzg1Ljg5MzMgOTAuOTczMyA4MS44NCA5Mi4xMiA3Ni43MiA5Mi4xMkM3MS40OTMzIDkyLjEyIDY3LjIyNjcgOTEgNjMuOTIgODguNzZDNjAuNjY2NyA4Ni41MiA1OC42OTMzIDgzLjMyIDU4IDc5LjE2TDY3LjI4IDc2Ljc2QzY4LjE4NjcgODEuODggNzEuMzMzMyA4NC40NCA3Ni43MiA4NC40NEM3OC45NiA4NC40NCA4MC42NjY3IDg0LjAxMzMgODEuODQgODMuMTZDODMuMDEzMyA4Mi4zMDY3IDgzLjYgODEuMjEzMyA4My42IDc5Ljg4QzgzLjYgNzguNjUzMyA4My4wNCA3Ny42OTMzIDgxLjkyIDc3QzgwLjggNzYuMjUzMyA3OC45NiA3NS42NCA3Ni40IDc1LjE2TDc0LjMyIDc0Ljc2QzY5LjU3MzMgNzMuODUzMyA2NS44OTMzIDcyLjQ5MzMgNjMuMjggNzAuNjhDNjAuNzIgNjguODEzMyA1OS40NCA2Ni4wNjY3IDU5LjQ0IDYyLjQ0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTk5LjgzNDQgNjEuNEMxMDAuOTAxIDU4LjA5MzMgMTAyLjg3NCA1NS40IDEwNS43NTQgNTMuMzJDMTA4LjY4OCA1MS4yNCAxMTIuNTgxIDUwLjIgMTE3LjQzNCA1MC4yQzEyMi43MTQgNTAuMiAxMjYuODQ4IDUxLjUzMzMgMTI5LjgzNCA1NC4yQzEzMi44NzQgNTYuODEzMyAxMzQuMzk0IDYwLjU3MzMgMTM0LjM5NCA2NS40OFY5MUgxMjQuNzk0Vjg2LjM2SDEyMy42NzRDMTIzLjA4OCA4Ny43NDY3IDEyMS45NDEgODkuMDUzMyAxMjAuMjM0IDkwLjI4QzExOC41ODEgOTEuNTA2NyAxMTYuMTU0IDkyLjEyIDExMi45NTQgOTIuMTJDMTA4Ljc0MSA5Mi4xMiAxMDUuMjQ4IDkxIDEwMi40NzQgODguNzZDOTkuNzU0NCA4Ni40NjY3IDk4LjM5NDQgODMuMzQ2NyA5OC4zOTQ0IDc5LjRDOTguMzk0NCA3NS40NTMzIDk5Ljc4MSA3Mi40MTMzIDEwMi41NTQgNzAuMjhDMTA1LjM4MSA2OC4wOTMzIDEwOS4xMTQgNjcgMTEzLjc1NCA2N0gxMjQuNjM0VjY0Ljc2QzEyNC42MzQgNjIuNzg2NyAxMjQuMDIxIDYxLjIxMzMgMTIyLjc5NCA2MC4wNEMxMjEuNTY4IDU4LjgxMzMgMTE5LjcyOCA1OC4yIDExNy4yNzQgNTguMkMxMTQuODc0IDU4LjIgMTEzLjAwOCA1OC43ODY3IDExMS42NzQgNTkuOTZDMTEwLjM0MSA2MS4wOCAxMDkuNDg4IDYyLjYgMTA5LjExNCA2NC41Mkw5OS44MzQ0IDYxLjRaTTEwOC40NzQgNzkuMTZDMTA4LjQ3NCA4MC42IDEwOS4wMzQgODEuNzczMyAxMTAuMTU0IDgyLjY4QzExMS4zMjggODMuNTMzMyAxMTIuOTU0IDgzLjk2IDExNS4wMzQgODMuOTZDMTE3Ljg2MSA4My45NiAxMjAuMTU0IDgzLjE2IDEyMS45MTQgODEuNTZDMTIzLjcyOCA3OS45MDY3IDEyNC42MzQgNzcuNzczMyAxMjQuNjM0IDc1LjE2Vjc0LjUySDExNC40NzRDMTEyLjYwOCA3NC41MiAxMTEuMTQxIDc0Ljk0NjcgMTEwLjA3NCA3NS44QzEwOS4wMDggNzYuNjUzMyAxMDguNDc0IDc3Ljc3MzMgMTA4LjQ3NCA3OS4xNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNDguOTkxIDQzLjk2QzE0OC45OTEgNDEuMjQgMTQ5Ljc5MSAzOS4wOCAxNTEuMzkxIDM3LjQ4QzE1Mi45OTEgMzUuODI2NyAxNTUuMTI1IDM1IDE1Ny43OTEgMzVIMTY4LjE5MVY0My4xNkgxNjEuMzExQzE1OS44MTggNDMuMTYgMTU5LjA3MSA0My45NiAxNTkuMDcxIDQ1LjU2VjUxLjMySDE2OS40NzFWNTkuNDhIMTU5LjA3MVY5MUgxNDguOTkxVjU5LjQ4SDEzOC45MTFWNTEuMzJIMTQ4Ljk5MVY0My45NloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNzIuNjAyIDcxLjE2QzE3Mi42MDIgNjcgMTczLjQyOSA2My4zNDY3IDE3NS4wODIgNjAuMkMxNzYuNzg5IDU3IDE3OS4xMzUgNTQuNTQ2NyAxODIuMTIyIDUyLjg0QzE4NS4xNjIgNTEuMDggMTg4LjYyOSA1MC4yIDE5Mi41MjIgNTAuMkMxOTYuMzYyIDUwLjIgMTk5LjcyMiA1MS4wNTMzIDIwMi42MDIgNTIuNzZDMjA1LjUzNSA1NC40NjY3IDIwNy44MDIgNTYuODkzMyAyMDkuNDAyIDYwLjA0QzIxMS4wMDIgNjMuMTMzMyAyMTEuODAyIDY2LjY4IDIxMS44MDIgNzAuNjhWNzQuMTJIMTgyLjkyMkMxODMuMDI5IDc2Ljg0IDE4NC4wMTUgNzkuMDggMTg1Ljg4MiA4MC44NEMxODcuODAyIDgyLjYgMTkwLjE3NSA4My40OCAxOTMuMDAyIDgzLjQ4QzE5NS41NjIgODMuNDggMTk3LjUzNSA4Mi45MiAxOTguOTIyIDgxLjhDMjAwLjM2MiA4MC42OCAyMDEuNDgyIDc5LjIxMzMgMjAyLjI4MiA3Ny40TDIxMC41MjIgODEuNzJDMjA2Ljg0MiA4OC42NTMzIDIwMC44OTUgOTIuMTIgMTkyLjY4MiA5Mi4xMkMxODguNzg5IDkyLjEyIDE4NS4zMjIgOTEuMjY2NyAxODIuMjgyIDg5LjU2QzE3OS4yNDIgODcuOCAxNzYuODY5IDg1LjM0NjcgMTc1LjE2MiA4Mi4yQzE3My40NTUgNzkgMTcyLjYwMiA3NS4zMiAxNzIuNjAyIDcxLjE2Wk0yMDEuNTYyIDY2LjZDMjAxLjI5NSA2NC4zMDY3IDIwMC4zMzUgNjIuNDQgMTk4LjY4MiA2MUMxOTcuMDgyIDU5LjU2IDE5NS4wMDIgNTguODQgMTkyLjQ0MiA1OC44NEMxODkuODI5IDU4Ljg0IDE4Ny42NjkgNTkuNTYgMTg1Ljk2MiA2MUMxODQuMzA5IDYyLjQ0IDE4My4zMjIgNjQuMzA2NyAxODMuMDAyIDY2LjZIMjAxLjU2MloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yMjMuNDE4IDUxLjMyVjM5SDIzMy40OThWNTEuMzJIMjQ0LjM3OFY1OS40OEgyMzMuNDk4VjgwLjQ0QzIzMy40OTggODIuMDQgMjM0LjI0NSA4Mi44NCAyMzUuNzM4IDgyLjg0SDI0My40MThWOTFIMjMyLjIxOEMyMjkuNTUxIDkxIDIyNy40MTggOTAuMiAyMjUuODE4IDg4LjZDMjI0LjIxOCA4Ni45NDY3IDIyMy40MTggODQuNzYgMjIzLjQxOCA4Mi4wNFY1OS40OEgyMTMuNDk4VjUxLjMySDIyMy40MThaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjUwLjYxNiA2MS40QzI1MS42ODIgNTguMDkzMyAyNTMuNjU2IDU1LjQgMjU2LjUzNiA1My4zMkMyNTkuNDY5IDUxLjI0IDI2My4zNjIgNTAuMiAyNjguMjE2IDUwLjJDMjczLjQ5NiA1MC4yIDI3Ny42MjkgNTEuNTMzMyAyODAuNjE2IDU0LjJDMjgzLjY1NiA1Ni44MTMzIDI4NS4xNzYgNjAuNTczMyAyODUuMTc2IDY1LjQ4VjkxSDI3NS41NzZWODYuMzZIMjc0LjQ1NkMyNzMuODY5IDg3Ljc0NjcgMjcyLjcyMiA4OS4wNTMzIDI3MS4wMTYgOTAuMjhDMjY5LjM2MiA5MS41MDY3IDI2Ni45MzYgOTIuMTIgMjYzLjczNiA5Mi4xMkMyNTkuNTIyIDkyLjEyIDI1Ni4wMjkgOTEgMjUzLjI1NiA4OC43NkMyNTAuNTM2IDg2LjQ2NjcgMjQ5LjE3NiA4My4zNDY3IDI0OS4xNzYgNzkuNEMyNDkuMTc2IDc1LjQ1MzMgMjUwLjU2MiA3Mi40MTMzIDI1My4zMzYgNzAuMjhDMjU2LjE2MiA2OC4wOTMzIDI1OS44OTYgNjcgMjY0LjUzNiA2N0gyNzUuNDE2VjY0Ljc2QzI3NS40MTYgNjIuNzg2NyAyNzQuODAyIDYxLjIxMzMgMjczLjU3NiA2MC4wNEMyNzIuMzQ5IDU4LjgxMzMgMjcwLjUwOSA1OC4yIDI2OC4wNTYgNTguMkMyNjUuNjU2IDU4LjIgMjYzLjc4OSA1OC43ODY3IDI2Mi40NTYgNTkuOTZDMjYxLjEyMiA2MS4wOCAyNjAuMjY5IDYyLjYgMjU5Ljg5NiA2NC41MkwyNTAuNjE2IDYxLjRaTTI1OS4yNTYgNzkuMTZDMjU5LjI1NiA4MC42IDI1OS44MTYgODEuNzczMyAyNjAuOTM2IDgyLjY4QzI2Mi4xMDkgODMuNTMzMyAyNjMuNzM2IDgzLjk2IDI2NS44MTYgODMuOTZDMjY4LjY0MiA4My45NiAyNzAuOTM2IDgzLjE2IDI3Mi42OTYgODEuNTZDMjc0LjUwOSA3OS45MDY3IDI3NS40MTYgNzcuNzczMyAyNzUuNDE2IDc1LjE2Vjc0LjUySDI2NS4yNTZDMjYzLjM4OSA3NC41MiAyNjEuOTIyIDc0Ljk0NjcgMjYwLjg1NiA3NS44QzI1OS43ODkgNzYuNjUzMyAyNTkuMjU2IDc3Ljc3MzMgMjU5LjI1NiA3OS4xNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMzMuMDM0IDUxLjMyVjg4LjY4QzMzMy4wMzQgOTQuOTczMyAzMzEuMTQgOTkuNzczMyAzMjcuMzU0IDEwMy4wOEMzMjMuNjIgMTA2LjQ0IDMxOC41MjcgMTA4LjEyIDMxMi4wNzQgMTA4LjEyQzMwNi40MiAxMDguMTIgMzAxLjg4NyAxMDYuODkzIDI5OC40NzQgMTA0LjQ0QzI5NS4xMTQgMTAxLjk4NyAyOTIuODIgOTkgMjkxLjU5NCA5NS40OEwzMDAuNjM0IDkxLjU2QzMwMS4zOCA5NC4wMTMzIDMwMi42NiA5NS45NiAzMDQuNDc0IDk3LjRDMzA2LjM0IDk4Ljg5MzMgMzA4LjgyIDk5LjY0IDMxMS45MTQgOTkuNjRDMzE1LjMyNyA5OS42NCAzMTguMDIgOTguNzA2NyAzMTkuOTk0IDk2Ljg0QzMyMS45NjcgOTQuOTczMyAzMjIuOTU0IDkyLjE3MzMgMzIyLjk1NCA4OC40NFY4NC42SDMyMi4xNTRDMzE5LjE2NyA4OC43NiAzMTQuODQ3IDkwLjg0IDMwOS4xOTQgOTAuODRDMzA2LjA0NyA5MC44NCAzMDMuMDg3IDg5Ljk4NjcgMzAwLjMxNCA4OC4yOEMyOTcuNTk0IDg2LjU3MzMgMjk1LjQwNyA4NC4yIDI5My43NTQgODEuMTZDMjkyLjEgNzguMDY2NyAyOTEuMjc0IDc0LjUyIDI5MS4yNzQgNzAuNTJDMjkxLjI3NCA2Ni41MiAyOTIuMSA2MyAyOTMuNzU0IDU5Ljk2QzI5NS40MDcgNTYuODY2NyAyOTcuNTk0IDU0LjQ2NjcgMzAwLjMxNCA1Mi43NkMzMDMuMDg3IDUxLjA1MzMgMzA2LjA0NyA1MC4yIDMwOS4xOTQgNTAuMkMzMTQuOSA1MC4yIDMxOS4yNzQgNTIuMzYgMzIyLjMxNCA1Ni42OEgzMjMuMTE0VjUxLjMySDMzMy4wMzRaTTMxMi4yMzQgODIuMkMzMTUuNDM0IDgyLjIgMzE4LjA0NyA4MS4xMzMzIDMyMC4wNzQgNzlDMzIyLjEgNzYuODY2NyAzMjMuMTE0IDc0LjA0IDMyMy4xMTQgNzAuNTJDMzIzLjExNCA2NyAzMjIuMSA2NC4xNzMzIDMyMC4wNzQgNjIuMDRDMzE4LjA0NyA1OS45MDY3IDMxNS40MzQgNTguODQgMzEyLjIzNCA1OC44NEMzMDkuMDM0IDU4Ljg0IDMwNi40MiA1OS45MDY3IDMwNC4zOTQgNjIuMDRDMzAyLjM2NyA2NC4xNzMzIDMwMS4zNTQgNjcgMzAxLjM1NCA3MC41MkMzMDEuMzU0IDc0LjA0IDMwMi4zNjcgNzYuODY2NyAzMDQuMzk0IDc5QzMwNi40MiA4MS4xMzMzIDMwOS4wMzQgODIuMiAzMTIuMjM0IDgyLjJaIiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iMzg0IiBoZWlnaHQ9IjEzNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI4Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNTM2IDBIMzkyVjE0NEg1MzZWMFpNNDY0IDUyQzQ3MS43MzIgNTIgNDc4IDQ1LjczMiA0NzggMzhDNDc4IDMwLjI2OCA0NzEuNzMyIDI0IDQ2NCAyNEM0NTYuMjY4IDI0IDQ1MCAzMC4yNjggNDUwIDM4QzQ1MCA0NS43MzIgNDU2LjI2OCA1MiA0NjQgNTJaTTQ2NCA1NkM0NTAuNzQ1IDU2IDQ0MCA2Ni4yMzM1IDQ0MCA3OC44NTcxVjEyMEg0ODhWNzguODU3MUM0ODggNjYuMjMzNSA0NzcuMjU1IDU2IDQ2NCA1NlpNNDg4IDc4Ljg1NzFMNDg4IDg0LjM0MjlINDUwLjU2TDQ1MC41NiA3OC44NTcxQzQ1MC41NiA3MS43ODc5IDQ1Ni41NzcgNjYuMDU3MSA0NjQgNjYuMDU3MUM0NzEuNDIzIDY2LjA1NzEgNDc3LjQ0IDcxLjc4NzkgNDc3LjQ0IDc4Ljg1NzFINDg4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" alt="Safetag Logo"/></a></h1></div><div class="page-header__Toggle-sc-9vep08-8 knTWaV"><div class="page-header__Hamburger-sc-9vep08-9 eRPsbj"></div></div><nav role="navigation" class="page-header__PageNav-sc-9vep08-4 itpvWz"><ul class="page-header__GlobalMenu-sc-9vep08-5 eELmqa"><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="my" href="/my/about/">အကြောင်း</a></li><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="my" href="/my/posts/">ဘလော့ဂ်</a></li><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="my" href="/my/#allMethods">နည်းလမ်းများ</a></li><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="my" href="/my/activities/">လှုပ်ရှားမှုများ</a></li><li><div class="searchBoxHeader"><div class="boxTitle" style="display:block"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgNDggNDgiCiAgIGlkPSJzdmc0IgogICBzb2RpcG9kaTpkb2NuYW1lPSJzZWFyY2gtd2hpdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjEuMSAoM2JmNWFlMGQyNSwgMjAyMS0wOS0yMCkiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczgiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXc2IgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjE2LjQxNjY2NyIKICAgICBpbmtzY2FwZTpjeD0iMjQiCiAgICAgaW5rc2NhcGU6Y3k9IjI0IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDM2IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzQiIC8+CiAgPHBhdGgKICAgICBkPSJtMzMuMjMxIDIwLjMwOGMwLTcuMTI1LTUuNzk4MS0xMi45MjMtMTIuOTIzLTEyLjkyM3MtMTIuOTIzIDUuNzk4MS0xMi45MjMgMTIuOTIzIDUuNzk4MSAxMi45MjMgMTIuOTIzIDEyLjkyMyAxMi45MjMtNS43OTgxIDEyLjkyMy0xMi45MjN6bTE0Ljc2OSAyNGMwIDIuMDE5Mi0xLjY3MzEgMy42OTIzLTMuNjkyMyAzLjY5MjMtMC45ODA3NyAwLTEuOTMyNy0wLjQwMzg1LTIuNTk2Mi0xLjA5NjJsLTkuODk0Mi05Ljg2NTRjLTMuMzc1IDIuMzM2NS03LjQxMzUgMy41NzY5LTExLjUxIDMuNTc2OS0xMS4yMjEgMC0yMC4zMDgtOS4wODY1LTIwLjMwOC0yMC4zMDggMC0xMS4yMjEgOS4wODY1LTIwLjMwOCAyMC4zMDgtMjAuMzA4IDExLjIyMSAwIDIwLjMwOCA5LjA4NjUgMjAuMzA4IDIwLjMwOCAwIDQuMDk2Mi0xLjI0MDQgOC4xMzQ2LTMuNTc2OSAxMS41MWw5Ljg5NDIgOS44OTQyYzAuNjYzNDYgMC42NjM0NiAxLjA2NzMgMS42MTU0IDEuMDY3MyAyLjU5NjJ6IgogICAgIHN0cm9rZS13aWR0aD0iLjAyODg0NiIKICAgICBpZD0icGF0aDIiCiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIgLz4KPC9zdmc+Cg==" alt="Search"/></div></div></li><li><a variation="primary-raised-light" class="button__Button-sc-9piufk-0 page-header__GlobalMenuButton-sc-9vep08-7 bdulGt" hrefLang="my" href="/my/guide-builder/">လမ်းညွှန် ဖန်တီးရန်</a></li><li><div class="flag-select page-header__LanguageSelect-sc-9vep08-10 hfXwCH"><button style="font-size:16px" class="flag-select__btn" id="select_flag_button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="select_flag_button"><span class="flag-select__option flag-select__option--placeholder"></span></button></div></li></ul></nav></div></header><main class="global-layout__SiteContent-sc-1kk8eb4-0 cARici"><article class="inpage__Inpage-sc-1dtk98a-0 activity-layout__ActivityPage-sc-333p9v-0 kRraGI iCudHk"><header class="inpage__InpageHeader-sc-1dtk98a-2 gpOrCg"><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageInnerColumns-sc-1dtk98a-1 kFlfln buObBj"><div class="inpage__InpageHeadline-sc-1dtk98a-4 activity-layout__ActivityHeadline-sc-333p9v-1 cuARmr OuOah"><a direction="back" class="more-link__MoreLink-sc-4fj82l-0 bkBrST" href="/activities/">လှုပ်ရှားမှုအားလုံးသို့ ပြန်သွားရန်</a><h1 class="heading__Heading-sc-127qstd-0 eWsLIv inpage__InpageTitle-sc-1dtk98a-7 activity-layout__ActivityTitle-sc-333p9v-2 kOSUSg bNrIWI"></h1></div><article class="activity-layout__ActivityIntro-sc-333p9v-3 soWTi"><h1 class="heading__Heading-sc-127qstd-0 hCGKPk inpage__InpageTitle-sc-1dtk98a-7 kOSUSg">အကျဉ်းချုပ်</h1><div><p>Malware is a common tactic to target organizations. Malware like a Remote
+Access Trojan (or RAT) can provide an attacker with backdoor access to a
+targeted machine, enabling the attacker to steal information, record audio and
+video, as well as run commands on the infected machine.</p>
+<p>To stop this from happening, you have to identify the malicious process within the system and stop it, or reformatting the machine in case you don’t feel spending time on stopping the malicious process.</p>
+<p>It’s important to keep evidence, in case the auditee still has access to the original malicious software they received (e.g., an email, etc.), keep a copy of the file if you have the time and expertise to continue investigating or have the resources to submit it to other organizations working on analyzing such issues.</p>
+<p>Scanning the possible infected machine or the original suspicious file with an anti-virus will save you time and effort, in the case such malware is already in its database. Scanning should always be the first step, preventing you from spending excess time if the machine was infected with a less serious piece of malware.</p>
+<p>After determining the machine is infected, you can proceed in helping the staff member back up their information, scanning the files for malware, then reformatting the infected machine. Note, it is very difficult to clean an infected machine if you only have a short window of time.</p>
+<p>In case the machine was infected, taking an image of the operating system will allow you to replicate the infected machine and run it after you finish your audit for a more in-depth investigation or send it to an expert to work on investigating the malware. Note, this also can be difficult in an audit setting where time is limited. Also see operational security considerations that come with replicating the files of a staff member of a sensitive organization. Be sure this is absolutely necessary and the staff members provides consent before completing.</p>
+</div></article><aside class="activity-layout__ActivityMeta-sc-333p9v-4 dxPUyz"><article class="card__Card-sc-1neqwum-0 fkUPZT"><dl class="lists__Dl-sc-16pqb8y-0 jvSzfW"><dt>ချဉ်းကပ်သည်</dt><dd>နည်းပညာပိုင်း<img src="/img/နည်းပညာပိုင်း_icon.png"/></dd><dt>ရေးသားသူများ</dt><dd>SAFETAG</dd><dt>အောက် အရွယ်အစားရှိ အဖွဲ့အစည်း</dt><dd>100</dd><dt>အဝေးထိန်း ရွေးချယ်မှုများ</dt><dd>None</dd><dt>လိုအပ်သော ကျွမ်းကျင်မှုများ</dt><dd>Malware Analysis</dd><dt>လိုအပ်သော အချိန် (မိနစ်)</dt><dd>120</dd></dl></article></aside></div></header><section class="inpage__InpageBody-sc-1dtk98a-9 cYTaLI"><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageInnerColumns-sc-1dtk98a-1 kFlfln buObBj"><aside><h1 class="heading__Heading-sc-127qstd-0 hCGKPk inpage__InpageTitle-sc-1dtk98a-7 kOSUSg">ခြုံငုံသုံးသပ်ချက်</h1><ul class="lists__SquareUl-sc-16pqb8y-1 ioOhRX"><ul>
+<li>Identification and <strong>initial triage/analysis</strong> of suspicious processes, files, and emails (via Anti-Virus scanning results, MISP and Virustotal information, network traffic analysis, and other research)</li>
+<li><strong>Analyzing Specific Suspicious Events/Activities</strong> - If the organization have specific concerns or evidence suggesting a targeted attack, the auditor can focus attention to match them against any known attacks or flag them for further research.</li>
+</ul>
+<p>In the following, you should look for files and URLs that may indicate a compromise and may help you identify an infection. If you have time, some inital light research may be suggested to see if the URLs or files hashes have been identified by other security researchers which can help you provide more context to the organization around the types of threats they are facing.</p>
+</ul></aside><aside><article class="card__Card-sc-1neqwum-0 cikiWz"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 jWBCWW gVieEx">လိုအပ်သော ပစ္စည်းများ</h1><div><ul>
+<li>An Incident Response Plan agreed upon with the organization</li>
+<li>An emergency contact for the organization</li>
+<li>A Kali Virtual machine connected to the Internet</li>
+<li>A <a href="https://cuckoosandbox.org/">Cuckoo Sandbox</a> installation (for later analysis post audit if you have the expertise)</li>
+<li>VPN</li>
+<li>USB drive(s)</li>
+<li>Large capacity External Hard disk, OS installation media and license keys</li>
+</ul>
+</div></article></aside></div></section><section class="inpage__InpageBody-sc-1dtk98a-9 hquRBB"><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageInnerColumns-sc-1dtk98a-1 kFlfln buObBj"><article><h1 class="heading__Heading-sc-127qstd-0 hCGKPk inpage__InpageTitle-sc-1dtk98a-7 kOSUSg">ထည့်တွက်စဉ်းစားရမည့် အချက်များ</h1><ul class="lists__SquareUl-sc-16pqb8y-1 ioOhRX"><ul>
+<li>Consider the time you have, investigating malware can take days (you should not investigate during the audit itself)</li>
+<li>Confirm that the device belongs to the organization</li>
+<li>Make sure to take the device offline before start working on it</li>
+<li>Don’t transfer files from the infected machine to any other machines</li>
+<li>Use a USB drive to move files from the infected machine to your Audit machine for investigating proposes</li>
+<li>Study outputs for any obviously embarrassing personal information</li>
+<li>Don’t test anything on your virtual machine without VPN
+title: Suspicious Activity Analysis</li>
+</ul>
+</ul></article></div><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageInnerColumns-sc-1dtk98a-1 kFlfln buObBj"><article><h1 class="heading__Heading-sc-127qstd-0 hCGKPk inpage__InpageTitle-sc-1dtk98a-7 kOSUSg">လမ်းညွှန်</h1><ul class="lists__SquareUl-sc-16pqb8y-1 ioOhRX"><ul>
+<li>In case they still have the original binaries (Attachment, email..etc.)</li>
+</ul>
+<ol>
+<li>Download the file to your auditing machine, Scan the file via Anti-Virus or hash the file and use virustotal.com to search for it (Note, don’t upload the actual file to virus total as uploaded files are discoverable by paid subscribers in most cases)</li>
+<li>Check the email’s header and see if it looks suspicious</li>
+</ol>
+<ul>
+<li>In case there is no binaries (Attachment, email..etc.) or they have no access to it</li>
+</ul>
+<ol>
+<li>Take the machine offline</li>
+<li>In case you have time, Image the hard disk</li>
+<li>Help the auditees to operate another machine to fill the gap of the suspicious machine</li>
+<li>Run a non-depth scan for the machine and try to locate any suspicious files</li>
+<li>Collect the suspicious files, hash them, then search for them on virustotal.com</li>
+<li>Scan the open ports and monitor which applications is connected to external address
+The next sections often are highly interrelated - a phishing email may include malicious URLs and/or files, network traffic may include URLs, URLs may try to send malicious file downloads.</li>
+</ol>
+<p><strong>Questions to ask the user / organization</strong></p>
+<ul>
+<li>What suspicious behaviors are you witnessing?</li>
+<li>Where and when are you seeing this behavior? What makes you feel that the machine is somehow infected?</li>
+<li>Do you have an alternative to this machine/process/account you can use it until we clear things up?</li>
+<li>Did you receive any suspicious or unexpected email, attachment or different form of communication that made you feel this way?</li>
+<li>Do you still have access to the original email, attachment or any form of communication?</li>
+</ul>
+<hr>
+<h6>Variant: Phishing or Suspicious Emails</h6>
+<p>If the organization staff has received suspicious communications, the first step should be to clearly warn the auditee that any associated files or links <em>should not be opened</em>.</p>
+<ul>
+<li>Ask the client to share the complete email with you. Instructions on how to share the complete email, which includes full headers and attachments:
+Instructions: <a href="https://www.circl.lu/pub/tr-34/">https://www.circl.lu/pub/tr-34/</a> (this is preferred over just asking for the headers - as described here: <a href="https://www.circl.lu/pub/tr-07/">https://www.circl.lu/pub/tr-07/</a> - since it is just as complicated from the user prospective but provides more information to us or a malware researcher).</li>
+<li>Investigate the intent of the message. If this email appears to be spam, you can rule out an advanced threat and include in your recommendations instructions on how to report spam or mark email messages as junk.</li>
+<li>If the message does not seem to be spam and has links or files attached to the email, capture any suspicious URL and save the file in an empty storage device for further analysis.</li>
+<li>If the email does not have links or files and is not spam, investigate it as a potential social engineering email.</li>
+</ul>
+<hr>
+<h6>Variant: Malicious Files</h6>
+<p>In this part, you will be investigating a file and determine if it’s malicious or not. The auditor will not have much time for this step, but a preliminary analysis (not longer than one hour) can be performed, following these instructions:</p>
+<ul>
+<li><strong>Step 1: Collection</strong></li>
+<li>Collect the binary from the targeted person or organization by asking them to forward you the suspicious email including any attachment in it, or by coping the file if it’s still on the machine by copying it to a USB drive. In case the user did not remember where the file is located, ask the user to walk through their browsing history or download folder and try to locate the file and then copy it to your USB drive.</li>
+<li>Get a hash of the file and a timestamp of the file at acquisition</li>
+</ul>
+<p>Include the hashes of the malicious files in the appendix of your assessment report.</p>
+<ul>
+<li><strong>Step 2: Research</strong></li>
+<li>Initial offline investigation, in this stage you will be scanning the file using <a href="https://www.clamav.net/">ClamAV</a> which comes with Kali-Linux</li>
+<li>Update CalmAV by running the following command in the terminal
+<code>sudo freshclam</code></li>
+<li>Create a new folder and copy-paste the suspicious (file)s inside, then scan the targeted folder by running the following command in the terminal which is going to show the infected files and give you more information about it <code>clamscan -r –bell -i /your/target/folder</code></li>
+<li>Search for the hash on a MISP instance or VirusTotal to check if there are any related events, known malware associations, and connected details (such as URLs, email addresses, IP addresses)</li>
+<li>After scanning the file, in case it has already been identified as malicious, the result will show you what type of malware is, in case the result showed the file as Trojan, Backdoor, agent or Remote access Trojan RAT then it’s time to consider taking an image from the hard drive, the original file, the header of the email and submit them for in depth investigation.</li>
+</ul>
+<p>If the organization was targeted with a more advanced attack, there will be a high probability that the attacker will use new or disguised malware -- which means no Anti-Virus will find it as malicious, in this case, and if you feel you still have doubts that a clean file is still malicious, submit it for in depth analysis.</p>
+<ul>
+<li><strong>Step 3 (Optional): Imaging</strong></li>
+</ul>
+<p>In this step, you will be dealing with infected machine by one of the binaries you analyzed in step 1 and 2, or you are sure that the machine is infected and you have no time to analyze it. In this case, you will take a backup, migrate the data safely to a new machine and take a full image from the system and submit it for more in depth analysis.</p>
+<ul>
+<li>It’s better to start with taking a full hard disk image, using ‘dd’ a tool that takes bit-by-bit copy of the hard drive, after taking the image, you will have an identical copy of infected machine and you can send the hard drive to experts for more in depth analysis. To take the image, you will need to boot the infected machine with a Live Kali Linux and apply the following steps:</li>
+</ul>
+<pre><code>-   Identify the `&#x3C;source>` which is the infected hard disk, and `&#x3C;destination>` the external hard disk you will put the image on, run the following command which will list all the drive *lsblk*
+-   After identifying the source and destination, apply the following command the start the process `dd if=&#x3C;source> of=&#x3C;destination> bs=&#x3C;byte size>`
+</code></pre>
+<p><em>Where bs is byte size, read more about how to use dd <a href="https://wiki.archlinux.org/index.php/disk_cloning">here</a></em></p>
+<ul>
+<li>Taking back up in this stage is to back-up all the important data and save them on a hard drive, usually it’s the document, desktop, download, favorite and personal data, save them on external storage then Scan them using <a href="https://www.howtoforge.com/tutorial/clamav-ubuntu/">ClamAV</a> or any available Anti-virus on your auditing virtual machine.</li>
+<li>Make sure the data is clean then transfer it to the clean replacement machine.</li>
+<li><strong>Step 4 (Optional): Analysis</strong></li>
+</ul>
+<p><em>See the <a href="https://safetag.org/activities/incident_response">Incident Response Activity</a> for additional details.</em></p>
+<p>You will need at least one hour to prepare and carry the advanced investigation. this step is optional in case you have time and you think you still have doubts about the file and you need a more advanced result. In this step, you will analyze the suspicious file using Cuckoo Sandbox, an automated malware analysis system. In case you decided to go with this option, you will need an installed Linux on your audit machine you can use <a href="https://docs.kali.org/installation/kali-linux-hard-disk-install">this Kali guide</a> to install Kali Linux.</p>
+<ul>
+<li>Make sure you have that you have Cuckoo Sandbox installed on your audit Linux machine by running the following command <code>cuckoo</code></li>
+<li>In case Cuckoo was not installed, follow the following <a href="http://docs.cuckoosandbox.org/en/latest/installation/">instructions</a> on how to install it. Make sure cuckoo is running without errors the previously posted documentation will provide you with details steps on how to install and run Cuckoo</li>
+<li>Create a new folder and copy-paste the suspicious (file)s inside</li>
+<li>You can use ‘submit’ to start analyzing the binary, you can find more options in the  <a href="http://docs.cuckoosandbox.org/en/latest/usage/submit/">Cuckoo Sandbox documentation</a> , the easiest way to do it is by running the following command: <code>cuckoo submit /folder/targeted/binary</code></li>
+<li>To view the analysis results, once an analysis is completed, you will find the result in <code>$CWD/storage/analyses/</code></li>
+<li>You can find more information on how to read the results in the  <a href="http://docs.cuckoosandbox.org/en/latest/usage/results/">Cuckoo Sandbox documentation</a></li>
+</ul>
+<hr>
+<h6>Variant: Suspicious URLs</h6>
+<p>You may have found suspicious URLs in your wireshark output during the traffic analysis, in the email content, in IMs, etc.</p>
+<p>Capture the context in which the URL was sent to the user or used by a process (sender, timestamp including timezone, and any other identifying details).</p>
+<p>If the URL was sent to the user through a message, ask them if they clicked the link.</p>
+<ul>
+<li>Search for the URL in a MISP instance or with VirusTotal or URLScan.io. <strong>Warning</strong> - if the file is targeted malware, using online scanners such as VirusTotal or URLScan will show the attacker that you're carrying out an investigation on the incident; try to use their passive search features before using an active scan.</li>
+<li>Open the URL in a private cuckoo sandbox instance for a forensic capture of anything malicious.</li>
+<li>Submit the URL to archive.org or archive.is for public archiving (this could also disclose your investigation to the attacker).</li>
+</ul>
+<hr>
+<h6>Variant: Suspicious Processes</h6>
+<p>If you find suspicious open ports, follow the instructions in the Network Scanning activity section "How to decide if an open port is suspicious".</p>
+<p>It can also be useful to follow these steps:</p>
+<ul>
+<li>On every operating system, check if the device OS and the installed software are up-to-date and where possible set to automatically update.</li>
+</ul>
+<p><strong>Windows, Mac, Android</strong></p>
+<ul>
+<li>
+<p>On Windows, use <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer">Process Explorer</a> to dig into further details on each process.</p>
+</li>
+<li>
+<p>Check that antivirus is installed in the device and is updated.</p>
+</li>
+<li>
+<p>If an antivirus is installed, and it is up-to-date, launch a scan - this will help as a diagnostic tool, to identify any already known malware, not necessarily to remove it.
+- if malware is identified:
+- for commercial, known malware - get rid of it through the antivirus</p>
+</li>
+<li>
+<p>If the the antivirus is disabled or not updated:
+- Try to understand if the user disabled it, and why.
+- if the user hasn't disabled it, a computer compromise is likely.
+<strong>Android, iOS</strong></p>
+</li>
+<li>
+<p>Check if the device is rooted or jailbroken - this might be an indicator of compromise.</p>
+</li>
+<li>
+<p>Check if any suspicious applications have been installed from outside the official app stores, and on android, if this has been enabled.</p>
+</li>
+</ul>
+<p><em>See the <a href="https://safetag.org/activities/device_checklist/">Device Checklist</a> and <a href="https://safetag.org/activities/mobile_device_survey/">Mobile Device Assessment</a> activities for more in-depth device analysis.</em></p>
+<hr>
+<h6>Variant: Unusual Network Traffic</h6>
+<p>Advanced threats may be identified during the network scanning and traffic analysis. See the <a href="https://safetag.org/activities/network_scanning">Network Scanning</a> and <a href="https://safetag.org/activities/traffic_analysis">Traffic Analysis</a> activities.</p>
+<hr>
+<h6>Variant: Threat Hunting</h6>
+<p><strong>Threat Hunting</strong>
+In case you went through the entire process and still you have doubts about a file, email, process, or have other reasons to believe the organization may have undetected malware, you will probably need to work on specific threat hunting procedure that matches your needs, the organization's assets, and the threat profile of potential adversaries.</p>
+<p>The <a href="http://threathunting.net">ThreatHunting.net</a> project, is collecting different Threat Hunting techniques on their <a href="https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts">GitHub repo</a>.</p>
+<p>The provided Threat Hunting procedures will guide on how to address your doubts on specific issue which means, you have to be able at least able to identify the category of the possible threat then apply the steps provided by <a href="http://threathunting.net">ThreatHunting.net</a> project.</p>
+</ul></article><span></span></div><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageInnerColumns-sc-1dtk98a-1 kFlfln buObBj"><article><h1 class="heading__Heading-sc-127qstd-0 hCGKPk inpage__InpageTitle-sc-1dtk98a-7 kOSUSg">အကြံပြုချက်များ</h1><ul class="lists__SquareUl-sc-16pqb8y-1 ioOhRX"><p>If the organization potentially receives documents from unknown
+and untrusted sources which could potentially target them through exploits,
+they may use Dangerzone from First Look Media, a tool which will safely
+re-render various file formats through an automated process and allow the user
+to view documents stripped of any malicious content. See more at this <a href="https://tech.firstlook.media/dangerzone-working-with-suspicious-documents-without-getting-hacked">blog
+post</a>
+or at the <a href="https://github.com/firstlookmedia/dangerzone">GitHub page</a>.</p>
+</ul></article></div></section></article></main><footer role="contentinfo" class="page-footer__PageFoot-sc-1wx9oy3-0 hLTPzn"><div class="constrainer__Constrainer-sc-vi2beb-0 page-footer__PageFootInner-sc-1wx9oy3-1 kFlfln kvKyNW"><p class="page-footer__PageCredits-sc-1wx9oy3-2 fdMdPB">© 2022 SAFETAG™ - Internews ၏ စီမံကိန်းတစ်ခု</p><p class="page-footer__PageSocial-sc-1wx9oy3-3 jzErNF"><a href="/contact">ကျွန်ုပ်တို့ကို ဆက်သွယ်ပါ</a></p><p class="page-footer__PageNetlify-sc-1wx9oy3-4 jKPPkQ"><a href="https://www.netlify.com"><img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify"/></a></p></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+    window.dev = undefined
+    if (window.dev === true || !(navigator.doNotTrack === '1' || window.doNotTrack === '1')) {
+      window._paq = window._paq || [];
+      
+      
+      
+      
+      
+      window._paq.push(['setTrackerUrl', 'https://stats.openinternetproject.org/piwik.php']);
+      window._paq.push(['setSiteId', '1']);
+      window._paq.push(['enableHeartBeatTimer']);
+      window.start = new Date();
+
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://stats.openinternetproject.org/piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+      if (window.dev === true) {
+        console.debug('[Matomo] Tracking initialized')
+        console.debug('[Matomo] matomoUrl: https://stats.openinternetproject.org, siteId: 1')
+      }
+    }
+  </script><noscript><img src="https://stats.openinternetproject.org/piwik.php?idsite=1&rec=1&url=https://safetag.org/my/activities/suspicious_activity_analysis" style="border:0" alt="tracker" /></noscript><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/my/activities/suspicious_activity_analysis";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-9b58e19c502d0ae91247.js"],"app":["/app-e2e3ab1c2d95451eaff6.js"],"component---src-components-layouts-activity-layout-js":["/component---src-components-layouts-activity-layout-js-982e16205ed96bb39187.js"],"component---src-components-layouts-method-layout-js":["/component---src-components-layouts-method-layout-js-ff1b5834afc1aa9e5f33.js"],"component---src-components-layouts-post-layout-js":["/component---src-components-layouts-post-layout-js-6b0e0be45c12f8482e41.js"],"component---src-components-layouts-section-layout-js":["/component---src-components-layouts-section-layout-js-c890754c4a1bf7a2f38f.js"],"component---src-components-layouts-tool-layout-js":["/component---src-components-layouts-tool-layout-js-6ee1a9fb7272bc7c95ae.js"],"component---src-pages-404-js":["/component---src-pages-404-js-171737f27e5d282c70c1.js"],"component---src-pages-about-js":["/component---src-pages-about-js-0c7f51973acd5202e870.js"],"component---src-pages-activities-js":["/component---src-pages-activities-js-97b11d575eb50397d4a2.js"],"component---src-pages-codeofconduct-js":["/component---src-pages-codeofconduct-js-e1080805d16047b28944.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-6fb8ad61f44248a37d7c.js"],"component---src-pages-credits-js":["/component---src-pages-credits-js-dd1a14ff7aaf3f8b4712.js"],"component---src-pages-guide-builder-js":["/component---src-pages-guide-builder-js-3c8594334f1fce86e6d8.js"],"component---src-pages-guide-js":["/component---src-pages-guide-js-6d5051e4a6316fee39f1.js"],"component---src-pages-index-js":["/component---src-pages-index-js-f57be338774097c30341.js"],"component---src-pages-posts-js":["/component---src-pages-posts-js-7b6d5840056332233e2f.js"],"component---src-pages-search-js":["/component---src-pages-search-js-9726c8afc5d4dc89ebf3.js"]};/*]]>*/</script><script src="/polyfill-9b58e19c502d0ae91247.js" nomodule=""></script><script src="/component---src-components-layouts-activity-layout-js-982e16205ed96bb39187.js" async=""></script><script src="/4283810af98cd00d8748060c5fde52ec3bf9fce7-e1a792357ffa8cac2a27.js" async=""></script><script src="/commons-71010467aec970c6c06c.js" async=""></script><script src="/styles-e9d24b1846c7d6eb9685.js" async=""></script><script src="/app-e2e3ab1c2d95451eaff6.js" async=""></script><script src="/532a2f07-3c67b2f9981cf3c66c80.js" async=""></script><script src="/framework-9ef14e9ae19a1d403c0a.js" async=""></script><script src="/webpack-runtime-d6fb8b1e9f7369c15c2e.js" async=""></script></body></html>
