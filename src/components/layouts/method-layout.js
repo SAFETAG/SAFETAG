@@ -291,6 +291,7 @@ function MethodLayout({ data, location }) {
               </InpageTitle>
               <SquareUl>
                 {(frontmatter.references || []).map((reference, index) => (
+                  referenceNodes[reference] ? (
                   <div key={"ref-" + index}>
                     <p>{referenceNodes[reference].title}:</p>
                     <div
@@ -299,6 +300,7 @@ function MethodLayout({ data, location }) {
                       }}
                     ></div>
                   </div>
+                ) : ''
                 ))}
               </SquareUl>
             </section>

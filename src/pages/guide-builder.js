@@ -432,6 +432,7 @@ const GuideBuilder = ({ data, location }) => {
                           )}
                           <ul>
                             {values(method.activities).map(activity => {
+                              if (activity) {
                               const fieldId = `checkbox-${method.id}-${activity.id}`
                               return (
                                 <li key={fieldId}>
@@ -461,6 +462,7 @@ const GuideBuilder = ({ data, location }) => {
                                   <div>{activity.summary?.excerpt}</div>
                                 </li>
                               )
+                              }
                             })}
                           </ul>
                         </FormCheckableGroup>
@@ -516,7 +518,7 @@ const GuideBuilder = ({ data, location }) => {
               {values(guide).map(method => {
                 // Get selected activities from method, if any
                 const selectedActivities = values(
-                  pickBy(method.activities, a => a.checked)
+                  pickBy(method.activities, a => a ? a.checked : null)
                 )
 
                 // Bypass if method doesn't have any selected activities
