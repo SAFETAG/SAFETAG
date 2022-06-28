@@ -172,8 +172,7 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-sectionize`,
-          `gatsby-remark-slug`,
-          `gatsby-transformer-remark-frontmatter`,
+          // `gatsby-transformer-remark-frontmatter`,
           {
             resolve: `gatsby-remark-images`,
             options: {
