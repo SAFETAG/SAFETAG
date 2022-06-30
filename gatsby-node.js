@@ -10,11 +10,7 @@ exports.onCreateDevServer = ({ app }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
-    }
-
-    type Frontmatter implements Node {
+    type Frontmatter @infer {
       title: String
       summary: String
       activities: [String]
@@ -29,6 +25,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       info_required: [String]
       method_icon: String
     }
+    type MarkdownRemark implements Node @infer {
+      frontmatter: Frontmatter!
+    }
+
   `
   createTypes(typeDefs)
 }

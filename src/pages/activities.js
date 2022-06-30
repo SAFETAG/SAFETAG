@@ -87,7 +87,7 @@ function Activities({ data }) {
                         <p>
                           {
                             node.frontmatter.short_summary ? node.frontmatter.short_summary
-                              : node.fields.frontmattermd.summary.excerpt
+                              : node.frontmatter.summary
                           }
                         </p>
                       </ActivityCard>
@@ -118,9 +118,6 @@ export const query = graphql`
         node {
           fields {
             slug
-            frontmattermd {
-              summary { excerpt }
-            }
           }
           frontmatter {
             title

@@ -3,6 +3,7 @@ import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import { Remark } from 'react-remark';
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
@@ -95,14 +96,11 @@ const ToolCard = styled(Card)`
 
 function ActivityLayout({ data }) {
   const { i18n } = useTranslation('site', { useSuspense: false });
-  const {
-    frontmatter,
-    fields: { frontmattermd },
-  } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark
 
   // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-  let frontmatterCopy = Object.assign({}, frontmattermd)
+  let frontmatterCopy = Object.assign({}, frontmatter)
   let { sections, footnotes } = processSections(frontmatterCopy, allFootnotes)
 
   // creates an object with tool names as keys and tool slugs as values
@@ -136,11 +134,9 @@ function ActivityLayout({ data }) {
                 <Trans i18nKey="activity-summary">Summary</Trans>
               </InpageTitle>
               {sections.summary && (
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: sections.summary.html,
-                  }}
-                ></div>
+                <div>
+                  <Remark> {sections.summary} </Remark>
+                </div>
               )}
             </ActivityIntro>
             <ActivityMeta>
@@ -186,21 +182,17 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-overview">Overview</Trans>
                 </InpageTitle>
-                <SquareUl
-                  dangerouslySetInnerHTML={{
-                    __html: sections.overview.html,
-                  }}
-                ></SquareUl>
+                <SquareUl>
+                  <Remark>{sections.overview}</Remark>
+                </SquareUl>
               </aside>
               {sections.materials_needed && (
                 <aside>
                   <Card variation="outline" border="white">
                     <CardHeading><Trans i18nKey="activity-materials">Materials Needed</Trans></CardHeading>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: sections.materials_needed.html,
-                      }}
-                    ></div>
+                    <div>
+                      <Remark> {sections.materials_needed} </Remark>
+                    </div>
                   </Card>
                 </aside>
               )}
@@ -214,11 +206,9 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-considerations">Considerations</Trans>
                 </InpageTitle>
-                <SquareUl
-                  dangerouslySetInnerHTML={{
-                    __html: sections.considerations.html,
-                  }}
-                ></SquareUl>
+                <SquareUl>
+                  <Remark> {sections.considerations} </Remark>
+                </SquareUl>
               </article>
             </InpageInnerColumns>
           )}
@@ -228,11 +218,9 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-walkthrough">Walk Through</Trans>
                 </InpageTitle>
-                <SquareUl
-                  dangerouslySetInnerHTML={{
-                    __html: sections.walk_through.html,
-                  }}
-                ></SquareUl>
+                <SquareUl>
+                  <Remark> {sections.walk_through} </Remark>
+                </SquareUl>
               </article>
               <span></span>
             </InpageInnerColumns>
@@ -258,11 +246,9 @@ function ActivityLayout({ data }) {
                           <CardHeading variation="primary">
                             {tool}_
                           </CardHeading>
-                          <div
-                            dangerouslySetInnerHTML={{
-                              __html: toolNodes[tool] ? toolNodes[tool].short_summary : '',
-                            }}
-                          ></div>
+                          <div>
+                            <Remark>{toolNodes[tool].short_summary}</Remark>
+                          </div>
                         </ToolCard>
                       </li>
                     ))}
@@ -278,11 +264,9 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-recommendations">Recommendations</Trans>
                 </InpageTitle>
-                <SquareUl
-                  dangerouslySetInnerHTML={{
-                    __html: sections.recommendations.html,
-                  }}
-                ></SquareUl>
+                <SquareUl>
+                  <Remark> {sections.recommendations} </Remark>
+                </SquareUl>
               </article>
             </InpageInnerColumns>
           )}
@@ -327,6 +311,11 @@ export const query = graphql`
       frontmatter {
         title
         summary
+        overview
+        considerations
+        walk_through
+        materials_needed
+        recommendations
         approaches
         tools
         authors
@@ -334,16 +323,6 @@ export const query = graphql`
         skills_required
         time_required_minutes
         organization_size_under
-      }
-      fields {
-        frontmattermd {
-          summary { rawMarkdownBody, html }
-          overview { rawMarkdownBody, html }
-          considerations { rawMarkdownBody, html }
-          walk_through { rawMarkdownBody, html }
-          materials_needed { rawMarkdownBody, html }
-          recommendations { rawMarkdownBody, html }
-        }
       }
     }
     tools: allMarkdownRemark(

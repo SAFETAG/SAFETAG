@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
+import { Remark } from 'react-remark';
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
@@ -72,7 +73,6 @@ const ActivityCard = styled(Card)`
 function MethodLayout({ data, location }) {
   const { t, i18n } = useTranslation('site', { useSuspense: false })
   const frontmatter = data.method.frontmatter
-  const frontmattermd = data.method.fields.frontmattermd
 
   // creates an object with activity names as keys and activity slugs as values
   const activities = data.activities.edges
@@ -84,7 +84,7 @@ function MethodLayout({ data, location }) {
         approaches: activity.node.frontmatter.approaches,
         excerpt: activity.node.frontmatter.short_summary ?
           activity.node.frontmatter.short_summary
-          : activity.node.fields.frontmattermd.summary?.excerpt,
+          : activity.node.frontmatter.summary?.excerpt,
       }
     }
   )
@@ -117,7 +117,7 @@ function MethodLayout({ data, location }) {
 
   // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-  let frontmatterCopy = Object.assign({}, frontmattermd)
+  let frontmatterCopy = Object.assign({}, frontmatter)
   let { sections, footnotes } = processSections(frontmatterCopy, allFootnotes)
 
   return (
@@ -146,15 +146,12 @@ function MethodLayout({ data, location }) {
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="method-title-summary">Summary</Trans>
               </InpageTitle>
-              <div
-                dangerouslySetInnerHTML={{ __html: sections.summary.html }}
-              ></div>
+              <div><Remark>{sections.summary}</Remark></div>
+
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="method-title-purpose">Purpose</Trans>
               </InpageTitle>
-              <div
-                dangerouslySetInnerHTML={{ __html: (sections.purpose ? sections.purpose.html : "") }}
-              ></div>
+              <div><Remark>{sections.purpose}</Remark></div>
             </MethodIntro>
             <MethodMeta>
               <Dl boldDesc>
@@ -181,11 +178,9 @@ function MethodLayout({ data, location }) {
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="method-title-questions">Guiding Questions</Trans>
               </InpageTitle>
-              <SquareUl
-                dangerouslySetInnerHTML={{
-                  __html: sections.guiding_questions.html,
-                }}
-              ></SquareUl>
+              <SquareUl>
+                <Remark>{sections.guiding_questions}</Remark>
+              </SquareUl>
             </section>
             <section></section>
           </InpageInnerColumns>
@@ -193,21 +188,15 @@ function MethodLayout({ data, location }) {
             {sections.operational_security && (
               <Card border="base">
                 <CardHeading><Trans i18nKey="method-title-opsec">Operational Security</Trans></CardHeading>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: sections.operational_security.html,
-                  }}
-                ></div>
+                <div><Remark>{sections.operational_security}</Remark></div>
               </Card>
             )}
             {sections.preparation && (
               <Card border="base">
                 <CardHeading><Trans i18nKey="method-title-prep">Preparation</Trans></CardHeading>
-                <SquareUl
-                  dangerouslySetInnerHTML={{
-                    __html: sections.preparation.html,
-                  }}
-                ></SquareUl>
+                <SquareUl>
+                  <Remark>{sections.preparation}</Remark>
+                </SquareUl>
               </Card>
             )}
           </InpageInnerColumns>
@@ -218,11 +207,9 @@ function MethodLayout({ data, location }) {
                   <InpageTitle size="large" withDeco>
                     <Trans i18nKey="method-title-outputs">Outputs</Trans>
                   </InpageTitle>
-                  <SquareUl
-                    dangerouslySetInnerHTML={{
-                      __html: sections.outputs.html,
-                    }}
-                  ></SquareUl>
+                  <SquareUl>
+                    <Remark>{sections.outputs}</Remark>
+                  </SquareUl>
                 </>
               )}
             </section>
@@ -250,11 +237,9 @@ function MethodLayout({ data, location }) {
                         )) : ''}
                         {activity}_
                         </CardHeading>
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: activityNodes[activity] ? activityNodes[activity].excerpt : '',
-                          }}
-                        ></div>
+                        <div>
+                          <Remark>activityNodes[activity].excerpt</Remark>
+                        </div>
                       </ActivityCard>
                     </li>
                   ))}
@@ -272,11 +257,9 @@ function MethodLayout({ data, location }) {
                 <SquareUl>
                   {footnotes.map(fn => (
                     <li key={fn.key} id={fn.key}>
-                      <strong>{fn.index}</strong> <span
-                        dangerouslySetInnerHTML={{
-                          __html: fn.html,
-                        }}
-                        ></span>
+                      <strong>{fn.index}</strong> <span>
+                      <Remark>{fn}</Remark>
+                      </span>
                     </li>
                   ))}
                 </SquareUl>
@@ -337,16 +320,6 @@ export const query = graphql`
         outputs
         operational_security
       }
-      fields {
-        frontmattermd {
-          summary { html, rawMarkdownBody }
-          purpose { html, rawMarkdownBody }
-          guiding_questions { html, rawMarkdownBody }
-          preparation { html, rawMarkdownBody }
-          outputs { html, rawMarkdownBody }
-          operational_security { html, rawMarkdownBody }
-        }
-      }
     }
     activities: allMarkdownRemark(
       filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}}
@@ -355,9 +328,6 @@ export const query = graphql`
         node {
           fields {
             slug
-            frontmattermd {
-              summary { excerpt }
-            }
           }
           frontmatter {
             title
