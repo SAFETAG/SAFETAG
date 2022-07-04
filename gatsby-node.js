@@ -274,7 +274,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
 }
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+exports.onCreateWebpackConfig = ({ stage, loaders, actions, plugins }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        stream: require.resolve('stream-browserify'),
+      },
+    },
+    plugins: [
+      plugins.provide({
+        process: 'process/browser'
+      }),
+      plugins.define({
+        'process.env': JSON.stringify(process.env)
+      }),
+    ],
+  })
   if (stage === "build-html") {
     actions.setWebpackConfig({
       module: {

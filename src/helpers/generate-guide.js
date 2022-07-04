@@ -1,7 +1,7 @@
 import PDFDocument from "./pdf-document"
 import blobStream from "blob-stream"
 import { saveAs } from "file-saver"
-import marked from "marked"
+import { marked } from "marked"
 import pickBy from "lodash.pickby"
 import values from "lodash.values"
 
@@ -635,4 +635,10 @@ export default async function generateGuide(md, guideTitle, t, lang) {
   return await stream.on("finish", function () {
     saveAs(stream.toBlob("application/pdf"), `Safetag-${guideTitle}_${todaysDate}.pdf`)
   })
+
+  /*
+    const data = await getStream.buffer(doc)
+    let b64 = Buffer.from(data).toString('base64')
+    return b64
+  */
 }

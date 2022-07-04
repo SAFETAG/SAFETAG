@@ -14,7 +14,7 @@
     "dotenv": "^16.0.0",
     "file-saver": "^2.0.2",
     "gatsby": "^4.17.1",
-    "gatsby-cli": "^4.17.1",
+    "gatsby-cli": "^4.18.0-next.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^4.18.0-next.1",
     "gatsby-plugin-flexsearch": "^1.0.3",
@@ -52,9 +52,11 @@
     "react-remark": "^2.1.0",
     "rehype-react": "^7.1.1",
     "remark-html": "^15.0.1",
+    "stream-browserify": "^3.0.0",
     "styled-components": "^5.3.5",
     "transifex": "^1.6.6",
-    "use-query-params": "^1.1.8"
+    "use-query-params": "^1.1.8",
+    "util": "^0.12.4"
   },
   "devDependencies": {
     "brfs": "^2.0.2",
@@ -64,7 +66,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "gatsby-remark-sectionize": "^1.0.0",
     "gh-pages": "^4.0.0",
-    "prettier": "^2.7.1"
+    "marked": "^4.0.17",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10"
   },
   "engines": {
     "node": "16.x"

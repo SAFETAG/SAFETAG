@@ -190,11 +190,10 @@ function useAllGuideData(data) {
   const activities = data.activities.edges.map(({ node }) => {
     return {
       id: node.frontmatter.title,
-      sections: node.fields.frontmattermd,
+      sections: node.frontmatter,
       toolnames: node.frontmatter.tools,
       slug: node.fields.slug,
       ...node.frontmatter,
-      ...node.fields.frontmattermd,
     }
   })
 
@@ -316,6 +315,7 @@ const GuideBuilder = ({ data, location }) => {
     }, [guide])
 
     // sets url params as activities are selected
+    /*
     useEffect(() => {
       if(activitiesInCustomGuide.length) {
 
@@ -334,6 +334,7 @@ const GuideBuilder = ({ data, location }) => {
       }
 
     }, [activitiesInCustomGuide])
+    */
 
   const selectMultipleActivities = (methodId, allOrNone) => {
     const allActivities = guide[methodId].activities
@@ -603,17 +604,6 @@ export const query = graphql`
         node {
           fields {
             slug
-            frontmattermd {
-              summary {
-                excerpt
-                rawMarkdownBody
-              }
-              overview { rawMarkdownBody }
-              materials_needed { rawMarkdownBody }
-              considerations { rawMarkdownBody }
-              walk_through { rawMarkdownBody }
-              recommendations { rawMarkdownBody }
-            }
           }
           frontmatter {
             title
@@ -623,6 +613,11 @@ export const query = graphql`
             position
             tools
             remoteOptions: remote_options
+            overview
+            materials_needed
+            considerations
+            walk_through
+            recommendations
           }
         }
       }
