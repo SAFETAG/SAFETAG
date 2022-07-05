@@ -531,37 +531,37 @@ export async function prepareGuide(
           customGuide.push(`\` \``)
           // Add activities sections
           let sections = activity.sections
-          if (sections.summary && sections.summary.rawMarkdownBody) {
+          if (sections.summary) {
             customGuide.push(`##### ${t('activity-summary', "Summary")}`)
-            customGuide.push(sections.summary.rawMarkdownBody)
+            customGuide.push(sections.summary)
           }
-          if (sections.overview && sections.overview.rawMarkdownBody) {
+          if (sections.overview) {
             customGuide.push(`##### ${t('activity-overview', "Overview")}`)
-            customGuide.push(sections.overview.rawMarkdownBody)
+            customGuide.push(sections.overview)
           }
-          if (sections.materials_needed && sections.materials_needed.rawMarkdownBody) {
+          if (sections.materials_needed) {
             customGuide.push(`##### ${t('activity-materials', "Materials Needed")}`)
-            customGuide.push(activity.sections.materials_needed.rawMarkdownBody)
+            customGuide.push(activity.sections.materials_needed)
           }
-          if (sections.considerations && sections.considerations.rawMarkdownBody) {
+          if (sections.considerations) {
             customGuide.push(`##### ${t('activity-considerations', "Considerations")}`)
-            customGuide.push(sections.considerations.rawMarkdownBody)
+            customGuide.push(sections.considerations)
           }
-          if (sections.walk_through && sections.walk_through.rawMarkdownBody) {
+          if (sections.walk_through) {
             customGuide.push(`##### ${t('activity-walkthrough', "Walk Through")}`)
-            customGuide.push(sections.walk_through.rawMarkdownBody)
+            customGuide.push(sections.walk_through)
           }
           if (activity.toolnames) {
             customGuide.push(`##### ${t('activity-tools', "Tools and variants")}`)
             activity.toolnames.forEach((toolname) => {
               const tool = method.tools[toolname]
               customGuide.push(`###### ${tool.title}`)
-              customGuide.push(tool.rawMarkdownBody)
+              customGuide.push(tool)
             })
           }
-          if (sections.recommendations && sections.recommendations.rawMarkdownBody) {
+          if (sections.recommendations) {
             customGuide.push(`##### ${t('activity-recommendations', "Recommendations")}`)
-            customGuide.push(sections.recommendations.rawMarkdownBody)
+            customGuide.push(sections.recommendations)
           }
         }
       )
