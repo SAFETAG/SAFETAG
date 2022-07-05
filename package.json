@@ -96,8 +96,9 @@
     "type": "git",
     "url": "https://github.com/developmentseed/safetag-web"
   },
-  "overrides": {
-    "ajv": "^8.11.0",
+  "resolutions": {
+    "graphql": "^15.7.2",
+    "react": "^17.0.0",
     "jpeg-js": ">=0.4.4",
     "trim": ">=0.0.3",
     "node-fetch": ">=2.6.7",
@@ -105,12 +106,6 @@
     "diff": ">=3.5.0",
     "minimist": ">=1.2.6",
     "glob-parent": ">=5.1.2",
-    "multer": ">=1.4.5-lts.1",
-    "svgo": "^2.8.0",
-    "graphql-config": "^4.3.1"
-  },
-  "resolutions": {
-    "graphql": "^15.7.2",
-    "react": "^17.0.0"
+    "multer": ">=1.4.5-lts.1"
   }
 }
