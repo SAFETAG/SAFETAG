@@ -98,14 +98,16 @@
   },
   "resolutions": {
     "graphql": "^15.7.2",
-    "react": "^17.0.0",
-    "jpeg-js": ">=0.4.4",
-    "trim": ">=0.0.3",
-    "node-fetch": ">=2.6.7",
+    "react": "^17.0.0"
+  },
+  "overrides": {
     "ansi-html": ">=0.0.8",
-    "diff": ">=3.5.0",
+    "trim": ">=0.0.3",
     "minimist": ">=1.2.6",
     "glob-parent": ">=5.1.2",
-    "multer": ">=1.4.5-lts.1"
+    "multer": ">=1.4.5-lts.1",
+    "diff": ">=3.5.0",
+    "jpeg-js": ">=0.4.4",
+    "node-fetch": "^2.6.6"
   }
 }
