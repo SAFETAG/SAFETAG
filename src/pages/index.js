@@ -73,6 +73,7 @@ const ContactButton = styled(Button)`
   font-size: 1.5rem;
   padding: 1rem;
   margin-top: 1rem;
+  color: white !important;
 `
 
 function IndexPage({ data }) {

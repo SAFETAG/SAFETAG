@@ -152,7 +152,9 @@ const GlobalMenuLink = styled(Link)`
   }
 `;
 
-const GlobalMenuButton = styled(Button)``;
+const GlobalMenuButton = styled(Button)`
+  color: white !important;
+  `
 
 const Toggle = styled.div`
   display: flex;

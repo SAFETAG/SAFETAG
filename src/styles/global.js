@@ -25,7 +25,7 @@ const baseStyles = css`
 
   body {
     background-color: ${themeVal("color.background")};
-    color: ${themeVal("type.base.color")};
+    color: "#000000";
     font-size: ${themeVal("type.base.size")};
     line-height: ${themeVal("type.base.line")};
     /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
