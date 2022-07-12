@@ -84,7 +84,7 @@ function MethodLayout({ data, location }) {
         approaches: activity.node.frontmatter.approaches,
         excerpt: activity.node.frontmatter.short_summary ?
           activity.node.frontmatter.short_summary
-          : activity.node.frontmatter.summary?.excerpt,
+          : activity.node.frontmatter.summary?.slice(0,200) + "...",
       }
     }
   )
@@ -238,7 +238,7 @@ function MethodLayout({ data, location }) {
                         {activity}_
                         </CardHeading>
                         <div>
-                          <Remark>activityNodes[activity].excerpt</Remark>
+                          <Remark>{activityNodes[activity].excerpt}</Remark>
                         </div>
                       </ActivityCard>
                     </li>
