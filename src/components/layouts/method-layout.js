@@ -77,6 +77,7 @@ function MethodLayout({ data, location }) {
   // creates an object with activity names as keys and activity slugs as values
   const activities = data.activities.edges
   const activityNodes = {}
+  console.log(activities)
   activities.forEach(
     activity => {
       activityNodes[activity.node.frontmatter.title] = {
@@ -224,6 +225,7 @@ function MethodLayout({ data, location }) {
                 </InpageTitle>
                 <CardList>
                   {(frontmatter.activities || []).map((activity, index) => (
+                    activityNodes[activity] ?
                     <li key={index}>
                       <ActivityCard
                         as={Link}
@@ -242,6 +244,7 @@ function MethodLayout({ data, location }) {
                         </div>
                       </ActivityCard>
                     </li>
+                    : <li>{activity}</li>
                   ))}
                 </CardList>
               </ActivityList>
@@ -328,6 +331,7 @@ export const query = graphql`
         node {
           fields {
             slug
+            langKey
           }
           frontmatter {
             title
