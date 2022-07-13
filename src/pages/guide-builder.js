@@ -7,8 +7,8 @@ import pickBy from "lodash.pickby"
 import values from "lodash.values"
 import MoreLink from "../styles/button/more-link"
 import queryString from 'query-string'
+import { navigate } from "@reach/router"
 
-import {useQueryParams} from 'use-query-params';
 import keyBy from "lodash.keyby"
 
 import GlobalLayout from "../components/layouts/global-layout"
@@ -264,10 +264,6 @@ const GuideBuilder = ({ data, location }) => {
   const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
   const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
 
-    // eslint-disable-next-line no-unused-vars
-    const [query, setQuery] = useQueryParams({});
-
-
     // adds selected activities to guide if any exist in url param on initial load
     useEffect(() => {
       if(location.search) {
@@ -305,7 +301,7 @@ const GuideBuilder = ({ data, location }) => {
     }
     }, [])
 
-    // stores list of selected activities to be references by url params and filter guide
+    // stores list of selected activities to be referenced by url params and filter guide
     useEffect(() => {
       const activities = values(guide).filter(({ id, activities }) => {
         const act = values(pickBy(activities, a => a.checked))
@@ -315,9 +311,9 @@ const GuideBuilder = ({ data, location }) => {
     }, [guide])
 
     // sets url params as activities are selected
-    /*
     useEffect(() => {
       if(activitiesInCustomGuide.length) {
+        const qs = queryString.parse(location.search)
 
         const allSelectedActivities = activitiesInCustomGuide.map(method => {
           const activityArray = Object.values(method.activities)
@@ -325,16 +321,13 @@ const GuideBuilder = ({ data, location }) => {
           .map(activity => activity.id)
           return {[method.id]: activityArray}
         })
-        setQuery(
+        const newQS = queryString.stringify(
             allSelectedActivities.reduce((prev, curr) => {return {...prev, ...curr}}, {}),
-          'push'
+            {arrayFormat: 'comma'}
         )
-      } else {
-        setQuery({},'replace')
+        navigate(location.pathname + '?' + newQS)
       }
-
     }, [activitiesInCustomGuide])
-    */
 
   const selectMultipleActivities = (methodId, allOrNone) => {
     const allActivities = guide[methodId].activities

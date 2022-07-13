@@ -238,6 +238,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-use-query-params`,
   ],
 };
