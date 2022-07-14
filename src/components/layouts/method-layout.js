@@ -260,9 +260,11 @@ function MethodLayout({ data, location }) {
                 <SquareUl>
                   {footnotes.map(fn => (
                     <li key={fn.key} id={fn.key}>
-                      <strong>{fn.index}</strong> <span>
-                      <Remark>{fn}</Remark>
-                      </span>
+                      <strong>{fn.index}</strong> <span
+                        dangerouslySetInnerHTML={{
+                          __html: fn.html,
+                        }}
+                      ></span>
                     </li>
                   ))}
                 </SquareUl>

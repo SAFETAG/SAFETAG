@@ -96,12 +96,11 @@ const ToolCard = styled(Card)`
 
 function ActivityLayout({ data }) {
   const { i18n } = useTranslation('site', { useSuspense: false });
-  const { frontmatter } = data.markdownRemark
 
   // load and integrate footnotes
   const allFootnotes = loadAllFootnotes(data.references.edges, i18n.language)
-  let frontmatterCopy = Object.assign({}, frontmatter)
-  let { sections, footnotes } = processSections(frontmatterCopy, allFootnotes)
+  let frontmatter = Object.assign({}, data.activity.frontmatter)
+  let { sections, footnotes } = processSections(frontmatter, allFootnotes)
 
   // creates an object with tool names as keys and tool slugs as values
   const tools = data.tools.edges
@@ -117,7 +116,7 @@ function ActivityLayout({ data }) {
 
   return (
     <GlobalLayout>
-      <SEO title={`Activity: ` + frontmatter.title} />
+      <SEO title={`Activity: ` + sections.title} />
       <ActivityPage>
         <InpageHeader>
           <InpageInnerColumns columnLayout="3:1">
@@ -126,18 +125,14 @@ function ActivityLayout({ data }) {
                 <Trans i18nKey="activity-back">Back to all activities</Trans>
               </MoreLink>
               <ActivityTitle size="xlarge" variation="primary">
-                {frontmatter.title}
+                {sections.title}
               </ActivityTitle>
             </ActivityHeadline>
             <ActivityIntro>
               <InpageTitle size="large" withDeco>
                 <Trans i18nKey="activity-summary">Summary</Trans>
               </InpageTitle>
-              {sections.summary && (
-                <div>
-                  <Remark> {sections.summary} </Remark>
-                </div>
-              )}
+              <div><Remark>{sections.summary}</Remark></div>
             </ActivityIntro>
             <ActivityMeta>
               <Card variation="outline" border="base">
@@ -206,9 +201,7 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-considerations">Considerations</Trans>
                 </InpageTitle>
-                <SquareUl>
-                  <Remark> {sections.considerations} </Remark>
-                </SquareUl>
+                <SquareUl><Remark>{sections.considerations}</Remark></SquareUl>
               </article>
             </InpageInnerColumns>
           )}
@@ -218,9 +211,7 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-walkthrough">Walk Through</Trans>
                 </InpageTitle>
-                <SquareUl>
-                  <Remark> {sections.walk_through} </Remark>
-                </SquareUl>
+                <SquareUl><Remark>{sections.walk_through}</Remark></SquareUl>
               </article>
               <span></span>
             </InpageInnerColumns>
@@ -246,9 +237,7 @@ function ActivityLayout({ data }) {
                           <CardHeading variation="primary">
                             {tool}_
                           </CardHeading>
-                          <div>
-                            <Remark>{toolNodes[tool].short_summary}</Remark>
-                          </div>
+                          <div><Remark>{toolNodes[tool].short_summary}</Remark></div>
                         </ToolCard>
                       </li>
                     ))}
@@ -264,9 +253,7 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-recommendations">Recommendations</Trans>
                 </InpageTitle>
-                <SquareUl>
-                  <Remark> {sections.recommendations} </Remark>
-                </SquareUl>
+                <SquareUl><Remark>{sections.recommendations}</Remark></SquareUl>
               </article>
             </InpageInnerColumns>
           )}
@@ -306,7 +293,7 @@ export default ActivityLayout
 
 export const query = graphql`
   query($slug: String!, $language: String!) {
-    markdownRemark(fields: { slug: { eq: $slug }, langKey: {eq: $language} }) {
+    activity: markdownRemark(fields: { slug: { eq: $slug }, langKey: {eq: $language} }) {
       html
       frontmatter {
         title
