@@ -55,6 +55,7 @@
     "util": "^0.12.4"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
     "brfs": "^2.0.2",
     "eslint": "^8.19.0",
     "eslint-plugin-inclusive-language": "^2.2.0",

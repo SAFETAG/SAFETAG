@@ -313,8 +313,6 @@ const GuideBuilder = ({ data, location }) => {
     // sets url params as activities are selected
     useEffect(() => {
       if(activitiesInCustomGuide.length) {
-        const qs = queryString.parse(location.search)
-
         const allSelectedActivities = activitiesInCustomGuide.map(method => {
           const activityArray = Object.values(method.activities)
           .filter(activity => activity.checked)
@@ -453,7 +451,7 @@ const GuideBuilder = ({ data, location }) => {
                                   >
                                     {activity.title}
                                   </ActivityCheckable>
-                                  <div>{activity.summary?.excerpt}</div>
+                                  <div>{activity.summary.excerpt}</div>
                                 </li>
                               )
                               }

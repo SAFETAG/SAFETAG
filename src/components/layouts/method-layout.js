@@ -85,7 +85,7 @@ function MethodLayout({ data, location }) {
         approaches: activity.node.frontmatter.approaches,
         excerpt: activity.node.frontmatter.short_summary ?
           activity.node.frontmatter.short_summary
-          : activity.node.frontmatter.summary?.slice(0,200) + "...",
+          : activity.node.frontmatter.summary.slice(0,200) + "...",
       }
     }
   )

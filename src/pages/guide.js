@@ -151,10 +151,10 @@ function IndexPage({ data }) {
                         withHover
                       >
                         <CardHeader>
-                        	<img src={node.frontmatter.method_icon} />
-                        	<CardHeading variation="primary" withDeco>
-                        	  {node.frontmatter.title}
-                        	</CardHeading>
+                          <img src={node.frontmatter.method_icon} />
+                          <CardHeading variation="primary" withDeco>
+                          {node.frontmatter.title}
+                          </CardHeading>
                         </CardHeader>
                         <p>
                           {

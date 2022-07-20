@@ -1,6 +1,6 @@
-import { withPrefix } from "gatsby"
 import remark from 'remark'
 import remarkHTML from 'remark-html'
+// import { withPrefix } from "gatsby"
 
 export function loadAllFootnotes(referenceEdges, langKey) {
   // load and parse all footnotes

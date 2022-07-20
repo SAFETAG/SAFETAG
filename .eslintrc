@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint", // Specifies the ESLint parser
  "ignorePatterns": [ "static/*" ] ,
   "extends": [
     "eslint:recommended",
@@ -17,10 +16,12 @@
   },
   "plugins": ["react", "react-hooks", "inclusive-language"],
   "parserOptions": {
+    "parser": "@babel/eslint-parser", // Specifies the ESLint parser
+    "requireConfigFile": false,
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
+    "ecmaVersion": "latest", // Allows for the parsing of modern ECMAScript features
     "sourceType": "module" // Allows for the use of imports
   },
 }
