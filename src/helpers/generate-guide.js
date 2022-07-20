@@ -530,7 +530,7 @@ export async function prepareGuide(
           customGuide.push(`#### \`      \` Activity: ${activity.title} ![](${approachIcon})`)
           customGuide.push(`\` \``)
           // Add activities sections
-          let sections = activity.sections
+          let sections = activity
           if (sections.summary) {
             customGuide.push(`##### ${t('activity-summary', "Summary")}`)
             customGuide.push(sections.summary)
@@ -541,7 +541,7 @@ export async function prepareGuide(
           }
           if (sections.materials_needed) {
             customGuide.push(`##### ${t('activity-materials', "Materials Needed")}`)
-            customGuide.push(activity.sections.materials_needed)
+            customGuide.push(sections.materials_needed)
           }
           if (sections.considerations) {
             customGuide.push(`##### ${t('activity-considerations', "Considerations")}`)
