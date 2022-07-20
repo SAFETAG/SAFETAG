@@ -36,10 +36,10 @@ jobs:
           cp .env .env.development
           cat .env
 
-      - name: Use Node.js 12
+      - name: Use Node.js 16
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 16
 
       - name: Install and lint
         run: |
