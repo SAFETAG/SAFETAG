@@ -246,7 +246,7 @@ function MethodLayout({ data, location }) {
                       >
                         <CardHeading variation="primary">
                         {activityNodes[activity] ? activityNodes[activity].approaches.map((approach, index) => (
-                          <img key={`approach-${index}`} src={approachNodes[approach].icon} />
+                          <img key={`approach-${index}`} src={approachNodes[approach] ? approachNodes.icon : ""} />
                         )) : ''}
                         {activity}_
                         </CardHeading>
