@@ -32,17 +32,6 @@ export default function useAllGuideData() {
             node {
               fields {
                 slug
-                frontmattermd {
-                  summary {
-                    excerpt
-                    rawMarkdownBody
-                  }
-                  overview { rawMarkdownBody }
-                  materials_needed { rawMarkdownBody }
-                  considerations { rawMarkdownBody }
-                  walk_through { rawMarkdownBody }
-                  recommendations { rawMarkdownBody }
-                }
               }
               frontmatter {
                 title
@@ -51,6 +40,11 @@ export default function useAllGuideData() {
                 approaches
                 position
                 remoteOptions: remote_options
+                overview
+                materials_needed
+                considerations
+                walk_through
+                recommendations
               }
             }
           }
@@ -100,10 +94,9 @@ export default function useAllGuideData() {
 
   const activities = data.activities.edges.map(({ node }) => ({
     id: node.frontmatter.title,
-    sections: node.fields.frontmattermd,
+    sections: node.frontmatter,
     slug: node.fields.slug,
     ...node.frontmatter,
-    ...node.fields.frontmattermd,
   }))
 
   const methods = data.methods.edges.map(({ node }) => ({

@@ -73,6 +73,7 @@ const ContactButton = styled(Button)`
   font-size: 1.5rem;
   padding: 1rem;
   margin-top: 1rem;
+  color: white !important;
 `
 
 function IndexPage({ data }) {
@@ -177,10 +178,10 @@ function IndexPage({ data }) {
                         to={node.fields.slug}
                       >
                         <CardHeader>
-                        	<img src={node.frontmatter.method_icon} />
-                        	<CardHeading variation="primary" withDeco>
-                        	  {node.frontmatter.title}
-                        	</CardHeading>
+                          <img src={node.frontmatter.method_icon} />
+                          <CardHeading variation="primary" withDeco>
+                            {node.frontmatter.title}
+                          </CardHeading>
                         </CardHeader>
                         <p>
                           {

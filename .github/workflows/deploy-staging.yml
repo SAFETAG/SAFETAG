@@ -44,23 +44,23 @@ jobs:
         run: |
           echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
 
-      - name: Use Node.js 12
+      - name: Use Node.js 16
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 16
 
       - name: Install and lint
         run: |
-          yarn install
-          yarn lint
+          npm install
+          npm run lint
 
       - name: Update translations and build
         run: |
           echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"${{ secrets.TRANSIFEX_USER }}"$'\npassword = '"${{ secrets.TRANSIFEX_PASSWORD }}"$'\ntoken = '"${{ secrets.TRANSIFEX_TOKEN }}"$'\n' | tee ~/.transifexrc
-          yarn extract
-          yarn transifex-push
-          yarn transifex-pull
-          yarn build
+          npm run extract
+          npm run transifex-push
+          npm run transifex-pull
+          npm run build
 
       - name: Deploy 🚀
         uses: burnett01/rsync-deployments@4.1

@@ -1,6 +1,6 @@
-import { withPrefix } from "gatsby"
 import remark from 'remark'
 import remarkHTML from 'remark-html'
+// import { withPrefix } from "gatsby"
 
 export function loadAllFootnotes(referenceEdges, langKey) {
   // load and parse all footnotes
@@ -33,16 +33,9 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
 
   Object.keys(sections).forEach(sectionName => {
     let section = sections[sectionName]
-    if (section && (section.rawMarkdownBody || (typeof section === 'string' || section instanceof String))) {
-      let content
-      if (section.rawMarkdownBody) {
-        section = Object.assign({}, section)
-        // make a copy of the string - https://stackoverflow.com/a/31733628/122400
-        content = (' ' + section.rawMarkdownBody).slice(1)
-      } else {
-        section = (' ' + section).slice(1)
-        content = (' ' + section).slice(1)
-      }
+    if (section && (typeof section === 'string' || section instanceof String)) {
+      section = (' ' + section).slice(1)
+      let content = (' ' + section).slice(1)
       // TODO: Redo this with regexes
       Object.keys(allFootnotes).forEach(key => {
         if (content.includes(`[^${key}]`) && !(footnotes.filter(fn => fn.key == key).length)) {
@@ -68,17 +61,15 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
       content = content.replace( /\^,\^/g, ' ')
       // regenerate HTML rendering with updated footnote refs
       if (!content.includes('[1](')) {
-        if (section.rawMarkdownBody) {
-          section.rawMarkdownBody = content
-        } else {
-          section = content
-        }
+        section = content
       }
       // fix image URLs
-      if (section.rawMarkdownBody) {
-        section.html = remark().use(remarkHTML).processSync(section.rawMarkdownBody).contents
+      /*
+      if (section) {
+        section.html = remark().use(remarkHTML).processSync(section).contents
           .replace( /<img src="\/img/g, `<img src="${withPrefix("/img")}`)
       }
+      */
     }
     sections[sectionName] = section
   })

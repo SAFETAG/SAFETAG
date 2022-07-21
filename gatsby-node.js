@@ -10,11 +10,7 @@ exports.onCreateDevServer = ({ app }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
-    }
-
-    type Frontmatter implements Node {
+    type Frontmatter @infer {
       title: String
       summary: String
       activities: [String]
@@ -29,6 +25,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       info_required: [String]
       method_icon: String
     }
+    type MarkdownRemark implements Node @infer {
+      frontmatter: Frontmatter!
+    }
+
   `
   createTypes(typeDefs)
 }
@@ -274,7 +274,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
 }
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+exports.onCreateWebpackConfig = ({ stage, loaders, actions, plugins }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        stream: require.resolve('stream-browserify'),
+      },
+    },
+    plugins: [
+      plugins.provide({
+        process: 'process/browser'
+      }),
+      plugins.define({
+        'process.env': JSON.stringify(process.env)
+      }),
+    ],
+  })
   if (stage === "build-html") {
     actions.setWebpackConfig({
       module: {

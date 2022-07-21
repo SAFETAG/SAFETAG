@@ -7,8 +7,8 @@ import pickBy from "lodash.pickby"
 import values from "lodash.values"
 import MoreLink from "../styles/button/more-link"
 import queryString from 'query-string'
+import { navigate } from "@reach/router"
 
-import {useQueryParams} from 'use-query-params';
 import keyBy from "lodash.keyby"
 
 import GlobalLayout from "../components/layouts/global-layout"
@@ -190,11 +190,10 @@ function useAllGuideData(data) {
   const activities = data.activities.edges.map(({ node }) => {
     return {
       id: node.frontmatter.title,
-      sections: node.fields.frontmattermd,
+      sections: node.frontmatter,
       toolnames: node.frontmatter.tools,
       slug: node.fields.slug,
       ...node.frontmatter,
-      ...node.fields.frontmattermd,
     }
   })
 
@@ -265,10 +264,6 @@ const GuideBuilder = ({ data, location }) => {
   const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
   const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
 
-    // eslint-disable-next-line no-unused-vars
-    const [query, setQuery] = useQueryParams({});
-
-
     // adds selected activities to guide if any exist in url param on initial load
     useEffect(() => {
       if(location.search) {
@@ -306,7 +301,7 @@ const GuideBuilder = ({ data, location }) => {
     }
     }, [])
 
-    // stores list of selected activities to be references by url params and filter guide
+    // stores list of selected activities to be referenced by url params and filter guide
     useEffect(() => {
       const activities = values(guide).filter(({ id, activities }) => {
         const act = values(pickBy(activities, a => a.checked))
@@ -318,21 +313,18 @@ const GuideBuilder = ({ data, location }) => {
     // sets url params as activities are selected
     useEffect(() => {
       if(activitiesInCustomGuide.length) {
-
         const allSelectedActivities = activitiesInCustomGuide.map(method => {
           const activityArray = Object.values(method.activities)
           .filter(activity => activity.checked)
           .map(activity => activity.id)
           return {[method.id]: activityArray}
         })
-        setQuery(
+        const newQS = queryString.stringify(
             allSelectedActivities.reduce((prev, curr) => {return {...prev, ...curr}}, {}),
-          'push'
+            {arrayFormat: 'comma'}
         )
-      } else {
-        setQuery({},'replace')
+        navigate(location.pathname + '?' + newQS)
       }
-
     }, [activitiesInCustomGuide])
 
   const selectMultipleActivities = (methodId, allOrNone) => {
@@ -459,7 +451,7 @@ const GuideBuilder = ({ data, location }) => {
                                   >
                                     {activity.title}
                                   </ActivityCheckable>
-                                  <div>{activity.summary?.excerpt}</div>
+                                  <div>{activity.summary.excerpt}</div>
                                 </li>
                               )
                               }
@@ -603,17 +595,6 @@ export const query = graphql`
         node {
           fields {
             slug
-            frontmattermd {
-              summary {
-                excerpt
-                rawMarkdownBody
-              }
-              overview { rawMarkdownBody }
-              materials_needed { rawMarkdownBody }
-              considerations { rawMarkdownBody }
-              walk_through { rawMarkdownBody }
-              recommendations { rawMarkdownBody }
-            }
           }
           frontmatter {
             title
@@ -623,6 +604,11 @@ export const query = graphql`
             position
             tools
             remoteOptions: remote_options
+            overview
+            materials_needed
+            considerations
+            walk_through
+            recommendations
           }
         }
       }

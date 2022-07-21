@@ -18,8 +18,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     { resolve: "gatsby-plugin-styled-components" },
     { resolve: `gatsby-plugin-polished` },
     {
@@ -172,8 +170,6 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-sectionize`,
-          `gatsby-remark-slug`,
-          `gatsby-transformer-remark-frontmatter`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -242,6 +238,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-use-query-params`,
   ],
 };
