@@ -77,7 +77,6 @@ function MethodLayout({ data, location }) {
   // creates an object with activity names as keys and activity slugs as values
   const activities = data.activities.edges
   const activityNodes = {}
-  console.log(activities)
   activities.forEach(
     activity => {
       activityNodes[activity.node.frontmatter.title] = {
@@ -235,7 +234,7 @@ function MethodLayout({ data, location }) {
                       >
                         <CardHeading variation="primary">
                         {activityNodes[activity] ? activityNodes[activity].approaches.map((approach, index) => (
-                          <img key={`approach-${index}`} src={approachNodes[approach].icon} />
+                          <img key={`approach-${index}`} src={approachNodes[approach] ? approachNodes.icon : ""} />
                         )) : ''}
                         {activity}_
                         </CardHeading>
