@@ -1,4 +1,5 @@
 ---
+title: Confidentiality Agreement
 approaches:
   - Interpersonal
 position: 50
@@ -40,7 +41,6 @@ walk_through: |
   * AUDITOR will securely delete all data from the audit one year after submitting the final assessment report to SUBJECT or at any time, should SUBJECT's point of contact request it.
   * AUDITOR will work with whatever level of access SUBJECT is comfortable providing. This includes access to staff members for brief "interviews," as well as more technical access, such as passwords, local connectivity, privileged or unprivileged accounts on local or remote services, etc.. That said, some level of access typically allows an auditor to produce a report that is significantly more useful than the output of a pure "black box" audit. (And this is doubly true when the auditor wishes to tread lightly in order to avoid impacting the stability of the subject’s network infrastructure and the productivity of its staff.)
 considerations: ""
-title: Confidentiality Agreement
 skills_required: []
 overview: |
   Host provides auditor consent to conduct the agreed to scope of the audit in the form of a signed liability waiver. [^auditor_consent_template]

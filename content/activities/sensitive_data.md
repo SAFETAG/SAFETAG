@@ -1,4 +1,5 @@
 ---
+title: Sensitive Data
 approaches:
   - Interpersonal
 position: 50
@@ -10,12 +11,10 @@ remote_options:
 time_required_minutes: 60
 organization_size_under: 50
 summary: |
-  
   Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or projects use cloud services like Dropbox or Google Drive for some activities, a shared server for others, and a mix of work and personal devices (laptops, phones, tablets...).
 
   This is natural, but it is important to keep track of where your organization's data lives and who can access it.
 materials_needed: |
-  
   * Stickies and markers for activities
   * Flipchart paper
   * One larger sheet of paper taped to wall in landscape orientation, with or without prepared titles. The vertical access is for Sensitivity (High / Medium / Low), and the horizontal access will be by where data is stored and will evolve throughout the exercise.  For an example with prepared headings, see the **sample matrix** in the walkthrough section below.  The Sensitivity axis is optional in the original exercise, but critical for this one. It can be added after the initial round of brainstorming however to streamline the flow.
@@ -23,13 +22,13 @@ walk_through: |
   **Sensitive Data Assessment Activity**
 
   *This exercise is adapted from the LevelUp Activity, [Backup Matrix](https://level-up.cc/curriculum/protecting-data/data-backup-basics/activity-discussion/data-backup-matrix-creating-information-map/), part of the curricula for [Data Retrention and Backup](https://level-up.cc/curriculum/protecting-data/data-backup-basics/) by Daniel O'Clunaigh, Ali Ravi, Samir Nassar, and Carol.*
-   **Sample Matrix** 
+   **Sample Matrix**
   | Relative Sensitivity | Computer | USB / External Drive | Cloud Storage | Phones, Print, etc. |
   | -------------------- | -------- | -------------------- | ------------- | ------------------- |
   | High                 |          |                      |               |                     |
   | Moderate             |          |                      |               |                     |
   | Low                  |          |                      |               |                     |
-   **Process** 
+   **Process**
   Explain to participants that we're going to conduct an information mapping activity to get a sense of where our important information actually is.
 
   Start by listing the different places where our information is stored, according to participants. If no suggestions are forthcoming, we can prompt participants with the obvious stuff:
@@ -90,15 +89,12 @@ walk_through: |
 
   Remove the stickies from the column but keep them in your hand and read them. Now I have this information. What can I do with it? And what are you left with?  Is anyone at risk - yourselves? partners?  If this were published on the Internet, what would happen?
 considerations: |
-  
   * Some of the stickies generated in this activity may provide sensitive data, dispose of them responsibly.
   * If you take photos for reporting needs, save the image files in a secure, encrypted container.
-title: Sensitive Data
 skills_required:
   - Facilitation
   - Group Facilitation
 overview: |
-  
   * With staff input, post up popular places where data is kept (laptops, email, shared drives...)
   * Using stickies, gather from the staff what data is kept in what locations - duplicating notes when needed
   * Rank data by sensitivity
@@ -106,7 +102,6 @@ overview: |
   * Discuss the impact of a device being exposed / taken by an adversary
   * Identify who has access (physical access, login access, and permissions), and who needs to have access to get the organizations work completed.
 recommendations: |
-  
   Laptops, workstations, servers, external hard drives, and backup systems should be configured to use some form of hard drive encryption.
   * For Windows, Microsoft BitLocker is built in to the latest versions, free-of-charge for anyone with a valid Windows 7 “Ultimate” license or Windows 8.
   * For Apple OSX users, FileVault2 is a built-in alternative that is also free-of-charge.

@@ -126,7 +126,6 @@ walk_through: |
   and at any time when confiscation, theft, loss or tampering are particularly
   likely.)
 recommendations: |
-
   **Remove FireWire Drivers, completely turn off computer when at risk**
 
   The easiest protection against this is to completely shut down your computer

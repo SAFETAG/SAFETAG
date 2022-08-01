@@ -33,14 +33,14 @@ overview: |
   password strength, or discuss how adversaries attack passwords
 materials_needed: |
   * For the (most common) WPA password-based attacks, an **already-prepared**
-  dictionary of words to use to attack the password will be required. 
+  dictionary of words to use to attack the password will be required.
   * The Level Up Activity, [Password Reverse
   Race](https://www.level-up.cc/leading-trainings/training-curriculum/activity/password-reverse-race)
   provides a staff activity.
 considerations: |
   * Inform yourself of relevant local laws
   * Do not attack individuals at an organization using this, focus on shared
-  passwords (such as wifi) 
+  passwords (such as wifi)
   * Always operate with clear consent based in full understanding
 walk_through: |
   This component provides resources and recommendations on cracking passwords -
@@ -202,7 +202,7 @@ walk_through: |
 
   [Hashcat](http://hashcat.net/oclhashcat/) can do this in a live attack under
   its "combinator" mode, and hashcat-utils (hiding in
-  /usr/share/hashcat-utils/combinator.bin) provides this as a standalone tool. 
+  /usr/share/hashcat-utils/combinator.bin) provides this as a standalone tool.
   This provides a true combination of the list, so it exponentially increases
   the list size - use with caution, or use with one larger dictionary and one
   smaller dictionary.
@@ -248,11 +248,11 @@ walk_through: |
   The bleeding-edge jumbo version combines both the built-in rules and an
   optimized version of the [KoreLogic
   rules](https://github.com/kost/jtr-stuff/tree/master/rules, and
-  http://openwall.info/wiki/john/rules for a description of the optimizations). 
+  http://openwall.info/wiki/john/rules for a description of the optimizations).
   [This list of KoreLogic
   Rules](http://contest-2010.korelogic.com/rules.html) provides nice
   descriptions of what the KoreLogic rules do.  In bleeding-jumbo, you can
-  remove "KoreLogicRules". 
+  remove "KoreLogicRules".
   [BackReference](http://backreference.org/2009/10/26/password-recovery-with-john-the-ripper/)
   provides a great example of rules usage.
 
@@ -359,7 +359,6 @@ walk_through: |
 
   [http://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?_r=1](http://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?_r=1)
 recommendations: |
-
   Any important password should be long enough and complex enough to prevent
   both standard dictionary attacks and “brute-force attacks” in which clusters
   of powerful computers work in parallel to test every possible character

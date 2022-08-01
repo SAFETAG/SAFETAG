@@ -12,7 +12,6 @@ skills_required:
   - Surveys
 skills_trained: []
 summary: |
-
   Providing a space for anonymous, guided feedback is valuable to gather
   information about how your audit work and the SAFETAG framework itself are
   supporting organizational understanding of risk and their ability to adapt.

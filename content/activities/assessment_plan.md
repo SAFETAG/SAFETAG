@@ -1,4 +1,5 @@
 ---
+title: Assessment Plan
 approaches:
   - Interpersonal
 position: 50
@@ -24,7 +25,6 @@ materials_needed: |
   Generator
   README](https://github.com/SAFETAG/safetag_agreement_generator#installation).
 walk_through: |
-  
   * Develop an agreement signed by both parties outlining the scope of the audit including:
     * The start and end dates of the audit.
     * The location where the on-site audit will take place. [^pets_pre-engagement_location]
@@ -44,10 +44,8 @@ walk_through: |
   * Sample Text for a Statement of Work and Engagement Agreement in the [Confidentiality Agreement Activity](https://safetag.org/activities/confidentiality_agreement/).
   * The [SAFETAG Agreement Generator](https://github.com/SAFETAG/safetag_agreement_generator), a python script which provides a decision tree covering the above points, and builds a basic, clear-language agreement which can be translated and formalized as needed. Sample outputs and a diagram of the full decision tree are available in the "outputs" folder of the Agreement Generator repository. This replaces the draft agreement previously part of SAFETAG.
 considerations: |
-  
   * Consider the threat landscape of the organization when determining secure communications channels. This may require some pre-agreement work using parts of the Context Research methodology.
   * In addition to the overall mandate to send information encrypted to the organization, also demand encrypted communication back from them. Failure to establish a secure planning channel also contributes towards a no-go situation by putting both the auditor and organization at risk.
-title: Assessment Plan
 skills_required: []
 overview: |
   **Create an Assessment Plan:** Have a "scoping" meeting that outlines the

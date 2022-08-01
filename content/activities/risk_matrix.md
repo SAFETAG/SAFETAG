@@ -1,4 +1,5 @@
 ---
+title: Creating a Risk Matrix
 approaches:
   - Interpersonal
 position: 50
@@ -10,15 +11,12 @@ remote_options:
 time_required_minutes: 60
 organization_size_under: 50
 summary: |
-  
   As part of SAFETAG's dedication to building agency and supporting organizational adoption of safer practices, a careful prioritization of vulnerabilities is invaluable in keeping audit results from appearing overwhelming. In addition, this component ranks the vulnerabilties identified using the risk-matrix developed with the host organization's staff. Using the host-created framework will allow for a deeper understanding of the impact of vulnerabilities and encourage greater investment in addressing them.
 materials_needed: |
-  
   * Stickies
   * Markers
   * Whiteboard or flip-chart
 walk_through: |
-  
   **Identify and rank vulnerabilities**
 
   * Identify the possible impact of the vulnerability.
@@ -44,10 +42,8 @@ walk_through: |
 
   ![Impact vs Severity](/img/impact_vs_severity.svg)
 considerations: |
-  
   * Treat the data and analyses of this step with the utmost security.
   * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization’s country, or is known to surveil.
-title: Creating a Risk Matrix
 skills_required:
   - Risk Assessment
 overview: |

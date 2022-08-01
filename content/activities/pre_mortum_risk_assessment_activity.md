@@ -1,4 +1,5 @@
 ---
+title: Risk Modeling Using the Pre-Mortem Strategy
 approaches:
   - Interpersonal
 position: 50
@@ -10,16 +11,13 @@ remote_options:
 time_required_minutes: 120
 organization_size_under: 25
 summary: |
-
   The pre-mortem strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum].
 materials_needed: |
-
   * Stickies (in multiple colors)
   * Whiteboard or flip-chart
   * Markers
   * Camera to digitally capture the data
 walk_through: |
-
   Prepare a flipchart / space on the white-board to keep track of process', threats, impacts, and adversaries that are identified during other activities. Participants can easily get ahead of the process as they explore individual ideas. Keeping a space for these "upcoming" activities will help re-center them on the activity at hand.
 
   **Pre-Mortem Strategy: (30 Minutes)** The pre-mortem strategy was devised to take participants out of a perspective of defending their plans and strategies and shielding themselves from flaws. They are given "a perspective where they [are] actively searching for flaws in their own plan." [^pre-mortum]
@@ -48,7 +46,6 @@ considerations: |
   * Treat risk modeling data with the utmost security
   * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.
   * Ensure that any digital recordings of this process are kept secure and encrypted.
-title: Risk Modeling Using the Pre-Mortem Strategy
 skills_required:
   - Group Facilitation
   - Psycho-social care

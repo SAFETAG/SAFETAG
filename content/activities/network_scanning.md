@@ -1,4 +1,5 @@
 ---
+title: Network Scanning
 approaches:
   - Technical
 position: 50
@@ -29,7 +30,6 @@ summary: |
   - Smart TVs and appliances
   - Servers and storage devices
 materials_needed: |
-  
   * Laptop or appliance that can scan the network
   * nmap/zenmap
 walk_through: |
@@ -61,7 +61,7 @@ walk_through: |
 
   ###### Custom instructions per type of device
 
-  **Servers** 
+  **Servers**
 
   An open port in a server or IoT device should be investigated if it doesn't correspond to a known service. For example, if the open port is 80, 8080, or 443, it's supposed to be open for a web server, so you can try to browse it by pasting the IP address in your browser address bar.
 
@@ -271,18 +271,15 @@ considerations: |
   host (web company, cloud provider, etc.) has approved of the scan, and than
   remote scanning is legal in the jurisdiction you are performing it from and in
   the location of the remote server.
-title: Network Scanning
 skills_required:
   - Network Mapping
 overview: |
-  
   * Confirm what devices and servers are in scope of the audit, and confirm that any service providers (website hosts, cloud hosts, etc.) are informed and OK with any scanning to be conducted.
     * Enumerate and categorize all devices connected to the organization's network. Note that this could include IoT (Internet of Things) devices, such as IP cameras used for security, "Smart" devices, and personal devices such as mobile phones which may not be in scope. **Discuss the scope of the audit as it applied to devices connected to the work network and ensure the staff understand what you are doing.**
     * In some cases, the audit scope may include external devices. The scanning in these cases will be very targeted. If your auditee agreed to have their public facing machines scanned, keep in mind that you need to consider asking your auditee for whitelisting options for shunning IDS/IPS, firewalls and other blocking mechanisms during your scan. Also make sure that you have verified the target in-scope. This is to avoid scanning out-of-scope targets that may lead you to other problems.
   * Categorize and gather additional detail on the devices that you will discover
   * Explore potential vulnerabilities, unexpected devices, and suspicious open ports
 recommendations: |
-  
   While office networks are often treated as "trusted" spaces, measures should be in place to reduce the potential harm of an attacker who gains access.  In addition, devices that "travel"  -- such as laptops and mobile phones -- should have adequate security settings (generally, firewalls) to protect them on other networks.
 
   A policy should be in place for connecting personal devices to work networks, as well as work devices to non-work networks.

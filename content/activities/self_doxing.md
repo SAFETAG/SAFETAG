@@ -1,4 +1,5 @@
 ---
+title: Self Doxing
 position: 50
 approaches:
   - Research
@@ -85,7 +86,6 @@ considerations: >
   * If using a staff member for the example, have a private session with them beforehand to make sure you do not expose any sensitive information to the group.
 
   * Ensure that you have consent from the staff members you will use as an example for this activity.
-title: Self Doxing
 skills_required:
   - Group Facilitation
   - Risk Assessment

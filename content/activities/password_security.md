@@ -37,7 +37,7 @@ walk_through: |
   How many passwords do you have to remember for accounts and devices used to do
   your work?
 
-  If you tried to login to your computer account right now, how many attempts 
+  If you tried to login to your computer account right now, how many attempts
   do you think it would take?
 
   Have you written down your  current  password?
@@ -118,8 +118,6 @@ walk_through: |
   - [ ] No Numbers
   - [ ] I prefer not to answer.
 recommendations: |
-
-
   Any important password should be long enough and complex enough to prevent
   both standard dictionary attacks and “brute-force attacks” in which clusters
   of powerful computers work in parallel to test every possible character

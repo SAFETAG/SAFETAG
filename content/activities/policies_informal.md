@@ -14,7 +14,6 @@ remote_options:
 time_required_minutes: 60
 organization_size_under: 1000
 summary: |
-  
   The activity aims to assess which kind of informal agreements regarding best practices and security directives are formulated, accessed, implemented and/or enforced across the organization
 overview: |
   * Select a series of situations and operational aspects that could have
@@ -24,7 +23,6 @@ overview: |
   * Detect the potential gaps in terms of presence and pertinence of effective agreements
   * Recommend the building of a strategy to develop, document and transmit as needed new or updated security agreements and/or policies
 materials_needed: |
-  
   * Materials for taking notes
 walk_through: |
   Build a list of situations where security policies, if followed, would prevent

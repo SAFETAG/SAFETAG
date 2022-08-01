@@ -1,4 +1,5 @@
 ---
+title: Audit Timeline and Planning
 approaches:
   - Research
 position: 50
@@ -82,7 +83,6 @@ walk_through: |
 
   See the reporting, support, and follow-up Methods for specific details here, but a series of check-ins with the organization to support their ability to respond to any incidents, understand further topics from the debrief, and to help provide them a timeline to expect the final report is valuable in maintaining their engagement post-audit to support the needed changes.
 considerations: ""
-title: Audit Timeline and Planning
 skills_required: []
 overview: Review these notes in preparation for the audit as you begin to map
   out your schedule.  This provides a rough, suggested outline of how to

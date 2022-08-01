@@ -1,4 +1,5 @@
 ---
+title: Check Browser and Plugin Vulnerabilities
 position: 50
 approaches:
   - Technical
@@ -81,7 +82,6 @@ walk_through: |
   Figure 1: Attacker in control of the victim’s computer through a remote
   command shell
 considerations: ""
-title: Check Browser and Plugin Vulnerabilities
 skills_required: []
 overview: Use direct access, interviewing, walk-throughs, or penetration testing
   methods to identify vulnerable browsers.
