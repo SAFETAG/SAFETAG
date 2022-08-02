@@ -41,7 +41,10 @@ class Search extends Component {
       const { t } = useTranslation('site', { useSuspense: false })
       const context = React.useContext(I18nextContext);
 
-      if (this.state.results.length > 0) {
+      if (this.state.query.length < 3) {
+        message = t('Please insert at least 3 characters.')
+        console.log("Query " + this.state.query + "is too short")
+      } else if (this.state.results.length > 0) {
         this.state.results.map((page, i) => {
           if (['activity', 'method', 'blog post', 'tool'].includes(page.type) && page.lang == context.language) {
             results.push({
@@ -54,16 +57,14 @@ class Search extends Component {
             })
           }
         })
-      } else if (this.state.query.length > 2) {
+      } else if (this.state.results.length === 0) {
         message = t('No results for ') + this.state.query + '.'
-      } else if (
-        this.state.results.length === 0 &&
-        this.state.query.length > 0
-      ) {
-        message = t('Please insert at least 3 characters.')
+        console.log("No results for " + this.state.query)
       } else {
         message = ''
+        console.log("No return for query " + this.state.query)
       }
+
       if (results.length > 0) {
         return (
         <div className="m-search__results">
@@ -108,12 +109,11 @@ class Search extends Component {
 
 
   getSearchResults(query) {
-    if (query && !this.state.searchQuery) {
-      console.log("Resetting searchQuery...")
-      this.setState({ searchQuery: query })
-      console.log(this.state)
-      console.log("State query value: " + this.state.searchQuery)
-    }
+    console.log("Resetting searchQuery...")
+    this.setState({ searchQuery: query })
+    console.log(this.state)
+    console.log("State query value: " + this.state.searchQuery)
+
     var index = window.__FLEXSEARCH__.en.index
     var store = window.__FLEXSEARCH__.en.store
     // var index = window.__FLEXSEARCH__[this.props.lang].index
@@ -141,12 +141,8 @@ class Search extends Component {
 
   search = event => {
     const query = event.target.value
-    if (this.state.query.length > 2) {
-      const results = this.getSearchResults(query)
-      this.setState({ results: results, query: query })
-    } else {
-      this.setState({ results: [], query: query })
-    }
+    const results = this.getSearchResults(query)
+    this.setState({ results: results, query: query })
   }
 }
 
