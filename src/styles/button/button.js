@@ -285,14 +285,14 @@ function buttonVariationColors(color, style, brightness, { theme }) {
           shadowColor = rgba(theme.color.base, 0.16)
           break
         case "semidark":
-          textColor = color
+          textColor = tint(0.1, color)
           bgColor = tint(0.88, color)
           bgColorHover = tint(0.84, color)
           bgColorActive = tint(0.8, color)
           shadowColor = rgba(theme.color.base, 0.16)
           break
         case "dark":
-          textColor = tint(1, color)
+          textColor = tint(0.1, color)
           bgColor = color
           bgColorHover = shade(0.08, color)
           bgColorActive = shade(0.12, color)
