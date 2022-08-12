@@ -104,6 +104,8 @@ def process_file(filename):
     # replace double quotes with typographical quotes, mostly to not
     # confuse the markdown renderer
     output = output.replace('\\"', "”")
+    # don't allow empty lines after a multiline entry key
+    output = output.replace(': |\n\n', ': |\n')
 
     f = open(filename, "w")
     f.write(output)
