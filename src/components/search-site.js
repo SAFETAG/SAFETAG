@@ -28,7 +28,7 @@ class Search extends Component {
     if (this.props.initialQuery) {
       console.log("Initial: " + this.props.initialQuery)
       const results = this.getSearchResults(this.props.initialQuery)
-      this.setState({ results })
+      this.setState({ results: results })
     }
     // focus input box
     this.searchInput.focus()
@@ -112,12 +112,10 @@ class Search extends Component {
     console.log("Resetting searchQuery...")
     this.setState({ searchQuery: query })
     console.log(this.state)
-    console.log("State query value: " + this.state.searchQuery)
 
     var index = window.__FLEXSEARCH__.en.index
     var store = window.__FLEXSEARCH__.en.store
-    // var index = window.__FLEXSEARCH__[this.props.lang].index
-    // var store = window.__FLEXSEARCH__[this.props.lang].store
+
     if (!query || !index) {
       console.log("Not searching")
       return []
@@ -150,7 +148,8 @@ class Search extends Component {
 Search.propTypes = {
   classNames: PropTypes.string,
   cols: PropTypes.number,
-  initialQuery: PropTypes.string
+  initialQuery: PropTypes.string,
+  lang: PropTypes.string,
 }
 
 export default Search
