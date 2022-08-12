@@ -44,16 +44,16 @@ jobs:
 
       - name: Install and lint
         run: |
-          yarn install
-          yarn lint
+          npm install
+          npm run lint
 
       - name: Update translations from Transifex
         run: |
           echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"${{ secrets.TRANSIFEX_USER }}"$'\npassword = '"${{ secrets.TRANSIFEX_PASSWORD }}"$'\ntoken = '"${{ secrets.TRANSIFEX_TOKEN }}"$'\n' | tee ~/.transifexrc
-          yarn extract
-          yarn transifex-push
-          yarn transifex-pull
-          yarn build
+          npm run extract
+          npm run transifex-push
+          npm run transifex-pull
+          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
