@@ -1,5 +1,4 @@
 ---
 title: Footnotes (placeholder)
 ---
-
-This is a placeholder file, please ignore
+This is a placeholder file, please ignore!
