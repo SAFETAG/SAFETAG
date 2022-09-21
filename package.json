@@ -19,7 +19,7 @@
     "gatsby-plugin-flexsearch": "^1.0.3",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-matomo": "^0.13.0",
-    "gatsby-plugin-netlify-cms": "^6.20.0",
+    "gatsby-plugin-netlify-cms": "^6.23.0",
     "gatsby-plugin-offline": "^5.20.0",
     "gatsby-plugin-polished": "^1.0.4",
     "gatsby-plugin-react-helmet": "^5.20.0",
