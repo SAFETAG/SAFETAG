@@ -29,7 +29,7 @@
     "gatsby-source-filesystem": "^4.20.0",
     "gatsby-transformer-remark": "^5.20.0",
     "hast-util-to-html": "^8.0.3",
-    "i18next": "^21.9.0",
+    "i18next": "^21.9.2",
     "i18next-parser": "^6.5.0",
     "lodash.get": "^4.4.2",
     "lodash.keyby": "^4.6.0",
