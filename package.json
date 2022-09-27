@@ -109,6 +109,7 @@
     "got": "^11.8.5",
     "@parcel/core": "^2.6.2",
     "parse-path": "^5.0.0",
+    "parse-url": "^8.1.0",
     "cross-fetch": "^3.1.5",
     "ws": "^7.4.6",
     "sanitize-html": "^2.3.1",
