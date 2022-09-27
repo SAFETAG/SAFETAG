@@ -1,4 +1,6 @@
 ---
+title: Preparation
+position: 10
 summary: |
   This component consists of audit preparation activities that are needed to
   ensure the components of the audit are able to be conducted effectively and
@@ -59,7 +61,6 @@ outputs: |
   * Any Visas or paperwork needed, plus travel arragements (tickets, hotels) for auditor travel.
   * A travel kit. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_provided: []
-title: Preparation
 method_icon: /img/preparation_icon.png
 purpose: |
   A SAFETAG audit has a short time frame. Preparation is vital to ensure
@@ -69,6 +70,5 @@ purpose: |
   organization help reveal if the organization has the capacity to undertake the
   audit and respond to its findings.
 preparation: ""
-position: 10
 the_flow_of_information: "![](/img/preparation.png)"
 ---

@@ -1,5 +1,6 @@
 ---
 title: Network Mapping
+position: 60
 summary: |
   This component allows the auditor to identify security issues with the host's network and map the devices on a host's network, the services that are being used by those devices, and any protections in place.
 the_flow_of_information: "![](/img/network_mapping.png)"
@@ -52,5 +53,4 @@ preparation: |
   * Monitoring and analyzing wireless network traffic
   * Skill with using nmap/zenmap and its scripting options
   * Skill with Wireshark or other packet-capturing tool, as well as possibly more advanced traffic interception tools.
-position: 60
 ---

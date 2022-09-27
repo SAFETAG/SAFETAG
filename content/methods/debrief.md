@@ -1,4 +1,6 @@
 ---
+title: Debrief
+position: 160
 authors:
   - SAFETAG
 info_provided: []
@@ -39,6 +41,4 @@ outputs: |
   * Additional points of contact (with identified secure communications channels) if needed.
   * Initiate follow-up with host (organizational and individual).
 the_flow_of_information: ''
-position: 160
-title: Debrief
 ---

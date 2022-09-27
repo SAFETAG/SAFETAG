@@ -1,5 +1,6 @@
 ---
 title: Organizational Policy Review
+position: 50
 summary: |
   This methodology explores existing organizational practices, informal
   agreements, and policies around managing information security and responding
@@ -52,7 +53,6 @@ info_provided:
   - Capacity
   - Barriers
 method_icon: /img/policy_review_icon.png
-position: 50
 purpose: |
   Many smaller organizations do not have formal policies around information
   security. This is not inherently a good or bad thing, as in their place are

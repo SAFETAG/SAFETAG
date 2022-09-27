@@ -1,5 +1,6 @@
 ---
 title: Organizational Device Usage
+position: 70
 summary: |
   This component allows the auditor to discover and assess the security of the
   devices on the network and/or used in the organization. This component
@@ -55,7 +56,6 @@ outputs: |
   * Written-down passwords
 info_provided: []
 method_icon: /img/org_device_icon.png
-position: 70
 purpose: |
   Compromised devices have the ability to undermine nearly any other
   organizational attempt at securing information. Knowing if devices receive

@@ -1,5 +1,6 @@
 ---
 title: Responsive Support
+position: 150
 activities: []
 authors:
   - SAFETAG
@@ -59,5 +60,4 @@ outputs: |
   * Contacts and/or next steps for any direct support or training needs of the
   organization
 the_flow_of_information: ''
-position: 150
 ---

@@ -1,5 +1,6 @@
 ---
 title: Follow Up
+position: 170
 method_icon: "/img/follow_up_icon.png"
 summary: |
   This component allows an auditor to explain and get feedback on their report
@@ -37,5 +38,4 @@ preparation: |
   #### Baseline Skills
 
   * Secure communications options to conduct follow-up discussions with organization
-position: 170
 ---

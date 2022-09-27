@@ -1,4 +1,6 @@
 ---
+title: Responding to Advanced Threats
+position: 130
 summary: |
   This component allows the auditor to be able to identify, triage, and analyze
   suspicious behavior on a device or in a network. Depending on the analysis,
@@ -44,7 +46,6 @@ outputs: |
 
   The main outputs of advanced threats identification should be evidence like files, emails, screenshots and URLs included in messages or spotted in suspicious connections.
 info_provided: []
-title: Responding to Advanced Threats
 purpose: |
   It is very common to find suspicious behaviors, processes, traffic and other
   ‘weird activities’ during a SAFETAG audit. SAFETAG practitioners should always
@@ -58,5 +59,4 @@ preparation: |
   * Ability to do initial malware research safely
   * Ability to image a machine and practice good digital forensics and evidence capture processes (see the [Evidence Capture Activity](https://safetag.org/activities/evidence_capture))
   * Contacts with malware analysis experts for more in depth investigation
-position: 130
 ---

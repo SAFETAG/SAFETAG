@@ -1,5 +1,6 @@
 ---
 title: Data Assessment
+position: 100  
 summary: |
   This component allows the auditor to identify what sensitive data exists for
   the organization, where it is stored, and how it is transferred.
@@ -47,5 +48,4 @@ purpose: |
 preparation: |
   * Facilitation skills or experience is useful for these exercises
   * Carefully review the exercises you plan to use
-position: 100  
 ---

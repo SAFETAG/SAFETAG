@@ -1,5 +1,6 @@
 ---
 title: Physical and Operational Security
+position: 110
 activities:
   - Guided Tour
   - Operational Security Survey
@@ -80,5 +81,4 @@ outputs: |
   information security based on physical aspects -- e.g. unencrypted devices
   which could be stolen, written passwords, or even wireless network metadata.
 the_flow_of_information: ''
-position: 110
 ---

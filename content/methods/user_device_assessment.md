@@ -1,5 +1,6 @@
 ---
 title: User Device Assessment
+position: 80
 method_icon: "/img/user_device_assessment_icon.png"
 summary: |
   This component allows the auditor to assess the security of the individual
@@ -43,7 +44,6 @@ operational_security: |
   * Treat device assessment data as well as any additional service information learned with the utmost security
 info_required: []
 info_provided: []
-position: 80
 purpose: |
   Compromised devices have the ability to undermine nearly any other organizational attempt at securing information. Knowing if devices receive basic software and security upgrades and what core protections against unauthorized access exist is vital to designing a strategy to make the host more secure.
 preparation: |

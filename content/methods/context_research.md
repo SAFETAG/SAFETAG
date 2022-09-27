@@ -1,4 +1,6 @@
 ---
+title: Context Research
+position: 20
 summary: |
   This component allows the auditor to identify the relevant regional and
   technological context needed to provide a safe and informed SAFETAG audit.
@@ -31,7 +33,6 @@ outputs: |
     * Legal risks to host and auditor conducting a SAFETAG audit.
   * Modifications to the audit plan as necessary.
 info_provided: []
-title: Context Research
 method_icon: /img/context_research_icon.png
 purpose: |
   Analysis of context is the foundation of effective risk management. Both
@@ -40,6 +41,5 @@ purpose: |
   current and accurate.
 
   Checking the assumptions both of the organization and of the auditor by researching the current regional and technological context will ensure that an auditor is basing their work on accurate assessments of the conditions the organization faces and that they are making informed operational security considerations.
-position: 20
 preparation: ""
 ---

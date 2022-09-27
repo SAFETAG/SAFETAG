@@ -1,4 +1,6 @@
 ---
+title: Capacity Assessment
+position: 30
 summary: |
   In this component the auditor engages with staff through both formal
   interviews and informal conversations to identify the organization's strengths
@@ -42,7 +44,6 @@ outputs: |
    * Past, current, or desired use of websites, blogs, social media and other web-based tools and platforms to conduct outreach, manage information, advocate or engage with specific groups.
    * Past, current, or desired use of mobile telephony and related software and hardware for activities such as sms management and data collection.
 info_provided: []
-title: Capacity Assessment
 method_icon: /img/capacity_assessment_icon.png
 purpose: |
   Knowing an organization's strengths and weaknesses allows the auditor to
@@ -57,5 +58,4 @@ purpose: |
 preparation: |
   * Review or create a set of interview questions to keep you on track
   * Have a secure note-taking process ready
-position: 30
 ---
