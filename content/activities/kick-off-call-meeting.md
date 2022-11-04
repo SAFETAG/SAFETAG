@@ -8,9 +8,6 @@ authors:
 skills_required:
   - Interviewing
   - Facilitation
-  - Group Facilitation
-  - Language
-  - OSINT Research
 remote_options:
   - Complete
 time_required_minutes: 60
