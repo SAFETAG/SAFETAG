@@ -3,20 +3,24 @@ summary: |
   This component consists of audit preparation activities that are needed to
   ensure the components of the audit are able to be conducted effectively and
   within the on-site time-frame.
-short_summary: |
-  Audit preparation activities which ensure all components of the
-  audit can be conducted safely, effectively, and within your time-frame.
-guiding_questions: |
+short_summary: Audit preparation activities which ensure all components of the
+  audit can be conducted safely, effectively, and within time-frame
+the_flow_of_information: "![](/img/preparation.png)"
+guiding_questions: >
   * Does the organization have existing digital security practices or has it
     attempted to implement them in the past?
   * What agreements will govern the audit?
-  * What will be the procedure for incident handling in the event that the auditor causes or uncovers an incident during the course of the assessment?
-  * What are the legal, physical, or social risks for the auditor & organization associated with conducting the audit or having audit results leak? [^PETS_legal_considerations]
-  * Does the security situation of the location or organization require additional planning? Are your software tools up to date and working as expected?
 
+  * What will be the procedure for incident handling in the event that the auditor causes or uncovers an incident during the course of the assessment?
+
+  * What are the legal, physical, or social risks for the auditor & organization associated with conducting the audit or having audit results leak? [^PETS_legal_considerations]
+
+  * Does the security situation of the location or organization require additional planning? Are your software tools up to date and working as expected?
 authors:
   - SAFETAG
+position: 10
 activities:
+  - Kick-Off Call/Meeting
   - Assessment Plan
   - Confidentiality Agreement
   - Incident Response and Emergency Contact
@@ -46,17 +50,25 @@ operational_security: |
   * Carefully consider packing needs and explanations
     [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_required: []
-outputs: |
+outputs: >
   * An agreement with the organisation to receive the audit including scope,
+
   timeframe, confidentiality clauses, operational security measures or minimums,
+
   and points of contact.
+
   * Systems updated and ready for testing.
+
   * Risks to host and auditor conducting a SAFETAG audit.
+
   * Modifications to the audit plan as necessary.
+
 
   In case audit involves travel:
 
+
   * Any Visas or paperwork needed, plus travel arragements (tickets, hotels) for auditor travel.
+
   * A travel kit. [^travel_kit_appendix]^,^[^NIST_SP_800-115-travel_prep]
 info_provided: []
 title: Preparation
@@ -69,6 +81,4 @@ purpose: |
   organization help reveal if the organization has the capacity to undertake the
   audit and respond to its findings.
 preparation: ""
-position: 10
-the_flow_of_information: "![](/img/preparation.png)"
 ---
