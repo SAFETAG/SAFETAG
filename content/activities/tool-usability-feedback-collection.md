@@ -108,4 +108,7 @@ walk_through: >-
 
 
   After compiling the feedback, you communicate with the VeraCrypt development team on the project GitHub page, including the marked-up screenshots, hand-drawn wireframe, while following the tips provided in the USABLE guidebook. You also reach out to a member of the VeraCrypt team through a community referral to let them know about the feedback and offer to have further discussion on the challenges experienced in the documented use case.
+
+
+  ![A hand-drawn wireframe indicating an alternative user interface for Volume Creation in VeraCrypt](/img/stuframe.jpeg)
 ---
