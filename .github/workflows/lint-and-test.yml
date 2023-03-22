@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         env:
-          SITE_NAME: 'Safetag'
+          SITE_NAME: "Safetag"
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -22,10 +22,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install
-        run: yarn install
+        run: npm install
 
       - name: Lint
-        run: yarn lint
+        run: npm run lint
 
       - name: Test
-        run: yarn test
+        run: npm run test
