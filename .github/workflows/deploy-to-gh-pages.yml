@@ -31,8 +31,7 @@ jobs:
       - name: Set up secrets
         run: |
           touch .env
-          echo TRANSIFEX_USER=${{ secrets.TRANSIFEX_USER }} >> .env
-          echo TRANSIFEX_PASSWORD=${{ secrets.TRANSIFEX_PASSWORD }} >> .env
+          echo TX_TOKEN=${{ secrets.TRANSIFEX_TOKEN }} >> .env
           cp .env .env.production
           cp .env .env.development
           cat .env
@@ -49,7 +48,6 @@ jobs:
 
       - name: Update translations from Transifex
         run: |
-          echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"${{ secrets.TRANSIFEX_USER }}"$'\npassword = '"${{ secrets.TRANSIFEX_PASSWORD }}"$'\ntoken = '"${{ secrets.TRANSIFEX_TOKEN }}"$'\n' | tee ~/.transifexrc
           npm run extract
           npm run transifex-push
           npm run transifex-pull
