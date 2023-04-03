@@ -25,10 +25,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          sudo pip install transifex-client
-
       - name: Set up secrets
         run: |
           touch .env
@@ -54,6 +50,7 @@ jobs:
 
       - name: Update translations and build
         run: |
+          export TX_TOKEN=${{ secrets.TRANSIFEX_TOKEN }}
           npm run extract
           npm run transifex-push
           npm run transifex-pull
