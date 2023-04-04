@@ -3,6 +3,17 @@
 
 function prepend() { while read line; do echo "${1}${line}"; done; }
 
+
+./tx add \
+    --organization otf \
+    --project safetag-overview \
+    --resource site \
+    --file-filter 'locales/<lang>/site.json' \
+    --type GITHUBMARKDOWN \
+    $FILEPATH
+
+
+
 # per file
 MARKDOWN_FILES=$(find content/{activities,approaches,authors,guide_sections,infos,methods,references,skills,tools} -name '*.md')
 for FILEPATH in $MARKDOWN_FILES; do
