@@ -10,7 +10,7 @@ function prepend() { while read line; do echo "${1}${line}"; done; }
     --resource site \
     --file-filter 'locales/<lang>/site.json' \
     --type GITHUBMARKDOWN \
-    $FILEPATH
+    locales/en/site.json
 
 
 
