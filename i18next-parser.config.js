@@ -1,19 +1,19 @@
 // i18next-parser.config.js
 
 module.exports = {
-  locales: ['en', 'my'],
+  locales: ["en"],
   // An array of the locales in your applications
 
-  contextSeparator: '_',
+  contextSeparator: "_",
   // Key separator used in your translation keys
 
   createOldCatalogs: true,
   // Save the \_old files
 
-  defaultNamespace: 'site',
+  defaultNamespace: "site",
   // Default namespace used in your i18next config
 
-  defaultValue: '',
+  defaultValue: "",
   // Default value to give to empty keys
   // You may also specify a function accepting the locale, namespace, and key as arguments
 
@@ -23,40 +23,40 @@ module.exports = {
   keepRemoved: false,
   // Keep keys from the catalog that are no longer in code
 
-  keySeparator: '.',
+  keySeparator: ".",
   // Key separator used in your translation keys
   // If you want to use plain english keys, separators such as `.` and `:` will conflict. You might want to set `keySeparator: false` and `namespaceSeparator: false`. That way, `t('Status: Loading...')` will not think that there are a namespace and three separator dots for instance.
 
   // see below for more details
   lexers: {
-    hbs: ['HandlebarsLexer'],
-    handlebars: ['HandlebarsLexer'],
+    hbs: ["HandlebarsLexer"],
+    handlebars: ["HandlebarsLexer"],
 
-    htm: ['HTMLLexer'],
-    html: ['HTMLLexer'],
+    htm: ["HTMLLexer"],
+    html: ["HTMLLexer"],
 
-    mjs: ['JavascriptLexer'],
-    js: ['JsxLexer'], // if you're writing jsx inside .js files, change this to JsxLexer
-    ts: ['JavascriptLexer'],
-    jsx: ['JsxLexer'],
-    tsx: ['JsxLexer'],
+    mjs: ["JavascriptLexer"],
+    js: ["JsxLexer"], // if you're writing jsx inside .js files, change this to JsxLexer
+    ts: ["JavascriptLexer"],
+    jsx: ["JsxLexer"],
+    tsx: ["JsxLexer"],
 
-    default: ['JavascriptLexer']
+    default: ["JavascriptLexer"],
   },
 
-  lineEnding: 'auto',
+  lineEnding: "auto",
   // Control the line ending. See options at https://github.com/ryanve/eol
 
-  namespaceSeparator: ':',
+  namespaceSeparator: ":",
   // Namespace separator used in your translation keys
   // If you want to use plain english keys, separators such as `.` and `:` will conflict. You might want to set `keySeparator: false` and `namespaceSeparator: false`. That way, `t('Status: Loading...')` will not think that there are a namespace and three separator dots for instance.
 
-  output: 'locales/$LOCALE/$NAMESPACE.json',
+  output: "locales/$LOCALE/$NAMESPACE.json",
   // Supports $LOCALE and $NAMESPACE injection
   // Supports JSON (.json) and YAML (.yml) file formats
   // Where to write the locale files relative to process.cwd()
 
-  pluralSeparator: '_',
+  pluralSeparator: "_",
   // Plural separator used in your translation keys
   // If you want to use plain english keys, separators such as `_` might conflict. You might want to set `pluralSeparator` to a different string that does not occur in your keys.
 
@@ -82,7 +82,7 @@ module.exports = {
   failOnWarnings: false,
   // Exit with an exit code of 1 on warnings
 
-  customValueTemplate: null
+  customValueTemplate: null,
   // If you wish to customize the value output the value as an object, you can set your own format.
   // ${defaultValue} is the default value you set in your translation function.
   // Any other custom property will be automatically extracted.
@@ -92,4 +92,4 @@ module.exports = {
   //   message: "${defaultValue}",
   //   description: "${maxLength}", // t('my-key', {maxLength: 150})
   // }
-}
+};
