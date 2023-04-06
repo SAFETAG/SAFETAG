@@ -56,7 +56,7 @@ Considerations`: >-
   impact them.
 
 
-  Be mindful of the limited time available during assessments, as you may need to trade off time spent doing feedback collection with time spent on other assessment activities.
+  Be mindful of the limited time available during assessments, as you may need to trade-off time spent doing feedback collection with time spent on other assessment activities.
 walk_through: >-
   After identifying open-source tools either used by the organization being
   assessed, or tools you yourself used during the assessment which had usability
