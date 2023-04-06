@@ -1,0 +1,620 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.20.0"/><meta data-react-helmet="true" name="description" content="Create custom Safetag guides for your needs"/><meta data-react-helmet="true" property="og:title" content="Activities"/><meta data-react-helmet="true" property="og:description" content="Create custom Safetag guides for your needs"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@developmentseed"/><meta data-react-helmet="true" name="twitter:title" content="Activities"/><meta data-react-helmet="true" name="twitter:description" content="Create custom Safetag guides for your needs"/><style data-href="/styles.b6134fa752604a60139a.css" data-identity="gatsby-global-css">:root{--reach-listbox:1}[data-reach-listbox-popover]{background:#fff;border:1px solid rgba(0,0,0,.25);display:block;min-width:-moz-fit-content;min-width:-webkit-min-content;min-width:min-content;outline:none;padding:.25rem 0;position:absolute}[data-reach-listbox-popover]:focus-within{box-shadow:0 0 4px Highlight;outline:4px auto -webkit-focus-ring-color}[data-reach-listbox-popover][hidden]{display:none}[data-reach-listbox-list]{list-style:none;margin:0;padding:0}[data-reach-listbox-list]:focus{box-shadow:none;outline:none}[data-reach-listbox-option]{display:block;margin:0;padding:.25rem .5rem;-webkit-user-select:none;user-select:none;white-space:nowrap}[data-reach-listbox-option][data-current-nav]{background:#1672d4;color:#fff}[data-reach-listbox-option][data-current-selected]{font-weight:bolder}[data-reach-listbox-option][data-current-selected][data-confirming]{-webkit-animation:flash .1s;animation:flash .1s;-webkit-animation-iteration-count:1;animation-iteration-count:1}[data-reach-listbox-option][aria-disabled=true]{opacity:.5}[data-reach-listbox-button]{align-items:center;border-color:#d8d8d8 #d1d1d1 #bababa;border-style:solid;border-width:1px;cursor:default;display:inline-flex;justify-content:space-between;padding:1px 10px 2px;-webkit-user-select:none;user-select:none}[data-reach-listbox-button][aria-disabled=true]{opacity:.5}[data-reach-listbox-arrow]{display:block;font-size:.5em;margin-left:.5rem}[data-reach-listbox-group-label]{display:block;font-weight:bolder;margin:0;padding:.25rem .5rem;-webkit-user-select:none;user-select:none;white-space:nowrap}@-webkit-keyframes flash{0%{background:#1159a6;color:#fff;opacity:1}50%{background:inherit;color:inherit;opacity:.5}to{background:#1159a6;color:#fff;opacity:1}}@keyframes flash{0%{background:#1159a6;color:#fff;opacity:1}50%{background:inherit;color:inherit;opacity:.5}to{background:#1159a6;color:#fff;opacity:1}}.searchBoxHeader input{background-color:hsla(0,0%,100%,.2);border:2px solid #fff;border-radius:0;color:#fff;font-family:Space Mono,monospace;font-weight:700;padding:.25rem .75rem;transition:background-color .24s ease 0s}.searchBoxHeader input.scrolled{background-color:rgba(7,33,235,.1);border:2px solid #0721eb;color:#0721eb}.searchBoxHeader input:focus{background-color:hsla(0,0%,100%,0)}.searchBoxHeader img{cursor:pointer;height:1.5rem;width:1.5rem}
+
+/*!
+ * react-languages-select v1.0.19 - https://gitlab.com/marcosolari/react-languages-select#readme
+ * MIT Licensed
+ */.flag-select{display:inline-block;padding-bottom:5px;position:relative;text-align:left;vertical-align:inherit}.flag-select__btn{background-size:contain;border:none;color:#4d4d4d;cursor:pointer;padding:0 8px}.flag-select__btn:after,.flag-select__btn[aria-expanded=true]:after{content:" ";display:inline-block;height:0;margin-left:5px;vertical-align:middle;width:0}.flag-select__btn:after{border-bottom:0;border-top:5px solid #fff}.flag-select__btn:after,.flag-select__btn[aria-expanded=true]:after{border-left:5px solid transparent;border-right:5px solid transparent}.flag-select__btn[aria-expanded=true]:after{border-bottom:5px solid #4d4d4d;border-top:0}.flag-select__btn:before{content:" ";display:block;height:100%;position:absolute;width:100%;z-index:999}.flag-select__option{cursor:pointer;margin:4px 0;padding:0 8px 3px;white-space:nowrap}.flag-select__options{background:#fff;border:1px solid #bdbbbb;border-radius:3px;margin-top:8px;max-height:160px;overflow:auto;padding:8px 0;position:absolute;z-index:999999}.flag-select__options.to--left{right:10px}.flag-select__option--placeholder{display:inline-block;height:inherit;vertical-align:middle;width:inherit}.flag-select__option:not(.flag-select__option--placeholder):focus,.flag-select__option:not(.flag-select__option--placeholder):hover{background:#263ded;outline:none}.flag-select__option.has-label{padding:0 20px 3px 8px}.flag-select__option__label{font-size:1em;padding-left:9px;position:relative}.flag-select__option__icon{height:1.3em;position:relative;top:.3em;width:1.3em}.flag-select .filterBox{width:100%}.flag-select .filterBox input{margin:0 4%;width:90%}.flag-select .filterBox input:focus{outline:none}.flag-select .hidden{display:none}.flag-select .no--focus{pointer-events:none}</style><title data-react-helmet="true">Activities | Safetag</title><link data-react-helmet="true" rel="icon" type="image/svg+xml" sizes="16x16" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDQwOCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjYwIDU2QzI2MCA4Ni45Mjc5IDIzNC45MjggMTEyIDIwNCAxMTJDMTczLjA3MiAxMTIgMTQ4IDg2LjkyNzkgMTQ4IDU2QzE0OCAyNS4wNzIxIDE3My4wNzIgMCAyMDQgMEMyMzQuOTI4IDAgMjYwIDI1LjA3MjEgMjYwIDU2Wk0xNDggMjI4QzE0OCAxOTcuMDcyIDE3My4wNzIgMTcyIDIwNCAxNzJDMjM0LjkyOCAxNzIgMjYwIDE5Ny4wNzIgMjYwIDIyOEgzMDRDMzA0IDE3Mi43NzIgMjU5LjIyOCAxMjggMjA0IDEyOEMxNDguNzcyIDEyOCAxMDQgMTcyLjc3MiAxMDQgMjI4VjQwOEgzMDRWMjUySDE0OFYyMjhaIiBmaWxsPSIjMDcyMUVCIi8+Cjwvc3ZnPgo="/><link data-react-helmet="true" rel="icon" type="image/svg+xml" sizes="32x32" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDQwOCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjYwIDU2QzI2MCA4Ni45Mjc5IDIzNC45MjggMTEyIDIwNCAxMTJDMTczLjA3MiAxMTIgMTQ4IDg2LjkyNzkgMTQ4IDU2QzE0OCAyNS4wNzIxIDE3My4wNzIgMCAyMDQgMEMyMzQuOTI4IDAgMjYwIDI1LjA3MjEgMjYwIDU2Wk0xNDggMjI4QzE0OCAxOTcuMDcyIDE3My4wNzIgMTcyIDIwNCAxNzJDMjM0LjkyOCAxNzIgMjYwIDE5Ny4wNzIgMjYwIDIyOEgzMDRDMzA0IDE3Mi43NzIgMjU5LjIyOCAxMjggMjA0IDEyOEMxNDguNzcyIDEyOCAxMDQgMTcyLjc3MiAxMDQgMjI4VjQwOEgzMDRWMjUySDE0OFYyMjhaIiBmaWxsPSIjMDcyMUVCIi8+Cjwvc3ZnPgo="/><link data-react-helmet="true" rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDQwOCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjYwIDU2QzI2MCA4Ni45Mjc5IDIzNC45MjggMTEyIDIwNCAxMTJDMTczLjA3MiAxMTIgMTQ4IDg2LjkyNzkgMTQ4IDU2QzE0OCAyNS4wNzIxIDE3My4wNzIgMCAyMDQgMEMyMzQuOTI4IDAgMjYwIDI1LjA3MjEgMjYwIDU2Wk0xNDggMjI4QzE0OCAxOTcuMDcyIDE3My4wNzIgMTcyIDIwNCAxNzJDMjM0LjkyOCAxNzIgMjYwIDE5Ny4wNzIgMjYwIDIyOEgzMDRDMzA0IDE3Mi43NzIgMjU5LjIyOCAxMjggMjA0IDEyOEMxNDguNzcyIDEyOCAxMDQgMTcyLjc3MiAxMDQgMjI4VjQwOEgzMDRWMjUySDE0OFYyMjhaIiBmaWxsPSIjMDcyMUVCIi8+Cjwvc3ZnPgo="/><style data-styled="" data-styled-version="5.3.5">html{line-height:1.15;-webkit-text-size-adjust:100%;text-size-adjust:100%;font-family:sans-serif;}/*!sc*/
+article,aside,footer,header,nav,section{display:block;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+figcaption,figure,main{display:block;}/*!sc*/
+figure{margin:1em 40px;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+b,strong{font-weight:inherit;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+dfn{font-style:italic;}/*!sc*/
+mark{background-color:#ff0;color:#000;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+audio,video{display:inline-block;}/*!sc*/
+audio:not([controls]){display:none;height:0;}/*!sc*/
+img{border-style:none;}/*!sc*/
+svg:not(:root){overflow:hidden;}/*!sc*/
+button,input,optgroup,select,textarea{margin:0;font-family:sans-serif;font-size:100%;line-height:1.15;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{display:inline-block;vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details,menu{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+canvas{display:inline-block;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+body{margin:0;}/*!sc*/
+a:active,a:hover{outline-width:0;}/*!sc*/
+html{box-sizing:border-box;font-size:16px;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;-webkit-scroll-padding-top:150px;-moz-scroll-padding-top:150px;-ms-scroll-padding-top:150px;scroll-padding-top:150px;height:100%;}/*!sc*/
+*,*::before,*::after{box-sizing:inherit;}/*!sc*/
+body{background-color:#FFFFFF;color:"#000000";font-size:1rem;line-height:1.5;font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-style:normal;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;}/*!sc*/
+ul{padding-inline-start:1rem;}/*!sc*/
+a{cursor:pointer;color:rgba(7,33,235,0.84);-webkit-text-decoration:none;text-decoration:none;position:relative;}/*!sc*/
+a:after{position:absolute;bottom:0;left:0;width:100%;-webkit-transform:translateY(0%);-ms-transform:translateY(0%);transform:translateY(0%);height:2px;content:"";background:#0721EB;opacity:0;-webkit-transition:all 0.16s cubic-bezier(0.55,0.085,0.68,0.53);transition:all 0.16s cubic-bezier(0.55,0.085,0.68,0.53);}/*!sc*/
+a:visited{color:#0721EB;}/*!sc*/
+a:hover{color:#0721EB;}/*!sc*/
+a:hover:after{opacity:1;-webkit-transform:translateY(150%);-ms-transform:translateY(150%);transform:translateY(150%);}/*!sc*/
+a:active{-webkit-transform:translate(0,1px);-ms-transform:translate(0,1px);transform:translate(0,1px);}/*!sc*/
+a[class^="card"]{cursor:pointer;}/*!sc*/
+a[class^="card"]:hover,a[class^="card"]:active{opacity:1;-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+[role="button"]{cursor:pointer;}/*!sc*/
+input,select,textarea{font:inherit;height:auto;width:auto;margin:0;}/*!sc*/
+table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+blockquote,q{quotes:none;}/*!sc*/
+blockquote::before,blockquote::after,q::before,q::after{content:"";content:none;}/*!sc*/
+b,strong{font-weight:700;}/*!sc*/
+::selection{background-color:rgba(6,204,211,0.64);}/*!sc*/
+#root{min-height:100vh;}/*!sc*/
+.tether-element{z-index:1000;}/*!sc*/
+#gatsby-focus-wrapper{min-height:100vh;}/*!sc*/
+#gatsby-focus-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}/*!sc*/
+data-styled.g1[id="sc-global-bCOxkG1"]{content:"sc-global-bCOxkG1,"}/*!sc*/
+.kFlfln{padding:1rem;margin:0 auto;max-width:1280px;}/*!sc*/
+data-styled.g2[id="constrainer__Constrainer-sc-vi2beb-0"]{content:"kFlfln,"}/*!sc*/
+.dLtlwo{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;text-align:center;white-space:nowrap;vertical-align:middle;line-height:1.5rem;font-size:1rem;padding:0.25rem 0.75rem;min-width:2rem;background:none;text-shadow:none;border:0;font-family:"Space Mono",monospace;font-weight:700;cursor:pointer;position:relative;-webkit-transition:background-color 0.24s ease 0s;transition:background-color 0.24s ease 0s;background-color:#0721eb;box-shadow:0 -1px 1px 0 rgba(0,0,0,0.08),0 2px 0px 0 rgba(0,0,0,0.16);line-height:1.5rem;font-size:1rem;padding:0.25rem 0.75rem;min-width:2rem;border-radius:0;display:inline-block;}/*!sc*/
+.dLtlwo,.dLtlwo:focus{outline:none;}/*!sc*/
+.dLtlwo:hover{opacity:1;}/*!sc*/
+.dLtlwo.active,.dLtlwo:active{-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+.dLtlwo::before,.dLtlwo::after{font-size:1rem;}/*!sc*/
+.dLtlwo::before{margin-right:0.375rem;}/*!sc*/
+.dLtlwo::after{margin-left:0.375rem;}/*!sc*/
+.dLtlwo::before,.dLtlwo::after,.dLtlwo > *{vertical-align:top;display:inline-block;line-height:inherit !important;}/*!sc*/
+.dLtlwo > input[type=checkbox],.dLtlwo > input[type=radio]{border:0 none;-webkit-clip:rect(0,0,0,0);clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}/*!sc*/
+.dLtlwo,.dLtlwo:visited{color:#0721EB;}/*!sc*/
+.dLtlwo:after{border-color:#0721eb;}/*!sc*/
+.dLtlwo:hover{background-color:#2e44ee;color:#0721EB;}/*!sc*/
+.dLtlwo.active,.dLtlwo:active{background-color:#1a32ec;box-shadow:inset 0 1px 2px 0 rgba(0,0,0,0.16);}/*!sc*/
+.dLtlwo:after{position:absolute;content:'';opacity:0;width:100%;height:100%;left:0;top:0;z-index:-1;border-width:2px;border-style:solid;background:none;-webkit-transition:all .16s cubic-bezier(.55,.085,.68,.53);transition:all .16s cubic-bezier(.55,.085,.68,.53);}/*!sc*/
+.dLtlwo:hover:after{opacity:1;-webkit-transform:translate(5px,10px);-ms-transform:translate(5px,10px);transform:translate(5px,10px);-webkit-transition-delay:.08s;transition-delay:.08s;}/*!sc*/
+data-styled.g5[id="button__Button-sc-9piufk-0"]{content:"dLtlwo,"}/*!sc*/
+.fOvMjw{font-family:"Space Mono",monospace;font-weight:700;margin:0;position:relative;font-size:clamp(1rem,1rem,3rem);line-height:1.5rem;color:#000;}/*!sc*/
+.bZrWde{font-family:"Space Mono",monospace;font-weight:700;margin:0;position:relative;font-size:clamp(1rem,2rem + 1vw,3rem);line-height:2.25rem;color:#0721EB;padding:0.5rem 0 0.75rem;border-top:2px solid #0721EB;border-bottom:1px solid #0721EB;}/*!sc*/
+.gvOrJn{font-family:"Space Mono",monospace;font-weight:700;margin:0;position:relative;font-size:clamp(1rem,1rem,3rem);line-height:1.5rem;color:#0721EB;}/*!sc*/
+data-styled.g6[id="heading__Heading-sc-127qstd-0"]{content:"fOvMjw,bZrWde,gvOrJn,"}/*!sc*/
+.bRQNwO{position:-webkit-sticky;position:sticky;top:0;left:0;z-index:10;color:#FFFFFF;background:#0721EB;border-top:2px solid #FFFFFF;border-bottom:1px solid #FFFFFF;-webkit-transition:all 0.25s ease-out;transition:all 0.25s ease-out;}/*!sc*/
+data-styled.g9[id="page-header__PageHead-sc-9vep08-0"]{content:"bRQNwO,"}/*!sc*/
+.hHzsfO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+data-styled.g10[id="page-header__PageHeadInner-sc-9vep08-1"]{content:"hHzsfO,"}/*!sc*/
+.jjkCVp{margin:0;$$typeof:Symbol(react.forward_ref);render:[object Object];}/*!sc*/
+.jjkCVp *{display:block;}/*!sc*/
+.jjkCVp,.jjkCVp a{-webkit-text-decoration:none;text-decoration:none;-webkit-transition:all 0.24s ease 0s;transition:all 0.24s ease 0s;}/*!sc*/
+.jjkCVp,.jjkCVp a,.jjkCVp:visited,.jjkCVp a:visited{color:inherit;-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+.jjkCVp:hover,.jjkCVp a:hover{color:#0721EB;opacity:1;}/*!sc*/
+.jjkCVp:after,.jjkCVp a:after{content:none;}/*!sc*/
+.jjkCVp img{max-width:10rem;}/*!sc*/
+data-styled.g12[id="page-header__PageTitle-sc-9vep08-3"]{content:"jjkCVp,"}/*!sc*/
+.itpvWz{margin:0;padding:0;}/*!sc*/
+data-styled.g13[id="page-header__PageNav-sc-9vep08-4"]{content:"itpvWz,"}/*!sc*/
+.eELmqa{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;list-style:none;position:fixed;width:100%;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;opacity:0;-webkit-transition:all 0.2s ease-in;transition:all 0.2s ease-in;top:5rem;right:-100%;z-index:10;background:#0721EB;color:#FFFFFF;border-bottom:1px solid #FFFFFF;}/*!sc*/
+.eELmqa > li{margin:1rem;list-style:none;}/*!sc*/
+@media only screen and (min-width:768px){.eELmqa{-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;top:0;right:0;background:none;border-bottom:none;opacity:1;-webkit-transition:none;transition:none;}.eELmqa > li{margin:0;margin-right:2rem;}.eELmqa > *:last-child{margin:0;}}/*!sc*/
+data-styled.g14[id="page-header__GlobalMenu-sc-9vep08-5"]{content:"eELmqa,"}/*!sc*/
+.czxnJx{font-family:"Space Mono",monospace;color:#FFFFFF;-webkit-text-decoration:none;text-decoration:none;-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;}/*!sc*/
+.czxnJx,.czxnJx:visited{color:#FFFFFF;}/*!sc*/
+.czxnJx:hover{color:#FFFFFF;opacity:1;}/*!sc*/
+.czxnJx:hover:after{background:#FFFFFF;}/*!sc*/
+data-styled.g15[id="page-header__GlobalMenuLink-sc-9vep08-6"]{content:"czxnJx,"}/*!sc*/
+.cxaMzT{color:white !important;}/*!sc*/
+data-styled.g16[id="page-header__GlobalMenuButton-sc-9vep08-7"]{content:"cxaMzT,"}/*!sc*/
+.knTWaV{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;cursor:pointer;padding:0.75rem 0;margin-left:auto;}/*!sc*/
+@media only screen and (min-width:768px){.knTWaV{display:none;}}/*!sc*/
+data-styled.g17[id="page-header__Toggle-sc-9vep08-8"]{content:"knTWaV,"}/*!sc*/
+.eRPsbj{background-color:#FFFFFF;width:30px;height:3px;-webkit-transition:all 0.3s linear;transition:all 0.3s linear;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;position:relative;-webkit-transform:inherit;-ms-transform:inherit;transform:inherit;}/*!sc*/
+.eRPsbj::before,.eRPsbj::after{width:30px;height:3px;background-color:#FFFFFF;content:"";position:absolute;-webkit-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}/*!sc*/
+.eRPsbj::before{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);top:-10px;}/*!sc*/
+.eRPsbj::after{opacity:1;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);top:10px;}/*!sc*/
+data-styled.g18[id="page-header__Hamburger-sc-9vep08-9"]{content:"eRPsbj,"}/*!sc*/
+.hfXwCH button{background:transparent url("/assets/language-white.svg") no-repeat;}/*!sc*/
+.hfXwCH ul{background:#0721EB;color:#fff;}/*!sc*/
+.hfXwCH .flag-select__option:not(.flag-select__option--placeholder):focus,.hfXwCH .flag-select__option:not(.flag-select__option--placeholder):hover{outline:none;background:#263ded;}/*!sc*/
+data-styled.g19[id="page-header__LanguageSelect-sc-9vep08-10"]{content:"hfXwCH,"}/*!sc*/
+.hLTPzn{background-color:#000000;font-size:0.875rem;line-height:1rem;padding:2rem 0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;}/*!sc*/
+data-styled.g20[id="page-footer__PageFoot-sc-1wx9oy3-0"]{content:"hLTPzn,"}/*!sc*/
+.kvKyNW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+data-styled.g21[id="page-footer__PageFootInner-sc-1wx9oy3-1"]{content:"kvKyNW,"}/*!sc*/
+.fdMdPB{color:#FFFFFF;}/*!sc*/
+data-styled.g22[id="page-footer__PageCredits-sc-1wx9oy3-2"]{content:"fdMdPB,"}/*!sc*/
+.jzErNF{color:#FFFFFF;}/*!sc*/
+data-styled.g23[id="page-footer__PageSocial-sc-1wx9oy3-3"]{content:"jzErNF,"}/*!sc*/
+.jKPPkQ{color:#FFFFFF;}/*!sc*/
+data-styled.g24[id="page-footer__PageNetlify-sc-1wx9oy3-4"]{content:"jKPPkQ,"}/*!sc*/
+.cARici{-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;overflow:hidden;}/*!sc*/
+data-styled.g25[id="global-layout__SiteContent-sc-1kk8eb4-0"]{content:"cARici,"}/*!sc*/
+.jupCbP{padding:2rem 1.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;color:#000000;background:#e6fdfe;position:relative;border:2px solid #0721EB;}/*!sc*/
+.jupCbP > :last-child:not(:first-child){padding-top:2rem;}/*!sc*/
+.jupCbP:visited{color:#000000;}/*!sc*/
+.jupCbP a,.jupCbP a:visited{color:#0721EB;}/*!sc*/
+.jupCbP h1,.jupCbP h2,.jupCbP h3{margin:0;}/*!sc*/
+.jupCbP:after{position:absolute;content:"";opacity:0;width:100%;height:100%;left:0;top:0;z-index:-1;border:2px solid #0721EB;background:none;-webkit-transition:all 0.16s cubic-bezier(0.55,0.085,0.68,0.53);transition:all 0.16s cubic-bezier(0.55,0.085,0.68,0.53);}/*!sc*/
+.jupCbP:hover:after{opacity:1;-webkit-transform:translate(10px,10px);-ms-transform:translate(10px,10px);transform:translate(10px,10px);-webkit-transition-delay:0.08s;transition-delay:0.08s;}/*!sc*/
+data-styled.g26[id="card__Card-sc-1neqwum-0"]{content:"jupCbP,"}/*!sc*/
+.gVieEx{margin-bottom:1rem;position:relative;-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;}/*!sc*/
+.gVieEx img{max-height:1.5rem;margin-right:0.75rem;}/*!sc*/
+data-styled.g28[id="card__CardHeading-sc-1neqwum-2"]{content:"gVieEx,"}/*!sc*/
+.uTcYB{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(6,1fr);grid-gap:2rem;}/*!sc*/
+.uTcYB .card__Card-sc-1neqwum-0{height:100%;}/*!sc*/
+.uTcYB li{grid-column:auto / span 6;}/*!sc*/
+@media only screen and (min-width:544px){.uTcYB li{grid-column:auto / span 3;}}/*!sc*/
+@media only screen and (min-width:992px){.uTcYB li{grid-column:auto / span 2;}}/*!sc*/
+data-styled.g30[id="card__CardList-sc-1neqwum-4"]{content:"uTcYB,"}/*!sc*/
+.kRraGI{display:grid;height:100%;grid-template-rows:auto 1fr;}/*!sc*/
+data-styled.g31[id="inpage__Inpage-sc-1dtk98a-0"]{content:"kRraGI,"}/*!sc*/
+.buObBj{display:grid;grid-template-columns:1fr;padding-top:1rem;padding-bottom:2rem;}/*!sc*/
+@media only screen and (min-width:768px){.buObBj{grid-template-columns:3fr 1fr;gap:4rem;padding-top:2rem;}}/*!sc*/
+.buObBj > section > .card__Card-sc-1neqwum-0{margin-top:1rem;display:block;}/*!sc*/
+.buObBj > *{margin-bottom:2rem;}/*!sc*/
+@media only screen and (min-width:768px){.buObBj > *{margin-bottom:0;}}/*!sc*/
+data-styled.g32[id="inpage__InpageInnerColumns-sc-1dtk98a-1"]{content:"buObBj,"}/*!sc*/
+.gpOrCg{padding-bottom:2rem;}/*!sc*/
+data-styled.g33[id="inpage__InpageHeader-sc-1dtk98a-2"]{content:"gpOrCg,"}/*!sc*/
+.cuARmr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;min-width:0;}/*!sc*/
+.cuARmr > *:first-child{margin-bottom:1rem;}/*!sc*/
+.cuARmr > *:last-child{margin-bottom:1rem;}/*!sc*/
+data-styled.g35[id="inpage__InpageHeadline-sc-1dtk98a-4"]{content:"cuARmr,"}/*!sc*/
+.kOSUSg{margin-bottom:0.5rem;line-height:3rem;}/*!sc*/
+data-styled.g38[id="inpage__InpageTitle-sc-1dtk98a-7"]{content:"kOSUSg,"}/*!sc*/
+.hquRBB{background-color:transparent;}/*!sc*/
+.inpage__InpageBody-sc-1dtk98a-9 ~ .inpage__InpageBody-sc-1dtk98a-9{padding-top:2rem;padding-bottom:2rem;}/*!sc*/
+.hquRBB p > img{display:block;margin:1rem auto;max-width:100%;}/*!sc*/
+data-styled.g40[id="inpage__InpageBody-sc-1dtk98a-9"]{content:"hquRBB,"}/*!sc*/
+.eA-DFHT{padding:2rem 1rem;}/*!sc*/
+.inpage__InpageBodyInner-sc-1dtk98a-10 ~ .inpage__InpageBodyInner-sc-1dtk98a-10{padding:1rem;}/*!sc*/
+data-styled.g41[id="inpage__InpageBodyInner-sc-1dtk98a-10"]{content:"eA-DFHT,"}/*!sc*/
+@media only screen and (min-width:768px){.hXrvFM{grid-column:span 2;}}/*!sc*/
+data-styled.g64[id="activities__MethodHeadline-sc-2nsf6t-0"]{content:"hXrvFM,"}/*!sc*/
+.bIuAFx > :last-child:not(:first-child){padding-top:0;}/*!sc*/
+.bIuAFx .card__CardHeading-sc-1neqwum-2:after{content:"_";}/*!sc*/
+data-styled.g65[id="activities__ActivityCard-sc-2nsf6t-1"]{content:"bIuAFx,"}/*!sc*/
+</style><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Mono:400,700|Space+Mono:700&amp;display=swap" rel="stylesheet"/><link rel="preconnect" href="https://stats.openinternetproject.org"/><link rel="alternate" type="application/rss+xml" title="SAFETAG - RSS Feed" href="/rss.xml"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header role="banner" class="page-header__PageHead-sc-9vep08-0 bRQNwO"><div class="constrainer__Constrainer-sc-vi2beb-0 page-header__PageHeadInner-sc-9vep08-1 kFlfln hHzsfO"><div class="page-header__PageHeadline-sc-9vep08-2 crPiEN"><h1 class="heading__Heading-sc-127qstd-0 page-header__PageTitle-sc-9vep08-3 fOvMjw jjkCVp"><a hrefLang="fr" href="/fr/"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTM2IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDUzNiAxNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01OS40NCA2Mi40NEM1OS40NCA1OC42IDYwLjg1MzMgNTUuNjEzMyA2My42OCA1My40OEM2Ni41MDY3IDUxLjI5MzMgNzAuMzIgNTAuMiA3NS4xMiA1MC4yQzc5LjQ0IDUwLjIgODMuMDQgNTEuMTg2NyA4NS45MiA1My4xNkM4OC44IDU1LjA4IDkwLjc0NjcgNTcuNjkzMyA5MS43NiA2MUw4Mi42NCA2My44QzgxLjc4NjcgNTkuODUzMyA3OS4yOCA1Ny44OCA3NS4xMiA1Ny44OEM3My4yIDU3Ljg4IDcxLjczMzMgNTguMjI2NyA3MC43MiA1OC45MkM2OS43MDY3IDU5LjYxMzMgNjkuMiA2MC41NzMzIDY5LjIgNjEuOEM2OS4yIDYzLjA4IDY5LjcwNjcgNjQuMDY2NyA3MC43MiA2NC43NkM3MS43ODY3IDY1LjQgNzMuNDEzMyA2NS45MzMzIDc1LjYgNjYuMzZMNzcuNjggNjYuNzZDODEuMTQ2NyA2Ny40NTMzIDgzLjk3MzMgNjguMjI2NyA4Ni4xNiA2OS4wOEM4OC4zNDY3IDY5LjkzMzMgOTAuMDggNzEuMTYgOTEuMzYgNzIuNzZDOTIuNjkzMyA3NC4zNiA5My4zNiA3Ni40NjY3IDkzLjM2IDc5LjA4QzkzLjM2IDgzLjE4NjcgOTEuODY2NyA4Ni4zODY3IDg4Ljg4IDg4LjY4Qzg1Ljg5MzMgOTAuOTczMyA4MS44NCA5Mi4xMiA3Ni43MiA5Mi4xMkM3MS40OTMzIDkyLjEyIDY3LjIyNjcgOTEgNjMuOTIgODguNzZDNjAuNjY2NyA4Ni41MiA1OC42OTMzIDgzLjMyIDU4IDc5LjE2TDY3LjI4IDc2Ljc2QzY4LjE4NjcgODEuODggNzEuMzMzMyA4NC40NCA3Ni43MiA4NC40NEM3OC45NiA4NC40NCA4MC42NjY3IDg0LjAxMzMgODEuODQgODMuMTZDODMuMDEzMyA4Mi4zMDY3IDgzLjYgODEuMjEzMyA4My42IDc5Ljg4QzgzLjYgNzguNjUzMyA4My4wNCA3Ny42OTMzIDgxLjkyIDc3QzgwLjggNzYuMjUzMyA3OC45NiA3NS42NCA3Ni40IDc1LjE2TDc0LjMyIDc0Ljc2QzY5LjU3MzMgNzMuODUzMyA2NS44OTMzIDcyLjQ5MzMgNjMuMjggNzAuNjhDNjAuNzIgNjguODEzMyA1OS40NCA2Ni4wNjY3IDU5LjQ0IDYyLjQ0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTk5LjgzNDQgNjEuNEMxMDAuOTAxIDU4LjA5MzMgMTAyLjg3NCA1NS40IDEwNS43NTQgNTMuMzJDMTA4LjY4OCA1MS4yNCAxMTIuNTgxIDUwLjIgMTE3LjQzNCA1MC4yQzEyMi43MTQgNTAuMiAxMjYuODQ4IDUxLjUzMzMgMTI5LjgzNCA1NC4yQzEzMi44NzQgNTYuODEzMyAxMzQuMzk0IDYwLjU3MzMgMTM0LjM5NCA2NS40OFY5MUgxMjQuNzk0Vjg2LjM2SDEyMy42NzRDMTIzLjA4OCA4Ny43NDY3IDEyMS45NDEgODkuMDUzMyAxMjAuMjM0IDkwLjI4QzExOC41ODEgOTEuNTA2NyAxMTYuMTU0IDkyLjEyIDExMi45NTQgOTIuMTJDMTA4Ljc0MSA5Mi4xMiAxMDUuMjQ4IDkxIDEwMi40NzQgODguNzZDOTkuNzU0NCA4Ni40NjY3IDk4LjM5NDQgODMuMzQ2NyA5OC4zOTQ0IDc5LjRDOTguMzk0NCA3NS40NTMzIDk5Ljc4MSA3Mi40MTMzIDEwMi41NTQgNzAuMjhDMTA1LjM4MSA2OC4wOTMzIDEwOS4xMTQgNjcgMTEzLjc1NCA2N0gxMjQuNjM0VjY0Ljc2QzEyNC42MzQgNjIuNzg2NyAxMjQuMDIxIDYxLjIxMzMgMTIyLjc5NCA2MC4wNEMxMjEuNTY4IDU4LjgxMzMgMTE5LjcyOCA1OC4yIDExNy4yNzQgNTguMkMxMTQuODc0IDU4LjIgMTEzLjAwOCA1OC43ODY3IDExMS42NzQgNTkuOTZDMTEwLjM0MSA2MS4wOCAxMDkuNDg4IDYyLjYgMTA5LjExNCA2NC41Mkw5OS44MzQ0IDYxLjRaTTEwOC40NzQgNzkuMTZDMTA4LjQ3NCA4MC42IDEwOS4wMzQgODEuNzczMyAxMTAuMTU0IDgyLjY4QzExMS4zMjggODMuNTMzMyAxMTIuOTU0IDgzLjk2IDExNS4wMzQgODMuOTZDMTE3Ljg2MSA4My45NiAxMjAuMTU0IDgzLjE2IDEyMS45MTQgODEuNTZDMTIzLjcyOCA3OS45MDY3IDEyNC42MzQgNzcuNzczMyAxMjQuNjM0IDc1LjE2Vjc0LjUySDExNC40NzRDMTEyLjYwOCA3NC41MiAxMTEuMTQxIDc0Ljk0NjcgMTEwLjA3NCA3NS44QzEwOS4wMDggNzYuNjUzMyAxMDguNDc0IDc3Ljc3MzMgMTA4LjQ3NCA3OS4xNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNDguOTkxIDQzLjk2QzE0OC45OTEgNDEuMjQgMTQ5Ljc5MSAzOS4wOCAxNTEuMzkxIDM3LjQ4QzE1Mi45OTEgMzUuODI2NyAxNTUuMTI1IDM1IDE1Ny43OTEgMzVIMTY4LjE5MVY0My4xNkgxNjEuMzExQzE1OS44MTggNDMuMTYgMTU5LjA3MSA0My45NiAxNTkuMDcxIDQ1LjU2VjUxLjMySDE2OS40NzFWNTkuNDhIMTU5LjA3MVY5MUgxNDguOTkxVjU5LjQ4SDEzOC45MTFWNTEuMzJIMTQ4Ljk5MVY0My45NloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNzIuNjAyIDcxLjE2QzE3Mi42MDIgNjcgMTczLjQyOSA2My4zNDY3IDE3NS4wODIgNjAuMkMxNzYuNzg5IDU3IDE3OS4xMzUgNTQuNTQ2NyAxODIuMTIyIDUyLjg0QzE4NS4xNjIgNTEuMDggMTg4LjYyOSA1MC4yIDE5Mi41MjIgNTAuMkMxOTYuMzYyIDUwLjIgMTk5LjcyMiA1MS4wNTMzIDIwMi42MDIgNTIuNzZDMjA1LjUzNSA1NC40NjY3IDIwNy44MDIgNTYuODkzMyAyMDkuNDAyIDYwLjA0QzIxMS4wMDIgNjMuMTMzMyAyMTEuODAyIDY2LjY4IDIxMS44MDIgNzAuNjhWNzQuMTJIMTgyLjkyMkMxODMuMDI5IDc2Ljg0IDE4NC4wMTUgNzkuMDggMTg1Ljg4MiA4MC44NEMxODcuODAyIDgyLjYgMTkwLjE3NSA4My40OCAxOTMuMDAyIDgzLjQ4QzE5NS41NjIgODMuNDggMTk3LjUzNSA4Mi45MiAxOTguOTIyIDgxLjhDMjAwLjM2MiA4MC42OCAyMDEuNDgyIDc5LjIxMzMgMjAyLjI4MiA3Ny40TDIxMC41MjIgODEuNzJDMjA2Ljg0MiA4OC42NTMzIDIwMC44OTUgOTIuMTIgMTkyLjY4MiA5Mi4xMkMxODguNzg5IDkyLjEyIDE4NS4zMjIgOTEuMjY2NyAxODIuMjgyIDg5LjU2QzE3OS4yNDIgODcuOCAxNzYuODY5IDg1LjM0NjcgMTc1LjE2MiA4Mi4yQzE3My40NTUgNzkgMTcyLjYwMiA3NS4zMiAxNzIuNjAyIDcxLjE2Wk0yMDEuNTYyIDY2LjZDMjAxLjI5NSA2NC4zMDY3IDIwMC4zMzUgNjIuNDQgMTk4LjY4MiA2MUMxOTcuMDgyIDU5LjU2IDE5NS4wMDIgNTguODQgMTkyLjQ0MiA1OC44NEMxODkuODI5IDU4Ljg0IDE4Ny42NjkgNTkuNTYgMTg1Ljk2MiA2MUMxODQuMzA5IDYyLjQ0IDE4My4zMjIgNjQuMzA2NyAxODMuMDAyIDY2LjZIMjAxLjU2MloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yMjMuNDE4IDUxLjMyVjM5SDIzMy40OThWNTEuMzJIMjQ0LjM3OFY1OS40OEgyMzMuNDk4VjgwLjQ0QzIzMy40OTggODIuMDQgMjM0LjI0NSA4Mi44NCAyMzUuNzM4IDgyLjg0SDI0My40MThWOTFIMjMyLjIxOEMyMjkuNTUxIDkxIDIyNy40MTggOTAuMiAyMjUuODE4IDg4LjZDMjI0LjIxOCA4Ni45NDY3IDIyMy40MTggODQuNzYgMjIzLjQxOCA4Mi4wNFY1OS40OEgyMTMuNDk4VjUxLjMySDIyMy40MThaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjUwLjYxNiA2MS40QzI1MS42ODIgNTguMDkzMyAyNTMuNjU2IDU1LjQgMjU2LjUzNiA1My4zMkMyNTkuNDY5IDUxLjI0IDI2My4zNjIgNTAuMiAyNjguMjE2IDUwLjJDMjczLjQ5NiA1MC4yIDI3Ny42MjkgNTEuNTMzMyAyODAuNjE2IDU0LjJDMjgzLjY1NiA1Ni44MTMzIDI4NS4xNzYgNjAuNTczMyAyODUuMTc2IDY1LjQ4VjkxSDI3NS41NzZWODYuMzZIMjc0LjQ1NkMyNzMuODY5IDg3Ljc0NjcgMjcyLjcyMiA4OS4wNTMzIDI3MS4wMTYgOTAuMjhDMjY5LjM2MiA5MS41MDY3IDI2Ni45MzYgOTIuMTIgMjYzLjczNiA5Mi4xMkMyNTkuNTIyIDkyLjEyIDI1Ni4wMjkgOTEgMjUzLjI1NiA4OC43NkMyNTAuNTM2IDg2LjQ2NjcgMjQ5LjE3NiA4My4zNDY3IDI0OS4xNzYgNzkuNEMyNDkuMTc2IDc1LjQ1MzMgMjUwLjU2MiA3Mi40MTMzIDI1My4zMzYgNzAuMjhDMjU2LjE2MiA2OC4wOTMzIDI1OS44OTYgNjcgMjY0LjUzNiA2N0gyNzUuNDE2VjY0Ljc2QzI3NS40MTYgNjIuNzg2NyAyNzQuODAyIDYxLjIxMzMgMjczLjU3NiA2MC4wNEMyNzIuMzQ5IDU4LjgxMzMgMjcwLjUwOSA1OC4yIDI2OC4wNTYgNTguMkMyNjUuNjU2IDU4LjIgMjYzLjc4OSA1OC43ODY3IDI2Mi40NTYgNTkuOTZDMjYxLjEyMiA2MS4wOCAyNjAuMjY5IDYyLjYgMjU5Ljg5NiA2NC41MkwyNTAuNjE2IDYxLjRaTTI1OS4yNTYgNzkuMTZDMjU5LjI1NiA4MC42IDI1OS44MTYgODEuNzczMyAyNjAuOTM2IDgyLjY4QzI2Mi4xMDkgODMuNTMzMyAyNjMuNzM2IDgzLjk2IDI2NS44MTYgODMuOTZDMjY4LjY0MiA4My45NiAyNzAuOTM2IDgzLjE2IDI3Mi42OTYgODEuNTZDMjc0LjUwOSA3OS45MDY3IDI3NS40MTYgNzcuNzczMyAyNzUuNDE2IDc1LjE2Vjc0LjUySDI2NS4yNTZDMjYzLjM4OSA3NC41MiAyNjEuOTIyIDc0Ljk0NjcgMjYwLjg1NiA3NS44QzI1OS43ODkgNzYuNjUzMyAyNTkuMjU2IDc3Ljc3MzMgMjU5LjI1NiA3OS4xNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMzMuMDM0IDUxLjMyVjg4LjY4QzMzMy4wMzQgOTQuOTczMyAzMzEuMTQgOTkuNzczMyAzMjcuMzU0IDEwMy4wOEMzMjMuNjIgMTA2LjQ0IDMxOC41MjcgMTA4LjEyIDMxMi4wNzQgMTA4LjEyQzMwNi40MiAxMDguMTIgMzAxLjg4NyAxMDYuODkzIDI5OC40NzQgMTA0LjQ0QzI5NS4xMTQgMTAxLjk4NyAyOTIuODIgOTkgMjkxLjU5NCA5NS40OEwzMDAuNjM0IDkxLjU2QzMwMS4zOCA5NC4wMTMzIDMwMi42NiA5NS45NiAzMDQuNDc0IDk3LjRDMzA2LjM0IDk4Ljg5MzMgMzA4LjgyIDk5LjY0IDMxMS45MTQgOTkuNjRDMzE1LjMyNyA5OS42NCAzMTguMDIgOTguNzA2NyAzMTkuOTk0IDk2Ljg0QzMyMS45NjcgOTQuOTczMyAzMjIuOTU0IDkyLjE3MzMgMzIyLjk1NCA4OC40NFY4NC42SDMyMi4xNTRDMzE5LjE2NyA4OC43NiAzMTQuODQ3IDkwLjg0IDMwOS4xOTQgOTAuODRDMzA2LjA0NyA5MC44NCAzMDMuMDg3IDg5Ljk4NjcgMzAwLjMxNCA4OC4yOEMyOTcuNTk0IDg2LjU3MzMgMjk1LjQwNyA4NC4yIDI5My43NTQgODEuMTZDMjkyLjEgNzguMDY2NyAyOTEuMjc0IDc0LjUyIDI5MS4yNzQgNzAuNTJDMjkxLjI3NCA2Ni41MiAyOTIuMSA2MyAyOTMuNzU0IDU5Ljk2QzI5NS40MDcgNTYuODY2NyAyOTcuNTk0IDU0LjQ2NjcgMzAwLjMxNCA1Mi43NkMzMDMuMDg3IDUxLjA1MzMgMzA2LjA0NyA1MC4yIDMwOS4xOTQgNTAuMkMzMTQuOSA1MC4yIDMxOS4yNzQgNTIuMzYgMzIyLjMxNCA1Ni42OEgzMjMuMTE0VjUxLjMySDMzMy4wMzRaTTMxMi4yMzQgODIuMkMzMTUuNDM0IDgyLjIgMzE4LjA0NyA4MS4xMzMzIDMyMC4wNzQgNzlDMzIyLjEgNzYuODY2NyAzMjMuMTE0IDc0LjA0IDMyMy4xMTQgNzAuNTJDMzIzLjExNCA2NyAzMjIuMSA2NC4xNzMzIDMyMC4wNzQgNjIuMDRDMzE4LjA0NyA1OS45MDY3IDMxNS40MzQgNTguODQgMzEyLjIzNCA1OC44NEMzMDkuMDM0IDU4Ljg0IDMwNi40MiA1OS45MDY3IDMwNC4zOTQgNjIuMDRDMzAyLjM2NyA2NC4xNzMzIDMwMS4zNTQgNjcgMzAxLjM1NCA3MC41MkMzMDEuMzU0IDc0LjA0IDMwMi4zNjcgNzYuODY2NyAzMDQuMzk0IDc5QzMwNi40MiA4MS4xMzMzIDMwOS4wMzQgODIuMiAzMTIuMjM0IDgyLjJaIiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iMzg0IiBoZWlnaHQ9IjEzNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI4Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNTM2IDBIMzkyVjE0NEg1MzZWMFpNNDY0IDUyQzQ3MS43MzIgNTIgNDc4IDQ1LjczMiA0NzggMzhDNDc4IDMwLjI2OCA0NzEuNzMyIDI0IDQ2NCAyNEM0NTYuMjY4IDI0IDQ1MCAzMC4yNjggNDUwIDM4QzQ1MCA0NS43MzIgNDU2LjI2OCA1MiA0NjQgNTJaTTQ2NCA1NkM0NTAuNzQ1IDU2IDQ0MCA2Ni4yMzM1IDQ0MCA3OC44NTcxVjEyMEg0ODhWNzguODU3MUM0ODggNjYuMjMzNSA0NzcuMjU1IDU2IDQ2NCA1NlpNNDg4IDc4Ljg1NzFMNDg4IDg0LjM0MjlINDUwLjU2TDQ1MC41NiA3OC44NTcxQzQ1MC41NiA3MS43ODc5IDQ1Ni41NzcgNjYuMDU3MSA0NjQgNjYuMDU3MUM0NzEuNDIzIDY2LjA1NzEgNDc3LjQ0IDcxLjc4NzkgNDc3LjQ0IDc4Ljg1NzFINDg4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" alt="Safetag Logo"/></a></h1></div><div class="page-header__Toggle-sc-9vep08-8 knTWaV"><div class="page-header__Hamburger-sc-9vep08-9 eRPsbj"></div></div><nav role="navigation" class="page-header__PageNav-sc-9vep08-4 itpvWz"><ul class="page-header__GlobalMenu-sc-9vep08-5 eELmqa"><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="fr" href="/fr/about/">About</a></li><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="fr" href="/fr/posts/">Blog</a></li><li><a class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="fr" href="/fr/#allMethods">Methods</a></li><li><a aria-current="page" class="page-header__GlobalMenuLink-sc-9vep08-6 czxnJx" hrefLang="fr" href="/fr/activities/">Activités</a></li><li><div class="searchBoxHeader"><div class="boxTitle" style="display:block"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgNDggNDgiCiAgIGlkPSJzdmc0IgogICBzb2RpcG9kaTpkb2NuYW1lPSJzZWFyY2gtd2hpdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjEuMSAoM2JmNWFlMGQyNSwgMjAyMS0wOS0yMCkiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczgiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXc2IgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjE2LjQxNjY2NyIKICAgICBpbmtzY2FwZTpjeD0iMjQiCiAgICAgaW5rc2NhcGU6Y3k9IjI0IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDM2IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzQiIC8+CiAgPHBhdGgKICAgICBkPSJtMzMuMjMxIDIwLjMwOGMwLTcuMTI1LTUuNzk4MS0xMi45MjMtMTIuOTIzLTEyLjkyM3MtMTIuOTIzIDUuNzk4MS0xMi45MjMgMTIuOTIzIDUuNzk4MSAxMi45MjMgMTIuOTIzIDEyLjkyMyAxMi45MjMtNS43OTgxIDEyLjkyMy0xMi45MjN6bTE0Ljc2OSAyNGMwIDIuMDE5Mi0xLjY3MzEgMy42OTIzLTMuNjkyMyAzLjY5MjMtMC45ODA3NyAwLTEuOTMyNy0wLjQwMzg1LTIuNTk2Mi0xLjA5NjJsLTkuODk0Mi05Ljg2NTRjLTMuMzc1IDIuMzM2NS03LjQxMzUgMy41NzY5LTExLjUxIDMuNTc2OS0xMS4yMjEgMC0yMC4zMDgtOS4wODY1LTIwLjMwOC0yMC4zMDggMC0xMS4yMjEgOS4wODY1LTIwLjMwOCAyMC4zMDgtMjAuMzA4IDExLjIyMSAwIDIwLjMwOCA5LjA4NjUgMjAuMzA4IDIwLjMwOCAwIDQuMDk2Mi0xLjI0MDQgOC4xMzQ2LTMuNTc2OSAxMS41MWw5Ljg5NDIgOS44OTQyYzAuNjYzNDYgMC42NjM0NiAxLjA2NzMgMS42MTU0IDEuMDY3MyAyLjU5NjJ6IgogICAgIHN0cm9rZS13aWR0aD0iLjAyODg0NiIKICAgICBpZD0icGF0aDIiCiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIgLz4KPC9zdmc+Cg==" alt="Search"/></div></div></li><li><a variation="primary-raised-light" class="button__Button-sc-9piufk-0 page-header__GlobalMenuButton-sc-9vep08-7 dLtlwo cxaMzT" hrefLang="fr" href="/fr/guide-builder/">Create Guide</a></li><li><div class="flag-select page-header__LanguageSelect-sc-9vep08-10 hfXwCH"><button style="font-size:16px" class="flag-select__btn" id="select_flag_button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="select_flag_button"><span class="flag-select__option flag-select__option--placeholder"></span></button></div></li></ul></nav></div></header><main class="global-layout__SiteContent-sc-1kk8eb4-0 cARici"><article class="inpage__Inpage-sc-1dtk98a-0 kRraGI"><header class="inpage__InpageHeader-sc-1dtk98a-2 gpOrCg"><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageInnerColumns-sc-1dtk98a-1 kFlfln buObBj"><div class="inpage__InpageHeadline-sc-1dtk98a-4 activities__MethodHeadline-sc-2nsf6t-0 cuARmr hXrvFM"><h1 class="heading__Heading-sc-127qstd-0 bZrWde inpage__InpageTitle-sc-1dtk98a-7 kOSUSg">Activités</h1></div></div></header><section class="inpage__InpageBody-sc-1dtk98a-9 hquRBB"><div class="constrainer__Constrainer-sc-vi2beb-0 inpage__InpageBodyInner-sc-1dtk98a-10 kFlfln eA-DFHT"><ul class="card__CardList-sc-1neqwum-4 uTcYB"><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/regional_context_research"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Recherche sur le contexte régional</h1><p>Cet exercice se concentre sur la recherche et la reconfirmation des problèmes régionaux, des tendances générales aux restrictions légales spécifiques et aux problèmes de sécurité, ainsi que sur les actualités et les défis persistants.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/kick-off-call-meeting"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Kick-Off Call/Meeting</h1><p>Meet with your organization and begin developing an audit plan while collecting contextual data and important logistical considerations for the assessment.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/tool-usability-feedback-collection"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Tool Usability Feedback Collection</h1><p>&quot;Conducting a SAFETAG assessment can put you in a unique and valuable position to evaluate the usability and efficacy of tools used by at-risk organizations, as well as tools used during the assessment itself. Many tools are developed without input from high-risk users in global majority countries, leaving them lacking in usability and functionality considerations important to those populations. Your ability to collect feedback offers a unique opportunity to contribute to building feedback loops between tool teams and those users.
+
+The [USABLE guidebook](https://usable.tools/guidebook/) is a compilation of activities and resources designed to integrate feedback collection into existing digital security training frameworks, and can equally be used during digital security assessments. The Guidebook provides guidance on collecting feedback from users, engaging developers/tool teams, and how best to document and provide that feedback to provide actionable feedback to developers.
+
+As a SAFETAG auditor you may find themselves in a good position, several USABLE activities are highlighted here, with pointers to the full activity descriptions in the guidebook&quot;short_summary: SAFETAG assessors can evaluate tool usability for at-risk organizations and contribute to building feedback loops between users and tool teams.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/manual_recon"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx"></h1><p>This exercise suggests some targeted online search tools and tricks to gather information leakages from organizations.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/confidentiality_agreement"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Accord de confidentialité</h1><p>Négociez un accord avec l&#x27;organisation qui décrit comment un auditeur protégera la confidentialité de l&#x27;organisation et les résultats de l&#x27;audit.materials_needed: &quot;&quot;
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/firewire"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Accès Firewire aux ordinateurs chiffrés/verrouillés</h1><p>Les ports Firewire et les connecteurs d&#x27;extension peuvent être abusés pour obtenir des données que l&#x27;on pense être cryptées
+
+Tout attaquant qui obtient une course (y compris en dormant et en hibernant !)
+Ordinateur portable Windows, Mac ou même Linux avec un port Firewire, une ExpressCard
+slot d&#x27;extension, ou un port Thunderbolt pourra lire, enregistrer ou modifier
+toute information sensible sur l&#x27;appareil, même si l&#x27;écran est « verrouillé » et
+les informations sont stockées sur un volume crypté ou dans un dossier crypté.
+Cela s&#x27;applique aux menaces de perte, de vol et de confiscation, mais aussi aux
+scénarios de «point de contrôle» dans lesquels l&#x27;attaquant peut n&#x27;avoir accès que pour quelques
+minutes.
+
+Cette attaque nécessite le contrôle physique d&#x27;une machine qui n&#x27;est pas éteinte.
+Tous les détails sur la portée de l&#x27;attaque sont disponibles sur
+http://www.breaknenter.org/projects/inception/ .overview: &#x27;&#x27;
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/network_access"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Accès réseau</h1><p>Cette activité permet aux auditeurs de tester la solidité des défenses
+que le réseau des organisations a mis en place pour protéger leur réseau local.
+Ce composant consiste à accéder au réseau local via un point d&#x27;accès sans fil et des canaux physiques non sécurisés (tels qu&#x27;une prise Ethernet).
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/mac_filtering"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Accéder à un réseau filtré par MAC</h1><p>Les points d&#x27;accès sans fil ouverts et filtrés par adresse MAC sont non seulement ouverts à toute personne à portée pour se joindre et écouter, mais ils n&#x27;offrent pas non plus de protection à ceux qui se trouvent sur le réseau lui-même, même s&#x27;ils ne &quot;diffusent&quot; pas leur nom. Ceux-ci peuvent sembler être d&#x27;excellents moyens d&#x27;empêcher les utilisateurs non autorisés d&#x27;accéder à votre réseau sans recourir à des mots de passe, mais ils sont faciles à surmonter.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/forensic_analysis"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Analyse criminalistique</h1><p>Ce composant décrit comment effectuer une analyse sur les preuves capturées (par ex.
+image du disque dur ou vidage de la mémoire) sans altérer la preuve. Toute 
+altération, ou même un environnement ou une situation qui crée la possibilité 
+d&#x27;une altération, pourrait entraîner le rejet de la preuve devant un tribunal ou des 
+échecs d&#x27;analyse de logiciels malveillants.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/network_scanning"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Analyse de réseau</h1><p>L&#x27;analyse du réseau est une technique utilisée pour recueillir des informations sur les appareils connectés sur un certain réseau. Cela implique d&#x27;énumérer les ports ouverts et les services en cours d&#x27;exécution pour déterminer le type de périphérique, le système d&#x27;exploitation qu&#x27;il exécute, les applications qu&#x27;il exécute et bien plus encore. Il existe de nombreux outils open source que vous pouvez utiliser pour effectuer cette technique. Bien que cela puisse ressembler à une technique simple et ordinaire, elle peut être utilisée à la fois pour de bonnes et de mauvaises intentions.
+
+L&#x27;objectif de cet exercice est d&#x27;identifier, d&#x27;énumérer et de catégoriser tous les appareils connectés au réseau. Tout appareil disposant d&#x27;une adresse IP est notre cible. Cela peut inclure :
+- Ordinateurs de bureau
+- Ordinateurs portables
+- Tablettes
+- Téléphones portables
+- Imprimantes
+- Routeurs sans fil
+- Appareils VoIP
+- Téléviseurs et appareils intelligents
+- Serveurs et périphériques de stockage
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/vulnerability_scanning"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Analyse des vulnérabilités</h1><p>Alors qu&#x27;une grande partie de SAFETAG se concentre sur les défis de sécurité numérique au sein et autour du bureau, les attaques à distance sur le site Web de l&#x27;organisation, les extranets et les informations involontaires disponibles à partir de &quot;sources ouvertes&quot; constituent toutes des menaces réelles et méritent une attention particulière. SAFETAG veille à adopter une approche très passive de ce travail, en particulier lorsqu&#x27;il est effectué hors site, afin de ne pas avoir de conséquences involontaires sur l&#x27;infrastructure de l&#x27;organisation ou de nuire aux préoccupations de sécurité opérationnelle.
+
+Cette activité utilise la recherche et l&#x27;analyse actives pour détecter les vulnérabilités connues dans les services externes et internes clés. Habituellement, les tests d&#x27;intrusion exploitent les vulnérabilités possibles pour confirmer leur existence.
+[^NIST_exploit_confirm] Mais, l&#x27;utilisation d&#x27;exploits met l&#x27;organisation
+systèmes à un niveau de risque accru [^NIST_pen_test_danger] qui est
+inacceptable lorsque ni l&#x27;organisme ni l&#x27;auditeur n&#x27;ont le temps ou
+finances pour résoudre le problème. La méthodologie SAFETAG utilise uniquement une exploitation relativement sûre des vulnérabilités pour des résultats ciblés. Par exemple,
+déchiffrer le mot de passe du point d&#x27;accès sans fil nous permet de démontrer l&#x27;importance de bons mots de passe sans distinguer les mots de passe d&#x27;un individu.
+[^accès-réseau]
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/router_attacks"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Attaques basées sur le routeur</h1><p>Vérifiez les routeurs pour les mots de passe par défaut, les micrologiciels non corrigés, les vulnérabilités, l&#x27;accès à distance et les erreurs de configuration.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/safetag_audit_timeline"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Calendrier et planification de l&#x27;audit</h1><p>Cette section fournit des conseils sur la création d&#x27;un calendrier d&#x27;audit réaliste pour votre plan d&#x27;évaluation.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/process_mapping_activity"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Cartographie des processus</h1><p>Cette activité aide à identifier les processus qui permettent à l&#x27;organisation de fonctionner (publication d&#x27;articles, paiements, communication avec les sources, travail sur le terrain, etc.), les actifs et les systèmes (sites Web, logiciels, comptes PayPal) sur lesquels ils s&#x27;appuient et lesquels sont essentiels à leur travail.
+
+Les organisations participantes sont invitées à &quot;brainstormer&quot; une liste de tous les processus qui sont critiques pour leur travail et l&#x27;auditeur s&#x27;efforce de cartographier les détails des processus critiques pour exposer les points de risque.
+
+Si elle est effectuée correctement, la cartographie des processus peut aider l&#x27;auditeur
+- Identifier l&#x27;exposition au risque
+- Problèmes de communication et réponse efficace aux incidents
+- Identifier ce qui est affecté (personnes, systèmes, technologies)
+- Identifier les axes d&#x27;amélioration de la sécurisation des processus de l&#x27;organisation
+- Générer un plan d&#x27;atténuation/solution pour les contrôles de sécurité manquants
+- Montrer l&#x27;importance de la sécurité numérique au personnel, à l&#x27;équipe de direction et aux parties prenantes
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/scavenger_hunt"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Chasse au trésor</h1><p>Cette activité aide à identifier les problèmes potentiels de sécurité physique dans une organisation, en particulier lorsqu&#x27;un auditeur ne peut pas se rendre au bureau ou ne peut pas visiter tous les bureaux. L&#x27;approche de la chasse au trésor est axée sur l&#x27;implication des membres du personnel de l&#x27;organisation dans la cartographie des menaces potentielles sur la base de l&#x27;abstraction et de la gamification du processus de cartographie de la sécurité physique. Voir l&#x27;exercice &quot;Risk Hunting&quot; dans [SaferJourno](https://www.internews.org/sites/default/files/resources/SaferJournoGuide_2014-03-21.pdf),
+page 19, pour des idées et des conseils supplémentaires sur la conduite de cette activité.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/insecure_website_login"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Connexion au site Web non sécurisé</h1><p>Les mots de passe d&#x27;administration et d&#x27;utilisateur sur le site sont soumis en clair.overview: |
+* Déterminer le lien de connexion de l&#x27;administrateur du site Web
+* Voir s&#x27;il existe une option sécurisée avec TLS pour se connecter
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/check_mail_server_vulns"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Connexions de messagerie non sécurisées</h1><p>Un problème courant avec les services de messagerie est le manque de cryptage approprié. Le personnel ne doit être autorisé à se connecter au serveur de messagerie de l&#x27;organisation qu&#x27;en utilisant le cryptage SSL ou TLS.
+
+Lorsqu&#x27;un membre du personnel envoie ou reçoit des e-mails, un attaquant ayant accès au même réseau local peut facilement et de manière invisible lire, enregistrer ou modifier tous les messages en transit vers et depuis le serveur de messagerie de l&#x27;organisation.
+
+Même un membre du personnel informé qui tente de configurer son client de messagerie pour exiger le cryptage SSL ou TLS sera incapable de le faire car le serveur de messagerie ne le prend pas en charge.adversaire.
+
+L&#x27;adversaire pourrait être quelqu&#x27;un, tel qu&#x27;un client du cybercafé où travaille un membre du personnel, qui utilise le même réseau local pour se connecter à Internet. Ou, elle pourrait travailler pour une organisation disposant d&#x27;un accès privilégié au réseau concerné, telle que le fournisseur d&#x27;accès Internet (FAI) de %{organisation}.
+
+Même un membre du personnel informé qui tente de configurer son client de messagerie pour exiger le cryptage SSL ou TLS ne pourra pas le faire car le serveur de messagerie ne le prend pas en charge. Pour la messagerie Web, un membre du personnel qui tente de saisir l&#x27;adresse de messagerie Web alternative sécurisée (&quot;https://&quot;;) lors de la connexion, peut ne pas être en mesure de le faire, car l&#x27;application Webmail ne la prend pas en charge.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/report_creation"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Création de rapport</h1><p>Ce composant consiste en un auditeur qui compile ses notes d&#x27;audit et ses recommandations dans un ensemble complet de documents qui montre l&#x27;état actuel de la sécurité, le processus par lequel l&#x27;auditeur est parvenu à cette évaluation et des recommandations qui guideront la progression des hôtes pour atteindre leurs objectifs de sécurité.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/risk_matrix"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Créer une matrice des risques</h1><p>Dans le cadre de l&#x27;engagement de SAFETAG à renforcer l&#x27;agence et à soutenir l&#x27;adoption organisationnelle de pratiques plus sûres, une hiérarchisation minutieuse des vulnérabilités est inestimable pour éviter que les résultats d&#x27;audit ne paraissent écrasants. De plus, ce volet hiérarchise les vulnérabilités identifiées à l&#x27;aide de la matrice des risques élaborée avec le personnel de l&#x27;organisme d&#x27;accueil. L&#x27;utilisation du cadre créé par l&#x27;hôte permettra une meilleure compréhension de l&#x27;impact des vulnérabilités et encouragera un investissement plus important pour y remédier.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/private_data"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Données privées</h1><p>Guidez le personnel tout au long d&#x27;une activité pour lui demander de répertorier les données privées au sein de l&#x27;organisation (par exemple, utiliser le document &quot;Informations personnelles à garder privées&quot;.
+[^personal_information_to_keep_private])
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/roadmap_development"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Développement de la feuille de route</h1><p>Cette composante consiste en un auditeur triant ses recommandations en fonction des menaces et de la capacité de l&#x27;organisation. L&#x27;auditeur hiérarchise les vulnérabilités, pèse les coûts de mise en œuvre des recommandations, puis crée une feuille de route exploitable pour que l&#x27;organisation fasse ses propres choix éclairés sur les prochaines étapes possibles à mesure qu&#x27;elle avance.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/remote_facilitation"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Facilitation à Distance</h1><p>Cette composante suggère des approches à utiliser si la facilitation en personne n&#x27;est pas possible, et pour inclure la participation du personnel ou des bureaux distants lorsqu&#x27;une organisation a plusieurs emplacements. Cela complète les exercices d&#x27;évaluation des données, de cartographie des processus et d&#x27;évaluation des menaces, leur permettant d&#x27;être menés à distance.
+
+Cela peut ne pas fournir des résultats aussi profonds que la facilitation en personne, mais devrait fournir des niveaux adéquats d&#x27;expansion et de vérification des informations nécessaires, et même fournir les avantages secondaires dans la plupart des cas d&#x27;aider le
+l&#x27;organisation développe une compréhension commune de ses processus, de ses risques et de sa tolérance aux risques.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/making_introductions"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Faire des présentations</h1><p>Faire l&#x27;introduction entre l&#x27;hôte et les ressources connues au besoin.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/password_strength"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Force du mot de passe</h1><p>Cet exercice aide l&#x27;auditeur à créer un dictionnaire efficace adapté à une organisation.
+
+Ce dictionnaire peut alors être utilisé de différentes manières :
+
+* En utilisant les exemples référencés dans le [Mot de passe WPA
+Cracking](#wpa-password-cracking), l&#x27;auditeur peut attaquer les mots de passe wifi faibles, qui présentent un moyen non personnel et non perturbateur de démontrer les problèmes de sécurité des mots de passe. Les mots de passe Wi-Fi faibles sont particulièrement problématiques, car les signaux Wi-Fi sont souvent accessibles en dehors des limites physiques d&#x27;un bureau, mais offrent un accès complet au réseau privé.
+* Un auditeur peut montrer ou discuter de sa stratégie de personnalisation préférée et des outils (comme JtR) qui &quot;mutent&quot; automatiquement les mots de passe avec des chiffres, des majuscules, etc., pour démontrer la puissance d&#x27;un ordinateur pour contourner rapidement les &quot;astuces&quot; courantes
+* Un auditeur peut également utiliser une &quot;enquête&quot; sur les mots de passe pour comprendre les pratiques en matière de mots de passe au sein de l&#x27;organisation.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/policies_informal"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Identification des accords informels</h1><p>L&#x27;activité vise à évaluer quels types d&#x27;accords informels concernant les meilleures pratiques et les directives de sécurité sont formulés, consultés, mis en œuvre et/ou appliqués dans l&#x27;ensemble de l&#x27;organisation
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/identify_useful_resources"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Identification des ressources</h1><p>Dans ce composant, l&#x27;auditeur documente les ressources que l&#x27;hôte peut être en mesure 
+d&#x27;exploiter pour résoudre les vulnérabilités techniques, réglementaires, organisationnelles ou 
+comportementales 
+identifiées lors de l&#x27;audit.
+
+Cela peut inclure, mais sans s&#x27;y limiter, le support technique local et les groupes/organisations commerciales d&#x27;intervention en cas d&#x27;incident, 
+les endroits où obtenir des logiciels à prix réduit, 
+les formateurs et les guides/ressources qu&#x27;ils peuvent utiliser pour soutenir leur perfectionnement.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/incident_response"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Intervention en cas d&#x27;incident et contact d&#x27;urgence</h1><p>La réponse aux incidents dans le cadre d&#x27;un audit fait référence à la mise en place d&#x27;un
+procédure de traitement des incidents lors d&#x27;un audit dans le cas où l&#x27;auditeur
+provoque ou découvre un incident de sécurité au cours de l&#x27;évaluation.
+[^NIST_SP_800-115-Section_7.1]^,^[^PETS_emergency_contact]
+
+Il est important de connaître ces procédures de gestion des incidents afin de protéger l&#x27;intégrité des données et de créer une piste d&#x27;audit à utiliser pour les enquêtes et la collecte d&#x27;informations.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/evidence_capture"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">La criminalistique numérique et la collecte de preuves</h1><p>Cette composante présente les outils et les procédures nécessaires à l&#x27;acquisition de l&#x27;image (vivante ou morte, selon la situation) et au traitement sécurisé des données d&#x27;un appareil (ordinateur portable, ordinateur de bureau, disque dur, carte mémoire, clé USB, etc.) qui sont nécessaires pour effectuer ultérieurement une analyse de logiciels malveillants ou un processus de preuve médico-légale.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/interviews"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Les entretiens</h1><p>L&#x27;auditeur mène des entretiens avec divers membres du personnel pour recueillir des informations sur les risques et la capacité de l&#x27;organisation.
+
+Les sessions de questions-réponses sont sans aucun doute des aspects _boîte blanche_ d&#x27;une évaluation de sécurité, et
+vous entendrez de temps en temps des refoulements du type &quot;Vous n&#x27;auriez pas
+trouvé cette chose si nous ne vous avions pas parlé de cette autre chose.
+Les conclusions de la _boîte noire_ ont certainement un avantage lorsqu&#x27;il s&#x27;agit de
+force de persuasion, mais les obtenir peut prendre beaucoup de temps, donc compter sur
+exclusivement sur les vulnérabilités que vous pouvez identifier sans &quot;aide&quot; est
+généralement une erreur dans ce secteur aux ressources limitées.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/impact_found_device"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Les impacts d&#x27;un appareil &quot;trouvé&quot;</h1><p>Diriger le personnel dans une activité identifiant quelles données critiques (telles qu&#x27;identifiées lors de l&#x27;évaluation des données) seraient disponibles si un adversaire avait accès à divers appareils.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/impact_lost_device"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Les impacts d&#x27;un appareil perdu</h1><p>Diriger le personnel dans une activité où il décrit l&#x27;impact si divers appareils étaient détruits.overview: |
+Diriger le personnel dans une activité où il décrit l&#x27;impact si divers appareils étaient détruits.materials_needed: &#x27;&#x27;
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/capacity_assessment_cheatsheet"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Liste de contrôle pour l&#x27;évaluation des capacités</h1><p>Il n&#x27;est pas toujours possible ou souhaitable d&#x27;avoir un entretien monolithique et unique, mais l&#x27;interaction avec une variété de membres du personnel expose des informations précieuses sur tous les aspects de l&#x27;audit, des vulnérabilités aux capacités en passant par les obstacles cachés. Ce document sert d&#x27;&quot;aide-mémoire&quot; sur certains sujets à explorer
+pendant la phase de planification et de préparation et tout au long du processus d&#x27;audit.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/office_mapping"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Mappage de bureau</h1><p>Cette activité vise à identifier les vulnérabilités physiques potentielles aux pratiques de sécurité de l&#x27;information d&#x27;une organisation en documentant l&#x27;aménagement physique actuel du bureau et l&#x27;emplacement des actifs clés, ainsi que les risques « externes » potentiels tels que les espaces de bureau à proximité/partagés.
+
+Cela peut être fait en personne indépendamment ou en parallèle de l&#x27;activité &quot;Visite guidée&quot;, et peut également être fait en amont d&#x27;une évaluation ou à distance par un membre du personnel volontaire qui sait où se trouvent ces actifs (souvent un membre du personnel technique ou administratif). Cela peut également être effectué dans un environnement multi-bureaux ou à domicile où l&#x27;auditeur n&#x27;est pas en mesure de visiter tous les sites.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/pre_mortum_risk_assessment_activity"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Modélisation des risques en utilisant la stratégie pré-mortem</h1><p>La stratégie pré-mortem a été conçue pour sortir les participants d&#x27;une perspective de défense de leurs plans et stratégies et se protéger des failles. On leur donne &quot;une perspective où ils [recherchent] activement les failles de leur propre plan&quot;. [^pré-mortum].
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/traffic_analysis"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Network Traffic Analysis</h1><p>Any content that is sent out over the network without encryption is easy to
+intercept; this includes email, web passwords, and chat messages.
+
+This attacker could be someone, such as a patron of the Internet cafe where a
+staff member is working, who just happens to be using the same local network
+to connect to the Internet. Or, she could work for an organization with
+privileged access to the relevant network, such as the Internet Service
+Provider (ISP) of either the sender or receiver and other network-backbone
+connections made along the way.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/assessment_plan"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Plan d&#x27;évaluation</h1><p>Ce composant permet à un auditeur et à l&#x27;hôte de s&#x27;entendre sur le niveau d&#x27;accès de l&#x27;auditeur, sur ce qui est interdit et sur le processus à suivre.
+d&#x27;accès dont disposera l&#x27;auditeur, de ce qui est hors limites et du processus de
+et le processus de modification de la portée de l&#x27;audit lorsque de nouvelles informations apparaissent.
+[^PETS_legal_considerations]^,^[^PETS_separate_permissions] Cette composante consiste en un processus au cours duquel l&#x27;auditeur crée un plan d&#x27;évaluation en collaboration avec des membres clés de l&#x27;organisation. 
+L&#x27;un des principes fondamentaux de SAFETAG consiste à inciter les organisations à améliorer leur sécurité numérique. À cette fin, la création d&#x27;un plan d&#x27;évaluation en collaboration avec l&#x27;organisation permet de clarifier non seulement la portée de l&#x27;audit - de la discussion des données sensibles susceptibles d&#x27;être exposées aux systèmes susceptibles d&#x27;être perturbés au cours de l&#x27;audit - mais elle permet également de révéler la capacité de l&#x27;organisation à soutenir et à répondre aux résultats de l&#x27;audit.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/interviews_highrisk"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Questions d&#x27;orientation pour les organisations à haut risque</h1><p>Cette activité d&#x27;entretien supplémentaire consiste à identifier s&#x27;il existe des indicateurs indiquant que l&#x27;organisation a peut-être déjà été attaquée et/ou compromise, ou si quelqu&#x27;un qu&#x27;ils connaissent a fait face à des menaces avancées. Cela devrait aider à identifier les menaces / acteurs de la menace auxquels ils sont confrontés et leur intention. Cela aidera l&#x27;auditeur à hiérarchiser le travail avec l&#x27;organisation pendant l&#x27;audit et à effectuer un suivi et à comprendre si l&#x27;auditeur possède l&#x27;expertise pour traiter ou comprendre la menace ou si une expertise externe est nécessaire.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/automated_recon"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Reconnaisance automatisée</h1><p>Ce composant permet à l&#x27;auditeur d&#x27;identifier rapidement les ressources publiques disponibles
+ressources accessibles au public (telles que les sites Web, les extranets, les serveurs de messagerie, mais aussi les médias sociaux) connectées à l&#x27;organisation et de recueillir à distance des informations sur ces ressources.
+mais aussi les médias sociaux) connectées à l&#x27;organisation et de collecter à distance des informations
+sur ces ressources.
+
+Alors qu&#x27;une grande partie de SAFETAG se concentre sur les défis de la sécurité numérique à l&#x27;intérieur et autour du bureau, les attaques à distance contre l&#x27;organisation peuvent également se produire.
+et autour du bureau, les attaques à distance sur le site web de l&#x27;organisation, les extranets et les réseaux sociaux sont des exemples d&#x27;attaques de ce type.
+les informations involontaires disponibles à partir de &quot;sources ouvertes&quot; constituent toutes des menaces réelles et méritent une attention particulière.
+méritent une attention particulière. SAFETAG prend grand soin d&#x27;adopter une approche très
+d&#x27;adopter une approche très passive de ce travail, surtout lorsqu&#x27;il est réalisé hors site, afin de ne pas
+avoir des conséquences inattendues sur l&#x27;infrastructure de l&#x27;organisation ou de saper les
+les préoccupations de sécurité opérationnelle.
+
+Ce travail à distance permet également à l&#x27;auditeur d&#x27;appréhender la présence numérique de l&#x27;organisation (et de ses partenaires).
+de la présence numérique de l&#x27;organisation (et de sa propre compréhension de celle-ci), et
+orientera les vulnérabilités spécifiques à examiner une fois sur place.overview: |
+* Reconnaissance passive
+* Identifier la disponibilité en ligne des informations sur le personnel, les partenaires, les bénéficiaires et les projets en cours. [^PETS_logical_intel]
+* Rechercher sur les sites &quot;paste-bin&quot; des fuites d&#x27;informations internes ou des exploitations existantes de leur infrastructure.
+* Créer des clés API pour les services de Recon-ng à utiliser. [^recon-ng_API_keys]
+* Utilisez recon-ng pour effectuer une reconnaissance automatisée des sources ouvertes sur le Web. [^recon-ng_data_flow]
+**Résultats attendus
+* Dossier d&#x27;informations sur les organisations, les partenaires et les bénéficiaires des &quot;sources ouvertes&quot; exposées en ligne.
+* Liste des adresses e-mail des membres de l&#x27;organisation.
+* Identification et cartographie des services externes et des services internes involontairement exposés.
+* Les vulnérabilités possibles des sites Web et des serveurs externes de l&#x27;organisation.
+* Informations existantes sur les violations antérieures identifiées lors de la recherche dans la corbeille à papier.
+* Suivre le plan de réponse aux incidents approprié si des problèmes à haut risque sont identifiés.materials_needed: &#x27;&#x27;
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/data_lost_and_found"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Risques de perte et de découverte des données</h1><p>Demandez au personnel de classer l&#x27;impact si différentes données au sein de l&#x27;organisation ont été perdues, et l&#x27;impact si divers adversaires ont eu accès à ces données.overview: &#x27;&#x27;
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/follow_up_meeting"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Réunion de suivi</h1><p>Planifiez et organisez un appel de suivi pour discuter du rapport d&#x27;audit. Cela fournit un point de contact précieux pour que l&#x27;organisation lise le rapport et pose des questions de clarification à l&#x27;auditeur, ainsi que pour que l&#x27;auditeur souligne toutes les étapes importantes pour l&#x27;organisation.overview: |
+* Parcourez le rapport et discutez des résultats prioritaires
+* Planifier un appel d&#x27;enregistrement à long terme
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/policies_review"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Révision des politiques de sécurité</h1><p>L&#x27;activité vise à comprendre le contexte de la politique de sécurité interne de l&#x27;organisation, à rechercher les politiques existantes, à comprendre comment elles se traduisent en pratique et/ou sont appliquées, à les évaluer et à détecter les améliorations ou mises à jour potentielles.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/self_doxing"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Self Doxing</h1><p>This helps identify personal information online, and its risk in enabling doxing.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/sensitive_data"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Sensitive Data</h1><p>Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or projects use cloud services like Dropbox or Google Drive for some activities, a shared server for others, and a mix of work and personal devices (laptops, phones, tablets...).
+
+This is natural, but it is important to keep track of where your organization&#x27;s data lives and who can access it.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/social_engineering"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Social Engineering</h1><p>This component focuses on assessing and educating organizational staff on how
+to prevent, identify, and respond to social engineering attempts (Phishing,
+information gathering, cons) that lead to Malware and handing over
+authentication tokens/information.
+
+The educational activities within this section are provided as an alternative
+to actual social engineering attacks against the organization. Audits of
+individual level behavior have a high chance of embarrassing or alienating the
+targeted staff. The result of this embarrassment can range from increased
+enthusiasm for the process to disengaging entirely. Supporting post-audit
+investment in the process is a core component of many activities. The
+possibility of derailing the investment the auditor has built during the audit
+makes social engineering attacks too large of a risk.
+[^stares_and_snide_comments] The security of a organization requires an
+investment by the entire staff. [^social_engineering_important_all] Activities
+like the social engineering activity aim to empower staff to start identifying
+their responsibility for the organizational safety.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/password_security"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Sondage sur la sécurité du mot de passe</h1><p>Les mots de passe faibles et &quot;partagés&quot; sont répandus - même après des centaines de violations de mots de passe mondiales très médiatisées, &quot;mot de passe&quot; et &quot;12345&quot; restent les mots de passe les plus populaires, et la réutilisation des mots de passe est courante. Les mots de passe Wi-Fi faibles sont particulièrement problématiques, car les signaux Wi-Fi sont souvent accessibles en dehors des limites physiques d&#x27;un bureau, mais offrent un accès complet au réseau privé.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/physical_security_survey"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Sondage sur la sécurité opérationnelle</h1><p>Cette activité aide l&#x27;auditeur à évaluer les politiques et pratiques de sécurité opérationnelles actuelles de l&#x27;organisation par le biais d&#x27;enquêtes et/ou d&#x27;entretiens en personne ou à distance. En demandant également d&#x27;examiner et d&#x27;officialiser les politiques ainsi qu&#x27;en effectuant plusieurs itérations de celles-ci avec différents membres du personnel, une vérification de base des pratiques et de la connaissance/compréhension des politiques existantes peut être réalisée
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/staff_feedback_survey"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Staff Feedback Survey</h1><p>Providing a space for anonymous, guided feedback is valuable to gather
+information about how your audit work and the SAFETAG framework itself are
+supporting organizational understanding of risk and their ability to adapt.
+This long-term capacity building is critical to the SAFETAG framework, so
+finding ways to measure the impact of an audit towards these goals is
+important.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/long_term_follow_up"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Suivi à long terme</h1><p>Faites un suivi avec l&#x27;hôte après quelques mois pour vérifier les progrès, obtenir des rétroactions à long terme et vous connecter à de nouvelles ressources.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/monitor_open_wireless_traffic"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Surveiller le trafic sans fil ouvert</h1><p>Il peut être utile d&#x27;écouter le trafic sans fil diffusé à l&#x27;emplacement physique du bureau, avant même de savoir quoi que ce soit sur le réseau de l&#x27;organisation lui-même. Cette collecte d&#x27;informations passive extérieure peut révéler une quantité surprenante de données non seulement sur les appareils qui se connectent à quels réseaux, mais aussi sur
+également de quel type d&#x27;appareils il s&#x27;agit (en fonction de leurs adresses MAC uniques), et
+à quels autres réseaux ces appareils se sont historiquement connectés. Ces sondes peuvent révéler des informations personnelles, organisationnelles, de localisation et d&#x27;appareil qui, prises dans leur contexte, peuvent être dangereuses ou entraîner d&#x27;autres vulnérabilités.overview: |
+Chaque appareil sans fil conserve une &quot;mémoire&quot; des réseaux auxquels il s&#x27;est connecté avec succès. Lorsqu&#x27;il se connecte à un réseau, il envoie des &quot;sondes&quot; à tous les réseaux qu&#x27;il a dans cette mémoire. Il est important de noter que ces données sont largement diffusées et peuvent être collectées sans aucun accès au réseau, uniquement à proximité de l&#x27;appareil.
+
+Ces sondes de réseau peuvent souvent contenir des noms (en particulier des attaches de téléphone mobile), des affiliations organisationnelles, des fabricants d&#x27;appareils et un mélange d&#x27;autres données potentiellement précieuses (noms de réseau domestique, aéroports/voyages récents
+lieux, cafés et réseaux de conférences). S&#x27;il existe de nombreux réseaux à proximité du bureau, cette activité peut également aider à identifier le réseau du bureau spécifique (en cas de doute). Dans de nombreux cas, une organisation peut ne pas souhaiter que le nom de son réseau sans fil soit associé à son organisation,
+mais il peut être révélé par ces métadonnées supplémentaires.
+
+Les balises peuvent &quot;désanonymiser&quot; un nom de réseau masqué et fournir un contenu riche pour les attaques d&#x27;ingénierie sociale. Cela fournit une introduction peu invasive pour discuter de la traçabilité des appareils, en particulier des mobiles et des ordinateurs portables.
+
+* Recherchez les réseaux sans fil à proximité, identifiez (et confirmez) le ou les réseaux du bureau.
+* Surveiller le trafic de ce réseau et capturer des métadonnées potentiellement sensibles
+(paramètres de sécurité sans fil, balises et adresses MAC).
+* Recherchez le matériel de périphérique probable à l&#x27;aide d&#x27;adresses MAC.
+* Les appareils du personnel divulguent-ils des métadonnées sensibles ?
+* Que peut-on déterminer sur l&#x27;organisation en fonction des données diffusées sans fil ?
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/suspicious_activity_analysis"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Suspicious Activity Analysis</h1><p>Malware is a common tactic to target organizations. Malware like a Remote
+Access Trojan (or RAT) can provide an attacker with backdoor access to a
+targeted machine, enabling the attacker to steal information, record audio and
+video, as well as run commands on the infected machine.
+
+To stop this from happening, you have to identify the malicious process within the system and stop it, or reformatting the machine in case you don’t feel spending time on stopping the malicious process.
+
+It’s important to keep evidence, in case the auditee still has access to the original malicious software they received (e.g., an email, etc.), keep a copy of the file if you have the time and expertise to continue investigating or have the resources to submit it to other organizations working on analyzing such issues.
+
+Scanning the possible infected machine or the original suspicious file with an anti-virus will save you time and effort, in the case such malware is already in its database. Scanning should always be the first step, preventing you from spending excess time if the machine was infected with a less serious piece of malware.
+
+After determining the machine is infected, you can proceed in helping the staff member back up their information, scanning the files for malware, then reformatting the infected machine. Note, it is very difficult to clean an infected machine if you only have a short window of time.
+
+In case the machine was infected, taking an image of the operating system will allow you to replicate the infected machine and run it after you finish your audit for a more in-depth investigation or send it to an expert to work on investigating the malware. Note, this also can be difficult in an audit setting where time is limited. Also see operational security considerations that come with replicating the files of a staff member of a sensitive organization. Be sure this is absolutely necessary and the staff members provides consent before completing.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/technical_context_research"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Technical Context Research</h1><p>Research the technical capacity of potential threat actors, including both historical attack data and any indicators of changes to their capacity.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/threat_identification"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Threat Identification</h1><p>These activities build off of a process or data mapping exercise to connect
+actual processes or assets and data of the organization with potential
+threats, then drilling down into specific, likely threats the organization
+faces, adversaries who might take advantage of them, and the impact of this
+happening.
+
+The goal is to be able to answer the following questions:
+
+**Threat History**
+
+* What history of attacks does the threat actor have?
+* What techniques have they used? Have they targeted vulnerabilities that the
+organization currently has?
+* What is known about the types of threats used by an threat actor to attack
+similar organizations?
+
+**Threat Capability**
+
+* Does the threat actor have the means to exploit a vulnerability that the
+organization currently has?
+* Does the threat actor have the means to leverage widespread threats against
+all similar organizations, or will they have to prioritize their targets?
+
+**Threat Intent**
+
+* Have they targeted similar organizations?
+* Does the threat actor currently have the desire to conduct an attack against
+this type of organization?
+* Is the organization a priority threat target for the threat actor?
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/threat_interaction"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Threat Interaction</h1><p>This helps the auditor enumerate threats that the organization is concerned
+about and the internal priorities of them.  At the same time, it enables a
+discussion of how threats can interrelate and helps define the difference
+between a threat and a risk (a threat that has a vulnerability associated with
+it), and the value of mitigation.
+
+This exercise works well with larger groups, and can be woven in to the Threat
+Identification activity.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/day_in_the_life"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Un jour dans la vie</h1><p>L&#x27;auditeur vérifie les appareils du personnel pour les systèmes et logiciels mis à jour, les antivirus et autres capacités de sécurité, et identifie les logiciels exécutés sur les ordinateurs et leur version actuelle. L&#x27;auditeur vérifie les vulnérabilités connues de tout logiciel obsolète.
+
+Ceci est utilisé pour développer un composant de rapport exposant comment un logiciel non mis à jour peut entraîner de grandes vulnérabilités.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/night_in_the_life"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Une nuit dans la vie</h1><p>L&#x27;auditeur interroge le personnel sur ses pratiques, ses appareils personnels, ses logiciels et autres capacités de sécurité qu&#x27;il utilise en dehors du travail. L&#x27;auditeur vérifie les vulnérabilités connues de tout logiciel obsolète et identifie les risques dans les pratiques et les comportements.
+
+Ceci est utilisé pour développer un composant de rapport exposant comment les pratiques en dehors de leur travail peuvent affecter leur sécurité personnelle et celle de l&#x27;organisation.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/guided_tour"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Visite guidée</h1><p>Au cours de cette composante, un auditeur visite le(s) lieu(x) d&#x27;audit et signale les risques potentiels liés à l&#x27;accès physique à cet endroit.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/voip_assessment"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">VoIP Security Assessment</h1><p>VoIP technologies are commonly used nowadays as it provides an alternate
+flexible way of communication. With its numerous benefits, from toll-bypass,
+unified voice and data trunking and universally accessible voice-mail and
+fax-mail services, VoIP services has indeed come into its place as one of the
+most used communication services today. However, with the rise of cyber
+attacks, and the reality that any device that connects online can be a
+potential risk for attacks, VoIP has been on of the favorite target of spam,
+Interruptions, Voice phishing Hacking and privacy loss.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/vulnerability_research"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Vulnerability Research</h1><p>After scanning and identifying which (if any) vulnerabilities are present within the software and systems of an organization, dig deeper to understand the impact of these vulnerabilities, possible evidence that they may have been exploited, and develop recommendations to remediate and avoid future instances of unpatched vulnerabilities.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/check_config_files"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Vérifier les fichiers de configuration</h1><p>Examinez les fichiers de configuration à la recherche de vulnérabilités à l&#x27;aide de guides de &quot;renforcement&quot; ou d&#x27;&quot;erreurs courantes&quot; trouvés en ligne.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/check_user_browser_vulns"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Vérifier les vulnérabilités des navigateurs et des plugins</h1><p>S&#x27;assurer que les navigateurs utilisés ont des plugins mis à jour et sont eux-mêmes mis à jour.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/wep_password_cracking"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">WEP Password Cracking</h1><p>WEP provides no effective protection for a wifi network. Most wifi routers
+offer WPA encryption as an option, and if this is available it should be
+immediately implemented. Some older routers (and wifi devices) do not support
+WPA. It is highly recommended to upgrade immediately to hardware that supports
+WPA and to eliminate all WEP network access.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/wpa_password_cracking"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">WPA Password Cracking</h1><p>The organization’s wireless Local Area Network (WLAN) protects the network and
+its users with WPA encryption. This is an important security measure, and a
+WPA-protected wireless network is much safer than an unencrypted “open”
+network or a WEP-protected network. (WEP is fundamentally flawed, and
+extremely simple attacks have been widely known for over a decade.) However,
+the ease with an attacker could guess the WPA key, or “WiFi password,” is a
+serious issue, particularly considering its importance as an essential
+perimeter control. An attacker who gains access to the wireless LAN
+immediately bypasses many protections that network administrators, and other
+users of the office network, often take for granted. Put another way, anyone
+able to guess the WPA key is immediately “inside the firewall.”
+
+Using a laptop and a wireless card with a standard, internal antenna (or using
+a customized smartphone or other small device), an attacker could easily
+position themselves close enough to the office to carry out the first phase of
+this attack, which would only take a few minutes. The second phase, which is
+supposed to be the difficult part, could take even less time. From the privacy
+of their own home or office, the attacker could use a minimally customized
+password dictionary to guess the WPA key .
+
+
+&lt;!--For reporting, needs time-to-break WPA password --&gt;
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/wps_pin_cracking"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">WPS PIN Cracking</h1><p>WPS was built as an addition to WPA to make it easier to add devices without
+typing in secure passwords, but this ease of use means that a malicious actor
+can pose as a device and effectively reduce the potentially very difficult
+passwords WPA allows down to a simple numeric-only 8 character PIN. Further,
+the WPS system allows an attacker to work on this PIN in two parallel chunks,
+further reducing its security. This, like WEP, is a &amp;quot;live&amp;quot; attack -
+you have to stay connected to the network - but also like WEP, it is a
+guaranteed attack; your brute forcing of the WPS system will eventually (2-10
+hours) allow you network access. 
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/web_vulnerability_assessment"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Web Vulnerability Assessment</h1><p>Organizational websites are often a central part of their work, but resource
+constraints can leave them vulnerable to a wide variety of attacks, from
+simple DDoS (Distributed Denial of Service) attacks to being leveraged for
+online scams and malicious advertisin to targeted distruction and subversion.
+Insecure websites can even be used in &quot;watering hole&quot; attacks where malware is
+implanted into the site to intentionally target the website&#x27;s audience.
+
+This activity provides a SAFETAG auditor with a suite of processes and tools to investigate organization and project websites for potential vulnerabilities.  There are multiple ways to do this, from passive to more active scanning. SAFETAG takes great care to take a primarily passive approach to this work, especially when done off-site, so as not to have unintended consequences on the organization&#x27;s infrastructure or undermine operational security concerns. Care should be taken to review operational security concerns, work closely with the organization, and pursue a minimal approach focused on the priorities of the organization. See also the [Vulnerability Scanning activity](https://safetag.org/activities/vulnerability_scanning) for additional tools and approaches useful for investigating outside of the website itself the server level.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/web_footprint"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Website Footprinting</h1><p>Using online tools as a starting point in assessing the auditee web application is a good way to expand online reconnaisance as well as start your vulnerability assessment. You can build a profile and a good understanding of the web application by identifying what comprises the web application and technologies behind. From there you can start your next move by putting together different strategies on conducting your vulnerability assessment.
+
+For example, after discovering accessable web directories, you can then start looking for forgotten or abandoned files and applications that might contain sensitive information like (Passwords) or an outdated and vulnerable applications.  Content management systems, while powerful, require ongoing maintenance and updates to stay secure. Quite often these (or specific plugins) fall out of date and become increasingly vulnerable to automated as well as targeted attacks.
+
+Online tools offer ways of performing &quot;passive&quot; scans, in which your identity is hidden from the target organization, in cases where there are IDS/IPS, firewalls deployed. These should be used in conjuction with other outputs from reconnaisance to determine platforms and hosts which are out of scope.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/wireless_range_mapping"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Wireless Range Mapping</h1><p>This component allows the auditor to show the &quot;visibility&quot; of an
+organization&#x27;s wireless network to determine how far the organization&#x27;s
+wireless network extends beyond a controlled area. Wireless networks are often
+trusted as equivalent to the hardwired office networks they have largely
+replaced, but they have important differences. Wireless networks are often
+&quot;visible&quot; from outside the walls of the office - from common spaces or even
+the street. Without further access, this reveals a wealth of information about
+the organization&#x27;s size and the type of devices connecting to their network.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/dns_enumeration"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Énumération DNS</h1><p>DNS est l&#x27;abréviation de Domain Name Service. En résumé, il s&#x27;agit de traduire
+le nom des hôtes/ordinateurs en adresses IP. Il fournit un moyen de connaître l&#x27;adresse IP d&#x27;une machine donnée sur Internet, avec l&#x27;URL ou le domaine correspondant. On peut le considérer comme un annuaire téléphonique de l&#x27;Internet.
+
+L&#x27;énumération des DNS est l&#x27;une des premières étapes de l&#x27;évaluation et de l&#x27;audit de la vulnérabilité. C&#x27;est une étape qui vous permettra de découvrir d&#x27;autres
+cibles potentielles. À l&#x27;issue de cette étape d&#x27;évaluation, vous pourrez trouver
+des problèmes tels que des fuites d&#x27;informations causées par des paramètres par défaut et des mauvaise configuration du serveur. En plus de cela, vous pouvez également avoir un champ plus large de cibles, comme les adresses IP des serveurs internes, les blocs réseau de l&#x27;entreprise et les noms de domaine/sous-domaine.
+
+L&#x27;énumération DNS peut être accomplie avec un nombre différent d&#x27;outils et d&#x27;approches. Ce guide aborde certaines de ces approches et les outils nécessaires pour réaliser chacune de ces activités. Vous pouvez effectuer l&#x27;énumération DNS de manière passive ou active, en fonction de vos besoins opérationnels en matière de sécurité.
+
+**L&#x27;approche passive**, ou indirecte, fait référence au processus d&#x27;énumération qui n&#x27;envoie aucun trafic ou paquet depuis votre ordinateur, directement vers votre
+cible. Cela peut être fait en utilisant des outils tiers tels que des outils en ligne et des scanners basés sur le cloud.
+
+L&#x27;approche **Active**, ou &quot;directe&quot;, consiste à envoyer des requêtes DNS et des tests d&#x27;énumération directement à la cible. Il faut considérer que du trafic est envoyé sur la cible ce qui peut laisser des traces ou des journaux de trafic provenant de votre IP source. Les techniques actives comprennent le transfert de zone, la recherche inversée, le forçage brutal du domaine et de l&#x27;hôte, l&#x27;enregistrement standard et la vérification de l&#x27;identité (wildcard, SOA, MX, A, TXT, etc.), Cache snooping, et Zone Walkingoverview: |
+* En utilisant une variété de techniques passives et actives, découvrez autant de
+domaines/sous-domaines liés à l&#x27;organisation cible que possible.
+* Utilisez-les pour faire avancer d&#x27;autres aspects de votre travail afin de découvrir des informations d&#x27;identification supplémentaires et des services potentiellement vulnérables ou obsolètes.
+
+**Résultats attendus**
+
+* Une carte plus complète de la présence en ligne de l&#x27;organisation, y compris les hôtes/services supplémentaires (potentiellement oubliés) liés à l&#x27;organisation.
+*Domaines + adresses IP
+* Sous-domaines + adresses IP
+* Enregistrements MX + adresses IP
+* Clés DNS
+* Enregistrements SOA, enregistrements DNS et registraire
+* Domaines hébergés dans la même adresse IP
+* Enregistrements de l&#x27;historique DNS
+* Réputation de domaine (Web of Trust)
+* Certaines de ces informations peuvent déjà vous donner une idée de la configuration de l&#x27;infrastructure de votre cible. Par exemple, vous pouvez voir si le domaine cible entre dans un CDN (réseau de diffusion de contenu) ou parfois des services d&#x27;atténuation DDoS en découvrant ses enregistrements NS. Vous pouvez également identifier si les enregistrements MX de la cible se trouvent derrière un système DLP (Data Leakage Prevention).
+* La sortie de votre énumération DNS peut contenir &quot;plus&quot; d&#x27;informations sur l&#x27;organisation cliente (enregistrements DNS internes, noms d&#x27;hôte, noms de routeur, adresses IP supplémentaires). Ces données sont parfois causées par un DNS mal configuré ou des configurations de service par défaut, alors recherchez les résultats trompeurs et faussement positifs.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/device_checklist"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Évaluation de l&#x27;appareil et du comportement</h1><p>L&#x27;auditeur vérifie les appareils du personnel pour les systèmes et logiciels mis à jour, les antivirus et autres capacités de sécurité, et identifie les logiciels exécutés sur les ordinateurs et leur version actuelle. L&#x27;auditeur vérifie les vulnérabilités connues de tout logiciel obsolète.
+
+Ceci est utilisé pour développer un composant de rapport exposant comment un logiciel non mis à jour peut entraîner de grandes vulnérabilités.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/cloud_services"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Évaluation de l&#x27;utilisation des services cloud</h1><p>Au cours de l&#x27;évaluation organisationnelle, vous rencontrerez presque certainement des fournisseurs de services cloud tiers utilisés par l&#x27;organisation auditée.
+L&#x27;organisation peut être intéressée par votre évaluation de la sécurité de ces services. Cela vous pose plusieurs défis en tant qu&#x27;auditeur :
+* l&#x27;audit d&#x27;applications Web tierces n&#x27;entre presque certainement pas dans le cadre de la mission d&#x27;audit
+* vous n&#x27;avez probablement pas d&#x27;accord avec le fournisseur de services pour scanner leur application
+* une évaluation appropriée prendrait plus de temps que ce qui est disponible pour l&#x27;audit organisationnel
+* vous ne connaissez peut-être pas le service ou la technologie sur laquelle il est construit
+Malgré ces défis, des processus organisationnels importants et des données sensibles peuvent résider ou dépendre de ces applications tierces. Il peut être important pour l&#x27;audit de fournir une enquête préliminaire et une évaluation des risques sur l&#x27;utilisation de tout service cloud tiers sur lequel ils s&#x27;appuient.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/remote_asset_valuation"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Évaluation des actifs à distance</h1><p>La clé de l&#x27;évaluation des risques consiste à identifier et à comprendre ce que l&#x27;organisation essaie de protéger, ou les “actifs” au sein d&#x27;une organisation. Dans cet exercice, nous examinerons spécifiquement les * actifs informationnels * au sein d&#x27;une organisation.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/mobile_device_survey"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Évaluation des appareils mobiles</h1><p>L&#x27;auditeur vérifie le type d&#x27;appareils mobiles dans les organisations
+Suit une série d&#x27;étapes en fonction des différents appareils mobiles.
+
+Les considérations clés concernant les appareils mobiles sont l&#x27;utilisateur, le type
+de l&#x27;appareil et les données qu&#x27;il gère.
+- les données sont conservées en toute sécurité ;
+- l&#x27;appareil est configuré avec les paramètres de sécurité recommandés ;
+- les politiques et procédures organisationnelles relatives aux appareils mobiles ;
+- Dans le cas d&#x27;appareils appartenant à l&#x27;organisation, cette direction a le contrôle de ses facilités.
+
+Ces considérations contribuent à l&#x27;élaboration de la composante du rapport.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 jupCbP bIuAFx" hrefLang="fr" href="/fr/activities/remote_network_device_assessment"><h1 class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 gvOrJn gVieEx">Évaluation à distance du réseau et des appareils utilisateur</h1><p>Ce composant permet à l&#x27;auditeur de travailler à distance pour identifier les appareils sur le réseau d&#x27;un hôte, les services utilisés par ces appareils et toutes les protections en place, ainsi que pour évaluer la sécurité des appareils individuels sur le réseau.
+</p></a></li></ul></div></section></article></main><footer role="contentinfo" class="page-footer__PageFoot-sc-1wx9oy3-0 hLTPzn"><div class="constrainer__Constrainer-sc-vi2beb-0 page-footer__PageFootInner-sc-1wx9oy3-1 kFlfln kvKyNW"><p class="page-footer__PageCredits-sc-1wx9oy3-2 fdMdPB">© 2023 SAFETAG™: A Project of Internews</p><p class="page-footer__PageSocial-sc-1wx9oy3-3 jzErNF"><a href="/contact">Contact us</a></p><p class="page-footer__PageNetlify-sc-1wx9oy3-4 jKPPkQ"><a href="https://www.netlify.com"><img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify"/></a></p></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+    window.dev = undefined
+    if (window.dev === true || !(navigator.doNotTrack === '1' || window.doNotTrack === '1')) {
+      window._paq = window._paq || [];
+      
+      
+      
+      
+      
+      window._paq.push(['setTrackerUrl', 'https://stats.openinternetproject.org/piwik.php']);
+      window._paq.push(['setSiteId', '1']);
+      window._paq.push(['enableHeartBeatTimer']);
+      window.start = new Date();
+
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://stats.openinternetproject.org/piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+      if (window.dev === true) {
+        console.debug('[Matomo] Tracking initialized')
+        console.debug('[Matomo] matomoUrl: https://stats.openinternetproject.org, siteId: 1')
+      }
+    }
+  </script><noscript><img src="https://stats.openinternetproject.org/piwik.php?idsite=1&rec=1&url=https://dev.safetag.org/fr/activities/" style="border:0" alt="tracker" /></noscript><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/fr/activities/";window.___webpackCompilationHash="3645ca1a868eb7b2a913";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-2c6ad5e55565e8e2ded8.js"],"app":["/app-c64ce8afd35746923d15.js"],"component---src-components-layouts-activity-layout-js":["/component---src-components-layouts-activity-layout-js-0094433ba078c62e5896.js"],"component---src-components-layouts-method-layout-js":["/component---src-components-layouts-method-layout-js-779e22d031190f121489.js"],"component---src-components-layouts-post-layout-js":["/component---src-components-layouts-post-layout-js-f60ecde07c5eef247280.js"],"component---src-components-layouts-section-layout-js":["/component---src-components-layouts-section-layout-js-acc5d3246ff20e5feccc.js"],"component---src-components-layouts-tool-layout-js":["/component---src-components-layouts-tool-layout-js-bcc0d9a6d6a4216851cf.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7a434803fe5a128b4005.js"],"component---src-pages-about-js":["/component---src-pages-about-js-e7d13215ed124e704a16.js"],"component---src-pages-activities-js":["/component---src-pages-activities-js-7b44e80c99d89b65d021.js"],"component---src-pages-codeofconduct-js":["/component---src-pages-codeofconduct-js-7855db6cbe46906b0461.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-6182f55284c7bc8c4108.js"],"component---src-pages-credits-js":["/component---src-pages-credits-js-d179588bc0cfbf8b2846.js"],"component---src-pages-guide-builder-js":["/component---src-pages-guide-builder-js-689a3883a0ae25f82111.js"],"component---src-pages-guide-js":["/component---src-pages-guide-js-07be4ce0c497f4895879.js"],"component---src-pages-index-js":["/component---src-pages-index-js-f073d1279e0c8c891a43.js"],"component---src-pages-posts-js":["/component---src-pages-posts-js-e5cc9fbca34715ea4d5a.js"],"component---src-pages-search-js":["/component---src-pages-search-js-41200a9875e2335ea938.js"]};/*]]>*/</script><script src="/polyfill-2c6ad5e55565e8e2ded8.js" nomodule=""></script><script src="/app-c64ce8afd35746923d15.js" async=""></script><script src="/532a2f07-78716101081244111068.js" async=""></script><script src="/framework-5145ac8d2e5f3932fff6.js" async=""></script><script src="/webpack-runtime-25c040c588b202653c3e.js" async=""></script></body></html>
