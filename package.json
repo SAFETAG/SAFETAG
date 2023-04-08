@@ -27,7 +27,7 @@
     "gatsby-plugin-styled-components": "^5.20.0",
     "gatsby-remark-images": "^6.20.0",
     "gatsby-source-filesystem": "^4.20.0",
-    "gatsby-transformer-remark": "^5.20.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "hast-util-to-html": "^8.0.3",
     "i18next": "^21.9.0",
     "i18next-parser": "^6.5.0",
