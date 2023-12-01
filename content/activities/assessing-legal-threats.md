@@ -20,7 +20,9 @@ summary: This activity was built to assist civil society organizations (CSOs) in
   precedents from various contexts. Thus, its objective is to contribute to a
   culture of constant legal evaluation from within the organizations and with
   legal professionals.
-short_summary: " "
+short_summary: Based on organizational guiding questions that help better frame
+  and assess administrative or legal liability directly or indirectly derived
+  from their work.
 overview: >-
   By nature, the power asymmetries that civil society organizations challenge
   bring reactions that can come in the form of physical, digital, or
