@@ -7,7 +7,7 @@ import pickBy from "lodash.pickby"
 import values from "lodash.values"
 import MoreLink from "../styles/button/more-link"
 import queryString from 'query-string'
-import { navigate } from "@reach/router"
+import { navigate } from "gatsby";
 
 import keyBy from "lodash.keyby"
 

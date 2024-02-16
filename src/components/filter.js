@@ -10,8 +10,8 @@ import {
   ListboxGroup,
   ListboxGroupLabel,
 } from "@reach/listbox"
-import VisuallyHidden from "@reach/visually-hidden"
-import styled from "styled-components"
+import { VisuallyHidden } from "@reach/visually-hidden";
+import styled from "styled-components";
 import { themeVal } from "../styles/utils/general"
 import { antialiased } from "../styles/helpers"
 import { FormCheckable } from "../styles/form/checkable"

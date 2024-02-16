@@ -169,6 +169,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         gfm: true,
+        /*
         plugins: [
           `gatsby-remark-sectionize`,
           {
@@ -182,6 +183,7 @@ module.exports = {
             },
           },
         ],
+        */
       },
     },
     {
