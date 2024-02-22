@@ -1,6 +1,6 @@
-import React from "react"
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import PropTypes from "prop-types"
+import React from "react";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import PropTypes from "prop-types";
 import {
   ListboxInput,
   ListboxButton,
@@ -9,12 +9,12 @@ import {
   ListboxOption,
   ListboxGroup,
   ListboxGroupLabel,
-} from "@reach/listbox"
+} from "@reach/listbox";
 import { VisuallyHidden } from "@reach/visually-hidden";
 import styled from "styled-components";
-import { themeVal } from "../styles/utils/general"
-import { antialiased } from "../styles/helpers"
-import { FormCheckable } from "../styles/form/checkable"
+import { themeVal } from "../styles/utils/general";
+import { antialiased } from "../styles/helpers";
+import { FormCheckable } from "../styles/form/checkable";
 
 const FilterItem = styled(ListboxOption)`
   display: flex;
@@ -32,13 +32,13 @@ const FilterItem = styled(ListboxOption)`
       background: ${themeVal("color.primary")};
     }
   }
-`
+`;
 
 const FilterListHeader = styled(ListboxGroupLabel)`
   font-family: ${themeVal("type.heading.family")};
   font-weight: ${themeVal("type.heading.bold")};
   padding: 1rem;
-`
+`;
 
 const FilterButton = styled(ListboxButton)`
   ${antialiased()}
@@ -73,7 +73,7 @@ const FilterButton = styled(ListboxButton)`
     background: ${themeVal("color.mist")};
     border-color: ${themeVal("color.base")};
   }
-`
+`;
 
 const FilterPopover = styled(ListboxPopover)`
   max-height: 24rem;
@@ -87,39 +87,43 @@ const FilterPopover = styled(ListboxPopover)`
   &:focus {
     outline-color: ${themeVal("color.primary")};
   }
-`
+`;
 function Filter({ title, type, options, selected, setFilter }) {
-  const { t } = useTranslation('site', { useSuspense: false })
-  const selectedIds = selected[type] ? selected[type] : []
+  const { t } = useTranslation("site", { useSuspense: false });
+  const selectedIds = selected[type] ? selected[type] : [];
 
   return (
     <>
-      <VisuallyHidden id="filter-guide"><Trans i18nKey="filter-by">Filter by</Trans> {title}</VisuallyHidden>
+      <VisuallyHidden id="filter-guide">
+        <Trans i18nKey="filter-by">Filter by</Trans> {title}
+      </VisuallyHidden>
       <ListboxInput
         name="filter"
         aria-labelledby="filter-guide"
-        onChange={value => {
+        onChange={(value) => {
           if (selectedIds.includes(value)) {
             setFilter({
               ...selected,
-              [type]: selected[type].filter(f => f !== value),
-            })
+              [type]: selected[type].filter((f) => f !== value),
+            });
             // removeFilter(value)
           } else {
             setFilter({
               ...selected,
               [type]: [...selected[type], value],
-            })
+            });
             // addFilter(value)
           }
         }}
       >
-        <FilterButton title={`${t("Filter by")} ${title}`}>{title}</FilterButton>
+        <FilterButton title={`${t("Filter by")} ${title}`}>
+          {title}
+        </FilterButton>
         <FilterPopover>
           <ListboxList>
             <ListboxGroup>
               <FilterListHeader>{title}</FilterListHeader>
-              {options.map(option => (
+              {options.map((option) => (
                 <FilterItem
                   key={String(option.id)}
                   value={String(option.id)}
@@ -140,7 +144,7 @@ function Filter({ title, type, options, selected, setFilter }) {
         </FilterPopover>
       </ListboxInput>
     </>
-  )
+  );
 }
 
 Filter.propTypes = {
@@ -152,6 +156,6 @@ Filter.propTypes = {
   activities: PropTypes.array,
   selected: PropTypes.object,
   setFilter: PropTypes.func,
-}
+};
 
-export default Filter
+export default Filter;

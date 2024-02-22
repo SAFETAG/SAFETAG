@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react"
-import { graphql } from "gatsby"
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import pickBy from "lodash.pickby"
-import values from "lodash.values"
-import MoreLink from "../styles/button/more-link"
-import queryString from 'query-string'
+import React, { useState, useEffect } from "react";
+import { graphql } from "gatsby";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import pickBy from "lodash.pickby";
+import values from "lodash.values";
+import MoreLink from "../styles/button/more-link";
+import queryString from "query-string";
 import { navigate } from "gatsby";
 
-import keyBy from "lodash.keyby"
+import keyBy from "lodash.keyby";
 
-import GlobalLayout from "../components/layouts/global-layout"
-import SEO from "../components/seo"
-import Filters from "../components/filters"
-import Search from "../components/search-guide"
-import { prepareGuide } from "../helpers/generate-guide"
+import GlobalLayout from "../components/layouts/global-layout";
+import SEO from "../components/seo";
+import Filters from "../components/filters";
+import Search from "../components/search-guide";
+import { prepareGuide } from "../helpers/generate-guide";
 
 import {
   Inpage,
@@ -25,21 +25,25 @@ import {
   InpageBody,
   InpageBodyInner,
   InpageInnerColumns,
-} from "../styles/inpage"
-import Button from "../styles/button/button"
-import Card from "../styles/card"
-import Form from "../styles/form/form"
-import { FormGroup, FormGroupHeader, FormGroupBody } from "../styles/form/group"
-import { FormCheckableGroup, FormCheckable } from "../styles/form/checkable"
-import FormLabel from "../styles/form/label"
-import media from "../styles/utils/media-queries"
-import { themeVal } from "../styles/utils/general"
+} from "../styles/inpage";
+import Button from "../styles/button/button";
+import Card from "../styles/card";
+import Form from "../styles/form/form";
+import {
+  FormGroup,
+  FormGroupHeader,
+  FormGroupBody,
+} from "../styles/form/group";
+import { FormCheckableGroup, FormCheckable } from "../styles/form/checkable";
+import FormLabel from "../styles/form/label";
+import media from "../styles/utils/media-queries";
+import { themeVal } from "../styles/utils/general";
 
 const SplitPanels = styled(InpageInnerColumns)`
   ${media.mediumUp`
     gap: 0.5rem;
   `}
-`
+`;
 
 const Panel = styled(Card)`
   display: flex;
@@ -60,7 +64,7 @@ const Panel = styled(Card)`
   & > :last-child:not(:first-child) {
     padding-top: 0;
   }
-`
+`;
 
 const GuideSelector = styled(Form)`
   grid-template-columns: 100%;
@@ -102,14 +106,14 @@ const GuideSelector = styled(Form)`
       padding-bottom: 1rem;
     }
   }
-`
+`;
 const GuideSelected = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
   padding-top: 2rem !important;
   padding: 2rem 1rem 0;
-`
+`;
 
 const MethodHeading = styled(FormLabel)`
   font-size: 1.25rem;
@@ -119,7 +123,7 @@ const MethodHeading = styled(FormLabel)`
   padding: 1rem 0 0.5rem;
   margin-bottom: 1rem;
   width: 100%;
-`
+`;
 
 const ActivitiesSelector = styled.div`
   display: flex;
@@ -136,7 +140,7 @@ const ActivitiesSelector = styled.div`
       }
     `}
   }
-`
+`;
 
 const ActivitiesHeading = styled.h4`
   margin: 0 0 1rem;
@@ -151,20 +155,20 @@ const ActivitiesHeading = styled.h4`
   ${media.mediumUp`
     flex: inherit;
   `}
-`
+`;
 
 const ActivityLine = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-`
+`;
 
 const ActivityTitle = styled.p`
   font-family: ${themeVal("type.heading.family")};
   font-weight: ${themeVal("type.heading.weight")};
   margin: 0 0 0.5rem;
-`
+`;
 
 const ActivityCheckable = styled(FormCheckable)`
   grid-gap: 0.75rem;
@@ -178,13 +182,13 @@ const ActivityCheckable = styled(FormCheckable)`
   & + & {
     margin-top: 0.5rem;
   }
-`
+`;
 
 const ExportButtons = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 1rem;
-`
+`;
 
 function useAllGuideData(data) {
   const activities = data.activities.edges.map(({ node }) => {
@@ -194,56 +198,65 @@ function useAllGuideData(data) {
       toolnames: node.frontmatter.tools,
       slug: node.fields.slug,
       ...node.frontmatter,
-    }
-  })
+    };
+  });
 
   const methods = data.methods.edges.map(({ node }) => ({
     id: node.frontmatter.title,
-    sections: [node.frontmatter.summary, node.frontmatter.purpose, node.frontmatter.guiding_questions, node.frontmatter.outputs, node.frontmatter.operational_security, node.frontmatter.preparation],
+    sections: [
+      node.frontmatter.summary,
+      node.frontmatter.purpose,
+      node.frontmatter.guiding_questions,
+      node.frontmatter.outputs,
+      node.frontmatter.operational_security,
+      node.frontmatter.preparation,
+    ],
     slug: node.fields.slug,
     ...node.frontmatter,
-  }))
+  }));
 
   const references = data.references.edges.map(({ node }) => ({
     id: node.frontmatter.title,
     rawMarkdownBody: node.rawMarkdownBody,
-  }))
+  }));
 
   // creates an object with tool names as keys and tool slugs as values
-  const datatools = data.tools.edges
-  const tools = {}
-  datatools.forEach(
-    tool => {
-      tools[tool.node.frontmatter.title] = {
-        id: tool.node.id,
-        slug: tool.node.fields.slug,
-        title: tool.node.frontmatter.title,
-        short_summary: tool.node.frontmatter.short_summary,
-        rawMarkdownBody: tool.node.rawMarkdownBody,
-      }
-    }
-  )
+  const datatools = data.tools.edges;
+  const tools = {};
+  datatools.forEach((tool) => {
+    tools[tool.node.frontmatter.title] = {
+      id: tool.node.id,
+      slug: tool.node.fields.slug,
+      title: tool.node.frontmatter.title,
+      short_summary: tool.node.frontmatter.short_summary,
+      rawMarkdownBody: tool.node.rawMarkdownBody,
+    };
+  });
 
   const fixedSections = data.fixedSections.edges.reduce((acc, { node }) => {
-    acc[node.base] = node.childMarkdownRemark.rawMarkdownBody
-    return acc
-  }, {})
+    acc[node.base] = node.childMarkdownRemark.rawMarkdownBody;
+    return acc;
+  }, {});
 
   return {
     fullGuide: keyBy(
-      methods.map(m => {
+      methods.map((m) => {
         return {
           ...m,
           activities: keyBy(
-            (m.activities || []).map(id => activities.find(a => a.id === id)),
+            (m.activities || []).map((id) =>
+              activities.find((a) => a.id === id)
+            ),
             "id"
           ),
           references: keyBy(
-            (m.references || []).map(id => references.find(r => r.id === id)),
+            (m.references || []).map((id) =>
+              references.find((r) => r.id === id)
+            ),
             "id"
           ),
           tools: tools,
-        }
+        };
       }),
       "id"
     ),
@@ -251,90 +264,96 @@ function useAllGuideData(data) {
     activities,
     tools,
     fixedSections,
-  }
+  };
 }
 
-
 const GuideBuilder = ({ data, location }) => {
-  const { t, i18n } = useTranslation('site', { useSuspense: false });
-  const { fullGuide, activities, fixedSections } = useAllGuideData(data)
+  const { t, i18n } = useTranslation("site", { useSuspense: false });
+  const { fullGuide, activities, fixedSections } = useAllGuideData(data);
   // Add the full guide to state
-  const [guide, setGuide] = useState(fullGuide)
-  const [isNoResults, setNoResults] = useState(false)
-  const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([])
-  const [isCustomGuideLoading, setCustomGuideLoader] = useState(false)
+  const [guide, setGuide] = useState(fullGuide);
+  const [isNoResults, setNoResults] = useState(false);
+  const [activitiesInCustomGuide, setActivitiesInCustomGuide] = useState([]);
+  const [isCustomGuideLoading, setCustomGuideLoader] = useState(false);
 
-    // adds selected activities to guide if any exist in url param on initial load
-    useEffect(() => {
-      if(location.search) {
-        const qs = queryString.parse(location.search)
+  // adds selected activities to guide if any exist in url param on initial load
+  useEffect(() => {
+    if (location.search) {
+      const qs = queryString.parse(location.search);
 
-        try {
-          const newGuide = Object.entries(qs).reduce((prev, [key, value]) => {
-            const values = value.split(',')
-            const checkedActivities = values.reduce((prev, curr) => {
-              return {
-                ...prev,
-                [curr]: {
-                  ...guide[key].activities[curr],
-                checked: true,
-              }
-              }
-            }, {})
-
+      try {
+        const newGuide = Object.entries(qs).reduce((prev, [key, value]) => {
+          const values = value.split(",");
+          const checkedActivities = values.reduce((prev, curr) => {
             return {
-              ...guide,
               ...prev,
-              [key]: {
-                ...guide[key],
-                activities: {
-                  ...guide[key].activities,
-                  ...checkedActivities
-                  }
-                }
-              }
-          }, {})
-          setGuide(newGuide)
-        } catch (error) {
-          console.log("Error parsing the search string, dropping.")
-        }
-    }
-    }, [])
+              [curr]: {
+                ...guide[key].activities[curr],
+                checked: true,
+              },
+            };
+          }, {});
 
-    // stores list of selected activities to be referenced by url params and filter guide
-    useEffect(() => {
-      const activities = values(guide).filter(({ id, activities }) => {
-        const act = values(pickBy(activities, a => a.checked))
-        return act.length && {[id]: values(pickBy(activities, a => a.checked))}
-      })
-      setActivitiesInCustomGuide(activities)
-    }, [guide])
-
-    // sets url params as activities are selected
-    useEffect(() => {
-      if(activitiesInCustomGuide.length) {
-        const allSelectedActivities = activitiesInCustomGuide.map(method => {
-          const activityArray = Object.values(method.activities)
-          .filter(activity => activity.checked)
-          .map(activity => activity.id)
-          return {[method.id]: activityArray}
-        })
-        const newQS = queryString.stringify(
-            allSelectedActivities.reduce((prev, curr) => {return {...prev, ...curr}}, {}),
-            {arrayFormat: 'comma'}
-        )
-        navigate(location.pathname + '?' + newQS)
+          return {
+            ...guide,
+            ...prev,
+            [key]: {
+              ...guide[key],
+              activities: {
+                ...guide[key].activities,
+                ...checkedActivities,
+              },
+            },
+          };
+        }, {});
+        setGuide(newGuide);
+      } catch (error) {
+        console.log("Error parsing the search string, dropping.");
       }
-    }, [activitiesInCustomGuide])
+    }
+  }, []);
+
+  // stores list of selected activities to be referenced by url params and filter guide
+  useEffect(() => {
+    const activities = values(guide).filter(({ id, activities }) => {
+      const act = values(pickBy(activities, (a) => a.checked));
+      return (
+        act.length && { [id]: values(pickBy(activities, (a) => a.checked)) }
+      );
+    });
+    setActivitiesInCustomGuide(activities);
+  }, [guide]);
+
+  // sets url params as activities are selected
+  useEffect(() => {
+    if (activitiesInCustomGuide.length) {
+      const allSelectedActivities = activitiesInCustomGuide.map((method) => {
+        const activityArray = Object.values(method.activities)
+          .filter((activity) => activity.checked)
+          .map((activity) => activity.id);
+        return { [method.id]: activityArray };
+      });
+      const newQS = queryString.stringify(
+        allSelectedActivities.reduce((prev, curr) => {
+          return { ...prev, ...curr };
+        }, {}),
+        { arrayFormat: "comma" }
+      );
+      navigate(location.pathname + "?" + newQS);
+    }
+  }, [activitiesInCustomGuide]);
 
   const selectMultipleActivities = (methodId, allOrNone) => {
-    const allActivities = guide[methodId].activities
+    const allActivities = guide[methodId].activities;
     let newActivities = Object.entries(allActivities).reduce(
       (prev, [key, activity]) => {
-        return { ...prev, [key]: { ...activity, checked: allOrNone === "all" } }
+        return {
+          ...prev,
+          [key]: { ...activity, checked: allOrNone === "all" },
+        };
       },
       {}
-    )
+    );
 
     setGuide({
       ...guide,
@@ -342,236 +361,289 @@ const GuideBuilder = ({ data, location }) => {
         ...guide[methodId],
         activities: newActivities,
       },
-    })
-  }
+    });
+  };
 
   return (
     <GlobalLayout>
       <SEO title="Guide Creator" />
-      {fullGuide && activities && <div>
-      <Inpage>
-        <InpageHeader>
-          <InpageHeaderInner>
-            <InpageTitle size="jumbo" variation="primary" withDeco>
-              <Trans i18nKey="builder-title">Custom Guide Builder</Trans>
-            </InpageTitle>
-          </InpageHeaderInner>
-        </InpageHeader>
-        <InpageBody>
-          <InpageBodyInner>
-              <Search
-                 fullGuide={fullGuide}
-                 setGuide={setGuide}
-                 setNoResults={setNoResults}
-              />
-              <Filters
-                fullGuide={fullGuide}
-                activitiesInCustomGuide={activitiesInCustomGuide}
-                setGuide={setGuide}
-                activities={activities}
-                // initialFilters={queryString.parse(location.search)}
-              />
-          </InpageBodyInner>
-        </InpageBody>
-        <InpageBody>
-          <SplitPanels columnLayout="1:1">
-            <Panel border="base">
-              <InpageTitle size="xlarge">
-                {fullGuide ? t("builder-full", "Full Safetag Guide Content") : t("builder-filtered", "Filtered Safetag Guide Content")}
-              </InpageTitle>
-              {isNoResults && <p>No Search Results</p>}
-              <GuideSelector>
-                {values(guide).filter(method => !method.filterDoesNotApply).map(method => {
-                  return (
-                    <FormGroup key={method.id}>
-                      <FormGroupHeader>
-                        <MethodHeading><Trans i18nKey="builder-method">Method</Trans>: {method.title}</MethodHeading>
-                      </FormGroupHeader>
-                      <FormGroupBody>
-                        <div>{method.summary.excerpt}</div>
-                        <MoreLink
-                          to={method.slug}
-                          state={{
-                            prevPath: location.pathname,
-                            prevPage: location.pathname + location.search,
-                          }}
-                        >
-                          <Trans i18nKey="builder-readmore">Read More</Trans>
-                        </MoreLink>
-                        <FormCheckableGroup>
-                          {method.activities[0] !== "" && (
-                            <ActivitiesSelector>
-                              <ActivitiesHeading><Trans i18nKey="builder-activities">Activities</Trans></ActivitiesHeading>
-                              <Button
-                                variation="primary-plain"
-                                title="Select all activities in this method"
-                                onClick={() =>
-                                  selectMultipleActivities(method.id, "all")
-                                }
+      {fullGuide && activities && (
+        <div>
+          <Inpage>
+            <InpageHeader>
+              <InpageHeaderInner>
+                <InpageTitle size="jumbo" variation="primary" withDeco>
+                  <Trans i18nKey="builder-title">Custom Guide Builder</Trans>
+                </InpageTitle>
+              </InpageHeaderInner>
+            </InpageHeader>
+            <InpageBody>
+              <InpageBodyInner>
+                <Search
+                  fullGuide={fullGuide}
+                  setGuide={setGuide}
+                  setNoResults={setNoResults}
+                />
+                <Filters
+                  fullGuide={fullGuide}
+                  activitiesInCustomGuide={activitiesInCustomGuide}
+                  setGuide={setGuide}
+                  activities={activities}
+                  // initialFilters={queryString.parse(location.search)}
+                />
+              </InpageBodyInner>
+            </InpageBody>
+            <InpageBody>
+              <SplitPanels columnLayout="1:1">
+                <Panel border="base">
+                  <InpageTitle size="xlarge">
+                    {fullGuide
+                      ? t("builder-full", "Full Safetag Guide Content")
+                      : t("builder-filtered", "Filtered Safetag Guide Content")}
+                  </InpageTitle>
+                  {isNoResults && <p>No Search Results</p>}
+                  <GuideSelector>
+                    {values(guide)
+                      .filter((method) => !method.filterDoesNotApply)
+                      .map((method) => {
+                        return (
+                          <FormGroup key={method.id}>
+                            <FormGroupHeader>
+                              <MethodHeading>
+                                <Trans i18nKey="builder-method">Method</Trans>:{" "}
+                                {method.title}
+                              </MethodHeading>
+                            </FormGroupHeader>
+                            <FormGroupBody>
+                              <div>{method.summary.excerpt}</div>
+                              <MoreLink
+                                to={method.slug}
+                                state={{
+                                  prevPath: location.pathname,
+                                  prevPage: location.pathname + location.search,
+                                }}
                               >
-                                <Trans i18nKey="builder-selectall">Select All</Trans>
-                              </Button>
-                              <Button
-                                variation="danger-plain"
-                                title="Deselect all activities in this method"
-                                onClick={() =>
-                                  selectMultipleActivities(method.id, "none")
-                                }
-                              >
-                                <Trans i18nKey="builder-selectnone">Select None</Trans>
-                              </Button>
-                            </ActivitiesSelector>
-                          )}
-                          <ul>
-                            {values(method.activities).map(activity => {
-                              if (activity) {
-                              const fieldId = `checkbox-${method.id}-${activity.id}`
-                              return (
-                                <li key={fieldId}>
-                                  <ActivityCheckable
-                                    type="checkbox"
-                                    id={fieldId}
-                                    name={fieldId}
-                                    defaultChecked={activity.checked}
-                                    onChange={() => {
-                                      setGuide({
-                                        ...guide,
-                                        [method.id]: {
-                                          ...method,
-                                          activities: {
-                                            ...method.activities,
-                                            [activity.id]: {
-                                              ...activity,
-                                              checked: !activity.checked,
-                                            },
-                                          },
-                                        },
-                                      })
-                                    }}
-                                  >
-                                    {activity.title}
-                                  </ActivityCheckable>
-                                  <div>{activity.summary.excerpt}</div>
-                                </li>
-                              )
-                              }
-                            })}
-                          </ul>
-                        </FormCheckableGroup>
-                      </FormGroupBody>
-                    </FormGroup>
-                  )
-                })}
-              </GuideSelector>
-            </Panel>
-            <Panel border="base">
-              <InpageTitle size="xlarge">
-                <Trans i18nKey="builder-selected">Selected Safetag Guide Content</Trans>
-              </InpageTitle>
-              <ExportButtons>
-                <Button
-                  size="xlarge"
-                  variation="primary-raised-dark"
-                  title="Export selected methods and activities as PDF"
-                  onClick={async () => {
-                    setCustomGuideLoader(true)
-                    await prepareGuide(guide, 'custom-guide', fixedSections, false, t, i18n, data.references.edges, data.approaches.edges)
-                    // requires a small buffer period
-                    setTimeout(() => {
-                      setCustomGuideLoader(false)
-                    }, 1000)
-                  }}
-                  isSpinning={isCustomGuideLoading}
-                  spinnerColor="light"
-                  disabled={isCustomGuideLoading || !activitiesInCustomGuide.length}
-                >
-                  {isCustomGuideLoading
-                    ? t("builder-genpdf", "Generating PDF...")
-                    : t("builder-genpdfguide", "Generate PDF Guide")}
-                </Button>
-                <Button
-                  size="xlarge"
-                  variation="base-plain"
-                  title="Download full guide"
-                  onClick={() => {
-                    window.open('/guides/Safetag_full_guide.pdf');
-                  }}
-                >
-                  <Trans i18nKey="builder-downloadfull">Download Full Guide</Trans>
-                </Button>
-              </ExportButtons>
-              {
-                !activitiesInCustomGuide.length &&
-                <GuideSelected>
-                  <h3><Trans i18nKey="builder-nosections">No sections selected</Trans></h3>
-                  <p><Trans i18nKey="builder-nosections-more">← Select activities from the panel to the left to build your custom guide</Trans></p>
-                </GuideSelected>
-              }
-              {values(guide).map(method => {
-                // Get selected activities from method, if any
-                const selectedActivities = values(
-                  pickBy(method.activities, a => a ? a.checked : null)
-                )
+                                <Trans i18nKey="builder-readmore">
+                                  Read More
+                                </Trans>
+                              </MoreLink>
+                              <FormCheckableGroup>
+                                {method.activities[0] !== "" && (
+                                  <ActivitiesSelector>
+                                    <ActivitiesHeading>
+                                      <Trans i18nKey="builder-activities">
+                                        Activities
+                                      </Trans>
+                                    </ActivitiesHeading>
+                                    <Button
+                                      variation="primary-plain"
+                                      title="Select all activities in this method"
+                                      onClick={() =>
+                                        selectMultipleActivities(
+                                          method.id,
+                                          "all"
+                                        )
+                                      }
+                                    >
+                                      <Trans i18nKey="builder-selectall">
+                                        Select All
+                                      </Trans>
+                                    </Button>
+                                    <Button
+                                      variation="danger-plain"
+                                      title="Deselect all activities in this method"
+                                      onClick={() =>
+                                        selectMultipleActivities(
+                                          method.id,
+                                          "none"
+                                        )
+                                      }
+                                    >
+                                      <Trans i18nKey="builder-selectnone">
+                                        Select None
+                                      </Trans>
+                                    </Button>
+                                  </ActivitiesSelector>
+                                )}
+                                <ul>
+                                  {values(method.activities).map((activity) => {
+                                    if (activity) {
+                                      const fieldId = `checkbox-${method.id}-${activity.id}`;
+                                      return (
+                                        <li key={fieldId}>
+                                          <ActivityCheckable
+                                            type="checkbox"
+                                            id={fieldId}
+                                            name={fieldId}
+                                            defaultChecked={activity.checked}
+                                            onChange={() => {
+                                              setGuide({
+                                                ...guide,
+                                                [method.id]: {
+                                                  ...method,
+                                                  activities: {
+                                                    ...method.activities,
+                                                    [activity.id]: {
+                                                      ...activity,
+                                                      checked:
+                                                        !activity.checked,
+                                                    },
+                                                  },
+                                                },
+                                              });
+                                            }}
+                                          >
+                                            {activity.title}
+                                          </ActivityCheckable>
+                                          <div>{activity.summary.excerpt}</div>
+                                        </li>
+                                      );
+                                    }
+                                  })}
+                                </ul>
+                              </FormCheckableGroup>
+                            </FormGroupBody>
+                          </FormGroup>
+                        );
+                      })}
+                  </GuideSelector>
+                </Panel>
+                <Panel border="base">
+                  <InpageTitle size="xlarge">
+                    <Trans i18nKey="builder-selected">
+                      Selected Safetag Guide Content
+                    </Trans>
+                  </InpageTitle>
+                  <ExportButtons>
+                    <Button
+                      size="xlarge"
+                      variation="primary-raised-dark"
+                      title="Export selected methods and activities as PDF"
+                      onClick={async () => {
+                        setCustomGuideLoader(true);
+                        await prepareGuide(
+                          guide,
+                          "custom-guide",
+                          fixedSections,
+                          false,
+                          t,
+                          i18n,
+                          data.references.edges,
+                          data.approaches.edges
+                        );
+                        // requires a small buffer period
+                        setTimeout(() => {
+                          setCustomGuideLoader(false);
+                        }, 1000);
+                      }}
+                      isSpinning={isCustomGuideLoading}
+                      spinnerColor="light"
+                      disabled={
+                        isCustomGuideLoading || !activitiesInCustomGuide.length
+                      }
+                    >
+                      {isCustomGuideLoading
+                        ? t("builder-genpdf", "Generating PDF...")
+                        : t("builder-genpdfguide", "Generate PDF Guide")}
+                    </Button>
+                    <Button
+                      size="xlarge"
+                      variation="base-plain"
+                      title="Download full guide"
+                      onClick={() => {
+                        window.open("/guides/Safetag_full_guide.pdf");
+                      }}
+                    >
+                      <Trans i18nKey="builder-downloadfull">
+                        Download Full Guide
+                      </Trans>
+                    </Button>
+                  </ExportButtons>
+                  {!activitiesInCustomGuide.length && (
+                    <GuideSelected>
+                      <h3>
+                        <Trans i18nKey="builder-nosections">
+                          No sections selected
+                        </Trans>
+                      </h3>
+                      <p>
+                        <Trans i18nKey="builder-nosections-more">
+                          ← Select activities from the panel to the left to
+                          build your custom guide
+                        </Trans>
+                      </p>
+                    </GuideSelected>
+                  )}
+                  {values(guide).map((method) => {
+                    // Get selected activities from method, if any
+                    const selectedActivities = values(
+                      pickBy(method.activities, (a) => (a ? a.checked : null))
+                    );
 
-                // Bypass if method doesn't have any selected activities
-                if (selectedActivities.length === 0) return
+                    // Bypass if method doesn't have any selected activities
+                    if (selectedActivities.length === 0) return;
 
-                return (
-                  <GuideSelected key={method.id}>
-                    <MethodHeading><Trans i18nKey="builder-method">Method</Trans>: {method.title}</MethodHeading>
-                    <p>{method.summary.excerpt}</p>
-                    <ActivitiesHeading><Trans i18nKey="builder-activities">Activities</Trans></ActivitiesHeading>
-                    {selectedActivities.map(activity => (
-                      <ActivityLine key={activity.id}>
-                        <ActivityTitle>{activity.title}</ActivityTitle>
-                        <Button
-                          variation="danger-plain"
-                          title="Remove activity from selection"
-                          onClick={() => {
-                            setGuide({
-                              ...guide,
-                              [method.id]: {
-                                ...method,
-                                activities: {
-                                  ...method.activities,
-                                  [activity.id]: {
-                                    ...activity,
-                                    checked: !activity.checked,
+                    return (
+                      <GuideSelected key={method.id}>
+                        <MethodHeading>
+                          <Trans i18nKey="builder-method">Method</Trans>:{" "}
+                          {method.title}
+                        </MethodHeading>
+                        <p>{method.summary.excerpt}</p>
+                        <ActivitiesHeading>
+                          <Trans i18nKey="builder-activities">Activities</Trans>
+                        </ActivitiesHeading>
+                        {selectedActivities.map((activity) => (
+                          <ActivityLine key={activity.id}>
+                            <ActivityTitle>{activity.title}</ActivityTitle>
+                            <Button
+                              variation="danger-plain"
+                              title="Remove activity from selection"
+                              onClick={() => {
+                                setGuide({
+                                  ...guide,
+                                  [method.id]: {
+                                    ...method,
+                                    activities: {
+                                      ...method.activities,
+                                      [activity.id]: {
+                                        ...activity,
+                                        checked: !activity.checked,
+                                      },
+                                    },
                                   },
-                                },
-                              },
-                            })
-                          }}
-                        >
-                          &#10005;
-                        </Button>
-                      </ActivityLine>
-                    ))}
-                  </GuideSelected>
-                )
-              })}
-            </Panel>
-          </SplitPanels>
-        </InpageBody>
-      </Inpage>
-      </div>}
+                                });
+                              }}
+                            >
+                              &#10005;
+                            </Button>
+                          </ActivityLine>
+                        ))}
+                      </GuideSelected>
+                    );
+                  })}
+                </Panel>
+              </SplitPanels>
+            </InpageBody>
+          </Inpage>
+        </div>
+      )}
     </GlobalLayout>
-  )
-}
+  );
+};
 
-export default GuideBuilder
+export default GuideBuilder;
 
 GuideBuilder.propTypes = {
   data: PropTypes.object,
   location: PropTypes.shape({
     search: PropTypes.string,
     pathname: PropTypes.string,
-  })
-
-}
+  }),
+};
 
 export const query = graphql`
-  query($language: String!) {
+  query ($language: String!) {
     fixedSections: allFile(
       filter: {
         relativeDirectory: { eq: "guide_sections" }
@@ -588,8 +660,11 @@ export const query = graphql`
       }
     }
     activities: allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}} },
-      sort: { fields: [frontmatter___position],  },
+      filter: {
+        fileAbsolutePath: { regex: "/activities//" }
+        fields: { langKey: { eq: $language } }
+      }
+      sort: { fields: [frontmatter___position] }
     ) {
       edges {
         node {
@@ -614,8 +689,11 @@ export const query = graphql`
       }
     }
     methods: allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex: "/methods//"}, fields: {langKey: {eq: $language}} },
-      sort: { fields: [frontmatter___position],  },
+      filter: {
+        fileAbsolutePath: { regex: "/methods//" }
+        fields: { langKey: { eq: $language } }
+      }
+      sort: { fields: [frontmatter___position] }
     ) {
       edges {
         node {
@@ -638,7 +716,10 @@ export const query = graphql`
       }
     }
     references: allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex: "/references//"}, fields: {langKey: {eq: $language}} },
+      filter: {
+        fileAbsolutePath: { regex: "/references//" }
+        fields: { langKey: { eq: $language } }
+      }
     ) {
       edges {
         node {
@@ -654,7 +735,10 @@ export const query = graphql`
       }
     }
     approaches: allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex: "/approaches//"}, fields: {langKey: {eq: $language}} },
+      filter: {
+        fileAbsolutePath: { regex: "/approaches//" }
+        fields: { langKey: { eq: $language } }
+      }
     ) {
       edges {
         node {
@@ -669,7 +753,10 @@ export const query = graphql`
       }
     }
     tools: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/tools//"}, fields: {langKey: {eq: $language}}}
+      filter: {
+        fileAbsolutePath: { regex: "/tools//" }
+        fields: { langKey: { eq: $language } }
+      }
     ) {
       edges {
         node {
@@ -684,7 +771,7 @@ export const query = graphql`
         }
       }
     }
-    locales: allLocale(filter: {language: {eq: $language}}) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
           ns
@@ -694,4 +781,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
