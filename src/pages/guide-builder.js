@@ -642,143 +642,123 @@ GuideBuilder.propTypes = {
   }),
 };
 
-export const query = graphql`
-  query ($language: String!) {
-    fixedSections: allFile(
-      filter: {
-        relativeDirectory: { eq: "guide_sections" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
-    ) {
-      edges {
-        node {
-          childMarkdownRemark {
-            rawMarkdownBody
-          }
-          base
-        }
-      }
-    }
-    activities: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/activities//" }
-        fields: { langKey: { eq: $language } }
-      }
-      sort: { fields: [frontmatter___position] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            summary
-            orgSize: organization_size_under
-            approaches
-            position
-            tools
-            remoteOptions: remote_options
-            overview
-            materials_needed
-            considerations
-            walk_through
-            recommendations
-          }
-        }
-      }
-    }
-    methods: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/methods//" }
-        fields: { langKey: { eq: $language } }
-      }
-      sort: { fields: [frontmatter___position] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            method_icon
-            activities
-            references
-            summary
-            purpose
-            guiding_questions
-            outputs
-            operational_security
-            preparation
-          }
-        }
-      }
-    }
-    references: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/references//" }
-        fields: { langKey: { eq: $language } }
-      }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            langKey
-          }
-          frontmatter {
-            title
-          }
+export const query = graphql`query ($language: String!) {
+  fixedSections: allFile(
+    filter: {relativeDirectory: {eq: "guide_sections"}, internal: {mediaType: {eq: "text/markdown"}}}
+  ) {
+    edges {
+      node {
+        childMarkdownRemark {
           rawMarkdownBody
         }
+        base
       }
     }
-    approaches: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/approaches//" }
-        fields: { langKey: { eq: $language } }
-      }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            langKey
-          }
-          frontmatter {
-            title
-          }
+  }
+  activities: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}}
+    sort: {frontmatter: {position: ASC}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-    }
-    tools: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/tools//" }
-        fields: { langKey: { eq: $language } }
-      }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            short_summary
-          }
-          rawMarkdownBody
-        }
-      }
-    }
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
+        frontmatter {
+          title
+          summary
+          orgSize: organization_size_under
+          approaches
+          position
+          tools
+          remoteOptions: remote_options
+          overview
+          materials_needed
+          considerations
+          walk_through
+          recommendations
         }
       }
     }
   }
-`;
+  methods: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/methods//"}, fields: {langKey: {eq: $language}}}
+    sort: {frontmatter: {position: ASC}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          method_icon
+          activities
+          references
+          summary
+          purpose
+          guiding_questions
+          outputs
+          operational_security
+          preparation
+        }
+      }
+    }
+  }
+  references: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/references//"}, fields: {langKey: {eq: $language}}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+          langKey
+        }
+        frontmatter {
+          title
+        }
+        rawMarkdownBody
+      }
+    }
+  }
+  approaches: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/approaches//"}, fields: {langKey: {eq: $language}}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+          langKey
+        }
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
+  tools: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/tools//"}, fields: {langKey: {eq: $language}}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          short_summary
+        }
+        rawMarkdownBody
+      }
+    }
+  }
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}`;

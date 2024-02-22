@@ -106,22 +106,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   // Query for nodes to use in creating pages.
   const activities = await graphql(
-    `
-      query {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "//activities//"}}
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
+    `{
+  allMarkdownRemark(
+    sort: {frontmatter: {position: ASC}}
+    filter: {fileAbsolutePath: {regex: "//activities//"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
       }
-    `
+    }
+  }
+}`
   )
   // Handle errors
   if (activities.errors) {
@@ -140,22 +138,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   const posts = await graphql(
-    `
-      query {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date],  },
-          filter: {fileAbsolutePath: {regex: "/posts//"}}
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
+    `{
+  allMarkdownRemark(
+    sort: {frontmatter: {date: ASC}}
+    filter: {fileAbsolutePath: {regex: "/posts//"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
       }
-    `
+    }
+  }
+}`
   )
   if (posts.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
@@ -174,22 +170,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 
   const methods = await graphql(
-    `
-      query {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___position],  },
-          filter: {fileAbsolutePath: {regex: "/methods//"}}
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
+    `{
+  allMarkdownRemark(
+    sort: {frontmatter: {position: ASC}}
+    filter: {fileAbsolutePath: {regex: "/methods//"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
       }
-    `
+    }
+  }
+}`
   )
   // Handle errors
   if (methods.errors) {

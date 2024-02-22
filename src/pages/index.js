@@ -257,56 +257,50 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-export const query = graphql`
-  query($language: String!) {
-    posts: allMarkdownRemark(
-      sort: { fields: [frontmatter___date],  order: DESC },
-      limit: 5,
-      filter: {fileAbsolutePath: {regex: "/posts/"}}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM Do, YYYY")
-          }
+export const query = graphql`query ($language: String!) {
+  posts: allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    limit: 5
+    filter: {fileAbsolutePath: {regex: "/posts/"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date(formatString: "MMMM Do, YYYY")
         }
       }
     }
-
-    methods: allMarkdownRemark(
-      sort: { fields: [frontmatter___position],  },
-      filter: {fileAbsolutePath: {regex: "/methods/"},
-      fields: {langKey: {eq: $language}}}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            position
-            method_icon
-            summary
-            short_summary
-          }
-        }
-      }
-    }
-
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-
   }
-`
+  methods: allMarkdownRemark(
+    sort: {frontmatter: {position: ASC}}
+    filter: {fileAbsolutePath: {regex: "/methods/"}, fields: {langKey: {eq: $language}}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          position
+          method_icon
+          summary
+          short_summary
+        }
+      }
+    }
+  }
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}`
