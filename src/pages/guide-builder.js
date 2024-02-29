@@ -316,7 +316,7 @@ const GuideBuilder = ({ data, location }) => {
   // stores list of selected activities to be referenced by url params and filter guide
   useEffect(() => {
     const activities = values(guide).filter(({ id, activities }) => {
-      const act = values(pickBy(activities, (a) => a.checked));
+      const act = values(pickBy(activities, (a) => a?.checked));
       return (
         act.length && { [id]: values(pickBy(activities, (a) => a.checked)) }
       );

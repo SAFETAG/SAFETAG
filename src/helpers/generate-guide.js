@@ -472,7 +472,7 @@ export async function prepareGuide(
   values(methods).map((method) => {
     const selectedActivities = isFull
       ? values(pickBy(method.activities))
-      : values(pickBy(method.activities, a => a.checked))
+      : values(pickBy(method.activities, a => a?.checked))
 
     // If there are activities selected on this method
     if (selectedActivities.length > 0) {

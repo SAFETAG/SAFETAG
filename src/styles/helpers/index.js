@@ -1,4 +1,4 @@
-import { css } from "styled-components/macro"
+import { css } from "styled-components"
 
 export const antialiased = () => css`
   -webkit-font-smoothing: antialiased;
