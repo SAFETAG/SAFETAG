@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Remark } from 'react-remark';
+import remarkGfm from 'remark-gfm';
+
 
 import GlobalLayout from "./global-layout"
 import SEO from "../seo"
@@ -211,7 +213,7 @@ function ActivityLayout({ data }) {
                 <InpageTitle size="large" withDeco>
                   <Trans i18nKey="activity-walkthrough">Walk Through</Trans>
                 </InpageTitle>
-                <SquareUl><Remark>{sections.walk_through}</Remark></SquareUl>
+                <SquareUl><Remark remarkPlugins={[ remarkGfm ]}>{sections.walk_through}</Remark></SquareUl>
               </article>
               <span></span>
             </InpageInnerColumns>
