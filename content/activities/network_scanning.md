@@ -253,38 +253,23 @@ walk_through: >
 
   According to it's nmap's website:
 
-
   > "Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts". It's considered as the most popular network mapping tool available.
-
 
   Below are commands to perform network scanning using Nmap.
 
-
   * **Basic Nmap Commands**
 
-
   | Command                         | Description                                                   |
-
   | ------------------------------- | ------------------------------------------------------------- |
-
   | nmap `192.168.1.1`              | Scan a single specific IP/target                              |
-
   | nmap `www.targetdomain.com`     | Scan a specific domain                                        |
-
   | nmap `172.16.1.1-35`            | Scan the IP range from 192.168.1.1 to 192.168.1.35            |
-
   | nmap `172.16.1.1/24`            | Scan a network subnet                                         |
-
   | nmap **\-iL** `target-IPs.txt`  | Scan a list of IP from the list file `target-ip.txt`          |
-
   | nmap **\-p 80** `172.16.1.1`    | Scan specific port/s on a target or IP range or a list file   |
-
   | nmap **\-p 21-80** `172.16.1.1` | Scan target, IP range or list file with a specific port range |
-
   | nmap **\-F** `172.16.1.1`       | Scan target with 100 most common ports (FAST)                 |
-
   | nmap **\-p-** `172.16.1.1`      | Scan all 65,535 ports on a target                             |
-
 
   * **Advance Nmap Host Discovery and Port Scanning**
 
