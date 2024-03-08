@@ -243,7 +243,7 @@ function MethodLayout({ data, location }) {
                         </div>
                       </ActivityCard>
                     </li>
-                    : <li>{activity}</li>
+                    : <li key={index}>{activity}</li>
                   ))}
                 </CardList>
               </ActivityList>

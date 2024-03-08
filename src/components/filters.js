@@ -242,7 +242,7 @@ function Filters({ fullGuide, activitiesInCustomGuide, setGuide, activities }) {
           const [filterKey, filterValues] = filter
           if (filterValues.length) {
             return (
-              <FilterChip>
+              <FilterChip key={filterKey}>
                 <ChipHeading>{filterKey}</ChipHeading>
                 {
                   filterValues.map(value => {
