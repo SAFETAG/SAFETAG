@@ -23,7 +23,7 @@ summary: This activity was built to assist civil society organizations (CSOs) in
 short_summary: Based on organizational guiding questions that help better frame
   and assess administrative or legal liability directly or indirectly derived
   from their work.
-overview: >-
+overview: |
   By nature, the power asymmetries that civil society organizations challenge
   bring reactions that can come in the form of physical, digital, or
   institutional threats. Within all those aspects, legal harassment often
@@ -43,7 +43,7 @@ overview: >-
   * The establishment of a comprehensive response and timely plan in case of incidents involving legal threats to the organization.
 
   * The development of a collective and internal legal security assessment.
-Considerations`: >-
+considerations: |
   * Given each country has its legal framework and context, conducting a legal
   assessment in different jurisdictions will require very different workflows
   and as a result, will give very different outcomes. With this in mind, the
@@ -64,7 +64,7 @@ Considerations`: >-
   * Finally, proper legal advising, specific to each case and context, is essential. As a result, although a legal risk assessment culture has to be built within a CSO, seeking advice and legal consultation with a law professional is the basic response and expected institutional reaction when facing a legal threat. Meanwhile, CSOs can better organize themselves to give law professionals the proper informational resources.
 
   * Depending on the kind of work the auditor or the organization usually does, and the level of experience they have from previous experiences with legal threats and strategies, it might be possible that any of them feel the capacity to conduct parts of this activity on their own. In that case, keep in mind that many components of the regulatory framework and/or its enforcement might have changed from previous experiences, so proceed at your own risk. If possible, refer to a professional lawyer with knowledge of the different aspects covered in this activity.
-walk_through: >-
+walk_through: |
   1. It is necessary to have an inventory of documentation concerning the
   questions below, updated and at hand to assist a legal professional.
   Designating one person or a small team to be responsible for this can make the
@@ -98,7 +98,7 @@ walk_through: >-
   6. It is ideal to revisit the guidelines at least once a year. This task can be done by the person or team responsible for it, counting on the eventual inputs of others as well, but together with a legal professional. The objective here is to adapt and re-evaluate the risk assessment according to new political and legal landscapes that are in constant change. Making it an organic part of the administrative work is central to the institutional development of the organization and accomplishment of the organization’s mission.   
 
   7. The security procedures to store and manage the information related to the assessment can be revised annually together with the guidelines by the responsible person or team.
-recommendations: >-
+recommendations: |
   Some guides, articles, and resources that might be useful for auditors and
   organizations when doing this kind of assessment are:
 
