@@ -38,10 +38,10 @@ jobs:
         run: |
           echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
 
-      - name: Use Node.js 16
+      - name: Use Node.js 20
         uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install and lint
         run: |
