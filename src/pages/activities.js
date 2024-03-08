@@ -108,50 +108,48 @@ Activities.propTypes = {
 
 export default Activities
 
-export const query = graphql`
-  query($language: String!) {
-    activities: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}},
-      sort: { fields: [frontmatter___position, frontmatter___title],  },
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            summary
-            position
-            approaches
-            short_summary
-          }
+export const query = graphql`query ($language: String!) {
+  activities: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/activities//"}, fields: {langKey: {eq: $language}}}
+    sort: [{frontmatter: {position: ASC}}, {frontmatter: {title: ASC}}]
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-    }
-    approaches: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/approaches//"}}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-          html
-        }
-      }
-    }
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
+        frontmatter {
+          title
+          summary
+          position
+          approaches
+          short_summary
         }
       }
     }
   }
-`
+  approaches: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/approaches//"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
+        html
+      }
+    }
+  }
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}`

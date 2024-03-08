@@ -2,7 +2,6 @@
 title: DNS Zone Transfer
 short_summary: Extract a domain's hostnames
 ---
-
 Anonymous individuals online can request the full list of the hostnames on the organizations domain. Responding to zone requests from anyone on the Internet is comparable to providing an inventory of office locations, pending projects and service providers to anyone who asks. As such, it is not inherently dangerous, but it does require that the organization not rely on the assumption that unpublicized URLs are in fact secret.
 
 An overly permissive domain name service (DNS) provider allows an attacker to enumerate online services that the organization might think are “hidden” because they have not been (intentionally) published. A zone transfer returns all of the hostnames at a particular domain, or “zone.” So, a request for sample.org may return www.sample.org, webmail.sample.org and ftp.sample.org, along with other less obviously guessable targets, such as wordpress-testing.sample.org.
@@ -33,3 +32,5 @@ ftp.sample.org has address 256.0.0.5
 foo.sample.org has address 256.0.0.6
 bar.sample.org has address 256.0.0.7
 ```
+
+If the zone transfer is successful, this is a finding to include in your report as well as an associated recommendation to reconfigure their DNS service to now allow public zone transfers. You may also use the information obtained as part of your OSINT work, investigating the assets disclosed.

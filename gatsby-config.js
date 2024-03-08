@@ -168,6 +168,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        gfm: true,
+        /*
         plugins: [
           `gatsby-remark-sectionize`,
           {
@@ -181,6 +183,7 @@ module.exports = {
             },
           },
         ],
+        */
       },
     },
     {
@@ -211,32 +214,32 @@ module.exports = {
                 });
               });
             },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: {fileAbsolutePath: {regex: "/posts/"}}
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+            query: `{
+  allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {fileAbsolutePath: {regex: "/posts/"}}
+  ) {
+    edges {
+      node {
+        excerpt
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+        }
+      }
+    }
+  }
+}`,
             output: "/rss.xml",
             title: "SAFETAG - RSS Feed",
           },
         ],
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-decap-cms`,
   ],
 };

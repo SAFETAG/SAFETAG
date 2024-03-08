@@ -186,34 +186,32 @@ export default IndexPage
       }
 */
 
-export const query = graphql`
-  query($language: String!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___position],  },
-      filter: {fileAbsolutePath: {regex: "/methods/"}}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            position
-            method_icon
-            summary
-          }
+export const query = graphql`query ($language: String!) {
+  allMarkdownRemark(
+    sort: {frontmatter: {position: ASC}}
+    filter: {fileAbsolutePath: {regex: "/methods/"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-    }
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
+        frontmatter {
+          title
+          position
+          method_icon
+          summary
         }
       }
     }
   }
-`
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}`

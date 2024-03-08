@@ -54,32 +54,30 @@ export default PostsPage
       }
 */
 
-export const query = graphql`
-  query($language: String!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date],  order: DESC },
-      filter: {fileAbsolutePath: {regex: "/posts/"}}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM Do, YYYY")
-          }
+export const query = graphql`query ($language: String!) {
+  allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {fileAbsolutePath: {regex: "/posts/"}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-    }
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
+        frontmatter {
+          title
+          date(formatString: "MMMM Do, YYYY")
         }
       }
     }
   }
-`
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}`
