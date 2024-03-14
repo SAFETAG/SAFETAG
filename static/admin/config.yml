@@ -3,7 +3,7 @@ backend:
   repo: safetag/safetag
   open_authoring: true
   branch: main
-  site_domain: safetag-dev.jplusplus.pt
+  site_domain: jplusplus.pt
 
 media_folder: static/img
 public_folder: /img
