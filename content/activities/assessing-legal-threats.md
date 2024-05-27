@@ -5,7 +5,7 @@ approaches:
   - Research
   - Interpersonal
 authors:
-  - André Ramiro
+  - Andre Ramiro
   - Carlos Guerra
 remote_options:
   - Complete
