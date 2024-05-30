@@ -3,13 +3,10 @@ import { graphql } from "gatsby";
 import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import pickBy from "lodash.pickby";
-import values from "lodash.values";
+import { pickBy, values, keyBy } from "lodash";
 import MoreLink from "../styles/button/more-link";
 import queryString from "query-string";
 import { navigate } from "gatsby";
-
-import keyBy from "lodash.keyby";
 
 import GlobalLayout from "../components/layouts/global-layout";
 import SEO from "../components/seo";

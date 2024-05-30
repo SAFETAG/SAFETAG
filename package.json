@@ -21,7 +21,7 @@
     "gatsby-plugin-flexsearch": "^1.0.3",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-matomo": "^0.16.2",
-    "gatsby-plugin-offline": "^6.13.1",
+    "gatsby-plugin-offline": "^6.13.2",
     "gatsby-plugin-polished": "^1.0.4",
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-react-i18next": "^3.0.1",
@@ -32,12 +32,7 @@
     "hast-util-to-html": "^9.0.0",
     "i18next": "^22.0.6",
     "i18next-parser": "^8.12.0",
-    "lodash.get": "^4.4.2",
-    "lodash.keyby": "^4.6.0",
-    "lodash.mapvalues": "^4.6.0",
-    "lodash.pickby": "^4.6.0",
-    "lodash.trimend": "^4.5.1",
-    "lodash.values": "^4.3.0",
+    "lodash": "^4.17.21",
     "pdfkit": "^0.14.0",
     "prop-types": "^15.8.1",
     "query-string": "^8.2.0",
@@ -152,6 +147,11 @@
     "cross-fetch": "^3.1.5",
     "ws": "^7.4.6",
     "sanitize-html": "^2.3.1",
-    "svgo": "^2.0.0"
+    "svgo": "^2.0.0",
+    "webpack-dev-middleware": ">=5.3.4",
+    "minimatch": ">=3.0.5",
+    "axios": ">=0.28.0",
+    "workbox-build": "^6.5.4",
+    "tough-cookie": "^4.1.4"
   }
 }

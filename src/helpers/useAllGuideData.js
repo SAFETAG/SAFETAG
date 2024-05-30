@@ -1,4 +1,4 @@
-import keyBy from "lodash.keyby"
+import { keyBy } from "lodash"
 import { useStaticQuery, graphql } from "gatsby"
 
 /**

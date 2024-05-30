@@ -1,4 +1,4 @@
-import get from "lodash.get"
+import { get } from "lodash"
 
 /**
  * Return the a function that when executed appends the `unit` to the value.
