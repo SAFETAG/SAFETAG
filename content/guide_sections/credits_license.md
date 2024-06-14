@@ -21,7 +21,7 @@ This is not intended to imply that an audit using any or all of the SAFETAG mate
 
 This usage policy does not affect the distribution of SAFETAG materials, covered in the license statement above.
 
-### Credits and Attribution for content from other Licenses
+## Credits and Attribution for content from other Licenses
 
 See [SAFETAG Contributors](https://github.com/SAFETAG/SAFETAG/graphs/contributors) for information on who has contributed content to SAFETAG. Due to a main branch change in August 2021 GitHub does not display contributors to the previous main branch. We thank the following contributors who worked on the project before that date:
 
