@@ -50,7 +50,7 @@ Considerations`: >-
   * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization’s country or is known to surveil.
 
 
-  * As a reference, based on existing literature, the organization 0xche proposes (and then adapted to the SAFETAG context by the authors of this activity) a way to understand what kind of roadmap/report the auditor should build in terms of tone, narrative, and technical depth. First, the auditor organizes the recommendations that are going to be proposed in 1\) level of impact/risk and 2\) urgency to implement them, and depending on potential trends, the auditor will have better guidance to continue with the process:
+  * As a reference, based on existing literature, the organization 0xche proposes (and then adapted to the SAFETAG context by the authors of this activity) a way to understand what kind of roadmap/report the auditor should build in terms of tone, narrative, and technical depth. First, the auditor organizes the recommendations that are going to be proposed in 1- level of impact/risk and 2- urgency to implement them, and depending on potential trends, the auditor will have better guidance to continue with the process:
 
     * In case the recommendations are labeled as **high impact/risk and high urgency**: The product would be a **remediation report**, which is usually consumed by Incident Response teams to address known harmful vulnerabilities. Hopefully, these recommendations were shared already in the Debrief activity, so the organization can implement the recommendations while the implementation roadmap and the report are being built.
 
