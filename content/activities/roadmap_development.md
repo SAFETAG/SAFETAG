@@ -40,12 +40,6 @@ walk_through: |
   * **Roadmap Development:** Identify critical vulnerabilities, with achievable recommendations that fit into threat narratives that you heard from staff during the audit to create a remediation roadmap for addressing the threats faced by the organization. Include a short description of why each recommendation (and corresponding threat) was ranked with the urgency it was assigned.
   * **Documenting Existing Successes:** Place the recommendations on a timeline that includes the existing practices of the organization to show that the remediation process is a continuation of the hosts existing in/formal security practices. [\[1\]](https://safetag.org/activities/roadmap\_development\#footnotes)
   **\[1\] See: "Threat Modeling: Designing for Security" by Adam Shostack, p. 298\.**
-considerations: |
-  * Treat the data and analyses of this step with the utmost security.
-  * The roadmap may be shared with local IT support, digital security trainers, possible funders, or other consultants in part, or in full. Consider the content in light of this.
-    * Individual vulnerabilities should be able to be read, and acted upon, independently from the rest of the report so that the organization can easily provide only the required information for follow up work.
-  * The overall posture and risk/ranking profile components should be able to be read independent from the risk model and be free of any specific vulnerabilities to allow the organization to easily provide trusted invested parties with an overview of the results/need without exposing any specific vulnerabilities.
-  * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization’s country, or is known to surveil.
 title: Roadmap Development
 overview: As part of SAFETAG's dedication to building agency and supporting
   organizational adoption of safer practices, a careful prioritization of
