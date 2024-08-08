@@ -1,5 +1,4 @@
 ---
-title: Roadmap Development
 position: 50
 approaches:
   - Interpersonal
@@ -21,19 +20,8 @@ summary: This component consists of an auditor sorting their recommendations in
   creates an actionable roadmap for the organization to make their own informed
   choices about possible next steps as they move forward.
 short_summary: " "
-overview: As part of SAFETAG's dedication to building agency and supporting
-  organizational adoption of safer practices, a careful prioritization of
-  vulnerabilities is invaluable in keeping audit results from appearing
-  overwhelming. An organization needs to be able to weigh their possible paths
-  forward against the time lost from program activities, the cost to implement
-  the threat, and the other threats that they are not addressing. Roadmapping is
-  used to give the host the tools to make these decisions and provide them with
-  a recommended path forward that will allow them to make immediate gains
-  towards protecting themselves. The existing in/formal security practices
-  captured during this process will be used to remove organizational and
-  psycho-social barriers to starting new practices.
 materials_needed: ""
-Considerations`: >-
+Considerations`: >
   * Treat the data and analyses of this step with the utmost security.
 
 
@@ -60,8 +48,8 @@ Considerations`: >-
 
     * In case the recommendations are labeled as **low impact/risk and low urgency**: The product would be an **operational report**, which is usually consumed by security management and is usually focused on creating policies addressing security issues, which require a considerable amount of time and organizational buy in to build, implement, and maintain.
 walk_through: >
-  * Compare the resources required against the capabilities identified in the
-  risk modeling activities and the contextual research you completed.
+  
+  * Compare the resources required against the capabilities identified in the risk modeling activities and the contextual research you completed.
 
 
   *  Based upon the organizational capacity assessment, build a menu that builds upon the organizational strengths to create a path forward that provides achievable outcomes, maintains agency, and steps towards long-term difficult outcomes with high reward for the host.
@@ -85,6 +73,18 @@ considerations: >
   * The overall posture and risk/ranking profile components should be able to be read independent from the risk model and be free of any specific vulnerabilities to allow the organization to easily provide trusted invested parties with an overview of the results/need without exposing any specific vulnerabilities.
 
   * Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization’s country, or is known to surveil.
+title: Roadmap Development
+overview: As part of SAFETAG's dedication to building agency and supporting
+  organizational adoption of safer practices, a careful prioritization of
+  vulnerabilities is invaluable in keeping audit results from appearing
+  overwhelming. An organization needs to be able to weigh their possible paths
+  forward against the time lost from program activities, the cost to implement
+  the threat, and the other threats that they are not addressing. Roadmapping is
+  used to give the host the tools to make these decisions and provide them with
+  a recommended path forward that will allow them to make immediate gains
+  towards protecting themselves. The existing in/formal security practices
+  captured during this process will be used to remove organizational and
+  psycho-social barriers to starting new practices.
 recommendations: "* You can check the [RAWRR tool by
   Conexo](https://conexo.org/project/rawrr/), which proposes a structure to
   build the roadmap and create reports around it. "
