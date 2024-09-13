@@ -45,7 +45,7 @@ const GlobalFooter = () => {
         </PageCredits>
 
         <PageSocial>
-          <a href="/contact"><Trans i18nKey="footer-2">Contact us</Trans></a>
+          <a class = "contact" href="/contact"><Trans i18nKey="footer-2">Contact us</Trans></a>
         </PageSocial>
 
         <PageNetlify>
