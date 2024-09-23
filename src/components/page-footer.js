@@ -28,10 +28,6 @@ const PageCredits = styled.p`
 const PageSocial = styled.p`
   color: ${themeVal("color.surface")};
 `
-const PageNetlify = styled.p`
-  color: ${themeVal("color.surface")};
-`
-
 
 const Year = new Date().getFullYear()
 
