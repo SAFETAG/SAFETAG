@@ -28,10 +28,6 @@ const PageCredits = styled.p`
 const PageSocial = styled.p`
   color: ${themeVal("color.surface")};
 `
-const PageNetlify = styled.p`
-  color: ${themeVal("color.surface")};
-`
-
 
 const Year = new Date().getFullYear()
 
@@ -48,11 +44,6 @@ const GlobalFooter = () => {
           <a href="/contact"><Trans i18nKey="footer-2">Contact us</Trans></a>
         </PageSocial>
 
-        <PageNetlify>
-          <a href="https://www.netlify.com">
-            <img align="right" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
-          </a>
-        </PageNetlify>
       </PageFootInner>
     </PageFoot>
   )
