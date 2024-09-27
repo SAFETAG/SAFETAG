@@ -10,43 +10,61 @@ short_summary: Check for security status of Windows devices
   and
   https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf)
 
+
+
+**Windows 11**
+
+* OS Security Updates
+
+  GUI: Start --Settings --Update & Security --Windows Update
+* Firewall
+
+  GUI: Start, type Firewall (select Windows Firewall)
+* Privacy
+
+  GUI: Start --Settings -- Privacy
+* Anti-Virus Version
+* User privilege
+
+  GUI: Start, type 'User Account', select "Change User Account Control settings"
+* Drive Encryption
+
+  GUI: Bitlocker (***available only for Pro version users***) 
+  https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10
+* Services Running
+
+  GUI: Start, type "Task Manager"
+
   **Windows 10**
 
 * OS Security Updates
 
   GUI: Start --Settings --Update & Security --Windows Update
-
 * Firewall
 
   GUI: Start, type Firewall (select Windows Firewall)
-
 * Privacy
 
   GUI: Start --Settings -- Privacy
-
 * Anti-Virus Version
 * User privilege
 
   GUI: Start, type 'User Account', select "Change User Account Control settings"
-
 * Drive Encryption
 
-  GUI: Bitlocker
+  GUI: Bitlocker (***available only for Pro version users***) 
   https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10
-
 * Services Running
 
   GUI: Start, type "Task Manager"
 
   **Windows 8**
-
 * OS Security Updates
 
    Control Panel Programs and features installed updates
 
    CLI:
    http://www.techsupportalert.com/en/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
-
 * Firewall
 
   GUI: Start (or Down Arrow Icon, PC Settings) -- Control Panel -- Windows
@@ -58,13 +76,11 @@ short_summary: Check for security status of Windows devices
 
   more detail:
   http://windows.microsoft.com/en-us/windows-8/windows-firewall-from-start-to-finish
-
 * Anti-Virus Version
 * User privilege
 * Drive Encryption
 
   Look for: Bitlocker, VeraCrypt. https://diskcryptor.net/wiki/Main_Page
-
 * Services Running
 
   GUI: Right-Click on bottom taskbar, select "Task Manager"
@@ -78,7 +94,6 @@ short_summary: Check for security status of Windows devices
   (Security tab) provides a quick run-down of most security features installed
   and their update status. It does not show drive encryption or specific
   versions.
-
 * OS Security Updates
 * Firewall
 
@@ -87,18 +102,15 @@ short_summary: Check for security status of Windows devices
   CLI:
 
   `Netsh Advfirewall show allprofiles`
-
 * Anti-Virus Version
 * User privilege
 
   GUI: Control Panel -- All Control Panel Items -- User Accounts and checking
   also the User Account Control settings.
-
 * Drive Encryption
 
   GUI: Control Panel -- All Control Panel Items -- BitLocker Drive Encryption;
   also look for VeraCrypt, https://diskcryptor.net/wiki/Main_Page
-
 * Services Running
   CLI:
 
