@@ -16,7 +16,7 @@ our work on the SAFETAG framework and we like to promote it to new
 people that want to help organizations improve their security.
 
 As previously said in the [*SAFETAG Stories: If you fail -- TRI, TRI
-Again*](https://safetag.org/2018/08/16/SAFETAGStories-dropbox.html),
+Again*](https://safetag.org/posts/2018-08-16-SAFETAGStories-dropbox/),
 there isn't one unique approach on security assessments for
 organizations and independent media outlets; their unique structures and
 dynamics make it difficult to assume there is a single way to evaluate
