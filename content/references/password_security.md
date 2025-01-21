@@ -16,5 +16,4 @@ title: Password Security
 
    * *Guide:* ["7 Password Experts on How to Lock Down Your Online Security"](https://www.wired.com/2016/05/password-tips-experts/) (Wired)
    
-   * *Password Survery:* [Encountering Stronger Password Requirements:
-User Attitudes and Behaviors](https://cups.cs.cmu.edu/soups/2010/proceedings/a2_shay.pdf#page=14) (CUPS)
+   * *Password Survery:* [Encountering Stronger Password Requirements: User Attitudes and Behaviors](https://cups.cs.cmu.edu/soups/2010/proceedings/a2_shay.pdf#page=14) (CUPS)
