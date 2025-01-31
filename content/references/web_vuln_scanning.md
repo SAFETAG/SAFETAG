@@ -2,7 +2,7 @@
 title: Website Vulnerability Scanning
 ---
 
-  * *Site:* ["OWASP ZAP Project Site"](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) (OWASP)
+  * *Site:* ["Zed Attack Proxy (ZAP) Project Site"](https://www.zaproxy.org/) (ZAP)
   
   * *Guide:* ["The OWASP Testing Project Guide"](https://www.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents) (OWASP)
 
