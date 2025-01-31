@@ -16,4 +16,4 @@ title: Searching
 
   * *Cheat Sheet:* [Google Power Searching Quick Reference Guide](http://www.powersearchingwithgoogle.com/course/ps/assets/PowerSearchingQuickReference.pdf) (Power Searching With Google)
 
-  * *Database:* [Google Hacking Database](http://www.exploit-db.com/google-dorks/) (Exploit Database)
+  * *Database:* [Google Hacking Database](https://github.com/readloud/Google-Hacking-Database) (Exploit Database)

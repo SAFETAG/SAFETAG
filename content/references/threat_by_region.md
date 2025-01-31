@@ -14,7 +14,7 @@ title: General Threats by Region
 
   * *Survey:* ["This is a survey of existing and proposed laws and regulations on cryptography - systems used for protecting information against unauthorized access."(http://www.cryptolaw.org/)] (The Crypto Law Survey)
 
-  * *List:* ["Who publishes Transparency Reports? - a list of transparency reports from Google, Facebook, and other popular websites. Cross-check with Alexa for locally popular services"](http://jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an) (James Losey)
+  * *Resource:* ["Transparency Reporting Index: collects information on companies which publish transparency reports and highlights best and worst practices."](https://www.accessnow.org/campaign/transparency-reporting-index/) (Access Now)
 
   * *Website:* ["This website contains information on regulations, policies, and local organizations working on issues related to digital rights in Latin America. The information is organized by country"](https://redlatam.org/) (RedLatAm)
 
@@ -48,8 +48,6 @@ title: General Threats by Region
 
   * *Reports:* ["Regional Overviews"](https://opennet.net/research/regions) (Open Network Inititiative)
 
-  * *Portal:* ["Country Level Information security threats"](https://iscproject.org/country-assessments/) (The ISC Project)
-
 ##### Targeted Malware
 
   * *Reports:* ["APWG Phishing Attack Trends Reports"](http://www.apwg.org/resources/apwg-reports/) (Anti-Phishing Working Group)
@@ -74,4 +72,4 @@ title: General Threats by Region
 
   * *List:* ["A list of aircraft operators that have that have suffered an accident, serious incident or hijacking."](http://aviation-safety.net/database/operator/) (Aviation Safety Network)
 
-  * *Map:* ["A global display of Terrorism and Other Suspicious Events"](http://www.globalincidentmap.com/map.php) (Global Incident Map)
+  * *Map:* ["A global display of Terrorism and Other Suspicious Events"](https://globalincidentmap.com/) (Global Incident Map)

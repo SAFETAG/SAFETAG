@@ -6,7 +6,7 @@ title: Digital Security Guides
 
   * *Resource:* [Front Line Defenders](https://www.frontlinedefenders.org/digital-security)
 
-  * *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/en/index) (EFF)
+  * *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/) (EFF)
  
   * *Guide:* ["The Digital First Aid Kit"](https://digitalfirstaid.org) (RaReNet)
 

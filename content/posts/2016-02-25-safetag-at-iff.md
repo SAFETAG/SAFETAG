@@ -24,7 +24,6 @@ This comment has been adapted from a cross-organizational posting which has incl
 * Friedhelm Weinberg, HURIDOCS - [post](https://www.huridocs.org/2016/02/improve-organizational-security-build-relationships-iff/)
 * Jon Camfield, SAFETAG/Internews - [post](https://medium.com/@joncamfield/a-quick-update-meet-us-at-the-internet-freedom-festival-next-week-d04d1d54727b)
 * Karel Novotný, APC - [post](https://www.apc.org/en/blog/finally-some-good-news-about-organizational-securi)
-* Kody Leonard, The ISC Project - [post](https://iscproject.org/finally-some-good-news-about-organizational-security-2/)
 * Kristin Antin, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
 * Maya Richman, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
 * Michael Carbone, Access Now - [post](https://www.accessnow.org/finally-some-good-news-about-organizational-security/)

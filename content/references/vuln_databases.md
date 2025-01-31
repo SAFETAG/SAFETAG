@@ -6,8 +6,6 @@ title: Vulnerability Databases
   
   * *Framework* [Vulnerability Assessment](http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html#FMFreemind_Link_1513945467FM) (http://www.vulnerabilityassessment.co.uk)
   
-  * *Database* ["Open Sourced Vulnerability Database"](http://osvdb.org/)
-
   * *Database* ["CVE Details"](http://www.cvedetails.com/)
 
   * *Database* [Search CVE and CCE Vulnerability Database](https://web.nvd.nist.gov/view/vuln/search-advanced)

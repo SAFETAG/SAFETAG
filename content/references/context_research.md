@@ -53,8 +53,8 @@ title: Other Context Analysis Methodologies
   * [Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
   * [ARTICLE 19 freedom of expression and freedom of information news by region.](https://www.article19.org/explore/)
   * [](https://www.article19.org/explore/)[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
-  * [Press Freedom Index (RSF)](https://rsf.org/en/ranking_table)
-* [](https://rsf.org/en/ranking_table)Climate  Issues
+  * [Press Freedom Index (RSF)](https://rsf.org/en/index)
+* Climate  Issues
 * Gender  Issues
 * Poverty  Alleviation
 * Community  Building
@@ -69,7 +69,7 @@ title: Other Context Analysis Methodologies
 
 **What general non-governmental threats does the organization face?**
 
-* *Map:* ["A global display of Terrorism and Other Suspicious Events"](http://www.globalincidentmap.com/map.php) (Global Incident Map)
+* *Map:* ["A global display of Terrorism and Other Suspicious Events"](https://globalincidentmap.com/) (Global Incident Map)
 * *Organization:* ["ReliefWeb has been the leading source for reliable and timely humanitarian information on global crises and disasters since 1996."](http://reliefweb.int/) (ReliefWeb)
 * *Reports:* [International NGO Safety](http://www.ngosafety.org/) (NGO proof, subscription required, covers Afghanistan, CAR, DRC, Kenya, Mali, and Syria currently)
 
@@ -78,23 +78,21 @@ title: Other Context Analysis Methodologies
 * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search?keywords=state+privacy) (Privacy International)
 * *List:* ["National Cyber Security Policy and Legal Documents"](https://ccdcoe.org/library/strategy-and-governance/) (NATO Cooperative Cyber Defence Centre of Excellence)
 * *Reports:* ["Country Reports"](https://opennet.net/research/profiles) (Open Network Initiative)
-* *Portal:* ["Country Level Information security threats"](https://iscproject.org/) (The ISC Project)
 * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (Global Cybersecurity Index (GCI))
 * *Organization:* ["The Citizen Lab is an interdisciplinary laboratory based at the Munk School of Global Affairs, University of Toronto, Canada focusing on advanced research and development at the intersection of Information and Communication Technologies (ICTs), human rights, and global security."](https://citizenlab.org/) (The Citizen Lab)
 * *Map:* ["Cyber-Censorship Map"](https://alkasir.com/map) (Alkasir)
 * *Dashboard:* ["At-A-Glance Web-Blockage Dashboard"](http://herdict.org/explore/indephth) (Herdict)
-* *List:* ["Who publishes Transparency Reports?"](http://jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an) (James Losey)
+* *Resource:* ["Transparency Reporting Index"](http:/https://www.accessnow.org/campaign/transparency-reporting-index//jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an) (Access Now)
 * *Overviews:*["Cyberwellness Profiles"](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (ITU)
 
 **What general cyber-security threats is the organization facing?**
 
 * *Report:* ["The Internet Annual Security Threat Report"](http://www.symantec.com/security_response/publications/threatreport.jsp) (Symantec)
-* *Report:* ["Annual threat report"](https://www.fireeye.com/current-threats/annual-threat-report.html) (Mandiant)
+* *Report:* ["Global threat report"](https://www.crowdstrike.com/en-us/global-threat-report/) (CrowdStrike)
 * *Reports:* ["APWG Phishing Attack Trends Reports"](http://www.apwg.org/resources/apwg-reports/) (Anti-Phishing Working Group)
 
   * *Reports:* ["Secunia Country Reports"](https://secunia.com/resources/countryreports/) (Secunia)
-  * *Reports:* ["McAfee Threat Trends Papers"](https://www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
-  * *Report:* ["Monthly intelligence report"](https://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
+    * *Report:* ["Monthly intelligence report"](https://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
 
 **What level of technology is available in the region?**
 

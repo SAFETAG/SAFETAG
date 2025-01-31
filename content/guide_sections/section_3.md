@@ -62,7 +62,7 @@ The host needs to be able to take action after an audit. The recommendations tha
 
 * *Multi-lingual Guides:* [Security in a Box](https://securityinabox.org/en)
 * *Resource:* [Front Line Defenders](https://www.frontlinedefenders.org/digital-security)
-* *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/en/index) (EFF)
+* *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/) (EFF)
 * *Guide:* ["The Digital First Aid Kit"](https://digitaldefenders.org/digitalfirstaid/#DFAk/) (Digital Defenders Partnership)
 * *Guides:* ["Protektor Services Manuals"](https://protektor-blog.blogspot.com/) (Protektor Services)
 * *Guide:* ["Cryptoparty Handbook"](http://mirror-de.cryptoparty.is/handbook/) (CryptoParty)

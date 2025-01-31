@@ -8,7 +8,7 @@ title: Creating Agreements and Rules of Engagement
 
   * *Template:* ["Rules of Engagement Template"](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=67) (NIST SP 800-115)
 
-  * *Article:* ["The Difference Between a Vulnerability Assessment and a Penetration Test"](http://danielmiessler.com/writing/vulnerability_assessment_penetration_test/) (Daniel Miessler)
+  * *Article:* ["The Difference Between a Vulnerability Assessment and a Penetration Test"](https://danielmiessler.com/blog/vulnerability-assessment-penetration-test) (Daniel Miessler)
 
   * *Article:* ["Vulnerability Assessment and Penetration Testing"](https://www.gosafeonline.sg/vulnerability-assessment-and-penetration-testing-0) (gosafe)
 
