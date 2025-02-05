@@ -18,8 +18,7 @@ summary: |
   focused on involving the organization staff members into mapping out potential
   threats based on the abstraction and the gamification of the physical security
   mapping process. See the "Risk Hunting" exercise in
-  [SaferJourno](https://www.internews.org/sites/default/files/resources/SaferJournoGuide_2014-03-21.pdf),
-  page 19, for additional ideas and guidance on conducting this activity.
+  [SaferJourno](https://saferjourno.org) for additional ideas and guidance on conducting this activity.
 overview: |
   A local facilitator is required to lead this "scavenger hunt" where staff
   members seek out potential physical security challenges themselves. This
@@ -69,7 +68,7 @@ walk_through: |
   organization point of contact should decide if any areas are "off limits." 
   Note that this is only a list of a suggestions. As with the "Risk Hunting"
   exercise in
-  [SaferJourno](https://www.internews.org/sites/default/files/resources/SaferJournoGuide_2014-03-21.pdf),
+  [SaferJourno](https://saferjourno.org),
   and it should be modified to fit the requirements, assets, and threats the
   organization faces:
 

@@ -22,9 +22,9 @@ This comment has been adapted from a cross-organizational posting which has incl
 * CC, EngageMedia - [post](https://www.engagemedia.org/blog/finally-some-good-news-about-organizational-security)
 * Friedhelm Weinberg, HURIDOCS - [post](https://www.huridocs.org/2016/02/improve-organizational-security-build-relationships-iff/)
 * Jon Camfield, SAFETAG/Internews - [post](https://medium.com/@joncamfield/a-quick-update-meet-us-at-the-internet-freedom-festival-next-week-d04d1d54727b)
-* Kristin Antin, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
-* Maya Richman, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
 * Michael Carbone, Access Now - [post](https://www.accessnow.org/finally-some-good-news-about-organizational-security/)
+* Kristin Antin, the engine room
+* Maya Richman, the engine room
 * Natasha Msonza, Digital Society of Africa
 * Niels ten Oever, Article 19
 * Pablo Zavala, Front Line Defenders

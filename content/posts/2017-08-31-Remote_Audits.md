@@ -32,7 +32,7 @@ During this component an auditor tours the audit location(s) and flags potential
 
 ### Scavenger Hunt (New)
 
-This activity assists in identifying potential physical security concerns at an organization, particularly when an auditor cannot travel to the office location or cannot visit every office location. The scavenger hunt approach is focused on involving the organization staff members into mapping out potential threats based on the abstraction and the gamification of the physical security mapping process. See the "Risk Hunting" exercise in [SaferJourno](https://www.internews.org/sites/default/files/resources/SaferJournoGuide_2014-03-21.pdf), page 19, for additional ideas and guidance on conducting this activity.
+This activity assists in identifying potential physical security concerns at an organization, particularly when an auditor cannot travel to the office location or cannot visit every office location. The scavenger hunt approach is focused on involving the organization staff members into mapping out potential threats based on the abstraction and the gamification of the physical security mapping process. See the "Risk Hunting" exercise in [SaferJourno](https://saferjourno.org), page 19, for additional ideas and guidance on conducting this activity.
 
 ### Remote Local Network Scanning and  Device Assessment (Adapted)
 
