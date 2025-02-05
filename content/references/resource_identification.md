@@ -8,7 +8,7 @@ title: Resource Identification
 
   * *Digital Emergency Contacts:* ["Seeking Remote Help"](https://digitalfirstaid.org) (The Digital First Aid Kit)
 
-  * *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
+  * *Directory:* ["Resource Handbooks"](https://tcij.org/handbooks/) (Center for Investigative Journalism)
 
   * *Guide:* ["Additional Resources: p. 298"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf) (Operational Security Management in Violent Environments (Revised Edition))
 

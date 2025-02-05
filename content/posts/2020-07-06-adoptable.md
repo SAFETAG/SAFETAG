@@ -9,7 +9,7 @@ tags: ["SAFETAG", "OrgSec", "IFF", "Events"]
 draft: false
 ---
 
-*This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG. Read more about this effort on the [Global Technology Blog](https://globaltech.internews.org/blog/introducing-adoptable)*
+*This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG.*
 
 ## Equipping at-risk organizations with localized expertise, resources, and tools to mitigate digital attacks
 

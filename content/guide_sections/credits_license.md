@@ -55,5 +55,5 @@ See [SAFETAG Contributors](https://github.com/SAFETAG/SAFETAG/graphs/contributor
 
 We also recognize contributions from other projects made available under other Open Source Licenses:
 
-* The Interview and Capacity Assessment components borrows heavily from [the engine room's](https://www.theengineroom.org) [TechScape](https://www.theengineroom.org/wp-content/uploads/2012/06/TechScape_SlideDeck1.pdf) project. They have [made their content available](https://www.theengineroom.org/attribution-policy/) under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/3.0/us/).
+* The Interview and Capacity Assessment components borrows heavily from [the engine room's](https://www.theengineroom.org) [TechScape](https://www.theengineroom.org/wp-content/uploads/2012/06/TechScape_SlideDeck1.pdf) project. They have made their content available under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/3.0/us/).
 * The Data Assessment Activity was taken from the [Level Up Project](https://level-up.cc) is available under a [Creative Commons Attribution-Share Alike Unported 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). This activity is credited to Pablo, Daniel O’Clunaigh, Ali Ravi, and Samir Nassar.

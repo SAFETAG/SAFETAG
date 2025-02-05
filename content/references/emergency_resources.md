@@ -4,7 +4,7 @@ title: Emergency Resources
 
 [Emergency Aid for Journalists](http://gijn.org/2014/07/14/new-resource-guide-emergency-assistance/)
 
-[International protection mechanisms for human rights defenders](http://integratedsecuritymanual.org/european-human-rights-system)
+[International protection mechanisms for human rights defenders](https://integratedsecuritymanual.org/material/detailed-sessions/day-3-reflection-recommendation-protection-options-next-steps/session-10-international-protection-mechanisms/international-protection-mechanisms/)
 
 [What Protection Can The  United Nations Field Presences Provide?](www.frontlinedefenders.org/files/un_handbook_small.pdf)
 

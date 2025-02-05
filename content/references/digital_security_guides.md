@@ -14,5 +14,5 @@ title: Digital Security Guides
 
   * *Guide:* ["Cryptoparty Handbook"](https://cryptoparty.in/) (CryptoParty)
 
-  * *Guide:* ["Bypassing Internet Censorship"](http://en.flossmanuals.net/bypassing-censorship/) (Floss Manuals)
+  * *Guide:* ["Bypassing Internet Censorship"](http://archive.flossmanuals.net/bypassing-censorship/) (Floss Manuals)
 

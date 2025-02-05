@@ -11,7 +11,7 @@ draft: false
 
 <div style="text-align: center"><img src="/img/blog/RC_01.png" alt="Image with USABLE logo and title What happens between SAFETAG-based audits in NGOs? Long term tech support" style="border: 0; width: 100%; padding: 1em;" /></div>
 
-*This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG. Read more about this effort on the [Global Technology Blog](https://globaltech.internews.org/blog/introducing-adoptable)*
+*This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG.*
 
 [RightsCon](https://rightscon.org), the world’s leading event on human rights in the digital age, was held online this year during the month of July 2020. [Digital Security Lab Ukraine](https://dslua.org/), [Media Diversity Institute Armenia](https://mdi.am/en/home/), and [Internews](https://internews.org/) led a session entitled “What happens between SAFETAG-based audits and NGOs? Long-term tech support.” This session explored how audit findings and risk reduction plans can be converted into post-audit change; how long-term support and engagement with organizations can significantly boost both accuracy of security modeling and adoption of the best and context-relevant security practices; and the successes and failures they have experienced in practicing long-term organizational security. Lessons and best practices shared during the session can be found below.
 

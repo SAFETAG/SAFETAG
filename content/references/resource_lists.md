@@ -2,7 +2,7 @@
 title: Resource Lists
 ---
 
-  * *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
+  * *Directory:* ["Resource Handbooks"](https://tcij.org/handbooks/) (Center for Investigative Journalism)
 
   * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](http://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)
 

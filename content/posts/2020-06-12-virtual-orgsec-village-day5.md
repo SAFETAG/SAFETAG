@@ -28,6 +28,6 @@ Sessions on Day 5 focused on funding OrgSec work and Monitoring & Evaluation.
 * **Whether to evaluate OrgSec interventions using shared community standards or by measuring change within an organization and against its own threat model** continued to inspire debate among community members. The Engine Room shared a Monitoring and Evaluation Framework for Organisational Security - which takes the latter approach - for practitioners to adapt for their own M&E practices.
 
 
-*Thank you for participating in OrgSec this week! If you’d like to continue the conversation head to https://orgsec.community/display/OS. We will be posting shared notes from the event on the wiki next week!*
+*Thank you for participating in OrgSec this week! If you’d like to continue the conversation head to https://orgsec.community/. We will be posting shared notes from the event on the wiki next week!*
 
 <div style="text-align: center"><img src="/img/blog/IFFOSV_Title.svg" alt="Five OrgSec Village Themes are 1. Approaches to OrgSec 2. OrgSec In Practice 3. Advanced Threats 4. Funding OrgSec Work 5. Monitoring and Evaluation" style="border: 0; width: 100%; padding: 1em;" /></div>
