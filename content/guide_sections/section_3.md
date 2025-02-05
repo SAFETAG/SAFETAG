@@ -54,18 +54,18 @@ The host needs to be able to take action after an audit. The recommendations tha
 
 * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](https://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)
 * *Directory:* ["Security Training Firms"](https://www.cpj.org/reports/2012/04/security-training.php) (CPJ)
-* *Digital Emergency Contacts:* ["Seeking Remote Help"](https://digitaldefenders.org/digitalfirstaid/sections/investment-committee/) (The Digital First Aid Kit)
+* *Digital Emergency Contacts:* ["Seeking Remote Help"](https://digitalfirstaid.org/support/) (The Digital First Aid Kit)
 * *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
-* *Guide:* ["Additional Resources: p. 298"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=298) (Operational Security Management in Violent Environments (Revised Edition))
+* *Guide:* ["Additional Resources: p. 298"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf#page=320) (Operational Security Management in Violent Environments (Revised Edition))
 
 #### Digital Security Guides
 
 * *Multi-lingual Guides:* [Security in a Box](https://securityinabox.org/en)
 * *Resource:* [Front Line Defenders](https://www.frontlinedefenders.org/digital-security)
 * *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/) (EFF)
-* *Guide:* ["The Digital First Aid Kit"](https://digitaldefenders.org/digitalfirstaid/#DFAk/) (Digital Defenders Partnership)
+* *Guide:* ["The Digital First Aid Kit"](https://digitalfirstaid.org) (Digital Defenders Partnership)
 * *Guides:* ["Protektor Services Manuals"](https://protektor-blog.blogspot.com/) (Protektor Services)
-* *Guide:* ["Cryptoparty Handbook"](http://mirror-de.cryptoparty.is/handbook/) (CryptoParty)
+* *Guide:* ["Cryptoparty Handbook"](https://cryptoparty.in/) (CryptoParty)
 * *Guide:* ["Bypassing Internet Censorship"](https://flossmanuals.net/bypassing-censorship/) (Floss Manuals)
 
 #### Digital Security Guides
@@ -107,7 +107,7 @@ The host needs to be able to take action after an audit. The recommendations tha
 
 * *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
 * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](https://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)
-* *Guide:* ["Additional Resources: p. 298"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=298) (Operational Security Management in Violent Environments (Revised Edition))
+* *Guide:* ["Additional Resources: p. 298"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf#page=320) (Operational Security Management in Violent Environments (Revised Edition))
 * *Database:* ["A Collaborative Knowledge Base for Netizens"](http://www.tasharuk.net/en/home/) (Tasharuk)
 * *Guidelines:* ["Microsoft nonprofit discount eligibility guidelines per country"](http://www.microsoftvolumelicensing.com/userights/DocumentSearch.aspx?Mode=3&DocumentTypeId=19) (Microsoft)
 * *Organization:* ["TechSoup, nonprofits and libraries can access donated and discounted products and services from partners like Microsoft, Adobe, Cisco, Intuit, and Symantec."](http://www.techsoup.org/) (TechSoup)

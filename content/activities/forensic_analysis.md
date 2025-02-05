@@ -50,7 +50,7 @@ considerations: |
 walk_through: |
   *In most cases, reach out for help, there are multiple organizations which
   coordinate and can support malware analysis targeting NGOs. The [Digital First
-  Aid Kit](https://digitalfirstaid.org/en/support/) has a list of
+  Aid Kit](https://digitalfirstaid.org/support/) has a list of
   [CiviCERT](https://civicert.org/) organizations to seek support in doing
   advanced analysis. [Citizen Lab](https://citizenlab.ca/) is also well known
   for their analysis and research.*

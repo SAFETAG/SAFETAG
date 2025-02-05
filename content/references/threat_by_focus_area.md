@@ -7,7 +7,7 @@ title: Threat research by focus area
     * [Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
     * [Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
   * Transparency [^corruptions_perception_index]
-    * [Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
+    * [Corruption  Perception  Index](https://www.transparency.org/en/cpi)
   * Public  Service  Delivery
   * Health
   * Free  Media  and  Information 
@@ -15,9 +15,9 @@ title: Threat research by focus area
     * [IREX’s Media Sustainability Index (MSI) provides in-depth analyses of the conditions for independent media in 80 countries across the world.](http://www.irex.org/project/media-sustainability-index-msi)
     * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](http://www.freedomhouse.org/report-types/freedom-net)
     * [Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
-    * [ARTICLE 19 freedom of expression and freedom of information news by region.](http://www.article19.org/pages/en/where-we-work.html)
+    * [ARTICLE 19 freedom of expression and freedom of information news by region.](https://www.article19.org/where-we-work/)
     * [Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
-    * [Press Freedom Index (RSF)](https://en.rsf.org/press-freedom-index.html)
+    * [Press Freedom Index (RSF)](https://rsf.org/en/index)
   * Climate  Issues
   * Gender  Issues
   * Poverty  Alleviation

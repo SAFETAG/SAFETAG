@@ -44,9 +44,9 @@ title: footnotes
 
 [^NIST_SP_800_115_soc_eng_hostile]:["Individual targeting can lead to embarrassment for those individuals if testers successfully elicit information or gain access. It is important that the results of social engineering testing are used to improve the security of the organization and not to single out individuals."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
-[^GPR_8_Likelihood]:["Likelihood: Chapter 2.7 p. 47 - Operational Security Management in Violent Environments"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38)
+[^GPR_8_Likelihood]:["Likelihood: Chapter 2.7 p. 47 - Operational Security Management in Violent Environments"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf)
 
-[^GPR_8_impacts]:["Impacts: Chapter 2.7 p. 46 - Operational Security Management in Violent Environments"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38)
+[^GPR_8_impacts]:["Impacts: Chapter 2.7 p. 46 - Operational Security Management in Violent Environments"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf)
 
 <!-- Facilitation -->
 
@@ -97,11 +97,11 @@ title: footnotes
 
 [^freedom_of_the_press]:[Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
 
-[^article_19_by_country]:[ARTICLE 19 freedom of expression and freedom of information news by region.](http://www.article19.org/pages/en/where-we-work.html)
+[^article_19_by_country]:[ARTICLE 19 freedom of expression and freedom of information news by region.](https://www.article19.org/where-we-work/)
 
 [^OSF_digital_media]:[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
 
-[^press_freedom_index]:[Press Freedom Index (RSF)](https://en.rsf.org/press-freedom-index.html)
+[^press_freedom_index]:[Press Freedom Index (RSF)](https://rsf.org/en/index)
 
 [^press_freedom_index_methodology]:[Press Freedom Index Methodology (RSF)](http://rsf.org/index2014/data/2014_wpfi_methodology.pdf)
 
@@ -110,7 +110,7 @@ title: footnotes
 
 [^freedom_in_the_world]:[Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
 
-[^corruptions_perception_index]:[Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
+[^corruptions_perception_index]:[Corruption  Perception  Index](https://www.transparency.org/en/cpi/)
 
 [^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
 
@@ -118,7 +118,7 @@ title: footnotes
 
 <!-- Surveillance and Censorship -->
 
-[^pi_country_reports]:[Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy)
+[^pi_country_reports]:[Search Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search)
 
 [^surveillance_whos_who]:[Surveillance Who's Who exposes the government agencies that attended ISS World surveillance trade shows between 2006 and 2011.](https://www.privacyinternational.org/resources/surveillance-whos-who)
 

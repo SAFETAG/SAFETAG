@@ -10,4 +10,4 @@ title: Emergency Resources
 
 [24/7 Digital Security Helpline: help@accessnow.org](https://www.accessnow.org/help) PGP key fingerprint: 6CE6 221C 98EC F399 A04C 41B8 C46B ED33 32E8 A2BC
 
-[CiviCERT](http://www.civicert.org) - a coordination of rapid response organizations. CiviCERT members offering emergency support are listed in the [Digital First Aid Kit](https://digitalfirstaid.org/en/support/)
+[CiviCERT](http://www.civicert.org) - a coordination of rapid response organizations. CiviCERT members offering emergency support are listed in the [Digital First Aid Kit](https://digitalfirstaid.org/support/)

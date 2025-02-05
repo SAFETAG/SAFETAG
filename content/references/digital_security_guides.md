@@ -12,7 +12,7 @@ title: Digital Security Guides
 
   * *Guides:* ["Protektor Services Manuals"](http://protektor-blog.blogspot.com/) (Protektor Services)
 
-  * *Guide:* ["Cryptoparty Handbook"](http://mirror-de.cryptoparty.is/handbook/) (CryptoParty)
+  * *Guide:* ["Cryptoparty Handbook"](https://cryptoparty.in/) (CryptoParty)
 
   * *Guide:* ["Bypassing Internet Censorship"](http://en.flossmanuals.net/bypassing-censorship/) (Floss Manuals)
 

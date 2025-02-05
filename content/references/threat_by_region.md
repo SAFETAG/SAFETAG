@@ -26,7 +26,7 @@ title: General Threats by Region
 
   * *Guide:* ["World Map of Encryption Laws and Policies"](https://www.gp-digital.org/world-map-of-encryption/) (Global Partners Digital)
 
-  * *List:* ["National Cyber Security Policy and Legal Documents"](http://www.ccdcoe.org/strategies-policies.html) (NATO Cooperative Cyber Defence Centre of Excellence)
+  * *List:* ["National Cyber Security Policy and Legal Documents"](https://www.ccdcoe.org/library/strategy-and-governance/) (NATO Cooperative Cyber Defence Centre of Excellence)
 
 #### Technical Threats
 
@@ -36,11 +36,11 @@ title: General Threats by Region
 
   * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) ( Global Cybersecurity Index (GCI))
 
-  * *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy) (Privacy International)
+  * *Reports:* [Search Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search) (Privacy International)
 
   * *Organization:* ["The Citizen Lab is an interdisciplinary laboratory based at the Munk School of Global Affairs, University of Toronto, Canada focusing on advanced research and development at the intersection of Information and Communication Technologies (ICTs), human rights, and global security."](https://citizenlab.org/) (The Citizen Lab)
 
-  * *Database:* ["International Cyber Developments Review (INCYDER)"](http://ccdcoe.org/incyder.html) (NATO Cooperative Cyber Defence Centre of Excellence)
+  * *Database:* ["International Cyber Developments Review (INCYDER)"](https://ccdcoe.org/research/incyder/) (NATO Cooperative Cyber Defence Centre of Excellence)
 
   * *Guide:* ["This handbook sets out an overview of the key privacy and data protection laws and regulations across 72 different jurisdictions, and offers a primer to businesses as they consider this complex area of compliance."](http://www.dlapiperdataprotection.com/) (Data Protection Laws of the World - DLA PIPER)
 

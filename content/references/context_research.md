@@ -37,9 +37,9 @@ title: Other Context Analysis Methodologies
 
 * Human  Rights
 
-  * [Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
+  * [Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](https://freedomhouse.org/report/freedom-world)
   * [Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
-  * [Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
+  * [Human Rights Watch - Browse by Region](https://www.hrw.org/regions)
 * Transparency
 
   * [Corruption  Perception  Index](https://www.transparency.org/en/cpi/2020/index/rus#)
@@ -49,10 +49,9 @@ title: Other Context Analysis Methodologies
 
   * [Threatened Voices: Tracking suppression of online free speech.](http://threatened.globalvoicesonline.org/)
   * [IREX’s Media Sustainability Index (MSI) provides in-depth analyses of the conditions for independent media in 80 countries across the world.](http://www.irex.org/project/media-sustainability-index-msi)
-  * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](http://www.freedomhouse.org/report-types/freedom-net)
-  * [Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
+  * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](https://freedomhouse.org/report/freedom-net)
   * [ARTICLE 19 freedom of expression and freedom of information news by region.](https://www.article19.org/explore/)
-  * [](https://www.article19.org/explore/)[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
+  * [Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
   * [Press Freedom Index (RSF)](https://rsf.org/en/index)
 * Climate  Issues
 * Gender  Issues
@@ -75,14 +74,14 @@ title: Other Context Analysis Methodologies
 
 **What cyber-security practices is the government using?**
 
-* *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search?keywords=state+privacy) (Privacy International)
+* *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search) (Privacy International)
 * *List:* ["National Cyber Security Policy and Legal Documents"](https://ccdcoe.org/library/strategy-and-governance/) (NATO Cooperative Cyber Defence Centre of Excellence)
 * *Reports:* ["Country Reports"](https://opennet.net/research/profiles) (Open Network Initiative)
 * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (Global Cybersecurity Index (GCI))
 * *Organization:* ["The Citizen Lab is an interdisciplinary laboratory based at the Munk School of Global Affairs, University of Toronto, Canada focusing on advanced research and development at the intersection of Information and Communication Technologies (ICTs), human rights, and global security."](https://citizenlab.org/) (The Citizen Lab)
 * *Map:* ["Cyber-Censorship Map"](https://alkasir.com/map) (Alkasir)
 * *Dashboard:* ["At-A-Glance Web-Blockage Dashboard"](http://herdict.org/explore/indephth) (Herdict)
-* *Resource:* ["Transparency Reporting Index"](http:/https://www.accessnow.org/campaign/transparency-reporting-index//jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an) (Access Now)
+* *Resource:* ["Transparency Reporting Index"](https://www.accessnow.org/campaign/transparency-reporting-index/) (Access Now)
 * *Overviews:*["Cyberwellness Profiles"](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (ITU)
 
 **What general cyber-security threats is the organization facing?**
