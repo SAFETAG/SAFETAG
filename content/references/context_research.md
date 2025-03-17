@@ -23,7 +23,7 @@ title: Other Context Analysis Methodologies
 * *List:* ["Foreign travel advice"](https://www.gov.uk/foreign-travel-advice) (GOV.UK)
 * *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/content/passports/english/alertswarnings.html) (US Department of State)
 
-  * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission)
+  * *List:* ["List of airlines banned within the EU"](https://transport.ec.europa.eu/transport-themes/eu-air-safety-list_en) (European Commission)
   * *List:* ["A list of aircraft operators that have that have suffered an accident, serious incident or hijacking."](http://aviation-safety.net/database/operator/) (Aviation Safety Network)
   * *List:* ["Travel Advice"](http://www.smartraveller.gov.au/) (Australian Government)
 
