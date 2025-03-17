@@ -4,6 +4,7 @@ position: 100
 summary: |
   This component allows the auditor to identify what sensitive data exists for
   the organization, where it is stored, and how it is transferred.
+short_summary: This component allows the auditor to identify what sensitive data exists for the organization, where it is stored, and how it is transferred.
 the_flow_of_information: "![](/img/data_assessment.png)"
 method_icon: "/img/data_assessment_icon.png"
 guiding_questions: |

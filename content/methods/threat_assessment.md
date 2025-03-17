@@ -18,7 +18,7 @@ summary: >
   attacker's history of carrying out specific threats, their capability to carry
   out those threats currently, and proof that the threat has intent to leverage
   resources against the target.
-short_summary: " "
+short_summary: Use a variety of activities to  identify possible attackers and gather background information about their capability to threaten the organization.
 the_flow_of_information: "![](/img/threat_assessment.png)"
 guiding_questions: >
   * Who are potential adversaries for the organization?

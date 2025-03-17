@@ -3,6 +3,7 @@ title: Network Mapping
 position: 60
 summary: |
   This component allows the auditor to identify security issues with the host's network and map the devices on a host's network, the services that are being used by those devices, and any protections in place.
+short_summary: Identify security issues and map devices on a host's network, the services that are being used by those devices, and any protections in place.
 the_flow_of_information: "![](/img/network_mapping.png)"
 method_icon: "/img/network_mapping_icon.png"
 guiding_questions: |

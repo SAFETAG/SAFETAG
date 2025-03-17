@@ -7,6 +7,7 @@ summary: |
   the auditor may need to further investigate a malware infection, analyze a
   binary and determine if it is malicious or not, and recommend urgent
   mitigation steps.
+short_summary: Identify, triage, and analyze suspicious behavior on a device or in a network for potential advanced threats and recommend urgent mitigation steps.
 the_flow_of_information: "![](/img/advanced_threat.png)"
 method_icon: "/img/advanced_threat_icon.png"
 guiding_questions: |
