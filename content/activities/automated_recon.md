@@ -1,5 +1,5 @@
 ---
-title: Automated Reconnaisance
+title: Automated Reconnaissance
 approaches:
   - Technical
 position: 50
