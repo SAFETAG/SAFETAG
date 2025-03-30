@@ -40,3 +40,22 @@ System preferences -> Privacy and Security -> Filevault (on).
 
   GUI: The "Activity Monitor" application is located in /Applications/Utilities
   provides a similar interface to "top"
+
+App installation sources:
+
+`"System Preferences" - "Privacy and Security" - "Allow applications downloaded from".`
+
+
+* Family sharing
+
+* Is Xcode present?
+
+* iCloud 
+phones
+(legacy contact)
+keychain syncronisation
+device list
+phone numbers
+emails
+
+
