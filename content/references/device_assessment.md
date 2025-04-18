@@ -6,6 +6,6 @@ title: Device Assessment
 
   * *Benchmarks:* ["Security Configuration Benchmarks"](http://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks) (CIS Security Benchmarks)
 
-  * *Repository:* ["National Checklist Program Repository - Prose security checklists"](https://web.nvd.nist.gov/view/ncp/repository) (National Vulnerability Database)
+  * *Repository:* ["National Checklist Program"](https://ncp.nist.gov/) (NIST)
 
   * *Windows Utility:* ["HardenTools"](https://github.com/securitywithoutborders/hardentools) (Security Without Borders)
