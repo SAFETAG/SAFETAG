@@ -5,8 +5,7 @@ title: Data Assessment
 
   * *Activity:* ["Backup Matrix: Creating an Information Map"](https://level-up.cc/curriculum/protecting-data/data-backup-basics/activity-discussion/data-backup-matrix-creating-information-map/) (LevelUp)
 
-  * *Activity:* ["Identifying and prioritizing your organization’s
-information types "](http://csrc.nist.gov/publications/nistir/ir7621/nistir-7621.pdf#page=18) (NISTIR 7621)
+  * *Activity:* ["Safeguarding your information"](https://csrc.nist.gov/pubs/ir/7621/r1/final) (NIST IR 7621 Rev. 1, starting on section 3 (page 16))
 
   * *Guide:* ["Data Risk Checker: Categorizing harm levels on knowledge assets to inform mitigation and protection"](https://wiki.responsibledata.io/Data_Risk_Checker) (Responsible Data Forum wiki)
 
