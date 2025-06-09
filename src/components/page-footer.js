@@ -29,6 +29,10 @@ const PageSocial = styled.p`
   color: ${themeVal("color.surface")};
 `
 
+const ContactLink = styled.a`
+  color: #eeeeee;
+`
+
 const Year = new Date().getFullYear()
 
 const GlobalFooter = () => {
@@ -40,9 +44,9 @@ const GlobalFooter = () => {
           <Trans i18nKey="footer-1">© {{Year}} SAFETAG™: A Project of Internews</Trans>
         </PageCredits>
 
-        <PageSocial>
+        <ContactLink>
           <a href="/contact"><Trans i18nKey="footer-2">Contact us</Trans></a>
-        </PageSocial>
+        </ContactLink>
 
       </PageFootInner>
     </PageFoot>
