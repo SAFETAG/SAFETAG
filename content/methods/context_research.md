@@ -20,6 +20,7 @@ authors:
 activities:
   - Regional Context Research
   - Technical Context Research
+  - Assessing legal threats
 references:
   - Other Context Analysis Methodologies
 operational_security: |
