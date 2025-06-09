@@ -58,18 +58,20 @@ a:hover :after{opacity:1;transform:translateY(150%);}/*!sc*/
 a:active{transform:translate(0,1px);}/*!sc*/
 a[class^="card"]{cursor:pointer;}/*!sc*/
 a[class^="card"]:hover,a[class^="card"]:active{opacity:1;transform:none;}/*!sc*/
-[role="button"]{cursor:pointer;}/*!sc*/
-input,select,textarea{font:inherit;height:auto;width:auto;margin:0;}/*!sc*/
-table{border-collapse:collapse;border-spacing:0;}/*!sc*/
-blockquote,q{quotes:none;}/*!sc*/
-blockquote::before,blockquote::after,q::before,q::after{content:"";content:none;}/*!sc*/
-b,strong{font-weight:700;}/*!sc*/
-::selection{background-color:rgba(6,204,211,0.64);}/*!sc*/
-#root{min-height:100vh;}/*!sc*/
-.tether-element{z-index:1000;}/*!sc*/
-#gatsby-focus-wrapper{min-height:100vh;}/*!sc*/
-#gatsby-focus-wrapper{display:flex;flex-direction:column;}/*!sc*/
-data-styled.g1[id="sc-global-bCOxkG1"]{content:"sc-global-bCOxkG1,"}/*!sc*/
+a[class^="card"] a[class^="contact"]{cursor:pointer;}/*!sc*/
+a[class^="card"] a[class^="contact"]:link,a[class^="card"] a[class^="contact"]:hover,a[class^="card"] a[class^="contact"]:focus,a[class^="card"] a[class^="contact"]:active,a[class^="card"] a[class^="contact"]:visited,a[class^="card"] a[class^="contact"]{color:#ffffff;text-decoration:underline;}/*!sc*/
+a[class^="card"] [role="button"]{cursor:pointer;}/*!sc*/
+a[class^="card"] input,a[class^="card"] select,a[class^="card"] textarea{font:inherit;height:auto;width:auto;margin:0;}/*!sc*/
+a[class^="card"] table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+a[class^="card"] blockquote,a[class^="card"] q{quotes:none;}/*!sc*/
+a[class^="card"] blockquote::before,a[class^="card"] blockquote::after,a[class^="card"] q::before,a[class^="card"] q::after{content:"";content:none;}/*!sc*/
+a[class^="card"] b,a[class^="card"] strong{font-weight:700;}/*!sc*/
+a[class^="card"] ::selection{background-color:rgba(6,204,211,0.64);}/*!sc*/
+a[class^="card"] #root{min-height:100vh;}/*!sc*/
+a[class^="card"] .tether-element{z-index:1000;}/*!sc*/
+a[class^="card"] #gatsby-focus-wrapper{min-height:100vh;}/*!sc*/
+a[class^="card"] #gatsby-focus-wrapper{display:flex;flex-direction:column;}/*!sc*/
+data-styled.g1[id="sc-global-hFoBBN1"]{content:"sc-global-hFoBBN1,"}/*!sc*/
 .gzIUD{padding:1rem;margin:0 auto;max-width:1280px;}/*!sc*/
 data-styled.g2[id="constrainer__Constrainer-sc-vi2beb-0"]{content:"gzIUD,"}/*!sc*/
 .hBBBrw{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;user-select:none;display:inline-block;text-align:center;white-space:nowrap;vertical-align:middle;line-height:1.5rem;font-size:1rem;padding:0.25rem 0.75rem;min-width:2rem;background:none;text-shadow:none;border:0;font-family:"Space Mono",monospace;font-weight:700;cursor:pointer;position:relative;transition:background-color 0.24s ease 0s;background-color:#0721eb;box-shadow:0 -1px 1px 0 rgba(0,0,0,0.08),0 2px 0px 0 rgba(0,0,0,0.16);line-height:1.5rem;font-size:1rem;padding:0.25rem 0.75rem;min-width:2rem;border-radius:0;display:inline-block;}/*!sc*/
@@ -229,7 +231,7 @@ data-styled.g62[id="method-layout__ActivityCard-sc-1ukxja6-5"]{content:"kgSQvf,"
 <p><em>Benchmarks:</em> <a href="http://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks">"Security Configuration Benchmarks"</a> (CIS Security Benchmarks)</p>
 </li>
 <li>
-<p><em>Repository:</em> <a href="https://web.nvd.nist.gov/view/ncp/repository">"National Checklist Program Repository - Prose security checklists"</a> (National Vulnerability Database)</p>
+<p><em>Repository:</em> <a href="https://ncp.nist.gov/">"National Checklist Program"</a> (NIST)</p>
 </li>
 <li>
 <p><em>Windows Utility:</em> <a href="https://github.com/securitywithoutborders/hardentools">"HardenTools"</a> (Security Without Borders)</p>
@@ -254,10 +256,9 @@ data-styled.g62[id="method-layout__ActivityCard-sc-1ukxja6-5"]{content:"kgSQvf,"
 <p><em>Guide:</em> <a href="https://www.wired.com/2016/05/password-tips-experts/">"7 Password Experts on How to Lock Down Your Online Security"</a> (Wired)</p>
 </li>
 <li>
-<p><em>Password Survery:</em> [Encountering Stronger Password Requirements:</p>
+<p><em>Password Survery:</em> <a href="https://cups.cs.cmu.edu/soups/2010/proceedings/a2_shay.pdf#page=14">Encountering Stronger Password Requirements: User Attitudes and Behaviors</a> (CUPS)</p>
 </li>
-</ul>
-<p>User Attitudes and Behaviors](<a href="https://cups.cs.cmu.edu/soups/2010/proceedings/a2_shay.pdf#page=14">https://cups.cs.cmu.edu/soups/2010/proceedings/a2_shay.pdf#page=14</a>) (CUPS)</p></div></div><div><p>Privilege Separation Across OS<!-- -->:</p><div><ul>
+</ul></div></div><div><p>Privilege Separation Across OS<!-- -->:</p><div><ul>
 <li>identify what privileges services are running as</li>
 <li>identify is the admin user is called admin or root</li>
 <li>Identify if users are logging in and installing software as admin.</li>
@@ -287,10 +288,9 @@ data-styled.g62[id="method-layout__ActivityCard-sc-1ukxja6-5"]{content:"kgSQvf,"
 <p><em>Guide:</em> <a href="https://securityinabox.org/en/guide/physical">"Protect your Information from Physical Threats"</a> (Frontline Defenders)</p>
 </li>
 <li>
-<p><em>Policy Template:</em> [Information Security</p>
+<p><em>Policy Template:</em> <a href="https://www.sans.org/security-resources/policies">Information Security Policy Templates</a> (SANS)</p>
 </li>
-</ul>
-<p>Policy Templates](<a href="https://www.sans.org/security-resources/policies">https://www.sans.org/security-resources/policies</a>) (SANS)</p></div></div></ul></section></div></section></article></main><footer role="contentinfo" class="page-footer__PageFoot-sc-1wx9oy3-0 kAbJVb"><div class="constrainer__Constrainer-sc-vi2beb-0 page-footer__PageFootInner-sc-1wx9oy3-1 gzIUD jgTpvC"><p class="page-footer__PageCredits-sc-1wx9oy3-2 dHiPa-d">© 2025 SAFETAG™: A Project of Internews</p><p class="page-footer__PageSocial-sc-1wx9oy3-3 ipOejd"><a href="/contact">Contact us</a></p></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+</ul></div></div></ul></section></div></section></article></main><footer role="contentinfo" class="page-footer__PageFoot-sc-1wx9oy3-0 kAbJVb"><div class="constrainer__Constrainer-sc-vi2beb-0 page-footer__PageFootInner-sc-1wx9oy3-1 gzIUD jgTpvC"><p class="page-footer__PageCredits-sc-1wx9oy3-2 dHiPa-d">© 2025 SAFETAG™: A Project of Internews</p><p class="page-footer__PageSocial-sc-1wx9oy3-3 ipOejd"><a href="/contact">Contact us</a></p></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
     window.dev = undefined
     if (window.dev === true || !(navigator.doNotTrack === '1' || window.doNotTrack === '1')) {
       window._paq = window._paq || [];
@@ -320,6 +320,6 @@ data-styled.g62[id="method-layout__ActivityCard-sc-1ukxja6-5"]{content:"kgSQvf,"
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-240b7df9860c246334b9.js\"],\"component---src-components-layouts-activity-layout-js\":[\"/component---src-components-layouts-activity-layout-js-0d48be31cb1658d83c62.js\"],\"component---src-components-layouts-method-layout-js\":[\"/component---src-components-layouts-method-layout-js-1077723bb5b24aa7e727.js\"],\"component---src-components-layouts-post-layout-js\":[\"/component---src-components-layouts-post-layout-js-e70bcae142fdb6d5281e.js\"],\"component---src-components-layouts-section-layout-js\":[\"/component---src-components-layouts-section-layout-js-28ab8908035a9a77168a.js\"],\"component---src-components-layouts-tool-layout-js\":[\"/component---src-components-layouts-tool-layout-js-ea09a2253fb348c09646.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-c5a7e95018ed289fcaf6.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-eeecf984690dc907947b.js\"],\"component---src-pages-activities-js\":[\"/component---src-pages-activities-js-db68e38dd89b9a23408d.js\"],\"component---src-pages-codeofconduct-js\":[\"/component---src-pages-codeofconduct-js-5c95d54154f156b6f457.js\"],\"component---src-pages-contact-js\":[\"/component---src-pages-contact-js-fb565663aaf2facb115a.js\"],\"component---src-pages-credits-js\":[\"/component---src-pages-credits-js-99a37757382b098647d7.js\"],\"component---src-pages-guide-builder-js\":[\"/component---src-pages-guide-builder-js-d8ad1003c5d24e598748.js\"],\"component---src-pages-guide-js\":[\"/component---src-pages-guide-js-336791ff64d62ed0b94b.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-097af84465c1d53e858c.js\"],\"component---src-pages-posts-js\":[\"/component---src-pages-posts-js-b51ea5e932c2db14f925.js\"],\"component---src-pages-search-js\":[\"/component---src-pages-search-js-684130560bad76d238cc.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-240b7df9860c246334b9.js\"],\"component---src-components-layouts-activity-layout-js\":[\"/component---src-components-layouts-activity-layout-js-0d48be31cb1658d83c62.js\"],\"component---src-components-layouts-method-layout-js\":[\"/component---src-components-layouts-method-layout-js-1077723bb5b24aa7e727.js\"],\"component---src-components-layouts-post-layout-js\":[\"/component---src-components-layouts-post-layout-js-e70bcae142fdb6d5281e.js\"],\"component---src-components-layouts-section-layout-js\":[\"/component---src-components-layouts-section-layout-js-28ab8908035a9a77168a.js\"],\"component---src-components-layouts-tool-layout-js\":[\"/component---src-components-layouts-tool-layout-js-ea09a2253fb348c09646.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-c5a7e95018ed289fcaf6.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-eeecf984690dc907947b.js\"],\"component---src-pages-activities-js\":[\"/component---src-pages-activities-js-db68e38dd89b9a23408d.js\"],\"component---src-pages-codeofconduct-js\":[\"/component---src-pages-codeofconduct-js-5c95d54154f156b6f457.js\"],\"component---src-pages-contact-js\":[\"/component---src-pages-contact-js-9dca965018d59a99f1f7.js\"],\"component---src-pages-credits-js\":[\"/component---src-pages-credits-js-99a37757382b098647d7.js\"],\"component---src-pages-guide-builder-js\":[\"/component---src-pages-guide-builder-js-d8ad1003c5d24e598748.js\"],\"component---src-pages-guide-js\":[\"/component---src-pages-guide-js-336791ff64d62ed0b94b.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-097af84465c1d53e858c.js\"],\"component---src-pages-posts-js\":[\"/component---src-pages-posts-js-b51ea5e932c2db14f925.js\"],\"component---src-pages-search-js\":[\"/component---src-pages-search-js-684130560bad76d238cc.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="8db6f5f485007cb7c2ae";</script><script src="/webpack-runtime-baaf721ebdcd909948a6.js" async></script><script src="/framework-b8fc86bba37e4ca75fa9.js" async></script><script src="/app-240b7df9860c246334b9.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="beea60bb43be0067027f";</script><script src="/webpack-runtime-2f6ab6013576c8356ebb.js" async></script><script src="/framework-b8fc86bba37e4ca75fa9.js" async></script><script src="/app-240b7df9860c246334b9.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
