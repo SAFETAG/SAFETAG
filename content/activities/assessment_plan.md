@@ -54,7 +54,7 @@ overview: |
   [^PETS_legal_considerations], [^PETS_separate_permissions]
 
   * Determine a point person for the audit and exchange contact information.  [^PETS_emergency_contact]
-  * Explain and get approval to the scope of audit from the host. [^PETS_legal_considerations], [^PETS_separate_permissions]
+  * Explain and get approval to the scope of audit from the host.
   * Agree to the timeline, location, and attendees of the on-site audit. [^pets_pre-engagement_location]
   * Codify data security standards for audit communication and evidence handling. [^PETS_evidence_handling]
   * Establish confidentiality and non-disclosure clauses
