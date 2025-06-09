@@ -10,7 +10,6 @@ references:
   - Facilitation Preparation
   - Digital Security Trainings
   - Digital Security Guides
-  - Training Resources
 method_icon: "/img/responsive_support_icon.png"
 summary: |
   The auditor provides assistance for any immediate action needed (spot
