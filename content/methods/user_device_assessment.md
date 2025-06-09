@@ -21,7 +21,6 @@ activities:
   - Mobile Device Assessment
   - A Day in the Life
   - A Night in the Life
-  - Firewire Access to Encrypted/Locked computers
   - Password Security Survey
   - Password Strength
   - Guided Tour
