@@ -24,10 +24,9 @@ const PageFootInner = styled(Constrainer)`
 const PageCredits = styled.p`
   color: ${themeVal("color.surface")};
 `
-
-/*const PageSocial = styled.p`
-  color: ${themeVal("color.surface")};
-`*/
+// *const PageSocial = styled.p`
+//   color: ${themeVal("color.surface")};
+// `*/
 
 const ContactLink = styled.a`
   color: #eeeeee;
