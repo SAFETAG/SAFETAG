@@ -6,7 +6,7 @@ title: Operational Security
 
   * *Standard:* ["PGP and Other Alternatives"](http://www.pentest-standard.org/index.php/Pre-engagement#PGP_and_Other_Alternatives) (The Penetration Testing Execution Standard: Pre-Engagement Guidelines)
 
-  * *Guide:* ["Participant Security"](https://saferjourno.org) (SaferJourno)
+  * *Guide:* ["SaferJourno v2: Protecting Materials"](https://saferjourno.org/chapter-5/) (SaferJourno)
 
   * *Guide:* [Operational Security Management in Violent Environments](http://www.odihpn.org/index.php?option=com_k2&view=item&layout=item&id=3159)
 
