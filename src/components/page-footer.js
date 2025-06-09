@@ -25,9 +25,9 @@ const PageCredits = styled.p`
   color: ${themeVal("color.surface")};
 `
 
-const PageSocial = styled.p`
+/*const PageSocial = styled.p`
   color: ${themeVal("color.surface")};
-`
+`*/
 
 const ContactLink = styled.a`
   color: #eeeeee;
