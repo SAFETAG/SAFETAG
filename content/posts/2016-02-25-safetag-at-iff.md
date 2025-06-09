@@ -19,17 +19,16 @@ There is an initial session Thursday March 3 Noon-1 focused on building a more c
 This comment has been adapted from a cross-organizational posting which has included the below people and organizations:
 
 * Ali G. Ravi, Confabium - [post](https://medium.com/@medialium/finally-some-good-news-about-organizational-security-9ac21e186e1d#.jnl6eukyv)
-* Alix Dunn, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
 * CC, EngageMedia - [post](https://www.engagemedia.org/blog/finally-some-good-news-about-organizational-security)
 * Friedhelm Weinberg, HURIDOCS - [post](https://www.huridocs.org/2016/02/improve-organizational-security-build-relationships-iff/)
 * Jon Camfield, SAFETAG/Internews - [post](https://medium.com/@joncamfield/a-quick-update-meet-us-at-the-internet-freedom-festival-next-week-d04d1d54727b)
-* Karel Novotný, APC - [post](https://www.apc.org/en/blog/finally-some-good-news-about-organizational-securi)
-* Kody Leonard, The ISC Project - [post](https://iscproject.org/finally-some-good-news-about-organizational-security-2/)
-* Kristin Antin, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
-* Maya Richman, the engine room - [post](https://www.theengineroom.org/finally-some-good-news-about-organizational-security/)
 * Michael Carbone, Access Now - [post](https://www.accessnow.org/finally-some-good-news-about-organizational-security/)
-* Natasha Msonza, Digital Society of Zimbabwe
+* Kristin Antin, the engine room
+* Maya Richman, the engine room
+* Natasha Msonza, Digital Society of Africa
 * Niels ten Oever, Article 19
 * Pablo Zavala, Front Line Defenders
 * Peter Steudtner, HIVOS-DIF / pantraining
 * Wojtek Bogusz, Front Line Defenders
+* Alix Dunn, the engine room
+* Karel Novotný, APC

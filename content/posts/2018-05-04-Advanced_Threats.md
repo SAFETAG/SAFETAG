@@ -30,7 +30,7 @@ This component briefs the tools and procedures required to acquire the image (li
 
 This component describes how to perform an analysis on captured evidence (e.g. hard drive image or memory dump) without altering the evidence. Any alteration, or even an environment or situation that creates the possibility of alteration, could lead to rejection of the evidence in a court of law or to malware analysis failures.
 
-*In most cases, reach out for help, there are multiple organizations which coordinate and can support malware analysis targeting NGOs. The [Digital First Aid Kit](https://rarenet.github.io/DFAK/en/SecureCommunication/) has a list of organizations and in most cases secure contact details to seek support in doing advanced analysis. The [Rapid Response Network](http://www.rarenet.org/), a project of [CiviCERT](https://civicert.org/) is a consortia of these organizations who may be able to help. [Citizen Lab](https://citizenlab.ca/) is also well known for their analysis and research.*
+*In most cases, reach out for help, there are multiple organizations which coordinate and can support malware analysis targeting NGOs. The [Digital First Aid Kit](https://digitalfirstaid.org/support/) has a list of organizations and in most cases secure contact details to seek support in doing advanced analysis. The [Rapid Response Network](http://www.rarenet.org/), a project of [CiviCERT](https://civicert.org/) is a consortia of these organizations who may be able to help. [Citizen Lab](https://citizenlab.ca/) is also well known for their analysis and research.*
 
 #### Technical Context Research
 

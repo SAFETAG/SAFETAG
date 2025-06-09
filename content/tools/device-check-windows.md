@@ -5,12 +5,7 @@ short_summary: Check for security status of Windows devices
 
 
   If Windows is not your primary OS, you can download sample Virtual Machines
-  (with time limitations) from Microsoft through their project to improve IE
-  support via https://www.modern.ie/en-us/virtualization-tools#downloads (see
-  also
-  http://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/
-  and
-  https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf)
+  (with time limitations) from Microsoft via https://www.microsoft.com/en-us/software-download/windows11 
 
   **Windows 10**
 
@@ -47,9 +42,6 @@ short_summary: Check for security status of Windows devices
 
    Control Panel Programs and features installed updates
 
-   CLI:
-   http://www.techsupportalert.com/en/quick-and-easy-way-list-all-windows-updates-installed-your-system.htm
-
    * Firewall
 
   GUI: Start (or Down Arrow Icon, PC Settings) -- Control Panel -- Windows
@@ -68,7 +60,7 @@ short_summary: Check for security status of Windows devices
 
    * Drive Encryption
 
-  Look for: Bitlocker, VeraCrypt. https://diskcryptor.net/wiki/Main_Page
+  Look for: Bitlocker, VeraCrypt, DiskCryptor https://github.com/DavidXanatos/DiskCryptor
 
    * Services Running
 
@@ -102,7 +94,7 @@ short_summary: Check for security status of Windows devices
    * Drive Encryption
 
   GUI: Control Panel -- All Control Panel Items -- BitLocker Drive Encryption;
-  also look for VeraCrypt, https://diskcryptor.net/wiki/Main_Page
+  also look for VeraCrypt, https://github.com/DavidXanatos/DiskCryptor
 
    * Services Running
   CLI:

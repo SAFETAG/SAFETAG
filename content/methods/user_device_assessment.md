@@ -6,6 +6,7 @@ summary: |
   This component allows the auditor to assess the security of the individual
   devices on the network. This component consists of interviews, surveys, and
   inspection of devices.
+short_summary: Assess the security of the individual devices in the organization through interviews, surveys, and inspection of devices.
 the_flow_of_information: "![](/img/user_device_assessment.png)"
 guiding_questions: |
   * What work and personal devices do staff use to accomplish their work, store

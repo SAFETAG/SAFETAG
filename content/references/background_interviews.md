@@ -2,7 +2,7 @@
 title: Background Interview Approaches
 ---
 
-  * *Project:* [Tech Scape](https://www.theengineroom.org/projects/techscape/) (the engine room)
+  * *Project:* [Tech Scape](https://www.theengineroom.org/wp-content/uploads/2012/06/TechScape_SlideDeck1.pdf) (the engine room)
 
   * *Guide:* [Individual Depth Interviews: Design Research for media development](http://design.internews.org/wp-content/uploads/2012/12/Design-Research-for-Media-Development.pdf) (Internews)
 

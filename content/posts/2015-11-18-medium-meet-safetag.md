@@ -45,4 +45,4 @@ The future of SAFETAG is to drive — and be driven by — this cross-or
 
 Interested? We’d love to see you over in our issue queue!
 
-*(Image credit: [Padlock: Plovdiv, Bulgaria -- Rachel Titiriga/CC-BY](https://www.flickr.com/photos/pocait/6974320264/))*
+*(Image credit: Padlock: Plovdiv, Bulgaria -- Rachel Titiriga/CC-BY)*

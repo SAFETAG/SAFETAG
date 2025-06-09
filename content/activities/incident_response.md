@@ -33,7 +33,7 @@ walk_through: |
 
   For the implementation of mitigation measures, you can refer the auditees to a third party. This may be the organization's IT staff, a rapid response helpline, a malware researcher, etc.
 
-  Some of the mitigation steps can be implemented by the user, following the instructions included in the Rapid Response Network's [Digital First Aid Kit](https://digitalfirstaid.org/en/topics/device-acting-suspiciously/).
+  Some of the mitigation steps can be implemented by the user, following the instructions included in the Rapid Response Network's [Digital First Aid Kit](https://digitalfirstaid.org/topics/device-acting-suspiciously/).
 
   You should consider a compromise serious and coordinate an incident response if any of the following is happening:
 

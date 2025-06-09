@@ -8,7 +8,7 @@ summary: "**This component consists of an out-brief to key points of** contact,
   providing basic pressure relief through group and individual interactions,
   communicating the most relevant findings of the assessment, and planning
   future follow-up with the host and key individuals."
-short_summary: " "
+short_summary: Provide a briefing on the overall engagement and overview of most relevant findings, then discuss next steps or follow-up with key points of contact.
 the_flow_of_information: ""
 guiding_questions: >
   * Is the organization empowered to make changes?

@@ -11,10 +11,10 @@ draft: false
 
 <div style="text-align: center"><img src="/img/blog/CommunityFeedback.png" alt="Image with title SAFETAG Community Feedback" style="border: 0; width: 100%; padding: 1em;" /></div>
 
-*This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG. Read more about this effort on the [Global Technology Blog](https://globaltech.internews.org/blog/introducing-adoptable)*
+*This is a cross-posted blog from Internews' [USABLE.tools](https://USABLE.tools) project which is advancing usable organizational security tools, including SAFETAG.*
 
 
-Over the last few months, we have been working with [Tafka](https://www.tafka.mx), a Mexico-based design firm, to develop a new visual identity for the SAFETAG framework. As part of these efforts, we hosted 3 community feedback calls to gather feedback. Additionally, we shared an open survey for those who were unable to join the calls. In total, we received feedback from over 25 SAFETAG users around the globe.
+Over the last few months, we have been working with Tafka, a Mexico-based design firm, to develop a new visual identity for the SAFETAG framework. As part of these efforts, we hosted 3 community feedback calls to gather feedback. Additionally, we shared an open survey for those who were unable to join the calls. In total, we received feedback from over 25 SAFETAG users around the globe.
 
 We have highlighted some of the feedback we received below.
 

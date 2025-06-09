@@ -14,5 +14,4 @@ title: Physical Assessment
   
   * *Guide:* ["Protect your Information from Physical Threats"](https://securityinabox.org/en/guide/physical) (Frontline Defenders)
   
-  * *Policy Template:* [Information Security
-Policy Templates](https://www.sans.org/security-resources/policies) (SANS)
+  * *Policy Template:* [Information Security Policy Templates](https://www.sans.org/security-resources/policies) (SANS)

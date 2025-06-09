@@ -2,11 +2,11 @@
 title: Resource Lists
 ---
 
-  * *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
+  * *Directory:* ["Resource Handbooks"](https://tcij.org/handbooks/) (Center for Investigative Journalism)
 
   * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](http://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)
 
-  * *Guide:* ["Additional Resources: p. 298"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=298) (Operational Security Management in Violent Environments (Revised Edition))
+  * *Guide:* ["Additional Resources: p. 298"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf) (Operational Security Management in Violent Environments (Revised Edition))
 
   * *Database:* ["A Collaborative Knowledge Base for Netizens"](http://www.tasharuk.net/en/home/) (Tasharuk)
 

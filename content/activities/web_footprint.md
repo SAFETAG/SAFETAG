@@ -99,7 +99,7 @@ recommendations: |
 
   Some of these services will be revealed by BuiltWith, but checking the HTTP Response Headers (in Chromium/Chrome, available under the Inspect Element tool, or by using [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/) in Firefox. See [Deflect's wiki](https://wiki.deflect.ca/wiki/About_Deflect#Is_it_working.3F) for more information.
 
-  Guide for NGOs to diagnose issues with a website: [Digital First Aid Kit](https://digitalfirstaid.org/en/topics/website-not-working/)
+  Guide for NGOs to diagnose issues with a website: [Digital First Aid Kit](https://digitalfirstaid.org/topics/website-not-working/)
 
   Organizations wishing to offer full TLS (HTTPS) on their websites may consider using [LetsEncrypt](https://www.letsencrypt.org) or [selecting a hosting provider which fully supports LetsEncrypt](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920) for generating free TLS certificates.
 ---

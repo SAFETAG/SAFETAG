@@ -2,11 +2,11 @@
 title: Threat Assessment Activities
 ---
 
-* *Guide:* ["Threat Assessment: Chapter 2.5 p. 38"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38) (Operational Security Management in Violent Environments (Revised Edition))
+* *Guide:* ["Threat Assessment: Chapter 2.5 p. 38"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf) (Operational Security Management in Violent Environments (Revised Edition))
 
 [Example text for introducing threats - Integrated Security](http://integratedsecuritymanual.org/exercise/example-text-for-introducing-threats)
 
-[Written exercise: Threats assessment - Integrated Security](http://integratedsecuritymanual.org/exercise/written-exercise-threats-assessment)
+[Written exercise: Threats assessment - Integrated Security](https://integratedsecuritymanual.org/material/threat-assessment/)
 
 [Facilitators Manual (With PDF download of "Threat Introduction Example Text" and "Threat Assessment Written Exercises") - Integrated Security](http://integratedsecuritymanual.org/sites/default/files/facilitatorstoolkit.pdf#page=15)
 

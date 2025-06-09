@@ -54,19 +54,19 @@ The host needs to be able to take action after an audit. The recommendations tha
 
 * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](https://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)
 * *Directory:* ["Security Training Firms"](https://www.cpj.org/reports/2012/04/security-training.php) (CPJ)
-* *Digital Emergency Contacts:* ["Seeking Remote Help"](https://digitaldefenders.org/digitalfirstaid/sections/investment-committee/) (The Digital First Aid Kit)
-* *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
-* *Guide:* ["Additional Resources: p. 298"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=298) (Operational Security Management in Violent Environments (Revised Edition))
+* *Digital Emergency Contacts:* ["Seeking Remote Help"](https://digitalfirstaid.org/support/) (The Digital First Aid Kit)
+* *Directory:* ["Resource Handbooks"](https://tcij.org/handbooks/) (Center for Investigative Journalism)
+* *Guide:* ["Additional Resources: p. 298"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf#page=320) (Operational Security Management in Violent Environments (Revised Edition))
 
 #### Digital Security Guides
 
 * *Multi-lingual Guides:* [Security in a Box](https://securityinabox.org/en)
 * *Resource:* [Front Line Defenders](https://www.frontlinedefenders.org/digital-security)
-* *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/en/index) (EFF)
-* *Guide:* ["The Digital First Aid Kit"](https://digitaldefenders.org/digitalfirstaid/#DFAk/) (Digital Defenders Partnership)
+* *Guide:* ["Surveillance Self-Defense"](https://ssd.eff.org/) (EFF)
+* *Guide:* ["The Digital First Aid Kit"](https://digitalfirstaid.org) (Digital Defenders Partnership)
 * *Guides:* ["Protektor Services Manuals"](https://protektor-blog.blogspot.com/) (Protektor Services)
-* *Guide:* ["Cryptoparty Handbook"](http://mirror-de.cryptoparty.is/handbook/) (CryptoParty)
-* *Guide:* ["Bypassing Internet Censorship"](https://flossmanuals.net/bypassing-censorship/) (Floss Manuals)
+* *Guide:* ["Cryptoparty Handbook"](https://cryptoparty.in/) (CryptoParty)
+* *Guide:* ["Bypassing Internet Censorship"](http://archive.flossmanuals.net/bypassing-censorship/) (Floss Manuals)
 
 #### Digital Security Guides
 
@@ -79,7 +79,7 @@ The host needs to be able to take action after an audit. The recommendations tha
 
 [International organisations that may provide security grants](http://integratedsecuritymanual.org/organisations-that-may-provide-security-grants)
 
-[Frontline Defenders Security Grants Programme](https://www.frontlinedefenders.org/security-grants-programme) _See also the "Alternative Sources of Funding" list on this page
+[Frontline Defenders Security Grants Programme](https://www.frontlinedefenders.org/en/programme/protection-grants) _See also the "Alternative Sources of Funding" list on this page
 
 [Digital Defenders Digital Security Emergency and Support Grants](https://digitaldefenders.org/#section-grants-2)
 
@@ -93,21 +93,21 @@ The host needs to be able to take action after an audit. The recommendations tha
 
 [Emergency Aid for Journalists](http://gijn.org/2014/07/14/new-resource-guide-emergency-assistance/)
 
-[International protection mechanisms for human rights defenders](http://integratedsecuritymanual.org/european-human-rights-system)
+[International protection mechanisms for human rights defenders](https://integratedsecuritymanual.org/material/detailed-sessions/day-3-reflection-recommendation-protection-options-next-steps/session-10-international-protection-mechanisms/international-protection-mechanisms/)
 
 [What Protection Can The United Nations Field Presences Provide?](https://safetag.org/guide/www.frontlinedefenders.org/files/un_handbook_small.pdf)
 
 [24/7 Digital Security Helpline: help@accessnow.org](https://www.accessnow.org/pages/tech#Digital%20Security%20Helpline) PGP key fingerprint: 6CE6 221C 98EC F399 A04C 41B8 C46B ED33 32E8 A2BC
 
-[Rapid Response Network: cert@lists.civicert.org](http://www.rarenet.org/projects/) PGP key: 7218 4AA7 4ED2 05ED 9863 A2A7 1F84 9150 6BFC 20AC
+[CiviCERT Members List](https://www.civicert.org/). Individual contact information can be found at the [Digital First Aid Kit](https://digitalfirstaid.org/support/)
 
 [Organizations providing rapid-response digital security support and funding](https://www.circl.lu/pub/dfak/SecureCommunication/#seeking-and-providing-remote-help)
 
 #### Resource Lists
 
-* *Directory:* ["Resource Handbook"](http://www.tcij.org/resources/resource-handbook) (Center for Investigative Journalism)
+* *Directory:* ["Resource Handbooks"](https://tcij.org/handbooks/) (Center for Investigative Journalism)
 * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](https://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)
-* *Guide:* ["Additional Resources: p. 298"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=298) (Operational Security Management in Violent Environments (Revised Edition))
+* *Guide:* ["Additional Resources: p. 298"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf#page=320) (Operational Security Management in Violent Environments (Revised Edition))
 * *Database:* ["A Collaborative Knowledge Base for Netizens"](http://www.tasharuk.net/en/home/) (Tasharuk)
 * *Guidelines:* ["Microsoft nonprofit discount eligibility guidelines per country"](http://www.microsoftvolumelicensing.com/userights/DocumentSearch.aspx?Mode=3&DocumentTypeId=19) (Microsoft)
 * *Organization:* ["TechSoup, nonprofits and libraries can access donated and discounted products and services from partners like Microsoft, Adobe, Cisco, Intuit, and Symantec."](http://www.techsoup.org/) (TechSoup)

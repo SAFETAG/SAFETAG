@@ -6,15 +6,9 @@ title: General Cyber-security reports and trends
 
   * *Report:* ["Monthly intelligence report"](http://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
 
-  * *Website:* ["McAfee Labs Threat Center"](http://www.mcafee.com/us/threat-center.aspx) (McAfee)
+  * *Report:* ["Cloud Security Resources Hub"](https://cloud.google.com/security/resources) (Google)
 
-  * *Report:* ["Reports on threats and trends in cyber security."](http://www.fireeye.com/info-center/) (FireEye)
-
-  * *Report:* ["Annual threat report"](https://www.mandiant.com/resources/mandiant-reports/) (Mandiant)
-
-  * *Reports:* ["McAfee Threat Trends Papers"](https://www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
-
-  * *News Feed:* ["US-CERT Current Activity"](https://www.us-cert.gov/ncas/current-activity/) (US-CERT)
+    * *News Feed:* ["US-CERT Current Activity"](https://www.us-cert.gov/ncas/current-activity/) (US-CERT)
 
   * *Bulletin:* ["US-CERT Bulletins"](https://www.us-cert.gov/ncas/bulletins/) (US_CERT)
 
