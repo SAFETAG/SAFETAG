@@ -10,9 +10,4 @@ title: Digital Security Guides
  
   * *Guide:* ["The Digital First Aid Kit"](https://digitalfirstaid.org) (RaReNet)
 
-  * *Guides:* ["Protektor Services Manuals"](http://protektor-blog.blogspot.com/) (Protektor Services)
-
-  * *Guide:* ["Cryptoparty Handbook"](https://cryptoparty.in/) (CryptoParty)
-
-  * *Guide:* ["Bypassing Internet Censorship"](http://archive.flossmanuals.net/bypassing-censorship/) (Floss Manuals)
-
+  * *Guide:* ["How to organize a cryptoparty"](https://cryptoparty.in/organize/howto) (CryptoParty)
