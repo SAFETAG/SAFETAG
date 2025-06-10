@@ -43,10 +43,11 @@ walk_through: |
    * Website technologies (content management, hosting provider)
    * Technology in use:
      * Desktop software (OS, Office)
-     * Desktop security tools (anti-virus, anti-malware, firewalls, vpns, disk encryption...)
+     * Desktop security tools (anti-malware tools built into OS-es, firewalls, vpns, disk encryption...)
+     * Cloud storage providers (and the security of logging into them)
      * Servers (email, shared file system, networking tools, backups)
      * Email, email hosts
-     * Other communication tools - skype, facebook, chat, mobile...
+     * Other communication tools - facebook, chat, mobile...
      * Other less formal tools - external emails, dropbox...
      * Internal network - wired, wireless, type of wireless network, ISP
   Preparation Support
@@ -60,7 +61,7 @@ walk_through: |
    * Office access and location
    * Personal device usage
    * Transporation means used to get to and from home
-   * Remote access to organizational resources (VPN, shared files)
+   * Remote access to organizational resources (shared files, remote access policies, access controls, working on own devices)
 recommendations: ''
 organization_size_under: 50
 time_required_minutes: 30
