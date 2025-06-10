@@ -33,6 +33,7 @@ overview: |
 materials_needed: |
   * A notepad, pen. Also an already prepared list of different kinds of mobile
   devices
+
 considerations: |
   * Communicate clearly to the staff members the level of access needed for the
   audit and obtain their consent in case personal devices are being checked i.e.
@@ -62,10 +63,18 @@ walk_through: |
 
   * What are they primarily used for?
 
-  * What data is stored on the devices and who has access to them
+  * What data is stored on the devices and who has access to them?
 
   * Are the devices provided by organization or do staff use personal devices
-  for official work? (Auditor: Review the props and cons of each set up)
+  for official work? (Auditor: Review the pros and cons of each set up)
+
+  * Does the organization use some type of mobile device management (MDM) or
+  conditional access solution? If so, is it for just work-issued devices or also
+  personal devices which connect to organizational resources?
+
+  * Do all the mobile devices which access organizational resources have
+  up-to-date software? Is there a policy for replacing devices which can no
+  longer receive software updates?
 
   * What are the risks involved with using each of the mobile devices? (NB:
   Auditor should know at least 2 risk for each of the devices in use)
@@ -79,15 +88,8 @@ walk_through: |
   * If yes; Do the policies and procedures define the access level to
   organizational devices and also for personal devices?
 
-  * What is the policy on using untrusted networks?
-
-  * What are the procedures for interacting with mobile systems which are  not
+  * What are the procedures for interacting with mobile systems which are not
   owned by the organization?
-
-  * What are the existing in/formal security practices for these devices? What
-  are the physical security measures? What are the digital security measures?
-
-  * Which mobile phone OS are staff using? What are the props and cons of each?
 
   * Is there someone in-charge of the devices and their security? (NB:Auditor:
   This checks on the capacity of the organization)
@@ -97,12 +99,14 @@ walk_through: |
 
   * What are the users' perception towards the installed applications on their
   devices? (Auditor: Review the perception vs reality check findings)
+
   * What security software if any are installed on the devices? Does it offer
   remote wipe functions?
 
-  * Are the users aware of them? (Exam the different categories separately)
+  * Are the users aware of them? (Examine the different categories separately)
 
   * What is the financial implication of maintaining these devices?
+
 recommendations: ''
 organization_size_under: 50
 time_required_minutes: 45
