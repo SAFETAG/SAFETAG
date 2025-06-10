@@ -20,7 +20,12 @@ summary: |
   their work can affect their personal security and that of the organization.
 overview: |
   * Integrated with other activities/interactions, interview staff on their
-  usage of technology and remote services outside of work
+  usage of technology and remote services outside of standard working hours
+  and standard working locations
+  * Understand that, in some cases, non-work conversations, social media
+  activity or activities could also present a security risk. It's worth
+  discussing how the organization's risk profile can affect non-work activities
+
 materials_needed: ''
 considerations: |
   * Communicate with the staff members the level of confidentiality you are
@@ -29,9 +34,8 @@ considerations: |
   organization, and that anything not triggering that is to be only reported in
   aggregate.
 
-  * If using screen sharing, use a service with transport security and "lock"
-  the room or make sure the user knows to end the call if anyone unexpected
-  joins the room (unlikely)
+  * If using screen sharing, "lock" the virtual room or make sure the user knows
+ to end the call if anyone unexpected joins the room (unlikely)
 walk_through: |
   As you work with staff members (this pairs well with the device checklist
   activity and a day in the life), also interview them about the other devices
@@ -46,11 +50,14 @@ walk_through: |
   applications are active in the background.
 
   **Phone Usage**
+  
    * Work or Personal Email
    * Work or Personal Calls
-   * Chat Apps with partners/friends non-work related
+   * Work or Personal Messaging
    * Social media apps
+
   **User Software and Tools**
+  
    * Email software
    * Calendars
    * Other shared file systems
@@ -75,9 +82,16 @@ walk_through: |
 
   **Personal Practices**
 
-  * Office/home location
+  * Office/home location, and if there are any security concerns about this
   * Transportation means
+  * Personal travel, especially to high-risk locations
+  * Close friends and family members' activities: is it possible that some of them will
+  need to adopt additional security practices as a result of their relationship with you?
+  For example, they might not be able to safely pursue certain types of activism, work on
+  some projects, or travel to some places if they are publicly or privately associated
+  with you.
   * Physical security
+
 recommendations: |
   **Multi Factor Authentication**
 
