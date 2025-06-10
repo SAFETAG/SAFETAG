@@ -285,11 +285,11 @@ recommendations: >
   Laptops, workstations, servers, external hard drives, and backup systems
   should be configured to use some form of hard drive encryption.
 
-  * For Windows, Microsoft BitLocker is built in to the latest versions, free-of-charge for anyone with a valid Windows 7 “Ultimate” license or Windows 8.
+  * Windows systems use either [Bitlocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/) or [Windows Device Encryption](https://support.microsoft.com/en-us/windows/device-encryption-in-windows-cf7e2b6f-3e70-4882-9532-18633605b7df)
 
-  * For Apple OSX users, FileVault2 is a built-in alternative that is also free-of-charge.
+  * All modern macOS systems (those which currently receive software updates) have their drives encrypted by default.
 
-  * TrueCrypt is a cross-platform solution that is open source and free of charge, and can work on Mac, Windows, and Linux machines as well.
+  * VeraCrypt is a cross-platform solution that is open source and free of charge, and can work on Mac, Windows, and Linux machines as well.
 
-  All three solutions provide a way to encrypt data on internal drives as well as external hard drives, and USB memory sticks.
+  All three solutions provide a way to encrypt data on internal drives as well as external hard drives, and flash drives. For more information on encryption materials, check out the [SaferJourno guide](https://saferjourno.org/chapter-5/#training-digital-security-for-the-first-time) on the topic.
 ---
