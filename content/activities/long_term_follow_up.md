@@ -19,9 +19,7 @@ materials_needed: |
   * A secure note-taking system.
 considerations: |
   * A secure, real-time VOIP system is recommended for this call, as many of the
-  highly sensitive audit findings are likely to be discussed in detail.  Skype
-  may suffice in some regions, but also consider secure call options
-  (https://ostel.co/).
+  highly sensitive audit findings are likely to be discussed in detail.  
 walk_through: |
   This can be combined with the Staff Feedback Survey exercise, or to follow up
   on any concerns you have based on their responses to that survey.  The main
