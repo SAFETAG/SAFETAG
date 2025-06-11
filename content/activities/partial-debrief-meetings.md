@@ -1,5 +1,5 @@
 ---
-title: Partial debrief meetings
+title: In-Audit debrief meetings
 position: 50
 approaches:
   - Research
