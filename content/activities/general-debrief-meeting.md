@@ -21,10 +21,9 @@ summary: |
   This meeting may take place before or after a 'final' report and roadmap are completed. Holding this meeting before completion allows for sharing of more initial findings and incorporation of more feedback. In other cases this may not be suitable to the audit timeline and may take place after the report is finalized, though the auditor should allow for changes or errata if needed by the host organization. 
 short_summary: "Present a complete or near-complete report and set of recommendations to the organization including an overview of the audit process."
 overview: >
- 
-  To set the stage to give the organization some reassurance and potentially homework while the report is built, enabling a space to talk to them and walk them through what the auditor did will be important; this is precisely the idea behind this activity: organizing an in-person or virtual meeting with key stakeholders from the organization to, among other things, set the tone for upcoming communications, define points of contact moving forward (for the report delivery and follow-up), share what was done during the responsive support activities, and what immediate-term aspects they should address next.
-materials_needed: ""
-Considerations: |
+   To set the stage to give the organization some reassurance and potentially homework while the report is built, enabling a space to talk to them and walk them through what the auditor did will be important; this is precisely the idea behind this activity: organizing an in-person or virtual meeting with key stakeholders from the organization to, among other things, set the tone for upcoming communications, define points of contact moving forward (for the report delivery and follow-up), share what was done during the responsive support activities, and what immediate-term aspects they should address next.
+materials_needed: ''
+considerations: |
   * In many cases, this activity can be conducted in coordination with a
   training session as part of the “Responsive support” stage. So, the covered content can be aligned with any major vulnerabilities and recommendations proposed during the debrief.  
 
