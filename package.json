@@ -14,7 +14,7 @@
     "decap-cms-app": "^3.1.2",
     "dotenv": "^16.4.5",
     "file-saver": "^2.0.5",
-    "gatsby": "^5.13.3",
+    "gatsby": "^5.14.4",
     "gatsby-cli": "^5.13.2",
     "gatsby-plugin-decap-cms": "^4.0.0",
     "gatsby-plugin-feed": "^5.13.1",
