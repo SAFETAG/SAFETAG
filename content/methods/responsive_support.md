@@ -12,7 +12,6 @@ references:
   - Facilitation Preparation
   - Digital Security Trainings
   - Digital Security Guides
-  - Training Resources
 method_icon: "/img/responsive_support_icon.png"
 summary: |
   During the audit, the auditor provides assistance for any immediate action needed (spot training, tool fixes, consulting on upcoming projects or ongoing activities) -- this may also involve addressing vulnerabilities found that triggered an incident response.
