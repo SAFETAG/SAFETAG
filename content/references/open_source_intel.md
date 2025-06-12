@@ -8,8 +8,6 @@ title: Open Source Intelligence (General)
 
   * *Tool:* ["NameChk account search"](http://namechk.com/) (NameChk)
 
-  * *List:* ["Open Source Intelligence Links"](http://www.inteltechniques.com/links.html) (Intel Techniques)
-  
   * *List:* ["OSINT Tools - Recommendations List Free OSINT Tools."](http://www.subliminalhacking.net/2012/12/27/osint-tools-recommendations-list/) (subliminalhacking.net)
 
   * *Guide:* ["OWASP Testing Guide v4 - Information Gathering"](https://www.owasp.org/index.php/Testing_Information_Gathering) (OWASP)
