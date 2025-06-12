@@ -30,7 +30,7 @@ activities:
   - Self Doxing
   - Guiding Questions for High-Risk Organisations
   - Assessing legal threats
-  - Threat Assessment
+  - Threat Identification
   - Threat Interaction
 references:
   - Risk Modeling
