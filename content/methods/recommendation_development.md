@@ -20,7 +20,6 @@ activities:
   - Resource Identification
   - Report Creation
   - General debrief meeting
-  - Partial debrief meetings
 references:
   - Resource Identification
   - Digital Security Guides

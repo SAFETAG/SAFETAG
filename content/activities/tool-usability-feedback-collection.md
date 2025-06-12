@@ -5,7 +5,9 @@ approaches:
   - Interpersonal
   - Research
   - Technical
-authors: []
+authors:
+  - Neil Blazevic
+  - Ashley Fowler
 skills_required:
   - Group Facilitation
   - Facilitation

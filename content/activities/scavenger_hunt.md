@@ -79,7 +79,7 @@ walk_through: |
   / servers
   * Unsecured Laptop(s) (e.g. no locked cabinet for overnight storage, no cable
   lock) 
-  * Computer left unattended with active Outlook, Gmail, Skype or other
+  * Computer left unattended with active Outlook, Gmail, Instant Messaging client or other
   communication application open and visible.
   * Wires or cables for devices that have been strewn on the floor where someone
   would need to step over them.

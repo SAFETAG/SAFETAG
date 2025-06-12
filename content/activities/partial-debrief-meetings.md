@@ -1,5 +1,5 @@
 ---
-title: Partial debrief meetings
+title: In-Audit debrief meetings
 position: 50
 approaches:
   - Research
@@ -20,20 +20,15 @@ summary: This activity will help the auditor to organize periodic calls or
   longer timeframes (taking two or more weeks for instance).
 short_summary: " "
 overview: >
-  Depending on the audit, the auditor or the organization might be interested in
-  convening periodically to share progress and align on the direction the audit
-  is taking at specific points of time. This activity aims to help the auditor
-  create these spaces in a structured way.
+ Depending on the audit, the auditor or the organization might be interested in convening periodically to share progress and align on the direction the audit is taking at specific points of time. In addition, once most core assessment activities are concluded, the auditor will have a good sense of the actual security context of the organization, and even before finalizing the recommendation roadmap, will have an idea of some of the most relevant recommendations that will be included in the final report. This activity aims to help the auditor create spaces for ongoing exchange updates in a structured way.
 
+ Also, by this point, the organization might also have anticipation of knowing what the auditor found, questions like “Are we secure enough?” or “Do we need to address something ASAP because we are too vulnerable today?” are common after most of the assessment activities are over
+ 
+ This activity is especially useful in case of remote audits, where the points of contact usually don’t have the visibility of the activities being conducted in the way that might happen in person, and also in the case of audits that are conducted during a long time (whether remote or in-person) where after some days or weeks it becomes more difficult to keep track of the progress of the audit, activities still pending, and relevant findings so far.
 
-  This activity is especially useful in case of remote audits, where the points of contact usually don’t have the visibility of the activities being conducted in the way that might happen in person, and also in the case of audits that are conducted during a long time (whether remote or in-person) where after some days or weeks it becomes more difficult to keep track of the progress of the audit, activities still pending, and relevant findings so far.
-Considerations`: "* Even when the activity suggests synchronous spaces for the
-  partial debriefs, these might also happen over other channels like emails,
-  chats, or other asynchronous spaces as long as they work for both the
-  organization and the auditor. When there are more sensitive topics to discuss
-  that can affect the course of the audit, the organization’s operations, or
-  involve sensitive information; there is the possibility of organizing a
-  synchronous space like a call or an in-person meeting."
+Considerations: |
+  Even when the activity suggests synchronous spaces for the
+  partial debriefs, these might also happen over other channels like emails, chats, or other asynchronous spaces as long as they work for both the organization and the auditor. When there are more sensitive topics to discuss that can affect the course of the audit, the organization’s operations, or involve sensitive information; there is the possibility of organizing a synchronous space like a call or an in-person meeting.
 walk_through: >-
   1. **Define the frequency and convening space of these partial debriefs with
   the organization :** These might happen daily, weekly, as requested, etc.

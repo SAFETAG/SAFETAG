@@ -22,7 +22,7 @@ walk_through: |
   * Agreements, Scope, Risk Analysis
   * Remote Research
     * Openly sourced data: DNS, MX, Web, research via social media and google
-    * Revealed information via Skype / etc. (office IP address?), nmap
+    * Revealed information encountered during preparation / etc. (office IP address?), nmap
   * Packing and Prep
     * Visas / Travel planning
     * Hardware packing

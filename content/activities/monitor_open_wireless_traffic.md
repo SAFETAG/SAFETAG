@@ -94,7 +94,7 @@ walk_through: |
 
   ###### Step 3: de-auth (optional)
 
-  Send de-authentication packets to force clients to reconnect and send out additional probes. Take note that by its very nature, de-authentication causes annoying interruptions to wifi traffic. **This breaks connections, drops skype calls, and can make the wireless network temporarily unusable -- Make sure to check with staff before going through this** (to make sure no one is doing a live webcast or on an important VOIP call, and to expect some network instability).
+  Send de-authentication packets to force clients to reconnect and send out additional probes. Take note that by its very nature, de-authentication causes annoying interruptions to wifi traffic. **This breaks connections, drops VoIP calls, and can make the wireless network temporarily unusable -- Make sure to check with staff before going through this** (to make sure no one is doing a live webcast or on an important VOIP call, and to expect some network instability).
 
   ```
   $ aireplay-ng -0 1 -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF mon0
