@@ -19,8 +19,8 @@ materials_needed: |
   * A secure note-taking system.
 considerations: |
   * We recommend conducting this call through a secure system such as Signal call,
-Jitsi, Google Meet, or Zoom rather than through a standard phone line. The former
-all have transport encryption and, in some cases, end-to-end encryption as well.
+  Jitsi, Google Meet, or Zoom rather than through a standard phone line. The former
+  all have transport encryption and, in some cases, end-to-end encryption as well.
 walk_through: |
   This can be combined with the Staff Feedback Survey exercise, or to follow up
   on any concerns you have based on their responses to that survey.  The main
