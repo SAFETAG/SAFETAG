@@ -24,7 +24,6 @@ activities:
   - Password Security Survey
   - Password Strength
   - Guided Tour
-  - Check Browser and Plugin Vulnerabilities
   - Remote Network and User Device Assessment
 references:
   - Device Assessment
