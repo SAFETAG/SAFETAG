@@ -29,7 +29,6 @@ activities:
   - Assessing Usage of Cloud Services
   - Network Scanning
   - Guided Tour
-  - Check Browser and Plugin Vulnerabilities
 references:
   - Device Assessment
   - Password Security
