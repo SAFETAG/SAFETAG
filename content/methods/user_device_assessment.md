@@ -1,11 +1,9 @@
 ---
-title: User Device Assessment
-position: 80
+title: Staff Awareness and Individual Device Assessment
+position: 100
 method_icon: "/img/user_device_assessment_icon.png"
 summary: |
-  This component allows the auditor to assess the security of the individual
-  devices on the network. This component consists of interviews, surveys, and
-  inspection of devices.
+  This component allows the auditor to assess the awareness, attitudes, and capacity of staff members as well as review the status and security of the individual devices/endpoints (whether they are personally- or organizationally-owned) within the organization. This component consists of interviews, surveys, and inspection of devices.
 short_summary: Assess the security of the individual devices in the organization through interviews, surveys, and inspection of devices.
 the_flow_of_information: "![](/img/user_device_assessment.png)"
 guiding_questions: |
@@ -37,7 +35,7 @@ references:
   - Identifying Odd/One-Off Services
 outputs: |
   * List of all assets in the organization and whom they belong to.
-  * List of software running on staff devices.
+  * List of software running on staff devices and date of last update/patch level
   * List of known vulnerabilities, and identifiable malware, that the office is vulnerable to.
   * List of malware found by running updated anti-virus on office computers (if anti-virus installed during device inspection.)
 operational_security: |
