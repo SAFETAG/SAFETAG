@@ -16,18 +16,19 @@ summary: |
   Follows a series of steps depending on the different mobile devices.
 
   The key considerations with regards to mobile devices are the user, the type
-  of device, and the data it manages.
-  - the data is kept secure;
-  - device is configured with the recommended security settings;
-  - the organizational policies and procedures with regards to mobile devices;
-  - In case of organization owned devices, that management has control over its
-  facilitates.
+  of device, and the data it manages. Ensure that:
+  - data on the devices is kept secure;
+  - the organization has a policy for securing mobile devices;
+  - the devices are configured with recommended and consistent (across the
+  organization) security settings;
+  - the organization has control over and a way of tracking any mobile devices
+  which it pays for and issues (as opposed to personal devices).
 
-  These considerations contribute to the development of the report component.
+  Consider all of the above points when writing your report.
 overview: |
   * Identify what mobile devices are in the organization. Are they organizational owned or personal?
-  * Decide the scope of the mobile device assessment (ie will it cover personal devices or only organizational resources; number of devices)
-  * Check for existence and status of any policies and procedures (formal or informal)
+  * Decide the scope of the mobile device assessment (ie will it cover personal devices or only organizational resources; how many devices can access the organization's assets and will all be covered?)
+  * Check whether there are any policies and procedures (formal or informal) on mobile device use
   * Identify the control measures in place and responsibility levels.
 
 materials_needed: |
@@ -35,18 +36,22 @@ materials_needed: |
   devices
 considerations: |
   * Communicate clearly to the staff members the level of access needed for the
-  audit and obtain their consent in case personal devices are being checked i.e.
-  explain that it may involve access of private data on their personal devices.
+  audit. Explain what you will be able to see and what you won't be able to see.
+  Make sure to obtain explicit consent and explain in detail what you'll look into
+  if personal devices will be checked.
 
-  NB: The auditor should not access any personal mobile device absence of the
-  owner of the device and any step taken should be explained before being
-  implemented.
+  NB: The auditor should not access any personal mobile device without its owner
+  present. Even then, the auditor must explain every step in great detail. Ideally,
+  the auditor could ask individuals to check certain settings on their devices
+  (such as passcode length or OS version) and report back. If the auditor needs to
+  touch personal mobile devices, they must obtain explicit consent before doing so.
 walk_through: |
   The auditor confirms the number and nature of mobile devices that the
   organization owns. The auditor should keep within the agreed scope. But in the
   case where multiple mobile devices outside the agreed scope access the
   organizations' resources, then redefining of the scope may be necessary.
-  Auditor should also consider the instructions under the device checklist.
+  Auditor should also consider checking mobile devices against a device 
+  security checklist.
 
   As you work with staff members, also remember to interview them about the
   devices they use. This can alternate between mobile devices and non-mobile
@@ -58,17 +63,16 @@ walk_through: |
   Guiding questions:
 
   * What categories of mobile devices does the organization have? (eg, laptops,
-  phones, external drives, cameras, recording devices, etc)
+  smartphones, external drives, cameras, recording devices, etc)
 
   * What are they primarily used for?
 
-  * What data is stored on the devices and who has access to them
+  * What data is stored on the devices and who has access to them?
 
   * Are the devices provided by organization or do staff use personal devices
   for official work? (Auditor: Review the props and cons of each set up)
 
-  * What are the risks involved with using each of the mobile devices? (NB:
-  Auditor should know at least 2 risk for each of the devices in use)
+  * What are the risks involved with using each of the mobile devices?
 
   * What is the impact of their use to the organization's work?
 
@@ -95,14 +99,17 @@ walk_through: |
   * What applications are installed? (Auditor note: check the device assessment
   checklist for the technical aspects)
 
-  * What are the users' perception towards the installed applications on their
+  * What are the users' perceptions towards the installed applications on their
   devices? (Auditor: Review the perception vs reality check findings)
-  * What security software if any are installed on the devices? Does it offer
-  remote wipe functions?
 
-  * Are the users aware of them? (Exam the different categories separately)
+  * What security software if any is installed on the devices? Does it offer
+  remote wipe functions? Who is able to trigger such a remote wipe?
 
-  * What is the financial implication of maintaining these devices?
+  * Are the users aware of security software or remote wipe functions on
+  personal or work-issued mobile devices?
+
+  * What resources (financial, staff time) does the organization need in
+  order to maintain or manage devices?
 recommendations: ''
 organization_size_under: 50
 time_required_minutes: 45
