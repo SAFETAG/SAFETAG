@@ -2,28 +2,27 @@
 title: Auditing Authentication for Account Security
 approaches:
   - Technical
-  - Interpersonal
 position: 50
 authors:
   - Lukasz Krol
   - Neil Blazevic
 skills_trained: []
 remote_options:
-  - with-support
+  - Complete
 time_required_minutes: 60
 organization_size_under: 25
 summary: |
   This exercise supports the auditor in assessing the security and effectiveness of account authentication practices within an organization and gives guidance on developing recommendations to implement a phishing-resistant authentication toolkit. 
 short_summary: Assess the security and effectiveness of account authentication practices within an organization and give guidance on implementing a phishing-resistant approach
 materials_needed: |
-  * Prepared authentication checklists can be helpful
-  * List of staff
-  * List of online accounts and services used in the organization
-  * Physical security keys to distribute, if available
+  - Prepared authentication checklists can be helpful
+  - List of staff
+  - List of online accounts and services used in the organization
+  - Physical security keys to distribute, if available
 walk_through: |
   Phishing remains a common attack—and is a major risk for organizations of all sizes. Traditionally, anti-phishing efforts have focused on teaching staff how to recognize and report suspicious emails. While such a strategy should still play a big part in staff security trainings, vigilance alone isn't enough; even cybersecurity professionals have fallen for phishing scams. As such, it's important that the organization also develops a tech toolkit which can mitigate the eventuality of a staff member being successfully phished.
 
-  *Auditing online service usage for phishing-resistant authentication configuration* 
+  ###### Auditing online service usage for phishing-resistant authentication configuration
 
   Practically every major online service now supports two-factor authentication, which protects against password theft/leaks. Still, most forms of two-factor authentication remain vulnerable to a phishing attack in which an adversary captures a username, password, and two-factor code, and uses them to log in on the real webpage before the two-factor code expires. While sophisticated, such an attack is increasingly common.
 
@@ -40,7 +39,7 @@ walk_through: |
 
   Findings for the above can be presented in your report. Where organizations have not yet begun to use strong authentication methods, include recommendations to onboard them to passkeys and physical security keys when possible. 
 
-  *Auditing Usage of Password Managers* 
+  ###### Auditing Usage of Password Managers
 
   Password managers (now also called credential managers) are a key security tool, and the auditor should research how and if they are used within an organization. Organizations where all staff works full time and uses work-issued devices might rely on a work-issued password manager. Organizations which rely on part-time or volunteer staff might also allow staff to use their own. Having a single work password manager is preferable, especially when it comes to sharing credentials within the organizations (several people might, for example, need access to the same general account).
 
@@ -55,7 +54,7 @@ walk_through: |
 
   Share results and recommendations based on this review.
 
-  *Review 3rd party apps and SSO to further reduce attack surface* 
+  ###### Review 3rd party apps and SSO to further reduce attack surface 
 
   Some online attackers might also abuse OAuth grants (3rd party applications), in which external services can access or modify resources such as your organization's emails, documents, or calendars. In legitimate cases, this can be a useful service, allowing for additional functionalities. Still, these permissions are one dor through which an attacker or untrusted service can gain access to internal resources. Furthermore, many staff may grant resource access and forget that they had done so, leading to an accumulation of permissions over time. When working with the organization's admin:
 
@@ -69,7 +68,7 @@ walk_through: |
   * Recommend that the organization implements SSO, if they have not already  
   * Ensure that users must follow strict security standards, such as unique long passwords and a phishing-resistant form of two-factor authentication when logging on to the 'primary' service, which then grants access to other services through SSO
 
-  *Assess internal education, communication, and policies* 
+  ###### Assess internal education, communication, and policies
 
   Attackers continue to adapt and refine their techniques, including when it comes to phishing. Defensive measures also change rapidly, with manufacturers building new tools and workflows that could mitigate standard or OAuth phishing. It’s important that people within the organization understand both risks and potential attacks, and potential mitigation. Assess internal education, communication of guidelines/threats, and policies through interviews, surveys, and document review:
 
@@ -83,8 +82,6 @@ considerations: ""
 skills_required:
   - System Administration
   - Interviewing
-  - Password auditing
-  - Surveys
 overview: |
   * Checking for roll-out of phishing-resistant second factors, such as physical security keys or passkeys
   * Checking for absence of essential authentication controls such as 2-step verification

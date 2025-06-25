@@ -1,6 +1,6 @@
 ---
 title: Staff Awareness and Individual Device Assessment
-position: 100
+position: 60
 method_icon: "/img/user_device_assessment_icon.png"
 summary: |
   This component allows the auditor to assess the awareness, attitudes, and capacity of staff members as well as review the status and security of the individual devices/endpoints (whether they are personally- or organizationally-owned) within the organization. This component consists of interviews, surveys, and inspection of devices.
