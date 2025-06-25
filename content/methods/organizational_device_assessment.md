@@ -22,7 +22,7 @@ authors:
   - SAFETAG
 activities:
   - Device and Behaviour Assessment
-  - Password Security Survey
+  - Auditing Authentication for Account Security
   - A Day in the Life
   - A Night in the Life
   - Assessing Usage of Cloud Services

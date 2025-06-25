@@ -19,8 +19,7 @@ activities:
   - Mobile Device Assessment
   - A Day in the Life
   - A Night in the Life
-  - Password Security Survey
-  - Password Strength
+  - Auditing Authentication for Account Security
   - Guided Tour
   - Check Browser and Plugin Vulnerabilities
   - Remote Network and User Device Assessment
