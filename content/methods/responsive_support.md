@@ -3,7 +3,7 @@ title: In-Audit Support & Incident Response
 position: 150
 activities: 
   - Incident Response
-  - Partial debrief meetings
+  - In-audit debrief meetings
 authors:
   - SAFETAG
 info_provided: []

@@ -1,5 +1,5 @@
 ---
-title: In-Audit debrief meetings
+title: In-audit debrief meetings
 position: 50
 approaches:
   - Research
