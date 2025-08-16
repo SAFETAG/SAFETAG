@@ -82,7 +82,7 @@ walk_through: >-
 
   * The **Pluses vs. Deltas** activity is a feedback exercise that identifies a tool's strengths and weaknesses from a user's perspective. Participants brainstorm and list positive aspects (pluses) and negative aspects (deltas) of the tool, then prioritize them based on importance and potential impact.
 
-  * The **Mark-up a Screenshot** activity helps identify usability issues specific to a tool. It involves taking screenshots of a tool in action, marking them up to highlight issues, and categorizing them based on severity or frequency. Participants can use tools like Skitch, Snagit, or GIMP to annotate the screenshots with text, arrows, boxes, or circles.
+  * The **Mark-up a Screenshot** activity helps identify usability issues specific to a tool. It involves taking screenshots of a tool in action, marking them up to highlight issues, and categorizing them based on severity or frequency. Participants can annotate the screenshots with text, arrows, boxes, or circles.
 
   * The **User and Observer** activity involves observing user behavior during a task with a tool and then analyzing their process to identify areas of difficulty. Firs select a task for the user to complete within the tool, then ask them to complete the task while being observed or recorded. The observer should take note of any difficulties or errors the user encounters, as well as any comments or feedback they provide during the task.
 
@@ -92,9 +92,9 @@ walk_through: >-
 
   * **Tips for communicating with developers**: provides quick tips for engaging with open source developers when communicating feedback. It emphasizes the importance of being respectful and establishing a personal connection with the developer. It also advises finding the proper channel to communicate, researching and following any specific feedback guidelines, documenting the steps that led to the issue, offering specific suggestions for improvements, advocating for more secure and user-friendly tools, and following up with the developer.
 
-  * The **Bug Reports** section explains documenting issues encountered during the use of a tool, along with steps to reproduce the issue and any additional information that may be relevant. The report should be submitted to the tool's development team in a clear and concise manner, including screenshots or animated GIFs if necessary to clearly illustrate the issue.
+  * The **Bug Reports** section explains documenting issues encountered during the use of a tool, along with steps to reproduce the issue and any additional information that may be relevant. The report should be submitted to the tool's development team in a clear and concise manner, including screenshots or videos/ screen recordings if necessary to clearly illustrate the issue.
 
-  * **GIFs**: Create animated GIFs to illustrate usability issues. These can be used to communicate issues to developers and tool teams more effectively than written descriptions. Record a short video of the issue and use GIPHY Capture or LICEcap to create an animated GIF. Embed the GIF in feedback reports or submit it directly to developers.
+  * **Videos**: Create videos or screen recordings to illustrate usability issues. These can be used to communicate issues to developers and tool teams more effectively than written descriptions. If bandwidth or storage is an issue, you can compress the video or turn it into an animated GIF prior to sending.
 
 
   ### An Examples of Tool Feedback Collection workflows
