@@ -21,7 +21,6 @@ activities:
   - A Night in the Life
   - Auditing Authentication for Account Security
   - Guided Tour
-  - Check Browser and Plugin Vulnerabilities
   - Remote Network and User Device Assessment
 references:
   - Device Assessment
