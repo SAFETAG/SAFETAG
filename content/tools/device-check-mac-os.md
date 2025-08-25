@@ -32,8 +32,14 @@ short_summary: Check for security status of MacOS devices
   from the App Store or from identified developers. It can be temporarily bypassed
   to run non-authorized applications, but we strongly discourage people from doing so
   unless they can definitely confirm the application is safe. For more info, check
-  out [this guide](https://support.apple.com/en-us/102445). 
+  out [this guide](https://support.apple.com/en-us/102445).
+  
+* Kernel boot protection
 
+  macOS contains additional mechanisms which ensure that the kernel or boot items have
+  not been tampered with. For more info and to see how to verify those protections, check
+  out [this article](https://eclecticlight.co/2025/08/21/how-to-check-if-your-apple-silicon-mac-is-booting-securely/)
+  
 * Drive Encryption
 
   On every modern macOS system, the internal drive is encrypted by default. For more
@@ -53,3 +59,5 @@ short_summary: Check for security status of MacOS devices
 * Startup items
 
   GUI: System Settings —> General —> Login Items & Extensions
+
+macOS contains some additional security mechanisms. If you are interested in a deeper look at how Mac and macOS security works under the hood, we recommend reading through the relevant [Apple Platform Security Guide](https://support.apple.com/en-gb/guide/security/welcome/web). 
