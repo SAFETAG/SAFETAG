@@ -140,7 +140,12 @@ export var languagesX = {
   pt: {
     name: "Portuguese",
     localName: "Português",
-    countries: ["Portugal", "Brazil", "Mozambique", "Angola"],
+    countries: ["Portugal"],
+  },
+  pt_BR: {
+    name: "Brazilian Portuguese",
+    localName: "Português Brasileiro",
+    countries: ["Brazil", "Mozambique", "Angola"],
   },
   ro: {
     name: "Romanian",
