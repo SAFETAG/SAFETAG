@@ -1,7 +1,7 @@
 // i18next-parser.config.js
 
 module.exports = {
-  locales: ["en"],
+  locales: ["en", "pt_BR", "my", "fr"],
   // An array of the locales in your applications
 
   contextSeparator: "_",
