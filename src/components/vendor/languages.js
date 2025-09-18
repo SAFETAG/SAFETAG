@@ -16,6 +16,7 @@ export var languages = {
   my: "မြန်မာစာ",
   fa: "پارسی",
   pt: "Português",
+  pt_BR: "Português Brasileiro",
   ro: "Română",
   ru: "русский",
   sr: "Српско-хрватски",
