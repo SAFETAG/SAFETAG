@@ -274,36 +274,15 @@ can lead to large vulnerabilities.
 (live or dead, depending on the situation) and securely handle data from a
 device (laptop, desktop, HDD, memory stick, USB stick, etc.) that is needed to
 later perform a malware analysis or forensic evidence process.
-</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 ietBZf kWXKGp" hrefLang="pt_BR" href="/pt_BR/activities/dns_enumeration/"><h1 variation="primary" class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 fLmHif fMoxUB">Enumeração de DNS</h1><p>DNS Stands for Domain Name Service. In a nutshell, what it does is translate
-hosts/computer&#x27;s name into it&#x27;s IP addresses. It provides a way to know the IP
-address of any given machine on the internet, with the corresponding URL, or
-domain. You can consider it as telephone directory of the Internet.
+</p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 ietBZf kWXKGp" hrefLang="pt_BR" href="/pt_BR/activities/dns_enumeration/"><h1 variation="primary" class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 fLmHif fMoxUB">Enumeração de DNS</h1><p>DNS significa Serviço de Nomes de Domínio (em inglês _D_omain _N_ame _S_ervice). Em resumo, o que ele faz é traduzir nomes de servidores/computadores em seus respectivos endereços IP. Ele fornece uma maneira de saber o endereço IP de qualquer máquina na Internet, a partir da URL ou domínio correspondente. Você pode considerá-lo como uma lista telefônica da Internet.
 
-DNS enumeration is one of your initial steps in your overall vulnerability
-assessment and audit. It is one stage where it will allow you to discover more
-potential targets. Upon completion of this assessment stage, you may find
-issues such as leaked information caused by default settings and server
-misconfigurations. Along with these, you can also have a broader scope of
-targets, such as internal server IP addresses, company netblocks and
-domain/subdomain names.
+A enumeração DNS é uma das etapas iniciais da avaliação e auditoria geral de vulnerabilidades. É uma etapa que permite descobrir mais alvos potenciais. Após a conclusão dessa etapa de avaliação, você pode encontrar problemas como vazamento de informações causado por configurações padrão ou incorretas de servidores na Internet. Além disso, você também pode ter um escopo mais amplo de alvos, como endereços IP de servidores internos, blocos de redes internas da empresa, e nomes de domínio/subdomínio.
 
-DNS Enumeration can be accomplished with different number of tools along with
-different approaches. This guide will discuss some of the approaches and the
-tools required to perform each of the activities. You can perform DNS
-enumeration passively or actively, depending on your operational security
-needs.
+A enumeração DNS pode ser realizada com diferentes ferramentas e abordagens. Este guia discutirá algumas das abordagens e as ferramentas necessárias para realizar cada uma das atividades. Você pode realizar a enumeração DNS de forma passiva ou ativa, dependendo das suas necessidades de segurança operacional.
 
-**Passive**, or &quot;indirect&quot; approach refers to the enumeration process that
-doesn&#x27;t send any traffic or packets from your machine, directly to your
-target. This can be done using 3rd tools such as online tools and cloud based
-scanners.
+A abordagem **passiva**, ou &quot;indireta&quot;, refere-se ao processo de enumeração que não envia nenhum tráfego ou pacotes da sua máquina diretamente para o seu alvo. Isso pode ser feito usando ferramentas de terceiros, como ferramentas online e scanners baseados em nuvem.
 
-**Active**, or &quot;direct&quot; approach refers to sending DNS queries and enumeration
-tests directly to the target. Consider that traffic is send over the target
-which may leave traces or traffic logs coming from your source IP. Active
-techniques include Zone Transfer, Reverse Lookup, Domain and Host
-Brute-Forcing, Standard Record Enumeration (wildcard, SOA, MX, A, TXT etc),
-Cache snooping, and Zone Walking
+A abordagem **ativa**, ou &quot;direta&quot;, refere-se ao envio de consultas DNS e testes de enumeração diretamente para o alvo. Considere que o tráfego é enviado para o alvo, o que pode deixar rastros, como registros de tráfego, provenientes do seu IP de origem. As técnicas ativas incluem transferência de zona, pesquisa reversa, força bruta no domínio e servidor, enumeração de registros padrão (curinga, SOA, MX, A, TXT etc.), espionagem de cache (_cache snooping_) e deslocamento de zona (_zone walking_).
 </p></a></li><li><a variation="secondary" border="primary" class="card__Card-sc-1neqwum-0 activities__ActivityCard-sc-2nsf6t-1 ietBZf kWXKGp" hrefLang="pt_BR" href="/pt_BR/activities/forensic_analysis/"><h1 variation="primary" class="heading__Heading-sc-127qstd-0 card__CardHeading-sc-1neqwum-2 fLmHif fMoxUB">Forensic Analysis</h1><p>This component describes how to perform an analysis on captured evidence (e.g.
 hard drive image or memory dump) without altering the evidence. Any
 alteration, or even an environment or situation that creates the possibility
