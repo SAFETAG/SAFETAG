@@ -28,6 +28,18 @@ jobs:
       - name: Ensure tx client is executable
         run: chmod +x ./tx
 
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps and extract UI strings (creates locales/en/site.json)
+        run: |
+          npm ci
+          npm run extract
+          echo "site.json source:" && ls -la locales/en/site.json
+
       - name: Generate .tx/config (resource mappings, no upload)
         run: |
           ./tx init || true
