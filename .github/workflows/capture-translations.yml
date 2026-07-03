@@ -48,16 +48,30 @@ jobs:
       - name: Pull all translations from Transifex
         run: ./tx pull --all --silent
 
+      - name: Snapshot RAW output (before postprocess) for comparison
+        run: cp -R locales locales-raw
+
       - name: Normalize frontmatter (same postprocess the build uses)
         run: python3 src/helpers/postprocess.py
 
-      - name: Show what was captured
+      - name: Show what was captured + diff raw vs postprocessed on a sample
         run: |
           echo "Languages:" && ls -1 locales || true
           echo "File count per language:"
           for d in locales/*/; do printf "%s  " "$d"; find "$d" -type f | wc -l; done
+          echo "=== Does postprocess.py change context_research pt_BR? ==="
+          diff -u locales-raw/pt_BR/content/methods/context_research.md \
+                  locales/pt_BR/content/methods/context_research.md || true
 
-      - name: Upload locales snapshot artifact
+      - name: Upload RAW (pre-postprocess) snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: transifex-locales-raw
+          path: locales-raw/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload postprocessed snapshot artifact
         uses: actions/upload-artifact@v4
         with:
           name: transifex-locales-snapshot
