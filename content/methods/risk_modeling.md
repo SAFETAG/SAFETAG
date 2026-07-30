@@ -39,7 +39,6 @@ references:
   - Threat Assessment Activities
   - Risk Matrix Activities
   - Alternative Risk Modeling Activities
-  - Guiding Questions for High-Risk Organisations
   - Threat research by focus area
   - Threat research by method
   - General Threats by Region

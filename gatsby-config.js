@@ -2,7 +2,15 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+// Single source of truth for which languages are built; also read by the
+// deploy workflows so they can skip builds for unbuilt languages.
+const languages = require("./languages");
+
 module.exports = {
+  // Set only for subpath deploys (e.g. GitHub Pages project site at
+  // /<repo>/). Unset in production (safetag.org serves at root). Build with
+  // `--prefix-paths` to apply it. See .github/workflows/deploy-weblate-preview.yml.
+  pathPrefix: process.env.PATH_PREFIX || undefined,
   siteMetadata: {
     title: `Safetag`,
     description: `Create custom Safetag guides for your needs`,
@@ -49,7 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`en`, `pt_BR`, `my`, `fr`],
+        languages, // see ./languages.js
         redirect: false,
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https

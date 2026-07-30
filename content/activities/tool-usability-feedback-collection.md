@@ -51,7 +51,7 @@ overview: >-
 
 
   For scenario (B), a similar procedure can be followed, but feedback can be collected at a time and in a way that works best for you, using methods described in the USABLE Guidebook.
-Considerations`: >-
+considerations: >-
   Review screenshots or samples collected from devices used by the partner
   organization to ensure they do not contain identifying images (such as profile
   images, usernames, or filenames) or other metadata which could negatively

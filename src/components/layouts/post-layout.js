@@ -1,7 +1,7 @@
 import React from "react"
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
 
 import GlobalLayout from "./global-layout"
@@ -84,7 +84,7 @@ function PostLayout({ data, location }) {
             </PostHeadline>
             <PostBody>
               <div className="blog-post-content"
-                   dangerouslySetInnerHTML={{ __html: post.html }}
+                   dangerouslySetInnerHTML={{ __html: (post.html || "").replace(/(<img[^>]*?src=")\/img\//g, `$1${withPrefix('/img/')}`) }}
               />
             </PostBody>
             <PostMeta>

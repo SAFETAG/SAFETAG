@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import GlobalLayout from "../components/layouts/global-layout"
@@ -44,7 +44,7 @@ function Activities({ data }) {
     approach =>
       (approachNodes[approach.node.frontmatter.title] = {
         title: approach.node.frontmatter.title,
-        icon: `/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`
+        icon: withPrefix(`/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`)
       })
   )
 

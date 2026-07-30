@@ -26,7 +26,7 @@ overview: >
  
  This activity is especially useful in case of remote audits, where the points of contact usually don’t have the visibility of the activities being conducted in the way that might happen in person, and also in the case of audits that are conducted during a long time (whether remote or in-person) where after some days or weeks it becomes more difficult to keep track of the progress of the audit, activities still pending, and relevant findings so far.
 
-Considerations: |
+considerations: |
   Even when the activity suggests synchronous spaces for the
   partial debriefs, these might also happen over other channels like emails, chats, or other asynchronous spaces as long as they work for both the organization and the auditor. When there are more sensitive topics to discuss that can affect the course of the audit, the organization’s operations, or involve sensitive information; there is the possibility of organizing a synchronous space like a call or an in-person meeting.
 walk_through: >-

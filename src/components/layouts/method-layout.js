@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 import { Remark } from 'react-remark';
@@ -84,7 +84,7 @@ function MethodLayout({ data, location }) {
         approaches: activity.node.frontmatter.approaches,
         excerpt: activity.node.frontmatter.short_summary ?
           activity.node.frontmatter.short_summary
-          : activity.node.frontmatter.summary.slice(0,200) + "...",
+          : (activity.node.frontmatter.summary || "").slice(0,200) + "...",
       }
     }
   )
@@ -107,7 +107,7 @@ function MethodLayout({ data, location }) {
     approach =>
       (approachNodes[approach.node.frontmatter.title] = {
         title: approach.node.frontmatter.title,
-        icon: `/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`
+        icon: withPrefix(`/img/${approach.node.fields.slug.replace('/approaches/', '')}_icon.png`)
       })
   )
 
@@ -139,7 +139,7 @@ function MethodLayout({ data, location }) {
               </MoreLink>
               <InpageTitle size="jumbo" variation="primary">
                 {frontmatter.title}
-                <MethodIcon src={frontmatter.method_icon} />
+                <MethodIcon src={withPrefix(frontmatter.method_icon)} />
               </InpageTitle>
             </MethodHeadline>
             <MethodIntro>
@@ -234,7 +234,7 @@ function MethodLayout({ data, location }) {
                       >
                         <CardHeading variation="primary">
                         {activityNodes[activity] ? activityNodes[activity].approaches.map((approach, index) => (
-                          <img key={`approach-${index}`} src={approachNodes[approach] ? approachNodes.icon : ""} />
+                          <img key={`approach-${index}`} src={approachNodes[approach] ? approachNodes[approach].icon : ""} />
                         )) : ''}
                         {activity}_
                         </CardHeading>

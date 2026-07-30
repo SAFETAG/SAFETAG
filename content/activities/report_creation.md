@@ -45,7 +45,7 @@ overview: >-
 
   * **Try to present the Report:** In most audits, the report will be delivered weeks after the audit, and the organization might take a considerable amount of time to read it as well, making it easier to forget or misremember some covered topics, creating the possibility of making the report less accessible to the organization. To remediate this, one strategy would be presenting the report, giving guidance on how to navigate it, reinforcing the most pressing recommendations to implement, and answering questions.
 materials_needed: ""
-Considerations`: >-
+considerations: >-
   * **Treat the report with the utmost security.** It should only be shared as a
   complete work between the auditor(s) and the identified leadership and points
   of contact of the organization. This also means that if the audit is funded by
@@ -97,10 +97,6 @@ walk_through: >-
 
 
   **\[1]** "When a pilot lands an airliner, their job isn’t over. They still have to navigate the myriad of taxiways and park at the gate safely. The same is true of you and your pen test reports, just because it’s finished doesn't mean you can switch off entirely. You still have to get the report out to the client, and you have to do so securely. Electronic distribution using public key cryptography is probably the best option, but not always possible. If symmetric encryption is to be used, a strong key should be used and must be transmitted out of band. Under no circumstances should a report be transmitted unencrypted. It all sounds like common sense, but all too often people fall down at the final hurdle." - [The Art of Writing Penetration Test Reports](http://resources.infosecinstitute.com/writing-penetration-testing-reports/)
-considerations: >
-  * Treat the report with the utmost security. It should only be shared as a
-  complete work between the auditor(s) and the identified leadership and points
-  of contact of the organization.
 recommendations: >-
   * Keep in mind that there might be recommendations that won’t be fully
   understood by the organization and might require extra attention after the

@@ -1,5 +1,15 @@
 name: Build and Deploy (production)
 
+# Translations live in the repository under locales/ and are committed by
+# Weblate, so the build is a plain `npm ci && npm run build` -- no translation
+# API call and no token needed at build time.
+#
+# Weblate holds translations for more languages than the site builds. A push
+# that only touches an unbuilt language would produce a byte-identical site, so
+# the `gate` job below skips the deploy. The list of built languages is read
+# from ./languages.js -- the same file gatsby-config.js uses -- so there is one
+# source of truth rather than a copy kept in sync by hand.
+
 on:
   workflow_dispatch:
   push:
@@ -7,53 +17,99 @@ on:
       - main
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      build: ${{ steps.decide.outputs.build }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # need history to diff against the pre-push commit
+
+      - name: Decide whether this push can change the site
+        id: decide
+        run: |
+          set -uo pipefail
+          BEFORE="${{ github.event.before }}"
+
+          # Manual run, first push to the branch, or a force-push: no reliable
+          # diff available, so build rather than risk skipping a real change.
+          if [ -z "$BEFORE" ] \
+             || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+             || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            echo "no usable diff base; building"
+            echo "build=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          LANGS="$(node -p "require('./languages.js').join(' ')")"
+          echo "built languages: $LANGS"
+
+          BUILD=false
+          while IFS= read -r f; do
+            [ -n "$f" ] || continue
+            case "$f" in
+              locales/*)
+                LANG_DIR="$(printf '%s' "$f" | cut -d/ -f2)"
+                for a in $LANGS; do
+                  if [ "$LANG_DIR" = "$a" ]; then
+                    echo "built language touched: $f"
+                    BUILD=true
+                    break
+                  fi
+                done
+                ;;
+              *)
+                # anything outside locales/ can affect the built site
+                echo "non-translation change: $f"
+                BUILD=true
+                ;;
+            esac
+            [ "$BUILD" = "true" ] && break
+          done < <(git diff --name-only "$BEFORE" "${{ github.sha }}")
+
+          echo "build=$BUILD" >> "$GITHUB_OUTPUT"
+          [ "$BUILD" = "true" ] || echo "only unbuilt languages changed; skipping deploy"
+        shell: bash
+
   build-and-deploy:
+    needs: gate
+    if: needs.gate.outputs.build == 'true'
     runs-on: ubuntu-latest
 
     env:
       SITE_NAME: "Safetag"
 
     steps:
-      # Cancel previous workflows to avoid overlapping deploys as content
-      # editing might add several commits in short intervals.
+      # Weblate commits one push per language, so several can land in quick
+      # succession; only the newest deploy is worth finishing.
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.6.0
+        uses: styfle/cancel-workflow-action@0.12.1
         with:
           access_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up secrets
-        run: |
-          touch .env
-          echo TX_TOKEN=${{ secrets.TRANSIFEX_TOKEN }} >> .env
-          cp .env .env.production
-          cp .env .env.development
-          cat .env
+        uses: actions/checkout@v4
 
       - name: Use Node.js 20
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install and lint
         run: |
-          npm install
+          npm ci
           npm run lint
 
-      - name: Update translations from Transifex
-        run: |
-          export TX_TOKEN=${{ secrets.TRANSIFEX_TOKEN }}
-          npm run extract
-          npm run transifex-push
-          npm run transifex-pull
-          npm run build
+      - name: Build
+        run: npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: guide
-          FOLDER: public
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: guide
+          folder: public
+          clean: true # Automatically remove deleted files from the deploy branch
