@@ -1,5 +1,5 @@
 ---
-title: Kick-Off Call/Meeting
+title: Réunion de lancement
 position: 2
 approaches:
   - Interpersonnel
