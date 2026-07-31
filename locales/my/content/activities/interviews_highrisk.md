@@ -34,95 +34,90 @@ materials_needed: |
   အင်တာဗျူးတစ်ခု / ဝန်ထမ်းတစ်ဦးလျှင် ~၄၅ မိနစ်
   အဖွဲ့အစည်း၏ ယဉ်ကျေးမှုပေါ်မူတည်၍ အဖွဲ့အစည်းတစ်ခုအနေဖြင့် ၁ နာရီအင်တာဗျူး
 considerations: |
-  **လုပ်ငန်းလည်ပတ်ခြင်းဆိုင်ရာ လုံခြုံရေး**
+  **Operational Security**
 
-  * အွန်လိုင်းတွင် အင်တာဗျူးလုပ်သည့်အခါ ဒေတာကို ကာကွယ်ထားရန် လိုအပ်သည် (အဆုံးအထိကုဒ်ဝှက်ခြင်း၊ tor၊ vpn များ စသည်ဖြင့်)
-  * ထိုချန်နယ်တွင် ပါဝင်သူများနှင့် စကားပြောရန် ၎င်းတို့၏ သဘောတူညီချက်ကို ရယူပါ၊ သို့မဟုတ် သဘောတူညီချက်တွင် VOIP အက်ပလီကေးရှင်းနှင့် ကိုယ်ရေးကိုယ်တာ အချက်အလက်များ အကြောင်း အသေးစိတ်အချက်အလက်များကို ထည့်သွင်းပါ။
-  * ရုံးမှာ စကားစမြည်မပြောဘဲ ယုံကြည်စိတ်ချရတဲ့ တစ်နေရာရာမှာ ပြုလုပ်ဖို့ စဉ်စားပါ
-  * စက်ပစ္စည်းများကို အခန်းအပြင်ဘက်တွင် ထားလိုက ထားနိုင်ပါသည်
+  * In case you do an interview online, the data needs to be protected (end to end encryption, tor, vpns, etc)
+  * Get the consent of the participant to speak with them over that channel, or add details about the VOIP application and privacy information to the agreement
+  * Might consider not having the conversation in the office, but somewhere trusted
+  * Might want to leave devices outside of the room
 
-  **စိတ်ပိုင်းဆိုင်ရာ ထည့်သွင်းစဉ်းစားချက်များ** 
+  **Psychological Considerations**
 
-  * အဖွဲ့အစည်းအင်တာဗျူးအတွင်း ဇာတ်လမ်းများကို မိမိကြုံရသည့်အတိုင်း မဟုတ်ဘဲ ယေဘုယျအားဖြင့် ပြောပြရန် ဝန်ထမ်းများအား တောင်းဆိုပါ
-  * ဝန်ထမ်းများသည် အဖွဲ့အစည်းတစ်ခုလုံး၏ရှေ့မှောက်တွင် အဖြစ်အပျက်တစ်ခုပြောရန် စိတ်အနှောင့်အယှက် ဖြစ်နိုင်ပါသည်
-  * ဝန်ထမ်းများသည် တိုက်ခိုက်မှုနှင့် အကျိုးသက်ရောက်မှုကို နားလည်မှုမရှိခြင်းကြောင့် တိုက်ခိုက်မှုများကို အကျယ်ချဲ့နိုင်သည် သို့မဟုတ် လွန်ကဲစွာ ခန့်မှန်းနိုင်သည်
-  * ဝန်ထမ်းများသည် ဤဟက်လုပ်မှုများနှင့် အလွန်အကျွံထိတွေ့မှု၊ အခြားဖိအားပေးသည့် စိန်ခေါ်မှုများ၊ သို့မဟုတ် နားလည်မှု မရှိခြင်းတို့ကြောင့် တိုက်ခိုက်မှုများကို လျှော့တွက်နိုင်သည်
-  * စစ်ဆေးသူများသည် နားထောင်ပြီး သဘောတရားများကို ရှင်းပြသင့်သော်လည်း အဖြစ်အပျက်၏ "လေးနက်မှု" နှင့် ပတ်သက်၍ ငြင်းခုံခြင်းမပြုပါနှင့်
-  * ဝန်ထမ်းများသည် ဖြစ်ရပ်ကို လွဲမှားစွာဖော်ပြပါက မပြင်ပါနှင့်
-  * အကြောင်းအရာသည် လှုံ့ဆော်နိုင် သို့မဟုတ် ခက်ခဲနိုင်သောကြောင့် ဂရုတစိုက် မေးပါ။ ထို့ပြင် ၎င်းသည် စစ်ဆေးမှု၏ အစောပိုင်းအဆင့်ဖြစ်သည်
+  * Ask the staff to keep the stories generalised, not personalised during the organisation interview
+  * Staff might be embarrassed talk an incident about in front of the entire org
+  * Staff might exaggerate or overestimate attacks due to lack of understanding of the attack and impact
+  * Staff might underestimate attacks due to overexposure to these hacks, other pressing challenges, or lack of understanding
+  * Auditors should listen and explain concepts, but don't argue about the "seriousness" of the incident
+  * Don't correct the staff member if they describe the incident incorrectly
+  * Tread carefully, given the topic can be triggering or difficult and this is an early stage of the audit
 walk_through: |
-  **တစ်ဦးချင်းအင်တာဗျူး**
+  **Individual Interview**
 
-  * သင်၏ အလုပ် ဒါမှမဟုတ် ကိုယ်ပိုင်ဘဝတစ်လျှောက် သံသယဖြစ်ဖွယ်မက်ဆေ့ချ်များ၊ အီးမေးလ်များ စသည်တို့ကို သင်ကြုံတွေ့ဖူးပါသလား။
+  * Have you encountered suspicious messages, emails, etc. in the course of your
+  work or personal life?
+    * *If "No" or "I don't know", the auditor should give an example of what an suspicious message might look like.*
+    * *If "yes", ask these questions for each suspicious event:*
+      * Can you tell me about the suspicious message? What made you feel it was suspicious?
+      * What did you do when you received it? (i.e. who did you contact? did you click on it or download a file? did you follow the instructions?)
+      * Do you feel you are compromised now? How does this impact you?
+      * Can you share this message? (Link to guides to share messages with sender, content, timestamp)
+      * Have you received any account notifications? Such as SMS or emails notifying you of unauthorized access to your account (email, social media), an account being locked, suspicious activity on your account?
+  * Has this happened to colleagues, peer organisations, community members, CSO
+  actors journos, that you know?
+  * Have you ever experienced an incident or hack during the course of your
+  work?
+    *If the answer is "yes", ask these questions for each attack*
+      * Can you tell me about that event/incident/hack? (i.e. who was involved, when it happened, what happened, was it personal or work-related? what were the consequences? (financial, physical, emotional, reputational))
+      * What did you do after? Who do you ask for help from?
+      * Do you have something that you can show us? (i.e. an email, screenshots, social network messages, the actual infected machine, message from the attacker, social network pages made by attackers, leaked information)
+      * Do you feel you are compromised now? How does this impact you?
+  * Has this happened to colleagues, peer organisations, community members, CSO
+  actors (journos, etc)? (Revisit above questions to the extent the interviewee
+  can provide detail)
+  * Why do you think you are targeted?
+  * What would you like to get out of this audit?
 
-  * *အကယ်၍ အဖြေမှာ “မကြုံဖူးပါ၊” “မသိရှိပါ” ဟူ၍ဖြစ်လျှင် သံသယဖြစ်ဖွယ်မက်ဆေ့ချ်သည် မည်သည့်ပုံစံ ဖြစ်သည်ကို စစ်ဆေးသူက နမူနာပြသင့်ပါသည်။
+  **Group Interview**
 
-  *
-  * အကယ်၍ "ဟုတ်သည်" ဆိုလျှင် သံသယဖြစ်ဖွယ်ဖြစ်ရပ်တစ်ခုစီအတွက် ဤမေးခွန်းများကို မေးပါ - *
+  **NOTE**: Remind the staff that if it's not public within the organisation and/or happened to a personal account, then don't share it during this session.
 
-  * သံသယဖြစ်ဖွယ် မက်ဆေ့ချ်အကြောင်း ပြောပြနိုင်မလား။ ဘယ်အရာက သံသယဖြစ်စရာ ကောင်းတယ်လို့ ခံစားရစေသလဲ။
+  * Have you been hacked before (as an organisation)?
+    * *If the answer is "No" or "I don't know", the auditor should give an example of what an attack might look like. If they still say no, then move on to other questions for the risk assessment:*
+      * DDoS attack
+      * Website defacement
+      * Spam and adverstisements
+      * Malware
+        * Attachment that doesn't work
+        * Attachment that AV doesn't like
+        * Attachment from unknown person or unexpected email
+      * Phishing
+        * Gmail Reset Password Notifications
+      * Blackmail - Electronic Threats
+      * Ransomware
+    *If the answer is "yes"*
+      * Can you tell me about that event/incident/hack?(i.e. who was involved, when it happened, what happened, was it personal or work-related? what were the consequences? (financial, physical, emotional, reputational))
+  * What did you do after? Who do you ask for help from?
 
-  * လက်ခံရရှိသောအခါ သင်ဘာလုပ်ခဲ့သနည်း။  (ဆိုလိုသည်မှာ - မင်းဘယ်သူ့ကိုဆက်သွယ်ခဲ့သလဲ။ အဲဒါကို နှိပ်ခဲ့သလား ဒါမှမဟုတ် ဖိုင်တစ်ခုကို ဒေါင်းလုဒ်လုပ်ခဲ့သလား။ ညွှန်ကြားချက်များကို လိုက်နာခဲ့သလား။)
+  * Do you have something that you can show us? (i.e. an email, screenshots, social network messages, the actual infected machine, message from the attacker, social network pages made by attackers, leaked information)
 
-  * သင် အခု အပေးအယူ လုပ်ခံရတယ်လို့ ခံစားရသလား။ ဒါက သင့်ကို ဘယ်လိုသက်ရောက်မှုရှိသလဲ။
+  * Do you feel you feel targeted as an organisation? How does this impact your operations?
 
-  * ဤမက်ဆေ့ချ်ကို မျှဝေနိုင်ပါသလား။ (စာပို့သူ၊ အကြောင်းအရာ၊ လက်ရှိကွန်ပျူတာမှတ်တမ်းတင်ချိန်တို့ ပါသော မက်ဆေ့ချ်များကို မျှဝေရန် လမ်းညွှန်များသို့ လင့်ခ်)
+  * Why do you think you are targeted?
 
-  * အကောင့် အသိပေးချက်များကို သင်လက်ခံရရှိပါသလား။
-  သင့်အကောင့် (အီးမေးလ်၊ ဆိုရှယ်မီဒီယာ) ကို ခွင့်မပြုဘဲ ဝင်ရောက်သုံးစွဲမှု၊ အကောင့်လော့ခ်ချထားခြင်း၊ သင့်အကောင့်တွင် သံသယဖြစ်ဖွယ် လုပ်ဆောင်ချက်များ ရှိကြောင်း SMS သို့မဟုတ် အီးမေးလ်များဖြင့် အကြောင်းကြားခြင်း။
+  * Do you know who was behind the attack?
 
-  * လုပ်ဖော်ကိုင်ဖက်များ၊ ယှဥ်ဘက် အဖွဲ့အစည်းများ၊ အသိုင်းအဝိုင်းအဖွဲ့ဝင်များ၊ CSO လုပ်ဆောင်သူများ၊ သင်သိသော ဂျာနယ်လစ်များတွင် ထိုသို့ဖြစ်ဖူးသလား။
+  * Has this happened to colleagues, peer organisations, community members, CSO actors (journos, etc)? (Add actors based on context research)
 
-  * အလုပ်သင်တန်းကာလအတွင်း ဖြစ်ရပ်တစ်ခု သို့မဟုတ် ဟက်ခံရမှု ရှိပါသလား။
-  * အကယ်၍ အဖြေက "ဟုတ်တယ်" ဖြစ်ပါက တိုက်ခိုက်မှုတစ်ခုစီအတွက် ဤမေးခွန်းများကို မေးပါ*
+  **NOTE**: Repeat above questions per incident
 
-  * အဲဒီအဖြစ်အပျက်/ဖြစ်ရပ်/ဟက်ခံရမှုအကြောင်း ပြောပြနိုင်မလား။ (ဆိုလိုသည်မှာ ဘယ်သူတွေ ပါဝင်ပတ်သက်ခဲ့သလဲ၊ ဘယ်တုန်းက ဖြစ်ခဲ့သလဲ၊ ဘာတွေဖြစ်ခဲ့သလဲ၊ ဒါဟာ ပုဂ္ဂိုလ်ရေးအရလား၊ အလုပ်နဲ့ သက်ဆိုင်သလား၊ အကျိုးဆက်တွေက ဘာလဲ (ငွေကြေး၊ ရုပ်ပိုင်းဆိုင်ရာ၊ စိတ်ပိုင်းဆိုင်ရာ၊ ဂုဏ်သိက္ခာပိုင်းဆိုင်ရာ))
+  * Do you have a sense of your adversaries or those who seek to disrupt your work? Are aware of their capabilities? (i.e. Are they well funded? Do they have advanced technical expertise? Are they government backed?)
 
-  *နောက်ပိုင်းမှာ သင် ဘာလုပ်ခဲ့သလဲ။ ဘယ်သူ့ဆီက အကူအညီတောင်းသလဲ။
-  * သင့်မှာ ကျွန်တော်တို့ကို ပြနိုင်တာ တစ်ခုခုရှိသလား။ ( ဆိုလိုသည်မှာ အီးမေးလ်၊ စခရင်ရှော့တ်များ၊ လူမှုကွန်ရက် မက်ဆေ့ချ်များ၊ အမှန်တကယ် ကူးစက်ခံရသောစက်၊ တိုက်ခိုက်သူထံမှ မက်ဆေ့ချ်၊ တိုက်ခိုက်သူများပြုလုပ်သော လူမှုကွန်ရက် စာမျက်နှာများ၊ ပေါက်ကြားခဲ့သည့် သတင်းအချက်အလက်များ)
-  * သင် အခု အပေးအယူ လုပ်ခံနေရတယ်လို့ ခံစားရသလား။ ဒါက သင့်ကို ဘယ်လိုသက်ရောက်မှုရှိသလဲ။
-  * လုပ်ဖော်ကိုင်ဖက်များ၊ ယှဉ်ဘက် အဖွဲ့အစည်းများ၊ အသိုင်းအဝိုင်း အဖွဲ့ဝင်များ၊ CSO လုပ်ဆောင်သူများ (ဂျာနယ်လစ်များ စသည်ဖြင့်) တွင် ထိုသို့ဖြစ်ဖူးသလား။ (အင်တာဗျူးဖြေဆိုသူက အသေးစိတ်ပြောနိုင်တဲ့ အတိုင်းအတာအထိ အထက်ပါမေးခွန်းများကို ပြန်လည်ကြည့်ရှုပါ)
-  * သင့်ကို ပစ်မှတ်ထားတာ ဘာကြောင့်လို့ထင်သလဲ။
-  * ဒီစစ်ဆေးမှုကနေ သင်ဘာလိုချင်သလဲ။
+  * What is their motivation for attacking you or any other peer org in the community?
 
-  **အဖွဲ့အင်တာဗျူး**
+  * What is your motivation for having the audit?
 
-  **မှတ်ချက်*
-  * - အဖွဲ့အစည်းအတွင်း အများနှင့်သက်ဆိုင်မှုမရှိဘဲ နှင့်/သို့မဟုတ် ကိုယ်ရေးကိုယ်တာ အကောင့်တစ်ခုတွင် ဖြစ်ပွားခဲ့လျှင် ဤဆက်ရှင်အတွင်း မမျှဝေရန် ဝန်ထမ်းများအား သတိပေးပါ။
-  *သင် ယခင်က (အဖွဲ့အစည်းတစ်ခု အ‌နေနဲ့) ဟက်ခံရဖူးသလား။
-  **အကယ်၍ အဖြေသည် “မခံရဖူးဘူး” သို့မဟုတ် “မသိဘူး” ဖြစ်ခဲ့လျှင် တိုက်ခိုက်မှုတစ်ခုသည် မည်သည့်ပုံစံ ဖြစ်နိုင်သည်ကို စစ်ဆေးသူက နမူနာပြသင့်ပါသည်။ အကယ်၍ ထိုသို့ပြသသည့်တိုင် မသိရှိကြောင်း ပြောဆိုပါက အန္တရာယ်အကဲဖြတ်မှုအတွက် အခြားမေးခွန်းများကို ပြောင်းမေးပါ။
-
-  * DDoS တိုက်ခိုက်မှု
-  * ဝဘ်ဆိုက် သွင်ပြင်များပြောင်းလဲခြင်း
-  * စပမ်းနှင့်ကြော်ငြာများ
-  * အန္တရာယ်ရှိသော ဆော့့ဖ်ဝဲ
-  * အလုပ်မလုပ်သော ပူးတွဲဖိုင်
-  * AV နှင့် မတူသော ပူးတွဲဖိုင်
-  * အမည်မသိသူ သို့မဟုတ် မမျှော်လင့်ထားသော အီးမေးလ်မှ ပူးတွဲဖိုင်
-  * ဖြားယောင်းခြင်း
-  * Gmail စကားဝှက် အသိပေးချက်များကို ပြန်လည်သတ်မှတ်ပါ
-  * သုံးစွဲသူအား ငွေညှစ်သည့် ဆော့ဖ်ဝဲ
-  *အကယ်၍ အဖြေက "ဟုတ်တယ်" ဆိုလျှင်*
-  * အဲဒီ အဖြစ်အပျက်/ဖြစ်ရပ်/ဟက်ခံရမှုအကြောင်း ပြောပြနိုင်မလား။ (ဆိုလိုသည်မှာ ဘယ်သူပါဝင်တယ်၊ ဘယ်အချိန်မှာ ဖြစ်ခဲ့တယ်၊ ဘာဖြစ်ခဲ့တယ်၊ ကိုယ်ရေးကိုယ်တာ ကိစ္စကြောင့်လား သို့မဟုတ် အလုပ်နဲ့ ဆက်စပ်လို့လား၊ အကျိုးဆက်တွေက ဘာလဲ။ (ငွေရေးကြေးရေး၊ ရုပ်ပိုင်းဆိုင်ရာ၊ စိတ်ခံစားမှုဆိုင်ရာ၊ ဂုဏ်သတင်းဆိုင်ရာစသဖြင့်))
-  * ပြီးတော့ သင် ဘာဆက်လုပ်ခဲ့သလဲ။ ဘယ်သူဆီက အကူအညီတောင်းသလဲ။ 
-  * သင့်မှာ ကျွန်တော်တို့ကို ပြနိုင်တာ တစ်ခုခုရှိသလား။ (ဆိုလိုသည်မှာ အီးမေးလ်၊ စခရင်ရှော့့့တ်များ၊ လူမှုကွန်ရက်မက်ဆေ့ချ်များ၊ အမှန်တကယ် ကူးစက်သည့်စက်၊ တိုက်ခိုက်သူများထံမှ မက်ဆေ့ချ်၊ တိုက်ခိုက်သူများ ပြုလုပ်သော လူမှုကွန်ရက်စာမျက်နှာများ၊ ပေါက်ကြားထားသော အချက်အလက်များ)
-
-  * အဖွဲ့အစည်းတစ်ခုအဖြစ် သင့်ကို ပစ်မှတ်ထားနေတယ်လို့ ခံစားမိသလား။ ဒါက သင့်ရဲ့လုပ်ငန်းလည်ပတ်မှုတွေအပေါ် ဘယ်လိုအကျိုးသက်ရောက်သလဲ။ 
-
-  * သင့်ကို ပစ်မှတ်ထားနေတာ ဘာကြောင့်လို့ ထင်သလဲ။
-
-  * တိုက်ခိုက်မှုနောက်ကွယ်က ဘယ်သူလဲဆိုတာ သင် သိသလား။
-
-  * လုပ်ဖော်ကိုင်ဖက်များ၊ ယှဉ်ဘက် အဖွဲ့အစည်းများ၊ အသိုင်းအဝိုင်းအဖွဲ့ဝင်များ၊ CSO လုပ်ဆောင်သူများ (ဂျယ်နယ်လစ်များ စသည်ဖြင့်) တို့တွင် ထိုသို့ဖြစ်ဖူးသလား။ (ဆက်စပ်သုတေသနအပေါ် အခြေခံ၍ လုပ်ဆောင်သူများကို ထည့်ပါ)
-
-  **မှတ်ချက်**- ဖြစ်ရပ်တစ်ခုစီအတွက် အထက်ပါ မေးခွန်းများကို ပြန်မေးပါ
-
-  * သင့်ရန်သူတွေ ဒါမှမဟုတ် သင့်အလုပ်ကို နှောင့်ယှက်ဖို့ ကြိုးစားနေတဲ့သူတွေလို့ ခံစားမိတဲ့သူတွေ ရှိသလား။ သူတို့ရဲ့ လုပ်နိုင်စွမ်းတွေကို သတိပြုမိသလား။ (ဆိုလိုသည်မှာ သူတို့က ရန်ပုံငွေ တောင့်သလား။ အဆင့်မြင့်နည်းပညာပိုင်းဆိုင်ရာ ကျွမ်းကျင်မှု ရှိသလား။ အစိုးရ ကျောထောက်နောက်ခံရှိသလား။)
-
-  * သင် သို့မဟုတ် အသိုင်းအဝိုင်းအတွင်းရှိ အခြားယှဉ်ဘက် အဖွဲ့အစည်းတစ်ခုခုကို တိုက်ခိုက်ရန်အတွက် သူတို့ရဲ့ စိတ်ပါဝင်စားမှုက ဘာလဲ။
-  *စစ်ဆေးမှုပြုလုပ်ရန်အတွက် သင့်စိတ်ပါဝင်စားမှုက ဘာလဲ။
-  **မှတ်ချက်*
-  * - သူတို့တွင် မည်သည့်ဒေတာ ရှိကြောင်း၊ မည်သည့် ပိုင်ဆိုင်မှုများသည် အရေးကြီးဆုံး၊ အကဲဆတ်ဆုံးနှင့် ပစ်မှတ်ထားနိုင်ခြေရှိကြောင်းနှင့် ပတ်သက်၍ နောက်ထပ်ပြောဆိုမှုများ ရှိလာနိုင်သည်
+  **NOTE**: Could lead to further conversations about what data they have, what
+  assets are the most important, sensitive and possibly targeted.
 recommendations: |
   အကြံပြုချက်များသည် အင်တာဗျူးအတွင်း ပေါ်ပေါက်လာသော အဆင့်မြင့်ခြိမ်းခြောက်မှုများအပေါ်  မူတည်ပါသည်။အသေးစိတ်အချက်အလက်များကို [အဆင့်မြင့်ခြိမ်းခြောက်မှုနည်းလမ်း](https://safetag.org/methods/advanced_threat) တွင် ကြည့်ပါ။
 organization_size_under: 50

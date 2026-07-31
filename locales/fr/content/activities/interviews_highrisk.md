@@ -32,96 +32,90 @@ materials_needed: |
   ~45 minutes par entretien / membre du personnel
   Entretien d'1 heure en tant qu'organisation, selon la culture organisationnelle
 considerations: |
-  **Sécurité opérationnelle**
+  **Operational Security**
 
-  * Si vous faites un entretien en ligne, les données doivent être protégées (chiffrement de bout en bout, tor, vpns, etc.)
-  * Obtenez le consentement du participant pour lui parler sur ce canal, ou
-  ajouter des détails sur l'application VOIP et la protection des renseignements personnels de l'
-  accord
-  * Peut envisager de ne pas avoir la conversation au bureau, mais dans un endroit de confiance
-  * Peut vouloir laisser des appareils à l'extérieur de la pièce
+  * In case you do an interview online, the data needs to be protected (end to end encryption, tor, vpns, etc)
+  * Get the consent of the participant to speak with them over that channel, or add details about the VOIP application and privacy information to the agreement
+  * Might consider not having the conversation in the office, but somewhere trusted
+  * Might want to leave devices outside of the room
 
-  **Considérations psychologiques**
+  **Psychological Considerations**
 
-  * Demandez au personnel de garder les histoires généralisées et non personnalisées lors de l'entretien d'organisation
-  * Le personnel pourrait être gêné de parler d'un incident devant toute l'organisation
-  * Le personnel peut exagérer ou surestimer les attaques en raison d'un manque de compréhension de l'attaque et de son impact
-  * Le personnel peut sous-estimer les attaques en raison d'une surexposition à ces piratages, d'autres défis urgents ou d'un manque de compréhension
-  * Les auditeurs doivent écouter et expliquer les concepts, mais ne discutent pas de la « gravité » de l'incident
-  * Ne corrigez pas le membre du personnel s'il décrit l'incident de manière incorrecte
-  * Soyez prudent, étant donné que le sujet peut être déclencheur ou difficile et qu'il s'agit d'une étape précoce de l'audit
+  * Ask the staff to keep the stories generalised, not personalised during the organisation interview
+  * Staff might be embarrassed talk an incident about in front of the entire org
+  * Staff might exaggerate or overestimate attacks due to lack of understanding of the attack and impact
+  * Staff might underestimate attacks due to overexposure to these hacks, other pressing challenges, or lack of understanding
+  * Auditors should listen and explain concepts, but don't argue about the "seriousness" of the incident
+  * Don't correct the staff member if they describe the incident incorrectly
+  * Tread carefully, given the topic can be triggering or difficult and this is an early stage of the audit
 walk_through: |
-  **Entretien Individuel**
+  **Individual Interview**
 
-  * Avez-vous rencontré des messages, courriels, etc. suspects dans le cadre de votre travail ou de votre vie personnelle ?
-  * *Si "Non" ou "Je ne sais pas", l'auditeur doit donner un exemple de ce à quoi un message suspect pourrait ressembler.*
-  * *Si "oui", posez ces questions pour chaque événement suspect :*
-  * Pouvez-vous me parler du message suspect ? Qu'est-ce qui vous a fait sentir que c'était suspect ?
-  * Qu'avez-vous fait lorsque vous l'avez reçu ? (c'est-à-dire qui avez-vous contacté ? avez-vous cliqué dessus ou téléchargé un fichier ? avez-vous suivi les instructions ?)
-  * Vous sentez-vous compromis maintenant ? Comment cela vous affecte-t-il ?
-  * Pouvez-vous partager ce message ? (Lien vers des guides pour partager des messages avec l'expéditeur, le contenu, l'horodatage)
-  * Avez-vous reçu des notifications de compte ? Tels que des SMS ou des courriels vous informant d'un accès non autorisé à votre compte (courriel, réseaux sociaux), d'un compte verrouillé, d'une activité suspecte sur votre compte ?
-  * Cela est-il arrivé à des collègues, des organisations homologues, des membres de la communauté, des OSC
-  acteurs journalistes, que tu connais ?
-  * Avez-vous déjà vécu un incident ou un piratage dans le cadre de votre travail ?
-  *Si la réponse est "oui", posez ces questions pour chaque attaque*
-  * Pouvez-vous me parler de cet événement/incident/piratage ? (c'est-à-dire qui était impliqué, quand c'est arrivé, que s'est-il passé, était-ce personnel ou lié au travail ? quelles ont été les conséquences ? (financières, physiques, émotionnelles, réputationnelles))
-  * Qu'avez-vous fait après ? A qui demandez-vous de l'aide ?
-  * Avez-vous quelque chose à nous montrer ? (c'est-à-dire un courriel, des captures d'écran, des messages de réseaux sociaux, la machine réellement infectée, un message de l'attaquant, des pages de réseaux sociaux créées par des attaquants, des informations divulguées)
-  * Vous sentez-vous compromis maintenant ? Comment cela vous affecte-t-il ?
-  * Cela est-il arrivé à des collègues, des organisations homologues, des membres de la communauté, des OSC
-  acteurs (journaux, etc.) ? (Revoyez les questions ci-dessus dans la mesure où la personne interrogée
-  peut fournir des détails)
-  * Pourquoi pensez-vous être ciblé ?
-  * Qu'aimeriez-vous retirer de cet audit ?
+  * Have you encountered suspicious messages, emails, etc. in the course of your
+  work or personal life?
+    * *If "No" or "I don't know", the auditor should give an example of what an suspicious message might look like.*
+    * *If "yes", ask these questions for each suspicious event:*
+      * Can you tell me about the suspicious message? What made you feel it was suspicious?
+      * What did you do when you received it? (i.e. who did you contact? did you click on it or download a file? did you follow the instructions?)
+      * Do you feel you are compromised now? How does this impact you?
+      * Can you share this message? (Link to guides to share messages with sender, content, timestamp)
+      * Have you received any account notifications? Such as SMS or emails notifying you of unauthorized access to your account (email, social media), an account being locked, suspicious activity on your account?
+  * Has this happened to colleagues, peer organisations, community members, CSO
+  actors journos, that you know?
+  * Have you ever experienced an incident or hack during the course of your
+  work?
+    *If the answer is "yes", ask these questions for each attack*
+      * Can you tell me about that event/incident/hack? (i.e. who was involved, when it happened, what happened, was it personal or work-related? what were the consequences? (financial, physical, emotional, reputational))
+      * What did you do after? Who do you ask for help from?
+      * Do you have something that you can show us? (i.e. an email, screenshots, social network messages, the actual infected machine, message from the attacker, social network pages made by attackers, leaked information)
+      * Do you feel you are compromised now? How does this impact you?
+  * Has this happened to colleagues, peer organisations, community members, CSO
+  actors (journos, etc)? (Revisit above questions to the extent the interviewee
+  can provide detail)
+  * Why do you think you are targeted?
+  * What would you like to get out of this audit?
 
-  **Entrevue de groupe**
+  **Group Interview**
 
-  **REMARQUE** : Rappelez au personnel que si ce n'est pas public au sein de l'organisation
-  et/ou est arrivé à un compte personnel, alors ne le partagez pas pendant cette
-  session.
+  **NOTE**: Remind the staff that if it's not public within the organisation and/or happened to a personal account, then don't share it during this session.
 
-  * Avez-vous déjà été piraté (en tant qu'organisation) ?
-  * *Si la réponse est "Non" ou "Je ne sais pas", l'auditeur doit donner un exemple de ce à quoi pourrait ressembler une attaque. S'ils disent toujours non, passez à d'autres questions pour l'évaluation des risques :*
-  * Attaque DDoS
-  * Défiguration du site Web
-  * Spam et publicités
-  * Logiciels malveillants
-  * Pièce jointe qui ne fonctionne pas
-  * Pièce jointe que AV n'aime pas
-  * Pièce jointe d'une personne inconnue ou d'un courriel inattendu
-  * Hameçonnage
-  * Notifications de réinitialisation du mot de passe Gmail
-  * Chantage - Menaces électroniques
-  * Rançongiciels
-  *Si la réponse est oui"*
-  * Pouvez-vous me parler de cet événement/incident/piratage ? (c'est-à-dire qui était impliqué, quand cela s'est produit, que s'est-il passé, était-ce personnel ou lié au travail ? Quelles ont été les conséquences ? (financières, physiques, émotionnelles, réputationnelles))
-  * Qu'avez-vous fait après ? A qui demandez-vous de l'aide ?
+  * Have you been hacked before (as an organisation)?
+    * *If the answer is "No" or "I don't know", the auditor should give an example of what an attack might look like. If they still say no, then move on to other questions for the risk assessment:*
+      * DDoS attack
+      * Website defacement
+      * Spam and adverstisements
+      * Malware
+        * Attachment that doesn't work
+        * Attachment that AV doesn't like
+        * Attachment from unknown person or unexpected email
+      * Phishing
+        * Gmail Reset Password Notifications
+      * Blackmail - Electronic Threats
+      * Ransomware
+    *If the answer is "yes"*
+      * Can you tell me about that event/incident/hack?(i.e. who was involved, when it happened, what happened, was it personal or work-related? what were the consequences? (financial, physical, emotional, reputational))
+  * What did you do after? Who do you ask for help from?
 
-  * Avez-vous quelque chose à nous montrer ? (c'est-à-dire un courriel, des captures d'écran,
-  messages de réseaux sociaux, machine réellement infectée, message de l'attaquant, pages de réseaux sociaux créées par des attaquants, fuite d'informations)
+  * Do you have something that you can show us? (i.e. an email, screenshots, social network messages, the actual infected machine, message from the attacker, social network pages made by attackers, leaked information)
 
-  * Avez-vous l'impression de vous sentir ciblé en tant qu'organisation ? Quel impact cela a-t-il sur vos opérations ?
+  * Do you feel you feel targeted as an organisation? How does this impact your operations?
 
-  * Pourquoi pensez-vous être ciblé ?
+  * Why do you think you are targeted?
 
-  * Savez-vous qui était derrière l'attaque ?
+  * Do you know who was behind the attack?
 
-  * Cela est-il arrivé à des collègues, des organisations homologues, des membres de la communauté, des OSC
-  acteurs (journaux, etc.) ? (Ajouter des acteurs en fonction de la recherche contextuelle)
+  * Has this happened to colleagues, peer organisations, community members, CSO actors (journos, etc)? (Add actors based on context research)
 
-  **REMARQUE** : Répétez les questions ci-dessus par incident
+  **NOTE**: Repeat above questions per incident
 
-  * Avez-vous une idée de vos adversaires ou de ceux qui cherchent à perturber votre
-  travailler? Sont conscients de leurs capacités ? (c'est-à-dire sont-ils bien financés ?
-  avez une expertise technique avancée? Sont-ils soutenus par le gouvernement ?)
+  * Do you have a sense of your adversaries or those who seek to disrupt your work? Are aware of their capabilities? (i.e. Are they well funded? Do they have advanced technical expertise? Are they government backed?)
 
-  * Quelle est leur motivation pour vous attaquer ou toute autre organisation de pairs dans la communauté ?
+  * What is their motivation for attacking you or any other peer org in the community?
 
-  * Quelle est votre motivation pour passer l'audit ?
+  * What is your motivation for having the audit?
 
-  **REMARQUE** : Pourrait mener à d'autres conversations sur les données dont ils disposent,
-  les actifs sont les plus importants, sensibles et éventuellement ciblés
+  **NOTE**: Could lead to further conversations about what data they have, what
+  assets are the most important, sensitive and possibly targeted.
 recommendations: |
   Les recommandations dépendront des menaces avancées soulevées lors de l'entretien. Voir la [Méthode de menace avancée](https://safetag.org/methods/advanced_threat) pour plus de détails.
 organization_size_under: 50
