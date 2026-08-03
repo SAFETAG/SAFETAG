@@ -2,37 +2,54 @@
 title: Windows Device Check
 short_summary: Check for security status of Windows devices
 ---
-
-
   If Windows is not your primary OS, you can download sample Virtual Machines
   (with time limitations) from Microsoft via https://www.microsoft.com/en-us/software-download/windows11 
 
-  **Windows 10**
 
-  * OS Security Updates
+
+**Windows 11**
+
+* OS Security Updates
 
   GUI: Start --Settings --Update & Security --Windows Update
-
-  * Firewall
+* Firewall
 
   GUI: Start, type Firewall (select Windows Firewall)
-
-  * Privacy
+* Privacy
 
   GUI: Start --Settings -- Privacy
-
-  * Anti-Virus Version
-
-  * User privilege
+* Anti-Virus Version
+* User privilege
 
   GUI: Start, type 'User Account', select "Change User Account Control settings"
+* Drive Encryption
 
-  * Drive Encryption
-
-  GUI: Bitlocker
+  GUI: Bitlocker (***available only for Pro version users***) 
   https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10
+* Services Running
 
-  * Services Running
+  GUI: Start, type "Task Manager"
+
+  **Windows 10**
+
+* OS Security Updates
+
+  GUI: Start --Settings --Update & Security --Windows Update
+* Firewall
+
+  GUI: Start, type Firewall (select Windows Firewall)
+* Privacy
+
+  GUI: Start --Settings -- Privacy
+* Anti-Virus Version
+* User privilege
+
+  GUI: Start, type 'User Account', select "Change User Account Control settings"
+* Drive Encryption
+
+  GUI: Bitlocker (***available only for Pro version users***) 
+  https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10
+* Services Running
 
   GUI: Start, type "Task Manager"
 
