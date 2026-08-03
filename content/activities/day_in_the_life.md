@@ -15,7 +15,7 @@ summary: |
   and its current version.  The auditor checks for known vulnerabilities to any
   out of date software.
 
-  This is used to develop a report component exposing how un-updated software
+  This is used to develop a report component exposing how out-of-date software
   can lead to large vulnerabilities.
 overview: |
   * You can do this as a focused activity where staff walk you through a usual
@@ -31,9 +31,9 @@ considerations: |
   organization, and that anything not triggering that is to be only reported in
   aggregate.
 
-  * If using screen sharing, use a service with transport security and "lock"
-  the room or make sure the user knows to end the call if anyone unexpected
-  joins the room (unlikely)
+  * If using screen sharing, "lock" the room and make sure the user knows to
+  end the call if anyone unexpected joins the room (unlikely) or if they
+  accidentally show private or confidential data
 walk_through: |
   As you work with staff members (this pairs well with the device checklist
   activity), also interview them about the other devices they use, and how they
@@ -42,7 +42,7 @@ walk_through: |
   tracking tools, and website management tools.
 
   This can also be done remotely. Ask to have the staff member use a
-  screensharing tool (meet.jit.si or appear.in offer easy-to-use, browser based
+  screensharing tool (meet.jit.si offers easy-to-use, browser based
   options) so that you can watch how they interact with their computer and what
   applications are active in the background.
 
@@ -66,7 +66,8 @@ walk_through: |
      * extranet / other sites?
 
   **Remote Services**
-  * Dropbox / Google Drive
+  * File storage and collaboration services such as Dropbox, Google Drive,
+  Box
   * Work Email
   * Websites and blogs
   * Social media
@@ -74,7 +75,7 @@ walk_through: |
 recommendations: |
   **If Unsupported Operating System - Upgrade to Recent Version**
 
-  Popular operating systems like Windows XP are, sadly, no longer receiving
+  Popular operating systems like Windows 7 are, sadly, no longer receiving
   security updates. Upgrade to the latest version keeping in mind the system
   requirements of the version selected. For Windows, review the [Windows
   lifecycle fact
@@ -105,17 +106,13 @@ recommendations: |
   difficult to keep updating constantly, but this is very important to protect
   even non-sensitive systems.
 
-  **If Vulnerable Software - Update Vulnerable Software**
-
-  Many critical software components, such as Java or Adobe Flash, have many
-  vulnerabilities and need to be aggressively updated. If there are not needed
-  for work by the users, uninstall them
-
   **If No Anti-Virus and Anti-Malware Scanner - Install Anti-Virus and
   Anti-Maware Scanner**
 
   An Anti-virus and Anti-malware offer some minimal protection to the system and
-  therefore is important to have them installed.
+  therefore is important to have them installed. Windows and macOS already offer
+  fantastic built-in anti-malware capabilities. They should be sufficient for
+  most cases.
 
   **If Outdated Anti-Virus - Update Anti-Virus**
 
@@ -126,7 +123,7 @@ recommendations: |
 
   **If Unencrypted Drive  - Encrypt Hard Drives**
 
-  When possible, build-in drive encryption (Filevault on OSX, BitLockeron
+  When possible, built-in drive encryption (Filevault on macOS, BitLockeron
   Windows, and LUKS on Linux) tend to offer the most seamless, user-friendly
   experiences. VeraCrypt offers free cross-platform drive encryption and cna
   also create encrypted drives which can be shared across platforms.
