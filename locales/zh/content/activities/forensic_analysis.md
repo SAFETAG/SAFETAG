@@ -69,17 +69,11 @@ walk_through: |
   work on fresh copies if your analysis accidentally modifies the copy you are
   working on.
 
-  - **Immediately on receipt of the source data, make a cryptographic hash of
-  that image, and store it in a safe place.** This is your *only* guarantee that
-  you have not tampered with the evidence you are working on!
+  - **Immediately on receipt of the source data, make a cryptographic hash of that image, and store it in a safe place.** This is your *only* guarantee that you have not tampered with the evidence you are working on!
 
-  - **After making a copy of the data, immediately create a cryptographic hash
-  of that image**, and check it against your master hash to ensure they match.
+  - **After making a copy of the data, immediately create a cryptographic hash of that image**, and check it against your master hash to ensure they match.
 
-  - **As you work on your investigation on a copy of the data, periodically
-  check that data image with the cryptographic hash**, to ensure you have not
-  inadvertently modified the data by performing your investigation. If the hash
-  does not match, then:
+  - **As you work on your investigation on a copy of the data, periodically check that data image with the cryptographic hash**, to ensure you have not inadvertently modified the data by performing your investigation. If the hash does not match, then:
     - Record the fact that the hash no longer matches in your activity log.
     - Look in your log at all the steps you have taken between when you last checked the hash and now. One or more of the steps you have taken has modified the data of the copy, so you need to work out which step caused this, and how to perform a copy in the investigative step without modifying the data.
     - Abandon the now modified copy of the data. This is tainted, so clearly mark it as such and return it to secure storage.

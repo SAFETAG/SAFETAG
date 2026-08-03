@@ -18,17 +18,25 @@ overview: ''
 materials_needed: ''
 considerations: ''
 walk_through: |
-  **Informations personnelles à garder privées**
+  **Personal Information To Keep Private**
 
-  Les informations pouvant être utilisées pour identifier des individus, des organisations et même des communautés de pratique doivent être traitées avec le plus grand soin. Certaines données, comme les noms, les numéros de téléphone et les adresses, sont évidentes, tandis que d'autres, comme les noms d'ordinateurs, les adresses MAC des cartes Wi-Fi ou les comptes de médias sociaux pseudonymes peuvent être moins évidentes. En outre, des combinaisons d'informations - emplacement,
-  des données et un type d'activité, ou même un domaine d'intérêt et un nom de ville peuvent spécifier un très petit nombre d'activistes ou d'organisations.
+  Information that can be used to identify individuals, organizations, and even
+  communities of practice should be treated with the utmost care. Some data,
+  like names, phone numbers, and addresses are obvious, while others, like
+  computer names, or pseudonymous social media accounts may be less obvious.
+  Also, combinations of information - location, data, and type of activity,
+  or even an issue area of interest and a city name may be enough to narrow
+  down individuals or organizations.
 
-  Cette feuille de calcul, qui fait partie du [sprint de documentation du Forum des données responsables](https://wiki.responsibledata.io/RDF_Budapest) fournit une base de référence utile des types de données et des moyens de les gérer ou de les masquer utilement : [Liste de contrôle de l'anonymisation des données ](https://docs.google.com/spreadsheets/d/1Qf90P7dlXL6bwfG9vDpapQe1HUD1PtCqjJwayn0xOkQ/edit?usp=sharing)
 recommendations: |
-  Pour le rapport d'audit interne à l'organisation, une grande partie des
-  les informations nécessiteront une identification spécifique des appareils des utilisateurs (et par extension, de leurs utilisateurs), ainsi que des données organisationnelles très sensibles. Aucune de ces données, par intention, accident ou action contradictoire, ne doit être partagée avec des tiers.
+  During the internal audit, think of what information could be considered
+  particularly private. List the types of information (without listing the
+  contents), and highlight it in your audit report.
 
-  Veuillez vous reporter à la section Analyse et rapport pour l'ensemble de données limité requis pour les rapports de projet, et à la section Sécurité opérationnelle pour obtenir des conseils sur la sécurité des données.
+  Please refer to the Analysis and Reporting section for the limited data set
+  that is required for project reporting, and to the Operational Security
+  section for guidance on data security.
+
 organization_size_under: 25
 time_required_minutes: 60
 ---

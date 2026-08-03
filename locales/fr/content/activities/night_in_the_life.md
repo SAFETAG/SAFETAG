@@ -1,72 +1,105 @@
 ---
-title: Une nuit dans la vie
+title: A Night in the Life
 approaches:
-  - Recherche
-  - Interpersonnel
+  - Research
+  - Interpersonal
 position: 50
 authors:
   - SAFETAG
 remote_options:
-  - 'Oui'
+  - 'Yes'
 skills_required: []
 skills_trained: []
 summary: |
-  L'auditeur interroge le personnel sur ses pratiques, ses appareils personnels, ses logiciels et autres capacités de sécurité qu'il utilise en dehors du travail. L'auditeur vérifie les vulnérabilités connues de tout logiciel obsolète et identifie les risques dans les pratiques et les comportements.
+  The auditor interviews the staff about their practices, personal devices,
+  software and other security capabilities that they use outside of work. The
+  auditor checks for known vulnerabilities to any out of date software and
+  identifies risks in the practices and behaviors.
 
-  Ceci est utilisé pour développer un composant de rapport exposant comment les pratiques en dehors de leur travail peuvent affecter leur sécurité personnelle et celle de l'organisation.
+  This is used to develop a report component exposing how practices outside of
+  their work can affect their personal security and that of the organization.
 overview: |
-  * Intégré à d'autres activités/interactions, interrogez le personnel sur son utilisation de la technologie et des services à distance en dehors du travail
+  * Integrated with other activities/interactions, interview staff on their
+  usage of technology and remote services outside of standard working hours
+  and standard working locations
+  * Understand that, in some cases, non-work conversations, social media
+  activity or activities could also present a security risk. It's worth
+  discussing how the organization's risk profile can affect non-work activities
+
 materials_needed: ''
 considerations: |
-  * Communiquez aux membres du personnel le niveau de confidentialité avec lequel vous traitez les discussions concernant leur appareil et l'utilisation de la technologie - c'est-à-dire expliquez quels déclencheurs de réponse aux incidents vous avez convenus avec l'organisation, et que tout ce qui ne déclenche pas et qui ne doit être signalé que dans l'ensemble.
+  * Communicate with the staff members the level of confidentiality you are
+  treating discussions around their device and technology usage with - i.e.
+  explain what incident response triggers you have agreed upon with the
+  organization, and that anything not triggering that is to be only reported in
+  aggregate.
 
-  * Si vous utilisez le partage d'écran, utilisez un service avec sécurité des transports et "verrouillez" la salle ou assurez-vous que l'utilisateur sait qu'il doit mettre fin à l'appel si quelqu'un d'inattendu rejoint la salle (peu probable)
+  * If using screen sharing, "lock" the virtual room or make sure the user knows
+ to end the call if anyone unexpected joins the room (unlikely)
 walk_through: |
-  Lorsque vous travaillez avec des membres du personnel (cela correspond bien à l'activité de la liste de contrôle des appareils et à une journée dans la vie), interrogez-les également sur les autres appareils qu'ils utilisent et sur la manière dont ils se connectent au travail ou aux services personnels - courriel/webmail,
-  des outils intra/extranet, des outils de gestion des relations avec les constituants (CRM) comme CiviCRM ou Salesforce, des outils de suivi financier, des médias sociaux et des outils de gestion de site Web.
+  As you work with staff members (this pairs well with the device checklist
+  activity and a day in the life), also interview them about the other devices
+  they use, and how they connect to work or personal services - email/webmail,
+  intra/extranet tools, Constituent Relationship Management (CRM) tools like
+  CiviCRM or Salesforce, financial tracking tools, social media, and website
+  management tools.
 
-  Cela peut aussi se faire à distance. Demandez au membre du personnel d'utiliser un
-  outil de partage d'écran (meet.jit.si ouappear.in offrent des options basées sur un navigateur faciles à utiliser) afin que vous puissiez voir comment ils interagissent avec leur ordinateur et quelles applications sont actives en arrière-plan.
+  This can also be done remotely. Ask to have the staff member use a
+  screensharing tool (meet.jit.si or appear.in offer easy-to-use, browser based
+  options) so that you can watch how they interact with their computer and what
+  applications are active in the background.
 
-  **Utilisation du téléphone**
-  * Courriel professionnel ou personnel
-  * Appels professionnels ou personnels
-  * Applications de dialogue en ligne avec des partenaires/amis non liés au travail
-  * Applications de médias sociaux
-  **Logiciels et outils utilisateur**
-  * Logiciel de messagerie
-   * Calendriers
-  * Autres systèmes de fichiers partagés
-  * Discuter
-  * Appels vocaux
-  * Utilisation générale du navigateur
-  * Logiciel de suivi de programme
-  * Financier
-  * Progrès
-  * Bases de données
-  * intranet
-  * extranet / autres sites ?
+  **Phone Usage**
+  
+   * Work or Personal Email
+   * Work or Personal Calls
+   * Work or Personal Messaging
+   * Social media apps
 
-  **Services à distance**
+  **User Software and Tools**
+  
+   * Email software
+   * Calendars
+   * Other shared file systems
+   * Chat
+   * Voice calls
+   * General browser usage
+   * Program tracking software
+     * Financial
+     * Progress
+     * Databases
+     * intranet
+     * extranet / other sites?
 
-  * Dropbox/Google Drive
-  * Courriel de travail
-  * Courriel personnel
-  * Sites Web et blogs
-  * Des médias sociaux
-  * Outils de CRM en ligne ou de publipostage (SalesForce, CiviCRM, MailChimp...)
+  **Remote Services**
 
-  **Pratiques personnelles**
+  * Dropbox / Google Drive
+  * Work Email
+  * Personal Email
+  * Websites and blogs
+  * Social media
+  * Online CRM or mass-mailing tools (SalesForce, CiviCRM, MailChimp...)
 
-  * Emplacement du bureau/domicile
-  * Moyens de transport
-  * Sécurité physique
+  **Personal Practices**
+
+  * Office/home location, and if there are any security concerns about this
+  * Transportation means
+  * Personal travel, especially to high-risk locations
+  * Close friends and family members' activities: is it possible that some of them will
+  need to adopt additional security practices as a result of their relationship with you?
+  For example, they might not be able to safely pursue certain types of activism, work on
+  some projects, or travel to some places if they are publicly or privately associated
+  with you.
+  * Physical security
+
 recommendations: |
-  ** Authentification multifacteur **
+  **Multi Factor Authentication**
 
-  Lorsque cela est possible, activez l'authentification multifacteur sur les comptes professionnels (courriel, réseaux sociaux, administration du site Web, etc.). Surtout si les comptes sont accessibles avec des appareils personnels.
+  When possible, enable multi factor authentication on work accounts (email,
+  social media, website administration, etc). Specially if the accounts are
+  being accessed with personal devices.
 
-  **Voir également les recommandations sous [Activité de la liste de vérification des appareils](https://safetag.org/activities/device_checklist)**
+  **See also the recommendations under the [Device Checklist Activity](https://safetag.org/activities/device_checklist)**
 organization_size_under: 25
 time_required_minutes: 120
 ---

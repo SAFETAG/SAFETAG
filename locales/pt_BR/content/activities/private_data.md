@@ -17,9 +17,25 @@ overview: ''
 materials_needed: ''
 considerations: ''
 walk_through: |
-  **Informações pessoais que devem ser mantidas em sigilo**Informações que podem ser usadas para identificar pessoas, organizações e até mesmo comunidades de prática devem ser tratadas com o máximo cuidado. Alguns dados, como nomes, números de telefone e endereços, são óbvios, enquanto outros, como nomes de computadores, endereços MAC de placas Wi-Fi ou contas de mídia social com pseudônimos, podem ser menos óbvios. Além disso, combinações de informações — localização, dados e tipo de atividade, ou mesmo uma área de interesse e o nome de uma cidade — podem especificar um número muito pequeno de ativistas ou organizações.Esta planilha, parte da [documentação do Responsible Data Forum](https://wiki.responsibledata.io/RDF_Budapest), fornece uma base útil de tipos de dados e maneiras de gerenciá-los ou ocultá-los de forma útil: [Lista de verificação de anonimização de dados](https://docs.google.com/spreadsheets/d/1Qf90P7dlXL6bwfG9vDpapQe1HUD1PtCqjJwayn0xOkQ/edit?usp=sharing)
+  **Personal Information To Keep Private**
+
+  Information that can be used to identify individuals, organizations, and even
+  communities of practice should be treated with the utmost care. Some data,
+  like names, phone numbers, and addresses are obvious, while others, like
+  computer names, or pseudonymous social media accounts may be less obvious.
+  Also, combinations of information - location, data, and type of activity,
+  or even an issue area of interest and a city name may be enough to narrow
+  down individuals or organizations.
+
 recommendations: |
-  Para o relatório de auditoria interna à organização, grande parte das informações exigirá a identificação específica dos dispositivos dos usuários (e, por extensão, dos próprios usuários), bem como dados organizacionais muito confidenciais. Nenhum desses dados, seja por intenção, acidente ou ação adversária, deve ser compartilhado com terceiros.Consulte a seção Análise e Relatórios para obter o conjunto limitado de dados necessário para a elaboração de relatórios do projeto e a seção Segurança Operacional para obter orientações sobre segurança de dados.
+  During the internal audit, think of what information could be considered
+  particularly private. List the types of information (without listing the
+  contents), and highlight it in your audit report.
+
+  Please refer to the Analysis and Reporting section for the limited data set
+  that is required for project reporting, and to the Operational Security
+  section for guidance on data security.
+
 organization_size_under: 25
 time_required_minutes: 60
 ---
