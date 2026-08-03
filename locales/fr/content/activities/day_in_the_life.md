@@ -10,81 +10,127 @@ remote_options:
 skills_required: []
 skills_trained: []
 summary: |
-  L'auditeur vérifie les appareils du personnel pour les systèmes et logiciels mis à jour, les antivirus et autres capacités de sécurité, et identifie les logiciels exécutés sur les ordinateurs et leur version actuelle. L'auditeur vérifie les vulnérabilités connues de tout logiciel obsolète.
+  The auditor checks staff devices for updated systems and software, anti-virus
+  and other security capabilities, and identifies software runing on computers
+  and its current version.  The auditor checks for known vulnerabilities to any
+  out of date software.
 
-  Ceci est utilisé pour développer un composant de rapport exposant comment un logiciel non mis à jour peut entraîner de grandes vulnérabilités.
+  This is used to develop a report component exposing how out-of-date software
+  can lead to large vulnerabilities.
 overview: |
   * Vous pouvez le faire comme une activité ciblée où le personnel vous guide tout au long d'une "journée habituelle dans leur vie" en vous montrant quels appareils ils utilisent, comment ils les utilisent et avec quelles données ils doivent interagir pour effectuer leur travail ; ou cela peut être intégré à d'autres activités/interactions formelles et informelles où vous posez des questions au personnel sur leur utilisation de la technologie et des services à distance
 materials_needed: ''
 considerations: |
-  * Communiquez aux membres du personnel le niveau de confidentialité avec lequel vous traitez les discussions concernant leur appareil et l'utilisation de la technologie - c'est-à-dire expliquez quels déclencheurs de réponse aux incidents vous avez convenus avec l'organisation, et que tout ce qui ne déclenche pas et qui ne doit être signalé que dans l'ensemble.
+  * Communicate with the staff members the level of confidentiality you are
+  treating discussions around their device and technology usage with - i.e.
+  explain what incident response triggers you have agreed upon with the
+  organization, and that anything not triggering that is to be only reported in
+  aggregate.
 
-  * Si vous utilisez le partage d'écran, utilisez un service avec sécurité des transports et "verrouillez" la salle ou assurez-vous que l'utilisateur sait qu'il doit mettre fin à l'appel si quelqu'un d'inattendu rejoint la salle (peu probable)
+  * If using screen sharing, "lock" the room and make sure the user knows to
+  end the call if anyone unexpected joins the room (unlikely) or if they
+  accidentally show private or confidential data
 walk_through: |
-  Lorsque vous travaillez avec des membres du personnel (cela correspond bien à l'activité de la liste de contrôle des appareils), interrogez-les également sur les autres appareils qu'ils utilisent et sur la manière dont ils se connectent aux services professionnels - courriel/webmail, outils intra/extranet, gestion des relations avec les constituants (CRM) des outils comme CiviCRM ou Salesforce, des outils de suivi financier et des outils de gestion de site Web.
+  As you work with staff members (this pairs well with the device checklist
+  activity), also interview them about the other devices they use, and how they
+  connect to work services - email/webmail, intra/extranet tools, Constituent
+  Relationship Management (CRM) tools like CiviCRM or Salesforce, financial
+  tracking tools, and website management tools.
 
-  Cela peut aussi se faire à distance. Demandez au membre du personnel d'utiliser un outil de partage d'écran (meet.jit.si ouappear.in offrent des options conviviales basées sur un navigateur) afin que vous puissiez voir comment ils interagissent avec leur ordinateur et quelles applications sont actives en arrière-plan .
+  This can also be done remotely. Ask to have the staff member use a
+  screensharing tool (meet.jit.si offers easy-to-use, browser based
+  options) so that you can watch how they interact with their computer and what
+  applications are active in the background.
 
-  **Utilisation du téléphone**
-  * Courriel de travail
-  * Appels de travail
-  * Applis de dialogue en ligne avec des partenaires / liés au travail
+  **Phone Usage**
+   * Work Email
+   * Work Calls
+   * Chat Apps with partners/work related
+   
+  **User Software and Tools**
+   * Email software
+   * Calendars
+   * Shared Files inside the office
+   * Other shared file systems
+   * Chat
+   * Voice calls
+   * Program tracking software
+     * Financial
+     * Progress
+     * Databases
+     * intranet
+     * extranet / other sites?
 
-  **Logiciels et outils utilisateur**
-  * Logiciel de messagerie
-  * Calendriers
-  * Fichiers partagés à l'intérieur du bureau
-  * Autres systèmes de fichiers partagés
-  * Discuter
-  * Appels vocaux
-  * Logiciel de suivi de programme
-  * Financier
-  * Le progrès
-  * Bases de données
-  * intranet
-  * extranet / autres sites ?
-
-  **Services à distance**
-  * Dropbox/Google Drive
-  * Courriel de travail
-  * Sites Web et blogs
-  * Des médias sociaux
-  * Outils de CRM en ligne ou de publipostage (SalesForce, CiviCRM, MailChimp...)
+  **Remote Services**
+  * File storage and collaboration services such as Dropbox, Google Drive,
+  Box
+  * Work Email
+  * Websites and blogs
+  * Social media
+  * Online CRM or mass-mailing tools (SalesForce, CiviCRM, MailChimp...)
 recommendations: |
-  ** Si le système d'exploitation n'est pas pris en charge - Mise à niveau vers la version récente **
+  **If Unsupported Operating System - Upgrade to Recent Version**
 
-  Les systèmes d'exploitation populaires comme Windows XP ne reçoivent malheureusement plus de mises à jour de sécurité. Mettez à niveau vers la dernière version en gardant à l'esprit la configuration système requise de la version sélectionnée. Pour Windows, consultez la [fiche d'information sur le cycle de vie de Windows](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet) pour connaître les "EOL" (fin de vie) à venir. Apple ne publie pas de calendriers EOL, mais publie historiquement des mises à jour de sécurité pour ses versions actuelles et ses deux versions précédentes.
+  Popular operating systems like Windows 7 are, sadly, no longer receiving
+  security updates. Upgrade to the latest version keeping in mind the system
+  requirements of the version selected. For Windows, review the [Windows
+  lifecycle fact
+  sheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet)
+  for upcoming "EOLs" (End of Life). Apple does not publish EOL schedules, but
+  historically releases security updates for their current and two prior
+  releases.
 
-  Bien que les systèmes d'exploitation et les logiciels "piratés" soient extrêmement courants (en particulier pour Windows), ils laissent souvent beaucoup à désirer en termes de sécurité. Si le système d'exploitation ou le logiciel ne reçoit pas de mises à jour régulières du créateur du logiciel, il est extrêmement vulnérable à des milliers d'attaques potentielles. Passez à un logiciel sous licence ou à un logiciel libre recommandé
+  While "pirated" operating systems and software are extremely common
+  (especially for Windows) they often leave much to be desired in terms of
+  security.  If the OS or Software is not receiving regular updates from the
+  software creator, it is extremely vulnerable to thousands of potential
+  attacks. Switch to licensed software or recommended Free Open Source Software
 
-  **Si logiciel piraté - Déplacez-vous vers des systèmes logiciels sous licence**
+  **If Pirated Software - Move to Licensed Software Systems**
 
-  Bien que les systèmes d'exploitation et les logiciels "piratés" soient extrêmement courants (en particulier pour Windows), ils laissent souvent beaucoup à désirer en termes de sécurité. Si le système d'exploitation ou le logiciel ne reçoit pas de mises à jour régulières du créateur du logiciel, il est extrêmement vulnérable à des milliers d'attaques potentielles. Passez à un logiciel sous licence ou à un logiciel libre recommandé
+  While "pirated" operating systems and software are extremely common
+  (especially for Windows) they often leave much to be desired in terms of
+  security.  If the OS or Software is not receiving regular updates from the
+  software creator, it is extremely vulnerable to thousands of potential
+  attacks. Switch to licensed software or recommended Free Open Source Software
 
-  **Si obsolète - Mettre à jour les systèmes d'exploitation et autres logiciels**
+  **If Outdated - Update Operating Systems and Other Software**
 
-  Les systèmes d'exploitation et les logiciels de toutes sortes - Windows, Mac, Linux et autres, sont constamment mis à jour. Ces mises à jour corrigent souvent des bogues, mais elles protègent également le système des vulnérabilités nouvellement découvertes. Il peut sembler difficile de maintenir une mise à jour constante, mais cela est très important pour protéger même les systèmes non sensibles.
+  Operating Systems and Softwares of all varieties - Windows, Mac, Linux, and
+  others, are constantly being updated.  These updates often fix bugs, but they
+  also protect the system from newly discovered vulnerabilities.  It can seem
+  difficult to keep updating constantly, but this is very important to protect
+  even non-sensitive systems.
 
-  **Si logiciel vulnérable - Mettre à jour le logiciel vulnérable**
+  **If No Anti-Virus and Anti-Malware Scanner - Install Anti-Virus and
+  Anti-Maware Scanner**
 
-  De nombreux composants logiciels critiques, tels que Java ou Adobe Flash, présentent de nombreuses vulnérabilités et doivent être mis à jour de manière agressive. S'il n'y a pas besoin pour le travail des utilisateurs, désinstallez-les
+  An Anti-virus and Anti-malware offer some minimal protection to the system and
+  therefore is important to have them installed. Windows and macOS already offer
+  fantastic built-in anti-malware capabilities. They should be sufficient for
+  most cases.
 
-  **S'il n'y a pas d'analyseur antivirus et antimalware - Installez l'antivirus et
-  Scanner Anti-Maware**
+  **If Outdated Anti-Virus - Update Anti-Virus**
 
-  Un antivirus et un anti-malware offrent une protection minimale au système et il est donc important de les installer.
+  Most AV tools automatically update, but this can sometimes get out of sync, or
+  if the AV was a pre-installed trial system, it will stop updating after its
+  trial period.  An out of date anti-virus is worthless. Therefore ensure that
+  continuous udpdating of AV is done.
 
-  **Si l'antivirus est obsolète - Mettre à jour l'antivirus**
+  **If Unencrypted Drive  - Encrypt Hard Drives**
 
-  La plupart des outils AV se mettent à jour automatiquement, mais cela peut parfois se désynchroniser, ou si l'AV était un système d'essai préinstallé, il cessera de se mettre à jour après sa période d'essai. Un antivirus obsolète ne vaut rien. Par conséquent, assurez-vous que la mise à jour continue de AV est effectuée.
+  When possible, built-in drive encryption (Filevault on macOS, BitLockeron
+  Windows, and LUKS on Linux) tend to offer the most seamless, user-friendly
+  experiences. VeraCrypt offers free cross-platform drive encryption and cna
+  also create encrypted drives which can be shared across platforms.
 
-  **Si lecteur non crypté - Chiffrer les disques durs**
+  **If Inactive firewall - Activate both personal and server firewall (If
+  present)**
 
-  Lorsque cela est possible, le chiffrement de lecteur intégré (Filevault sur OSX, BitLocker sur Windows et LUKS sur Linux) a tendance à offrir les expériences les plus transparentes et les plus conviviales. VeraCrypt offre un cryptage de lecteur multiplateforme gratuit et cna crée également des lecteurs cryptés qui peuvent être partagés entre les plates-formes.
-
-  **Si pare-feu inactif - Activez à la fois le pare-feu personnel et le pare-feu du serveur (le cas échéant)**
-
-  Encore une fois, le cas échéant, utilisez des pare-feu intégrés et configurez-les pour les options de réseau de bureau et public. Les tests pour s'assurer que les systèmes peuvent toujours effectuer le travail de réseau de bureau attendu (partage de fichiers, impression, etc.) sont essentiels à moins que des alternatives ne soient créées.
+  Again, where present, use built-in firewalls and configure them for both
+  office and public network options. Testing to ensure systems can still perform
+  expected office natworking (file sharing, printing, etc.) is essential unless
+  alternatives are created.
 organization_size_under: 25
 time_required_minutes: 120
 ---
