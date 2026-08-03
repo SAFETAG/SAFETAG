@@ -38,7 +38,7 @@ references:
   - Risk Assessment Activities
   - ဘေးအန္တရာယ် အကဲဖြတ်ခြင်း လှုပ်ရှားမှုများ
   - Risk Matrix Activities
-  - Alternative Risk Modeling Activities
+  - Guiding Questions for High-Risk Organisations
   - အာရုံစူးစိုက်မှုနယ်ပယ်အလိုက် ခြိမ်းခြောက်မှုသုတေသန
   - ခြိမ်းခြောက်မှု နည်းလမ်းဖြင့်လေ့လာပါ
   - ဒေသအလိုက် အထွေထွေခြိမ်းခြောက်မှုများ

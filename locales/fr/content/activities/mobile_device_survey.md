@@ -31,63 +31,77 @@ overview: |
 
 materials_needed: |
   * Un bloc-notes, un stylo. Aussi une liste déjà préparée de différents types d'appareils mobiles
+
 considerations: |
   * Communiquez clairement aux membres du personnel le niveau d'accès nécessaire pour l'audit et obtenez leur consentement au cas où des appareils personnels seraient vérifiés, c.-à-d.
   expliquer que cela peut impliquer l'accès à des données privées sur leurs appareils personnels.
 
   NB : L'auditeur ne doit accéder à aucun appareil mobile personnel en l'absence du propriétaire de l'appareil et toute mesure prise doit être expliquée avant d'être mise en œuvre.
 walk_through: |
-  L'auditeur confirme le nombre et la nature des appareils mobiles que l'organisation possède. L'auditeur doit rester dans le périmètre convenu. Mais dans le
-  cas où plusieurs appareils mobiles en dehors de la portée convenue accèdent aux ressources de l'organisation, une redéfinition de la portée peut être nécessaire.
-  L'auditeur doit également tenir compte des instructions figurant dans la liste de contrôle de l'appareil.
+  The auditor confirms the number and nature of mobile devices that the
+  organization owns. The auditor should keep within the agreed scope. But in the
+  case where multiple mobile devices outside the agreed scope access the
+  organizations' resources, then redefining of the scope may be necessary.
+  Auditor should also consider the instructions under the device checklist.
 
-  Lorsque vous travaillez avec des membres du personnel, n'oubliez pas de les interroger sur les appareils qu'ils utilisent. Cela peut alterner entre appareils mobiles et non mobiles
-  dispositifs.
+  As you work with staff members, also remember to interview them about the
+  devices they use. This can alternate between mobile devices and non-mobile
+  devices.
 
-  Vous trouverez ci-dessous quelques questions directrices à utiliser. Et c'est l'occasion pour l'auditeur d'approfondir n'importe quel domaine concernant les appareils.
+  Below are some guiding questions to use. And this is an opportunity for the
+  auditor to go deeper into any area concerning devices.
 
-  Questions d'orientation:
+  Guiding questions:
 
-  * De quelles catégories d'appareils mobiles l'organisation dispose-t-elle ? (par exemple, ordinateurs portables,
-  téléphones, disques durs externes, appareils photo, appareils d'enregistrement, etc.)
+  * What categories of mobile devices does the organization have? (eg, laptops,
+  phones, external drives, cameras, recording devices, etc)
 
-  * A quoi servent-ils principalement ?
+  * What are they primarily used for?
 
-  * Quelles données sont stockées sur les appareils et qui y a accès
+  * What data is stored on the devices and who has access to them?
 
-  * Les appareils sont-ils fournis par l'organisation ou le personnel utilise-t-il des appareils personnels pour le travail officiel ? (Auditeur : passez en revue les avantages et les inconvénients de chaque configuration)
+  * Are the devices provided by organization or do staff use personal devices
+  for official work? (Auditor: Review the pros and cons of each set up)
 
-  * Quels sont les risques liés à l'utilisation de chacun des appareils mobiles ? (NB : l'auditeur doit connaître au moins 2 risques pour chacun des appareils utilisés)
+  * Does the organization use some type of mobile device management (MDM) or
+  conditional access solution? If so, is it for just work-issued devices or also
+  personal devices which connect to organizational resources?
 
-  * Quel est l'impact de leur utilisation sur le travail de l'organisation ?
+  * Do all the mobile devices which access organizational resources have
+  up-to-date software? Is there a policy for replacing devices which can no
+  longer receive software updates?
 
-  * L'organisation a-t-elle des politiques et des procédures spécifiques concernant les appareils mobiles ? (par exemple, politique d'utilisation, cryptage, services de localisation, contrôle d'accès, normes de mot de passe, etc.)
+  * What are the risks involved with using each of the mobile devices? (NB:
+  Auditor should know at least 2 risk for each of the devices in use)
 
-  * Si oui; Les politiques et procédures définissent-elles le niveau d'accès aux
-  appareils organisationnels et aussi pour les appareils personnels ?
+  * What is the impact of their use to the organization's work?
 
-  * Quelle est la politique relative à l'utilisation de réseaux non fiables ?
+  * Does the organization have specific policies and procedures concerning
+  mobile devices? (eg; policy on use, encryption, location services, access
+  control, password standards, etc)
 
-  * Quelles sont les procédures d'interaction avec les systèmes mobiles qui n'appartiennent pas à l'organisation ?
+  * If yes; Do the policies and procedures define the access level to
+  organizational devices and also for personal devices?
 
-  * Quelles sont les pratiques de sécurité formelles/informelles existantes pour ces appareils ? Quoi
-  sont les mesures de sécurité physique ? Quelles sont les mesures de sécurité numérique ?
+  * What are the procedures for interacting with mobile systems which are not
+  owned by the organization?
 
-  * Quel système d'exploitation de téléphone portable le personnel utilise-t-il ? Quels sont les avantages et les inconvénients de chacun ?
+  * Is there someone in-charge of the devices and their security? (NB:Auditor:
+  This checks on the capacity of the organization)
 
-  * Y a-t-il quelqu'un en charge des appareils et de leur sécurité ? (NB : Auditeur :
-  Cela vérifie la capacité de l'organisation)
+  * What applications are installed? (Auditor note: check the device assessment
+  checklist for the technical aspects)
 
-  * Quelles applications sont installées ? (Note de l'auditeur : vérifier l'évaluation de l'appareil
-  check-list pour les aspects techniques)
+  * What are the users' perception towards the installed applications on their
+  devices? (Auditor: Review the perception vs reality check findings)
 
-  * Quelle est la perception des utilisateurs vis-à-vis des applications installées sur leur
-  dispositifs? (Auditeur : Examinez les résultats de la vérification de la perception par rapport à la réalité)
-  * Quels logiciels de sécurité, le cas échéant, sont installés sur les appareils ? Offre-t-il des fonctions d'effacement à distance ?
+  * What security software if any are installed on the devices? Does it offer
+  remote wipe functions?
 
-  * Les utilisateurs en sont-ils conscients ? (Examinez les différentes catégories séparément)
+  * Are the users aware of them? (Examine the different categories separately)
 
-  * Quelle est l'implication financière de l'entretien de ces appareils ?
+  * What is the financial implication of maintaining these devices?
+
 recommendations: ''
 organization_size_under: 50
 time_required_minutes: 45

@@ -38,7 +38,7 @@ references:
   - Atividades de Avaliação de Riscos
   - Atividades de Avaliação de Ameaças
   - Atividades de Matriz de Risco
-  - Alternative Risk Modeling Activities
+  - Guiding Questions for High-Risk Organisations
   - Threat research by focus area
   - Pesquisa de ameaças por método
   - General Threats by Region
