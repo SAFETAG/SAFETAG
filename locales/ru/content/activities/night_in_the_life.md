@@ -35,7 +35,7 @@ considerations: |
   aggregate.
 
   * If using screen sharing, "lock" the virtual room or make sure the user knows
- to end the call if anyone unexpected joins the room (unlikely)
+  to end the call if anyone unexpected joins the room (unlikely)
 walk_through: |
   As you work with staff members (this pairs well with the device checklist
   activity and a day in the life), also interview them about the other devices
@@ -50,14 +50,14 @@ walk_through: |
   applications are active in the background.
 
   **Phone Usage**
-  
+
    * Work or Personal Email
    * Work or Personal Calls
    * Work or Personal Messaging
    * Social media apps
 
   **User Software and Tools**
-  
+
    * Email software
    * Calendars
    * Other shared file systems
