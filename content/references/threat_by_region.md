@@ -30,6 +30,8 @@ title: General Threats by Region
 
 #### Technical Threats
 
+ * [How Microsoft Names Threat Actors](https://learn.microsoft.com/en-us/unified-secops-platform/microsoft-threat-actor-naming)
+
   * *Database:* ["APT Groups and Operations"](https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit#gid=1864660085)
 
   * *Database:* ["APTNotes"](https://github.com/aptnotes/data)
