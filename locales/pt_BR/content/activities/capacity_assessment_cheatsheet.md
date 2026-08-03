@@ -15,56 +15,48 @@ overview: ''
 materials_needed: ''
 considerations: ''
 walk_through: |
-  'Faça a Lição de Casa'
-  * Informações básicas de contato e organizacionais: nome, organização, missão declarada da organização
-  Pesquisa contextual
-
-  Obtenha informações organizacionais
-
-  * Tamanho da equipe
-  * Principais funções na organização para tecnologia e gestão
-  * Estrutura: Gerencial e Técnica?
-  * Tamanho do programa, atividades, informações
-  * Gestão de mudanças
-  * Idiomas utilizados no escritório
-
-  Pergunte sobre contexto, antecedentes e informações sobre ameaças
-
-  * Que ameaças (se alguma) foram feitas à organização e seus parceiros? (digitais, físicas)
-  * Tem confirmação de atos de vigilância física ou digital?
-  * Que outras ameaças preocupam a organização? O que aconteceu a outras organizações no mesmo setor?
-  * Quais as respostas da organização a essas ameaças — treinamentos, respostas técnicas, sucesso de processos/mudanças na organização?
-  * Programas específicos ou outros trabalhos fora da missão declarada publicamente que apresentam alto risco
-  * Uso de tecnologia pelas áreas programáticas da organização (enquetes por SMS ou em blogs, páginas no Facebook, outros sites, etc. Gravações e transmissões de mídia...?)
-
-  Pesquisa técnica
-
-  * Site principal
-  * Sites adicionais
-  * Tecnologias do site (gestão de conteúdo, provedor de hospedagem)
-  * Tecnologia utilizada:
-  * Software de desktop (SO, Office)
-  * Ferramentas de segurança para desktop (antivírus, antimalware, firewalls, VPNs, criptografia de disco...)
-  * Servidores (e-mail, sistema de arquivos compartilhados, ferramentas de rede, backups)
-  * E-mail, hosts de e-mail
-  * Outras ferramentas de comunicação - Signal, Jitsi, chat, celular...
-  * Outras ferramentas menos formais - e-mails externos, Dropbox...
-  * Rede interna - com fio, sem fio, tipo de rede sem fio, ISP
-  * Pesquisa para a preparação
-
-  Infraestrutura
-  * Como o escritório está conectado à Internet?
-  * Há quedas de energia ou outros desafios?
-  * Configuração e tamanho do escritório
-  * Espaço de escritório compartilhado, andar ou prédio compartilhado?
-  * Como é a segurança física do escritório?
-
-  Práticas e comportamentos
-
-  * Acesso e localização do escritório
-  * Uso de dispositivos pessoais
-  * Meios de transporte utilizados para ir e voltar de casa
-  * Acesso remoto aos recursos da organização (VPN, arquivos compartilhados)
+  'Homework'
+   * Basic contact and organizational information: name, org, org's stated mission
+   * Contextual research
+  Organizational
+   * Size of staff
+   * Key roles in org for tech and management
+   * Structure: Management and Technical?
+   * (Program size, activities, information)
+   * (Change management)
+   * Languages used in office
+  Contextual / Background / Threat information
+   * What (if any) threats have occured to the organization and its partners? (digital, physical)
+     * Surveillance?
+   * What other threats are you concerned about? What has happened to other organizations in the space?
+   * Org responses to these threats - trainings, technical responses, organization process/change successes?
+   * Specific programs or other work outside of publicly stated mission that are high-risk
+   * Program use of technology (SMS surveys, blogs, facebook pages, other websites, media recording and broadcast ...?)
+  Technical
+   * Primary website
+   * Additional websites
+   * Website technologies (content management, hosting provider)
+   * Technology in use:
+     * Desktop software (OS, Office)
+     * Desktop security tools (anti-malware tools built into OS-es, firewalls, vpns, disk encryption...)
+     * Cloud storage providers (and the security of logging into them)
+     * Servers (email, shared file system, networking tools, backups)
+     * Email, email hosts
+     * Other communication tools - Signal, Jitsi, chat, mobile...
+     * Other less formal tools - external emails, dropbox...
+     * Internal network - wired, wireless, type of wireless network, ISP
+  Preparation Support
+   * Infrastructure
+     * How is the office connected to the Internet?
+     * Power outages or other challenges?
+   * Office setup and size
+     * Shared office space, shared floor or building?
+     * Physical security of the office?
+  Practices and behaviors
+   * Office access and location
+   * Personal device usage
+   * Transporation means used to get to and from home
+   * Remote access to organizational resources (shared files, remote access policies, access controls, working on own devices)
 recommendations: ''
 organization_size_under: 50
 time_required_minutes: 30

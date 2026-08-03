@@ -12,29 +12,38 @@ skills_required:
   - Administration système
 skills_trained: []
 summary: |
-  L'auditeur vérifie les appareils du personnel pour les systèmes et logiciels mis à jour, les antivirus et autres capacités de sécurité, et identifie les logiciels exécutés sur les ordinateurs et leur version actuelle. L'auditeur vérifie les vulnérabilités connues de tout logiciel obsolète.
+  The auditor checks staff devices to make sure systems are up-to-date, and anti-malware
+  enabled. The auditor checks for known vulnerabilities to any out of date software.
 
-  Ceci est utilisé pour développer un composant de rapport exposant comment un logiciel non mis à jour peut entraîner de grandes vulnérabilités.
+  This is used to develop a report component exposing how un-updated software
+  can lead to large vulnerabilities.
 overview: |
-  * Identifiez sous quel niveau de privilège les services s'exécutent. Les utilisateurs utilisent-ils des comptes avec des privilèges d'administrateur ou utilisent-ils un autre utilisateur et doivent-ils saisir un mot de passe pour obtenir des droits d'administrateur ? [^privilège-séparation-entre-os]
-  * Vérifiez l'existence et l'état des antivirus (et des outils anti-malware) sur l'appareil. [^mises à jour antivirus]
-  * Enregistrez la version et les niveaux de correctifs du logiciel sur l'appareil. [^identifier-les-versions-du-logiciel]
-  * Identifiez le niveau de cryptage utilisé et disponible pour le stockage des données sur l'appareil. [^device_encryption_by_os]
-  * À l'aide de la liste des versions de logiciels et des correctifs, identifiez les attaques et, si possible, identifiez les logiciels malveillants auxquels les appareils du bureau sont vulnérables.
+  * Identify what privilege level services are running under—Are users using accounts with admin privileges, or are they using another user and have to type in a password to get admin rights? [^privilege-separation-across-os]
+  * Check for existence and status of anti-virus (and anti-malware tools) on the device. In most cases, the built-in antivirus protections in Windows and macOS should be enough. Make sure that those are enabled. [^anti-virus-updates]
+  * Record the version and patch levels of software on the device. Make sure to check that the operating system, browser, and office software are up to date. If the device can no longer receive security patches, consider whether it would be possible to replace the device with a newer one that does. [^identifying-software-versions]
+  * Identify what level of encryption is being used and is available for data storage on the device. Most modern operating systems should encrypt the drive by default. Check how the organization encrypts external drives, if it does so at all. [^device_encryption_by_os]
+
 materials_needed: |
   * Un bloc-notes peut s'avérer utile
 considerations: |
   * Communiquez aux membres du personnel le niveau de confidentialité avec lequel vous traitez les discussions concernant leur appareil et l'utilisation de la technologie - c'est-à-dire expliquez quels déclencheurs de réponse aux incidents vous avez convenus avec l'organisation, et que tout ce qui ne déclenche pas et qui ne doit être signalé que dans l'ensemble.
 walk_through: |
-  L'auditeur inspecte un sous-ensemble d'appareils utilisateur clés et/ou représentatifs (travail et personnel). L'auditeur doit se concentrer sur les appareils de travail pour limiter la dérive de la portée, mais si le bureau dispose de nombreux appareils personnels accédant aux comptes/données de l'organisation, l'auditeur doit partager les « signaux d'alarme » qu'il recherche et travailler en tandem avec les propriétaires d'appareils et/ou Le personnel informatique. Pour un petit bureau, il peut être possible de vérifier chaque machine. Pour les grands bureaux, l'auditeur doit utiliser un sous-ensemble pour se faire une idée de la position de sécurité globale des appareils des utilisateurs.
+  The auditor inspects a subset of key and/or representative user devices (work
+  & personal).  The auditor should focus on the work devices to limit scope
+  creep, but if the office has many personal devices accessing organizational
+  accounts/data, the auditor should share what "red flags" they are looking for
+  and work in tandem with device owners and/or IT staff. For a small office, it
+  may be possible to check every machine. For larger offices, the auditor should
+  use a subset to get a feel for the overall security stance of user devices.
 
-  Lorsque vous travaillez avec des membres du personnel, interrogez-les également sur les autres appareils qu'ils utilisent, tels que les téléphones et les tablettes, et sur la manière dont ils se connectent aux services professionnels - courriel/webmail, applications de dialogue en ligne, outils intra/extranet, outils de gestion des relations avec les constituants (CRM) tels que CiviCRM ou Salesforce, outils de suivi financier et outils de gestion de site Web.
+  As you work with staff members, also interview them about the other devices
+  they use such as phones and tablets, and how they connect to work services -
+  email/webmail, chat apps, intra/extranet tools, Constituent Relationship
+  Management (CRM) tools like CiviCRM or Salesforce, financial tracking tools,
+  and website management tools.
 
-  Dans la section Outils, vous trouverez une liste de contrôle pour vous aider à vérifier sur différentes plates-formes/versions les besoins de sécurité courants.
-  tools:
-    - Vérification de l'appareil MacOS
-    - Vérification de l'appareil Windows
-    - Vérification de l'appareil Linux
+  In the Tools section are checklist to assist in checking across different platforms/versions
+  for common security needs.
 
 
 tools:
@@ -43,40 +52,62 @@ tools:
   - Linux Device Check
 
 recommendations: |
-  ** Si le système d'exploitation n'est pas pris en charge - Mise à niveau vers la version récente **
+  **If Unsupported Operating System - Upgrade to Recent Version**
 
-  Les systèmes d'exploitation populaires comme Windows XP ne reçoivent malheureusement plus de mises à jour de sécurité. Mettez à niveau vers la dernière version en gardant à l'esprit la configuration système requise de la version sélectionnée. Pour Windows, consultez la [fiche d'information sur le cycle de vie de Windows](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet) pour connaître les "EOL" (fin de vie) à venir. Apple ne publie pas de calendriers EOL, mais publie historiquement des mises à jour de sécurité pour ses versions actuelles et ses deux versions précédentes.
+  Popular operating systems like Windows 7 (and, from October 2025, Windows 10)
+  are, sadly, no longer receiving security updates. Upgrade to the latest version
+  keeping in mind the system requirements of the version selected. For Windows, review the [Windows
+  lifecycle factsheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet)
+  for upcoming "EOLs" (End of Life). Apple does not publish EOL schedules, but
+  historically releases security updates for their current and two prior
+  releases.
 
-  Bien que les systèmes d'exploitation et les logiciels "piratés" soient extrêmement courants (en particulier pour Windows), ils laissent souvent beaucoup à désirer en termes de sécurité. Si le système d'exploitation ou le logiciel ne reçoit pas de mises à jour régulières du créateur du logiciel, il est extrêmement vulnérable à des milliers d'attaques potentielles. Passez à un logiciel sous licence ou à un logiciel libre recommandé
+  **If Pirated Software - Move to Licensed Software Systems**
 
-  **Si logiciel piraté - Déplacez-vous vers des systèmes logiciels sous licence**
+  While "pirated" operating systems and software are extremely common
+  (especially for Windows) they often leave much to be desired in terms of
+  security.  If the OS or Software is not receiving regular updates from the
+  software creator, it is extremely vulnerable to thousands of potential
+  attacks. Switch to licensed software or recommended Free Open Source Software
 
-  Bien que les systèmes d'exploitation et les logiciels "piratés" soient extrêmement courants (en particulier pour Windows), ils laissent souvent beaucoup à désirer en termes de sécurité. Si le système d'exploitation ou le logiciel ne reçoit pas de mises à jour régulières du créateur du logiciel, il est extrêmement vulnérable à des milliers d'attaques potentielles. Passez à un logiciel sous licence ou à un logiciel libre recommandé
+  **If Outdated - Update Operating Systems and Other Software**
 
-  **Si obsolète - Mettre à jour les systèmes d'exploitation et autres logiciels**
+  Operating Systems and Softwares of all varieties - Windows, Mac, Linux, and
+  others, are constantly being updated.  These updates often fix bugs, but they
+  also protect the system from newly discovered vulnerabilities.  It can seem
+  difficult to keep updating constantly, but this is very important to protect
+  even non-sensitive systems.
 
-  Les systèmes d'exploitation et les logiciels de toutes sortes - Windows, Mac, Linux et autres, sont constamment mis à jour. Ces mises à jour corrigent souvent des bogues, mais elles protègent également le système des vulnérabilités nouvellement découvertes. Il peut sembler difficile de maintenir une mise à jour constante, mais cela est très important pour protéger même les systèmes non sensibles.
+  **If Vulnerable Software - Update Vulnerable Software**
 
-  **Si logiciel vulnérable - Mettre à jour le logiciel vulnérable**
+  Many critical software components, such as web browsers, have many
+  vulnerabilities and need to be aggressively updated. If there are not needed
+  for work by the users, uninstall them
 
-  De nombreux composants logiciels critiques, tels que Java ou Adobe Flash, présentent de nombreuses vulnérabilités et doivent être mis à jour de manière agressive. S'il n'y a pas besoin pour le travail des utilisateurs, désinstallez-les
+  **If No Anti-Virus and Anti-Malware Scanner - Install Anti-Virus and
+  Anti-Malware Scanner, or enable the built-in OS ones**
 
-  **S'il n'y a pas d'analyseur antivirus et antimalware - Installez l'antivirus et
-  Scanner Anti-Maware**
+  An Anti-virus and Anti-malware offer some minimal protection to the system and
+  therefore is important to have them installed. In most cases, the default anti-malware
+  tool installed with the operating system offers sufficiently good protection.
+  Make sure that it is turned on and working. In Windows, it's Windows Defender.
+  In macOS, it's a series of tools, including XProtect and Gatekeeper. All of them
+  should be enabled and working out-of-the box.
 
-  Un antivirus et un anti-malware offrent une protection minimale au système et il est donc important de les installer.
+  **If Unencrypted Drive  - Encrypt Hard Drives**
 
-  **Si l'antivirus est obsolète - Mettre à jour l'antivirus**
+  When possible, build-in drive encryption (Filevault on OSX, BitLockeron
+  Windows, and LUKS on Linux) tend to offer the most seamless, user-friendly
+  experiences. VeraCrypt offers free cross-platform drive encryption and cna
+  also create encrypted drives which can be shared across platforms.
 
-  La plupart des outils AV se mettent à jour automatiquement, mais cela peut parfois se désynchroniser, ou si l'AV était un système d'essai préinstallé, il cessera de se mettre à jour après sa période d'essai. Un antivirus obsolète ne vaut rien. Par conséquent, assurez-vous que la mise à jour continue de AV est effectuée.
+  **If Inactive firewall - Activate both personal and server firewall (If
+  present)**
 
-  **Si lecteur non crypté - Chiffrer les disques durs**
-
-  Lorsque cela est possible, le chiffrement de lecteur intégré (Filevault sur OSX, BitLocker sur Windows et LUKS sur Linux) a tendance à offrir les expériences les plus transparentes et les plus conviviales. VeraCrypt offre un cryptage de lecteur multiplateforme gratuit et cna crée également des lecteurs cryptés qui peuvent être partagés entre les plates-formes.
-
-  **Si pare-feu inactif - Activez à la fois le pare-feu personnel et le pare-feu du serveur (le cas échéant)**
-
-  Encore une fois, le cas échéant, utilisez des pare-feu intégrés et configurez-les pour les options de réseau de bureau et public. Les tests pour s'assurer que les systèmes peuvent toujours effectuer le travail de réseau de bureau attendu (partage de fichiers, impression, etc.) sont essentiels à moins que des alternatives ne soient créées.
+  Again, where present, use built-in firewalls and configure them for both
+  office and public network options. Testing to ensure systems can still perform
+  expected office natworking (file sharing, printing, etc.) is essential unless
+  alternatives are created.
 organization_size_under: 25
 time_required_minutes: 120
 ---
