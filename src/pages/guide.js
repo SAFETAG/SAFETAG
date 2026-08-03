@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, withPrefix } from "gatsby"
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 
@@ -151,7 +151,7 @@ function IndexPage({ data }) {
                         withHover
                       >
                         <CardHeader>
-                          <img src={node.frontmatter.method_icon} />
+                          <img src={withPrefix(node.frontmatter.method_icon)} />
                           <CardHeading variation="primary" withDeco>
                           {node.frontmatter.title}
                           </CardHeading>

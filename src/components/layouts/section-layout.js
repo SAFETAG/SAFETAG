@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import styled from "styled-components"
 
@@ -60,7 +60,7 @@ function SectionLayout({ data, location }) {
           <InpageInnerColumns columnLayout="2:1">
             <section
                 dangerouslySetInnerHTML={{
-                  __html: data.section.html,
+                  __html: (data.section.html || "").replace(/(<img[^>]*?src=")\/img\//g, `$1${withPrefix('/img/')}`),
                 }}>
             </section>
             <section></section>

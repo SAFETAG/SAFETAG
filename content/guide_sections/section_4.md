@@ -253,7 +253,6 @@ This guide will not itself cover how to use git, but here are some helpful resou
  * Travel power adapter
  * ethernet cord (and adapter if needed)
  * aircrack compatible Wireless card if needed
- * IEEE 1394 (firewire) card if using
  * Non-phone based camera
  * Secure storage media for audit findings
  * Spare storage media

@@ -1,6 +1,6 @@
 ---
 title: Risk & Threat Analysis
-position: 120
+position: 45
 summary: |
   This component allows an auditor to lead the host organization's staff in a
   series of activities to identify and prioritize the processes that are
@@ -10,7 +10,7 @@ summary: |
   exposed to a malicious actor, who will be understood through threat 
   profiling activities.  This results in the staff creating a risk
   matrix and threat profiles which are used as the foundation of the auditor's recommendations.
-short_summary: Identify and mpa critical organizaional processes and profile the possible attackers in order to develop a risk matrix.
+short_summary: Identify and map critical organizaional processes and profile the possible attackers in order to develop a risk matrix.
 the_flow_of_information: "![](/img/risk_modeling.png)"
 method_icon: "/img/risk_modeling_icon.png"
 guiding_questions: |
@@ -30,7 +30,7 @@ activities:
   - Self Doxing
   - Guiding Questions for High-Risk Organisations
   - Assessing legal threats
-  - Threat Assessment
+  - Threat Identification
   - Threat Interaction
 references:
   - Risk Modeling

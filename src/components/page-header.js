@@ -6,6 +6,7 @@ import {
   useTranslation,
   useI18next,
 } from "gatsby-plugin-react-i18next";
+import { withPrefix } from "gatsby";
 import styled from "styled-components";
 import { window } from "browser-monads";
 
@@ -206,8 +207,8 @@ const LanguageSelect = styled(ReactLanguageSelect)`
   button {
     background: ${({ scrolled }) =>
       scrolled > 0
-        ? 'transparent url("/assets/language.svg") no-repeat;'
-        : 'transparent url("/assets/language-white.svg") no-repeat;'};
+        ? `transparent url("${withPrefix("/assets/language.svg")}") no-repeat;`
+        : `transparent url("${withPrefix("/assets/language-white.svg")}") no-repeat;`};
   }
   ul {
     background: ${({ scrolled }) =>
