@@ -7,7 +7,7 @@ author: Jon
 ---
 *This is the second in a series of blog posts sharing some stories gleaned from audits over the years (often combined from multiple experiences and with all identifying information removed).  The goal is to share experiences and approaches to help new auditors get into the mindset of SAFETAG*
 
-In the [previous SAFETAG Story](/2018/08/16/SAFETAGStories-dropbox.html), we explained the “TRI” approach in choosing activities which take different approaches (**Technical**, **Research**, **Interpersonal**) in order to TRI-angulate (!!!) the reality of what is going on at an organization. That variety is critical, but sometimes not enough.
+In the [previous SAFETAG Story](../2018-08-20-SAFETAGStories-forgottenincident/), we explained the “TRI” approach in choosing activities which take different approaches (**Technical**, **Research**, **Interpersonal**) in order to TRI-angulate (!!!) the reality of what is going on at an organization. That variety is critical, but sometimes not enough.
 
 Even within one category, sometimes one approach just doesn’t work with the organization. The activity may be geared towards a small group, but the organization is large. It may expect people to be in one room, but the organization is distributed across locations and even time zones. Sometimes, it may just not work for reasons that are not clear.
 

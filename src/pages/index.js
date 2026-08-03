@@ -1,7 +1,7 @@
 import React from "react"
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
 
 import GlobalLayout from "../components/layouts/global-layout"
@@ -135,7 +135,7 @@ function IndexPage({ data }) {
               </ul>
             </SquareUl>
             <div>
-              <img src="/img/activities_flow.svg" style={{ maxWidth: '100%' }}/>
+              <Trans i18nKey="index-about-activity-flow-image"><img src={withPrefix("/img/activities_flow.svg")} style={{ maxWidth: '100%' }}/></Trans>
             </div>
           </InpageInnerColumns>
         </InpageBody>
@@ -178,7 +178,7 @@ function IndexPage({ data }) {
                         to={node.fields.slug}
                       >
                         <CardHeader>
-                          <img src={node.frontmatter.method_icon} />
+                          <img src={withPrefix(node.frontmatter.method_icon)} />
                           <CardHeading variation="primary" withDeco>
                             {node.frontmatter.title}
                           </CardHeading>

@@ -34,5 +34,5 @@ An audit uncovers an array of sensitive information about an organization. For s
 
 * *Standard*: [NIST SP 800-115, Technical Guide to Information Security Testing and Assessment](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf) (Section 7.4)
 * *Standard*: [Pentest Standards for data security](http://www.pentest-standard.org/index.php/Pre-engagement#PGP_and_Other_Alternatives)
-* *Guide*: [Surveillance Self Defense](https://ssd.eff.org/en/index) (cross-platform guides for WhatsApp, Signal, PGP, and OTR secure communications)
+* *Guide*: [Surveillance Self Defense](https://ssd.eff.org/) (cross-platform guides for WhatsApp, Signal, PGP, and OTR secure communications)
 * *Guide*: [Security in a box: Secure File Storage](https://securityinabox.org/en/guide/secure-file-storage/)

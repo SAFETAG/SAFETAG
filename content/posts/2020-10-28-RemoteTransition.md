@@ -17,7 +17,7 @@ Internews, in coordination Digital Security Lab Ukraine, Defend Defenders, and C
 
 ***While the remote audit playlist includes a multitude of activities that can be done remotely, it is important to consider SAFETAG’s [Minimal Viable Audit](https://github.com/SAFETAG/SAFETAG/blob/master/en/index.mva.md), designed as the starting point for an assessment to be considered viable under the SAFETAG framework.***
 
-Initial groundbreaking work to build a remote-friendly SAFETAG audit approach was first developed by the SAFETAG community during a [2017 content sprint](https://safetag.org/2017/08/31/Remote_Audits.html). In 2020, however, remote-first audits have gone from being the exception to the rule, to driving the creation and refinement of approaches by Internews staff and partners in recent months.
+Initial groundbreaking work to build a remote-friendly SAFETAG audit approach was first developed by the SAFETAG community during a [2017 content sprint](https://safetag.org/posts/2017-08-31-Remote_Audits/). In 2020, however, remote-first audits have gone from being the exception to the rule, to driving the creation and refinement of approaches by Internews staff and partners in recent months.
 
 This blog highlights some considerations auditors should keep in mind when organizing and facilitating a remote audit. We’ve also highlighted below where to find existing content for your next virtual audit.
 

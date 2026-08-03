@@ -7,7 +7,7 @@ author: Carlos Guerra, Mario Felaco
 ---
 
 *This article was written by Carlos Guerra with the input and help of
-Mario Felaco; of [Conexo](https://conexo.org/). See part 1: [The Challenges of Reporting](https://SAFETAG.org/2018/11/19/challenges-of-reporting.html)*
+Mario Felaco; of [Conexo](https://conexo.org/). See part 1: [The Challenges of Reporting](https://safetag.org/posts/2018-11-19-challenges-of-reporting/)*
 
 
 Said this, some of the kind of reports I've seen in my evaluations and

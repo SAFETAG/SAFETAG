@@ -2,9 +2,9 @@
 title: Recon-ng
 ---
 
-  * *Site:* ["Recon-ng: Website"](https://bitbucket.org/LaNMaSteR53/recon-ng/overview) (Bitbu  * *Guide:* [The Recon-ng Frameworkcket)
+  * *Site:* ["Recon-ng"](https://github.com/lanmaster53/recon-ng) (GitHub) See the helpful Wiki in the repository.
   
-  * *Type:* ["Recon-ng: Usage Guide"](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide) (Bitbucket)
+  * *Guide:* ["Recon-ng: A full tutorial from noob to pro"](https://techyrick.com/recon-ng/) (TechyRick)
   
   * *Demonstration:* ["Look Ma, No Exploits! – The Recon-ng Framework - Tim "LaNMaSteR53" Tomes"](http://www.irongeek.com/i.php?page=videos/derbycon3/1104-look-ma-no-exploits-the-recon-ng-framework-tim-lanmaster53-tomes) (Derbycon 2013)
   

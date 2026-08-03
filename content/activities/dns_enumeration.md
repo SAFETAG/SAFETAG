@@ -53,7 +53,7 @@ overview: |
 
   * A fuller map of the organization's online presence, including additional
   (potentially forgotten) hosts/services connected with the organization.
-  *Domains + IP addresses
+  * Domains + IP addresses
   * Subdomains + IP addresses
   * MX Records + IP addresses
   * DNSKeys

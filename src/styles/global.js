@@ -81,6 +81,16 @@ const baseStyles = css`
       opacity: 1;
       transform: none;
     }
+  a[class^="contact"] {
+    cursor: pointer;
+    &:link,
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited, {
+      color: #ffffff;
+      text-decoration: underline;
+    }
   }
   /* Buttons
    ========================================================================== */

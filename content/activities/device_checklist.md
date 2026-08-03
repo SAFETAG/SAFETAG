@@ -12,19 +12,17 @@ skills_required:
   - System Administration
 skills_trained: []
 summary: |
-  The auditor checks staff devices for updated systems and software, anti-virus
-  and other security capabilities, and identifies software running on computers
-  and its current version.  The auditor checks for known vulnerabilities to any
-  out of date software.
+  The auditor checks staff devices to make sure systems are up-to-date, and anti-malware
+  enabled. The auditor checks for known vulnerabilities to any out of date software.
 
   This is used to develop a report component exposing how un-updated software
   can lead to large vulnerabilities.
 overview: |
-   * Identify what privilege level services are running under -- Are users using accounts with admin privileges, or are they using another user and have to type in a password to get admin rights? [^privilege-separation-across-os]
-   * Check for existence and status of anti-virus (and anti-malware tools) on the device. [^anti-virus-updates]
-   * Record the version and patch levels of software on the device. [^identifying-software-versions]
-   * Identify what level of encryption is being used and is available for data storage on the device. [^device_encryption_by_os]
-   * Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.
+   * Identify what privilege level services are running under—Are users using accounts with admin privileges, or are they using another user and have to type in a password to get admin rights? [^privilege-separation-across-os]
+   * Check for existence and status of anti-virus (and anti-malware tools) on the device. In most cases, the built-in antivirus protections in Windows and macOS should be enough. Make sure that those are enabled. [^anti-virus-updates]
+   * Record the version and patch levels of software on the device. Make sure to check that the operating system, browser, and office software are up to date. If the device can no longer receive security patches, consider whether it would be possible to replace the device with a newer one that does. [^identifying-software-versions]
+   * Identify what level of encryption is being used and is available for data storage on the device. Most modern operating systems should encrypt the drive by default. Check how the organization encrypts external drives, if it does so at all. [^device_encryption_by_os]
+   
 materials_needed: |
   * A notepad may be useful
 considerations: |
@@ -44,7 +42,7 @@ walk_through: |
 
   As you work with staff members, also interview them about the other devices
   they use such as phones and tablets, and how they connect to work services -
-  email/webmail, chat Apps, intra/extranet tools, Constituent Relationship
+  email/webmail, chat apps, intra/extranet tools, Constituent Relationship
   Management (CRM) tools like CiviCRM or Salesforce, financial tracking tools,
   and website management tools.
 
@@ -60,20 +58,13 @@ tools:
 recommendations: |
   **If Unsupported Operating System - Upgrade to Recent Version**
 
-  Popular operating systems like Windows XP are, sadly, no longer receiving
-  security updates. Upgrade to the latest version keeping in mind the system
-  requirements of the version selected. For Windows, review the [Windows
-  lifecycle fact
-  sheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet)
+  Popular operating systems like Windows 7 (and, from October 2025, Windows 10)
+  are, sadly, no longer receiving security updates. Upgrade to the latest version
+  keeping in mind the system requirements of the version selected. For Windows, review the [Windows
+  lifecycle factsheet](https://support.microsoft.com/en-ph/help/13853/windows-lifecycle-fact-sheet)
   for upcoming "EOLs" (End of Life). Apple does not publish EOL schedules, but
   historically releases security updates for their current and two prior
   releases.
-
-  While "pirated" operating systems and software are extremely common
-  (especially for Windows) they often leave much to be desired in terms of
-  security.  If the OS or Software is not receiving regular updates from the
-  software creator, it is extremely vulnerable to thousands of potential
-  attacks. Switch to licensed software or recommended Free Open Source Software
 
   **If Pirated Software - Move to Licensed Software Systems**
 
@@ -93,22 +84,19 @@ recommendations: |
 
   **If Vulnerable Software - Update Vulnerable Software**
 
-  Many critical software components, such as Java or Adobe Flash, have many
+  Many critical software components, such as web browsers, have many
   vulnerabilities and need to be aggressively updated. If there are not needed
   for work by the users, uninstall them
 
   **If No Anti-Virus and Anti-Malware Scanner - Install Anti-Virus and
-  Anti-Maware Scanner**
+  Anti-Malware Scanner, or enable the built-in OS ones**
 
   An Anti-virus and Anti-malware offer some minimal protection to the system and
-  therefore is important to have them installed.
-
-  **If Outdated Anti-Virus - Update Anti-Virus**
-
-  Most AV tools automatically update, but this can sometimes get out of sync, or
-  if the AV was a pre-installed trial system, it will stop updating after its
-  trial period.  An out of date anti-virus is worthless. Therefore ensure that
-  continuous udpdating of AV is done.
+  therefore is important to have them installed. In most cases, the default anti-malware
+  tool installed with the operating system offers sufficiently good protection.
+  Make sure that it is turned on and working. In Windows, it's Windows Defender.
+  In macOS, it's a series of tools, including XProtect and Gatekeeper. All of them
+  should be enabled and working out-of-the box.
 
   **If Unencrypted Drive  - Encrypt Hard Drives**
 

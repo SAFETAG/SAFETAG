@@ -6,6 +6,6 @@ title: Pastebin Searching
   
   * *Custom Search* ["This custom search page indexes 80 Paste Sites:"](http://inteltechniques.com/OSINT/pastebins.html) (Intel Techniques)
 
-  * *Article* ["Pastebin: How a popular code-sharing site became the ultimate hacker hangout"](http://thenextweb.com/socialmedia/2011/06/05/pastebin-how-a-popular-code-sharing-site-became-the-ultimate-hacker-hangout/) (Matt Brian)
+  * *Article* ["Pastebin: From programmers tool to hacker playground"](https://www.livemint.com/Leisure/B1LE9PlScjRvC8OHbgidsM/Pastebin-From-programmers-tool-to-hacker-playground.html) (Gopal Sathe)
 
   * *Advanced Search* ["Github Advanced Search"](https://github.com/search/advanced) (Github)

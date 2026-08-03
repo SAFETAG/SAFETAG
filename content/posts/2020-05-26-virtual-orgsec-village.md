@@ -29,4 +29,4 @@ Please let us know you will be attending by registering here: https://docs.googl
 
 We ask that you register even if you are only able to attend a few days or sessions. Event access details will only be shared with registered participants. Please also complete the registration form if you are not able to join the live sessions but would like to review notes or contribute asynchronously.
 
-This event will follow the [*IFF Code of Conduct*](https://www.internetfreedomfestival.org/wiki/index.php/Code_of_Conduct).
+This event will follow the [*IFF Code of Conduct*](https://wiki.digitalrights.community/index.php?title=Code_of_Conduct).

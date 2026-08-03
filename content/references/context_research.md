@@ -23,7 +23,7 @@ title: Other Context Analysis Methodologies
 * *List:* ["Foreign travel advice"](https://www.gov.uk/foreign-travel-advice) (GOV.UK)
 * *Alerts:* ["Travel Alerts & Warnings"](http://www.travel.state.gov/content/passports/english/alertswarnings.html) (US Department of State)
 
-  * *List:* ["List of airlines banned within the EU"](http://ec.europa.eu/transport/modes/air/safety/air-ban/index_en.htm) (European Commission)
+  * *List:* ["List of airlines banned within the EU"](https://transport.ec.europa.eu/transport-themes/eu-air-safety-list_en) (European Commission)
   * *List:* ["A list of aircraft operators that have that have suffered an accident, serious incident or hijacking."](http://aviation-safety.net/database/operator/) (Aviation Safety Network)
   * *List:* ["Travel Advice"](http://www.smartraveller.gov.au/) (Australian Government)
 
@@ -37,9 +37,9 @@ title: Other Context Analysis Methodologies
 
 * Human  Rights
 
-  * [Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
+  * [Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](https://freedomhouse.org/report/freedom-world)
   * [Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
-  * [Human Rights Watch - Browse by Region](http://www.hrw.org/regions)
+  * [Human Rights Watch - Browse by Region](https://www.hrw.org/regions)
 * Transparency
 
   * [Corruption  Perception  Index](https://www.transparency.org/en/cpi/2020/index/rus#)
@@ -49,12 +49,11 @@ title: Other Context Analysis Methodologies
 
   * [Threatened Voices: Tracking suppression of online free speech.](http://threatened.globalvoicesonline.org/)
   * [IREX’s Media Sustainability Index (MSI) provides in-depth analyses of the conditions for independent media in 80 countries across the world.](http://www.irex.org/project/media-sustainability-index-msi)
-  * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](http://www.freedomhouse.org/report-types/freedom-net)
-  * [Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
+  * [Freedom House's "Freedom on the Net" index, assessing the degree of internet and digital media freedom around the world.](https://freedomhouse.org/report/freedom-net)
   * [ARTICLE 19 freedom of expression and freedom of information news by region.](https://www.article19.org/explore/)
-  * [](https://www.article19.org/explore/)[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
-  * [Press Freedom Index (RSF)](https://rsf.org/en/ranking_table)
-* [](https://rsf.org/en/ranking_table)Climate  Issues
+  * [Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
+  * [Press Freedom Index (RSF)](https://rsf.org/en/index)
+* Climate  Issues
 * Gender  Issues
 * Poverty  Alleviation
 * Community  Building
@@ -69,32 +68,30 @@ title: Other Context Analysis Methodologies
 
 **What general non-governmental threats does the organization face?**
 
-* *Map:* ["A global display of Terrorism and Other Suspicious Events"](http://www.globalincidentmap.com/map.php) (Global Incident Map)
+* *Map:* ["A global display of Terrorism and Other Suspicious Events"](https://globalincidentmap.com/) (Global Incident Map)
 * *Organization:* ["ReliefWeb has been the leading source for reliable and timely humanitarian information on global crises and disasters since 1996."](http://reliefweb.int/) (ReliefWeb)
 * *Reports:* [International NGO Safety](http://www.ngosafety.org/) (NGO proof, subscription required, covers Afghanistan, CAR, DRC, Kenya, Mali, and Syria currently)
 
 **What cyber-security practices is the government using?**
 
-* *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search?keywords=state+privacy) (Privacy International)
+* *Reports:* [Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search) (Privacy International)
 * *List:* ["National Cyber Security Policy and Legal Documents"](https://ccdcoe.org/library/strategy-and-governance/) (NATO Cooperative Cyber Defence Centre of Excellence)
 * *Reports:* ["Country Reports"](https://opennet.net/research/profiles) (Open Network Initiative)
-* *Portal:* ["Country Level Information security threats"](https://iscproject.org/) (The ISC Project)
 * *Country Profiles:* ["Current cybersecurity landscape based on the five pillars of the Global Cybersecurity Agenda namely Legal Measures, Technical Measures, Organisation Measures, Capacity Building and Cooperation."](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (Global Cybersecurity Index (GCI))
 * *Organization:* ["The Citizen Lab is an interdisciplinary laboratory based at the Munk School of Global Affairs, University of Toronto, Canada focusing on advanced research and development at the intersection of Information and Communication Technologies (ICTs), human rights, and global security."](https://citizenlab.org/) (The Citizen Lab)
 * *Map:* ["Cyber-Censorship Map"](https://alkasir.com/map) (Alkasir)
 * *Dashboard:* ["At-A-Glance Web-Blockage Dashboard"](http://herdict.org/explore/indephth) (Herdict)
-* *List:* ["Who publishes Transparency Reports?"](http://jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an) (James Losey)
+* *Resource:* ["Transparency Reporting Index"](https://www.accessnow.org/campaign/transparency-reporting-index/) (Access Now)
 * *Overviews:*["Cyberwellness Profiles"](http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx) (ITU)
 
 **What general cyber-security threats is the organization facing?**
 
 * *Report:* ["The Internet Annual Security Threat Report"](http://www.symantec.com/security_response/publications/threatreport.jsp) (Symantec)
-* *Report:* ["Annual threat report"](https://www.fireeye.com/current-threats/annual-threat-report.html) (Mandiant)
+* *Report:* ["Global threat report"](https://www.crowdstrike.com/en-us/global-threat-report/) (CrowdStrike)
 * *Reports:* ["APWG Phishing Attack Trends Reports"](http://www.apwg.org/resources/apwg-reports/) (Anti-Phishing Working Group)
 
   * *Reports:* ["Secunia Country Reports"](https://secunia.com/resources/countryreports/) (Secunia)
-  * *Reports:* ["McAfee Threat Trends Papers"](https://www.mcafee.com/us/security-awareness/threat-trends.aspx) (McAfee)
-  * *Report:* ["Monthly intelligence report"](https://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
+    * *Report:* ["Monthly intelligence report"](https://www.symantec.com/security_response/publications/monthlythreatreport.jsp) (Symantec)
 
 **What level of technology is available in the region?**
 

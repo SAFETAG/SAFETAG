@@ -1,10 +1,9 @@
 # Project layout and local development
 
-The main dependencies (as of September 2022) are
-- Gatsby 4.20.0
+The main dependencies are
+- Gatsby 5
 - React 18.2.0
-- Node.js 16
-- npm 8.18.0
+- Node.js 20 (see `.nvmrc` and the `engines` field in `package.json`)
 
 To have the project running locally, you first need to have the above versions of Node.js and npm installed. The [Node download page](https://nodejs.org/en/download/) has install instructions for many use cases.
 
@@ -24,10 +23,12 @@ There are many commands available that take care of specific parts of the build 
 - **clean**: deletes all build files generated with `build`
 - **lint**: checks the code for errors using ESLint
 
-Additionally, there is a set of custom commands to handle content translations:
-- **extract**: extracts all translatable strings from the source code and saves them as .json files that can be pushed with the below command
-- **transifex-push**: pushes the translatable string JSON files to Transifex, making them available for translation using the Transifex web interface
-- **transifex-pull**: downloads all the available locales and translated strings from Transifex
-- **postproc**: applies a set of filters and corrections to the downloaded Transifex files so that they play nicely with Gatsby
+Additionally there is one command related to translations:
+- **extract**: scans the source for translatable strings and writes them to
+  `locales/en/site.json`, the English source file Weblate translates from
+
+Translations themselves are committed to the repository under `locales/` by
+Weblate, so no translation command runs at build time. See the Translations
+section of the README.
 
 All of these commands can be run with `npm run` (e.g. `npm run develop`), and they can be inspected and tweaked in the `package.json` file. You can also check the GitHub action workflow files (in `.github/workflows`) to see how these commands are used to build and deploy the project.

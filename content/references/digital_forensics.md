@@ -1,7 +1,7 @@
 ---
 title: Digital Forensics
 ---
-* *Guide* [Guide to Quick Forensics](https://guides.securitywithoutborders.org/guide-to-quick-forensics/) Security Without Borders
+* *Guide* [Guide to Quick Forensics](https://pellaeon.gitbook.io/mobile-forensics) Security Without Borders
 
 * *Guide* [Investigating Infrastructure Links with Passive DNS and Whois Data](https://citizenevidence.org/2020/06/26/investigating-infrastructure-links-with-passive-dns-and-whois-data/) Citizen Evidence Lab by Amnesty International
 

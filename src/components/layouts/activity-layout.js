@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
 import { Remark } from 'react-remark';
 import remarkGfm from 'remark-gfm';
@@ -141,7 +141,7 @@ function ActivityLayout({ data }) {
                 <Dl boldDesc>
                   <dt><Trans i18nKey="activity-approach">Approach</Trans></dt>
                   {frontmatter.approaches.map(approach => (
-                    <dd key={approach}>{approach}<img src={`/img/${approach.toLowerCase()}_icon.png`} /></dd>
+                    <dd key={approach}>{approach}<img src={withPrefix(`/img/${approach.toLowerCase()}_icon.png`)} /></dd>
                   ))}
                   <dt><Trans i18nKey="activity-authors">Authors</Trans></dt>
                   {frontmatter.authors.map(authr => (
@@ -239,7 +239,7 @@ function ActivityLayout({ data }) {
                           <CardHeading variation="primary">
                             {tool}_
                           </CardHeading>
-                          <div><Remark>{toolNodes[tool].short_summary}</Remark></div>
+                          <div><Remark>{(toolNodes[tool] && toolNodes[tool].short_summary) || ''}</Remark></div>
                         </ToolCard>
                       </li>
                     ))}

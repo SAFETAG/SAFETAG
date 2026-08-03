@@ -12,8 +12,13 @@ The build process for both workflows is identical:
 - cancel any previous workflows still running
 - download and install project code and dependencies
 - check for code errors
-- update translations from Transifex
+- build the site
 - deploy to GitHub Pages
+
+Translations are committed to the repository under `locales/` by Weblate, so
+there is no translation step in the build and no translation credentials are
+needed. A translation saved in Weblate becomes a commit, which triggers these
+workflows like any other push.
 
 Additionally, there is a Lint and Test workflow that checks for code consistency and errors before firing the build workflows, in case there is any problem.
 

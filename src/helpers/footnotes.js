@@ -1,6 +1,6 @@
 import remark from 'remark'
 import remarkHTML from 'remark-html'
-// import { withPrefix } from "gatsby"
+import { withPrefix } from "gatsby"
 
 export function loadAllFootnotes(referenceEdges, langKey) {
   // load and parse all footnotes
@@ -63,13 +63,15 @@ export function processSections(frontmattermd, allFootnotes, existingFootnotes) 
       if (!content.includes('[1](')) {
         section = content
       }
-      // fix image URLs
-      /*
-      if (section) {
-        section.html = remark().use(remarkHTML).processSync(section).contents
-          .replace( /<img src="\/img/g, `<img src="${withPrefix("/img")}`)
+      // Prefix image URLs so they resolve under a pathPrefix (subpath deploys
+      // like GitHub Pages) and stay correct at root. Keeps the content as
+      // markdown so <Remark> still renders it. Covers markdown `](/img/…)` and
+      // any raw-HTML `<img src="/img/…">`.
+      if (section && (typeof section === 'string' || section instanceof String)) {
+        section = section
+          .replace(/\]\(\/img\//g, `](${withPrefix('/img/')}`)
+          .replace(/(<img[^>]*?src=")\/img\//g, `$1${withPrefix('/img/')}`)
       }
-      */
     }
     sections[sectionName] = section
   })

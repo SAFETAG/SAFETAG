@@ -1,5 +1,9 @@
 name: Build and Deploy (staging)
 
+# Translations live in the repository under locales/ and are committed by
+# Weblate, so the build is a plain `npm ci && npm run build` -- there is no
+# translation API call and no token needed at build time.
+
 on:
   workflow_dispatch:
   push:
@@ -18,20 +22,12 @@ jobs:
       # Cancel previous workflows to avoid overlapping deploys as content
       # editing might add several commits in short intervals.
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.6.0
+        uses: styfle/cancel-workflow-action@0.12.1
         with:
           access_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up secrets
-        run: |
-          touch .env
-          echo TX_TOKEN=${{ secrets.TRANSIFEX_TOKEN }} >> .env
-          cp .env .env.production
-          cp .env .env.development
-          cat .env
+        uses: actions/checkout@v4
 
       # https://github.com/aws/aws-cli/issues/1249
       - name: Fix mimetypes detection for yaml files
@@ -39,25 +35,21 @@ jobs:
           echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
 
       - name: Use Node.js 20
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install and lint
         run: |
-          npm install
+          npm ci
           npm run lint
 
-      - name: Update translations and build
-        run: |
-          export TX_TOKEN=${{ secrets.TRANSIFEX_TOKEN }}
-          npm run extract
-          npm run transifex-push
-          npm run transifex-pull
-          npm run build
+      - name: Build
+        run: npm run build
 
       - name: Deploy 🚀
-        uses: burnett01/rsync-deployments@4.1
+        uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avzr --delete
           path: public/

@@ -44,9 +44,9 @@ title: footnotes
 
 [^NIST_SP_800_115_soc_eng_hostile]:["Individual targeting can lead to embarrassment for those individuals if testers successfully elicit information or gain access. It is important that the results of social engineering testing are used to improve the security of the organization and not to single out individuals."](http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf)
 
-[^GPR_8_Likelihood]:["Likelihood: Chapter 2.7 p. 47 - Operational Security Management in Violent Environments"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38)
+[^GPR_8_Likelihood]:["Likelihood: Chapter 2.7 p. 47 - Operational Security Management in Violent Environments"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf)
 
-[^GPR_8_impacts]:["Impacts: Chapter 2.7 p. 46 - Operational Security Management in Violent Environments"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38)
+[^GPR_8_impacts]:["Impacts: Chapter 2.7 p. 46 - Operational Security Management in Violent Environments"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf)
 
 <!-- Facilitation -->
 
@@ -70,7 +70,7 @@ title: footnotes
 
 [^alkasir]:[A Cyber-Censorship Map automatically plotted based on the data collected from the database that is updated through usage patterns of alkasir software.](https://alkasir.com/map)
 
-[^transparency]:[Who publishes Transparency Reports?](http://jameslosey.com/post/98162645081/who-publishes-transparency-reports-here-is-an)
+[^transparency]:[Transparency Reporting Index](https://www.accessnow.org/campaign/transparency-reporting-index/)
 
 [^alexa]:[The top 500 sites in each country or territory.](http://www.alexa.com/topsites/countries)
 
@@ -97,11 +97,11 @@ title: footnotes
 
 [^freedom_of_the_press]:[Freedom House's "Freedom of the Press" index assess' global media freedom.](http://www.freedomhouse.org/report-types/freedom-press)
 
-[^article_19_by_country]:[ARTICLE 19 freedom of expression and freedom of information news by region.](http://www.article19.org/pages/en/where-we-work.html)
+[^article_19_by_country]:[ARTICLE 19 freedom of expression and freedom of information news by region.](https://www.article19.org/where-we-work/)
 
 [^OSF_digital_media]:[Open Society Foundation - Mapping digital media](http://www.opensocietyfoundations.org/projects/mapping-digital-media)
 
-[^press_freedom_index]:[Press Freedom Index (RSF)](https://en.rsf.org/press-freedom-index.html)
+[^press_freedom_index]:[Press Freedom Index (RSF)](https://rsf.org/en/index)
 
 [^press_freedom_index_methodology]:[Press Freedom Index Methodology (RSF)](http://rsf.org/index2014/data/2014_wpfi_methodology.pdf)
 
@@ -110,7 +110,7 @@ title: footnotes
 
 [^freedom_in_the_world]:[Freedom House's "Freedom in the World" index is the standard-setting comparative assessment of global political rights and civil liberties.](http://www.freedomhouse.org/report-types/freedom-world)
 
-[^corruptions_perception_index]:[Corruption  Perception  Index](http://www.transparency.org/cpi2013/results/)
+[^corruptions_perception_index]:[Corruption  Perception  Index](https://www.transparency.org/en/cpi/)
 
 [^Amnesty_regional_news]:[Amnesty International regional news on human rights](https://www.amnesty.org/en/countries/)
 
@@ -118,11 +118,9 @@ title: footnotes
 
 <!-- Surveillance and Censorship -->
 
-[^pi_country_reports]:[Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/type-resource/state-privacy)
+[^pi_country_reports]:[Search Privacy International's in-depth country reports and submissions to the United Nations.](https://privacyinternational.org/search)
 
 [^surveillance_whos_who]:[Surveillance Who's Who exposes the government agencies that attended ISS World surveillance trade shows between 2006 and 2011.](https://www.privacyinternational.org/resources/surveillance-whos-who)
-
-[^ISC_country_reports]:[The ISC Project completes evaluations of information security threats in a broad range of countries. The resulting comprehensive written assessments describe each country’s digital security situation through consideration of four main categories: online surveillance, online attacks, online censorship, and user profile/access.](https://iscproject.org/country-assessments/)
 
 
 <!-- Security Risks -->
@@ -179,15 +177,9 @@ title: footnotes
 
 [^mandiant_threat_report]:[Mandiant’s annual threat report, reveals key insights, statistics and case studies illustrating how the tools and tactics of advanced persistent threat (APT) actors have evolved over the last year. (REQUIRES EMAIL ADDRESS)](https://www.mandiant.com/resources/mandiant-reports/)
 
-[^mcafee_threat_center]:[McAfee Labs Threat Center includes their Quarterly Threats Report, Blog, and Threat Library.](http://www.mcafee.com/us/threat-center.aspx)
-
-[^fireeye_reports]:[FireEye provides complimentary reports on threats and trends in cyber security. (REQUIRES EMAIL ADDRESS)](http://www.fireeye.com/info-center/)
-
 [^verizon_data_breach_report]:[Verizon Data Breach Investigative Report (REQUIRES EMAIL ADDRESS)](http://www.verizonenterprise.com/DBIR/)
 
 [^internet_storm_center]:[SANS: Internet Storm Center](https://isc.sans.edu//)
-
-[^mcafee_threat_trends]:[McAfee Threat Trends Papers](https://www.mcafee.com/us/security-awareness/threat-trends.aspx)
 
 [^us-cert_current_activity]:[US-CERT Current Activity web page is a regularly updated summary of the most frequent, high-impact types of security incidents currently being reported](https://www.us-cert.gov/ncas/current-activity/)
 
@@ -292,7 +284,7 @@ encrypting all e-mail messages was unnecessary. In fact, several mentioned encry
 
 [^HCD_toolkit]:["IDEO Human-Centered Design Toolkit"](http://www.ideo.com/work/human-centered-design-toolkit)
 
-[^Techscape_indicators]:["TechScape Indicators - the engine room"](https://www.theengineroom.org/projects/techscape/tsindicators/)
+[^Techscape_indicators]:["TechScape Indicators - the engine room"](https://www.theengineroom.org/wp-content/uploads/2012/06/TechScape_SlideDeck1.pdftsindicators/)
 
 [^BUM_questions]:["Questions for Business Unit Managers - The Penetration Testing Execution Standard"](http://www.pentest-standard.org/index.php/Pre-engagement#Questions_for_Business_Unit_Managers)
 

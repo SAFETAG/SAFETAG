@@ -2,11 +2,11 @@
 title: Risk Modeling
 ---
 
-  * *Overview:* ["An Introduction to Threat Modeling"](https://ssd.eff.org/en/module/introduction-threat-modeling) (Surveillance Self-Defense)
+  * *Overview:* ["Your security plan: An Introduction to Threat Modeling"](https://ssd.eff.org/module/your-security-plan) (Surveillance Self-Defense)
 
-  * *Guide:* ["Risk Assessment"](http://frontlinedefenders.org/files/workbook_eng.pdf#page=9) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk - Chapter 2)
+  * *Guide:* ["Risk Assessment"](https://www.frontlinedefenders.org/en/resource-publication/workbook-security-practical-steps-human-rights-defenders-risk) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk - Chapter 2)
 
-  * *Guide:* ["Threat Assessment: Chapter 2.5 p. 38"](http://www.odihpn.org/download/gpr_8_revised2pdf#page=38) (Operational Security Management in Violent Environments (Revised Edition))
+  * *Guide:* ["Threat Assessment: Chapter 2.5 p. 38"](https://odihpn.org/wp-content/uploads/2010/11/GPR_8_revised2.pdf) (Operational Security Management in Violent Environments (Revised Edition))
 
   * *Guide:* ["Defining The Threshold Of Acceptable Risk"](http://integratedsecuritymanual.org/exercise/defining-the-threshold-of-acceptable-risk) (Integrated Security)
 

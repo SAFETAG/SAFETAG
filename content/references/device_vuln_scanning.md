@@ -17,6 +17,6 @@ title: System Vulnerability Scanning
 
   * *Video Guide:* ["Setting up OpenVAS on Kali Linux"](http://youtu.be/0b4SVyP0IqI) (YouTube)
 
-  * *ListServ:* ["OpenVAS Discussion ListServ"](https://lists.wald.intevation.org/cgi-bin/mailman/listinfo/openvas-discuss) (OpenVAS)
+  * *ListServ:* ["OpenVAS Greenbone Community Forum"](https://forum.greenbone.net/) (OpenVAS)
 
   * *Comparison:* ["Nessus, OpenVAS and Nexpose VS Metasploitable"](http://hackertarget.com/nessus-openvas-nexpose-vs-metasploitable/) (HackerTarget)

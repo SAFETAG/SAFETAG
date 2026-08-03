@@ -24,7 +24,7 @@ Whether you’re using the SAFETAG framework or a standard like [NIST](https://n
 
 The challenge we often face as practitioners is eliciting this information from the organization quickly and accurately. Simply asking an organization what they value often does not result in the most accurate of information. It is the auditor’s job to read between the lines, ask the right questions, infer, and follow-up to develop a list of “assets”, or things the organization is trying to protect.
 
-Not surprisingly, this is foundational to the approach of the remote risk assessment using the SAFETAG framework. It is important to remember the approach to SAFETAG can be broken down into three important bodies of work, referred to as the [TRI Approach](https://safetag.org/2018/08/16/SAFETAGStories-dropbox.html):
+Not surprisingly, this is foundational to the approach of the remote risk assessment using the SAFETAG framework. It is important to remember the approach to SAFETAG can be broken down into three important bodies of work, referred to as the [TRI Approach](https://safetag.org/posts/2018-08-16-SAFETAGStories-dropbox/):
 
 - Technical
 - Research
@@ -58,17 +58,17 @@ With all of this in mind, a general workflow to implement a remote audit could l
 2. **Start your asynchronous activities:** Starting these asynchronous activities while coordinating larger or one-on-one meetings can help get the audit process moving forward. Some examples of these activities are:
 
     - OSINT
-    - [Reconnaissance](../methods/reconnaissance)
-    - [Website Assessment](../activities/web_vulnerability_assessment)
-    - [Policy Reviews](../activities/policies_review)
-    - [Capacity Assessment Surveys](../activities/capacity_assessment_cheatsheet)
+    - [Reconnaissance](../../methods/reconnaissance)
+    - [Website Assessment](../../activities/web_vulnerability_assessment)
+    - [Policy Reviews](../../activities/policies_review)
+    - [Capacity Assessment Surveys](../../activities/capacity_assessment_cheatsheet)
 
 3. **Set up common synchronous activities:** As mentioned throughout the article, we cannot overemphasize being organized when doing everything in a remote setting. There are more logistics, more technological difficulties, and overall more challenges with building  trust when interacting with staff through a screen. Some examples of synchronous activities you may prioritize to complete during your audit include:
 
-    - [One-on-One Interviews (rather than Process Mapping)](../activities/interviews)
-    - [Data Mapping / Asset Valuation](../activities/remote_asset_valuation)
-    - [Threat Mapping](../activities/threat_identification)
-    - [Remote User Device Assessment](../methods/user_device_assessment)
+    - [One-on-One Interviews (rather than Process Mapping)](../../activities/interviews)
+    - [Data Mapping / Asset Valuation](../../activities/remote_asset_valuation)
+    - [Threat Mapping](../../activities/threat_identification)
+    - [Remote User Device Assessment](../../methods/user_device_assessment)
 
     **From Process Mapping to Interviews**
 
