@@ -8,21 +8,24 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16]
+        # Match package.json "engines" and the deploy workflows. This was
+        # pinned to 16, so CI was validating a version the site is not built on.
+        node-version: [20]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         env:
           SITE_NAME: "Safetag"
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: npm
 
       - name: Install
-        run: npm install
+        run: npm ci
 
       - name: Lint
         run: npm run lint

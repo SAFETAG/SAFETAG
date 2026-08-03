@@ -16,6 +16,7 @@ export var languages = {
   my: "မြန်မာစာ",
   fa: "پارسی",
   pt: "Português",
+  pt_BR: "Português Brasileiro",
   ro: "Română",
   ru: "русский",
   sr: "Српско-хрватски",
@@ -140,7 +141,12 @@ export var languagesX = {
   pt: {
     name: "Portuguese",
     localName: "Português",
-    countries: ["Portugal", "Brazil", "Mozambique", "Angola"],
+    countries: ["Portugal"],
+  },
+  pt_BR: {
+    name: "Brazilian Portuguese",
+    localName: "Português Brasileiro",
+    countries: ["Brazil", "Mozambique", "Angola"],
   },
   ro: {
     name: "Romanian",

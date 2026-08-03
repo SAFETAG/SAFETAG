@@ -3,6 +3,7 @@ import blobStream from "blob-stream"
 import { saveAs } from "file-saver"
 import { marked } from "marked"
 import { pickBy, values } from "lodash"
+import { withPrefix } from "gatsby"
 
 import IBMPlexSansRegular from "../../static/fonts/IBMPlexSans-Regular.ttf"
 import IBMPlexSansBold from "../../static/fonts/IBMPlexSans-Bold.ttf"
@@ -523,7 +524,7 @@ export async function prepareGuide(
           const approach = approachEdges.filter(
             r => r.node.frontmatter.title == activity.approaches[0] && r.node.fields.langKey == i18n.language
           )[0]
-          const approachIcon = `/img/${approach.node.fields.slug.replace('/approaches/', '24x24/')}_icon.png`
+          const approachIcon = withPrefix(`/img/${approach.node.fields.slug.replace('/approaches/', '24x24/')}_icon.png`)
           // pad with empty lines to avoid text flow problems
           customGuide.push(`\` \``)
           customGuide.push(`#### \`      \` Activity: ${activity.title} ![](${approachIcon})`)

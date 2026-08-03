@@ -1,0 +1,49 @@
+---
+title: Staff Awareness and Individual Device Assessment
+position: 60
+method_icon: "/img/user_device_assessment_icon.png"
+summary: |
+  This component allows the auditor to assess the awareness, attitudes, and capacity of staff members as well as review the status and security of the individual devices/endpoints (whether they are personally- or organizationally-owned) within the organization. This component consists of interviews, surveys, and inspection of devices.
+short_summary: Assess the security of the individual devices in the organization through interviews, surveys, and inspection of devices.
+the_flow_of_information: "![](/img/user_device_assessment.png)"
+guiding_questions: |
+  * What work and personal devices do staff use to accomplish their work, store
+  work related files, or engage in work communications?
+  * What organizational and external/personal services  do staff use to accomplish their work, store work related files, or engage in work communications?
+  * What are the organizational processes that staff take part in and the tools and communication channels that are used in those process'?
+  * What are the existing in/formal security practices that the participants use to address risks.
+authors:
+  - SAFETAG
+activities:
+  - Device and Behaviour Assessment
+  - Mobile Device Assessment
+  - A Day in the Life
+  - A Night in the Life
+  - Auditing Authentication for Account Security
+  - Guided Tour
+  - Check Browser and Plugin Vulnerabilities
+  - Remote Network and User Device Assessment
+references:
+  - Device Assessment
+  - Парольная безопасность
+  - Разделение прав пользователей в разных операционных системах
+  - Брандмауэры в разных операционных системах
+  - Определение версий программ
+  - Device Encryption By OS
+  - Обновления антивирусов
+  - Выявление странных и одноразовых сервисов
+outputs: |
+  * List of all assets in the organization and whom they belong to.
+  * List of software running on staff devices and date of last update/patch level
+  * List of known vulnerabilities, and identifiable malware, that the office is vulnerable to.
+  * List of malware found by running updated anti-virus on office computers (if anti-virus installed during device inspection.)
+operational_security: |
+  * Treat device assessment data as well as any additional service information learned with the utmost security
+info_required: []
+info_provided: []
+purpose: |
+  Compromised devices have the ability to undermine nearly any other organizational attempt at securing information. Knowing if devices receive basic software and security upgrades and what core protections against unauthorized access exist is vital to designing a strategy to make the host more secure.
+preparation: |
+  #### Baseline Skills
+  * Basic systems administration experience for common operating systems
+---
