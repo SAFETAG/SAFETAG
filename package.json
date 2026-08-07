@@ -32,7 +32,7 @@
     "hast-util-to-html": "^9.0.0",
     "i18next": "^22.0.6",
     "i18next-parser": "^9.3.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "pdfkit": "^0.14.0",
     "prop-types": "^15.8.1",
     "query-string": "^8.2.0",
