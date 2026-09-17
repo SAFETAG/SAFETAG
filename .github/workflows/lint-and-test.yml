@@ -10,7 +10,7 @@ jobs:
       matrix:
         # Match package.json "engines" and the deploy workflows. This was
         # pinned to 16, so CI was validating a version the site is not built on.
-        node-version: [20]
+        node-version: [24]
 
     steps:
       - name: Checkout

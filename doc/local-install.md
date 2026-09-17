@@ -3,7 +3,7 @@
 The main dependencies are
 - Gatsby 5
 - React 18.2.0
-- Node.js 20 (see `.nvmrc` and the `engines` field in `package.json`)
+- Node.js 24 (see `.nvmrc` and the `engines` field in `package.json`)
 
 To have the project running locally, you first need to have the above versions of Node.js and npm installed. The [Node download page](https://nodejs.org/en/download/) has install instructions for many use cases.
 

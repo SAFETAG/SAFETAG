@@ -10,7 +10,7 @@ The site is developed via Gatsby, default instructions for which appear below.
 
 ## 🔨 Dependencies
 
-- Node 20.x
+- Node 24.x
 - NPM
 
 ## Project structure
