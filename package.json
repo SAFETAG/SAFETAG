@@ -26,16 +26,15 @@
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-styled-components": "^6.13.1",
-    "gatsby-remark-images": "^7.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
     "hast-util-to-html": "^9.0.0",
     "i18next": "^22.0.6",
     "i18next-parser": "^9.3.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.18.1",
     "pdfkit": "^0.14.0",
     "prop-types": "^15.8.1",
-    "query-string": "^8.2.0",
+    "query-string": "^9.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -143,12 +142,23 @@
     "parse-url": "^8.1.0",
     "cross-fetch": "^3.1.5",
     "ws": "^7.4.6",
-    "sanitize-html": "^2.3.1",
+    "sanitize-html": ">=2.17.7",
     "svgo": "^2.0.0",
     "webpack-dev-middleware": ">=5.3.4",
     "minimatch": ">=3.0.5 <9",
     "axios": ">=0.28.0",
     "workbox-build": "^6.5.4",
-    "tough-cookie": "^4.1.4"
+    "tough-cookie": "^4.1.4",
+    "lodash": "$lodash",
+    "serialize-javascript": "^7.1.1",
+    "tmp": "^0.2.7",
+    "gatsby": {
+      "cookie": "^0.7.2"
+    },
+    "@ardatan/relay-compiler": {
+      "immutable": "^3.8.4"
+    },
+    "path-to-regexp@<0.1.13": "0.1.13",
+    "sharp": "^0.35.4"
   }
 }
