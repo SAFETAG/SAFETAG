@@ -112,7 +112,11 @@ const GlobalMenu = styled.ul`
     margin: ${glsp()};
     list-style: none;
   }
-  ${media.mediumUp`
+  /* The single-row layout needs roughly 700px next to the 160px logo (more
+     in French, Portuguese and Burmese), so it only fits from the large
+     breakpoint (992px) up. Below that the row overflowed the viewport by up
+     to 90px and pushed the language switcher off-screen. */
+  ${media.largeUp`
     flex-flow: row nowrap;
     align-items: center;
     position: relative;
@@ -164,7 +168,7 @@ const Toggle = styled.div`
   cursor: pointer;
   padding: 0.75rem 0;
   margin-left: auto;
-  ${media.mediumUp`
+  ${media.largeUp`
     display: none;
   `}
 `;
@@ -288,99 +292,58 @@ const GlobalHeader = () => {
           )}
         </Toggle>
         <PageNav role="navigation">
-          {navbarOpen ? (
-            <GlobalMenu open scrolled={scrolled}>
+          <GlobalMenu open={navbarOpen} scrolled={scrolled}>
+            <li>
+              <GlobalMenuLink to="/about/" scrolled={scrolled}>
+                <Trans i18nKey="navmenu-about">About</Trans>
+              </GlobalMenuLink>
+            </li>
+            <li>
+              <GlobalMenuLink to="/posts/" scrolled={scrolled}>
+                <Trans i18nKey="navmenu-blog">Blog</Trans>
+              </GlobalMenuLink>
+            </li>
+            <li>
+              <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
+                <Trans i18nKey="navmenu-methods">Methods</Trans>
+              </GlobalMenuLink>
+            </li>
+            <li>
+              <GlobalMenuLink to="/activities/" scrolled={scrolled}>
+                <Trans i18nKey="navmenu-activities">Activities</Trans>
+              </GlobalMenuLink>
+            </li>
+            <li>
+              <SearchBox scrolled={scrolled} />
+            </li>
+            <li>
+              <GlobalMenuButton
+                variation={
+                  scrolled > 0 ? "primary-raised-dark" : "primary-raised-light"
+                }
+                to="/guide-builder/"
+                as={Link}
+              >
+                <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
+              </GlobalMenuButton>
+            </li>
+            {/* Rendered in both the row and the hamburger menu; it used to be
+                missing from the latter, so phones had no way to switch language. */}
+            {languages.length > 1 ? (
               <li>
-                <GlobalMenuLink to="/about/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-about">About</Trans>
-                </GlobalMenuLink>
+                <LanguageSelect
+                  languages={languages}
+                  placeholder=""
+                  onSelect={onSelectLanguage}
+                  ref={(el) => (langSelector = el)}
+                  scrolled={scrolled}
+                  alignOptions="left"
+                />
               </li>
-              <li>
-                <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-blog">Blog</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-methods">Methods</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <GlobalMenuLink to="/activities/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-activities">Activities</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <SearchBox scrolled={scrolled} />
-              </li>
-              <li>
-                <GlobalMenuButton
-                  variation={
-                    scrolled > 0
-                      ? "primary-raised-dark"
-                      : "primary-raised-light"
-                  }
-                  to="/guide-builder/"
-                  as={Link}
-                >
-                  <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
-                </GlobalMenuButton>
-              </li>
-            </GlobalMenu>
-          ) : (
-            <GlobalMenu scrolled={scrolled}>
-              <li>
-                <GlobalMenuLink to="/about/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-about">About</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <GlobalMenuLink to="/posts/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-blog">Blog</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <GlobalMenuLink to="/#allMethods" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-methods">Methods</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <GlobalMenuLink to="/activities/" scrolled={scrolled}>
-                  <Trans i18nKey="navmenu-activities">Activities</Trans>
-                </GlobalMenuLink>
-              </li>
-              <li>
-                <SearchBox scrolled={scrolled} />
-              </li>
-              <li>
-                <GlobalMenuButton
-                  variation={
-                    scrolled > 0
-                      ? "primary-raised-dark"
-                      : "primary-raised-light"
-                  }
-                  to="/guide-builder/"
-                  as={Link}
-                >
-                  <Trans i18nKey="navmenu-createguide">Create Guide</Trans>
-                </GlobalMenuButton>
-              </li>
-              {languages.length > 1 ? (
-                <li>
-                  <LanguageSelect
-                    languages={languages}
-                    placeholder=""
-                    onSelect={onSelectLanguage}
-                    ref={(el) => (langSelector = el)}
-                    scrolled={scrolled}
-                    alignOptions="left"
-                  />
-                </li>
-              ) : (
-                ""
-              )}
-            </GlobalMenu>
-          )}
+            ) : (
+              ""
+            )}
+          </GlobalMenu>
         </PageNav>
       </PageHeadInner>
     </PageHead>
