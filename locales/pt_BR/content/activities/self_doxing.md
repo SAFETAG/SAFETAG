@@ -53,15 +53,13 @@ considerations: >
 
   * Trate os dados sobre ameaças e adversários com a máxima segurança.
 
-  * Certifique-se de que todas as anotações/desenhos físicos sejam apagados e destruídos
-  após serem registrados digitalmente.
+  * Certifique-se de que todas as anotações/desenhos físicos sejam apagados e destruídos após serem registrados digitalmente.
 
   * Certifique-se de que todas as gravações digitais deste processo sejam mantidas em segurança e criptografadas.
 
   * Antes de fazer o exercício de doxxing para qualquer indivíduo, faça sobre a própria organização.
 
-  * Se usar um membro da equipe como exemplo, tenha uma conversa privada com
-  ele antes para garantir que você não exponha nenhuma informação confidencial ao grupo.
+  * Se usar um membro da equipe como exemplo, tenha uma conversa privada com ele antes para garantir que você não exponha nenhuma informação confidencial ao grupo.
 
   * Certifique-se de que você tem o consentimento dos funcionários que você usará como exemplo para esta atividade.
 skills_required:
@@ -83,8 +81,7 @@ recommendations: >-
 
   Se forem encontrados resultados significativos que possam colocar em risco um indivíduo ou toda a organização, a pessoa que está fazendo auditoria deve dar recomendações imediatas para mitigação.
 
-  Se as informações pessoais estiverem em um site, ajude a organização a identificar o ponto de contato necessário para solicitar a remoção.
-  Os cidadãos da União Europeia geralmente podem contar com o [direito ao esquecimento])https://pt.wikipedia.org/wiki/Direito_a_ser_esquecido_.
+  Se as informações pessoais estiverem em um site, ajude a organização a identificar o ponto de contato necessário para solicitar a remoção. Os cidadãos da União Europeia geralmente podem contar com o [direito ao esquecimento])https://pt.wikipedia.org/wiki/Direito_a_ser_esquecido_.
 
   What follows is a list of links to start a takedown request:
 
@@ -93,8 +90,7 @@ recommendations: >-
   * **Google**
     * [Formulário para remoção das pesquisas do Google.](https://reportcontent.google.com/forms/rtbf?hl=pt-br)
     * [Como solicitar a remoção de conteúdo em vários serviços do Google](https://support.google.com/legal/troubleshooter/1114905?rd=1%2Ftroubleshooter%2F1114905%3Frd&hl=pt-BR&sjid=7495793690789476673-NA)
-  * Facebook: [Formulário para solicitar a remoção de fotos
-  ou vídeos por violarem os direitos de alguém](https://www.facebook.com/help/contact/516343134409068)  * Twitter/X: [Formulário para denunciar doxing ou publicação de informações privadas](https://help.x.com/pt/forms/safety-and-sensitive-content/private-information)  * Snapchat: [Central de Ajuda](https://help.snapchat.com/hc/pt-br/requests/new) 
+  * Facebook: [Formulário para solicitar a remoção de fotos ou vídeos por violarem os direitos de alguém](https://www.facebook.com/help/contact/516343134409068)  * Twitter/X: [Formulário para denunciar doxing ou publicação de informações privadas](https://help.x.com/pt/forms/safety-and-sensitive-content/private-information)  * Snapchat: [Central de Ajuda](https://help.snapchat.com/hc/pt-br/requests/new) 
     * Clique em ”Denunciar um problema de segurança”.
   * Reddit: [O que fazer se alguém postou suas informações pessoais](https://support.reddithelp.com/hc/pt-br/articles/360043066452-Posso-postar-informa%C3%A7%C3%B5es-pessoais-ou-particulares-de-algu%C3%A9m)  * Tumblr: [Como denunciar uma violação de privacidade ](http://articles/360043066452-Posso-postar-informa%C3%A7%C3%B5es-pessoais-ou-particulares-de-algu%C3%A9m)
     * Se o formulário público não ajudar, o abuso pode ser denunciado por e-mail [seguindo estas instruções](https://emergencycenter.tumblr.com/post/22769438497/is-there-a-way-to-report-something-on-tumblr)

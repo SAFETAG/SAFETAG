@@ -21,7 +21,6 @@ activities:
   - Uma Noite na Vida
   - Auditoria de autenticação para segurança da conta
   - Visita Guiada
-  - Verifique as vulnerabilidades do navegador e dos plug-ins
   - Remote Network and User Device Assessment
 references:
   - Avaliação de Dispositivo

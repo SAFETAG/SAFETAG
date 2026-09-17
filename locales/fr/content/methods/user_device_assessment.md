@@ -21,7 +21,6 @@ activities:
   - Une nuit dans la vie
   - Auditing Authentication for Account Security
   - Visite guidée
-  - Vérifier les vulnérabilités des navigateurs et des plugins
   - Évaluation à distance du réseau et des appareils utilisateur
 references:
   - Device Assessment

@@ -50,26 +50,17 @@ overview: >-
 
   For scenario (B), a similar procedure can be followed, but feedback can be collected at a time and in a way that works best for you, using methods described in the USABLE Guidebook.
 considerations: >-
-  Review screenshots or samples collected from devices used by the partner
-  organization to ensure they do not contain identifying images (such as profile
-  images, usernames, or filenames) or other metadata which could negatively
-  impact them.
+  Review screenshots or samples collected from devices used by the partner organization to ensure they do not contain identifying images (such as profile images, usernames, or filenames) or other metadata which could negatively impact them.
 
   Be mindful of the limited time available during assessments, as you may need to trade-off time spent doing feedback collection with time spent on other assessment activities.
 walk_through: >-
-  After identifying open-source tools either used by the organization being
-  assessed, or tools you yourself used during the assessment which had usability
-  issues you would like to ensure gets communicated to their developers, select
-  an activity from the [USABLE
-  Guidebook](https://usable.tools/pdfs/USABLE_UX-Feedback-Collection-Guidebook.pdf)
-  to utilise or inform your feedback collection work.
+  After identifying open-source tools either used by the organization being assessed, or tools you yourself used during the assessment which had usability issues you would like to ensure gets communicated to their developers, select an activity from the [USABLE Guidebook](https://usable.tools/pdfs/USABLE_UX-Feedback-Collection-Guidebook.pdf) to utilise or inform your feedback collection work.
 
   Below you will find a selection of sections identified in the [Guidebook](https://usable.tools/pdfs/USABLE_UX-Feedback-Collection-Guidebook.pdf) which may be useful. Full activity walkthroughs as well as additional feedback collection and communication activities you may find useful can be found in the full document.
 
   ### Collecting feedback to better understand the user (Part I)
 
-  *
-  **User Stories** - gather feedback from users about their experiences and needs. This involves creating a narrative that describes a user's experience with a tool or platform. The narrative should include details about the user's goals, motivations, and frustrations, and will help to identify pain points in a tool or platform experienced by the organization and provide insights into how it can be improved to better meet their needs.
+  * **User Stories** - gather feedback from users about their experiences and needs. This involves creating a narrative that describes a user's experience with a tool or platform. The narrative should include details about the user's goals, motivations, and frustrations, and will help to identify pain points in a tool or platform experienced by the organization and provide insights into how it can be improved to better meet their needs.
 
   ### Collecting tool-specific feedback (Part II)
 
@@ -79,8 +70,7 @@ walk_through: >-
 
   * **Tips for communicating with developers**: provides quick tips for engaging with open source developers when communicating feedback. It emphasizes the importance of being respectful and establishing a personal connection with the developer. It also advises finding the proper channel to communicate, researching and following any specific feedback guidelines, documenting the steps that led to the issue, offering specific suggestions for improvements, advocating for more secure and user-friendly tools, and following up with the developer. * The **Bug Reports** section explains documenting issues encountered during the use of a tool, along with steps to reproduce the issue and any additional information that may be relevant. The report should be submitted to the tool's development team in a clear and concise manner, including screenshots or animated GIFs if necessary to clearly illustrate the issue. * **GIFs**: Create animated GIFs to illustrate usability issues. These can be used to communicate issues to developers and tool teams more effectively than written descriptions. Record a short video of the issue and use GIPHY Capture or LICEcap to create an animated GIF. Embed the GIF in feedback reports or submit it directly to developers.
 
-  ### An
-  Examples of Tool Feedback Collection workflows
+  ### An Examples of Tool Feedback Collection workflows
 
   An examples may help illustrate how this activity might occur in the context of a SAFETAG assessment:
 

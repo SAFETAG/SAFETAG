@@ -415,8 +415,7 @@ skills_required:
   - Analyse de réseau
 overview: >
   * Confirmez quels appareils et serveurs sont concernés par l'audit et confirmez que tous les fournisseurs de services (hébergeurs de sites Web, hôtes cloud, etc.) sont informés et acceptent toute analyse à effectuer.
-    * Énumérer et classer tous les appareils connectés au réseau de l'organisation. Notez que cela peut inclure les appareils IoT (Internet des objets), tels que les caméras IP utilisées pour la sécurité, les appareils « intelligents » et les appareils personnels tels que les téléphones mobiles, qui peuvent ne pas être concernés. **Discutez de la portée de l'audit tel qu'il s'applique
-  aux appareils connectés au réseau de travail et assurez-vous que le personnel comprend ce que vous faites.**
+    * Énumérer et classer tous les appareils connectés au réseau de l'organisation. Notez que cela peut inclure les appareils IoT (Internet des objets), tels que les caméras IP utilisées pour la sécurité, les appareils « intelligents » et les appareils personnels tels que les téléphones mobiles, qui peuvent ne pas être concernés. **Discutez de la portée de l'audit tel qu'il s'applique aux appareils connectés au réseau de travail et assurez-vous que le personnel comprend ce que vous faites.**
     * Dans certains cas, la portée de l'audit peut inclure des appareils externes. Le balayage dans ces cas sera très ciblé. Si votre audité a accepté que ses machines publiques soient analysées, gardez à l'esprit que vous devez envisager de demander à votre audité des options de liste blanche pour éviter les IDS/IPS, les pare-feu et autres mécanismes de blocage pendant votre analyse. Assurez-vous également que vous avez vérifié la cible dans le champ d'application. Cela permet d'éviter d'analyser des cibles hors de portée qui pourraient vous conduire à d'autres problèmes.
   * Catégorisez et rassemblez des détails supplémentaires sur les appareils que vous découvrirez
 

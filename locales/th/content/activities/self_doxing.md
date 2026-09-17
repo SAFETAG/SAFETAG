@@ -111,9 +111,7 @@ overview: |
   entire organization, instruct them on how to perform a takedown request to the
   relevant website and/or search engine.
 recommendations: >-
-  This activity is based off of Access Now's [Self-Doxing
-  Guide](https://guides.accessnow.org/self-doxing.html), which has additional
-  reading and recommendations.
+  This activity is based off of Access Now's [Self-Doxing Guide](https://guides.accessnow.org/self-doxing.html), which has additional reading and recommendations.
 
 
   If significant results are found that might endanger an individual or the

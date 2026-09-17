@@ -27,9 +27,7 @@ considerations: |
   Even when the activity suggests synchronous spaces for the
   partial debriefs, these might also happen over other channels like emails, chats, or other asynchronous spaces as long as they work for both the organization and the auditor. When there are more sensitive topics to discuss that can affect the course of the audit, the organization’s operations, or involve sensitive information; there is the possibility of organizing a synchronous space like a call or an in-person meeting.
 walk_through: >-
-  1. **Define the frequency and convening space of these partial debriefs with
-  the organization :** These might happen daily, weekly, as requested, etc.
-  Also, they might happen in person or virtually depending on the possibilities.
+  1. **Define the frequency and convening space of these partial debriefs with the organization :** These might happen daily, weekly, as requested, etc. Also, they might happen in person or virtually depending on the possibilities.
 
 
   2. **Before each partial debrief, gather data on the activities conducted:** This information can be from the last partial debrief or in general to recount all the progress so far on each meeting. The information might include which activities were conducted and finished, potential roadblocks to start new activities, interesting vulnerabilities and recommendations that the organization can act upon immediately, and any responsive support given so far (please check the Responsive support method for more information on this).

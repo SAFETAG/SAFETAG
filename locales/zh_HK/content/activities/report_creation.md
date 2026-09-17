@@ -18,18 +18,7 @@ organization_size_under: 1000
 summary: "This component consists of an auditor compiling their audit inputs like notes and recommendations into an easy to digest document or similar that will let the organization have the recommendations roadmap that will guide the hosts progression to meet their security goals (also called the Risk Mitigation Plan) at hand, and other useful information as needed like   the current state of the organization's security, the process by which the auditor came to that assessment, its scope, and the more technical outputs of some of the conducted activities, among others.  "
 short_summary: " "
 overview: >-
-  Once an auditor has left, the report is the auditor's chance to continue a
-  conversation (albeit a static one) -- even if the organization never talks to
-  the auditor again. If written with care, it can be a tool to encourage agency
-  and guide adoption. The report might have many audiences who will need to use
-  it in different ways. For the auditor and the organization, it acts as
-  documentation of what an auditor accomplished. For the organization, it will
-  be a guide for connecting vulnerabilities to actual risks, a rallying cry for
-  change, and proof of need for funders. For those the organization brings in to
-  support their digital security, it provides a roadmap towards that
-  implementation and a task-list for future technologists and trainers tasked to
-  get the host there - as well as a checklist for validating that threats have
-  been addressed.
+  Once an auditor has left, the report is the auditor's chance to continue a conversation (albeit a static one) -- even if the organization never talks to the auditor again. If written with care, it can be a tool to encourage agency and guide adoption. The report might have many audiences who will need to use it in different ways. For the auditor and the organization, it acts as documentation of what an auditor accomplished. For the organization, it will be a guide for connecting vulnerabilities to actual risks, a rallying cry for change, and proof of need for funders. For those the organization brings in to support their digital security, it provides a roadmap towards that implementation and a task-list for future technologists and trainers tasked to get the host there - as well as a checklist for validating that threats have been addressed.
 
 
   * **Target Invested Parties:** Identify parties who will impact the vulnerability remediation process (e.g. funders, external contractors, partners) during the audit and work with the organization to target components of the report at those parties. Do the recommendations that you have fit into any narratives that you heard from staff?
@@ -77,8 +66,7 @@ considerations: >-
 
   * **Each organization is different.** You may want to have a similar workflow for different audits, and it can be healthy to establish some processes and have templates. However, be prepared to tweak those to accommodate specific needs from each organization.
 walk_through: >-
-  This walk-through assumes you already completed the Roadmap Development
-  activity, or at least you are conducting them together.
+  This walk-through assumes you already completed the Roadmap Development activity, or at least you are conducting them together.
 
   1. **Prepare narrative components:** some audit reports try to avoid writing many narrative sections, however, at the very minimum, an executive summary and a clear description of the scope should be included. Given that no audit will cover everything in terms of technologies and assets, that section will be useful to the organization to understand what is out of scope and to the auditor to have peace of mind in case something goes wrong with the organization's security involving something that couldn't be covered during the assessment. Other narrative sections that can be included (but are entirely optional) are descriptions of the agreement, glossary, and a description of the SAFETAG audit process, among others.   2. **If you want to include threat modeling information:** there are a set of strategies you can follow that will help the organization understand better what their common understanding of security is, and what threats should be prioritized and expected to be addressed by the rest of the report:  
 
@@ -97,16 +85,10 @@ walk_through: >-
 
   **\[1]** ”When a pilot lands an airliner, their job isn’t over. They still have to navigate the myriad of taxiways and park at the gate safely. The same is true of you and your pen test reports, just because it’s finished doesn't mean you can switch off entirely. You still have to get the report out to the client, and you have to do so securely. Electronic distribution using public key cryptography is probably the best option, but not always possible. If symmetric encryption is to be used, a strong key should be used and must be transmitted out of band. Under no circumstances should a report be transmitted unencrypted. It all sounds like common sense, but all too often people fall down at the final hurdle.” - [The Art of Writing Penetration Test Reports](http://resources.infosecinstitute.com/writing-penetration-testing-reports/)
 recommendations: >-
-  * Keep in mind that there might be recommendations that won’t be fully
-  understood by the organization and might require extra attention after the
-  report is delivered. Please consider including feedback spaces and mechanisms
-  after the report delivery, and ideally propose some kind follow-up activity
-  (you can check the respective method and activity on this guide).
+  * Keep in mind that there might be recommendations that won’t be fully understood by the organization and might require extra attention after the report is delivered. Please consider including feedback spaces and mechanisms after the report delivery, and ideally propose some kind follow-up activity (you can check the respective method and activity on this guide).
 
-  *
-  Check these blog posts to see some examples of reports  
+  * Check these blog posts to see some examples of reports  
     * [The challenges of reporting](https://safetag.org/posts/2018-11-19-challenges-of-reporting)  
     * [The challenges of reporting: Reporting Styles](https://safetag.org/posts/2018-11-20-challenges-of-reporting-2)  
-  *
-  Check the tool [Risk Assessment Workflow for Recommendation Roadmaps (or RAWRR)](https://conexo.org/project/rawrr/) that lets you manage the documentation process of the entire SAFETAG assessment and generate the report in a semi-automated way
+  * Check the tool [Risk Assessment Workflow for Recommendation Roadmaps (or RAWRR)](https://conexo.org/project/rawrr/) that lets you manage the documentation process of the entire SAFETAG assessment and generate the report in a semi-automated way
 ---

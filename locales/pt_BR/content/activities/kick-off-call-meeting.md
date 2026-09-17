@@ -23,8 +23,7 @@ walk_through: >-
 
   * Fale-me sobre sua organização, faça uma apresentação rápida (apresentação de elevador)
 
-  * Fale sobre a SAFETAG/sobre você, sua experiência; construa confiança
-  e compartilhe quaisquer pontos em comum que você tenha com eles.
+  * Fale sobre a SAFETAG/sobre você, sua experiência; construa confiança e compartilhe quaisquer pontos em comum que você tenha com eles.
 
    
 
@@ -38,13 +37,11 @@ walk_through: >-
 
   * Que riscos, ameaças e ataques você está enfrentando? Houve incidentes no passado? Físicos, digitais, assédio, políticos? (Se não for mencionado na resposta: como esses riscos são vivenciados por cada funcionário?)
 
-  * Qual é a estrutura de gestão? Qual é a capacidade da equipe para gerenciamento
-  de segurança e, especialmente, segurança da informação? Eles têm equipe de TI? Utilizam terceirização de TI?
+  * Qual é a estrutura de gestão? Qual é a capacidade da equipe para gerenciamento de segurança e, especialmente, segurança da informação? Eles têm equipe de TI? Utilizam terceirização de TI?
 
   * Eles têm políticas de segurança da informação? E, de maneira mais geral, que tipo de organização eles são: uma organização altamente estruturada, com muitos processos formais, ou uma organização informal? Provavelmente não faça essa pergunta diretamente, mas deduza a partir das respostas deles.
 
-  * Quais são os seus ativos digitais, especialmente os potencialmente críticos/de alto risco? (aprofundar para descobrir mais -
-  e para cada ativo identificado, tentar esclarecer a responsabilidade da equipe de TI (com quem deve falar sobre esse ativo, prestadores de serviços envolvidos, etc.)
+  * Quais são os seus ativos digitais, especialmente os potencialmente críticos/de alto risco? (aprofundar para descobrir mais - e para cada ativo identificado, tentar esclarecer a responsabilidade da equipe de TI (com quem deve falar sobre esse ativo, prestadores de serviços envolvidos, etc.)
 
   * Aprofunde-se nos ativos: pergunte sobre a infraestrutura de TI (dispositivos, sites, servidores, bancos de dados, redes) e os controles de segurança de TI (antivírus, gerenciamento de dispositivos, firewalls, logs, etc.).
 
@@ -52,18 +49,15 @@ walk_through: >-
 
   * O que eles mais gostariam de obter com este processo de avaliação SAFETAG?
 
-  * Com quem
-  devo trabalhar? Quem serão os pontos de contato administrativo e técnico?
+  * Com quem devo trabalhar? Quem serão os pontos de contato administrativo e técnico?
 
   * Explique como será a avaliação geral, da perspectiva deles, e o que você precisa deles, por exemplo:
 
-  * Uma chamada para mapeamento
-  de riscos, incluindo várias partes interessadas
+  * Uma chamada para mapeamento de riscos, incluindo várias partes interessadas
 
   * Chamadas individuais com a liderança, a gerência, a equipe técnica e administrativa
 
-  * Verificações pontuais da
-  equipe e dos dispositivos
+  * Verificações pontuais da equipe e dos dispositivos
 
   * Pesquisa com a equipe
 

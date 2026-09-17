@@ -25,11 +25,7 @@ materials_needed: |
   * **Document logistique** Disponible sous forme d'OpenDocument dans le référentiel SAFETAG et en ligne via Google Docs : [Document logistique](https://drive.google.com/file/d/1Jel7mGJvsAq0F6UKoGnx4eBeCMz8cfOY/view?usp=sharing)
   * **Tableau d'évaluation des actifs à distance** Disponible sous forme de feuille de calcul OpenDocument dans le référentiel SAFETAG et en ligne via Google Docs :[Tableau d'évaluation des actifs à distance](https://drive.google.com/file/d/1Yf2S6IIOlewzTSBNT-yJ1P9ZZD2d3XVN/view?usp=sharing)
 considerations: >
-  * Assurez-vous que le personnel invité à l'appel ne se trouve pas dans
-  un environnement opérationnel sensible lors de discussions en temps réel sur
-  des sujets sensibles. Cette considération doit être respectée lors de
-  tout engagement à distance ou en personne. * Certains des documents produits dans cet exercice peuvent être sensibles. Procédez avec prudence et assurez-vous que les documents sont suffisamment sécurisés pour ne pas entraîner de fuite de données. * Des considérations et des recherches supplémentaires doivent être menées avant d'utiliser la technologie pour la collaboration et la téléconférence en temps réel.
-  Toutes les technologies de téléconférence ne sont pas égales. Assurez-vous d'évaluer les risques liés à l'utilisation d'une technologie avant d'engager des conversations sensibles en ligne.
+  * Assurez-vous que le personnel invité à l'appel ne se trouve pas dans un environnement opérationnel sensible lors de discussions en temps réel sur des sujets sensibles. Cette considération doit être respectée lors de tout engagement à distance ou en personne. * Certains des documents produits dans cet exercice peuvent être sensibles. Procédez avec prudence et assurez-vous que les documents sont suffisamment sécurisés pour ne pas entraîner de fuite de données. * Des considérations et des recherches supplémentaires doivent être menées avant d'utiliser la technologie pour la collaboration et la téléconférence en temps réel. Toutes les technologies de téléconférence ne sont pas égales. Assurez-vous d'évaluer les risques liés à l'utilisation d'une technologie avant d'engager des conversations sensibles en ligne.
 walk_through: |
   **Préparation**
 

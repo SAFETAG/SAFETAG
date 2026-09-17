@@ -15,16 +15,14 @@ remote_options:
 time_required_minutes: 60
 organization_size_under: 25
 summary: >
-  Esse exercício ajuda o auditor a avaliar a segurança e a eficácia das práticas
-  de autenticação de contas dentro de uma organização e dá orientações sobre como desenvolver recomendações para implementar um kit de ferramentas de autenticação resistente a phishing.
+  Esse exercício ajuda o auditor a avaliar a segurança e a eficácia das práticas de autenticação de contas dentro de uma organização e dá orientações sobre como desenvolver recomendações para implementar um kit de ferramentas de autenticação resistente a phishing.
 short_summary: Avaliar a segurança e a eficácia das práticas de autenticação de contas dentro de uma organização e dar orientações sobre como implementar uma abordagem resistente a phishing.
 overview: >
   * Verificar se estão usando fatores de segurança resistentes a phishing, como chaves de segurança físicas ou senhas de acesso
 
   * Verificar se não faltam controles de autenticação essenciais, como a verificação em duas etapas
 
-  * Avaliar o uso de gerenciadores de credenciais ou senhas em toda a organização, incluindo configurações importantes, como ativar
-  o preenchimento automático neles
+  * Avaliar o uso de gerenciadores de credenciais ou senhas em toda a organização, incluindo configurações importantes, como ativar o preenchimento automático neles
 
   * Analisar estratégias que diminuam a superfície de ataque e simplifiquem a autenticação, como usar o login único sempre que possível e restringir concessões OAuth inseguras 
 
@@ -39,14 +37,11 @@ materials_needed: |
   - Lista de contas e serviços online usados na organização
   - Chaves de segurança físicas para distribuir, se disponíveis
 walk_through: >-
-  utilizando iscas (phishing) sendo um ataque comum e é um grande risco para empresas de todos os tamanhos. Tradicionalmente, os esforços anti-phishing têm se
-  concentrado em ensinar os funcionários a reconhecer e denunciar e-mails suspeitos. Embora essa estratégia ainda deva desempenhar um papel importante nos
-  treinamentos de segurança dos funcionários, a vigilância por si só não é suficiente; até mesmo profissionais de segurança cibernética já caíram em golpes de phishing. Por isso, é importante que a organização também desenvolva um kit de ferramentas tecnológicas que atenue a eventualidade de um funcionário ser vítima de phishing.
+  utilizando iscas (phishing) sendo um ataque comum e é um grande risco para empresas de todos os tamanhos. Tradicionalmente, os esforços anti-phishing têm se concentrado em ensinar os funcionários a reconhecer e denunciar e-mails suspeitos. Embora essa estratégia ainda deva desempenhar um papel importante nos treinamentos de segurança dos funcionários, a vigilância por si só não é suficiente; até mesmo profissionais de segurança cibernética já caíram em golpes de phishing. Por isso, é importante que a organização também desenvolva um kit de ferramentas tecnológicas que atenue a eventualidade de um funcionário ser vítima de phishing.
 
   ###### Auditoria do uso de serviços online para configuração de autenticação resistente a phishing
 
-  Praticamente todos os principais serviços online agora oferecem autenticação de dois fatores, que protege contra roubo/vazamento de senhas. Mesmo assim, a maioria das formas de autenticação de dois fatores continua vulnerável a um ataque de phishing em que um adversário captura um nome de usuário, senha e
-  código de dois fatores e os usa para fazer login na página da web real antes que o código de dois fatores expire. Embora sofisticado, esse tipo de ataque é cada vez mais comum.
+  Praticamente todos os principais serviços online agora oferecem autenticação de dois fatores, que protege contra roubo/vazamento de senhas. Mesmo assim, a maioria das formas de autenticação de dois fatores continua vulnerável a um ataque de phishing em que um adversário captura um nome de usuário, senha e código de dois fatores e os usa para fazer login na página da web real antes que o código de dois fatores expire. Embora sofisticado, esse tipo de ataque é cada vez mais comum.
 
   Por outro lado, a autenticação usando chaves de segurança físicas (usadas no modo U2F , Titan ou FIDO2) e senhas são projetadas para serem resistentes até mesmo a ataques de phishing sofisticados. Elas são criptograficamente vinculadas ao site onde foram registradas; é impossível para uma página falsa capturar a entrada de uma chave de segurança física ou senha e usá-la para fazer login na página real.
 
@@ -65,9 +60,7 @@ walk_through: >-
 
   ###### Auditoria do uso de gerenciadores de senhas
 
-  Os gerenciadores de senhas (agora também chamados de gerenciadores de credenciais) são uma ferramenta de segurança
-  fundamental, e o auditor deve pesquisar como e se eles são usados dentro de uma organização. Organizações nas quais todos os funcionários trabalham em tempo integral e usam dispositivos fornecidos pela empresa podem contar com um gerenciador de senhas fornecido pela empresa.
-  Organizações que contam com funcionários em tempo parcial ou voluntários também podem permitir que os funcionários usem seus próprios gerenciadores. É preferível ter um único gerenciador de senhas no trabalho, especialmente quando se trata de compartilhar credenciais dentro das organizações (várias pessoas podem, por exemplo, precisar acessar a mesma conta geral).
+  Os gerenciadores de senhas (agora também chamados de gerenciadores de credenciais) são uma ferramenta de segurança fundamental, e o auditor deve pesquisar como e se eles são usados dentro de uma organização. Organizações nas quais todos os funcionários trabalham em tempo integral e usam dispositivos fornecidos pela empresa podem contar com um gerenciador de senhas fornecido pela empresa. Organizações que contam com funcionários em tempo parcial ou voluntários também podem permitir que os funcionários usem seus próprios gerenciadores. É preferível ter um único gerenciador de senhas no trabalho, especialmente quando se trata de compartilhar credenciais dentro das organizações (várias pessoas podem, por exemplo, precisar acessar a mesma conta geral).
 
   Siga estas etapas para revisar o uso de gerenciadores de senhas por uma organização:
 
@@ -97,8 +90,7 @@ walk_through: >-
 
   * Investigue se é possível restringir as permissões OAuth em toda a organização, de modo que elas se apliquem apenas a um pequeno grupo de serviços confiáveis ou incluídos na lista de permissões. Observe que alguns programas, como o [Programa de Proteção Avançada](https://landing.google.com/intl/en_in/advancedprotection/) do Google, limitarão as concessões OAuth a uma lista de permissões confiáveis.
 
-  Muitos serviços online agora oferecem suporte ao login único (SSO). Ele permite que você faça login em muitos serviços diferentes usando uma única conta, normalmente uma usada para e-mail ou mídia social. Muitas organizações usam seu provedor de e-mail principal como provedor de SSO. O SSO é um pouco diferente das concessões OAuth: o primeiro usa um serviço somente como camada de autenticação, enquanto o segundo permite que o serviço compartilhe dados com outros. O SSO costuma ser uma ótima ideia
-  do ponto de vista da segurança, pois exige que os administradores auditem e apliquem normas rígidas de segurança de login (como autenticação de dois fatores resistente a phishing) para uma conta, em vez de várias. Vale a pena:
+  Muitos serviços online agora oferecem suporte ao login único (SSO). Ele permite que você faça login em muitos serviços diferentes usando uma única conta, normalmente uma usada para e-mail ou mídia social. Muitas organizações usam seu provedor de e-mail principal como provedor de SSO. O SSO é um pouco diferente das concessões OAuth: o primeiro usa um serviço somente como camada de autenticação, enquanto o segundo permite que o serviço compartilhe dados com outros. O SSO costuma ser uma ótima ideia do ponto de vista da segurança, pois exige que os administradores auditem e apliquem normas rígidas de segurança de login (como autenticação de dois fatores resistente a phishing) para uma conta, em vez de várias. Vale a pena:
 
   * Verificar todos os serviços que a organização usa e ver quais deles suportam SSO
 
@@ -108,8 +100,7 @@ walk_through: >-
 
   ### ### Avaliar os conhecimentos internaos a comunicação e as políticas
 
-  Os invasores continuam a se adaptar e refinar suas técnicas, inclusive quando se trata de phishing. As medidas defensivas também mudam rapidamente, com os fabricantes criando novas ferramentas e fluxos de trabalho que podem mitigar o
-  phishing padrão ou OAuth. É importante que as pessoas na organização entendam os riscos e os possíveis ataques, bem como as possíveis medidas de mitigação. Avalie a educação interna, a comunicação de diretrizes/ameaças e as políticas por meio de entrevistas, pesquisas e análise de documentos:
+  Os invasores continuam a se adaptar e refinar suas técnicas, inclusive quando se trata de phishing. As medidas defensivas também mudam rapidamente, com os fabricantes criando novas ferramentas e fluxos de trabalho que podem mitigar o phishing padrão ou OAuth. É importante que as pessoas na organização entendam os riscos e os possíveis ataques, bem como as possíveis medidas de mitigação. Avalie a educação interna, a comunicação de diretrizes/ameaças e as políticas por meio de entrevistas, pesquisas e análise de documentos:
 
   * Pesquise como os gerentes e outros responsáveis pela segurança veem o phishing. Recomende que a organização trate a mitigação do phishing como uma prioridade fundamental, já que uma parte significativa dos ataques cibernéticos começa com o phishing
 
@@ -124,9 +115,7 @@ walk_through: >-
   * Garanta que a organização tenha um fluxo de trabalho testado para verificar e restaurar o acesso de usuários cujas chaves de segurança físicas ou senhas tenham sido perdidas, ou danificadas
 considerations: ""
 recommendations: >
-  As chaves de acesso (passkeys) podem ser usadas como um segundo fator junto
-  com as senhas ou podem ser usadas para o chamado login sem senha. Embora
-  cada vez mais serviços estão migrando para este formato, é necessário pesar prós e contras. O login sem senha tem seus próprios desafios, incluindo garantir que as chaves de acesso sejam armazenadas e gerenciadas com segurança, garantir que as chaves de acesso sejam protegidas com senhas fortes ou biometria e criar um fluxo de trabalho para revogar rapidamente as chaves de acesso perdidas ou roubadas. Ao trabalhar com os administradores de segurança de uma organização, vale a pena:
+  As chaves de acesso (passkeys) podem ser usadas como um segundo fator junto com as senhas ou podem ser usadas para o chamado login sem senha. Embora cada vez mais serviços estão migrando para este formato, é necessário pesar prós e contras. O login sem senha tem seus próprios desafios, incluindo garantir que as chaves de acesso sejam armazenadas e gerenciadas com segurança, garantir que as chaves de acesso sejam protegidas com senhas fortes ou biometria e criar um fluxo de trabalho para revogar rapidamente as chaves de acesso perdidas ou roubadas. Ao trabalhar com os administradores de segurança de uma organização, vale a pena:
 
 
   * Explorar como diferentes organizações e serviços estão adotando logins sem senha e quais são as experiências dos usuários com eles

@@ -51,11 +51,7 @@ walk_through: >-
 
   **Answer the questions they might have** and **discuss follow-up** steps from both the auditor and host organization.
 recommendations: >-
-  * Some auditors use this activity to facilitate a space to discuss or
-  “co-create” the criteria to be followed in the implementation roadmap to be
-  developed for the final report, making the audit’s final product more valuable
-  to the organization and more likely to be implemented.
+  * Some auditors use this activity to facilitate a space to discuss or “co-create” the criteria to be followed in the implementation roadmap to be developed for the final report, making the audit’s final product more valuable to the organization and more likely to be implemented.
 
-  *
-  There are various ways of executing the walk-through: some might prepare a comprehensive document and others might do a mental list. Adapt this activity to your style, skills and what you think is the best to communicate with the organization.
+  * There are various ways of executing the walk-through: some might prepare a comprehensive document and others might do a mental list. Adapt this activity to your style, skills and what you think is the best to communicate with the organization.
 ---

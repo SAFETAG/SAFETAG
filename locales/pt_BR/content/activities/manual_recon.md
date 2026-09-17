@@ -32,15 +32,11 @@ overview: |
   * Use a pesquisa reversa de imagens e ferramentas exif em fotos de interesse
   * Use esta atividade para conseguir dados adicionais, e fazer novas descobertas a partir do trabalho de reconhecimento automatizado
 recommendations: >
-  "Parte da vida moderna é ter uma presença online. Para muitas organizações, o trabalho online é fundamental para o sucesso. É importante compreender como dados díspares podem ser combinados por um adversário dedicado
-  para construir um conhecimento profundo da organização e dos seus funcionários, o que é útil em ataques de “engenharia social”, como o “spear-phishing” — o
-  envio de e-mails profissionais e aparentemente relevantes com anexos maliciosos a alvos específicos.
+  "Parte da vida moderna é ter uma presença online. Para muitas organizações, o trabalho online é fundamental para o sucesso. É importante compreender como dados díspares podem ser combinados por um adversário dedicado para construir um conhecimento profundo da organização e dos seus funcionários, o que é útil em ataques de “engenharia social”, como o “spear-phishing” — o envio de e-mails profissionais e aparentemente relevantes com anexos maliciosos a alvos específicos.
 
   Monitorar sites em busca de informações sobre sua organização pode ajudar a detectar violações, especialmente por cibercriminosos. No entanto, geralmente é mais valioso gastar recursos, que podem ser limitados, em atualizações constantes do servidor web, sistema de gerenciamento (por exemplo, Joomla e WordPress) e plugins.
 
-  Processar imagens em ferramentas para remover dados “EXIF” é
-  útil, especialmente quando as imagens vêm de dispositivos (como smartphones) com GPS integrado.
+  Processar imagens em ferramentas para remover dados “EXIF” é útil, especialmente quando as imagens vêm de dispositivos (como smartphones) com GPS integrado.
 
-  Considere o risco de doxing, que afeta particularmente organizações com foco em tópicos que carregam um estigma social — ataques baseados em Inteligência em Fontes Abertas podem afetar, por exemplo, membros individuais de organizações de direitos das mulheres e LGBTQIAPN+ . Nesses casos,
-  a pesquisa descrita neste exercício também deve ser realizada com as pessoas mais visíveis da organização. Esta atividade pode ser combinada com o exercício Self-Doxing para identificar e mitigar vulnerabilidades sem invadir a privacidade dos membros da equipe.
+  Considere o risco de doxing, que afeta particularmente organizações com foco em tópicos que carregam um estigma social — ataques baseados em Inteligência em Fontes Abertas podem afetar, por exemplo, membros individuais de organizações de direitos das mulheres e LGBTQIAPN+ . Nesses casos, a pesquisa descrita neste exercício também deve ser realizada com as pessoas mais visíveis da organização. Esta atividade pode ser combinada com o exercício Self-Doxing para identificar e mitigar vulnerabilidades sem invadir a privacidade dos membros da equipe.
 ---
