@@ -216,6 +216,13 @@ const LanguageSelect = styled(ReactLanguageSelect)`
     color: ${({ scrolled }) =>
       scrolled > 0 ? themeVal("color.primary") : "#fff;"};
   }
+  /* The switcher is the last item in the header, so the list must open
+     towards the page, not away from it. The vendor rule for to--left sets
+     right: 10px; align with the button instead. */
+  ul.flag-select__options.to--left {
+    right: 0;
+    left: auto;
+  }
   .flag-select__option:not(.flag-select__option--placeholder):focus,
   .flag-select__option:not(.flag-select__option--placeholder):hover {
     outline: none;
@@ -366,6 +373,7 @@ const GlobalHeader = () => {
                     onSelect={onSelectLanguage}
                     ref={(el) => (langSelector = el)}
                     scrolled={scrolled}
+                    alignOptions="left"
                   />
                 </li>
               ) : (
