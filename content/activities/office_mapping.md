@@ -43,12 +43,11 @@ considerations: |
   organization, and if conducting this remotely/in advance, ensure the point of
   contact can handle and destroy the data responsibly.
   * If using drawing software, note that using free online tools could easily
-  leave sensitive data exposed. Offline tools such as LibreOffice Draw,
-  [Pencil](http://pencil.evolus.vn/Downloads.html), or even Microsoft Powerpoint
-  or Visio all work, but the product should be securely managed.
+  leave sensitive data exposed. Use tools that are local-first (rather than
+  cloud-first) and exclude the drawings from non-encrypted backups.
   * Any photos taken (of the map drawing or specific office areas/rooms) should
-  be securely deleted or taken using a secure camera app such as
-  [ObscuraCam](https://guardianproject.info/apps/obscuracam/)
+  not be uploaded to the cloud (make sure your device doesn't auto-upload photos
+  and should be deleted as soon as they are no longer necessary).
   * It should be noted that SAFETAG is focused only on the digital impacts of
   physical security.  This guide does not provide a full physical security
   assessment.
